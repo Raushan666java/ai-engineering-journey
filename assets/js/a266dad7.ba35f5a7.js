@@ -1,0 +1,2547 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[22724],{
+
+/***/ 2638
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_48_interview_manufacturing_md_a26_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-48-interview-manufacturing-md-a26.json
+const site_docs_courses_laravel_48_interview_manufacturing_md_a26_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/48-interview-manufacturing","title":"Chapter 48: Manufacturing Interview Q&A","description":"Previous PHP Interview Q&A","source":"@site/docs/courses/laravel/48-interview-manufacturing.md","sourceDirName":"courses/laravel","slug":"/laravel/48-interview-manufacturing","permalink":"/ai-engineering-journey/laravel/48-interview-manufacturing","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":48,"frontMatter":{"id":"48-interview-manufacturing","slug":"/laravel/48-interview-manufacturing","title":"Chapter 48: Manufacturing Interview Q&A","sidebar_label":"Chapter 48: Manufacturing Interview Q&A","sidebar_position":48},"sidebar":"coursesSidebar","previous":{"title":"Chapter 47: Legal & Compliance Interview Q&A","permalink":"/ai-engineering-journey/laravel/47-interview-legal"},"next":{"title":"Chapter 49: PHP Interview Q&A","permalink":"/ai-engineering-journey/laravel/49-interview-php"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/48-interview-manufacturing.md
+
+
+const frontMatter = {
+	id: '48-interview-manufacturing',
+	slug: '/laravel/48-interview-manufacturing',
+	title: 'Chapter 48: Manufacturing Interview Q&A',
+	sidebar_label: 'Chapter 48: Manufacturing Interview Q&A',
+	sidebar_position: 48
+};
+const contentTitle = 'Chapter 48: Manufacturing Interview Q&A';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "1. Manufacturing Domain Knowledge",
+  "id": "1-manufacturing-domain-knowledge",
+  "level": 2
+}, {
+  "value": "Q1: What are the six core manufacturing domain entities in a Laravel manufacturing platform? How do they relate?",
+  "id": "q1-what-are-the-six-core-manufacturing-domain-entities-in-a-laravel-manufacturing-platform-how-do-they-relate",
+  "level": 3
+}, {
+  "value": "Q2: Explain the difference between corrective, preventative, predictive, and condition-based maintenance. How would each be modeled in a Laravel manufacturing application?",
+  "id": "q2-explain-the-difference-between-corrective-preventative-predictive-and-condition-based-maintenance-how-would-each-be-modeled-in-a-laravel-manufacturing-application",
+  "level": 3
+}, {
+  "value": "Q3: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?",
+  "id": "q3-what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel",
+  "level": 3
+}, {
+  "value": "Q4: What is Industrial IoT (IIoT), and what challenges does it introduce when building a Laravel application?",
+  "id": "q4-what-is-industrial-iot-iiot-and-what-challenges-does-it-introduce-when-building-a-laravel-application",
+  "level": 3
+}, {
+  "value": "Q5: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform.",
+  "id": "q5-describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform",
+  "level": 3
+}, {
+  "value": "2. Technical Implementation",
+  "id": "2-technical-implementation",
+  "level": 2
+}, {
+  "value": "Q6: How would you implement a predictive maintenance agent using the Laravel AI SDK?",
+  "id": "q6-how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk",
+  "level": 3
+}, {
+  "value": "Q7: How would you build a quality control automation system with AI pattern detection?",
+  "id": "q7-how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection",
+  "level": 3
+}, {
+  "value": "Q8: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?",
+  "id": "q8-how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel",
+  "level": 3
+}, {
+  "value": "Q9: How would you implement a production scheduling agent that respects equipment capacity, material availability, and order deadlines?",
+  "id": "q9-how-would-you-implement-a-production-scheduling-agent-that-respects-equipment-capacity-material-availability-and-order-deadlines",
+  "level": 3
+}, {
+  "value": "Q10: How would you implement safety compliance monitoring with regulatory reporting?",
+  "id": "q10-how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting",
+  "level": 3
+}, {
+  "value": "Q11: How would you build an inventory automation agent with AI-driven reorder calculations?",
+  "id": "q11-how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations",
+  "level": 3
+}, {
+  "value": "Q12: How would you implement equipment lifecycle management with depreciation and TCO tracking?",
+  "id": "q12-how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking",
+  "level": 3
+}, {
+  "value": "Q13: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?",
+  "id": "q13-how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application",
+  "level": 3
+}, {
+  "value": "Q14: How would you implement an AI agent that correlates quality defects back to specific production batches and equipment?",
+  "id": "q14-how-would-you-implement-an-ai-agent-that-correlates-quality-defects-back-to-specific-production-batches-and-equipment",
+  "level": 3
+}, {
+  "value": "Q15: How would you expose manufacturing agent capabilities as MCP tools for external systems?",
+  "id": "q15-how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems",
+  "level": 3
+}, {
+  "value": "3. Architecture &amp; Design",
+  "id": "3-architecture--design",
+  "level": 2
+}, {
+  "value": "Q16: Design an industrial IoT data pipeline architecture for a factory with 200+ sensors per machine across 50 machines.",
+  "id": "q16-design-an-industrial-iot-data-pipeline-architecture-for-a-factory-with-200-sensors-per-machine-across-50-machines",
+  "level": 3
+}, {
+  "value": "Q17: How would you design a real-time sensor data processing system that detects anomalies in under one second?",
+  "id": "q17-how-would-you-design-a-real-time-sensor-data-processing-system-that-detects-anomalies-in-under-one-second",
+  "level": 3
+}, {
+  "value": "Q18: Describe a factory automation system design that integrates Laravel with existing PLC and SCADA infrastructure.",
+  "id": "q18-describe-a-factory-automation-system-design-that-integrates-laravel-with-existing-plc-and-scada-infrastructure",
+  "level": 3
+}, {
+  "value": "4. Behavioral &amp; Scenario",
+  "id": "4-behavioral--scenario",
+  "level": 2
+}, {
+  "value": "Q19: Design a predictive maintenance system for a factory with 200 CNC machines using Laravel. Walk through your approach.",
+  "id": "q19-design-a-predictive-maintenance-system-for-a-factory-with-200-cnc-machines-using-laravel-walk-through-your-approach",
+  "level": 3
+}, {
+  "value": "Q20: How would you build a factory-wide IoT data platform with Laravel that handles 50 million sensor readings per day?",
+  "id": "q20-how-would-you-build-a-factory-wide-iot-data-platform-with-laravel-that-handles-50-million-sensor-readings-per-day",
+  "level": 3
+}, {
+  "value": "Q21: A production line goes down unexpectedly. Walk through how you&#39;d use your Laravel agents to diagnose and respond.",
+  "id": "q21-a-production-line-goes-down-unexpectedly-walk-through-how-youd-use-your-laravel-agents-to-diagnose-and-respond",
+  "level": 3
+}, {
+  "value": "Q22: Your manufacturing execution system (MES) with AI is being adopted by factory operators who distrust AI recommendations. How do you design the system to earn trust?",
+  "id": "q22-your-manufacturing-execution-system-mes-with-ai-is-being-adopted-by-factory-operators-who-distrust-ai-recommendations-how-do-you-design-the-system-to-earn-trust",
+  "level": 3
+}, {
+  "value": "Q23: Your supplier sends a bad batch of raw material that causes 30% defect rate on Line 2. How do your agents detect and respond?",
+  "id": "q23-your-supplier-sends-a-bad-batch-of-raw-material-that-causes-30-defect-rate-on-line-2-how-do-your-agents-detect-and-respond",
+  "level": 3
+}, {
+  "value": "Q24: A new regulation requires your factory to report carbon emissions per production batch. How do you implement this in Laravel?",
+  "id": "q24-a-new-regulation-requires-your-factory-to-report-carbon-emissions-per-production-batch-how-do-you-implement-this-in-laravel",
+  "level": 3
+}, {
+  "value": "Q25: A supplier API your inventory agent depends on starts failing intermittently. How do you make the system resilient?",
+  "id": "q25-a-supplier-api-your-inventory-agent-depends-on-starts-failing-intermittently-how-do-you-make-the-system-resilient",
+  "level": 3
+}, {
+  "value": "Q26: Your factory is expanding from 10 to 100 machines. The current Laravel ingestion architecture can&#39;t keep up. How do you scale it?",
+  "id": "q26-your-factory-is-expanding-from-10-to-100-machines-the-current-laravel-ingestion-architecture-cant-keep-up-how-do-you-scale-it",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-1",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-1",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-1",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-1",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-2",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-2",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-2",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-2",
+  "level": 2
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison-3",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference-3",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix-3",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz-3",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-48-manufacturing-interview-qa",
+        children: "Chapter 48: Manufacturing Interview Q&A"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/47-interview-legal",
+          children: "Legal & Compliance Interview Q&A"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/laravel/49-interview-php",
+          children: "PHP Interview Q&A"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/48-interview-manufacturing/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/48-interview-manufacturing/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/48-interview-manufacturing/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/48-interview-manufacturing/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/48-interview-manufacturing/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/48-interview-manufacturing/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Details"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manufacturing interview questions covering production, quality, maintenance, inventory, supply chain"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Key Concepts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production planning, quality control, predictive maintenance, inventory management, supply chain optimization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Approach"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q&A format with practical code examples and domain-specific scenarios"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Skills Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PHP, Laravel, Eloquent, manufacturing domain knowledge"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Core Concepts]\n    B[Interview Questions]\n    C[Code Examples]\n    D[Best Practices]\n    E[Common Pitfalls]\n    A --> B\n    B --> C\n    C --> D\n    D --> E\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1-manufacturing-domain-knowledge",
+      children: "1. Manufacturing Domain Knowledge"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/48-interview-manufacturing.png",
+        alt: "Manufacturing Interview"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-what-are-the-six-core-manufacturing-domain-entities-in-a-laravel-manufacturing-platform-how-do-they-relate",
+      children: "Q1: What are the six core manufacturing domain entities in a Laravel manufacturing platform? How do they relate?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The six core entities are ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Equipment, ProductionOrder, QualityCheck, MaintenanceLog, InventoryItem, and IoTReading"
+      }), ". Equipment is the central entity → each piece of machinery has a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "hasMany"
+      }), " relationship to maintenance logs, IoT readings, and production orders. ProductionOrder links to a product and optionally to equipment, and has ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "hasMany"
+      }), " quality checks. QualityCheck stands alone with foreign keys to both production order and equipment. MaintenanceLog belongs to equipment and tracks corrective, preventative, and predictive maintenance events. InventoryItem manages raw materials and consumables with stock levels and reorder points. IoTReading stores sensor telemetry and belongs to equipment with composite indexes on ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(equipment_id, recorded_at)"
+      }), " for time-series queries."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The migrations cascade appropriately → deleting equipment cascades to its IoT readings and maintenance logs, but production orders remain for historical record."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-explain-the-difference-between-corrective-preventative-predictive-and-condition-based-maintenance-how-would-each-be-modeled-in-a-laravel-manufacturing-application",
+      children: "Q2: Explain the difference between corrective, preventative, predictive, and condition-based maintenance. How would each be modeled in a Laravel manufacturing application?"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trigger"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Laravel Model"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Corrective"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Equipment has already failed"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MaintenanceLog"
+            }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "type = 'corrective'"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "status = 'urgent'"
+            }), ", filled after breakdown"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Preventative"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Calendar-based schedule"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MaintenanceLog"
+            }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "type = 'preventative'"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "scheduled_date"
+            }), " set by recurring schedule, ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Equipment.calibration_interval_days"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Predictive"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AI analysis of sensor trends"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MaintenanceLog"
+            }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "type = 'predictive'"
+            }), ", created by ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "PredictiveMaintenanceAgent"
+            }), " when ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "failureProbability >= 0.7"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Condition-based"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time threshold violation"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MaintenanceLog"
+            }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "type = 'condition_based'"
+            }), ", triggered by ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "IoTDataIngestionAgent"
+            }), " when anomaly score exceeds 0.8"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The four types share the same ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "maintenance_logs"
+      }), " table but differ in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "type"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "priority"
+      }), ", and how they are initiated → manual entry for corrective, cron-scheduled for preventative, agent-dispatched for predictive and condition-based."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel",
+      children: "Q3: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Key metrics and their Laravel calculation patterns:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Overall Equipment Effectiveness (OEE)"
+          }), " = Availability Ã— Performance Ã— Quality. Availability = uptime / total time (from ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "MaintenanceLog.downtime_minutes"
+          }), "), Performance = actual output / theoretical max (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ProductionOrder.quantity_produced"
+          }), " / capacity), Quality = good units / total units (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "(quantity_produced - quantity_defective) / quantity_produced"
+          }), ")."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Yield Rate"
+          }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ProductionOrder"
+          }), " model's ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "yieldRate()"
+          }), " method: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "($this->quantity_produced - $this->quantity_defective) / $this->quantity_ordered"
+          }), "."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Defect Rate"
+          }), ": Computed per production run in ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "QualityControlAgent::analyzeDefects()"
+          }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "(failedChecks / totalChecks) Ã— 100"
+          }), ", grouped by defect type and severity."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Mean Time Between Failures (MTBF)"
+          }), ": Aggregate over ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Equipment"
+          }), "'s completed maintenance logs: total operational hours / number of failure events."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Mean Time To Repair (MTTR)"
+          }), ": Average ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "downtime_minutes"
+          }), " from completed corrective maintenance logs."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Inventory Turnover"
+          }), ": Cost of goods sold / average inventory value, computed from ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "InventoryItem"
+          }), " stock levels and unit costs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "$oee = Equipment::with(['maintenanceLogs', 'productionOrders'])->get()->map(fn ($eq) => [\n    'equipment' => $eq->name,\n    'availability' => $this->calcAvailability($eq),\n    'performance' => $this->calcPerformance($eq),\n    'quality' => $this->calcQuality($eq),\n    'oee' => round($availability * $performance * $quality, 4),\n]);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-what-is-industrial-iot-iiot-and-what-challenges-does-it-introduce-when-building-a-laravel-application",
+      children: "Q4: What is Industrial IoT (IIoT), and what challenges does it introduce when building a Laravel application?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Industrial IoT refers to the network of sensors and smart devices attached to manufacturing equipment → temperature probes, vibration sensors, pressure transducers, energy meters, and RPM monitors. These sensors generate continuous, high-frequency telemetry data."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Challenges for Laravel applications:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Throughput"
+          }), ": A single CNC machine might emit 100+ readings per second. Writing each as an individual ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "INSERT"
+          }), " overwhelms the database. Solution: batch ingestion via ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "IoTDataIngestionAgent::batchIngest()"
+          }), " with chunked ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "INSERT"
+          }), " statements or a dedicated time-series database bridge."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Data volume"
+          }), ": A factory with 50 machines generates ~432 million readings per day. Solution: partition the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "iot_readings"
+          }), " table by month on ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "recorded_at"
+          }), ", use table partitioning in PostgreSQL, and implement data retention policies that roll up raw readings into hourly/daily aggregates after 90 days."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Latency"
+          }), ": Some alerts require sub-second response (e.g., temperature exceeding safety threshold). Solution: process critical thresholds at the edge before data reaches Laravel, or use Redis streams for real-time ingestion."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Network reliability"
+          }), ": Factory floor networks can be intermittent. Solution: implement idempotent ingestion with deduplication by sensor reading hash, and allow batch retry with backoff."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform",
+      children: "Q5: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ISO 55000"
+          }), " (Asset Management): Requires systematic lifecycle management of physical assets. Maps to ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "EquipmentLifecycleAgent"
+          }), " → depreciation modeling, maintenance cost tracking, replacement planning, and total cost of ownership calculations."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ISO 9001"
+          }), " (Quality Management): Mandates documented quality control processes, defect tracking, corrective action workflows, and continuous improvement. Maps to ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "QualityControlAgent"
+          }), " → defect rate tracking, trend analysis, parameter drift detection, and quality alerts."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ISO 45001"
+          }), " (Occupational Health and Safety): Requires safety incident reporting, risk assessment, and compliance monitoring. Maps to ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "SafetyComplianceAgent"
+          }), " → incident analysis, compliance scoring, overdue inspection tracking, and critical finding escalation."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In Laravel, each standard maps to an agent or service class that generates compliance reports, maintains the required audit trail, and alerts stakeholders when metrics fall outside acceptable ranges."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "2-technical-implementation",
+      children: "2. Technical Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk",
+      children: "Q6: How would you implement a predictive maintenance agent using the Laravel AI SDK?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PredictiveMaintenanceAgent"
+      }), " that implements the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Agent"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "HasTools"
+      }), " contracts. The agent analyzes sensor data trends, failure history, and equipment metadata to forecast failures and recommend maintenance actions."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class PredictiveMaintenanceAgent implements Agent, HasTools\n{\n    use Promptable;\n\n    public function tools(): array\n    {\n        return [\n            Tool::for('analyze_sensor_trends')\n                ->describe('Analyze sensor readings for patterns and anomalies')\n                ->withParameters(['equipment_id' => 'int', 'hours' => 168]),\n\n            Tool::for('predict_failure_probability')\n                ->describe('Calculate failure probability from sensor trends and history')\n                ->withParameters(['sensor_analysis' => 'array', 'equipment_id' => 'int']),\n\n            Tool::for('schedule_maintenance')\n                ->describe('Create a maintenance log entry')\n                ->withParameters(['equipment_id' => 'int', 'priority' => 'string', 'description' => 'string']),\n        ];\n    }\n\n    public function analyze(Equipment $equipment): array\n    {\n        $readings = $equipment->iotReadings()\n            ->where('recorded_at', '>=', now()->subDays(7))\n            ->orderBy('recorded_at')\n            ->get();\n\n        $trends = [];\n        foreach ($readings->groupBy('metric') as $metric => $metricReadings) {\n            $values = $metricReadings->pluck('value')->toArray();\n            $avg = array_sum($values) / count($values);\n            $slope = $this->linearRegression($values);\n\n            $trends[$metric] = [\n                'current' => end($values),\n                'average' => round($avg, 2),\n                'slope' => round($slope, 4),\n                'direction' => $slope > 0.1 ? 'rising' : ($slope < -0.1 ? 'falling' : 'stable'),\n                'volatility' => $this->calcStdDev($values, $avg),\n            ];\n        }\n\n        $response = $this->chat(\n            messages: [[\n                'role' => 'user',\n                'content' => json_encode([\n                    'equipment' => $equipment->only(['name', 'category', 'status']),\n                    'sensor_trends' => $trends,\n                    'maintenance_history' => $equipment->maintenanceLogs()\n                        ->where('status', 'completed')->get()->toArray(),\n                    'task' => 'Assess failure risk and recommend maintenance actions.',\n                ]),\n            ]],\n            structuredOutput: [\n                'type' => 'object',\n                'properties' => [\n                    'failure_risk' => ['type' => 'string', 'enum' => ['low', 'medium', 'high', 'critical']],\n                    'probability_score' => ['type' => 'number'],\n                    'estimated_days_to_failure' => ['type' => 'integer'],\n                    'likely_failure_mode' => ['type' => 'string'],\n                    'recommended_actions' => ['type' => 'array', 'items' => ['type' => 'string']],\n                    'priority_parts' => ['type' => 'array', 'items' => ['type' => 'string']],\n                ],\n            ],\n        );\n\n        if ($response['failure_risk'] === 'critical') {\n            MaintenanceLog::create([\n                'equipment_id' => $equipment->id,\n                'type' => 'predictive',\n                'status' => 'scheduled',\n                'priority' => 'critical',\n                'description' => \"AI-predicted {$response['likely_failure_mode']} within {$response['estimated_days_to_failure']} days.\",\n                'scheduled_date' => now()->addDay(),\n            ]);\n        }\n\n        return $response;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent combines statistical sensor analysis with the LLM's ability to recognize failure patterns. Statistical methods detect trend direction and volatility; the LLM correlates these with known failure signatures and historical maintenance effectiveness."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection",
+      children: "Q7: How would you build a quality control automation system with AI pattern detection?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Build a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "QualityControlAgent"
+      }), " that analyzes inspection data, detects defect patterns, tracks quality trends, and triggers corrective actions. The core analysis pipeline examines defect distribution, temporal trends, and parameter drift."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class QualityControlAgent implements Agent\n{\n    use Promptable;\n\n    public function analyzeProductionRun(ProductionOrder $order): array\n    {\n        $checks = $order->qualityChecks()->orderBy('checked_at')->get();\n\n        $defectRate = $checks->count() > 0\n            ? round(($checks->where('passes_spec', false)->count() / $checks->count()) * 100, 2)\n            : 0;\n\n        $defectTypes = $checks->where('passes_spec', false)\n            ->groupBy('defect_type')\n            ->map(fn ($g, $type) => [\n                'type' => $type ?: 'unspecified',\n                'count' => $g->count(),\n                'severity' => $g->pluck('severity')->countBy()->toArray(),\n            ])->values();\n\n        $drift = $this->detectParameterDrift($checks);\n\n        $response = $this->chat(\n            messages: [[\n                'role' => 'user',\n                'content' => json_encode([\n                    'defect_rate' => $defectRate,\n                    'defect_types' => $defectTypes,\n                    'parameter_drift' => $drift,\n                    'product' => $order->product->name,\n                    'equipment' => $order->equipment?->name,\n                    'task' => 'Assess quality status, identify root causes, and recommend corrective actions.',\n                ]),\n            ]],\n            structuredOutput: [\n                'type' => 'object',\n                'properties' => [\n                    'quality_grade' => ['type' => 'string', 'enum' => ['A', 'B', 'C', 'D']],\n                    'root_cause_assessment' => ['type' => 'string'],\n                    'corrective_actions' => ['type' => 'array', 'items' => ['type' => 'string']],\n                    'requires_line_stop' => ['type' => 'boolean'],\n                    'estimated_scrap_cost' => ['type' => 'number'],\n                ],\n            ],\n        );\n\n        if ($response['requires_line_stop']) {\n            $order->update(['status' => 'on_hold']);\n            Log::critical(\"QualityControlAgent: Line stop recommended for order {$order->order_number}\");\n        }\n\n        return $response;\n    }\n\n    protected function detectParameterDrift(Collection $checks): array\n    {\n        $drift = [];\n        foreach ($checks->groupBy('parameter') as $param => $paramChecks) {\n            $values = $paramChecks->pluck('measured_value')->toArray();\n            if (count($values) < 10) continue;\n\n            $half = (int)(count($values) / 2);\n            $firstAvg = array_sum(array_slice($values, 0, $half)) / $half;\n            $secondAvg = array_sum(array_slice($values, $half)) / (count($values) - $half);\n            $specRange = ($checks[0]->spec_max - $checks[0]->spec_min);\n\n            $drift[$param] = [\n                'baseline_avg' => round($firstAvg, 4),\n                'recent_avg' => round($secondAvg, 4),\n                'drift_percent' => $specRange > 0\n                    ? round((abs($secondAvg - $firstAvg) / $specRange) * 100, 2) : 0,\n                'alert' => $specRange > 0 && (abs($secondAvg - $firstAvg) / $specRange) > 0.3,\n            ];\n        }\n        return $drift;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent combines statistical process control (SPC) methods → calculating drift between windowed averages → with LLM-based root cause assessment. The LLM evaluates whether defect patterns suggest a tooling issue, raw material problem, or process parameter deviation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel",
+      children: "Q8: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Design a multi-stage ingestion pipeline that handles millions of sensor readings per day. The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "IoTDataIngestionAgent"
+      }), " validates, deduplicates, and processes payloads in batches. For high throughput, use queue workers and batch inserts rather than individual Eloquent saves."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class IoTDataIngestionAgent\n{\n    public function batchIngest(array $payloads): array\n    {\n        $validated = [];\n        $rejected = [];\n\n        foreach ($payloads as $payload) {\n            $errors = $this->validatePayload($payload);\n            if (!empty($errors)) {\n                $rejected[] = ['payload' => $payload, 'errors' => $errors];\n                continue;\n            }\n\n            $payload['is_anomaly'] = $this->detectThresholdBreach($payload);\n            $payload['anomaly_score'] = $payload['is_anomaly']\n                ? $this->calculateZScoreAnomaly($payload) : null;\n            $payload['recorded_at'] = $payload['recorded_at'] ?? now();\n            $validated[] = $payload;\n        }\n\n        $chunks = array_chunk($validated, 500);\n        foreach ($chunks as $chunk) {\n            $this->bulkInsert($chunk);\n            $anomalies = array_filter($chunk, fn ($r) => $r['is_anomaly']);\n            foreach ($anomalies as $anomaly) {\n                $this->dispatchAnomalyAlert($anomaly);\n            }\n        }\n\n        return [\n            'total' => count($payloads),\n            'ingested' => count($validated),\n            'rejected' => count($rejected),\n            'anomalies' => count(array_filter($validated, fn ($r) => $r['is_anomaly'])),\n        ];\n    }\n\n    protected function bulkInsert(array $readings): void\n    {\n        $insert = array_map(fn ($r) => [\n            'equipment_id' => $r['equipment_id'],\n            'sensor_type' => $r['sensor_type'],\n            'metric' => $r['metric'],\n            'value' => $r['value'],\n            'unit' => $r['unit'],\n            'threshold_min' => $r['threshold_min'] ?? null,\n            'threshold_max' => $r['threshold_max'] ?? null,\n            'is_anomaly' => $r['is_anomaly'],\n            'anomaly_score' => $r['anomaly_score'],\n            'raw_payload' => json_encode($r),\n            'recorded_at' => $r['recorded_at'],\n            'created_at' => now(),\n            'updated_at' => now(),\n        ], $readings);\n\n        DB::table('iot_readings')->insertOrIgnore($insert);\n    }\n\n    protected function detectThresholdBreach(array $payload): bool\n    {\n        if (isset($payload['threshold_min']) && $payload['value'] < $payload['threshold_min']) {\n            return true;\n        }\n        if (isset($payload['threshold_max']) && $payload['value'] > $payload['threshold_max']) {\n            return true;\n        }\n        return false;\n    }\n\n    protected function calculateZScoreAnomaly(array $payload): float\n    {\n        $recent = IoTReading::where('equipment_id', $payload['equipment_id'])\n            ->where('metric', $payload['metric'])\n            ->where('recorded_at', '>=', now()->subHours(24))\n            ->pluck('value');\n\n        if ($recent->count() < 10) return 0;\n\n        $mean = $recent->avg();\n        $std = sqrt($recent->reduce(fn ($c, $v) => $c + ($v - $mean) ** 2, 0) / $recent->count());\n        return $std > 0 ? min(abs($payload['value'] - $mean) / $std / 5, 1) : 0;\n    }\n\n    protected function dispatchAnomalyAlert(array $reading): void\n    {\n        ProcessAnomalyAlert::dispatch(\n            equipmentId: $reading['equipment_id'],\n            metric: $reading['metric'],\n            value: $reading['value'],\n            score: $reading['anomaly_score'],\n        )->onQueue('alerts');\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For truly high-volume scenarios, you can bypass Laravel entirely for ingestion → use a Go or Rust sidecar that batches sensor data and POSTs to a Laravel endpoint every 5 seconds, or consume from a Redis stream or Kafka topic via a long-running Artisan command."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q9-how-would-you-implement-a-production-scheduling-agent-that-respects-equipment-capacity-material-availability-and-order-deadlines",
+      children: "Q9: How would you implement a production scheduling agent that respects equipment capacity, material availability, and order deadlines?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Build a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ProductionSchedulingAgent"
+      }), " that uses a greedy earliest-completion heuristic with priority sorting. The agent assigns orders to available equipment, respecting capacity constraints, and flags orders that cannot meet their deadlines."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class ProductionSchedulingAgent\n{\n    public function generateSchedule(array $filters = []): array\n    {\n        $orders = ProductionOrder::whereIn('status', ['pending', 'approved'])\n            ->orderByRaw(\"FIELD(priority, 'critical', 'high', 'normal', 'low')\")\n            ->orderBy('scheduled_date')\n            ->when($filters['equipment_id'] ?? null, fn ($q, $id) => $q->where('equipment_id', $id))\n            ->get();\n\n        $equipment = Equipment::where('status', 'operational')->get();\n\n        $calendar = [];\n        foreach ($equipment as $eq) {\n            $calendar[$eq->id] = ['available' => now(), 'assignments' => []];\n        }\n\n        $assignments = [];\n        $unassigned = [];\n        $priorityMap = ['critical' => 0, 'high' => 1, 'normal' => 2, 'low' => 3];\n\n        $sorted = $orders->sortBy(fn ($o) => [\n            $priorityMap[$o->priority] ?? 99,\n            $o->scheduled_date,\n        ]);\n\n        foreach ($sorted as $order) {\n            $best = null;\n            $bestCompletion = null;\n\n            foreach ($calendar as $eqId => &$slot) {\n                $dailyRate = $equipment->firstWhere('id', $eqId)->specifications['daily_capacity'] ?? 100;\n                $duration = (int) ceil($order->quantity_ordered / $dailyRate);\n                $completion = $slot['available']->copy()->addDays($duration);\n\n                if ($bestCompletion === null || $completion < $bestCompletion) {\n                    $best = $eqId;\n                    $bestCompletion = $completion;\n                }\n            }\n\n            if ($best !== null) {\n                $dailyRate = $equipment->firstWhere('id', $best)->specifications['daily_capacity'] ?? 100;\n                $duration = (int) ceil($order->quantity_ordered / $dailyRate);\n                $start = $calendar[$best]['available']->copy();\n\n                $assignments[] = [\n                    'order_id' => $order->id,\n                    'order_number' => $order->order_number,\n                    'equipment_id' => $best,\n                    'equipment_name' => $equipment->firstWhere('id', $best)->name,\n                    'quantity' => $order->quantity_ordered,\n                    'start' => $start->toDateString(),\n                    'end' => $bestCompletion->toDateString(),\n                    'duration_days' => $duration,\n                    'meets_deadline' => $bestCompletion->lte($order->scheduled_date),\n                ];\n\n                $calendar[$best]['available'] = $bestCompletion;\n                $calendar[$best]['assignments'][] = $order->id;\n\n                $order->update([\n                    'equipment_id' => $best,\n                    'start_date' => $start,\n                    'scheduled_date' => $start,\n                    'status' => 'scheduled',\n                ]);\n            } else {\n                $unassigned[] = $order->id;\n            }\n            unset($slot);\n        }\n\n        return [\n            'assignments' => $assignments,\n            'unassigned' => $unassigned,\n            'on_time' => count(array_filter($assignments, fn ($a) => $a['meets_deadline'])),\n            'total_scheduled' => count($assignments),\n            'equipment_utilization' => collect($calendar)->map(fn ($s, $id) => [\n                'equipment_id' => $id,\n                'assignments' => count($s['assignments']),\n                'total_days' => max(1, $s['available']->diffInDays(now())),\n            ])->values(),\n        ];\n    }\n\n    public function rescheduleDueToDisruption(int $equipmentId): array\n    {\n        ProductionOrder::where('equipment_id', $equipmentId)\n            ->whereIn('status', ['scheduled', 'in_progress'])\n            ->update(['equipment_id' => null, 'status' => 'pending']);\n\n        return $this->generateSchedule();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For more sophisticated optimization (minimizing changeover time, balancing workload), integrate a linear programming solver or use the AI SDK to propose alternative schedules and let the LLM evaluate trade-offs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q10-how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting",
+      children: "Q10: How would you implement safety compliance monitoring with regulatory reporting?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SafetyComplianceAgent"
+      }), " that tracks incidents, monitors overdue inspections, calculates a compliance score, and generates structured reports aligned with ISO 45001."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class SafetyComplianceAgent\n{\n    public function runAudit(array $scope = []): array\n    {\n        $incidents = MaintenanceLog::where('type', 'safety_incident')\n            ->where('created_at', '>=', now()->subDays($scope['days'] ?? 90))\n            ->with('equipment')\n            ->get();\n\n        $overdueCalibrations = Equipment::where('status', 'operational')\n            ->get()\n            ->filter(fn ($e) => $e->isOverdueForCalibration());\n\n        $score = 100;\n        $score -= $incidents->where('priority', 'critical')->count() * 15;\n        $score -= $incidents->where('priority', 'high')->count() * 5;\n        $score -= min($overdueCalibrations->count() * 3, 30);\n        $score = max($score, 0);\n\n        $status = match (true) {\n            $score < 60 => 'critical',\n            $score < 80 => 'needs_improvement',\n            $score < 90 => 'satisfactory',\n            default => 'excellent',\n        };\n\n        $byEquipment = $incidents->groupBy('equipment_id')->map(fn ($g, $eqId) => [\n            'equipment' => $g->first()->equipment?->name ?? 'Unknown',\n            'count' => $g->count(),\n            'severities' => $g->pluck('priority')->countBy()->toArray(),\n            'total_downtime' => $g->sum('downtime_minutes'),\n            'total_cost' => $g->sum('cost'),\n        ])->values();\n\n        $criticalFindings = [];\n\n        if ($status === 'critical') {\n            $criticalFindings[] = 'Compliance score is critical. Full safety audit required.';\n        }\n\n        foreach ($overdueCalibrations as $eq) {\n            $criticalFindings[] = \"{$eq->name} is overdue for calibration (last: {$eq->last_calibration_date?->toDateString()}).\";\n        }\n\n        if (($incidents->sum('cost') ?? 0) > 10000) {\n            $criticalFindings[] = 'Safety incident costs exceed $10,000 in the reporting period.';\n        }\n\n        if (!empty($criticalFindings)) {\n            Log::critical('SafetyComplianceAgent: Critical findings detected', $criticalFindings);\n        }\n\n        return [\n            'audit_date' => now()->toDateString(),\n            'compliance_score' => $score,\n            'status' => $status,\n            'incident_summary' => [\n                'total' => $incidents->count(),\n                'total_downtime_minutes' => $incidents->sum('downtime_minutes'),\n                'total_cost' => $incidents->sum('cost'),\n                'by_equipment' => $byEquipment,\n            ],\n            'overdue_inspections' => $overdueCalibrations->count(),\n            'critical_findings' => $criticalFindings,\n        ];\n    }\n\n    public function generateComplianceReport(string $standard = 'ISO_45001'): array\n    {\n        $audit = $this->runAudit(['days' => 365]);\n        $monthlyTrend = MaintenanceLog::where('type', 'safety_incident')\n            ->where('created_at', '>=', now()->subMonths(12))\n            ->get()\n            ->groupBy(fn ($l) => $l->created_at->format('Y-m'))\n            ->map(fn ($g) => ['month' => $g->first()->created_at->format('M Y'), 'count' => $g->count()])\n            ->values();\n\n        return [\n            'standard' => $standard,\n            'report_date' => now()->toDateString(),\n            'reporting_period' => 'Last 12 months',\n            'overall_score' => $audit['compliance_score'],\n            'status' => $audit['status'],\n            'monthly_incident_trend' => $monthlyTrend,\n            'incident_details' => $audit['incident_summary'],\n            'overdue_items' => $audit['overdue_inspections'],\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The report can be exposed as a JSON API endpoint and consumed by a dashboard, or rendered as a PDF using Laravel's DomPDF or Browsershot integration."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q11-how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations",
+      children: "Q11: How would you build an inventory automation agent with AI-driven reorder calculations?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create an ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "InventoryAutomationAgent"
+      }), " that monitors stock levels, calculates reorder quantities using demand forecasting, and generates purchase recommendations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class InventoryAutomationAgent\n{\n    public function runInventoryCheck(): array\n    {\n        $items = InventoryItem::where('status', 'active')->get();\n\n        $outOfStock = $items->filter(fn ($i) => $i->current_stock <= 0);\n        $lowStock = $items->filter(fn ($i) => $i->needsReorder());\n        $totalValue = $items->sum(fn ($i) => $i->current_stock * $i->unit_cost);\n\n        $reorderOrders = [];\n        foreach ($lowStock as $item) {\n            $dailyDemand = $this->estimateDemand($item);\n            $safetyStock = $dailyDemand * $item->lead_time_days * 0.5;\n            $orderQty = max(\n                $item->reorder_quantity,\n                (int) ceil($item->maximum_stock - $item->current_stock + $safetyStock)\n            );\n\n            $reorderOrders[] = [\n                'sku' => $item->sku,\n                'name' => $item->name,\n                'current_stock' => $item->current_stock,\n                'recommended_quantity' => $orderQty,\n                'estimated_cost' => round($orderQty * $item->unit_cost, 2),\n                'lead_time_days' => $item->lead_time_days,\n                'priority' => $item->current_stock <= 0 ? 'critical' : 'normal',\n            ];\n        }\n\n        $categories = $items->groupBy('category')->map(fn ($g) => [\n            'category' => $g->first()->category,\n            'count' => $g->count(),\n            'value' => round($g->sum(fn ($i) => $i->current_stock * $i->unit_cost), 2),\n            'items_needing_reorder' => $g->filter(fn ($i) => $i->needsReorder())->count(),\n        ])->values();\n\n        return [\n            'check_date' => now()->toDateString(),\n            'total_items' => $items->count(),\n            'out_of_stock' => $outOfStock->count(),\n            'low_stock' => $lowStock->count(),\n            'overstocked' => $items->filter(fn ($i) => $i->stockStatus() === 'overstocked')->count(),\n            'total_inventory_value' => round($totalValue, 2),\n            'by_category' => $categories,\n            'reorder_recommendations' => $reorderOrders,\n            'total_reorder_cost' => round(array_sum(array_column($reorderOrders, 'estimated_cost')), 2),\n        ];\n    }\n\n    protected function estimateDemand(InventoryItem $item): float\n    {\n        $consumptionRate = ProductionOrder::where('status', 'completed')\n            ->where('updated_at', '>=', now()->subDays(30))\n            ->get()\n            ->sum('quantity_produced');\n\n        $usagePerUnit = $item->bill_of_materials_quantity ?? 1;\n        $dailyConsumption = ($consumptionRate * $usagePerUnit) / 30;\n        return max($dailyConsumption, 0.5);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The demand estimation becomes more accurate when the agent receives upcoming ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ProductionOrder"
+      }), " data → scheduled future consumption may differ significantly from historical averages."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q12-how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking",
+      children: "Q12: How would you implement equipment lifecycle management with depreciation and TCO tracking?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Build an ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "EquipmentLifecycleAgent"
+      }), " that calculates straight-line depreciation, tracks warranty status, and computes total cost of ownership to guide replacement decisions."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class EquipmentLifecycleAgent\n{\n    public function analyze(Equipment $equipment): array\n    {\n        $maintenanceLogs = $equipment->maintenanceLogs()\n            ->where('status', 'completed')\n            ->get();\n\n        $purchaseCost = $equipment->purchase_cost ?? 0;\n        $salvageValue = $purchaseCost * 0.1;\n        $usefulLife = $equipment->expected_lifespan_years;\n        $annualDepreciation = $usefulLife > 0 ? ($purchaseCost - $salvageValue) / $usefulLife : 0;\n        $yearsOwned = $equipment->purchase_date\n            ? $equipment->purchase_date->diffInYears(now()) : 0;\n        $accumulatedDepreciation = min($yearsOwned * $annualDepreciation, $purchaseCost - $salvageValue);\n        $currentValue = max($purchaseCost - $accumulatedDepreciation, 0);\n        $remainingLife = max($usefulLife - $yearsOwned, 0);\n\n        $maintenanceCost = $maintenanceLogs->sum('cost');\n        $downtimeCost = $maintenanceLogs->sum('downtime_minutes') * 50;\n        $tco = $purchaseCost + $maintenanceCost + $downtimeCost;\n\n        $lifePercent = $usefulLife > 0 ? ($yearsOwned / $usefulLife) * 100 : 0;\n        $stage = match (true) {\n            $lifePercent < 10 => 'commissioning',\n            $lifePercent < 30 => 'early_life',\n            $lifePercent < 70 => 'mature',\n            $lifePercent < 90 => 'late_life',\n            default => 'end_of_life',\n        };\n\n        $recommendations = [];\n        if ($stage === 'end_of_life') {\n            $recommendations[] = [\n                'priority' => 'critical',\n                'action' => 'plan_replacement',\n                'description' => \"{$equipment->name} is beyond expected lifespan. Begin procurement.\",\n                'timeline' => '3-6 months',\n            ];\n        }\n\n        if ($equipment->warrantyRemainingDays() > 0 && $equipment->warrantyRemainingDays() <= 30) {\n            $recommendations[] = [\n                'priority' => 'high',\n                'action' => 'warranty_renewal',\n                'description' => \"Warranty expires in {$equipment->warrantyRemainingDays()} days.\",\n                'timeline' => 'within 30 days',\n            ];\n        }\n\n        return [\n            'equipment' => $equipment->only(['id', 'name', 'serial_number', 'category']),\n            'purchase' => [\n                'date' => $equipment->purchase_date?->toDateString(),\n                'cost' => $purchaseCost,\n                'age_years' => round($yearsOwned, 1),\n            ],\n            'depreciation' => [\n                'method' => 'straight_line',\n                'annual' => round($annualDepreciation, 2),\n                'accumulated' => round($accumulatedDepreciation, 2),\n                'current_value' => round($currentValue, 2),\n                'remaining_life_years' => round($remainingLife, 1),\n            ],\n            'lifecycle_stage' => $stage,\n            'warranty' => [\n                'expiry' => $equipment->warranty_expiry?->toDateString(),\n                'remaining_days' => $equipment->warrantyRemainingDays(),\n                'status' => $equipment->warrantyRemainingDays() > 0 ? 'active' : 'expired',\n            ],\n            'calibration' => [\n                'last' => $equipment->last_calibration_date?->toDateString(),\n                'overdue' => $equipment->isOverdueForCalibration(),\n            ],\n            'total_cost_of_ownership' => [\n                'purchase_cost' => $purchaseCost,\n                'maintenance_cost' => round($maintenanceCost, 2),\n                'downtime_cost' => round($downtimeCost, 2),\n                'total' => round($tco, 2),\n                'annualized' => round($tco / max($yearsOwned, 1), 2),\n            ],\n            'recommendations' => $recommendations,\n        ];\n    }\n\n    public function runFleetAnalysis(): array\n    {\n        $results = Equipment::all()->map(fn ($eq) => $this->analyze($eq));\n        return [\n            'fleet_size' => $results->count(),\n            'stages' => $results->groupBy('lifecycle_stage')->map(fn ($g) => $g->count()),\n            'total_replacement_value' => round($results->sum('depreciation.current_value'), 2),\n            'total_tco' => round($results->sum('total_cost_of_ownership.total'), 2),\n            'equipment' => $results,\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q13-how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application",
+      children: "Q13: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Use a long-running Artisan command that subscribes to MQTT topics and pipes messages into the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "IoTDataIngestionAgent"
+      }), ". PHP's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "php-mqtt/client"
+      }), " library handles the MQTT protocol."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Artisan command: mqtt:listen\nclass MqttListenCommand extends Command\n{\n    protected $signature = 'mqtt:listen {--topics=factory/+/sensors/*}';\n\n    public function handle(IoTDataIngestionAgent $ingestionAgent): void\n    {\n        $client = new \\PhpMqtt\\Client\\MqttClient(\n            config('services.mqtt.host'),\n            config('services.mqtt.port'),\n            'laravel-factory-' . uniqid()\n        );\n\n        $connectionSettings = (new \\PhpMqtt\\Client\\ConnectionSettings)\n            ->setUsername(config('services.mqtt.username'))\n            ->setPassword(config('services.mqtt.password'))\n            ->setKeepAliveInterval(60);\n\n        $buffer = [];\n\n        $client->subscribe($this->option('topics'), function (string $topic, string $message) use (&$buffer, $ingestionAgent) {\n            $payload = json_decode($message, true);\n            $parts = explode('/', $topic);\n            $payload['equipment_id'] = $parts[1] ?? null;\n            $payload['sensor_type'] = $parts[3] ?? 'generic';\n\n            $buffer[] = $payload;\n\n            if (count($buffer) >= 100) {\n                $ingestionAgent->batchIngest($buffer);\n                $buffer = [];\n            }\n        }, 1);\n\n        $client->registerLoopEventHandler(function () use (&$buffer, $ingestionAgent) {\n            if (!empty($buffer)) {\n                $ingestionAgent->batchIngest($buffer);\n                $buffer = [];\n            }\n        });\n\n        $client->loop(true);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For higher reliability, run multiple workers behind a Supervisor process. Each worker can subscribe to a subset of topics (e.g., by equipment zone) to parallelize ingestion."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q14-how-would-you-implement-an-ai-agent-that-correlates-quality-defects-back-to-specific-production-batches-and-equipment",
+      children: "Q14: How would you implement an AI agent that correlates quality defects back to specific production batches and equipment?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Build a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DefectCorrelationAgent"
+      }), " that analyzes quality check data alongside production order records and equipment maintenance history to identify root causes of defect spikes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class DefectCorrelationAgent implements Agent\n{\n    use Promptable;\n\n    public function correlate(int $productionOrderId): array\n    {\n        $order = ProductionOrder::with(['qualityChecks', 'equipment'])->findOrFail($productionOrderId);\n        $defects = $order->qualityChecks->where('passes_spec', false);\n\n        $byParameter = $defects->groupBy('parameter')->map(fn ($g) => [\n            'parameter' => $g->first()->parameter,\n            'defect_count' => $g->count(),\n            'severity_distribution' => $g->pluck('severity')->countBy()->toArray(),\n            'avg_deviation' => round($g->avg(fn ($c) => abs($c->measured_value - ($c->spec_min + $c->spec_max) / 2)), 4),\n        ])->values();\n\n        $timeWindow = [\n            'start' => $order->start_date?->toDateString(),\n            'end' => $order->completion_date?->toDateString(),\n        ];\n\n        $maintenanceDuringRun = $order->equipment\n            ? $order->equipment->maintenanceLogs()\n                ->whereBetween('created_at', [$timeWindow['start'] ?? now()->subDay(), $timeWindow['end'] ?? now()])\n                ->get()\n            : collect();\n\n        $response = $this->chat(\n            messages: [[\n                'role' => 'user',\n                'content' => json_encode([\n                    'order_number' => $order->order_number,\n                    'product' => $order->product->name,\n                    'equipment' => $order->equipment?->name,\n                    'defects_by_parameter' => $byParameter,\n                    'total_defect_rate' => $order->quantity_ordered > 0\n                        ? round(($order->quantity_defective / $order->quantity_ordered) * 100, 2) : 0,\n                    'maintenance_events_during_run' => $maintenanceDuringRun->toArray(),\n                    'task' => 'Identify the most likely root cause of defects. Consider equipment state, parameter drift, and maintenance activity.',\n                ]),\n            ]],\n            structuredOutput: [\n                'type' => 'object',\n                'properties' => [\n                    'likely_root_cause' => ['type' => 'string'],\n                    'confidence' => ['type' => 'string', 'enum' => ['high', 'moderate', 'low']],\n                    'contributing_factors' => ['type' => 'array', 'items' => ['type' => 'string']],\n                    'recommended_corrective_action' => ['type' => 'string'],\n                    'should_inspect_equipment' => ['type' => 'boolean'],\n                ],\n            ],\n        );\n\n        if ($response['should_inspect_equipment'] && $order->equipment) {\n            MaintenanceLog::create([\n                'equipment_id' => $order->equipment->id,\n                'type' => 'inspection',\n                'status' => 'open',\n                'priority' => 'high',\n                'description' => \"AI-recommended inspection after defect spike in order {$order->order_number}: {$response['likely_root_cause']}\",\n            ]);\n        }\n\n        return array_merge(['order_number' => $order->order_number], $response);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The agent correlates three data sources → inspection measurements, equipment state, and maintenance activity → to produce a root cause hypothesis that would take a quality engineer hours to uncover manually."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q15-how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems",
+      children: "Q15: How would you expose manufacturing agent capabilities as MCP tools for external systems?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Register each manufacturing agent's methods as MCP tools. This allows external systems → edge devices, ERP systems, or a factory dashboard → to invoke agent functionality over the MCP protocol."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// In an MCP server service provider\nclass ManufacturingMcpServer extends McpServer\n{\n    public function tools(): array\n    {\n        return [\n            McpTool::make('predictive_maintenance')\n                ->description('Analyze equipment sensor data and predict failures')\n                ->inputSchema(['equipment_id' => 'int'])\n                ->handle(fn (array $args) => app(PredictiveMaintenanceAgent::class)\n                    ->analyze(Equipment::findOrFail($args['equipment_id']))),\n\n            McpTool::make('quality_analysis')\n                ->description('Analyze quality check data for a production order')\n                ->inputSchema(['production_order_id' => 'int'])\n                ->handle(fn (array $args) => app(QualityControlAgent::class)\n                    ->analyzeProductionRun(ProductionOrder::findOrFail($args['production_order_id']))),\n\n            McpTool::make('ingest_iot_reading')\n                ->description('Ingest a single IoT sensor reading')\n                ->inputSchema([\n                    'equipment_id' => 'int',\n                    'sensor_type' => 'string',\n                    'metric' => 'string',\n                    'value' => 'float',\n                    'unit' => 'string',\n                ])\n                ->handle(fn (array $args) => app(IoTDataIngestionAgent::class)\n                    ->ingestReading($args)),\n\n            McpTool::make('generate_schedule')\n                ->description('Generate production schedule for pending orders')\n                ->inputSchema(['equipment_id' => ['type' => 'int', 'optional' => true]])\n                ->handle(fn (array $args) => app(ProductionSchedulingAgent::class)\n                    ->generateSchedule($args)),\n\n            McpTool::make('run_safety_audit')\n                ->description('Run a safety compliance audit')\n                ->inputSchema(['days' => ['type' => 'int', 'optional' => true, 'default' => 90]])\n                ->handle(fn (array $args) => app(SafetyComplianceAgent::class)\n                    ->runAudit($args)),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "External systems → an ERP running on-premise, a SCADA system, or a third-party MES → can now invoke these tools over the MCP protocol without needing direct database access or HTTP endpoints."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "3-architecture--design",
+      children: "3. Architecture & Design"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q16-design-an-industrial-iot-data-pipeline-architecture-for-a-factory-with-200-sensors-per-machine-across-50-machines",
+      children: "Q16: Design an industrial IoT data pipeline architecture for a factory with 200+ sensors per machine across 50 machines."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The architecture uses a five-stage pipeline:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Stage 1 → Edge Collection"
+      }), ": Sensors connect to PLCs or edge gateways that buffer readings locally. The gateway batches readings every 5 seconds and publishes to MQTT topics organized hierarchically: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "factory/{zone}/{machine_id}/sensors/{sensor_type}"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Stage 2 → MQTT Broker"
+      }), ": A clustered Mosquitto or EMQX broker handles the 10,000+ messages per second. The broker routes messages by topic to subscriber workers."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Stage 3 → Ingestion Workers"
+      }), ": A pool of Laravel long-running Artisan commands (supervised by Supervisor) subscribe to subsets of MQTT topics. Each worker collects batches of 500 readings and sends them to a Redis stream or directly to the Laravel ingestion endpoint."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Stage 4 → Processing Layer"
+      }), ": The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "IoTDataIngestionAgent"
+      }), " validates payloads, performs threshold-based and z-score anomaly detection, inserts readings in bulk chunks, and dispatches anomaly alerts to a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "high"
+      }), " priority queue. Time-series data older than 90 days is rolled up into hourly averages via a scheduled Artisan command."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Stage 5 → Serving & Analytics"
+      }), ": AI agents (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PredictiveMaintenanceAgent"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "QualityControlAgent"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "SafetyComplianceAgent"
+      }), ") query the processed data to generate insights. A dedicated read replica serves dashboard queries. pgvector stores embeddings of sensor patterns for similarity-based anomaly classification."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Scheduled rollup command\nclass RollupIotDataCommand extends Command\n{\n    public function handle(): void\n    {\n        $cutoff = now()->subDays(90);\n\n        DB::statement(\"\n            INSERT INTO iot_readings_hourly (equipment_id, metric, hour, avg_value, min_value, max_value, reading_count)\n            SELECT\n                equipment_id,\n                metric,\n                DATE_TRUNC('hour', recorded_at) AS hour,\n                AVG(value),\n                MIN(value),\n                MAX(value),\n                COUNT(*)\n            FROM iot_readings\n            WHERE recorded_at < ?\n            GROUP BY equipment_id, metric, DATE_TRUNC('hour', recorded_at)\n        \", [$cutoff]);\n\n        IoTReading::where('recorded_at', '<', $cutoff)->delete();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Data flow throughput: 10,000 messages/second → MQTT broker → 5 ingestion workers (2,000 msg/s each) → batch insert 500 at a time (20 inserts/s per worker → 100 total inserts/s) → PostgreSQL with appropriate ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "max_connections"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "work_mem"
+      }), " tuning."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q17-how-would-you-design-a-real-time-sensor-data-processing-system-that-detects-anomalies-in-under-one-second",
+      children: "Q17: How would you design a real-time sensor data processing system that detects anomalies in under one second?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Sub-second anomaly detection requires shifting threshold evaluation to the edge or to the ingestion worker before the database write."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Architecture"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Edge threshold checks"
+          }), ": Configure the edge gateway to reject or flag readings that exceed hard thresholds (temperature > 150Â°C) before they ever reach Laravel. Only anomalous readings trigger immediate alerts; normal readings batch."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "In-memory anomaly detection"
+          }), ": Ingestion workers maintain an in-memory sliding window (last 100 readings per metric per machine) using a shared Redis sorted set or a local array. Z-score calculation uses this window, not the database, achieving sub-millisecond detection."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class RealTimeAnomalyDetector\n{\n    protected Redis $redis;\n    protected int $windowSize = 100;\n\n    public function __construct()\n    {\n        $this->redis = Redis::connection('anomaly');\n    }\n\n    public function evaluate(int $equipmentId, string $metric, float $value, ?float $thresholdMin, ?float $thresholdMax): array\n    {\n        if ($thresholdMin !== null && $value < $thresholdMin) {\n            return ['is_anomaly' => true, 'score' => 1.0, 'reason' => 'threshold_breach_low'];\n        }\n        if ($thresholdMax !== null && $value > $thresholdMax) {\n            return ['is_anomaly' => true, 'score' => 1.0, 'reason' => 'threshold_breach_high'];\n        }\n\n        $key = \"sensor_window:{$equipmentId}:{$metric}\";\n        $this->redis->lpush($key, $value);\n        $this->redis->ltrim($key, 0, $this->windowSize - 1);\n        $this->redis->expire($key, 3600);\n\n        $window = $this->redis->lrange($key, 0, -1);\n        if (count($window) < 10) {\n            return ['is_anomaly' => false, 'score' => 0, 'reason' => 'insufficient_data'];\n        }\n\n        $mean = array_sum($window) / count($window);\n        $variance = array_sum(array_map(fn ($v) => ($v - $mean) ** 2, $window)) / count($window);\n        $std = sqrt($variance);\n        $zScore = $std > 0 ? abs($value - $mean) / $std : 0;\n\n        if ($zScore > 3) {\n            return ['is_anomaly' => true, 'score' => min($zScore / 5, 1), 'reason' => 'z_score_anomaly'];\n        }\n\n        return ['is_anomaly' => false, 'score' => 0, 'reason' => 'normal'];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Alert dispatch path"
+        }), ": The anomaly result is available synchronously from the ingestion call. Critical alerts (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "score >= 0.8"
+        }), ") are dispatched immediately via a dedicated queue with priority ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "high"
+        }), ". The database write for the reading itself can proceed asynchronously."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This design achieves ~200Î¼s per reading for threshold checks and ~800Î¼s for full z-score evaluation, well under the 1-second SLA."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q18-describe-a-factory-automation-system-design-that-integrates-laravel-with-existing-plc-and-scada-infrastructure",
+      children: "Q18: Describe a factory automation system design that integrates Laravel with existing PLC and SCADA infrastructure."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The system uses a layered architecture bridging IT (Laravel) with OT (factory floor):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "┌─────────────────────────────────────────────────┐\n│                  IT Layer                        │\n│  Laravel App (AI Agents, Dashboards, APIs)      │\n│  PostgreSQL (relational), Redis (streams/cache)  │\n└──────────────────────┬──────────────────────────┘\n                       │ MCP + REST + MQTT\n┌──────────────────────┴──────────────────────────┐\n│              OT Bridge Layer                     │\n│  MQTT Broker (Mosquitto/EMQX)                   │\n│  OPC UA Gateway (converts OPC UA → MQTT JSON)   │\n│  Modbus TCP Gateway (serial → TCP tunnel)        │\n└──────────────────────┬──────────────────────────┘\n                       │ OPC UA / Modbus / Profinet\n┌──────────────────────┴──────────────────────────┐\n│                  OT Layer                        │\n│  PLCs (Siemens S7, Allen-Bradley ControlLogix)  │\n│  SCADA (Wonderware, Ignition)                    │\n│  Sensors, actuators, conveyors, robots           │\n└─────────────────────────────────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key integration patterns"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "OPC UA to MQTT Bridge"
+          }), ": An edge gateway application subscribes to OPC UA server variables (temperature tags, vibration readings) and publishes them as MQTT JSON messages. This decouples Laravel from industrial protocol complexity."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Command execution"
+          }), ": When a Laravel agent needs to change a setpoint (e.g., reduce conveyor speed), it publishes an MQTT message to ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "factory/{zone}/commands/{machine_id}"
+          }), ". The OPC UA gateway subscribes to these commands and writes the corresponding OPC UA tag."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "State synchronization"
+          }), ": A ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "MachineState"
+          }), " model in Laravel mirrors the current state of each PLC as a cached read model. Workers update this state from MQTT telemetry. When the connection is lost, the cached state shows ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "last_seen_at"
+          }), " and the system enters safe mode."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class MachineStateSynchronizer\n{\n    public function syncFromMqtt(string $topic, string $message): void\n    {\n        $data = json_decode($message, true);\n        $machineId = explode('/', $topic)[2] ?? null;\n\n        if (!$machineId) return;\n\n        Cache::put(\"machine_state:{$machineId}\", [\n            'status' => $data['status'] ?? 'unknown',\n            'mode' => $data['mode'] ?? 'manual',\n            'cycle_count' => $data['cycle_count'] ?? 0,\n            'last_seen_at' => now()->toIso8601String(),\n            'alarms' => $data['alarms'] ?? [],\n        ], 60);\n    }\n\n    public function sendCommand(int $machineId, string $command, array $parameters = []): bool\n    {\n        $machine = Equipment::findOrFail($machineId);\n        $topic = \"factory/{$machine->location}/commands/{$machine->serial_number}\";\n\n        $published = Mqtt::publish($topic, json_encode([\n            'command' => $command,\n            'parameters' => $parameters,\n            'issued_at' => now()->toIso8601String(),\n            'source' => 'laravel-automation',\n        ]));\n\n        Log::info(\"Command sent to machine #{$machineId}\", [\n            'command' => $command,\n            'topic' => $topic,\n        ]);\n\n        return $published;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Safety considerations"
+      }), ": All write operations from Laravel to factory equipment include a human-in-the-loop approval gate. Critical commands (emergency stop, mode change) require a verified user session with MFA. The system logs every command with full traceability."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "4-behavioral--scenario",
+      children: "4. Behavioral & Scenario"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q19-design-a-predictive-maintenance-system-for-a-factory-with-200-cnc-machines-using-laravel-walk-through-your-approach",
+      children: "Q19: Design a predictive maintenance system for a factory with 200 CNC machines using Laravel. Walk through your approach."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 1 → Data Foundation"
+      }), ": Deploy vibration, temperature, current draw, and spindle RPM sensors on each CNC machine. Configure edge gateways to publish readings every 10 seconds to an MQTT broker. The Laravel ingestion pipeline (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "IoTDataIngestionAgent"
+      }), ") processes 1.7M readings/day."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 2 → Baseline Modeling"
+      }), ": Collect 30 days of normal operation data. For each machine and metric, compute baseline statistics (mean, standard deviation, typical daily patterns). Store these in a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "equipment_baselines"
+      }), " table. Machines of the same model should share similar baselines → deviations between identical machines signal potential issues."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 3 → Agent Deployment"
+      }), ": The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "PredictiveMaintenanceAgent"
+      }), " runs on a cron schedule every 6 hours. It compares the last 24 hours of readings against baselines, calculates trend slopes and volatility, and feeds the analysis to the AI SDK with structured output. The agent generates:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A risk score (0-1) per machine"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Estimated days to failure for high-risk machines"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recommended maintenance actions with priority"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Estimated downtime and cost if action is delayed"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Scheduled every 6 hours\nclass RunPredictiveMaintenanceCommand extends Command\n{\n    public function handle(PredictiveMaintenanceAgent $agent): void\n    {\n        $equipment = Equipment::where('status', 'operational')->get();\n        $results = [];\n\n        foreach ($equipment as $eq) {\n            $results[] = $agent->analyze($eq);\n        }\n\n        $critical = array_filter($results, fn ($r) => $r['failure_risk'] === 'critical');\n        $high = array_filter($results, fn ($r) => $r['failure_risk'] === 'high');\n\n        Notification::route('slack', config('services.slack.maintenance_webhook'))\n            ->notify(new MaintenanceAlertNotification(\n                critical: count($critical),\n                high: count($high),\n                total: count($results),\n            ));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 4 → Continuous Improvement"
+      }), ": Track prediction accuracy by comparing predicted failures against actual breakdowns. If the agent predicts low risk but the machine fails within 7 days, it's a false negative. Log these and retrain the agent's prompts with counter-examples every quarter."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Results expectation"
+      }), ": After 6 months of operation, the system should predict 70-80% of unplanned breakdowns at least 48 hours in advance, reducing unplanned downtime by 40-60%."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q20-how-would-you-build-a-factory-wide-iot-data-platform-with-laravel-that-handles-50-million-sensor-readings-per-day",
+      children: "Q20: How would you build a factory-wide IoT data platform with Laravel that handles 50 million sensor readings per day?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This is a scale question requiring architectural choices beyond standard Laravel patterns."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Data partitioning strategy"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use PostgreSQL ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "table partitioning"
+        }), " by month on ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "recorded_at"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Each partition contains ~1.5B readings at 50M/day → too large. Add ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "sub-partitioning by equipment category"
+        }), " (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "iot_readings_cnc_2026_06"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "iot_readings_conveyor_2026_06"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "lookup table"
+        }), " mapping equipment_id to partition suffix: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "iot_readings_{category}_{month}"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "routing layer"
+        }), " that directs inserts and queries to the correct partition"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Ingestion architecture"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "50M readings/day = ~580 readings/second\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A single Laravel worker can batch-insert ~5,000 readings/second. Three dedicated ingestion workers suffice for average load. For peak load (1,000+ readings/second), add Redis-based buffering:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class BufferedIngestionController\n{\n    public function __invoke(Request $request): JsonResponse\n    {\n        $payloads = $request->input('readings');\n\n        $anomalies = [];\n        $normal = [];\n\n        foreach ($payloads as $payload) {\n            $result = app(RealTimeAnomalyDetector::class)->evaluate(\n                $payload['equipment_id'],\n                $payload['metric'],\n                $payload['value'],\n                $payload['threshold_min'] ?? null,\n                $payload['threshold_max'] ?? null,\n            );\n\n            if ($result['is_anomaly']) {\n                $anomalies[] = array_merge($payload, $result);\n            } else {\n                $normal[] = $payload;\n            }\n        }\n\n        // Buffer normal readings to Redis, flush every 5 seconds to DB\n        if (!empty($normal)) {\n            Redis::connection('ingestion_buffer')->rpush(\n                'ingestion:buffer',\n                ...array_map('json_encode', $normal)\n            );\n        }\n\n        // Insert anomalies immediately\n        if (!empty($anomalies)) {\n            app(IoTDataIngestionAgent::class)->batchIngest($anomalies);\n        }\n\n        return response()->json([\n            'ingested' => count($payloads),\n            'anomalies' => count($anomalies),\n        ]);\n    }\n}\n\n// Flush buffer every 5 seconds via scheduler\nclass FlushIngestionBufferCommand extends Command\n{\n    public function handle(IoTDataIngestionAgent $agent): void\n    {\n        $batch = [];\n        while ($item = Redis::connection('ingestion_buffer')->lpop('ingestion:buffer')) {\n            $batch[] = json_decode($item, true);\n            if (count($batch) >= 500) {\n                $agent->batchIngest($batch);\n                $batch = [];\n            }\n        }\n        if (!empty($batch)) {\n            $agent->batchIngest($batch);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Query optimization"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "sensor_data"
+        }), " materialized view that aggregates raw readings into 5-minute averages. Most dashboard queries hit this view, not the raw table."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use TimescaleDB's hypertables if PostgreSQL partitioning isn't performant enough."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a Redis cache layer for recent readings (last 24 hours) since factory dashboards predominantly display current shift data."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Retention"
+      }), ": Raw readings older than 7 days → aggregate to 5-minute averages. Averages older than 90 days → aggregate to hourly. Purge after 2 years unless required for compliance."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q21-a-production-line-goes-down-unexpectedly-walk-through-how-youd-use-your-laravel-agents-to-diagnose-and-respond",
+      children: "Q21: A production line goes down unexpectedly. Walk through how you'd use your Laravel agents to diagnose and respond."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Triage sequence"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Immediate detection"
+          }), ": The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "IoTDataIngestionAgent"
+          }), " detects that readings from the affected equipment have stopped arriving (data gap > 30 seconds when expected interval is 10s). Alternatively, a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ProductionOrder"
+          }), " status flips to ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "on_hold"
+          }), " via manual input."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Root cause analysis"
+          }), ": The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "DefectCorrelationAgent"
+          }), " correlates the last 30 minutes of sensor data before the stoppage. It looks for anomaly patterns → spiking vibration, temperature ramp, current draw drop → that indicate the failure mode."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Impact assessment"
+          }), ": The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "ProductionSchedulingAgent"
+          }), " evaluates affected orders. If machine #7 is down, it checks which orders were assigned to it and reschedules them to other available equipment. Orders whose deadlines cannot be met are flagged for customer notification."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Maintenance dispatch"
+          }), ": If the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "PredictiveMaintenanceAgent"
+          }), " had flagged this machine as high-risk in the last 24 hours, the maintenance team receives the pre-generated recommendation. Otherwise, the agent generates a new work order with the likely failure mode and required parts."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class IncidentResponseCoordinator\n{\n    public function respondToDowntime(int $equipmentId, string $detectedAt): array\n    {\n        $equipment = Equipment::findOrFail($equipmentId);\n\n        // 1. Analyze last readings\n        $recentReadings = $equipment->iotReadings()\n            ->where('recorded_at', '>=', now()->subMinutes(30))\n            ->orderBy('recorded_at')\n            ->get();\n\n        // 2. Check recent maintenance\n        $recentMaintenance = $equipment->maintenanceLogs()\n            ->where('created_at', '>=', now()->subDays(7))\n            ->get();\n\n        // 3. Determine failure mode via AI\n        $analysis = app(PredictiveMaintenanceAgent::class)->chat(\n            messages: [[\n                'role' => 'user',\n                'content' => json_encode([\n                    'equipment' => $equipment->name,\n                    'last_readings' => $recentReadings->toArray(),\n                    'recent_maintenance' => $recentMaintenance->toArray(),\n                    'symptom' => 'unexpected stoppage',\n                    'task' => 'Determine most likely failure mode and required repair steps.',\n                ]),\n            ]],\n            structuredOutput: [\n                'type' => 'object',\n                'properties' => [\n                    'likely_failure_mode' => ['type' => 'string'],\n                    'required_parts' => ['type' => 'array', 'items' => ['type' => 'string']],\n                    'estimated_repair_time_hours' => ['type' => 'number'],\n                    'safety_precautions' => ['type' => 'array', 'items' => ['type' => 'string']],\n                    'repair_procedure' => ['type' => 'string'],\n                ],\n            ],\n        );\n\n        // 4. Create maintenance log\n        MaintenanceLog::create([\n            'equipment_id' => $equipment->id,\n            'type' => 'corrective',\n            'status' => 'open',\n            'priority' => 'critical',\n            'description' => \"Unplanned stoppage. AI assessment: {$analysis['likely_failure_mode']}\",\n            'parts_replaced' => $analysis['required_parts'],\n        ]);\n\n        // 5. Reschedule affected orders\n        $scheduleResult = app(ProductionSchedulingAgent::class)\n            ->rescheduleDueToDisruption($equipmentId);\n\n        // 6. Update equipment status\n        $equipment->update(['status' => 'maintenance']);\n\n        return [\n            'incident_id' => Str::ulid(),\n            'equipment' => $equipment->name,\n            'detected_at' => $detectedAt,\n            'failure_assessment' => $analysis,\n            'maintenance_log_created' => true,\n            'orders_rescheduled' => count($scheduleResult['assignments']),\n            'orders_unassigned' => count($scheduleResult['unassigned']),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The entire response → from detection to maintenance dispatch and order rescheduling → completes in under 2 minutes, compared to 30-60 minutes with manual processes."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q22-your-manufacturing-execution-system-mes-with-ai-is-being-adopted-by-factory-operators-who-distrust-ai-recommendations-how-do-you-design-the-system-to-earn-trust",
+      children: "Q22: Your manufacturing execution system (MES) with AI is being adopted by factory operators who distrust AI recommendations. How do you design the system to earn trust?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Design for transparency and human override"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Explainable recommendations"
+        }), ": Every agent returns not just a decision but a rationale. The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "PredictiveMaintenanceAgent"
+        }), " surfaces which sensor trends drove the risk score. The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "QualityControlAgent"
+        }), " shows the specific parameters that drifted."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "public function analyze(Equipment $equipment): array\n{\n    $result = $this->chat(/* ... */);\n    return array_merge($result, [\n        'evidence' => [\n            'temperature_trend' => 'rising 12% over 72 hours (primary driver)',\n            'variance_increase' => '3.2x normal (secondary factor)',\n            'similar_pattern' => 'Matched 2 of 3 previous bearing failures',\n        ],\n    ]);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Confidence scores"
+          }), ": Every AI output includes a confidence level. Recommendations below ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "0.7"
+          }), " confidence are downgraded from auto-execute to suggest. Operators see: \"Recommended action: schedule maintenance (confidence: 0.85).\""]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Shadow mode for new deployments"
+          }), ": Run agents in read-only shadow mode for the first 30 days. Compare AI recommendations with actual operator decisions. Measure: how often would the AI have been right? wrong? Build a dashboard showing this track record."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Human-in-the-loop gates"
+          }), ": Critical actions (line stops, equipment shutdowns) require operator confirmation. The agent presents its evidence in a simple decision card: \"AI recommends stopping Line 3. Evidence: temperature rising 15%, vibration 3x baseline, similar to bearing failure pattern from 2024-11-12. Approve / Override with reason.\""]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Feedback loop"
+          }), ": Operators can mark AI recommendations as helpful or unhelpful. Track acceptance rate per agent, per operator, per shift. Use declining acceptance rates as a trigger for model retraining or prompt improvement."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Progressive autonomy"
+          }), ": As the measured accuracy crosses thresholds, increase autonomy:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Month 1: All recommendations require approval"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Month 2: Auto-approve low-risk actions (schedule routine inspection)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Month 3: Auto-approve medium-risk actions with notification"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Month 4+: Auto-approve all actions with automatic rollback if not acknowledged within 15 minutes"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The goal is not to replace operators but to give them AI-powered decision support that earns trust through consistent accuracy and complete transparency."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q23-your-supplier-sends-a-bad-batch-of-raw-material-that-causes-30-defect-rate-on-line-2-how-do-your-agents-detect-and-respond",
+      children: "Q23: Your supplier sends a bad batch of raw material that causes 30% defect rate on Line 2. How do your agents detect and respond?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detection chain"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "QualityControlAgent"
+          }), " detects the defect rate spike during its hourly check. It compares against the running 24-hour average (normally < 2%) and flags the change as statistically significant."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "DefectCorrelationAgent"
+          }), " correlates the defect pattern across production runs. It notices that all defective runs share the same raw material lot number from the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "bill_of_materials"
+          }), " JSON field on the production orders."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "SafetyComplianceAgent"
+          }), " checks whether the defects are safety-critical. If so, it escalates to line stop."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Response automation"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class RawMaterialIncidentHandler\n{\n    public function handle(ProductionOrder $order): void\n    {\n        $lotNumbers = collect($order->bill_of_materials ?? [])->pluck('lot_number')->unique();\n\n        // Find all orders using same lot\n        $affectedOrders = ProductionOrder::where('status', 'pending')\n            ->orWhereIn('status', ['in_progress', 'scheduled'])\n            ->get()\n            ->filter(fn ($o) => collect($o->bill_of_materials ?? [])\n                ->pluck('lot_number')\n                ->intersect($lotNumbers)\n                ->isNotEmpty());\n\n        $defectiveOrders = ProductionOrder::where('status', 'completed')\n            ->whereDate('created_at', '>=', now()->subDays(1))\n            ->get()\n            ->filter(fn ($o) => collect($o->bill_of_materials ?? [])\n                ->pluck('lot_number')\n                ->intersect($lotNumbers)\n                ->isNotEmpty());\n\n        $defectRate = $defectiveOrders->count() > 0\n            ? $defectiveOrders->sum('quantity_defective') / $defectiveOrders->sum('quantity_produced')\n            : 0;\n\n        // Place pending orders on hold\n        foreach ($affectedOrders as $ao) {\n            $ao->update(['status' => 'on_hold', 'notes' => \"Lot {$lotNumbers->implode(', ')} quarantined due to defect spike.\"]);\n        }\n\n        // Send supplier notification\n        $supplierId = $order->product?->supplier_id;\n        if ($supplierId) {\n            SupplierNotification::dispatch(\n                supplierId: $supplierId,\n                lotNumbers: $lotNumbers->toArray(),\n                defectRate: round($defectRate * 100, 2),\n                orderNumbers: $defectiveOrders->pluck('order_number')->toArray(),\n            );\n        }\n\n        Log::critical(\"RawMaterialIncidentHandler: Lot {$lotNumbers->implode(', ')} quarantined\", [\n            'defect_rate' => round($defectRate * 100, 2),\n            'orders_affected' => $affectedOrders->count(),\n            'supplier_id' => $supplierId,\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The system quarantines the affected lot, holds pending orders that use it, notifies the supplier, and logs the incident with full traceability → all within minutes of detection."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q24-a-new-regulation-requires-your-factory-to-report-carbon-emissions-per-production-batch-how-do-you-implement-this-in-laravel",
+      children: "Q24: A new regulation requires your factory to report carbon emissions per production batch. How do you implement this in Laravel?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Implementation approach"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data model extension"
+        }), ": Add ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "emissions_data"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "energy_consumption"
+        }), " columns or tables linked to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ProductionOrder"
+        }), ". If sensor data includes energy meters (kWh), power factor, or fuel consumption, the existing ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "iot_readings"
+        }), " table already tracks them → just add ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "emission_factor"
+        }), " mapping."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "Schema::create('emission_records', function (Blueprint $table) {\n    $table->id();\n    $table->foreignId('production_order_id')->constrained();\n    $table->foreignId('equipment_id')->nullable()->constrained();\n    $table->string('energy_type'); // electricity, natural_gas, diesel\n    $table->decimal('consumption', 12, 4);\n    $table->decimal('emission_factor', 12, 6);\n    $table->decimal('co2_equivalent', 12, 4);\n    $table->timestamp('recorded_at');\n    $table->timestamps();\n});\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Calculation pipeline"
+        }), ": An ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "EmissionsReportingAgent"
+        }), " processes each completed production order, summing energy consumption from IoT readings and multiplying by emission factors stored in a configuration table."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class EmissionsReportingAgent\n{\n    public function calculateForOrder(ProductionOrder $order): array\n    {\n        $energyReadings = IoTReading::where('equipment_id', $order->equipment_id)\n            ->where('metric', 'energy_consumption')\n            ->whereBetween('recorded_at', [$order->start_date, $order->completion_date ?? $order->updated_at])\n            ->get();\n\n        $totalKwh = $energyReadings->sum('value');\n        $factors = EmissionFactor::whereIn('energy_type', ['electricity'])->pluck('factor', 'energy_type');\n        $co2 = $totalKwh * ($factors['electricity'] ?? 0.5);\n\n        EmissionRecord::create([\n            'production_order_id' => $order->id,\n            'equipment_id' => $order->equipment_id,\n            'energy_type' => 'electricity',\n            'consumption' => $totalKwh,\n            'emission_factor' => $factors['electricity'] ?? 0.5,\n            'co2_equivalent' => $co2,\n            'recorded_at' => now(),\n        ]);\n\n        return [\n            'order_number' => $order->order_number,\n            'total_kwh' => round($totalKwh, 2),\n            'co2_kg' => round($co2, 4),\n            'per_unit' => $order->quantity_produced > 0\n                ? round($co2 / $order->quantity_produced, 6) : 0,\n        ];\n    }\n\n    public function generateMonthlyReport(int $year, int $month): array\n    {\n        $records = EmissionRecord::whereYear('recorded_at', $year)\n            ->whereMonth('recorded_at', $month)\n            ->get();\n\n        return [\n            'period' => \"{$year}-{$month}\",\n            'total_co2_kg' => round($records->sum('co2_equivalent'), 2),\n            'by_equipment' => $records->groupBy('equipment_id')->map(fn ($g) => [\n                'total_co2' => $g->sum('co2_equivalent'),\n                'total_consumption' => $g->sum('consumption'),\n            ]),\n            'by_order_count' => $records->groupBy('production_order_id')->count(),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Report generation"
+          }), ": Generate standardized PDF reports using Laravel's Browsershot or DomPDF. The report format follows the regulator's template with batch IDs, total CO2, and methodology notes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Verification"
+          }), ": Store the raw IoT readings used in the calculation alongside the report. If the regulator audits, the system can reproduce the exact calculation for any historical batch."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q25-a-supplier-api-your-inventory-agent-depends-on-starts-failing-intermittently-how-do-you-make-the-system-resilient",
+      children: "Q25: A supplier API your inventory agent depends on starts failing intermittently. How do you make the system resilient?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multi-layer resilience strategy"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cache fallback"
+        }), ": The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "InventoryAutomationAgent"
+        }), " caches supplier data (pricing, lead times, minimum order quantities) with a 1-hour TTL. If the API fails, it uses the cached values and logs a warning."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "public function getSupplierPricing(int $supplierId): array\n{\n    $cacheKey = \"supplier_pricing:{$supplierId}\";\n\n    return Cache::flexible($cacheKey, [3600, 7200], function () use ($supplierId) {\n        $response = Http::timeout(5)->get(config(\"services.suppliers.{$supplierId}.pricing_url\"));\n\n        if ($response->failed()) {\n            throw new SupplierApiUnavailableException(\"Supplier #{$supplierId} API unreachable\");\n        }\n\n        return $response->json();\n    });\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "Cache::flexible()"
+      }), " returns stale data while refreshing in the background during the grace period (3600-7200 seconds), avoiding cascading failures."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Supplier redundancy"
+        }), ": Maintain a primary and secondary supplier for each SKU. If the primary supplier's API is down, the agent falls back to the secondary."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "public function determineReorderSource(InventoryItem $item): array\n{\n    $primary = $item->supplier;\n    try {\n        return $this->getSupplierPricing($primary->id);\n    } catch (SupplierApiUnavailableException) {\n        Log::warning(\"Primary supplier #{$primary->id} API down, falling back to secondary\");\n        $secondary = $item->supplierAlternate;\n        if ($secondary) {\n            return $this->getSupplierPricing($secondary->id);\n        }\n        throw new NoSupplierAvailableException(\"No supplier available for {$item->sku}\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Circuit breaker"
+          }), ": Use Laravel's built-in ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Cache::lock()"
+          }), " or a dedicated circuit breaker package. After 3 consecutive failures, open the circuit for 5 minutes → during that window, the agent uses cached data exclusively without attempting the API."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Degraded mode alerting"
+          }), ": When the agent operates in cache-only mode, it dispatches a notification to the procurement team. The dashboard shows a yellow banner: \"Inventory agent in degraded mode → supplier API unavailable.\""]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Manual overrides"
+          }), ": Provide an Artisan command and a Nova action that lets procurement staff manually enter supplier data or override reorder decisions while the API is down."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "// Artisan command for manual override\nclass OverrideSupplierDataCommand extends Command\n{\n    public function handle(): void\n    {\n        $sku = $this->ask('SKU to override');\n        $leadTime = $this->ask('Override lead time (days)');\n\n        Cache::put(\"supplier_override:{$sku}\", ['lead_time_days' => (int) $leadTime], 86400);\n        $this->info(\"Override applied for {$sku} → will use {$leadTime} day lead time\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q26-your-factory-is-expanding-from-10-to-100-machines-the-current-laravel-ingestion-architecture-cant-keep-up-how-do-you-scale-it",
+      children: "Q26: Your factory is expanding from 10 to 100 machines. The current Laravel ingestion architecture can't keep up. How do you scale it?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scale diagnosis"
+      }), ": The bottleneck is likely database write throughput. At 100 machines Ã— 200 sensors each Ã— 1 reading every 10 seconds = 2,000 readings/second. Each Eloquent ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "INSERT"
+      }), " takes ~5ms at peak, so single-threaded insertion caps at 200 reads/second."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scaling strategy"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Batch size optimization"
+          }), ": Increase batch inserts from 100 to 1,000 readings per chunk. Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "DB::insert()"
+          }), " with a raw SQL VALUES clause instead of Eloquent ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "create()"
+          }), ". This alone pushes throughput from 200/s to 5,000/s."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Write-ahead buffering"
+          }), ": Insert into a Redis Stream or Kafka topic instead of the database. A separate worker reads from the stream every 3 seconds and performs the bulk insert. This decouples ingestion rate from database write rate."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class StreamIngestionController\n{\n    public function __invoke(Request $request): JsonResponse\n    {\n        $readings = $request->input('readings');\n        $multi = [];\n\n        foreach ($readings as $reading) {\n            $id = (string) Str::ulid();\n            $multi[] = $id;\n            $multi[] = json_encode($reading);\n        }\n\n        Redis::connection('ingestion_stream')->executeRaw([\n            'XADD', 'sensor:stream', 'MAXLEN', '~', '100000',\n            ...$multi,\n        ]);\n\n        return response()->json(['queued' => count($readings)]);\n    }\n}\n\n// Consumer: FlushSensorStreamCommand runs every 3 seconds\nclass FlushSensorStreamCommand extends Command\n{\n    public function handle(IoTDataIngestionAgent $agent): void\n    {\n        $entries = Redis::connection('ingestion_stream')->executeRaw([\n            'XREADGROUP', 'GROUP', 'ingesters', 'worker1',\n            'COUNT', '2000',\n            'BLOCK', '2000',\n            'STREAMS', 'sensor:stream', '>',\n        ]);\n\n        if (!$entries) return;\n\n        $readings = [];\n        foreach ($entries[0][1] as [, $data]) {\n            $readings[] = json_decode($data, true);\n        }\n\n        $agent->batchIngest($readings);\n\n        // Acknowledge\n        Redis::connection('ingestion_stream')->executeRaw([\n            'XACK', 'sensor:stream', 'ingesters', ...collect($entries[0][1])->pluck(0)->toArray(),\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Partitioned database"
+          }), ": Split ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "iot_readings"
+          }), " by equipment category into separate tables or PostgreSQL partitions. Queries against a single machine's data scan one partition instead of the full table."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Horizontal worker scaling"
+          }), ": Run 5-10 ingestion workers behind Supervisor, each consuming from a different Redis stream shard. Partition the data by ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "equipment_id % worker_count"
+          }), " to guarantee ordering within a single machine's readings."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Read replicas"
+          }), ": Move all dashboard and agent queries to a read replica. The primary database handles only writes. Add a dedicated read replica for AI agent queries to prevent analytics queries from blocking ingestion."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Time-series database evaluation"
+          }), ": If PostgreSQL still bottlenecks at 10,000+ writes/second, add a specialized time-series DB (TimescaleDB, InfluxDB) for raw readings. Keep PostgreSQL for business entities (orders, equipment, maintenance logs) and query the time-series store for sensor data via a Laravel bridge class."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "class HybridTimeSeriesStore\n{\n    public function storeReadings(array $readings): void\n    {\n        if (count($readings) > 100) {\n            // Bulk: write to InfluxDB via HTTP API\n            InfluxDB::write('iot_readings', $readings);\n        }\n\n        // Always write anomalies to PostgreSQL for alerting\n        $anomalies = array_filter($readings, fn ($r) => ($r['is_anomaly'] ?? false));\n        if (!empty($anomalies)) {\n            DB::table('iot_readings_anomalies')->insert($anomalies);\n        }\n    }\n\n    public function queryReadings(int $equipmentId, string $metric, Carbon $from, Carbon $to): Collection\n    {\n        // Recent data from cache, older from InfluxDB\n        return Cache::remember(\"sensor:{$equipmentId}:{$metric}:{$from->timestamp}\", 60, function () use ($equipmentId, $metric, $from, $to) {\n            return InfluxDB::query(\"SELECT * FROM iot_readings WHERE equipment_id = ? AND metric = ? AND time >= ? AND time <= ?\", [\n                $equipmentId, $metric, $from->toIso8601String(), $to->toIso8601String(),\n            ]);\n        });\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The goal is a system that handles 10,000 readings/second at peak with < 1 second end-to-end ingestion latency, and scales linearly by adding workers and database partitions."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Compare key manufacturing concepts for interview preparation."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Feature"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Production Planning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Schedule manufacturing operations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Capacity planning + demand forecasting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Quality Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ensure product quality standards"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inspection workflows + defect tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Predictive Maintenance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevent equipment failures"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sensor data + failure prediction models"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Inventory Management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimize material stock levels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reorder points + warehouse zones"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Supply Chain Mgmt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coordinate suppliers and logistics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supplier scorecards + risk assessment"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Quick reference for manufacturing interview topics."]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Manufacturing Models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Product, ProductionOrder, Equipment, Inventory, Supplier"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Production Planning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BOM + routing + capacity planning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Quality Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inspection points + statistical sampling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Maintenance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Preventive + predictive + corrective strategies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Supply Chain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Procurement + logistics + supplier management"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application Context"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Trade-Off"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Production Planning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manufacturing scheduling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Efficiency vs flexibility"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Quality Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Product inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rigor vs throughput"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Predictive Maintenance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Equipment reliability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Early warning vs false alarms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Inventory Mgmt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Material optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stock availability vs carrying cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Supply Chain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supplier coordination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration vs complexity"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Test your manufacturing interview knowledge."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What does production planning optimize?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Only labor cost"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Capacity planning and demand forecasting"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Only machine utilization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Only material usage"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsxs)(_components.summary, {
+        children: ["Answer</summary>B) Capacity planning and demand forecasting</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Q2:"
+          }), " What is the key benefit of predictive maintenance?"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) Lower equipment cost"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Preventing failures before they occur"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Faster production"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) Better quality"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+          children: (0,jsx_runtime.jsxs)(_components.summary, {
+            children: ["Answer</summary>B) Preventing failures before they occur</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Q3:"
+              }), " What does quality control use for defect detection?"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "A) Random inspection"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "B) Statistical sampling and inspection workflows"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "C) Customer complaints only"
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "D) Visual inspection only"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                children: ["Answer</summary>B) Statistical sampling and inspection workflows</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Q4:"
+                  }), " What is the main trade-off in inventory management?"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "A) Quality vs quantity"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "B) Stock availability vs carrying cost"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "C) Speed vs accuracy"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                    children: "D) Local vs global sourcing"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                    children: ["Answer</summary>B) Stock availability vs carrying cost</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "concept-comparison-1",
+                      children: "Concept Comparison"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Compare key manufacturing concepts for interview preparation."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Purpose"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Feature"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Production Planning"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Schedule manufacturing operations"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Capacity planning + demand forecasting"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Quality Control"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Ensure product quality standards"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Inspection workflows + defect tracking"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Predictive Maintenance"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Prevent equipment failures"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Sensor data + failure prediction models"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Inventory Management"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Optimize material stock levels"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Reorder points + warehouse zones"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Supply Chain Mgmt"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Coordinate suppliers and logistics"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Supplier scorecards + risk assessment"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "quick-reference-1",
+                      children: "Quick Reference"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Quick reference for manufacturing interview topics."]
+                      }), "\n"]
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Topic"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Key Point"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Manufacturing Models"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Product, ProductionOrder, Equipment, Inventory, Supplier"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Production Planning"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "BOM + routing + capacity planning"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Quality Control"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Inspection points + statistical sampling"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Maintenance"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Preventive + predictive + corrective strategies"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Supply Chain"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Procurement + logistics + supplier management"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "cross-application-matrix-1",
+                      children: "Cross-Application Matrix"
+                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                            children: "Concept"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Application Context"
+                          }), (0,jsx_runtime.jsx)(_components.th, {
+                            children: "Trade-Off"
+                          })]
+                        })
+                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Production Planning"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Manufacturing scheduling"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Efficiency vs flexibility"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Quality Control"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Product inspection"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Rigor vs throughput"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Predictive Maintenance"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Equipment reliability"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Early warning vs false alarms"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Inventory Mgmt"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Material optimization"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Stock availability vs carrying cost"
+                          })]
+                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                            children: "Supply Chain"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Supplier coordination"
+                          }), (0,jsx_runtime.jsx)(_components.td, {
+                            children: "Integration vs complexity"
+                          })]
+                        })]
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                      id: "chapter-quiz-1",
+                      children: "Chapter Quiz"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "One-Sentence Takeaway:"
+                        }), " Test your manufacturing interview knowledge."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Q1:"
+                      }), " What does production planning optimize?"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "A) Only labor cost"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "B) Capacity planning and demand forecasting"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "C) Only machine utilization"
+                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "D) Only material usage"
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                        children: ["Answer</summary>B) Capacity planning and demand forecasting</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                            children: "Q2:"
+                          }), " What is the key benefit of predictive maintenance?"]
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "A) Lower equipment cost"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "B) Preventing failures before they occur"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "C) Faster production"
+                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                            children: "D) Better quality"
+                          }), "\n"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                            children: ["Answer</summary>B) Preventing failures before they occur</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                children: "Q3:"
+                              }), " What does quality control use for defect detection?"]
+                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "A) Random inspection"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "B) Statistical sampling and inspection workflows"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "C) Customer complaints only"
+                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                children: "D) Visual inspection only"
+                              }), "\n"]
+                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                children: ["Answer</summary>B) Statistical sampling and inspection workflows</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                    children: "Q4:"
+                                  }), " What is the main trade-off in inventory management?"]
+                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "A) Quality vs quantity"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "B) Stock availability vs carrying cost"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "C) Speed vs accuracy"
+                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                    children: "D) Local vs global sourcing"
+                                  }), "\n"]
+                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                    children: ["Answer</summary>B) Stock availability vs carrying cost</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "concept-comparison-2",
+                                      children: "Concept Comparison"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Compare key manufacturing concepts for interview preparation."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Purpose"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Feature"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Production Planning"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Schedule manufacturing operations"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Capacity planning + demand forecasting"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Quality Control"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Ensure product quality standards"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Inspection workflows + defect tracking"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Predictive Maintenance"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Prevent equipment failures"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Sensor data + failure prediction models"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Inventory Management"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Optimize material stock levels"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Reorder points + warehouse zones"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Supply Chain Mgmt"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Coordinate suppliers and logistics"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Supplier scorecards + risk assessment"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "quick-reference-2",
+                                      children: "Quick Reference"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Quick reference for manufacturing interview topics."]
+                                      }), "\n"]
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Topic"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Key Point"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Manufacturing Models"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Product, ProductionOrder, Equipment, Inventory, Supplier"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Production Planning"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "BOM + routing + capacity planning"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Quality Control"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Inspection points + statistical sampling"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Maintenance"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Preventive + predictive + corrective strategies"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Supply Chain"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Procurement + logistics + supplier management"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "cross-application-matrix-2",
+                                      children: "Cross-Application Matrix"
+                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Concept"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Application Context"
+                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                            children: "Trade-Off"
+                                          })]
+                                        })
+                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Production Planning"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Manufacturing scheduling"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Efficiency vs flexibility"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Quality Control"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Product inspection"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Rigor vs throughput"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Predictive Maintenance"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Equipment reliability"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Early warning vs false alarms"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Inventory Mgmt"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Material optimization"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Stock availability vs carrying cost"
+                                          })]
+                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Supply Chain"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Supplier coordination"
+                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                            children: "Integration vs complexity"
+                                          })]
+                                        })]
+                                      })]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                      id: "chapter-quiz-2",
+                                      children: "Chapter Quiz"
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                          children: "One-Sentence Takeaway:"
+                                        }), " Test your manufacturing interview knowledge."]
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                        children: "Q1:"
+                                      }), " What does production planning optimize?"]
+                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "A) Only labor cost"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "B) Capacity planning and demand forecasting"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "C) Only machine utilization"
+                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                        children: "D) Only material usage"
+                                      }), "\n"]
+                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                        children: ["Answer</summary>B) Capacity planning and demand forecasting</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                            children: "Q2:"
+                                          }), " What is the key benefit of predictive maintenance?"]
+                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "A) Lower equipment cost"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "B) Preventing failures before they occur"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "C) Faster production"
+                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                            children: "D) Better quality"
+                                          }), "\n"]
+                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                            children: ["Answer</summary>B) Preventing failures before they occur</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                children: "Q3:"
+                                              }), " What does quality control use for defect detection?"]
+                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "A) Random inspection"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "B) Statistical sampling and inspection workflows"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "C) Customer complaints only"
+                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                children: "D) Visual inspection only"
+                                              }), "\n"]
+                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                children: ["Answer</summary>B) Statistical sampling and inspection workflows</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                    children: "Q4:"
+                                                  }), " What is the main trade-off in inventory management?"]
+                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "A) Quality vs quantity"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "B) Stock availability vs carrying cost"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "C) Speed vs accuracy"
+                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                    children: "D) Local vs global sourcing"
+                                                  }), "\n"]
+                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                    children: ["Answer</summary>B) Stock availability vs carrying cost</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "concept-comparison-3",
+                                                      children: "Concept Comparison"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Compare key manufacturing concepts for interview preparation."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Purpose"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Feature"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Production Planning"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Schedule manufacturing operations"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Capacity planning + demand forecasting"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Quality Control"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Ensure product quality standards"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Inspection workflows + defect tracking"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Predictive Maintenance"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Prevent equipment failures"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Sensor data + failure prediction models"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Inventory Management"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Optimize material stock levels"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Reorder points + warehouse zones"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Supply Chain Mgmt"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Coordinate suppliers and logistics"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Supplier scorecards + risk assessment"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "quick-reference-3",
+                                                      children: "Quick Reference"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Quick reference for manufacturing interview topics."]
+                                                      }), "\n"]
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Topic"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Key Point"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Manufacturing Models"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Product, ProductionOrder, Equipment, Inventory, Supplier"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Production Planning"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "BOM + routing + capacity planning"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Quality Control"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Inspection points + statistical sampling"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Maintenance"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Preventive + predictive + corrective strategies"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Supply Chain"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Procurement + logistics + supplier management"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "cross-application-matrix-3",
+                                                      children: "Cross-Application Matrix"
+                                                    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.thead, {
+                                                        children: (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Concept"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Application Context"
+                                                          }), (0,jsx_runtime.jsx)(_components.th, {
+                                                            children: "Trade-Off"
+                                                          })]
+                                                        })
+                                                      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                                                        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Production Planning"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Manufacturing scheduling"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Efficiency vs flexibility"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Quality Control"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Product inspection"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Rigor vs throughput"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Predictive Maintenance"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Equipment reliability"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Early warning vs false alarms"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Inventory Mgmt"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Material optimization"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Stock availability vs carrying cost"
+                                                          })]
+                                                        }), (0,jsx_runtime.jsxs)(_components.tr, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Supply Chain"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Supplier coordination"
+                                                          }), (0,jsx_runtime.jsx)(_components.td, {
+                                                            children: "Integration vs complexity"
+                                                          })]
+                                                        })]
+                                                      })]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                      id: "chapter-quiz-3",
+                                                      children: "Chapter Quiz"
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+                                                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                          children: "One-Sentence Takeaway:"
+                                                        }), " Test your manufacturing interview knowledge."]
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                        children: "Q1:"
+                                                      }), " What does production planning optimize?"]
+                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "A) Only labor cost"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "B) Capacity planning and demand forecasting"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "C) Only machine utilization"
+                                                      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                        children: "D) Only material usage"
+                                                      }), "\n"]
+                                                    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                      children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                        children: ["Answer</summary>B) Capacity planning and demand forecasting</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                          children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                            children: "Q2:"
+                                                          }), " What is the key benefit of predictive maintenance?"]
+                                                        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "A) Lower equipment cost"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "B) Preventing failures before they occur"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "C) Faster production"
+                                                          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                            children: "D) Better quality"
+                                                          }), "\n"]
+                                                        }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                          children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                            children: ["Answer</summary>B) Preventing failures before they occur</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                children: "Q3:"
+                                                              }), " What does quality control use for defect detection?"]
+                                                            }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "A) Random inspection"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "B) Statistical sampling and inspection workflows"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "C) Customer complaints only"
+                                                              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                children: "D) Visual inspection only"
+                                                              }), "\n"]
+                                                            }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                              children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                children: ["Answer</summary>B) Statistical sampling and inspection workflows</details>\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                                                                    children: "Q4:"
+                                                                  }), " What is the main trade-off in inventory management?"]
+                                                                }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                                                                  children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "A) Quality vs quantity"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "B) Stock availability vs carrying cost"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "C) Speed vs accuracy"
+                                                                  }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                                                                    children: "D) Local vs global sourcing"
+                                                                  }), "\n"]
+                                                                }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+                                                                  children: (0,jsx_runtime.jsxs)(_components.summary, {
+                                                                    children: ["Answer</summary>B) Stock availability vs carrying cost</details>\n", (0,jsx_runtime.jsx)(_components.h2, {
+                                                                      id: "summary",
+                                                                      children: "Summary"
+                                                                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                                                                      children: ["This chapter covered 26 interview questions spanning manufacturing domain knowledge, technical implementation with the Laravel AI SDK, system architecture for industrial IoT, and behavioral scenarios for real-world factory systems. Key themes include predictive maintenance agents that combine statistical trend analysis with LLM pattern recognition, high-throughput IoT data pipelines using batch ingestion and stream buffering, production scheduling with heuristic optimization and disruption rescheduling, safety compliance automation with ISO-aligned scoring, inventory agents with demand forecasting and fallback redundancy, and equipment lifecycle management with total-cost-of-ownership analysis. Each answer demonstrated concrete Laravel code patterns → Eloquent models with manufacturing relationships, AI SDK agents with structured output and tools, MCP server registration, queue-backed processing, Redis stream buffering, and ", (0,jsx_runtime.jsx)(_components.code, {
+                                                                        children: "Cache::flexible()"
+                                                                      }), " for supplier API resilience. The architectural patterns scale from single-machine deployments to factory-wide systems handling 50 million sensor readings per day."]
+                                                                    }), "\n"]
+                                                                  })
+                                                                })]
+                                                              })
+                                                            })]
+                                                          })
+                                                        })]
+                                                      })
+                                                    })]
+                                                  })
+                                                })]
+                                              })
+                                            })]
+                                          })
+                                        })]
+                                      })
+                                    })]
+                                  })
+                                })]
+                              })
+                            })]
+                          })
+                        })]
+                      })
+                    })]
+                  })
+                })]
+              })
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

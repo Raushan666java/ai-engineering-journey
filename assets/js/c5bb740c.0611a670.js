@@ -1,0 +1,2828 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[44377],{
+
+/***/ 10702
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_21_interview_preparation_04_ml_foundations_interview_md_c5b_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-21-interview-preparation-04-ml-foundations-interview-md-c5b.json
+const site_docs_courses_ai_engineering_placement_21_interview_preparation_04_ml_foundations_interview_md_c5b_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/interview-preparation/04-ml-foundations-interview","title":"ML Foundations Interview","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview.md","sourceDirName":"courses/ai-engineering-placement/21-interview-preparation","slug":"/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":232,"frontMatter":{"id":"04-ml-foundations-interview","slug":"/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview","title":"ML Foundations Interview","sidebar_label":"ML Foundations Interview","sidebar_position":232},"sidebar":"coursesSidebar","previous":{"title":"Backend Coding Interview","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview"},"next":{"title":"Deep Learning Interview","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/05-deep-learning-interview"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview.md
+
+
+const frontMatter = {
+	id: '04-ml-foundations-interview',
+	slug: '/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview',
+	title: 'ML Foundations Interview',
+	sidebar_label: 'ML Foundations Interview',
+	sidebar_position: 232
+};
+const contentTitle = 'ML Foundations Interview';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "4.1 Learning Paradigms",
+  "id": "41-learning-paradigms",
+  "level": 2
+}, {
+  "value": "4.2 Bias-Variance Tradeoff",
+  "id": "42-bias-variance-tradeoff",
+  "level": 2
+}, {
+  "value": "4.3 Evaluation Metrics",
+  "id": "43-evaluation-metrics",
+  "level": 2
+}, {
+  "value": "4.4 Feature Engineering",
+  "id": "44-feature-engineering",
+  "level": 2
+}, {
+  "value": "4.5 Feature Selection",
+  "id": "45-feature-selection",
+  "level": 2
+}, {
+  "value": "4.6 Tree-Based Models",
+  "id": "46-tree-based-models",
+  "level": 2
+}, {
+  "value": "4.7 Support Vector Machines",
+  "id": "47-support-vector-machines",
+  "level": 2
+}, {
+  "value": "4.8 ML Pipeline Design",
+  "id": "48-ml-pipeline-design",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "CORRECT — scale after split",
+  "id": "correct--scale-after-split",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "ml-foundations-interview",
+        children: "ML Foundations Interview"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain supervised, unsupervised, and reinforcement learning with examples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Master bias-variance tradeoff, underfitting vs overfitting, and regularization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Understand classification metrics: accuracy, precision, recall, F1, ROC-AUC, log loss"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement feature engineering, selection, and extraction techniques"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain tree-based models, SVMs, and ensemble methods"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design ML pipelines from data ingestion to model deployment and monitoring"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic programming knowledge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding of data structures"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Terms"
+      }), ": Core vocabulary and concepts for this topic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition"
+      }), ": Essential terms you must know for interviews and production work."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding ml foundations interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how ml foundations interview works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Learning Paradigms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supervised, unsupervised, RL, semi-supervised, self-supervised"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bias-Variance Tradeoff"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Underfitting, overfitting, regularization, cross-validation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation Metrics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy, precision, recall, F1, ROC-AUC, confusion matrix"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Feature Engineering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encoding, scaling, interaction features, polynomial features"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Feature Selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Filter, wrapper, embedded methods, PCA, mutual information"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree-Based Models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Decision trees, random forest, gradient boosting, XGBoost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Support Vector Machines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Margins, kernels, soft margin, kernel trick"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ML Pipeline Design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data ingestion, preprocessing, training, deployment, monitoring"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Learning Paradigms] --> B[Bias-Variance Tradeoff]\n    B --> C[Evaluation Metrics]\n    C --> D[Feature Engineering]\n    D --> E[Feature Selection]\n    E --> F[Tree-Based Models]\n    F --> G[SVMs]\n    G --> H[ML Pipeline Design]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "41-learning-paradigms",
+      children: "4.1 Learning Paradigms"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Machine learning is broadly categorized into three main paradigms, with emerging hybrid approaches."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Supervised learning"
+      }), ": Model learns from labeled data (input → output mapping). Tasks: regression (predict continuous values) and classification (predict discrete labels). Algorithms: linear regression, logistic regression, decision trees, random forest, SVM, neural networks."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Unsupervised learning"
+      }), ": Model finds patterns in unlabeled data. Tasks: clustering (group similar data), dimensionality reduction (compress data), density estimation, anomaly detection. Algorithms: K-means, DBSCAN, PCA, t-SNE, Gaussian mixture models."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reinforcement learning"
+      }), ": Agent learns by interacting with an environment, receiving rewards/penalties. Tasks: game playing, robotics, resource optimization. Algorithms: Q-learning, deep Q-networks, policy gradients, PPO."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Semi-supervised learning"
+      }), ": Combines a small amount of labeled data with a large amount of unlabeled data. Useful when labeling is expensive. Self-training, pseudo-labeling, consistency regularization."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Self-supervised learning"
+      }), ": Generates labels from the data itself (pretext tasks). Used for pre-training large models (BERT, GPT, SimCLR). The model learns useful representations without manual labels."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Supervised learning example — classification\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import classification_report\n\ndef train_classifier(X, y):\n    X_train, X_test, y_train, y_test = train_test_split(\n        X, y, test_size=0.2, random_state=42, stratify=y\n    )\n    model = RandomForestClassifier(n_estimators=100, max_depth=10)\n    model.fit(X_train, y_train)\n    y_pred = model.predict(X_test)\n    print(classification_report(y_test, y_pred))\n    return model\n\n## Unsupervised learning example — clustering\nfrom sklearn.cluster import KMeans\nfrom sklearn.preprocessing import StandardScaler\n\ndef cluster_data(X, n_clusters=5):\n    scaler = StandardScaler()\n    X_scaled = scaler.fit_transform(X)\n    kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=\"auto\")\n    clusters = kmeans.fit_predict(X_scaled)\n    return clusters, kmeans.cluster_centers_\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "42-bias-variance-tradeoff",
+      children: "4.2 Bias-Variance Tradeoff"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The bias-variance tradeoff is fundamental to understanding model performance."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bias"
+      }), ": Error from incorrect assumptions in the learning algorithm. High bias leads to underfitting — the model is too simple and misses relevant patterns."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Variance"
+      }), ": Error from sensitivity to small fluctuations in the training set. High variance leads to overfitting — the model captures noise instead of signal."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Total error"
+      }), " = Bias² + Variance + Irreducible error."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Visualizing bias-variance with polynomial regression\nimport numpy as np\nfrom sklearn.preprocessing import PolynomialFeatures\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import mean_squared_error\n\ndef bias_variance_demo():\n    np.random.seed(42)\n    n_samples = 50\n    X = np.linspace(-3, 3, n_samples)\n    y_true = np.sin(X)\n    y = y_true + np.random.normal(0, 0.3, n_samples)\n\n    X = X.reshape(-1, 1)\n    degrees = [1, 3, 15]\n    for degree in degrees:\n        poly = PolynomialFeatures(degree=degree)\n        X_poly = poly.fit_transform(X)\n        model = LinearRegression()\n        model.fit(X_poly, y)\n        y_pred = model.predict(X_poly)\n        mse = mean_squared_error(y, y_pred)\n        print(f\"Degree {degree}: MSE = {mse:.4f}\")\n        # Degree 1: high bias (underfitting)\n        # Degree 3: balanced\n        # Degree 15: high variance (overfitting)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Regularization"
+      }), " reduces overfitting by adding a penalty for complex models:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L1 (Lasso)"
+        }), ": Adds |weight| penalty. Produces sparse models (feature selection)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L2 (Ridge)"
+        }), ": Adds weight² penalty. Shrinks weights toward zero but doesn't eliminate features."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ElasticNet"
+        }), ": Combines L1 and L2 penalties."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cross-validation techniques"
+      }), ": K-fold (most common), stratified K-fold (preserves class proportions), leave-one-out (small datasets), time series split (temporal data)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "43-evaluation-metrics",
+      children: "4.3 Evaluation Metrics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Choosing the right metric is critical. The same model can look very different depending on the metric."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Classification metrics"
+      }), ":"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Metric"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Formula"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "When to Use"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Accuracy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(TP + TN) / (TP + TN + FP + FN)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Balanced classes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Precision"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TP / (TP + FP)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimize false positives (spam detection)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TP / (TP + FN)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimize false negatives (disease detection)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "F1-Score"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 * (P * R) / (P + R)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Imbalanced classes, want balance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ROC-AUC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Area under TPR vs FPR curve"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rank-based evaluation, threshold-independent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Log Loss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-Σ(y*log(p) + (1-y)*log(1-p))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Probabilistic predictions"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from sklearn.metrics import (\n    accuracy_score, precision_score, recall_score, f1_score,\n    roc_auc_score, log_loss, confusion_matrix, ConfusionMatrixDisplay\n)\n\ndef evaluate_classifier(y_true, y_pred, y_proba=None):\n    print(f\"Accuracy:  {accuracy_score(y_true, y_pred):.4f}\")\n    print(f\"Precision: {precision_score(y_true, y_pred):.4f}\")\n    print(f\"Recall:    {recall_score(y_true, y_pred):.4f}\")\n    print(f\"F1-Score:  {f1_score(y_true, y_pred):.4f}\")\n    if y_proba is not None:\n        print(f\"ROC-AUC:   {roc_auc_score(y_true, y_proba):.4f}\")\n        print(f\"Log Loss:  {log_loss(y_true, y_proba):.4f}\")\n\n    cm = confusion_matrix(y_true, y_pred)\n    print(f\"Confusion Matrix:\\n{cm}\")\n\n## Regression metrics\nfrom sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score\n\ndef evaluate_regression(y_true, y_pred):\n    mse = mean_squared_error(y_true, y_pred)\n    rmse = np.sqrt(mse)\n    mae = mean_absolute_error(y_true, y_pred)\n    r2 = r2_score(y_true, y_pred)\n    print(f\"MSE:  {mse:.4f}, RMSE: {rmse:.4f}\")\n    print(f\"MAE:  {mae:.4f}\")\n    print(f\"R²:   {r2:.4f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Important considerations"
+      }), ": For imbalanced datasets (fraud detection, rare disease), accuracy is misleading. Use precision-recall curves, F1, or weighted metrics. For ranking problems (recommendation systems), use NDCG, MAP, or MRR."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "44-feature-engineering",
+      children: "4.4 Feature Engineering"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Feature engineering is the process of transforming raw data into features that better represent the underlying problem."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Numerical features"
+      }), ": Scaling (StandardScaler, MinMaxScaler), transformations (log, Box-Cox, Yeo-Johnson), binning (discretization), interaction features (multiplying or dividing columns)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Categorical features"
+      }), ": One-hot encoding (for nominal categories), label encoding (for ordinal categories), target encoding (replace with mean of target), frequency encoding, embeddings for high-cardinality features."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Text features"
+      }), ": Bag of words, TF-IDF, word embeddings (Word2Vec, GloVe), sentence embeddings (SBERT), character n-grams."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Temporal features"
+      }), ": Day of week, hour, month, is_weekend, days since last event, rolling statistics, time since a reference point."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import pandas as pd\nimport numpy as np\nfrom sklearn.preprocessing import StandardScaler, MinMaxScaler, LabelEncoder\n\ndef engineer_features(df: pd.DataFrame) -> pd.DataFrame:\n    df = df.copy()\n\n    # Numerical transformations\n    df[\"price_log\"] = np.log1p(df[\"price\"])\n    df[\"area_squared\"] = df[\"area\"] ** 2\n    df[\"price_per_area\"] = df[\"price\"] / (df[\"area\"] + 1)\n\n    # Temporal features\n    df[\"date\"] = pd.to_datetime(df[\"date\"])\n    df[\"day_of_week\"] = df[\"date\"].dt.dayofweek\n    df[\"month\"] = df[\"date\"].dt.month\n    df[\"is_weekend\"] = df[\"day_of_week\"].isin([5, 6]).astype(int)\n    df[\"hour\"] = df[\"date\"].dt.hour\n\n    # Rolling statistics\n    df[\"price_rolling_mean_7d\"] = (\n        df.sort_values(\"date\")[\"price\"]\n        .rolling(window=7, min_periods=1)\n        .mean()\n    )\n\n    # Categorical encoding\n    df[\"city_encoded\"] = LabelEncoder().fit_transform(df[\"city\"])\n    df[\"category_freq\"] = df[\"category\"].map(df[\"category\"].value_counts())\n\n    # Interaction features\n    df[\"rooms_times_area\"] = df[\"rooms\"] * df[\"area\"]\n\n    return df\n\n## Feature scaling\nscaler = StandardScaler()\nnumerical_cols = [\"price\", \"area\", \"rooms\", \"price_per_area\"]\ndf[numerical_cols] = scaler.fit_transform(df[numerical_cols])\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Feature engineering rules"
+      }), ": Start simple, validate with cross-validation, don't leak information from the future, create features that encode domain knowledge."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "45-feature-selection",
+      children: "4.5 Feature Selection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Feature selection reduces dimensionality, improves model performance, reduces overfitting, and speeds up training."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Filter methods"
+      }), ": Rank features independently of the model. Fast but ignore feature interactions."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "When to Use"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Variance threshold"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remove constant/quasi-constant features"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial cleanup"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Correlation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remove highly correlated features"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multicollinearity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mutual information"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Measure dependency between feature and target"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-linear relationships"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Chi-squared test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test independence for categorical features"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classification"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ANOVA F-test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare means across groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Numerical features, classification"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Wrapper methods"
+      }), ": Train a model with subsets of features. Compute-intensive but account for feature interactions."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Embedded methods"
+      }), ": Feature selection happens during model training. L1 regularization (Lasso), tree-based feature importance, permutation importance."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from sklearn.feature_selection import (\n    SelectKBest, mutual_info_classif, f_classif,\n    VarianceThreshold, RFE\n)\nfrom sklearn.ensemble import RandomForestClassifier\n\n## Variance threshold — remove low-variance features\ndef remove_low_variance(X, threshold=0.01):\n    selector = VarianceThreshold(threshold=threshold)\n    X_high_var = selector.fit_transform(X)\n    kept = selector.get_support(indices=True)\n    return X_high_var, kept\n\n## Mutual information — select top K features\ndef select_by_mutual_info(X, y, k=20):\n    selector = SelectKBest(mutual_info_classif, k=k)\n    X_selected = selector.fit_transform(X, y)\n    scores = selector.scores_\n    return X_selected, scores\n\n## Recursive feature elimination (wrapper)\ndef select_by_rfe(model, X, y, n_features=10):\n    selector = RFE(model, n_features_to_select=n_features)\n    X_selected = selector.fit_transform(X, y)\n    ranking = selector.ranking_\n    return X_selected, ranking\n\n## Tree-based feature importance (embedded)\ndef select_by_importance(X, y, threshold=0.01):\n    model = RandomForestClassifier(n_estimators=100, random_state=42)\n    model.fit(X, y)\n    importances = model.feature_importances_\n    mask = importances >= threshold\n    return X[:, mask], importances[mask]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dimensionality reduction"
+      }), ": PCA (linear, unsupervised), t-SNE (non-linear, visualization), UMAP (non-linear, fast), LDA (linear, supervised)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "46-tree-based-models",
+      children: "4.6 Tree-Based Models"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Tree-based models are the most popular family of algorithms for structured data. They handle non-linear relationships, feature interactions, and missing data naturally."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Decision trees"
+      }), ": Split data recursively on feature thresholds. Maximize information gain (classification) or variance reduction (regression). Prone to overfitting without depth/leaf constraints."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Random Forest"
+      }), ": Ensemble of decision trees trained on bootstrap samples with random feature subsets. Reduces variance while maintaining low bias. Bagging (bootstrap aggregating)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Gradient Boosting"
+      }), ": Sequential training where each new tree corrects the errors of the previous ensemble. XGBoost, LightGBM, and CatBoost are popular implementations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor\nfrom sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier\nimport xgboost as xgb\nimport lightgbm as lgb\n\n## Decision tree\ndt = DecisionTreeClassifier(max_depth=5, min_samples_leaf=10, random_state=42)\ndt.fit(X_train, y_train)\n\n## Random forest\nrf = RandomForestClassifier(\n    n_estimators=200,\n    max_depth=10,\n    min_samples_leaf=5,\n    max_features=\"sqrt\",\n    random_state=42\n)\nrf.fit(X_train, y_train)\nfeature_importance = pd.Series(rf.feature_importances_, index=feature_names)\n\n## XGBoost\nxgb_model = xgb.XGBClassifier(\n    n_estimators=100,\n    max_depth=6,\n    learning_rate=0.1,\n    subsample=0.8,\n    colsample_bytree=0.8,\n    reg_lambda=1.0,\n    reg_alpha=0.0,\n    random_state=42\n)\nxgb_model.fit(X_train, y_train)\n\n## LightGBM\nlgb_model = lgb.LGBMClassifier(\n    n_estimators=100,\n    max_depth=-1,          # no limit\n    num_leaves=31,\n    learning_rate=0.1,\n    subsample=0.8,\n    colsample_bytree=0.8,\n    random_state=42\n)\nlgb_model.fit(X_train, y_train)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key hyperparameters"
+      }), ": n_estimators (more is better but diminishing returns), learning_rate (lower = better generalization), max_depth (control overfitting), subsample (row sampling), colsample_bytree (column sampling), reg_lambda/alpha (regularization)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When to use each"
+      }), ": Decision trees for interpretability (small trees). Random forest when you need robustness with minimal tuning. Gradient boosting when you need maximum predictive performance."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "47-support-vector-machines",
+      children: "4.7 Support Vector Machines"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "SVMs find the hyperplane that maximally separates classes. They work well for high-dimensional spaces and are memory-efficient."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key concepts"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Margin"
+        }), ": Distance between the hyperplane and the closest data points (support vectors). SVM maximizes this margin."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Support vectors"
+        }), ": The critical data points that define the margin. Only these influence the model."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Soft margin"
+        }), ": Allows misclassifications with a penalty parameter C. Low C = wider margin (more tolerance), high C = narrower margin (less tolerance)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Kernel trick"
+        }), ": Map data to higher dimensions without explicit transformation. Common kernels: linear, polynomial, RBF (Gaussian), sigmoid."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from sklearn.svm import SVC, SVR\nfrom sklearn.preprocessing import StandardScaler\n\n## SVM classification with RBF kernel\ndef train_svm(X_train, y_train, X_test):\n    # SVMs require feature scaling\n    scaler = StandardScaler()\n    X_train_scaled = scaler.fit_transform(X_train)\n    X_test_scaled = scaler.transform(X_test)\n\n    svm = SVC(\n        kernel=\"rbf\",\n        C=1.0,           # Regularization (lower = softer margin)\n        gamma=\"scale\",   # Kernel coefficient\n        probability=True,\n        random_state=42\n    )\n    svm.fit(X_train_scaled, y_train)\n\n    y_pred = svm.predict(X_test_scaled)\n    y_proba = svm.predict_proba(X_test_scaled)[:, 1]\n\n    return svm, y_pred, y_proba\n\n## Hyperparameter tuning\nfrom sklearn.model_selection import GridSearchCV\n\nparam_grid = {\n    \"C\": [0.1, 1.0, 10.0],\n    \"gamma\": [\"scale\", \"auto\", 0.1, 0.01],\n    \"kernel\": [\"rbf\", \"poly\", \"sigmoid\"],\n}\n\ngrid_search = GridSearchCV(\n    SVC(random_state=42),\n    param_grid,\n    cv=5,\n    scoring=\"f1\",\n    n_jobs=-1,\n    verbose=1\n)\ngrid_search.fit(X_train_scaled, y_train)\nprint(f\"Best params: {grid_search.best_params_}\")\nprint(f\"Best score: {grid_search.best_score_:.4f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "SVM tradeoffs"
+      }), ": Works well for small-to-medium datasets. Training is O(n²) to O(n³). Sensitive to feature scaling. RBF kernel is a good default. For large datasets, use LinearSVC or SGDClassifier with hinge loss."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "48-ml-pipeline-design",
+      children: "4.8 ML Pipeline Design"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A production ML pipeline spans from data to deployment. Be prepared to discuss the end-to-end architecture."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pipeline stages"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data ingestion"
+        }), ": Batch (scheduled jobs) or streaming (Kafka, Kinesis). Store raw data in data lake (S3, GCS)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data validation"
+        }), ": Schema validation, data quality checks, drift detection. Tools: Great Expectations, Deequ."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Feature engineering"
+        }), ": Transform raw data into features. Store in feature store (Feast, Tecton) for reusability."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Training"
+        }), ": Experiment tracking (MLflow, Weights & Biases), hyperparameter tuning (Optuna), model selection."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Model evaluation"
+        }), ": Holdout set, cross-validation, sliced evaluation (by segment), fairness checks."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Deployment"
+        }), ": REST API (FastAPI, Flask), batch inference (Spark), edge deployment (ONNX, TensorRT)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Monitoring"
+        }), ": Data drift, concept drift, model performance decay, prediction distribution shifts."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Retraining"
+        }), ": Scheduled (weekly/monthly) or triggered by performance degradation."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Complete ML pipeline with scikit-learn\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.preprocessing import OneHotEncoder, StandardScaler\nfrom sklearn.impute import SimpleImputer\n\ndef build_pipeline(categorical_cols: list, numerical_cols: list):\n    numerical_transformer = Pipeline(steps=[\n        (\"imputer\", SimpleImputer(strategy=\"median\")),\n        (\"scaler\", StandardScaler()),\n    ])\n\n    categorical_transformer = Pipeline(steps=[\n        (\"imputer\", SimpleImputer(strategy=\"most_frequent\")),\n        (\"onehot\", OneHotEncoder(handle_unknown=\"ignore\", sparse_output=False)),\n    ])\n\n    preprocessor = ColumnTransformer(\n        transformers=[\n            (\"num\", numerical_transformer, numerical_cols),\n            (\"cat\", categorical_transformer, categorical_cols),\n        ]\n    )\n\n    pipeline = Pipeline(steps=[\n        (\"preprocessor\", preprocessor),\n        (\"classifier\", GradientBoostingClassifier(n_estimators=100, random_state=42)),\n    ])\n\n    return pipeline\n\npipeline = build_pipeline(categorical_cols=[\"city\", \"category\"], numerical_cols=[\"price\", \"area\"])\npipeline.fit(X_train, y_train)\ny_pred = pipeline.predict(X_test)\n\n## MLflow experiment tracking\nimport mlflow\n\ndef train_with_tracking(X_train, X_test, y_train, y_test, params: dict):\n    with mlflow.start_run():\n        # Log parameters\n        mlflow.log_params(params)\n\n        # Train model\n        model = GradientBoostingClassifier(**params)\n        model.fit(X_train, y_train)\n\n        # Evaluate\n        y_pred = model.predict(X_test)\n        accuracy = accuracy_score(y_test, y_pred)\n        f1 = f1_score(y_test, y_pred)\n\n        # Log metrics\n        mlflow.log_metrics({\"accuracy\": accuracy, \"f1\": f1})\n\n        # Log model\n        mlflow.sklearn.log_model(model, \"model\")\n\n        return model\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Model serving"
+      }), ": For real-time inference, wrap the model in a REST API with input validation and monitoring. For batch inference, use Spark or Dask. Consider model quantization and ONNX for latency-sensitive applications."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Supervised learning needs labels; unsupervised finds hidden structure; RL learns from rewards"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bias-variance tradeoff: high bias = underfitting, high variance = overfitting; regularization balances both"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Choose metrics based on business context: F1 for imbalanced classification, RMSE for regression, ROC-AUC for ranking"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Feature engineering is the highest-leverage activity — domain knowledge and creativity matter more than complex models"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Filter methods are fast but ignore interactions; wrapper methods find interactions but are slow; embedded methods balance both"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tree-based models dominate structured data; random forest for robustness, gradient boosting for peak performance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "SVMs work well for high-dimensional data with clear margin separation; require careful tuning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production ML pipelines need validation, monitoring, and retraining — not just model training"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Do This"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Avoid This"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Imbalanced classes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use class weights, SMOTE, or stratified sampling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Relying on accuracy alone"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "High-dimensional sparse data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use linear models or tree-based with feature selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Using KNN or SVMs (curse of dimensionality)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Missing values"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Impute with median (numerical) or most frequent (categorical)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dropping rows with missing values"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Feature scaling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "StandardScaler for SVMs, neural networks, KNN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Applying scaling to tree-based models"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Model selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Start simple (linear), then increase complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Starting with the most complex model"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Overfitting"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reduce complexity, increase regularization, more data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adding more features indiscriminately"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Containerize with Docker, version model artifacts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manually copying model files to servers"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: Explain the bias-variance tradeoff with examples.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The bias-variance tradeoff describes the relationship between a model's ability to fit training data (low bias) and its sensitivity to noise in the training data (low variance)."
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "High bias (underfitting)"
+          }), ": Linear regression on a quadratic relationship. The model is too simple and misses the pattern. Performs poorly on both training and test data."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "High variance (overfitting)"
+          }), ": A deep decision tree with no pruning. It memorizes noise in the training data. Perfect training score but poor test score."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Balanced"
+          }), ": A regularized decision tree with max_depth=5 and min_samples_leaf=10. Performs well on both training and test — the model captures the signal without fitting noise."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Total error"
+          }), " = Bias² + Variance + Irreducible error. The goal is to find the sweet spot that minimizes total error on unseen data."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: When would you use precision vs recall vs F1?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Precision"
+          }), " (TP / (TP + FP)) answers: \"Of the positive predictions, how many were correct?\" Use precision when false positives are costly."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Recall"
+          }), " (TP / (TP + FN)) answers: \"Of the actual positives, how many did we catch?\" Use recall when false negatives are costly."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "F1-Score"
+          }), " (harmonic mean of precision and recall) balances both. Use F1 when you need a single metric and the class distribution is imbalanced."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Examples"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Spam detection"
+            }), ": Optimize precision (few false positives — don't mark important emails as spam)"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cancer screening"
+            }), ": Optimize recall (few false negatives — don't miss a cancer case)"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Search ranking"
+            }), ": F1 or NDCG — balance relevance and coverage"]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "For imbalanced datasets, avoid accuracy. A model that predicts \"no disease\" for everyone achieves high accuracy but zero recall for the positive class."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: How does Random Forest reduce overfitting?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Random Forest reduces overfitting through two complementary randomization strategies:"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ol, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bootstrap sampling (row sampling)"
+            }), ": Each tree is trained on a different random subset of the data (sampled with replacement). This decorrelates the trees — different trees see different data patterns."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Feature subsampling (column sampling)"
+            }), ": At each split, only a random subset of features is considered (typically sqrt(p) for classification, p/3 for regression). This further decorrelates trees and prevents strong features from dominating all trees."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The ensemble prediction averages over many diverse trees. Individual trees may overfit, but their errors cancel out in the aggregate. More formally, the variance of an ensemble of n uncorrelated trees with variance σ² is σ²/n. Random Forest also adds bagging (bootstrap aggregating) which reduces variance without increasing bias."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q4: Explain the difference between Bagging and Boosting.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Bagging"
+          }), " (Bootstrap Aggregating): Trains multiple models in parallel on bootstrap samples of the data. Aggregates by averaging (regression) or majority voting (classification). Reduces variance without increasing bias. Random Forest is the prime example."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Boosting"
+          }), ": Trains models sequentially. Each new model focuses on the mistakes of previous models. Reduces both bias and variance but can overfit if not regularized. Examples: AdaBoost, Gradient Boosting, XGBoost."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Key differences"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.table, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.tbody, {
+            children: [(0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.th, {
+                children: "Aspect"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "Bagging"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "Boosting"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Training"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Parallel"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Sequential"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Goal"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Reduce variance"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Reduce bias"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Overfitting risk"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Low"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Higher (needs regularization)"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Training speed"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Fast (parallel)"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Slower (sequential)"
+              })]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: "Interpretability"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Poor"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "Better (feature importance, SHAP)"
+              })]
+            }), "\n    "]
+          })]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q5: What is the kernel trick in SVMs?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The kernel trick allows SVMs to find non-linear decision boundaries without explicitly computing the transformation to higher-dimensional space."
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The problem"
+          }), ": Many datasets aren't linearly separable in the original feature space. We could map data to higher dimensions (e.g., polynomial features) but computing this transformation explicitly is expensive."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "The trick"
+          }), ": SVMs only need dot products between data points. Kernel functions compute dot products in a high-dimensional space implicitly, using only the original coordinates. This is O(n²) instead of O(n^d) for explicit transformation."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Common kernels"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Linear"
+            }), ": K(x, y) = x · y — no transformation"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Polynomial"
+            }), ": K(x, y) = (x · y + c)^d — polynomial decision boundary"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "RBF (Gaussian)"
+            }), ": K(x, y) = exp(-γ||x - y||²) — infinite-dimensional mapping"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Sigmoid"
+            }), ": K(x, y) = tanh(κx · y + c) — like a neural network layer"]
+          }), "\n    "]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q6",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q6: How do you handle missing values in a dataset?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Understand the mechanism first"
+          }), ": MCAR (missing completely at random), MAR (missing at random — depends on observed data), MNAR (missing not at random — depends on the missing value itself). The approach depends on the mechanism."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Deletion methods"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Listwise deletion"
+            }), ": Drop rows with any missing values. Simple but can lose a lot of data."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pairwise deletion"
+            }), ": Use available data for each calculation. Inconsistent sample sizes across features."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Imputation methods"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mean/median imputation"
+            }), ": Simple, doesn't change variance. Can distort relationships."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mode imputation"
+            }), ": For categorical features."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Forward/backward fill"
+            }), ": For time series data."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "KNN imputation"
+            }), ": Impute based on similar samples. More accurate but slower."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Model-based imputation"
+            }), ": Use a model (regression, MICE) to predict missing values."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Tree-based models"
+          }), " (Random Forest, XGBoost) handle missing values natively by learning surrogate splits."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q7",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q7: Explain ROC-AUC and when it's useful.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ROC curve"
+          }), ": Plots True Positive Rate (sensitivity) against False Positive Rate (1 — specificity) at various classification thresholds. Each point represents a different decision threshold."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "AUC (Area Under the Curve)"
+          }), ": Aggregates the ROC curve into a single number. AUC = probability that a randomly chosen positive instance is ranked higher than a randomly chosen negative instance."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Interpretation"
+          }), ": AUC = 1.0 (perfect classifier), AUC = 0.5 (random guessing), AUC < 0.5 (worse than random — reverse predictions)."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "When to use"
+          }), ": ROC-AUC is threshold-independent — good for comparing models when the operating threshold is unknown. Useful for ranking problems (ad click prediction, credit scoring)."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "When NOT to use"
+          }), ": For highly imbalanced datasets, ROC-AUC can be misleadingly optimistic (large TN count inflates FPR denominator). Use Precision-Recall AUC instead for imbalanced problems."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q8",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q8: What is the difference between L1 and L2 regularization?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "L1 regularization (Lasso)"
+          }), ": Adds |weight| penalty to the loss function. Produces sparse models by driving some weights to exactly zero. Acts as an embedded feature selection method."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "L2 regularization (Ridge)"
+          }), ": Adds weight² penalty to the loss function. Shrinks all weights toward zero but doesn't zero them out. Maintains all features with reduced impact."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "ElasticNet"
+          }), ": Combines L1 and L2 with a mixing parameter ρ. L1 penalty = ρ * Σ|w|, L2 penalty = (1-ρ) * Σw²/2."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Geometric interpretation"
+          }), ": L1 has a diamond-shaped constraint region (corners coincide with axes, leading to sparsity). L2 has a circular constraint region (smooth shrinkage)."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "When to use which"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "L1: When you suspect many features are irrelevant and want automatic feature selection"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "L2: When all features contribute but you want to prevent any single feature from dominating"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "ElasticNet: When features are correlated (L1 picks one arbitrarily; ElasticNet picks groups)"
+          }), "\n    "]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q9",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q9: Explain cross-validation and why it's better than a single train-test split.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "K-fold cross-validation"
+          }), ": Split data into K folds. Train on K-1 folds, evaluate on the held-out fold. Repeat K times, average results."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Advantages over single split"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lower variance"
+            }), ": A single split depends heavily on which data points land in the test set. CV averages performance across K different splits, producing more reliable estimates."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "More data for training"
+            }), ": Each model trains on (K-1)/K of the data — better use of limited data."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Less overfitting to the test split"
+            }), ": Prevents tuning hyperparameters to exploit the randomness of a single split."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Variants"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Stratified K-fold"
+            }), ": Preserves class proportions in each fold — essential for imbalanced classification"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Group K-fold"
+            }), ": Ensures data from the same group doesn't appear in both train and test"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time series split"
+            }), ": Respects temporal order — train on past, test on future"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Leave-one-out"
+            }), ": K = n samples — extremely high variance, high computational cost"]
+          }), "\n    "]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q10",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q10: How do you detect and prevent data leakage?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Data leakage occurs when information from outside the training set (including the test set or future data) influences the model, creating unrealistically good performance."
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Common causes"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ol, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scaling before splitting"
+            }), ": Using global mean/std computed on the full dataset. Solution: fit scaler on training data only, transform test data."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Feature leakage"
+            }), ": Using features that wouldn't be available at prediction time (e.g., target-encoded features using the entire dataset)."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Temporal leakage"
+            }), ": Training on data from the future relative to test data. Solution: time-based split."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Duplicate data"
+            }), ": Same rows appearing in both train and test sets (data contamination)."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Imputation using test data"
+            }), ": Filling missing values using statistics from the full dataset."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.pre, {
+          children: [(0,jsx_runtime.jsxs)(_components.code, {
+            children: ["# WRONG — scaling before split\nscaler = StandardScaler()\nX_all_scaled = scaler.fit_transform(X)\nX_train, X_test = train_test_split(X_all_scaled)  # test data influences scaling\n", (0,jsx_runtime.jsx)(_components.h2, {
+              id: "correct--scale-after-split",
+              children: "CORRECT — scale after split"
+            }), "\n"]
+          }), (0,jsx_runtime.jsx)(_components.p, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "X_train, X_test = train_test_split(X)\nscaler = StandardScaler()\nX_train_scaled = scaler.fit_transform(X_train)\nX_test_scaled = scaler.transform(X_test)"
+            })
+          })]
+        }), (0,jsx_runtime.jsx)(_components.p, {}), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q11",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q11: Compare PCA and t-SNE for dimensionality reduction.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "PCA (Principal Component Analysis)"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Linear method — finds orthogonal axes that maximize variance"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Deterministic — same result every run"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Fast — O(min(n³, p³)) for eigendecomposition"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interpretable — principal components are linear combinations of original features"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Preserves global structure (distances between far-apart points)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Used for: dimensionality reduction, noise reduction, multicollinearity handling"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "t-SNE (t-Distributed Stochastic Neighbor Embedding)"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Non-linear method — preserves local structure (neighbors remain neighbors)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Stochastic — different runs produce different results"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Slow — O(n²) for pairwise distance computation"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Not interpretable — axes have no meaning"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Primarily used for visualization (2D or 3D)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Perplexity parameter controls balance between local and global structure"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Recommendation"
+          }), ": Use PCA for preprocessing (before ML models), use t-SNE for exploratory visualization. UMAP is a faster, more scalable alternative to t-SNE."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q12",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q12: How do you handle imbalanced datasets for classification?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Data-level methods"
+          }), " — modify the training distribution:"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Random undersampling"
+            }), ": Remove samples from majority class. Simple but loses information."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Random oversampling"
+            }), ": Duplicate minority class samples. Can cause overfitting."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "SMOTE"
+            }), ": Generate synthetic minority samples by interpolating between existing minority points. More effective than naive oversampling."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "ADASYN"
+            }), ": Adaptive synthetic sampling — generates more samples for harder-to-learn instances."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Algorithm-level methods"
+          }), " — modify the learning algorithm:"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Class weights"
+            }), ": Penalize misclassifications of minority class more heavily. Most sklearn models support `class_weight=\"balanced\"`."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Focal loss"
+            }), ": Down-weights well-classified examples, focusing training on hard examples."]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Threshold tuning"
+            }), ": Adjust the decision threshold from 0.5 to maximize F1 or other metrics."]
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Ensemble methods"
+          }), ": Balanced Random Forest (bootstrap with balanced sampling), EasyEnsemble (multiple undersampled subsets), RUSBoost (undersampling + boosting)."]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Always use appropriate metrics (precision-recall curve, F1, Matthews correlation coefficient) and stratified cross-validation for imbalanced data."
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q13",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q13: Explain gradient boosting and how XGBoost improves upon it.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Gradient Boosting"
+          }), " builds an ensemble of weak learners (typically decision trees) sequentially. Each new tree fits the negative gradient (residuals) of the loss function with respect to the current prediction."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Algorithm sketch"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ol, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Start with a constant prediction: F₀(x) = argmin Σ L(yᵢ, γ)"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "For m = 1 to M: compute pseudo-residuals rᵢₘ = -∂L/∂F, fit a tree to residuals, update Fₘ = Fₘ₋₁ + η * treeₘ"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "η (learning rate) scales each tree's contribution — smaller η requires more trees but generalizes better"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "XGBoost improvements"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Regularization"
+            }), ": L1 and L2 regularization on leaf weights — prevents overfitting"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Second-order gradients"
+            }), ": Uses both first and second derivatives (Newton boosting) — converges faster"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Column subsampling"
+            }), ": Random feature subsampling (like Random Forest)"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Weighted quantile sketch"
+            }), ": Efficient handling of weighted data"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Sparsity-aware split finding"
+            }), ": Handles missing values/distributed efficiently"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cache-aware access"
+            }), ": Optimized memory access patterns for speed"]
+          }), "\n    "]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q14",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q14: What is model drift and how do you detect it?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Data drift"
+          }), " (covariate shift): The distribution of input features changes over time. Detection: compare feature distributions using statistical tests (Kolmogorov-Smirnov, chi-squared) or population stability index (PSI)."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Concept drift"
+          }), ": The relationship between input features and target changes. The model learned P(y|x) but now P(y|x) is different. Detection: monitor prediction distribution, accuracy on a validation set, or residual patterns."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Monitoring approach"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.pre, {
+          children: [(0,jsx_runtime.jsxs)(_components.code, {
+            children: ["from scipy.stats import ks_2samp\n", (0,jsx_runtime.jsx)(_components.p, {
+              children: "def detect_data_drift(reference_data, current_data, threshold=0.05):\ndrift_detected = {}\nfor col in reference_data.columns:\nstat, p_value = ks_2samp(reference_data[col], current_data[col])\ndrift_detected[col] = {\n\"drifted\": p_value < threshold,\n\"p_value\": p_value,\n\"statistic\": stat\n}\nreturn drift_detected"
+            }), "\n"]
+          }), (0,jsx_runtime.jsx)(_components.p, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "def detect_concept_drift(model, X_validation, y_validation, threshold=0.1):\nbaseline_accuracy = model.baseline_accuracy  # stored from training\ncurrent_accuracy = model.score(X_validation, y_validation)\ndrift = (baseline_accuracy - current_accuracy) > threshold\nreturn drift, current_accuracy"
+            })
+          })]
+        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Remediation: Retrain on recent data, use online/adaptive learning, or deploy a new model version. Set up automated alerting when drift exceeds thresholds."
+        }), (0,jsx_runtime.jsx)(_components.p, {}), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-q15",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q15: Design an ML system for fraud detection.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Problem"
+          }), ": Real-time fraud detection on credit card transactions. Extremely imbalanced (0.1% fraud), highly skewed features, adversarial adaptation."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Data pipeline"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Streaming ingestion from transaction events (Kafka) — ~10K TPS"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Feature store (Feast) with features: transaction amount, merchant category, user velocity (transactions in last hour), device fingerprint, IP geolocation, time since last transaction"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Window aggregations: average amount in last 24h, count of transactions per merchant"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Model"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "First layer: LightGBM or XGBoost — handles tabular transactional data well, fast inference"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Second layer: Graph neural network — captures merchant-user relationship network"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Final: Ensemble with logistic regression meta-learner"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Train with focal loss or weighted loss to handle imbalance"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Deployment"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Real-time API with FastAPI, sub-50ms inference per transaction"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Batch scoring daily for non-real-time signals"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Shadow scoring for new model validation before production"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A/B testing framework for model comparison"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Monitoring"
+          }), ": Hourly drift detection on features (KS test), daily accuracy monitoring (with delayed labels from disputes), adversarial retraining trigger when model accuracy drops."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1"
+      }), ": Which metric is most appropriate for an imbalanced classification problem?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Accuracy\nb) F1-Score\nc) Mean Squared Error\nd) R²"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-quiz1",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) F1-Score"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "F1 balances precision and recall, making it suitable for imbalanced classes where accuracy would be misleading."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2"
+      }), ": What is the primary effect of L1 regularization?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Shrinks all weights toward zero uniformly\nb) Drives some weights to exactly zero (sparsity)\nc) Increases model complexity\nd) Removes correlated features"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-quiz2",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Drives some weights to exactly zero (sparsity)"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "L1 regularization (Lasso) can zero out feature weights, acting as an automatic feature selection method."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3"
+      }), ": Which ensemble method trains models sequentially to correct previous errors?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Random Forest\nb) Bagging\nc) Gradient Boosting\nd) Voting Classifier"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-quiz3",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: c) Gradient Boosting"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "Gradient boosting trains trees sequentially, each new tree fitting the residuals of the current ensemble."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4"
+      }), ": What does ROC-AUC measure?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Accuracy at threshold 0.5\nb) The probability that a random positive is ranked higher than a random negative\nc) Precision at a fixed recall\nd) The area under the precision-recall curve"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-quiz4",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) The probability that a random positive is ranked higher than a random negative"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "ROC-AUC measures the model's ability to rank positive instances higher than negative instances, averaged over all classification thresholds."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5"
+      }), ": What is the main advantage of the kernel trick in SVMs?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Reduces training time\nb) Computes non-linear decision boundaries without explicit feature transformation\nc) Handles missing values automatically\nd) Works without labeled data"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s04-quiz5",
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: [(0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Answer: b) Computes non-linear decision boundaries without explicit feature transformation"
+          })
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: "The kernel trick computes dot products in a high-dimensional space using only the original feature coordinates, enabling non-linear classification efficiently."
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Load the UCI Iris dataset and train a logistic regression model. Compute accuracy, precision, recall, F1, and confusion matrix for each class. Compare results with a decision tree."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Easy"
+      }), " — Implement k-fold cross-validation from scratch (without sklearn). Use it to evaluate a Random Forest on a dataset of your choice. Compare the mean CV score with a single train-test split."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Train an XGBoost model on a real-world tabular dataset. Perform hyperparameter tuning using GridSearchCV for: n_estimators, max_depth, learning_rate, subsample. Report the best parameters and test set performance."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Medium"
+      }), " — Build a complete ML pipeline for a binary classification problem: ingest data, handle missing values, scale features, encode categories, train an ensemble model, evaluate with ROC-AUC and precision-recall curves, and save the pipeline for deployment."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard"
+      }), " — Implement a streaming anomaly detection system: generate a synthetic time series with periodic anomalies. Use a sliding window to compute features. Train an isolation forest on historical data. Implement real-time scoring with drift detection and automatic retraining."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not understanding the fundamental concepts before applying them"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skipping edge cases in implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not analyzing time/space complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forgetting to handle null/empty inputs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not practicing enough problems to build pattern recognition"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of ML Foundations Interview in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function that demonstrates ML Foundations Interview."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding ML Foundations Interview. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system that relies on ML Foundations Interview from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare ML Foundations Interview with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component that depends on ML Foundations Interview."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does ML Foundations Interview behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of ML Foundations Interview run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of ML Foundations Interview that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name ML Foundations Interview explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using ML Foundations Interview\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies ML Foundations Interview to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside ML Foundations Interview (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of ML Foundations Interview and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a ML Foundations Interview-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic ML Foundations Interview interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply ML Foundations Interview in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " ML Foundations Interview builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for ML Foundations Interview before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for ML Foundations Interview is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for ML Foundations Interview in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the ML Foundations Interview chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers ML Foundations Interview is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to ML Foundations Interview is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing ML Foundations Interview is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug ML Foundations Interview issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to ML Foundations Interview in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving ML Foundations Interview that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of ML Foundations Interview is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain ML Foundations Interview in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for ML Foundations Interview and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of ML Foundations Interview on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain ML Foundations Interview to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of ML Foundations Interview from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered ML Foundations Interview when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining ML Foundations Interview twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own ML Foundations Interview snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of ML Foundations Interview listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link ML Foundations Interview to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of ML Foundations Interview by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain ML Foundations Interview to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary tool or library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter referenced in Related Topics for the next-level treatment of ML Foundations Interview"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic textbook chapter on ML Foundations Interview (check the Research References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Two blog posts from engineers who debugged real ML Foundations Interview problems in production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The repository of the open-source project that implements ML Foundations Interview"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for ML Foundations Interview"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on ML Foundations Interview"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how ML Foundations Interview fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how ML Foundations Interview is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where ML Foundations Interview is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of ML Foundations Interview, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is ML Foundations Interview asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ML Foundations Interview is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with ML Foundations Interview."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ML Foundations Interview emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for ML Foundations Interview today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about ML Foundations Interview — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around ML Foundations Interview changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing ML Foundations Interview."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ML Foundations Interview appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding ML Foundations Interview helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the ML Foundations Interview concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, ML Foundations Interview skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply ML Foundations Interview to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML Foundations Interview is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the ML Foundations Interview skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-04mlfoundationsinterview-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Which metric is most appropriate for an imbalanced classification problem?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) F1-Score"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-04mlfoundationsinterview-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the primary effect of L1 regularization?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) Drives some weights to exactly zero (sparsity)"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-04mlfoundationsinterview-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Which ensemble method trains models sequentially to correct previous errors?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "c) Gradient Boosting"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-04mlfoundationsinterview-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What does ROC-AUC measure?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) The probability that a random positive is ranked higher than a random negative"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "21interviewpreparation-04mlfoundationsinterview-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the main advantage of the kernel trick in SVMs?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "b) Computes non-linear decision boundaries without explicit feature transformation"
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for ML Foundations Interview (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing ML Foundations Interview (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for ML Foundations Interview-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running ML Foundations Interview in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of ML Foundations Interview code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on ML Foundations Interview"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in ML Foundations Interview code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the ML Foundations Interview example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain ML Foundations Interview in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of ML Foundations Interview."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a ML Foundations Interview problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where ML Foundations Interview is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for ML Foundations Interview."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core ML Foundations Interview logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain ML Foundations Interview without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses ML Foundations Interview daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": ML Foundations Interview patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": ML Foundations Interview principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": ML Foundations Interview shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect ML Foundations Interview to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/05-deep-learning-interview",
+        children: "Deep Learning Interview"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ML Foundations Interview, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of ML Foundations Interview depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

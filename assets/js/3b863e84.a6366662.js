@@ -1,0 +1,1519 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[73826],{
+
+/***/ 42523
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_18_file_handling_md_3b8_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-18-file-handling-md-3b8.json
+const site_docs_courses_java_18_file_handling_md_3b8_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/18-file-handling","title":"File Upload, Download & Streaming","description":"Previous JDBC/JOOQ","source":"@site/docs/courses/java/18-file-handling.md","sourceDirName":"courses/java","slug":"/java/18-file-handling","permalink":"/ai-engineering-journey/java/18-file-handling","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":18,"frontMatter":{"id":"18-file-handling","slug":"/java/18-file-handling","title":"File Upload, Download & Streaming","sidebar_label":"File Upload, Download & Streaming","sidebar_position":18},"sidebar":"coursesSidebar","previous":{"title":"API Documentation with OpenAPI/Swagger","permalink":"/ai-engineering-journey/java/17-openapi"},"next":{"title":"JDBC, Connection Pooling & JOOQ","permalink":"/ai-engineering-journey/java/19-jdbc-jooq"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/18-file-handling.md
+
+
+const frontMatter = {
+	id: '18-file-handling',
+	slug: '/java/18-file-handling',
+	title: 'File Upload, Download & Streaming',
+	sidebar_label: 'File Upload, Download & Streaming',
+	sidebar_position: 18
+};
+const contentTitle = 'File Upload, Download & Streaming';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "1. The MultipartFile Interface",
+  "id": "1-the-multipartfile-interface",
+  "level": 3
+}, {
+  "value": "2. Single File Upload",
+  "id": "2-single-file-upload",
+  "level": 3
+}, {
+  "value": "3. Multiple File Upload",
+  "id": "3-multiple-file-upload",
+  "level": 3
+}, {
+  "value": "4. Upload Configuration",
+  "id": "4-upload-configuration",
+  "level": 3
+}, {
+  "value": "5. File Size Limit Handling",
+  "id": "5-file-size-limit-handling",
+  "level": 3
+}, {
+  "value": "6. Custom Storage Service",
+  "id": "6-custom-storage-service",
+  "level": 3
+}, {
+  "value": "7. Upload Controller Using Storage Service",
+  "id": "7-upload-controller-using-storage-service",
+  "level": 3
+}, {
+  "value": "8. Downloading Files — Resource Implementations",
+  "id": "8-downloading-files--resource-implementations",
+  "level": 3
+}, {
+  "value": "9. Streaming Large Files — StreamingResponseBody",
+  "id": "9-streaming-large-files--streamingresponsebody",
+  "level": 3
+}, {
+  "value": "10. InputStreamResource Streaming",
+  "id": "10-inputstreamresource-streaming",
+  "level": 3
+}, {
+  "value": "11. Progress Tracking — Temp Then Atomic Move",
+  "id": "11-progress-tracking--temp-then-atomic-move",
+  "level": 3
+}, {
+  "value": "12. File Type Validation by Magic Bytes",
+  "id": "12-file-type-validation-by-magic-bytes",
+  "level": 3
+}, {
+  "value": "13. Malware Scanning Integration",
+  "id": "13-malware-scanning-integration",
+  "level": 3
+}, {
+  "value": "14. File Serving with StaticResourceHandler",
+  "id": "14-file-serving-with-staticresourcehandler",
+  "level": 3
+}, {
+  "value": "15. Complete Upload Pipeline — End to End",
+  "id": "15-complete-upload-pipeline--end-to-end",
+  "level": 3
+}, {
+  "value": "16. Chunked Upload (Client-Side Splitting)",
+  "id": "16-chunked-upload-client-side-splitting",
+  "level": 3
+}, {
+  "value": "17. Database-Backed File Storage",
+  "id": "17-database-backed-file-storage",
+  "level": 3
+}, {
+  "value": "18. Application Properties Reference",
+  "id": "18-application-properties-reference",
+  "level": 3
+}, {
+  "value": "19. Testing File Operations",
+  "id": "19-testing-file-operations",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Exercise 1: Single File Upload",
+  "id": "exercise-1-single-file-upload",
+  "level": 3
+}, {
+  "value": "Exercise 2: Multiple File Upload",
+  "id": "exercise-2-multiple-file-upload",
+  "level": 3
+}, {
+  "value": "Exercise 3: Upload Configuration",
+  "id": "exercise-3-upload-configuration",
+  "level": 3
+}, {
+  "value": "Exercise 4: Storage Service Implementation",
+  "id": "exercise-4-storage-service-implementation",
+  "level": 3
+}, {
+  "value": "Exercise 5: File Download with Content-Disposition",
+  "id": "exercise-5-file-download-with-content-disposition",
+  "level": 3
+}, {
+  "value": "Exercise 6: Large File Streaming",
+  "id": "exercise-6-large-file-streaming",
+  "level": 3
+}, {
+  "value": "Exercise 7: Magic Byte Validation",
+  "id": "exercise-7-magic-byte-validation",
+  "level": 3
+}, {
+  "value": "Exercise 8: Malware Scanner Integration",
+  "id": "exercise-8-malware-scanner-integration",
+  "level": 3
+}, {
+  "value": "Exercise 9: Chunked Upload",
+  "id": "exercise-9-chunked-upload",
+  "level": 3
+}, {
+  "value": "Exercise 10: Static Resource Serving",
+  "id": "exercise-10-static-resource-serving",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/17-openapi",
+          children: "OpenAPI"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/java/19-jdbc-jooq",
+          children: "JDBC/JOOQ"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "file-upload-download--streaming",
+        children: "File Upload, Download & Streaming"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/18-file-handling/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/18-file-handling/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/18-file-handling/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/18-file-handling/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/18-file-handling/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/18-file-handling/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Accept single and multiple file uploads using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MultipartFile"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "@RequestParam"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Configure upload limits, temp directories, and encoding via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "spring.servlet.multipart.*"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build a custom storage service that abstracts file persistence"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Serve files for download using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Resource"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "InputStreamResource"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "UrlResource"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ByteArrayResource"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Set correct ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Content-Type"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Content-Disposition"
+        }), " headers"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Stream large files efficiently with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "StreamingResponseBody"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement chunked transfer encoding for progressive delivery"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Track upload progress using the temp-then-atomic-move pattern"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validate file types by magic bytes (not just extension)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Integrate malware scanning into the upload pipeline"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Serve static uploads with Spring's ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "StaticResourceHandler"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Report meaningful errors for size violations, bad types, and virus detection"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MultipartFile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spring's interface for uploaded files"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single/multi upload via @RequestParam"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Config Properties"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "spring.servlet.multipart.* settings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limit size, encoding, temp directory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Streaming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "StreamingResponseBody"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Efficient large file transfer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File Validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Magic bytes detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify file type beyond extension"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Malware scanning pipeline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check files before persistence"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Upload Configuration] --> B[MultipartFile]\n    B --> C[Storage Service]\n    C --> D[File Validation]\n    D --> E[Malware Scanning]\n    E --> F[File Download]\n    F --> G[Streaming]\n    G --> H[Progress Tracking]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Always validate file types by reading the first bytes (magic numbers) rather than relying on file extensions → attackers can easily rename a malicious file to appear legitimate."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/18-file-handling.png",
+        alt: "File Upload Download & Streaming Flow"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1-the-multipartfile-interface",
+      children: "1. The MultipartFile Interface"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Spring's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "org.springframework.web.multipart.MultipartFile"
+      }), " represents an uploaded file received in a multipart request. It wraps the raw HTTP multipart data and provides convenience methods."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public interface MultipartFile extends InputStreamSource {\n\n    String getName();                    // Parameter name in the form\n    String getOriginalFilename();        // Original file name on the client\n    String getContentType();             // Content type (e.g., image/jpeg)\n    boolean isEmpty();                   // True if file is empty\n    long getSize();                      // File size in bytes\n    byte[] getBytes() throws IOException; // Entire file content as byte[]\n    InputStream getInputStream() throws IOException;  // Stream the content\n    void transferTo(File dest) throws IOException;    // Save to a file\n    void transferTo(Path dest) throws IOException;    // Save to a path (Spring 6+)\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The underlying HTTP multipart parsing is handled by the servlet container (Tomcat, Jetty, Undertow) or by Spring's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "StandardServletMultipartResolver"
+      }), ". Spring Boot auto-configures the resolver when it detects ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "spring-boot-starter-web"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "2-single-file-upload",
+      children: "2. Single File Upload"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The simplest upload endpoint accepts a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MultipartFile"
+      }), " bound to a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@RequestParam"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.util.Map;\n\n@RestController\n@RequestMapping(\"/api/files\")\npublic class FileUploadController {\n\n    @PostMapping(\n        value = \"/upload\",\n        consumes = MediaType.MULTIPART_FORM_DATA_VALUE,\n        produces = MediaType.APPLICATION_JSON_VALUE\n    )\n    public ResponseEntity<Map<String, Object>> uploadFile(\n            @RequestParam(\"file\") MultipartFile file) {\n\n        if (file.isEmpty()) {\n            return ResponseEntity.badRequest()\n                .body(Map.of(\"error\", \"File is empty\"));\n        }\n\n        String fileName = file.getOriginalFilename();\n        long size = file.getSize();\n        String contentType = file.getContentType();\n\n        return ResponseEntity.ok(Map.of(\n            \"fileName\", fileName,\n            \"size\", size,\n            \"contentType\", contentType,\n            \"message\", \"File uploaded successfully\"\n        ));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "3-multiple-file-upload",
+      children: "3. Multiple File Upload"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\n@RestController\n@RequestMapping(\"/api/files\")\npublic class MultipleFileUploadController {\n\n    @PostMapping(\"/upload-multiple\")\n    public ResponseEntity<Map<String, Object>> uploadMultiple(\n            @RequestParam(\"files\") List<MultipartFile> files) {\n\n        List<Map<String, Object>> uploaded = new ArrayList<>();\n\n        for (MultipartFile file : files) {\n            if (file.isEmpty()) continue;\n\n            uploaded.add(Map.of(\n                \"fileName\", file.getOriginalFilename(),\n                \"size\", file.getSize(),\n                \"contentType\", file.getContentType()\n            ));\n        }\n\n        return ResponseEntity.ok(Map.of(\n            \"uploaded\", uploaded,\n            \"count\", uploaded.size()\n        ));\n    }\n\n    @PostMapping(\"/upload-mixed\")\n    public ResponseEntity<Map<String, Object>> uploadMixed(\n            @RequestParam(\"avatar\") MultipartFile avatar,\n            @RequestParam(\"documents\") List<MultipartFile> documents,\n            @RequestParam(\"description\") String description) {\n\n        Map<String, Object> result = new HashMap<>();\n        result.put(\"avatar\", Map.of(\n            \"name\", avatar.getOriginalFilename(),\n            \"size\", avatar.getSize()\n        ));\n        result.put(\"documentCount\", documents.size());\n        result.put(\"description\", description);\n\n        return ResponseEntity.ok(result);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "4-upload-configuration",
+      children: "4. Upload Configuration"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["All multipart properties live under the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "spring.servlet.multipart.*"
+      }), " namespace."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application.yml\nspring:\n  servlet:\n    multipart:\n      enabled: true\n      location: ${java.io.tmpdir}/petclinic-uploads\n      max-file-size: 10MB\n      max-request-size: 50MB\n      file-size-threshold: 2KB\n      resolve-lazily: false\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-properties",
+        children: "# application.properties alternative\nspring.servlet.multipart.enabled=true\nspring.servlet.multipart.location=${java.io.tmpdir}/petclinic-uploads\nspring.servlet.multipart.max-file-size=10MB\nspring.servlet.multipart.max-request-size=50MB\nspring.servlet.multipart.file-size-threshold=2KB\nspring.servlet.multipart.resolve-lazily=false\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Default"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "enabled"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "true"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enable multipart upload support"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "location"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "temp dir"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Directory for intermediate multipart files"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "max-file-size"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "1MB"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Maximum size per file (", (0,jsx_runtime.jsx)(_components.code, {
+              children: "B"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "KB"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "MB"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "GB"
+            }), ")"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "max-request-size"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "10MB"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maximum size for the entire multipart request"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "file-size-threshold"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "0"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Threshold after which files are written to disk"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "resolve-lazily"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "false"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parse multipart on access rather than eagerly"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For programmatic configuration:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import jakarta.servlet.MultipartConfigElement;\nimport org.springframework.boot.web.servlet.MultipartConfigFactory;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.util.unit.DataSize;\n\n@Configuration\npublic class MultipartConfig {\n\n    @Bean\n    public MultipartConfigElement multipartConfigElement() {\n        MultipartConfigFactory factory = new MultipartConfigFactory();\n        factory.setLocation(\"C:/petclinic-uploads/temp\");\n        factory.setMaxFileSize(DataSize.ofMegabytes(20));\n        factory.setMaxRequestSize(DataSize.ofMegabytes(100));\n        factory.setFileSizeThreshold(DataSize.ofKilobytes(4));\n        return factory.createMultipartConfig();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "5-file-size-limit-handling",
+      children: "5. File Size Limit Handling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["When a file exceeds ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "max-file-size"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "max-request-size"
+      }), ", Spring throws ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MaxUploadSizeExceededException"
+      }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MultipartException"
+      }), ". Handle them with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@ControllerAdvice"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.ControllerAdvice;\nimport org.springframework.web.bind.annotation.ExceptionHandler;\nimport org.springframework.web.multipart.MaxUploadSizeExceededException;\nimport org.springframework.web.multipart.MultipartException;\n\nimport java.util.Map;\n\n@ControllerAdvice\npublic class FileUploadExceptionHandler {\n\n    @ExceptionHandler(MaxUploadSizeExceededException.class)\n    public ResponseEntity<Map<String, String>> handleMaxSize(\n            MaxUploadSizeExceededException e) {\n\n        String message = String.format(\n            \"File exceeds maximum allowed size of %d bytes\",\n            e.getMaxUploadSize()\n        );\n\n        return ResponseEntity\n            .status(HttpStatus.PAYLOAD_TOO_LARGE)\n            .body(Map.of(\"error\", message));\n    }\n\n    @ExceptionHandler(MultipartException.class)\n    public ResponseEntity<Map<String, String>> handleMultipart(\n            MultipartException e) {\n\n        return ResponseEntity\n            .status(HttpStatus.BAD_REQUEST)\n            .body(Map.of(\"error\", \"Invalid multipart request: \" + e.getMessage()));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "6-custom-storage-service",
+      children: "6. Custom Storage Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Abstract file operations behind an interface so you can swap implementations (local filesystem, S3, database, etc.)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.core.io.Resource;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.nio.file.Path;\nimport java.util.stream.Stream;\n\npublic interface FileStorageService {\n\n    String store(MultipartFile file);\n\n    String store(byte[] data, String originalFileName);\n\n    Resource loadAsResource(String fileName);\n\n    Path load(String fileName);\n\n    Stream<Path> loadAll();\n\n    void delete(String fileName);\n\n    void deleteAll();\n\n    String getStorageLocation();\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.core.io.Resource;\nimport org.springframework.core.io.UrlResource;\nimport org.springframework.stereotype.Service;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport jakarta.annotation.PostConstruct;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.net.MalformedURLException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\nimport java.nio.file.StandardCopyOption;\nimport java.util.Objects;\nimport java.util.UUID;\nimport java.util.stream.Stream;\n\n@Service\npublic class FileSystemStorageService implements FileStorageService {\n\n    private static final Logger log = LoggerFactory.getLogger(FileSystemStorageService.class);\n\n    private final Path rootLocation;\n\n    public FileSystemStorageService(\n            @Value(\"${app.storage.location:uploads}\") String storageLocation) {\n        this.rootLocation = Paths.get(storageLocation).toAbsolutePath().normalize();\n    }\n\n    @PostConstruct\n    public void init() {\n        try {\n            Files.createDirectories(rootLocation);\n            log.info(\"Storage directory initialized at: {}\", rootLocation);\n        } catch (IOException e) {\n            throw new StorageException(\"Could not initialize storage location\", e);\n        }\n    }\n\n    @Override\n    public String store(MultipartFile file) {\n        String originalName = Objects.requireNonNull(\n            file.getOriginalFilename(), \"File must have a name\");\n\n        String storedName = generateStoredName(originalName);\n\n        try (InputStream inputStream = file.getInputStream()) {\n            Path destinationPath = rootLocation.resolve(storedName).normalize();\n\n            if (!destinationPath.startsWith(rootLocation)) {\n                throw new StorageException(\"Cannot store file outside root location\");\n            }\n\n            Files.copy(inputStream, destinationPath, StandardCopyOption.REPLACE_EXISTING);\n            log.info(\"Stored file: {} as {}\", originalName, storedName);\n            return storedName;\n\n        } catch (IOException e) {\n            throw new StorageException(\"Failed to store file: \" + originalName, e);\n        }\n    }\n\n    @Override\n    public String store(byte[] data, String originalFileName) {\n        String storedName = generateStoredName(originalFileName);\n\n        try {\n            Path destinationPath = rootLocation.resolve(storedName).normalize();\n            Files.write(destinationPath, data);\n            log.info(\"Stored byte array as: {}\", storedName);\n            return storedName;\n        } catch (IOException e) {\n            throw new StorageException(\"Failed to store byte array\", e);\n        }\n    }\n\n    @Override\n    public Path load(String fileName) {\n        return rootLocation.resolve(fileName).normalize();\n    }\n\n    @Override\n    public Resource loadAsResource(String fileName) {\n        try {\n            Path file = load(fileName);\n            Resource resource = new UrlResource(file.toUri());\n\n            if (resource.exists() && resource.isReadable()) {\n                return resource;\n            } else {\n                throw new StorageFileNotFoundException(\n                    \"File not found or not readable: \" + fileName);\n            }\n        } catch (MalformedURLException e) {\n            throw new StorageFileNotFoundException(\n                \"File not found: \" + fileName, e);\n        }\n    }\n\n    @Override\n    public Stream<Path> loadAll() {\n        try {\n            return Files.walk(rootLocation, 1)\n                .filter(path -> !path.equals(rootLocation))\n                .map(rootLocation::relativize);\n        } catch (IOException e) {\n            throw new StorageException(\"Failed to read stored files\", e);\n        }\n    }\n\n    @Override\n    public void delete(String fileName) {\n        try {\n            Path file = load(fileName);\n            Files.deleteIfExists(file);\n            log.info(\"Deleted file: {}\", fileName);\n        } catch (IOException e) {\n            throw new StorageException(\"Failed to delete file: \" + fileName, e);\n        }\n    }\n\n    @Override\n    public void deleteAll() {\n        try (Stream<Path> files = Files.walk(rootLocation, 1)) {\n            files.filter(path -> !path.equals(rootLocation))\n                .forEach(path -> {\n                    try { Files.deleteIfExists(path); }\n                    catch (IOException e) { log.warn(\"Could not delete: {}\", path); }\n                });\n            log.info(\"All files deleted from: {}\", rootLocation);\n        } catch (IOException e) {\n            throw new StorageException(\"Failed to delete all files\", e);\n        }\n    }\n\n    @Override\n    public String getStorageLocation() {\n        return rootLocation.toString();\n    }\n\n    private String generateStoredName(String originalName) {\n        String extension = \"\";\n        int dotIndex = originalName.lastIndexOf('.');\n        if (dotIndex > 0) {\n            extension = originalName.substring(dotIndex);\n        }\n        return UUID.randomUUID() + extension;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.HttpStatus;\nimport org.springframework.web.bind.annotation.ResponseStatus;\n\npublic class StorageException extends RuntimeException {\n    public StorageException(String message) {\n        super(message);\n    }\n    public StorageException(String message, Throwable cause) {\n        super(message, cause);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.HttpStatus;\nimport org.springframework.web.bind.annotation.ResponseStatus;\n\n@ResponseStatus(HttpStatus.NOT_FOUND)\npublic class StorageFileNotFoundException extends StorageException {\n    public StorageFileNotFoundException(String message) {\n        super(message);\n    }\n    public StorageFileNotFoundException(String message, Throwable cause) {\n        super(message, cause);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "7-upload-controller-using-storage-service",
+      children: "7. Upload Controller Using Storage Service"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.core.io.Resource;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\nimport org.springframework.web.multipart.MultipartFile;\nimport org.springframework.web.servlet.support.ServletUriComponentsBuilder;\n\nimport java.util.Arrays;\nimport java.util.List;\nimport java.util.Map;\nimport java.util.stream.Collectors;\n\n@RestController\n@RequestMapping(\"/api/files\")\npublic class StorageController {\n\n    private final FileStorageService storageService;\n    private final FileValidationService validationService;\n\n    public StorageController(FileStorageService storageService,\n                             FileValidationService validationService) {\n        this.storageService = storageService;\n        this.validationService = validationService;\n    }\n\n    @PostMapping(\"/upload\")\n    public ResponseEntity<UploadResponse> uploadFile(\n            @RequestParam(\"file\") MultipartFile file) {\n\n        validationService.validate(file);\n\n        String storedName = storageService.store(file);\n\n        String downloadUri = ServletUriComponentsBuilder\n            .fromCurrentContextPath()\n            .path(\"/api/files/download/\")\n            .path(storedName)\n            .toUriString();\n\n        UploadResponse response = new UploadResponse(\n            storedName,\n            file.getOriginalFilename(),\n            file.getContentType(),\n            file.getSize(),\n            downloadUri\n        );\n\n        return ResponseEntity.ok(response);\n    }\n\n    @PostMapping(\"/upload-multiple\")\n    public ResponseEntity<List<UploadResponse>> uploadMultiple(\n            @RequestParam(\"files\") MultipartFile[] files) {\n\n        List<UploadResponse> responses = Arrays.stream(files)\n            .filter(f -> !f.isEmpty())\n            .map(file -> {\n                validationService.validate(file);\n                String storedName = storageService.store(file);\n                String downloadUri = ServletUriComponentsBuilder\n                    .fromCurrentContextPath()\n                    .path(\"/api/files/download/\")\n                    .path(storedName)\n                    .toUriString();\n                return new UploadResponse(\n                    storedName,\n                    file.getOriginalFilename(),\n                    file.getContentType(),\n                    file.getSize(),\n                    downloadUri\n                );\n            })\n            .collect(Collectors.toList());\n\n        return ResponseEntity.ok(responses);\n    }\n\n    @GetMapping(\"/download/{fileName:.+}\")\n    public ResponseEntity<Resource> downloadFile(@PathVariable String fileName) {\n        Resource resource = storageService.loadAsResource(fileName);\n\n        String contentType = determineContentType(fileName);\n\n        return ResponseEntity.ok()\n            .contentType(MediaType.parseMediaType(contentType))\n            .header(HttpHeaders.CONTENT_DISPOSITION,\n                \"attachment; filename=\\\"\" + extractOriginalName(fileName) + \"\\\"\")\n            .body(resource);\n    }\n\n    @GetMapping(\"/view/{fileName:.+}\")\n    public ResponseEntity<Resource> viewFile(@PathVariable String fileName) {\n        Resource resource = storageService.loadAsResource(fileName);\n\n        String contentType = determineContentType(fileName);\n\n        return ResponseEntity.ok()\n            .contentType(MediaType.parseMediaType(contentType))\n            .header(HttpHeaders.CONTENT_DISPOSITION,\n                \"inline; filename=\\\"\" + extractOriginalName(fileName) + \"\\\"\")\n            .body(resource);\n    }\n\n    @GetMapping\n    public ResponseEntity<List<String>> listFiles() {\n        List<String> fileNames = storageService.loadAll()\n            .map(Path::getFileName)\n            .map(Path::toString)\n            .toList();\n        return ResponseEntity.ok(fileNames);\n    }\n\n    @DeleteMapping(\"/{fileName:.+}\")\n    public ResponseEntity<Void> deleteFile(@PathVariable String fileName) {\n        storageService.delete(fileName);\n        return ResponseEntity.noContent().build();\n    }\n\n    private String determineContentType(String fileName) {\n        String extension = \"\";\n        int dotIndex = fileName.lastIndexOf('.');\n        if (dotIndex > 0) {\n            extension = fileName.substring(dotIndex).toLowerCase();\n        }\n        return switch (extension) {\n            case \".jpg\", \".jpeg\" -> \"image/jpeg\";\n            case \".png\" -> \"image/png\";\n            case \".gif\" -> \"image/gif\";\n            case \".pdf\" -> \"application/pdf\";\n            case \".doc\" -> \"application/msword\";\n            case \".docx\" ->\n                \"application/vnd.openxmlformats-officedocument.wordprocessingml.document\";\n            case \".xls\" -> \"application/vnd.ms-excel\";\n            case \".xlsx\" ->\n                \"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\";\n            case \".csv\" -> \"text/csv\";\n            case \".json\" -> \"application/json\";\n            case \".mp4\" -> \"video/mp4\";\n            case \".mp3\" -> \"audio/mpeg\";\n            case \".zip\" -> \"application/zip\";\n            default -> \"application/octet-stream\";\n        };\n    }\n\n    private String extractOriginalName(String storedName) {\n        return storedName;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import io.swagger.v3.oas.annotations.media.Schema;\n\n@Schema(description = \"Response after a successful file upload\")\npublic class UploadResponse {\n\n    @Schema(description = \"Stored file name (UUID-based)\", example = \"a1b2c3d4-photo.jpg\")\n    private String storedName;\n\n    @Schema(description = \"Original file name from client\", example = \"vacation-photo.jpg\")\n    private String originalName;\n\n    @Schema(description = \"MIME content type\", example = \"image/jpeg\")\n    private String contentType;\n\n    @Schema(description = \"File size in bytes\", example = \"1048576\")\n    private long size;\n\n    @Schema(description = \"URL to download the file\")\n    private String downloadUri;\n\n    public UploadResponse() {}\n\n    public UploadResponse(String storedName, String originalName,\n                          String contentType, long size, String downloadUri) {\n        this.storedName = storedName;\n        this.originalName = originalName;\n        this.contentType = contentType;\n        this.size = size;\n        this.downloadUri = downloadUri;\n    }\n\n    public String getStoredName() { return storedName; }\n    public void setStoredName(String storedName) { this.storedName = storedName; }\n    public String getOriginalName() { return originalName; }\n    public void setOriginalName(String originalName) { this.originalName = originalName; }\n    public String getContentType() { return contentType; }\n    public void setContentType(String contentType) { this.contentType = contentType; }\n    public long getSize() { return size; }\n    public void setSize(long size) { this.size = size; }\n    public String getDownloadUri() { return downloadUri; }\n    public void setDownloadUri(String downloadUri) { this.downloadUri = downloadUri; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "8-downloading-files--resource-implementations",
+      children: "8. Downloading Files — Resource Implementations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Spring provides several ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Resource"
+      }), " implementations for different use cases:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.core.io.ByteArrayResource;\nimport org.springframework.core.io.InputStreamResource;\nimport org.springframework.core.io.Resource;\nimport org.springframework.core.io.UrlResource;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.io.*;\nimport java.net.URL;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\n@RestController\n@RequestMapping(\"/api/download\")\npublic class ResourceExamplesController {\n\n    // === UrlResource — Wraps a URL (file://, https://, classpath:) ===\n\n    @GetMapping(\"/url-resource/{fileName:.+}\")\n    public ResponseEntity<Resource> downloadWithUrlResource(@PathVariable String fileName) {\n        try {\n            Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n            UrlResource resource = new UrlResource(filePath.toUri());\n\n            if (!resource.exists() || !resource.isReadable()) {\n                return ResponseEntity.notFound().build();\n            }\n\n            return ResponseEntity.ok()\n                .contentType(MediaType.APPLICATION_OCTET_STREAM)\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .body(resource);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    // === InputStreamResource — Wraps an InputStream (best for large streams) ===\n\n    @GetMapping(\"/stream-resource/{fileName:.+}\")\n    public ResponseEntity<Resource> downloadWithInputStreamResource(\n            @PathVariable String fileName) {\n        try {\n            Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n            FileInputStream fis = new FileInputStream(filePath.toFile());\n            long fileSize = Files.size(filePath);\n\n            InputStreamResource resource = new InputStreamResource(fis);\n\n            return ResponseEntity.ok()\n                .contentLength(fileSize)\n                .contentType(MediaType.APPLICATION_OCTET_STREAM)\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .body(resource);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    // === ByteArrayResource — Wraps a byte[] (best for small in-memory files) ===\n\n    @GetMapping(\"/bytes/{fileName:.+}\")\n    public ResponseEntity<Resource> downloadWithByteArrayResource(\n            @PathVariable String fileName) {\n        try {\n            Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n            byte[] fileBytes = Files.readAllBytes(filePath);\n\n            ByteArrayResource resource = new ByteArrayResource(fileBytes);\n\n            return ResponseEntity.ok()\n                .contentLength(fileBytes.length)\n                .contentType(MediaType.APPLICATION_OCTET_STREAM)\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .body(resource);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    // === Inline vs Attachment ===\n\n    @GetMapping(\"/inline/{fileName:.+}\")\n    public ResponseEntity<Resource> viewInline(@PathVariable String fileName) {\n        try {\n            Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n            UrlResource resource = new UrlResource(filePath.toUri());\n\n            String contentType = Files.probeContentType(filePath);\n            if (contentType == null) {\n                contentType = \"application/octet-stream\";\n            }\n\n            return ResponseEntity.ok()\n                .contentType(MediaType.parseMediaType(contentType))\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"inline; filename=\\\"\" + fileName + \"\\\"\")\n                .body(resource);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    @GetMapping(\"/force-download/{fileName:.+}\")\n    public ResponseEntity<Resource> forceDownload(@PathVariable String fileName) {\n        try {\n            Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n            UrlResource resource = new UrlResource(filePath.toUri());\n\n            return ResponseEntity.ok()\n                .contentType(MediaType.APPLICATION_OCTET_STREAM)\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename*=UTF-8''\" + encodeUrl(fileName))\n                .body(resource);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    private String encodeUrl(String value) {\n        try {\n            return java.net.URLEncoder.encode(value, \"UTF-8\").replace(\"+\", \"%20\");\n        } catch (UnsupportedEncodingException e) {\n            return value;\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "9-streaming-large-files--streamingresponsebody",
+      children: "9. Streaming Large Files — StreamingResponseBody"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "StreamingResponseBody"
+      }), " allows writing directly to the response's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "OutputStream"
+      }), " without buffering the entire file in memory. It is ideal for large files (100MB+, video, ISO images)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\nimport org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;\n\nimport java.io.*;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\n@RestController\n@RequestMapping(\"/api/stream\")\npublic class StreamingController {\n\n    // === StreamingResponseBody — Manual write to OutputStream ===\n\n    @GetMapping(\"/file/{fileName:.+}\")\n    public ResponseEntity<StreamingResponseBody> streamFile(\n            @PathVariable String fileName) {\n\n        Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n\n        if (!Files.exists(filePath)) {\n            return ResponseEntity.notFound().build();\n        }\n\n        StreamingResponseBody responseBody = outputStream -> {\n            try (InputStream inputStream = new FileInputStream(filePath.toFile());\n                 BufferedInputStream bis = new BufferedInputStream(inputStream, 8192);\n                 BufferedOutputStream bos = new BufferedOutputStream(outputStream, 8192)) {\n\n                byte[] buffer = new byte[8192];\n                int bytesRead;\n                long totalBytes = 0;\n\n                while ((bytesRead = bis.read(buffer)) != -1) {\n                    bos.write(buffer, 0, bytesRead);\n                    totalBytes += bytesRead;\n                    // Progress tracking can happen here (see section 11)\n                }\n                bos.flush();\n            }\n        };\n\n        try {\n            long fileSize = Files.size(filePath);\n            String contentType = Files.probeContentType(filePath);\n            if (contentType == null) contentType = \"application/octet-stream\";\n\n            return ResponseEntity.ok()\n                .contentLength(fileSize)\n                .contentType(MediaType.parseMediaType(contentType))\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .body(responseBody);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    // === StreamingResponseBody with Chunked Transfer Encoding ===\n\n    @GetMapping(\"/chunked/{fileName:.+}\")\n    public ResponseEntity<StreamingResponseBody> streamChunked(\n            @PathVariable String fileName) {\n\n        Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n\n        if (!Files.exists(filePath)) {\n            return ResponseEntity.notFound().build();\n        }\n\n        StreamingResponseBody responseBody = outputStream -> {\n            try (RandomAccessFile raf = new RandomAccessFile(filePath.toFile(), \"r\");\n                 BufferedOutputStream bos = new BufferedOutputStream(outputStream, 16384)) {\n\n                byte[] buffer = new byte[16384];\n                int bytesRead;\n                long totalSent = 0;\n                long fileSize = raf.length();\n\n                while ((bytesRead = raf.read(buffer)) != -1) {\n                    bos.write(buffer, 0, bytesRead);\n                    totalSent += bytesRead;\n\n                    if (Thread.currentThread().isInterrupted()) {\n                        throw new InterruptedIOException(\n                            \"Stream interrupted after \" + totalSent + \" bytes\");\n                    }\n                }\n                bos.flush();\n            }\n        };\n\n        try {\n            String contentType = Files.probeContentType(filePath);\n            if (contentType == null) contentType = \"application/octet-stream\";\n\n            return ResponseEntity.ok()\n                .contentType(MediaType.parseMediaType(contentType))\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .header(HttpHeaders.TRANSFER_ENCODING, \"chunked\")\n                .body(responseBody);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    // === Large video stream (partial content / range requests support) ===\n\n    @GetMapping(\"/video/{fileName:.+}\")\n    public ResponseEntity<StreamingResponseBody> streamVideo(\n            @PathVariable String fileName,\n            @RequestHeader(value = \"Range\", required = false) String rangeHeader) {\n\n        Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n\n        if (!Files.exists(filePath)) {\n            return ResponseEntity.notFound().build();\n        }\n\n        try {\n            long fileSize = Files.size(filePath);\n            String contentType = Files.probeContentType(filePath);\n            if (contentType == null) contentType = \"application/octet-stream\";\n\n            if (rangeHeader == null) {\n                StreamingResponseBody responseBody = outputStream -> {\n                    try (InputStream is = Files.newInputStream(filePath);\n                         BufferedOutputStream bos = new BufferedOutputStream(outputStream)) {\n                        is.transferTo(bos);\n                    }\n                };\n\n                return ResponseEntity.ok()\n                    .contentType(MediaType.parseMediaType(contentType))\n                    .header(HttpHeaders.CONTENT_DISPOSITION, \"inline\")\n                    .header(HttpHeaders.ACCEPT_RANGES, \"bytes\")\n                    .body(responseBody);\n            }\n\n            String[] ranges = rangeHeader.replace(\"bytes=\", \"\").split(\"-\");\n            long start = Long.parseLong(ranges[0]);\n            long end = ranges.length > 1 ? Long.parseLong(ranges[1]) : fileSize - 1;\n            long contentLength = end - start + 1;\n\n            StreamingResponseBody responseBody = outputStream -> {\n                try (RandomAccessFile raf = new RandomAccessFile(filePath.toFile(), \"r\");\n                     BufferedOutputStream bos = new BufferedOutputStream(outputStream)) {\n                    raf.seek(start);\n                    byte[] buffer = new byte[8192];\n                    long remaining = contentLength;\n                    int bytesRead;\n\n                    while (remaining > 0\n                           && (bytesRead = raf.read(buffer, 0, (int) Math.min(buffer.length, remaining))) != -1) {\n                        bos.write(buffer, 0, bytesRead);\n                        remaining -= bytesRead;\n                    }\n                    bos.flush();\n                }\n            };\n\n            return ResponseEntity.status(206)\n                .contentType(MediaType.parseMediaType(contentType))\n                .header(HttpHeaders.CONTENT_DISPOSITION, \"inline\")\n                .header(HttpHeaders.ACCEPT_RANGES, \"bytes\")\n                .header(HttpHeaders.CONTENT_RANGE,\n                    \"bytes \" + start + \"-\" + end + \"/\" + fileSize)\n                .contentLength(contentLength)\n                .body(responseBody);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "10-inputstreamresource-streaming",
+      children: "10. InputStreamResource Streaming"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "InputStreamResource"
+      }), " is an alternative for streaming. Spring automatically uses chunked encoding when the content length is unknown."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.core.io.InputStreamResource;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.io.*;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\n@RestController\n@RequestMapping(\"/api/stream\")\npublic class InputStreamResourceController {\n\n    @GetMapping(\"/input-stream/{fileName:.+}\")\n    public ResponseEntity<InputStreamResource> downloadWithInputStreamResource(\n            @PathVariable String fileName) {\n        try {\n            Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n\n            if (!Files.exists(filePath)) {\n                return ResponseEntity.notFound().build();\n            }\n\n            long fileSize = Files.size(filePath);\n            String contentType = Files.probeContentType(filePath);\n            if (contentType == null) contentType = \"application/octet-stream\";\n\n            FileInputStream fis = new FileInputStream(filePath.toFile());\n            InputStreamResource resource = new InputStreamResource(fis);\n\n            return ResponseEntity.ok()\n                .contentLength(fileSize)\n                .contentType(MediaType.parseMediaType(contentType))\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .body(resource);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n\n    @GetMapping(\"/no-length/{fileName:.+}\")\n    public ResponseEntity<InputStreamResource> streamWithoutContentLength(\n            @PathVariable String fileName) {\n        try {\n            Path filePath = Paths.get(\"uploads\").resolve(fileName).normalize();\n\n            if (!Files.exists(filePath)) {\n                return ResponseEntity.notFound().build();\n            }\n\n            String contentType = Files.probeContentType(filePath);\n            if (contentType == null) contentType = \"application/octet-stream\";\n\n            FileInputStream fis = new FileInputStream(filePath.toFile());\n            InputStreamResource resource = new InputStreamResource(fis);\n\n            // No content-length set → Spring uses chunked transfer encoding\n            return ResponseEntity.ok()\n                .contentType(MediaType.parseMediaType(contentType))\n                .header(HttpHeaders.CONTENT_DISPOSITION,\n                    \"attachment; filename=\\\"\" + fileName + \"\\\"\")\n                .body(resource);\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-progress-tracking--temp-then-atomic-move",
+      children: "11. Progress Tracking — Temp Then Atomic Move"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For very large uploads, save to a temp file first, validate, then atomically move to the final location."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.stereotype.Service;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport jakarta.annotation.PostConstruct;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.io.OutputStream;\nimport java.nio.file.*;\nimport java.util.UUID;\n\n@Service\npublic class SafeStorageService {\n\n    private static final Logger log = LoggerFactory.getLogger(SafeStorageService.class);\n\n    private final Path uploadDir;\n    private final Path tempDir;\n\n    public SafeStorageService(\n            @Value(\"${app.storage.upload-dir:uploads}\") String uploadDir,\n            @Value(\"${app.storage.temp-dir:uploads/temp}\") String tempDir) {\n        this.uploadDir = Paths.get(uploadDir).toAbsolutePath().normalize();\n        this.tempDir = Paths.get(tempDir).toAbsolutePath().normalize();\n    }\n\n    @PostConstruct\n    public void init() throws IOException {\n        Files.createDirectories(uploadDir);\n        Files.createDirectories(tempDir);\n        log.info(\"Upload dir: {}, Temp dir: {}\", uploadDir, tempDir);\n    }\n\n    public String storeWithProgress(MultipartFile file, ProgressCallback callback) {\n        String originalName = file.getOriginalFilename();\n        String storedName = UUID.randomUUID() + getExtension(originalName);\n\n        Path tempFile = tempDir.resolve(storedName + \".tmp\");\n        Path finalFile = uploadDir.resolve(storedName);\n\n        try (InputStream in = file.getInputStream();\n             OutputStream out = Files.newOutputStream(tempFile,\n                 StandardOpenOption.CREATE, StandardOpenOption.WRITE)) {\n\n            byte[] buffer = new byte[8192];\n            int bytesRead;\n            long totalBytes = 0;\n            long fileSize = file.getSize();\n\n            while ((bytesRead = in.read(buffer)) != -1) {\n                out.write(buffer, 0, bytesRead);\n                totalBytes += bytesRead;\n\n                if (callback != null && fileSize > 0) {\n                    int percent = (int) ((totalBytes * 100) / fileSize);\n                    callback.onProgress(totalBytes, fileSize, percent);\n                }\n            }\n\n            out.flush();\n\n        } catch (IOException e) {\n            cleanup(tempFile);\n            throw new StorageException(\"Failed to write temp file: \" + originalName, e);\n        }\n\n        try {\n            Files.move(tempFile, finalFile, StandardCopyOption.ATOMIC_MOVE);\n            log.info(\"Atomic move succeeded: {} -> {}\", tempFile, finalFile);\n        } catch (AtomicMoveNotSupportedException e) {\n            try {\n                Files.move(tempFile, finalFile, StandardCopyOption.REPLACE_EXISTING);\n                log.warn(\"Non-atomic move used (filesystem does not support atomic moves)\");\n            } catch (IOException moveEx) {\n                cleanup(tempFile);\n                throw new StorageException(\"Failed to move file: \" + originalName, moveEx);\n            }\n        }\n\n        return storedName;\n    }\n\n    public Path storeInChunks(InputStream inputStream, String extension,\n                              long expectedSize, ProgressCallback callback) {\n        String storedName = UUID.randomUUID() + extension;\n\n        Path tempFile = tempDir.resolve(storedName + \".tmp\");\n        Path finalFile = uploadDir.resolve(storedName);\n\n        try (BufferedOutputStream bos = new BufferedOutputStream(\n                Files.newOutputStream(tempFile, StandardOpenOption.CREATE))) {\n\n            byte[] buffer = new byte[16384];\n            int bytesRead;\n            long totalBytes = 0;\n\n            while ((bytesRead = inputStream.read(buffer)) != -1) {\n                bos.write(buffer, 0, bytesRead);\n                totalBytes += bytesRead;\n\n                if (callback != null && expectedSize > 0) {\n                    callback.onProgress(totalBytes, expectedSize,\n                        (int) ((totalBytes * 100) / expectedSize));\n                }\n            }\n            bos.flush();\n\n        } catch (IOException e) {\n            cleanup(tempFile);\n            throw new StorageException(\"Failed to store chunked file\", e);\n        }\n\n        try {\n            Files.move(tempFile, finalFile, StandardCopyOption.ATOMIC_MOVE);\n        } catch (IOException e) {\n            cleanup(tempFile);\n            throw new StorageException(\"Failed to finalize chunked file\", e);\n        }\n\n        return finalFile;\n    }\n\n    private void cleanup(Path path) {\n        try { Files.deleteIfExists(path); } catch (IOException e) {\n            log.warn(\"Failed to clean up temp file: {}\", path);\n        }\n    }\n\n    private String getExtension(String fileName) {\n        int dot = fileName.lastIndexOf('.');\n        return dot > 0 ? fileName.substring(dot) : \"\";\n    }\n\n    @FunctionalInterface\n    public interface ProgressCallback {\n        void onProgress(long bytesWritten, long totalBytes, int percentComplete);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-file-type-validation-by-magic-bytes",
+      children: "12. File Type Validation by Magic Bytes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Relying solely on file extensions is insecure. Validate the file's magic bytes (the first few bytes that identify the file format)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Service;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.util.Arrays;\nimport java.util.List;\nimport java.util.Map;\nimport java.util.Set;\n\n@Service\npublic class FileValidationService {\n\n    private static final Logger log = LoggerFactory.getLogger(FileValidationService.class);\n\n    private static final Map<String, List<byte[]>> MAGIC_BYTES = Map.of(\n        \"image/jpeg\", List.of(new byte[]{(byte) 0xFF, (byte) 0xD8, (byte) 0xFF}),\n        \"image/png\", List.of(new byte[]{(byte) 0x89, 0x50, 0x4E, 0x47}),\n        \"image/gif\", List.of(new byte[]{0x47, 0x49, 0x46}),\n        \"image/webp\", List.of(new byte[]{0x52, 0x49, 0x46, 0x46}),  // RIFF prefix\n        \"application/pdf\", List.of(new byte[]{0x25, 0x50, 0x44, 0x46}),\n        \"application/zip\", List.of(new byte[]{0x50, 0x4B, 0x03, 0x04}),\n        \"application/vnd.openxmlformats-officedocument\"\n            + \".wordprocessingml.document\",\n            List.of(new byte[]{0x50, 0x4B, 0x03, 0x04}),  // ZIP-based\n        \"application/vnd.openxmlformats-officedocument\"\n            + \".spreadsheetml.sheet\",\n            List.of(new byte[]{0x50, 0x4B, 0x03, 0x04}),  // ZIP-based\n        \"text/csv\", List.of() // no reliable magic bytes; we validate by content\n    );\n\n    private static final Set<String> ALLOWED_CONTENT_TYPES = Set.of(\n        \"image/jpeg\",\n        \"image/png\",\n        \"image/gif\",\n        \"image/webp\",\n        \"application/pdf\",\n        \"application/vnd.openxmlformats-officedocument.wordprocessingml.document\",\n        \"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\",\n        \"text/csv\"\n    );\n\n    private static final long MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB\n\n    public void validate(MultipartFile file) {\n        if (file.isEmpty()) {\n            throw new FileValidationException(\"File is empty\");\n        }\n\n        if (file.getSize() > MAX_FILE_SIZE) {\n            throw new FileValidationException(\n                \"File size \" + file.getSize() + \" exceeds maximum of \" + MAX_FILE_SIZE);\n        }\n\n        String contentType = file.getContentType();\n        if (contentType == null || !ALLOWED_CONTENT_TYPES.contains(contentType)) {\n            throw new FileValidationException(\n                \"Content type '\" + contentType + \"' is not allowed\");\n        }\n\n        if (!validateMagicBytes(file)) {\n            throw new FileValidationException(\n                \"File content does not match its declared content type\");\n        }\n\n        String fileName = file.getOriginalFilename();\n        if (fileName == null || fileName.isBlank()) {\n            throw new FileValidationException(\"File name is required\");\n        }\n\n        if (fileName.contains(\"..\") || fileName.contains(\"/\") || fileName.contains(\"\\\\\")) {\n            throw new FileValidationException(\"Invalid file name: \" + fileName);\n        }\n    }\n\n    private boolean validateMagicBytes(MultipartFile file) {\n        String contentType = file.getContentType();\n        if (contentType == null) return false;\n\n        List<byte[]> magicSignatures = MAGIC_BYTES.get(contentType);\n        if (magicSignatures == null || magicSignatures.isEmpty()) {\n            return true; // no magic bytes defined for this type\n        }\n\n        byte[] fileHeader = readHeader(file, 8);\n        if (fileHeader == null || fileHeader.length == 0) {\n            return false;\n        }\n\n        for (byte[] signature : magicSignatures) {\n            if (startsWith(fileHeader, signature)) {\n                return true;\n            }\n        }\n\n        log.warn(\"Magic byte mismatch for type {}. Declared header: {}\",\n            contentType, bytesToHex(fileHeader));\n\n        return false;\n    }\n\n    private byte[] readHeader(MultipartFile file, int numBytes) {\n        try (InputStream is = file.getInputStream()) {\n            return is.readNBytes(numBytes);\n        } catch (IOException e) {\n            log.error(\"Failed to read file header\", e);\n            return null;\n        }\n    }\n\n    private boolean startsWith(byte[] data, byte[] prefix) {\n        if (data.length < prefix.length) return false;\n        for (int i = 0; i < prefix.length; i++) {\n            if (data[i] != prefix[i]) return false;\n        }\n        return true;\n    }\n\n    private String bytesToHex(byte[] bytes) {\n        StringBuilder sb = new StringBuilder();\n        for (byte b : bytes) {\n            sb.append(String.format(\"%02X \", b));\n        }\n        return sb.toString().trim();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class FileValidationException extends RuntimeException {\n    public FileValidationException(String message) {\n        super(message);\n    }\n    public FileValidationException(String message, Throwable cause) {\n        super(message, cause);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.MethodArgumentNotValidException;\nimport org.springframework.web.bind.annotation.ControllerAdvice;\nimport org.springframework.web.bind.annotation.ExceptionHandler;\n\nimport java.util.Map;\n\n@ControllerAdvice\npublic class FileValidationExceptionHandler {\n\n    @ExceptionHandler(FileValidationException.class)\n    public ResponseEntity<Map<String, String>> handleValidation(\n            FileValidationException e) {\n        return ResponseEntity\n            .status(HttpStatus.BAD_REQUEST)\n            .body(Map.of(\"error\", e.getMessage()));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-malware-scanning-integration",
+      children: "13. Malware Scanning Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.stereotype.Service;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.io.*;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.StandardCopyOption;\nimport java.util.concurrent.TimeUnit;\n\n@Service\npublic class MalwareScannerService {\n\n    private static final Logger log = LoggerFactory.getLogger(MalwareScannerService.class);\n\n    private final boolean enabled;\n    private final String scannerCommand;\n\n    public MalwareScannerService(\n            @Value(\"${app.malware-scanning.enabled:false}\") boolean enabled,\n            @Value(\"${app.malware-scanning.command:clamscan}\") String scannerCommand) {\n        this.enabled = enabled;\n        this.scannerCommand = scannerCommand;\n    }\n\n    public ScanResult scan(MultipartFile file) {\n        if (!enabled) {\n            return ScanResult.clean(\"Scanning disabled\");\n        }\n\n        Path tempFile = null;\n        try {\n            tempFile = Files.createTempFile(\"malware-scan-\", \".tmp\");\n            file.transferTo(tempFile.toFile());\n\n            return scanFile(tempFile);\n\n        } catch (IOException e) {\n            log.error(\"Malware scan failed\", e);\n            return ScanResult.error(\"Scan failed: \" + e.getMessage());\n        } finally {\n            if (tempFile != null) {\n                try { Files.deleteIfExists(tempFile); } catch (IOException e) {\n                    log.warn(\"Failed to delete temp scan file: {}\", tempFile);\n                }\n            }\n        }\n    }\n\n    public ScanResult scan(Path filePath) {\n        if (!enabled) {\n            return ScanResult.clean(\"Scanning disabled\");\n        }\n\n        if (!Files.exists(filePath)) {\n            return ScanResult.error(\"File not found: \" + filePath);\n        }\n\n        return scanFile(filePath);\n    }\n\n    private ScanResult scanFile(Path filePath) {\n        try {\n            ProcessBuilder pb = new ProcessBuilder(\n                scannerCommand,\n                \"--stdout\",\n                \"--no-summary\",\n                filePath.toString()\n            );\n\n            pb.redirectErrorStream(true);\n            Process process = pb.start();\n\n            boolean finished = process.waitFor(30, TimeUnit.SECONDS);\n            if (!finished) {\n                process.destroyForcibly();\n                log.warn(\"Malware scan timed out for: {}\", filePath);\n                return ScanResult.error(\"Scan timed out\");\n            }\n\n            int exitCode = process.exitValue();\n\n            try (BufferedReader reader = new BufferedReader(\n                    new InputStreamReader(process.getInputStream()))) {\n                StringBuilder output = new StringBuilder();\n                String line;\n                while ((line = reader.readLine()) != null) {\n                    output.append(line).append(\"\\n\");\n                }\n                String result = output.toString().trim();\n\n                if (exitCode == 0) {\n                    log.info(\"File clean: {}\", filePath);\n                    return ScanResult.clean(result);\n                } else if (result.contains(\"FOUND\")) {\n                    log.warn(\"Malware detected in file {}: {}\", filePath, result);\n                    return ScanResult.infected(result);\n                } else {\n                    log.warn(\"Scanner returned exit code {}: {}\", exitCode, result);\n                    return ScanResult.error(\"Scanner error (exit \" + exitCode + \"): \" + result);\n                }\n            }\n\n        } catch (IOException | InterruptedException e) {\n            log.error(\"Malware scan exception for: {}\", filePath, e);\n            return ScanResult.error(\"Scan exception: \" + e.getMessage());\n        }\n    }\n\n    public static class ScanResult {\n        private final Status status;\n        private final String details;\n\n        private ScanResult(Status status, String details) {\n            this.status = status;\n            this.details = details;\n        }\n\n        public static ScanResult clean(String details) {\n            return new ScanResult(Status.CLEAN, details);\n        }\n\n        public static ScanResult infected(String details) {\n            return new ScanResult(Status.INFECTED, details);\n        }\n\n        public static ScanResult error(String details) {\n            return new ScanResult(Status.ERROR, details);\n        }\n\n        public boolean isClean() { return status == Status.CLEAN; }\n        public boolean isInfected() { return status == Status.INFECTED; }\n        public boolean isError() { return status == Status.ERROR; }\n        public Status getStatus() { return status; }\n        public String getDetails() { return details; }\n\n        public enum Status { CLEAN, INFECTED, ERROR }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.stereotype.Service;\nimport org.springframework.web.multipart.MultipartFile;\n\n@Service\npublic class SecuredFileUploadService {\n\n    private final FileValidationService validationService;\n    private final MalwareScannerService scannerService;\n    private final SafeStorageService storageService;\n\n    private static final Logger log =\n        LoggerFactory.getLogger(SecuredFileUploadService.class);\n\n    public SecuredFileUploadService(FileValidationService validationService,\n                                    MalwareScannerService scannerService,\n                                    SafeStorageService storageService) {\n        this.validationService = validationService;\n        this.scannerService = scannerService;\n        this.storageService = storageService;\n    }\n\n    public UploadResult upload(MultipartFile file) {\n        validationService.validate(file);\n\n        MalwareScannerService.ScanResult scanResult = scannerService.scan(file);\n        if (!scanResult.isClean()) {\n            log.warn(\"Rejected infected file: {} ({})\",\n                file.getOriginalFilename(), scanResult.getDetails());\n            throw new MalwareDetectedException(\n                \"File rejected by security scanner: \" + scanResult.getDetails());\n        }\n\n        String storedName = storageService.storeWithProgress(\n            file, (written, total, percent) ->\n                log.debug(\"Upload progress: {}% ({} / {} bytes)\",\n                    percent, written, total)\n        );\n\n        return new UploadResult(storedName, file.getOriginalFilename(),\n            file.getSize(), scanResult);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class MalwareDetectedException extends RuntimeException {\n    public MalwareDetectedException(String message) {\n        super(message);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.ControllerAdvice;\nimport org.springframework.web.bind.annotation.ExceptionHandler;\n\nimport java.util.Map;\n\n@ControllerAdvice\npublic class SecurityExceptionHandler {\n\n    @ExceptionHandler(MalwareDetectedException.class)\n    public ResponseEntity<Map<String, String>> handleMalware(\n            MalwareDetectedException e) {\n        return ResponseEntity\n            .status(HttpStatus.UNPROCESSABLE_ENTITY)\n            .body(Map.of(\n                \"error\", \"File rejected by security scanner\",\n                \"detail\", e.getMessage()\n            ));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class UploadResult {\n    private final String storedName;\n    private final String originalName;\n    private final long size;\n    private final MalwareScannerService.ScanResult scanResult;\n\n    public UploadResult(String storedName, String originalName,\n                        long size, MalwareScannerService.ScanResult scanResult) {\n        this.storedName = storedName;\n        this.originalName = originalName;\n        this.size = size;\n        this.scanResult = scanResult;\n    }\n\n    public String getStoredName() { return storedName; }\n    public String getOriginalName() { return originalName; }\n    public long getSize() { return size; }\n    public MalwareScannerService.ScanResult getScanResult() { return scanResult; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "14-file-serving-with-staticresourcehandler",
+      children: "14. File Serving with StaticResourceHandler"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Spring Boot serves static resources from ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "classpath:/static/"
+      }), " (or ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/public"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/resources"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/META-INF/resources"
+      }), ") by default. For uploaded files stored outside the classpath, configure a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WebMvcConfigurer"
+      }), " addResourceHandler."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.beans.factory.annotation.Value;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;\nimport org.springframework.web.servlet.config.annotation.WebMvcConfigurer;\n\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\n@Configuration\npublic class StaticResourceConfig implements WebMvcConfigurer {\n\n    @Value(\"${app.storage.upload-dir:uploads}\")\n    private String uploadDir;\n\n    @Override\n    public void addResourceHandlers(ResourceHandlerRegistry registry) {\n        Path uploadPath = Paths.get(uploadDir).toAbsolutePath().normalize();\n\n        registry.addResourceHandler(\"/static/uploads/**\")\n            .addResourceLocations(\"file:\" + uploadPath.toString() + \"/\")\n            .setCachePeriod(3600)\n            .resourceChain(true)\n            .addResolver(new org.springframework.web.servlet.resource.PathResourceResolver());\n\n        registry.addResourceHandler(\"/static/images/**\")\n            .addResourceLocations(\"file:\" + uploadPath.toString() + \"/images/\")\n            .setCachePeriod(604800);\n\n        registry.addResourceHandler(\"/static/documents/**\")\n            .addResourceLocations(\"file:\" + uploadPath.toString() + \"/documents/\")\n            .setCachePeriod(0);\n\n        registry.addResourceHandler(\"/static/avatars/**\")\n            .addResourceLocations(\"file:\" + uploadPath.toString() + \"/avatars/\")\n            .setCachePeriod(86400);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["With this configuration, files stored in ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "uploads/images/photo.jpg"
+      }), " are accessible at ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "http://localhost:8080/static/uploads/photo.jpg"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For a more controlled approach with path traversal prevention:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.core.io.FileSystemResource;\nimport org.springframework.core.io.Resource;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.stereotype.Controller;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.PathVariable;\n\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\n@Controller\npublic class FileViewController {\n\n    private static final Logger log = LoggerFactory.getLogger(FileViewController.class);\n\n    private final Path uploadDir;\n\n    public FileViewController(\n            @Value(\"${app.storage.upload-dir:uploads}\") String uploadDir) {\n        this.uploadDir = Paths.get(uploadDir).toAbsolutePath().normalize();\n    }\n\n    @GetMapping(\"/uploads/{year}/{month}/{fileName:.+}\")\n    public ResponseEntity<Resource> serveFile(\n            @PathVariable int year,\n            @PathVariable int month,\n            @PathVariable String fileName) {\n\n        Path filePath = uploadDir\n            .resolve(String.valueOf(year))\n            .resolve(String.format(\"%02d\", month))\n            .resolve(fileName)\n            .normalize();\n\n        if (!filePath.startsWith(uploadDir)) {\n            log.warn(\"Path traversal attempt: {}\", filePath);\n            return ResponseEntity.badRequest().build();\n        }\n\n        if (!Files.exists(filePath) || !Files.isReadable(filePath)) {\n            return ResponseEntity.notFound().build();\n        }\n\n        FileSystemResource resource = new FileSystemResource(filePath.toFile());\n\n        try {\n            String contentType = Files.probeContentType(filePath);\n            if (contentType == null) contentType = \"application/octet-stream\";\n\n            return ResponseEntity.ok()\n                .contentType(MediaType.parseMediaType(contentType))\n                .body(resource);\n\n        } catch (Exception e) {\n            return ResponseEntity.internalServerError().build();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "15-complete-upload-pipeline--end-to-end",
+      children: "15. Complete Upload Pipeline — End to End"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.util.List;\nimport java.util.Map;\n\n@RestController\n@RequestMapping(\"/api/secure-files\")\npublic class SecureFileController {\n\n    private static final Logger log = LoggerFactory.getLogger(SecureFileController.class);\n\n    private final SecuredFileUploadService uploadService;\n    private final FileStorageService storageService;\n\n    public SecureFileController(SecuredFileUploadService uploadService,\n                                FileStorageService storageService) {\n        this.uploadService = uploadService;\n        this.storageService = storageService;\n    }\n\n    @PostMapping(\"/upload\")\n    public ResponseEntity<Map<String, Object>> upload(\n            @RequestParam(\"file\") MultipartFile file) {\n\n        log.info(\"Upload request: name={}, size={}, type={}\",\n            file.getOriginalFilename(), file.getSize(), file.getContentType());\n\n        UploadResult result = uploadService.upload(file);\n\n        return ResponseEntity.ok(Map.of(\n            \"storedName\", result.getStoredName(),\n            \"originalName\", result.getOriginalName(),\n            \"size\", result.getSize(),\n            \"scanStatus\", result.getScanResult().getStatus().name(),\n            \"message\", \"File uploaded successfully\"\n        ));\n    }\n\n    @PostMapping(\"/upload-multiple\")\n    public ResponseEntity<Map<String, Object>> uploadMultiple(\n            @RequestParam(\"files\") List<MultipartFile> files) {\n\n        List<Map<String, Object>> results = files.stream()\n            .filter(f -> !f.isEmpty())\n            .map(file -> {\n                try {\n                    UploadResult result = uploadService.upload(file);\n                    return Map.of(\n                        \"originalName\", result.getOriginalName(),\n                        \"storedName\", result.getStoredName(),\n                        \"status\", \"OK\"\n                    );\n                } catch (Exception e) {\n                    return Map.of(\n                        \"originalName\", file.getOriginalFilename(),\n                        \"status\", \"FAILED\",\n                        \"error\", e.getMessage()\n                    );\n                }\n            })\n            .toList();\n\n        long successCount = results.stream()\n            .filter(r -> \"OK\".equals(r.get(\"status\"))).count();\n\n        return ResponseEntity.ok(Map.of(\n            \"results\", results,\n            \"total\", results.size(),\n            \"successCount\", successCount\n        ));\n    }\n\n    @GetMapping(\"/status\")\n    public ResponseEntity<Map<String, Object>> status() {\n        return ResponseEntity.ok(Map.of(\n            \"service\", \"Secure File Upload\",\n            \"version\", \"1.0\",\n            \"status\", \"operational\"\n        ));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "16-chunked-upload-client-side-splitting",
+      children: "16. Chunked Upload (Client-Side Splitting)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For extremely large files, the client can split the file into chunks and upload them sequentially."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.io.IOException;\nimport java.io.OutputStream;\nimport java.nio.file.*;\nimport java.util.*;\nimport java.util.concurrent.ConcurrentHashMap;\n\n@RestController\n@RequestMapping(\"/api/chunked-upload\")\npublic class ChunkedUploadController {\n\n    private static final Logger log =\n        LoggerFactory.getLogger(ChunkedUploadController.class);\n    private final Map<String, ChunkedUploadSession> sessions =\n        new ConcurrentHashMap<>();\n\n    @PostMapping(\"/init\")\n    public ResponseEntity<Map<String, Object>> initializeUpload(\n            @RequestParam(\"fileName\") String fileName,\n            @RequestParam(\"totalSize\") long totalSize,\n            @RequestParam(\"totalChunks\") int totalChunks) {\n\n        String uploadId = UUID.randomUUID().toString();\n        Path tempDir = Paths.get(\"uploads\", \"chunks\", uploadId);\n\n        try {\n            Files.createDirectories(tempDir);\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError()\n                .body(Map.of(\"error\", \"Failed to initialize upload\"));\n        }\n\n        sessions.put(uploadId, new ChunkedUploadSession(\n            uploadId, fileName, totalSize, totalChunks, tempDir));\n\n        log.info(\"Chunked upload initialized: id={}, file={}, chunks={}\",\n            uploadId, fileName, totalChunks);\n\n        return ResponseEntity.ok(Map.of(\n            \"uploadId\", uploadId,\n            \"totalChunks\", totalChunks,\n            \"status\", \"initialized\"\n        ));\n    }\n\n    @PostMapping(\"/chunk\")\n    public ResponseEntity<Map<String, Object>> uploadChunk(\n            @RequestParam(\"uploadId\") String uploadId,\n            @RequestParam(\"chunkIndex\") int chunkIndex,\n            @RequestParam(\"file\") MultipartFile file) {\n\n        ChunkedUploadSession session = sessions.get(uploadId);\n        if (session == null) {\n            return ResponseEntity.badRequest()\n                .body(Map.of(\"error\", \"Invalid upload ID\"));\n        }\n\n        Path chunkPath = session.tempDir().resolve(\"chunk-\" + chunkIndex);\n\n        try {\n            file.transferTo(chunkPath);\n            session.markReceived(chunkIndex);\n            log.info(\"Chunk {}/{} received for upload {}\", chunkIndex + 1,\n                session.totalChunks(), uploadId);\n\n            if (session.allChunksReceived()) {\n                return ResponseEntity.ok(Map.of(\n                    \"status\", \"complete\",\n                    \"uploadId\", uploadId,\n                    \"receivedChunks\", session.receivedChunks(),\n                    \"totalChunks\", session.totalChunks()\n                ));\n            }\n\n            return ResponseEntity.ok(Map.of(\n                \"status\", \"in-progress\",\n                \"uploadId\", uploadId,\n                \"receivedChunks\", session.receivedChunks(),\n                \"totalChunks\", session.totalChunks()\n            ));\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError()\n                .body(Map.of(\"error\", \"Failed to write chunk\"));\n        }\n    }\n\n    @PostMapping(\"/complete\")\n    public ResponseEntity<Map<String, Object>> completeUpload(\n            @RequestParam(\"uploadId\") String uploadId) {\n\n        ChunkedUploadSession session = sessions.get(uploadId);\n        if (session == null) {\n            return ResponseEntity.badRequest()\n                .body(Map.of(\"error\", \"Invalid upload ID\"));\n        }\n\n        if (!session.allChunksReceived()) {\n            return ResponseEntity.badRequest()\n                .body(Map.of(\"error\", \"Not all chunks received\",\n                    \"received\", session.receivedChunks(),\n                    \"total\", session.totalChunks()));\n        }\n\n        String extension = \"\";\n        int dot = session.fileName().lastIndexOf('.');\n        if (dot > 0) extension = session.fileName().substring(dot);\n\n        String finalName = UUID.randomUUID() + extension;\n        Path finalPath = Paths.get(\"uploads\", finalName);\n\n        try (OutputStream out = Files.newOutputStream(finalPath,\n                StandardOpenOption.CREATE, StandardOpenOption.WRITE)) {\n\n            for (int i = 0; i < session.totalChunks(); i++) {\n                Path chunkPath = session.tempDir().resolve(\"chunk-\" + i);\n                byte[] chunkData = Files.readAllBytes(chunkPath);\n                out.write(chunkData);\n                Files.deleteIfExists(chunkPath);\n            }\n            out.flush();\n\n        } catch (IOException e) {\n            return ResponseEntity.internalServerError()\n                .body(Map.of(\"error\", \"Failed to assemble chunks\"));\n        }\n\n        deleteDirectory(session.tempDir());\n        sessions.remove(uploadId);\n\n        log.info(\"Chunked upload complete: {} -> {}\", session.fileName(), finalName);\n\n        return ResponseEntity.ok(Map.of(\n            \"status\", \"completed\",\n            \"fileName\", finalName,\n            \"originalName\", session.fileName(),\n            \"size\", session.totalSize()\n        ));\n    }\n\n    @GetMapping(\"/status/{uploadId}\")\n    public ResponseEntity<Map<String, Object>> getStatus(\n            @PathVariable String uploadId) {\n\n        ChunkedUploadSession session = sessions.get(uploadId);\n        if (session == null) {\n            return ResponseEntity.ok(Map.of(\"status\", \"not-found\"));\n        }\n\n        return ResponseEntity.ok(Map.of(\n            \"status\", \"in-progress\",\n            \"uploadId\", uploadId,\n            \"receivedChunks\", session.receivedChunks(),\n            \"totalChunks\", session.totalChunks(),\n            \"fileName\", session.fileName(),\n            \"totalSize\", session.totalSize()\n        ));\n    }\n\n    private void deleteDirectory(Path dir) {\n        try (var files = Files.walk(dir)) {\n            files.sorted(Comparator.reverseOrder())\n                .forEach(path -> {\n                    try { Files.deleteIfExists(path); }\n                    catch (IOException e) {\n                        log.warn(\"Failed to delete: {}\", path);\n                    }\n                });\n        } catch (IOException e) {\n            log.warn(\"Failed to walk directory: {}\", dir);\n        }\n    }\n\n    private record ChunkedUploadSession(\n        String uploadId,\n        String fileName,\n        long totalSize,\n        int totalChunks,\n        Path tempDir\n    ) {\n        private final BitSet receivedChunks = new BitSet(totalChunks);\n\n        public void markReceived(int index) {\n            receivedChunks.set(index);\n        }\n\n        public int receivedChunks() {\n            return receivedChunks.cardinality();\n        }\n\n        public boolean allChunksReceived() {\n            return receivedChunks.cardinality() == totalChunks;\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "17-database-backed-file-storage",
+      children: "17. Database-Backed File Storage"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For small files or when you need transactional consistency, store files in a database alongside metadata."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import jakarta.persistence.*;\n\n@Entity\n@Table(name = \"stored_files\")\npublic class StoredFile {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    @Column(nullable = false, unique = true)\n    private String storedName;\n\n    @Column(nullable = false)\n    private String originalName;\n\n    @Column(nullable = false)\n    private String contentType;\n\n    @Column(nullable = false)\n    private long size;\n\n    @Lob\n    @Basic(fetch = FetchType.LAZY)\n    @Column(name = \"file_data\", columnDefinition = \"LONGBLOB\")\n    private byte[] data;\n\n    @Column(nullable = false)\n    private java.time.LocalDateTime uploadedAt;\n\n    private String uploadedBy;\n\n    public StoredFile() {}\n\n    public StoredFile(String storedName, String originalName,\n                      String contentType, long size, byte[] data) {\n        this.storedName = storedName;\n        this.originalName = originalName;\n        this.contentType = contentType;\n        this.size = size;\n        this.data = data;\n        this.uploadedAt = java.time.LocalDateTime.now();\n    }\n\n    public Long getId() { return id; }\n    public void setId(Long id) { this.id = id; }\n\n    public String getStoredName() { return storedName; }\n    public void setStoredName(String storedName) { this.storedName = storedName; }\n\n    public String getOriginalName() { return originalName; }\n    public void setOriginalName(String originalName) { this.originalName = originalName; }\n\n    public String getContentType() { return contentType; }\n    public void setContentType(String contentType) { this.contentType = contentType; }\n\n    public long getSize() { return size; }\n    public void setSize(long size) { this.size = size; }\n\n    public byte[] getData() { return data; }\n    public void setData(byte[] data) { this.data = data; }\n\n    public java.time.LocalDateTime getUploadedAt() { return uploadedAt; }\n    public void setUploadedAt(java.time.LocalDateTime uploadedAt) { this.uploadedAt = uploadedAt; }\n\n    public String getUploadedBy() { return uploadedBy; }\n    public void setUploadedBy(String uploadedBy) { this.uploadedBy = uploadedBy; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\n\nimport java.util.Optional;\n\n@Repository\npublic interface StoredFileRepository extends JpaRepository<StoredFile, Long> {\n    Optional<StoredFile> findByStoredName(String storedName);\n    boolean existsByStoredName(String storedName);\n    void deleteByStoredName(String storedName);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.core.io.ByteArrayResource;\nimport org.springframework.core.io.Resource;\nimport org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.io.IOException;\nimport java.util.UUID;\n\n@Service\n@Transactional\npublic class DatabaseFileStorageService implements FileStorageService {\n\n    private final StoredFileRepository repository;\n\n    public DatabaseFileStorageService(StoredFileRepository repository) {\n        this.repository = repository;\n    }\n\n    @Override\n    public String store(MultipartFile file) {\n        try {\n            String storedName = UUID.randomUUID() + getExtension(\n                file.getOriginalFilename());\n\n            StoredFile storedFile = new StoredFile(\n                storedName,\n                file.getOriginalFilename(),\n                file.getContentType(),\n                file.getSize(),\n                file.getBytes()\n            );\n\n            repository.save(storedFile);\n            return storedName;\n\n        } catch (IOException e) {\n            throw new StorageException(\"Failed to store file in database\", e);\n        }\n    }\n\n    @Override\n    public String store(byte[] data, String originalFileName) {\n        String storedName = UUID.randomUUID() + getExtension(originalFileName);\n\n        StoredFile storedFile = new StoredFile(\n            storedName,\n            originalFileName,\n            \"application/octet-stream\",\n            data.length,\n            data\n        );\n\n        repository.save(storedFile);\n        return storedName;\n    }\n\n    @Override\n    public Resource loadAsResource(String fileName) {\n        StoredFile storedFile = repository.findByStoredName(fileName)\n            .orElseThrow(() -> new StorageFileNotFoundException(\n                \"File not found: \" + fileName));\n\n        return new ByteArrayResource(storedFile.getData());\n    }\n\n    @Override\n    public Path load(String fileName) {\n        throw new UnsupportedOperationException(\n            \"Database storage does not support file paths\");\n    }\n\n    @Override\n    public Stream<Path> loadAll() {\n        throw new UnsupportedOperationException(\n            \"Database storage does not support file paths\");\n    }\n\n    @Override\n    public void delete(String fileName) {\n        repository.deleteByStoredName(fileName);\n    }\n\n    @Override\n    public void deleteAll() {\n        repository.deleteAll();\n    }\n\n    @Override\n    public String getStorageLocation() {\n        return \"database://stored_files\";\n    }\n\n    private String getExtension(String fileName) {\n        if (fileName == null) return \"\";\n        int dot = fileName.lastIndexOf('.');\n        return dot > 0 ? fileName.substring(dot) : \"\";\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.springframework.core.io.ByteArrayResource;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/api/db-files\")\npublic class DatabaseFileController {\n\n    private final DatabaseFileStorageService dbStorage;\n\n    public DatabaseFileController(DatabaseFileStorageService dbStorage) {\n        this.dbStorage = dbStorage;\n    }\n\n    @GetMapping(\"/download/{storedName:.+}\")\n    public ResponseEntity<ByteArrayResource> download(@PathVariable String storedName) {\n        StoredFile storedFile = dbStorage.findByStoredName(storedName);\n        if (storedFile == null) {\n            return ResponseEntity.notFound().build();\n        }\n\n        ByteArrayResource resource = new ByteArrayResource(storedFile.getData());\n\n        return ResponseEntity.ok()\n            .contentLength(storedFile.getSize())\n            .contentType(MediaType.parseMediaType(storedFile.getContentType()))\n            .header(HttpHeaders.CONTENT_DISPOSITION,\n                \"attachment; filename=\\\"\" + storedFile.getOriginalName() + \"\\\"\")\n            .header(\"X-Uploaded-At\", storedFile.getUploadedAt().toString())\n            .body(resource);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "18-application-properties-reference",
+      children: "18. Application Properties Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-properties",
+        children: "# ===== Multipart/Upload Configuration =====\nspring.servlet.multipart.enabled=true\nspring.servlet.multipart.location=${java.io.tmpdir}/petclinic-uploads\nspring.servlet.multipart.max-file-size=10MB\nspring.servlet.multipart.max-request-size=50MB\nspring.servlet.multipart.file-size-threshold=2KB\nspring.servlet.multipart.resolve-lazily=false\n\n# ===== Custom Storage Settings =====\napp.storage.upload-dir=uploads\napp.storage.temp-dir=uploads/temp\napp.storage.allowed-types=image/jpeg,image/png,image/gif,image/webp,application/pdf\napp.storage.max-file-size=10485760\n\n# ===== Malware Scanning =====\napp.malware-scanning.enabled=true\napp.malware-scanning.command=clamscan\n\n# ===== Server Upload Limits =====\nserver.tomcat.max-swallow-size=100MB\nserver.tomcat.max-http-form-post-size=50MB\nserver.max-http-request-header-size=16KB\n\n# ===== Static Resource Serving =====\nspring.web.resources.static-locations=classpath:/static/,file:uploads/\nspring.web.resources.add-mappings=true\n\n# ===== Logging =====\nlogging.level.com.petclinic.files=DEBUG\nlogging.level.org.springframework.web.multipart=DEBUG\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# application.yml alternative\nspring:\n  servlet:\n    multipart:\n      enabled: true\n      location: ${java.io.tmpdir}/petclinic-uploads\n      max-file-size: 10MB\n      max-request-size: 50MB\n      file-size-threshold: 2KB\n  web:\n    resources:\n      static-locations: classpath:/static/,file:uploads/\n\napp:\n  storage:\n    upload-dir: uploads\n    temp-dir: uploads/temp\n    allowed-types: image/jpeg,image/png,image/gif,image/webp,application/pdf\n    max-file-size: 10485760\n  malware-scanning:\n    enabled: true\n    command: clamscan\n\nserver:\n  tomcat:\n    max-swallow-size: 100MB\n    max-http-form-post-size: 50MB\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "19-testing-file-operations",
+      children: "19. Testing File Operations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.junit.jupiter.api.Test;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;\nimport org.springframework.boot.test.context.SpringBootTest;\nimport org.springframework.http.MediaType;\nimport org.springframework.mock.web.MockMultipartFile;\nimport org.springframework.test.web.servlet.MockMvc;\n\nimport static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.multipart;\nimport static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;\n\n@SpringBootTest\n@AutoConfigureMockMvc\nclass FileUploadControllerTest {\n\n    @Autowired\n    private MockMvc mockMvc;\n\n    @Test\n    void uploadSingleFile() throws Exception {\n        MockMultipartFile file = new MockMultipartFile(\n            \"file\",\n            \"test.txt\",\n            MediaType.TEXT_PLAIN_VALUE,\n            \"Hello, World!\".getBytes()\n        );\n\n        mockMvc.perform(multipart(\"/api/files/upload\").file(file))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.fileName\").value(\"test.txt\"))\n            .andExpect(jsonPath(\"$.size\").value(13))\n            .andExpect(jsonPath(\"$.contentType\").value(\"text/plain\"));\n    }\n\n    @Test\n    void uploadEmptyFileReturnsBadRequest() throws Exception {\n        MockMultipartFile emptyFile = new MockMultipartFile(\n            \"file\", \"empty.txt\",\n            MediaType.TEXT_PLAIN_VALUE, new byte[0]);\n\n        mockMvc.perform(multipart(\"/api/files/upload\").file(emptyFile))\n            .andExpect(status().isBadRequest());\n    }\n\n    @Test\n    void uploadMultipleFiles() throws Exception {\n        MockMultipartFile file1 = new MockMultipartFile(\n            \"files\", \"a.txt\", \"text/plain\", \"content a\".getBytes());\n        MockMultipartFile file2 = new MockMultipartFile(\n            \"files\", \"b.txt\", \"text/plain\", \"content b\".getBytes());\n\n        mockMvc.perform(multipart(\"/api/files/upload-multiple\")\n                .file(file1).file(file2))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.count\").value(2));\n    }\n\n    @Test\n    void fileExceedsMaxSize() throws Exception {\n        MockMultipartFile largeFile = new MockMultipartFile(\n            \"file\", \"large.bin\",\n            \"application/octet-stream\",\n            new byte[20 * 1024 * 1024]);\n\n        mockMvc.perform(multipart(\"/api/files/upload\").file(largeFile))\n            .andExpect(status().isPayloadTooLarge());\n    }\n\n    @Test\n    void downloadFile() throws Exception {\n        MockMultipartFile file = new MockMultipartFile(\n            \"file\", \"download-test.txt\",\n            \"text/plain\", \"download me\".getBytes());\n\n        String storedName = mockMvc.perform(\n                multipart(\"/api/files/upload\").file(file))\n            .andReturn()\n            .getResponse()\n            .getJsonPath()\n            .read(\"$.storedName\");\n\n        mockMvc.perform(org.springframework.test.web.servlet.request\n                .MockMvcRequestBuilders\n                .get(\"/api/files/download/{name}\", storedName))\n            .andExpect(status().isOk())\n            .andExpect(header().string(\"Content-Disposition\",\n                org.hamcrest.Matchers.containsString(\"attachment\")))\n            .andExpect(header().string(\"Content-Type\",\n                org.hamcrest.Matchers.containsString(\"text/plain\")));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.io.TempDir;\nimport org.springframework.web.multipart.MultipartFile;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.InputStream;\nimport java.nio.file.Path;\n\nimport static org.assertj.core.api.Assertions.assertThat;\nimport static org.assertj.core.api.Assertions.assertThatThrownBy;\n\nclass FileValidationServiceTest {\n\n    private final FileValidationService validator = new FileValidationService();\n\n    @Test\n    void validJpegPasses() {\n        MultipartFile jpeg = createMockFile(\"photo.jpg\", \"image/jpeg\",\n            new byte[]{(byte) 0xFF, (byte) 0xD8, (byte) 0xFF, 0x00, 0x01, 0x02});\n        validator.validate(jpeg);\n    }\n\n    @Test\n    void validPngPasses() {\n        MultipartFile png = createMockFile(\"image.png\", \"image/png\",\n            new byte[]{0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A});\n        validator.validate(png);\n    }\n\n    @Test\n    void mislabeledFileFails() {\n        MultipartFile fakePdf = createMockFile(\"fake.pdf\", \"application/pdf\",\n            new byte[]{0x89, 0x50, 0x4E, 0x47});  // PNG magic bytes, not PDF\n\n        assertThatThrownBy(() -> validator.validate(fakePdf))\n            .isInstanceOf(FileValidationException.class)\n            .hasMessageContaining(\"does not match\");\n    }\n\n    @Test\n    void disallowedContentTypeFails() {\n        MultipartFile exe = createMockFile(\"virus.exe\", \"application/x-msdownload\",\n            new byte[]{0x4D, 0x5A});\n\n        assertThatThrownBy(() -> validator.validate(exe))\n            .isInstanceOf(FileValidationException.class)\n            .hasMessageContaining(\"not allowed\");\n    }\n\n    @Test\n    void pathTraversalFileNameFails() {\n        MultipartFile malicious = createMockFile(\n            \"../../etc/passwd\", \"text/plain\", \"evil\".getBytes());\n\n        assertThatThrownBy(() -> validator.validate(malicious))\n            .isInstanceOf(FileValidationException.class)\n            .hasMessageContaining(\"Invalid file name\");\n    }\n\n    private MultipartFile createMockFile(String name, String contentType,\n                                         byte[] content) {\n        return new org.springframework.mock.web.MockMultipartFile(\n            \"file\", name, contentType, content);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.io.TempDir;\n\nimport java.nio.file.Files;\nimport java.nio.file.Path;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\nclass SafeStorageServiceTest {\n\n    @TempDir\n    Path tempDir;\n\n    @Test\n    void atomicMovePreservesContent(@TempDir Path uploadDir,\n                                    @TempDir Path tempDir) throws Exception {\n        SafeStorageService service = new SafeStorageService(\n            uploadDir.toString(), tempDir.toString());\n        service.init();\n\n        byte[] content = \"Hello, atomic world!\".getBytes();\n        MockMultipartFile file = new MockMultipartFile(\n            \"file\", \"hello.txt\", \"text/plain\", content);\n\n        String storedName = service.storeWithProgress(file, null);\n\n        Path storedPath = uploadDir.resolve(storedName);\n        assertThat(Files.exists(storedPath)).isTrue();\n        assertThat(Files.readAllBytes(storedPath)).isEqualTo(content);\n\n        // Temp directory should be clean\n        assertThat(Files.list(tempDir)).isEmpty();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Distinction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MultipartFile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spring's uploaded file representation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "getName(), getBytes(), getInputStream()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File upload handling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spring's resource abstraction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "InputStreamResource, UrlResource, ByteArrayResource"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File download serving"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "StreamingResponseBody"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Streaming output for large files"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Backpressure-aware, async"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large file downloads"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "StaticResourceHandler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Serve static files from configured locations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in caching, resource resolution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Serving uploaded files"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Upload Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Default"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "spring.servlet.multipart.max-file-size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maximum file size per upload"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "spring.servlet.multipart.max-request-size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10MB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maximum multipart request size"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "spring.servlet.multipart.enabled"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "true"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enable multipart upload support"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "spring.servlet.multipart.location"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(temp)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Directory for temporary upload files"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "File Type Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Small Files"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Large Files"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Streaming"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Local filesystem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "S3/Blob storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Temporary"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Download"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ResponseEntity<Resource>"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "StreamingResponseBody"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "InputStreamResource"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Magic bytes + extension"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Magic bytes + scan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Magic bytes check"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["How do you limit file upload size in Spring Boot?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) @Size annotation on MultipartFile"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) spring.servlet.multipart.max-file-size property"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) @Max annotation"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) web.xml configuration"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) spring.servlet.multipart.max-file-size.** This property controls the maximum size allowed for uploaded files.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which approach is best for downloading large files?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) ResponseEntity<byte[]>"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) StreamingResponseBody"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) FileCopyUtils"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) @ResponseBody"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) StreamingResponseBody.** This allows streaming the file content without loading it entirely into memory.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the most reliable way to detect file type?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) File extension"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) Content-Type header"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) Magic bytes at file start"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) User-provided type"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) Magic bytes at file start.** Magic bytes are the first bytes of a file and reliably identify its format regardless of extension.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "ummary"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MultipartFile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spring interface wrapping uploaded file data; provides input stream, bytes, and transferTo"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "@RequestParam"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binds multipart request parts to controller parameters, supports List for multiple files"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Upload Config"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "spring.servlet.multipart.*"
+            }), " controls max sizes, temp location, threshold"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File Size Limits"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MaxUploadSizeExceededException"
+            }), " handled via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@ControllerAdvice"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage Service"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Abstract behind ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "FileStorageService"
+            }), " interface — swap impls (filesystem, DB, S3)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Download Resources"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "UrlResource"
+            }), " (file/URL), ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "InputStreamResource"
+            }), " (stream), ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "ByteArrayResource"
+            }), " (bytes)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Content-Disposition"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "attachment"
+            }), " forces download; ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "inline"
+            }), " displays in browser"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Streaming"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "StreamingResponseBody"
+            }), " writes to OutputStream without full buffering"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Chunked Encoding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Used automatically when no Content-Length is set; ideal for dynamic content"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Temp-Then-Move"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write to temp dir, validate, then atomic move to final location"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File Type Validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check magic bytes (not just extension) to prevent MIME-type spoofing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Malware Scanning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integrate external scanner (ClamAV); reject infected files before storage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "StaticResourceHandler"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Serve uploads directly via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "file:"
+            }), " resource handler"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Database Storage"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "@Lob"
+            }), " byte[] with JPA for transactional file persistence"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Chunked Uploads"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client splits large files; server reassembles on completion"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-1-single-file-upload",
+      children: "Exercise 1: Single File Upload"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "@PostMapping"
+      }), " endpoint that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Accepts a single ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MultipartFile"
+        }), " named ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "avatar"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Returns the original file name, size in KB, and content type as JSON"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rejects empty files with a 400 status"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-multiple-file-upload",
+      children: "Exercise 2: Multiple File Upload"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create an endpoint that accepts multiple files under the parameter name ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "documents"
+      }), ". Return a list of upload summaries, each containing the file name, size, and a generated download URL. Include the total count and total size of all uploaded files in the response."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-upload-configuration",
+      children: "Exercise 3: Upload Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Configure your application so that:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Maximum single file size is 5 MB"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Maximum request size is 25 MB"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Files larger than 1 KB are written to disk immediately"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The temporary directory is ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "./uploads/temp"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-storage-service-implementation",
+      children: "Exercise 4: Storage Service Implementation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Implement ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "FileStorageService.store()"
+      }), " to:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Generate a UUID-based file name preserving the original extension"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Store the file under ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "uploads/{yyyy}/{MM}/"
+        }), " (year/month subdirectories)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Return the relative path (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "2026/06/abc123.pdf"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prevent path traversal attacks"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-file-download-with-content-disposition",
+      children: "Exercise 5: File Download with Content-Disposition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create two download endpoints:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "/api/files/download/{name}"
+        }), " — forces download (attachment)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "/api/files/preview/{name}"
+        }), " — displays in browser (inline) for images and PDFs\nBoth should set the correct ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Content-Type"
+        }), " based on the file extension."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-6-large-file-streaming",
+      children: "Exercise 6: Large File Streaming"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "StreamingResponseBody"
+      }), " endpoint that:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Streams a file without loading it entirely into memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reports progress via logs every 10 MB"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Handles client disconnection gracefully (detect ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "InterruptedIOException"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Supports partial content (Range header) for video files"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-7-magic-byte-validation",
+      children: "Exercise 7: Magic Byte Validation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Write a validation method that checks the first bytes of an uploaded file against known signatures:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["JPEG: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "FF D8 FF"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["PNG: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "89 50 4E 47"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["PDF: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "25 50 44 46"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["ZIP/DOCX/XLSX: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "50 4B 03 04"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Reject files whose content does not match their declared ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Content-Type"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-8-malware-scanner-integration",
+      children: "Exercise 8: Malware Scanner Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create a service that:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Writes the uploaded file to a temporary location"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Invokes an external antivirus command (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "clamscan"
+        }), ")"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interprets the exit code (0 = clean, 1 = infected)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deletes infected files and returns a 422 response"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deletes the temp file after scanning regardless of result"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-9-chunked-upload",
+      children: "Exercise 9: Chunked Upload"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement a three-phase chunked upload:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "POST /api/chunked/init"
+        }), " — returns an upload ID"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "POST /api/chunked/part"
+        }), " — accepts a chunk with index + upload ID"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "POST /api/chunked/complete"
+        }), " — reassembles chunks and returns the final file name"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Track which chunks have been received and report progress via ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "GET /api/chunked/{uploadId}/status"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-10-static-resource-serving",
+      children: "Exercise 10: Static Resource Serving"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Configure ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WebMvcConfigurer"
+      }), " to:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Serve files from ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "./uploads/avatars/"
+        }), " at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/static/avatars/**"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Serve files from ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "./uploads/reports/"
+        }), " at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/static/reports/**"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set a 24-hour cache for avatars"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Disable caching for reports"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prevent directory listing"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.em, {
+        children: "End of Chapter 18 — File Upload, Download & Streaming"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

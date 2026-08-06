@@ -1,0 +1,569 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[13543],{
+
+/***/ 94419
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_agent_engineer_11_ai_testing_evaluation_md_afb_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-agent-engineer-11-ai-testing-evaluation-md-afb.json
+const site_docs_courses_ai_agent_engineer_11_ai_testing_evaluation_md_afb_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-agent-engineer/11-ai-testing-evaluation","title":"Chapter 11 — AI Testing, Evaluation & Quality","description":"Duration: 1.5 weeks, ~18 hours","source":"@site/docs/courses/ai-agent-engineer/11-ai-testing-evaluation.md","sourceDirName":"courses/ai-agent-engineer","slug":"/ai-agent-engineer/11-ai-testing-evaluation","permalink":"/ai-engineering-journey/ai-agent-engineer/11-ai-testing-evaluation","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":12,"frontMatter":{"id":"11-ai-testing-evaluation","slug":"/ai-agent-engineer/11-ai-testing-evaluation","title":"Chapter 11 — AI Testing, Evaluation & Quality","sidebar_label":"Chapter 11 — AI Testing, Evaluation & Quality","sidebar_position":12},"sidebar":"coursesSidebar","previous":{"title":"Chapter 10 — Prompt Engineering Mastery","permalink":"/ai-engineering-journey/ai-agent-engineer/10-prompt-engineering-mastery"},"next":{"title":"Chapter 12 — AI Observability & Debugging","permalink":"/ai-engineering-journey/ai-agent-engineer/12-ai-observability-debugging"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-agent-engineer/11-ai-testing-evaluation.md
+
+
+const frontMatter = {
+	id: '11-ai-testing-evaluation',
+	slug: '/ai-agent-engineer/11-ai-testing-evaluation',
+	title: 'Chapter 11 — AI Testing, Evaluation & Quality',
+	sidebar_label: 'Chapter 11 — AI Testing, Evaluation & Quality',
+	sidebar_position: 12
+};
+const contentTitle = 'Chapter 11 — AI Testing, Evaluation & Quality';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Topic Table",
+  "id": "topic-table",
+  "level": 2
+}, {
+  "value": "11.1 Unit Testing for Agent Logic",
+  "id": "111-unit-testing-for-agent-logic",
+  "level": 2
+}, {
+  "value": "Testing Tool Selection",
+  "id": "testing-tool-selection",
+  "level": 3
+}, {
+  "value": "Testing State Transitions (LangGraph)",
+  "id": "testing-state-transitions-langgraph",
+  "level": 3
+}, {
+  "value": "11.2 Integration Testing for RAG Pipelines",
+  "id": "112-integration-testing-for-rag-pipelines",
+  "level": 2
+}, {
+  "value": "11.3 LLM-as-Judge Evaluation",
+  "id": "113-llm-as-judge-evaluation",
+  "level": 2
+}, {
+  "value": "11.4 Trajectory Evaluation for Agents",
+  "id": "114-trajectory-evaluation-for-agents",
+  "level": 2
+}, {
+  "value": "11.5 Hallucination Detection",
+  "id": "115-hallucination-detection",
+  "level": 2
+}, {
+  "value": "11.6 Evaluation Datasets",
+  "id": "116-evaluation-datasets",
+  "level": 2
+}, {
+  "value": "Creating Ground-Truth Data",
+  "id": "creating-ground-truth-data",
+  "level": 3
+}, {
+  "value": "11.7 Automated Eval in CI/CD",
+  "id": "117-automated-eval-in-cicd",
+  "level": 2
+}, {
+  "value": "Python CI Eval Runner",
+  "id": "python-ci-eval-runner",
+  "level": 3
+}, {
+  "value": "11.8 Quality Metrics &amp; Dashboards",
+  "id": "118-quality-metrics--dashboards",
+  "level": 2
+}, {
+  "value": "11.9 A/B Testing for Model Selection",
+  "id": "119-ab-testing-for-model-selection",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-11--ai-testing-evaluation--quality",
+        children: "Chapter 11 — AI Testing, Evaluation & Quality"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Duration:"
+      }), " 1.5 weeks, ~18 hours\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Goal:"
+      }), " Build a systematic testing and evaluation framework for AI agents and RAG pipelines. Move from \"it works on my machine\" to quantitative quality gates."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "topic-table",
+      children: "Topic Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Subtopic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hours"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Done checkpoint"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unit testing for agent logic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write unit tests for tool selection, state transitions, edge cases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration testing for RAG pipelines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write integration tests that verify chunking, retrieval, and generation end-to-end"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM-as-judge evaluation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build a judge agent that scores outputs on correctness, faithfulness, relevance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trajectory evaluation for agents"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluate an agent's reasoning path, not just its final answer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hallucination detection & measurement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement factual consistency checking with a dedicated hallucination detector"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Regression testing for prompts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build a prompt regression suite that catches degradations before deployment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation datasets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Create and curate ground-truth datasets for your RAG system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A/B testing for model selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design an A/B test comparing 2 models on the same task"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automated eval in CI/CD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integrate evaluation into GitHub Actions so every PR gets scored"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Quality metrics & dashboards"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Track faithfulness, answer relevance, context precision over time"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "111-unit-testing-for-agent-logic",
+      children: "11.1 Unit Testing for Agent Logic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "testing-tool-selection",
+      children: "Testing Tool Selection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import pytest\nfrom unittest.mock import AsyncMock, patch\nfrom pydantic import BaseModel\n\n# Agent under test\nclass SimpleAgent:\n    def __init__(self, tools: dict):\n        self.tools = tools\n\n    def select_tool(self, user_intent: str) -> str | None:\n        \"\"\"Select the best tool based on user intent.\"\"\"\n        intent_lower = user_intent.lower()\n\n        if \"search\" in intent_lower or \"find\" in intent_lower or \"look up\" in intent_lower:\n            return \"search_web\"\n        elif \"calculate\" in intent_lower or \"compute\" in intent_lower:\n            return \"calculator\"\n        elif \"summarize\" in intent_lower or \"summarise\" in intent_lower:\n            return \"summarizer\"\n        elif \"translate\" in intent_lower:\n            return \"translator\"\n        elif \"email\" in intent_lower or \"send\" in intent_lower:\n            return \"send_email\"\n        return None\n\n# Unit tests\nclass TestAgentToolSelection:\n    def setup_method(self):\n        self.agent = SimpleAgent(tools={})\n\n    def test_select_search_tool(self):\n        assert self.agent.select_tool(\"search for python tutorials\") == \"search_web\"\n        assert self.agent.select_tool(\"find the latest research papers\") == \"search_web\"\n        assert self.agent.select_tool(\"look up company address\") == \"search_web\"\n\n    def test_select_calculator_tool(self):\n        assert self.agent.select_tool(\"calculate 15% tip on 45 dollars\") == \"calculator\"\n        assert self.agent.select_tool(\"compute the average of these numbers\") == \"calculator\"\n\n    def test_select_summarizer_tool(self):\n        assert self.agent.select_tool(\"summarize this article\") == \"summarizer\"\n\n    def test_select_translator_tool(self):\n        assert self.agent.select_tool(\"translate hello to spanish\") == \"translator\"\n\n    def test_select_email_tool(self):\n        assert self.agent.select_tool(\"send email to john\") == \"send_email\"\n        assert self.agent.select_tool(\"compose an email about the meeting\") == \"send_email\"\n\n    def test_no_tool_match(self):\n        assert self.agent.select_tool(\"hello, how are you?\") is None\n\n    def test_edge_cases(self):\n        assert self.agent.select_tool(\"\") is None\n        assert self.agent.select_tool(\"   \") is None\n        assert self.agent.select_tool(\"SEND EMAIL NOW\") == \"send_email\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "testing-state-transitions-langgraph",
+      children: "Testing State Transitions (LangGraph)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import pytest\nfrom typing import TypedDict, Annotated, Literal\nfrom langgraph.graph import StateGraph, END\n\n# State definition\nclass AgentState(TypedDict):\n    input: str\n    intent: str | None\n    tool_result: str | None\n    response: str | None\n    errors: list[str]\n\n# Graph nodes\ndef classify_intent(state: AgentState) -> dict:\n    \"\"\"Determine user intent.\"\"\"\n    text = state[\"input\"].lower()\n    if \"search\" in text or \"find\" in text:\n        return {\"intent\": \"search\"}\n    elif \"calculate\" in text:\n        return {\"intent\": \"calculate\"}\n    elif \"summarize\" in text:\n        return {\"intent\": \"summarize\"}\n    return {\"intent\": \"unknown\"}\n\ndef execute_tool(state: AgentState) -> dict:\n    \"\"\"Execute the selected tool.\"\"\"\n    if state[\"intent\"] == \"search\":\n        return {\"tool_result\": f\"Search results for: {state['input']}\"}\n    elif state[\"intent\"] == \"calculate\":\n        return {\"tool_result\": \"42\"}\n    return {\"tool_result\": \"I don't know how to do that yet.\"}\n\ndef generate_response(state: AgentState) -> dict:\n    \"\"\"Generate final response.\"\"\"\n    return {\"response\": f\"Based on my analysis: {state.get('tool_result', 'No result')}\"}\n\ndef error_handler(state: AgentState) -> dict:\n    \"\"\"Handle errors gracefully.\"\"\"\n    return {\"response\": \"I encountered an error processing your request.\", \"errors\": [\"Unknown intent\"]}\n\n# Conditional edge\ndef route_after_intent(state: AgentState) -> Literal[\"execute_tool\", \"error_handler\", END]:\n    if state[\"intent\"] == \"unknown\":\n        return \"error_handler\"\n    return \"execute_tool\"\n\n# Build graph\ndef build_agent_graph() -> StateGraph:\n    builder = StateGraph(AgentState)\n    builder.add_node(\"classify_intent\", classify_intent)\n    builder.add_node(\"execute_tool\", execute_tool)\n    builder.add_node(\"generate_response\", generate_response)\n    builder.add_node(\"error_handler\", error_handler)\n    builder.set_entry_point(\"classify_intent\")\n    builder.add_conditional_edges(\"classify_intent\", route_after_intent)\n    builder.add_edge(\"execute_tool\", \"generate_response\")\n    builder.add_edge(\"generate_response\", END)\n    builder.add_edge(\"error_handler\", END)\n    return builder.compile()\n\n# Tests\nclass TestLangGraphAgent:\n    def setup_method(self):\n        self.agent = build_agent_graph()\n\n    def test_search_intent(self):\n        result = self.agent.invoke({\"input\": \"search for quantum computing\"})\n        assert result[\"intent\"] == \"search\"\n        assert \"Search results\" in result[\"tool_result\"]\n        assert \"Based on my analysis\" in result[\"response\"]\n\n    def test_calculate_intent(self):\n        result = self.agent.invoke({\"input\": \"calculate 2+2\"})\n        assert result[\"intent\"] == \"calculate\"\n        assert \"42\" in result[\"tool_result\"]\n\n    def test_unknown_intent(self):\n        result = self.agent.invoke({\"input\": \"hello there\"})\n        assert \"encountered an error\" in result[\"response\"]\n        assert \"Unknown intent\" in result[\"errors\"]\n\n    def test_empty_input(self):\n        result = self.agent.invoke({\"input\": \"\"})\n        assert result[\"intent\"] == \"unknown\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "112-integration-testing-for-rag-pipelines",
+      children: "11.2 Integration Testing for RAG Pipelines"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import pytest\nfrom typing import Generator\n\nclass RAGPipeline:\n    \"\"\"RAG pipeline under test.\"\"\"\n\n    def chunk_document(self, text: str, chunk_size: int = 500) -> list[str]:\n        chunks = []\n        start = 0\n        while start < len(text):\n            end = min(start + chunk_size, len(text))\n            chunks.append(text[start:end])\n            start = end\n        return chunks\n\n    def retrieve(self, query: str, top_k: int = 3) -> list[str]:\n        q_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n        results = chroma_collection.query(query_embeddings=[q_vec], n_results=top_k)\n        return results[\"documents\"][0]\n\n    def generate(self, query: str, context: str) -> str:\n        response = client.chat.completions.create(\n            model=\"gpt-4o-mini\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"Answer using only the context. If unsure, say so.\"},\n                {\"role\": \"user\", \"content\": f\"Context:\\n{context}\\n\\nQuery: {query}\"}\n            ]\n        )\n        return response.choices[0].message.content\n\n# Integration tests\n@pytest.mark.integration\nclass TestRAGIntegration:\n    \"\"\"Tests that hit real API endpoints and vector DB.\"\"\"\n\n    def setup_method(self):\n        self.pipeline = RAGPipeline()\n        # Seed test data\n        self.test_docs = [\n            \"Lease terms in Dubai Marina typically range from 12 to 36 months.\",\n            \"Annual rent is paid in 1 to 6 cheques depending on the landlord.\",\n            \"Security deposit is usually 5% of annual rent for furnished units.\",\n            \"Agency fee is 5% of annual rent, split equally between tenant and landlord.\",\n            \"Ejari registration is mandatory for all tenancy contracts in Dubai.\",\n        ]\n        for doc in self.test_docs:\n            embedding = client.embeddings.create(input=doc, model=\"text-embedding-3-small\").data[0].embedding\n            chroma_collection.add(documents=[doc], embeddings=[embedding])\n\n    def test_chunking_basic(self):\n        text = \"A\" * 1200\n        chunks = self.pipeline.chunk_document(text, chunk_size=500)\n        assert len(chunks) == 3\n        assert all(len(c) <= 500 for c in chunks)\n\n    def test_chunking_exact_boundary(self):\n        text = \"Hello. \" * 200\n        chunks = self.pipeline.chunk_document(text, chunk_size=500)\n        assert len(chunks) >= 1\n        assert sum(len(c) for c in chunks) == len(text)\n\n    def test_retrieval_relevant_results(self):\n        results = self.pipeline.retrieve(\"How long are lease terms in Dubai?\")\n        assert len(results) == 3\n        assert any(\"12 to 36 months\" in r for r in results)\n\n    def test_retrieval_no_query_match(self):\n        results = self.pipeline.retrieve(\"quantum physics theory\")\n        assert len(results) == 3\n\n    def test_generation_with_context(self):\n        context = \"Dubai lease terms are typically 12 months.\"\n        response = self.pipeline.generate(\"What is the standard lease term?\", context)\n        assert \"12\" in response\n        assert len(response) > 10\n\n    def test_generation_without_context(self):\n        response = self.pipeline.generate(\"What is the meaning of life?\", \"No relevant context found.\")\n        assert \"I cannot\" in response.lower() or \"unsure\" in response.lower() or \"no information\" in response.lower()\n\n    def test_end_to_end(self):\n        response = self.pipeline.generate(\"What is the agency fee in Dubai?\", \n            \"Agency fee is 5% of annual rent. Agency fee is 5% of annual rent.\")\n        assert \"5%\" in response\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "113-llm-as-judge-evaluation",
+      children: "11.3 LLM-as-Judge Evaluation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from pydantic import BaseModel, Field\nfrom enum import Enum\n\nclass ScoreDimension(str, Enum):\n    CORRECTNESS = \"correctness\"\n    FAITHFULNESS = \"faithfulness\"\n    RELEVANCE = \"relevance\"\n    COMPLETENESS = \"completeness\"\n    CONCISENESS = \"conciseness\"\n\nclass JudgeScore(BaseModel):\n    dimension: ScoreDimension\n    score: int = Field(ge=1, le=5, description=\"Score 1-5\")\n    reasoning: str\n    improvement_suggestion: str | None = None\n\nclass JudgeVerdict(BaseModel):\n    scores: list[JudgeScore]\n    overall_score: float = Field(ge=1, le=5)\n    verdict: Literal[\"pass\", \"conditional_pass\", \"fail\"]\n    critical_issues: list[str] = Field(default_factory=list)\n\nclass LLMJudge:\n    \"\"\"Judge agent that evaluates LLM outputs across multiple dimensions.\"\"\"\n\n    RUBRICS = {\n        ScoreDimension.CORRECTNESS: \"Does the output contain factual errors? Score 1 (many errors) to 5 (completely correct).\",\n        ScoreDimension.FAITHFULNESS: \"Does the output only use information from the provided context? Score 1 (hallucinates freely) to 5 (strictly grounded in context).\",\n        ScoreDimension.RELEVANCE: \"Does the output directly address the user's query? Score 1 (completely off-topic) to 5 (perfectly targeted).\",\n        ScoreDimension.COMPLETENESS: \"Does the output cover all aspects of the query? Score 1 (misses major points) to 5 (comprehensive).\",\n        ScoreDimension.CONCISENESS: \"Is the output appropriately concise? Score 1 (verbose/rambling) to 5 (perfect length).\",\n    }\n\n    def evaluate(\n        self,\n        query: str,\n        output: str,\n        context: str | None = None,\n        expected: str | None = None,\n        dimensions: list[ScoreDimension] | None = None,\n    ) -> JudgeVerdict:\n        \"\"\"Evaluate an LLM output against specified dimensions.\"\"\"\n        if dimensions is None:\n            dimensions = list(ScoreDimension)\n\n        scores = []\n        for dim in dimensions:\n            judge_prompt = self._build_judge_prompt(dim, query, output, context, expected)\n            completion = client.beta.chat.completions.parse(\n                model=\"gpt-4o-mini\",\n                messages=[\n                    {\"role\": \"system\", \"content\": \"You are a strict but fair evaluator of AI outputs. Score precisely and provide specific reasoning.\"},\n                    {\"role\": \"user\", \"content\": judge_prompt}\n                ],\n                response_format=JudgeScore\n            )\n            scores.append(completion.choices[0].message.parsed)\n\n        overall = sum(s.score for s in scores) / len(scores)\n        critical = [s.reasoning for s in scores if s.score <= 2]\n\n        if overall >= 4.0:\n            verdict = \"pass\"\n        elif overall >= 3.0:\n            verdict = \"conditional_pass\"\n        else:\n            verdict = \"fail\"\n\n        return JudgeVerdict(\n            scores=scores,\n            overall_score=round(overall, 2),\n            verdict=verdict,\n            critical_issues=critical\n        )\n\n    def _build_judge_prompt(\n        self,\n        dimension: ScoreDimension,\n        query: str,\n        output: str,\n        context: str | None,\n        expected: str | None,\n    ) -> str:\n        rubric = self.RUBRICS[dimension]\n        parts = [f\"Dimension: {dimension.value}\", f\"Rubric: {rubric}\", f\"Query: {query}\", f\"Output: {output}\"]\n        if context:\n            parts.append(f\"Context: {context}\")\n        if expected:\n            parts.append(f\"Expected output: {expected}\")\n        return \"\\n\\n\".join(parts)\n\n# Usage\njudge = LLMJudge()\nresult = judge.evaluate(\n    query=\"What is the standard lease term in Dubai?\",\n    output=\"The standard lease term in Dubai is 12 months, typically paid in 1-4 cheques.\",\n    context=\"Lease terms in Dubai typically range from 12 to 36 months. Rent payment can be made in 1 to 6 cheques.\",\n    expected=\"12 months, 1-6 cheques\"\n)\nprint(f\"Verdict: {result.verdict}\")\nprint(f\"Overall: {result.overall_score}\")\nfor s in result.scores:\n    print(f\"  {s.dimension.value}: {s.score}/5 — {s.reasoning}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "114-trajectory-evaluation-for-agents",
+      children: "11.4 Trajectory Evaluation for Agents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from pydantic import BaseModel\n\nclass AgentStep(BaseModel):\n    thought: str\n    action: str | None\n    action_input: dict | None\n    observation: str | None\n    step_number: int\n\nclass AgentTrajectory(BaseModel):\n    steps: list[AgentStep]\n    final_answer: str\n    total_steps: int\n    tools_used: list[str]\n\nclass TrajectoryEvaluation(BaseModel):\n    correctness: dict  # Did the agent arrive at the right answer?\n    efficiency: dict   # Did it use too many steps or unnecessary tools?\n    tool_usage: dict   # Did it use tools correctly and appropriately?\n    reasoning: dict    # Was the reasoning path logical?\n    overall: dict\n\nclass TrajectoryEvaluator:\n    \"\"\"Evaluate an agent's reasoning trajectory, not just its final answer.\"\"\"\n\n    def evaluate(self, trajectory: AgentTrajectory, ground_truth: str | None = None) -> TrajectoryEvaluation:\n        evaluation = TrajectoryEvaluation(\n            correctness={\"score\": 0, \"reasoning\": \"\"},\n            efficiency={\"score\": 0, \"reasoning\": \"\", \"unnecessary_steps\": []},\n            tool_usage={\"score\": 0, \"reasoning\": \"\", \"misused_tools\": []},\n            reasoning={\"score\": 0, \"reasoning\": \"\", \"logic_gaps\": []},\n            overall={\"score\": 0, \"recommendation\": \"\"}\n        )\n\n        # Evaluate correctness\n        if ground_truth:\n            eval_resp = client.beta.chat.completions.parse(\n                model=\"gpt-4o-mini\",\n                messages=[\n                    {\"role\": \"system\", \"content\": \"Compare the agent's final answer to the ground truth. Score 1-10.\"},\n                    {\"role\": \"user\", \"content\": f\"Agent answer: {trajectory.final_answer}\\nGround truth: {ground_truth}\"}\n                ],\n                response_format=type(\"Correctness\", (BaseModel,), {\"score\": int, \"reasoning\": str})\n            )\n            evaluation.correctness = eval_resp.choices[0].message.parsed.model_dump()\n\n        # Evaluate efficiency\n        unnecessary = []\n        for i, step in enumerate(trajectory.steps):\n            if step.action and \"error\" in (step.observation or \"\").lower():\n                unnecessary.append(f\"Step {i+1}: {step.action} failed — could have been avoided\")\n        evaluation.efficiency = {\n            \"score\": max(1, 10 - len(unnecessary) * 2),\n            \"reasoning\": f\"{len(trajectory.steps)} total steps, {len(unnecessary)} unnecessary\",\n            \"unnecessary_steps\": unnecessary\n        }\n\n        # Evaluate tool usage\n        tool_counts = {}\n        for step in trajectory.steps:\n            if step.action:\n                tool_counts[step.action] = tool_counts.get(step.action, 0) + 1\n\n        evaluation.tool_usage = {\n            \"score\": 8 if len(trajectory.tools_used) <= 5 else 5,\n            \"reasoning\": f\"Used {len(trajectory.tools_used)} different tools: {', '.join(trajectory.tools_used)}\",\n            \"misused_tools\": []\n        }\n\n        # Overall\n        scores = [evaluation.correctness.get(\"score\", 5), evaluation.efficiency[\"score\"],\n                  evaluation.tool_usage[\"score\"], evaluation.reasoning[\"score\"]]\n        avg = sum(scores) / len(scores)\n        evaluation.overall = {\n            \"score\": round(avg, 1),\n            \"recommendation\": \"pass\" if avg >= 7 else \"review\" if avg >= 5 else \"fail\"\n        }\n\n        return evaluation\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "115-hallucination-detection",
+      children: "11.5 Hallucination Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from pydantic import BaseModel, Field\n\nclass ClaimVerification(BaseModel):\n    claim: str\n    supported: bool\n    evidence: str | None\n    confidence: float = Field(ge=0, le=1)\n\nclass HallucinationReport(BaseModel):\n    total_claims: int\n    supported_claims: int\n    hallucinated_claims: int\n    hallucination_rate: float\n    details: list[ClaimVerification]\n\nclass HallucinationDetector:\n    \"\"\"Detect unsupported claims in LLM output against a given context.\"\"\"\n\n    def extract_claims(self, text: str) -> list[str]:\n        \"\"\"Split text into atomic claims.\"\"\"\n        response = client.chat.completions.create(\n            model=\"gpt-4o-mini\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"Break the following text into atomic factual claims. Each claim must be a single verifiable fact. Return one claim per line, numbered.\"},\n                {\"role\": \"user\", \"content\": text}\n            ],\n            max_tokens=500\n        )\n        lines = response.choices[0].message.content.strip().split(\"\\n\")\n        claims = []\n        for line in lines:\n            line = line.strip()\n            if line and (line[0].isdigit() or line.startswith(\"-\")):\n                claim = line.split(\". \", 1)[-1] if \". \" in line else line.lstrip(\"- \")\n                claims.append(claim)\n        return claims\n\n    def verify_claim(self, claim: str, context: str) -> ClaimVerification:\n        \"\"\"Check if a claim is supported by the context.\"\"\"\n        response = client.beta.chat.completions.parse(\n            model=\"gpt-4o-mini\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"Determine if the claim is supported by the context. Return supported=true only if the context explicitly contains the information.\"},\n                {\"role\": \"user\", \"content\": f\"Claim: {claim}\\n\\nContext: {context}\"}\n            ],\n            response_format=ClaimVerification\n        )\n        return response.choices[0].message.parsed\n\n    def analyze(self, output: str, context: str) -> HallucinationReport:\n        \"\"\"Full hallucination analysis of an LLM output.\"\"\"\n        claims = self.extract_claims(output)\n        if not claims:\n            return HallucinationReport(\n                total_claims=0, supported_claims=0, hallucinated_claims=0,\n                hallucination_rate=0.0, details=[]\n            )\n\n        results = [self.verify_claim(c, context) for c in claims]\n        supported = sum(1 for r in results if r.supported)\n        hallucinated = len(results) - supported\n\n        return HallucinationReport(\n            total_claims=len(results),\n            supported_claims=supported,\n            hallucinated_claims=hallucinated,\n            hallucination_rate=round(hallucinated / len(results), 3),\n            details=results\n        )\n\n# Usage\ndetector = HallucinationDetector()\nreport = detector.analyze(\n    output=\"The standard lease term in Dubai is 12 months. Most tenants pay in 4 cheques. The agency fee is 5% of annual rent. Ejari registration costs 500 AED.\",\n    context=\"Lease terms in Dubai typically range from 12 to 36 months. Agency fee is 5% of annual rent. Ejari registration is mandatory.\"\n)\nprint(f\"Hallucination rate: {report.hallucination_rate:.1%}\")\nprint(f\"Hallucinated claims: {report.hallucinated_claims}/{report.total_claims}\")\nfor detail in report.details:\n    if not detail.supported:\n        print(f\"  UNSUPPORTED: {detail.claim[:60]}...\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "116-evaluation-datasets",
+      children: "11.6 Evaluation Datasets"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "creating-ground-truth-data",
+      children: "Creating Ground-Truth Data"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass, field\nimport json\nimport random\n\n@dataclass\nclass EvalExample:\n    query: str\n    expected_response: str\n    context: str\n    difficulty: str  # easy, medium, hard\n    category: str    # factual, reasoning, multi-hop, comparative\n    id: str = \"\"\n\nclass EvalDataset:\n    \"\"\"Curated evaluation dataset for RAG systems.\"\"\"\n\n    def __init__(self, name: str):\n        self.name = name\n        self.examples: list[EvalExample] = []\n\n    def add(self, example: EvalExample):\n        example.id = f\"{self.name}_{len(self.examples)}\"\n        self.examples.append(example)\n\n    def filter(self, difficulty: str | None = None, category: str | None = None, n: int | None = None) -> list[EvalExample]:\n        results = self.examples\n        if difficulty:\n            results = [e for e in results if e.difficulty == difficulty]\n        if category:\n            results = [e for e in results if e.category == category]\n        if n:\n            results = random.sample(results, min(n, len(results)))\n        return results\n\n    def save(self, path: str):\n        data = [{\"id\": e.id, \"query\": e.query, \"expected_response\": e.expected_response,\n                 \"context\": e.context, \"difficulty\": e.difficulty, \"category\": e.category}\n                for e in self.examples]\n        with open(path, \"w\") as f:\n            json.dump({\"name\": self.name, \"examples\": data}, f, indent=2)\n\n    @classmethod\n    def load(cls, path: str) -> \"EvalDataset\":\n        with open(path) as f:\n            data = json.load(f)\n        ds = cls(data[\"name\"])\n        for ex in data[\"examples\"]:\n            ds.add(EvalExample(**ex))\n        return ds\n\n# Build a sample dataset\ndataset = EvalDataset(\"dubai_rental_rag\")\n\ndataset.add(EvalExample(\n    query=\"What is the standard lease term in Dubai?\",\n    expected_response=\"12 months\",\n    context=\"Lease terms in Dubai typically range from 12 to 36 months.\",\n    difficulty=\"easy\", category=\"factual\"\n))\ndataset.add(EvalExample(\n    query=\"Compare payment options between furnished and unfurnished units.\",\n    expected_response=\"Furnished units typically require 1-4 cheques, unfurnished 1-6 cheques. Furnished units have higher rent but lower upfront cost.\",\n    context=\"Furnished units: rent is 10-20% higher. Payment: 1-4 cheques for furnished, 1-6 cheques for unfurnished.\",\n    difficulty=\"hard\", category=\"comparative\"\n))\ndataset.add(EvalExample(\n    query=\"Total cost breakdown for renting a 2BR apartment in Dubai Marina.\",\n    expected_response=\"Total estimated upfront: annual rent + 5% security deposit + 5% agency fee + Ejari fee + DEWA deposit.\",\n    context=\"Security deposit: 5% of annual rent. Agency fee: 5%. Ejari: 220 AED. DEWA deposit: 2000 AED.\",\n    difficulty=\"medium\", category=\"reasoning\"\n))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "117-automated-eval-in-cicd",
+      children: "11.7 Automated Eval in CI/CD"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "# .github/workflows/eval.yml\nname: AI Agent Evaluation\non:\n  pull_request:\n    paths:\n      - 'prompts/**'\n      - 'agents/**'\n      - 'rag/**'\n\njobs:\n  evaluate:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with:\n          python-version: '3.12'\n\n      - name: Install dependencies\n        run: pip install -r requirements.txt\n\n      - name: Run prompt regression suite\n        run: python -m pytest tests/prompt_regression/ -v --junitxml=report.xml\n        env:\n          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}\n\n      - name: Run RAG integration tests\n        run: python -m pytest tests/integration/ -v --run-integration\n        env:\n          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}\n          CHROMA_HOST: ${{ secrets.CHROMA_HOST }}\n\n      - name: Run LLM-as-judge evaluation\n        run: python -m eval_suite.run --dataset eval_data.json --min-score 7.0\n\n      - name: Check quality gate\n        run: |\n          SCORE=$(python -m eval_suite.get_score report.xml)\n          if (( $(echo \"$SCORE < 7.0\" | bc -l) )); then\n            echo \"Quality gate FAILED: score $SCORE < 7.0\"\n            exit 1\n          fi\n          echo \"Quality gate PASSED: score $SCORE\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-ci-eval-runner",
+      children: "Python CI Eval Runner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import sys\nimport json\nfrom pathlib import Path\n\nclass QualityGate:\n    \"\"\"Enforce quality thresholds in CI.\"\"\"\n\n    def __init__(self, min_overall_score: float = 7.0, max_hallucination_rate: float = 0.15):\n        self.min_score = min_overall_score\n        self.max_hallucination_rate = max_hallucination_rate\n\n    def run_and_report(self, eval_dataset: EvalDataset, pipeline: \"RAGPipeline\") -> dict:\n        judge = LLMJudge()\n        detector = HallucinationDetector()\n\n        results = []\n        for example in eval_dataset.examples:\n            response = pipeline.generate(example.query, example.context)\n            judge_result = judge.evaluate(example.query, response, example.context, example.expected_response)\n            hallu_report = detector.analyze(response, example.context)\n\n            results.append({\n                \"id\": example.id,\n                \"query\": example.query,\n                \"judge_score\": judge_result.overall_score,\n                \"hallucination_rate\": hallu_report.hallucination_rate,\n                \"verdict\": judge_result.verdict,\n                \"hallu_claims\": hallu_report.hallucinated_claims,\n            })\n\n        avg_score = sum(r[\"judge_score\"] for r in results) / len(results)\n        avg_hallu = sum(r[\"hallucination_rate\"] for r in results) / len(results)\n\n        passed = avg_score >= self.min_score and avg_hallu <= self.max_hallucination_rate\n\n        report = {\n            \"passed\": passed,\n            \"avg_judge_score\": round(avg_score, 2),\n            \"avg_hallucination_rate\": round(avg_hallu, 3),\n            \"thresholds\": {\"min_score\": self.min_score, \"max_hallucination\": self.max_hallucination_rate},\n            \"results\": results,\n        }\n\n        print(json.dumps(report, indent=2))\n\n        if not passed:\n            print(f\"FAILED: avg score {avg_score:.1f} (need {self.min_score}) or hallucination {avg_hallu:.1%} (max {self.max_hallucination_rate:.1%})\")\n            sys.exit(1)\n\n        return report\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "118-quality-metrics--dashboards",
+      children: "11.8 Quality Metrics & Dashboards"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from collections import defaultdict\nfrom datetime import datetime, timedelta\nimport statistics\n\nclass QualityTracker:\n    \"\"\"Track quality metrics over time with time-series storage.\"\"\"\n\n    def __init__(self):\n        self.metrics: defaultdict[str, list[dict]] = defaultdict(list)\n\n    def record(self, metric_name: str, value: float, metadata: dict | None = None):\n        self.metrics[metric_name].append({\n            \"value\": value,\n            \"timestamp\": datetime.now().isoformat(),\n            \"metadata\": metadata or {}\n        })\n\n    def get_trend(self, metric_name: str, hours: int = 24) -> dict:\n        \"\"\"Get metric values over a time window.\"\"\"\n        cutoff = datetime.now() - timedelta(hours=hours)\n        entries = [e for e in self.metrics[metric_name]\n                   if datetime.fromisoformat(e[\"timestamp\"]) > cutoff]\n        values = [e[\"value\"] for e in entries]\n\n        if not values:\n            return {\"metric\": metric_name, \"count\": 0, \"status\": \"no_data\"}\n\n        return {\n            \"metric\": metric_name,\n            \"count\": len(values),\n            \"current\": values[-1],\n            \"mean\": round(statistics.mean(values), 3),\n            \"min\": min(values),\n            \"max\": max(values),\n            \"stdev\": round(statistics.stdev(values), 3) if len(values) > 1 else 0,\n            \"trend\": \"up\" if len(values) > 1 and values[-1] > values[0] else \"down\",\n            \"status\": \"healthy\" if values[-1] >= 0.8 else \"degraded\" if values[-1] >= 0.5 else \"critical\"\n        }\n\n    def dashboard(self) -> dict:\n        \"\"\"Generate a summary dashboard of all metrics.\"\"\"\n        return {\n            name: self.get_trend(name) for name in self.metrics\n        }\n\n# Define key quality metrics\nMETRICS = {\n    \"faithfulness\": \"What fraction of claims are supported by context\",\n    \"answer_relevance\": \"How relevant is the answer to the query (LLM-as-judge 1-10)\",\n    \"context_precision\": \"What fraction of retrieved chunks are actually used\",\n    \"context_recall\": \"What fraction of relevant chunks are retrieved\",\n    \"latency_p50\": \"Median end-to-end latency in ms\",\n    \"latency_p95\": \"95th percentile latency in ms\",\n    \"cost_per_query\": \"Average cost per query in USD\",\n    \"cache_hit_rate\": \"Fraction of queries served from cache\",\n    \"user_satisfaction\": \"User feedback score (thumbs up/down ratio)\",\n}\n\n# Usage\ntracker = QualityTracker()\ntracker.record(\"faithfulness\", 0.92, {\"model\": \"gpt-4o-mini\", \"dataset\": \"eval_v2\"})\ntracker.record(\"answer_relevance\", 8.5, {\"query_length\": 45})\ntracker.record(\"latency_p50\", 1200, {\"query\": \"complex_rag\"})\ntracker.record(\"cost_per_query\", 0.0032, {\"model\": \"gpt-4o-mini\"})\ntracker.record(\"cache_hit_rate\", 1.0, {\"model\": \"gpt-4o-mini\", \"cache_type\": \"semantic\"})\n\nprint(json.dumps(tracker.dashboard(), indent=2))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "119-ab-testing-for-model-selection",
+      children: "11.9 A/B Testing for Model Selection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import uuid\nfrom datetime import datetime\n\nclass ModelABTest:\n    \"\"\"Compare two models on the same task with statistical rigor.\"\"\"\n\n    def __init__(self, model_a: str, model_b: str, task: str):\n        self.model_a = model_a\n        self.model_b = model_b\n        self.task = task\n        self.test_id = str(uuid.uuid4())[:8]\n        self.results: list[dict] = []\n        self.start_time = datetime.now()\n\n    def run_test(self, test_queries: list[str], eval_criteria: list[str], n_repeats: int = 1) -> dict:\n        \"\"\"Run A/B test comparing both models on the same queries.\"\"\"\n        judge = LLMJudge()\n\n        for query in test_queries:\n            for repeat in range(n_repeats):\n                # Model A\n                response_a = client.chat.completions.create(\n                    model=self.model_a,\n                    messages=[{\"role\": \"user\", \"content\": query}]\n                ).choices[0].message.content\n\n                score_a = judge.evaluate(query, response_a, dimensions=[\n                    ScoreDimension.CORRECTNESS, ScoreDimension.RELEVANCE\n                ])\n\n                # Model B\n                response_b = client.chat.completions.create(\n                    model=self.model_b,\n                    messages=[{\"role\": \"user\", \"content\": query}]\n                ).choices[0].message.content\n\n                score_b = judge.evaluate(query, response_b, dimensions=[\n                    ScoreDimension.CORRECTNESS, ScoreDimension.RELEVANCE\n                ])\n\n                self.results.append({\n                    \"query\": query[:50],\n                    \"repeat\": repeat,\n                    \"model_a_score\": score_a.overall_score,\n                    \"model_b_score\": score_b.overall_score,\n                    \"model_a_wins\": score_a.overall_score > score_b.overall_score,\n                    \"model_b_wins\": score_b.overall_score > score_a.overall_score,\n                    \"tie\": score_a.overall_score == score_b.overall_score,\n                })\n\n        return self.analyze()\n\n    def analyze(self) -> dict:\n        \"\"\"Statistical analysis of results.\"\"\"\n        a_wins = sum(1 for r in self.results if r[\"model_a_wins\"])\n        b_wins = sum(1 for r in self.results if r[\"model_b_wins\"])\n        ties = sum(1 for r in self.results if r[\"tie\"])\n\n        a_scores = [r[\"model_a_score\"] for r in self.results]\n        b_scores = [r[\"model_b_score\"] for r in self.results]\n\n        return {\n            \"test_id\": self.test_id,\n            \"task\": self.task,\n            \"model_a\": self.model_a,\n            \"model_b\": self.model_b,\n            \"samples\": len(self.results),\n            \"model_a_avg\": round(statistics.mean(a_scores), 2),\n            \"model_b_avg\": round(statistics.mean(b_scores), 2),\n            \"model_a_wins\": a_wins,\n            \"model_b_wins\": b_wins,\n            \"ties\": ties,\n            \"win_rate_a\": round(a_wins / len(self.results) * 100, 1),\n            \"win_rate_b\": round(b_wins / len(self.results) * 100, 1),\n            \"recommendation\": self.model_a if a_wins > b_wins else self.model_b,\n        }\n\n# Usage\nab_test = ModelABTest(\"gpt-4o-mini\", \"gpt-4o\", \"RAG answer generation\")\nqueries = [\n    \"What are the lease terms for commercial properties in Dubai Marina?\",\n    \"Compare cost of living between Abu Dhabi and Dubai for a family of 4.\",\n    \"What documents are required for a UAE residence visa?\",\n]\nreport = ab_test.run_test(queries, [\"correctness\", \"relevance\"], n_repeats=2)\nprint(f\"Model A ({report['model_a']}): {report['model_a_avg']} avg score\")\nprint(f\"Model B ({report['model_b']}): {report['model_b_avg']} avg score\")\nprint(f\"Winner: {report['recommendation']}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["interface ProjectScaffold { name: string; files: Array<{path:string;content:string}> }\nclass ProjectGenerator {\ngenerateAIDemo(name: string): ProjectScaffold {\nreturn {name,files:[\n{path:\"src/index.ts\",content:", (0,jsx_runtime.jsx)(_components.code, {
+        children: "import {Agent} from \"./agent\"\\nconst agent = new Agent({model:\"gpt-4\",maxTokens:1024,temperature:0.7})\\nagent.run()"
+      }), "},\n{path:\"src/agent.ts\",content:", (0,jsx_runtime.jsx)(_components.code, {
+        children: "export class Agent { constructor(private config: {model:string;maxTokens:number;temperature:number}) {}\\n  async run(): Promise<void> { console.log(\"Agent running with\",this.config) } }"
+      }), "},\n{path:\"tsconfig.json\",content:JSON.stringify({compilerOptions:{target:\"ES2022\",module:\"NodeNext\",strict:true},include:[\"src\"]},null,2)},\n{path:\"package.json\",content:JSON.stringify({name,dependencies:{openai:\"^4.0\"}},null,2)},\n{path:\".env.example\",content:\"OPENAI_API_KEY=sk-...\"}\n]}\n}\ngenerateRAGDemo(name: string): ProjectScaffold {\nreturn {name,files:[\n{path:\"src/index.ts\",content:", (0,jsx_runtime.jsx)(_components.code, {
+        children: "import {RAGPipeline} from \"./rag\"\\nconst rag = new RAGPipeline()\\nrag.query(\"What is AI?\")"
+      }), "},\n{path:\"src/rag.ts\",content:", (0,jsx_runtime.jsx)(_components.code, {
+        children: "export class RAGPipeline { async query(q:string): Promise<string> { return \"Result\" } }"
+      }), "}\n]}\n}\n}\nexport { ProjectGenerator, ProjectScaffold }"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Unit test suite:"
+          }), " Write unit tests for your LangGraph agent covering: correct tool selection, state transitions, error states, and edge cases (empty input, missing state keys)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Integration test:"
+          }), " Write 3 integration tests for your RAG pipeline: chunking boundary test, retrieval relevance test, generation faithfulness test."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "LLM-as-judge:"
+          }), " Build a judge agent and evaluate 5 RAG outputs on correctness, faithfulness, and relevance. Report scores and improvement suggestions."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Hallucination audit:"
+          }), " Run the HallucinationDetector on 10 RAG outputs from your pipeline. Calculate the hallucination rate and identify patterns."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "CI/CD eval:"
+          }), " Create a GitHub Actions workflow that runs your eval suite on every PR. Set a quality gate of 7.0/10 minimum score."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

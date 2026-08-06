@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
-<title data-rh="true">Chapter 16: Applications of Automata Theory | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 16: Applications of Automata Theory | AI Engineering Journey"><meta data-rh="true" name="description" content="Previous None"><meta data-rh="true" property="og:description" content="Previous None"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Theory Of Computation","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/index"},{"@type":"ListItem","position":2,"name":"Chapter 16: Applications of Automata Theory","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.68ae8ef5.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.4470784e.js" defer="defer"></script>
-<script src="/ai-engineering-journey/assets/js/main.bc7a9306.js" defer="defer"></script>
+<title data-rh="true">Chapter 16: Applications of Automata Theory | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 16: Applications of Automata Theory | AI Engineering Journey"><meta data-rh="true" name="description" content="Previous None"><meta data-rh="true" property="og:description" content="Previous None"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Theory Of Computation","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/index"},{"@type":"ListItem","position":2,"name":"Chapter 16: Applications of Automata Theory","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/16-applications"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.c8464654.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.64107b2c.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.9d4b1971.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -136,7 +136,7 @@
 <ol>
 <li class="">Model the system as a finite automaton (a Kripke structure) M.</li>
 <li class="">Convert the specification (in LTL or CTL) to an automaton A that accepts violating behaviors.</li>
-<li class="">Compute the product automaton M Ã— A.</li>
+<li class="">Compute the product automaton M × A.</li>
 <li class="">Check if the product has any accepting path → if so, the specification is violated.</li>
 </ol>
 <p><strong>Applications:</strong></p>
@@ -158,7 +158,7 @@
 <p><strong>Computational hardness assumptions:</strong></p>
 <ul>
 <li class=""><strong>Factoring:</strong> Given product of two large primes, find the factors. (Used in RSA.)</li>
-<li class=""><strong>Discrete log:</strong> Given g, p, and gË£ mod p, find x. (Used in Diffie-Hellman, ElGamal.)</li>
+<li class=""><strong>Discrete log:</strong> Given g, p, and gˣ mod p, find x. (Used in Diffie-Hellman, ElGamal.)</li>
 <li class=""><strong>Lattice problems:</strong> Learning With Errors (LWE), Shortest Vector Problem (SVP). (Used in post-quantum cryptography.)</li>
 <li class=""><strong>SAT hardness:</strong> Many cryptographic constructions rely on the hardness of NP-complete problems.</li>
 </ul>
@@ -185,7 +185,7 @@
 <ul>
 <li class=""><strong>Regular types:</strong> Types described by regular expressions (e.g., nullable types, option types).</li>
 <li class=""><strong>Context-free grammars</strong> describe syntax, and <strong>attribute grammars</strong> extend CFGs with semantic actions.</li>
-<li class=""><strong>Recursive types</strong> (e.g., lists, trees) correspond to concepts in Âµ-calculus and alternating automata.</li>
+<li class=""><strong>Recursive types</strong> (e.g., lists, trees) correspond to concepts in µ-calculus and alternating automata.</li>
 </ul>
 <p><strong>Domain-specific languages (DSLs):</strong> Many DSLs are designed to be regular or context-free, enabling efficient parsing and analysis. Examples: SQL, HTML/CSS (regular for practical purposes), JSON.</p>
 <p><strong>Bidirectional programming (lenses):</strong> The theory of lenses for bidirectional transformations has deep connections to automata theory, particularly finite-state transducers.</p>
@@ -230,10 +230,10 @@
 <p><strong>BQP</strong> (Bounded-error Quantum Polynomial Time): The class of problems efficiently solvable by quantum computers.</p>
 <p><strong>Relationship to classical classes:</strong></p>
 <ul>
-<li class="">P âŠ† BQP âŠ† PSPACE</li>
-<li class="">It&#x27;s believed that NP âŠ„ BQP (quantum computers won&#x27;t solve NP-complete problems efficiently).</li>
-<li class="">Shor&#x27;s algorithm: Factoring âˆˆ BQP (threatens RSA).</li>
-<li class="">Grover&#x27;s algorithm: Unstructured search in O(âˆšn) (quadratic speedup).</li>
+<li class="">P ⊆ BQP ⊆ PSPACE</li>
+<li class="">It&#x27;s believed that NP ⊄ BQP (quantum computers won&#x27;t solve NP-complete problems efficiently).</li>
+<li class="">Shor&#x27;s algorithm: Factoring ∈ BQP (threatens RSA).</li>
+<li class="">Grover&#x27;s algorithm: Unstructured search in O(√n) (quadratic speedup).</li>
 </ul>
 <p><strong>Implications for the Church-Turing thesis:</strong>
 The <strong>extended Church-Turing thesis</strong> (every physically realizable computation can be simulated by a probabilistic TM with polynomial slowdown) is challenged by quantum computing. Whether quantum computers provide a super-polynomial advantage remains an active research question.</p>
@@ -251,15 +251,15 @@ The <strong>extended Church-Turing thesis</strong> (every physically realizable 
 <p>The combined DFA is constructed by:</p>
 <ol>
 <li class="">Building NFAs for each pattern.</li>
-<li class="">Combining via Îµ-transitions from a new start state.</li>
+<li class="">Combining via ε-transitions from a new start state.</li>
 <li class="">Converting to a DFA via subset construction.</li>
 <li class="">At each step, record which patterns are matched.</li>
 </ol>
 <p>When multiple patterns match at the same position (e.g., &quot;if&quot; matches both KEYWORD and ID), the lexer uses the <strong>longest match</strong> rule, with ties broken by priority (KEYWORD before ID).</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-152-model-checking-a-simple-protocol">Example 15.2: Model Checking a Simple Protocol<a href="#example-152-model-checking-a-simple-protocol" class="hash-link" aria-label="Direct link to Example 15.2: Model Checking a Simple Protocol" title="Direct link to Example 15.2: Model Checking a Simple Protocol" translate="no">​</a></h3>
 <p>Consider a mutual exclusion protocol with two processes. The specification (safety property): &quot;never both processes in critical section simultaneously.&quot;</p>
-<p>The model is a Kripke structure M with states (p_state, q_state) where each process state âˆˆ {idle, want, critical}. Transitions follow the protocol rules.</p>
-<p>The property is expressed in LTL as: G Â¬(in_csâ‚ âˆ§ in_csâ‚‚).</p>
+<p>The model is a Kripke structure M with states (p_state, q_state) where each process state ∈ {idle, want, critical}. Transitions follow the protocol rules.</p>
+<p>The property is expressed in LTL as: G ¬(in_cs₁ ∧ in_cs₂).</p>
 <p>Model checking constructs the product of M and the automaton for the negation of the property. If any accepting cycle exists, the system model violates mutual exclusion and a counterexample path is produced.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-153-undecidability-in-practice--static-analysis">Example 15.3: Undecidability in Practice → Static Analysis<a href="#example-153-undecidability-in-practice--static-analysis" class="hash-link" aria-label="Direct link to Example 15.3: Undecidability in Practice → Static Analysis" title="Direct link to Example 15.3: Undecidability in Practice → Static Analysis" translate="no">​</a></h3>
 <p>A static analyzer for null pointer dereferences:</p>
@@ -270,12 +270,12 @@ The <strong>extended Church-Turing thesis</strong> (every physically realizable 
 </ul>
 <p>This is the practical consequence of Rice&#x27;s theorem → static analysis tools must trade off precision for decidability.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-154-rna-secondary-structure-prediction-with-cfgs">Example 15.4: RNA Secondary Structure Prediction with CFGs<a href="#example-154-rna-secondary-structure-prediction-with-cfgs" class="hash-link" aria-label="Direct link to Example 15.4: RNA Secondary Structure Prediction with CFGs" title="Direct link to Example 15.4: RNA Secondary Structure Prediction with CFGs" translate="no">​</a></h3>
-<p>RNA bases {A, C, G, U} pair: A-U, C-G, G-U (wobble). Secondary structure prediction using Nussinov algorithm (DP, O(nÂ³)):</p>
+<p>RNA bases {A, C, G, U} pair: A-U, C-G, G-U (wobble). Secondary structure prediction using Nussinov algorithm (DP, O(n³)):</p>
 <p><strong>Grammar for RNA structure:</strong>
-S → Îµ | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S</p>
+S → ε | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S</p>
 <p>Each production corresponds to a structural element:</p>
 <ul>
-<li class="">Îµ: empty structure.</li>
+<li class="">ε: empty structure.</li>
 <li class="">a S: unpaired base.</li>
 <li class="">a S u: paired bases (a-u).</li>
 <li class="">S S: branch point.</li>

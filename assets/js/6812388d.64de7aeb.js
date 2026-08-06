@@ -1,0 +1,2256 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[11049],{
+
+/***/ 51187
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_22_advanced_ai_agents_15_a_2_a_protocol_md_681_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-22-advanced-ai-agents-15-a-2-a-protocol-md-681.json
+const site_docs_courses_ai_engineering_placement_22_advanced_ai_agents_15_a_2_a_protocol_md_681_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/advanced-ai-agents/15-a2a-protocol","title":"Agent-to-Agent (A2A) Protocol","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol.md","sourceDirName":"courses/ai-engineering-placement/22-advanced-ai-agents","slug":"/ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol","permalink":"/ai-engineering-journey/ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":263,"frontMatter":{"id":"15-a2a-protocol","slug":"/ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol","title":"Agent-to-Agent (A2A) Protocol","sidebar_label":"Agent-to-Agent (A2A) Protocol","sidebar_position":263},"sidebar":"coursesSidebar","previous":{"title":"Google Agent Development Kit (ADK)","permalink":"/ai-engineering-journey/ai-engineering-placement/22-advanced-ai-agents/14-google-adk"},"next":{"title":"23 — Trending AI/ML Platforms & Tools (2026)","permalink":"/ai-engineering-journey/ai-engineering-placement"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol.md
+
+
+const frontMatter = {
+	id: '15-a2a-protocol',
+	slug: '/ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol',
+	title: 'Agent-to-Agent (A2A) Protocol',
+	sidebar_label: 'Agent-to-Agent (A2A) Protocol',
+	sidebar_position: 263
+};
+const contentTitle = 'Agent-to-Agent (A2A) Protocol';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "15.1 A2A Protocol Overview",
+  "id": "151-a2a-protocol-overview",
+  "level": 2
+}, {
+  "value": "15.1.1 Protocol Architecture",
+  "id": "1511-protocol-architecture",
+  "level": 3
+}, {
+  "value": "15.1.2 Agent Card Definition",
+  "id": "1512-agent-card-definition",
+  "level": 3
+}, {
+  "value": "15.2 Communication Model",
+  "id": "152-communication-model",
+  "level": 2
+}, {
+  "value": "15.2.1 Agent Discovery Flow",
+  "id": "1521-agent-discovery-flow",
+  "level": 3
+}, {
+  "value": "15.2.2 Capability Announcement &amp; Discovery",
+  "id": "1522-capability-announcement--discovery",
+  "level": 3
+}, {
+  "value": "15.2.3 Task Delegation Protocol",
+  "id": "1523-task-delegation-protocol",
+  "level": 3
+}, {
+  "value": "15.3 Message Format",
+  "id": "153-message-format",
+  "level": 2
+}, {
+  "value": "15.3.1 Task State Machine",
+  "id": "1531-task-state-machine",
+  "level": 3
+}, {
+  "value": "15.3.2 JSON-RPC Message Structure",
+  "id": "1532-json-rpc-message-structure",
+  "level": 3
+}, {
+  "value": "15.3.3 Streaming with Server-Sent Events",
+  "id": "1533-streaming-with-server-sent-events",
+  "level": 3
+}, {
+  "value": "15.4 Security",
+  "id": "154-security",
+  "level": 2
+}, {
+  "value": "15.4.1 Authentication &amp; Authorization",
+  "id": "1541-authentication--authorization",
+  "level": 3
+}, {
+  "value": "15.4.2 Push Notifications",
+  "id": "1542-push-notifications",
+  "level": 3
+}, {
+  "value": "15.5 Integration Patterns",
+  "id": "155-integration-patterns",
+  "level": 2
+}, {
+  "value": "15.5.1 A2A with MCP — The Complete Stack",
+  "id": "1551-a2a-with-mcp--the-complete-stack",
+  "level": 3
+}, {
+  "value": "15.5.2 Bridging A2A and MCP",
+  "id": "1552-bridging-a2a-and-mcp",
+  "level": 3
+}, {
+  "value": "15.5.3 Enterprise Deployment Patterns",
+  "id": "1553-enterprise-deployment-patterns",
+  "level": 3
+}, {
+  "value": "15.6 Comparison: A2A vs MCP vs Function Calling",
+  "id": "156-comparison-a2a-vs-mcp-vs-function-calling",
+  "level": 2
+}, {
+  "value": "15.6.1 Decision Matrix",
+  "id": "1561-decision-matrix",
+  "level": 3
+}, {
+  "value": "15.6.2 A2A vs MCP — Detailed Comparison",
+  "id": "1562-a2a-vs-mcp--detailed-comparison",
+  "level": 3
+}, {
+  "value": "15.6.3 When to Use A2A",
+  "id": "1563-when-to-use-a2a",
+  "level": 3
+}, {
+  "value": "15.6.4 When Not to Use A2A",
+  "id": "1564-when-not-to-use-a2a",
+  "level": 3
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Q1: Explain the Agent-to-Agent (A2A) protocol and how it differs from MCP.",
+  "id": "q1-explain-the-agent-to-agent-a2a-protocol-and-how-it-differs-from-mcp",
+  "level": 3
+}, {
+  "value": "Q2: What is an Agent Card and what information does it contain?",
+  "id": "q2-what-is-an-agent-card-and-what-information-does-it-contain",
+  "level": 3
+}, {
+  "value": "Q3: Describe the A2A task state machine and its transitions.",
+  "id": "q3-describe-the-a2a-task-state-machine-and-its-transitions",
+  "level": 3
+}, {
+  "value": "Q4: How does A2A handle agent discovery?",
+  "id": "q4-how-does-a2a-handle-agent-discovery",
+  "level": 3
+}, {
+  "value": "Q5: Explain identity propagation in A2A and why it matters.",
+  "id": "q5-explain-identity-propagation-in-a2a-and-why-it-matters",
+  "level": 3
+}, {
+  "value": "Q6: How does A2A compare to function calling in LLMs?",
+  "id": "q6-how-does-a2a-compare-to-function-calling-in-llms",
+  "level": 3
+}, {
+  "value": "Q7: What transport protocols does A2A support and when would you use each?",
+  "id": "q7-what-transport-protocols-does-a2a-support-and-when-would-you-use-each",
+  "level": 3
+}, {
+  "value": "Q8: How do you secure an A2A deployment in production?",
+  "id": "q8-how-do-you-secure-an-a2a-deployment-in-production",
+  "level": 3
+}, {
+  "value": "Q9: Describe a real-world architecture using both A2A and MCP.",
+  "id": "q9-describe-a-real-world-architecture-using-both-a2a-and-mcp",
+  "level": 3
+}, {
+  "value": "Q10: What are the limitations of A2A you would consider before adopting it?",
+  "id": "q10-what-are-the-limitations-of-a2a-you-would-consider-before-adopting-it",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Chapter Quiz (5 MCQ)",
+  "id": "chapter-quiz-5-mcq",
+  "level": 2
+}, {
+  "value": "Questions",
+  "id": "questions",
+  "level": 3
+}, {
+  "value": "Answers",
+  "id": "answers",
+  "level": 3
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Exercises (5)",
+  "id": "exercises-5",
+  "level": 2
+}, {
+  "value": "Exercise 1: Build an Agent Card",
+  "id": "exercise-1-build-an-agent-card",
+  "level": 3
+}, {
+  "value": "Exercise 2: Task Delegation Flow",
+  "id": "exercise-2-task-delegation-flow",
+  "level": 3
+}, {
+  "value": "Exercise 3: A2A + MCP Integration",
+  "id": "exercise-3-a2a--mcp-integration",
+  "level": 3
+}, {
+  "value": "Exercise 4: Security Authorization",
+  "id": "exercise-4-security-authorization",
+  "level": 3
+}, {
+  "value": "Exercise 5: Protocol Decision Framework",
+  "id": "exercise-5-protocol-decision-framework",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "agent-to-agent-a2a-protocol",
+        children: "Agent-to-Agent (A2A) Protocol"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "LO"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Understand Google's A2A protocol architecture, agent cards, and interoperability model"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement agent discovery, capability announcement, and task delegation flows"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Construct and parse A2A JSON-RPC messages with task states, artifacts, and parts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply security patterns: authentication, authorization, identity propagation, push notifications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare A2A with MCP, function calling, and decide when to use each in production"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Agent-to-Agent (A2A) protocol is Google's open standard for enabling autonomous agents from different vendors, frameworks, and platforms to communicate and collaborate directly. As the AI ecosystem expands beyond single-agent applications into multi-agent systems, the need for a universal interoperability layer becomes critical. A2A fills this gap by defining how agents discover each other, announce capabilities, delegate tasks, and exchange artifacts using a standardized JSON-RPC message format."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Unlike the Model Context Protocol (MCP), which standardizes how agents connect to ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "tools and data sources"
+      }), ", A2A standardizes how agents connect to ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "other agents"
+      }), ". This distinction is fundamental: MCP is agent-to-tool, A2A is agent-to-agent. Together they form a complete interoperability stack for the emerging agent ecosystem."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Google announced A2A in April 2025 alongside its Gemini model updates, positioning it as an open protocol supported by partners including Atlassian, Salesforce, Box, and多家 others. The protocol is designed to be transport-agnostic (HTTP/2, WebSockets, gRPC), security-first, and capability-driven."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic understanding of JSON-RPC 2.0 protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Familiarity with REST API design and HTTP concepts"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding of agent fundamentals (Module 22, Chapter 1)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Knowledge of MCP protocol (Module 22, Chapter 4) for comparison"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python async/await patterns for code examples"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A2A (Agent-to-Agent)"
+      }), ": Google's open protocol for direct agent-to-agent communication, enabling interoperability across frameworks and platforms."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Agent Card"
+      }), ": A JSON metadata document published by an agent describing its identity, capabilities, authentication requirements, and endpoint URL. Similar in concept to an OpenAPI spec for agents."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Task"
+      }), ": The fundamental unit of work in A2A. A task has an ID, a state machine lifecycle, and produces artifacts."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Artifact"
+      }), ": A named output produced by an agent as part of task execution. Artifacts contain one or more ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "parts"
+      }), " (text, file, or data)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Part"
+      }), ": The atomic content unit within an artifact. Types include ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "text"
+      }), " (string content), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "file"
+      }), " (binary with MIME type), and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "data"
+      }), " (structured JSON)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Agent Discovery"
+      }), ": The process by which one agent learns about another agent's existence and capabilities, typically via an agent card URL or registry."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Capability Announcement"
+      }), ": Each agent card lists the capabilities (specific skills or actions) the agent supports. Agents use this to decide which agent to delegate a task to."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Task Delegation"
+      }), ": The act of one agent sending a task request to another agent and optionally monitoring its progress."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Identity Propagation"
+      }), ": The mechanism by which an agent's authentication context is carried forward when delegating to another agent, preserving the original caller's identity."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Push Notification"
+      }), ": A webhook-based mechanism where an agent sends status updates about a long-running task back to the requesting agent."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A2A Protocol Overview"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent cards, protocol stack, transport"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Communication Model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Discovery, capability announcement, task delegation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Message Format"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JSON-RPC, task states, artifacts, parts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Authentication, authorization, identity, push notifications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration Patterns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A2A with MCP, bridging frameworks, enterprise deployment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comparison"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A2A vs MCP vs function calling, decision framework"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph Agent_A[Agent A - Requester]\n        A1[A2A Client]\n        A2[Task Manager]\n    end\n    subgraph Agent_B[Agent B - Remote]\n        B1[A2A Server]\n        B2[Capability Executor]\n    end\n    subgraph Registry[Agent Registry / DNS]\n        R1[Agent Cards]\n        R2[Discovery Endpoints]\n    end\n\n    A1 -->|1. Fetch Agent Card| R1\n    A1 -->|2. Select Capability| B1\n    A2 -->|3. Send Task (JSON-RPC)| B1\n    B1 -->|4. Execute| B2\n    B2 -->|5. Return Artifacts| B1\n    B1 -->|6. Task Response| A1\n    A1 -->|7. Process Results| A2\n\n    style Agent_A fill:#e1f5fe,stroke:#01579b\n    style Agent_B fill:#f3e5f5,stroke:#7b1fa2\n    style Registry fill:#fff3e0,stroke:#e65100\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "151-a2a-protocol-overview",
+      children: "15.1 A2A Protocol Overview"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The A2A protocol operates on a simple premise: every agent that wants to be discoverable publishes an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Agent Card"
+      }), " — a JSON document describing who it is, what it can do, and how to reach it. When Agent A needs help with a task that falls outside its capabilities, it fetches Agent B's card, verifies compatibility, and sends a task request via JSON-RPC."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1511-protocol-architecture",
+      children: "15.1.1 Protocol Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    subgraph Transport[\"Transport Layer (HTTP/2, WebSocket, gRPC)\"]\n        direction LR\n        T1[\"JSON-RPC 2.0\"]\n        T2[\"Streaming SSE\"]\n        T3[\"Push Webhooks\"]\n    end\n\n    subgraph Messages[\"A2A Message Layer\"]\n        M1[\"Task Request\"]\n        M2[\"Task Status\"]\n        M3[\"Artifact Delivery\"]\n        M4[\"Cancel Task\"]\n    end\n\n    subgraph Security[\"Security Layer\"]\n        S1[\"OAuth 2.0 / JWT\"]\n        S2[\"mTLS\"]\n        S3[\"Identity Propagation\"]\n    end\n\n    subgraph Discovery[\"Discovery Layer\"]\n        D1[\"Agent Card\"]\n        D2[\"Capability List\"]\n        D3[\"Authentication Requirements\"]\n    end\n\n    Discovery --> Security\n    Security --> Messages\n    Messages --> Transport\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1512-agent-card-definition",
+      children: "15.1.2 Agent Card Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "An agent card is the public face of an agent. It follows a well-defined JSON schema that allows any compliant client to understand the agent's capabilities and how to interact with it."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nAgent Card Schema — the metadata document every A2A agent publishes.\nAnalogous to OpenAPI for REST APIs, but specifically for agents.\n\"\"\"\n\nfrom dataclasses import dataclass, field\nfrom typing import List, Optional, Dict, Any\nfrom enum import Enum\nimport json\n\nclass AuthenticationScheme(Enum):\n    \"\"\"Supported authentication methods for A2A agents.\"\"\"\n    NONE = \"none\"\n    BEARER = \"bearer\"          # OAuth 2.0 / JWT Bearer token\n    BASIC = \"basic\"            # HTTP Basic Auth (legacy, avoid in production)\n    MTLS = \"mtls\"              # Mutual TLS\n    OAUTH2_CLIENT_CREDENTIALS = \"oauth2_client_credentials\"\n\n@dataclass\nclass AuthenticationInfo:\n    \"\"\"Describes how to authenticate with this agent.\"\"\"\n    schemes: List[AuthenticationScheme] = field(default_factory=lambda: [AuthenticationScheme.NONE])\n    credentials_url: Optional[str] = None       # Token endpoint for OAuth2\n    scopes: List[str] = field(default_factory=list)  # Required OAuth scopes\n\n@dataclass\nclass Capability:\n    \"\"\"A single capability this agent exposes.\"\"\"\n    name: str                                    # e.g., \"code_review\"\n    description: str                             # Human-readable explanation\n    input_schema: Optional[Dict[str, Any]] = None   # JSON Schema for task input\n    output_schema: Optional[Dict[str, Any]] = None  # JSON Schema for task output\n    cost_per_task: Optional[float] = None        # Cost in USD (for billing)\n    estimated_duration_seconds: Optional[int] = None\n    requires_human_approval: bool = False\n    tags: List[str] = field(default_factory=list)\n\n@dataclass\nclass AgentCard:\n    \"\"\"\n    The root metadata document for an A2A agent.\n    Every A2A-compliant agent MUST expose this at a well-known URL.\n    \"\"\"\n    agent_name: str                              # Human-readable name\n    agent_version: str                           # Semantic version\n    description: str                             # What this agent does\n    agent_id: str                                # Unique identifier (e.g., \"com.company.agent-name\")\n    card_url: str                                # URL where this card is hosted\n    endpoints: List[str]                         # A2A API endpoints (typically one)\n    authentication: AuthenticationInfo\n    capabilities: List[Capability]\n    supported_transports: List[str] = field(default_factory=lambda: [\"http\"])  # http, ws, grpc\n    max_concurrent_tasks: int = 10               # Rate limiting info\n    documentation_url: Optional[str] = None\n    terms_of_service_url: Optional[str] = None\n    privacy_policy_url: Optional[str] = None\n\n    def to_dict(self) -> Dict[str, Any]:\n        \"\"\"Serialize the agent card to a JSON-compatible dictionary.\"\"\"\n        return {\n            \"agent_name\": self.agent_name,\n            \"agent_version\": self.agent_version,\n            \"description\": self.description,\n            \"agent_id\": self.agent_id,\n            \"card_url\": self.card_url,\n            \"endpoints\": self.endpoints,\n            \"authentication\": {\n                \"schemes\": [s.value for s in self.authentication.schemes],\n                \"credentials_url\": self.authentication.credentials_url,\n                \"scopes\": self.authentication.scopes,\n            },\n            \"capabilities\": [\n                {\n                    \"name\": c.name,\n                    \"description\": c.description,\n                    \"input_schema\": c.input_schema,\n                    \"output_schema\": c.output_schema,\n                    \"cost_per_task\": c.cost_per_task,\n                    \"estimated_duration_seconds\": c.estimated_duration_seconds,\n                    \"requires_human_approval\": c.requires_human_approval,\n                    \"tags\": c.tags,\n                }\n                for c in self.capabilities\n            ],\n            \"supported_transports\": self.supported_transports,\n            \"max_concurrent_tasks\": self.max_concurrent_tasks,\n            \"documentation_url\": self.documentation_url,\n            \"terms_of_service_url\": self.terms_of_service_url,\n            \"privacy_policy_url\": self.privacy_policy_url,\n        }\n\n    @classmethod\n    def from_dict(cls, data: Dict[str, Any]) -> \"AgentCard\":\n        \"\"\"Deserialize from a dictionary.\"\"\"\n        auth_data = data.get(\"authentication\", {})\n        authentication = AuthenticationInfo(\n            schemes=[AuthenticationScheme(s) for s in auth_data.get(\"schemes\", [\"none\"])],\n            credentials_url=auth_data.get(\"credentials_url\"),\n            scopes=auth_data.get(\"scopes\", []),\n        )\n        capabilities = [\n            Capability(\n                name=c[\"name\"],\n                description=c[\"description\"],\n                input_schema=c.get(\"input_schema\"),\n                output_schema=c.get(\"output_schema\"),\n                cost_per_task=c.get(\"cost_per_task\"),\n                estimated_duration_seconds=c.get(\"estimated_duration_seconds\"),\n                requires_human_approval=c.get(\"requires_human_approval\", False),\n                tags=c.get(\"tags\", []),\n            )\n            for c in data.get(\"capabilities\", [])\n        ]\n        return cls(\n            agent_name=data[\"agent_name\"],\n            agent_version=data[\"agent_version\"],\n            description=data[\"description\"],\n            agent_id=data[\"agent_id\"],\n            card_url=data[\"card_url\"],\n            endpoints=data[\"endpoints\"],\n            authentication=authentication,\n            capabilities=capabilities,\n            supported_transports=data.get(\"supported_transports\", [\"http\"]),\n            max_concurrent_tasks=data.get(\"max_concurrent_tasks\", 10),\n            documentation_url=data.get(\"documentation_url\"),\n            terms_of_service_url=data.get(\"terms_of_service_url\"),\n            privacy_policy_url=data.get(\"privacy_policy_url\"),\n        )\n\n# Example: Create an agent card for a code review agent\ncode_review_card = AgentCard(\n    agent_name=\"CodeReviewerAI\",\n    agent_version=\"2.1.0\",\n    description=\"Expert code review agent. Analyzes pull requests for bugs, security issues, and style violations.\",\n    agent_id=\"com.startup.codereviewer\",\n    card_url=\"https://agents.startup.com/codereviewer/.well-known/agent-card.json\",\n    endpoints=[\"https://agents.startup.com/codereviewer/a2a\"],\n    authentication=AuthenticationInfo(\n        schemes=[AuthenticationScheme.BEARER],\n        credentials_url=\"https://auth.startup.com/oauth/token\",\n        scopes=[\"codereview:read\", \"codereview:write\"],\n    ),\n    capabilities=[\n        Capability(\n            name=\"review_pull_request\",\n            description=\"Review a GitHub pull request and return inline comments, summary, and risk score.\",\n            estimated_duration_seconds=120,\n            tags=[\"code-review\", \"security\", \"quality\"],\n        ),\n        Capability(\n            name=\"analyze_vulnerability\",\n            description=\"Deep-dive security analysis of a code snippet. Returns CVSS score and fix suggestions.\",\n            estimated_duration_seconds=60,\n            tags=[\"security\", \"vulnerability\"],\n        ),\n    ],\n    max_concurrent_tasks=25,\n    documentation_url=\"https://docs.startup.com/codereviewer\",\n)\n\n# Serialize to JSON for publishing\nprint(json.dumps(code_review_card.to_dict(), indent=2))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "152-communication-model",
+      children: "15.2 Communication Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The A2A communication model follows a discover-delegate-deliver pattern. Agents first discover each other's capabilities, then delegate tasks with well-defined inputs, and finally receive artifacts as outputs. The model supports both synchronous (short-lived) and asynchronous (long-running) tasks."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1521-agent-discovery-flow",
+      children: "15.2.1 Agent Discovery Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "sequenceDiagram\n    participant RA as Requester Agent\n    participant AR as Agent Registry (DNS/Well-Known)\n    participant TA as Target Agent\n\n    RA->>AR: 1. Resolve agent-id or URL\n    AR-->>RA: 2. Agent Card (JSON)\n    RA->>RA: 3. Parse capabilities, auth requirements\n    RA->>TA: 4. POST /a2a/tasks_send (auth header)\n    TA->>TA: 5. Validate auth, check capacity\n    TA-->>RA: 6. TaskAccepted { task_id, status: \"submitted\" }\n    TA->>TA: 7. Execute capability\n    TA-->>RA: 8. TaskStatusUpdate { status: \"working\", progress: 50% }\n    TA->>TA: 9. Complete execution\n    TA-->>RA: 10. TaskArtifact { artifact_id, parts[...] }\n    TA-->>RA: 11. TaskFinal { status: \"completed\" }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1522-capability-announcement--discovery",
+      children: "15.2.2 Capability Announcement & Discovery"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Capability discovery can happen through three mechanisms:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Direct Card Fetch"
+        }), ": The requester knows the agent's card URL and fetches it directly."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Well-Known Endpoint"
+        }), ": The agent serves its card at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/.well-known/agent-card.json"
+        }), " (similar to ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/.well-known/openid-configuration"
+        }), " in OIDC)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Directory Registry"
+        }), ": A centralized or federated registry indexes agent cards for search."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nAgent Discovery and Capability Matching\n\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Optional\nimport httpx  # Async HTTP client\nimport json\n\nclass AgentDiscoveryClient:\n    \"\"\"\n    Client that fetches and caches agent cards, and matches\n    capabilities to task requirements.\n    \"\"\"\n\n    def __init__(self):\n        self._card_cache: dict[str, AgentCard] = {}\n        self._http_client = httpx.AsyncClient(timeout=10.0)\n\n    async def fetch_agent_card(self, card_url: str) -> AgentCard:\n        \"\"\"Fetch and cache an agent card from its URL.\"\"\"\n        if card_url in self._card_cache:\n            return self._card_cache[card_url]\n\n        response = await self._http_client.get(card_url)\n        response.raise_for_status()\n        card_data = response.json()\n        card = AgentCard.from_dict(card_data)\n        self._card_cache[card_url] = card\n        return card\n\n    async def discover_from_well_known(\n        self, base_url: str\n    ) -> AgentCard:\n        \"\"\"Discover an agent card from its well-known endpoint.\"\"\"\n        well_known_url = (\n            f\"{base_url.rstrip('/')}/.well-known/agent-card.json\"\n        )\n        return await self.fetch_agent_card(well_known_url)\n\n    def find_capability(\n        self,\n        card: AgentCard,\n        capability_name: Optional[str] = None,\n        tags: Optional[list[str]] = None,\n    ) -> Optional[Capability]:\n        \"\"\"\n        Find the best matching capability on an agent card.\n        Can match by exact name or by tag intersection.\n        \"\"\"\n        if capability_name:\n            for cap in card.capabilities:\n                if cap.name == capability_name:\n                    return cap\n\n        if tags:\n            tag_set = set(tags)\n            best_match = None\n            best_overlap = 0\n            for cap in card.capabilities:\n                overlap = len(tag_set & set(cap.tags))\n                if overlap > best_overlap:\n                    best_overlap = overlap\n                    best_match = cap\n            return best_match\n\n        return None\n\n    async def find_agent_for_task(\n        self,\n        task_description: str,\n        required_tags: list[str],\n        registry_urls: list[str],\n    ) -> tuple[Optional[AgentCard], Optional[Capability]]:\n        \"\"\"\n        Search multiple registries/agent cards to find an agent\n        that can handle a given task.\n        \"\"\"\n        for url in registry_urls:\n            try:\n                card = await self.fetch_agent_card(url)\n                cap = self.find_capability(card, tags=required_tags)\n                if cap:\n                    return card, cap\n            except Exception:\n                continue  # Try next registry\n        return None, None\n\n    async def close(self):\n        await self._http_client.aclose()\n\n# Example: Discovery in action\nasync def discover_code_review_agent():\n    client = AgentDiscoveryClient()\n\n    # Fetch the code review agent's card\n    card = await client.discover_from_well_known(\n        \"https://agents.startup.com/codereviewer\"\n    )\n    print(f\"Discovered agent: {card.agent_name} v{card.agent_version}\")\n    print(f\"Capabilities: {[c.name for c in card.capabilities]}\")\n    print(f\"Auth required: {[s.value for s in card.authentication.schemes]}\")\n\n    # Find a specific capability\n    review_cap = client.find_capability(card, capability_name=\"review_pull_request\")\n    if review_cap:\n        print(f\"Found capability: {review_cap.name}\")\n        print(f\"  Description: {review_cap.description}\")\n        print(f\"  Est. duration: {review_cap.estimated_duration_seconds}s\")\n\n    await client.close()\n\n# Run: import asyncio; asyncio.run(discover_code_review_agent())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1523-task-delegation-protocol",
+      children: "15.2.3 Task Delegation Protocol"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Task delegation is the core interaction pattern in A2A. The requesting agent sends a task specification to the target agent, which then executes it and returns results. A2A defines two delegation modes:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "tasks_send"
+          })
+        }), ": Synchronous-style — the requester sends a task and receives a response. For long-running tasks, the response includes a task ID and the requester polls for updates."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "tasks_sendSubscribe"
+          })
+        }), ": Streaming — the requester sends a task and receives a stream of SSE (Server-Sent Events) updates as the task progresses."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nTask Delegation — sending tasks to remote agents via A2A.\n\"\"\"\nimport uuid\nimport json\nfrom dataclasses import dataclass, field\nfrom typing import Optional\nfrom enum import Enum\nfrom datetime import datetime\nimport httpx\n\nclass TaskState(str, Enum):\n    \"\"\"The A2A task state machine.\"\"\"\n    SUBMITTED = \"submitted\"            # Task received, pending processing\n    WORKING = \"working\"                # Task is being executed\n    INPUT_REQUIRED = \"input-required\"  # Agent needs more info to proceed\n    COMPLETED = \"completed\"            # Task finished successfully\n    FAILED = \"failed\"                  # Task encountered an error\n    CANCELED = \"canceled\"              # Task was canceled by requester\n\nclass PartType(str, Enum):\n    \"\"\"Types of content parts in artifacts.\"\"\"\n    TEXT = \"text\"\n    FILE = \"file\"\n    DATA = \"data\"\n\n@dataclass\nclass Part:\n    \"\"\"An atomic content unit within an artifact.\"\"\"\n    type: PartType\n    text: Optional[str] = None\n    file_url: Optional[str] = None     # For file parts\n    mime_type: Optional[str] = None    # e.g., \"image/png\", \"application/json\"\n    data: Optional[dict] = None        # For structured data parts\n\n@dataclass\nclass Artifact:\n    \"\"\"An output produced by a task — contains one or more parts.\"\"\"\n    artifact_id: str\n    name: str\n    description: Optional[str] = None\n    parts: list[Part] = field(default_factory=list)\n    created_at: str = field(default_factory=lambda: datetime.utcnow().isoformat() + \"Z\")\n\n@dataclass\nclass A2ATask:\n    \"\"\"\n    The fundamental unit of work in A2A.\n    Contains the task ID, state, input message, and output artifacts.\n    \"\"\"\n    task_id: str\n    state: TaskState\n    agent_id: str                       # Which agent is handling this\n    capability: str                     # Which capability was invoked\n    input_parts: list[Part] = field(default_factory=list)\n    artifacts: list[Artifact] = field(default_factory=list)\n    status_message: Optional[str] = None\n    progress_percent: Optional[int] = None\n    created_at: str = field(default_factory=lambda: datetime.utcnow().isoformat() + \"Z\")\n    updated_at: str = field(default_factory=lambda: datetime.utcnow().isoformat() + \"Z\")\n    error_message: Optional[str] = None\n\n    def to_json_rpc_request(self) -> dict:\n        \"\"\"Convert this task to a JSON-RPC 2.0 request for tasks_send.\"\"\"\n        return {\n            \"jsonrpc\": \"2.0\",\n            \"id\": str(uuid.uuid4()),\n            \"method\": \"tasks_send\",\n            \"params\": {\n                \"task_id\": self.task_id,\n                \"agent_id\": self.agent_id,\n                \"capability\": self.capability,\n                \"input\": {\n                    \"parts\": [\n                        {\n                            \"type\": p.type.value,\n                            \"text\": p.text,\n                            \"file_url\": p.file_url,\n                            \"mime_type\": p.mime_type,\n                            \"data\": p.data,\n                        }\n                        for p in self.input_parts\n                    ]\n                },\n            },\n        }\n\n    @classmethod\n    def from_json_rpc_response(cls, response: dict) -> \"A2ATask\":\n        \"\"\"Parse a JSON-RPC 2.0 response into an A2ATask.\"\"\"\n        result = response.get(\"result\", {})\n        task_data = result.get(\"task\", result)\n\n        artifacts = []\n        for art in task_data.get(\"artifacts\", []):\n            parts = [\n                Part(\n                    type=PartType(p[\"type\"]),\n                    text=p.get(\"text\"),\n                    file_url=p.get(\"file_url\"),\n                    mime_type=p.get(\"mime_type\"),\n                    data=p.get(\"data\"),\n                )\n                for p in art.get(\"parts\", [])\n            ]\n            artifacts.append(Artifact(\n                artifact_id=art[\"artifact_id\"],\n                name=art[\"name\"],\n                description=art.get(\"description\"),\n                parts=parts,\n                created_at=art.get(\"created_at\", \"\"),\n            ))\n\n        return cls(\n            task_id=task_data[\"task_id\"],\n            state=TaskState(task_data[\"status\"]),\n            agent_id=task_data.get(\"agent_id\", \"\"),\n            capability=task_data.get(\"capability\", \"\"),\n            artifacts=artifacts,\n            status_message=task_data.get(\"status_message\"),\n            progress_percent=task_data.get(\"progress_percent\"),\n            error_message=task_data.get(\"error_message\"),\n        )\n\nclass A2AClient:\n    \"\"\"\n    Client for sending tasks to A2A-compliant agents.\n    Handles authentication, request construction, and response parsing.\n    \"\"\"\n\n    def __init__(self, auth_token: Optional[str] = None):\n        self._auth_token = auth_token\n        self._http_client = httpx.AsyncClient(timeout=120.0)\n\n    def _get_headers(self) -> dict:\n        headers = {\"Content-Type\": \"application/json\"}\n        if self._auth_token:\n            headers[\"Authorization\"] = f\"Bearer {self._auth_token}\"\n        return headers\n\n    async def send_task(\n        self,\n        agent_endpoint: str,\n        capability: str,\n        input_parts: list[Part],\n        agent_id: str = \"generic-agent\",\n    ) -> A2ATask:\n        \"\"\"Send a task to an A2A agent and return the initial response.\"\"\"\n        task = A2ATask(\n            task_id=f\"task-{uuid.uuid4().hex[:12]}\",\n            state=TaskState.SUBMITTED,\n            agent_id=agent_id,\n            capability=capability,\n            input_parts=input_parts,\n        )\n\n        request_body = task.to_json_rpc_request()\n        response = await self._http_client.post(\n            agent_endpoint.rstrip(\"/\") + \"/a2a\",\n            headers=self._get_headers(),\n            json=request_body,\n        )\n        response.raise_for_status()\n        response_data = response.json()\n\n        if \"error\" in response_data:\n            raise RuntimeError(\n                f\"A2A error [{response_data['error'].get('code')}]: \"\n                f\"{response_data['error'].get('message')}\"\n            )\n\n        return A2ATask.from_json_rpc_response(response_data)\n\n    async def get_task_status(\n        self, agent_endpoint: str, task_id: str\n    ) -> A2ATask:\n        \"\"\"Poll for task status updates (for async tasks).\"\"\"\n        request_body = {\n            \"jsonrpc\": \"2.0\",\n            \"id\": str(uuid.uuid4()),\n            \"method\": \"tasks_get\",\n            \"params\": {\"task_id\": task_id},\n        }\n        response = await self._http_client.post(\n            agent_endpoint.rstrip(\"/\") + \"/a2a\",\n            headers=self._get_headers(),\n            json=request_body,\n        )\n        response.raise_for_status()\n        return A2ATask.from_json_rpc_response(response.json())\n\n    async def cancel_task(self, agent_endpoint: str, task_id: str) -> bool:\n        \"\"\"Request cancellation of a running task.\"\"\"\n        request_body = {\n            \"jsonrpc\": \"2.0\",\n            \"id\": str(uuid.uuid4()),\n            \"method\": \"tasks_cancel\",\n            \"params\": {\"task_id\": task_id},\n        }\n        response = await self._http_client.post(\n            agent_endpoint.rstrip(\"/\") + \"/a2a\",\n            headers=self._get_headers(),\n            json=request_body,\n        )\n        response.raise_for_status()\n        result = response.json().get(\"result\", {})\n        return result.get(\"success\", False)\n\n    async def close(self):\n        await self._http_client.aclose()\n\n# Example: Create a code review task\nasync def delegate_code_review():\n    client = A2AClient(auth_token=\"sk-abc123\")\n\n    # Build the task input parts\n    input_parts = [\n        Part(type=PartType.TEXT, text=\"Review the following pull request for security vulnerabilities.\"),\n        Part(type=PartType.DATA, data={\n            \"repo\": \"org/my-service\",\n            \"pr_number\": 142,\n            \"files_changed\": [\"auth.py\", \"db.py\", \"api/handlers.py\"],\n            \"diff_summary\": \"Added OAuth2 authentication flow and database migration.\"\n        }),\n        Part(type=PartType.FILE, file_url=\"https://github.com/org/my-service/pull/142.diff\",\n             mime_type=\"text/plain\"),\n    ]\n\n    task = await client.send_task(\n        agent_endpoint=\"https://agents.startup.com/codereviewer\",\n        capability=\"review_pull_request\",\n        input_parts=input_parts,\n        agent_id=\"com.startup.codereviewer\",\n    )\n\n    print(f\"Task {task.task_id} submitted. Status: {task.state.value}\")\n\n    # For long-running tasks, poll for completion\n    while task.state in (TaskState.SUBMITTED, TaskState.WORKING):\n        import asyncio\n        await asyncio.sleep(2)\n        task = await client.get_task_status(\n            \"https://agents.startup.com/codereviewer\", task.task_id\n        )\n        print(f\"  Status: {task.state.value}, Progress: {task.progress_percent}%\")\n\n    if task.state == TaskState.COMPLETED:\n        for artifact in task.artifacts:\n            print(f\"\\nArtifact: {artifact.name}\")\n            for part in artifact.parts:\n                if part.type == PartType.TEXT:\n                    print(f\"  Text: {part.text[:200]}...\")\n                elif part.type == PartType.DATA:\n                    print(f\"  Data: {json.dumps(part.data, indent=2)[:200]}...\")\n    elif task.state == TaskState.FAILED:\n        print(f\"Task failed: {task.error_message}\")\n\n    await client.close()\n\n# Run: import asyncio; asyncio.run(delegate_code_review())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "153-message-format",
+      children: "15.3 Message Format"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A2A messages are built on JSON-RPC 2.0, a lightweight protocol that uses JSON for encoding and supports request-response pairs with unique IDs. Task states follow a deterministic lifecycle, and artifacts carry the actual work output in typed parts."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1531-task-state-machine",
+      children: "15.3.1 Task State Machine"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "stateDiagram-v2\n    [*] --> submitted: Task Created\n    submitted --> working: Agent starts processing\n    working --> input_required: Needs clarification\n    input_required --> working: Requester provides input\n    working --> completed: Success\n    working --> failed: Error occurred\n    working --> canceled: Requester cancels\n    submitted --> canceled: Requester cancels\n    completed --> [*]\n    failed --> [*]\n    canceled --> [*]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1532-json-rpc-message-structure",
+      children: "15.3.2 JSON-RPC Message Structure"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Every A2A message follows the JSON-RPC 2.0 specification. The method name indicates the action (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tasks_send"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tasks_get"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tasks_cancel"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tasks_sendSubscribe"
+      }), "), and the params contain the task payload."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nA2A JSON-RPC message construction and parsing utilities.\n\"\"\"\nimport uuid\nimport json\nfrom datetime import datetime\nfrom typing import Optional\n\nclass A2AMessageBuilder:\n    \"\"\"\n    Utility class for constructing and parsing A2A JSON-RPC messages\n    according to the protocol specification.\n    \"\"\"\n\n    @staticmethod\n    def build_send_request(\n        task_id: str,\n        agent_id: str,\n        capability: str,\n        input_parts: list[dict],\n        metadata: Optional[dict] = None,\n    ) -> dict:\n        \"\"\"\n        Build a tasks_send JSON-RPC request.\n\n        Args:\n            task_id: Unique identifier for the task\n            agent_id: Target agent identifier\n            capability: Name of the capability to invoke\n            input_parts: List of part dicts: {type, text?, file_url?, mime_type?, data?}\n            metadata: Optional key-value pairs (e.g., priority, correlation-id)\n\n        Returns:\n            A valid JSON-RPC 2.0 request dict\n        \"\"\"\n        message = {\n            \"jsonrpc\": \"2.0\",\n            \"id\": str(uuid.uuid4()),\n            \"method\": \"tasks_send\",\n            \"params\": {\n                \"task_id\": task_id,\n                \"agent_id\": agent_id,\n                \"capability\": capability,\n                \"input\": {\n                    \"parts\": input_parts,\n                },\n                \"metadata\": metadata or {},\n                \"timestamp\": datetime.utcnow().isoformat() + \"Z\",\n            },\n        }\n        return message\n\n    @staticmethod\n    def build_send_subscribe_request(\n        task_id: str,\n        agent_id: str,\n        capability: str,\n        input_parts: list[dict],\n        push_notification_url: Optional[str] = None,\n    ) -> dict:\n        \"\"\"\n        Build a tasks_sendSubscribe request with optional push notifications.\n        The server will stream status updates via SSE and optionally POST\n        final results to the push_notification_url.\n        \"\"\"\n        message = {\n            \"jsonrpc\": \"2.0\",\n            \"id\": str(uuid.uuid4()),\n            \"method\": \"tasks_sendSubscribe\",\n            \"params\": {\n                \"task_id\": task_id,\n                \"agent_id\": agent_id,\n                \"capability\": capability,\n                \"input\": {\n                    \"parts\": input_parts,\n                },\n                \"push_notification\": {\n                    \"url\": push_notification_url,\n                } if push_notification_url else None,\n                \"timestamp\": datetime.utcnow().isoformat() + \"Z\",\n            },\n        }\n        return message\n\n    @staticmethod\n    def build_status_response(\n        task_id: str,\n        status: str,\n        artifacts: Optional[list[dict]] = None,\n        progress_percent: Optional[int] = None,\n        error_message: Optional[str] = None,\n    ) -> dict:\n        \"\"\"\n        Build a JSON-RPC response for a task status update.\n        This is what the A2A server returns to the client.\n        \"\"\"\n        result = {\n            \"task_id\": task_id,\n            \"status\": status,\n            \"updated_at\": datetime.utcnow().isoformat() + \"Z\",\n        }\n        if artifacts:\n            result[\"artifacts\"] = artifacts\n        if progress_percent is not None:\n            result[\"progress_percent\"] = progress_percent\n        if error_message:\n            result[\"error_message\"] = error_message\n\n        return {\n            \"jsonrpc\": \"2.0\",\n            \"id\": None,  # Response ID matches request; use None for notifications\n            \"result\": result,\n        }\n\n    @staticmethod\n    def build_artifact(\n        artifact_id: str,\n        name: str,\n        parts: list[dict],\n        description: Optional[str] = None,\n    ) -> dict:\n        \"\"\"Build an artifact dict to include in task responses.\"\"\"\n        return {\n            \"artifact_id\": artifact_id,\n            \"name\": name,\n            \"description\": description,\n            \"parts\": parts,\n            \"created_at\": datetime.utcnow().isoformat() + \"Z\",\n        }\n\n    # --- Part builders ---\n\n    @staticmethod\n    def text_part(content: str) -> dict:\n        \"\"\"Create a text content part.\"\"\"\n        return {\"type\": \"text\", \"text\": content}\n\n    @staticmethod\n    def file_part(url: str, mime_type: str) -> dict:\n        \"\"\"Create a file reference part.\"\"\"\n        return {\"type\": \"file\", \"file_url\": url, \"mime_type\": mime_type}\n\n    @staticmethod\n    def data_part(data: dict) -> dict:\n        \"\"\"Create a structured data part.\"\"\"\n        return {\"type\": \"data\", \"data\": data}\n\nclass A2AMessageValidator:\n    \"\"\"\n    Validates A2A JSON-RPC messages for correctness.\n    Ensures messages conform to the protocol specification.\n    \"\"\"\n\n    VALID_METHODS = {\"tasks_send\", \"tasks_get\", \"tasks_cancel\",\n                     \"tasks_sendSubscribe\", \"tasks_notification\"}\n    VALID_STATES = {\"submitted\", \"working\", \"input-required\",\n                    \"completed\", \"failed\", \"canceled\"}\n    VALID_PART_TYPES = {\"text\", \"file\", \"data\"}\n\n    @classmethod\n    def validate_request(cls, message: dict) -> list[str]:\n        \"\"\"Validate a JSON-RPC request. Returns list of errors (empty = valid).\"\"\"\n        errors = []\n\n        if not isinstance(message, dict):\n            return [\"Message must be a JSON object\"]\n\n        if message.get(\"jsonrpc\") != \"2.0\":\n            errors.append(\"jsonrpc must be '2.0'\")\n\n        if not message.get(\"id\"):\n            errors.append(\"Request must have an 'id' field\")\n\n        method = message.get(\"method\")\n        if method not in cls.VALID_METHODS:\n            errors.append(f\"Invalid method: {method}. \"\n                          f\"Must be one of {cls.VALID_METHODS}\")\n\n        params = message.get(\"params\", {})\n        if not params:\n            errors.append(\"Request must have 'params'\")\n\n        if method in (\"tasks_send\", \"tasks_sendSubscribe\"):\n            if \"task_id\" not in params:\n                errors.append(\"params must include 'task_id'\")\n            if \"capability\" not in params:\n                errors.append(\"params must include 'capability'\")\n            if \"input\" not in params:\n                errors.append(\"params must include 'input'\")\n            else:\n                input_data = params[\"input\"]\n                if \"parts\" not in input_data:\n                    errors.append(\"input must include 'parts' array\")\n                else:\n                    for i, part in enumerate(input_data.get(\"parts\", [])):\n                        if part.get(\"type\") not in cls.VALID_PART_TYPES:\n                            errors.append(\n                                f\"part[{i}].type must be one of {cls.VALID_PART_TYPES}\"\n                            )\n\n        return errors\n\n    @classmethod\n    def validate_response(cls, message: dict) -> list[str]:\n        \"\"\"Validate a JSON-RPC response. Returns list of errors.\"\"\"\n        errors = []\n\n        if not isinstance(message, dict):\n            return [\"Message must be a JSON object\"]\n\n        if message.get(\"jsonrpc\") != \"2.0\":\n            errors.append(\"jsonrpc must be '2.0'\")\n\n        # Must have either result or error\n        if \"result\" not in message and \"error\" not in message:\n            errors.append(\"Response must have 'result' or 'error'\")\n\n        if \"error\" in message:\n            err = message[\"error\"]\n            if \"code\" not in err or \"message\" not in err:\n                errors.append(\"Error must include 'code' and 'message'\")\n\n        if \"result\" in message:\n            result = message[\"result\"]\n            status = result.get(\"status\")\n            if status and status not in cls.VALID_STATES:\n                errors.append(f\"Invalid status: {status}\")\n\n        return errors\n\n# Example: Build a complete A2A interaction\ndef demonstrate_message_flow():\n    \"\"\"Demonstrate the full message construction flow.\"\"\"\n\n    # Step 1: Requester builds a tasks_send request\n    task_id = f\"task-{uuid.uuid4().hex[:12]}\"\n\n    request = A2AMessageBuilder.build_send_request(\n        task_id=task_id,\n        agent_id=\"com.enterprise.data-analyzer\",\n        capability=\"analyze_dataset\",\n        input_parts=[\n            A2AMessageBuilder.text_part(\n                \"Analyze the attached sales dataset for Q3 trends.\"\n            ),\n            A2AMessageBuilder.file_part(\n                \"https://data.company.com/sales/q3-2025.parquet\",\n                \"application/parquet\"\n            ),\n        ],\n        metadata={\"priority\": \"high\", \"department\": \"analytics\"},\n    )\n\n    print(\"=== A2A Request ===\")\n    print(json.dumps(request, indent=2))\n\n    # Step 2: Server processes and returns initial response\n    initial_response = A2AMessageBuilder.build_status_response(\n        task_id=task_id,\n        status=\"submitted\",\n        progress_percent=0,\n    )\n    initial_response[\"id\"] = request[\"id\"]  # Echo back the request ID\n\n    print(\"\\n=== A2A Initial Response ===\")\n    print(json.dumps(initial_response, indent=2))\n\n    # Step 3: Server sends progress update\n    progress_response = A2AMessageBuilder.build_status_response(\n        task_id=task_id,\n        status=\"working\",\n        progress_percent=45,\n    )\n\n    print(\"\\n=== A2A Progress Update ===\")\n    print(json.dumps(progress_response, indent=2))\n\n    # Step 4: Server sends final response with artifacts\n    final_artifact = A2AMessageBuilder.build_artifact(\n        artifact_id=f\"artifact-{uuid.uuid4().hex[:8]}\",\n        name=\"Q3 Trend Analysis Report\",\n        description=\"Comprehensive analysis of Q3 2025 sales data.\",\n        parts=[\n            A2AMessageBuilder.text_part(\n                \"Q3 2025 showed a 12.3% increase in revenue driven by \"\n                \"the APAC region. Key products: Enterprise Suite (+18%), \"\n                \"Cloud Services (+22%). Recommended action: increase \"\n                \"APAC sales headcount by 15% for Q4.\"\n            ),\n            A2AMessageBuilder.data_part({\n                \"total_revenue\": 4_250_000_000,\n                \"yoy_growth_pct\": 12.3,\n                \"top_region\": \"APAC\",\n                \"top_product\": \"Cloud Services\",\n                \"growth_rate_pct\": 22.0,\n                \"forecast_q4\": 4_600_000_000,\n            }),\n            A2AMessageBuilder.file_part(\n                \"https://data.company.com/reports/q3-sales-analysis.pdf\",\n                \"application/pdf\"\n            ),\n        ],\n    )\n\n    final_response = A2AMessageBuilder.build_status_response(\n        task_id=task_id,\n        status=\"completed\",\n        artifacts=[final_artifact],\n        progress_percent=100,\n    )\n\n    print(\"\\n=== A2A Final Response ===\")\n    print(json.dumps(final_response, indent=2))\n\n    # Validate the messages\n    print(\"\\n=== Validation ===\")\n    req_errors = A2AMessageValidator.validate_request(request)\n    print(f\"Request valid: {len(req_errors) == 0}\")\n    if req_errors:\n        for err in req_errors:\n            print(f\"  - {err}\")\n\n    resp_errors = A2AMessageValidator.validate_response(final_response)\n    print(f\"Response valid: {len(resp_errors) == 0}\")\n    if resp_errors:\n        for err in resp_errors:\n            print(f\"  - {err}\")\n\ndemonstrate_message_flow()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1533-streaming-with-server-sent-events",
+      children: "15.3.3 Streaming with Server-Sent Events"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For real-time applications, A2A supports ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tasks_sendSubscribe"
+      }), " which streams updates via SSE. The client opens a persistent connection and receives events as the task progresses."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nSSE Streaming for A2A tasks_sendSubscribe.\n\"\"\"\nimport json\nimport re\nfrom typing import AsyncGenerator\nimport httpx\n\nclass A2ASSEClient:\n    \"\"\"\n    Client for receiving streaming task updates via Server-Sent Events.\n    \"\"\"\n\n    def __init__(self, auth_token: Optional[str] = None):\n        self._auth_token = auth_token\n\n    async def subscribe_to_task(\n        self,\n        agent_endpoint: str,\n        capability: str,\n        input_parts: list[dict],\n        task_id: Optional[str] = None,\n    ) -> AsyncGenerator[dict, None]:\n        \"\"\"\n        Open an SSE connection and yield task status updates as they arrive.\n\n        Yields:\n            Dicts with keys: event_type, task_id, status, data\n        \"\"\"\n        import uuid\n        tid = task_id or f\"task-{uuid.uuid4().hex[:12]}\"\n\n        request_body = {\n            \"jsonrpc\": \"2.0\",\n            \"id\": str(uuid.uuid4()),\n            \"method\": \"tasks_sendSubscribe\",\n            \"params\": {\n                \"task_id\": tid,\n                \"agent_id\": \"remote-agent\",\n                \"capability\": capability,\n                \"input\": {\"parts\": input_parts},\n            },\n        }\n\n        headers = {\"Content-Type\": \"application/json\"}\n        if self._auth_token:\n            headers[\"Authorization\"] = f\"Bearer {self._auth_token}\"\n\n        async with httpx.AsyncClient(timeout=None) as client:\n            async with client.stream(\n                \"POST\", agent_endpoint, json=request_body, headers=headers\n            ) as response:\n                buffer = \"\"\n                async for chunk in response.aiter_bytes():\n                    buffer += chunk.decode(\"utf-8\")\n\n                    # Parse SSE events from the buffer\n                    # SSE format: \"event: ...\\ndata: ...\\n\\n\"\n                    while \"\\n\\n\" in buffer:\n                        event_block, buffer = buffer.split(\"\\n\\n\", 1)\n                        event_data = {\"event_type\": \"message\"}\n\n                        for line in event_block.strip().split(\"\\n\"):\n                            if line.startswith(\"event: \"):\n                                event_data[\"event_type\"] = line[7:]\n                            elif line.startswith(\"data: \"):\n                                try:\n                                    payload = json.loads(line[6:])\n                                    event_data.update(payload)\n                                except json.JSONDecodeError:\n                                    event_data[\"raw_data\"] = line[6:]\n\n                        yield event_data\n\n# Example: Process streaming task updates\nasync def stream_task_example():\n    client = A2ASSEClient(auth_token=\"sk-streaming-token\")\n\n    print(\"Subscribing to task updates (streaming)...\")\n    async for update in client.subscribe_to_task(\n        agent_endpoint=\"https://agents.example.com/a2a\",\n        capability=\"real_time_analysis\",\n        input_parts=[\n            {\"type\": \"text\", \"text\": \"Monitor stock prices for AAPL, GOOG, MSFT\"}\n        ],\n    ):\n        status = update.get(\"status\", \"unknown\")\n        progress = update.get(\"progress_percent\", 0)\n        print(f\"  [{update['event_type']}] Status: {status}, Progress: {progress}%\")\n\n        if update.get(\"artifacts\"):\n            for artifact in update[\"artifacts\"]:\n                print(f\"  >> Received artifact: {artifact['name']}\")\n\n        if status in (\"completed\", \"failed\", \"canceled\"):\n            print(f\"Task finished with status: {status}\")\n            break\n\n# Run: import asyncio; asyncio.run(stream_task_example())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "154-security",
+      children: "15.4 Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Security is a first-class concern in A2A. Since agents may be running across organizational boundaries, the protocol defines clear patterns for authentication, authorization, and identity propagation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1541-authentication--authorization",
+      children: "15.4.1 Authentication & Authorization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A2A agents authenticate using standard mechanisms (OAuth 2.0, JWT, mTLS) as declared in their agent card. The protocol does not prescribe a specific flow but requires that authentication requirements be well-documented."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nA2A Security: Authentication, Authorization, and Identity Propagation.\n\"\"\"\nimport time\nimport hashlib\nimport hmac\nimport json\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass\nclass A2AAuthContext:\n    \"\"\"\n    Represents the authentication context of a request.\n    This context is propagated when an agent delegates to another agent.\n    \"\"\"\n    subject: str                         # Who is making the request (user or service)\n    roles: list[str]                     # RBAC roles\n    scopes: list[str]                    # OAuth scopes granted\n    issuer: str                          # Who issued the token\n    issued_at: float                     # Unix timestamp\n    expires_at: float                    # Unix timestamp\n    delegation_chain: list[str] = None   # Track delegation hops for audit\n\n    def to_token_payload(self) -> dict:\n        \"\"\"Convert to JWT-like payload for identity propagation.\"\"\"\n        return {\n            \"sub\": self.subject,\n            \"roles\": self.roles,\n            \"scopes\": self.scopes,\n            \"iss\": self.issuer,\n            \"iat\": int(self.issued_at),\n            \"exp\": int(self.expires_at),\n            \"delegation_chain\": self.delegation_chain or [self.subject],\n        }\n\nclass A2AAuthorizer:\n    \"\"\"\n    Validates authorization for A2A task requests.\n    Checks that the requester has the required scopes and roles\n    for the requested capability.\n    \"\"\"\n\n    # Hardcoded capability-to-scope mapping for demonstration\n    CAPABILITY_SCOPES = {\n        \"review_pull_request\": [\"codereview:write\"],\n        \"analyze_vulnerability\": [\"codereview:read\", \"security:read\"],\n        \"analyze_dataset\": [\"data:read\", \"analytics:read\"],\n        \"real_time_analysis\": [\"market:read\"],\n    }\n\n    CAPABILITY_ROLES = {\n        \"review_pull_request\": [\"developer\", \"reviewer\", \"admin\"],\n        \"analyze_vulnerability\": [\"security\", \"admin\"],\n        \"analyze_dataset\": [\"analyst\", \"admin\"],\n        \"real_time_analysis\": [\"trader\", \"analyst\", \"admin\"],\n    }\n\n    @classmethod\n    def authorize(\n        cls,\n        auth_context: A2AAuthContext,\n        capability: str,\n    ) -> tuple[bool, str]:\n        \"\"\"Check if the auth context allows access to the capability.\"\"\"\n\n        # Check expiry\n        if time.time() > auth_context.expires_at:\n            return False, \"Token expired\"\n\n        # Check scopes\n        required_scopes = cls.CAPABILITY_SCOPES.get(capability, [])\n        for scope in required_scopes:\n            if scope not in auth_context.scopes:\n                return False, f\"Missing required scope: {scope}\"\n\n        # Check roles\n        required_roles = cls.CAPABILITY_ROLES.get(capability, [])\n        if required_roles:\n            has_role = any(role in auth_context.roles for role in required_roles)\n            if not has_role:\n                return False, (\n                    f\"None of the required roles matched. \"\n                    f\"Required: {required_roles}, \"\n                    f\"User has: {auth_context.roles}\"\n                )\n\n        # Check delegation depth (prevent infinite delegation loops)\n        if auth_context.delegation_chain:\n            if len(auth_context.delegation_chain) > 5:\n                return False, \"Max delegation depth exceeded\"\n\n        return True, \"Authorized\"\n\n    @classmethod\n    def propagate_identity(\n        cls,\n        current_context: A2AAuthContext,\n        delegating_agent_id: str,\n    ) -> A2AAuthContext:\n        \"\"\"\n        Propagate identity when agent A delegates to agent B.\n        Preserves the original caller's identity while recording\n        the delegation chain.\n        \"\"\"\n        chain = list(current_context.delegation_chain or [])\n        chain.append(delegating_agent_id)\n\n        return A2AAuthContext(\n            subject=current_context.subject,\n            roles=current_context.roles,\n            scopes=current_context.scopes,\n            issuer=current_context.issuer,\n            issued_at=current_context.issued_at,\n            expires_at=current_context.expires_at,\n            delegation_chain=chain,\n        )\n\n# Example: Authorization flow\ndef security_demo():\n    # Simulate a user's auth context\n    user_context = A2AAuthContext(\n        subject=\"user-42@company.com\",\n        roles=[\"developer\"],\n        scopes=[\"codereview:read\", \"codereview:write\", \"data:read\"],\n        issuer=\"https://auth.company.com\",\n        issued_at=time.time(),\n        expires_at=time.time() + 3600,  # 1 hour\n    )\n\n    # Check if user can do code review\n    authorized, reason = A2AAuthorizer.authorize(\n        user_context, \"review_pull_request\"\n    )\n    print(f\"Code review authorized: {authorized}\")\n    print(f\"Reason: {reason}\")\n\n    # Propagate identity when delegating to another agent\n    delegated_context = A2AAuthorizer.propagate_identity(\n        user_context, \"com.company.codereviewer\"\n    )\n    print(f\"\\nDelegation chain: {delegated_context.delegation_chain}\")\n\n    # Check a capability the user doesn't have access to\n    authorized, reason = A2AAuthorizer.authorize(\n        user_context, \"analyze_vulnerability\"\n    )\n    print(f\"\\nVulnerability analysis authorized: {authorized}\")\n    print(f\"Reason: {reason}\")\n\n    # Example: expired token\n    expired_context = A2AAuthContext(\n        subject=\"user-42@company.com\",\n        roles=[\"developer\"],\n        scopes=[\"codereview:write\"],\n        issuer=\"https://auth.company.com\",\n        issued_at=time.time() - 7200,\n        expires_at=time.time() - 3600,  # Expired 1 hour ago\n    )\n    authorized, reason = A2AAuthorizer.authorize(\n        expired_context, \"review_pull_request\"\n    )\n    print(f\"\\nExpired token authorized: {authorized}\")\n    print(f\"Reason: {reason}\")\n\nsecurity_demo()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1542-push-notifications",
+      children: "15.4.2 Push Notifications"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For long-running tasks, A2A supports push notifications where the agent sends results to a webhook URL rather than requiring the requester to poll. This is configured at task creation time."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nA2A Push Notification Receiver — webhook handler for task completion.\n\"\"\"\nfrom fastapi import FastAPI, Request, HTTPException\nimport hmac\nimport hashlib\nimport json\nfrom typing import Optional\n\n# In production, this would be a FastAPI app\n# app = FastAPI()\n\n# Shared secret for HMAC signature verification\nPUSH_NOTIFICATION_SECRET = \"whsec_your_webhook_secret_here\"\n\ndef verify_push_signature(\n    payload: bytes,\n    signature_header: str,\n    secret: str = PUSH_NOTIFICATION_SECRET,\n) -> bool:\n    \"\"\"\n    Verify the HMAC-SHA256 signature of a push notification.\n    This ensures the notification genuinely came from the agent.\n    \"\"\"\n    expected_signature = hmac.new(\n        secret.encode(),\n        payload,\n        hashlib.sha256,\n    ).hexdigest()\n\n    # Use hmac.compare_digest to prevent timing attacks\n    return hmac.compare_digest(\n        f\"sha256={expected_signature}\", signature_header\n    )\n\nclass PushNotificationHandler:\n    \"\"\"\n    Handles incoming A2A push notifications (task completion callbacks).\n    \"\"\"\n\n    def __init__(self, agent_client: A2AClient):\n        self.agent_client = agent_client\n\n    async def handle_notification(self, request: Request):\n        \"\"\"\n        FastAPI endpoint handler for push notifications.\n        \"\"\"\n        body = await request.body()\n        signature = request.headers.get(\"X-A2A-Signature-256\", \"\")\n\n        if not verify_push_signature(body, signature):\n            raise HTTPException(status_code=401, detail=\"Invalid signature\")\n\n        payload = json.loads(body)\n        event_type = payload.get(\"event\", \"unknown\")\n        task_id = payload.get(\"task_id\")\n        status = payload.get(\"status\")\n\n        print(f\"Push notification received: event={event_type}, \"\n              f\"task_id={task_id}, status={status}\")\n\n        if status == \"completed\":\n            # Process the completed task artifacts\n            artifacts = payload.get(\"artifacts\", [])\n            for artifact in artifacts:\n                print(f\"  Artifact received: {artifact['name']}\")\n\n            # Potentially send results to the original requester\n            return {\"received\": True, \"task_id\": task_id}\n\n        elif status == \"failed\":\n            error = payload.get(\"error_message\", \"Unknown error\")\n            print(f\"  Task failed: {error}\")\n            return {\"received\": True, \"error\": error}\n\n        return {\"received\": True, \"task_id\": task_id}\n\n# Example: Configure a task with push notifications\ndef configure_push_notification():\n    \"\"\"\n    Demonstrate how a requester sets up push notifications\n    when delegating a long-running task.\n    \"\"\"\n    push_url = \"https://my-app.com/api/a2a/push-notifications\"\n\n    request = A2AMessageBuilder.build_send_subscribe_request(\n        task_id=f\"task-{uuid.uuid4().hex[:12]}\",\n        agent_id=\"com.enterprise.heavy-compute\",\n        capability=\"train_model\",\n        input_parts=[\n            A2AMessageBuilder.text_part(\n                \"Train a regression model on the attached dataset.\"\n            ),\n        ],\n        push_notification_url=push_url,\n    )\n\n    print(\"=== A2A SendSubscribe with Push Notification ===\")\n    print(json.dumps(request, indent=2))\n    print(f\"\\nAgent will POST results to: {push_url}\")\n    print(\"The push notification includes HMAC signature for verification.\")\n\nimport uuid\nconfigure_push_notification()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "155-integration-patterns",
+      children: "15.5 Integration Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A2A does not exist in isolation. In production systems, it works alongside MCP, API gateways, and organizational frameworks to create a complete agent infrastructure."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1551-a2a-with-mcp--the-complete-stack",
+      children: "15.5.1 A2A with MCP — The Complete Stack"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TB\n    subgraph UserLayer[\"User / Application\"]\n        UI[\"Web UI / CLI / API\"]\n    end\n\n    subgraph Orchestration[\"Orchestration Layer\"]\n        AGENT[\"Orchestrator Agent\"]\n    end\n\n    subgraph A2A_Layer[\"A2A — Agent-to-Agent Interop\"]\n        A2A_1[\"Specialist Agent A\\n(Code Review)\"]\n        A2A_2[\"Specialist Agent B\\n(Data Analysis)\"]\n        A2A_3[\"Specialist Agent C\\n(Deployment)\"]\n    end\n\n    subgraph MCP_Layer[\"MCP — Tool & Data Access\"]\n        MCP_T1[\"MCP Server: GitHub\"]\n        MCP_T2[\"MCP Server: Database\"]\n        MCP_T3[\"MCP Server: Cloud API\"]\n    end\n\n    subgraph External[\"External Systems\"]\n        ES1[\"GitHub API\"]\n        ES2[\"PostgreSQL\"]\n        ES3[\"AWS / GCP\"]\n    end\n\n    UI --> AGENT\n    AGENT -->|A2A tasks_send| A2A_1\n    AGENT -->|A2A tasks_send| A2A_2\n    AGENT -->|A2A tasks_send| A2A_3\n    A2A_1 -->|MCP tools/call| MCP_T1\n    A2A_2 -->|MCP tools/call| MCP_T2\n    A2A_3 -->|MCP tools/call| MCP_T3\n    MCP_T1 --> ES1\n    MCP_T2 --> ES2\n    MCP_T3 --> ES3\n\n    style UserLayer fill:#e8f5e9,stroke:#2e7d32\n    style Orchestration fill:#e3f2fd,stroke:#1565c0\n    style A2A_Layer fill:#f3e5f5,stroke:#7b1fa2\n    style MCP_Layer fill:#fff3e0,stroke:#e65100\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1552-bridging-a2a-and-mcp",
+      children: "15.5.2 Bridging A2A and MCP"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In many architectures, the orchestrator agent communicates with specialist agents via ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "A2A"
+      }), ", and those specialist agents use ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "MCP"
+      }), " to access tools and data. This creates a clean separation:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "A2A"
+        }), " handles inter-agent communication (discovery, delegation, coordination)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MCP"
+        }), " handles agent-to-tool communication (files, databases, APIs)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nIntegration Pattern: A2A orchestrator with MCP tool access.\nDemonstrates how an A2A agent uses MCP internally to fulfill tasks.\n\"\"\"\n\nfrom dataclasses import dataclass\nfrom typing import Any\n\nclass InternalMCPClient:\n    \"\"\"\n    Simulated MCP client that an A2A agent uses internally\n    to access tools and data sources.\n    \"\"\"\n\n    async def call_tool(self, tool_name: str, args: dict) -> Any:\n        \"\"\"Call an MCP tool. In production, this would go to an MCP server.\"\"\"\n        print(f\"  [MCP] Calling tool: {tool_name} with args={args}\")\n        if tool_name == \"github_get_pr\":\n            return {\n                \"pr_number\": args[\"pr_number\"],\n                \"title\": \"Add OAuth2 authentication\",\n                \"files\": [\"auth.py\", \"db.py\"],\n                \"author\": \"dev-user\",\n            }\n        elif tool_name == \"code_analyze\":\n            return {\n                \"issues\": [\n                    {\"line\": 42, \"severity\": \"high\", \"message\": \"SQL injection risk\"},\n                    {\"line\": 87, \"severity\": \"medium\", \"message\": \"Unused import\"},\n                ]\n            }\n        return {\"result\": \"ok\"}\n\nclass A2AAgentServer:\n    \"\"\"\n    An A2A-compliant agent that uses MCP internally.\n    This agent receives tasks via A2A and executes them\n    by calling MCP tools.\n    \"\"\"\n\n    def __init__(self, agent_card: AgentCard):\n        self.card = agent_card\n        self.mcp = InternalMCPClient()\n        self.active_tasks: dict[str, A2ATask] = {}\n\n    async def handle_tasks_send(self, request: dict) -> dict:\n        \"\"\"Handle an incoming tasks_send A2A request.\"\"\"\n        params = request[\"params\"]\n        task_id = params[\"task_id\"]\n        capability = params[\"capability\"]\n        input_parts = params[\"input\"][\"parts\"]\n\n        # Create task record\n        task = A2ATask(\n            task_id=task_id,\n            state=TaskState.SUBMITTED,\n            agent_id=self.card.agent_id,\n            capability=capability,\n            input_parts=[Part(**p) for p in input_parts],\n        )\n        self.active_tasks[task_id] = task\n\n        # Execute based on capability\n        if capability == \"review_pull_request\":\n            return await self._execute_code_review(task)\n        elif capability == \"analyze_dataset\":\n            return await self._execute_data_analysis(task)\n        else:\n            return A2AMessageBuilder.build_status_response(\n                task_id=task_id,\n                status=\"failed\",\n                error_message=f\"Unknown capability: {capability}\",\n            )\n\n    async def _execute_code_review(self, task: A2ATask) -> dict:\n        \"\"\"Execute a code review by chaining MCP tools.\"\"\"\n        task.state = TaskState.WORKING\n        task.status_message = \"Fetching PR details...\"\n\n        # Step 1: Use MCP to get PR details\n        pr_data = await self.mcp.call_tool(\"github_get_pr\", {\n            \"pr_number\": 142,\n            \"repo\": \"org/my-service\",\n        })\n\n        task.status_message = \"Analyzing code for issues...\"\n\n        # Step 2: Use MCP to analyze code\n        analysis = await self.mcp.call_tool(\"code_analyze\", {\n            \"files\": pr_data[\"files\"],\n        })\n\n        # Step 3: Build artifacts from results\n        task.state = TaskState.COMPLETED\n        task.artifacts = [\n            Artifact(\n                artifact_id=f\"art-{uuid.uuid4().hex[:8]}\",\n                name=\"Code Review Results\",\n                parts=[\n                    Part(\n                        type=PartType.TEXT,\n                        text=f\"Reviewed PR #{pr_data['pr_number']}: \"\n                             f\"{pr_data['title']}\\n\\n\"\n                             f\"Found {len(analysis['issues'])} issues.\",\n                    ),\n                    Part(\n                        type=PartType.DATA,\n                        data={\n                            \"pr\": pr_data,\n                            \"issues\": analysis[\"issues\"],\n                            \"summary\": f\"{len([i for i in analysis['issues'] \"\n                                       f\"if i['severity'] == 'high'])} high, \"\n                                       f\"{len([i for i in analysis['issues'] \"\n                                       f\"if i['severity'] == 'medium'])} medium\",\n                        },\n                    ),\n                ],\n            ),\n        ]\n\n        return A2AMessageBuilder.build_status_response(\n            task_id=task.task_id,\n            status=\"completed\",\n            artifacts=[\n                A2AMessageBuilder.build_artifact(\n                    artifact_id=a.artifact_id,\n                    name=a.name,\n                    parts=[\n                        {\"type\": p.type.value, \"text\": p.text}\n                        for p in a.parts\n                    ],\n                )\n                for a in task.artifacts\n            ],\n        )\n\nasync def demonstrate_a2a_mcp_integration():\n    \"\"\"Show how A2A and MCP work together in a production flow.\"\"\"\n\n    # Create the agent card and server\n    card = AgentCard(\n        agent_name=\"CodeReviewAgent\",\n        agent_version=\"1.0.0\",\n        description=\"Code review agent that uses MCP for tool access\",\n        agent_id=\"com.demo.codereview\",\n        card_url=\"https://demo.agents/codereview/.well-known/agent-card.json\",\n        endpoints=[\"https://demo.agents/codereview/a2a\"],\n        authentication=AuthenticationInfo(\n            schemes=[AuthenticationScheme.BEARER]\n        ),\n        capabilities=[\n            Capability(\n                name=\"review_pull_request\",\n                description=\"Review pull requests using GitHub MCP tools\",\n                tags=[\"code-review\", \"github\"],\n            )\n        ],\n    )\n\n    server = A2AAgentServer(card)\n\n    # Simulate an incoming A2A request\n    request = A2AMessageBuilder.build_send_request(\n        task_id=\"task-demo-001\",\n        agent_id=\"com.demo.codereview\",\n        capability=\"review_pull_request\",\n        input_parts=[\n            A2AMessageBuilder.text_part(\"Review PR #142\"),\n        ],\n    )\n\n    print(\"=== A2A + MCP Integration Demo ===\")\n    print(f\"Agent: {card.agent_name}\")\n    print(f\"Request capability: {request['params']['capability']}\")\n\n    response = await server.handle_tasks_send(request)\n    print(f\"\\nResponse status: {response['result']['status']}\")\n    print(f\"Response artifacts: {len(response['result'].get('artifacts', []))}\")\n\n    for artifact in response['result'].get('artifacts', []):\n        print(f\"  - {artifact['name']}\")\n        for part in artifact['parts']:\n            if part['type'] == 'text':\n                print(f\"    Text: {part['text'][:100]}...\")\n            elif part['type'] == 'data':\n                print(f\"    Data keys: {list(part['data'].keys())}\")\n\n    print(\"\\n✅ A2A handled agent discovery and task delegation.\")\n    print(\"✅ MCP handled tool access (GitHub, code analysis).\")\n    print(\"Together they form a complete agent interoperability stack.\")\n\n# Run: import asyncio; asyncio.run(demonstrate_a2a_mcp_integration())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1553-enterprise-deployment-patterns",
+      children: "15.5.3 Enterprise Deployment Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In enterprise environments, A2A agents are deployed behind API gateways with service mesh integration for security, observability, and rate limiting."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nEnterprise deployment patterns for A2A agents.\nCovers gateway integration, monitoring, and resilience.\n\"\"\"\nimport json\nimport time\nfrom dataclasses import dataclass, field\nfrom typing import Optional\n\n@dataclass\nclass EnterpriseA2AConfig:\n    \"\"\"\n    Configuration for deploying an A2A agent in an enterprise setting.\n    \"\"\"\n    agent_card: AgentCard\n    rate_limit_per_minute: int = 100\n    rate_limit_per_user: int = 20\n    require_mtls: bool = False\n    enable_audit_logging: bool = True\n    max_task_duration_seconds: int = 300\n    retry_on_failure: bool = True\n    retry_max_attempts: int = 3\n    retry_backoff_seconds: float = 2.0\n    observability_endpoint: Optional[str] = None  # OpenTelemetry collector\n    service_mesh_integration: bool = True\n\n    def validate_deployment(self) -> list[str]:\n        \"\"\"Validate the enterprise configuration.\"\"\"\n        warnings = []\n\n        if not self.agent_card.authentication.schemes:\n            warnings.append(\"No authentication configured! \"\n                            \"Production agents MUST require auth.\")\n\n        if AuthenticationScheme.NONE in self.agent_card.authentication.schemes:\n            warnings.append(\"Authentication has 'none' scheme — \"\n                            \"remove for production deployments.\")\n\n        if self.max_task_duration_seconds > 600:\n            warnings.append(\"Max task duration > 10 minutes. \"\n                            \"Consider async patterns with push notifications.\")\n\n        return warnings\n\nclass EnterpriseA2AGateway:\n    \"\"\"\n    Enterprise API Gateway for A2A agents.\n    Handles rate limiting, audit logging, and routing.\n    \"\"\"\n\n    def __init__(self, config: EnterpriseA2AConfig):\n        self.config = config\n        self._request_log: list[dict] = []\n        self._rate_counters: dict[str, list[float]] = {}\n\n    def _check_rate_limit(self, user_id: str) -> bool:\n        \"\"\"Enforce rate limits per user.\"\"\"\n        now = time.time()\n        window = 60.0  # 1 minute window\n\n        if user_id not in self._rate_counters:\n            self._rate_counters[user_id] = []\n\n        # Remove old entries\n        self._rate_counters[user_id] = [\n            t for t in self._rate_counters[user_id]\n            if now - t < window\n        ]\n\n        if len(self._rate_counters[user_id]) >= self.config.rate_limit_per_user:\n            return False  # Rate limited\n\n        self._rate_counters[user_id].append(now)\n        return True\n\n    async def handle_request(\n        self, request_body: dict, user_id: str, auth_context: A2AAuthContext\n    ) -> dict:\n        \"\"\"Process an incoming A2A request through the gateway.\"\"\"\n\n        # 1. Rate limit check\n        if not self._check_rate_limit(user_id):\n            return {\n                \"jsonrpc\": \"2.0\",\n                \"id\": request_body.get(\"id\"),\n                \"error\": {\"code\": -32900, \"message\": \"Rate limit exceeded\"},\n            }\n\n        # 2. Authorization check\n        capability = request_body.get(\"params\", {}).get(\"capability\", \"\")\n        authorized, reason = A2AAuthorizer.authorize(auth_context, capability)\n        if not authorized:\n            return {\n                \"jsonrpc\": \"2.0\",\n                \"id\": request_body.get(\"id\"),\n                \"error\": {\"code\": -32001, \"message\": f\"Unauthorized: {reason}\"},\n            }\n\n        # 3. Audit logging\n        if self.config.enable_audit_logging:\n            self._request_log.append({\n                \"timestamp\": time.time(),\n                \"user_id\": user_id,\n                \"method\": request_body.get(\"method\"),\n                \"capability\": capability,\n                \"task_id\": request_body.get(\"params\", {}).get(\"task_id\"),\n                \"authorized\": True,\n            })\n\n        # 4. Forward to the agent (in production, this routes to the backend)\n        # For demo purposes, we return a mock response\n        return A2AMessageBuilder.build_status_response(\n            task_id=request_body.get(\"params\", {}).get(\"task_id\", \"unknown\"),\n            status=\"submitted\",\n        )\n\n    def get_audit_log(self) -> list[dict]:\n        \"\"\"Return the audit log for compliance review.\"\"\"\n        return self._request_log[-100:]  # Last 100 entries\n\n# Example: Enterprise configuration\ndef enterprise_deployment_demo():\n    card = AgentCard(\n        agent_name=\"EnterpriseSecureAgent\",\n        agent_version=\"3.0.0\",\n        description=\"Enterprise agent behind gateway with full audit logging\",\n        agent_id=\"com.enterprise.secure-agent\",\n        card_url=\"https://internal.agents.enterprise.com/agent/.well-known/agent-card.json\",\n        endpoints=[\"https://internal.agents.enterprise.com/agent/a2a\"],\n        authentication=AuthenticationInfo(\n            schemes=[AuthenticationScheme.BEARER, AuthenticationScheme.MTLS],\n            credentials_url=\"https://auth.enterprise.com/oauth/token\",\n            scopes=[\"agent:invoke\", \"agent:admin\"],\n        ),\n        capabilities=[\n            Capability(name=\"process_document\", description=\"Process enterprise documents\",\n                       tags=[\"document\", \"enterprise\"]),\n        ],\n        max_concurrent_tasks=50,\n    )\n\n    config = EnterpriseA2AConfig(\n        agent_card=card,\n        rate_limit_per_minute=500,\n        rate_limit_per_user=30,\n        require_mtls=True,\n        enable_audit_logging=True,\n        max_task_duration_seconds=300,\n    )\n\n    warnings = config.validate_deployment()\n    print(\"=== Enterprise Deployment Validation ===\")\n    if warnings:\n        for w in warnings:\n            print(f\"  ⚠ {w}\")\n    else:\n        print(\"  ✅ Configuration looks good!\")\n\n    print(f\"\\nAuthentication: {[s.value for s in card.authentication.schemes]}\")\n    print(f\"Rate limit: {config.rate_limit_per_minute}/min global, \"\n          f\"{config.rate_limit_per_user}/min per user\")\n    print(f\"mTLS required: {config.require_mtls}\")\n    print(f\"Audit logging: {'enabled' if config.enable_audit_logging else 'disabled'}\")\n    print(f\"Service mesh: {'integrated' if config.service_mesh_integration else 'not configured'}\")\n\nenterprise_deployment_demo()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "156-comparison-a2a-vs-mcp-vs-function-calling",
+      children: "15.6 Comparison: A2A vs MCP vs Function Calling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding when to use each protocol is critical for architecting agent systems. The three technologies serve different purposes and are often used together."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph A2A[\"A2A Protocol\"]\n        A1[Agent ↔ Agent]\n        A2[Discovery + Delegation]\n        A3[Capability-based routing]\n    end\n    subgraph MCP[\"MCP Protocol\"]\n        M1[Agent ↔ Tool/Data]\n        M2[Tool execution + Resources]\n        M3[Function calling abstraction]\n    end\n    subgraph FC[\"Function Calling\"]\n        F1[LLM ↔ API]\n        F2[Native model function API]\n        F3[Single-step invocation]\n    end\n\n    A2A ---|Complementary| MCP\n    MCP ---|Builds on| FC\n\n    style A2A fill:#e1bee7,stroke:#7b1fa2\n    style MCP fill:#bbdefb,stroke:#1565c0\n    style FC fill:#c8e6c9,stroke:#2e7d32\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1561-decision-matrix",
+      children: "15.6.1 Decision Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Dimension"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "A2A Protocol"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MCP Protocol"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Function Calling"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Primary Use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent-to-agent communication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent-to-tool/data access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM-to-API invocation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Granularity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Task-level (complex workflows)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Function-level (single operations)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single function call"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Discovery"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent cards with capability listing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tool/resource listing by server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No discovery (hardcoded)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "State Model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full task state machine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Request-response (stateless)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Request-response (stateless)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Streaming"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SSE streaming for long tasks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Streaming via transport layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native model streaming"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Delegation chain, identity propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transport-level auth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API key / OAuth"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Persistence"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tasks have IDs, can be queried"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No persistent task model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No persistent state"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "When to Use"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-agent orchestration, cross-org"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tool integration, data access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple LLM tool use"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1562-a2a-vs-mcp--detailed-comparison",
+      children: "15.6.2 A2A vs MCP — Detailed Comparison"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nFeature comparison between A2A and MCP with code-level differences.\n\"\"\"\nfrom dataclasses import dataclass\nfrom typing import List\n\n@dataclass\nclass ProtocolComparison:\n    \"\"\"Structured comparison of protocol characteristics.\"\"\"\n    protocol_name: str\n    primary_abstraction: str\n    message_pattern: str\n    state_management: str\n    is_discovery_built_in: bool\n    typical_latency: str\n    complexity: str  # Low, Medium, High\n\ncomparisons = [\n    ProtocolComparison(\n        protocol_name=\"A2A\",\n        primary_abstraction=\"Task (multi-step workflow with artifacts)\",\n        message_pattern=\"JSON-RPC with task_id tracking\",\n        state_management=\"Full task state machine (submitted→working→completed/failed)\",\n        is_discovery_built_in=True,\n        typical_latency=\"Seconds to minutes (long-running agents)\",\n        complexity=\"Medium\",\n    ),\n    ProtocolComparison(\n        protocol_name=\"MCP\",\n        primary_abstraction=\"Tool/Resource (single operation)\",\n        message_pattern=\"JSON-RPC request-response\",\n        state_management=\"Stateless (no persistent task tracking)\",\n        is_discovery_built_in=True,\n        typical_latency=\"Milliseconds to seconds (tool calls)\",\n        complexity=\"Medium\",\n    ),\n    ProtocolComparison(\n        protocol_name=\"Function Calling\",\n        primary_abstraction=\"Function definition (API contract)\",\n        message_pattern=\"LLM generates JSON arguments → API call\",\n        state_management=\"Stateless (per-turn execution)\",\n        is_discovery_built_in=False,\n        typical_latency=\"Milliseconds (single API calls)\",\n        complexity=\"Low\",\n    ),\n]\n\nclass ArchitectureAdvisor:\n    \"\"\"\n    Recommends the right protocol combination based on use case.\n    \"\"\"\n\n    @staticmethod\n    def recommend(\n        needs_multi_agent: bool,\n        needs_tool_access: bool,\n        needs_discovery: bool,\n        task_duration: str,  # \"short\" (< 1s), \"medium\" (< 60s), \"long\" (> 60s)\n        cross_org: bool,\n    ) -> List[str]:\n        \"\"\"Recommend protocols based on requirements.\"\"\"\n        recommendations = []\n\n        if needs_multi_agent or cross_org or task_duration == \"long\":\n            recommendations.append(\"A2A — for agent-to-agent delegation with task tracking\")\n\n        if needs_tool_access or (task_duration == \"short\" and not needs_multi_agent):\n            recommendations.append(\"MCP — for standardized tool and data access\")\n\n        if task_duration == \"short\" and not needs_discovery:\n            recommendations.append(\"Function Calling — simplest option for direct LLM tool use\")\n\n        if needs_multi_agent and needs_tool_access:\n            recommendations.append(\n                \"A2A + MCP — A2A for inter-agent orchestration, MCP for tool access \"\n                \"(most complete stack)\"\n            )\n\n        if not recommendations:\n            recommendations.append(\"Function Calling — sufficient for most simple use cases\")\n\n        return recommendations\n\n# Example: Recommendation engine\ndef comparison_demo():\n    print(\"=== Protocol Comparison ===\")\n    for comp in comparisons:\n        print(f\"\\n{comp.protocol_name}:\")\n        print(f\"  Abstraction: {comp.primary_abstraction}\")\n        print(f\"  Message: {comp.message_pattern}\")\n        print(f\"  State: {comp.state_management}\")\n        print(f\"  Built-in discovery: {comp.is_discovery_built_in}\")\n        print(f\"  Typical latency: {comp.typical_latency}\")\n        print(f\"  Complexity: {comp.complexity}\")\n\n    print(\"\\n\\n=== Architecture Recommendations ===\")\n    advisor = ArchitectureAdvisor()\n\n    scenarios = [\n        {\n            \"name\": \"Enterprise Multi-Agent System\",\n            \"args\": {\n                \"needs_multi_agent\": True,\n                \"needs_tool_access\": True,\n                \"needs_discovery\": True,\n                \"task_duration\": \"medium\",\n                \"cross_org\": True,\n            },\n        },\n        {\n            \"name\": \"Single Agent with Database Access\",\n            \"args\": {\n                \"needs_multi_agent\": False,\n                \"needs_tool_access\": True,\n                \"needs_discovery\": False,\n                \"task_duration\": \"short\",\n                \"cross_org\": False,\n            },\n        },\n        {\n            \"name\": \"Simple Chatbot with Calculator\",\n            \"args\": {\n                \"needs_multi_agent\": False,\n                \"needs_tool_access\": False,\n                \"needs_discovery\": False,\n                \"task_duration\": \"short\",\n                \"cross_org\": False,\n            },\n        },\n    ]\n\n    for scenario in scenarios:\n        print(f\"\\n📋 {scenario['name']}:\")\n        recs = advisor.recommend(**scenario[\"args\"])\n        for r in recs:\n            print(f\"  → {r}\")\n\ncomparison_demo()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1563-when-to-use-a2a",
+      children: "15.6.3 When to Use A2A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multi-agent orchestration"
+        }), ": Your system has multiple specialist agents that need to coordinate."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cross-organizational workflows"
+        }), ": Agents from different companies or departments need to collaborate."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Long-running tasks"
+        }), ": Your agents perform work that takes minutes or hours (not milliseconds)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Capability-based routing"
+        }), ": You need to dynamically discover which agent can handle a specific task."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Audit and compliance"
+        }), ": You need full task lifecycle tracking for regulatory requirements."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1564-when-not-to-use-a2a",
+      children: "15.6.4 When Not to Use A2A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Simple tool calls"
+        }), ": Your agent just needs to call an API or database — use MCP or function calling."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Single agent systems"
+        }), ": If you only have one agent, there's no one to talk to."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Latency-critical paths"
+        }), ": A2A adds overhead from discovery, authentication, and task state tracking."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Homogeneous systems"
+        }), ": If all agents are built on the same framework (e.g., all CrewAI), use that framework's native communication instead."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-explain-the-agent-to-agent-a2a-protocol-and-how-it-differs-from-mcp",
+      children: "Q1: Explain the Agent-to-Agent (A2A) protocol and how it differs from MCP."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " A2A is Google's open protocol for agent-to-agent interoperability. It standardizes how agents discover each other, announce capabilities, delegate tasks, and exchange artifacts using JSON-RPC messages. The key difference from MCP is: A2A is agent-to-agent communication (coordination, delegation), while MCP is agent-to-tool communication (tool execution, data access). They are complementary — a complete system uses A2A for inter-agent orchestration and MCP for tool access."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-what-is-an-agent-card-and-what-information-does-it-contain",
+      children: "Q2: What is an Agent Card and what information does it contain?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " An Agent Card is a JSON metadata document that every A2A-compliant agent publishes. It contains: agent identity (name, ID, version), description, endpoint URLs, authentication requirements (OAuth, mTLS, etc.), list of capabilities with input/output schemas, supported transport protocols, rate limiting info, and links to documentation/policies. It's analogous to an OpenAPI spec but designed specifically for agents. The card is typically hosted at ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/.well-known/agent-card.json"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-describe-the-a2a-task-state-machine-and-its-transitions",
+      children: "Q3: Describe the A2A task state machine and its transitions."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " The A2A task state machine has six states: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "submitted"
+      }), " (task received, queued), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "working"
+      }), " (actively being processed), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "input-required"
+      }), " (needs more information from requester), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "completed"
+      }), " (successful with artifacts), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "failed"
+      }), " (encountered error), and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "canceled"
+      }), " (requester aborted). Transitions: submitted → working, working → completed/failed/canceled/input-required, input-required → working (after requester provides input). This state model enables reliable tracking of long-running agent tasks."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-how-does-a2a-handle-agent-discovery",
+      children: "Q4: How does A2A handle agent discovery?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " A2A supports three discovery mechanisms: 1) Direct Card Fetch — the requester knows the agent's card URL and fetches it directly. 2) Well-Known Endpoint — agents serve their card at ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/.well-known/agent-card.json"
+      }), " (similar to OIDC discovery). 3) Directory Registry — a centralized or federated registry indexes agent cards for search-based discovery. The agent card contains all capability and authentication information needed to interact with the agent."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-explain-identity-propagation-in-a2a-and-why-it-matters",
+      children: "Q5: Explain identity propagation in A2A and why it matters."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Identity propagation ensures that when Agent A delegates a task to Agent B, Agent B knows the original caller's identity (not just Agent A's). In A2A, this is handled through delegation chains — a list of agent IDs appended to the auth context as tasks pass from one agent to another. This is critical for: audit trails (knowing who initiated a workflow), authorization (enforcing the original caller's permissions), and debugging (tracing cross-agent issues). The delegation chain prevents infinite delegation loops by capping depth."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-how-does-a2a-compare-to-function-calling-in-llms",
+      children: "Q6: How does A2A compare to function calling in LLMs?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Function calling is LLM-to-API: the model generates JSON arguments for a predefined function, the system executes it, and returns results. It's single-step, stateless, and has no discovery. A2A is agent-to-agent: full task lifecycle management, capability discovery, artifact exchange, streaming updates, and identity propagation. Use function calling for simple tool use within a single agent. Use A2A when you need multiple agents to coordinate on complex, long-running workflows across organizational boundaries."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-what-transport-protocols-does-a2a-support-and-when-would-you-use-each",
+      children: "Q7: What transport protocols does A2A support and when would you use each?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " A2A is transport-agnostic but commonly supports: 1) HTTP/2 — standard request-response for most use cases. 2) WebSockets — bidirectional streaming for real-time task updates. 3) gRPC — high-performance, typed communication for internal microservice agents. 4) SSE (Server-Sent Events) — one-directional streaming for task progress updates. The choice depends on requirements: HTTP/2 for general use, WebSockets for interactive agents, gRPC for high-throughput internal systems."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-how-do-you-secure-an-a2a-deployment-in-production",
+      children: "Q8: How do you secure an A2A deployment in production?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Production A2A security involves: 1) Authentication — OAuth 2.0 (Bearer JWT) or mTLS as declared in the agent card. 2) Authorization — RBAC with scope and role validation per capability. 3) Identity Propagation — delegation chains preserve the original caller's identity. 4) Push Notification Verification — HMAC signatures on webhook callbacks. 5) Rate Limiting — per-user and global limits enforced at the gateway. 6) Audit Logging — all task requests and delegations logged for compliance. 7) Delegation Depth Limits — prevent infinite delegation loops (max 5 hops)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q9-describe-a-real-world-architecture-using-both-a2a-and-mcp",
+      children: "Q9: Describe a real-world architecture using both A2A and MCP."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Consider an enterprise code review system: An orchestrator agent receives review requests. It uses A2A to delegate to specialist agents — a Code Review Agent, a Security Analysis Agent, and a Documentation Agent. Each specialist uses MCP internally to access tools: the Code Review Agent uses MCP to call GitHub's API, the Security Agent uses MCP to run vulnerability scanners, and the Documentation Agent uses MCP to query a knowledge base. The orchestrator collects artifacts from all three via A2A and produces a consolidated report. A2A handles inter-agent coordination; MCP handles tool access."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q10-what-are-the-limitations-of-a2a-you-would-consider-before-adopting-it",
+      children: "Q10: What are the limitations of A2A you would consider before adopting it?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Key limitations: 1) Overhead — discovery, authentication, and state tracking add latency vs direct function calling. 2) Complexity — requires agent card management, task state persistence, and delegation chain logic. 3) Maturity — A2A is newer than MCP or function calling; ecosystem and tooling are still evolving. 4) Not for simple use cases — if you have one agent calling one API, A2A is overkill. 5) Framework support — not all agent frameworks natively support A2A yet; you may need custom adapters. 6) Cross-org trust — identity propagation across organizational boundaries requires mutual trust infrastructure."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Agent-to-Agent (A2A) protocol, introduced by Google in 2025, is a pivotal technology for the emerging multi-agent ecosystem. It defines a standard way for autonomous agents from different vendors and frameworks to discover each other, announce capabilities, delegate tasks, and exchange results. Built on JSON-RPC 2.0 with a well-defined task state machine, A2A handles the full lifecycle of agent-to-agent interactions — from capability discovery through task completion and artifact delivery."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A2A is designed to be complementary to the Model Context Protocol (MCP): MCP standardizes how agents connect to tools and data, while A2A standardizes how agents connect to other agents. Together they form a complete interoperability stack. Security is a first-class concern, with support for OAuth 2.0, mTLS, identity propagation via delegation chains, and HMAC-signed push notifications."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For AI engineers, understanding A2A is essential for architecting production multi-agent systems that span organizational boundaries. The protocol's capability-driven discovery model, robust task lifecycle, and enterprise security patterns make it the emerging standard for agent interoperability in production environments."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz-5-mcq",
+      children: "Chapter Quiz (5 MCQ)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "questions",
+      children: "Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the primary purpose of Google's A2A protocol?\na) Standardize how LLMs call functions\nb) Enable direct agent-to-agent communication and task delegation\nc) Replace REST APIs with JSON-RPC\nd) Define a new model training protocol"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which document does an A2A agent publish to describe its capabilities?\na) OpenAPI specification\nb) Agent Card\nc) Function manifest\nd) Capability flag"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the correct sequence of states in an A2A task lifecycle?\na) created → running → done\nb) submitted → working → completed/failed/canceled/input-required\nc) queued → processing → finished\nd) pending → active → terminated"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "How does A2A differ from MCP?\na) A2A is for agent-to-agent, MCP is for agent-to-tool communication\nb) A2A uses REST, MCP uses gRPC\nc) A2A is Google-only, MCP is open source\nd) A2A is stateless, MCP has task tracking"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "When should you choose A2A over function calling?\na) When calling a single API from an LLM\nb) When orchestrating multiple specialist agents across organizational boundaries\nc) When you need the lowest possible latency\nd) When building a stateless chatbot"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "answers",
+      children: "Answers"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b — A2A enables direct agent-to-agent communication and task delegation, unlike function calling (LLM-to-API) or MCP (agent-to-tool)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b — The Agent Card is the JSON metadata document containing agent identity, capabilities, and authentication info."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b — The A2A state machine is: submitted → working → completed/failed/canceled/input-required (with input-required transitioning back to working)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a — A2A handles agent-to-agent coordination; MCP handles agent-to-tool/data access. They are complementary."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b — A2A is designed for multi-agent orchestration across boundaries. Function calling is simpler and better for single-tool, single-agent scenarios."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Confusing A2A with MCP"
+        }), ": A2A is agent-to-agent; MCP is agent-to-tool. They are complementary, not alternatives."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Ignoring security"
+        }), ": Deploying A2A agents without authentication or identity propagation creates severe vulnerabilities."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Over-engineering simple use cases"
+        }), ": Using A2A for a single agent calling one API is unnecessary — use function calling instead."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Missing delegation depth limits"
+        }), ": Without max delegation depth, agents can create infinite delegation loops."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not validating push notifications"
+        }), ": Always verify HMAC signatures on push notification webhooks to prevent spoofing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Neglecting rate limiting"
+        }), ": Production A2A agents without rate limits can be overwhelmed by cascading delegations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Stateless task handling"
+        }), ": A2A tasks can be long-running; always persist task state and support status queries."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "A2A"
+        }), ": Google's open protocol for agent-to-agent communication (April 2025)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Agent Card"
+        }), ": JSON metadata at ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "/.well-known/agent-card.json"
+        }), " with identity, capabilities, auth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Task states"
+        }), ": submitted → working → input-required → working → completed/failed/canceled."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Artifacts"
+        }), ": Named outputs with parts — text (string), file (URL + MIME), data (structured JSON)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JSON-RPC"
+        }), ": methods = tasks_send, tasks_get, tasks_cancel, tasks_sendSubscribe."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Discovery"
+        }), ": direct card fetch, well-known endpoint, or directory registry."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Identity propagation"
+        }), ": delegation chain in auth context, max 5 hops."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Security"
+        }), ": OAuth 2.0, mTLS, RBAC, HMAC push notification verification."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "A2A vs MCP"
+        }), ": A2A = agent coordination; MCP = tool access. Use both together."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Enterprise"
+        }), ": gateway, rate limiting, audit logging, service mesh, OpenTelemetry."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises-5",
+      children: "Exercises (5)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-1-build-an-agent-card",
+      children: "Exercise 1: Build an Agent Card"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create an AgentCard for a \"Data Summarizer Agent\" that has three capabilities: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "summarize_text"
+      }), " (input: text, output: summary), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "extract_keywords"
+      }), " (input: text, output: keyword list), and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "generate_report"
+      }), " (input: data dict, output: PDF URL). The agent requires OAuth 2.0 authentication with \"data:read\" and \"data:write\" scopes. Include proper rate limiting and endpoint URLs."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-task-delegation-flow",
+      children: "Exercise 2: Task Delegation Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Write Python code that simulates a complete task delegation flow:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent A discovers Agent B's card"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Agent A sends a task using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "tasks_send"
+        }), " with a text part containing \"Summarize the quarterly earnings report\""]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent B responds with status \"submitted\", then \"working\" at 30%, then \"working\" at 70%, then \"completed\""
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The completed response includes an artifact with a text part containing the summary and a data part with statistics"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-a2a--mcp-integration",
+      children: "Exercise 3: A2A + MCP Integration"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Build a simulated \"Research Agent\" that receives A2A task requests and internally uses three MCP tools: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "web_search"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "database_query"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "document_generate"
+      }), ". Show how the A2A task is decomposed into MCP tool calls and the results are assembled into an artifact. Include proper error handling if one of the MCP tools fails."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-security-authorization",
+      children: "Exercise 4: Security Authorization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement an authorization system where:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "User \"alice\" has roles [\"analyst\"] and scopes [\"data:read\"]"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "User \"bob\" has roles [\"admin\"] and scopes [\"data:read\", \"data:write\", \"admin\"]"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Capability \"delete_dataset\" requires scope \"admin\" and role \"admin\""
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Capability \"view_dataset\" requires scope \"data:read\" and role [\"analyst\", \"admin\"]"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Show that alice can view but not delete, and bob can do both"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Demonstrate identity propagation when alice's request is delegated through a processing agent"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-protocol-decision-framework",
+      children: "Exercise 5: Protocol Decision Framework"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Create a function ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "recommend_protocol(requirements: dict) -> str"
+      }), " that takes a dictionary with keys: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "multi_agent: bool"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "needs_tool_access: bool"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "task_duration_seconds: int"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "cross_org: bool"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "needs_discovery: bool"
+      }), " and returns a recommendation string explaining whether to use A2A, MCP, function calling, or a combination. Test it on at least 5 different scenarios."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "A2A is agent-to-agent"
+        }), ": Google's open protocol for agent interoperability via discovery, capability announcement, and task delegation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Agent Cards are the foundation"
+        }), ": Every A2A agent publishes a JSON card describing its identity, capabilities, authentication, and endpoints — enabling dynamic discovery."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JSON-RPC 2.0 message format"
+        }), ": Tasks use a state machine (submitted → working → completed/failed/canceled) with artifacts containing parts (text, file, data)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Security is built in"
+        }), ": OAuth 2.0, mTLS, identity propagation with delegation chains, and HMAC-signed push notifications."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "A2A + MCP = complete stack"
+        }), ": A2A handles inter-agent orchestration; MCP handles tool/data access. Used together in production systems."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Choose the right protocol"
+        }), ": A2A for multi-agent, cross-org workflows. MCP for tool access. Function calling for simple LLM tool use."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Enterprise patterns"
+        }), ": API gateways, rate limiting, audit logging, and service mesh integration are essential for production A2A deployments."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of Agent-to-Agent (A2A) Protocol in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function that demonstrates Agent-to-Agent (A2A) Protocol."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding Agent-to-Agent (A2A) Protocol. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system that relies on Agent-to-Agent (A2A) Protocol from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare Agent-to-Agent (A2A) Protocol with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component that depends on Agent-to-Agent (A2A) Protocol."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does Agent-to-Agent (A2A) Protocol behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of Agent-to-Agent (A2A) Protocol run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of Agent-to-Agent (A2A) Protocol that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name Agent-to-Agent (A2A) Protocol explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Agent-to-Agent (A2A) Protocol\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies Agent-to-Agent (A2A) Protocol to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside Agent-to-Agent (A2A) Protocol (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of Agent-to-Agent (A2A) Protocol and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a Agent-to-Agent (A2A) Protocol-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic Agent-to-Agent (A2A) Protocol interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply Agent-to-Agent (A2A) Protocol in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Agent-to-Agent (A2A) Protocol builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for Agent-to-Agent (A2A) Protocol before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for Agent-to-Agent (A2A) Protocol is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for Agent-to-Agent (A2A) Protocol in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the Agent-to-Agent (A2A) Protocol chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers Agent-to-Agent (A2A) Protocol is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to Agent-to-Agent (A2A) Protocol is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing Agent-to-Agent (A2A) Protocol is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug Agent-to-Agent (A2A) Protocol issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to Agent-to-Agent (A2A) Protocol in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving Agent-to-Agent (A2A) Protocol that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of Agent-to-Agent (A2A) Protocol is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain Agent-to-Agent (A2A) Protocol in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for Agent-to-Agent (A2A) Protocol and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of Agent-to-Agent (A2A) Protocol on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain Agent-to-Agent (A2A) Protocol to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of Agent-to-Agent (A2A) Protocol from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered Agent-to-Agent (A2A) Protocol when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining Agent-to-Agent (A2A) Protocol twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own Agent-to-Agent (A2A) Protocol snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of Agent-to-Agent (A2A) Protocol listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link Agent-to-Agent (A2A) Protocol to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of Agent-to-Agent (A2A) Protocol by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain Agent-to-Agent (A2A) Protocol to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary tool or library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter referenced in Related Topics for the next-level treatment of Agent-to-Agent (A2A) Protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic textbook chapter on Agent-to-Agent (A2A) Protocol (check the Research References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Two blog posts from engineers who debugged real Agent-to-Agent (A2A) Protocol problems in production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The repository of the open-source project that implements Agent-to-Agent (A2A) Protocol"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for Agent-to-Agent (A2A) Protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on Agent-to-Agent (A2A) Protocol"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how Agent-to-Agent (A2A) Protocol fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how Agent-to-Agent (A2A) Protocol is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where Agent-to-Agent (A2A) Protocol is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of Agent-to-Agent (A2A) Protocol, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is Agent-to-Agent (A2A) Protocol asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent-to-Agent (A2A) Protocol is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with Agent-to-Agent (A2A) Protocol."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent-to-Agent (A2A) Protocol emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for Agent-to-Agent (A2A) Protocol today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about Agent-to-Agent (A2A) Protocol — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around Agent-to-Agent (A2A) Protocol changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing Agent-to-Agent (A2A) Protocol."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent-to-Agent (A2A) Protocol appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding Agent-to-Agent (A2A) Protocol helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the Agent-to-Agent (A2A) Protocol concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, Agent-to-Agent (A2A) Protocol skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply Agent-to-Agent (A2A) Protocol to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Agent-to-Agent (A2A) Protocol is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the Agent-to-Agent (A2A) Protocol skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-15a2aprotocol-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of Agent-to-Agent (A2A) Protocol in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Review the first paragraph of the Theory section and condense it to one sentence."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-15a2aprotocol-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Common Mistakes section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-15a2aprotocol-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard Agent-to-Agent (A2A) Protocol approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Refer to the theory and complexity analysis in this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-15a2aprotocol-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is Agent-to-Agent (A2A) Protocol NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Limitations section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-15a2aprotocol-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is Agent-to-Agent (A2A) Protocol applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Real-World Examples section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for Agent-to-Agent (A2A) Protocol (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing Agent-to-Agent (A2A) Protocol (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for Agent-to-Agent (A2A) Protocol-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running Agent-to-Agent (A2A) Protocol in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of Agent-to-Agent (A2A) Protocol code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on Agent-to-Agent (A2A) Protocol"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in Agent-to-Agent (A2A) Protocol code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the Agent-to-Agent (A2A) Protocol example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain Agent-to-Agent (A2A) Protocol in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of Agent-to-Agent (A2A) Protocol."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a Agent-to-Agent (A2A) Protocol problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where Agent-to-Agent (A2A) Protocol is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for Agent-to-Agent (A2A) Protocol."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core Agent-to-Agent (A2A) Protocol logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain Agent-to-Agent (A2A) Protocol without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses Agent-to-Agent (A2A) Protocol daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": Agent-to-Agent (A2A) Protocol patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": Agent-to-Agent (A2A) Protocol principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": Agent-to-Agent (A2A) Protocol shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect Agent-to-Agent (A2A) Protocol to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Agent-to-Agent (A2A) Protocol, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of Agent-to-Agent (A2A) Protocol depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

@@ -1,0 +1,1262 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[22910],{
+
+/***/ 50821
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_devops_05_containerization_md_bac_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-devops-05-containerization-md-bac.json
+const site_docs_courses_devops_05_containerization_md_bac_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/devops/05-containerization","title":"Chapter 5: Containerization","description":"Prev: CI/CD","source":"@site/docs/courses/devops/05-containerization.md","sourceDirName":"courses/devops","slug":"/devops/05-containerization","permalink":"/ai-engineering-journey/devops/05-containerization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":8,"frontMatter":{"id":"05-containerization","slug":"/devops/05-containerization","title":"Chapter 5: Containerization","sidebar_label":"Chapter 5: Containerization","sidebar_position":8},"sidebar":"coursesSidebar","previous":{"title":"Chapter 4: Continuous Integration","permalink":"/ai-engineering-journey/devops/04-continuous-integration"},"next":{"title":"Chapter 5: Docker","permalink":"/ai-engineering-journey/devops/05-docker"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/devops/05-containerization.md
+
+
+const frontMatter = {
+	id: '05-containerization',
+	slug: '/devops/05-containerization',
+	title: 'Chapter 5: Containerization',
+	sidebar_label: 'Chapter 5: Containerization',
+	sidebar_position: 8
+};
+const contentTitle = 'Chapter 5: Containerization';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Containers vs Virtual Machines",
+  "id": "containers-vs-virtual-machines",
+  "level": 3
+}, {
+  "value": "OCI Standards",
+  "id": "oci-standards",
+  "level": 3
+}, {
+  "value": "Container Image Layers",
+  "id": "container-image-layers",
+  "level": 3
+}, {
+  "value": "Multi-Stage Builds",
+  "id": "multi-stage-builds",
+  "level": 3
+}, {
+  "value": "Container Security",
+  "id": "container-security",
+  "level": 3
+}, {
+  "value": "Container Networking and Communication",
+  "id": "container-networking-and-communication",
+  "level": 3
+}, {
+  "value": "Container Runtime Deep Dive",
+  "id": "container-runtime-deep-dive",
+  "level": 3
+}, {
+  "value": "Container Storage Patterns",
+  "id": "container-storage-patterns",
+  "level": 3
+}, {
+  "value": "Container Registries",
+  "id": "container-registries",
+  "level": 3
+}, {
+  "value": "Examples",
+  "id": "examples",
+  "level": 2
+}, {
+  "value": "Example 1: Multi-Stage Build for TypeScript Application",
+  "id": "example-1-multi-stage-build-for-typescript-application",
+  "level": 3
+}, {
+  "value": "Example 2: Container Security Scanner",
+  "id": "example-2-container-security-scanner",
+  "level": 3
+}, {
+  "value": "Example 3: Dockerfile Generator",
+  "id": "example-3-dockerfile-generator",
+  "level": 3
+}, {
+  "value": "Container Layer Cache Analyzer",
+  "id": "container-layer-cache-analyzer",
+  "level": 3
+}, {
+  "value": "Container Image Vulnerability Scanner Integration",
+  "id": "container-image-vulnerability-scanner-integration",
+  "level": 3
+}, {
+  "value": "Container Registry Cleanup and Retention Manager",
+  "id": "container-registry-cleanup-and-retention-manager",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Container Runtime Security",
+  "id": "container-runtime-security",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    br: "br",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-5-containerization",
+        children: "Chapter 5: Containerization"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prev:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/devops/04-continuous-integration",
+          children: "CI/CD"
+        }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/devops/05-docker",
+          children: "Docker"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand containerization concepts and how containers differ from virtual machines."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the benefits of containers for DevOps: consistency, lightweight isolation, and fast startup."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand the container ecosystem: Docker, containerd, OCI standards, and container runtimes."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design multi-stage builds for smaller and more secure images."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement container security best practices."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand image layering and caching for efficient builds."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/devops/05-containerization/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/devops/05-containerization/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/devops/05-containerization/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/devops/05-containerization/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/devops/05-containerization/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/devops/05-containerization/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Containers vs VMs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared kernel vs hypervisor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Containers are lighter but share the host OS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OCI Standards"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open Container Initiative"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ensures portability across container runtimes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Image Layers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Union filesystem (OverlayFS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer ordering affects caching and rebuild speed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-Stage Builds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Separate build from runtime"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Produces tiny production images"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Container Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Least privilege, no root"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Run as non-root user, read-only root filesystem"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource Limits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU, memory, disk constraints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevent noisy neighbor problems"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Container Registry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Store and distribute images"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use immutable tags (SHA digest)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Container Concepts] --> B[VM Comparison]\n    A --> C[OCI Standards]\n    C --> D[Image Specification]\n    C --> E[Runtime Specification]\n    D --> F[Docker]\n    D --> G[Podman]\n    D --> H[containerd]\n    F --> I[Image Layers]\n    I --> J[Multi-Stage Builds]\n    J --> K[Security Hardening]\n    K --> L[Registry]\n    L --> M[Deployment]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "containers-vs-virtual-machines",
+      children: "Containers vs Virtual Machines"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The fundamental difference is kernel architecture:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    subgraph \"Virtual Machines\"\n        V1[Hypervisor]\n        V1 --> VM1[Guest OS]\n        V1 --> VM2[Guest OS]\n        V1 --> VM3[Guest OS]\n        VM1 --> APP1[App]\n        VM2 --> APP2[App]\n        VM3 --> APP3[App]\n    end\n    subgraph \"Containers\"\n        C1[Host OS Kernel]\n        C1 --> CT1[Container]\n        C1 --> CT2[Container]\n        C1 --> CT3[Container]\n        CT1 --> CAP1[App]\n        CT2 --> CAP2[App]\n        CT3 --> CAP3[App]\n    end\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Virtual Machine"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Container"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each VM has its own OS kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All containers share the host kernel"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Startup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minutes (OS boot)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Milliseconds (process start)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GB (full OS image)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MB (app + dependencies)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-level isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespace + cgroup isolation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Resource overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (full OS per VM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal (only app process)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Portability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM image format"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OCI image standard"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "oci-standards",
+      children: "OCI Standards"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Open Container Initiative defines two core specifications:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Image Specification (image-spec):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Defines how container images are built and structured"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Images consist of a manifest, config file, and layer tarballs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Content-addressable storage via digest (SHA-256)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Runtime Specification (runtime-spec):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Defines how containers are executed"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configures namespaces, cgroups, mounts, capabilities"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Defines the lifecycle (create, start, stop, delete)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "OCI-compliant runtimes:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "runc (reference implementation, used by Docker)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "crun (C-based, faster than runc)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Youki (Rust-based)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Kata Containers (VM-based isolation)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-image-layers",
+      children: "Container Image Layers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Container images are built as a stack of read-only layers on top of a union filesystem (OverlayFS):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph \"Container Image\"\n        A[Layer 0: Base Image<br/>Ubuntu/Debian/Alpine]\n        B[Layer 1: System Packages<br/>ca-certificates, curl]\n        C[Layer 2: Runtime<br/>Node.js, Python]\n        D[Layer 3: Application Code<br/>src/]\n        E[Layer 4: Config<br/>package.json, .env]\n        F[Layer 5: Container Config<br/>CMD, ENTRYPOINT]\n    end\n    A --> B --> C --> D --> E --> F\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each Dockerfile instruction creates a new layer. Layers are cached and reused across builds:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Layer caching rules:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If a layer's instructions and context haven't changed, Docker reuses the cached layer"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If a layer changes, all subsequent layers must be rebuilt"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Order matters: place infrequently changing instructions first (system deps, package install)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Place frequently changing instructions last (application code)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "multi-stage-builds",
+      children: "Multi-Stage Builds"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-stage builds use multiple FROM statements to separate the build environment from the runtime environment:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph \"Build Stage\"\n        B1[FROM node:20 AS build]\n        B2[COPY package*.json ./]\n        B3[RUN npm ci]\n        B4[COPY src/ ./]\n        B5[RUN npm run build]\n    end\n    subgraph \"Runtime Stage\"\n        R1[FROM node:20-alpine]\n        R2[COPY --from=build dist/ ./]\n        R3[USER node]\n        R4[CMD node server.js]\n    end\n    B5 --> R2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Benefits:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tiny production images (no build tools, no dev dependencies)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "No source code in production images"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reduced attack surface"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Faster deployments with smaller images"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-security",
+      children: "Container Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Principle of least privilege:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Run as non-root user (never as root inside container)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Drop unnecessary Linux capabilities"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use read-only root filesystem"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Don't run SSH daemons in containers"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Image scanning:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Scan for known vulnerabilities (Trivy, Snyk, Grype)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use minimal base images (distroless, alpine)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pin base images to specific digests"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Regularly rebuild images (even with same code) to pick up security patches"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Runtime security:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set resource limits (CPU, memory)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use seccomp profiles to restrict syscalls"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use AppArmor/SELinux for mandatory access control"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Disable privilege escalation (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "--security-opt no-new-privileges"
+        }), ")"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-networking-and-communication",
+      children: "Container Networking and Communication"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Containers communicate through various network models:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph \"Host A\"\n        C1[Container 1<br/>port 3000]\n        C2[Container 2<br/>port 3000]\n        B1[Bridge Network<br/>172.17.0.0/16]\n        C1 --- B1\n        C2 --- B1\n    end\n    subgraph \"Host B\"\n        C3[Container 3<br/>port 3000]\n        C4[Container 4<br/>port 3000]\n        B2[Bridge Network<br/>172.18.0.0/16]\n        C3 --- B2\n        C4 --- B2\n    end\n    B1 <--> O[Overlay Network]\n    B2 <--> O\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Network modes:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Bridge:"
+        }), " Default isolated network with internal DNS"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Host:"
+        }), " Container uses host network stack directly"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Overlay:"
+        }), " Multi-host networking for orchestration platforms"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Macvlan:"
+        }), " Assign MAC addresses for direct network attachment"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Communication patterns:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sidecar proxy:"
+        }), " Envoy, Linkerd for service mesh"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Ambassador:"
+        }), " Proxy container that brokers external connections"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Adapter:"
+        }), " Normalizes container output to monitoring systems"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-runtime-deep-dive",
+      children: "Container Runtime Deep Dive"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Container runtimes implement the OCI runtime specification and can be categorized by isolation level:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Runtime"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Isolation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "runc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespace/cgroup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General-purpose containers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "crun"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard (C)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespace/cgroup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~30% faster than runc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-density deployments"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Youki"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard (Rust)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespace/cgroup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comparable to crun"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory-safe runtime"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Kata Containers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM-based"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lightweight VM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10% overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-tenant security"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "gVisor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sandboxed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~30-50% overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Untrusted workloads"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Firecracker"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MicroVM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lightweight VM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS Lambda/Fargate"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Choosing a runtime:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Standard workloads with trusted containers ? ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "runc"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "crun"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Multi-tenant SaaS with untrusted code ? ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Kata Containers"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Serverless/functions with fast startup ? ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Firecracker"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["High-security environments with untrusted images ? ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "gVisor"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-storage-patterns",
+      children: "Container Storage Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Container storage follows ephemeral-by-default with options for persistence:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Pattern"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Persistence"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ephemeral"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Container's writable layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lost on restart"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateless apps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Volume mount"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Docker-managed storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Survives restart"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Databases, stateful apps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bind mount"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Host directory mapped in"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Host-persistent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Development hot-reload"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tmpfs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-memory storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lost on restart"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Secrets, cache"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CSI (Container Storage Interface)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plugin-based storage for orchestrators"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Orchestrator-managed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production stateful workloads"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Container storage best practices:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Separate compute from storage — use managed databases instead of database containers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use persistent volumes for logs that must survive container restarts"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Avoid storing secrets in container images — use secret injection mechanisms"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure storage quotas per container to prevent disk exhaustion"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use ReadWriteMany volumes for shared file access across replicas"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-registries",
+      children: "Container Registries"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Registries store and distribute container images:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Registry"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Features"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Docker Hub"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Public/Private"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Most popular, automated builds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GitHub Container Registry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Integrated with GitHub"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free for public images"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Amazon ECR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IAM integration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Google Artifact Registry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cloud-native"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure Container Registry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACR tasks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Harbor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Self-hosted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vulnerability scanning, replication"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Tagging strategies:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Immutable tags: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "v1.0.0"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "sha-abc1234"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Mutable tags: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "latest"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "stable"
+        }), " (use carefully)"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Best practice: always reference by digest in production"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples",
+      children: "Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-1-multi-stage-build-for-typescript-application",
+      children: "Example 1: Multi-Stage Build for TypeScript Application"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-dockerfile",
+        children: "# Stage 1: Build\nFROM node:20-alpine AS builder\n\nWORKDIR /app\n\n# Install dependencies first (caching optimization)\nCOPY package.json package-lock.json ./\nRUN npm ci --only=production && \\\n    npm ci --only=dev\n\n# Copy source and build\nCOPY tsconfig.json ./\nCOPY src/ ./src/\nRUN npm run build\n\n# Stage 2: Production runtime\nFROM node:20-alpine AS production\n\n# Security: create non-root user\nRUN addgroup -S appgroup && adduser -S appuser -G appgroup\n\nWORKDIR /app\n\n# Copy only production dependencies and built output\nCOPY package.json package-lock.json ./\nRUN npm ci --only=production && \\\n    npm cache clean --force\n\nCOPY --from=builder /app/dist ./dist\n\n# Security: non-root user\nUSER appuser\n\n# Security: read-only filesystem\n# (enable at runtime with --read-only --tmpfs /tmp)\n\nEXPOSE 3000\n\nHEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \\\n  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1\n\nCMD [\"node\", \"dist/server.js\"]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-2-container-security-scanner",
+      children: "Example 2: Container Security Scanner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "import { execSync } from 'child_process';\n\ninterface Vulnerability {\n  id: string;\n  severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';\n  package: string;\n  installedVersion: string;\n  fixedVersion: string;\n  description: string;\n}\n\ninterface ScanResult {\n  image: string;\n  vulnerabilities: Vulnerability[];\n  passed: boolean;\n}\n\nclass ContainerSecurityScanner {\n  async scanImage(imageName: string, tag: string): Promise<ScanResult> {\n    console.log(`?? Scanning ${imageName}:${tag}...`);\n\n    // Simulated Trivy scan integration\n    const results: Vulnerability[] = [\n      {\n        id: 'CVE-2024-1234',\n        severity: 'HIGH',\n        package: 'lodash',\n        installedVersion: '4.17.20',\n        fixedVersion: '4.17.21',\n        description: 'Prototype pollution in lodash',\n      },\n    ];\n\n    const criticalCount = results.filter(v => v.severity === 'CRITICAL').length;\n    const highCount = results.filter(v => v.severity === 'HIGH').length;\n\n    // Fail on CRITICAL or HIGH vulnerabilities\n    const passed = criticalCount === 0 && highCount === 0;\n\n    return { image: `${imageName}:${tag}`, vulnerabilities: results, passed };\n  }\n\n  generateReport(result: ScanResult): string {\n    let report = `# Container Security Scan Report\\n\\n`;\n    report += `**Image:** ${result.image}\\n`;\n    report += `**Status:** ${result.passed ? '? PASSED' : '? FAILED'}\\n\\n`;\n\n    if (result.vulnerabilities.length === 0) {\n      report += 'No vulnerabilities found.\\n';\n      return report;\n    }\n\n    report += `| Severity | Package | Installed | Fixed | CVE |\\n`;\n    report += `|----------|---------|-----------|-------|----|\\n`;\n\n    for (const v of result.vulnerabilities) {\n      const sev = v.severity === 'CRITICAL' ? '??' :\n                  v.severity === 'HIGH' ? '??' :\n                  v.severity === 'MEDIUM' ? '??' : '?';\n      report += `| ${sev} ${v.severity} | ${v.package} | ${v.installedVersion} | ${v.fixedVersion} | ${v.id} |\\n`;\n    }\n\n    if (!result.passed) {\n      report += '\\n## Action Required\\n\\n';\n      report += 'Fix all CRITICAL and HIGH vulnerabilities before deploying to production.\\n';\n    }\n\n    return report;\n  }\n}\n\nconst scanner = new ContainerSecurityScanner();\nconst result = await scanner.scanImage('myapp', 'latest');\nconsole.log(scanner.generateReport(result));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "example-3-dockerfile-generator",
+      children: "Example 3: Dockerfile Generator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type BaseImage = 'node' | 'python' | 'go' | 'rust' | 'nginx' | 'alpine';\ntype PackageManager = 'npm' | 'yarn' | 'pip' | 'cargo';\n\ninterface DockerfileConfig {\n  base: BaseImage;\n  version: string;\n  port: number;\n  packageManager: PackageManager;\n  buildCommand: string;\n  startCommand: string;\n  hasDevDependencies: boolean;\n  useMultiStage: boolean;\n}\n\nclass DockerfileGenerator {\n  generate(config: DockerfileConfig): string {\n    if (config.useMultiStage) {\n      return this.generateMultiStage(config);\n    }\n    return this.generateSingleStage(config);\n  }\n\n  private generateMultiStage(config: DockerfileConfig): string {\n    const lines: string[] = [];\n\n    // Build stage\n    lines.push(`FROM ${config.base}:${config.version}-alpine AS builder`);\n    lines.push('');\n    lines.push('WORKDIR /app');\n    lines.push('');\n    lines.push('COPY package*.json ./');\n    lines.push(`RUN ${config.packageManager} ci`);\n    lines.push('');\n    lines.push('COPY . .');\n    lines.push(`RUN ${config.buildCommand}`);\n    lines.push('');\n\n    // Production stage\n    lines.push(`FROM ${config.base}:${config.version}-alpine`);\n    lines.push('');\n    lines.push('RUN addgroup -S appgroup && adduser -S appuser -G appgroup');\n    lines.push('');\n    lines.push('WORKDIR /app');\n    lines.push('');\n    lines.push('COPY --from=builder /app/dist ./dist');\n    lines.push('COPY --from=builder /app/node_modules ./node_modules');\n    lines.push('');\n    lines.push('USER appuser');\n    lines.push('');\n    lines.push(`EXPOSE ${config.port}`);\n    lines.push('');\n    lines.push(`CMD [\"${config.startCommand}\"]`);\n\n    return lines.join('\\n');\n  }\n\n  private generateSingleStage(config: DockerfileConfig): string {\n    const lines: string[] = [];\n\n    lines.push(`FROM ${config.base}:${config.version}-alpine`);\n    lines.push('');\n    lines.push('RUN addgroup -S appgroup && adduser -S appuser -G appgroup');\n    lines.push('');\n    lines.push('WORKDIR /app');\n    lines.push('');\n    lines.push('COPY package*.json ./');\n    lines.push(`RUN ${config.packageManager} ci${config.hasDevDependencies ? '' : ' --only=production'}`);\n    lines.push('');\n    lines.push('COPY . .');\n    lines.push(`RUN ${config.buildCommand}`);\n    lines.push('');\n    lines.push('USER appuser');\n    lines.push('');\n    lines.push(`EXPOSE ${config.port}`);\n    lines.push('');\n    lines.push(`CMD [\"${config.startCommand}\"]`);\n\n    return lines.join('\\n');\n  }\n}\n\nconst gen = new DockerfileGenerator();\nconst dockerfile = gen.generate({\n  base: 'node',\n  version: '20',\n  port: 3000,\n  packageManager: 'npm',\n  buildCommand: 'npm run build',\n  startCommand: 'node dist/server.js',\n  hasDevDependencies: true,\n  useMultiStage: true,\n});\nconsole.log(dockerfile);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-layer-cache-analyzer",
+      children: "Container Layer Cache Analyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Docker layer caching is critical for fast builds in CI/CD. The following tool analyzes Dockerfile layers, detects cache invalidation points, and recommends layer ordering optimizations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface DockerLayer {\n  instruction: string;\n  content: string;\n  estimatedSizeBytes: number;\n  cacheKey: string;\n  cacheable: boolean;\n}\n\ninterface LayerCacheReport {\n  layers: DockerLayer[];\n  invalidatedLayers: number;\n  totalBuildTime: number; // estimated seconds\n  optimizationAdvice: string[];\n}\n\nclass LayerCacheAnalyzer {\n  analyze(dockerfile: string): LayerCacheReport {\n    const lines = dockerfile.split('\\n');\n    const layers: DockerLayer[] = [];\n    const optimizationAdvice: string[] = [];\n\n    for (const line of lines) {\n      const trimmed = line.trim();\n      if (trimmed.startsWith('FROM')) {\n        layers.push({ instruction: 'FROM', content: trimmed, estimatedSizeBytes: 200_000_000, cacheKey: trimmed, cacheable: true });\n      } else if (trimmed.startsWith('RUN')) {\n        const cacheable = !trimmed.includes('apt-get update') && !trimmed.includes('npm install');\n        if (!cacheable) optimizationAdvice.push(`Combine RUN commands that change frequently: \"${trimmed.substring(0, 50)}...\"`);\n        layers.push({ instruction: 'RUN', content: trimmed, estimatedSizeBytes: 50_000_000, cacheKey: trimmed.substring(0, 80), cacheable });\n      } else if (trimmed.startsWith('COPY') || trimmed.startsWith('ADD')) {\n        layers.push({ instruction: trimmed.split(' ')[0], content: trimmed, estimatedSizeBytes: 10_000_000, cacheKey: trimmed, cacheable: false });\n        optimizationAdvice.push(`COPY/ADD changes invalidate all subsequent layers. Move \"${trimmed}\" later in the Dockerfile`);\n      }\n    }\n\n    let firstInvalidIndex = layers.findIndex(l => !l.cacheable);\n    if (firstInvalidIndex === -1) firstInvalidIndex = layers.length;\n    const invalidatedLayers = layers.length - firstInvalidIndex - 1;\n    const totalBuildTime = layers.length * 5 + invalidatedLayers * 10;\n\n    return { layers, invalidatedLayers, totalBuildTime, optimizationAdvice };\n  }\n\n  recommendOptimalOrdering(layers: DockerLayer[]): DockerLayer[] {\n    const sorted = [...layers];\n    sorted.sort((a, b) => {\n      const cacheOrder = (l: DockerLayer) => l.cacheable ? 0 : l.instruction === 'COPY' ? 2 : 1;\n      return cacheOrder(a) - cacheOrder(b);\n    });\n    return sorted;\n  }\n}\n\nconst dockerfile = `FROM node:20-alpine\nRUN apk add --no-cache curl\nCOPY package*.json ./\nRUN npm ci\nCOPY . .\nRUN npm run build`;\n\nconst analyzer = new LayerCacheAnalyzer();\nconst report = analyzer.analyze(dockerfile);\nconsole.log(`Invalidated layers: ${report.invalidatedLayers}`);\nconsole.log(`Est. build time: ${report.totalBuildTime}s`);\nconsole.log('Advice:', report.optimizationAdvice.join('; '));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What this demonstrates:"
+      }), " Layer cache analysis identifies build bottlenecks and recommends Dockerfile restructuring for faster CI/CD pipeline execution."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-image-vulnerability-scanner-integration",
+      children: "Container Image Vulnerability Scanner Integration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Security scanning is a critical gate in container CI/CD pipelines. The following tool integrates with Trivy-compatible output, correlates vulnerabilities with image layers, and enforces policy gates."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// image-scanner.ts\n// Container vulnerability scanning and policy enforcement\n\ninterface Vulnerability {\n  id: string;\n  package: string;\n  severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';\n  installedVersion: string;\n  fixedVersion: string;\n  layerIndex: number;\n}\n\ninterface ScanResult {\n  image: string;\n  tag: string;\n  vulnerabilities: Vulnerability[];\n  totalBySeverity: Record<string, number>;\n  scanTimestamp: Date;\n}\n\ninterface VulnerabilityPolicy {\n  maxCritical: number;\n  maxHigh: number;\n  maxMedium: number;\n  blockOnCritical: boolean;\n  blockOnHigh: boolean;\n  exemptVulnerabilities: string[];\n}\n\ninterface PolicyResult {\n  passed: boolean;\n  violations: string[];\n  summary: string;\n}\n\nclass ContainerSecurityScanner {\n  private policy: VulnerabilityPolicy;\n\n  constructor(policy: VulnerabilityPolicy) {\n    this.policy = policy;\n  }\n\n  evaluate(result: ScanResult): PolicyResult {\n    const violations: string[] = [];\n    const filtered = result.vulnerabilities.filter(v => !this.policy.exemptVulnerabilities.includes(v.id));\n\n    const critical = filtered.filter(v => v.severity === 'CRITICAL');\n    const high = filtered.filter(v => v.severity === 'HIGH');\n    const medium = filtered.filter(v => v.severity === 'MEDIUM');\n\n    if (critical.length > this.policy.maxCritical) {\n      violations.push(`Found ${critical.length} critical vulnerabilities (max ${this.policy.maxCritical})`);\n    }\n    if (high.length > this.policy.maxHigh) {\n      violations.push(`Found ${high.length} high vulnerabilities (max ${this.policy.maxHigh})`);\n    }\n    if (medium.length > this.policy.maxMedium) {\n      violations.push(`Found ${medium.length} medium vulnerabilities (max ${this.policy.maxMedium})`);\n    }\n\n    if (this.policy.blockOnCritical && critical.length > 0) {\n      violations.push('Build blocked: critical vulnerabilities present and blockOnCritical is enabled');\n    }\n    if (this.policy.blockOnHigh && high.length > 0) {\n      violations.push('Build blocked: high vulnerabilities present and blockOnHigh is enabled');\n    }\n\n    const passed = violations.length === 0;\n    return {\n      passed,\n      violations,\n      summary: passed ? '? Security scan passed all policies' : `? ${violations.length} policy violation(s)`,\n    };\n  }\n\n  generateReport(result: ScanResult, policyResult: PolicyResult): string {\n    return `## Container Security Scan Report\\n\\n` +\n      `**Image:** ${result.image}:${result.tag}\\n` +\n      `**Scanned at:** ${result.scanTimestamp.toISOString()}\\n` +\n      `**Vulnerabilities:** CRITICAL: ${result.totalBySeverity['CRITICAL'] || 0}, HIGH: ${result.totalBySeverity['HIGH'] || 0}, MEDIUM: ${result.totalBySeverity['MEDIUM'] || 0}, LOW: ${result.totalBySeverity['LOW'] || 0}\\n\\n` +\n      `**Policy Result:** ${policyResult.passed ? '? PASSED' : '? BLOCKED'}\\n` +\n      (policyResult.violations.length > 0 ? policyResult.violations.map(v => `- ${v}\\n`).join('') : '') + '\\n' +\n      (result.vulnerabilities.length > 0\n        ? `| ID | Package | Severity | Fixed |\\n|----|---------|----------|-------|\\n` +\n          result.vulnerabilities.slice(0, 10).map(v => `| ${v.id} | ${v.package} | ${v.severity} | ${v.fixedVersion} |`).join('\\n') +\n          (result.vulnerabilities.length > 10 ? `\\n... and ${result.vulnerabilities.length - 10} more` : '')\n        : 'No vulnerabilities found');\n  }\n\n  suggestRemediation(vulns: Vulnerability[]): string[] {\n    const byPackage = new Map<string, Vulnerability[]>();\n    for (const v of vulns) {\n      if (!byPackage.has(v.package)) byPackage.set(v.package, []);\n      byPackage.get(v.package)!.push(v);\n    }\n\n    return [...byPackage.entries()].map(([pkg, vs]) => {\n      const maxSev = vs.sort((a, b) =>\n        ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].indexOf(a.severity) -\n        ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].indexOf(b.severity)\n      )[0];\n      return `${pkg}: upgrade to fix ${vs.length} vulnerability(ies), highest severity ${maxSev.severity}`;\n    });\n  }\n}\n\nconst scanner = new ContainerSecurityScanner({\n  maxCritical: 0, maxHigh: 3, maxMedium: 10, blockOnCritical: true, blockOnHigh: false, exemptVulnerabilities: ['CVE-2024-0001'],\n});\n\nconst scanResult: ScanResult = {\n  image: 'myapp', tag: 'v1.2.3', scanTimestamp: new Date(),\n  totalBySeverity: { CRITICAL: 1, HIGH: 4, MEDIUM: 8, LOW: 15 },\n  vulnerabilities: [\n    { id: 'CVE-2025-1234', package: 'openssl', severity: 'CRITICAL', installedVersion: '1.1.1', fixedVersion: '1.1.1u', layerIndex: 2 },\n    { id: 'CVE-2025-5678', package: 'node', severity: 'HIGH', installedVersion: '18.0.0', fixedVersion: '18.19.1', layerIndex: 3 },\n  ],\n};\n\nconst policyResult = scanner.evaluate(scanResult);\nconsole.log(scanner.generateReport(scanResult, policyResult));\nconsole.log('\\nRemediation:', scanner.suggestRemediation(scanResult.vulnerabilities));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What this demonstrates:"
+      }), " Container vulnerability scanning with policy enforcement provides automated security gates, blocks builds with unacceptable risk, and generates remediation guidance for development teams."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "container-registry-cleanup-and-retention-manager",
+      children: "Container Registry Cleanup and Retention Manager"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Container registries accumulate image bloat over time, increasing costs and attack surface. The following tool implements retention policies, garbage collection, and cost analysis."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// registry-cleanup.ts\n// Manage container registry retention and cleanup\n\ninterface ImageTag {\n  name: string;\n  digest: string;\n  created: Date;\n  sizeMB: number;\n  pulledCount: number;\n  lastPulled: Date | null;\n}\n\ninterface RetentionPolicy {\n  maxTagsPerImage: number;\n  maxAgeDays: number;\n  minRequiredTags: number;\n  keepLatest: number;\n  tagsToPreserve: string[];\n}\n\ninterface CleanupPlan {\n  tagsToDelete: ImageTag[];\n  reclaimedSizeMB: number;\n  afterCount: number;\n  estimatedSavings: number;\n}\n\nclass RegistryCleanupManager {\n  constructor(private policy: RetentionPolicy) {}\n\n  planCleanup(tags: ImageTag[]): CleanupPlan {\n    const sorted = [...tags].sort((a, b) => b.created.getTime() - a.created.getTime());\n    const preserveTags = this.policy.tagsToPreserve || [];\n    const toDelete: ImageTag[] = [];\n\n    // Always keep preserved tags\n    const preserved = sorted.filter(t => preserveTags.some(p => t.name.startsWith(p)));\n    const candidates = sorted.filter(t => !preserveTags.some(p => t.name.startsWith(p)));\n\n    // Keep the latest N tags\n    const kept = candidates.slice(0, this.policy.keepLatest);\n    const deletable = candidates.slice(this.policy.keepLatest);\n\n    for (const tag of deletable) {\n      const ageDays = (Date.now() - tag.created.getTime()) / (1000 * 60 * 60 * 24);\n      if (ageDays > this.policy.maxAgeDays) {\n        toDelete.push(tag);\n      }\n    }\n\n    // Enforce max tags limit\n    const totalKept = preserved.length + kept.length + (deletable.length - toDelete.length);\n    if (totalKept > this.policy.maxTagsPerImage) {\n      const excess = totalKept - this.policy.maxTagsPerImage;\n      const extraDeletable = deletable.filter(t => !toDelete.includes(t)).reverse().slice(0, excess);\n      toDelete.push(...extraDeletable);\n    }\n\n    const reclaimedSizeMB = toDelete.reduce((s, t) => s + t.sizeMB, 0);\n    const afterCount = tags.length - toDelete.length;\n\n    return {\n      tagsToDelete: toDelete,\n      reclaimedSizeMB: Math.round(reclaimedSizeMB),\n      afterCount,\n      estimatedSavings: Math.round(reclaimedSizeMB * 0.10), // ~$0.10/GB/month storage cost\n    };\n  }\n\n  generateReport(plan: CleanupPlan): string {\n    return `## Registry Cleanup Plan\\n\\n` +\n      `**To delete:** ${plan.tagsToDelete.length} tags\\n` +\n      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (˜ $${plan.estimatedSavings}/month)\\n` +\n      `**After cleanup:** ${plan.afterCount} tags\\n\\n` +\n      plan.tagsToDelete.slice(0, 20).map(t =>\n        `- ${t.name} (${t.sizeMB}MB, ${Math.round((Date.now() - t.created.getTime()) / 86400000)} days old)`\n      ).join('\\n') +\n      (plan.tagsToDelete.length > 20 ? `\\n... and ${plan.tagsToDelete.length - 20} more` : '');\n  }\n}\n\nconst cleanupManager = new RegistryCleanupManager({\n  maxTagsPerImage: 10, maxAgeDays: 90, minRequiredTags: 3, keepLatest: 5, tagsToPreserve: ['latest', 'stable', 'v1', 'v2'],\n});\n\nconst tags: ImageTag[] = Array.from({ length: 30 }, (_, i) => ({\n  name: i === 0 ? 'latest' : `v1.0.${i}`,\n  digest: `sha256:${i.toString(16).padStart(64, '0')}`,\n  created: new Date(Date.now() - i * 15 * 86400000),\n  sizeMB: 50 + Math.floor(Math.random() * 150),\n  pulledCount: Math.floor(Math.random() * 1000),\n  lastPulled: Math.random() > 0.3 ? new Date(Date.now() - Math.random() * 30 * 86400000) : null,\n}));\n\nconsole.log(cleanupManager.generateReport(cleanupManager.planCleanup(tags)));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "What this demonstrates:"
+      }), " Automated registry cleanup policies prevent image bloat, reduce storage costs, and ensure compliance with retention requirements through programmable lifecycle management."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always use multi-stage builds."
+        }), " Separate build dependencies from runtime for smaller, more secure images."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pin base image versions and digests."
+        }), " Never use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "latest"
+        }), " in production pipelines."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Run as non-root."
+        }), " Create a dedicated user inside the container for least privilege."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Optimize layer ordering."
+        }), " Put infrequently changing layers first for better cache utilization."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Scan images for vulnerabilities."
+        }), " Integrate Trivy or Snyk into your CI pipeline."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Set resource limits."
+        }), " Prevent containers from exhausting host resources."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: [(0,jsx_runtime.jsx)(_components.summary, {
+        children: "Question 1: What is the main difference between containers and VMs?"
+      }), "**A)** Containers are slower than VMs", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** Containers share the host kernel; VMs have their own kernel", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** VMs use less disk space", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** Containers cannot run Linux", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** Containers share the host kernel; VMs have their own kernel</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+        children: [(0,jsx_runtime.jsx)(_components.summary, {
+          children: "Question 2: What is the purpose of multi-stage builds?"
+        }), "**A)** Build multiple images at once", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** Separate build dependencies from runtime for smaller images", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** Run multiple containers simultaneously", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** Speed up the build process", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** Separate build dependencies from runtime for smaller images</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+          children: [(0,jsx_runtime.jsx)(_components.summary, {
+            children: "Question 3: What is the OCI responsible for?"
+          }), "**A)** Defining container image and runtime standards", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** Distributing Docker images", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** Providing container hosting", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** Managing container networks", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: A)** Defining container image and runtime standards</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+            children: [(0,jsx_runtime.jsx)(_components.summary, {
+              children: "Question 4: Why should containers run as non-root?"
+            }), "**A)** It's faster", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** It reduces the attack surface if the container is compromised", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** Root cannot access the network", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** Non-root users have better logging", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** It reduces the attack surface if the container is compromised</details>\n", (0,jsx_runtime.jsxs)(_components.details, {
+              children: [(0,jsx_runtime.jsx)(_components.summary, {
+                children: "Question 5: Why should you order Dockerfile instructions from least to most frequently changing?"
+              }), "**A)** It makes the file easier to read", (0,jsx_runtime.jsx)(_components.br, {}), "**B)** It maximizes Docker layer caching efficiency", (0,jsx_runtime.jsx)(_components.br, {}), "**C)** It reduces the number of layers", (0,jsx_runtime.jsx)(_components.br, {}), "**D)** It improves runtime performance", (0,jsx_runtime.jsx)(_components.br, {}), (0,jsx_runtime.jsx)(_components.br, {}), "**Answer: B)** It maximizes Docker layer caching efficiency</details>\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "// containerization\n// cicd-infrastructure-automation implementation"
+              }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'containerization', data: { topic: 'cicd-infrastructure-automation' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+              }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                id: "summary",
+                children: "Summary"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Containers provide lightweight, isolated environments that share the host kernel, unlike VMs which include a full guest OS."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "The OCI defines standards for container images and runtimes, ensuring portability across platforms."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Container images are built from read-only layers that enable caching and efficient storage."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Multi-stage builds separate the build environment from the runtime, producing minimal production images."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Container security requires running as non-root, dropping capabilities, scanning for vulnerabilities, and setting resource limits."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Registries store and distribute images; use immutable tags based on SHA digests for production deployments."
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "container-runtime-security",
+                children: "Container Runtime Security"
+              }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                children: "Beyond image security, runtime container security enforces constraints on running containers:"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                  children: "Linux Capabilities:"
+                }), " Fine-grained privileges instead of root:"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-dockerfile",
+                  children: "# Drop all capabilities, add only what's needed\nRUN setcap cap_net_bind_service=+ep /usr/local/bin/app\n"
+                })
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-yaml",
+                  children: "# Docker Compose capability control\nservices:\n  app:\n    cap_drop:\n      - ALL\n    cap_add:\n      - NET_BIND_SERVICE\n      - NET_ADMIN\n"
+                })
+              }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                  children: "Seccomp Profiles:"
+                }), " Restrict system calls available to the container:"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-text",
+                  children: "# Default Docker seccomp profile blocks 44 of 300+ syscalls\n# Custom profile — allow only specific syscalls\n{\n  \"defaultAction\": \"SCMP_ACT_ERRNO\",\n  \"architectures\": [\"SCMP_ARCH_X86_64\"],\n  \"syscalls\": [\n    {\"names\": [\"accept4\", \"bind\", \"connect\", \"execve\", \"exit\", \"exit_group\", \"fstat\", \"getdents64\", \"mmap\", \"openat\", \"read\", \"write\"], \"action\": \"SCMP_ACT_ALLOW\"}\n  ]\n}\n"
+                })
+              }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                  children: "AppArmor/SELinux:"
+                }), " Mandatory Access Control labels:"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-yaml",
+                  children: "# Kubernetes security context\nsecurityContext:\n  runAsNonRoot: true\n  runAsUser: 1000\n  capabilities:\n    drop: [\"ALL\"]\n  seccompProfile:\n    type: RuntimeDefault\n  appArmorProfile:\n    type: RuntimeDefault\n"
+                })
+              }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  className: "language-typescript",
+                  children: "// Container security benchmarking\ninterface SecurityBenchmark {\n  category: string;\n  check: string;\n  passed: boolean;\n  severity: 'critical' | 'high' | 'medium' | 'low';\n}\n\nclass ContainerSecurityBenchmarker {\n  runBenchmarks(): SecurityBenchmark[] {\n    return [\n      { category: 'User', check: 'Running as non-root user', passed: true, severity: 'critical' },\n      { category: 'Capabilities', check: 'All capabilities dropped except NET_BIND_SERVICE', passed: true, severity: 'high' },\n      { category: 'Filesystem', check: 'Root filesystem read-only', passed: false, severity: 'medium' },\n      { category: 'Network', check: 'No host network mode', passed: true, severity: 'high' },\n      { category: 'Seccomp', check: 'Seccomp profile applied', passed: true, severity: 'medium' },\n      { category: 'Resources', check: 'Memory limit set to 512MB', passed: true, severity: 'medium' },\n      { category: 'Secrets', check: 'No secrets in environment variables', passed: false, severity: 'critical' },\n    ];\n  }\n\n  generateReport(): string {\n    const results = this.runBenchmarks();\n    const passed = results.filter(r => r.passed).length;\n    const failed = results.filter(r => !r.passed);\n\n    let report = `# Container Security Benchmark Report\\n\\n`;\n    report += `**Score:** ${passed}/${results.length} checks passed\\n\\n`;\n\n    failed.forEach(f => report += `? [${f.severity.toUpperCase()}] ${f.category}: ${f.check}\\n`);\n    report += '\\n';\n    results.filter(r => r.passed).forEach(p => report += `? [${p.severity.toUpperCase()}] ${p.category}: ${p.check}\\n`);\n\n    return report;\n  }\n}\n"
+                })
+              }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                id: "exercises",
+                children: "Exercises"
+              }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "review-questions",
+                children: "Review Questions"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "How do containers achieve isolation without a hypervisor?"
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "What are the benefits and tradeoffs of multi-stage builds?"
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "How does Docker layer caching work and how can you optimize it?"
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "What security hardening measures should every container implement?"
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "What is the difference between OCI image spec and runtime spec?"
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "application-problems",
+                children: "Application Problems"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Write a multi-stage Dockerfile for a TypeScript application that produces a minimal production image."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Create a security scanning CI step that fails builds on critical vulnerabilities."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Design an image tagging strategy that supports traceability and rollback."
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Implement resource limits for a containerized application running alongside other services."
+                }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: ["Write a TypeScript function that simulates OverlayFS layer merging. Given a list of layers (each represented as a ", (0,jsx_runtime.jsx)(_components.code, {
+                    children: "Map<string, string>"
+                  }), " of file path to content), implement merge and diff operations. Show that upper layers shadow lower layers for the same file path."]
+                }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Using the ContainerSecurityScanner class, extend it to support: vulnerability exception management (allow specific CVEs with expiration), a CVSS score threshold configuration (fail builds above 7.0), and HTML report generation with color-coded severity levels."
+                }), "\n"]
+              }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                id: "challenge-problem",
+                children: "Challenge Problem"
+              }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                  children: "Design a complete container strategy for a microservices architecture with 6 TypeScript services. Include: multi-stage Dockerfiles for each service (optimized for caching), a Docker Compose file for local development, a CI pipeline that builds, scans, and pushes images with immutable tags, a registry cleanup policy (keep last 30 days of images), a security hardening checklist applied to all images, and a base image update strategy to regularly rebuild images with security patches."
+                }), "\n"]
+              }), "\n"]
+            })]
+          })]
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

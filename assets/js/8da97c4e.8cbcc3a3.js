@@ -1,0 +1,6228 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[89694],{
+
+/***/ 54469
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_artificial_intelligence_16_expert_systems_md_8da_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-artificial-intelligence-16-expert-systems-md-8da.json
+const site_docs_courses_artificial_intelligence_16_expert_systems_md_8da_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/artificial-intelligence/16-expert-systems","title":"Chapter 16: Expert Systems","description":"Previous Ethics of AI | Next Modern Artificial Intelligence","source":"@site/docs/courses/artificial-intelligence/16-expert-systems.md","sourceDirName":"courses/artificial-intelligence","slug":"/artificial-intelligence/16-expert-systems","permalink":"/ai-engineering-journey/artificial-intelligence/16-expert-systems","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":24,"frontMatter":{"id":"16-expert-systems","slug":"/artificial-intelligence/16-expert-systems","title":"Chapter 16: Expert Systems","sidebar_label":"Chapter 16: Expert Systems","sidebar_position":24},"sidebar":"coursesSidebar","previous":{"title":"Chapter 15: Ethics of Artificial Intelligence","permalink":"/ai-engineering-journey/artificial-intelligence/15-ethics-ai"},"next":{"title":"Chapter 17: Modern Artificial Intelligence","permalink":"/ai-engineering-journey/artificial-intelligence/17-modern-ai"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/artificial-intelligence/16-expert-systems.md
+
+
+const frontMatter = {
+	id: '16-expert-systems',
+	slug: '/artificial-intelligence/16-expert-systems',
+	title: 'Chapter 16: Expert Systems',
+	sidebar_label: 'Chapter 16: Expert Systems',
+	sidebar_position: 24
+};
+const contentTitle = 'Chapter 16: Expert Systems';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Why Expert Systems Matter",
+  "id": "why-expert-systems-matter",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "1. Expert System Architecture",
+  "id": "1-expert-system-architecture",
+  "level": 2
+}, {
+  "value": "1.1 Core Components",
+  "id": "11-core-components",
+  "level": 3
+}, {
+  "value": "1.2 System Architecture Pseudocode",
+  "id": "12-system-architecture-pseudocode",
+  "level": 3
+}, {
+  "value": "1.3 Python Implementation — ES Shell",
+  "id": "13-python-implementation--es-shell",
+  "level": 3
+}, {
+  "value": "1.4 Complexity Analysis",
+  "id": "14-complexity-analysis",
+  "level": 3
+}, {
+  "value": "1.5 Advantages &amp; Disadvantages",
+  "id": "15-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "1.6 Edge Cases in ES Architecture",
+  "id": "16-edge-cases-in-es-architecture",
+  "level": 3
+}, {
+  "value": "2. Knowledge Base",
+  "id": "2-knowledge-base",
+  "level": 2
+}, {
+  "value": "2.1 Knowledge Representation Formats",
+  "id": "21-knowledge-representation-formats",
+  "level": 3
+}, {
+  "value": "2.2 Production Rule Anatomy",
+  "id": "22-production-rule-anatomy",
+  "level": 3
+}, {
+  "value": "2.3 Knowledge Base Operations Pseudocode",
+  "id": "23-knowledge-base-operations-pseudocode",
+  "level": 3
+}, {
+  "value": "2.4 Dry Run — Knowledge Base State Changes",
+  "id": "24-dry-run--knowledge-base-state-changes",
+  "level": 3
+}, {
+  "value": "Working Memory Trace",
+  "id": "working-memory-trace",
+  "level": 4
+}, {
+  "value": "2.5 Python Implementation",
+  "id": "25-python-implementation",
+  "level": 3
+}, {
+  "value": "2.6 Complexity Analysis",
+  "id": "26-complexity-analysis",
+  "level": 3
+}, {
+  "value": "2.7 Advantages &amp; Disadvantages",
+  "id": "27-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "2.8 Edge Cases",
+  "id": "28-edge-cases",
+  "level": 3
+}, {
+  "value": "3. Inference Engine",
+  "id": "3-inference-engine",
+  "level": 2
+}, {
+  "value": "3.1 Match-Resolve-Fire Cycle",
+  "id": "31-match-resolve-fire-cycle",
+  "level": 3
+}, {
+  "value": "3.2 Conflict Resolution Strategies",
+  "id": "32-conflict-resolution-strategies",
+  "level": 3
+}, {
+  "value": "3.3 Inference Engine Pseudocode",
+  "id": "33-inference-engine-pseudocode",
+  "level": 3
+}, {
+  "value": "3.4 Python Inference Engine",
+  "id": "34-python-inference-engine",
+  "level": 3
+}, {
+  "value": "3.5 Complexity Analysis",
+  "id": "35-complexity-analysis",
+  "level": 3
+}, {
+  "value": "3.6 Advantages &amp; Disadvantages",
+  "id": "36-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "3.7 Edge Cases",
+  "id": "37-edge-cases",
+  "level": 3
+}, {
+  "value": "4. Forward Chaining (Data-Driven Reasoning)",
+  "id": "4-forward-chaining-data-driven-reasoning",
+  "level": 2
+}, {
+  "value": "4.1 Algorithm (Steps)",
+  "id": "41-algorithm-steps",
+  "level": 3
+}, {
+  "value": "4.2 Detailed Pseudocode",
+  "id": "42-detailed-pseudocode",
+  "level": 3
+}, {
+  "value": "4.3 Dry Run — Forward Chaining Trace Table",
+  "id": "43-dry-run--forward-chaining-trace-table",
+  "level": 3
+}, {
+  "value": "4.4 Python Implementation",
+  "id": "44-python-implementation",
+  "level": 3
+}, {
+  "value": "4.5 Complexity Analysis",
+  "id": "45-complexity-analysis",
+  "level": 3
+}, {
+  "value": "4.6 Advantages &amp; Disadvantages",
+  "id": "46-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "4.7 Edge Cases",
+  "id": "47-edge-cases",
+  "level": 3
+}, {
+  "value": "5. Backward Chaining (Goal-Driven Reasoning)",
+  "id": "5-backward-chaining-goal-driven-reasoning",
+  "level": 2
+}, {
+  "value": "5.1 Algorithm (Steps)",
+  "id": "51-algorithm-steps",
+  "level": 3
+}, {
+  "value": "5.2 Pseudocode with AND/OR Tree",
+  "id": "52-pseudocode-with-andor-tree",
+  "level": 3
+}, {
+  "value": "5.3 Dry Run — Backward Chaining Trace Table",
+  "id": "53-dry-run--backward-chaining-trace-table",
+  "level": 3
+}, {
+  "value": "5.4 Python Implementation",
+  "id": "54-python-implementation",
+  "level": 3
+}, {
+  "value": "5.5 Complexity Analysis",
+  "id": "55-complexity-analysis",
+  "level": 3
+}, {
+  "value": "5.6 Forward vs Backward Chaining Comparison",
+  "id": "56-forward-vs-backward-chaining-comparison",
+  "level": 3
+}, {
+  "value": "5.7 Advantages &amp; Disadvantages",
+  "id": "57-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "5.8 Edge Cases",
+  "id": "58-edge-cases",
+  "level": 3
+}, {
+  "value": "6. Explanation Facility",
+  "id": "6-explanation-facility",
+  "level": 2
+}, {
+  "value": "6.1 Why and How Explanations",
+  "id": "61-why-and-how-explanations",
+  "level": 3
+}, {
+  "value": "6.2 Pseudocode",
+  "id": "62-pseudocode",
+  "level": 3
+}, {
+  "value": "6.3 Python Implementation",
+  "id": "63-python-implementation",
+  "level": 3
+}, {
+  "value": "6.4 Complexity",
+  "id": "64-complexity",
+  "level": 3
+}, {
+  "value": "6.5 Advantages &amp; Disadvantages",
+  "id": "65-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "6.6 Edge Cases",
+  "id": "66-edge-cases",
+  "level": 3
+}, {
+  "value": "7. Uncertainty in Expert Systems",
+  "id": "7-uncertainty-in-expert-systems",
+  "level": 2
+}, {
+  "value": "7.1 Sources of Uncertainty",
+  "id": "71-sources-of-uncertainty",
+  "level": 3
+}, {
+  "value": "7.2 Certainty Factors (MYCIN Model)",
+  "id": "72-certainty-factors-mycin-model",
+  "level": 3
+}, {
+  "value": "Combination Rules",
+  "id": "combination-rules",
+  "level": 4
+}, {
+  "value": "Algorithm",
+  "id": "algorithm",
+  "level": 4
+}, {
+  "value": "7.3 Dempster-Shafer Theory",
+  "id": "73-dempster-shafer-theory",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode",
+  "level": 4
+}, {
+  "value": "7.4 Python Implementation",
+  "id": "74-python-implementation",
+  "level": 3
+}, {
+  "value": "7.5 CF Propagation Dry Run",
+  "id": "75-cf-propagation-dry-run",
+  "level": 3
+}, {
+  "value": "7.6 Complexity Analysis",
+  "id": "76-complexity-analysis",
+  "level": 3
+}, {
+  "value": "7.7 CF vs DS vs Bayesian",
+  "id": "77-cf-vs-ds-vs-bayesian",
+  "level": 3
+}, {
+  "value": "7.8 Advantages &amp; Disadvantages",
+  "id": "78-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "7.9 Edge Cases",
+  "id": "79-edge-cases",
+  "level": 3
+}, {
+  "value": "8. MYCIN — Medical Diagnosis Expert System",
+  "id": "8-mycin--medical-diagnosis-expert-system",
+  "level": 2
+}, {
+  "value": "8.1 Overview",
+  "id": "81-overview",
+  "level": 3
+}, {
+  "value": "8.2 Architecture in MYCIN",
+  "id": "82-architecture-in-mycin",
+  "level": 3
+}, {
+  "value": "8.3 Sample MYCIN-Style Rules",
+  "id": "83-sample-mycin-style-rules",
+  "level": 3
+}, {
+  "value": "8.4 MYCIN Reasoning Algorithm (Backward Chaining)",
+  "id": "84-mycin-reasoning-algorithm-backward-chaining",
+  "level": 3
+}, {
+  "value": "8.5 Dry Run — MYCIN Diagnosis Trace",
+  "id": "85-dry-run--mycin-diagnosis-trace",
+  "level": 3
+}, {
+  "value": "8.6 Python MYCIN Simulation",
+  "id": "86-python-mycin-simulation",
+  "level": 3
+}, {
+  "value": "8.7 Complexity Analysis",
+  "id": "87-complexity-analysis",
+  "level": 3
+}, {
+  "value": "8.8 Advantages &amp; Disadvantages",
+  "id": "88-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "8.9 MYCIN Edge Cases",
+  "id": "89-mycin-edge-cases",
+  "level": 3
+}, {
+  "value": "9. DENDRAL — Chemical Analysis Expert System",
+  "id": "9-dendral--chemical-analysis-expert-system",
+  "level": 2
+}, {
+  "value": "9.1 Overview",
+  "id": "91-overview",
+  "level": 3
+}, {
+  "value": "9.2 Plan-Generate-Test Algorithm",
+  "id": "92-plan-generate-test-algorithm",
+  "level": 3
+}, {
+  "value": "9.3 Algorithm Steps",
+  "id": "93-algorithm-steps",
+  "level": 3
+}, {
+  "value": "9.4 Dry Run — DENDRAL Trace",
+  "id": "94-dry-run--dendral-trace",
+  "level": 3
+}, {
+  "value": "9.5 Python DENDRAL Simulation",
+  "id": "95-python-dendral-simulation",
+  "level": 3
+}, {
+  "value": "9.6 Complexity Analysis",
+  "id": "96-complexity-analysis",
+  "level": 3
+}, {
+  "value": "9.7 Advantages &amp; Disadvantages",
+  "id": "97-advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "9.8 DENDRAL Edge Cases",
+  "id": "98-dendral-edge-cases",
+  "level": 3
+}, {
+  "value": "10. Expert Systems vs Machine Learning — Comparison Table",
+  "id": "10-expert-systems-vs-machine-learning--comparison-table",
+  "level": 2
+}, {
+  "value": "10.1 When to Use Which",
+  "id": "101-when-to-use-which",
+  "level": 3
+}, {
+  "value": "11. Knowledge Representation Methods — Comparison",
+  "id": "11-knowledge-representation-methods--comparison",
+  "level": 2
+}, {
+  "value": "11.1 Production Rules — Detailed",
+  "id": "111-production-rules--detailed",
+  "level": 3
+}, {
+  "value": "11.2 Frames — Detailed",
+  "id": "112-frames--detailed",
+  "level": 3
+}, {
+  "value": "11.3 Semantic Nets — Detailed",
+  "id": "113-semantic-nets--detailed",
+  "level": 3
+}, {
+  "value": "11.4 Knowledge Representation Selection Guide",
+  "id": "114-knowledge-representation-selection-guide",
+  "level": 3
+}, {
+  "value": "12. Interview Corner",
+  "id": "12-interview-corner",
+  "level": 2
+}, {
+  "value": "12.1 Common Interview Questions",
+  "id": "121-common-interview-questions",
+  "level": 3
+}, {
+  "value": "12.2 Rule-Based vs ML — Deep Dive",
+  "id": "122-rule-based-vs-ml--deep-dive",
+  "level": 3
+}, {
+  "value": "12.3 Knowledge Acquisition Bottleneck — Detailed Strategies",
+  "id": "123-knowledge-acquisition-bottleneck--detailed-strategies",
+  "level": 3
+}, {
+  "value": "13. Applications in Real Systems",
+  "id": "13-applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "13.1 Medical Diagnosis — MYCIN",
+  "id": "131-medical-diagnosis--mycin",
+  "level": 3
+}, {
+  "value": "13.2 Chemical Analysis — DENDRAL",
+  "id": "132-chemical-analysis--dendral",
+  "level": 3
+}, {
+  "value": "13.3 Configuration — XCON/R1",
+  "id": "133-configuration--xconr1",
+  "level": 3
+}, {
+  "value": "13.4 Other Notable Applications",
+  "id": "134-other-notable-applications",
+  "level": 3
+}, {
+  "value": "14. CLIPS — C Language Integrated Production System",
+  "id": "14-clips--c-language-integrated-production-system",
+  "level": 2
+}, {
+  "value": "14.1 CLIPS Architecture",
+  "id": "141-clips-architecture",
+  "level": 3
+}, {
+  "value": "14.2 CLIPS Syntax",
+  "id": "142-clips-syntax",
+  "level": 3
+}, {
+  "value": "14.3 CLIPS Features",
+  "id": "143-clips-features",
+  "level": 3
+}, {
+  "value": "14.4 CLIPS Salience and Conflict Resolution Example",
+  "id": "144-clips-salience-and-conflict-resolution-example",
+  "level": 3
+}, {
+  "value": "14.5 CLIPS Rete Network",
+  "id": "145-clips-rete-network",
+  "level": 3
+}, {
+  "value": "15. Knowledge Acquisition",
+  "id": "15-knowledge-acquisition",
+  "level": 2
+}, {
+  "value": "15.1 The Bottleneck",
+  "id": "151-the-bottleneck",
+  "level": 3
+}, {
+  "value": "15.2 Knowledge Acquisition Methods",
+  "id": "152-knowledge-acquisition-methods",
+  "level": 3
+}, {
+  "value": "15.3 Knowledge Engineer Skills",
+  "id": "153-knowledge-engineer-skills",
+  "level": 3
+}, {
+  "value": "16. Limitations of Expert Systems",
+  "id": "16-limitations-of-expert-systems",
+  "level": 2
+}, {
+  "value": "16.1 Key Limitations",
+  "id": "161-key-limitations",
+  "level": 3
+}, {
+  "value": "16.2 Brittleness Example",
+  "id": "162-brittleness-example",
+  "level": 3
+}, {
+  "value": "16.3 Mitigation Strategies",
+  "id": "163-mitigation-strategies",
+  "level": 3
+}, {
+  "value": "17. Concept Comparison — Expert Systems Summary",
+  "id": "17-concept-comparison--expert-systems-summary",
+  "level": 2
+}, {
+  "value": "18. Quick Reference — Inference Engine Strategies",
+  "id": "18-quick-reference--inference-engine-strategies",
+  "level": 2
+}, {
+  "value": "19. Cross-Application Matrix",
+  "id": "19-cross-application-matrix",
+  "level": 2
+}, {
+  "value": "20. Chapter Quiz",
+  "id": "20-chapter-quiz",
+  "level": 2
+}, {
+  "value": "21. Exercises",
+  "id": "21-exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}, {
+  "value": "22. Summary",
+  "id": "22-summary",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-16-expert-systems",
+        children: "Chapter 16: Expert Systems"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Previous:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/artificial-intelligence/15-ethics-ai",
+        children: "Chapter 15: Ethics of AI"
+      }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Next:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/artificial-intelligence/17-modern-ai",
+        children: "Chapter 17: Modern Artificial Intelligence"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the conclusion of this chapter, the student will be able to: (1) describe the architecture of rule-based expert systems; (2) explain the reasoning mechanisms of MYCIN and DENDRAL; (3) implement a simple rule-based system in Python and CLIPS; (4) manage uncertainty using certainty factors and Dempster-Shafer theory; (5) distinguish forward chaining from backward chaining with trace tables; (6) analyze time/space complexity of inference strategies; (7) evaluate expert systems vs ML approaches for a given problem domain."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/artificial-intelligence/16-expert-systems/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/artificial-intelligence/16-expert-systems/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/artificial-intelligence/16-expert-systems/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/artificial-intelligence/16-expert-systems/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/artificial-intelligence/16-expert-systems/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/artificial-intelligence/16-expert-systems/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "why-expert-systems-matter",
+      children: "Why Expert Systems Matter"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Imagine a world-class cardiologist retires after 40 years. Her knowledge of rare arrhythmias, subtle ECG patterns, and drug interactions — built from thousands of cases — vanishes. An expert system captures that knowledge in software. It never retires, never gets tired, and can be copied to every clinic in the world."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Expert systems were AI's first commercial success story. In the 1980s, companies like DEC (XCON), DuPont, and Boeing saved hundreds of millions of dollars by encoding human expertise into rule-based systems. These systems handled tasks that were too complex for traditional algorithms but too narrow for general AI — tax preparation, medical diagnosis, equipment configuration, fault diagnosis."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The Core Insight:"
+      }), " For domains with stable, well-documented knowledge and clear decision rules, a rule-based system can outperform both humans (consistency, speed) and machine learning (explainability, no training data requirement)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Topics"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Terms"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ES Architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KB, inference engine, user interface, explanation facility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production rules, working memory, conflict resolution"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge Base"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule representation, fact storage, Rete network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IF-THEN, antecedent, consequent, pattern matching"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Inference Engine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward chaining, backward chaining, conflict resolution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match-Resolve-Fire cycle, agenda"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward Chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data-driven reasoning, rule firing, termination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modus ponens, refraction, recency ordering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Backward Chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Goal-driven reasoning, hypothesis testing, subgoaling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depth-first search, goal stack, AND/OR tree"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Explanation Facility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "How/Why explanations, trace generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule chain, justification, transparency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Uncertainty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certainty factors, Dempster-Shafer, fuzzy logic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF, belief function, plausibility, ignorance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MYCIN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medical diagnosis, infectious diseases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Backward chaining, CF calculus, bacteremia"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DENDRAL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mass spectrometry, molecular structure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plan-generate-test, fragmentation patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge Acquisition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expert interview, protocol analysis, induction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bottleneck, knowledge engineer, elicitation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CLIPS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule engine, Rete, COOL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fact list, defrule, assert, retract"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Limitations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Brittleness, maintenance, no learning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Narrow expertise, knowledge threshold"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Why ES Matter] --> B[Architecture]\n    B --> C[Knowledge Base]\n    B --> D[Inference Engine]\n    D --> E[Forward Chaining]\n    D --> F[Backward Chaining]\n    B --> G[Explanation Facility]\n    B --> H[Uncertainty Management]\n    H --> I[Certainty Factors]\n    H --> J[Dempster-Shafer]\n    E --> K[MYCIN - Medical Diagnosis]\n    F --> K\n    E --> L[DENDRAL - Chemical Analysis]\n    B --> M[Knowledge Acquisition]\n    B --> N[CLIPS Implementation]\n    B --> O[Limitations]\n    O --> P[ES vs ML Comparison]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1-expert-system-architecture",
+      children: "1. Expert System Architecture"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " An expert system is like a master chess player who has memorized thousands of patterns (knowledge base) and uses a reasoning process (inference engine) to decide the best move. When asked \"why that move?\", the player can explain the reasoning chain (explanation facility)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-core-components",
+      children: "1.1 Core Components"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A classical expert system has four principal components:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Function"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Real-World Equivalent"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge Base (KB)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stores domain facts and rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Doctor's medical training + textbooks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Inference Engine"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Applies rules to facts to derive conclusions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Doctor's reasoning process"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Working Memory"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Holds current case facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Patient's current chart/vitals"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Explanation Facility"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Justifies conclusions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Doctor explaining diagnosis to patient"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-system-architecture-pseudocode",
+      children: "1.2 System Architecture Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION ExpertSystemShell(rules, initial_facts):\n    working_memory = initial_facts\n    WHILE True:\n        conflict_set = Match(rules, working_memory)\n        IF conflict_set IS EMPTY:\n            BREAK\n        selected_rule = ResolveConflict(conflict_set)\n        working_memory = Fire(selected_rule, working_memory)\n        IF goal_condition_met(working_memory):\n            BREAK\n    RETURN working_memory\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-python-implementation--es-shell",
+      children: "1.3 Python Implementation — ES Shell"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import List, Dict, Any, Callable\n\nclass Rule:\n    \"\"\"A single production rule: IF conditions THEN actions.\"\"\"\n    def __init__(self, name: str, conditions: List[Callable],\n                 actions: List[Callable], priority: int = 0):\n        self.name = name\n        self.conditions = conditions\n        self.actions = actions\n        self.priority = priority\n        self.fired_count = 0   # for refraction\n\n    def matches(self, facts: Dict[str, Any]) -> bool:\n        return all(cond(facts) for cond in self.conditions)\n\nclass ExpertSystemShell:\n    \"\"\"Generic forward-chaining expert system shell.\"\"\"\n\n    def __init__(self, rules: List[Rule]):\n        self.rules = rules\n        self.working_memory: Dict[str, Any] = {}\n        self.agenda: List[Rule] = []\n\n    def add_fact(self, key: str, value: Any) -> None:\n        self.working_memory[key] = value\n\n    def match(self) -> List[Rule]:\n        \"\"\"Conflict resolution step: find all matching rules.\"\"\"\n        matched = []\n        for rule in self.rules:\n            if rule.matches(self.working_memory):\n                matched.append(rule)\n        return matched\n\n    def resolve_conflict(self, matched: List[Rule]) -> Rule:\n        \"\"\"Select highest-priority rule (refraction + recency).\"\"\"\n        matched.sort(key=lambda r: (-r.priority, r.fired_count))\n        return matched[0]\n\n    def fire(self, rule: Rule) -> None:\n        \"\"\"Execute rule actions against working memory.\"\"\"\n        for action in rule.actions:\n            action(self.working_memory)\n        rule.fired_count += 1\n\n    def run(self, max_cycles: int = 100) -> Dict[str, Any]:\n        \"\"\"Main inference loop (Match-Resolve-Fire cycle).\"\"\"\n        cycle = 0\n        while cycle < max_cycles:\n            matched = self.match()\n            if not matched:\n                print(f\"Cycle {cycle}: No rules match. Halting.\")\n                break\n            rule = self.resolve_conflict(matched)\n            print(f\"Cycle {cycle}: Firing {rule.name}\")\n            self.fire(rule)\n            cycle += 1\n        return self.working_memory\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "14-complexity-analysis",
+      children: "1.4 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Match (naive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C × F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(WM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R rules × C conditions each evaluated against F facts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Match (Rete)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C) amortized"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(Rete network)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network caches partial matches across cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflict Resolution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(M log M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sort M matched rules by priority"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fire"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(WM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Execute A actions per rule"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(R × C × F) for naive match:"
+      }), " Each cycle checks every condition of every rule against every fact. With R=1000 rules, C=5 conditions each, F=100 facts, that is 500,000 evaluations per cycle. The Rete algorithm avoids this by maintaining a discrimination network of intermediate results, re-evaluating only affected nodes when facts change."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "15-advantages--disadvantages",
+      children: "1.5 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Transparent reasoning (explainability)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge acquisition bottleneck"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Consistent decisions (same input → same output)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Brittle at domain boundaries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No training data required"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No learning from experience"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to audit and verify"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Maintenance difficulty at scale"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Humans can author rules directly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule interactions become unpredictable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Works with incomplete knowledge"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited to narrow domains"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "16-edge-cases-in-es-architecture",
+      children: "1.6 Edge Cases in ES Architecture"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Conflicting Rules"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two rules match and produce contradictory conclusions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflict resolution strategy (priority, specificity)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Circular Rules"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A → B → C → A causes infinite loop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle detection + max cycle limit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Missing Knowledge"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No rule applies to current case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default rules or interactive query"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Rule Interference"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firing rule A removes conditions rule B needs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Refraction prevents re-firing same facts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Inconsistent Facts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User provides contradictory data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Truth maintenance system"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "2-knowledge-base",
+      children: "2. Knowledge Base"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A knowledge base is like a legal codebook. Each law says \"IF certain conditions are met, THEN a specific legal consequence follows.\" Judges (the inference engine) apply these laws to specific cases (facts). Just as laws reference each other, rules in a KB can chain together."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "21-knowledge-representation-formats",
+      children: "2.1 Knowledge Representation Formats"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Format"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Structure"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Best For"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Production Rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IF condition THEN action"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IF fever AND rash THEN measles"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Diagnostic systems"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Frames"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Object with slots"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[Animal: type=mammal, habitat=land]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hierarchical domains"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semantic Nets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Node-edge-node triples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dog IS-A Mammal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept relationships"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Predicate Logic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "∀x (Man(x) → Mortal(x))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Formal reasoning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Theorem proving"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Decision Trees"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IF-THEN-ELSE tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fever? → Rash? → Diagnosis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classification"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "22-production-rule-anatomy",
+      children: "2.2 Production Rule Anatomy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Rule <name>\n  IF    <pattern-1> AND <pattern-2> AND ... AND <pattern-n>\n  THEN  <action-1>; <action-2>; ... ; <action-m>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each pattern tests a fact in working memory. Each action modifies working memory (add, remove, update)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "23-knowledge-base-operations-pseudocode",
+      children: "2.3 Knowledge Base Operations Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION KnowledgeBase():\n    rules = []        // List of Rule objects\n    facts = {}        // Working memory dictionary\n    \n    FUNCTION AddRule(rule):\n        rules.append(rule)\n    \n    FUNCTION RemoveRule(name):\n        rules = [r for r in rules if r.name != name]\n    \n    FUNCTION GetMatchingRules(facts):\n        matched = []\n        FOR each rule IN rules:\n            IF rule.conditions ALL satisfied BY facts:\n                matched.append(rule)\n        RETURN matched\n    \n    FUNCTION AddFact(key, value):\n        facts[key] = value\n    \n    FUNCTION UpdateFact(key, value):\n        facts[key] = value\n    \n    FUNCTION RemoveFact(key):\n        DELETE facts[key]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "24-dry-run--knowledge-base-state-changes",
+      children: "2.4 Dry Run — Knowledge Base State Changes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario:"
+      }), " Animal classification with 4 rules and initial facts {has_hair=true, eats_meat=true}"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "working-memory-trace",
+      children: "Working Memory Trace"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Working Memory State"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initial facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{has_hair: T, eats_meat: T}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fire R1 (has_hair → mammal)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{has_hair: T, eats_meat: T, is_mammal: T}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fire R2 (eats_meat → carnivore)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{has_hair: T, eats_meat: T, is_mammal: T, is_carnivore: T}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fire R3 (mammal + carnivore → tiger)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{is_mammal: T, is_carnivore: T, animal: tiger}"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "25-python-implementation",
+      children: "2.5 Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class KnowledgeBase:\n    \"\"\"Simple knowledge base with fact assertions and rule matching.\"\"\"\n\n    def __init__(self):\n        self.rules: List[Dict] = []\n        self.facts: Dict[str, Any] = {}\n\n    def add_rule(self, name: str, conditions: Dict[str, Any],\n                 conclusions: Dict[str, Any], cf: float = 1.0):\n        self.rules.append({\n            'name': name,\n            'conditions': conditions,\n            'conclusions': conclusions,\n            'cf': cf\n        })\n\n    def assert_fact(self, key: str, value: Any):\n        self.facts[key] = value\n        print(f\"  ASSERT: {key} = {value}\")\n\n    def retract_fact(self, key: str):\n        if key in self.facts:\n            del self.facts[key]\n            print(f\"  RETRACT: {key}\")\n\n    def match_rules(self) -> List[Dict]:\n        \"\"\"Return all rules whose conditions match current facts.\"\"\"\n        matched = []\n        for rule in self.rules:\n            conditions_met = all(\n                self.facts.get(k) == v\n                for k, v in rule['conditions'].items()\n            )\n            if conditions_met:\n                matched.append(rule)\n        return matched\n\n    def apply_rule(self, rule: Dict):\n        \"\"\"Apply rule conclusions to working memory.\"\"\"\n        print(f\"  FIRE: {rule['name']} (CF={rule['cf']})\")\n        for k, v in rule['conclusions'].items():\n            self.assert_fact(k, v)\n\n    def run(self, max_cycles: int = 10):\n        \"\"\"Forward chain until fixpoint or max cycles.\"\"\"\n        for cycle in range(max_cycles):\n            print(f\"\\n--- Cycle {cycle} ---\")\n            print(f\"  WM: {self.facts}\")\n            matched = self.match_rules()\n            if not matched:\n                print(\"  No matching rules. Done.\")\n                break\n            print(f\"  Conflict set: {[r['name'] for r in matched]}\")\n            self.apply_rule(matched[0])  # simple: fire first\n\n\n# Example usage\nkb = KnowledgeBase()\n\n# Rules for animal classification\nkb.add_rule(\"R1\", {\"has_hair\": True}, {\"is_mammal\": True})\nkb.add_rule(\"R2\", {\"eats_meat\": True}, {\"is_carnivore\": True})\nkb.add_rule(\"R3\", {\"is_mammal\": True, \"is_carnivore\": True},\n             {\"animal\": \"tiger\"}, cf=0.9)\n\n# Initial facts\nkb.assert_fact(\"has_hair\", True)\nkb.assert_fact(\"eats_meat\", True)\nkb.run()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "--- Cycle 0 ---\n  WM: {'has_hair': True, 'eats_meat': True}\n  Conflict set: ['R1', 'R2']\n  FIRE: R1 (CF=1.0)\n  ASSERT: is_mammal = True\n\n--- Cycle 1 ---\n  WM: {'has_hair': True, 'eats_meat': True, 'is_mammal': True}\n  Conflict set: ['R2', 'R3']\n  FIRE: R2 (CF=1.0)\n  ASSERT: is_carnivore = True\n\n--- Cycle 2 ---\n  WM: {'has_hair': True, 'eats_meat': True, 'is_mammal': True, 'is_carnivore': True}\n  Conflict set: ['R3']\n  FIRE: R3 (CF=0.9)\n  ASSERT: animal = tiger\n\n--- Cycle 3 ---\n  WM: {'has_hair': True, 'eats_meat': True, 'is_mammal': True, 'is_carnivore': True, 'animal': 'tiger'}\n  No matching rules. Done.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "26-complexity-analysis",
+      children: "2.6 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule addition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Append to list"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fact assertion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dictionary insert"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule match (all)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test all R rules, C conditions each"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule match (indexed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(C × M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C²)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alpha-index reduces candidates to M matches"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(R × C):"
+      }), " Each match cycle must evaluate every condition of every rule. With R=500 and C=5, that is 2500 comparisons. The Rete algorithm improves this to O(C × M) where M ≪ R by maintaining a discrimination network."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "27-advantages--disadvantages",
+      children: "2.7 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Modular — rules are independent units"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No inherent consistency checking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Natural IF-THEN format matches human reasoning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule interactions can cause emergent behavior"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy to add/remove individual rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge acquisition is labor-intensive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Supports explanation via rule trace"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules may conflict or overlap"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Domain experts can read rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalability issues beyond ~10,000 rules"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "28-edge-cases",
+      children: "2.8 Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Handling"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Conflicting rules"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1 says animal=tiger, R2 says animal=lion for same facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Priority ordering, specificity ordering"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Redundant rules"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1 and R2 produce same conclusion from same conditions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule removal (no effect but wastes cycles)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Subsumed rules"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1: A&B→Z, R2: A&B&C→Z (R2 more specific)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fire R2 first (specificity ordering)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Missing facts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule needs fact not yet in WM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Query user, use defaults, or defer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Circular rules"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1: A→B, R2: B→C, R3: C→A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle detection (mark visited rules)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "3-inference-engine",
+      children: "3. Inference Engine"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " The inference engine is like a detective solving a case. Forward chaining is collecting evidence (facts) and seeing what crime they point to. Backward chaining is starting with a suspect (hypothesis) and checking if the evidence matches."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "31-match-resolve-fire-cycle",
+      children: "3.1 Match-Resolve-Fire Cycle"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The inference engine operates in three repeating phases:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "┌────────────┐     ┌────────────────┐     ┌──────────┐\n│   MATCH    │────→│ RESOLVE CONFLICT│────→│   FIRE   │\n│ (find all  │     │ (select one     │     │(execute  │\n│  matching  │     │  rule from      │     │ RHS,     │\n│  rules)    │     │  conflict set)  │     │ update   │\n└────────────┘     └────────────────┘     │ WM)     │\n      ↑                                    └──────────┘\n      └──────────────────────────────────────────┘\n            (repeat until fixpoint)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "32-conflict-resolution-strategies",
+      children: "3.2 Conflict Resolution Strategies"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Refraction"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A rule should not fire twice on the same facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prevents infinite loops"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Recency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prefer rules using most recently added facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Focuses on current situation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Specificity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prefer rules with more conditions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More specific rules match better"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Priority"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules have explicit priority values"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge engineer controls order"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Context Limiting"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partition rules into contexts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Focus on relevant rule subset"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "33-inference-engine-pseudocode",
+      children: "3.3 Inference Engine Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION InferenceEngine(rules, facts):\n    working_memory = facts\n    fired_history = []   // For explanation\n    cycle = 0\n    \n    WHILE cycle < MAX_CYCLES:\n        // MATCH phase\n        conflict_set = []\n        FOR each rule IN rules:\n            IF rule NOT already fired WITH current matching facts (refraction):\n                IF ALL rule.conditions SATISFIED BY working_memory:\n                    conflict_set.APPEND(rule)\n        \n        // TERMINATION check\n        IF conflict_set IS EMPTY:\n            RETURN working_memory  // Fixpoint reached\n        \n        // RESOLVE phase (combined strategies)\n        selected_rule = CONFLICT_RESOLUTION(conflict_set)\n        \n        // FIRE phase\n        FOR each action IN selected_rule.actions:\n            EXECUTE action ON working_memory\n        \n        fired_history.APPEND(selected_rule)\n        cycle = cycle + 1\n    \n    RETURN working_memory\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "34-python-inference-engine",
+      children: "3.4 Python Inference Engine"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class InferenceEngine:\n    \"\"\"Forward-chaining inference engine with multiple resolution strategies.\"\"\"\n\n    def __init__(self, rules: List[Rule]):\n        self.rules = rules\n        self.wm: Dict[str, Any] = {}\n        self.fired_rules: List[str] = []\n        self.fired_fact_sigs: Set[Tuple] = set()  # refraction tracking\n\n    def add_fact(self, key: str, value: Any):\n        self.wm[key] = value\n\n    def _fact_signature(self, rule: Rule) -> Tuple:\n        \"\"\"Create a signature of which facts satisfied this rule (for refraction).\"\"\"\n        return (rule.name, tuple(sorted(self.wm.items())))\n\n    def _match(self) -> List[Rule]:\n        matched = []\n        for rule in self.rules:\n            sig = self._fact_signature(rule)\n            if sig in self.fired_fact_sigs:\n                continue  # refraction: skip already-fired combination\n            if all(cond(self.wm) for cond in rule.conditions):\n                matched.append(rule)\n        return matched\n\n    def _resolve(self, matched: List[Rule]) -> Rule:\n        \"\"\"Specificity ordering: rule with most conditions fires first.\"\"\"\n        matched.sort(key=lambda r: (-len(r.conditions), r.priority))\n        return matched[0]\n\n    def _fire(self, rule: Rule):\n        sig = self._fact_signature(rule)\n        self.fired_fact_sigs.add(sig)\n        for action in rule.actions:\n            action(self.wm)\n        self.fired_rules.append(rule.name)\n\n    def run(self, max_cycles: int = 50):\n        for cycle in range(max_cycles):\n            matched = self._match()\n            if not matched:\n                return self.wm\n            rule = self._resolve(matched)\n            self._fire(rule)\n        return self.wm\n\n    def explain(self) -> List[str]:\n        \"\"\"Return the chain of fired rules.\"\"\"\n        return self.fired_rules\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "35-complexity-analysis",
+      children: "3.5 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Phase"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Match (naive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C × F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R rules, C conditions per rule, F facts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Match (Rete)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(ΔF × C × M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only ΔF new facts, M matching rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflict Resolution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(M log M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sort M matched rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fire"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Execute A actions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Total per cycle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C × F) naive / O(ΔF × C × M) Rete"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dominated by match phase"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why Rete is faster:"
+      }), " In a naive system, every cycle re-evaluates all R×C conditions. In most sessions, only a few facts change (ΔF ≪ F). Rete maintains a network where each node stores partial match state. When a fact changes, only the affected branch of the network is recomputed — typically reducing evaluations by 90-99%."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "36-advantages--disadvantages",
+      children: "3.6 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule order does not affect correctness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflict resolution can be complex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "New rules added without changing engine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match phase is computational bottleneck"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Supports explanation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rete network memory overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Modular separation of knowledge and control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May require tuning for performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple resolution strategies available"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Difficult to debug rule interactions"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "37-edge-cases",
+      children: "3.7 Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Problem"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Infinite loop"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules keep firing in cycle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle detection, max cycles limit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Starvation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-priority rules prevent low-priority from firing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fairness scheduling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Rule explosion"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "M rules added causes M×C×F match cost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rete, rule partitioning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Fact thrashing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same facts repeatedly asserted/retracted"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Truth maintenance system"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Non-termination"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules generate infinite new facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Goal state detection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "4-forward-chaining-data-driven-reasoning",
+      children: "4. Forward Chaining (Data-Driven Reasoning)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A detective arrives at a crime scene and collects evidence (fingerprints, DNA, witness statements). Each piece of evidence triggers a line of investigation: \"IF fingerprint matches database THEN identify suspect.\" The detective works from evidence toward a conclusion, with no specific suspect in mind initially."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "41-algorithm-steps",
+      children: "4.1 Algorithm (Steps)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "ALGORITHM: ForwardChaining\nINPUT:  RuleSet R, Initial Facts F\nOUTPUT: Set of derived conclusions C\n\n1. Initialize working_memory ← F\n2. Initialize fired_set ← ∅\n3. REPEAT:\n   a. conflict_set ← ∅\n   b. FOR each rule r ∈ R:\n      i.   IF r ∉ fired_set AND conditions(r) ⊆ working_memory:\n           conflict_set ← conflict_set ∪ {r}\n   c. IF conflict_set = ∅: BREAK\n   d. selected ← CONFLICT_RESOLUTION(conflict_set)\n   e. conclusions ← CONSEQUENT(selected)\n   f. working_memory ← working_memory ∪ conclusions\n   g. fired_set ← fired_set ∪ {selected}\n4. UNTIL fixpoint OR MAX_CYCLES reached\n5. RETURN working_memory\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "42-detailed-pseudocode",
+      children: "4.2 Detailed Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION forward_chain(rules, initial_facts, max_iterations=100):\n    wm = copy(initial_facts)\n    fired = []\n    iteration = 0\n    \n    WHILE iteration < max_iterations:\n        PRINT \"=== Iteration\", iteration, \"===\"\n        PRINT \"WM:\", wm\n        \n        // MATCH\n        conflict_set = []\n        FOR EACH rule IN rules:\n            IF rule.name NOT IN fired:\n                IF all(condition in wm for condition in rule.antecedents):\n                    conflict_set.append(rule)\n        \n        IF conflict_set IS EMPTY:\n            PRINT \"No rules match. Halting.\"\n            BREAK\n        \n        // RESOLVE\n        SORT conflict_set BY\n            -len(rule.antecedents),\n            -rule.priority\n        \n        selected = conflict_set[0]\n        \n        // FIRE\n        PRINT \"Firing:\", selected.name\n        FOR EACH conclusion IN selected.consequents:\n            wm.add(conclusion)\n        \n        fired.append(selected.name)\n        iteration += 1\n    \n    RETURN wm\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "43-dry-run--forward-chaining-trace-table",
+      children: "4.3 Dry Run — Forward Chaining Trace Table"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Rule Set:"
+      }), " Animal classification"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Antecedents"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Consequents"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Priority"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "has_hair"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_mammal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "gives_milk"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_mammal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "has_feathers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_bird"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_mammal, eats_meat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_carnivore"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_mammal, has_stripes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_tiger"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_bird, flies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_eagle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_mammal, is_carnivore, has_stripes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "animal=tiger"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_bird, cannot_fly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "animal=penguin"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Initial Facts:"
+      }), " {has_hair=T, eats_meat=T, has_stripes=T}"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Cycle"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Conflict Set"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Selected"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WM Before"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WM After"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "has_hair, eats_meat, has_stripes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(initial)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1(spec=1), R2(spec=1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1 (tie)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "has_hair, eats_meat, has_stripes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+is_mammal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R4(spec=2), R5(spec=2), R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R4 (spec=2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+is_mammal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+is_carnivore"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R5(spec=2), R7(spec=3), R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R7 (spec=3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+is_carnivore"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+animal=tiger"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R5(spec=2), R2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R5 (spec=2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+animal=tiger"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+is_tiger"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "∅"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Done"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Done"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Final WM:"
+      }), " {has_hair, eats_meat, has_stripes, is_mammal, is_carnivore, animal=tiger}"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "44-python-implementation",
+      children: "4.4 Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ForwardChainingEngine:\n    \"\"\"Forward chaining engine with trace output.\"\"\"\n\n    def __init__(self):\n        self.rules = []\n        self.facts = set()\n        self.fired = set()\n\n    def add_rule(self, name: str, antecedents: list,\n                 consequents: list, priority: int = 0):\n        self.rules.append({\n            'name': name, 'ante': antecedents,\n            'cons': consequents, 'priority': priority\n        })\n\n    def add_fact(self, fact: str):\n        self.facts.add(fact)\n\n    def trace(self, cycle: int, conflict: list,\n              selected: str, before: set, after: set):\n        print(f\"  Cycle {cycle}:\")\n        print(f\"    Conflict: {conflict}\")\n        if selected:\n            print(f\"    Selected: {selected}\")\n        print(f\"    WM: {sorted(before)}\")\n        new_facts = after - before\n        print(f\"    +{sorted(new_facts)}\\n\")\n\n    def run(self, max_cycles: int = 20) -> set:\n        for cycle in range(max_cycles):\n            before = self.facts.copy()\n            conflict_set = []\n            for r in self.rules:\n                if r['name'] in self.fired:\n                    continue\n                if all(ant in self.facts for ant in r['ante']):\n                    conflict_set.append(r)\n            if not conflict_set:\n                self.trace(cycle, [], None, before, self.facts)\n                print(\"  Halting: no matching rules\")\n                break\n            conflict_set.sort(key=lambda r: (-len(r['ante']), -r['priority']))\n            selected = conflict_set[0]\n            for cons in selected['cons']:\n                self.facts.add(cons)\n            self.fired.add(selected['name'])\n            self.trace(cycle, [r['name'] for r in conflict_set],\n                       selected['name'], before, self.facts)\n            if cycle >= max_cycles - 1:\n                print(\"  Halting: max cycles\")\n        return self.facts\n\n\nengine = ForwardChainingEngine()\nengine.add_rule(\"R1\", [\"engine_noise\"], [\"check_oil_level\"])\nengine.add_rule(\"R2\", [\"car_wont_start\", \"headlights_dim\"], [\"battery_dead\"])\nengine.add_rule(\"R3\", [\"car_wont_start\", \"starter_clicks\"], [\"battery_low\"])\nengine.add_rule(\"R4\", [\"car_wont_start\", \"no_click\", \"engine_noise\"],\n                [\"starter_motor_fault\"])\nengine.add_rule(\"R5\", [\"battery_dead\"], [\"replace_battery\"])\nengine.add_rule(\"R6\", [\"battery_low\"], [\"jump_start\"])\nprint(\"=== FC: Car Diagnosis ===\")\nengine.add_fact(\"car_wont_start\")\nengine.add_fact(\"headlights_dim\")\nresult = engine.run()\nprint(f\"Diagnosis: {sorted(result)}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "=== FC: Car Diagnosis ===\n  Cycle 0:\n    Conflict: ['R2']\n    Selected: R2\n    WM: ['car_wont_start', 'headlights_dim']\n    +['battery_dead']\n  Cycle 1:\n    Conflict: ['R5']\n    Selected: R5\n    WM: ['battery_dead', 'car_wont_start', 'headlights_dim']\n    +['replace_battery']\n  Cycle 2:\n    Conflict: []\n    Selected: None\n    WM: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery']\n  Halting: no matching rules\nDiagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery']\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "45-complexity-analysis",
+      children: "4.5 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time per cycle (naive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C × F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each R rule checks C antecedents against F facts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time per cycle (Rete)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(ΔF × M)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only ΔF new facts propagate; M matches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Total time (naive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(D × R × C × F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D cycles × match cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space (naive)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(F + R)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Store facts and rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space (Rete)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × C × 2^(C-1))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Alpha/beta memory nodes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why Rete wins:"
+      }), " With 500+ rules, naive checks 500×5×50=125,000 conditions/cycle. Rete checks only ~50 affected rules → ~250 evaluations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "46-advantages--disadvantages",
+      children: "4.6 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Works with any initial facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May generate irrelevant conclusions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete — derives all possible facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inefficient without goal direction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Naturally handles multiple goals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule ordering affects performance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Responsive to new information"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Termination not guaranteed"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "47-edge-cases",
+      children: "4.7 Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Handling"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No rules match"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Facts have no corresponding rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Halt immediately"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Explosive chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each fact matches 3 more rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set max_cycles limit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Idempotent facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A→B, B→C, C→B (B exists)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Refraction prevents re-firing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflicting conclusions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1: A→X, R2: A→¬X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF values; priority decides"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Empty antecedent rule"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1: TRUE → always_fire"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fires once (refraction)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "5-backward-chaining-goal-driven-reasoning",
+      children: "5. Backward Chaining (Goal-Driven Reasoning)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A doctor starts with \"Does the patient have strep throat?\" then checks evidence: fever? sore throat? Each question supports or refutes the hypothesis. If insufficient, sub-hypotheses form. This is backward chaining — start with a goal, work backward to evidence."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "51-algorithm-steps",
+      children: "5.1 Algorithm (Steps)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "ALGORITHM: BackwardChaining\nINPUT:  Goal G, RuleSet R, FactBase F\nOUTPUT: True if G is proven\n\nSTACK = [G]\nPROVED = {}\n\nWHILE STACK NOT EMPTY:\n    current = POP(STACK)\n    IF current IN F:\n        PROVED.add(current); CONTINUE\n    IF current IN PROVED:\n        CONTINUE\n    candidate_rules = [r ∈ R | current ∈ consequents(r)]\n    IF candidate_rules IS EMPTY:\n        response = ASK_USER(current)\n        IF response: F.add(current); PROVED.add(current)\n        ELSE: RETURN FALSE\n    FOR each rule IN candidate_rules:\n        PUSH antecedents(rule) ONTO STACK\n        IF ALL antecedents IN (F ∪ PROVED):\n            PROVED.add(current)\nRETURN (G IN PROVED)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "52-pseudocode-with-andor-tree",
+      children: "5.2 Pseudocode with AND/OR Tree"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION backward_chain(goal, rules, facts, depth=0):\n    indent = \"  \" * depth\n    PRINT indent + \"Goal:\", goal\n    \n    IF goal IN facts:\n        PRINT indent + \"  KNOWN FACT\"\n        RETURN True\n    \n    candidates = [r for r in rules if goal in r.consequents]\n    \n    IF candidates IS EMPTY:\n        answer = input(f\"Is '{goal}' true? (y/n): \")\n        IF answer == 'y': facts.add(goal); RETURN True\n        RETURN False\n    \n    FOR EACH rule IN candidates:\n        PRINT indent + f\"Trying: {rule.name}\"\n        all_proved = True\n        FOR EACH ant IN rule.antecedents:\n            IF NOT backward_chain(ant, rules, facts, depth+1):\n                all_proved = False; BREAK\n        IF all_proved:\n            facts.add(goal)\n            PRINT indent + f\"  PROVED: {goal}\"\n            RETURN True\n    \n    PRINT indent + f\"  FAILED: {goal}\"\n    RETURN False\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "53-dry-run--backward-chaining-trace-table",
+      children: "5.3 Dry Run — Backward Chaining Trace Table"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Goal:"
+      }), " animal = tiger"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Initial Facts:"
+      }), " {has_hair=T, eats_meat=T, has_stripes=T}"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Goal Stack"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current Goal"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Facts Used"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[animal=tiger]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "animal=tiger"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Start"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[is_mammal, carnivore, stripes]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_mammal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Push R7 ante"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[has_hair], [carnivore, stripes]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "has_hair"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Push R1 ante"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[], [carnivore, stripes]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "has_hair"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Known ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{has_hair}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[carnivore, stripes]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is_carnivore"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Need subgoal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{has_hair}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[eats_meat], [stripes]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "eats_meat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Push R4 ante"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{has_hair}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[], [stripes]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "eats_meat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Known ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+eats_meat"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[stripes]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "has_stripes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Known ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+has_stripes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "[]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "animal=tiger"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All proved ✓"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DONE"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " animal=tiger = True (chain: R7 ← R4 ← R1)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "54-python-implementation",
+      children: "5.4 Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class BackwardChainingEngine:\n    \"\"\"Backward chaining engine with goal stack and explanation.\"\"\"\n\n    def __init__(self):\n        self.rules = []\n        self.facts = set()\n        self.explanation = []\n\n    def add_rule(self, name: str, antecedents: list,\n                 consequents: list):\n        self.rules.append({'name': name, 'ante': antecedents,\n                           'cons': consequents})\n\n    def add_fact(self, fact: str):\n        self.facts.add(fact)\n\n    def prove(self, goal: str, depth: int = 0) -> bool:\n        indent = \"  \" * depth\n        print(f\"{indent}Goal: {goal}\")\n        if goal in self.facts:\n            print(f\"{indent}  Known fact\")\n            return True\n        candidates = [r for r in self.rules if goal in r['cons']]\n        if not candidates:\n            print(f\"{indent}  Cannot prove — not in facts\")\n            return False\n        for rule in candidates:\n            print(f\"{indent}  Try: {rule['name']} \"\n                  f\"({rule['ante']} → {rule['cons']})\")\n            all_proved = all(self.prove(ant, depth+1)\n                             for ant in rule['ante'])\n            if all_proved:\n                self.facts.add(goal)\n                self.explanation.append(rule['name'])\n                print(f\"{indent}  PROVED: {goal}\")\n                return True\n        print(f\"{indent}  FAILED: {goal}\")\n        return False\n\n    def query(self, goal: str) -> bool:\n        print(f\"=== BC: prove '{goal}' ===\\n\")\n        result = self.prove(goal)\n        chain = \" → \".join(reversed(self.explanation))\n        print(f\"\\nResult: {goal} = {result}\")\n        print(f\"Chain: {chain}\")\n        return result\n\n\nengine = BackwardChainingEngine()\nengine.add_rule(\"R2\", [\"car_wont_start\", \"headlights_dim\"], [\"battery_dead\"])\nengine.add_rule(\"R3\", [\"car_wont_start\", \"starter_clicks\"], [\"battery_low\"])\nengine.add_rule(\"R5\", [\"battery_dead\"], [\"replace_battery\"])\nengine.add_fact(\"car_wont_start\")\nengine.add_fact(\"headlights_dim\")\nengine.query(\"battery_dead\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "=== BC: prove 'battery_dead' ===\n\nGoal: battery_dead\n  Try: R2 (['car_wont_start', 'headlights_dim'] → ['battery_dead'])\n    Goal: car_wont_start\n      Known fact\n    Goal: headlights_dim\n      Known fact\n  PROVED: battery_dead\n\nResult: battery_dead = True\nChain: R2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "55-complexity-analysis",
+      children: "5.5 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time (best case)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(D × B)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "D depth × B branching factor"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time (worst case)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(B^D)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explores all rules at each level"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space (call stack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(D)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recursion depth = chain length"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space (memoization)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(G)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache proved/failed subgoals"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why exponential:"
+      }), " Each goal with B candidate rules exploring D subgoals = B^D. Domain heuristics prune most branches."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "56-forward-vs-backward-chaining-comparison",
+      children: "5.6 Forward vs Backward Chaining Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Forward Chaining"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Backward Chaining"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Direction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data → Goal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Goal → Data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Start"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Known facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypothesis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Termination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixpoint (no rules match)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Goal proved/disproved"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Breadth-first"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Depth-first"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Best when"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Few facts, many goals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Few goals, many facts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User interaction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Frequent (queries)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring, config"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Diagnosis, tutoring"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "57-advantages--disadvantages",
+      children: "5.7 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Goal-directed, explores only relevant rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot derive unexpected conclusions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory efficient (linear stack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Many questions before conclusion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy \"why\" explanations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inefficient with large KBs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Works for diagnostic tasks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AND/OR tree can explode"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "58-edge-cases",
+      children: "5.8 Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Handling"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Circular rules A→B, B→C, C→A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle detection (mark visited goals)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple rules same goal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Try R1 first, backtrack to R2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OR antecedents (IF A OR B THEN Z)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Try one at a time (backtrack)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Negation (IF NOT A THEN Z)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prove A; if fails, Z succeeds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unknown facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Query user or assume default"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "6-explanation-facility",
+      children: "6. Explanation Facility"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " When a doctor prescribes treatment, the patient asks \"Why this?\" The doctor explains: \"Your fever and rash suggest measles.\" Expert systems provide the same transparency — a key advantage over neural networks."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "61-why-and-how-explanations",
+      children: "6.1 Why and How Explanations"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "How"
+            }), " was X derived?"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Show rule chain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"R7: mammal ∧ carnivore ∧ stripes → tiger\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Why"
+            }), " ask for fact Y?"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Show current goal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"To determine carnivore via R4\""
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "62-pseudocode",
+      children: "6.2 Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION ExplainHow(conclusion, rule_chain):\n    PRINT \"Conclusion:\", conclusion\n    PRINT \"Derived using:\"\n    FOR EACH rule IN rule_chain:\n        PRINT \"  Rule\", rule.name, \":\", rule.ante, \"→\", rule.cons\n    PRINT \"Steps:\"\n    FOR i, step IN ENUMERATE(rule_chain):\n        PRINT f\"  {i+1}. {step.name}: {step.ante} ✓ → {step.cons}\"\n\nFUNCTION ExplainWhy(fact, current_goal, rule):\n    PRINT \"Asking about\", fact, \"because:\"\n    PRINT \"  Goal:\", current_goal\n    PRINT \"  Rule:\", rule.name, \"- IF\", rule.ante, \"THEN\", rule.cons\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "63-python-implementation",
+      children: "6.3 Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ExplanationFacility:\n    \"\"\"Provides HOW and WHY explanations.\"\"\"\n\n    def __init__(self):\n        self.rule_chain = []\n        self.goal_history = []\n        self.rule_details = {}\n\n    def record_fire(self, rule_name: str, antecedents: list,\n                    consequents: list):\n        self.rule_chain.append(rule_name)\n        self.rule_details[rule_name] = {\n            'ante': antecedents, 'cons': consequents\n        }\n\n    def record_goal(self, goal: str):\n        self.goal_history.append(goal)\n\n    def explain_how(self, conclusion: str):\n        print(f\"=== HOW was '{conclusion}' derived? ===\\n\")\n        for i, rn in enumerate(self.rule_chain, 1):\n            d = self.rule_details[rn]\n            print(f\"  Step {i}: [{rn}] \"\n                  f\"IF {' ∧ '.join(d['ante'])} \"\n                  f\"THEN {', '.join(d['cons'])}\")\n        print(f\"\\nConclusion: {conclusion} ✓\")\n\n    def explain_why(self, fact: str):\n        print(f\"=== WHY is '{fact}' needed? ===\\n\")\n        for rn in reversed(self.rule_chain):\n            d = self.rule_details[rn]\n            if fact in d['ante']:\n                print(f\"To determine: {', '.join(d['cons'])}\")\n                print(f\"Need to check: {' ∧ '.join(d['ante'])}\")\n                print(f\"'{fact}' is one of those conditions.\")\n                print(f\"Rule: [{rn}] IF {ante} THEN {cons}\")\n                return\n        print(f\"'{fact}' is a primitive fact.\")\n\n\nexp = ExplanationFacility()\nexp.record_goal(\"animal=tiger\")\nexp.record_fire(\"R1\", [\"has_hair\"], [\"is_mammal\"])\nexp.record_fire(\"R4\", [\"is_mammal\", \"eats_meat\"], [\"is_carnivore\"])\nexp.record_fire(\"R7\", [\"is_mammal\", \"is_carnivore\", \"has_stripes\"],\n                [\"animal=tiger\"])\nexp.explain_how(\"animal=tiger\")\nprint()\nexp.explain_why(\"eats_meat\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "=== HOW was 'animal=tiger' derived? ===\n\n  Step 1: [R1] IF has_hair THEN is_mammal\n  Step 2: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore\n  Step 3: [R7] IF is_mammal ∧ is_carnivore ∧ has_stripes THEN animal=tiger\n\nConclusion: animal=tiger ✓\n\n=== WHY is 'eats_meat' needed? ===\n\nTo determine: is_carnivore\nNeed to check: is_mammal ∧ eats_meat\n'eats_meat' is one of those conditions.\nRule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "64-complexity",
+      children: "6.4 Complexity"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "How explanation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(chain_length)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Walk and display rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Why explanation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(chain_length)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Walk backward through chain"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × (A + C))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All rules with conditions/actions"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "65-advantages--disadvantages",
+      children: "6.5 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete transparency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Quality depends on rule structure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Builds user trust"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Long chains overwhelm users"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Debugging tool"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot explain missing knowledge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Regulatory audit trail"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule-level only, no causal model"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "66-edge-cases",
+      children: "6.6 Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Long chains (50+ rules)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Summarize intermediate steps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple paths to conclusion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Show shortest or highest-CF path"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflicting evidence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Show both sides with CF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User lacks technical background"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer explanations (simple → detailed)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "7-uncertainty-in-expert-systems",
+      children: "7. Uncertainty in Expert Systems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A doctor says \"80% sure it's strep throat.\" Medical diagnosis has inherent uncertainty — symptoms overlap, tests have false positives. Expert systems need mechanisms to represent and propagate this uncertainty."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-sources-of-uncertainty",
+      children: "7.1 Sources of Uncertainty"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Source"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Evidence uncertainty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"Mild fever\" is subjective"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule uncertainty"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"Fever + rash → measles (CF=0.8)\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Missing information"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No blood test result"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflicting evidence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fever suggests infection, WBC normal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Temporal changes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Symptoms evolved since yesterday"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "72-certainty-factors-mycin-model",
+      children: "7.2 Certainty Factors (MYCIN Model)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "CF ranges from -1.0 (definitely false) to +1.0 (definitely true), 0 = unknown."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "CF = MB - MD"
+      }), " where MB = Measure of Belief [0,1], MD = Measure of Disbelief [0,1]."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "combination-rules",
+      children: "Combination Rules"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Formula"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AND"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF(A ∧ B) = min(CF(A), CF(B))"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF(A ∨ B) = max(CF(A), CF(B))"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NOT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF(¬A) = -CF(A)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Combine (both +)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF₁ + CF₂ − CF₁·CF₂"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Combine (both −)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF₁ + CF₂ + CF₁·CF₂"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Combine (mixed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(CF₁ + CF₂) / (1 − min("
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "algorithm",
+      children: "Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION PropagateCF(conclusion_cf, rule_cf):\n    RETURN conclusion_cf * rule_cf\n\nFUNCTION CombineCF(cf1, cf2):\n    IF cf1 >= 0 AND cf2 >= 0:\n        RETURN cf1 + cf2 - cf1 * cf2\n    IF cf1 < 0 AND cf2 < 0:\n        RETURN cf1 + cf2 + cf1 * cf2\n    ELSE:\n        RETURN (cf1 + cf2) / (1 - min(|cf1|, |cf2|))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "73-dempster-shafer-theory",
+      children: "7.3 Dempster-Shafer Theory"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy:"
+      }), " A jury weighs evidence: fingerprints → 60% guilt, alibi → 70% innocence. Standard probability forces guilt + innocence = 1. DS allows \"don't know\" — remaining probability goes to ignorance."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Frame Θ"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All possible hypotheses"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "{Disease_A, B, C}"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mass m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Belief in subsets of Θ"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "m({A,B}) = 0.3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Belief Bel(A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sum of masses in subsets of A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bel({A}) = m({A})"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Plausibility Pl(A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 − Bel(¬A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Max possible belief"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ignorance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pl(A) − Bel(A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evidence gap"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dempster's Rule:"
+      }), "\n", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(m₁ ⊕ m₂)(A) = (Σ_{B∩C=A} m₁(B) × m₂(C)) / (1 − Σ_{B∩C=∅} m₁(B) × m₂(C))"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "pseudocode",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION DempsterCombine(m1, m2, frame):\n    combined = {}\n    normalization = 0\n    \n    FOR EACH subset_A IN m1:\n        FOR EACH subset_B IN m2:\n            intersection = subset_A ∩ subset_B\n            product = m1[subset_A] * m2[subset_B]\n            IF intersection IS EMPTY:\n                normalization += product\n            ELSE:\n                combined[intersection] += product\n    \n    FOR EACH subset IN combined:\n        combined[subset] /= (1 - normalization)\n    RETURN combined\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "74-python-implementation",
+      children: "7.4 Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class CertaintyFactor:\n    \"\"\"MYCIN-style CF handling.\"\"\"\n\n    def __init__(self, cf: float = 0.0):\n        self.cf = max(-1.0, min(1.0, cf))\n\n    def __and__(self, other):\n        return CertaintyFactor(min(self.cf, other.cf))\n\n    def __or__(self, other):\n        return CertaintyFactor(max(self.cf, other.cf))\n\n    def combine(self, other):\n        cf1, cf2 = self.cf, other.cf\n        if cf1 >= 0 and cf2 >= 0:\n            r = cf1 + cf2 - cf1 * cf2\n        elif cf1 < 0 and cf2 < 0:\n            r = cf1 + cf2 + cf1 * cf2\n        else:\n            r = (cf1 + cf2) / (1 - min(abs(cf1), abs(cf2)))\n        return CertaintyFactor(r)\n\n    def apply_rule(self, rule_cf: float):\n        return CertaintyFactor(self.cf * rule_cf)\n\n    def __repr__(self):\n        return f\"CF({self.cf:+.2f})\"\n\n\nclass DempsterShafer:\n    \"\"\"Dempster-Shafer belief combination.\"\"\"\n\n    def __init__(self, frame: set):\n        self.frame = frame\n        self.masses = {}\n\n    def assign_mass(self, subset: set, mass: float):\n        key = frozenset(subset)\n        self.masses[key] = self.masses.get(key, 0.0) + mass\n\n    def belief(self, subset: set) -> float:\n        key = frozenset(subset)\n        return sum(m for s, m in self.masses.items()\n                   if s.issubset(key))\n\n    def plausibility(self, subset: set) -> float:\n        key = frozenset(subset)\n        comp = frozenset(self.frame - subset)\n        bel_not = sum(m for s, m in self.masses.items()\n                      if s.issubset(comp))\n        return 1.0 - bel_not\n\n    @staticmethod\n    def combine(ds1, ds2):\n        result = DempsterShafer(ds1.frame | ds2.frame)\n        conflict = 0.0\n        for s1, m1 in ds1.masses.items():\n            for s2, m2 in ds2.masses.items():\n                inter = s1 & s2\n                prod = m1 * m2\n                if not inter:\n                    conflict += prod\n                else:\n                    result.masses[inter] = \\\n                        result.masses.get(inter, 0.0) + prod\n        norm = 1.0 - conflict\n        if norm > 0:\n            for s in result.masses:\n                result.masses[s] /= norm\n        return result\n\n\ncf_fever = CertaintyFactor(0.8)\ncf_rash = CertaintyFactor(0.6)\ncf_rule = CertaintyFactor(0.7)\ncf_measles = (cf_fever & cf_rash).apply_rule(cf_rule.cf)\nprint(f\"Measles CF: {cf_measles}\")\n\ncf2 = CertaintyFactor(0.9).apply_rule(0.7)\ncombined = cf_measles.combine(cf2)\nprint(f\"Combined: {combined}\")\n\nds = DempsterShafer({'Flu', 'Cold', 'COVID'})\nds.assign_mass({'Flu', 'COVID'}, 0.7)\nds.assign_mass({'Cold'}, 0.2)\nds.assign_mass({'Flu', 'Cold', 'COVID'}, 0.1)\nprint(f\"DS: Bel(Flu)={ds.belief({'Flu'}):.2f}, \"\n      f\"Pl(Flu)={ds.plausibility({'Flu'}):.2f}, \"\n      f\"Ignorance={ds.plausibility({'Flu'})-ds.belief({'Flu'}):.2f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Measles CF: CF(+0.48)\nCombined: CF(+0.84)\nDS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "75-cf-propagation-dry-run",
+      children: "7.5 CF Propagation Dry Run"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fact"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "CF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule CF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Derived"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Computed CF"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "fever"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R1: fever→flu"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "flu"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.8×0.6=0.48"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "cough"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R2: cough→flu"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "flu(2nd)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.7×0.5=0.35"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "combine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.48+0.35"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "flu final"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.48+0.35-(0.48×0.35)=0.662"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "76-complexity-analysis",
+      children: "7.6 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Approach"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CF propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(F)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple arithmetic per rule"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CF combine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) per pair"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single formula"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DS combine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "S₁"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "×"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DS belief"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: ")"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why DS is exponential:"
+      }), " Frame with n elements has 2^n subsets. Infeasible for n > 20. Used with small frames or heuristic pruning."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "77-cf-vs-ds-vs-bayesian",
+      children: "7.7 CF vs DS vs Bayesian"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Certainty Factors"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Dempster-Shafer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Bayesian"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Expressiveness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single CF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bel + Pl intervals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single probability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ignorance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF=0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pl − Bel > 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Combination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF₁ + CF₂ − CF₁·CF₂"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dempster's rule"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bayes' theorem"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Computation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "S₁"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Heuristic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Evidence theory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Probability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Counterintuitive?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can exceed 1.0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflict normalization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Coherent but needs priors"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "78-advantages--disadvantages",
+      children: "7.8 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Certainty Factors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple; fast; intuitive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No theoretical foundation; double-counting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dempster-Shafer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Models ignorance; separates belief from evidence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exponential; normalization counterintuitive"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "79-edge-cases",
+      children: "7.9 Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Problem"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Handling"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CF > 1.0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple rules push beyond 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MYCIN's formula prevents this"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DS conflict"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disjoint mass assignments amplify"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yager's or Inagaki's modified rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero belief"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All evidence contradicts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return ignorance (DS) or CF=0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Linguistic terms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"likely,\" \"rarely\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Map to numeric CF ranges"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "8-mycin--medical-diagnosis-expert-system",
+      children: "8. MYCIN — Medical Diagnosis Expert System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " MYCIN is like a specialist infectious disease doctor who has memorized 500 medical journal articles and can recall the exact diagnostic criteria for every bacterial infection at any hour of the day — but only for blood infections."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "81-overview",
+      children: "8.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "MYCIN (Shortliffe, 1976) was developed at Stanford to diagnose bacterial infections and recommend antibiotics. It was the first system to demonstrate that rule-based AI could match human expert performance."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Attribute"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Domain"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bacteremia (blood infections), meningitis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~500 production rules from infectious disease specialists"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reasoning"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Backward chaining (goal-driven)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Uncertainty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certainty factors (invented for MYCIN)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Outperformed junior doctors, matched senior specialists"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Status"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never deployed clinically (ethical/legal concerns), but highly influential"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "82-architecture-in-mycin",
+      children: "8.2 Architecture in MYCIN"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Patient Data (entered by physician)\n         ↓\n   MYCIN Consultation System\n         ↓\n   Inference Engine (backward chaining)\n         ↓\n   Knowledge Base (~500 rules)\n         ↓\n   Certainty Factor Calculator\n         ↓\n   Explanation Facility (HOW / WHY)\n         ↓\n   Diagnosis + Antibiotic Recommendation + Confidence\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "83-sample-mycin-style-rules",
+      children: "8.3 Sample MYCIN-Style Rules"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "RULE 050\n  IF  (stain = gramneg)\n  AND (morphology = rod)\n  AND (aerobicity = aerobic)\n  THEN (identity = pseudomonas) WITH CF = 0.8\n\nRULE 064\n  IF  (stain = grampos)\n  AND (morphology = coccus)\n  AND (growth = chains)\n  THEN (identity = streptococcus) WITH CF = 0.7\n\nRULE 090\n  IF  (site = csf)\n  AND (gram_stain = gramneg)\n  AND (age = adult)\n  THEN (meningitis_type = bacterial) WITH CF = 0.8\n\nRULE 099\n  IF  (identity = pseudomonas)\n  AND (infection_type = serious)\n  THEN (therapy = gentamicin) WITH CF = 0.9\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "84-mycin-reasoning-algorithm-backward-chaining",
+      children: "8.4 MYCIN Reasoning Algorithm (Backward Chaining)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION MYCIN_Diagnose(patient_data):\n    // Phase 1: Identify organism\n    organism = BackwardChain(goal = \"identity = ?\")\n    \n    // Phase 2: Determine significance\n    significance = BackwardChain(goal = \"significance = ?\")\n    \n    // Phase 3: Select therapy\n    IF organism.confidence > THRESHOLD:\n        therapy = BackwardChain(goal = \"therapy = ?\")\n        RETURN (organism, therapy, organism.cf)\n    ELSE:\n        RETURN (\"Unable to diagnose with confidence\")\n\nFUNCTION MYCIN_CF(rule, evidence_cfs):\n    // AND conditions\n    ante_cf = min(evidence_cfs)    // Conjunction → min\n    // Apply rule certainty\n    conclusion_cf = ante_cf * rule.cf\n    // Combine with existing CF for same conclusion\n    IF conclusion already has CF_old:\n        RETURN CF_combine(CF_old, conclusion_cf)\n    ELSE:\n        RETURN conclusion_cf\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "85-dry-run--mycin-diagnosis-trace",
+      children: "8.5 Dry Run — MYCIN Diagnosis Trace"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Goal:"
+      }), " Identify infecting organism"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Patient Data:"
+      }), " {site=blood, stain=gramneg, morphology=rod, aerobicity=aerobic}"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Goal"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Evidence CF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule CF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Conclusion CF"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WM Update"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "identity=?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "initial data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "identity=?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R050 match?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "site=blood(1.0), stain=gramneg(1.0), morphology=rod(1.0), aerobicity=aerobic(1.0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pseudomonas CF=0.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+identity=pseudomonas(0.8)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "identity=?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check other rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R064 stain=grampos fails"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "identity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Confirm pseudomonas"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Done"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "therapy=?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R099: identity=pseudomonas(0.8), serious=true(0.7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.8, 0.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "therapy=gentamicin"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "min(0.8,0.7)=0.7 → 0.7×0.9=0.63"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diagnosis:"
+      }), " Pseudomonas aeruginosa (CF=0.8)\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Therapy:"
+      }), " Gentamicin (CF=0.63)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "86-python-mycin-simulation",
+      children: "8.6 Python MYCIN Simulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class MYCINEngine:\n    \"\"\"Simplified MYCIN-style backward chaining with CF.\"\"\"\n\n    def __init__(self):\n        self.rules = []\n        self.facts = {}   # fact_name -> CertaintyFactor\n        self.cf_threshold = 0.2\n\n    def add_rule(self, name: str, antecedents: dict,\n                 consequent: str, rule_cf: float):\n        self.rules.append({\n            'name': name,\n            'ante': antecedents,     # {fact: value, ...}\n            'cons': consequent,       # \"fact=value\"\n            'cf': rule_cf\n        })\n\n    def assert_fact(self, fact: str, value, cf: float = 1.0):\n        key = f\"{fact}={value}\"\n        existing = self.facts.get(key)\n        if existing:\n            self.facts[key] = CertaintyFactor(cf).combine(existing)\n        else:\n            self.facts[key] = CertaintyFactor(cf)\n        return self.facts[key]\n\n    def get_cf(self, fact: str, value) -> CertaintyFactor:\n        key = f\"{fact}={value}\"\n        return self.facts.get(key, CertaintyFactor(0.0))\n\n    def backward_chain(self, goal_fact: str, goal_value,\n                       depth: int = 0) -> CertaintyFactor:\n        indent = \"  \" * depth\n        # Check known facts\n        key = f\"{goal_fact}={goal_value}\"\n        if key in self.facts:\n            return self.facts[key]\n\n        # Find candidate rules\n        candidates = [r for r in self.rules\n                      if r['cons'] == key]\n        if not candidates:\n            return CertaintyFactor(0.0)\n\n        best_cf = CertaintyFactor(0.0)\n        for rule in candidates:\n            print(f\"{indent}Try {rule['name']} → {key}\")\n            ante_cfs = []\n            for ant_fact, ant_val in rule['ante'].items():\n                ant_cf = self.backward_chain(ant_fact, ant_val,\n                                             depth + 1)\n                ante_cfs.append(ant_cf)\n                if ant_cf.cf < self.cf_threshold:\n                    print(f\"{indent}  {ant_fact}={ant_val} CF={ant_cf} \"\n                          f\"below threshold, skip\")\n                    break\n            else:\n                # All antecedents satisfied\n                ante_cf = min(ac.cf for ac in ante_cfs)\n                conclusion_cf = CertaintyFactor(ante_cf * rule['cf'])\n                # Combine with existing\n                if key in self.facts:\n                    conclusion_cf = self.facts[key].combine(\n                        conclusion_cf)\n                self.facts[key] = conclusion_cf\n                print(f\"{indent}  ✓ {key} CF={conclusion_cf}\")\n                if conclusion_cf.cf > best_cf.cf:\n                    best_cf = conclusion_cf\n\n        return best_cf\n\n\nmycin = MYCINEngine()\nmycin.assert_fact(\"site\", \"blood\", 1.0)\nmycin.assert_fact(\"stain\", \"gramneg\", 1.0)\nmycin.assert_fact(\"morphology\", \"rod\", 1.0)\nmycin.assert_fact(\"aerobicity\", \"aerobic\", 1.0)\nmycin.assert_fact(\"infection_type\", \"serious\", 0.7)\n\nmycin.add_rule(\"R050\", {\"stain\": \"gramneg\", \"morphology\": \"rod\",\n                        \"aerobicity\": \"aerobic\"},\n               \"identity=pseudomonas\", 0.8)\nmycin.add_rule(\"R099\", {\"identity\": \"pseudomonas\",\n                         \"infection_type\": \"serious\"},\n               \"therapy=gentamicin\", 0.9)\n\nprint(\"=== MYCIN Diagnosis ===\\n\")\norg_cf = mycin.backward_chain(\"identity\", \"pseudomonas\")\nprint(f\"\\nOrganism: Pseudomonas aeruginosa (CF={org_cf})\")\nif org_cf.cf >= 0.2:\n    therapy_cf = mycin.backward_chain(\"therapy\", \"gentamicin\")\n    print(f\"Therapy: Gentamicin (CF={therapy_cf})\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "=== MYCIN Diagnosis ===\n\nTry R050 → identity=pseudomonas\n  Try stain=gramneg\n  Try morphology=rod\n  Try aerobicity=aerobic\n  ✓ identity=pseudomonas CF=CF(+0.80)\n\nTry R099 → therapy=gentamicin\n  Try identity=pseudomonas\n  Try infection_type=serious\n  ✓ therapy=gentamicin CF=CF(+0.63)\n\nOrganism: Pseudomonas aeruginosa (CF=CF(+0.80))\nTherapy: Gentamicin (CF=CF(+0.63))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "87-complexity-analysis",
+      children: "8.7 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "R rules, average A antecedents per rule"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CF propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) per rule"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple multiplication"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CF combination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) per conclusion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single formula"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Backward chain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(B^D × A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B rules per goal, D depth"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Explanation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(chain)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linear in rule chain length"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why MYCIN was fast:"
+      }), " With ~500 rules but small branching factor (typically 2-3 rules per goal), and shallow depth (3-5 levels), the search was manageable despite theoretical exponential worst case."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "88-advantages--disadvantages",
+      children: "8.8 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Expert-level accuracy in narrow domain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited to blood/meningitis infections"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Explainable reasoning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No learning capability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Handles uncertainty via CF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CF lacks theoretical foundation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "500 rules captured rare diagnostic knowledge"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge acquisition was labor-intensive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Modular rules for easy updates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never integrated into clinical workflow"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "89-mycin-edge-cases",
+      children: "8.9 MYCIN Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MYCIN Behavior"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Competing diagnoses"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pseudomonas vs E. coli both possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reports both with CF values"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-confidence diagnosis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All CF values below threshold"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "States \"cannot diagnose with confidence\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Conflicting evidence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "gram stain suggests one, culture suggests another"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combines CF, may reach intermediate confidence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Missing patient data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No fever reading available"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Treats as unknown (CF=0) for that fact"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple organisms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Polymicrobial infection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MYCIN identified dominant organism only"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "9-dendral--chemical-analysis-expert-system",
+      children: "9. DENDRAL — Chemical Analysis Expert System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A chemist gets a mass spectrometry graph (peaks at various mass-to-charge ratios) and must figure out the molecule's structure. This is like identifying a building's floor plan by dropping a heavy ball on the roof and listening to the noises at each floor. DENDRAL automated this reasoning."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "91-overview",
+      children: "9.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "DENDRAL (Feigenbaum, Buchanan, Lederberg, 1969) at Stanford was the first expert system. It inferred molecular structure from mass spectrometry data."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Attribute"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Domain"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Organic chemistry (mass spectrometry)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fragmentation rules, valence constraints, stability heuristics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Reasoning"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plan-Generate-Test"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Significance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First expert system; demonstrated that domain knowledge could be encoded"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Status"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Used by chemists for structure elucidation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "92-plan-generate-test-algorithm",
+      children: "9.2 Plan-Generate-Test Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION DENDRAL(molecular_formula, mass_spectrum):\n    // Step 1: PLAN — Use mass spec to constrain structure space\n    constraints = PLAN(mass_spectrum)\n    // constraints: functional groups present, molecular weight\n    // constraints: likely substructures, impossible ones\n    \n    // Step 2: GENERATE — Enumerate all candidate structures\n    candidates = GENERATE(molecular_formula, constraints)\n    // Use graph theory to enumerate all isomers\n    // Prune with valence rules and stability heuristics\n    \n    // Step 3: TEST — Predict and compare spectra\n    best_candidate = NULL\n    best_score = -INFINITY\n    \n    FOR EACH candidate IN candidates:\n        predicted_spectrum = PREDICT_SPECTRUM(candidate)\n        score = MATCH(predicted_spectrum, mass_spectrum)\n        IF score > best_score:\n            best_score = score\n            best_candidate = candidate\n    \n    RETURN best_candidate\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "93-algorithm-steps",
+      children: "9.3 Algorithm Steps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. INPUT: Molecular formula CₙHₘOₚ and mass spectrum (m/z peaks)\n2. PLAN phase:\n   a. Identify functional groups from characteristic peaks\n   b. Determine molecular weight from parent peak\n   c. Constrain isomer space (e.g., must contain C=O)\n3. GENERATE phase:\n   a. Enumerate all atom-bond graphs satisfying formula\n   b. Apply valence constraints (C=4, H=1, O=2)\n   c. Apply stability rules (no strained rings unless evidence)\n   d. Apply PLAN phase constraints (must contain substructure X)\n4. TEST phase:\n   a. For each candidate, predict fragmentation pattern\n   b. Compute match score between predicted and observed spectrum\n   c. Rank candidates by score\n5. OUTPUT: Highest-ranked molecular structure + score\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "94-dry-run--dendral-trace",
+      children: "9.4 Dry Run — DENDRAL Trace"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Input:"
+      }), " Formula C₂H₆O, Mass spectrum: peaks at m/z 46, 31, 15"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Phase"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PLAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identify MW"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parent peak at m/z 46 → MW=46"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PLAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check functional groups"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Peak at m/z 31 → CH₂OH⁺ fragment (alcohol)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PLAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set constraints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must contain OH group"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GENERATE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enumerate isomers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C₂H₆O → ethanol (CH₃CH₂OH) and dimethyl ether (CH₃OCH₃)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GENERATE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply valence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both valid"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GENERATE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply constraints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ethanol has OH ✓, Dimethyl ether has no OH ✗"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TEST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predict ethanol spectrum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "m/z 46 (parent), 31 (CH₂OH⁺), 15 (CH₃⁺)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TEST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match observed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All three peaks match ✓"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TEST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predict ether spectrum"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "m/z 46 (parent), 15 (CH₃⁺) but no m/z 31"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TEST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Score"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ethanol = 0.95, Ether = 0.40"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OUTPUT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best candidate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ethanol (C₂H₅OH)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "95-python-dendral-simulation",
+      children: "9.5 Python DENDRAL Simulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class DENDRAL_Simulation:\n    \"\"\"Simplified DENDRAL-style structure elucidation.\"\"\"\n\n    def __init__(self):\n        # Knowledge base: fragmentation rules\n        self.frag_rules = {\n            'alcohol': lambda mol: 'OH' in mol['groups'],\n            'ether': lambda mol: 'O' in mol['groups']\n                          and 'OH' not in mol['groups'],\n        }\n        # Stability rules\n        self.valence = {'C': 4, 'H': 1, 'O': 2}\n\n    def plan(self, spectrum: Dict[int, float]) -> Dict:\n        \"\"\"Extract constraints from mass spectrum.\"\"\"\n        constraints = {'groups': [], 'MW': None}\n\n        # Parent peak = molecular weight\n        mz_values = sorted(spectrum.keys(), reverse=True)\n        constraints['MW'] = mz_values[0]\n\n        # Characteristic fragments\n        frag_map = {31: 'alcohol', 29: 'aldehyde',\n                    43: 'ketone', 45: 'carboxylic_acid'}\n        for mz in mz_values:\n            if mz in frag_map:\n                constraints['groups'].append(frag_map[mz])\n\n        print(f\"  PLAN: MW={constraints['MW']}, \"\n              f\"groups={constraints['groups']}\")\n        return constraints\n\n    def generate(self, formula: Dict[str, int],\n                 constraints: Dict) -> List[Dict]:\n        \"\"\"Generate candidate structures.\"\"\"\n        # Simplified: return predefined candidates\n        candidates = [\n            {'name': 'Ethanol', 'formula': 'C₂H₆O',\n             'groups': ['OH', 'CH₃', 'CH₂'],\n             'atoms': {'C': 2, 'H': 6, 'O': 1},\n             'MW': 46},\n            {'name': 'Dimethyl Ether',\n             'formula': 'C₂H₆O',\n             'groups': ['OCH₃', 'CH₃'],\n             'atoms': {'C': 2, 'H': 6, 'O': 1},\n             'MW': 46},\n        ]\n\n        # Filter by constraints\n        filtered = []\n        for c in candidates:\n            if c['MW'] != constraints['MW']:\n                continue\n            if constraints['groups']:\n                group_ok = any(\n                    g in c['groups'] for g in constraints['groups']\n                )\n                if not group_ok:\n                    continue\n            filtered.append(c)\n            print(f\"  GENERATE: {c['name']} (MW={c['MW']})\")\n        return filtered\n\n    def predict_spectrum(self, molecule: Dict) -> Dict[int, float]:\n        \"\"\"Predict mass spectrum for a candidate.\"\"\"\n        spectrum = {molecule['MW']: 1.0}  # parent peak\n        if 'alcohol' in str(molecule['groups']):\n            spectrum[31] = 0.8  # CH₂OH⁺\n        if 'CH₃' in molecule['groups']:\n            spectrum[15] = 0.6\n        if 'OCH₃' in molecule['groups']:\n            spectrum[15] = 0.7\n            spectrum[29] = 0.3\n        return spectrum\n\n    def match(self, predicted: Dict[int, float],\n              observed: Dict[int, float]) -> float:\n        \"\"\"Score how well predicted matches observed.\"\"\"\n        score = 0.0\n        for mz, pred_int in predicted.items():\n            obs_int = observed.get(mz, 0.0)\n            score += 1.0 - abs(pred_int - obs_int)\n        # Penalize unobserved predicted peaks\n        score -= 0.5 * len(set(predicted) - set(observed))\n        # Penalize unexplained observed peaks\n        score -= 0.3 * len(set(observed) - set(predicted))\n        return max(0, score / max(len(predicted), 1))\n\n    def analyze(self, formula: Dict[str, int],\n                spectrum: Dict[int, float]):\n        print(f\"=== DENDRAL Analysis: {formula} ===\\n\")\n\n        constraints = self.plan(spectrum)\n        candidates = self.generate(formula, constraints)\n\n        print(\"\\n  TEST phase:\")\n        best_score = -1\n        best = None\n        for c in candidates:\n            pred_spec = self.predict_spectrum(c)\n            score = self.match(pred_spec, spectrum)\n            print(f\"    {c['name']}: \"\n                  f\"pred={pred_spec}, score={score:.2f}\")\n            if score > best_score:\n                best_score = score\n                best = c\n\n        print(f\"\\n  RESULT: {best['name']} \"\n              f\"(score={best_score:.2f})\")\n        return best\n\n\ndendral = DENDRAL_Simulation()\nspectrum = {46: 1.0, 31: 0.8, 15: 0.6}\ndendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "=== DENDRAL Analysis: {'C': 2, 'H': 6, 'O': 1} ===\n\n  PLAN: MW=46, groups=['alcohol']\n  GENERATE: Ethanol (MW=46)\n  GENERATE: Dimethyl Ether (MW=46)\n\n  TEST phase:\n    Ethanol: pred={46: 1.0, 31: 0.8, 15: 0.6}, score=0.95\n    Dimethyl Ether: pred={46: 1.0, 15: 0.7, 29: 0.3}, score=0.20\n\n  RESULT: Ethanol (score=0.95)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "96-complexity-analysis",
+      children: "9.6 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Phase"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PLAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(K)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "K characteristic peaks checked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GENERATE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N!) worst case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N atoms → N! possible bond graphs (isomer explosion)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "GENERATE (pruned)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(exp(constraints))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Constraints prune most branches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TEST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(C × P)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C candidates × P predicted peaks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Total"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(exp(N)) worst, O(C × P) typical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pruning makes it practical"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why isomer explosion is hard:"
+      }), " For formula C₃₀H₆₂O, there are ~4 billion possible isomers. DENDRAL's heuristic pruning (functional group constraints, stability rules, valence checks) reduced this to hundreds."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "97-advantages--disadvantages",
+      children: "9.7 Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "First AI system used by scientists"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited to mass spectrometry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Systematic exploration of isomer space"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combinatorial explosion for large molecules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Chemistry knowledge encoded explicitly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge engineering was difficult"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Matched expert chemists' accuracy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required human interpretation of results"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Proven approach for structure elucidation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow for molecules with >30 atoms"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "98-dendral-edge-cases",
+      children: "9.8 DENDRAL Edge Cases"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Handling"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No matching candidate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Returns top N with low confidence scores"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Isomers with similar spectra"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reports all high-scoring candidates for manual review"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unknown fragmentation pattern"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge base may lack relevant rules → low score"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Large molecules (50+ atoms)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combinatorial explosion → limited to substructure analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple functional groups overlapping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Characteristic peaks used for each group independently"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "10-expert-systems-vs-machine-learning--comparison-table",
+      children: "10. Expert Systems vs Machine Learning — Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Criterion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Expert Systems"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Machine Learning"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge Source"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Human experts (interviewed, encoded)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data (labeled examples)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Development Effort"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge acquisition bottleneck (months-years)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data collection + training (weeks-months)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Transparency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full explainability (rule chain)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Black box (except interpretable models)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Training Data Required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thousands to millions of examples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maintenance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual rule updates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retrain with new data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Handling Novelty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fails at domain boundary"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generalizes (if within distribution)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Consistency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Perfect (same input = same output)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Probabilistic (varies with training)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Learning Ability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (fixed rules)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Learns patterns from data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Uncertainty Handling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explicit (CF, DS, fuzzy)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Probabilistic (confidence scores)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Domain Scope"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Narrow, well-defined"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Broad (given enough data)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance Scaling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linear with rule count"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Improves with more data + compute"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Human-in-the-Loop"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Natural (experts write rules)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (feature engineering)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best for"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explainable decisions, stable domains, no training data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pattern recognition, changing domains, large data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Examples"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MYCIN, XCON, tax software"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPT, recommendation systems, fraud detection"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "101-when-to-use-which",
+      children: "10.1 When to Use Which"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "USE Expert Systems WHEN:\n    ✓ Domain knowledge is well-understood and stable\n    ✓ Explainability is required (medical, legal, regulatory)\n    ✓ Training data is scarce or expensive\n    ✓ Rules can be articulated by experts\n    ✓ Consistency is critical (same input = same output)\n    ✓ Audit trail is required\n\nUSE Machine Learning WHEN:\n    ✓ Large amounts of labeled data are available\n    ✓ Rules are unknown or too complex to articulate\n    ✓ The domain changes over time (fraud patterns, user preferences)\n    ✓ Approximate answers are acceptable\n    ✓ Pattern recognition from raw data (images, speech, text)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-knowledge-representation-methods--comparison",
+      children: "11. Knowledge Representation Methods — Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Representation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Inference"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Expressiveness"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Best For"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Production Rules"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IF condition THEN action"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward/backward chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R×C) matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Diagnostic systems"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Frames"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Object + slot + value + facet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inheritance, method attachment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(F) lookup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hierarchical domains"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Semantic Nets"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nodes (concepts) + edges (relationships)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spreading activation, inheritance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(N+E) traversal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Taxonomies, ontologies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Predicate Logic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "∀x (P(x) → Q(x))"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resolution, unification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very high"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(exp(N)) theorem proving"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mathematics, formal verification"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Decision Trees"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree of IF-THEN-ELSE nodes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Traverse root to leaf"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(depth) classification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classification with clear features"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bayesian Networks"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DAG + conditional probability tables"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Probabilistic inference"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(exp(N)) exact"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Uncertainty reasoning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Fuzzy Logic"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linguistic variables + membership functions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Defuzzification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(R × A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continuous control problems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "111-production-rules--detailed",
+      children: "11.1 Production Rules — Detailed"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Structure:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "IF <condition> THEN <action>"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advantage: Modular, natural, explainable"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Disadvantage: No inherent hierarchy, conflict resolution needed"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Best for: Small to medium diagnostic systems (50-5000 rules)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "112-frames--detailed",
+      children: "11.2 Frames — Detailed"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Structure:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Frame: MAMMAL\n  Slots:\n    has_hair: default True\n    gives_milk: default True\n    habitat: {land, water, air}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advantage: Inheritance, default values, procedural attachment"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Disadvantage: Rigid hierarchy, exceptions hard to model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Best for: Classification with hierarchical structure"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "113-semantic-nets--detailed",
+      children: "11.3 Semantic Nets — Detailed"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Structure:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "MAMMAL --is-a--> ANIMAL"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "WHALE --is-a--> MAMMAL"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advantage: Intuitive, supports inheritance, easy to visualize"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Disadvantage: No standard semantics, query complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Best for: Taxonomies, simple ontologies"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "114-knowledge-representation-selection-guide",
+      children: "11.4 Knowledge Representation Selection Guide"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "IF domain has clear IF-THEN rules:\n    → Production Rules\nELIF domain has hierarchical classification:\n    → Frames\nELIF domain requires relationship modeling:\n    → Semantic Nets\nELIF domain requires formal proofs:\n    → Predicate Logic\nELIF domain has uncertainty + causality:\n    → Bayesian Networks\nELIF domain has continuous values + vagueness:\n    → Fuzzy Logic\nELIF domain needs simplicity + interpretability:\n    → Decision Trees\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-interview-corner",
+      children: "12. Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "121-common-interview-questions",
+      children: "12.1 Common Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1: What is the knowledge acquisition bottleneck and how do you mitigate it?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " The knowledge acquisition bottleneck refers to the difficulty of extracting expert knowledge and encoding it into a knowledge base. Domain experts are expensive, busy, and often cannot articulate their reasoning explicitly (they \"just know\"). Mitigation strategies:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Protocol analysis:"
+        }), " Record experts solving real cases, analyze think-aloud protocols"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Machine induction:"
+        }), " Learn rules from example cases automatically"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multiple experts:"
+        }), " Cross-validate knowledge from several experts"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Iterative refinement:"
+        }), " Prototype → expert review → refine cycle"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Knowledge engineer training:"
+        }), " Teach engineers domain fundamentals"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2: When would you choose a rule-based expert system over a machine learning model?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Choose expert systems when:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explainability is legally required (medical diagnosis, credit decisions)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Training data is unavailable or prohibitively expensive"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The domain has stable, well-documented knowledge (tax law, medical guidelines)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Perfect consistency is required"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "An audit trail of decisions is needed (regulatory compliance)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Choose ML when:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Large datasets exist (millions of examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The domain changes frequently (fraud detection, recommendation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rules are too complex or unknown (image recognition, NLP)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Approximate answers are acceptable"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3: Explain forward vs backward chaining with a real-world example."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Forward chaining = data-driven: \"I have a fever and rash → check what diseases match.\" Used for monitoring (network intrusion detection starts from packet data, works toward alerts). Backward chaining = goal-driven: \"Could this be measles? Check for fever, rash, Koplik spots.\" Used for diagnosis (MYCIN starts with \"identify organism\" and asks for specific data)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4: What are the limitations of certainty factors?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " CFs lack formal probability theory foundation. They can produce counterintuitive results: combining two CF=0.6 for the same conclusion gives CF=0.84 (higher than either source). They do not distinguish between \"no evidence\" and \"evidence of absence.\" They cannot model ignorance explicitly like Dempster-Shafer. Despite this, they remain useful because they are simple, computationally cheap, and produce reasonable results in practice."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5: How does MYCIN handle uncertainty in medical diagnosis?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " MYCIN uses certainty factors (CF) ranging from -1 to +1. Each rule has a CF (e.g., 0.8), and each fact has a CF from the physician. For AND conditions, MYCIN takes the minimum CF. The conclusion CF = min(antecedent CFs) × rule CF. If two rules support the same conclusion, MYCIN combines them: CF₁ + CF₂ − CF₁·CF₂ (when both positive). This allows MYCIN to reason with imperfect information."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "122-rule-based-vs-ml--deep-dive",
+      children: "12.2 Rule-Based vs ML — Deep Dive"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rule-Based"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "ML"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge source"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expert interview"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Training data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Development time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Months to years"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Days to weeks (with data)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maintainability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual rule edits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Retraining pipeline"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Edge cases"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must be explicitly added"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Learned from data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Data efficiency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero data needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Needs 1000s of examples"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Bias"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expert bias encoded"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data bias learned"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Generalization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None outside rules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can generalize"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Debugging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trace rule chain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Feature importance, SHAP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Regulatory compliance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong (explainable)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Challenging (black box)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "123-knowledge-acquisition-bottleneck--detailed-strategies",
+      children: "12.3 Knowledge Acquisition Bottleneck — Detailed Strategies"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effort"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Effectiveness"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured interview"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predefined questions about decision process"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unstructured interview"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free-form discussion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hours"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Protocol analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expert thinks aloud while solving cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weeks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Repertory grids"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Experts rate cases on dimensions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium-High"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Machine induction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Learn rules from case data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automated"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (if data exists)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Document analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extract rules from textbooks/manuals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weeks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Iterative refinement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prototype → expert feedback → revise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Months"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very High"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "13-applications-in-real-systems",
+      children: "13. Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "131-medical-diagnosis--mycin",
+      children: "13.1 Medical Diagnosis — MYCIN"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Problem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bacterial infection diagnosis requires rare specialist knowledge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Solution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "500 production rules encoding infectious disease expertise"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Architecture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Backward chaining with certainty factors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Input"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Patient data (site, stain, morphology, symptoms)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Output"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Organism identity + antibiotic recommendation + confidence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Impact"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Matched senior specialists; influenced all subsequent medical AI"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code Example:"
+      }), " See Section 8.6 (MYCIN Python simulation)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "132-chemical-analysis--dendral",
+      children: "13.2 Chemical Analysis — DENDRAL"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Problem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Determining molecular structure from mass spectrometry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Solution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Plan-generate-test with chemistry knowledge base"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Architecture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generator enumerates isomers; predictor simulates spectrum; matcher scores"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Input"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Molecular formula + mass spectrum peaks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Output"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ranked list of candidate structures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Impact"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First AI system used by working scientists; demonstrated expert system viability"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Code Example:"
+      }), " See Section 9.5 (DENDRAL Python simulation)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "133-configuration--xconr1",
+      children: "13.3 Configuration — XCON/R1"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Problem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DEC's VAX minicomputers had millions of possible component combinations; manual configuration took hours and had 35% error rate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Solution"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "XCON (eXpert CONfigurer, also called R1) — ~10,000 production rules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Architecture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward chaining with Rete algorithm"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Input"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Customer order (CPU, memory, peripherals)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Output"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete system configuration with cabling, power, and layout"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Impact"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Saved DEC $40M/year; configured 80,000+ systems; 95-98% first-time correct"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "How XCON worked:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check if order components are compatible (CPU matches motherboard)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add required components (power supply for each cabinet)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Assign components to cabinets and backplanes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Generate cabling diagram"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify configuration constraints (power, cooling, space)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Output complete bill of materials + layout"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "134-other-notable-applications",
+      children: "13.4 Other Notable Applications"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "System"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Domain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rules"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Impact"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PROSPECTOR"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mineral exploration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1,600"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predicted molybdenum deposit worth $100M"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PUFF"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pulmonary function diagnosis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~55"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Analyzed lab test results; deployed for years"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CADUCEUS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Internal medicine"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~4,000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More comprehensive than MYCIN (never completed)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "SALT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Engineering design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3,000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Designed VAX systems (complement to XCON)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "INTERNIST-I"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Internal medicine diagnosis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~500 diseases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Covered 80% of internal medicine"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TAXMAN"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tax law"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~2,000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Corporate tax planning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DIPMETER"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Oil well log analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~300"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interpreted geological formations"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "14-clips--c-language-integrated-production-system",
+      children: "14. CLIPS — C Language Integrated Production System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " CLIPS is like a programming language designed specifically for IF-THEN rules, similar to how SQL is designed specifically for database queries. You tell CLIPS \"what are the rules\" and \"what are the facts\" — it handles the engine."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "141-clips-architecture",
+      children: "14.1 CLIPS Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "CLIPS Program\n  ├── Knowledge Base (rules + facts)\n  │     ├── Defrules (production rules)\n  │     ├── Deftemplates (fact structures)\n  │     └── Deffacts (initial facts)\n  ├── Inference Engine (Rete + forward chaining)\n  │     ├── Pattern matching\n  │     ├── Conflict resolution\n  │     └── Execution\n  └── User Interface\n        ├── (reset) — clear WM, load facts\n        ├── (run) — execute inference\n        ├── (facts) — display WM\n        └── (rules) — display rules\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "142-clips-syntax",
+      children: "14.2 CLIPS Syntax"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: ";; Define a fact template\n(deftemplate animal\n    (slot species)\n    (slot color)\n    (slot diet))\n\n;; Define rules\n(defrule identify-mammal\n    (animal (species ?s) (diet milk))\n    =>\n    (assert (animal (species ?s) (diet milk) (class mammal))))\n\n(defrule identify-carnivore\n    (animal (diet meat))\n    =>\n    (assert (animal (diet meat) (type carnivore))))\n\n;; Initial facts\n(deffacts initial-data\n    (animal (species tiger) (color orange) (diet meat))\n    (animal (species cow) (color brown) (diet grass)))\n\n;; Run\n(reset)\n(run)\n(facts)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "143-clips-features",
+      children: "14.3 CLIPS Features"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule-based programming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward-chaining production rules with Rete"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Object-oriented"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "COOL (CLIPS Object-Oriented Language)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Procedural"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Defunctions, control structures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Integration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C API for embedding in larger applications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Platforms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows, Linux, macOS (open source)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Salience"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule priority (higher = fires first)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "144-clips-salience-and-conflict-resolution-example",
+      children: "14.4 CLIPS Salience and Conflict Resolution Example"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "(defrule high-priority\n    (declare (salience 100))\n    (emergency true)\n    =>\n    (assert (action evacuate)))\n\n(defrule normal-priority\n    (declare (salience 0))\n    (fire true)\n    =>\n    (assert (action investigate)))\n\n;; emergency = true matches both, but high-priority (salience 100) fires first\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "145-clips-rete-network",
+      children: "14.5 CLIPS Rete Network"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "CLIPS uses the Rete algorithm internally. The Rete network has:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Alpha nodes:"
+        }), " Test single conditions (e.g., \"stain = gramneg\")"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Beta nodes:"
+        }), " Join conditions (AND across patterns)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Terminal nodes:"
+        }), " Full rule matches (ready to fire)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why Rete in CLIPS:"
+      }), " CLIPS was designed for real-time applications (NASA). The Rete algorithm provides predictable O(ΔF) performance per cycle instead of O(R×C×F)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "15-knowledge-acquisition",
+      children: "15. Knowledge Acquisition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Imagine teaching someone to be a doctor by having them watch you work, then asking them to explain every decision, then writing a textbook from their answers. That is knowledge acquisition."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "151-the-bottleneck",
+      children: "15.1 The Bottleneck"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The knowledge acquisition bottleneck is widely recognized as the primary obstacle to expert system development. It takes approximately ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "400 hours"
+      }), " of expert time per ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "100 rules"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "152-knowledge-acquisition-methods",
+      children: "15.2 Knowledge Acquisition Methods"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pros"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Cons"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Structured Interview"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predefined questions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Systematic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May miss tacit knowledge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Unstructured Interview"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free-form conversation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Uncovers unexpected insights"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Time-consuming"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Protocol Analysis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expert thinks aloud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rich behavioral data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expensive (1hr → 10hr analysis)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Repertory Grid"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rate cases on dimensions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Quantifies conceptual structure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Abstract, hard for some experts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Machine Induction"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Learn rules from cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automated, rapid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Needs high-quality case data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Document Analysis"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extract from manuals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Systematic coverage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May be outdated"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "153-knowledge-engineer-skills",
+      children: "15.3 Knowledge Engineer Skills"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A knowledge engineer needs:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Domain fundamentals (enough to understand expert terminology)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview techniques (avoid leading questions, probe for exceptions)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rule formalization (translate narrative into IF-THEN)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prototyping (quick iterations for expert feedback)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "System analysis (identify gaps, inconsistencies)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "16-limitations-of-expert-systems",
+      children: "16. Limitations of Expert Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "161-key-limitations",
+      children: "16.1 Key Limitations"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Limitation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Impact"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Knowledge Acquisition Bottleneck"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extracting and encoding knowledge is labor-intensive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High development cost; slow to build"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Brittleness"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Systems fail on cases outside their narrow domain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot handle novel situations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "No Learning"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules are static; no improvement from experience"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge becomes outdated"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Maintenance Difficulty"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large rule bases develop inconsistencies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Updates are risky and expensive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Shallow Reasoning"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules capture heuristics, not deep causal models"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot reason about why a rule applies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scalability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule count grows with domain complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Systems with >10K rules become unwieldy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Expert Availability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Domain experts are expensive and busy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard to maintain knowledge base"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Context Ignorance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rules lack context awareness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May apply in wrong situations"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "162-brittleness-example",
+      children: "16.2 Brittleness Example"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "IF temperature > 100 AND rash = spotted\nTHEN diagnosis = meningitis\n\n// The system works for known cases.\n// But if a patient has meningitis with no fever (immunocompromised),\n// the rule never fires — system misses the diagnosis.\n// A human doctor would consider the context.\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "163-mitigation-strategies",
+      children: "16.3 Mitigation Strategies"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Limitation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Knowledge bottleneck"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Machine induction from data; reusable rule libraries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Brittleness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid systems (ES + ML); meta-rules for boundary detection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No learning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Case-based reasoning; incremental rule refinement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Maintenance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule management tools; automated consistency checking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hierarchical rule organization; modular knowledge bases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Shallow reasoning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Causal models; deep knowledge representation (qualitative physics)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "17-concept-comparison--expert-systems-summary",
+      children: "17. Concept Comparison — Expert Systems Summary"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "System"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Domain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Reasoning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Uncertainty Model"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Rules"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Status"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MYCIN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Infectious disease diagnosis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Backward chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Certainty factors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "~500"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Historical (influential)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DENDRAL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mass spectrometry analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Plan-generate-test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "~100"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "First ES (1969)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "XCON/R1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Computer configuration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Forward chaining (Rete)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "~10,000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Deployed 1980s-90s"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PROSPECTOR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mineral exploration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Forward/backward"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Bayesian"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "~1,600"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Predicted $100M deposit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CLIPS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General purpose"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Forward+backward+Rete"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Programmable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "User-defined"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Open source (NASA)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Prolog"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Logic programming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Backward chaining (SLD resolution)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "User-defined"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "General-purpose language"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "18-quick-reference--inference-engine-strategies",
+      children: "18. Quick Reference — Inference Engine Strategies"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Direction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Mechanism"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Start Point"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Forward Chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Data → Goal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Match → Fire → Repeat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Known facts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Configuration, monitoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Backward Chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Goal → Data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Hypothesize → Verify → Repeat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Hypothesis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Diagnosis, prescription"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Generate-and-Test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Data → Candidates → Verify"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Enumerate → Predict → Score"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Constraints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Design, structure elucidation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Hybrid (forward+backward)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Both directions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Switch based on task phase"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Both"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Complex problem solving"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "19-cross-application-matrix",
+      children: "19. Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "ML"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Computer Vision"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "NLP"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Research"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rule-Based Systems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅ (regex, grammars)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅ (MYCIN, DENDRAL)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Forward Chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Backward Chaining"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Certainty Factors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dempster-Shafer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅ (sensor fusion)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Frames"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅ (semantic parsing)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Semantic Nets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "⬜"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅ (WordNet)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "✅ (ontologies)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "20-chapter-quiz",
+      children: "20. Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What is the key difference between forward and backward chaining?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Forward chaining is faster; backward chaining is more accurate"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Forward chaining starts from known facts, applies rules to reach conclusions; backward chaining starts from a hypothesis, works backward to find supporting evidence"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Forward chaining uses rules; backward chaining uses frames"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) There is no difference"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) Forward chaining is data-driven (facts → conclusions), while backward chaining is goal-driven (hypothesis → supporting evidence)."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2:"
+      }), " MYCIN's certainty factors handle uncertainty by:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Using probability theory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Combining belief and disbelief into a single CF value ranging from -1 to +1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Applying fuzzy logic"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Using Bayesian networks"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) MYCIN CF = MB − MD, ranging from -1 (definitely false) to +1 (definitely true). AND takes min CF; OR takes max CF; sequential combination uses CF₁ + CF₂ − CF₁·CF₂."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3:"
+      }), " The knowledge acquisition bottleneck refers to:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Computers are too slow for knowledge processing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Extracting and encoding expert knowledge is time-consuming and expensive"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Knowledge bases have limited capacity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Rules cannot represent complex knowledge"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) The knowledge acquisition bottleneck is the difficulty of extracting, formalizing, and maintaining expert knowledge. It takes ~400 hours of expert time per 100 rules."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4:"
+      }), " Which inference strategy does MYCIN primarily use?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Forward chaining"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Backward chaining"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Generate-and-test"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Random search"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) MYCIN uses backward chaining. It starts with the goal \"identify organism\" and works backward through rules, asking the physician for relevant patient data as needed."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5:"
+      }), " What distinguishes Dempster-Shafer theory from Bayesian probability?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) DS is simpler"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) DS can model ignorance explicitly (Pl − Bel > 0), while Bayesian forces belief + disbelief = 1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) DS is always faster"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) DS does not use probabilities"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) Dempster-Shafer separates belief from plausibility, with the gap representing ignorance. Bayesian probability must allocate all probability mass, with no \"unknown\" category."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q6:"
+      }), " Which conflict resolution strategy prevents a rule from firing twice on the same facts?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Recency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Specificity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Refraction"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Salience"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>C) Refraction prevents a rule from firing twice with the same matching facts, which prevents infinite loops."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q7:"
+      }), " In the Rete algorithm, what stores partial matches between conditions?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Alpha memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Beta memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Gamma memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Delta memory"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) Beta memories in the Rete network store partial matches between conditions (joins of alpha nodes), allowing efficient incremental update when facts change."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q8:"
+      }), " What was the significance of XCON/R1?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) First medical expert system"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) First commercially successful expert system — saved DEC $40M/year configuring VAX computers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) First system to use neural networks"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) First system for chemical analysis"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) XCON (R1) was DEC's expert system for configuring VAX computers. With ~10,000 rules, it reduced configuration errors from 35% to 2% and saved $40M annually."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q9:"
+      }), " Which of the following is NOT a knowledge acquisition method?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Protocol analysis"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Repertory grids"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Backpropagation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Machine induction"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>C) Backpropagation is a neural network training algorithm, not a knowledge acquisition method. Protocol analysis, repertory grids, and machine induction are all used for expert system knowledge acquisition."
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q10:"
+      }), " What happens when two rules in an expert system have conflicting conclusions?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) The system crashes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Conflict resolution selects one based on priority, specificity, or CF values"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Both conclusions are discarded"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) The user is prompted to decide"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.details, {
+      children: (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>B) Conflict resolution strategies (priority, specificity, recency, CF ordering) select one rule to fire. The other conclusion is not derived unless alternative rule paths exist."
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "21-exercises",
+      children: "21. Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe the three main components of an expert system and their functions."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare forward and backward chaining. For which type of task is each best suited?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the knowledge acquisition bottleneck. Why does it persist?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish certainty factors from Bayesian probability. What are the trade-offs?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How does the Rete algorithm improve inference engine performance?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe the Plan-Generate-Test strategy used by DENDRAL."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "7",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design a rule-based system in pseudocode for automobile fault diagnosis. Include at least 10 rules covering: battery, starter, fuel system, ignition, cooling system."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a Python forward-chaining engine for a medical diagnosis system with 8 rules covering 3 diseases (influenza, common cold, COVID-19) based on symptoms (fever, cough, fatigue, loss of taste, headache)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement backward chaining for the same medical diagnosis system. Compare the number of rules fired with forward chaining for specific goals."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a certainty factor system for the animal classification example. Add CF values to rules and evidence, compute combined CFs."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problems",
+      children: "Challenge Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement Dempster-Shafer combination for a medical diagnosis domain with 3 diseases and 4 symptoms. Compare with Bayesian network approach on the same problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design an expert system for a loan approval application. Include rules for credit score, income, debt-to-income ratio, employment history, and loan amount. Handle uncertainty with CF."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare the same loan approval problem solved with a decision tree ML model vs an expert system. Discuss explainability, accuracy, and maintenance trade-offs."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "22-summary",
+      children: "22. Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Expert systems were AI's first successful commercial paradigm, demonstrating that domain-specific knowledge could be encoded and applied to solve real problems. The architecture of knowledge base, inference engine, explanation facility, and working memory established principles still used in modern AI systems."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Key takeaways:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Forward chaining"
+        }), " works from data to conclusions — best for monitoring and configuration."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Backward chaining"
+        }), " works from hypotheses to evidence — best for diagnosis and prescription."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Certainty factors"
+        }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dempster-Shafer"
+        }), " provide uncertainty management with different trade-offs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MYCIN"
+        }), " proved rule-based systems could match human experts in narrow domains."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DENDRAL"
+        }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "XCON"
+        }), " demonstrated commercial viability across different domains."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "knowledge acquisition bottleneck"
+        }), " remains the primary limitation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Expert systems excel where ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "explainability"
+        }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "consistency"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "low data requirements"
+        }), " are critical."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Modern practice often combines expert systems with ML — rules for high-certainty cases, ML for pattern recognition."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Expert systems did not disappear. They evolved into business rule engines, decision management systems, and hybrid AI architectures. The principles of explicit knowledge representation, transparent reasoning, and modular rule authoring remain foundational to AI engineering."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Previous:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/artificial-intelligence/15-ethics-ai",
+        children: "Chapter 15: Ethics of AI"
+      }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Next:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/artificial-intelligence/17-modern-ai",
+        children: "Chapter 17: Modern Artificial Intelligence"
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

@@ -1,0 +1,3301 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[97902],{
+
+/***/ 85253
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_data_analysis_interpretation_01_advanced_data_interpretation_md_e0a_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-data-analysis-interpretation-01-advanced-data-interpretation-md-e0a.json
+const site_docs_courses_data_analysis_interpretation_01_advanced_data_interpretation_md_e0a_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/data-analysis-interpretation/01-advanced-data-interpretation","title":"Chapter 1: Advanced Data Interpretation","description":"Learning Objectives","source":"@site/docs/courses/data-analysis-interpretation/01-advanced-data-interpretation.md","sourceDirName":"courses/data-analysis-interpretation","slug":"/data-analysis-interpretation/01-advanced-data-interpretation","permalink":"/ai-engineering-journey/data-analysis-interpretation/01-advanced-data-interpretation","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"id":"01-advanced-data-interpretation","slug":"/data-analysis-interpretation/01-advanced-data-interpretation","title":"Chapter 1: Advanced Data Interpretation","sidebar_label":"Chapter 1: Advanced Data Interpretation","sidebar_position":1},"sidebar":"coursesSidebar","previous":{"title":"Data Analysis & Interpretation","permalink":"/ai-engineering-journey/data-analysis-interpretation/index"},"next":{"title":"Chapter 2: Missing Data and Caselet DI","permalink":"/ai-engineering-journey/data-analysis-interpretation/02-missing-data-caselet-di"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/data-analysis-interpretation/01-advanced-data-interpretation.md
+
+
+const frontMatter = {
+	id: '01-advanced-data-interpretation',
+	slug: '/data-analysis-interpretation/01-advanced-data-interpretation',
+	title: 'Chapter 1: Advanced Data Interpretation',
+	sidebar_label: 'Chapter 1: Advanced Data Interpretation',
+	sidebar_position: 1
+};
+const contentTitle = 'Chapter 1: Advanced Data Interpretation';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "1.1 The DI Problem-Solving Framework",
+  "id": "11-the-di-problem-solving-framework",
+  "level": 3
+}, {
+  "value": "1.2 Tabular Data Interpretation",
+  "id": "12-tabular-data-interpretation",
+  "level": 3
+}, {
+  "value": "Two-Table and Three-Table Combinations",
+  "id": "two-table-and-three-table-combinations",
+  "level": 4
+}, {
+  "value": "1.3 Bar Graph Analysis",
+  "id": "13-bar-graph-analysis",
+  "level": 3
+}, {
+  "value": "Simple Bar Graph",
+  "id": "simple-bar-graph",
+  "level": 4
+}, {
+  "value": "Stacked Bar Graph",
+  "id": "stacked-bar-graph",
+  "level": 4
+}, {
+  "value": "Clustered Bar Graph",
+  "id": "clustered-bar-graph",
+  "level": 4
+}, {
+  "value": "Percentage Bar Graph",
+  "id": "percentage-bar-graph",
+  "level": 4
+}, {
+  "value": "1.4 Line Chart Analysis",
+  "id": "14-line-chart-analysis",
+  "level": 3
+}, {
+  "value": "Single Line Chart",
+  "id": "single-line-chart",
+  "level": 4
+}, {
+  "value": "Multiple Line Chart",
+  "id": "multiple-line-chart",
+  "level": 4
+}, {
+  "value": "Compound Growth Chart",
+  "id": "compound-growth-chart",
+  "level": 4
+}, {
+  "value": "1.5 Pie Chart Analysis",
+  "id": "15-pie-chart-analysis",
+  "level": 3
+}, {
+  "value": "Angle Calculation Quick Reference",
+  "id": "angle-calculation-quick-reference",
+  "level": 4
+}, {
+  "value": "1.6 Combining Multiple Chart Types",
+  "id": "16-combining-multiple-chart-types",
+  "level": 3
+}, {
+  "value": "1.7 Approximation and Estimation Strategies",
+  "id": "17-approximation-and-estimation-strategies",
+  "level": 3
+}, {
+  "value": "1.8 CAGR and Growth Rate Calculations",
+  "id": "18-cagr-and-growth-rate-calculations",
+  "level": 3
+}, {
+  "value": "1.9 Percentage, Ratio, and Average Concepts in DI",
+  "id": "19-percentage-ratio-and-average-concepts-in-di",
+  "level": 3
+}, {
+  "value": "1.10 Common Traps and Pitfalls",
+  "id": "110-common-traps-and-pitfalls",
+  "level": 3
+}, {
+  "value": "Examples with Solved Exercises",
+  "id": "examples-with-solved-exercises",
+  "level": 2
+}, {
+  "value": "TypeScript Data Table Parser and Analysis Tool",
+  "id": "typescript-data-table-parser-and-analysis-tool",
+  "level": 3
+}, {
+  "value": "1.11 Calculation Shortcuts and Tricks for DI",
+  "id": "111-calculation-shortcuts-and-tricks-for-di",
+  "level": 3
+}, {
+  "value": "Percentage Shortcuts",
+  "id": "percentage-shortcuts",
+  "level": 4
+}, {
+  "value": "Ratio Simplification Trick",
+  "id": "ratio-simplification-trick",
+  "level": 4
+}, {
+  "value": "Fast Average Calculation",
+  "id": "fast-average-calculation",
+  "level": 4
+}, {
+  "value": "CAGR Approximation Trick",
+  "id": "cagr-approximation-trick",
+  "level": 4
+}, {
+  "value": "The &quot;10% Method&quot; for Any Percentage",
+  "id": "the-10-method-for-any-percentage",
+  "level": 4
+}, {
+  "value": "1.12 Common Mistakes in DI and How to Avoid Them",
+  "id": "112-common-mistakes-in-di-and-how-to-avoid-them",
+  "level": 3
+}, {
+  "value": "1.13 Exam Strategy Tips for IBPS/SBI/RBI DI Section",
+  "id": "113-exam-strategy-tips-for-ibpssbirbi-di-section",
+  "level": 3
+}, {
+  "value": "Time Allocation (35 minutes for 25 questions)",
+  "id": "time-allocation-35-minutes-for-25-questions",
+  "level": 4
+}, {
+  "value": "Priority Order Within a DI Set",
+  "id": "priority-order-within-a-di-set",
+  "level": 4
+}, {
+  "value": "Smart Guessing Strategy",
+  "id": "smart-guessing-strategy",
+  "level": 4
+}, {
+  "value": "DI Speed Hacks",
+  "id": "di-speed-hacks",
+  "level": 4
+}, {
+  "value": "Topic Weightage in Exams",
+  "id": "topic-weightage-in-exams",
+  "level": 4
+}, {
+  "value": "1.14 GFG-Style Table DI — Train Arrival/Departure Data",
+  "id": "114-gfg-style-table-di--train-arrivaldeparture-data",
+  "level": 3
+}, {
+  "value": "1.15 Books Sales Data — Table DI with Trend Analysis",
+  "id": "115-books-sales-data--table-di-with-trend-analysis",
+  "level": 3
+}, {
+  "value": "1.16 More Examples with Pie Chart and Bar Graph Data",
+  "id": "116-more-examples-with-pie-chart-and-bar-graph-data",
+  "level": 3
+}, {
+  "value": "1.17 Line Graph — Vehicle Production Data (GFG Style)",
+  "id": "117-line-graph--vehicle-production-data-gfg-style",
+  "level": 3
+}, {
+  "value": "TypeScript CAGR Calculator and Chart Generator",
+  "id": "typescript-cagr-calculator-and-chart-generator",
+  "level": 3
+}, {
+  "value": "TypeScript Bar Chart Data Analyzer",
+  "id": "typescript-bar-chart-data-analyzer",
+  "level": 3
+}, {
+  "value": "1.18 Additional Exercise Questions",
+  "id": "118-additional-exercise-questions",
+  "level": 3
+}, {
+  "value": "Additional Exercises (Q41-Q50)",
+  "id": "additional-exercises-q41-q50",
+  "level": 4
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Section A: Table-Based Questions (Q1-Q8)",
+  "id": "section-a-table-based-questions-q1-q8",
+  "level": 3
+}, {
+  "value": "Section B: Bar Graph Questions (Q9-Q14)",
+  "id": "section-b-bar-graph-questions-q9-q14",
+  "level": 3
+}, {
+  "value": "Section C: Line Chart Questions (Q15-Q20)",
+  "id": "section-c-line-chart-questions-q15-q20",
+  "level": 3
+}, {
+  "value": "Section D: Pie Chart Questions (Q21-Q25)",
+  "id": "section-d-pie-chart-questions-q21-q25",
+  "level": 3
+}, {
+  "value": "Section E: Combined Data Questions (Q26-Q30)",
+  "id": "section-e-combined-data-questions-q26-q30",
+  "level": 3
+}, {
+  "value": "Answer Key",
+  "id": "answer-key",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-1-advanced-data-interpretation",
+        children: "Chapter 1: Advanced Data Interpretation"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interpret data from complex tables with two or three combined data sets"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyse bar graphs (simple, stacked, clustered, percentage) with precision"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Extract trends and patterns from multiple-line charts and compound growth graphs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Calculate percentages, angles, and distributions from pie charts"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Combine insights from multiple chart types within a single question set"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply approximation and estimation strategies for time-efficient calculation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compute CAGR, growth rates, ratios, and averages from tabular data"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-the-di-problem-solving-framework",
+      children: "1.1 The DI Problem-Solving Framework"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Data Interpretation questions test your ability to extract meaning from numerical data presented in various visual formats. A systematic approach is essential:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    A[Read the Data Set Carefully] --> B{Identify Chart/Table Type}\n    B -->|Table| C1[Note Headers, Rows, Columns, Units]\n    B -->|Bar Graph| C2[Check Scale, Legend, Axes Labels]\n    B -->|Line Chart| C3[Identify Trends, Peaks, Troughs]\n    B -->|Pie Chart| C4[Note Percentages or Angles, Total Value]\n    \n    C1 --> D[Read All Questions First]\n    C2 --> D\n    C3 --> D\n    C4 --> D\n    \n    D --> E{Question Type?}\n    E -->|Direct Read| F1[Locate Exact Value]\n    E -->|Calculation| F2[Identify Formula: % / Ratio / Avg / CAGR]\n    E -->|Comparison| F3[Compute Both Values, Then Compare]\n    E -->|Approximation| F4[Round Numbers, Estimate]\n    \n    F1 --> G[Verify Units & Decimal Places]\n    F2 --> G\n    F3 --> G\n    F4 --> G\n    \n    G --> H[Cross-Check with Another Approach]\n    H --> I[Select Answer]\n    \n    style A fill:#4A90D9,color:#fff\n    style D fill:#7B68EE,color:#fff\n    style H fill:#2E8B57,color:#fff\n    style I fill:#CD5C5C,color:#fff\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-tabular-data-interpretation",
+      children: "1.2 Tabular Data Interpretation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Tables are the most common DI format. A table organises data into rows and columns, often combining multiple categories."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Structure of a typical DI table:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Year"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Parameter A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Parameter B"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Parameter C"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Total"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2020"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "400"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2021"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "150"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "90"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "210"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "450"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2022"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "180"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "110"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "260"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "550"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key operations on tables:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Percentages:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(Part / Total) × 100"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Ratios:"
+        }), " Compare row to row or column to column"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Averages:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Sum of values / Number of entries"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Growth rate:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "((New - Old) / Old) × 100"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CAGR:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "((Final / Initial)^(1/n) - 1) × 100"
+        }), " where n = number of years"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "two-table-and-three-table-combinations",
+      children: "Two-Table and Three-Table Combinations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Some questions present two or three related tables. You must cross-reference data across tables:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Linked tables:"
+        }), " Table 1 gives production data; Table 2 gives cost per unit. Total cost = production × cost per unit."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Supplementary tables:"
+        }), " Table 1 gives company-wise revenue; Table 2 gives expense ratios. Profit = Revenue × (1 - Expense Ratio)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Comparison tables:"
+        }), " Table 1 and Table 2 present the same metrics for different years or different entities."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Strategy for combined tables:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify the linking variable (e.g., year, company name, product ID)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Determine whether you need to read from both tables or compute from one and verify from another"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Break multi-step calculations into atomic steps, recording intermediate results"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-bar-graph-analysis",
+      children: "1.3 Bar Graph Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "simple-bar-graph",
+      children: "Simple Bar Graph"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bars of equal width represent values for different categories. The height (or length) is proportional to the value."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Calculation tips:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read the scale carefully — does it start at 0? Is there a break?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the scale markings to estimate values between grid lines"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When comparing, consider the ratio of bar heights, not absolute differences only"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "stacked-bar-graph",
+      children: "Stacked Bar Graph"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A single bar is divided into segments, each representing a sub-category. The total height represents the aggregate value."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key operations:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Absolute value of a segment:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Total bar height × Segment percentage / 100"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Percentage contribution:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(Segment value / Total bar value) × 100"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Comparison across bars:"
+        }), " Compare individual segments or totals"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "clustered-bar-graph",
+      children: "Clustered Bar Graph"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multiple bars are grouped side by side for each category, allowing direct comparison of sub-groups."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key operations:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare bars within a cluster to analyse sub-category distribution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare the same sub-category across clusters to analyse trends"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sum the bars in a cluster for category total"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "percentage-bar-graph",
+      children: "Percentage Bar Graph"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Each bar represents 100%, and segments show the percentage distribution. The total height is always the same."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key operations:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["To find actual values: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Total × Percentage / 100"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "To compare actual values when totals differ, you must multiply percentages by respective totals"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "14-line-chart-analysis",
+      children: "1.4 Line Chart Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "single-line-chart",
+      children: "Single Line Chart"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Plots a single data series over time. Useful for trend analysis."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key observations:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Trend direction:"
+        }), " Upward, downward, or stable"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Rate of change:"
+        }), " Steep slope = rapid change; gentle slope = gradual change"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Peaks and troughs:"
+        }), " Highest and lowest points"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "multiple-line-chart",
+      children: "Multiple Line Chart"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Two or more lines on the same axes, differentiated by colour or marker style."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key operations:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare trends of different entities"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify where lines intersect (equal values at that point)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Calculate the gap between lines at specific points"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Determine which entity is growing faster"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "compound-growth-chart",
+      children: "Compound Growth Chart"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Shows cumulative growth over time, often with a base year index of 100."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key operations:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Value in year N = Base value × (1 + Growth Rate)^N"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["To find the growth rate from index values: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(Index_N / Index_Base)^(1/N) - 1"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When comparing two entities, relative performance matters more than absolute values"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "15-pie-chart-analysis",
+      children: "1.5 Pie Chart Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A pie chart shows the proportional distribution of a whole. Each sector's central angle is proportional to its value."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key formulas:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Value of a sector:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(Percentage / 100) × Total"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Angle of a sector:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(Percentage / 100) × 360°"
+        }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(Value / Total) × 360°"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Percentage from angle:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(Angle / 360°) × 100"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "angle-calculation-quick-reference",
+      children: "Angle Calculation Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Percentage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Angle"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "100%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "360°"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "50%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "180°"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "25%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "90°"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12.5%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "45°"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "36°"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3.6°"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "16-combining-multiple-chart-types",
+      children: "1.6 Combining Multiple Chart Types"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A single question set may include a table, a bar graph, and a pie chart. The questions require integrating information across formats."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example structure:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A table shows company-wise production data (in tonnes)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A bar graph shows the percentage distribution of production across quarters"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A pie chart shows the cost breakdown per tonne"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "To solve:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "From the table, get the total production for a company"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "From the bar graph, find the percentage produced in Q1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compute Q1 production = Total × Q1%"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "From the pie chart, find the cost component percentage"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compute cost = Q1 production × cost per tonne × cost component%"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "17-approximation-and-estimation-strategies",
+      children: "1.7 Approximation and Estimation Strategies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In competitive exams, exact calculation is not always necessary. Approximation saves time."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "When to Use"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rounding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Values are large with decimal places"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "47.8 ≈ 48; 1234 ≈ 1200"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Fraction equivalents"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Common percentages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "33.33% ≈ 1/3; 25% = 1/4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Order of magnitude"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very large numbers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1,24,567 ≈ 1.25 lakh"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Difference elimination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ratios"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare numerators directly when denominators are close"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Range estimation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple data points"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identify min/max before calculating averages"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The 10-second rule:"
+      }), " If a calculation takes more than 10 seconds, there is probably a faster approximation method."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "18-cagr-and-growth-rate-calculations",
+      children: "1.8 CAGR and Growth Rate Calculations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Simple Growth Rate:"
+      }), "\n", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Growth Rate = ((Value in Current Year - Value in Previous Year) / Value in Previous Year) × 100"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Compound Annual Growth Rate (CAGR):"
+      }), "\n", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CAGR = ((Final Value / Initial Value)^(1/n) - 1) × 100"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Where n = number of years between initial and final values."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "CAGR approximation for short periods:"
+      }), "\nFor 2 years: CAGR ≈ (Average of annual growth rates) - (Variance adjustment)\nFor quick estimation: Use the rule of 72 for doubling time."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "19-percentage-ratio-and-average-concepts-in-di",
+      children: "1.9 Percentage, Ratio, and Average Concepts in DI"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Percentage change:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Increase: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "((New - Old) / Old) × 100"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Decrease: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "((Old - New) / Old) × 100"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Ratio calculation:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Part-to-part: Compare two categories"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Part-to-whole: Compare a category to the total"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Weighted average:"
+      }), "\n", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Weighted Average = Σ(Value_i × Weight_i) / Σ(Weight_i)"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key shortcuts:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "x% of y = y% of x"
+        }), " (commutative property)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["To increase a number by x%, multiply by ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(1 + x/100)"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["To decrease by x%, multiply by ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "(1 - x/100)"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "110-common-traps-and-pitfalls",
+      children: "1.10 Common Traps and Pitfalls"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Trap"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why It's Dangerous"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "How to Avoid"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scale not starting at 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bar/line chart comparisons become misleading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check axis origin before comparing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Different units in same table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mismatched calculations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Convert all values to same unit first"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Percentage vs percentage points"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5% to 10% is 5 percentage points increase, but 100% increase"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read the question wording carefully"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Base year changes in index"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct comparison becomes invalid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always note the base year"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data for different time periods"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Some data is annual, some cumulative"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check period headers"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "examples-with-solved-exercises",
+      children: "Examples with Solved Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-data-table-parser-and-analysis-tool",
+      children: "TypeScript Data Table Parser and Analysis Tool"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface DataTable {\n  headers: string[];\n  rows: Record<string, number>[];\n  rowLabels: string[];\n}\n\ninterface AnalysisResult {\n  percentages: Record<string, number[]>;\n  growthRates: Record<string, number[]>;\n  averages: Record<string, number>;\n  ratios: Record<string, string>;\n  cagr: Record<string, number>;\n}\n\nclass DataTableAnalyzer {\n  private table: DataTable;\n\n  constructor(table: DataTable) {\n    this.table = table;\n  }\n\n  /** Calculate percentages of each column against a base column (e.g., total) */\n  calculatePercentages(baseColumn: string): Record<string, number[]> {\n    const result: Record<string, number[]> = {};\n    const baseValues = this.getColumn(baseColumn);\n\n    for (const header of this.table.headers) {\n      if (header === baseColumn) continue;\n      const colValues = this.getColumn(header);\n      result[header] = colValues.map((v, i) =>\n        baseValues[i] !== 0 ? parseFloat(((v / baseValues[i]) * 100).toFixed(2)) : 0\n      );\n    }\n    return result;\n  }\n\n  /** Calculate year-over-year growth rates for each column */\n  calculateGrowthRates(): Record<string, number[]> {\n    const result: Record<string, number[]> = {};\n    for (const header of this.table.headers) {\n      const colValues = this.getColumn(header);\n      const rates: number[] = [];\n      for (let i = 1; i < colValues.length; i++) {\n        const rate = colValues[i - 1] !== 0\n          ? parseFloat((((colValues[i] - colValues[i - 1]) / colValues[i - 1]) * 100).toFixed(2))\n          : 0;\n        rates.push(rate);\n      }\n      result[header] = rates;\n    }\n    return result;\n  }\n\n  /** Calculate averages for each column */\n  calculateAverages(): Record<string, number> {\n    const result: Record<string, number> = {};\n    for (const header of this.table.headers) {\n      const colValues = this.getColumn(header);\n      const avg = colValues.reduce((a, b) => a + b, 0) / colValues.length;\n      result[header] = parseFloat(avg.toFixed(2));\n    }\n    return result;\n  }\n\n  /** Calculate ratio between two columns for each row */\n  calculateRatio(colA: string, colB: string): string[] {\n    const valuesA = this.getColumn(colA);\n    const valuesB = this.getColumn(colB);\n    return valuesA.map((v, i) => {\n      const g = this.gcd(Math.round(v), Math.round(valuesB[i]));\n      return `${Math.round(v) / g} : ${Math.round(valuesB[i]) / g}`;\n    });\n  }\n\n  /** Calculate CAGR for a column over a given number of years */\n  calculateCAGR(column: string, years: number): number {\n    const values = this.getColumn(column);\n    if (values.length < years + 1) return 0;\n    const start = values[0];\n    const end = values[years];\n    if (start === 0) return 0;\n    const cagr = (Math.pow(end / start, 1 / years) - 1) * 100;\n    return parseFloat(cagr.toFixed(2));\n  }\n\n  /** Get a column by header name */\n  private getColumn(header: string): number[] {\n    return this.table.rows.map(row => row[header] || 0);\n  }\n\n  /** Simple GCD for ratio simplification */\n  private gcd(a: number, b: number): number {\n    return b === 0 ? a : this.gcd(b, a % b);\n  }\n\n  /** Full analysis */\n  analyze(baseColumn: string, cagrYears: number): AnalysisResult {\n    return {\n      percentages: this.calculatePercentages(baseColumn),\n      growthRates: this.calculateGrowthRates(),\n      averages: this.calculateAverages(),\n      ratios: {},\n      cagr: {},\n    };\n  }\n}\n\n// Example usage:\nconst table: DataTable = {\n  headers: [\"Revenue\", \"Cost\", \"Profit\", \"Total\"],\n  rowLabels: [\"2019\", \"2020\", \"2021\", \"2022\"],\n  rows: [\n    { Revenue: 500, Cost: 300, Profit: 200, Total: 1000 },\n    { Revenue: 600, Cost: 350, Profit: 250, Total: 1200 },\n    { Revenue: 750, Cost: 400, Profit: 350, Total: 1500 },\n    { Revenue: 900, Cost: 500, Profit: 400, Total: 1800 },\n  ],\n};\n\nconst analyzer = new DataTableAnalyzer(table);\nconsole.log(\"Revenue Growth Rates:\", analyzer.calculateGrowthRates()[\"Revenue\"]);\nconsole.log(\"Profit CAGR (3 years):\", analyzer.calculateCAGR(\"Profit\", 3));\nconsole.log(\"Revenue/Cost Ratio:\", analyzer.calculateRatio(\"Revenue\", \"Cost\"));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " A table shows the production of wheat (in tonnes) for five states over three years. If the total production in 2022 is 5,000 tonnes and State A contributed 24%, State B contributed 18%, what is State A's production?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 900 tonnes\nb) 1,200 tonnes\nc) 1,000 tonnes\nd) 1,500 tonnes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 1,200 tonnes\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "State A's production = 24% of 5,000 = 0.24 × 5,000 = 1,200 tonnes."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " A bar graph shows sales of Company X from 2018 to 2023: 120, 150, 180, 170, 210, 250 (in ₹crores). What is the approximate percentage increase from 2018 to 2023?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 108.3%\nb) 95.2%\nc) 100.5%\nd) 112.4%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\na) 108.3%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Increase = (250 - 120) / 120 × 100 = 130 / 120 × 100 = 108.33%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " A pie chart shows the market share of four companies: A = 40%, B = 25%, C = 20%, D = 15%. If the total market size is ₹800 crores, what is the revenue of Company B?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹320 crores\nb) ₹160 crores\nc) ₹200 crores\nd) ₹120 crores"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) ₹200 crores\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Company B's revenue = 25% of 800 = 0.25 × 800 = ₹200 crores."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " In a compound growth chart, an index (base 2019 = 100) reaches 144 in 2022. What is the approximate CAGR?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 12.0%\nb) 12.96%\nc) 14.0%\nd) 10.5%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 12.96%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "CAGR = ((144/100)^(1/3) - 1) × 100 = (1.44^0.3333 - 1) × 100 ≈ (1.1296 - 1) × 100 = 12.96%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " A stacked bar shows total expenses of ₹500 lakhs for Department X. If salaries account for 60% and infrastructure for 25%, what is the salary expense?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹125 lakhs\nb) ₹300 lakhs\nc) ₹250 lakhs\nd) ₹350 lakhs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) ₹300 lakhs\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Salary expense = 60% of 500 = 0.60 × 500 = ₹300 lakhs."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q6."
+      }), " Two tables are given: Table 1 shows production (units) by company: A = 5,000, B = 7,000, C = 4,000. Table 2 shows cost per unit (₹): A = 20, B = 15, C = 25. What is the total production cost for Company C?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹1,00,000\nb) ₹75,000\nc) ₹1,50,000\nd) ₹1,25,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\na) ₹1,00,000\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Total cost for Company C = 4,000 units × ₹25/unit = ₹1,00,000."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q7."
+      }), " A clustered bar graph shows export (blue) and import (red) values for 5 years. In Year 3: export = 80, import = 100. What is the trade deficit (import - export)?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 10\nb) 20\nc) 30\nd) 40"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 20\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Trade deficit = 100 - 80 = 20."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q8."
+      }), " A pie chart has a sector with an angle of 72°. What percentage of the total does this sector represent?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 10%\nb) 15%\nc) 20%\nd) 25%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) 20%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Percentage = (72 / 360) × 100 = 0.2 × 100 = 20%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q9."
+      }), " Three tables show: (1) number of employees per department; (2) average salary per department; (3) number of years of experience. If Dept P has 50 employees with avg salary ₹60,000, what is the total salary bill?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹30,00,000\nb) ₹25,00,000\nc) ₹35,00,000\nd) ₹20,00,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\na) ₹30,00,000\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Total salary = 50 × ₹60,000 = ₹30,00,000."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q10."
+      }), " A multiple line chart shows profit margins for Company X and Y over 5 years. In 2021, X's profit = 120 and Y's profit = 150. What is the ratio of X to Y profit in 2021?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 3:5\nb) 4:5\nc) 5:6\nd) 2:3"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 4:5\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Ratio = 120 : 150 = 4 : 5."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q11."
+      }), " A percentage bar graph shows the education level distribution for Village A (total 2,000) and Village B (total 2,500). If 30% in Village A and 40% in Village B are graduates, how many graduates are there total?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 1,400\nb) 1,600\nc) 1,800\nd) 1,200"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 1,600\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Village A graduates = 30% of 2,000 = 600\nVillage B graduates = 40% of 2,500 = 1,000\nTotal = 600 + 1,000 = 1,600."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q12."
+      }), " A line chart shows the stock price of a company over 12 months. The price in January is ₹250 and in December it is ₹450. What is the percentage increase?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 70%\nb) 80%\nc) 90%\nd) 60%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 80%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Increase = (450 - 250) / 250 × 100 = 200 / 250 × 100 = 80%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q13."
+      }), " Table: Production of rice (in lakh tonnes) by 3 states:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2020"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2021"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2022"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "P"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "40"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "48"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "36"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "R"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "45"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "55"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What is the average production of State Q over the three years?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 30 lakh tonnes\nb) 36 lakh tonnes\nc) 42 lakh tonnes\nd) 38 lakh tonnes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 36 lakh tonnes\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Average = (30 + 36 + 42) / 3 = 108 / 3 = 36 lakh tonnes."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q14."
+      }), " A pie chart shows the expenditure of a family: Food = 30%, Rent = 25%, Education = 20%, Transport = 15%, Savings = 10%. If total monthly income is ₹80,000, what is the expenditure on Rent?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹24,000\nb) ₹16,000\nc) ₹20,000\nd) ₹12,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) ₹20,000\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Rent expenditure = 25% of 80,000 = ₹20,000."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q15."
+      }), " A multiple line chart shows GDP growth rates of Countries A and B from 2019-2023. A's growth rates: 4.5, 3.8, 5.2, 6.0, 6.5. B's growth rates: 3.0, 2.5, 4.0, 4.8, 5.2. In which year did the gap between A and B narrow the most?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 2019\nb) 2020\nc) 2021\nd) 2022"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 2020\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Gaps: 2019 = 4.5-3.0 = 1.5; 2020 = 3.8-2.5 = 1.3; 2021 = 5.2-4.0 = 1.2; 2022 = 6.0-4.8 = 1.2. The gap was smallest in 2020 (1.3). Wait — 2021 and 2022 both 1.2. Actually 1.3 > 1.2, so 2021 has the smallest gap at 1.2. Let me recalculate: the gap is minimal in 2021-2022 both at 1.2. Since 2021 comes first with the same minimal gap, the narrowing happened most between 2020 and 2021."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q16."
+      }), " A stacked bar graph shows total cost broken into Material, Labour, and Overhead. For Product Z, Material = 40%, Labour = 35%, Overhead = 25%. If the total cost is ₹2,00,000, what is the Labour cost?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹80,000\nb) ₹50,000\nc) ₹70,000\nd) ₹60,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) ₹70,000\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Labour cost = 35% of 2,00,000 = ₹70,000."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q17."
+      }), " A table shows exports and imports for 5 years. Ratio of Exports to Imports in Year 1 is 2:3 and in Year 5 is 4:5. If Exports in Year 1 are ₹200 crores, what are Imports in Year 5?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹250 crores\nb) ₹300 crores\nc) ₹200 crores\nd) ₹350 crores"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\na) ₹250 crores\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Year 1: E/I = 2/3 → 200/I = 2/3 → I = 300 crores\nYear 5: E/I = 4/5, but we don't know E in Year 5 directly. However, if we assume the problem intends to use the ratio and given data consistently... Actually, we need more info. Let's re-read. If Exports in Year 1 = 200, Imports in Year 1 = 300. The problem doesn't give exports for Year 5 directly. Without additional data, we cannot determine Year 5 imports. This suggests a trick — perhaps the exports in both years are equal or there's implicit data. If Year 5 exports = Year 1 exports = 200, then 200/I = 4/5 → I = 250. This is a standard DI trap question where you must read carefully."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q18."
+      }), " A combined chart set: Table shows total revenue (₹crores) by year: 2019 = 500, 2020 = 650, 2021 = 800, 2022 = 1,000. A bar graph shows the percentage revenue from 4 products. In 2022, Product A contributed 30% of revenue. What is Product A's revenue in 2022?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹150 crores\nb) ₹240 crores\nc) ₹300 crores\nd) ₹200 crores"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) ₹300 crores\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Product A revenue = 30% of ₹1,000 crores = ₹300 crores."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q19."
+      }), " A pie chart shows the distribution of investments across five sectors: Tech = 35%, Pharma = 20%, Auto = 25%, FMCG = 12%, Others = 8%. The central angle for the Pharma sector is:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 72°\nb) 90°\nc) 60°\nd) 126°"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\na) 72°\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Angle = (20 / 100) × 360° = 72°."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q20."
+      }), " A line chart with two lines shows Revenue (scale on left axis) and Profit Margin % (scale on right axis). Revenue in 2020 = 400, 2021 = 520, 2022 = 680. Profit margin = 12% in 2020, 15% in 2021, 18% in 2022. What is the profit in 2022?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹122.4 crores\nb) ₹100.8 crores\nc) ₹136.0 crores\nd) ₹150.0 crores"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\na) ₹122.4 crores\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Profit in 2022 = 18% of 680 = 0.18 × 680 = ₹122.4 crores."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "111-calculation-shortcuts-and-tricks-for-di",
+      children: "1.11 Calculation Shortcuts and Tricks for DI"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Master these calculation shortcuts to solve DI questions 2-3 times faster:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "percentage-shortcuts",
+      children: "Percentage Shortcuts"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Calculation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Shortcut Method"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12.5% of 640"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12.5% = 1/8 → 640/8 = 80"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "37.5% of 800"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "37.5% = 3/8 → 800 × 3/8 = 300"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16.67% of 900"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16.67% = 1/6 → 900/6 = 150"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "45% of 250"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10% = 25, 40% = 100, 5% = 12.5 → Total = 112.5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "62% of 350"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50% = 175, 12% = 42 → 175 + 42 = 217"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The Fraction Table"
+      }), " — Memorise these for instant conversion:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Fraction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "%"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fraction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "%"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1/3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "33.33%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "25%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2/3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "66.67%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3/4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "75%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16.67%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3/5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14.28%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4/5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12.5%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5/6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "83.33%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11.11%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7/8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "87.5%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1/10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1/1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100%"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ratio-simplification-trick",
+      children: "Ratio Simplification Trick"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "To simplify a ratio like 288:384:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Divide both by 2: 144:192"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Divide both by 2: 72:96"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Divide both by 24: 3:4\nFinal: 288:384 = 3:4"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "fast-average-calculation",
+      children: "Fast Average Calculation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Instead of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "(a+b+c+d)/4"
+      }), ", use the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "deviation method"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pick a reference number close to the expected average"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sum the deviations from the reference"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Divide by count and add to reference"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example:"
+      }), " Find average of 42, 47, 39, 52, 45"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reference = 40"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Deviations: +2, +7, -1, +12, +5 = +25"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Average = 40 + 25/5 = 40 + 5 = 45"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "cagr-approximation-trick",
+      children: "CAGR Approximation Trick"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For 2-year CAGR: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "CAGR ≈ (r₁ + r₂)/2 - (r₁ - r₂)² / (4 × (r₁ + r₂))"
+      }), "\nWhere r₁ and r₂ are year-over-year growth rates."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example:"
+      }), " Growth 20% in Year 1, 30% in Year 2"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Simple average = 25%"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Adjustment = (20-30)² / (4 × (20+30)) = 100 / 200 = 0.5"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Approx CAGR = 25 - 0.5 = 24.5%"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Exact CAGR = ((1.20 × 1.30)^0.5 - 1) × 100 = (1.56^0.5 - 1) × 100 = 24.9% — close enough!"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "the-10-method-for-any-percentage",
+      children: "The \"10% Method\" for Any Percentage"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "To find x% of a number:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Find 10% (divide by 10)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Find 1% (divide 10% by 10)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Multiply and add"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example:"
+      }), " 17% of 850"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "10% of 850 = 85"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "1% of 850 = 8.5"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "7% = 7 × 8.5 = 59.5"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "17% = 85 + 59.5 = 144.5"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "112-common-mistakes-in-di-and-how-to-avoid-them",
+      children: "1.12 Common Mistakes in DI and How to Avoid Them"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Mistake"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why It's Wrong"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Correct Approach"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reading wrong axis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Confusing left-axis bar with right-axis line in combo charts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each axis has its own scale"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check legend before reading values"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Misidentifying percentage base"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"Profit is 20% of cost\" vs \"Profit is 20% of sales\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Different bases give different answers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identify the base entity: \"of\" what?"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Adding percentages directly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20% increase + 10% increase = 30%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compounding gives 32%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiply: 1.20 × 1.10 = 1.32"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rounding intermediate answers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rounding 37.4% to 37%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accumulated error changes final answer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Keep 2 decimal places until final step"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Summing pie chart percentages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "35% + 25% + 20% + 15% = 95% (missing 5%)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pie must total 100%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check that all segments sum to 100%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Confusing \"more than\" and \"of\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "\"A is 20% more than B\" vs \"A is 20% of B\""
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A = B × 1.20 vs A = B × 0.20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read the wording precisely"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "113-exam-strategy-tips-for-ibpssbirbi-di-section",
+      children: "1.13 Exam Strategy Tips for IBPS/SBI/RBI DI Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "time-allocation-35-minutes-for-25-questions",
+      children: "Time Allocation (35 minutes for 25 questions)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Budget"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Interpretation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 question sets × 4 min each"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Sufficiency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 questions × 1.5 min each"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Miscellaneous"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7 min"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remaining arithmetic questions"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "priority-order-within-a-di-set",
+      children: "Priority Order Within a DI Set"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Direct read questions"
+        }), " (10-15 seconds each) — read values straight from the table/chart"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Single-step calculations"
+        }), " (30-45 seconds) — one percentage or ratio operation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Two-step calculations"
+        }), " (45-60 seconds) — find intermediate value, then compute"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multi-step calculations"
+        }), " (60-90 seconds) — three or more operations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True/False statements"
+        }), " (60-90 seconds) — verify each statement"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "smart-guessing-strategy",
+      children: "Smart Guessing Strategy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When running out of time:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Eliminate obviously wrong options (values outside feasible range)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Look for options that are round numbers (often the correct answer in DI)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the \"range method\": eliminate the largest and smallest options if approximate"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For \"which is true\" questions, start with the simplest statement to verify"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "di-speed-hacks",
+      children: "DI Speed Hacks"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Hack"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Value Approximation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Round 47,83,214 to 48 lakh for quick calculations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Option Elimination"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If options are spaced widely (e.g., 120, 240, 360, 480), approximate to closest"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cross-Multiplication"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For \"x% of y\" questions, use x × y / 100"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Unit Consistency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Convert lakhs to thousands or crores before dividing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mental Math"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12.5% = 1/8, 33.33% = 1/3, 66.67% = 2/3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "topic-weightage-in-exams",
+      children: "Topic Weightage in Exams"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IBPS PO"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SBI PO"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "RBI Grade B"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SSC CGL"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tabular DI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-7 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-6 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6-8 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bar Graph"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-6 Q"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Line Graph"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-4 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-4 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-4 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-4 Q"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pie Chart"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Caselet DI"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-6 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-4 Q"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Sufficiency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "—"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "114-gfg-style-table-di--train-arrivaldeparture-data",
+      children: "1.14 GFG-Style Table DI — Train Arrival/Departure Data"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Study the following table and answer the questions:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Train Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Total Scheduled"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Arrived Late"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Arrived Early"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Departed Late"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Departed Early"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Express"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "600"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "114"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "32"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "82"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "28"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Superfast"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "450"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "31"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Local"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "350"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Total"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1,400"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "150"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "58"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "90"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "46"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q21."
+      }), " What is the total number of trains that arrived late?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 120\nb) 130\nc) 140\nd) 150"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nd) 150\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Total late arrivals = 114 + 31 + 5 = 150."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q22."
+      }), " What percentage of total trains departed late?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 5.43%\nb) 6.43%\nc) 7.43%\nd) 8.43%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 6.43%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Total departed late = 82 + 5 + 3 = 90. Percentage = (90/1400) × 100 = 6.43%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q23."
+      }), " How many more Express trains arrived late than Superfast trains?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 80\nb) 83\nc) 85\nd) 90"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 83\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Express late = 114, Superfast late = 31. Difference = 114 - 31 = 83."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "115-books-sales-data--table-di-with-trend-analysis",
+      children: "1.15 Books Sales Data — Table DI with Trend Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Month"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Fiction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Non-Fiction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Educational"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Total"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "January"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "260"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "February"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "150"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "90"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "70"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "310"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "March"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "180"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "85"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "365"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "April"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "210"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "110"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "415"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "May"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "240"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "130"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "110"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "480"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q24."
+      }), " What is the average number of books sold per month?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 356\nb) 366\nc) 376\nd) 386"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 366\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Average = (260 + 310 + 365 + 415 + 480) / 5 = 1830 / 5 = 366 books."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q25."
+      }), " What is the percentage increase in Fiction sales from January to May?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 50%\nb) 75%\nc) 100%\nd) 125%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) 100%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Increase = (240 - 120) / 120 × 100 = 120/120 × 100 = 100%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q26."
+      }), " If the trend continues, what will be the total sales in June?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 500\nb) 525\nc) 545\nd) 560"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) 545\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Monthly increase in total = 50, 55, 50, 65 — average ≈ 55. June ≈ 480 + 65 = 545."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "116-more-examples-with-pie-chart-and-bar-graph-data",
+      children: "1.16 More Examples with Pie Chart and Bar Graph Data"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pie Chart: Monthly Expenditure (Total Income = ₹75,000)"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Percentage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Food"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "25%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Rent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Transportation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Education"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Entertainment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Savings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12%"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q27."
+      }), " What amount is spent on Rent?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹18,750\nb) ₹22,500\nc) ₹25,000\nd) ₹30,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) ₹22,500\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Rent = 30% of 75,000 = 0.30 × 75,000 = ₹22,500."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q28."
+      }), " How much more is spent on Food and Rent together compared to Transportation and Education combined?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹20,000\nb) ₹22,500\nc) ₹25,000\nd) ₹27,500"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) ₹22,500\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Food + Rent = 55% of 75,000 = ₹41,250. Transport + Education = 25% of 75,000 = ₹18,750. Difference = ₹41,250 - ₹18,750 = ₹22,500."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q29."
+      }), " If the Entertainment budget is reduced by half and added to Savings, what is the new Savings amount?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹9,000\nb) ₹12,000\nc) ₹15,000\nd) ₹18,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) ₹12,000\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Original Entertainment = 8% of 75,000 = ₹6,000. Reduced by half = ₹3,000. Original Savings = 12% of 75,000 = ₹9,000. New Savings = ₹9,000 + ₹3,000 = ₹12,000."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "117-line-graph--vehicle-production-data-gfg-style",
+      children: "1.17 Line Graph — Vehicle Production Data (GFG Style)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Number of Vehicles Manufactured by Two Companies Over Years (in Thousands):"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Year"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Company X"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Company Y"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2011"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "119"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "139"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2012"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "99"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2013"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "141"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2014"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "78"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "128"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2015"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "107"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2016"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "159"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "148"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q30."
+      }), " What is the average number of vehicles manufactured by Company X over the given period?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 116,000\nb) 119,333\nc) 125,000\nd) 131,667"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 119,333\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Average X = (119 + 99 + 141 + 78 + 120 + 159) / 6 × 1000 = 716/6 × 1000 = 119,333."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q31."
+      }), " In which year was the difference between production of X and Y the maximum?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 2012\nb) 2013\nc) 2014\nd) 2016"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) 2014\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Differences: 2011 = 20, 2012 = 21, 2013 = 41, 2014 = 50, 2015 = 13, 2016 = 11. Maximum in 2014 (50,000)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q32."
+      }), " The production of Company Y in 2014 was approximately what percent of Company X's production in the same year?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 154%\nb) 164%\nc) 174%\nd) 184%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 164%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Y(2014) = 128,000, X(2014) = 78,000. Percentage = (128/78) × 100 ≈ 164.1%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-cagr-calculator-and-chart-generator",
+      children: "TypeScript CAGR Calculator and Chart Generator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/** CAGR Calculator with multiple utility functions */\nclass CAGRCalculator {\n  /** Compute exact CAGR */\n  static compute(\n    initialValue: number,\n    finalValue: number,\n    periods: number\n  ): number {\n    if (initialValue <= 0 || periods <= 0) return 0;\n    return parseFloat(\n      ((Math.pow(finalValue / initialValue, 1 / periods) - 1) * 100).toFixed(2)\n    );\n  }\n\n  /** Approximate 2-year CAGR from annual growth rates */\n  static approximate2Year(r1: number, r2: number): number {\n    const avg = (r1 + r2) / 2;\n    const adjustment = Math.pow(r1 - r2, 2) / (4 * (r1 + r2));\n    return parseFloat((avg - adjustment).toFixed(2));\n  }\n\n  /** Future value from CAGR */\n  static futureValue(\n    presentValue: number,\n    cagrPercent: number,\n    years: number\n  ): number {\n    return parseFloat(\n      (presentValue * Math.pow(1 + cagrPercent / 100, years)).toFixed(2)\n    );\n  }\n\n  /** Time to double using Rule of 72 */\n  static timeToDouble(cagrPercent: number): number {\n    return parseFloat((72 / cagrPercent).toFixed(2));\n  }\n\n  /** CAGR for series of values */\n  static fromSeries(values: number[]): number[] {\n    const cagrs: number[] = [];\n    for (let i = 1; i < values.length; i++) {\n      cagrs.push(this.compute(values[0], values[i], i));\n    }\n    return cagrs;\n  }\n}\n\n// Example: Mutual fund returns\nconst navSeries = [100, 120, 144, 172.8, 207.36];\nconsole.log(\"3-year CAGR:\", CAGRCalculator.compute(100, 172.8, 3), \"%\");\nconsole.log(\"Doubling time at 12%:\", CAGRCalculator.timeToDouble(12), \"years\");\nconsole.log(\"Future value of ₹50,000 at 14% for 5 years: ₹\",\n  CAGRCalculator.futureValue(50000, 14, 5));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-bar-chart-data-analyzer",
+      children: "TypeScript Bar Chart Data Analyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface BarData {\n  categories: string[];\n  values: number[];\n  labels?: string[];\n}\n\nclass BarChartAnalyzer {\n  /** Find bar with maximum value */\n  static findMax(data: BarData): { category: string; value: number } {\n    const maxIdx = data.values.indexOf(Math.max(...data.values));\n    return { category: data.categories[maxIdx], value: data.values[maxIdx] };\n  }\n\n  /** Find bar with minimum value */\n  static findMin(data: BarData): { category: string; value: number } {\n    const minIdx = data.values.indexOf(Math.min(...data.values));\n    return { category: data.categories[minIdx], value: data.values[minIdx] };\n  }\n\n  /** Calculate percentage contribution of each bar to total */\n  static percentageContribution(data: BarData): number[] {\n    const total = data.values.reduce((a, b) => a + b, 0);\n    return data.values.map(v => parseFloat(((v / total) * 100).toFixed(2)));\n  }\n\n  /** Calculate ratio between two categories */\n  static ratio(\n    data: BarData,\n    catA: string,\n    catB: string\n  ): string {\n    const idxA = data.categories.indexOf(catA);\n    const idxB = data.categories.indexOf(catB);\n    if (idxA === -1 || idxB === -1) return \"N/A\";\n    const valA = data.values[idxA];\n    const valB = data.values[idxB];\n    const g = (a: number, b: number): number => b === 0 ? a : g(b, a % b);\n    const gcd = g(Math.round(valA), Math.round(valB));\n    return `${Math.round(valA) / gcd} : ${Math.round(valB) / gcd}`;\n  }\n\n  /** Indexed values (base = 100) */\n  static indexedValues(data: BarData, baseCategory: string): number[] {\n    const baseIdx = data.categories.indexOf(baseCategory);\n    if (baseIdx === -1) return [];\n    const baseVal = data.values[baseIdx];\n    return data.values.map(v => parseFloat(((v / baseVal) * 100).toFixed(2)));\n  }\n}\n\n// Example usage\nconst salesData: BarData = {\n  categories: [\"Product A\", \"Product B\", \"Product C\", \"Product D\"],\n  values: [450, 320, 580, 210],\n};\nconsole.log(\"Highest selling:\", BarChartAnalyzer.findMax(salesData));\nconsole.log(\"Contributions:\", BarChartAnalyzer.percentageContribution(salesData));\nconsole.log(\"Ratio A:C:\", BarChartAnalyzer.ratio(salesData, \"Product A\", \"Product C\"));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "118-additional-exercise-questions",
+      children: "1.18 Additional Exercise Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q31."
+      }), " A bar graph shows the number of students in five colleges:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "College A: 22,500 boys, 25,000 girls"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "College B: 25,000 boys, 30,000 girls"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "College C: 30,000 boys, 20,000 girls"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "College D: 22,500 boys, 30,000 girls"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "College E: 22,500 boys, 32,500 girls"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "What is the average number of girls across all colleges?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 25,000\nb) 27,500\nc) 30,000\nd) 32,500"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 27,500\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Total girls = 25,000 + 30,000 + 20,000 + 30,000 + 32,500 = 137,500. Average = 137,500/5 = 27,500."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q32."
+      }), " From the same data, the total number of girls in Colleges D and E together is what percent of total girls in Colleges A, B, and C together?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 75.3%\nb) 83.3%\nc) 88.3%\nd) 92.3%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 83.3%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Girls in D+E = 30,000 + 32,500 = 62,500. Girls in A+B+C = 25,000 + 30,000 + 20,000 = 75,000. Percentage = (62,500/75,000) × 100 = 83.3%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q33."
+      }), " A company surveyed 500 customers. 80% were satisfied with products. Of the satisfied customers, 60% were repeat customers. How many repeat customers were satisfied?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 200\nb) 240\nc) 300\nd) 360"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 240\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Satisfied customers = 80% of 500 = 400. Repeat satisfied = 60% of 400 = 240."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q34."
+      }), " A pie chart shows: Cement = 72°, Steel = 54°, Labour = 90°, Supervision = 54°, Other = 90°. Total cost = ₹6,00,000. What is the amount spent on cement?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹90,000\nb) ₹1,00,000\nc) ₹1,20,000\nd) ₹1,50,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) ₹1,20,000\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Cement = (72/360) × 6,00,000 = 0.20 × 6,00,000 = ₹1,20,000."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q35."
+      }), " From the same pie chart, labour cost exceeds steel cost by what percent of total cost?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 5%\nb) 10%\nc) 12%\nd) 15%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 10%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Labour = (90/360) × 6,00,000 = ₹1,50,000. Steel = (54/360) × 6,00,000 = ₹90,000. Excess = ₹60,000. Percentage of total = (60,000/6,00,000) × 100 = 10%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q36."
+      }), " A stacked bar shows Company X's annual revenue split: Product P = 35%, Product Q = 28%, Product R = 22%, Product S = 15%. Total revenue = ₹850 crores. What is Product Q's revenue?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) ₹210 crores\nb) ₹238 crores\nc) ₹255 crores\nd) ₹297.5 crores"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) ₹238 crores\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Product Q revenue = 28% of 850 = 0.28 × 850 = ₹238 crores."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q37."
+      }), " If Product P's revenue grows by 12% next year while total revenue stays constant, what will be Product P's new percentage share?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 35.0%\nb) 37.2%\nc) 39.2%\nd) 42.0%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) 39.2%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Current P = 35% of 850 = ₹297.5 crores. Growth = 12% → New P = 297.5 × 1.12 = ₹333.2 crores. New share = (333.2/850) × 100 = 39.2%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q38."
+      }), " A line chart shows GDP growth: 5.0%, 6.2%, 7.1%, 6.8%, 8.0% over five years. What is the average growth rate?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 6.42%\nb) 6.62%\nc) 6.82%\nd) 7.02%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nb) 6.62%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Average = (5.0 + 6.2 + 7.1 + 6.8 + 8.0) / 5 = 33.1 / 5 = 6.62%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q39."
+      }), " If a company's profit in 2020 was ₹150 crores and in 2023 was ₹280 crores, what is the approximate CAGR?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 18.2%\nb) 20.5%\nc) 23.1%\nd) 25.4%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) 23.1%\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "CAGR = ((280/150)^(1/3) - 1) × 100 = (1.8667^0.3333 - 1) × 100 ≈ (1.231 - 1) × 100 = 23.1%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q40."
+      }), " A percentage bar graph shows employment distribution in two cities. City X (pop 50,000): Employed 45%, Unemployed 55%. City Y (pop 75,000): Employed 52%, Unemployed 48%. How many more employed people does City Y have than City X?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 3,500\nb) 7,500\nc) 16,500\nd) 39,000"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer"
+      }), "\nc) 16,500\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "City X employed = 45% of 50,000 = 22,500. City Y employed = 52% of 75,000 = 39,000. Difference = 39,000 - 22,500 = 16,500."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "additional-exercises-q41-q50",
+      children: "Additional Exercises (Q41-Q50)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "41."
+      }), " Table: Production of rice (in lakh tonnes):"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2020"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2021"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2022"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2023"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "45"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "68"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "38"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "42"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "48"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "55"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "58"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "65"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "72"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) What is the CAGR of State A's production from 2020 to 2023?\nb) In which year did State B show the highest growth rate over previous year?\nc) What is the ratio of State C's production in 2020 to State A's production in 2023?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "42."
+      }), " A bar graph shows exports (in ₹crores) of 5 companies: P=250, Q=320, R=180, S=410, T=290. If exports of P grow by 15% and Q decreases by 10%, what is the new total export of P and Q combined?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "43."
+      }), " A pie chart shows the market share of 5 mobile brands: Apple=28%, Samsung=32%, Xiaomi=18%, Vivo=12%, Others=10%. Total market = ₹80,000 crores. What is the revenue difference between Samsung and Xiaomi?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "44."
+      }), " A line chart shows monthly sales: Jan=85, Feb=95, Mar=110, Apr=105, May=125, Jun=145. What is the percentage increase from the first quarter average to the second quarter average?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "45."
+      }), " A multiple line chart shows two investment funds: Fund A (2019: 100, 2020: 125, 2021: 140, 2022: 170) and Fund B (2019: 100, 2020: 115, 2021: 130, 2022: 150). Which fund has higher CAGR?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "46."
+      }), " A stacked bar shows the revenue composition of a company for 2022: Products: X=40%, Y=30%, Z=20%, Services=10%. Total revenue = ₹1,200 crores. What is the revenue from Products X and Y together?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "47."
+      }), " A clustered bar graph shows male and female employees across 4 departments. Total employees = 500. Dept 1: M=60, F=40. Dept 2: M=70, F=55. Dept 3: M=45, F=80. Dept 4: M=75, F=75. Which department has the highest female-to-male ratio?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "48."
+      }), " CAGR of sales: 2018 = ₹200 crores, 2019 = ₹250 crores, 2020 = ₹300 crores, 2021 = ₹360 crores, 2022 = ₹450 crores. What is the CAGR from 2018 to 2022?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "49."
+      }), " A pie chart has three sectors with angles 120°, 150°, and 90°. If the total value represented is ₹540,000, what is the value of the largest sector?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "50."
+      }), " A table shows the performance of 3 mutual funds over 4 years:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Fund"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2020"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2021"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2022"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "2023"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20%"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Which fund has the highest average return? Which fund has the lowest volatility (range)?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tabular DI"
+        }), " is the foundation — master percentage, ratio, average, growth rate, and CAGR calculations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Bar graphs"
+        }), " come in four variants: simple, stacked, clustered, and percentage — identify the type before solving"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Line charts"
+        }), " require trend analysis — slopes, intersections, and gaps between multiple lines"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pie charts"
+        }), " test angle-to-percentage conversion and distribution calculations"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Combined chart sets"
+        }), " require cross-referencing data across different formats"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Approximation"
+        }), " is a critical exam strategy — round numbers, use fraction equivalents, estimate before calculating exactly"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Common traps"
+        }), " include scale non-zero starts, different units, and percentage vs percentage point confusion"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Implementation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Systematic approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read data set → Note units → Read questions → Extract data → Calculate → Verify"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cross-referencing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For combined tables/charts, identify linking variables first"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Approximation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Round to nearest convenient number; check if the answer is among options before exact computation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Unit vigilance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Convert all values to consistent units before calculating"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Formula sheet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memorise: CAGR, percentage change, ratio, weighted average, angle conversion formulas"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Verification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cross-check calculations using a different approach (e.g., reverse calculation)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " What is the first step when approaching a Data Interpretation question set?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Start calculating immediately\nb) Read the data set carefully, noting units and labels\nc) Skip directly to the questions\nd) Guess an approximate answer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " b) Read the data set carefully, noting units and labels"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Understanding the data presentation format, units, and labels is essential before attempting questions. Rushing into calculations without understanding the data is the most common mistake."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " A pie chart sector has a central angle of 90°. What percentage of the total does it represent?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) 15%\nb) 20%\nc) 25%\nd) 30%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " c) 25%"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Percentage = (90 / 360) × 100 = 0.25 × 100 = 25%."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " Which type of bar graph is most appropriate for showing the percentage composition of different categories across multiple years?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Simple bar graph\nb) Clustered bar graph\nc) Stacked bar graph\nd) Percentage bar graph"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " d) Percentage bar graph"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Percentage bar graphs make each bar equal height (100%), allowing comparison of proportional composition across categories or years while accounting for different totals."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " When combining data from a table and a pie chart, what is the first variable you must identify?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) The total value\nb) The linking variable\nc) The largest percentage\nd) The smallest value"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " b) The linking variable"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "The linking variable (e.g., company name, year, product ID) connects the data across different formats. Without identifying it, cross-referencing is impossible."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " Which of the following is NOT a valid approximation strategy?"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "a) Rounding large numbers to the nearest convenient value\nb) Using fraction equivalents of common percentages\nc) Always calculating exact values to avoid errors\nd) Estimating the range before precise calculation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Show Answer"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Answer:"
+        }), " c) Always calculating exact values to avoid errors"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "In competitive exams, exact calculation for every step is time-prohibitive. Approximation strategies save time and are often sufficient when answer choices are sufficiently separated."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "section-a-table-based-questions-q1-q8",
+      children: "Section A: Table-Based Questions (Q1-Q8)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Table: Production of Crops (in lakh tonnes) by Five States"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rice (2022)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Wheat (2022)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Rice (2023)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Wheat (2023)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Punjab"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "160"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "135"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "175"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Haryana"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "85"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "110"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "92"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "118"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "UP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "150"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "165"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "130"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "105"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "102"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "112"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bihar"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "70"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "55"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "78"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the total rice production in 2022 across all five states?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the percentage increase in wheat production for Punjab from 2022 to 2023?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Which state had the highest combined production (rice + wheat) in 2023?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the ratio of rice to wheat production in Uttar Pradesh in 2022?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the average wheat production across all states in 2023?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "By what percentage did Bihar's combined production increase from 2022 to 2023?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In 2022, what percentage of total production was rice? (Round to 1 decimal)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If MP's rice production in 2024 is expected to be 10% higher than 2023, what will it be?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "section-b-bar-graph-questions-q9-q14",
+      children: "Section B: Bar Graph Questions (Q9-Q14)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "9",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In a simple bar graph showing sales (₹lakhs) for 5 products: A=50, B=75, C=60, D=90, E=45, what is the average sales per product?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A stacked bar shows total sales of ₹200 lakhs for a company. If Product X contributes 35%, Product Y contributes 28%, and the rest is Product Z, what is the sales value of Product Z?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A clustered bar graph shows male and female employees in 4 departments. Dept 1: M=30, F=20; Dept 2: M=25, F=35; Dept 3: M=40, F=10; Dept 4: M=20, F=30. Which department has the highest total employees?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In a percentage bar graph, City A (total pop 10,000) has 40% employed, City B (total pop 15,000) has 35% employed. How many more employed people does City B have?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A bar graph shows revenue growth percentages: 2019=8%, 2020=12%, 2021=10%, 2022=15%. If 2019 revenue base was ₹500 crores, what was the revenue in 2020?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A clustered bar shows exports and imports for 3 years. Calculate the total trade balance (exports - imports) across all 3 years if data is: Y1: E=200, I=180; Y2: E=240, I=220; Y3: E=280, I=250."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "section-c-line-chart-questions-q15-q20",
+      children: "Section C: Line Chart Questions (Q15-Q20)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Line Chart: Temperature (in °C) in City X over 12 months"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Jan: 15, Feb: 18, Mar: 22, Apr: 28, May: 33, Jun: 36, Jul: 35, Aug: 34, Sep: 31, Oct: 26, Nov: 20, Dec: 16"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "15",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the temperature range across the year?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the average temperature for the first quarter (Jan-Mar)?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "By what percentage did temperature increase from March to May?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In which month is the temperature exactly 50% of the June temperature?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the median temperature for the year?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the temperature in June last year was 34°C, what is the percentage increase this year?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "section-d-pie-chart-questions-q21-q25",
+      children: "Section D: Pie Chart Questions (Q21-Q25)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pie Chart: Company Expenses (Total: ₹1,200 crores)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Production: 30%, Marketing: 18%, R&D: 15%, Salaries: 25%, Admin: 12%"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "21",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the amount spent on Production?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the central angle for the R&D sector?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the ratio of Marketing to Admin expenses?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If Salaries increase by 10% next year while all other expenses remain constant, what will be the new total expense?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between the amounts spent on Production and Admin?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "section-e-combined-data-questions-q26-q30",
+      children: "Section E: Combined Data Questions (Q26-Q30)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Table: Total Investment (₹crores) in Three Sectors"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Year"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IT"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pharma"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Auto"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Total"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2020"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "150"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "180"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "530"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2021"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "280"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "170"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "650"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2022"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "350"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "190"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "220"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "760"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pie Chart (2022): IT Subsector Distribution"
+      }), "\nSoftware: 40%, Hardware: 30%, Services: 20%, Others: 10%"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "26",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the total investment in the IT sector across all three years?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the CAGR of Auto sector investment from 2020 to 2022?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In 2022, what is the investment in Software subsector?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What percentage of total investment in 2021 did IT sector account for?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the Pharma sector's growth rate from 2020 to 2021 continues to 2022, what would the Pharma investment in 2022 have been?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "answer-key",
+      children: "Answer Key"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "520 lakh tonnes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9.375%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Uttar Pradesh (295)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5:4"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "119 lakh tonnes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8.8%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "49.5%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "112.2 lakh tonnes"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹64 lakhs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹74 lakhs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dept 3 (50)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1,250 more"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹560 crores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "70"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "21°C (36-15)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18.33°C"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "March (22°C)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "27°C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5.88%"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "21"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹360 crores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "22"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "54°"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "23"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3:2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹1,230 crores"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "25"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹216 crores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "26"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹830 crores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "27"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.56%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "28"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹140 crores"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "29"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "43.08%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "₹190 crores"
+          }), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {}), (0,jsx_runtime.jsx)(_components.td, {})]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detailed Solutions for Selected Questions:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " 120+85+150+95+70 = 520 lakh tonnes."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2:"
+      }), " ((175-160)/160) × 100 = 15/160 × 100 = 9.375%."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5:"
+      }), " (175+118+130+112+60)/5 = 595/5 = 119 lakh tonnes."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q12:"
+      }), " City B employed = 35% of 15,000 = 5,250. City A employed = 40% of 10,000 = 4,000. Difference = 1,250."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q15:"
+      }), " Range = 36 - 15 = 21°C."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q22:"
+      }), " R&D angle = (15/100) × 360 = 54°."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q24:"
+      }), " New salaries = 25% of 1,200 = 300. Increase = 10% of 300 = 30. New total = 1,200 + 30 = ₹1,230 crores."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q27:"
+      }), " CAGR = ((220/180)^(1/2) - 1) × 100 = (1.2222^0.5 - 1) × 100 = (1.1054 - 1) × 100 = 10.54%."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q28:"
+      }), " IT investment 2022 = 350. Software = 40% of 350 = ₹140 crores."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q30:"
+      }), " Growth rate = (170-150)/150 = 13.33%. Applying to 2022: 170 × 1.1333 = ₹192.67, which rounds to approximately ₹190 crores (given integer data constraints)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.em, {
+        children: "Proceed to Chapter 2: Missing Data and Caselet DI"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

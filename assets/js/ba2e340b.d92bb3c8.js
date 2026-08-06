@@ -1,0 +1,1047 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[16988],{
+
+/***/ 93305
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_modern_ai_engineering_08_ai_agents_and_tool_use_md_ba2_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-modern-ai-engineering-08-ai-agents-and-tool-use-md-ba2.json
+const site_docs_courses_modern_ai_engineering_08_ai_agents_and_tool_use_md_ba2_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/modern-ai-engineering/08-ai-agents-and-tool-use","title":"Chapter 8: AI Agents and Tool Use","description":"Learning Objectives","source":"@site/docs/courses/modern-ai-engineering/08-ai-agents-and-tool-use.md","sourceDirName":"courses/modern-ai-engineering","slug":"/modern-ai-engineering/08-ai-agents-and-tool-use","permalink":"/ai-engineering-journey/modern-ai-engineering/08-ai-agents-and-tool-use","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":8,"frontMatter":{"id":"08-ai-agents-and-tool-use","slug":"/modern-ai-engineering/08-ai-agents-and-tool-use","title":"Chapter 8: AI Agents and Tool Use","sidebar_label":"Chapter 8: AI Agents and Tool Use","sidebar_position":8},"sidebar":"coursesSidebar","previous":{"title":"Chapter 7: Fine-Tuning","permalink":"/ai-engineering-journey/modern-ai-engineering/07-fine-tuning"},"next":{"title":"Chapter 9: Safety, Alignment, and Guardrails","permalink":"/ai-engineering-journey/modern-ai-engineering/09-safety-alignment-guardrails"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/modern-ai-engineering/08-ai-agents-and-tool-use.md
+
+
+const frontMatter = {
+	id: '08-ai-agents-and-tool-use',
+	slug: '/modern-ai-engineering/08-ai-agents-and-tool-use',
+	title: 'Chapter 8: AI Agents and Tool Use',
+	sidebar_label: 'Chapter 8: AI Agents and Tool Use',
+	sidebar_position: 8
+};
+const contentTitle = 'Chapter 8: AI Agents and Tool Use';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "8.1 What Makes an AI Agent",
+  "id": "81-what-makes-an-ai-agent",
+  "level": 2
+}, {
+  "value": "8.2 The ReAct Pattern",
+  "id": "82-the-react-pattern",
+  "level": 2
+}, {
+  "value": "8.3 Tool Calling",
+  "id": "83-tool-calling",
+  "level": 2
+}, {
+  "value": "8.4 Planning Strategies",
+  "id": "84-planning-strategies",
+  "level": 2
+}, {
+  "value": "8.5 Agent Memory",
+  "id": "85-agent-memory",
+  "level": 2
+}, {
+  "value": "8.6 Multi-Step Reasoning",
+  "id": "86-multi-step-reasoning",
+  "level": 2
+}, {
+  "value": "8.7 Common Failure Modes",
+  "id": "87-common-failure-modes",
+  "level": 2
+}, {
+  "value": "8.8 Agent Evaluation",
+  "id": "88-agent-evaluation",
+  "level": 2
+}, {
+  "value": "8.9 Multi-Agent Patterns",
+  "id": "89-multi-agent-patterns",
+  "level": 2
+}, {
+  "value": "TypeScript: AgentExecutor",
+  "id": "typescript-agentexecutor",
+  "level": 2
+}, {
+  "value": "TypeScript: ToolRegistry",
+  "id": "typescript-toolregistry",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-8-ai-agents-and-tool-use",
+        children: "Chapter 8: AI Agents and Tool Use"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Learning Objectives"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "By the end of this chapter, you will be able to:"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Define the core components of an AI agent: planning, memory, tool use, and self-reflection"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Implement the ReAct reasoning-acting loop with observation feedback"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Design tool definitions using JSON Schema and a tool registry"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Compare planning strategies: ReAct, Plan-and-Solve, Tree-of-Thought"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Manage agent memory across short-term and long-term storage"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Diagnose and mitigate common agent failure modes"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Evaluate agent performance on task completion, efficiency, and robustness"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/modern-ai-engineering/08-ai-agents-and-tool-use/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/modern-ai-engineering/08-ai-agents-and-tool-use/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/modern-ai-engineering/08-ai-agents-and-tool-use/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/modern-ai-engineering/08-ai-agents-and-tool-use/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/modern-ai-engineering/08-ai-agents-and-tool-use/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/modern-ai-engineering/08-ai-agents-and-tool-use/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "81-what-makes-an-ai-agent",
+      children: "8.1 What Makes an AI Agent"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["An AI agent is an autonomous system that perceives its environment, reasons about goals, takes actions via tools, and reflects on outcomes to improve future behavior. Unlike a simple LLM call, an agent operates in a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "loop"
+      }), ": it receives a task, formulates a plan, executes actions, observes results, and iterates until the task is complete or a termination condition is reached."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The five core components of an AI agent are:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Planning"
+        }), ": Decomposing a complex task into sub-steps, selecting actions, and ordering operations. Planning can be single-step (the model generates one action at a time) or multi-step (the model produces a full plan upfront)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory"
+        }), ": Retaining information across interactions. Short-term memory is the context window; long-term memory uses external storage (vector databases, key-value stores). Episodic memory stores past experiences."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tool Use"
+        }), ": Interfacing with external systems — APIs, databases, search engines, file systems, calculators, code interpreters. Tools extend the agent's capabilities beyond text generation."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Self-Reflection"
+        }), ": Evaluating the quality of generated actions and outcomes. The agent can critique its own reasoning, detect errors, and adjust its approach."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Autonomy"
+        }), ": The agent operates without continuous human intervention, deciding when to ask for help and when to proceed independently."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "architecture-beta\n    group agent[AI Agent]\n    service planner(cpu)[Planner] in agent\n    service memory(database)[Memory] in agent\n    service tools(disk)[Tool Registry] in agent\n    service llm(server)[LLM Core] in agent\n    service reflector(cloud)[Reflector] in agent\n    service env(globe)[Environment]\n\n    llm --> planner\n    llm --> memory\n    llm --> tools\n    llm --> reflector\n    planner --> llm\n    memory --> llm\n    tools --> env\n    env --> llm\n    reflector --> llm\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Agents fall on a spectrum from ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "simple reactive agents"
+      }), " (one-shot tool callers) to ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "autonomous long-horizon agents"
+      }), " that can operate for hours across dozens of tool calls and multiple reasoning steps."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "82-the-react-pattern",
+      children: "8.2 The ReAct Pattern"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "ReAct (Reasoning + Acting) is the most widely adopted agent architecture. It interleaves reasoning traces (\"thoughts\") with actions and observations, enabling the model to dynamically adjust its plan based on intermediate results."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The ReAct loop"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Thought"
+        }), ": The model analyzes the current state, identifies what information is needed, and decides what to do next."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Action"
+        }), ": The model invokes a tool with specific parameters. The action is formatted as a structured command (e.g., JSON function call)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Observation"
+        }), ": The tool returns a result, which is appended to the context."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The loop repeats: the model reads the observation, generates a new thought, and decides whether to take another action or produce the final answer."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Task Input] --> B[Thought: Analyze State]\n    B --> C{Need More Info?}\n    C -->|Yes| D[Action: Call Tool]\n    D --> E[Observation: Tool Result]\n    E --> B\n    C -->|No| F[Action: Produce Final Answer]\n    F --> G[Output]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The key insight of ReAct is that ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "reasoning traces improve action quality"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "action outcomes improve reasoning"
+      }), ". By externalizing the reasoning process, ReAct also provides interpretability — developers can read the model's chain of thought to understand why it took a particular action."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Implementation in practice"
+      }), ": ReAct prompts typically include:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A system message describing available tools and their signatures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A few-shot example showing the thought-action-observation pattern"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A stop condition: produce a final answer when sufficient information is gathered"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Pseudocode for a ReAct loop\nasync function reactLoop(task: string, maxSteps: number): Promise<string> {\n  let context = `Task: ${task}\\n`;\n  for (let step = 0; step < maxSteps; step++) {\n    const response = await llm.generate(context + \"Thought:\");\n    context += response + \"\\n\";\n    if (response.includes(\"Final Answer:\")) {\n      return response;\n    }\n    const action = parseAction(response);\n    const observation = await executeTool(action);\n    context += `Observation: ${observation}\\n`;\n  }\n  return \"Max steps exceeded.\";\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "83-tool-calling",
+      children: "8.3 Tool Calling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Tool calling (also called function calling) is the mechanism by which an agent invokes external capabilities. Modern LLMs support structured tool calling natively through chat completion APIs."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Function calling APIs"
+      }), ": In the OpenAI API, tools are defined alongside the messages array. The model can respond with a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tool_calls"
+      }), " field containing the function name and arguments. Providers like Anthropic (Claude), Google (Gemini), and open-source models (via ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "tool_use"
+      }), " formats) offer similar interfaces."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Tool definition with JSON Schema"
+      }), ": Each tool is defined by:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "name"
+        }), ": A unique identifier"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "description"
+        }), ": What the tool does (helps the model choose correctly)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "parameters"
+        }), ": A JSON Schema object describing expected arguments"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    A[LLM generates response] --> B{Has tool_calls?}\n    B -->|No| C[Return text response]\n    B -->|Yes| D[Parse tool name + args]\n    D --> E[Look up in ToolRegistry]\n    E --> F{Registry has tool?}\n    F -->|No| G[Return error observation]\n    F -->|Yes| H[Validate args against JSON Schema]\n    H --> I{Args valid?}\n    I -->|No| J[Return validation error]\n    I -->|Yes| K[Execute tool function]\n    K --> L[Format result as observation]\n    L --> M[Append to message history]\n    M --> A\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Tool registry"
+      }), ": A centralized registry manages tool definitions, dispatches calls, and handles errors. The registry is responsible for:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Storing tool definitions (name, description, schema, implementation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Validating arguments against the defined schema"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Executing the tool function with proper error boundaries"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Formatting results and errors into observation strings"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Error handling"
+      }), ": Tool calls can fail for many reasons — network errors, invalid arguments, rate limits, timeouts. The agent must handle these gracefully:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Catch all errors and return meaningful error observations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement retry logic with exponential backoff for transient failures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set per-tool timeouts to prevent agent loops"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log all tool failures for debugging"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "84-planning-strategies",
+      children: "8.4 Planning Strategies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Different tasks require different planning approaches. The choice depends on task complexity, available compute, and the cost of intermediate steps."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Single-step (Direct)"
+      }), ": The model generates a final answer directly without intermediate steps. Used for simple, well-defined queries. Fast but unreliable for complex multi-step tasks."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "ReAct"
+      }), ": Interleaves reasoning and acting dynamically. The model decides each next step based on observations. Best for tasks where the plan depends on intermediate results (web search, data analysis)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Plan-and-Solve"
+      }), ": The model generates a complete plan upfront, then executes each step sequentially. Reduces the reasoning burden during execution but cannot adapt to unexpected observations. Good for deterministic workflows."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Tree-of-Thought (ToT)"
+      }), ": Maintains multiple reasoning paths simultaneously. At each step, the model generates several candidate \"thoughts,\" evaluates them, and prunes weak branches. Uses BFS or DFS to explore the reasoning tree. Highest quality but also highest cost (5–20× more tokens)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "LLM Compiler"
+      }), ": Frames task execution as a program. The model generates a \"program\" of hierarchical steps with dependencies. A separate executor runs the program, parallelizing independent steps. Good for complex, decomposable tasks with clear dependencies."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Strategy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Steps"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Flexibility"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Cost"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Best For"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Single-Step"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple Q&A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ReAct"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Search, analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Plan-and-Solve"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deterministic pipelines"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree-of-Thought"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Branching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Creative, math, reasoning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LLM Compiler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hierarchical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex workflows"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["In practice, the majority of production agents use ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ReAct"
+      }), " as their default strategy, falling back to Plan-and-Solve for well-understood tasks and occasionally using ToT for high-stakes reasoning problems."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "85-agent-memory",
+      children: "8.5 Agent Memory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Memory is what distinguishes a stateful agent from a stateless LLM call. Agents need memory to maintain context across multiple turns, recall past decisions, and learn from experience."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Short-term memory (Context window)"
+      }), ": The model's immediate context. Includes the task description, conversation history, and recent observations. Limited by the model's maximum context length (4K–200K tokens). Managed by sliding window or summarization when approaching the limit."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Long-term memory (Retrieval)"
+      }), ": External storage accessed via retrieval. Common implementations:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Vector databases"
+        }), " (Chroma, Pinecone, Qdrant): Store embeddings of past interactions. Retrieved by semantic similarity when the agent needs relevant history."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Key-value stores"
+        }), " (Redis): Store structured facts. Retrieved by exact key match."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SQL databases"
+        }), ": Store structured logs of past actions and outcomes."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Episodic memory"
+      }), ": Stores specific past episodes — what task was attempted, what plan was used, what went wrong. The agent can query episodic memory to avoid repeating mistakes. Implemented as a vector store with episode-level granularity."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Working memory"
+      }), ": A scratchpad where the agent writes intermediate reasoning, partial calculations, and in-progress plans. Cleared when the task completes. Often implemented as a simple string buffer within the context."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Memory summarization"
+      }), ": As context grows, the agent can summarize old interactions to preserve key information while reducing token count. Common summarization triggers:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Context exceeds N% of the limit"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A natural breakpoint is reached (task sub-step completed)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The agent identifies redundant or irrelevant content"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "86-multi-step-reasoning",
+      children: "8.6 Multi-Step Reasoning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-step reasoning enables agents to solve complex problems that require chaining multiple operations, verifying intermediate results, and correcting course."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Chain-of-Thought (CoT)"
+      }), ": The model generates intermediate reasoning steps before producing the final answer. CoT significantly improves performance on math, logic, and multi-hop QA tasks. Zero-shot CoT uses the simple prompt \"Let's think step by step.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Reflection"
+      }), ": After generating an answer, the model critiques its own output. Reflection prompts like \"Check your answer for errors\" can catch mistakes before final output. The agent can generate multiple candidate answers, reflect on each, and select the best."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Self-critique"
+      }), ": The model acts as both generator and critic. It generates a solution, then evaluates it against criteria (correctness, completeness, efficiency). If the critique identifies issues, the model revises the solution. This loop repeats until the critique is satisfied."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Verification loops"
+      }), ": The agent explicitly verifies intermediate results before proceeding. For example, after a web search, the agent might ask \"Did the search result answer my question?\" before moving to the next step. Verification reduces error propagation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The interplay of planning, acting, and verification creates a robust reasoning cycle:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Task] --> B[Plan Next Step]\n    B --> C[Execute Action]\n    C --> D[Observe Result]\n    D --> E{Verify Result}\n    E -->|Pass| F{Task Complete?}\n    E -->|Fail| G[Reflect & Revise]\n    G --> B\n    F -->|No| B\n    F -->|Yes| H[Generate Final Answer]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "87-common-failure-modes",
+      children: "8.7 Common Failure Modes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AI agents are powerful but prone to several failure modes that must be anticipated and mitigated."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Loops"
+      }), ": The agent repeats the same action without progress. For example, calling a search API with the same query, getting the same result, and searching again. Mitigations include step limits, repetition detection, and action diversity checking."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hallucination propagation"
+      }), ": The agent generates a false intermediate fact, then builds further reasoning on that false premise. Each step compounds the error. Mitigation: verify facts against trusted sources before using them in subsequent reasoning."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Tool misuse"
+      }), ": The agent calls a tool with incorrect parameters, misinterprets the tool's purpose, or uses the wrong tool entirely. Mitigations: clear tool descriptions, input validation, and output formatting guidelines."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Context overflow"
+      }), ": Long agent sessions exceed the model's context window, causing the oldest information (often the original task and early observations) to be truncated. Mitigations: context compression, summarization, sliding windows."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cascading errors"
+      }), ": An early small error leads to increasingly large failures downstream. Mitigations: verification checkpoints, rollback capability, human-in-the-loop approval for critical actions."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Failure Mode"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Loop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Repeatedly searching the same query"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Step limit, diversity check"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hallucination Propagation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Using a fake company name in a calculation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fact-checking, grounding"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tool Misuse"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Calling ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "send_email"
+            }), " when ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "search_contacts"
+            }), " was needed"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Better descriptions, validation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Context Overflow"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Losing the original task after 20 steps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Summarization, checkpointing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cascading Error"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wrong address → wrong route → missed deadline"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verification at each step"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cost Explosion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100+ tool calls for a simple task"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Budget limits, cost tracking"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "88-agent-evaluation",
+      children: "8.8 Agent Evaluation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Evaluating agents is more complex than evaluating single LLM calls because agents produce long, multi-step traces with intermediate states."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Task completion rate (TCR)"
+      }), ": The percentage of tasks the agent completes successfully. The simplest and most important metric. Success criteria must be clearly defined per task (exact match, LLM-judged correctness, human evaluation)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Efficiency"
+      }), ": Measured as steps per task, tokens per task, or wall-clock time. A high-completion-rate agent that uses 50 steps per task may be impractical compared to one that uses 10 steps with similar quality."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Robustness"
+      }), ": How the agent handles unexpected situations — tool failures, ambiguous instructions, missing information. Measured by injecting perturbations into the evaluation set (missing parameters, API timeouts, irrelevant context)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cost per task"
+      }), ": Combines LLM inference cost (per-token pricing) and tool execution cost (API calls, compute). A cheaper agent that completes 85% of tasks may be preferable to an expensive one at 95%, depending on the use case."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Human preference"
+      }), ": For subjective tasks (customer support, creative assistance), human evaluators compare agent traces. Side-by-side A/B testing with human raters provides the most reliable quality signal."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation frameworks"
+      }), ": LangSmith, Weights & Biases, and Arize AI provide agent tracing and evaluation. Open-source tools like Agenta and Phoenix also support agent evaluation workflows."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "89-multi-agent-patterns",
+      children: "8.9 Multi-Agent Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Complex tasks often benefit from multiple specialized agents collaborating. Each agent has a specific role, and they communicate through structured messages."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Supervisor pattern"
+      }), ": A supervisor agent delegates tasks to worker agents and aggregates results. The supervisor decides the plan, assigns work, and validates output. Workers are specialized (search agent, code agent, analysis agent)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Delegation pattern"
+      }), ": Any agent can delegate sub-tasks to other agents. Agents register their capabilities, and delegators select peers based on capability matching. Decentralized but requires capability discovery."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Debate pattern"
+      }), ": Two or more agents independently work on the same task and then debate their answers. A judge agent (or the user) selects the best answer after considering the debate. Produces higher quality but is expensive."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hierarchical pattern"
+      }), ": Multiple layers of agents. Top-level agents break tasks into sub-goals, mid-level agents coordinate, and leaf agents execute. Reduces the context burden on any single agent."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    S[Supervisor Agent] --> A[Search Agent]\n    S --> B[Code Agent]\n    S --> C[Analysis Agent]\n\n    A --> A1[Web Search]\n    A --> A2[Document Retrieval]\n\n    B --> B1[Python Executor]\n    B --> B2[Code Reviewer]\n\n    C --> C1[Data Analyzer]\n    C --> C2[Report Generator]\n\n    S --> D[Judge Agent]\n    D --> E[Final Output]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-agent patterns introduce coordination overhead. Message passing between agents must be structured, asynchronous, and logged. Error handling across agents requires distributed tracing. In practice, most production systems use the supervisor pattern because it is the most controllable and debuggable."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-agentexecutor",
+      children: "TypeScript: AgentExecutor"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface ToolDefinition {\n  name: string;\n  description: string;\n  parameters: Record<string, unknown>;\n  handler: (args: Record<string, unknown>) => Promise<string>;\n}\n\ninterface AgentMessage {\n  role: 'system' | 'user' | 'assistant' | 'tool';\n  content: string;\n  toolCallId?: string;\n  toolName?: string;\n}\n\ninterface AgentOptions {\n  modelName: string;\n  systemPrompt: string;\n  maxSteps: number;\n  maxTokens: number;\n  temperature: number;\n  timeoutMs: number;\n}\n\nclass AgentExecutor {\n  private tools: Map<string, ToolDefinition> = new Map();\n  private messages: AgentMessage[] = [];\n  private memory: Map<string, string> = new Map();\n  private options: AgentOptions;\n  private stepCount: number = 0;\n  private totalTokens: number = 0;\n\n  constructor(options: Partial<AgentOptions> = {}) {\n    this.options = {\n      modelName: options.modelName ?? 'gpt-4o',\n      systemPrompt: options.systemPrompt ?? 'You are a helpful AI agent.',\n      maxSteps: options.maxSteps ?? 25,\n      maxTokens: options.maxTokens ?? 4096,\n      temperature: options.temperature ?? 0.7,\n      timeoutMs: options.timeoutMs ?? 30000,\n    };\n    this.messages.push({ role: 'system', content: this.options.systemPrompt });\n  }\n\n  registerTool(tool: ToolDefinition): void {\n    if (this.tools.has(tool.name)) {\n      throw new Error(`Tool \"${tool.name}\" already registered`);\n    }\n    this.tools.set(tool.name, tool);\n  }\n\n  getToolDefinitions(): Array<{ name: string; description: string; parameters: Record<string, unknown> }> {\n    return Array.from(this.tools.values()).map(t => ({\n      name: t.name,\n      description: t.description,\n      parameters: t.parameters,\n    }));\n  }\n\n  async execute(task: string): Promise<string> {\n    this.messages.push({ role: 'user', content: task });\n    this.stepCount = 0;\n\n    while (this.stepCount < this.options.maxSteps) {\n      this.stepCount++;\n      const response = await this.callLLM();\n\n      const toolCalls = this.parseToolCalls(response);\n      if (toolCalls.length === 0) {\n        return response;\n      }\n\n      for (const call of toolCalls) {\n        this.messages.push({\n          role: 'assistant',\n          content: '',\n          toolCallId: call.id,\n          toolName: call.name,\n        });\n\n        try {\n          const tool = this.tools.get(call.name);\n          if (!tool) {\n            throw new Error(`Unknown tool: \"${call.name}\"`);\n          }\n          const validated = this.validateArgs(tool, call.args);\n          const result = await this.executeWithTimeout(tool, validated);\n          this.messages.push({\n            role: 'tool',\n            content: result,\n            toolCallId: call.id,\n            toolName: call.name,\n          });\n          this.storeToMemory(call.name, JSON.stringify(call.args), result);\n        } catch (err) {\n          const errorMsg = err instanceof Error ? err.message : String(err);\n          this.messages.push({\n            role: 'tool',\n            content: `Error: ${errorMsg}`,\n            toolCallId: call.id,\n            toolName: call.name,\n          });\n        }\n      }\n\n      if (this.getContextLength() > this.options.maxTokens * 4) {\n        this.summarizeHistory();\n      }\n    }\n\n    return 'Max steps exceeded without completing the task.';\n  }\n\n  private async callLLM(): Promise<string> {\n    const tools = this.getToolDefinitions();\n    const response = await this.simulateLLMCall(tools);\n    this.totalTokens += response.length / 4;\n    return response;\n  }\n\n  private async simulateLLMCall(tools: Array<Record<string, unknown>>): Promise<string> {\n    const lastMsg = this.messages[this.messages.length - 1];\n    if (lastMsg.role === 'user' && lastMsg.content.includes('weather')) {\n      return JSON.stringify([{\n        id: 'call_1',\n        type: 'function',\n        function: { name: 'get_weather', arguments: '{\"location\":\"New York\"}' },\n      }]);\n    }\n    return 'Final answer: Task completed successfully.';\n  }\n\n  private parseToolCalls(response: string): Array<{ id: string; name: string; args: Record<string, unknown> }> {\n    try {\n      const parsed = JSON.parse(response);\n      if (Array.isArray(parsed)) {\n        return parsed.map((call: Record<string, unknown>) => ({\n          id: (call.id as string) ?? `call_${this.stepCount}`,\n          name: (call.function as Record<string, unknown>)?.name as string ?? '',\n          args: JSON.parse((call.function as Record<string, unknown>)?.arguments as string ?? '{}') as Record<string, unknown>,\n        }));\n      }\n    } catch {\n      // Not a tool call response\n    }\n    return [];\n  }\n\n  private validateArgs(tool: ToolDefinition, args: Record<string, unknown>): Record<string, unknown> {\n    const schema = tool.parameters as Record<string, unknown>;\n    const required = (schema as Record<string, unknown>).required as string[] ?? [];\n    for (const field of required) {\n      if (args[field] === undefined || args[field] === null) {\n        throw new Error(`Missing required argument \"${field}\" for tool \"${tool.name}\"`);\n      }\n    }\n    return args;\n  }\n\n  private async executeWithTimeout(tool: ToolDefinition, args: Record<string, unknown>): Promise<string> {\n    const timeoutPromise = new Promise<string>((_, reject) =>\n      setTimeout(() => reject(new Error(`Tool \"${tool.name}\" timed out`)), this.options.timeoutMs)\n    );\n    const resultPromise = tool.handler(args);\n    return Promise.race([resultPromise, timeoutPromise]);\n  }\n\n  private storeToMemory(toolName: string, args: string, result: string): void {\n    const key = `tool:${toolName}:${Date.now()}`;\n    this.memory.set(key, JSON.stringify({ args, result, timestamp: Date.now() }));\n    if (this.memory.size > 1000) {\n      const oldest = this.memory.keys().next().value;\n      if (oldest) this.memory.delete(oldest);\n    }\n  }\n\n  private summarizeHistory(): void {\n    const sysIdx = this.messages.findIndex(m => m.role === 'system');\n    const toSummarize = this.messages.slice(sysIdx + 1, -10);\n    if (toSummarize.length < 5) return;\n    const summary = `[Summarized ${toSummarize.length} messages: agent completed ${this.stepCount} steps, called ${this.tools.size} tools]`;\n    this.messages = [\n      this.messages[sysIdx],\n      { role: 'system', content: `Previous context summary: ${summary}` },\n      ...this.messages.slice(-10),\n    ];\n  }\n\n  private getContextLength(): number {\n    return this.messages.reduce((sum, m) => sum + m.content.length, 0);\n  }\n\n  getMetrics(): { steps: number; totalTokens: number; memorySize: number } {\n    return {\n      steps: this.stepCount,\n      totalTokens: this.totalTokens,\n      memorySize: this.memory.size,\n    };\n  }\n\n  getHistory(): AgentMessage[] {\n    return [...this.messages];\n  }\n\n  reset(): void {\n    this.messages = [this.messages[0]];\n    this.stepCount = 0;\n    this.totalTokens = 0;\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "typescript-toolregistry",
+      children: "TypeScript: ToolRegistry"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class ToolRegistry {\n  private tools: Map<string, ToolDefinition> = new Map();\n  private executionHistory: Array<{ toolName: string; args: Record<string, unknown>; result: string; duration: number; error?: string }> = [];\n  private maxHistory: number;\n\n  constructor(maxHistory: number = 1000) {\n    this.maxHistory = maxHistory;\n  }\n\n  register(tool: ToolDefinition): void {\n    if (!tool.name || typeof tool.name !== 'string') {\n      throw new Error('Tool must have a string name');\n    }\n    if (!tool.handler || typeof tool.handler !== 'function') {\n      throw new Error(`Tool \"${tool.name}\" must have a handler function`);\n    }\n    if (this.tools.has(tool.name)) {\n      throw new Error(`Tool \"${tool.name}\" is already registered`);\n    }\n    this.tools.set(tool.name, {\n      ...tool,\n      parameters: this.validateSchema(tool.parameters),\n    });\n  }\n\n  unregister(name: string): boolean {\n    return this.tools.delete(name);\n  }\n\n  get(name: string): ToolDefinition | undefined {\n    return this.tools.get(name);\n  }\n\n  list(): ToolDefinition[] {\n    return Array.from(this.tools.values());\n  }\n\n  listByNames(): string[] {\n    return Array.from(this.tools.keys());\n  }\n\n  async execute(name: string, args: Record<string, unknown>): Promise<string> {\n    const tool = this.tools.get(name);\n    if (!tool) {\n      throw new Error(`Tool \"${name}\" not found in registry`);\n    }\n\n    const start = Date.now();\n    try {\n      const validatedArgs = this.validateArgs(tool, args);\n      const result = await tool.handler(validatedArgs);\n      const duration = Date.now() - start;\n      this.recordExecution(name, validatedArgs, result, duration);\n      return result;\n    } catch (err) {\n      const duration = Date.now() - start;\n      const errorMsg = err instanceof Error ? err.message : String(err);\n      this.recordExecution(name, args, '', duration, errorMsg);\n      throw err;\n    }\n  }\n\n  private validateSchema(schema: Record<string, unknown>): Record<string, unknown> {\n    if (!schema.type) {\n      return { type: 'object', properties: {}, ...schema };\n    }\n    return schema;\n  }\n\n  private validateArgs(tool: ToolDefinition, args: Record<string, unknown>): Record<string, unknown> {\n    const schema = tool.parameters as Record<string, unknown>;\n    const props = (schema.properties ?? {}) as Record<string, unknown>;\n    const required = (schema.required ?? []) as string[];\n\n    const validated: Record<string, unknown> = {};\n    for (const [key, value] of Object.entries(args)) {\n      const propSchema = props[key] as Record<string, unknown> | undefined;\n      if (propSchema && value !== undefined && value !== null) {\n        const expectedType = propSchema.type as string;\n        if (expectedType && typeof value !== expectedType) {\n          throw new Error(`Argument \"${key}\" expected type \"${expectedType}\", got \"${typeof value}\"`);\n        }\n      }\n      validated[key] = value;\n    }\n\n    for (const field of required) {\n      if (!(field in validated) || validated[field] === undefined || validated[field] === null) {\n        throw new Error(`Missing required argument \"${field}\" for tool \"${tool.name}\"`);\n      }\n    }\n\n    return validated;\n  }\n\n  private recordExecution(toolName: string, args: Record<string, unknown>, result: string, duration: number, error?: string): void {\n    this.executionHistory.push({ toolName, args, result, duration, error });\n    if (this.executionHistory.length > this.maxHistory) {\n      this.executionHistory.shift();\n    }\n  }\n\n  getHistory(filters?: { toolName?: string; hasError?: boolean }): Array<typeof this.executionHistory[number]> {\n    let filtered = this.executionHistory;\n    if (filters?.toolName) {\n      filtered = filtered.filter(e => e.toolName === filters.toolName);\n    }\n    if (filters?.hasError !== undefined) {\n      filtered = filtered.filter(e => filters.hasError ? !!e.error : !e.error);\n    }\n    return filtered;\n  }\n\n  getStats(): Record<string, { callCount: number; avgDuration: number; errorRate: number }> {\n    const stats: Record<string, number[]> = {};\n    for (const entry of this.executionHistory) {\n      if (!stats[entry.toolName]) stats[entry.toolName] = [];\n      stats[entry.toolName].push(entry.duration);\n    }\n    const result: Record<string, { callCount: number; avgDuration: number; errorRate: number }> = {};\n    for (const [name, durations] of Object.entries(stats)) {\n      const errors = this.executionHistory.filter(e => e.toolName === name && e.error).length;\n      result[name] = {\n        callCount: durations.length,\n        avgDuration: durations.reduce((a, b) => a + b, 0) / durations.length,\n        errorRate: errors / durations.length,\n      };\n    }\n    return result;\n  }\n\n  clearHistory(): void {\n    this.executionHistory = [];\n  }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AI agents combine planning, memory, tool use, and self-reflection to autonomously solve complex tasks. The ReAct pattern — interleaving reasoning traces with tool actions and observations — is the dominant architecture. Tools are defined using JSON Schema and managed through a centralized registry. Agents employ various planning strategies (ReAct, Plan-and-Solve, Tree-of-Thought) depending on task complexity. Memory management across short-term and long-term storage is critical for maintaining context over long sessions. Multi-agent patterns (supervisor, delegation, debate) enable specialization and collaboration. Evaluation must consider completion rate, efficiency, robustness, and cost. Common failure modes like loops, hallucination propagation, and context overflow require proactive mitigation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Start simple"
+        }), ": Use a single ReAct agent before introducing multi-agent patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Design tools carefully"
+        }), ": Clear descriptions and strict validation prevent tool misuse."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always set limits"
+        }), ": Maximum steps, timeouts, and cost budgets prevent runaway agents."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Implement memory summarization"
+        }), ": It prevents context overflow in long sessions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Add verification loops"
+        }), ": Check intermediate results before building on them."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Monitor and log everything"
+        }), ": Agent traces are essential for debugging and improvement."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Evaluate multi-dimensionally"
+        }), ": Task completion, efficiency, cost, and robustness all matter."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1"
+      }), ": What comes after the \"Action\" step in the ReAct loop?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Thought"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Observation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Planning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reflection"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2"
+      }), ": Which planning strategy maintains multiple reasoning paths simultaneously?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ReAct"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Plan-and-Solve"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tree-of-Thought"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Single-step"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3"
+      }), ": What is a primary mitigation for agent loops?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Increasing max tokens"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Setting a step limit"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Adding more tools"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Increasing temperature"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4"
+      }), ": In the supervisor multi-agent pattern, what is the supervisor's role?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Execute all tools directly"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Delegate tasks and aggregate results"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handle only web search"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Generate final answers only"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5"
+      }), ": What is the purpose of long-term memory in an AI agent?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Store the current task description"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Retrieve relevant past interactions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Cache API responses temporarily"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hold model weights"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer Key"
+      }), ": Q1: 2, Q2: 3, Q3: 2, Q4: 2, Q5: 2"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 1"
+      }), ": Design a ReAct prompt template for an agent with three tools: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "search_web"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "calculate"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "send_email"
+      }), ". Write the system message, including tool descriptions and the thought-action-observation format."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "You are an AI assistant with access to the following tools:\n\n1. search_web(query: string): Search the web for current information.\n2. calculate(expression: string): Evaluate a mathematical expression.\n3. send_email(to: string, subject: string, body: string): Send an email.\n\nUse the following format:\n\nThought: What do I need to do next?\nAction: {\"name\": \"tool_name\", \"args\": {...}}\nObservation: The result of the action.\n\n...repeat until you have the answer...\n\nThought: I have all the information needed.\nFinal Answer: Your response here.\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 2"
+      }), ": Implement a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "retryWithBackoff"
+      }), " function that retries a tool call up to 3 times with exponential backoff (1s, 2s, 4s delays) on failure."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-typescript",
+          children: "async function retryWithBackoff<T>(fn: () => Promise<T>, maxRetries: number = 3): Promise<T> {\n  for (let attempt = 0; attempt <= maxRetries; attempt++) {\n    try {\n      return await fn();\n    } catch (err) {\n      if (attempt === maxRetries) throw err;\n      const delay = Math.pow(2, attempt) * 1000;\n      await new Promise(resolve => setTimeout(resolve, delay));\n    }\n  }\n  throw new Error('Unreachable');\n}\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 3"
+      }), ": An agent searching for \"latest AI news\" gets stuck calling the same search endpoint with the same query. Propose three detection mechanisms and two mitigations."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Detection: (1) Track the set of past actions — if the same (tool, args) pair repeats, flag it. (2) Monitor the observation content — if observations are identical across steps, the agent is looping. (3) Count consecutive tool calls without a final answer — alert after N steps with no progress."
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "Mitigations: (1) Force the agent to try a different query or tool after a repeated call. (2) Inject a prompt that says \"You have already searched X. Use the existing result or try a different approach.\""
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 4"
+      }), ": Write a TypeScript function that takes a list of agent messages and returns a compressed summary, reducing token count by at least 50%."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-typescript",
+          children: "function compressMessages(messages: AgentMessage[]): AgentMessage[] {\n  const system = messages.filter(m => m.role === 'system');\n  const nonSystem = messages.filter(m => m.role !== 'system');\n  if (nonSystem.length < 4) return messages;\n\n  const summary = nonSystem.slice(-nonSystem.length + 2);\n  const summaryText = summary.map(m => `[${m.role}]: ${m.content.slice(0, 100)}`).join('\\n');\n  return [\n    ...system,\n    { role: 'system', content: `[Compressed history: ${nonSystem.length} messages summarized]\\n${summaryText}` },\n    ...nonSystem.slice(-2),\n  ];\n}\n"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exercise 5"
+      }), ": Design an evaluation framework for a customer support agent. Define at least 5 metrics and specify how each would be measured."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Resolution Rate"
+          }), ": Percentage of support tickets resolved without human escalation. Measured by automated ticket status tracking."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Average Handling Time"
+          }), ": Time from first message to resolution. Measured by timestamp logging."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Customer Satisfaction (CSAT)"
+          }), ": Post-interaction rating (1-5 scale). Measured via survey."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "First Response Accuracy"
+          }), ": Percentage of correct answers on first reply. Measured by LLM-as-judge or human review."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Tool Error Rate"
+          }), ": Percentage of tool calls that fail. Measured by registry error logging."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Cost Per Ticket"
+          }), ": Total LLM and tool costs divided by number of tickets handled."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

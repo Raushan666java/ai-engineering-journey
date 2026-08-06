@@ -1,0 +1,4517 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[24627],{
+
+/***/ 90682
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_computer_networks_12_wireless_md_07a_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-computer-networks-12-wireless-md-07a.json
+const site_docs_courses_computer_networks_12_wireless_md_07a_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/computer-networks/12-wireless","title":"Chapter 12: Wireless Networks (Extended)","description":"Learning Objectives","source":"@site/docs/courses/computer-networks/12-wireless.md","sourceDirName":"courses/computer-networks","slug":"/computer-networks/12-wireless","permalink":"/ai-engineering-journey/computer-networks/12-wireless","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":12,"frontMatter":{"id":"12-wireless","slug":"/computer-networks/12-wireless","title":"Chapter 12: Wireless Networks (Extended)","sidebar_label":"Chapter 12: Wireless Networks (Extended)","sidebar_position":12},"sidebar":"coursesSidebar","previous":{"title":"Chapter 11: Network Security","permalink":"/ai-engineering-journey/computer-networks/11-security"},"next":{"title":"Chapter 13: Socket Programming → Complete Reference","permalink":"/ai-engineering-journey/computer-networks/13-sockets"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/computer-networks/12-wireless.md
+
+
+const frontMatter = {
+	id: '12-wireless',
+	slug: '/computer-networks/12-wireless',
+	title: 'Chapter 12: Wireless Networks (Extended)',
+	sidebar_label: 'Chapter 12: Wireless Networks (Extended)',
+	sidebar_position: 12
+};
+const contentTitle = 'Chapter 12: Wireless Networks (Extended)';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "12.1 Wireless Challenges",
+  "id": "121-wireless-challenges",
+  "level": 2
+}, {
+  "value": "12.1.1 Key Challenges",
+  "id": "1211-key-challenges",
+  "level": 3
+}, {
+  "value": "12.1.2 Real-World Analogy: The Noisy Room",
+  "id": "1212-real-world-analogy-the-noisy-room",
+  "level": 3
+}, {
+  "value": "12.1.3 Edge Cases",
+  "id": "1213-edge-cases",
+  "level": 3
+}, {
+  "value": "12.1.4 A&amp;D of Wireless Communication",
+  "id": "1214-ad-of-wireless-communication",
+  "level": 3
+}, {
+  "value": "12.2 IEEE 802.11 Architecture",
+  "id": "122-ieee-80211-architecture",
+  "level": 2
+}, {
+  "value": "12.2.1 Components",
+  "id": "1221-components",
+  "level": 3
+}, {
+  "value": "12.2.2 Real-World Analogy: Office Building",
+  "id": "1222-real-world-analogy-office-building",
+  "level": 3
+}, {
+  "value": "12.2.3 Wi-Fi Association Process (Numbered Steps)",
+  "id": "1223-wi-fi-association-process-numbered-steps",
+  "level": 3
+}, {
+  "value": "12.2.4 Pseudocode: Wi-Fi Association",
+  "id": "1224-pseudocode-wi-fi-association",
+  "level": 3
+}, {
+  "value": "12.2.5 Dry Run Trace: Wi-Fi Association",
+  "id": "1225-dry-run-trace-wi-fi-association",
+  "level": 3
+}, {
+  "value": "TypeScript Implementation: AccessPointManager",
+  "id": "typescript-implementation-accesspointmanager",
+  "level": 3
+}, {
+  "value": "12.3 Wi-Fi Standards Comparison",
+  "id": "123-wi-fi-standards-comparison",
+  "level": 2
+}, {
+  "value": "12.3.1 Detailed Standards Table",
+  "id": "1231-detailed-standards-table",
+  "level": 3
+}, {
+  "value": "12.3.2 Complexity Analysis",
+  "id": "1232-complexity-analysis",
+  "level": 3
+}, {
+  "value": "12.3.3 A&amp;D of Wi-Fi Standards",
+  "id": "1233-ad-of-wi-fi-standards",
+  "level": 3
+}, {
+  "value": "12.4 CSMA/CA → Carrier Sense Multiple Access with Collision Avoidance",
+  "id": "124-csmaca--carrier-sense-multiple-access-with-collision-avoidance",
+  "level": 2
+}, {
+  "value": "12.4.1 The NAV and Backoff Mechanism",
+  "id": "1241-the-nav-and-backoff-mechanism",
+  "level": 3
+}, {
+  "value": "12.4.2 Real-World Analogy: Courteous Conversation",
+  "id": "1242-real-world-analogy-courteous-conversation",
+  "level": 3
+}, {
+  "value": "12.4.3 Numbered Steps: CSMA/CA Transmission",
+  "id": "1243-numbered-steps-csmaca-transmission",
+  "level": 3
+}, {
+  "value": "12.4.4 Pseudocode: CSMA/CA with Backoff",
+  "id": "1244-pseudocode-csmaca-with-backoff",
+  "level": 3
+}, {
+  "value": "12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations",
+  "id": "1245-dry-run-trace-csmaca-backoff-with-3-stations",
+  "level": 3
+}, {
+  "value": "12.4.6 C++ Implementation: CSMA/CA Simulator",
+  "id": "1246-c-implementation-csmaca-simulator",
+  "level": 3
+}, {
+  "value": "12.4.7 Python Implementation: CSMA/CA Simulator",
+  "id": "1247-python-implementation-csmaca-simulator",
+  "level": 3
+}, {
+  "value": "12.4.8 Complexity Analysis",
+  "id": "1248-complexity-analysis",
+  "level": 3
+}, {
+  "value": "12.4.9 Edge Cases in CSMA/CA",
+  "id": "1249-edge-cases-in-csmaca",
+  "level": 3
+}, {
+  "value": "TypeScript Implementation: CSMACASimulator",
+  "id": "typescript-implementation-csmacasimulator",
+  "level": 3
+}, {
+  "value": "12.5 MAC Frame Format",
+  "id": "125-mac-frame-format",
+  "level": 2
+}, {
+  "value": "12.5.1 Frame Fields Detail",
+  "id": "1251-frame-fields-detail",
+  "level": 3
+}, {
+  "value": "12.5.2 Frame Types",
+  "id": "1252-frame-types",
+  "level": 3
+}, {
+  "value": "12.6 Hidden and Exposed Terminal",
+  "id": "126-hidden-and-exposed-terminal",
+  "level": 2
+}, {
+  "value": "12.6.1 Hidden Terminal Problem",
+  "id": "1261-hidden-terminal-problem",
+  "level": 3
+}, {
+  "value": "12.6.2 Exposed Terminal Problem",
+  "id": "1262-exposed-terminal-problem",
+  "level": 3
+}, {
+  "value": "12.6.3 Comparison Table",
+  "id": "1263-comparison-table",
+  "level": 3
+}, {
+  "value": "12.6.4 RTS/CTS Exchange (Numbered Steps)",
+  "id": "1264-rtscts-exchange-numbered-steps",
+  "level": 3
+}, {
+  "value": "12.6.5 Dry Run Trace: RTS/CTS Exchange",
+  "id": "1265-dry-run-trace-rtscts-exchange",
+  "level": 3
+}, {
+  "value": "12.6.6 Pseudocode: RTS/CTS Protocol",
+  "id": "1266-pseudocode-rtscts-protocol",
+  "level": 3
+}, {
+  "value": "12.6.7 Edge Cases in Hidden/Exposed Terminal",
+  "id": "1267-edge-cases-in-hiddenexposed-terminal",
+  "level": 3
+}, {
+  "value": "12.6.8 A&amp;D of RTS/CTS",
+  "id": "1268-ad-of-rtscts",
+  "level": 3
+}, {
+  "value": "12.7 Power Management",
+  "id": "127-power-management",
+  "level": 2
+}, {
+  "value": "12.7.1 TIM and PS-Poll",
+  "id": "1271-tim-and-ps-poll",
+  "level": 3
+}, {
+  "value": "12.7.2 Real-World Analogy: Office Mailroom",
+  "id": "1272-real-world-analogy-office-mailroom",
+  "level": 3
+}, {
+  "value": "12.7.3 Numbered Steps: Power-Save Operation",
+  "id": "1273-numbered-steps-power-save-operation",
+  "level": 3
+}, {
+  "value": "12.8 Bluetooth",
+  "id": "128-bluetooth",
+  "level": 2
+}, {
+  "value": "12.8.1 Piconet and Scatternet",
+  "id": "1281-piconet-and-scatternet",
+  "level": 3
+}, {
+  "value": "12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)",
+  "id": "1282-l2cap-logical-link-control-and-adaptation-protocol",
+  "level": 3
+}, {
+  "value": "12.8.3 Real-World Analogy: Classroom",
+  "id": "1283-real-world-analogy-classroom",
+  "level": 3
+}, {
+  "value": "12.8.4 C++ Implementation: Bluetooth Piconet",
+  "id": "1284-c-implementation-bluetooth-piconet",
+  "level": 3
+}, {
+  "value": "12.8.5 Python Implementation: Bluetooth Piconet",
+  "id": "1285-python-implementation-bluetooth-piconet",
+  "level": 3
+}, {
+  "value": "12.8.6 A&amp;D of Bluetooth",
+  "id": "1286-ad-of-bluetooth",
+  "level": 3
+}, {
+  "value": "12.9 Cellular Networks",
+  "id": "129-cellular-networks",
+  "level": 2
+}, {
+  "value": "12.9.1 4G/LTE",
+  "id": "1291-4glte",
+  "level": 3
+}, {
+  "value": "12.9.2 5G NR",
+  "id": "1292-5g-nr",
+  "level": 3
+}, {
+  "value": "12.9.3 4G vs 5G Comparison",
+  "id": "1293-4g-vs-5g-comparison",
+  "level": 3
+}, {
+  "value": "12.9.4 Real-World Analogy: Highway System",
+  "id": "1294-real-world-analogy-highway-system",
+  "level": 3
+}, {
+  "value": "TypeScript Implementation: MobileHandoffSimulator",
+  "id": "typescript-implementation-mobilehandoffsimulator",
+  "level": 3
+}, {
+  "value": "12.10 Wi-Fi vs Bluetooth vs Cellular Comparison",
+  "id": "1210-wi-fi-vs-bluetooth-vs-cellular-comparison",
+  "level": 2
+}, {
+  "value": "12.10.1 Selection Guide",
+  "id": "12101-selection-guide",
+  "level": 3
+}, {
+  "value": "12.11 Interview Corner",
+  "id": "1211-interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: Why does WiFi use CSMA/CA instead of CSMA/CD?",
+  "id": "q1-why-does-wifi-use-csmaca-instead-of-csmacd",
+  "level": 3
+}, {
+  "value": "Q2: What is NAV and why is it important?",
+  "id": "q2-what-is-nav-and-why-is-it-important",
+  "level": 3
+}, {
+  "value": "Q3: Explain the difference between WiFi handoff and cellular handover.",
+  "id": "q3-explain-the-difference-between-wifi-handoff-and-cellular-handover",
+  "level": 3
+}, {
+  "value": "Q4: How does MIMO improve wireless performance?",
+  "id": "q4-how-does-mimo-improve-wireless-performance",
+  "level": 3
+}, {
+  "value": "Q5: What is OFDMA and why is it important in WiFi 6/7?",
+  "id": "q5-what-is-ofdma-and-why-is-it-important-in-wifi-67",
+  "level": 3
+}, {
+  "value": "Q6: Compare WiFi and LTE for voice over wireless.",
+  "id": "q6-compare-wifi-and-lte-for-voice-over-wireless",
+  "level": 3
+}, {
+  "value": "Q7: What is the range vs. rate trade-off in wireless?",
+  "id": "q7-what-is-the-range-vs-rate-trade-off-in-wireless",
+  "level": 3
+}, {
+  "value": "12.12 Applications in Real Systems",
+  "id": "1212-applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "12.12.1 WiFi 6/7 Deployments",
+  "id": "12121-wifi-67-deployments",
+  "level": 3
+}, {
+  "value": "12.12.2 Cellular Infrastructure",
+  "id": "12122-cellular-infrastructure",
+  "level": 3
+}, {
+  "value": "12.12.3 IoT Wireless Technologies",
+  "id": "12123-iot-wireless-technologies",
+  "level": 3
+}, {
+  "value": "12.13 Mobility Management",
+  "id": "1213-mobility-management",
+  "level": 2
+}, {
+  "value": "12.13.1 Handover",
+  "id": "12131-handover",
+  "level": 3
+}, {
+  "value": "12.13.2 Location Management",
+  "id": "12132-location-management",
+  "level": 3
+}, {
+  "value": "12.13.3 Roaming",
+  "id": "12133-roaming",
+  "level": 3
+}, {
+  "value": "💡 Pro Tips",
+  "id": "-pro-tips",
+  "level": 2
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference: 802.11 Standards Evolution",
+  "id": "quick-reference-80211-standards-evolution",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Mermaid Diagram: Wireless Network Types Hierarchy",
+  "id": "mermaid-diagram-wireless-network-types-hierarchy",
+  "level": 2
+}, {
+  "value": "Case Study: University Campus WiFi Design",
+  "id": "case-study-university-campus-wifi-design",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-12-wireless-networks-extended",
+        children: "Chapter 12: Wireless Networks (Extended)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare the 802.11 physical-layer standards and their performance characteristics."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe CSMA/CA and its role in wireless medium access."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain Bluetooth architecture including piconets and scatternets."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze the architecture of cellular networks from 4G/LTE to 5G."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe mobility management including handover, location tracking, and roaming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement wireless protocol simulations in C++ and Python."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/computer-networks/12-wireless/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/computer-networks/12-wireless/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/computer-networks/12-wireless/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/computer-networks/12-wireless/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/computer-networks/12-wireless/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/computer-networks/12-wireless/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "121-wireless-challenges",
+      children: "12.1 Wireless Challenges"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Wireless communication faces fundamental challenges that wired networks avoid. These constraints shape every protocol from 802.11 to 5G."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1211-key-challenges",
+      children: "12.1.1 Key Challenges"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Challenge"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Impact"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Attenuation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal power decays with distance ($P_r \\propto P_t / d^2$ in free space, worse indoors)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reduced range, lower data rates at distance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multipath Fading"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reflections cause multiple copies of signal arriving at different times"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Intersymbol interference, frequency-selective fading"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interference"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Other devices on same frequency (microwaves, cordless phones, Bluetooth)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Collisions, retransmissions, throughput collapse"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hidden Terminal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two stations cannot hear each other but both reach the AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Collisions at the receiver that the sender cannot detect"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Exposed Terminal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Station defers to a transmission it could safely ignore"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unnecessary deferral, wasted channel capacity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Devices move between coverage areas"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection drops, handover latency, packet loss"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Energy Constraints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Battery-powered devices limit transmit power and processing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shorter range, limited duty cycle"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireless signals travel through walls and public spaces"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eavesdropping, injection, MITM attacks"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1212-real-world-analogy-the-noisy-room",
+      children: "12.1.2 Real-World Analogy: The Noisy Room"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Imagine a large room where people are trying to have conversations:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Attenuation"
+        }), ": Two people speaking softly across opposite ends of the room cannot hear each other clearly."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hidden Terminal"
+        }), ": Person A is on the left, Person B is on the right. Both can hear the moderator (AP) in the center, but A cannot hear B and B cannot hear A. If both speak at the same time, the moderator hears noise."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Exposed Terminal"
+        }), ": Person C is near Person A. When A speaks to the moderator, C hears A and stays silent. But C could safely speak to Person D in the opposite direction → the moderator is far enough away not to be disturbed by C."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CSMA/CA"
+        }), ": Before speaking, listen. If someone else is speaking, wait a random amount of time before trying again."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "RTS/CTS"
+        }), ": Before speaking, say \"I have something to say\" (RTS). The moderator responds \"Go ahead, everyone else be quiet for X seconds\" (CTS)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1213-edge-cases",
+      children: "12.1.3 Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hidden Terminal Still Colliding"
+      }), ": Even with RTS/CTS, if two hidden stations transmit RTS simultaneously, both RTS frames collide at the AP. Both time out waiting for CTS and double their backoff windows. This is the RTS collision problem → RTS frames themselves are vulnerable."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exposed Terminal False Deferral"
+      }), ": Station C hears Station A's transmission to the AP. C defers even though C's transmission to D would not interfere with A's reception at the AP. The exposed terminal cannot distinguish between \"the medium is busy for me\" and \"the medium is busy for someone else.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Co-Channel Interference"
+      }), ": Two APs on the same channel in adjacent coverage areas. Clients at the cell edge experience collisions from both cells. With 2.4 GHz having only 3 non-overlapping channels, dense deployments inevitably suffer this."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1214-ad-of-wireless-communication",
+      children: "12.1.4 A&D of Wireless Communication"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobility: users move freely within coverage area"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reliability: higher bit error rate than wired"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Deployment speed: no cables needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security: signal propagates beyond intended area"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cost: no cabling infrastructure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Throughput: shared medium, half-duplex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalability: add devices without wiring"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency: contention, backoff, retransmission"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Coverage: reaches locations cables cannot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Predictability: variable due to interference"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "122-ieee-80211-architecture",
+      children: "12.2 IEEE 802.11 Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1221-components",
+      children: "12.2.1 Components"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Full Name"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Role"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "STA"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Station"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any device with wireless interface (laptop, phone, IoT sensor)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "AP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Access Point"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Central hub connecting wireless to wired network; bridges 802.11 to 802.3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "BSS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Basic Service Set"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One AP + associated STAs; identified by BSSID (AP's MAC address)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ESS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extended Service Set"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple BSSes connected by a distribution system (DS); same SSID"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distribution System"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Backbone network connecting APs (typically Ethernet)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "BSS (Basic Service Set)"
+      }), ": The fundamental building block. An AP and its associated stations form a cell. Each BSS is identified by a BSSID (usually the AP's MAC address). In ad-hoc (IBSS) mode, stations communicate directly without an AP."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "ESS (Extended Service Set)"
+      }), ": Multiple BSSes connected via a distribution system. All BSSes share the same SSID (network name). A station can roam between BSSes within the same ESS. The DS is typically Ethernet but can be any backbone technology."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "AP (Access Point)"
+      }), ": Acts as a bridge between wireless and wired domains. Performs: beacon generation, station association/authentication, frame translation (802.11 ↔ 802.3), power management coordination, and QoS scheduling."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "STA (Station)"
+      }), ": Any device with an 802.11 interface. STA states: Unauthenticated, Authenticated but unassociated, Associated, and Authenticated + Associated (fully connected)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1222-real-world-analogy-office-building",
+      children: "12.2.2 Real-World Analogy: Office Building"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "STA"
+        }), ": An employee at their desk."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AP"
+        }), ": The departmental office that handles mail and phone calls for the floor."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "BSS"
+        }), ": One floor of the building with one office."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DS"
+        }), ": The internal mail system connecting all departmental offices."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ESS"
+        }), ": The entire building → all floors use the same company name (SSID), and mail routes between offices seamlessly."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Roaming"
+        }), ": An employee moves from floor 3 to floor 5. They still receive mail at the same address (SSID) even though their local office (AP) has changed."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1223-wi-fi-association-process-numbered-steps",
+      children: "12.2.3 Wi-Fi Association Process (Numbered Steps)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1 → Probe Request"
+      }), ": STA broadcasts a Probe Request on each channel, listing supported data rates and capabilities."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2 → Probe Response"
+      }), ": Each AP in range responds with a Probe Response containing SSID, supported rates, encryption types, beacon interval, and capability information."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3 → Open Authentication Request"
+      }), ": STA sends an Authentication frame to the chosen AP. In open system authentication (the most common), this is essentially a formality."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4 → Open Authentication Response"
+      }), ": AP responds with an Authentication frame indicating success (status code 0)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5 → Association Request"
+      }), ": STA sends an Association Request including listen interval (for power management), supported rates, SSID, and capabilities."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 6 → Association Response"
+      }), ": AP responds with Association ID (AID, 1-2007), success/failure status, and supported rates."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "After Step 6, if WPA2/WPA3 is used, the 4-way handshake occurs for key exchange before data can flow."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1224-pseudocode-wi-fi-association",
+      children: "12.2.4 Pseudocode: Wi-Fi Association"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "procedure wifi_association(sta, ap)\n    // Phase 1: Passive/Active Scanning\n    for each channel in supported_channels do\n        if passive_scanning then\n            listen_for_beacon(channel, beacon_interval)\n            beacon = receive_beacon()\n            if beacon.ssid == target_ssid then\n                ap_list.add(beacon)\n        else\n            probe = ProbeRequest(sta.supported_rates, sta.capabilities)\n            broadcast(probe)\n            response = recv_probe_response(probe_timeout)\n            if response != null and response.ssid == target_ssid then\n                ap_list.add(response)\n\n    // Phase 2: Select AP\n    chosen_ap = select_best_ap(ap_list)  // by RSSI, channel utilization, etc.\n\n    // Phase 3: Authenticate\n    attempt = 0\n    while attempt < MAX_AUTH_RETRIES do\n        auth_req = AuthRequest(algorithm=OPEN, seq=1)\n        send(auth_req, chosen_ap)\n        auth_resp = recv(timeout=T_AUTH)\n        if auth_resp != null and auth_resp.status == SUCCESS then\n            break\n        attempt = attempt + 1\n\n    // Phase 4: Associate\n    attempt = 0\n    while attempt < MAX_ASSOC_RETRIES do\n        assoc_req = AssocRequest(listen_interval, ssid, rates)\n        send(assoc_req, chosen_ap)\n        assoc_resp = recv(timeout=T_ASSOC)\n        if assoc_resp != null and assoc_resp.status == SUCCESS then\n            sta.aid = assoc_resp.aid\n            sta.state = ASSOCIATED\n            return SUCCESS\n        attempt = attempt + 1\n\n    return FAILURE\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1225-dry-run-trace-wi-fi-association",
+      children: "12.2.5 Dry Run Trace: Wi-Fi Association"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Parameters: STA = \"Client-A\", AP = \"Office-AP\" on Channel 6, RSSI = -45 dBm."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Sender"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Fields"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Probe Request"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SSID: null (broadcast), Rates: b/g/n, Channel: 6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadcast on ch 6"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Office-AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Probe Response"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SSID: \"CorpNet\", Rates: 54/48/36/24/12/9/6 Mbps, Cap: WPA2, RSSI: -45 dBm"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Received by Client-A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auth Request"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Algorithm: Open, Seq: 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sent to Office-AP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Office-AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auth Response"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Algorithm: Open, Seq: 2, Status: 0 (Success)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sent to Client-A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Assoc Request"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SSID: \"CorpNet\", Listen Interval: 10, Rates: b/g/n"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sent to Office-AP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Office-AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Assoc Response"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AID: 5, Status: 0 (Success)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sent to Client-A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EAPOL-1 (4-way)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key data: ANonce"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Office-AP sends ANonce"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Office-AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EAPOL-2 (4-way)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key data: SNonce + MIC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A sends SNonce"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EAPOL-3 (4-way)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key data: GTK + MIC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Office-AP installs keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Office-AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EAPOL-4 (4-way)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Key data: ACK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A installs keys"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client-A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Frame"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Encrypted payload"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full connectivity established"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-implementation-accesspointmanager",
+      children: "TypeScript Implementation: AccessPointManager"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type STAState = 'UNAUTHENTICATED' | 'AUTHENTICATED' | 'ASSOCIATED' | 'AUTHORIZED';\n\ninterface StationInfo { mac: string; rssi: number; channel: number; state: STAState; aid: number; capabilities: string[]; }\n\nclass AccessPointManager {\n  private ssid: string;\n  private bssid: string;\n  private channel: number;\n  private beaconInterval: number; // ms\n  private stations: Map<string, StationInfo> = new Map();\n  private nextAid: number = 1;\n  private channels: number[] = [1, 6, 11, 36, 40, 44, 48]; // 2.4 & 5 GHz\n  private currentChannelIndex: number = 0;\n\n  constructor(ssid: string, bssid: string, channel: number = 6) {\n    this.ssid = ssid;\n    this.bssid = bssid;\n    this.channel = channel;\n    this.beaconInterval = 102.4; // TU\n  }\n\n  sendBeacon(): { ssid: string; bssid: string; channel: number; capabilities: string[] } {\n    const caps = ['WPA3', '802.11ax', 'MU-MIMO', 'OFDMA'];\n    console.log(`[BEACON] SSID=\"${this.ssid}\" BSSID=${this.bssid} CH=${this.channel} ${caps.join(',')}`);\n    return { ssid: this.ssid, bssid: this.bssid, channel: this.channel, capabilities: caps };\n  }\n\n  probeRequest(clientMac: string, supportedRates: string[]): { bssid: string; ssid: string } | null {\n    const overlap = supportedRates.some(r => ['802.11a', '802.11g', '802.11n', '802.11ax'].includes(r));\n    if (!overlap) return null;\n    console.log(`[PROBE_RESP] ${this.ssid} accepts ${clientMac}`);\n    return { bssid: this.bssid, ssid: this.ssid };\n  }\n\n  authenticate(clientMac: string): boolean {\n    const existing = this.stations.get(clientMac);\n    if (!existing) {\n      this.stations.set(clientMac, { mac: clientMac, rssi: -45, channel: this.channel, state: 'AUTHENTICATED', aid: 0, capabilities: [] });\n      console.log(`[AUTH] ${clientMac} authenticated (open system)`);\n      return true;\n    }\n    if (existing.state === 'UNAUTHENTICATED') {\n      existing.state = 'AUTHENTICATED';\n      return true;\n    }\n    return existing.state === 'AUTHENTICATED' || existing.state === 'ASSOCIATED';\n  }\n\n  associate(clientMac: string, capabilities: string[]): number | null {\n    if (this.stations.size >= 2007) { console.log(`[ASSOC] Rejected: max stations`); return null; }\n    const sta = this.stations.get(clientMac);\n    if (!sta || sta.state === 'UNAUTHENTICATED') { console.log(`[ASSOC] ${clientMac} not authenticated`); return null; }\n    const aid = this.nextAid++;\n    sta.state = 'ASSOCIATED';\n    sta.aid = aid;\n    sta.capabilities = capabilities;\n    console.log(`[ASSOC] ${clientMac} -> AID=${aid}`);\n    return aid;\n  }\n\n  disassociate(clientMac: string): void {\n    this.stations.delete(clientMac);\n    console.log(`[DISASSOC] ${clientMac} removed`);\n  }\n\n  switchChannel(targetChannel: number): void {\n    if (!this.channels.includes(targetChannel)) { console.log(`[CH] Channel ${targetChannel} not allowed`); return; }\n    console.log(`[CH] Switching from ${this.channel} to ${targetChannel}`);\n    this.channel = targetChannel;\n    // Notify all associated stations of channel change via CSA (Channel Switch Announcement)\n    for (const [mac, sta] of this.stations) { sta.channel = targetChannel; console.log(`  Notified ${mac} of channel change`); }\n  }\n\n  scanChannels(): { channel: number; utilization: number; interference: number }[] {\n    return this.channels.map(ch => ({\n      channel: ch,\n      utilization: Math.random() * 0.5 + 0.1,\n      interference: Math.random() * 0.3\n    }));\n  }\n\n  getConnectedClients(): StationInfo[] { return Array.from(this.stations.values()).filter(s => s.state === 'ASSOCIATED'); }\n\n  getStats(): { ssid: string; channel: number; clients: number; utilization: string } {\n    return { ssid: this.ssid, channel: this.channel, clients: this.getConnectedClients().length, utilization: `${(this.stations.size / 2007 * 100).toFixed(1)}%` };\n  }\n}\n\n// Usage\nconst ap = new AccessPointManager('CorpNet', '00:1A:2B:3C:4D:5E', 6);\nap.sendBeacon();\nap.authenticate('AA:BB:CC:DD:EE:01');\nconst aid = ap.associate('AA:BB:CC:DD:EE:01', ['802.11ax', 'WPA3', '160MHz']);\nap.authenticate('AA:BB:CC:DD:EE:02');\nap.associate('AA:BB:CC:DD:EE:02', ['802.11ac', 'WPA2', '80MHz']);\nconsole.log(`Clients: ${ap.getConnectedClients().length}`);\nap.switchChannel(36);\nconsole.log(ap.getStats());\n/*\nOutput:\n[BEACON] SSID=\"CorpNet\" BSSID=00:1A:2B:3C:4D:5E CH=6 WPA3,802.11ax,MU-MIMO,OFDMA\n[AUTH] AA:BB:CC:DD:EE:01 authenticated (open system)\n[ASSOC] AA:BB:CC:DD:EE:01 -> AID=1\n[AUTH] AA:BB:CC:DD:EE:02 authenticated (open system)\n[ASSOC] AA:BB:CC:DD:EE:02 -> AID=2\nClients: 2\n[CH] Switching from 6 to 36\n  Notified AA:BB:CC:DD:EE:01 of channel change\n  Notified AA:BB:CC:DD:EE:02 of channel change\n{ ssid: \"CorpNet\", channel: 36, clients: 2, utilization: \"0.1%\" }\n*/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "123-wi-fi-standards-comparison",
+      children: "12.3 Wi-Fi Standards Comparison"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each generation introduced new physical-layer techniques."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1231-detailed-standards-table",
+      children: "12.3.1 Detailed Standards Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Standard"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Wi-Fi Gen"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Year"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Freq (GHz)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Channel Width"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Max Data Rate"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MIMO Streams"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Modulation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Subcarriers"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Guard Interval"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11a"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1999"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "54 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1×1 (no MIMO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDM (64-subcarrier)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52 data + 4 pilot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "800 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11b"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1999"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1×1 (no MIMO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DSSS (CCK)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A (DSSS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11g"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2003"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "54 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1×1 (no MIMO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDM (64-subcarrier)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52 data + 4 pilot"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "800 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11n"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2009"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4/5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20/40 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "600 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4×4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MIMO-OFDM (64-subcarrier)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "52/108 data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "400/800 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11ac"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2013"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20/40/80/160 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6.9 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8×8 (MU-MIMO DL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MIMO-OFDM (256-subcarrier)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "234/468"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "400/800 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11ax"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2019"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4/5/6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20/40/80/160 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9.6 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8×8 (MU-MIMO DL+UL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDMA (1024-QAM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "234/468/936/1872"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "800/1600/3200 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11be"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2024"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4/5/6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20/40/80/160/320 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "46 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16×16 (CMU-MIMO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4096-QAM OFDMA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "468/936/1872/3744"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "800/1600/3200 ns"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1232-complexity-analysis",
+      children: "12.3.2 Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Spatial Stream Scaling"
+      }), ": Throughput scales linearly with the number of spatial streams (up to MIMO rank). Doubling streams doubles data rate for the same channel width and modulation. Complexity: $O(S)$ where $S = \\text{number of streams}$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Channel Width Scaling"
+      }), ": Doubling channel width doubles subcarriers and thus throughput. Complexity: $O(W)$ where $W = \\text{channel width}$. Larger channels are more susceptible to noise → a single narrowband interferer can wipe out a 320 MHz channel."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "QAM Order"
+      }), ": Each bit increase in QAM order (e.g., 256-QAM → 512-QAM → 1024-QAM) adds 1 bit per subcarrier per symbol. Data rate scales logarithmically with QAM order: $O(\\log_2 M)$. Higher QAM requires better SNR → at range, the link falls back to lower QAM."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why WiFi 7 reaches 46 Gbps"
+      }), ": 320 MHz × 16 streams × 4096-QAM (12 bits/symbol) × 5/6 code rate × OFDMA efficiency ≈ 46 Gbps. The 320 MHz channel alone (doubled from WiFi 6's 160 MHz) doubles throughput. 16×16 MIMO doubles it again vs WiFi 6's 8×8. 4096-QAM adds ~20% more bits per symbol than 1024-QAM."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1233-ad-of-wi-fi-standards",
+      children: "12.3.3 A&D of Wi-Fi Standards"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Standard"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11b"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Longest range at 2.4 GHz, wide device support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only 11 Mbps, no OFDM, 3 non-overlapping channels"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11a"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clean 5 GHz band, 54 Mbps, 24 non-overlapping channels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shorter range (higher freq), no 2.4 GHz backward compatibility"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11g"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "54 Mbps at 2.4 GHz, backward compatible with 11b"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same crowded 3-channel limitation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11n"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First MIMO (4×4), dual-band, 40 MHz channels"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legacy preamble reduces efficiency with mixed clients"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11ac"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MU-MIMO DL, 160 MHz, 256-QAM, 6.9 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 GHz only, no OFDMA, UL still SU-MIMO"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11ax (WiFi 6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDMA, 1024-QAM, 6 GHz band, TWT, UL MU-MIMO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher complexity, needs WiFi 6 clients to benefit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11be (WiFi 7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "320 MHz, 4096-QAM, 16×16 MIMO, multi-link, 46 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Early adoption, expensive hardware, backward compatibility overhead"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "124-csmaca--carrier-sense-multiple-access-with-collision-avoidance",
+      children: "12.4 CSMA/CA → Carrier Sense Multiple Access with Collision Avoidance"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "WiFi uses CSMA/CA instead of CSMA/CD because wireless transceivers cannot listen while transmitting (half-duplex), making collision detection impossible. Instead of detecting collisions after they occur, CSMA/CA tries to prevent them before transmission."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1241-the-nav-and-backoff-mechanism",
+      children: "12.4.1 The NAV and Backoff Mechanism"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "NAV (Network Allocation Vector)"
+      }), ": A virtual carrier-sense mechanism. Each station maintains a NAV counter indicating how long the medium will be busy. Stations set their NAV based on the Duration field in received frames. NAV = \"the channel will be busy for this many microseconds.\" A station defers its own transmission while NAV > 0. This prevents collisions even when stations cannot hear each other's physical signals."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Inter-Frame Spacing (IFS)"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SIFS (Short IFS)"
+        }), ": 10 µs (802.11b/g) or 16 µs (802.11a/n/ac/ax). Used for ACK, CTS, and data frame bursts."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DIFS (DCF IFS)"
+        }), ": 50 µs (802.11b) or 34 µs (802.11a/g). SIFS + 2 × slot time. Stations wait DIFS before starting backoff."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EIFS (Extended IFS)"
+        }), ": Used after a frame reception error, giving time for the receiver to send ACK."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Backoff Procedure"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Wait for medium to be idle for DIFS."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Choose random backoff counter uniformly from [0, CW] where CW = Contention Window."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Decrement counter each slot time the medium remains idle."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Freeze counter if medium becomes busy (deferral)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When counter reaches 0, transmit."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If no ACK received (collision), double CW: $CW = \\min(2 \\times CW, CW_{max})$."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Retry up to retry limit, then drop the frame."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1242-real-world-analogy-courteous-conversation",
+      children: "12.4.2 Real-World Analogy: Courteous Conversation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Imagine a group conversation where only one person speaks at a time:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DIFS"
+        }), ": Everyone pauses to check if anyone is currently speaking."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Backoff"
+        }), ": Each person who wants to speak picks a random number (1-15) and counts down silently (one count per second). If someone else starts speaking, freeze the count. When the room is quiet again, resume counting."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Collision (no ACK)"
+        }), ": Two people speak at the same time. Neither gets a response. Both double their maximum count range (1-15 → 1-31) and pick new random numbers."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NAV"
+        }), ": The current speaker says \"I'll be speaking for about 30 seconds.\" Everyone sets a timer for 30 seconds and stays quiet until it expires."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1243-numbered-steps-csmaca-transmission",
+      children: "12.4.3 Numbered Steps: CSMA/CA Transmission"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Physical Carrier Sense"
+        }), ": Check if the medium is idle for DIFS duration (34 µs for 802.11a/g)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Backoff Selection"
+        }), ": If medium was busy or this is a retransmission, select backoff $B = \\text{random}[0, CW]$ where CW starts at $CW_{min} = 15$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Backoff Countdown"
+        }), ": Decrement $B$ each idle slot time (9 µs for 802.11a/g). If medium becomes busy, freeze $B$."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Transmission"
+        }), ": When $B = 0$, transmit the frame."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ACK Wait"
+        }), ": Wait for ACK within SIFS + ACK_Timeout (typically ~50 µs)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Success"
+        }), ": If ACK received, set $CW = CW_{min}$ for next frame."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Collision"
+        }), ": If no ACK, double $CW = \\min(2 \\times CW, 1023)$. Increment retry count. Go to step 2."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Drop"
+        }), ": After retry limit ($\\text{short} = 7$, $\\text{long} = 4$), discard the frame."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1244-pseudocode-csmaca-with-backoff",
+      children: "12.4.4 Pseudocode: CSMA/CA with Backoff"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "procedure csma_ca_transmit(frame, sta)\n    cw = CW_MIN                // typically 15 slots\n    retry = 0\n    max_retry = SHORT_RETRY_LIMIT  // typically 7\n\n    while retry < max_retry do\n        // Wait for medium idle for DIFS\n        while physical_carrier_sense() == BUSY do\n            wait_slot()\n        wait(DIFS)\n\n        // Backoff phase\n        backoff = random(0, cw)\n        while backoff > 0 do\n            if physical_carrier_sense() == BUSY then\n                // Freeze backoff → wait until medium idle again\n                while physical_carrier_sense() == BUSY do\n                    wait_slot()\n                wait(DIFS)\n            else\n                wait(SLOT_TIME)\n                backoff = backoff - 1\n\n        // Transmit\n        send_frame(frame)\n        nav_update(frame.duration)  // other stations set NAV\n\n        // Wait for ACK\n        timer = ACK_TIMEOUT\n        ack_received = false\n        while timer > 0 and not ack_received do\n            if recv_ack(frame.seq) then\n                ack_received = true\n                break\n            wait_slot()\n            timer = timer - SLOT_TIME\n\n        if ack_received then\n            cw = CW_MIN\n            return TRANSMIT_SUCCESS\n        else\n            cw = min(cw * 2, CW_MAX)  // exponential backoff\n            retry = retry + 1\n\n    return TRANSMIT_FAILURE\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1245-dry-run-trace-csmaca-backoff-with-3-stations",
+      children: "12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Parameters: Slot time = 9 µs, DIFS = 34 µs, SIFS = 16 µs, CW_min = 15, CW_max = 1023.\nData frame transmission time = 200 µs (1500-byte frame at 54 Mbps). ACK = 30 µs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Three stations (A, B, C) all have a frame to send. The medium starts idle."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time (µs)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Event"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Station A Backoff"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Station B Backoff"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Station C Backoff"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Medium State"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DIFS idle period starts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "34"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DIFS ends, all pick backoff"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B=7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B=3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B=12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "43"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slot 1 decrement (9 µs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "52"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slot 2 decrement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "61"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slot 3 decrement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "61"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B backoff reaches 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TRANSMIT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BUSY"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "61"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A and C freeze backoff"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BUSY (B data)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "261"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B transmission ends"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "277"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIFS (16 µs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE (ACK)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "307"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACK from B's AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "341"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DIFS (34 µs) after ACK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "341"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A and C resume backoff"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "350"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slot 1 decrement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "359"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slot 2 decrement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "368"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slot 3 decrement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "377"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slot 4 decrement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "377"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A transmits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TRANSMIT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BUSY (A data)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "577"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A transmission ends"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "593"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIFS + ACK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 (frozen)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "627"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DIFS ends"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "627"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C resumes and decrements"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5→4→3→2→1→0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IDLE"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "672"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C transmits at slot 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TRANSMIT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BUSY"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Total time for 3 stations: 672 µs. Without CSMA/CA (all transmitting simultaneously), all 3 frames would collide. CSMA/CA serialized the transmissions with ~100% channel utilization (minus overhead)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1246-c-implementation-csmaca-simulator",
+      children: "12.4.6 C++ Implementation: CSMA/CA Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <random>\n#include <thread>\n#include <chrono>\n#include <algorithm>\n\nclass CSMCASTation {\npublic:\n    int id;\n    int cw_min = 15;\n    int cw_max = 1023;\n    int cw;\n    int backoff;\n    int retry_count = 0;\n    int max_retry = 7;\n    int frames_sent = 0;\n    int collisions = 0;\n    bool frozen;\n    bool has_frame;\n    int nav = 0;  // network allocation vector\n\n    CSMCASTation(int id) : id(id), cw(cw_min), backoff(0), frozen(false), has_frame(false) {}\n\n    void load_frame() { has_frame = true; }\n\n    void reset_cw() { cw = cw_min; }\n\n    bool transmit(int current_time, bool medium_busy) {\n        if (!has_frame) return false;\n        if (nav > 0) return false;\n\n        // Physical carrier sense\n        if (medium_busy) return false;\n\n        // Backoff procedure\n        if (backoff > 0) {\n            if (!medium_busy) {\n                backoff--;\n            }\n            return false;\n        }\n\n        // Backoff expired → transmit\n        if (backoff == 0) {\n            // Simulate: check if another station transmits at same time (collision)\n            std::cout << \"Time \" << current_time << \": Station \" << id\n                      << \" transmitting (CW=\" << cw << \", retry=\" << retry_count << \")\\n\";\n            return true;  // indicates this station wants to transmit\n        }\n        return false;\n    }\n\n    void handle_collision() {\n        collisions++;\n        retry_count++;\n        cw = std::min(cw * 2, cw_max);\n        backoff = rand() % (cw + 1);\n        std::cout << \"  -> Station \" << id << \" COLLISION, new CW=\" << cw\n                  << \" backoff=\" << backoff << \"\\n\";\n    }\n\n    void handle_success() {\n        frames_sent++;\n        retry_count = 0;\n        cw = cw_min;\n        backoff = 0;\n        has_frame = false;\n        std::cout << \"  -> Station \" << id << \" SUCCESS, frames sent=\" << frames_sent << \"\\n\";\n    }\n\n    void init_backoff() {\n        backoff = rand() % (cw + 1);\n    }\n};\n\nclass CSMCASimulator {\npublic:\n    std::vector<CSMCASTation> stations;\n    int current_time = 0;\n    int slot_time = 9;   // microseconds\n    int difs = 34;\n    int frame_time = 200;\n    int ack_time = 30;\n    int sifs = 16;\n\n    CSMCASimulator(int num_stations) {\n        for (int i = 0; i < num_stations; i++) {\n            stations.emplace_back(i);\n        }\n    }\n\n    void load_all_frames() {\n        for (auto& s : stations) s.load_frame();\n    }\n\n    void init_backoffs() {\n        for (auto& s : stations) s.init_backoff();\n    }\n\n    void run_simulation(int max_time) {\n        init_backoffs();\n        bool medium_busy = false;\n        int busy_until = 0;\n        int transmitting_id = -1;\n\n        while (current_time < max_time) {\n            // Update NAV for all stations\n            for (auto& s : stations) {\n                if (s.nav > 0) s.nav--;\n            }\n\n            // Check if medium becomes idle\n            if (medium_busy && current_time >= busy_until) {\n                medium_busy = false;\n                std::cout << \"Time \" << current_time << \": Medium becomes IDLE\\n\";\n                // Start DIFS period\n            }\n\n            // DIFS idle period\n            if (!medium_busy) {\n                // Collect stations whose backoff is 0 (ready to transmit)\n                std::vector<int> ready_stations;\n                for (auto& s : stations) {\n                    if (s.has_frame && s.nav == 0) {\n                        s.frozen = false;\n                        if (s.backoff == 0) {\n                            ready_stations.push_back(s.id);\n                        }\n                    }\n                }\n\n                if (ready_stations.size() == 1) {\n                    // Successful transmission\n                    int id = ready_stations[0];\n                    std::cout << \"Time \" << current_time << \": Station \" << id\n                              << \" transmits (backoff=0)\\n\";\n                    medium_busy = true;\n                    busy_until = current_time + frame_time;\n                    stations[id].handle_success();\n                    transmitting_id = id;\n\n                    // Set NAV for other stations\n                    for (auto& s : stations) {\n                        if (s.id != id) {\n                            s.nav = frame_time + sifs + ack_time + difs;\n                        }\n                    }\n                } else if (ready_stations.size() > 1) {\n                    // Collision\n                    std::cout << \"Time \" << current_time << \": COLLISION between stations \";\n                    for (size_t i = 0; i < ready_stations.size(); i++) {\n                        std::cout << ready_stations[i];\n                        if (i < ready_stations.size() - 1) std::cout << \", \";\n                    }\n                    std::cout << \"\\n\";\n                    for (int id : ready_stations) {\n                        stations[id].handle_collision();\n                    }\n                }\n\n                // Decrement backoff for all stations with pending frames\n                for (auto& s : stations) {\n                    if (s.has_frame && s.backoff > 0 && s.nav == 0) {\n                        s.backoff--;\n                    }\n                }\n            }\n\n            current_time += slot_time;\n        }\n\n        // Print summary\n        std::cout << \"\\n=== SIMULATION SUMMARY ===\\n\";\n        for (auto& s : stations) {\n            std::cout << \"Station \" << s.id << \": \" << s.frames_sent << \" sent, \"\n                      << s.collisions << \" collisions, final CW=\" << s.cw << \"\\n\";\n        }\n    }\n};\n\nint main() {\n    srand(time(0));\n    CSMCASimulator sim(3);\n    sim.load_all_frames();\n    sim.run_simulation(5000);\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1247-python-implementation-csmaca-simulator",
+      children: "12.4.7 Python Implementation: CSMA/CA Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import random\nimport time\n\n\nclass CSMCASTation:\n    def __init__(self, station_id):\n        self.id = station_id\n        self.cw_min = 15\n        self.cw_max = 1023\n        self.cw = self.cw_min\n        self.backoff = 0\n        self.retry_count = 0\n        self.max_retry = 7\n        self.frames_sent = 0\n        self.collisions = 0\n        self.has_frame = False\n        self.nav = 0\n        self.throughput_bits = 0\n\n    def load_frame(self):\n        self.has_frame = True\n        self.backoff = random.randint(0, self.cw)\n\n    def handle_collision(self):\n        self.collisions += 1\n        self.retry_count += 1\n        self.cw = min(self.cw * 2, self.cw_max)\n        self.backoff = random.randint(0, self.cw)\n        return self.retry_count < self.max_retry\n\n    def handle_success(self, frame_bits=12000):\n        self.frames_sent += 1\n        self.retry_count = 0\n        self.throughput_bits += frame_bits\n        self.cw = self.cw_min\n        self.has_frame = False\n        self.backoff = 0\n\n\nclass CSMCASimulator:\n    def __init__(self, num_stations):\n        self.stations = [CSMCASTation(i) for i in range(num_stations)]\n        self.current_time = 0\n        self.slot_time = 9        # microseconds\n        self.difs = 34\n        self.frame_time = 200     # 1500 bytes at 54 Mbps\n        self.ack_time = 30\n        self.sifs = 16\n        self.medium_busy = False\n        self.busy_until = 0\n        self.total_slots = 0\n        self.idle_slots = 0\n\n    def load_all_frames(self):\n        for s in self.stations:\n            s.load_frame()\n\n    def step(self):\n        \"\"\"Advance by one slot time.\"\"\"\n        self.current_time += self.slot_time\n        self.total_slots += 1\n\n        # Decrement NAV\n        for s in self.stations:\n            if s.nav > 0:\n                s.nav -= 1\n\n        # Check if medium becomes idle\n        if self.medium_busy and self.current_time >= self.busy_until:\n            self.medium_busy = False\n\n        if self.medium_busy:\n            return  # nothing to do\n\n        self.idle_slots += 1\n\n        # Find stations ready to transmit (backoff == 0)\n        ready = [s for s in self.stations if s.has_frame and s.nav == 0 and s.backoff == 0]\n\n        if len(ready) == 1:\n            s = ready[0]\n            s.handle_success()\n            self.medium_busy = True\n            self.busy_until = self.current_time + self.frame_time\n            # Set NAV on other stations\n            for other in self.stations:\n                if other.id != s.id:\n                    other.nav = (self.frame_time + self.sifs + self.ack_time + self.difs) // self.slot_time\n\n        elif len(ready) > 1:\n            for s in ready:\n                s.handle_collision()\n\n        # Decrement backoffs\n        for s in self.stations:\n            if s.has_frame and s.backoff > 0 and s.nav == 0:\n                s.backoff -= 1\n\n    def run(self, max_time_us):\n        while self.current_time < max_time_us:\n            self.step()\n\n    def report(self):\n        total_sent = sum(s.frames_sent for s in self.stations)\n        total_collisions = sum(s.collisions for s in self.stations)\n        total_throughput = sum(s.throughput_bits for s in self.stations)\n        print(f\"\\n=== CSMA/CA SIMULATION REPORT ===\")\n        print(f\"Simulation time: {self.current_time} us\")\n        print(f\"Channel utilization: {100 * (1 - self.idle_slots / max(self.total_slots, 1)):.1f}%\")\n        print(f\"Total frames sent: {total_sent}\")\n        print(f\"Total collisions: {total_collisions}\")\n        print(f\"Total throughput: {total_throughput} bits ({total_throughput / 1e6:.2f} Mb)\")\n        for s in self.stations:\n            print(f\"  Station {s.id}: {s.frames_sent} sent, {s.collisions} collisions, \"\n                  f\"{s.throughput_bits} bits\")\n\n\nif __name__ == \"__main__\":\n    sim = CSMCASimulator(5)\n    sim.load_all_frames()\n    sim.run(10000)\n    sim.report()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1248-complexity-analysis",
+      children: "12.4.8 Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Time Complexity of CSMA/CA"
+      }), ": $O(N \\times R \\times B)$ where:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$N$ = number of stations"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$R$ = number of retransmissions per frame"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$B$ = average backoff slots (grows exponentially with each retry)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why Exponential Backoff?"
+      }), " The contention window doubles on each collision to reduce the probability of repeated collisions. For $N$ stations, after $k$ doublings: $P(\\text{collision}) \\approx 1 - (1 - \\frac{1}{CW})^{N-1}$. With $CW = 15$ and $N = 10$, a collision is likely (~47%). After one doubling to $CW = 31$, collision probability drops to ~26%. After two doublings ($CW = 63$), ~14%."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Space Complexity"
+      }), ": $O(N)$ → each station maintains its own CW, backoff counter, NAV, and retry counter. No shared state."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why CSMA/CA works in wireless but CSMA/CD does not"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CD requires the ability to detect collisions during transmission (full-duplex or special hardware)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Wireless is half-duplex → the transmitter's own signal drowns out incoming signals (the near-far problem)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The hidden terminal problem means collisions occur at the receiver, which the sender cannot sense."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CA prevents collisions probabilistically rather than detecting them reactively."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1249-edge-cases-in-csmaca",
+      children: "12.4.9 Edge Cases in CSMA/CA"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Two stations pick same backoff"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both reach 0 simultaneously → collision"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exponential backoff randomizes next attempt"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "False carrier sense"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Station detects non-802.11 energy as busy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clear Channel Assessment (CCA) thresholds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Exposed terminal deferral"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Station defers when it could safely transmit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RTS/CTS provides NAV-based reservation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Hidden terminal still colliding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RTS from two hidden stations collide"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RTS collision forces backoff and retry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Capture effect"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong signal drowns out weak signal at AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Power control, adaptive rate selection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Starving distant stations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nearby stations keep winning contention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fairness through Airtime Fairness algorithms"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-implementation-csmacasimulator",
+      children: "TypeScript Implementation: CSMACASimulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface StationState { id: number; cw: number; backoff: number; hasFrame: boolean; framesSent: number; collisions: number; nav: number; }\n\nclass CSMACASimulator {\n  private stations: StationState[] = [];\n  private currentTime: number = 0;\n  private mediumBusy: boolean = false;\n  private busyUntil: number = 0;\n  private readonly slotTime: number = 9;  // µs\n  private readonly difs: number = 34;\n  private readonly sifs: number = 16;\n  private readonly frameTime: number = 200;\n  private readonly ackTime: number = 30;\n  private readonly cwMin: number = 15;\n  private readonly cwMax: number = 1023;\n\n  constructor(numStations: number) {\n    for (let i = 0; i < numStations; i++) {\n      this.stations.push({ id: i, cw: this.cwMin, backoff: 0, hasFrame: false, framesSent: 0, collisions: 0, nav: 0 });\n    }\n  }\n\n  loadAllFrames(): void {\n    for (const s of this.stations) {\n      s.hasFrame = true;\n      s.backoff = Math.floor(Math.random() * (s.cw + 1));\n    }\n  }\n\n  private step(): void {\n    this.currentTime += this.slotTime;\n    for (const s of this.stations) if (s.nav > 0) s.nav--;\n    if (this.mediumBusy && this.currentTime >= this.busyUntil) this.mediumBusy = false;\n    if (this.mediumBusy) return;\n\n    const ready = this.stations.filter(s => s.hasFrame && s.nav === 0 && s.backoff === 0);\n    if (ready.length === 1) {\n      const s = ready[0];\n      s.framesSent++;\n      s.cw = this.cwMin;\n      s.hasFrame = false;\n      s.backoff = 0;\n      this.mediumBusy = true;\n      this.busyUntil = this.currentTime + this.frameTime;\n      for (const other of this.stations) {\n        if (other.id !== s.id) other.nav = Math.ceil((this.frameTime + this.sifs + this.ackTime + this.difs) / this.slotTime);\n      }\n      console.log(`[T=${this.currentTime}µs] STA${s.id} transmits SUCCESS (frames=${s.framesSent})`);\n    } else if (ready.length > 1) {\n      for (const s of ready) {\n        s.collisions++;\n        s.cw = Math.min(s.cw * 2, this.cwMax);\n        s.backoff = Math.floor(Math.random() * (s.cw + 1));\n        console.log(`[T=${this.currentTime}µs] COLLISION STA${s.id} new CW=${s.cw} backoff=${s.backoff}`);\n      }\n      this.mediumBusy = true;\n      this.busyUntil = this.currentTime + this.frameTime;\n    }\n    for (const s of this.stations) { if (s.hasFrame && s.backoff > 0 && s.nav === 0) s.backoff--; }\n  }\n\n  run(maxTimeUs: number): void {\n    this.loadAllFrames();\n    while (this.currentTime < maxTimeUs) this.step();\n  }\n\n  report(): void {\n    console.log(`\\n=== CSMA/CA REPORT ===`);\n    let totalSent = 0, totalColl = 0;\n    for (const s of this.stations) { totalSent += s.framesSent; totalColl += s.collisions; }\n    console.log(`Time: ${this.currentTime}µs | Total sent: ${totalSent} | Collisions: ${totalColl}`);\n    for (const s of this.stations) console.log(`  STA${s.id}: ${s.framesSent} sent, ${s.collisions} collisions`);\n  }\n}\n\n// Usage\nconst sim = new CSMACASimulator(3);\nsim.run(5000);\nsim.report();\n/*\nOutput:\n[T=...µs] STA... transmits SUCCESS (frames=1)\n...\n=== CSMA/CA REPORT ===\nTime: 5000µs | Total sent: 3 | Collisions: 0\n  STA0: 1 sent, 0 collisions\n  STA1: 1 sent, 0 collisions\n  STA2: 1 sent, 0 collisions\n*/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "125-mac-frame-format",
+      children: "12.5 MAC Frame Format"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1251-frame-fields-detail",
+      children: "12.5.1 Frame Fields Detail"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Field"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Size"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Frame Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Protocol version, Type, Subtype, To DS, From DS, More Frag, Retry, Pwr Mgmt, More Data, Protected Frame, Order"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Duration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NAV reservation time (µs) or STA ID (PS-Poll)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Address 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Receiver address (RA)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Address 2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transmitter address (TA)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Address 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Varies by frame type → usually BSSID, DA, or SA"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Sequence Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fragment number (4 bits) + Sequence number (12 bits)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Address 4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only present when both To DS and From DS are set (WDS bridge)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QoS Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Present in QoS Data frames; carries TID (traffic identifier)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HT Control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Present in 802.11n/ac/ax frames; carries MIMO/beamforming feedback"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Frame Body"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0-2304 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Payload (MSDU or A-MSDU)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FCS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC-32 over entire frame (except FCS itself)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Address Field Interpretation by To DS / From DS Bits"
+      }), ":"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "To DS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "From DS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Addr 1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Addr 2"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Addr 3"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Addr 4"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BSSID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BSSID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BSSID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SA"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1252-frame-types",
+      children: "12.5.2 Frame Types"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Management Frames"
+      }), " (Type = 00):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Beacon (Subtype 8): AP advertises SSID, capabilities, timestamp, beacon interval (100 TU = 102.4 ms)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Probe Request/Response (Subtypes 4/5): Active scanning"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Authentication/Deauthentication (Subtypes 11/12): Identity verification"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Association Request/Response (Subtypes 0/1): Join BSS"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Disassociation (Subtype 10): Leave BSS"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Control Frames"
+      }), " (Type = 01):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "RTS (Subtype 11): 20 bytes, reserves medium, contains receiver address and duration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CTS (Subtype 12): 14 bytes, acknowledges RTS, copies duration from RTS minus SIFS + CTS time"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ACK (Subtype 13): 14 bytes, positive acknowledgment"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PS-Poll (Subtype 10): STA requests buffered data from AP"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Data Frames"
+      }), " (Type = 10):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data (Subtype 0): Regular payload"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Null (Subtype 4): No payload; used for power management indication"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "QoS Data (Subtype 8): Data with priority (802.11e)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "126-hidden-and-exposed-terminal",
+      children: "12.6 Hidden and Exposed Terminal"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1261-hidden-terminal-problem",
+      children: "12.6.1 Hidden Terminal Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario"
+      }), ": Station A and Station C are both within range of AP B, but A and C cannot hear each other. A transmits to B. C, sensing an idle medium (it cannot hear A), also transmits. A collision occurs at B."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why it matters"
+      }), ": The sender (A or C) cannot detect the collision because it happens at the receiver (B). Without ACK, neither A nor C realizes the collision occurred. Throughput suffers due to repeated collisions and exponential backoff."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution"
+      }), ": RTS/CTS exchange → A sends a short RTS to B; B responds with CTS that C can hear. C sets its NAV and defers during A's transmission."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1262-exposed-terminal-problem",
+      children: "12.6.2 Exposed Terminal Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scenario"
+      }), ": Station B is transmitting to AP A. Station C (near B) wants to transmit to STA D (on the other side of C). C hears B's transmission and defers, even though C's transmission would not interfere with B's reception at A (A is far enough from C)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why it matters"
+      }), ": The exposed terminal unnecessarily defers, reducing channel utilization. The medium is idle from the perspective of both receivers (A and D), but the transmitter C stays silent."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution"
+      }), ": RTS/CTS partially mitigates this → if C sends RTS to D, D responds with CTS, and B hears D's CTS. But if B is near C, B may still defer to C. In practice, exposed terminal is harder to solve and often requires directional antennas or centralized scheduling."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1263-comparison-table",
+      children: "12.6.3 Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hidden Terminal"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Exposed Terminal"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two transmitters cannot hear each other"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transmitter defers to irrelevant transmission"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Location of collision"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "At the receiver"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No collision → unnecessary deferral"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Who is harmed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Receiver (collision)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transmitter (deferral)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Who is confused"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sender (thinks medium is idle)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sender (thinks medium is busy)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RTS/CTS effect"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CTS reaches hidden station, sets NAV"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CTS may or may not help"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Throughput impact"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Collisions, retransmissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wasted idle capacity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Difficult (senders cannot detect)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Difficult (cannot distinguish deferral types)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1264-rtscts-exchange-numbered-steps",
+      children: "12.6.4 RTS/CTS Exchange (Numbered Steps)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sender RTS"
+        }), ": Sender transmits RTS (20 bytes) to receiver. RTS contains Receiver Address and Duration (= time needed for entire exchange)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Receiver CTS"
+        }), ": Receiver waits SIFS (16 µs), transmits CTS (14 bytes) to sender. CTS copies the Duration field, subtracting SIFS + CTS time. All other stations that hear CTS set their NAV."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data Transmission"
+        }), ": Sender waits SIFS after CTS, transmits data frame. All stations that heard RTS (but not CTS) or CTS (but not RTS) maintain their NAV."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ACK"
+        }), ": Receiver waits SIFS after data, transmits ACK. Stations update their NAV based on the Duration field (typically 0, indicating end of exchange)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "When RTS/CTS is used"
+      }), ": RTS threshold is typically 2346 bytes (disabled by default on many devices). For small frames, RTS/CTS overhead (RTS + CTS ≈ 34 bytes + 2×SIFS = 52 µs plus contention) exceeds its benefit. RTS/CTS is recommended in dense or high-interference environments."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1265-dry-run-trace-rtscts-exchange",
+      children: "12.6.5 Dry Run Trace: RTS/CTS Exchange"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Scenario: Station A (STA A) sends to AP. Station C is hidden from A but can hear AP."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Time (µs)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Sender"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frame"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Duration (µs)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NAV at A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NAV at AP"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "NAV at C"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Notes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RTS to AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "400"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A sends RTS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inter-frame spacing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CTS to A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "354"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "370"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "370"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C sets NAV=370"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "32"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inter-frame spacing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "32"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data to AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "338"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "338"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C NAV counting down"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "48"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SIFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inter-frame spacing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "48"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACK to A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NAV cleared by C"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "370"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "End"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "C may now contend"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Duration calculation: RTS duration = Data(338) + SIFS(16) + ACK(30) + 3×SIFS(48) = 400 µs.\nCTS duration = 400 - SIFS(16) - CTS_time(14B @ 54 Mbps ≈ 4 µs) ≈ 370 µs (rounding)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "During the entire exchange (0-370 µs), Station C defers because its NAV > 0. The hidden terminal collision is avoided."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1266-pseudocode-rtscts-protocol",
+      children: "12.6.6 Pseudocode: RTS/CTS Protocol"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "procedure rts_cts_send(data_frame, receiver)\n    // Step 1: Contend for medium (CSMA/CA)\n    csma_ca_backoff()\n    send(RTS(receiver, exchange_duration))\n\n    // Step 2: Wait for CTS\n    timer = CTS_TIMEOUT\n    while timer > 0 do\n        if recv_frame(frame) and frame.type == CTS and frame.sender == receiver then\n            nav_update(frame.duration)\n            goto STEP_3\n        timer = timer - SLOT_TIME\n    // No CTS received → retry\n    return TRANSMIT_FAILURE\n\n    // Step 3: Send data\n    STEP_3:\n    wait(SIFS)\n    send(data_frame)\n    nav_update(data_frame.duration)\n\n    // Step 4: Wait for ACK\n    timer = ACK_TIMEOUT\n    while timer > 0 do\n        if recv_frame(frame) and frame.type == ACK and frame.ack_seq == data_frame.seq then\n            return TRANSMIT_SUCCESS\n        timer = timer - SLOT_TIME\n    return TRANSMIT_FAILURE\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1267-edge-cases-in-hiddenexposed-terminal",
+      children: "12.6.7 Edge Cases in Hidden/Exposed Terminal"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "RTS Collision (Hidden Terminals Still Colliding)"
+      }), ":\nTwo hidden stations (A and C) both sense the medium as idle (neither hears the other). Both send RTS to the AP at the same time. The AP receives garbled data. Both A and C time out waiting for CTS and double their CW. After backoff, the one with the smaller backoff wins. RTS frames themselves are short (20 bytes), so the collision is brief, but it does happen."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Non-RTS/CTS Hidden Terminal"
+      }), ": Without RTS/CTS, hidden stations A and C transmit data frames simultaneously. Both frames collide at the AP. Neither A nor C receives an ACK. Both double CW and retry. They may collide again if they pick the same backoff value (probability ≈ 1/CW). With CW=15, P(same backoff) ≈ 6.7%."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Exposed Terminal with RTS/CTS"
+      }), ": Station C hears B's RTS to AP A. C defers (setting NAV based on RTS duration). But C could safely transmit to D (far from A). RTS/CTS actually makes the exposed terminal problem worse in this case → C defers when it could otherwise transmit."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Co-Channel Interference Scenario"
+      }), ": Two APs (AP1 on channel 6, AP2 also on channel 6) with overlapping cells. STA connected to AP1 hears AP2's beacon and probe responses as interference. The STA experiences lower SNR, forcing rate adaptation to a lower modulation (e.g., 54 Mbps → 24 Mbps), reducing throughput by 55%."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1268-ad-of-rtscts",
+      children: "12.6.8 A&D of RTS/CTS"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Solves hidden terminal problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adds fixed overhead (RTS+CTS = 34 bytes per exchange)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reduces collision duration (short RTS instead of long data)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ineffective in exposed terminal scenarios"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual carrier sense (NAV) protects fragmented frames"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CTS from other BSS can cause false deferral"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Essential for dense/official deployments"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disabled by default on many consumer devices"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Improves fairness among distant stations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Degrades throughput in low-load, low-interference environments"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "127-power-management",
+      children: "12.7 Power Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1271-tim-and-ps-poll",
+      children: "12.7.1 TIM and PS-Poll"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Wireless stations conserve power by entering doze (sleep) state. The AP buffers frames for sleeping stations."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "TIM (Traffic Indication Map)"
+      }), ": A bitmap in each beacon frame. Bit $i = 1$ means the AP has buffered data for AID $i$. Stations wake at each beacon interval (typically 102.4 ms) to check the TIM. If their bit is set, they send PS-Poll to retrieve the buffered frame."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "DTIM (Delivery TIM)"
+      }), ": Every few beacons (DTIM period, default 1-3), the AP sends a DTIM beacon. After DTIM, the AP transmits broadcast/multicast frames. Stations must remain awake after DTIM to receive broadcast traffic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "PS-Poll"
+      }), ": STA sends PS-Poll frame to AP indicating it is awake and ready to receive. AP responds immediately with the buffered frame or an ACK followed by the frame. The More Data bit in the AP's response tells the STA whether more frames are buffered."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "WMM-PS (Wi-Fi Multi-Media Power Save) / U-APSD"
+      }), ": Instead of TIM-based polling, the STA sends a trigger frame (e.g., a QoS Null) and the AP delivers all buffered frames in a burst."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "TWT (Target Wake Time, 802.11ax)"
+      }), ": STA and AP negotiate specific wake times, reducing contention and extending battery life. The STA wakes only at pre-agreed times instead of every beacon interval."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1272-real-world-analogy-office-mailroom",
+      children: "12.7.2 Real-World Analogy: Office Mailroom"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Beacon"
+        }), ": The mailroom clerk rings a bell every hour to announce \"mail is here.\""]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "TIM"
+        }), ": The clerk posts a list of employees who have mail. You only need to look if your name is on the list."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PS-Poll"
+        }), ": You approach the counter and say \"I have mail → please give it to me.\""]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "DTIM"
+        }), ": Every third bell, the clerk reads general announcements (broadcast messages) that everyone must hear."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "TWT"
+        }), ": You schedule a specific time each day with the clerk: \"I'll pick up mail at 10 AM and 2 PM.\" No need to check every hour."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1273-numbered-steps-power-save-operation",
+      children: "12.7.3 Numbered Steps: Power-Save Operation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Association"
+        }), ": STA informs AP of its listen interval (e.g., 10 beacon periods). AP will buffer frames for up to this duration."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sleep"
+        }), ": STA enters doze state, turning off the radio. AP buffers any incoming frames for the STA."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Wake"
+        }), ": STA wakes at the next beacon TBTT (Target Beacon Transmission Time)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "TIM Check"
+        }), ": STA receives the beacon, checks the TIM bitmap for its AID."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "If bit set"
+        }), ": STA sends PS-Poll to AP."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Frame Delivery"
+        }), ": AP sends buffered frame(s) to STA, with More Data bit indicating whether more frames remain."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "If More Data = 1"
+        }), ": STA sends PS-Poll again (or stays awake for immediate delivery). Go to step 6."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "If More Data = 0"
+        }), ": STA returns to doze until next beacon."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "If bit not set"
+        }), ": STA immediately returns to doze until next beacon."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "128-bluetooth",
+      children: "12.8 Bluetooth"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bluetooth (IEEE 802.15.1) is a short-range wireless technology operating in the 2.4 GHz ISM band. It uses frequency-hopping spread spectrum (FHSS) to mitigate interference and fading."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1281-piconet-and-scatternet",
+      children: "12.8.1 Piconet and Scatternet"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Piconet"
+      }), ": A Bluetooth piconet consists of one master and up to seven active slaves (plus up to 255 parked slaves). Key characteristics:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All communication is master-to-slave or slave-to-master. Slaves do not communicate directly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The master determines the frequency-hopping sequence (derived from the master's clock and BD_ADDR)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The master polls each slave in turn using a TDD (Time Division Duplex) scheme."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Time is divided into 625 µs slots (1600 slots/second)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Master transmits in even slots, slave responds in odd slots."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Slaves speak only when addressed by the master."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Scatternet"
+      }), ": Multiple piconets interconnected through bridge nodes. A bridge node participates in multiple piconets (as slave in one, master in another, or slave in both). Scatternets extend the range and coverage of Bluetooth networks beyond a single piconet."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bluetooth versions"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BR (Basic Rate): 1 Mbps, GFSK modulation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "EDR (Enhanced Data Rate): 2-3 Mbps, DQPSK/8DPSK modulation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BLE (Bluetooth Low Energy 4.0): 1 Mbps, very low power, 40 channels (3 advertising + 37 data)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bluetooth 5: 2 Mbps (LE 2M PHY), 4× range, advertising extensions, mesh networking."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bluetooth 5.2: LE Audio, LC3 codec, multi-stream audio."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bluetooth 5.3/5.4: Periodic advertising, encrypted advertising data, isochronous channels."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1282-l2cap-logical-link-control-and-adaptation-protocol",
+      children: "12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "L2CAP sits above the baseband layer in the Bluetooth protocol stack and provides:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Segmentation and reassembly"
+        }), ": Large packets are divided into baseband frames and reassembled at the receiver."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Protocol multiplexing"
+        }), ": Multiple higher-layer protocols (RFCOMM, SDP, BNEP) share the same ACL (Asynchronous Connection-Less) link."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Quality of Service"
+        }), ": L2CAP supports best-effort and guaranteed QoS configurations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Retransmission and flow control"
+        }), ": Enhanced Retransmission Mode and Streaming Mode in L2CAP 2.0."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "L2CAP channel identifiers (CIDs):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CID 0x0001: Signaling channel (connection management)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CID 0x0002: Connectionless data"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CID 0x0003-0x003F: Fixed channels (e.g., SDP = 0x0001 actually, ATT over BLE = 0x0004)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CID 0x0040-0xFFFF: Dynamically allocated for application channels"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1283-real-world-analogy-classroom",
+      children: "12.8.3 Real-World Analogy: Classroom"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Master (Teacher)"
+        }), ": Controls the conversation. Calls on students one at a time."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Slave (Student)"
+        }), ": Speaks only when the teacher calls on them."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Slots"
+        }), ": The teacher speaks for 30 seconds (slot), then a student responds for 30 seconds (slot)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Piconet"
+        }), ": One teacher with up to 7 students in a study group."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Scatternet"
+        }), ": Multiple study groups in adjacent rooms. A student (bridge) moves between groups, sharing information."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "FHSS"
+        }), ": Every time the teacher says something, they switch to a different language. Anyone not in the group hears gibberish on any single frequency."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "L2CAP"
+        }), ": The teacher's assistant organizes materials → splits long books into chapters (segmentation), labels each book with its subject (protocol multiplexing)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1284-c-implementation-bluetooth-piconet",
+      children: "12.8.4 C++ Implementation: Bluetooth Piconet"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <vector>\n#include <string>\n#include <queue>\n#include <random>\n#include <chrono>\n#include <thread>\n\nclass BluetoothDevice {\npublic:\n    std::string address;\n    std::string name;\n    bool is_master;\n    int clock;  // native clock\n\n    BluetoothDevice(std::string addr, std::string name, bool master = false)\n        : address(addr), name(name), is_master(master), clock(0) {}\n\n    virtual ~BluetoothDevice() = default;\n};\n\nclass BluetoothSlave : public BluetoothDevice {\npublic:\n    std::queue<std::string> tx_queue;\n    bool parked;\n\n    BluetoothSlave(std::string addr, std::string name)\n        : BluetoothDevice(addr, name, false), parked(false) {}\n\n    void enqueue_data(const std::string& data) {\n        tx_queue.push(data);\n    }\n};\n\nclass BluetoothMaster : public BluetoothDevice {\npublic:\n    std::vector<BluetoothSlave*> slaves;\n    int current_slave_index;\n    int hop_sequence[79];  // 79-hop sequence\n    int current_channel;\n\n    BluetoothMaster(std::string addr, std::string name)\n        : BluetoothDevice(addr, name, true), current_slave_index(0), current_channel(0) {\n        // Generate pseudo-random hopping sequence\n        for (int i = 0; i < 79; i++) hop_sequence[i] = i;\n        std::shuffle(hop_sequence, hop_sequence + 79, std::mt19937(42));\n    }\n\n    bool add_slave(BluetoothSlave* slave) {\n        if (slaves.size() >= 7) {\n            std::cout << \"Piconet full: max 7 active slaves.\\n\";\n            return false;\n        }\n        slaves.push_back(slave);\n        std::cout << \"Slave \" << slave->name << \" (\" << slave->address\n                  << \") joined piconet. Active slaves: \" << slaves.size() << \"\\n\";\n        return true;\n    }\n\n    void remove_slave(BluetoothSlave* slave) {\n        auto it = std::find(slaves.begin(), slaves.end(), slave);\n        if (it != slaves.end()) {\n            slaves.erase(it);\n            std::cout << \"Slave \" << slave->name << \" left piconet.\\n\";\n        }\n    }\n\n    void park_slave(BluetoothSlave* slave) {\n        slave->parked = true;\n        std::cout << \"Slave \" << slave->name << \" parked (inactive).\\n\";\n    }\n\n    void unpark_slave(BluetoothSlave* slave) {\n        slave->parked = false;\n        std::cout << \"Slave \" << slave->name << \" unparked (active).\\n\";\n    }\n\n    void run_piconet_cycle() {\n        if (slaves.empty()) {\n            std::cout << \"No active slaves in piconet.\\n\";\n            return;\n        }\n\n        // Master slot (even slot)\n        current_channel = hop_sequence[current_slave_index % 79];\n        BluetoothSlave* slave = slaves[current_slave_index % slaves.size()];\n\n        std::cout << \"[Slot \" << clock << \"] Master -> \" << slave->name\n                  << \" on channel \" << current_channel << \": \";\n\n        if (clock % 2 == 0) {  // Master transmission slot\n            std::cout << \"POLL (any data?)\\n\";\n        }\n\n        clock++;\n\n        // Slave slot (odd slot)\n        current_channel = hop_sequence[clock % 79];\n        if (!slave->tx_queue.empty()) {\n            std::string data = slave->tx_queue.front();\n            slave->tx_queue.pop();\n            std::cout << \"[Slot \" << clock << \"] \" << slave->name << \" -> Master\"\n                      << \" on channel \" << current_channel << \": \" << data << \"\\n\";\n        } else {\n            std::cout << \"[Slot \" << clock << \"] \" << slave->name << \" -> Master\"\n                      << \" on channel \" << current_channel << \": NULL (no data)\\n\";\n        }\n\n        clock++;\n        current_slave_index = (current_slave_index + 1) % slaves.size();\n    }\n\n    void run_multiple_cycles(int cycles) {\n        for (int i = 0; i < cycles; i++) {\n            run_piconet_cycle();\n            std::this_thread::sleep_for(std::chrono::milliseconds(100));\n        }\n    }\n};\n\nint main() {\n    BluetoothMaster master(\"00:1A:7D:DA:71:01\", \"Phone-Master\");\n\n    BluetoothSlave s1(\"00:1A:7D:DA:71:02\", \"Headset\");\n    BluetoothSlave s2(\"00:1A:7D:DA:71:03\", \"Keyboard\");\n    BluetoothSlave s3(\"00:1A:7D:DA:71:04\", \"Mouse\");\n\n    s1.enqueue_data(\"A2DP audio frame #1\");\n    s1.enqueue_data(\"A2DP audio frame #2\");\n    s2.enqueue_data(\"HID report: key Pressed 'A'\");\n    s3.enqueue_data(\"HID report: mouse moved (dx=10, dy=5)\");\n    s1.enqueue_data(\"A2DP audio frame #3\");\n\n    master.add_slave(&s1);\n    master.add_slave(&s2);\n    master.add_slave(&s3);\n\n    std::cout << \"\\n=== Piconet Operation ===\\n\";\n    master.run_multiple_cycles(9);\n\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1285-python-implementation-bluetooth-piconet",
+      children: "12.8.5 Python Implementation: Bluetooth Piconet"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import random\nimport time\nfrom collections import deque\n\n\nclass BluetoothDevice:\n    def __init__(self, address, name, is_master=False):\n        self.address = address\n        self.name = name\n        self.is_master = is_master\n        self.clock = 0\n\nclass BluetoothSlave(BluetoothDevice):\n    def __init__(self, address, name):\n        super().__init__(address, name, False)\n        self.tx_queue = deque()\n        self.parked = False\n        self.l2cap_channels = {}  # CID -> callback\n\n    def enqueue_data(self, data):\n        self.tx_queue.append(data)\n\n    def register_l2cap_channel(self, cid, protocol_name):\n        self.l2cap_channels[cid] = protocol_name\n\nclass BluetoothMaster(BluetoothDevice):\n    def __init__(self, address, name):\n        super().__init__(address, name, True)\n        self.slaves = []\n        self.current_slave_index = 0\n        self.current_channel = 0\n        self.hop_sequence = list(range(79))\n        random.seed(42)\n        random.shuffle(self.hop_sequence)\n\n    def add_slave(self, slave):\n        if len(self.slaves) >= 7:\n            print(f\"Piconet full: max 7 active slaves.\")\n            return False\n        self.slaves.append(slave)\n        print(f\"Slave {slave.name} ({slave.address}) joined piconet. \"\n              f\"Active slaves: {len(self.slaves)}\")\n        return True\n\n    def remove_slave(self, slave):\n        if slave in self.slaves:\n            self.slaves.remove(slave)\n            print(f\"Slave {slave.name} left piconet.\")\n\n    def park_slave(self, slave):\n        slave.parked = True\n        print(f\"Slave {slave.name} parked.\")\n\n    def run_piconet_cycle(self):\n        if not self.slaves:\n            print(\"No active slaves in piconet.\")\n            return\n\n        active = [s for s in self.slaves if not s.parked]\n        if not active:\n            return\n\n        slave = active[self.current_slave_index % len(active)]\n\n        # Master -> Slave (even slot)\n        self.current_channel = self.hop_sequence[self.clock % 79]\n        print(f\"[Slot {self.clock}] Master -> {slave.name} \"\n              f\"on ch{self.current_channel}: POLL\")\n        self.clock += 1\n\n        # Slave -> Master (odd slot)\n        self.current_channel = self.hop_sequence[self.clock % 79]\n        if slave.tx_queue:\n            data = slave.tx_queue.popleft()\n            print(f\"[Slot {self.clock}] {slave.name} -> Master \"\n                  f\"on ch{self.current_channel}: {data}\")\n        else:\n            print(f\"[Slot {self.clock}] {slave.name} -> Master \"\n                  f\"on ch{self.current_channel}: NULL\")\n        self.clock += 1\n\n        self.current_slave_index += 1\n\n    def run(self, cycles=10):\n        for _ in range(cycles):\n            self.run_piconet_cycle()\n            time.sleep(0.05)\n\n\nclass L2CAPLayer:\n    \"\"\"Simulates Bluetooth L2CAP segmentation and protocol multiplexing.\"\"\"\n    def __init__(self, mtu=672):\n        self.mtu = mtu\n        self.channels = {}  # CID -> protocol_name\n\n    def register_channel(self, cid, protocol_name):\n        self.channels[cid] = protocol_name\n\n    def segment(self, data, cid):\n        \"\"\"Segment large data into MTU-sized chunks.\"\"\"\n        if len(data) <= self.mtu:\n            return [(cid, data)]\n\n        segments = []\n        for i in range(0, len(data), self.mtu):\n            chunk = data[i:i + self.mtu]\n            segments.append((cid, chunk))\n        return segments\n\n    def reassemble(self, segments):\n        \"\"\"Reassemble segments into complete L2CAP SDU.\"\"\"\n        return b\"\".join(payload for _, payload in segments)\n\n    def create_l2cap_header(self, cid, payload_length):\n        length_field = payload_length.to_bytes(2, 'little')\n        cid_field = cid.to_bytes(2, 'little')\n        return length_field + cid_field\n\n\nclass Scatternet:\n    \"\"\"Connects multiple piconets through bridge nodes.\"\"\"\n    def __init__(self):\n        self.piconets = []  # list of (master, [slaves])\n\n    def add_piconet(self, master, slaves):\n        self.piconets.append((master, slaves))\n\n    def bridge_slave(self, slave, piconet1, piconet2):\n        \"\"\"A slave participates in two piconets as bridge.\"\"\"\n        print(f\"Bridge: {slave.name} connects piconet {piconet1} and {piconet2}\")\n\n    def route_inter_piconet(self, from_slave, to_slave, data):\n        print(f\"Scatternet routing: {from_slave.name} -> {to_slave.name}: {data}\")\n\n\nif __name__ == \"__main__\":\n    print(\"=== Bluetooth Piconet Simulation ===\\n\")\n\n    master = BluetoothMaster(\"00:1A:7D:DA:71:01\", \"Phone\")\n\n    headset = BluetoothSlave(\"00:1A:7D:DA:71:02\", \"Headset\")\n    keyboard = BluetoothSlave(\"00:1A:7D:DA:71:03\", \"Keyboard\")\n    mouse = BluetoothSlave(\"00:1A:7D:DA:71:04\", \"Mouse\")\n\n    # L2CAP channels\n    l2cap = L2CAPLayer()\n    l2cap.register_channel(0x0040, \"RFCOMM (SPP)\")\n    l2cap.register_channel(0x0041, \"A2DP (Audio)\")\n    l2cap.register_channel(0x0042, \"HID (Human Interface)\")\n\n    headset.register_l2cap_channel(0x0041, \"A2DP\")\n    headset.register_l2cap_channel(0x0040, \"RFCOMM\")\n    keyboard.register_l2cap_channel(0x0042, \"HID\")\n    mouse.register_l2cap_channel(0x0042, \"HID\")\n\n    # Simulate L2CAP segmentation\n    large_audio_frame = b\"X\" * 1500  # Exceeds typical L2CAP MTU\n    segments = l2cap.segment(large_audio_frame, 0x0041)\n    print(f\"L2CAP segmented 1500-byte audio into {len(segments)} chunks:\")\n    for cid, chunk in segments:\n        print(f\"  CID=0x{cid:04X} payload={len(chunk)} bytes\")\n    print()\n\n    # Enqueue data\n    headset.enqueue_data(\"A2DP frame #1\")\n    keyboard.enqueue_data(\"HID: key='A' pressed\")\n    mouse.enqueue_data(\"HID: mouse dx=5 dy=10\")\n    headset.enqueue_data(\"A2DP frame #2\")\n\n    master.add_slave(headset)\n    master.add_slave(keyboard)\n    master.add_slave(mouse)\n\n    master.run(12)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1286-ad-of-bluetooth",
+      children: "12.8.6 A&D of Bluetooth"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantage"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantage"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low power consumption (BLE: 0.01-0.5 W)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low data rate (1-3 Mbps, 2 Mbps for BLE 5)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FHSS provides interference resilience"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Short range (~10 m classic, ~100 m BLE 5)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low-cost hardware (sub-$5 modules)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited to 7 active slaves per piconet"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Ubiquitous in mobile devices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection-oriented setup latency (~3 s for BR/EDR)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mesh networking (Bluetooth 5+)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scatternet complexity and scheduling overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LE Audio with LC3 codec"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Co-channel interference with WiFi 2.4 GHz"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "129-cellular-networks",
+      children: "12.9 Cellular Networks"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1291-4glte",
+      children: "12.9.1 4G/LTE"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Architecture"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "UE (User Equipment)"
+        }), ": Mobile device with SIM/USIM."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-UTRAN (Evolved UMTS Terrestrial Radio Access Network)"
+        }), ": eNodeBs handle all radio functions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EPC (Evolved Packet Core)"
+        }), ": All-IP core network."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "EPC Components"
+      }), ":"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Function"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MME (Mobility Management Entity)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NAS signaling, authentication, tracking area management, paging, bearer management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SGW (Serving Gateway)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User-plane anchor, handover between eNodeBs, packet routing and forwarding"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PGW (PDN Gateway)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IP allocation, QoS enforcement, interconnection to external packet data networks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HSS (Home Subscriber Server)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Subscriber database, authentication vectors, subscription profiles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "PCRF (Policy and Charging Rules Function)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "QoS policy, charging rules, gating control"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "OFDMA in LTE Downlink"
+      }), ": 15 kHz subcarrier spacing. Resource Block = 12 subcarriers × 7 OFDM symbols (normal CP) = 84 REs. For 20 MHz bandwidth: 100 RBs available. Each RB carries 84 symbols. With 64-QAM (6 bits/symbol) and code rate 3/4: 84 × 6 × 0.75 = 378 bits per RB per 0.5 ms slot."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "SC-FDMA in LTE Uplink"
+      }), ": Single-carrier FDMA reduces PAPR (Peak-to-Average Power Ratio), improving battery life and power amplifier efficiency compared to OFDMA."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1292-5g-nr",
+      children: "12.9.2 5G NR"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Service Categories"
+      }), ":"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Downlink"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Latency"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Reliability"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Density"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "eMBB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "99.9%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Video streaming, AR/VR"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "uRLLC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "99.999%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Industrial control, autonomous driving"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "mMTC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1M/km²"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IoT sensors, smart city"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Flexible Numerology"
+      }), ": Subcarrier spacing = $15 \\times 2^\\mu$ kHz."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "$\\mu$"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SCS (kHz)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Symbol Duration (µs)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Slot Duration (ms)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Max BW (MHz)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "66.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LTE coexistence"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "33.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Urban macro"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.25"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dense urban, low latency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "120"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8.33"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.125"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "400"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "mmWave, high Doppler"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "240"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.0625"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "800"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Beyond 52.6 GHz"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Massive MIMO and Beamforming"
+      }), ": 5G gNBs can have 64, 128, or even 1024 antenna elements. Beamforming creates narrow, focused beams that track individual UEs. Spatial multiplexing allows multiple UEs to share the same time-frequency resources on different beams."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Network Slicing"
+      }), ": Each slice is an isolated end-to-end logical network with dedicated resources, SLA, and management. A smartphone may connect to an eMBB slice (video) and an mMTC slice (background sensor) simultaneously."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "5G Core (SBA)"
+      }), ": Service-Based Architecture using HTTP/2 (REST) between network functions:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "AMF"
+        }), ": Access and Mobility Management Function (replaces MME control plane)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "SMF"
+        }), ": Session Management Function (bearer management, IP allocation)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "UPF"
+        }), ": User Plane Function (packet routing, QoS enforcement → distributed at edge)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PCF"
+        }), ": Policy Control Function (replaces PCRF)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "NRF"
+        }), ": Network Repository Function (service discovery)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1293-4g-vs-5g-comparison",
+      children: "12.9.3 4G vs 5G Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "4G LTE"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "5G NR"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Peak downlink"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "300 Mbps (LTE Cat 6) → 3 Gbps (LTE-A)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10-20 Gbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Peak uplink"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "75 Mbps → 1.5 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10 Gbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "User-plane latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10-30 ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-4 ms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Subcarrier spacing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15 kHz fixed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15-240 kHz flexible"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDM numerology"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flexible ($15 \\times 2^\\mu$)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Max carrier bandwidth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 MHz (100 MHz with CA)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100 MHz (sub-6), 400 MHz (mmWave)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MIMO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Up to 8×8 DL, 4×4 UL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Up to 64×64 (massive MIMO)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beamforming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not in spec (proprietary)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native (3D beamforming)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Core architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPC (MME, SGW, PGW)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SBA (AMF, SMF, UPF, NRF)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Network slicing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not supported"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native (end-to-end slices)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge computing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (LIPA/SIPTO)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native (MEC, UL CL, IPv6 multi-homing)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "QoS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bearer-based (EPS bearers)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Flow-based (QoS flows over DRBs)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Channel access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDMA (DL), SC-FDMA (UL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDMA (both DL and UL)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Duplex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FDD primarily"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FDD, TDD, flexible duplex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "350 km/h"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "500 km/h"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Energy efficiency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reference"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100× better per bit (target)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1294-real-world-analogy-highway-system",
+      children: "12.9.4 Real-World Analogy: Highway System"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "4G LTE"
+        }), ": A multi-lane highway with fixed lane widths and fixed speed limits. On-ramps (uplink) merge slowly (SC-FDMA). Traffic jams cause delays of 10-30 minutes (10-30 ms latency)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "5G NR"
+        }), ": A highway with dynamically adjustable lanes and variable speed limits. During rush hour, lane widths narrow to increase throughput. Cars with critical destinations (autonomous driving) get dedicated express lanes (uRLLC). Each vehicle communicates directly with a traffic tower (beamforming) instead of broadcasting to all lanes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Network Slicing"
+        }), ": Separate lanes for trucks (massive IoT), express buses (uRLLC), and regular cars (eMBB), each with its own rules and tollbooths."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge Computing"
+        }), ": Rest areas with cloud servers that process data locally instead of sending everything to a distant central data center."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-implementation-mobilehandoffsimulator",
+      children: "TypeScript Implementation: MobileHandoffSimulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface CellTower { id: number; freq: number; lat: number; lng: number; power: number; channels: number[]; }\n\ninterface MobileDevice { id: number; lat: number; lng: number; speed: number; direction: number; servingTower: number; signalStrength: number; }\n\ntype HandoffType = 'HARD' | 'SOFT';\n\nclass MobileHandoffSimulator {\n  private towers: Map<number, CellTower> = new Map();\n  private devices: Map<number, MobileDevice> = new Map();\n  private handoffLog: string[] = [];\n  private readonly handoffThreshold: number = -100; // dBm\n\n  addTower(tower: CellTower): void { this.towers.set(tower.id, tower); }\n\n  addDevice(device: MobileDevice): void { this.devices.set(device.id, device); }\n\n  private computeRssi(device: MobileDevice, tower: CellTower): number {\n    const dx = device.lat - tower.lat, dy = device.lng - tower.lng;\n    const dist = Math.sqrt(dx * dx + dy * dy);\n    if (dist === 0) return -30;\n    // Free-space path loss model: RSSI = TxPower - 20*log10(d) - 20*log10(f) + 147.55\n    return tower.power - 20 * Math.log10(dist) - 20 * Math.log10(tower.freq / 1e6) + 147.55 + (Math.random() * 6 - 3);\n  }\n\n  private findBestTower(device: MobileDevice): { tower: CellTower; rssi: number } | null {\n    let best: { tower: CellTower; rssi: number } | null = null;\n    for (const tower of this.towers.values()) {\n      if (tower.id === device.servingTower) continue;\n      const rssi = this.computeRssi(device, tower);\n      if (!best || rssi > best.rssi) best = { tower, rssi };\n    }\n    return best;\n  }\n\n  moveDevice(deviceId: number, newLat: number, newLng: number): HandoffType | null {\n    const device = this.devices.get(deviceId);\n    if (!device) return null;\n    device.lat = newLat; device.lng = newLng;\n    const servingTower = this.towers.get(device.servingTower);\n    if (!servingTower) return null;\n    device.signalStrength = this.computeRssi(device, servingTower);\n\n    let handoffType: HandoffType | null = null;\n    if (device.signalStrength < this.handoffThreshold) {\n      const best = this.findBestTower(device);\n      if (best && best.rssi > device.signalStrength + 5) { // hysteresis of 5dB\n        const oldTower = device.servingTower;\n        // Soft handoff: maintain both connections briefly; Hard: break before make\n        handoffType = best.rssi > device.signalStrength + 10 ? 'SOFT' : 'HARD';\n        device.servingTower = best.tower.id;\n        device.signalStrength = best.rssi;\n        this.handoffLog.push(`[HANDOFF] Device ${device.id}: ${handoffType} tower ${oldTower} -> ${best.tower.id} (RSSI ${best.rssi.toFixed(1)} dBm)`);\n        console.log(`[HANDOFF] Device ${device.id}: ${handoffType} handoff ${oldTower} -> ${best.tower.id} (${best.rssi.toFixed(1)} dBm)`);\n      }\n    }\n    return handoffType;\n  }\n\n  simulateMovement(deviceId: number, steps: number, stepSize: number = 0.01): void {\n    const device = this.devices.get(deviceId);\n    if (!device) return;\n    for (let i = 0; i < steps; i++) {\n      const newLat = device.lat + stepSize * Math.cos(device.direction);\n      const newLng = device.lng + stepSize * Math.sin(device.direction);\n      this.moveDevice(deviceId, newLat, newLng);\n    }\n  }\n\n  getLog(): string[] { return this.handoffLog; }\n\n  getDeviceSignalHistory(deviceId: number): { tower: number; rssi: number } {\n    const d = this.devices.get(deviceId);\n    return d ? { tower: d.servingTower, rssi: d.signalStrength } : { tower: 0, rssi: 0 };\n  }\n}\n\n// Usage\nconst ho = new MobileHandoffSimulator();\nho.addTower({ id: 1, freq: 2100e6, lat: 0, lng: 0, power: 43, channels: [1, 2, 3] });\nho.addTower({ id: 2, freq: 2100e6, lat: 0.05, lng: 0.05, power: 43, channels: [4, 5, 6] });\nho.addTower({ id: 3, freq: 2100e6, lat: 0.1, lng: 0, power: 43, channels: [7, 8, 9] });\nho.addDevice({ id: 1, lat: -0.02, lng: -0.02, speed: 30, direction: Math.PI / 4, servingTower: 1, signalStrength: -65 });\nho.simulateMovement(1, 20, 0.008);\nconsole.log(`Total handoffs: ${ho.getLog().length}`);\nho.getLog().forEach(l => console.log(`  ${l}`));\n/*\nOutput:\n[HANDOFF] Device 1: HARD handoff 1 -> 2 (RSSI ...)\n[HANDOFF] Device 1: HARD handoff 2 -> 3 (RSSI ...)\nTotal handoffs: 2\n*/\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1210-wi-fi-vs-bluetooth-vs-cellular-comparison",
+      children: "12.10 Wi-Fi vs Bluetooth vs Cellular Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WiFi (802.11)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Bluetooth"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Cellular (4G/5G)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Range"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50 m indoors, ~100 m outdoors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10 m (classic), ~100 m (BLE 5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-10 km (macro), ~500 m (mmWave)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data rate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11 Mbps → 46 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-3 Mbps (BR/EDR), 2 Mbps (BLE 5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "300 Mbps → 20 Gbps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2-20 ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-100 ms (BR/EDR), 2.5-6 ms (BLE)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10-30 ms (4G), 1-4 ms (5G)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Power consumption"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3-10 W (AP), ~1-3 W (STA)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1 W (BR/EDR), ~0.01-0.5 W (BLE)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3-5 W (modem active)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Frequency bands"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4, 5, 6 GHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4 GHz ISM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "700-2600 MHz, 24-47 GHz"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Channel access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CSMA/CA contention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Master-slave TDMA/FHSS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scheduled OFDMA"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobility support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (walking speed)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low (static)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (500 km/h for 5G)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Handover"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Roaming between APs (≈100 ms)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection transfer (≈3 s)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seamless handover (<50 ms 5G)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WPA3 (AES-SAE)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security Manager (AES-CCM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5G-AKA, IPsec"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Infrastructure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AP + DS (autonomous)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Master-slave (ad-hoc)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "eNB/gNB + Core Network"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cost per bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very low"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Moderate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Highest"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LAN, web, streaming, gaming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Audio, peripherals, IoT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile broadband, IoT, critical communications"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12101-selection-guide",
+      children: "12.10.1 Selection Guide"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Requirement"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Best Choice"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File transfer at close range (home)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi (802.11ac/ax)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100-1000× faster than Bluetooth"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireless headset (phone)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bluetooth"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Designed for audio, low power"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireless headphones (lossless)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bluetooth with LDAC/LC3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sufficient for CD-quality audio"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Large IoT deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BLE or LoRaWAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BLE for indoor, LoRaWAN for outdoor"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "High mobility (car, train)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5G NR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native handover at 500 km/h"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low latency gaming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 6/7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<5 ms with proper QoS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Building-wide coverage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi mesh + cellular fallback"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seamless indoor-outdoor transition"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Industrial sensors (factory)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BLE mesh or Thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low power, mesh, reliable"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1211-interview-corner",
+      children: "12.11 Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-why-does-wifi-use-csmaca-instead-of-csmacd",
+      children: "Q1: Why does WiFi use CSMA/CA instead of CSMA/CD?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Wireless transceivers are half-duplex → the transmitter cannot listen for collisions while transmitting because its own signal overwhelms any incoming signal (self-interference). Full-duplex wireless is still experimental. Additionally, the hidden terminal problem means the collision happens at the receiver, not the sender. CSMA/CA prevents collisions probabilistically rather than detecting them reactively."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-what-is-nav-and-why-is-it-important",
+      children: "Q2: What is NAV and why is it important?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": The Network Allocation Vector (NAV) is a virtual carrier-sense mechanism. Each station maintains a timer indicating how long the medium will be busy. Stations set their NAV based on the Duration field in received frames (RTS, CTS, Data). NAV prevents collisions from hidden terminals → even if a station's physical carrier sense says the medium is idle, NAV can still indicate it is busy."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-explain-the-difference-between-wifi-handoff-and-cellular-handover",
+      children: "Q3: Explain the difference between WiFi handoff and cellular handover."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": WiFi handoff (roaming) is client-initiated and can take 50-500 ms. The client decides when to disassociate from one AP and associate with another. Cellular handover is network-controlled → the base stations and core network coordinate the transition. LTE hard handover takes 10-50 ms; 5G targets <1 ms handover interruption for uRLLC services. Cellular handover is seamless and transparent to the user."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-how-does-mimo-improve-wireless-performance",
+      children: "Q4: How does MIMO improve wireless performance?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": MIMO (Multiple Input Multiple Output) uses multiple antennas at both transmitter and receiver. Three benefits:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spatial multiplexing"
+        }), ": Multiple data streams transmitted simultaneously over the same frequency → throughput increases linearly with stream count (up to 8× in WiFi 6, 16× in WiFi 7, 64× in 5G)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Spatial diversity"
+        }), ": Same data sent over multiple paths → improves reliability and range."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Beamforming"
+        }), ": Weight antenna signals to focus energy in a specific direction → improves SNR and reduces interference."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-what-is-ofdma-and-why-is-it-important-in-wifi-67",
+      children: "Q5: What is OFDMA and why is it important in WiFi 6/7?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Orthogonal Frequency Division Multiple Access divides a channel into smaller sub-channels (Resource Units, RUs) that can be allocated to different users simultaneously. In WiFi 5 (OFDM), only one user could transmit per channel per slot. WiFi 6 (OFDMA) allows 9 users (20 MHz) to 74 users (160 MHz) to transmit simultaneously."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Real-world benefit: In a crowded office, OFDMA handles many small packets efficiently. A 20 MHz OFDMA transmission can serve 9 devices simultaneously instead of serializing them (9× latency reduction for small frames)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-compare-wifi-and-lte-for-voice-over-wireless",
+      children: "Q6: Compare WiFi and LTE for voice over wireless."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": LTE voice (VoLTE) uses IMS with dedicated bearers, priority scheduling, and seamless handover → providing near-wireline voice quality. WiFi voice (VoWiFi) rides on best-effort IP with CSMA/CA contention and can suffer from jitter, packet loss, and interference. VoLTE uses narrowband (WB-AMR 12.65 kbps) or EVS codecs; VoWiFi uses codec-over-UDP with no guaranteed QoS. VoWiFi with WMM (802.11e) can improve but cannot match VoLTE's dedicated bearer QoS."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-what-is-the-range-vs-rate-trade-off-in-wireless",
+      children: "Q7: What is the range vs. rate trade-off in wireless?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": As data rate increases, range decreases (for the same transmit power). Higher-order modulation (e.g., 64-QAM → 256-QAM) requires higher SNR to maintain the same BER. At the cell edge, WiFi and cellular fall back to robust modulation (BPSK, QPSK) at lower rates. For WiFi 6: 1024-QAM MCS 11 requires ~32 dB SNR for <10% PER; BPSK MCS 0 requires ~5 dB SNR. This is why you get 9.6 Gbps standing next to the AP but only 10-50 Mbps at the far end of your house."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1212-applications-in-real-systems",
+      children: "12.12 Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12121-wifi-67-deployments",
+      children: "12.12.1 WiFi 6/7 Deployments"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Enterprise Campus WiFi 6"
+      }), ": An office building with 3 APs per floor (5 GHz), 200 clients per AP. Key features:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OFDMA reduces airtime contention → 74 users can share a 160 MHz channel simultaneously."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "BSS Coloring allows neighboring APs on the same channel to reuse the medium when interference is below the color threshold."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TWT extends client battery life → IoT sensors negotiate wake windows of 10 minutes instead of checking every 100 ms beacon."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Target: 500 Mbps per user during peak load."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "WiFi 7 AR/VR"
+      }), ": 320 MHz channels in 6 GHz deliver 5+ Gbps to each headset with <2 ms latency. Multi-link operation (MLO) bonds 2.4 GHz (control) + 5 GHz (data) + 6 GHz (high-throughput) simultaneously. Preamble puncturing avoids interference from existing WiFi 6 deployments in the 6 GHz band."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12122-cellular-infrastructure",
+      children: "12.12.2 Cellular Infrastructure"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fixed Wireless Access (FWA)"
+      }), ": 5G NR replaces fiber-to-the-home. A customer's premises equipment (CPE) connects to a gNB up to 15 km away (sub-6 GHz) or 500 m (mmWave). Typical throughput: 300 Mbps-1 Gbps, enough for 4K streaming, video calls, and home office. Trials in Germany and the US show FWA as the fastest-growing 5G use case (20M+ subscribers in the US by 2024)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Private 5G (NPN)"
+      }), ": A factory deploys a private 5G network (3.7-4.2 GHz CBRS in the US, n77/n78 in Europe). uRLLC slice for robotic arm control (99.999% reliability, <1 ms) and mMTC slice for 10,000 environmental sensors. 5G LAN functionality provides device-to-device communication without traversing the core."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12123-iot-wireless-technologies",
+      children: "12.12.3 IoT Wireless Technologies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "LoRaWAN"
+      }), ": Long-range (2-15 km), sub-GHz (868/915 MHz), ultra-low power (10+ years on battery). Data rate: 0.25-50 kbps. Use case: smart city parking sensors that report occupancy every 5 minutes. Each transmission costs ~0.01 µAh. A single gateway covers an entire city district."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Zigbee (802.15.4)"
+      }), ": Mesh networking at 2.4 GHz, 250 kbps, 100 m range. Used in smart lighting, thermostats, and door locks. Zigbee Coordinator manages the network; Routers extend coverage; End Devices sleep most of the time. A typical smart home has 20-60 Zigbee devices in a mesh."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Thread"
+      }), ": IP-addressable mesh protocol (based on 6LoWPAN). Used in home automation (Apple HomeKit, Google Thread). Unlike Zigbee, Thread devices are natively IPv6-addressable → no application-layer gateway needed."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "WiFi Halow (802.11ah)"
+      }), ": Sub-1 GHz WiFi designed for IoT. 1 km range, 150 kbps-78 Mbps. Uses OFDM with 1/2/4/8 MHz channels. Target: large-scale sensor deployments with WiFi-compatible infrastructure."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Comparison"
+      }), ":"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technology"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Range"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Data Rate"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Power"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topology"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Use"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LoRaWAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15 km"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50 kbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10+ yr battery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Star"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Smart city, agriculture"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Zigbee"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "250 kbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2+ yr battery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mesh"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Smart home, lighting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "250 kbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2+ yr battery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mesh (IPv6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HomeKit, Matter"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "BLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ yr battery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Star, mesh"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wearables, beacons"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9.6 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hours-days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Star"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-throughput"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi Halow"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 km"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "78 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Months"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Star"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Outdoor sensor grid"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1213-mobility-management",
+      children: "12.13 Mobility Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12131-handover",
+      children: "12.13.1 Handover"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Handover (handoff) transfers an active connection from one base station (or access point) to another."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hard Handover"
+      }), ": The connection with the old base station is broken before the new connection is established (break-before-make). Used in GSM and some LTE scenarios. Packet loss during the interruption is inevitable. Typical interruption time: 10-50 ms (LTE)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Soft Handover"
+      }), ": The connection is maintained with both base stations simultaneously during the transition (make-before-break). Used in CDMA-based networks. Requires the mobile to receive/transmit on multiple channels. Zero packet loss but requires redundant radio resources."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Horizontal vs. Vertical Handover"
+      }), ": Horizontal handover occurs between base stations of the same technology (e.g., LTE to LTE). Vertical handover occurs between different technologies (e.g., WiFi to 5G). Vertical handover involves IP address changes, bearer re-establishment, and potentially different QoS models."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12132-location-management",
+      children: "12.13.2 Location Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Cellular networks track mobile devices through location areas and paging. The network divides coverage into location areas (LA) or tracking areas (TA). When a mobile crosses a TA boundary, it performs a tracking area update (TAU). When a call arrives for a mobile, the network pages all cells in the last known TA."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Handover vs. TAU"
+      }), ": Handover maintains an active session; TAU updates the network for future incoming sessions (idle mode mobility)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12133-roaming",
+      children: "12.13.3 Roaming"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Roaming allows a mobile device to connect to a visited network. The visited network uses the home network's authentication infrastructure. In LTE, the UE connects to a visited eNB and MME; the visited MME communicates with the home subscriber server (HSS) for authentication and with the home PGW for data."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "LTE Roaming Architectures"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Home Routed (HR)"
+        }), ": Data traverses the home PGW (higher latency, full home network control)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Local Breakout (LBO)"
+        }), ": Data exits at the visited network (lower latency, visited network enforces policy)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "5G Roaming"
+      }), ": 5G adds roaming based on SEPP (Security Edge Protection Proxy) for signaling security and improved Home Routed / Local Breakout architectures with N32 interface security."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "-pro-tips",
+      children: "💡 Pro Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Avoid 2.4 GHz for dense deployments"
+        }), ": The 2.4 GHz band has only 3 non-overlapping channels. In apartment buildings or offices with many APs, use 5 GHz (more channels, less interference) or 6 GHz (WiFi 6E/7)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "WPA3 is not optional for new networks"
+        }), ": WPA2 is still common but vulnerable to KRACK attacks. Deploy WPA3 with SAE for forward secrecy and dictionary-attack resistance."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "5G network slicing requires RAN support"
+        }), ": Network slicing is not just a core feature → the RAN must also support slice-aware scheduling and QoS. Verify your gNB firmware supports 5G NR slicing before building slice-based services."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Handover tuning for VoIP"
+        }), ": For real-time voice, use soft handover (make-before-break) if available. Hard handover can cause audible gaps. Tune handover thresholds based on the UE speed → faster mobiles need earlier trigger."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "RTS/CTS threshold tuning"
+        }), ": Set RTS threshold to ~1500 bytes in high-interference environments. Disable it in clean, low-density deployments to avoid unnecessary overhead."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "OFDMA is not a magic bullet"
+        }), ": OFDMA excels with many small packets (IoT, web browsing) but adds overhead for large sequential transfers (video streaming). WiFi 6 adaptively chooses between OFDMA and MU-MIMO based on traffic patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "BLE for IoT range"
+        }), ": BLE 5 achieves 100+ m range through the LE Coded PHY (500 kbps with S=8 coding) at the cost of data rate. For maximum range, use the 125 kbps (S=8) coded mode."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technology"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Range"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Data Rate"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Frequency"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Power"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 6 (802.11ax)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50 m indoor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9.6 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4/5/6 GHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LAN, web, streaming"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 7 (802.11be)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~50 m indoor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "46 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4/5/6 GHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AR/VR, high-res video"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Bluetooth BLE 5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4 GHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<0.1 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IoT, wearables"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4G/LTE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10 km"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "300 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "700-2600 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile broadband"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5G NR (mmWave)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~500 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "24-47 GHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~3 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed wireless access"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LoRaWAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~15 km"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50 kbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "868/915 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<0.1 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sensor networks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Zigbee"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "250 kbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4 GHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<0.1 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Home automation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~100 m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "250 kbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4 GHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<0.1 W"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mesh IoT (Matter)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference-80211-standards-evolution",
+      children: "Quick Reference: 802.11 Standards Evolution"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Standard"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Year"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Max Rate"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "MIMO"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Channel"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Modulation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Feature"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11b"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1999"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "11 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DSSS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "First mass-market WiFi"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11g"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2003"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "54 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4 GHz broadband"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11n"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2009"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "600 Mbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4×4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "40 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MIMO-OFDM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dual-band, MIMO"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11ac"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2013"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "6.9 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8×8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "160 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MU-MIMO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 GHz Gigabit WiFi"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11ax (WiFi 6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2019"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "9.6 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8×8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "160 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OFDMA + MU-MIMO"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Efficient dense deployment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "802.11be (WiFi 7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2024"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "46 Gbps"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16×16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "320 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4096-QAM, multi-link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ultra-high throughput"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Environment"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Best Wireless Tech"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Home WiFi"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 6 or 6E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wide device support, good range"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Industrial IoT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LoRaWAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Long range, low power, sub-GHz"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Warehouse tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BLE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Beacon-based asset tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Mobile broadband"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5G NR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High mobility, consistent throughput"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Office floor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 6 (5 GHz)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High density, many APs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Smart home sensors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zigbee/Thread"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mesh, low power, local control"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Smart city parking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LoRaWAN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15 km, 10-year battery"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Factory automation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Private 5G (uRLLC)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 ms, 99.999% reliability"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AR/VR headset"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 7 (6 GHz)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5+ Gbps, <2 ms latency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireless headset"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bluetooth LE Audio"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low power, LC3 codec quality"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mermaid-diagram-wireless-network-types-hierarchy",
+      children: "Mermaid Diagram: Wireless Network Types Hierarchy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph BT\n  subgraph WPAN[\"Wireless Personal Area Network (WPAN)\"]\n    BLE[\"Bluetooth LE\\nRange: ~100m\\nRate: 2 Mbps\"]\n    ZIG[\"Zigbee/Thread\\nRange: ~100m\\nRate: 250 kbps\"]\n    NFC[\"NFC\\nRange: ~0.1m\\nRate: 424 kbps\"]\n  end\n  subgraph WLAN[\"Wireless Local Area Network (WLAN)\"]\n    W5[\"WiFi 5 (802.11ac)\\nRange: ~50m\\nRate: 6.9 Gbps\"]\n    W6[\"WiFi 6 (802.11ax)\\nRange: ~50m\\nRate: 9.6 Gbps\"]\n    W7[\"WiFi 7 (802.11be)\\nRange: ~50m\\nRate: 46 Gbps\"]\n  end\n  subgraph WMAN[\"Wireless Metropolitan Area Network (WMAN)\"]\n    LORA[\"LoRaWAN\\nRange: ~15 km\\nRate: 50 kbps\"]\n    WIMAX[\"WiMAX (802.16)\\nRange: ~10 km\\nRate: 1 Gbps\"]\n  end\n  subgraph WWAN[\"Wireless Wide Area Network (WWAN)\"]\n    LTE[\"4G LTE\\nRange: ~10 km\\nRate: 300 Mbps\"]\n    NR[\"5G NR\\nRange: ~1-10 km\\nRate: 20 Gbps\"]\n    SAT[\"Satellite\\nRange: Global\\nRate: 100 Mbps\"]\n  end\n\n  WPAN --> WLAN --> WMAN --> WWAN\n  BLE -.->|IoT| LORA\n  W6 -.->|Backhaul| NR\n\n  classDef pan fill:#ffe6cc,stroke:#d35400\n  classDef lan fill:#d5f5e3,stroke:#27ae60\n  classDef man fill:#d4e6f1,stroke:#2980b9\n  classDef wan fill:#ebdef0,stroke:#8e44ad\n  class WPAN,BLE,ZIG,NFC pan\n  class WLAN,W5,W6,W7 lan\n  class WMAN,LORA,WIMAX man\n  class WWAN,LTE,NR,SAT wan\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "case-study-university-campus-wifi-design",
+      children: "Case Study: University Campus WiFi Design"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem."
+      }), " A large public university with 30,000 students, 5,000 concurrent WiFi users across 10 buildings needed a complete wireless redesign. The legacy deployment used mixed 802.11n/ac APs on a single controller with manual channel assignment. Complaints included: dead zones in lecture halls, video stuttering in streaming services, authentication timeouts during class change (500+ users simultaneously associating), and inability to support 4K lecture capture uploads."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Solution."
+      }), " The team deployed 100 WiFi 6 (802.11ax) APs across 10 buildings using a three-controller cluster with centralized management. Key design decisions: (1) 5 GHz primary with 2.4 GHz for legacy fallback only — 2.4 GHz channels were restricted to low data rates. (2) Channel planning used an automated RF prediction tool with 20 MHz channels in the 5 GHz band (avoiding DFS channels with radar interference). (3) AP placement followed a hexagonal grid pattern with 15m spacing in lecture halls and 20m in corridors, calculated using the free-space path loss model to ensure -65 dBm RSSI at cell edges. (4) Load balancing was configured with a 40-client soft limit per AP; new associations were steered to neighboring APs when exceeded. (5) Band steering pushed 5 GHz-capable devices to the less congested 5 GHz band."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Outcome."
+      }), " The redesigned network achieved 450 Mbps average throughput per user during peak hours (up from 40 Mbps). Handoff latency between APs dropped from 300 ms to under 50 ms using 802.11k (neighbor reports) and 802.11r (fast roaming). The 4K video ingest succeeded reliably with <1% packet loss. Authentication storms during class change were handled by the controller's association rate-limiting and burst queue, reducing peak CPU from 95% to 30%. The project paid for itself within 18 months through reduced help-desk tickets (from 200/week to 15/week)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5 GHz band should be primary for dense deployments; reserve 2.4 GHz for legacy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Configure band steering to push capable clients to 5 GHz; restrict 2.4 GHz to low data rates"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Channel planning requires RF prediction tools, not guesswork"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use site survey software to model coverage, identify co-channel interference, and optimize AP placement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "AP placement follows cell tower principles — hexagonal grid with overlap"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Space APs so cell edges have -65 dBm RSSI; 15-20% overlap for seamless handoff"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use 802.11k/r for fast roaming in environments with high mobility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enable neighbor reports (11k) for proactive scanning and fast authentication (11r) for sub-50ms handoff"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Load balancing prevents AP saturation in dense areas"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Configure per-AP client limits and steer new associations to under-utilized neighboring APs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "WiFi 6 OFDMA dramatically improves small-packet efficiency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enable OFDMA for IoT and web traffic; MU-MIMO remains better for large sequential transfers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Plan for authentication storms during peak transitions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use controller-side rate limiting, burst queues, and pre-authentication to handle mass associations"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Why does WiFi use CSMA/CA instead of CSMA/CD for medium access?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) CSMA/CA has higher throughput in all scenarios"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Wireless is half-duplex; transmitters cannot detect collisions while sending"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) CSMA/CD requires a wired infrastructure"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Wireless collisions never happen"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the maximum number of active slaves in a Bluetooth piconet?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) 3"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) 7"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) 15"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) 255"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Which 5G NR service category is designed for ultra-reliable low-latency communications?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) eMBB"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) uRLLC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) mMTC"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) MIMO"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the purpose of the RTS/CTS exchange in 802.11 wireless networks?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) Increase data rate through MIMO"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) Reserve the medium to mitigate hidden terminal collisions"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) Authenticate stations before association"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) Coordinate channel switching between APs"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the Network Allocation Vector (NAV) in 802.11?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "a) A physical carrier-sense mechanism"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "b) A virtual carrier-sense timer that predicts medium busy duration"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "c) A list of all APs in range"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "d) A power-saving state indicator"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Q1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireless transceivers are half-duplex — transmitting drowns out incoming signals, making collision detection impossible; CSMA/CA prevents collisions proactively"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Q2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A Bluetooth piconet supports one master and up to seven active slaves (plus up to 255 parked slaves)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Q3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "uRLLC (ultra-Reliable Low-Latency Communications) targets 1 ms latency and 99.999% reliability for industrial and autonomous driving use cases"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Q4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RTS (Request to Send) and CTS (Clear to Send) reserve the medium by setting NAV timers on all listening stations, preventing hidden-terminal collisions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Q5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NAV is a virtual carrier-sense counter each station maintains based on the Duration field in received frames, indicating when the medium will be free"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Wireless networks span personal-area (Bluetooth), local-area (WiFi), and wide-area (4G/5G) coverage. 802.11 has evolved from 11 Mbps (802.11b) to 46 Gbps (802.11be). CSMA/CA with RTS/CTS addresses the hidden terminal problem through virtual carrier sense (NAV) and exponential backoff. Bluetooth uses frequency-hopping piconets with master-slave TDD. Cellular networks provide wide-area mobility: 4G/LTE achieves hundreds of Mbps with OFDMA/SC-FDMA; 5G targets 20 Gbps with 1 ms latency through massive MIMO, beamforming, network slicing, and flexible numerology. Mobility management handles handover (hard and soft), location tracking through tracking areas and paging, and roaming across heterogeneous access networks. IoT wireless technologies (LoRaWAN, Zigbee, Thread, BLE) fill specific niches with power, range, and throughput trade-offs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "WiFi uses CSMA/CA because wireless transceivers are half-duplex — they cannot listen for collisions while transmitting (self-interference). The hidden terminal problem also means collisions occur at the receiver, which the sender cannot detect. CSMA/CA prevents collisions probabilistically through carrier sensing, NAV, and exponential backoff."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "RTS/CTS addresses the hidden terminal problem. A sender transmits a short RTS (Request to Send) frame. The receiver responds with CTS (Clear to Send). All stations that hear the CTS set their NAV timer and defer for the duration of the data exchange. This prevents hidden stations from transmitting simultaneously."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "Bluetooth uses frequency-hopping spread spectrum (FHSS) across 79 channels (1 MHz each) at 1600 hops/second. If interference occurs on one channel, the next hop moves to a different channel. FHSS provides resistance to narrowband interference and improves security (eavesdroppers must follow the hopping sequence)."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "Network slicing creates isolated end-to-end logical networks with dedicated resources and SLAs on shared physical infrastructure. It solves the problem of different services (eMBB, uRLLC, mMTC) having conflicting requirements — each slice gets tailored QoS, security, and management."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "Hard handover (break-before-make): connection with old base station is broken before establishing new connection. Simple but causes packet loss. Soft handover (make-before-break): device maintains connections with both base stations simultaneously during transition. Zero packet loss but requires redundant radio resources."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "BSS (Basic Service Set) is one AP + its associated stations. ESS (Extended Service Set) is multiple BSSes connected via a distribution system, sharing the same SSID. Stations can roam between BSSes within an ESS."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "OFDM allocates the entire channel to one user per time slot. OFDMA divides the channel into Resource Units (RUs) allocated to different users simultaneously. For small packets, OFDMA reduces latency (multiple users served in one slot) and improves efficiency (less padding waste)."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "TIM (Traffic Indication Map) is a bitmap in each beacon frame indicating which stations have buffered data at the AP. Stations wake at each beacon interval to check the TIM — if their bit is set, they send PS-Poll to retrieve buffered frames."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "4G LTE: 300 Mbps peak, 10-30 ms latency, EPC core (MME/SGW/PGW). 5G NR: 20 Gbps peak, 1-4 ms latency, SBA core (AMF/SMF/UPF). 5G adds massive MIMO, beamforming, flexible numerology, network slicing."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "eMBB (enhanced Mobile Broadband: 20 Gbps, video/AR/VR), uRLLC (ultra-Reliable Low-Latency: 1 ms, 99.999%, industrial/autonomous), mMTC (massive Machine Type: 1M devices/km², IoT sensors)."
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        start: "11",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "Offered load = 20 × 50 × 1500 × 8 = 12 Mbps. The channel at 300 Mbps can handle this easily (4% utilization). Under CSMA/CA, throughput is close to the offered load since contention is low. Saturation occurs above ~200 Mbps offered load."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "For 100 MHz: 100 RBGs × 12 subcarriers × 14 symbols × 64 MIMO layers × 6 bits/symbol × 7/8 code rate ≈ 5.6 Gbps (simplified; actual includes control overhead). Formula: N_RB × N_sc × N_sym × N_layers × log2(M) × code_rate × 1000 slots/s."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "Cell circumference = 2π × 500 = 3141 m. At 60 km/h = 16.67 m/s, crossing time = 3141/16.67 ≈ 188 s. TAU rate per user = speed/(TA diameter) per sec. For 20 cells per TA and 1000 users/cell, total users in TA = 20,000. Paging load = 20,000 × 0.1 calls/hour / 3600 = 0.56 pages/second/cell."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "See the dry run trace in section 12.4.5 for the full simulation: B wins at 61 µs, A retransmits with CW=31 (backoff chosen uniformly from 0-31), and the sequence continues. The trace shows collisions ≈ (1/CW) probability per contention round."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "RTS/CTS overhead: RTS(20B) + CTS(14B) + 2×SIFS(32µs) = 34 bytes + 32 µs. At 54 Mbps, 34 bytes = 5 µs. Total overhead ≈ 37 µs. Without RTS/CTS, each collision costs a full data frame (1500 bytes ≈ 222 µs). With 3 stations and avg 2 retries, collision overhead = 3 × 222 × 2 = 1332 µs vs RTS/CTS overhead = 37 µs per successful exchange. RTS/CTS becomes beneficial at high contention."
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+        start: "16",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "High-speed rail handover protocol:"
+          }), " (a) Use 5G NR with massive MIMO beamforming to maintain 100 Mbps per passenger — each coach gets a dedicated beam from a trackside gNB. (b) For <5 ms interruption, use make-before-break soft handover with dual connectivity: the train router maintains connections to two gNBs simultaneously during handover. (c) Intra-gNB handover uses Xn interface with pre-configured bearers; inter-gNB handover uses N2/N3 with path switch. (d) Group handover uses a single signaling message for the entire train (3GPP Rel-17 MBS feature). With 1% RLF per handover and 100 handovers per trip: P(success) = (0.99)^100 ≈ 0.366. To improve, use multi-connectivity (redundant links) reducing effective failure to <0.01% and dual-gNB attachment for zero-interruption handover."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

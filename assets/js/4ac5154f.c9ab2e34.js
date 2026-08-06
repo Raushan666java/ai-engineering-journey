@@ -1,0 +1,1712 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[2114],{
+
+/***/ 98114
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_python_programming_02_variables_md_4ac_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-python-programming-02-variables-md-4ac.json
+const site_docs_courses_python_programming_02_variables_md_4ac_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/python-programming/02-variables","title":"Chapter 2: Variables, Types, and Operators","description":"Previous Control Flow","source":"@site/docs/courses/python-programming/02-variables.md","sourceDirName":"courses/python-programming","slug":"/python-programming/02-variables","permalink":"/ai-engineering-journey/python-programming/02-variables","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"id":"02-variables","slug":"/python-programming/02-variables","title":"Chapter 2: Variables, Types, and Operators","sidebar_label":"Chapter 2: Variables, Types, and Operators","sidebar_position":2},"sidebar":"coursesSidebar","previous":{"title":"Chapter 1: Introduction to Python","permalink":"/ai-engineering-journey/python-programming/01-introduction"},"next":{"title":"Chapter 3: Control Flow","permalink":"/ai-engineering-journey/python-programming/03-control-flow"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/python-programming/02-variables.md
+
+
+const frontMatter = {
+	id: '02-variables',
+	slug: '/python-programming/02-variables',
+	title: 'Chapter 2: Variables, Types, and Operators',
+	sidebar_label: 'Chapter 2: Variables, Types, and Operators',
+	sidebar_position: 2
+};
+const contentTitle = 'Chapter 2: Variables, Types, and Operators';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "2.1 Variables and Dynamic Typing",
+  "id": "21-variables-and-dynamic-typing",
+  "level": 2
+}, {
+  "value": "TypeScript Parallel: Static Typing",
+  "id": "typescript-parallel-static-typing",
+  "level": 3
+}, {
+  "value": "2.2 Basic Types",
+  "id": "22-basic-types",
+  "level": 2
+}, {
+  "value": "2.2.1 int",
+  "id": "221-int",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel",
+  "level": 3
+}, {
+  "value": "2.2.2 float",
+  "id": "222-float",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-1",
+  "level": 3
+}, {
+  "value": "2.2.3 str",
+  "id": "223-str",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-2",
+  "level": 3
+}, {
+  "value": "2.2.4 bool",
+  "id": "224-bool",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-3",
+  "level": 3
+}, {
+  "value": "2.2.5 NoneType",
+  "id": "225-nonetype",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-4",
+  "level": 3
+}, {
+  "value": "2.2.6 complex",
+  "id": "226-complex",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-5",
+  "level": 3
+}, {
+  "value": "Type Comparison Summary",
+  "id": "type-comparison-summary",
+  "level": 3
+}, {
+  "value": "2.3 Type Conversion",
+  "id": "23-type-conversion",
+  "level": 2
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-6",
+  "level": 3
+}, {
+  "value": "2.4 Operators",
+  "id": "24-operators",
+  "level": 2
+}, {
+  "value": "2.4.1 Arithmetic Operators",
+  "id": "241-arithmetic-operators",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-7",
+  "level": 3
+}, {
+  "value": "2.4.2 Comparison Operators",
+  "id": "242-comparison-operators",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-8",
+  "level": 3
+}, {
+  "value": "2.4.3 Logical Operators",
+  "id": "243-logical-operators",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-9",
+  "level": 3
+}, {
+  "value": "2.4.4 Assignment Operators",
+  "id": "244-assignment-operators",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-10",
+  "level": 3
+}, {
+  "value": "2.4.5 Bitwise Operators",
+  "id": "245-bitwise-operators",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-11",
+  "level": 3
+}, {
+  "value": "2.4.6 Identity Operators",
+  "id": "246-identity-operators",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-12",
+  "level": 3
+}, {
+  "value": "2.4.7 Membership Operators",
+  "id": "247-membership-operators",
+  "level": 3
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-13",
+  "level": 3
+}, {
+  "value": "2.5 Operator Precedence",
+  "id": "25-operator-precedence",
+  "level": 2
+}, {
+  "value": "TypeScript Parallel",
+  "id": "typescript-parallel-14",
+  "level": 3
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "TypeScript Utilities",
+  "id": "typescript-utilities",
+  "level": 3
+}, {
+  "value": "TypeScript Type System Patterns",
+  "id": "typescript-type-system-patterns",
+  "level": 3
+}, {
+  "value": "TypeScript Advanced Variable Types",
+  "id": "typescript-advanced-variable-types",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}, {
+  "value": "TypeScript Challenge",
+  "id": "typescript-challenge",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-2-variables-types-and-operators",
+        children: "Chapter 2: Variables, Types, and Operators"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/01-introduction",
+          children: "Introduction to Python"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/python-programming/03-control-flow",
+          children: "Control Flow"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Declare variables and understand dynamic typing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use all built-in atomic types correctly"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Convert between types explicitly"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply arithmetic, comparison, logical, assignment, bitwise, identity, and membership operators"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Predict operator precedence and associativity"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/python-programming/02-variables/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/python-programming/02-variables/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/python-programming/02-variables/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/python-programming/02-variables/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/python-programming/02-variables/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/python-programming/02-variables/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/02-variables.png",
+        alt: "Python Data Types"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Variables & Dynamic Typing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "References, naming rules, assignment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Basic Types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "int, float, str, bool, NoneType, complex"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type Conversion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explicit conversion, implicit promotion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Operators"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Arithmetic, comparison, logical, bitwise, identity, membership"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Operator Precedence"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PEMDAS-like hierarchy, parentheses"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Variables] --> B[Dynamic Typing]\n    B --> C[Basic Types]\n    C --> D[Type Conversion]\n    D --> E[Arithmetic]\n    E --> F[Comparison]\n    F --> G[Logical]\n    G --> H[Bitwise/Identity/Membership]\n    H --> I[Precedence]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "21-variables-and-dynamic-typing",
+      children: "2.1 Variables and Dynamic Typing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Python variables are references to objects, not typed containers -- the same name can hold different types."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A variable is a name that references an object in memory. Python variables are dynamically typed: the same name can refer to objects of different types over its lifetime."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "x = 42          # x is an int\nprint(type(x))  # <class 'int'>\n\nx = \"hello\"     # x now references a str\nprint(type(x))  # <class 'str'>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Assignment creates a reference, not a copy."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Variables are references, not containers. Two variables can point to the same object, and mutating through one affects the other.\nVariables hold pointers to objects:"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "a = [1, 2, 3]\nb = a           # b references the same list\nb.append(4)\nprint(a)        # [1, 2, 3, 4]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Variable names must begin with a letter or underscore, contain only alphanumeric characters and underscores, and are case-sensitive."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "valid = 1\n_valid = 2\n_ = 3          # conventional \"throwaway\" name\ncamelCase = 4  # unconventional in Python (PEP 8 prefers snake_case)\nsnake_case = 5 # preferred\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-static-typing",
+      children: "TypeScript Parallel: Static Typing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "TypeScript uses static type annotations, so variables cannot change type once declared:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: variables are type-checked at compile time\nlet x: number = 42;   // x can only hold numbers\n// x = \"hello\";       // Error: Type 'string' is not assignable to type 'number'\n\n// Inferred typing (TypeScript infers the type)\nlet y = \"hello\";      // inferred as string\n// y = 42;            // Error: Type 'number' is not assignable to type 'string'\n\n// Union types allow multiple types\nlet z: number | string = 42;\nz = \"hello\";          // OK - z can be number or string\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Python's dynamic typing offers flexibility but catches type errors only at runtime. TypeScript's static typing catches type mismatches during compilation, before the code ever runs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Reference behavior is identical: both are references\nconst a: number[] = [1, 2, 3];\nconst b = a;           // b references the same array\nb.push(4);\nconsole.log(a);        // [1, 2, 3, 4]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    subgraph Python[Dynamic Typing - Python]\n        P1[Declare: x = 42] --> P2[Runtime: x is int]\n        P2 --> P3[Reassign: x = \\\"hello\\\"]\n        P3 --> P4[Runtime: x is str]\n        P4 --> P5[x has no fixed type]\n    end\n\n    subgraph TS[Static Typing - TypeScript]\n        T1[Declare: let x: number = 42] --> T2[Compile: type checked]\n        T2 --> T3[Runtime: x is always number]\n        T3 --> T4[Reassign: x = \\\"hello\\\"]\n        T4 --> T5[Compile Error before running]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "22-basic-types",
+      children: "2.2 Basic Types"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Python provides six atomic built-in types: int, float, str, bool, NoneType, and complex."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "221-int",
+      children: "2.2.1 int"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Integers have arbitrary precision:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "a = 42\nb = 1_000_000       # underscores improve readability\nc = 0xFF            # hexadecimal (255)\nd = 0b1010          # binary (10)\ne = 0o77            # octal (63)\nf = 10 ** 100       # googol - huge integer\nprint(f)            # 100000000000000000000000000000000...\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript numbers: all are 64-bit IEEE 754 floats\nlet a: number = 42;\nlet b = 1_000_000;    // underscores for readability\nlet c = 0xFF;         // hexadecimal (255)\nlet d = 0b1010;       // binary (10)\nlet e = 0o77;         // octal (63)\n\n// TypeScript does NOT have arbitrary precision numbers\n// BigInt for large integers:\nlet f = 10n ** 100n;  // BigInt supports arbitrary precision\nconsole.log(f.toString());\n\n// Python's int can grow without limit\n// TypeScript's number is capped at 2^53\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Python's arbitrary-precision integers can grow to any size limited only by memory. TypeScript's ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "number"
+      }), " type is a 64-bit float (safe integer up to 2^53), with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "BigInt"
+      }), " as an alternative for large integers."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "222-float",
+      children: "2.2.2 float"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Floating-point numbers are double-precision (64-bit IEEE 754):"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "g = 3.14159\nh = 1.5e-10         # scientific notation\ni = float(\"inf\")    # infinity\nj = float(\"nan\")    # Not a Number\nprint(0.1 + 0.2)    # 0.30000000000000004 (floating-point error)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Warning:"
+        }), " Never compare floats with ==. Use math.isclose(a, b) or round to a known precision.\nUse ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "math.isclose()"
+        }), " for safe floating-point comparison:"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import math\nprint(math.isclose(0.1 + 0.2, 0.3))  # True\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-1",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: same IEEE 754 doubles\nlet g: number = 3.14159;\nlet h = 1.5e-10;         // scientific notation\nlet i = Infinity;        // infinity\nlet j = NaN;             // Not a Number\nconsole.log(0.1 + 0.2);  // 0.30000000000000004\n\n// TypeScript: safe comparison\nconst epsilon = 0.000001;\nconst isClose = Math.abs((0.1 + 0.2) - 0.3) < epsilon;\nconsole.log(isClose);     // true\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "223-str",
+      children: "2.2.3 str"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Strings are immutable sequences of Unicode code points:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "name = \"Alice\"\ngreeting = 'Hello'          # single or double quotes\nmulti = \"\"\"Line one\nLine two\"\"\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-2",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: strings are also immutable sequences\nlet name: string = \"Alice\";\nlet greeting = 'Hello';     // single or double quotes\nlet multi = `Line one\nLine two`;                 // backticks for multi-line\n\n// TypeScript has template literals (like f-strings):\nlet age = 30;\nlet message = `${name} is ${age} years old`;  // f-string equivalent\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "224-bool",
+      children: "2.2.4 bool"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Booleans are a subclass of int. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "True == 1"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "False == 0"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "is_valid = True\nprint(is_valid + 2)  # 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Falsy values: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "False"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "None"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "0"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "0.0"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"\""
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "[]"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "{}"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "()"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "set()"
+      }), ". Everything else is truthy."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-3",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: booleans are NOT numbers\nlet isValid: boolean = true;\n// console.log(isValid + 2);  // Error: Operator '+' cannot be applied\n\n// Falsy values: false, null, undefined, 0, NaN, \"\"\n// TypeScript has null AND undefined (Python has only None)\nlet val: any = null;\nlet notAssigned: undefined = undefined;\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "225-nonetype",
+      children: "2.2.5 NoneType"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "None"
+      }), " represents the absence of a value. It is Python's null:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "result = None\nif result is None:\n    print(\"No result yet\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-4",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: null and undefined\nlet result: null | undefined = null;\nif (result === null) {\n    console.log(\"No result yet\");\n}\n\n// Python has only None\n// TypeScript separates null (explicitly empty) from undefined (not yet assigned)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "226-complex",
+      children: "2.2.6 complex"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Complex numbers with real and imaginary parts:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "c = 3 + 4j\nprint(c.real, c.imag)  # 3.0 4.0\nprint(abs(c))          # 5.0 (magnitude)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-5",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: no built-in complex type (must use library or custom class)\n// Python has first-class complex numbers; TypeScript does not\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "type-comparison-summary",
+      children: "Type Comparison Summary"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Python"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "TypeScript"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Integer"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "int"
+            }), " (arbitrary precision)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "number"
+            }), " (53-bit safe) or ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "bigint"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Float"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "float"
+            }), " (double)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "number"
+            }), " (double)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "String"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "str"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "string"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Boolean"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "bool"
+            }), " (subclass of int)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "boolean"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Null"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "None"
+            }), " (one type)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "null"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "undefined"
+            }), " (two types)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "complex"
+            }), " (built-in)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No built-in"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Infinity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "float(\"inf\")"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Infinity"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "NaN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "float(\"nan\")"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "NaN"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "23-type-conversion",
+      children: "2.3 Type Conversion"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Explicit conversion uses type constructors like int(); implicit conversion promotes int to float."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Explicit conversion uses the type name as a function:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "print(int(3.99))       # 3 (truncation)\nprint(float(\"3.14\"))   # 3.14\nprint(str(42))         # \"42\"\nprint(bool(0))         # False\nprint(bool(\"\"))        # False\nprint(bool(\"hello\"))   # True\nprint(complex(1, 2))   # (1+2j)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implicit conversion happens in mixed-type operations:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "result = 3 + 4.5       # 7.5 (int promoted to float)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Converting a string like ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"hello\""
+      }), " to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "int"
+      }), " raises ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ValueError"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "int(\"hello\")  # ValueError: invalid literal for int() with base 10: 'hello'\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-6",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: explicit conversion uses functions, not constructors\nconsole.log(Math.floor(3.99));        // 3 (like int(3.99))\nconsole.log(Number(\"3.14\"));          // 3.14 (like float(\"3.14\"))\nconsole.log(String(42));              // \"42\" (like str(42))\nconsole.log(Boolean(0));              // false (like bool(0))\nconsole.log(Boolean(\"hello\"));        // true (like bool(\"hello\"))\n\n// Implicit conversion: TypeScript does NOT auto-promote types\n// let result = 3 + 4.5;   // Works (number)\n// \"3\" + 4 = \"34\"          // String concatenation, NOT addition\n// Python: (\"3\" + 4) => TypeError\n// TypeScript: \"3\" + 4 => \"34\" (string concatenation wins)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "24-operators",
+      children: "2.4 Operators"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Python has seven operator categories: arithmetic, comparison, logical, assignment, bitwise, identity, membership."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "241-arithmetic-operators",
+      children: "2.4.1 Arithmetic Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "a, b = 10, 3\nprint(a + b)     # 13  addition\nprint(a - b)     # 7   subtraction\nprint(a * b)     # 30  multiplication\nprint(a / b)     # 3.333...  true division\nprint(a // b)    # 3   floor division\nprint(a % b)     # 1   modulus\nprint(a ** b)    # 1000  exponentiation\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Floor division rounds toward negative infinity:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "print(-10 // 3)  # -4 (not -3)\nprint(10 // -3)  # -4\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-7",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript arithmetic\nlet a = 10, b = 3;\nconsole.log(a + b);     // 13\nconsole.log(a - b);     // 7\nconsole.log(a * b);     // 30\nconsole.log(a / b);     // 3.333...  true division\nconsole.log(Math.floor(a / b));  // 3   floor division (manual)\nconsole.log(a % b);     // 1   modulus\nconsole.log(a ** b);    // 1000  exponentiation (ES2016+)\n\n// NO separate // operator - use Math.floor instead\n// Python: -10 // 3 = -4 (floor toward negative infinity)\n// TypeScript: Math.floor(-10 / 3) = -4 (same result)\n\n// TypeScript does NOT have Python's chained comparison\n// Python: 3 < x < 7\n// TypeScript: 3 < x && x < 7\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "242-comparison-operators",
+      children: "2.4.2 Comparison Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "print(5 == 5)    # True   equal\nprint(5 != 4)    # True   not equal\nprint(5 > 3)     # True   greater than\nprint(5 < 3)     # False  less than\nprint(5 >= 5)    # True   greater or equal\nprint(5 <= 4)    # False  less or equal\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Comparisons can be chained:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "x = 5\nprint(3 < x < 7)   # True  equivalent to (3 < x) and (x < 7)\nprint(3 < x > 10)  # False equivalent to (3 < x) and (x > 10)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-8",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: same comparison operators (no chaining)\nconsole.log(5 === 5);   // true (strict equal - recommended)\nconsole.log(5 == 5);    // true (loose equal - avoid)\nconsole.log(5 !== 4);   // true (strict not equal)\nconsole.log(5 > 3);     // true\nconsole.log(5 < 3);     // false\nconsole.log(5 >= 5);    // true\nconsole.log(5 <= 4);    // false\n\n// TypeScript uses === and !== instead of == and !=\n// Python's == is strict by default; TypeScript needs === to avoid type coercion\n\n// Chained comparison must use &&:\nlet x = 5;\nconsole.log(3 < x && x < 7);  // true (Python: 3 < x < 7)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "243-logical-operators",
+      children: "2.4.3 Logical Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "a, b = True, False\nprint(a and b)   # False\nprint(a or b)    # True\nprint(not a)     # False\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "and"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "or"
+      }), " short-circuit -- they stop evaluating as soon as the result is determined:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def expensive():\n    print(\"called\")\n    return True\n\nprint(False and expensive())   # False (expensive() not called)\nprint(True or expensive())     # True  (expensive() not called)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "and"
+      }), " returns the first falsy operand or the last operand. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "or"
+      }), " returns the first truthy operand or the last operand:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "print(0 and 42)   # 0\nprint(3 and 42)   # 42\nprint(0 or 42)    # 42\nprint(3 or 42)    # 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-9",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: same logical operators (different keywords)\nlet a: boolean = true, b: boolean = false;\nconsole.log(a && b);  // false\nconsole.log(a || b);  // true\nconsole.log(!a);      // false\n\n// Short-circuit works identically\nfunction expensive(): boolean {\n    console.log(\"called\");\n    return true;\n}\nconsole.log(false && expensive());  // false (expensive() not called)\nconsole.log(true || expensive());   // true  (expensive() not called)\n\n// Truthy/falsy return values work the same:\nconsole.log(0 && 42);   // 0\nconsole.log(3 && 42);   // 42\nconsole.log(0 || 42);   // 42\nconsole.log(3 || 42);   // 3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "244-assignment-operators",
+      children: "2.4.4 Assignment Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "x = 10\nx += 5    # x = x + 5\nx -= 3    # x = x - 3\nx *= 2    # x = x * 2\nx /= 4    # x = x / 4\nx //= 2   # x = x // 2\nx %= 3    # x = x % 3\nx **= 2   # x = x ** 2\nx &= 7    # x = x & 7\nx |= 3    # x = x | 3\nx ^= 5    # x = x ^ 5\nx <<= 1   # x = x << 1\nx >>= 2   # x = x >> 2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The walrus operator ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ":="
+      }), " (PEP 572, Python 3.8+) assigns and returns a value:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "if (n := len(\"hello\")) > 4:\n    print(f\"Length {n} exceeds 4\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-10",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: same assignment operators\n// Python and TypeScript share all arithmetic assignment operators\n// TypeScript does NOT have a walrus operator equivalent\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "245-bitwise-operators",
+      children: "2.4.5 Bitwise Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "a, b = 0b1100, 0b1010       # 12, 10\nprint(bin(a & b))   # 0b1000 bitwise AND\nprint(bin(a | b))   # 0b1110 bitwise OR\nprint(bin(a ^ b))   # 0b0110 bitwise XOR\nprint(bin(~a))      # -0b1101 bitwise NOT (two's complement)\nprint(bin(a << 2))  # 0b110000 left shift\nprint(bin(a >> 2))  # 0b11 right shift\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bitwise operators are commonly used for flags and low-level protocols."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-11",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: identical bitwise operators\nlet a: number = 0b1100;  // 12\nlet b: number = 0b1010;  // 10\nconsole.log((a & b).toString(2));   // 1000  AND\nconsole.log((a | b).toString(2));   // 1110  OR\nconsole.log((a ^ b).toString(2));   // 110   XOR\nconsole.log((~a).toString(2));      // ...11110011 (32-bit)\nconsole.log((a << 2).toString(2));  // 110000\nconsole.log((a >> 2).toString(2));  // 11\n\n// Python prints unsigned binary; TypeScript prints signed 32-bit\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "246-identity-operators",
+      children: "2.4.6 Identity Operators"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "is"
+      }), " checks object identity (same memory address). ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "is not"
+      }), " is the negation:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "a = [1, 2, 3]\nb = [1, 2, 3]\nc = a\n\nprint(a == b)    # True  (same value)\nprint(a is b)    # False (different objects)\nprint(a is c)    # True  (same object)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Always use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "is"
+        }), " (not ==) for None checks -- it is faster and more idiomatic.\nUse ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "is None"
+        }), " to check for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "None"
+        }), ". Never use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "== None"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "x = None\nprint(x is None)     # True\nprint(x is not None)  # False\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-12",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: === for value+type, Object.is() for identity\n// No built-in identity operator like 'is'\n// Use === for null/undefined checks\nlet x: any = null;\nconsole.log(x === null);   // True\n\n// For object identity comparison:\nconst a = [1, 2, 3];\nconst b = [1, 2, 3];\nconst c = a;\nconsole.log(a === b);   // false (different objects)\nconsole.log(a === c);   // true  (same object)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "247-membership-operators",
+      children: "2.4.7 Membership Operators"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "in"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "not in"
+      }), " test whether a value is in a container:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "print(3 in [1, 2, 3])       # True\nprint(\"e\" in \"hello\")       # True\nprint(\"x\" not in \"hello\")   # True\nprint(4 in {1, 2, 3})       # False\nprint(\"key\" in {\"key\": 1})  # True (checks keys)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-13",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// TypeScript: includes() for arrays, includes() for strings, in for objects\nconsole.log([1, 2, 3].includes(3));     // true  (Python: 3 in [1,2,3])\nconsole.log(\"hello\".includes(\"e\"));     // true  (Python: \"e\" in \"hello\")\nconsole.log(!(\"hello\".includes(\"x\")));  // true  (Python: \"x\" not in \"hello\")\nconsole.log(!([1, 2, 3].includes(4)));  // true  (Python: 4 not in [1,2,3])\nconsole.log(\"key\" in { key: 1 });       // true  (Python: \"key\" in {\"key\": 1})\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "25-operator-precedence",
+      children: "2.5 Operator Precedence"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Use parentheses to make precedence explicit -- not > and > or is the key ordering."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "From highest to lowest precedence:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operators"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1 (highest)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "**"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "+x"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "-x"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "~x"
+            }), " (unary)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "*"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "/"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "//"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "%"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "+"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "-"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "<<"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ">>"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "&"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "^"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "`"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "=="
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "!="
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "<"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "<="
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ">"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ">="
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "is"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "in"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "not"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "and"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12 (lowest)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "or"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When in doubt, use parentheses:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "result = (2 + 3) * 4   # 20, not 2 + 12 = 14\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-parallel-14",
+      children: "TypeScript Parallel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "TypeScript's operator precedence mirrors C-family languages and differs from Python:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    subgraph Python[Python Precedence]\n        direction LR\n        PY[not > and > or]\n    end\n    subgraph TS[TypeScript Precedence]\n        direction LR\n        TY[! > && > ||]\n    end\n\n    PY --> Note[Same relative ordering]\n    TY --> Note\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Python"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "C/Java"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Typing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Static"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Declaration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not required"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type + name required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Integer size"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Arbitrary precision"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed (32/64 bit)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Float precision"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Double-precision IEEE 754"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same (IEEE 754)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Null value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "None"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "null (Java), NULL (C)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Variable assignment\nx = 42\ny = \"hello\"\n\n# Type conversion\nint(\"42\")\nfloat(\"3.14\")\nstr(100)\n\n# Common operators\nx + y, x - y, x * y, x / y\nx // y, x % y, x ** y\nx == y, x != y\nx and y, x or y, not x\nx is y, x is not y\nx in y, x not in y\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Area"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Relevant Section"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Data Science"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Float precision in calculations"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.2.2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Web APIs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Boolean flags in JSON"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.2.4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Systems"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Bitwise flags for permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4.5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "is None in input validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4.6"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Point"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Common Mistake"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic typing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Variables are references, not containers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Confusing reassignment with mutation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Float comparison"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use math.isclose()"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Using == on floats"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "None check"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "is None"
+            }), ", never ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "== None"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "x == None"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Boolean"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "bool is a subclass of int"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expecting True is not 1 in other langs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Short-circuit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "and/or stop early"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Side effects in second operand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Python vs TS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dynamic vs static typing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Assuming TS allows type changes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " What is the output of type(42.0)?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) <class int>"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["B) <class float> ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) <class double>"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) <class number>"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " Which operator checks object identity?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) =="
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) ="
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["C) is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) equals()"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " What does bool([]) return?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) True"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["B) False ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) None"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) TypeError"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " What is the result of ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "3 and 42"
+      }), " in Python?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) True"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) False"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) 3"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["D) 42 ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " What does ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "0.1 + 0.2 == 0.3"
+      }), " evaluate to?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) True"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["B) False ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "<-- Correct"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) TypeError"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) 0.30000000000000004"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// Chapter 2: TypeScript Variable & Type Equivalents\n// Python: x = 42; name = \"Alice\"; is_valid = True\nconst x: number = 42;\nconst name: string = \"Alice\";\nconst isValid: boolean = true;\n\n// Python: dynamic typing lets variables change type\n// TypeScript: static typing catches type mismatches at compile time\nlet value: number = 10;\n// value = \"hello\";  // ❌ TypeScript error: Type 'string' not assignable to 'number'\n\n// Python: type() vs TypeScript: typeof\nconsole.log(typeof x);                 // \"number\"\nconsole.log(typeof name);              // \"string\"\n\n// Python: isinstance(x, int) → TypeScript: typeof / instanceof\nconsole.log(typeof x === \"number\");    // true\n\n// Python: None vs TypeScript: null / undefined\nlet maybe: string | null = null;      // union type with null\nlet unset: string | undefined;         // undefined by default\n\n// Python: type hints (not enforced at runtime)\nfunction add(a: number, b: number): number {\n  return a + b;  // TypeScript enforces types at compile time\n}\n\n// Python: f-strings vs TypeScript: template literals\nconst age: number = 30;\nconsole.log(`Name: ${name}, Age: ${age}`);\n// Equivalent Python: print(f\"Name: {name}, Age: {age}\")\n\n// Python: chained comparisons are not available in TypeScript\n// Python: 1 < x < 10  →  TypeScript: x > 1 && x < 10\nconst checkRange = (x: number): boolean => x > 1 && x < 10;\n\n// Python: walrus operator (:=) has no TypeScript equivalent\n// Python: if (n := len(x)) > 0:  →  TypeScript: const n = x.length; if (n > 0)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-utilities",
+      children: "TypeScript Utilities"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Type Inference Helper ===\nfunction inferType(v: unknown): string {\n  if (v === null) return \"null\";\n  if (v === undefined) return \"undefined\";\n  if (typeof v === \"number\") return Number.isInteger(v) ? \"integer\" : \"float\";\n  if (typeof v === \"string\") return \"string\";\n  if (typeof v === \"boolean\") return \"boolean\";\n  if (Array.isArray(v)) {\n    const types = [...new Set(v.map((e) => typeof e))];\n    return `${types.join(\" | \")}[]`;\n  }\n  return typeof v;\n}\nconsole.log(inferType(42), inferType(\"hi\"), inferType([1, \"a\"]));\n\n// === Const / Let / Var Analyzer ===\ntype DeclKind = \"const\" | \"let\" | \"var\";\ninterface DeclInfo { kind: DeclKind; name: string; type: string; mut: boolean; scoped: boolean }\nfunction analyzeDecl(kind: DeclKind, name: string, value: unknown, mut: boolean): DeclInfo {\n  return { kind, name, type: inferType(value), mut, scoped: kind !== \"var\" };\n}\nconsole.log(analyzeDecl(\"const\", \"PI\", 3.14, false));\nconsole.log(analyzeDecl(\"let\", \"count\", 0, true));\n\n// === Union Type Builder ===\ntype StringOrNum = string | number;\nfunction format(v: StringOrNum): string {\n  if (typeof v === \"string\") return `str:${v.length}`;\n  return `num:${v.toFixed(2)}`;\n}\nconsole.log(format(\"hello\"), format(42));\n\n// === Intersection Type vs Python Multiple Inheritance ===\ninterface Named { name: string }\ninterface Aged { age: number }\ntype Person = Named & Aged;\nconst p: Person = { name: \"Alice\", age: 30 };\n\n// === Literal Union vs Python Enum ===\ntype Color = \"red\" | \"green\" | \"blue\";\nfunction swatch(c: Color): string { return `Color: ${c}`; }\n\n// === Readonly vs Frozen Dataclass ===\ntype Config = Readonly<{ host: string; port: number }>;\nconst cfg: Config = { host: \"localhost\", port: 8080 };\n\n// === Pick / Omit Helpers ===\ninterface User { id: number; name: string; email: string; role: string }\ntype PublicUser = Pick<User, \"id\" | \"name\">;\ntype Sensitive = Omit<User, \"email\">;\nconst pub: PublicUser = { id: 1, name: \"Alice\" };\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-type-system-patterns",
+      children: "TypeScript Type System Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Type Inference vs. Python Dynamic Typing ===\nlet inferred = 42;         // TypeScript infers number\nlet annotated: string = \"hello\"; // Explicit annotation\n// Python: x = 42; x = \"hello\" (reassignment changes type)\n// TypeScript: inferred = \"world\" // Error: Type 'string' not assignable to 'number'\n\n// === Union Types (Python: Union[str, int]) ===\ntype ID = string | number;\nfunction lookup(id: ID): string {\n  if (typeof id === \"string\") return `User: ${id}`;\n  return `User #${id}`;\n}\nconsole.log(lookup(\"abc\")); // User: abc\nconsole.log(lookup(42));    // User #42\n\n// === Literal Types ===\ntype Status = \"active\" | \"inactive\" | \"pending\";\nfunction setUserStatus(status: Status): void {\n  console.log(`Status set to: ${status}`);\n}\nsetUserStatus(\"active\"); // OK\n// setUserStatus(\"disabled\"); // TypeScript error\n\n// === Type Aliases (Python: TypeAlias) ===\ntype Point = { x: number; y: number };\ntype Color = \"red\" | \"green\" | \"blue\";\ntype ColoredPoint = Point & { color: Color };\nconst cp: ColoredPoint = { x: 10, y: 20, color: \"red\" };\n\n// === Readonly (Python: Final from typing) ===\ninterface Config { readonly apiKey: string; readonly endpoint: string; }\nconst config: Config = { apiKey: \"sk-123\", endpoint: \"https://api.example.com\" };\n// config.apiKey = \"new-key\"; // Error: Cannot assign to readonly\n\n// === Optional Properties (Python: Optional) ===\ninterface UserProfile { name: string; age?: number; email?: string; }\nfunction greet(user: UserProfile): string {\n  const age = user.age ?? \"unknown\";\n  return `${user.name} (${age})`;\n}\nconsole.log(greet({ name: \"Alice\", age: 30 }));\nconsole.log(greet({ name: \"Bob\" }));\n\n// === Type Assertions ===\nconst rawValue: unknown = \"hello world\";\nconst strLength = (rawValue as string).length;\nconsole.log(strLength); // 11\n\n// === Enums (Python: Enum) ===\nenum Direction { Up = \"UP\", Down = \"DOWN\", Left = \"LEFT\", Right = \"RIGHT\" }\nfunction move(d: Direction): string { return `Moving ${d}`; }\nconsole.log(move(Direction.Up));\n\n// === Generics (Python: TypeVar) ===\nfunction first<T>(arr: T[]): T | undefined { return arr[0]; }\nconsole.log(first([1, 2, 3])); // 1\nconsole.log(first([\"a\", \"b\"])); // \"a\"\n\n// === Keyof and Indexed Access ===\nfunction getProp<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key]; }\nconst car = { make: \"Tesla\", model: \"Model 3\", year: 2024 };\nconsole.log(getProp(car, \"make\")); // Tesla\n// getProp(car, \"color\"); // TypeScript error\n\n// === Mapped Types ===\ntype Readonly2<T> = { readonly [K in keyof T]: T[K] };\ntype Partial2<T> = { [K in keyof T]?: T[K] };\ntype Point2 = { x: number; y: number };\nconst readonlyPoint: Readonly2<Point2> = { x: 10, y: 20 };\n// readonlyPoint.x = 5; // Error\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-advanced-variable-types",
+      children: "TypeScript Advanced Variable Types"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "// === Mapped Types (Python: type transformation) ===\ntype Nullable<T> = { [K in keyof T]: T[K] | null };\ntype ReadonlyDeep<T> = {\n  readonly [K in keyof T]: T[K] extends object ? ReadonlyDeep<T[K]> : T[K];\n};\ntype PickByValue<T, V> = { [K in keyof T as T[K] extends V ? K : never]: T[K] };\ntype OmitByValue<T, V> = { [K in keyof T as T[K] extends V ? never : K]: T[K] };\ntype RequiredBy<T, K extends keyof T> = Omit<T, K> & { [P in K]-?: T[P] };\n\n// === Template Literal Types (Python: f-strings at type level) ===\ntype EventName = `on${Capitalize<string>}`;\ntype CSSUnit = `${number}px` | `${number}rem` | `${number}em` | `${number}%`;\ntype HexColor = `#${string}`;\ntype HttpMethod = \"GET\" | \"POST\" | \"PUT\" | \"DELETE\" | \"PATCH\";\ntype ApiEndpoint = `/api/${string}`;\n\n// === Conditional Types (Python: type narrowing) ===\ntype IsString<T> = T extends string ? \"yes\" : \"no\";\ntype ElementOf<T> = T extends (infer E)[] ? E : T;\ntype FunctionResult<T> = T extends (...args: any[]) => infer R ? R : never;\n\n// === Variadic Tuple Types (Python: *args typed) ===\ntype Head<T extends unknown[]> = T extends [infer H, ...unknown[]] ? H : never;\ntype Tail<T extends unknown[]> = T extends [unknown, ...infer Rest] ? Rest : never;\ntype Last<T extends unknown[]> = T extends [...unknown[], infer L] ? L : never;\ntype Concat<A extends unknown[], B extends unknown[]> = [...A, ...B];\n\n// === Union Distribution (Python: type switching) ===\ntype ToArray<T> = T extends unknown ? T[] : never;\ntype Stringify<T> = T extends string ? T : T extends number ? `${T}` : never;\n\n// === Structural Type Testing ===\ninterface TypeTest { a: string; b: number; }\ntype ExtraKeys = { a: string; b: number; c: boolean };\ntype MissingKeys = { a: string };\ntype IsSubtype<S, T> = S extends T ? true : false;\ntype Test1 = IsSubtype<ExtraKeys, TypeTest>; // true (extra keys allowed)\ntype Test2 = IsSubtype<MissingKeys, TypeTest>; // false\n\n// === Recursive Type (Python: self-referential) ===\ntype JSONValue = string | number | boolean | null | JSONValue[] | { [key: string]: JSONValue };\ntype DeepPartial<T> = { [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K] };\ntype DeepRequired<T> = { [K in keyof T]-?: T[K] extends object ? DeepRequired<T[K]> : T[K] };\n\n// === Branded Types for Type Safety ===\ntype Branded<T, B> = T & { __brand: B };\ntype Email = Branded<string, \"Email\">;\ntype Phone = Branded<string, \"Phone\">;\nfunction sendEmail(to: Email, body: string): void { console.log(`Email to ${String(to)}: ${body}`); }\nfunction createEmail(s: string): Email { return s as Email; }\nconst email = createEmail(\"user@example.com\");\nsendEmail(email, \"Hello\"); // OK\n\n// === Type-safe Builder Pattern ===\nclass ConfigBuilder {\n  private config: Record<string, unknown> = {};\n  set<T>(key: string, value: T): this & Record<typeof key, T> { (this.config as any)[key] = value; return this as any; }\n  build(): Record<string, unknown> { return { ...this.config }; }\n}\nconst builder = new ConfigBuilder();\nconst cfg = builder.set(\"host\", \"localhost\").set(\"port\", 8080).build();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python is dynamically typed; variables are references to objects."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Core types: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "int"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "float"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "str"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "bool"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "NoneType"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "complex"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explicit conversion uses type constructors; implicit conversion promotes int to float."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Operators span arithmetic, comparison, logical, assignment, bitwise, identity, and membership."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "and"
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "or"
+        }), " short-circuit; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "is"
+        }), " checks identity; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "in"
+        }), " checks membership."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Chained comparisons are a unique Python feature."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The walrus operator ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ":="
+        }), " assigns within expressions."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TypeScript uses static typing with type annotations, catching errors at compile time."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TypeScript separates null and undefined where Python only has None."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "=="
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "is"
+        }), "?"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Why does ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "0.1 + 0.2"
+        }), " not equal ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "0.3"
+        }), " exactly?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What values are considered falsy in Python?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain short-circuit evaluation with an example."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What operator precedence rule causes ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "2 ** 3 ** 2"
+        }), " to compute 512 rather than 64?"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How does Python's dynamic typing compare to TypeScript's static typing?"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Why does TypeScript use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "==="
+        }), " instead of ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "=="
+        }), "?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a program that takes an integer input, then prints whether it is even or odd, positive or negative, and its absolute value."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement a BMI calculator: weight (kg) / height (m)^2. Use appropriate types and print a health category message."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Given ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "a = 0b1010"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "b = 0b1100"
+        }), ", write a program that prints the AND, OR, XOR, and left-shift results in binary."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Write a function that takes a string and returns whether it contains the letter \"a\". Use the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "in"
+        }), " operator. Write the equivalent TypeScript version using ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".includes()"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Create a script that demonstrates the walrus operator by reading lines from a list and printing only those longer than 10 characters."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement a simple simulated-annealing flag decoder: define a set of bit flags (READ=1, WRITE=2, EXECUTE=4, DELETE=8). Accept an integer permission mask and print which flags are set. Then accept a flag name and toggle it in the mask using bitwise XOR. Use the walrus operator in at least one expression."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "typescript-challenge",
+      children: "TypeScript Challenge"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Rewrite the BMI calculator from Application Problem 2 in TypeScript. Add explicit type annotations for all variables. Compare the Python and TypeScript versions -- how does type safety help catch errors? Create a function signature with types for both the input parameters and return value."
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

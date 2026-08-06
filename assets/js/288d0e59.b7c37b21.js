@@ -1,0 +1,5097 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[97138],{
+
+/***/ 22998
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_operating_systems_17_virtualization_md_288_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-operating-systems-17-virtualization-md-288.json
+const site_docs_courses_operating_systems_17_virtualization_md_288_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/operating-systems/17-virtualization","title":"Chapter 17: Virtualization","description":"---","source":"@site/docs/courses/operating-systems/17-virtualization.md","sourceDirName":"courses/operating-systems","slug":"/operating-systems/17-virtualization","permalink":"/ai-engineering-journey/operating-systems/17-virtualization","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":17,"frontMatter":{"id":"17-virtualization","slug":"/operating-systems/17-virtualization","title":"Chapter 17: Virtualization","sidebar_label":"Chapter 17: Virtualization","sidebar_position":17},"sidebar":"coursesSidebar","previous":{"title":"Chapter 16: Security","permalink":"/ai-engineering-journey/operating-systems/16-security"},"next":{"title":"Chapter 18: Case Studies in Operating Systems","permalink":"/ai-engineering-journey/operating-systems/18-case-studies"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/operating-systems/17-virtualization.md
+
+
+const frontMatter = {
+	id: '17-virtualization',
+	slug: '/operating-systems/17-virtualization',
+	title: 'Chapter 17: Virtualization',
+	sidebar_label: 'Chapter 17: Virtualization',
+	sidebar_position: 17
+};
+const contentTitle = 'Chapter 17: Virtualization';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "1.1 What is Virtualization?",
+  "id": "11-what-is-virtualization",
+  "level": 2
+}, {
+  "value": "Real-World Analogy: Office Building Tenants",
+  "id": "real-world-analogy-office-building-tenants",
+  "level": 3
+}, {
+  "value": "Formal Definition",
+  "id": "formal-definition",
+  "level": 3
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 3
+}, {
+  "value": "1.2 Emulation vs Virtualization vs Paravirtualization",
+  "id": "12-emulation-vs-virtualization-vs-paravirtualization",
+  "level": 2
+}, {
+  "value": "Why These Differences Matter",
+  "id": "why-these-differences-matter",
+  "level": 3
+}, {
+  "value": "1.3 Popek &amp; Goldberg Virtualization Requirements",
+  "id": "13-popek--goldberg-virtualization-requirements",
+  "level": 2
+}, {
+  "value": "The x86 Problem",
+  "id": "the-x86-problem",
+  "level": 3
+}, {
+  "value": "Solutions to the x86 Problem",
+  "id": "solutions-to-the-x86-problem",
+  "level": 3
+}, {
+  "value": "1.4 Steps to Create and Run a Virtual Machine",
+  "id": "14-steps-to-create-and-run-a-virtual-machine",
+  "level": 2
+}, {
+  "value": "Step-by-Step Process",
+  "id": "step-by-step-process",
+  "level": 3
+}, {
+  "value": "Pseudocode: Simple VMM Run Loop",
+  "id": "pseudocode-simple-vmm-run-loop",
+  "level": 3
+}, {
+  "value": "Dry Run Trace: VM Exit Handling",
+  "id": "dry-run-trace-vm-exit-handling",
+  "level": 3
+}, {
+  "value": "C++ Implementation: Minimal VMM (Conceptual)",
+  "id": "c-implementation-minimal-vmm-conceptual",
+  "level": 3
+}, {
+  "value": "Python Implementation: Simple VMM Simulator",
+  "id": "python-implementation-simple-vmm-simulator",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 3
+}, {
+  "value": "A&amp;D: Virtualization Approaches",
+  "id": "ad-virtualization-approaches",
+  "level": 3
+}, {
+  "value": "Edge Cases in Virtualization",
+  "id": "edge-cases-in-virtualization",
+  "level": 3
+}, {
+  "value": "2.1 Definition and Architecture",
+  "id": "21-definition-and-architecture",
+  "level": 2
+}, {
+  "value": "Real-World Analogy: Apartment Building vs Hotel",
+  "id": "real-world-analogy-apartment-building-vs-hotel",
+  "level": 3
+}, {
+  "value": "2.2 Type 1: Bare-Metal Hypervisor",
+  "id": "22-type-1-bare-metal-hypervisor",
+  "level": 2
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram",
+  "level": 3
+}, {
+  "value": "How Type 1 Hypervisors Handle Hardware",
+  "id": "how-type-1-hypervisors-handle-hardware",
+  "level": 3
+}, {
+  "value": "Steps to Create a VM on Type 1 Hypervisor (VMware ESXi)",
+  "id": "steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi",
+  "level": 3
+}, {
+  "value": "Examples of Type 1 Hypervisors",
+  "id": "examples-of-type-1-hypervisors",
+  "level": 3
+}, {
+  "value": "A&amp;D: Type 1 Hypervisors",
+  "id": "ad-type-1-hypervisors",
+  "level": 3
+}, {
+  "value": "2.3 Type 2: Hosted Hypervisor",
+  "id": "23-type-2-hosted-hypervisor",
+  "level": 2
+}, {
+  "value": "Architecture Diagram",
+  "id": "architecture-diagram-1",
+  "level": 3
+}, {
+  "value": "How Type 2 Hypervisors Handle I/O",
+  "id": "how-type-2-hypervisors-handle-io",
+  "level": 3
+}, {
+  "value": "Steps to Create a VM on Type 2 Hypervisor (VirtualBox)",
+  "id": "steps-to-create-a-vm-on-type-2-hypervisor-virtualbox",
+  "level": 3
+}, {
+  "value": "Examples of Type 2 Hypervisors",
+  "id": "examples-of-type-2-hypervisors",
+  "level": 3
+}, {
+  "value": "A&amp;D: Type 2 Hypervisors",
+  "id": "ad-type-2-hypervisors",
+  "level": 3
+}, {
+  "value": "2.4 Type 1 vs Type 2: Comprehensive Comparison",
+  "id": "24-type-1-vs-type-2-comprehensive-comparison",
+  "level": 2
+}, {
+  "value": "Performance Impact: Type 1 vs Type 2",
+  "id": "performance-impact-type-1-vs-type-2",
+  "level": 3
+}, {
+  "value": "2.5 Code: Type 1 vs Type 2 Simulation in Python",
+  "id": "25-code-type-1-vs-type-2-simulation-in-python",
+  "level": 2
+}, {
+  "value": "3.1 The Spectrum of Virtualization Techniques",
+  "id": "31-the-spectrum-of-virtualization-techniques",
+  "level": 2
+}, {
+  "value": "Real-World Analogy: Interpreting Languages",
+  "id": "real-world-analogy-interpreting-languages",
+  "level": 3
+}, {
+  "value": "3.2 Full Virtualization",
+  "id": "32-full-virtualization",
+  "level": 2
+}, {
+  "value": "Binary Translation (VMware&#39;s Original Approach)",
+  "id": "binary-translation-vmwares-original-approach",
+  "level": 3
+}, {
+  "value": "Trap-and-Emulate (The Classical Model)",
+  "id": "trap-and-emulate-the-classical-model",
+  "level": 3
+}, {
+  "value": "Steps for Trap-and-Emulate (Correctly Virtualizable Architecture)",
+  "id": "steps-for-trap-and-emulate-correctly-virtualizable-architecture",
+  "level": 3
+}, {
+  "value": "Dry Run: Trap-and-Emulate (Guest OS enabling interrupts)",
+  "id": "dry-run-trap-and-emulate-guest-os-enabling-interrupts",
+  "level": 3
+}, {
+  "value": "3.3 Paravirtualization",
+  "id": "33-paravirtualization",
+  "level": 2
+}, {
+  "value": "How Paravirtualization Works",
+  "id": "how-paravirtualization-works",
+  "level": 3
+}, {
+  "value": "Key Paravirtualization Techniques",
+  "id": "key-paravirtualization-techniques",
+  "level": 3
+}, {
+  "value": "Paravirtualization Hypercall Interface",
+  "id": "paravirtualization-hypercall-interface",
+  "level": 3
+}, {
+  "value": "3.4 Hardware-Assisted Virtualization (Intel VT-x / AMD-V)",
+  "id": "34-hardware-assisted-virtualization-intel-vt-x--amd-v",
+  "level": 2
+}, {
+  "value": "New CPU Modes",
+  "id": "new-cpu-modes",
+  "level": 3
+}, {
+  "value": "VMX Root Mode vs VMX Non-Root Mode",
+  "id": "vmx-root-mode-vs-vmx-non-root-mode",
+  "level": 3
+}, {
+  "value": "3.5 Full vs Para vs HW-Assisted: Comparison",
+  "id": "35-full-vs-para-vs-hw-assisted-comparison",
+  "level": 2
+}, {
+  "value": "Performance Gap Analysis",
+  "id": "performance-gap-analysis",
+  "level": 3
+}, {
+  "value": "4.1 VMCS -- Virtual Machine Control Structure",
+  "id": "41-vmcs----virtual-machine-control-structure",
+  "level": 2
+}, {
+  "value": "VMCS Layout",
+  "id": "vmcs-layout",
+  "level": 3
+}, {
+  "value": "4.2 VM Entry Steps",
+  "id": "42-vm-entry-steps",
+  "level": 2
+}, {
+  "value": "4.3 VM Exit Steps",
+  "id": "43-vm-exit-steps",
+  "level": 2
+}, {
+  "value": "4.4 C++ Implementation: VM Entry/Exit Handler",
+  "id": "44-c-implementation-vm-entryexit-handler",
+  "level": 2
+}, {
+  "value": "4.5 Python Implementation: VT-x Flow Simulation",
+  "id": "45-python-implementation-vt-x-flow-simulation",
+  "level": 2
+}, {
+  "value": "6. Memory Virtualization",
+  "id": "6-memory-virtualization",
+  "level": 2
+}, {
+  "value": "6.1 The Address Space Problem",
+  "id": "61-the-address-space-problem",
+  "level": 3
+}, {
+  "value": "6.2 Shadow Page Tables (Software Approach)",
+  "id": "62-shadow-page-tables-software-approach",
+  "level": 3
+}, {
+  "value": "6.3 Hardware-Assisted Paging (EPT / NPT)",
+  "id": "63-hardware-assisted-paging-ept--npt",
+  "level": 3
+}, {
+  "value": "6.4 Shadow vs EPT Comparison",
+  "id": "64-shadow-vs-ept-comparison",
+  "level": 3
+}, {
+  "value": "6.5 Complexity Analysis",
+  "id": "65-complexity-analysis",
+  "level": 3
+}, {
+  "value": "6.6 Edge Cases in Memory Virtualization",
+  "id": "66-edge-cases-in-memory-virtualization",
+  "level": 3
+}, {
+  "value": "7. I/O Virtualization",
+  "id": "7-io-virtualization",
+  "level": 2
+}, {
+  "value": "7.1 Emulated I/O (Full Device Emulation)",
+  "id": "71-emulated-io-full-device-emulation",
+  "level": 3
+}, {
+  "value": "7.2 Paravirtualized I/O (Virtio)",
+  "id": "72-paravirtualized-io-virtio",
+  "level": 3
+}, {
+  "value": "7.3 Direct I/O Assignment (SR-IOV)",
+  "id": "73-direct-io-assignment-sr-iov",
+  "level": 3
+}, {
+  "value": "7.4 Virtio vs SR-IOV Comparison",
+  "id": "74-virtio-vs-sr-iov-comparison",
+  "level": 3
+}, {
+  "value": "8. Containerization (OS-Level Virtualization)",
+  "id": "8-containerization-os-level-virtualization",
+  "level": 2
+}, {
+  "value": "8.1 Namespaces → What Containers <em>See</em>",
+  "id": "81-namespaces--what-containers-see",
+  "level": 3
+}, {
+  "value": "8.2 Cgroups → What Containers <em>Use</em>",
+  "id": "82-cgroups--what-containers-use",
+  "level": 3
+}, {
+  "value": "8.3 Docker Architecture",
+  "id": "83-docker-architecture",
+  "level": 3
+}, {
+  "value": "8.4 Container vs VM Comprehensive Comparison",
+  "id": "84-container-vs-vm-comprehensive-comparison",
+  "level": 3
+}, {
+  "value": "8.5 Firecracker → MicroVM Approach",
+  "id": "85-firecracker--microvm-approach",
+  "level": 3
+}, {
+  "value": "9. Interview Corner",
+  "id": "9-interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: What is the difference between VT-x and AMD-V?",
+  "id": "q1-what-is-the-difference-between-vt-x-and-amd-v",
+  "level": 3
+}, {
+  "value": "Q2: What is nested virtualization? How does it work?",
+  "id": "q2-what-is-nested-virtualization-how-does-it-work",
+  "level": 3
+}, {
+  "value": "Q3: Can paravirtualization be combined with hardware virtualization?",
+  "id": "q3-can-paravirtualization-be-combined-with-hardware-virtualization",
+  "level": 3
+}, {
+  "value": "Q4: What happens when a VM is overcommitted on memory?",
+  "id": "q4-what-happens-when-a-vm-is-overcommitted-on-memory",
+  "level": 3
+}, {
+  "value": "Q5: How does live migration work in memory virtualization?",
+  "id": "q5-how-does-live-migration-work-in-memory-virtualization",
+  "level": 3
+}, {
+  "value": "Q6: Why did KVM remove shadow page table support in 2015?",
+  "id": "q6-why-did-kvm-remove-shadow-page-table-support-in-2015",
+  "level": 3
+}, {
+  "value": "Q7: What is the cause of &quot;VM-Exit storm&quot;?",
+  "id": "q7-what-is-the-cause-of-vm-exit-storm",
+  "level": 3
+}, {
+  "value": "Q8: How does timekeeping work in a VM?",
+  "id": "q8-how-does-timekeeping-work-in-a-vm",
+  "level": 3
+}, {
+  "value": "10. Applications in Real Systems",
+  "id": "10-applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "10.1 KVM (Kernel-based Virtual Machine)",
+  "id": "101-kvm-kernel-based-virtual-machine",
+  "level": 3
+}, {
+  "value": "10.2 Xen",
+  "id": "102-xen",
+  "level": 3
+}, {
+  "value": "10.3 VMware ESXi",
+  "id": "103-vmware-esxi",
+  "level": 3
+}, {
+  "value": "10.4 Microsoft Hyper-V",
+  "id": "104-microsoft-hyper-v",
+  "level": 3
+}, {
+  "value": "10.5 Docker (Container Runtime)",
+  "id": "105-docker-container-runtime",
+  "level": 3
+}, {
+  "value": "10.6 AWS Firecracker",
+  "id": "106-aws-firecracker",
+  "level": 3
+}, {
+  "value": "11. Quiz",
+  "id": "11-quiz",
+  "level": 2
+}, {
+  "value": "12. TypeScript Implementation — Nested Page Walk Simulator",
+  "id": "12-typescript-implementation--nested-page-walk-simulator",
+  "level": 2
+}, {
+  "value": "13. Chapter Quiz (Multiple Choice)",
+  "id": "13-chapter-quiz-multiple-choice",
+  "level": 2
+}, {
+  "value": "14. Summary",
+  "id": "14-summary",
+  "level": 2
+}, {
+  "value": "13. Exercises",
+  "id": "13-exercises",
+  "level": 2
+}, {
+  "value": "Additional Exercises",
+  "id": "additional-exercises",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    div: "div",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-17-virtualization",
+        children: "Chapter 17: Virtualization"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["<< ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/operating-systems/16-security",
+          children: "Security"
+        })]
+      }), " | ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/operating-systems/18-case-studies",
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next: Case Studies"
+        })
+      }), " >>"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define virtualization and distinguish it from emulation and paravirtualization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain hypervisor types: Type 1 (bare-metal) vs Type 2 (hosted) with architecture diagrams"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe hardware-assisted virtualization (Intel VT-x, AMD-V) with VM-entry/VM-exit flow"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Contrast containers vs virtual machines in terms of isolation, overhead, and use cases"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain paravirtualization and its performance benefits over full virtualization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understand memory virtualization: shadow page tables vs nested paging (EPT/NPT)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe I/O virtualization methods: emulated, paravirtualized (virtio), passthrough (SR-IOV)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze the Linux KVM architecture and Docker container model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify real-world applications: VMware ESXi, Xen, Hyper-V, Firecracker"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Evaluate virtualization trade-offs: performance, isolation, resource overhead, security"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/operating-systems/17-virtualization/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/operating-systems/17-virtualization/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/operating-systems/17-virtualization/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/operating-systems/17-virtualization/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/operating-systems/17-virtualization/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/operating-systems/17-virtualization/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Abstracting physical hardware into virtual resources; multiple VMs per host"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hypervisor Types"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (bare-metal: ESXi, Hyper-V) vs Type 2 (hosted: VirtualBox, Workstation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU Virt."
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-assisted via Intel VT-x/AMD-V; trap-and-emulate; VMX root/non-root modes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory Virt."
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nested page tables (EPT, NPT); shadow page tables; 2D page walk"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O Virt."
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pass-through (VT-d, SR-IOV), paravirtualized (virtio), emulated (QEMU device models)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Containers"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OS-level virtualization: share kernel, isolate via namespaces + cgroups"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Para vs Full"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modified guest OS for hypercalls vs unmodified guest with binary translation/hardware assist"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Interview Corner"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VT-x vs AMD-V, nested virtualization, overcommitment risks, VM escape"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.div, {
+      className: "mermaid",
+      children: "\nflowchart LR\n    A[Virtualization Concept] --> B[Hypervisor Types]\n    B --> C[CPU Virtualization]\n    B --> D[Memory Virtualization]\n    B --> E[I/O Virtualization]\n    E --> F[Containerization]\n    C --> G[Full vs Para vs HW-assisted]\n    D --> H[Nested Page Tables vs Shadow PT]\n    F --> I[Docker & Firecracker]\n    G --> J[Real Systems: KVM, Xen, ESXi, Hyper-V]\n    J --> K[Interview Corner]\n    K --> L[Summary & Exercises]\n"
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "1-virtualization--definition--core-concepts",
+      children: "1. Virtualization → Definition & Core Concepts"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-what-is-virtualization",
+      children: "1.1 What is Virtualization?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Virtualization"
+      }), " is the technique of creating a virtual (rather than physical) version of a computing resource → CPU, memory, storage, network → by inserting a software abstraction layer (the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hypervisor"
+      }), " or ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Virtual Machine Monitor, VMM"
+      }), ") between hardware and the operating system. This enables multiple isolated operating systems (guest OSes) to run concurrently on a single physical machine."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-office-building-tenants",
+      children: "Real-World Analogy: Office Building Tenants"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Think of a physical server as an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "office building"
+      }), ". The hypervisor is the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "building manager"
+      }), " who divides the building into separate ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "office suites"
+      }), " (VMs). Each tenant (guest OS) gets:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Their own ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "keys"
+        }), " (CPU registers, page tables)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Their own ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "locked rooms"
+        }), " (memory regions → cannot access other suites)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Their own ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "mailbox and phone line"
+        }), " (virtualized I/O devices)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "illusion"
+        }), " they have the entire building to themselves"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If tenants in Suite 201 try to open Suite 202's door, the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "building manager (hypervisor)"
+      }), " intercepts them → analogous to a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "VM exit"
+      }), " when a guest tries to access hardware it shouldn't."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["An ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "apartment building"
+      }), " = Type 1 hypervisor (manager owns the building). A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hotel"
+      }), " = Type 2 hypervisor (hotel management = host OS, rents rooms = VMs as guests)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "formal-definition",
+      children: "Formal Definition"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Virtualization satisfies three properties (Popek & Goldberg, 1974):\n\n  [Fidelity]  → Software running under the VMM behaves identically\n                 to running on bare hardware (except timing)\n  [Safety]    → VMM has complete control of hardware resources\n  [Efficiency]→ Most guest instructions execute directly without VMM intervention\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hypervisor / VMM"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Software layer that creates, runs, and manages VMs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest OS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Operating system running inside a VM (could be different from host)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Host"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Physical machine that runs the hypervisor"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VM Exit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transition from guest mode to hypervisor mode (traps to VMM)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VM Entry"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transition from hypervisor back to guest mode (resume guest)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Virtual CPU (vCPU)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtual processor presented to a guest OS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Domain 0 (Dom0)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Privileged VM in Xen that manages other VMs (DomU)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-emulation-vs-virtualization-vs-paravirtualization",
+      children: "1.2 Emulation vs Virtualization vs Paravirtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "These three approaches form a spectrum from pure software simulation to near-native hardware-assisted execution."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Approach"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Performance"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Guest Modification"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Emulation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Software mimics entire hardware ISA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very slow (1-10% native)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "QEMU (no KVM), Bochs, DOSBox"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Full Virtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unmodified guest; binary translation or HW assist"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~80-95% native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMware ESXi, KVM + VT-x"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Paravirtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS is modified to call hypervisor directly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~95-98% native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Xen PV, virtio drivers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware-assisted"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU extensions handle sensitive instructions natively"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~95-99% native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KVM, Hyper-V, VMware 6+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "why-these-differences-matter",
+      children: "Why These Differences Matter"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Emulation:\n  Guest Code → CPU Emulator (decode every instr) → Slow\n  [Every instruction interpreted in software → 100x-10000x slowdown]\n\nFull Virtualization:\n  Guest Code → CPU (most instr run directly) → Hypervisor on sensitive instr → Guest\n  [Sensitive instructions trap to VMM; non-sensitive run at native speed]\n\nParavirtualization:\n  Guest Code (modified) → Explicit hypercall → Hypervisor\n  [No traps for known-sensitive operations → conscious cooperation]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "13-popek--goldberg-virtualization-requirements",
+      children: "1.3 Popek & Goldberg Virtualization Requirements"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Popek and Goldberg (1974) formalized the necessary CPU properties for efficient virtualization. A CPU instruction set is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "classically virtualizable"
+      }), " if:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Privileged instructions"
+        }), " → trap when executed in user mode"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sensitive instructions"
+        }), " → alter or depend on hardware state"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "All sensitive instructions are a subset of privileged instructions"
+        }), " (the critical condition)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "the-x86-problem",
+      children: "The x86 Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Older x86 CPUs FAILED the Popek & Goldberg criterion because several sensitive instructions (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "popf"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sgdt"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "sldt"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "smsw"
+      }), ") did NOT trap when executed in a lower privilege ring. They ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "silently succeeded"
+      }), " → the guest could read or modify real hardware state without the hypervisor knowing."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "popf instruction (pop flags):\n  - In Ring 0: modifies EFLAGS.IF (interrupt flag) → normal\n  - In Ring 3: silently IGNORES the IF change → no trap!\n  - Result: Guest OS thinks it disabled interrupts, but actually didn't\n           → No hypervisor interception → Race condition in guest kernel\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "solutions-to-the-x86-problem",
+      children: "Solutions to the x86 Problem"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Era"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Solution"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "How It Works"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pre-2005"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Binary Translation"
+            }), " (VMware)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Rewrite sensitive instructions on-the-fly: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "popf"
+            }), " → trap+emulate sequence"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2005+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Intel VT-x / AMD-V"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "New CPU modes where ALL sensitive instructions automatically VM-exit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Xen approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Paravirtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Modify guest to never use non-virtualizable instructions; use hypercalls"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "14-steps-to-create-and-run-a-virtual-machine",
+      children: "1.4 Steps to Create and Run a Virtual Machine"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "step-by-step-process",
+      children: "Step-by-Step Process"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1:  Hypervisor initializes and allocates memory pool\nStep 2:  Hypervisor creates VM control structure (VMCS on Intel / VMCB on AMD)\nStep 3:  Hypervisor allocates guest physical memory (from host physical)\nStep 4:  Hypervisor loads guest firmware/kernel into guest memory\nStep 5:  Hypervisor sets up virtual devices (emulated or paravirt)\nStep 6:  Hypervisor issues VM-entry instruction (VMLAUNCH/VMRESUME on Intel)\nStep 7:  Guest OS begins execution in VMX non-root mode\nStep 8:  Guest executes normally until a VM-exit event occurs:\n         - Sensitive instruction (IN, OUT, HLT, MOV to CR3)\n         - I/O access (port or MMIO)\n         - External interrupt\n         - Page fault requiring hypervisor intervention\nStep 9:  CPU automatically saves guest state, loads host state (VM-exit)\nStep 10: Hypervisor handles the exit reason, emulates if needed\nStep 11: Hypervisor issues VM-entry to resume guest\nStep 12: Repeat Steps 8-11 for the lifetime of the VM\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-simple-vmm-run-loop",
+      children: "Pseudocode: Simple VMM Run Loop"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "FUNCTION SimpleVMMRunLoop(vm):\n    // Assume VM is already created with memory and vCPUs\n    \n    WHTRUE:\n        FOR each vCPU in vm.vcpus:\n            exitReason = VMLAUNCH(vCPU)        // Enter guest mode\n            \n            SWITCH exitReason:\n                CASE EXIT_IO_IN:\n                    port = vCPU.exitQualification.port\n                    data = EmulatePortIn(port)\n                    vCPU.registers[RAX] = data\n                    \n                CASE EXIT_IO_OUT:\n                    port = vCPU.exitQualification.port\n                    data = vCPU.registers[RAX] & 0xFF\n                    EmulatePortOut(port, data)\n                    \n                CASE EXIT_CPUID:\n                    HandleCPUID(vCPU)            // Mask features, return emulated\n                    \n                CASE EXIT_HLT:\n                    vCPU.state = HALTED\n                    WaitForInterrupt(vCPU)\n                    \n                CASE EXIT_EPT_VIOLATION:\n                    gpa = vCPU.exitQualification.gpa\n                    HandleEptViolation(vm, gpa)   // Map or fault\n                    \n                CASE EXIT_SHUTDOWN:\n                    ShutdownVM(vm)\n                    RETURN\n                    \n                CASE EXIT_MSR_READ:\n                    msr = vCPU.exitQualification.msr\n                    vCPU.registers[RAX:RDX] = EmulateMsrRead(msr)\n                    \n                CASE EXIT_MSR_WRITE:\n                    msr = vCPU.exitQualification.msr\n                    value = (vCPU.registers[RDX] << 32) | vCPU.registers[RAX]\n                    EmulateMsrWrite(msr, value)\n                    \n    END WHILE\nEND FUNCTION\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-vm-exit-handling",
+      children: "Dry Run Trace: VM Exit Handling"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Scenario: Guest OS executes ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "IN"
+      }), " instruction (port I/O read) to read from keyboard controller."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Component"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "State Change"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Executes ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "in al, 0x60"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RIP points to next instruction; RAX will contain result"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU (VT-x)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detects I/O access in VMX non-root mode"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Triggers VM-exit; saves guest RIP, RSP, RAX to VMCS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU (VT-x)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Loads host state from VMCS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Switches to VMX root mode; host RIP = VMM entry point"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Reads ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "exit_reason"
+            }), " from VMCS"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "exit_reason = 30 (EXIT_IO_IN)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Reads ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "exit_qualification"
+            }), " from VMCS"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "port = 0x60, size = 1, direction = IN"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Calls ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "EmulatePortIn(0x60)"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reads emulated keyboard buffer (returns 0x1C = Enter key scancode)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Writes result to vCPU RAX in VMCS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "vCPU.rax = 0x1C"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU (VT-x)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Executes VMRESUME"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reloads guest state from VMCS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continues execution; RAX = 0x1C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest sees keyboard scancode as if from real hardware"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-minimal-vmm-conceptual",
+      children: "C++ Implementation: Minimal VMM (Conceptual)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <cstdint>\n#include <unordered_map>\n#include <vector>\n\n// Forward declarations\nstruct VMCS;    // Virtual Machine Control Structure (Intel)\nstruct vCPU;\nstruct VM;\n\n// VM exit reasons (simplified)\nenum VMExitReason : uint32_t {\n    EXIT_IO_IN      = 30,\n    EXIT_IO_OUT     = 31,\n    EXIT_CPUID      = 10,\n    EXIT_HLT        = 12,\n    EXIT_EPT_VIOL   = 48,\n    EXIT_MSR_READ   = 31,\n    EXIT_MSR_WRITE  = 32,\n    EXIT_SHUTDOWN   = 7\n};\n\n// x86 register file (simplified)\nstruct RegisterFile {\n    uint64_t rax, rbx, rcx, rdx;\n    uint64_t rsi, rdi, rbp, rsp;\n    uint64_t r8,  r9,  r10, r11;\n    uint64_t r12, r13, r14, r15;\n    uint64_t rip, rflags;\n};\n\n// Exit qualification for I/O instructions\nstruct IOExitQual {\n    uint16_t port;\n    uint8_t  size;     // 1, 2, or 4 bytes\n    bool     is_input; // true = IN, false = OUT\n    bool     string;   // true = INS/OUTS\n};\n\n// Exit qualification for EPT violations\nstruct EPTViolationQual {\n    uint64_t gpa;       // Guest Physical Address\n    bool     read;      // Access was a read\n    bool     write;     // Access was a write\n    bool     execute;   // Access was an execute\n};\n\n// Virtual CPU\nstruct vCPU {\n    int id;\n    RegisterFile regs;\n    VM* parent_vm;\n    uint32_t exit_reason;\n    uint64_t exit_qualification;\n    bool halted;\n    uint64_t vmcs_phys;  // Physical address of VMCS\n    \n    vCPU(int id, VM* vm) : id(id), parent_vm(vm), halted(false), exit_reason(0) {}\n};\n\n// Virtual Machine\nstruct VM {\n    uint64_t vm_id;\n    std::vector<vCPU*> vcpus;\n    std::unordered_map<uint64_t, uint8_t> guest_phys_memory;  // GPA → data\n    uint64_t mem_size;\n    \n    VM(uint64_t id, uint64_t mem) : vm_id(id), mem_size(mem) {}\n    \n    ~VM() {\n        for (auto vcpu : vcpus) delete vcpu;\n    }\n};\n\n// Emulated devices\nstruct EmulatedDevice {\n    std::unordered_map<uint16_t, uint8_t> io_ports;\n    \n    EmulatedDevice() {\n        // Keyboard controller (port 0x60)\n        io_ports[0x60] = 0x1C;  // Enter key scancode\n        // System timer (port 0x40)\n        io_ports[0x40] = 0x00;\n    }\n    \n    uint8_t portRead(uint16_t port) {\n        if (io_ports.count(port)) return io_ports[port];\n        return 0xFF;  // No device\n    }\n    \n    void portWrite(uint16_t port, uint8_t data) {\n        io_ports[port] = data;\n    }\n};\n\n// Memory Manager\nstruct MemoryManager {\n    std::unordered_map<uint64_t, uint64_t> gpa_to_hpa_map;  // GPA → HPA\n    \n    void mapPage(uint64_t gpa, uint64_t hpa) {\n        gpa_to_hpa_map[gpa] = hpa;\n    }\n    \n    uint64_t translateGPA(uint64_t gpa) {\n        auto it = gpa_to_hpa_map.find(gpa & ~0xFFFULL);\n        if (it != gpa_to_hpa_map.end()) {\n            return (it->second) | (gpa & 0xFFFULL);\n        }\n        return UINT64_MAX;  // Not mapped → EPT violation\n    }\n};\n\n// Hypervisor (VMM)\nclass Hypervisor {\nprivate:\n    std::unordered_map<uint64_t, VM*> vms;\n    EmulatedDevice device;\n    MemoryManager mem_mgr;\n    uint64_t next_vm_id;\n    \npublic:\n    Hypervisor() : next_vm_id(1) {\n        std::cout << \"[VMM] Hypervisor initialized\" << std::endl;\n    }\n    \n    ~Hypervisor() {\n        for (auto& [id, vm] : vms) delete vm;\n    }\n    \n    // Step 1-2: Create VM with control structures\n    VM* createVM(uint64_t memory_size) {\n        uint64_t vm_id = next_vm_id++;\n        VM* vm = new VM(vm_id, memory_size);\n        \n        // Step 3: Allocate guest physical memory\n        for (uint64_t i = 0; i < memory_size; i += 4096) {\n            uint64_t hpa = (uint64_t)new uint8_t[4096];  // Simulate physical allocation\n            mem_mgr.mapPage(i, hpa);\n        }\n        \n        vms[vm_id] = vm;\n        std::cout << \"[VMM] Created VM \" << vm_id \n                  << \" with \" << memory_size << \" bytes\" << std::endl;\n        return vm;\n    }\n    \n    // Step 4: Load guest code into GPA space\n    void loadGuestCode(VM* vm, uint64_t gpa, const std::vector<uint8_t>& code) {\n        for (size_t i = 0; i < code.size(); i++) {\n            vm->guest_phys_memory[gpa + i] = code[i];\n        }\n        std::cout << \"[VMM] Loaded \" << code.size() \n                  << \" bytes of guest code at GPA 0x\" << std::hex << gpa << std::endl;\n    }\n    \n    // Step 5-6: Add vCPU and set initial state\n    vCPU* createVCPU(VM* vm) {\n        int vcpu_id = vm->vcpus.size();\n        vCPU* vcpu = new vCPU(vcpu_id, vm);\n        vcpu->regs.rip = 0x1000;  // Start execution at 0x1000\n        vcpu->regs.rflags = 2;     // Reserved bit always set\n        \n        vm->vcpus.push_back(vcpu);\n        std::cout << \"[VMM] Created vCPU \" << vcpu_id << \" for VM \" \n                  << vm->vm_id << std::endl;\n        return vcpu;\n    }\n    \n    // Step 7-11: Main run loop (handles VM exits)\n    void runVM(VM* vm) {\n        std::cout << \"[VMM] Starting VM \" << vm->vm_id << std::endl;\n        \n        bool running = true;\n        uint64_t exit_count = 0;\n        \n        while (running) {\n            for (auto vcpu : vm->vcpus) {\n                if (vcpu->halted) continue;\n                \n                // Step 7: Simulate VM-entry (guest runs until sensitive instr)\n                // In real HW: VMLAUNCH instruction\n                uint32_t exit_reason = simulateGuestExecution(vcpu);\n                vcpu->exit_reason = exit_reason;\n                exit_count++;\n                \n                // Step 8-9: Handle VM-exit\n                switch (exit_reason) {\n                    case EXIT_IO_IN: {\n                        auto qual = *reinterpret_cast<IOExitQual*>(&vcpu->exit_qualification);\n                        uint8_t data = device.portRead(qual.port);\n                        vcpu->regs.rax = (vcpu->regs.rax & ~0xFF) | data;\n                        std::cout << \"[VM-Exit] I/O IN  port=0x\" << std::hex << qual.port \n                                  << \" data=0x\" << (int)data << std::endl;\n                        break;\n                    }\n                    case EXIT_IO_OUT: {\n                        auto qual = *reinterpret_cast<IOExitQual*>(&vcpu->exit_qualification);\n                        uint8_t data = vcpu->regs.rax & 0xFF;\n                        device.portWrite(qual.port, data);\n                        std::cout << \"[VM-Exit] I/O OUT port=0x\" << std::hex << qual.port \n                                  << \" data=0x\" << (int)data << std::endl;\n                        break;\n                    }\n                    case EXIT_CPUID: {\n                        // Mask CPU features (hide VT-x from guest)\n                        uint32_t leaf = vcpu->regs.rax & 0xFFFFFFFF;\n                        uint32_t idx = vcpu->regs.rcx & 0xFFFFFFFF;\n                        uint32_t eax, ebx, ecx, edx;\n                        emulateCPUID(leaf, idx, &eax, &ebx, &ecx, &edx);\n                        vcpu->regs.rax = (vcpu->regs.rax & ~0xFFFFFFFF) | eax;\n                        vcpu->regs.rbx = (vcpu->regs.rbx & ~0xFFFFFFFF) | ebx;\n                        vcpu->regs.rcx = (vcpu->regs.rcx & ~0xFFFFFFFF) | ecx;\n                        vcpu->regs.rdx = (vcpu->regs.rdx & ~0xFFFFFFFF) | edx;\n                        break;\n                    }\n                    case EXIT_HLT:\n                        vcpu->halted = true;\n                        std::cout << \"[VM-Exit] HLT - vCPU \" << vcpu->id << \" halted\" << std::endl;\n                        break;\n                    case EXIT_EPT_VIOL: {\n                        auto qual = *reinterpret_cast<EPTViolationQual*>(&vcpu->exit_qualification);\n                        std::cout << \"[VM-Exit] EPT Violation GPA=0x\" << std::hex << qual.gpa << std::endl;\n                        handleEptViolation(vcpu, qual.gpa);\n                        break;\n                    }\n                    case EXIT_SHUTDOWN:\n                        running = false;\n                        std::cout << \"[VM-Exit] SHUTDOWN - VM terminating\" << std::endl;\n                        break;\n                    default:\n                        std::cout << \"[VM-Exit] Unknown exit reason: \" << exit_reason << std::endl;\n                }\n            }\n            \n            // Check if all vCPUs halted\n            bool all_halted = true;\n            for (auto vcpu : vm->vcpus) {\n                if (!vcpu->halted) { all_halted = false; break; }\n            }\n            if (all_halted) running = false;\n        }\n        \n        std::cout << \"[VMM] VM \" << vm->vm_id << \" stopped after \" \n                  << exit_count << \" VM exits\" << std::endl;\n    }\n    \nprivate:\n    // Simulate guest execution until next sensitive instruction\n    uint32_t simulateGuestExecution(vCPU* vcpu) {\n        // In real hardware, guest instructions execute natively\n        // until a VM-exit condition is hit\n        // This simulates one instruction at a time for demonstration\n        \n        VM* vm = vcpu->parent_vm;\n        uint8_t* code_ptr = &vm->guest_phys_memory[vcpu->regs.rip];\n        \n        // Simplified instruction decoder\n        uint8_t opcode = code_ptr[0];\n        \n        // IN instruction (opcode 0xE4 for imm8 port, 0xEC for DX port)\n        if (opcode == 0xE4 || opcode == 0xEC) {\n            IOExitQual qual;\n            qual.is_input = true;\n            qual.size = 1;\n            qual.string = false;\n            qual.port = (opcode == 0xE4) ? code_ptr[1] : (vcpu->regs.rdx & 0xFFFF);\n            vcpu->exit_qualification = *reinterpret_cast<uint64_t*>(&qual);\n            vcpu->regs.rip += (opcode == 0xE4) ? 2 : 1;\n            return EXIT_IO_IN;\n        }\n        \n        // OUT instruction (opcode 0xE6 for imm8, 0xEE for DX)\n        if (opcode == 0xE6 || opcode == 0xEE) {\n            IOExitQual qual;\n            qual.is_input = false;\n            qual.size = 1;\n            qual.string = false;\n            qual.port = (opcode == 0xE6) ? code_ptr[1] : (vcpu->regs.rdx & 0xFFFF);\n            vcpu->exit_qualification = *reinterpret_cast<uint64_t*>(&qual);\n            vcpu->regs.rip += (opcode == 0xE6) ? 2 : 1;\n            return EXIT_IO_OUT;\n        }\n        \n        // HLT instruction (opcode 0xF4)\n        if (opcode == 0xF4) {\n            return EXIT_HLT;\n        }\n        \n        // CPUID instruction (opcode 0x0F 0xA2)\n        if (opcode == 0x0F && code_ptr[1] == 0xA2) {\n            vcpu->regs.rip += 2;\n            return EXIT_CPUID;\n        }\n        \n        // Normal instruction → in real HW this never returns to VMM\n        // Skip past it for simulation\n        vcpu->regs.rip += getInstructionLength(code_ptr);\n        return 0;  // No exit → continue execution\n    }\n    \n    uint32_t getInstructionLength(uint8_t* code) {\n        // Simplified x86 instruction length decoder\n        // In real CPU, this is microcode\n        uint8_t op = code[0];\n        if (op == 0x48) return 4;  // REX.W + MOV\n        if ((op & 0xF0) == 0x40) return 3;  // INC/DEC reg\n        if (op == 0x90) return 1;  // NOP\n        if (op == 0xCC) return 1;  // INT3\n        if ((op & 0xFE) == 0xB0) return 2;  // MOV reg, imm8\n        if ((op & 0xFE) == 0xB8) return 5 + ((op & 1) * 4);  // MOV reg, imm32/64\n        if (op == 0x89 || op == 0x8B) return 3;  // MOV reg, reg\n        if (op == 0xEB) return 2;  // JMP short\n        if (op == 0x74 || op == 0x75) return 2;  // Jcc short\n        if (op == 0xE9) return 5;  // JMP near\n        if (op == 0xC3) return 1;  // RET\n        return 1;  // Default: assume 1 byte\n    }\n    \n    void emulateCPUID(uint32_t leaf, uint32_t idx, \n                      uint32_t* eax, uint32_t* ebx, uint32_t* ecx, uint32_t* edx) {\n        switch (leaf) {\n            case 0:  // Vendor ID\n                *eax = 1;\n                *ebx = 0x756E6547;  // \"Genu\"\n                *ecx = 0x6C65746E;  // \"ntel\"\n                *edx = 0x49656E69;  // \"ineI\"\n                break;\n            case 1:  // Feature bits\n                *eax = 0x000306C3;  // Model: Haswell\n                *ebx = 0x00100800;\n                *ecx = 0x7FFAFBBF;  // Feature flags\n                *edx = 0xBFEBFBFF;\n                // Clear VMX bit (bit 5 of ECX) → hide VT-x from guest\n                *ecx &= ~(1 << 5);\n                break;\n            default:\n                *eax = *ebx = *ecx = *edx = 0;\n        }\n    }\n    \n    void handleEptViolation(vCPU* vcpu, uint64_t gpa) {\n        uint64_t hpa = mem_mgr.translateGPA(gpa);\n        if (hpa == UINT64_MAX) {\n            // Allocate new page\n            uint64_t new_hpa = (uint64_t)new uint8_t[4096];\n            memset((void*)new_hpa, 0, 4096);\n            mem_mgr.mapPage(gpa & ~0xFFFULL, new_hpa);\n            std::cout << \"[EPT] Allocated new page for GPA 0x\" \n                      << std::hex << (gpa & ~0xFFFULL) << std::endl;\n        } else {\n            std::cout << \"[EPT] Resolved GPA 0x\" << std::hex << gpa \n                      << \" → HPA 0x\" << hpa << std::endl;\n        }\n    }\n};\n\n// Main: Demonstrate the VMM\nint main() {\n    Hypervisor vmm;\n    \n    // Create VM\n    VM* vm = vmm.createVM(64 * 1024);  // 64 KB memory\n    \n    // Create vCPU\n    vCPU* cpu = vmm.createVCPU(vm);\n    \n    // Load minimal guest code:\n    // mov al, 'H'; out 0xe9, al  (debug port output)\n    // mov al, 'i'; out 0xe9, al\n    // hlt\n    std::vector<uint8_t> code = {\n        0xB0, 0x48,             // mov al, 'H'\n        0xE6, 0xE9,             // out 0xe9, al\n        0xB0, 0x69,             // mov al, 'i'\n        0xE6, 0xE9,             // out 0xe9, al\n        0xF4                     // hlt\n    };\n    \n    vmm.loadGuestCode(vm, 0x1000, code);\n    \n    // Run VM\n    vmm.runVM(vm);\n    \n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-simple-vmm-simulator",
+      children: "Python Implementation: Simple VMM Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nSimple VMM (Virtual Machine Monitor) Simulator\nDemonstrates the core concepts of virtualization: VM creation, context switching,\nand handling VM exits for I/O operations and CPUID instructions.\n\"\"\"\n\nfrom dataclasses import dataclass, field\nfrom enum import IntEnum, auto\nfrom typing import Dict, List, Optional, Tuple\nimport struct\n\n\nclass VMExitReason(IntEnum):\n    \"\"\"Common VM exit reasons (simplified from Intel SDM).\"\"\"\n    IO_IN = 30\n    IO_OUT = 31\n    CPUID = 10\n    HLT = 12\n    EPT_VIOLATION = 48\n    MSR_READ = 31\n    MSR_WRITE = 32\n    SHUTDOWN = 7\n\n\n@dataclass\nclass RegisterFile:\n    \"\"\"x86-64 register file for a vCPU.\"\"\"\n    rax: int = 0; rbx: int = 0; rcx: int = 0; rdx: int = 0\n    rsi: int = 0; rdi: int = 0; rbp: int = 0; rsp: int = 0\n    r8: int = 0;  r9: int = 0;  r10: int = 0; r11: int = 0\n    r12: int = 0; r13: int = 0; r14: int = 0; r15: int = 0\n    rip: int = 0; rflags: int = 2  # Reserved bit 1 always set\n\n\n@dataclass\nclass IOExitQualification:\n    \"\"\"Qualification data for I/O VM-exits.\"\"\"\n    port: int = 0\n    size: int = 1      # 1, 2, or 4 bytes\n    is_input: bool = True\n    is_string: bool = False\n\n\n@dataclass\nclass EPTViolationQualification:\n    \"\"\"Qualification data for EPT violation exits.\"\"\"\n    gpa: int = 0\n    read: bool = False\n    write: bool = False\n    execute: bool = False\n\n\nclass EmulatedDevice:\n    \"\"\"Simple emulated device with port-mapped I/O.\"\"\"\n    \n    def __init__(self):\n        self.io_ports: Dict[int, int] = {\n            0x60: 0x1C,   # Keyboard: Enter key scancode\n            0xE9: 0x00,   # Debug port\n            0x3F8: 0x00,  # COM1 serial\n        }\n    \n    def port_read(self, port: int) -> int:\n        return self.io_ports.get(port, 0xFF)\n    \n    def port_write(self, port: int, data: int) -> None:\n        self.io_ports[port] = data\n        if port == 0xE9:\n            print(f\"[DEBUG PORT] '{chr(data)}' (0x{data:02x})\")\n\n\nclass MemoryManager:\n    \"\"\"Manages GPA → HPA translations (simulates EPT/NPT).\"\"\"\n    \n    def __init__(self):\n        self.gpa_to_hpa: Dict[int, int] = {}\n        # Pre-allocate memory pool\n        self.memory_pool: Dict[int, bytearray] = {}\n    \n    def alloc_page(self, gpa: int) -> int:\n        \"\"\"Allocate a physical page and map GPA to it.\"\"\"\n        if gpa in self.gpa_to_hpa:\n            return self.gpa_to_hpa[gpa]\n        \n        page_num = len(self.memory_pool)\n        hpa = page_num * 4096\n        self.memory_pool[hpa] = bytearray(4096)\n        self.gpa_to_hpa[gpa & ~0xFFF] = hpa\n        return hpa | (gpa & 0xFFF)\n    \n    def resolve(self, gpa: int) -> Tuple[int, bytearray]:\n        \"\"\"Resolve GPA to (offset, memory_region).\"\"\"\n        gpa_page = gpa & ~0xFFF\n        if gpa_page not in self.gpa_to_hpa:\n            self.alloc_page(gpa_page)\n        hpa = self.gpa_to_hpa[gpa_page]\n        mem = self.memory_pool[hpa]\n        offset = gpa & 0xFFF\n        return hpa | offset, mem\n    \n    def read_byte(self, gpa: int) -> int:\n        _, mem = self.resolve(gpa)\n        return mem[gpa & 0xFFF]\n    \n    def write_byte(self, gpa: int, data: int) -> None:\n        _, mem = self.resolve(gpa)\n        mem[gpa & 0xFFF] = data & 0xFF\n    \n    def load_code(self, gpa: int, code: List[int]) -> None:\n        for i, byte in enumerate(code):\n            self.write_byte(gpa + i, byte)\n\n\nclass VCPU:\n    \"\"\"Virtual CPU → represents a hardware thread inside a VM.\"\"\"\n    \n    def __init__(self, vcpu_id: int, vm: 'VirtualMachine'):\n        self.id = vcpu_id\n        self.vm = vm\n        self.regs = RegisterFile()\n        self.regs.rip = 0x1000  # Default entry point\n        self.halted = False\n        self.exit_reason = 0\n        self.exit_qual = 0\n    \n    def __repr__(self) -> str:\n        return f\"vCPU[{self.id}] RIP=0x{self.regs.rip:x} HALTED={self.halted}\"\n\n\nclass VirtualMachine:\n    \"\"\"A virtual machine → isolated guest environment.\"\"\"\n    \n    def __init__(self, vm_id: int, name: str, memory_size: int):\n        self.vm_id = vm_id\n        self.name = name\n        self.memory_size = memory_size\n        self.vcpus: List[VCPU] = []\n        self.state = \"CREATED\"\n    \n    def add_vcpu(self) -> VCPU:\n        vcpu = VCPU(len(self.vcpus), self)\n        self.vcpus.append(vcpu)\n        return vcpu\n    \n    def __repr__(self) -> str:\n        return f\"VM[{self.vm_id}] '{self.name}' {len(self.vcpus)} vCPUs {self.memory_size//1024}KB\"\n\n\nclass Hypervisor:\n    \"\"\"\n    Virtual Machine Monitor (VMM) → the core of virtualization.\n    Manages VMs, handles VM exits, emulates devices, and controls hardware access.\n    \"\"\"\n    \n    def __init__(self):\n        self.vms: Dict[int, VirtualMachine] = {}\n        self.devices = EmulatedDevice()\n        self.mem_mgr = MemoryManager()\n        self.next_vm_id = 1\n        self.total_exits = 0\n        print(\"[VMM] Hypervisor initialized\")\n    \n    def create_vm(self, name: str, memory_kb: int = 64) -> VirtualMachine:\n        \"\"\"Create a new virtual machine.\"\"\"\n        vm = VirtualMachine(self.next_vm_id, name, memory_kb * 1024)\n        self.vms[self.next_vm_id] = vm\n        self.next_vm_id += 1\n        print(f\"[VMM] Created VM '{name}' with {memory_kb} KB memory\")\n        return vm\n    \n    def load_guest_code(self, vm: VirtualMachine, gpa: int, code: List[int]) -> None:\n        \"\"\"Load binary code into guest physical memory.\"\"\"\n        self.mem_mgr.load_code(gpa, code)\n        print(f\"[VMM] Loaded {len(code)} bytes at GPA 0x{gpa:x}\")\n    \n    def _simulate_instruction(self, vcpu: VCPU) -> Optional[VMExitReason]:\n        \"\"\"\n        Decode and (partially) execute one instruction.\n        In real hardware, instructions run natively in VMX non-root mode.\n        Here we simulate to demonstrate VM exit conditions.\n        \"\"\"\n        code_byte = self.mem_mgr.read_byte(vcpu.regs.rip)\n        \n        # I/O instructions → always cause VM-exit\n        if code_byte == 0xE4:         # IN AL, imm8\n            port = self.mem_mgr.read_byte(vcpu.regs.rip + 1)\n            qual = IOExitQualification(port=port, size=1, is_input=True)\n            vcpu.regs.rip += 2\n            vcpu.exit_qual = qual\n            return VMExitReason.IO_IN\n            \n        elif code_byte == 0xEC:       # IN AL, DX\n            qual = IOExitQualification(port=vcpu.regs.rdx & 0xFFFF, \n                                        size=1, is_input=True)\n            vcpu.regs.rip += 1\n            vcpu.exit_qual = qual\n            return VMExitReason.IO_IN\n            \n        elif code_byte == 0xE6:       # OUT imm8, AL\n            port = self.mem_mgr.read_byte(vcpu.regs.rip + 1)\n            qual = IOExitQualification(port=port, size=1, is_input=False)\n            vcpu.regs.rip += 2\n            vcpu.exit_qual = qual\n            return VMExitReason.IO_OUT\n            \n        elif code_byte == 0xEE:       # OUT DX, AL\n            qual = IOExitQualification(port=vcpu.regs.rdx & 0xFFFF,\n                                        size=1, is_input=False)\n            vcpu.regs.rip += 1\n            vcpu.exit_qual = qual\n            return VMExitReason.IO_OUT\n        \n        # CPUID → must be intercepted to hide virtualization features\n        elif code_byte == 0x0F:\n            next_byte = self.mem_mgr.read_byte(vcpu.regs.rip + 1)\n            if next_byte == 0xA2:    # CPUID\n                vcpu.regs.rip += 2\n                return VMExitReason.CPUID\n        \n        # HLT → halt the vCPU until interrupt\n        elif code_byte == 0xF4:       # HLT\n            vcpu.regs.rip += 1\n            return VMExitReason.HLT\n        \n        # Simple ALU and data movement (no exit → run natively)\n        elif code_byte == 0xB0:       # MOV AL, imm8\n            imm = self.mem_mgr.read_byte(vcpu.regs.rip + 1)\n            vcpu.regs.rax = (vcpu.regs.rax & 0xFFFFFF00) | imm\n            vcpu.regs.rip += 2\n            \n        elif code_byte == 0xB8:       # MOV EAX, imm32\n            imm = 0\n            for i in range(4):\n                imm |= self.mem_mgr.read_byte(vcpu.regs.rip + 1 + i) << (i * 8)\n            vcpu.regs.rax = imm\n            vcpu.regs.rip += 5\n            \n        elif code_byte == 0x90:       # NOP\n            vcpu.regs.rip += 1\n            \n        elif code_byte == 0xC3:       # RET\n            vcpu.regs.rip += 1\n            return VMExitReason.SHUTDOWN\n            \n        else:\n            # Unknown or complex instruction → advance by 1 (simplified)\n            print(f\"  [WARN] Unhandled opcode 0x{code_byte:02x} at RIP=0x{vcpu.regs.rip:x}\")\n            vcpu.regs.rip += 1\n        \n        return None\n    \n    def _handle_cpuid(self, vcpu: VCPU) -> None:\n        \"\"\"Emulate CPUID instruction → mask VMX bit from guest.\"\"\"\n        leaf = vcpu.regs.rax & 0xFFFFFFFF\n        \n        # Standard CPUID leaves\n        cpu_vendor = b\"GenuineIntel\"\n        features_ecx = 0x7FFAFBBF\n        features_edx = 0xBFEBFBFF\n        \n        # Mask VMX bit (bit 5 of ECX) → hide hypervisor from guest\n        features_ecx &= ~(1 << 5)\n        \n        vcpu.regs.rax = 1              # Max leaf\n        vcpu.regs.rbx = struct.unpack('<I', cpu_vendor[0:4])[0]\n        vcpu.regs.rcx = struct.unpack('<I', cpu_vendor[8:12])[0]\n        vcpu.regs.rdx = struct.unpack('<I', cpu_vendor[4:8])[0]\n        \n        if leaf == 1:\n            vcpu.regs.rax = 0x000306C3   # Haswell model\n            vcpu.regs.rcx = features_ecx\n            vcpu.regs.rdx = features_edx\n    \n    def _handle_exit(self, vcpu: VCPU) -> None:\n        \"\"\"Handle a VM exit → the core of the VMM's work.\"\"\"\n        reason = vcpu.exit_reason\n        self.total_exits += 1\n        \n        if reason == VMExitReason.IO_IN:\n            qual: IOExitQualification = vcpu.exit_qual\n            data = self.devices.port_read(qual.port)\n            vcpu.regs.rax = (vcpu.regs.rax & ~0xFF) | data\n            print(f\"  [VM-Exit] I/O IN  port=0x{qual.port:04x} → 0x{data:02x}\")\n            \n        elif reason == VMExitReason.IO_OUT:\n            qual: IOExitQualification = vcpu.exit_qual\n            data = vcpu.regs.rax & 0xFF\n            self.devices.port_write(qual.port, data)\n            print(f\"  [VM-Exit] I/O OUT port=0x{qual.port:04x} ← 0x{data:02x}\")\n            \n        elif reason == VMExitReason.CPUID:\n            self._handle_cpuid(vcpu)\n            print(f\"  [VM-Exit] CPUID leaf=0x{vcpu.regs.rax:x}\")\n            \n        elif reason == VMExitReason.HLT:\n            vcpu.halted = True\n            print(f\"  [VM-Exit] HLT → vCPU[{vcpu.id}] halted\")\n            \n        elif reason == VMExitReason.SHUTDOWN:\n            print(f\"  [VM-Exit] SHUTDOWN → VM terminating\")\n            vcpu.vm.state = \"SHUTDOWN\"\n    \n    def run_vm(self, vm: VirtualMachine, max_instructions: int = 100) -> None:\n        \"\"\"\n        Main VM run loop.\n        In real hardware: VMLAUNCH → guest runs natively → VM-exit → handle → VMRESUME\n        \"\"\"\n        print(f\"\\n{'='*60}\")\n        print(f\"[VMM] Starting VM '{vm.name}'\")\n        print(f\"{'='*60}\")\n        \n        vm.state = \"RUNNING\"\n        instr_count = 0\n        exit_count = 0\n        \n        while vm.state == \"RUNNING\" and instr_count < max_instructions:\n            for vcpu in [v for v in vm.vcpus if not v.halted]:\n                instr_count += 1\n                \n                # Step 7: Execute one guest instruction (simulated)\n                reason = self._simulate_instruction(vcpu)\n                \n                if reason is not None:\n                    # Step 8-10: VM-exit occurred → hypervisor handles it\n                    vcpu.exit_reason = reason\n                    self._handle_exit(vcpu)\n                    exit_count += 1\n                    \n                    # Step 11: VM-entry would resume guest (automatic in loop)\n                    \n                    if vm.state == \"SHUTDOWN\":\n                        break\n        \n        print(f\"\\n{'='*60}\")\n        print(f\"[VMM] VM '{vm.name}' stopped\")\n        print(f\"     Instructions executed: {instr_count}\")\n        print(f\"     VM exits handled:      {exit_count}\")\n        print(f\"{'='*60}\\n\")\n    \n    def print_stats(self) -> None:\n        \"\"\"Print hypervisor statistics.\"\"\"\n        print(f\"\\n[VMM STATS] Total VMs:  {len(self.vms)}\")\n        print(f\"[VMM STATS] Total exits: {self.total_exits}\")\n        for vm_id, vm in self.vms.items():\n            print(f\"[VMM STATS]   VM {vm_id}: '{vm.name}' → {vm.state}\")\n\n\n# ============================================================\n# Demonstration: Creating and running a VM\n# ============================================================\n\ndef demo_basic_vm():\n    \"\"\"Demonstrate a basic VM that prints 'Hi' to the debug port.\"\"\"\n    vmm = Hypervisor()\n    vm = vmm.create_vm(\"TestVM\", memory_kb=64)\n    vcpu = vm.add_vcpu()\n    \n    # Guest code: output \"Hi\" to debug port, then halt\n    #   MOV AL, 'H'  ; 0xB0 0x48\n    #   OUT 0xE9, AL ; 0xE6 0xE9\n    #   MOV AL, 'i'  ; 0xB0 0x69\n    #   OUT 0xE9, AL ; 0xE6 0xE9\n    #   HLT          ; 0xF4\n    code = [\n        0xB0, 0x48,   # mov al, 'H'\n        0xE6, 0xE9,   # out 0xE9, al (debug port)\n        0xB0, 0x69,   # mov al, 'i'\n        0xE6, 0xE9,   # out 0xE9, al\n        0xF4          # hlt\n    ]\n    \n    vmm.load_guest_code(vm, 0x1000, code)\n    vmm.run_vm(vm)\n    vmm.print_stats()\n\n\ndef demo_cpuid_masking():\n    \"\"\"Demonstrate CPUID masking to hide VT-x from guest.\"\"\"\n    vmm = Hypervisor()\n    vm = vmm.create_vm(\"CPUID-Demo\", memory_kb=64)\n    vcpu = vm.add_vcpu()\n    \n    # Guest code: execute CPUID leaf=0, then leaf=1, then halt\n    code = [\n        0x31, 0xC0,   # xor eax, eax (leaf = 0)\n        0x0F, 0xA2,   # cpuid\n        0xB8, 0x01, 0x00, 0x00, 0x00,  # mov eax, 1\n        0x0F, 0xA2,   # cpuid\n        0xF4          # hlt\n    ]\n    \n    vmm.load_guest_code(vm, 0x1000, code)\n    vmm.run_vm(vm)\n    \n    print(f\"After CPUID leaf=0: Vendor = 0x{vcpu.regs.rbx:08x}:0x{vcpu.regs.rdx:08x}:0x{vcpu.regs.rcx:08x}\")\n    print(f\"After CPUID leaf=1: Features ECX = 0x{vcpu.regs.rcx:08x}\")\n    print(f\"VMX bit (bit 5) is {'SET' if (vcpu.regs.rcx >> 5) & 1 else 'CLEAR'} → masked by VMM\")\n\n\nif __name__ == \"__main__\":\n    print(\"=\" * 60)\n    print(\"VMM SIMULATOR → Virtualization Concepts Demo\")\n    print(\"=\" * 60)\n    \n    demo_basic_vm()\n    print(\"\\n\" + \"=\" * 60 + \"\\n\")\n    demo_cpuid_masking()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Space Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "WHY"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "VM creation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(m)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n + m)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Must allocate ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "m"
+            }), " pages (O(m)); VMCS/VMCB allocated once (O(1)); page tables for ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "n"
+            }), " entries"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "VM entry (VMLAUNCH)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware operation → loads guest state from VMCS, transitions mode"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "VM exit (hardware)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU saves guest state, loads host state → fixed microcode path"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "VM exit handling (I/O)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Dispatcher overhead is O(1); device emulation depends on device complexity ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "d"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "VM exit handling (EPT violation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(log p)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(p)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Page walk resolved by hardware; VMM may need to allocate page → tree lookup O(log p) for ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "p"
+            }), " pages"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Shadow page table sync"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each guest PT modification (n entries) requires VM exit + hypervisor update"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Nested page walk (EPT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(l) amortized"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(p)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["2D page walk: guest walks ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "l"
+            }), " levels, then EPT walks ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "l"
+            }), " levels → hardware cached in TLBs"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory ballooning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(b)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Balloon driver allocates or frees ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "b"
+            }), " pages via hypercall"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-virtualization-approaches",
+      children: "A&D: Virtualization Approaches"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Full Virtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No guest OS modification; runs legacy OSes (Windows XP, etc.); complete isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher overhead (trap-and-emulate or binary translation); slower I/O without hardware assist"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Paravirtualization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-native performance (95-98%); simpler hypervisor code; lower VM-exit rate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires modified guest OS; cannot run Windows (unless HW assist also available); driver maintenance burden"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware-assisted"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best performance (95-99% native); no guest modification; simpler VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware dependency (VT-x/AMD-V required); still some overhead (VM exits); complex CPU microcode"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Emulation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Runs any architecture (ARM on x86); useful for development and cross-platform"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Extremely slow (1-10% native); impractical for production; high CPU usage"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-in-virtualization",
+      children: "Edge Cases in Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "1. VM Escape (CVE-2019-2446, CVE-2021-22555)"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The most severe virtualization vulnerability → a guest OS breaks out of the hypervisor to execute code on the host."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Attack Vectors:\n  - Exploiting hypervisor bugs in VM exit handling\n  - CVE-2021-22555: Netfilter heap overflow in Linux → host kernel compromise\n  - CVE-2019-2446: Intel VT-x VMCS caching issue\n  - Virtio driver vulnerabilities (buffer overflow in shared ring)\n  \nMitigations:\n  - Keep hypervisor updated (apply security patches)\n  - Enable KVM hardening (seccomp, SELinux)\n  - Use nested virtualization for extra isolation\n  - Enable Intel CET (Control-flow Enforcement Technology)\n  - Avoid assigning passthrough devices to untrusted VMs\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "2. Resource Overcommitment"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Assigning more total virtual resources than physical resources available."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Memory Overcommit:\n  Host: 32 GB physical\n  VM1:  16 GB\n  VM2:  16 GB\n  VM3:  16 GB\n  Total: 48 GB virtual → 32 GB physical → 150% overcommit\n\nRisks:\n  - Balloon driver contention (VMs fight for memory)\n  - Swap death (host swaps excessively)\n  - OOM killer termination of VMs or host processes\n  - Performance collapse at high memory pressure\n  \nSolutions:\n  - Memory ballooning (cooperative memory reclaim)\n  - Transparent page sharing (KSM → Kernel Same-page Merging)\n  - Hot-add memory (dynamically add memory to VMs)\n  - Admission control (reserve minimum guarantees)\n  \nCPU Overcommit:\n  Host:  4 physical cores (8 with HT)\n  VM1:   4 vCPUs\n  VM2:   4 vCPUs\n  VM3:   4 vCPUs\n  Total: 12 vCPUs → 8 logical cores → 150% overcommit\n\nRisks:\n  - CPU ready time (vCPU waits for physical CPU)\n  - Scheduler overhead (context switching between vCPUs)\n  - Cache thrashing (vCPUs competing for L2/L3)\n  - Cost of VM exits increases with more vCPUs\n\nSolutions:\n  - Limit vCPU:pCPU ratio (typically 4:1 max)\n  - Use CPU affinity (pin vCPUs to specific pCPUs)\n  - Enable hyperthreading awareness\n  - Monitor %ready and %co-stop metrics\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "3. NUMA (Non-Uniform Memory Access) Awareness"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In multi-socket systems, memory access time depends on which socket the memory is on."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "NUMA Node 0              NUMA Node 1\n┌──────────────┐        ┌──────────────┐\n│ CPU 0-3      │        │ CPU 4-7      │\n│ Memory 16 GB │ Fast   │ Memory 16 GB │\n│              │◄──────►│              │\n└──────────────┘  Slow  └──────────────┘\n   │                         │\n   │ Local: ~100ns          │ Local: ~100ns\n   │ Remote: ~180ns         │ Remote: ~180ns\n\nVM with 4 vCPUs pinned to Node 0, but memory allocated on Node 1:\n  → 80% performance penalty for memory accesses!\n\nBest practice: pin VM vCPUs and memory to same NUMA node.\nUse numactl to check:  numactl --hardware\nUse virsh to pin:      virsh vcpupin <vm> <vcpu> <pCPU>\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "4. Timekeeping in VMs"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Guest OS expects a monotonically increasing time source. Virtualization breaks this."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Problem:\n  - Guest reads TSC (Time Stamp Counter)\n  - VM exit occurs → guest paused\n  - VM entry resumes → guest reads TSC again\n  - TSC may go BACKWARDS (if migrated or on different pCPU)\n  - Result: Kernel panic (\"time went backwards\")\n\nSolutions:\n  - Invariant TSC (hardware guarantees TSC monotonicity across pCPUs)\n  - TSC offsetting (hypervisor writes offset to VMCS)\n  - Paravirtualized clock (kvmclock, Xen timers)\n  - HPET emulation (slow, accurate, but expensive)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "5. Live Migration"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Moving a running VM from one physical host to another with zero downtime."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Challenges:\n  - Memory state: ~2-8 GB must be transferred while VM runs\n  - Network state: TCP connections must survive IP change\n  - Storage: Must be shared (NAS, SAN) or replicated\n  - CPU features: Both hosts must support same feature set\n\nPre-copy Migration Algorithm:\n  Step 1: Transfer all memory pages to target host\n  Step 2: VM continues running on source; dirtied pages tracked\n  Step 3: Iteratively transfer only dirty pages (convergence)\n  Step 4: When dirty rate < threshold → stop VM\n  Step 5: Transfer final CPU state and last dirty pages\n  Step 6: Resume VM on target host\n  Total downtime: typically 20-100ms for production workloads\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "2-hypervisor-types--type-1-vs-type-2",
+      children: "2. Hypervisor Types → Type 1 vs Type 2"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "21-definition-and-architecture",
+      children: "2.1 Definition and Architecture"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hypervisor"
+      }), " (or ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Virtual Machine Monitor, VMM"
+      }), ") is the software layer that abstracts physical hardware into virtual resources and manages multiple VMs. Hypervisors are classified into two types based on whether they run directly on hardware or on top of an operating system."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-apartment-building-vs-hotel",
+      children: "Real-World Analogy: Apartment Building vs Hotel"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Type 1 Hypervisor → Apartment Building"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["You (the hypervisor) ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "own"
+      }), " the entire building. You directly manage:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Water and electricity (hardware resources)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Who gets which apartment (VM allocation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Common areas (shared caches, memory bus)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Security (no landlord above you)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Type 2 Hypervisor → Hotel"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The hotel management company = ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "host OS"
+      }), ". You (the hypervisor) are just one ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "department"
+      }), " within the hotel:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Hotel management controls the building (host OS controls hardware)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You need approval for major changes (system calls to host OS)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "You compete with other departments for resources (other applications)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If hotel management goes bankrupt (host OS crashes), all departments shut down"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "   Type 1 (Bare-Metal)            Type 2 (Hosted)\n   ┌──────────────────┐           ┌──────────────────┐\n   │  VM1  │  VM2     │           │  VM1  │  VM2     │\n   │       │          │           │       │          │\n   ├──────────────────┤           ├──────────────────┤\n   │   Hypervisor     │           │   Hypervisor     │\n   │   (ESXi, KVM)    │           │ (VirtualBox,     │\n   │                  │           │  Workstation)    │\n   ├──────────────────┤           ├──────────────────┤\n   │   Hardware       │           │   Host OS        │\n   │   (CPU, Mem, IO) │           │   (Linux, Win)   │\n   └──────────────────┘           ├──────────────────┤\n                                  │   Hardware       │\n                                  └──────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "22-type-1-bare-metal-hypervisor",
+      children: "2.2 Type 1: Bare-Metal Hypervisor"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The hypervisor INSTALLS DIRECTLY onto the hardware. It acts as a lightweight OS specifically designed to run VMs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "┌─────────────────────────────────────────────────────────────────┐\n│                     VIRTUAL MACHINE 1                           │\n│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │\n│  │ Apache HTTPD │  │  PostgreSQL  │  │  SSH Daemon  │         │\n│  │              │  │              │  │              │         │\n│  ├──────────────┤  ├──────────────┤  ├──────────────┤         │\n│  │      Ubuntu 22.04 LTS Guest OS     │                       │\n│  │      (Custom kernel, full OS)      │                       │\n│  ├──────────────┬──────────────┬──────┴───────────             │\n│  │ virtio-blk  │ virtio-net   │ vCPU x4         │             │\n│  └──────────────┴──────────────┴─────────────────┘             │\n│                                                                 │\n│  VIRTUAL MACHINE 2                  VIRTUAL MACHINE 3          │\n│  ┌──────────────────┐              ┌──────────────────┐       │\n│  │ Windows Server   │              │ Rocky Linux 9    │       │\n│  │ 2022             │              │ (Minimal)        │       │\n│  │ MS SQL + IIS     │              │ Nginx + Node.js  │       │\n│  └──────────────────┘              └──────────────────┘       │\n├─────────────────────────────────────────────────────────────────┤\n│                     HYPERVISOR LAYER                            │\n│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────────┐  │\n│  │ CPU Sched│  │ Mem Mgmt │  │ IO Stack │  │ VM Mgmt API   │  │\n│  │ (SMP)    │  │ (SLAB)   │  │ (vSwitch)│  │ (REST/CLI)    │  │\n│  └──────────┘  └──────────┘  └──────────┘  └───────────────┘  │\n│  ┌──────────┐  ┌──────────┐  ┌──────────┐                     │\n│  │ Driver   │  │ Driver   │  │ Driver   │                     │\n│  │ (NIC)    │  │ (HBA)    │  │ (GPU)    │                     │\n│  └──────────┘  └──────────┘  └──────────┘                     │\n├─────────────────────────────────────────────────────────────────┤\n│                     PHYSICAL HARDWARE                           │\n│  ┌─────────────────────────────────────────────────────────┐   │\n│  │ CPU  │ CPU  │ CPU  │ CPU  │  RAM  │ NIC │ HBA │ GPU    │   │\n│  │ x86  │ x86  │ x86  │ x86  │ 256GB │ 25G │ FC  │ A100   │   │\n│  │ 3.2G │ 3.2G │ 3.2G │ 3.2G │ DDR5  │      │     │        │   │\n│  └─────────────────────────────────────────────────────────┘   │\n└─────────────────────────────────────────────────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "how-type-1-hypervisors-handle-hardware",
+      children: "How Type 1 Hypervisors Handle Hardware"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Since there is NO host OS, the hypervisor must include:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Device drivers"
+        }), " → Native drivers for NICs, HBAs, GPUs, storage controllers"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CPU scheduler"
+        }), " → Schedules vCPUs across physical CPUs (typically a modified lottery or CFS scheduler)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory manager"
+        }), " → Allocates and reclaims guest memory; handles NUMA"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "I/O stack"
+        }), " → Virtual switch (vSwitch), storage stack, network stack"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Management interface"
+        }), " → CLI, REST API, or GUI for VM lifecycle"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi",
+      children: "Steps to Create a VM on Type 1 Hypervisor (VMware ESXi)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1:  Physical server boots → BIOS/UEFI → Boot loader loads ESXi kernel\nStep 2:  ESXi kernel initializes hardware (enumerate PCI devices, load drivers)\nStep 3:  ESXi vmkernel creates VMkernel (the \"OS\" of the hypervisor)\nStep 4:  VMkernel starts management services (hostd, vpxa)\nStep 5:  Admin connects via vSphere client or API\nStep 6:  Admin defines VM spec: vCPUs (quantity and cores), memory (GB), disks (provisioning type)\nStep 7:  VMkernel allocates memory, creates VMCS structures, initializes vCPU contexts\nStep 8:  VMkernel creates virtual devices (VMXNET3 NIC, LSI Logic SAS controller)\nStep 9:  VMkernel locates ISO or PXE boot image\nStep 10: VMkernel issues VMLAUNCH → Guest OS boots inside VM\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "examples-of-type-1-hypervisors",
+      children: "Examples of Type 1 Hypervisors"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Hypervisor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Architecture"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Features"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VMware ESXi"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proprietary vmkernel (~200MB)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DRS (DRS), vMotion, HA, FT, vSAN, NSX"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Microsoft Hyper-V"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microkernel (runs on Windows Hyper-V role)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Live migration, Shielded VMs, nested virtualization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "KVM (Linux)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel module; turns Linux into Type 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open source; part of Linux kernel; used in OpenStack, AWS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Xen"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microkernel design; Dom0 model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS Nitro legacy; paravirtualization pioneer; now OpenXT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Citrix Hypervisor"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Based on Xen"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GPU passthrough, XenMotion, Intel MKTME"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-type-1-hypervisors",
+      children: "A&D: Type 1 Hypervisors"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct hardware access → near-native (95-99%)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Must include own device drivers (driver compatibility matrix)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Isolation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each VM has its own kernel; no host OS to compromise"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor is the single point of failure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Resource"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No host OS overhead (Linux: ~256MB, Windows: ~2GB → wasted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Physical hardware fully dedicated to VMs; no desktop use while VM runs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise features (live migration, HA, DRS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires separate management server; higher complexity"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Smaller attack surface (VMkernel ~200MB vs Linux millions of lines)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fewer security tools available; specialized expertise required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For data centers: better TCO (consolidation ratios 10:1 to 50:1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Licensing can be expensive (vSphere); specialized hardware needed"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "23-type-2-hosted-hypervisor",
+      children: "2.3 Type 2: Hosted Hypervisor"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The hypervisor runs as an APPLICATION inside a full operating system. The host OS manages all hardware; the hypervisor is just another process."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "architecture-diagram-1",
+      children: "Architecture Diagram"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "┌─────────────────────────────────────────────────────────────────┐\n│                         USER SPACE                              │\n│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐            │\n│  │ VirtualBox  │  │  VMware     │  │  Firefox    │            │\n│  │ VM1: Win10  │  │  Workstation│  │  (browser)  │            │\n│  │ VM2: Ubuntu │  │  VM: Fedora │  │             │            │\n│  └─────────────┘  └─────────────┘  └─────────────┘            │\n├─────────────────────────────────────────────────────────────────┤\n│                      HOST OPERATING SYSTEM                      │\n│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────────┐  │\n│  │ Process  │  │ Memory   │  │ File     │  │ Network Stack │  │\n│  │ Scheduler│  │ Manager  │  │ System   │  │ (TCP/IP)      │  │\n│  └──────────┘  └──────────┘  └──────────┘  └───────────────┘  │\n│  ┌──────────────────────────────────────────────────────────┐   │\n│  │                 Device Drivers                            │   │\n│  │  (NVIDIA, Intel, Realtek, AHCI, NVMe, USB, Audio)        │   │\n│  └──────────────────────────────────────────────────────────┘   │\n├─────────────────────────────────────────────────────────────────┤\n│                     PHYSICAL HARDWARE                           │\n│  ┌─────────────────────────────────────────────────────────┐   │\n│  │ CPU  │ GPU  │ RAM  │ SSD  │ NIC  │ USB  │ Audio │     │   │\n│  └─────────────────────────────────────────────────────────┘   │\n└─────────────────────────────────────────────────────────────────┘\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "how-type-2-hypervisors-handle-io",
+      children: "How Type 2 Hypervisors Handle I/O"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Since the host OS owns all hardware, Type 2 hypervisors face a critical challenge:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "App → Host OS (syscall) → Host Kernel → Driver → Hardware\n\nVM → Type2 Hypervisor (emulate) → Host OS (syscall) → Host Kernel → Driver → Hardware\n\nTwo layers of scheduling:\n  1. Host OS schedules hypervisor process (like any other app)\n  2. Hypervisor schedules guest vCPUs\n  → Double scheduling overhead! \n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-to-create-a-vm-on-type-2-hypervisor-virtualbox",
+      children: "Steps to Create a VM on Type 2 Hypervisor (VirtualBox)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1:  Host OS boots normally (Windows/Linux/macOS)\nStep 2:  User launches VirtualBox application\nStep 3:  VirtualBox loads VMM driver (can be kernel module for acceleration)\nStep 4:  User clicks \"New\" → fills in VM name, OS type, memory size, disk size\nStep 5:  VirtualBox creates VM configuration file (.vbox) and virtual disk (.vdi)\nStep 6:  VirtualBox allocates guest memory (host memory for VM)\nStep 7:  VirtualBox opens pass-through to host kernel for VT-x (if available)\nStep 8:  User clicks \"Start\" → VirtualBox executes VMLAUNCH (or emulates if no VT-x)\nStep 9:  Guest OS boots; every sensitive instruction → VM-exit → VirtualBox handles → VMRESUME\nStep 10: User sees VM window; interacts through GUI integration\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "examples-of-type-2-hypervisors",
+      children: "Examples of Type 2 Hypervisors"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Hypervisor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Host OS Support"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Features"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Oracle VirtualBox"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Win/Linux/macOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free, open-source, Guest Additions, snapshot, USB passthrough"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VMware Workstation Pro"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Win/Linux"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Snapshots, clones, vSphere integration, Unity mode"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VMware Fusion"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mac-Windows integration, Apple Silicon support (ARM)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Parallels Desktop"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows on Mac with Coherence mode, DirectX 11 support"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "QEMU (without KVM)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Win/Linux/macOS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full emulation (multiple architectures), open source"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "UTM"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "macOS (Apple Silicon)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "QEMU-based, ARM/x86 emulation on M1/M2/M3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "ad-type-2-hypervisors",
+      children: "A&D: Type 2 Hypervisors"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Usability"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easy installation (like any app); GUI for VM management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot use VM while host is off; shares desktop resources"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All host OS devices automatically available; no driver issues"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Device access goes through host OS → double overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Flexibility"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Run VMs alongside regular applications; snapshots are user-friendly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not suitable for production servers (5-20% overhead vs Type 1)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free options (VirtualBox); no dedicated hardware needed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Licensing cost + host OS license (if Windows)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Development"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ideal for dev/test: quick VM creation, snapshots, revert"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance constraints limit it to lightweight workloads"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Host OS provides security (firewall, AV, updates)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Larger attack surface (host OS + hypervisor); host compromise = all VMs compromised"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "24-type-1-vs-type-2-comprehensive-comparison",
+      children: "2.4 Type 1 vs Type 2: Comprehensive Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type 1 (Bare-Metal)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Type 2 (Hosted)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Architecture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor on bare hardware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor on host OS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Host OS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (hypervisor is OS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required (Windows, Linux, macOS)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scheduling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One level (hypervisor schedules vCPUs on pCPUs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two levels (host OS schedules hypervisor process; hypervisor schedules vCPUs)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95-99% of native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80-95% of native"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O latency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~2-10Î¼s"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~10-100Î¼s (extra context switches)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "<100 MB for hypervisor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "256 MB - 2 GB (host OS) + application memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Concurrent apps"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (all hardware for VMs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (VMs + regular apps share)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CLI, REST API, vCenter, SCVMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GUI application (VirtualBox, Workstation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Live migration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (vMotion, Hyper-V Live Migration)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited or none"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "HA / FT"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (vSphere HA, Hyper-V Replica)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "GPU passthrough"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (vGPU, SR-IOV, MxGPU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited (Workstation has some support)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use cases"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data center, cloud, production"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dev/test, desktop virtualization, learning"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Boot time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minutes (hypervisor + VMs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minutes (host OS + hypervisor + VMs)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires certified hardware (HCL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any hardware supported by host OS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security posture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Minimal attack surface"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Larger attack surface (host OS adds vectors)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Examples"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMware ESXi, KVM, Hyper-V, Xen"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VirtualBox, VMware Workstation, QEMU"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise licensing ($)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Free or low-cost desktop licensing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "performance-impact-type-1-vs-type-2",
+      children: "Performance Impact: Type 1 vs Type 2"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Scenario: Web server benchmark (Requests per second)\n\nNative Linux:          ━━━━━━━━━━━━━━━━━━━━━━━━━━ 10,000 req/s\nType 1 (KVM):          ━━━━━━━━━━━━━━━━━━━━━━━━━   9,500 req/s (95%)\nType 1 (ESXi):         ━━━━━━━━━━━━━━━━━━━━━━━━━   9,300 req/s (93%)\nType 2 (VirtualBox):   ━━━━━━━━━━━━━━━━━━━━        7,000 req/s (70%)\nType 2 (Workstation):  ━━━━━━━━━━━━━━━━━━━━━      8,200 req/s (82%)\nEmulation (QEMU):      ━━━                           800 req/s  (8%)\n\nWhy the gap?\n  - Type 2 must go through host OS for EVERY operation\n  - Double scheduling: host process scheduler + guest vCPU scheduler\n  - I/O path: Guest → Hypervisor → Host OS → Driver → Hardware\n  - Cache pollution: competing with host applications\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "25-code-type-1-vs-type-2-simulation-in-python",
+      children: "2.5 Code: Type 1 vs Type 2 Simulation in Python"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nSimulates the scheduling and overhead differences between\nType 1 (bare-metal) and Type 2 (hosted) hypervisors.\n\"\"\"\n\nimport time\nimport threading\nfrom collections import deque\nfrom dataclasses import dataclass, field\nfrom enum import Enum\nimport random\n\n\nclass HypervisorType(Enum):\n    TYPE1 = \"Bare-Metal\"\n    TYPE2 = \"Hosted\"\n\n\nclass TaskState(Enum):\n    READY = \"ready\"\n    RUNNING = \"running\"\n    WAITING = \"waiting\"\n    DONE = \"done\"\n\n\n@dataclass\nclass Task:\n    id: int\n    work_units: int\n    priority: int = 1\n    state: TaskState = TaskState.READY\n    time_in_system: float = 0.0\n    time_on_cpu: float = 0.0\n    \n    def __repr__(self):\n        return f\"Task[{self.id}] work={self.work_units} state={self.state.value}\"\n\n\n@dataclass\nclass vCPU:\n    id: int\n    vm_id: int\n    tasks: list = field(default_factory=list)\n    \n    def __repr__(self):\n        return f\"vCPU[{self.id}] (VM {self.vm_id}) tasks={len(self.tasks)}\"\n\n\nclass CPU:\n    \"\"\"Physical CPU core.\"\"\"\n    \n    def __init__(self, id, speed=1.0):\n        self.id = id\n        self.speed = speed  # Work units per tick\n    \n    def execute(self, task: Task) -> bool:\n        \"\"\"Execute one tick on a task. Returns True if task completes.\"\"\"\n        work_done = self.speed\n        task.work_units -= work_done\n        task.time_on_cpu += 1.0 / self.speed\n        return task.work_units <= 0\n\n\nclass HypervisorScheduler:\n    \"\"\"\n    Core scheduler that differs between Type 1 and Type 2.\n    Type 1: direct scheduling of vCPUs on pCPUs.\n    Type 2: host OS schedules hypervisor thread, which then schedules vCPUs.\n    \"\"\"\n    \n    def __init__(self, htype: HypervisorType, num_physical_cores=4):\n        self.htype = htype\n        self.cpus = [CPU(i) for i in range(num_physical_cores)]\n        self.vcpu_queue = deque()\n        self.completed_tasks = []\n        self.current_time = 0.0\n        self.overhead_type2 = 0.3  # 30% overhead for Type 2\n        \n    def add_vcpu(self, vcpu: vCPU):\n        \"\"\"Register a vCPU for scheduling.\"\"\"\n        self.vcpu_queue.append(vcpu)\n    \n    def _get_host_overhead(self) -> float:\n        \"\"\"Type 2 has additional overhead from host OS scheduling.\"\"\"\n        if self.htype == HypervisorType.TYPE2:\n            # Simulate host OS taking CPU time for its own processes\n            return random.uniform(0, self.overhead_type2)\n        return 0.0\n    \n    def _schedule_round_robin(self):\n        \"\"\"Simple round-robin scheduler for vCPUs on pCPUs.\"\"\"\n        tick_results = []\n        host_overhead = self._get_host_overhead()\n        \n        # Type 2: host OS preempts hypervisor (adds latency)\n        if self.htype == HypervisorType.TYPE2 and host_overhead > 0.1:\n            # Simulate host scheduling delay\n            pass  # Would add to time but skip execution\n        \n        assigned = 0\n        for cpu in self.cpus:\n            if not self.vcpu_queue:\n                break\n            \n            vcpu = self.vcpu_queue.popleft()\n            \n            # Find a ready task on this vCPU\n            for task in vcpu.tasks:\n                if task.state == TaskState.READY:\n                    task.state = TaskState.RUNNING\n                    completed = cpu.execute(task)\n                    \n                    if completed:\n                        task.state = TaskState.DONE\n                        task.time_in_system = self.current_time\n                        self.completed_tasks.append(task)\n                    else:\n                        task.state = TaskState.READY\n                    break\n            \n            self.vcpu_queue.append(vcpu)\n            assigned += 1\n        \n        return assigned\n    \n    def run_tick(self) -> int:\n        \"\"\"Run one scheduling tick. Returns number of tasks worked on.\"\"\"\n        self.current_time += 1.0\n        return self._schedule_round_robin()\n    \n    def get_stats(self):\n        \"\"\"Return scheduling statistics.\"\"\"\n        avg_completion = 0\n        if self.completed_tasks:\n            avg_completion = sum(t.time_in_system for t in self.completed_tasks) / len(self.completed_tasks)\n        \n        return {\n            \"type\": self.htype.value,\n            \"tasks_completed\": len(self.completed_tasks),\n            \"avg_completion_time\": round(avg_completion, 2),\n            \"time_elapsed\": round(self.current_time, 2),\n        }\n\n\nclass VMM:\n    \"\"\"Virtual Machine Manager → the main hypervisor abstraction.\"\"\"\n    \n    def __init__(self, name, htype=HypervisorType.TYPE1, num_cores=4):\n        self.name = name\n        self.htype = htype\n        self.scheduler = HypervisorScheduler(htype, num_cores)\n        self.vms = []\n        self.task_counter = 0\n        \n    def create_vm(self, name, vcpus=2, tasks_per_vcpu=3):\n        \"\"\"Create a VM with vCPUs and tasks.\"\"\"\n        vm_tasks = []\n        for v in range(vcpus):\n            vcpu = vCPU(id=v, vm_id=len(self.vms))\n            for t in range(tasks_per_vcpu):\n                work = random.randint(5, 20)\n                task = Task(id=self.task_counter, work_units=work)\n                self.task_counter += 1\n                vcpu.tasks.append(task)\n                vm_tasks.append(task)\n            self.scheduler.add_vcpu(vcpu)\n        \n        self.vms.append({\"name\": name, \"tasks\": vm_tasks})\n        return vm_tasks\n    \n    def run(self, ticks=100):\n        \"\"\"Run the VMM for a given number of scheduling ticks.\"\"\"\n        print(f\"\\n[{self.name} ({self.htype.value})] Running for {ticks} ticks...\")\n        \n        for t in range(ticks):\n            assigned = self.scheduler.run_tick()\n            if not assigned and all(t.state == TaskState.DONE for vm in self.vms for t in vm[\"tasks\"]):\n                break\n        \n        stats = self.scheduler.get_stats()\n        print(f\"[{self.name}] Completed: {stats['tasks_completed']} tasks\")\n        print(f\"[{self.name}] Avg completion: {stats['avg_completion_time']} ticks\")\n        return stats\n\n\ndef simulate_comparison():\n    \"\"\"Run side-by-side comparison of Type 1 vs Type 2.\"\"\"\n    print(\"=\" * 60)\n    print(\"TYPE 1 vs TYPE 2 HYPERVISOR SIMULATION\")\n    print(\"=\" * 60)\n    \n    # Type 1 → bare-metal\n    vmm_type1 = VMM(\"ESXi\", HypervisorType.TYPE1, num_cores=4)\n    vmm_type1.create_vm(\"WebServer\", vcpus=2, tasks_per_vcpu=4)\n    vmm_type1.create_vm(\"Database\", vcpus=2, tasks_per_vcpu=4)\n    stats1 = vmm_type1.run(ticks=100)\n    \n    # Type 2 → hosted (same workload)\n    vmm_type2 = VMM(\"VirtualBox\", HypervisorType.TYPE2, num_cores=4)\n    vmm_type2.create_vm(\"WebServer\", vcpus=2, tasks_per_vcpu=4)\n    vmm_type2.create_vm(\"Database\", vcpus=2, tasks_per_vcpu=4)\n    stats2 = vmm_type2.run(ticks=100)\n    \n    print(\"\\n\" + \"=\" * 60)\n    print(\"COMPARISON RESULTS\")\n    print(\"=\" * 60)\n    print(f\"{'Metric':<30} {'Type 1 (ESXi)':<18} {'Type 2 (VBox)':<18}\")\n    print(\"-\" * 60)\n    print(f\"{'Avg completion time (ticks)':<30} {stats1['avg_completion_time']:<18} {stats2['avg_completion_time']:<18}\")\n    print(f\"{'Tasks completed':<30} {stats1['tasks_completed']:<18} {stats2['tasks_completed']:<18}\")\n    print(f\"{'Effective throughput':<30} {stats1['tasks_completed']/stats1['time_elapsed']:<18.2f} {stats2['tasks_completed']/stats2['time_elapsed']:<18.2f}\")\n    print(f\"{'Scheduling overhead':<30} {'Minimal':<18} {'~30% extra':<18}\")\n    \n    pct = (1 - stats2['avg_completion_time'] / stats1['avg_completion_time']) * 100\n    print(f\"\\n→ Type 2 is {abs(pct):.0f}% slower than Type 1 for equivalent workload\")\n    print(f\"→ Due to: double scheduling + host OS overhead + cache interference\")\n\n\nif __name__ == \"__main__\":\n    simulate_comparison()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "3-full-virtualization-vs-paravirtualization-vs-hardware-assisted",
+      children: "3. Full Virtualization vs Paravirtualization vs Hardware-Assisted"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "31-the-spectrum-of-virtualization-techniques",
+      children: "3.1 The Spectrum of Virtualization Techniques"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "These three approaches represent the evolution of virtualization from pure software solutions to hardware-accelerated ones. Understanding their differences is critical for system design and performance tuning."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-interpreting-languages",
+      children: "Real-World Analogy: Interpreting Languages"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Full Virtualization"
+      }), " = A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "human interpreter"
+      }), " who sits between two people speaking different languages. The interpreter doesn't modify what either person says — they just translate every utterance. The speakers don't know the interpreter exists (unmodified guest)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Paravirtualization"
+      }), " = Both people learn ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "a common subset vocabulary"
+      }), " and use it for all communication. They still speak different languages, but for certain known-critical words, they explicitly use the shared terms. This is faster because no translation is needed for those words."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hardware-Assisted"
+      }), " = A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "telephone line with automatic translation hardware"
+      }), " built in. The basic conversation flows through the hardware without interpretation. Only complex phrases need the human interpreter."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "                     Guest OS Modification Required?\n                     +---------+\n                     |   YES   |          NO\n                     |    |    |          |\n               Paravirtualization   +-----+-----+\n                (Xen PV, virtio)    |            |\n                                    |            |\n                               Full Virt.   Hardware-Assisted\n                               (Binary      (VT-x, AMD-V)\n                                Translate)   Automatic traps\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "32-full-virtualization",
+      children: "3.2 Full Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The hypervisor presents an EXACT copy of the underlying hardware to an UNMODIFIED guest OS. The guest believes it's running on bare metal."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "binary-translation-vmwares-original-approach",
+      children: "Binary Translation (VMware's Original Approach)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Before Intel VT-x (2005), VMware used ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "binary translation"
+      }), " to solve the x86 virtualization problem (non-trapping sensitive instructions)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Original Guest Code (x86):\n  Address  |  Instruction            |  Problem\n  ---------+-------------------------+----------------------\n  0x1000   |  popf                   |  Sensitive -- modifies IF flag\n  0x1001   |  mov eax, [ebx]        |  Safe -- no virtualization issue\n  0x1004   |  sgdt [mem]            |  Sensitive -- reads GDTR base\n  0x1007   |  cli                    |  Sensitive -- disables interrupts\n  0x1008   |  add eax, ebx          |  Safe\n  0x100A   |  iret                   |  Sensitive -- returns from interrupt\n  0x100B   |  mov cr3, eax          |  Sensitive -- modifies page table base\n\nTranslated Code (executed by CPU):\n  Address  |  Instruction\n  ---------+-------------------------\n  0x1000   |  call bt_emulate_popf  -> Jump to VMM handler for popf\n  0x1005   |  mov eax, [ebx]        (unchanged -- safe)\n  0x1008   |  call bt_emulate_sgdt  -> Jump to VMM handler for sgdt\n  0x100C   |  call bt_emulate_cli   -> Jump to VMM handler for cli\n  0x1010   |  add eax, ebx          (unchanged -- safe)\n  0x1012   |  call bt_emulate_iret  -> Jump to VMM handler for iret\n  0x1016   |  call bt_emulate_cr3   -> Jump to VMM handler for mov cr3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "trap-and-emulate-the-classical-model",
+      children: "Trap-and-Emulate (The Classical Model)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The gold standard for virtualizable architectures. The guest runs at a lower privilege level (Ring 1), and privileged instructions automatically trap to the VMM."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "steps-for-trap-and-emulate-correctly-virtualizable-architecture",
+      children: "Steps for Trap-and-Emulate (Correctly Virtualizable Architecture)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Step 1:  VMM sets up CPU in a lower privilege ring (Ring 1) for the guest\nStep 2:  VMM installs trap handlers for all privileged instructions\nStep 3:  VMM transfers control to guest OS entry point (VM entry)\nStep 4:  Guest executes non-privileged code at full speed (no traps)\nStep 5:  Guest executes a privileged instruction:\n         - e.g., HLT (halt CPU until interrupt)\n         - e.g., IN/OUT (port I/O)\n         - e.g., MOV to CR3 (change page table)\nStep 6:  CPU detects instruction is privileged -> raises general protection fault (#GP)\nStep 7:  CPU vectors to VMM's trap handler (Ring 0)\nStep 8:  VMM reads trap reason (from exception vector and error code)\nStep 9:  VMM emulates the privileged instruction:\n         - HLT: Mark vCPU as halted; schedule other tasks\n         - IN:  Read from emulated device; return data to guest registers\n         - MOV CR3: Validate new page table; update shadow page tables\nStep 10: VMM modifies CPU context to reflect the instruction's effect\nStep 11: VMM executes IRET (return from interrupt) to resume guest at next instruction\nStep 12: Guest continues execution, unaware of the trap+emulate cycle\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trap-and-emulate-guest-os-enabling-interrupts",
+      children: "Dry Run: Trap-and-Emulate (Guest OS enabling interrupts)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "CPU Mode"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Instruction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key State"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM (Ring 0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Setup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set guest CPL=1; install trap handlers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMCS_VCPU = all zeros"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-> Guest (Ring 1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "sti"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Try to set interrupt flag"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IF=0 currently (interrupts disabled)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-> CPU detects"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "sti is privileged"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generates #GP (exception 13)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error code = 0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-> VMM (Ring 0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trap handler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Save guest RIP, CS, RFLAGS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Save: RIP=0x1000, CS=0x08, RFLAGS=0x202"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Switch table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Update EPT permissions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT changes for related MMIO region"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Emulate sti"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set vCPU.RFLAGS.IF = 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IF=1 in virtual state"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Update VM state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write new RFLAGS to VMCS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMCS.guest.rflags.IF = 1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IRET"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Return to guest at RIP+1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RIP=0x1001"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-> Guest (Ring 1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continues normally"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RFLAGS.IF=1 (interrupts now enabled)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "33-paravirtualization",
+      children: "3.3 Paravirtualization"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The guest OS is MODIFIED to replace sensitive instructions with explicit ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "hypercalls"
+      }), " — direct calls into the hypervisor. This eliminates the need for traps."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "how-paravirtualization-works",
+      children: "How Paravirtualization Works"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Normal OS (unmodified):            Paravirtualized OS (modified):\n+--------------------+             +--------------------+\n| disable_interrupts()|             | disable_interrupts()|\n|   cli              |  ---> trap  |   __hypercall(      |\n|                    |             |     HC_VCPU_IRQ,    |  ---> direct call\n|                    |             |     DISABLE)        |        to VMM\n|                    |             |                    |\n+--------------------+             +--------------------+\n       |                                  |\n       v                                  v\n  [Trap to VMM]                      [Call VMM directly]\n  CPU saves state (~200 cycles)      No trap -- just function call (~20 cycles)\n  VMM handles                        VMM handles\n  VMRESUME (~200 cycles)             Return (~10 cycles)\n  ---------------------              ---------------------\n  Total: ~400 cycles overhead        Total: ~30 cycles overhead\n  -> 13x FASTER with paravirtualization!\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "key-paravirtualization-techniques",
+      children: "Key Paravirtualization Techniques"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Normal OS"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Paravirtualized OS"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "mov cr3, eax (load page table)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hypercall:"
+            }), " HYPERVISOR_mmuext_op() to update page tables"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Interrupts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "cli/sti (disable/enable)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Event channel:"
+            }), " Async notification; guest acknowledges via hypercall"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RDTSC instruction"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "HYPERVISOR_shared_info:"
+            }), " Shared page with wall clock time"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "in/out instructions"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Shared ring buffers:"
+            }), " virtio or Xen netfront/blkfront"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page tables"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct management"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Read-only:"
+            }), " Guest updates batched and validated by Xen"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "System calls"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "sysenter/sysexit"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hypercall page:"
+            }), " Direct hypercall for context switch"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "paravirtualization-hypercall-interface",
+      children: "Paravirtualization Hypercall Interface"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-c",
+        children: "// Xen hypercall interface (simplified)\n#define __HYPERVISOR_mmu_update     0\n#define __HYPERVISOR_sched_op       1\n#define __HYPERVISOR_event_channel  2\n#define __HYPERVISOR_console_io     3\n\nstatic inline long HYPERVISOR_mmu_update(\n    struct mmu_update *req, int count, int *success_count, domid_t domid)\n{\n    long ret;\n    asm volatile(\n        \"mov %[hypercall], %%rax\\n\\t\"\n        \"mov %[arg1], %%rdi\\n\\t\"\n        \"mov %[arg2], %%rsi\\n\\t\"\n        \"mov %[arg3], %%rdx\\n\\t\"\n        \"mov %[arg4], %%r10\\n\\t\"\n        \"syscall\"\n        : \"=a\" (ret)\n        : [hypercall] \"i\" (__HYPERVISOR_mmu_update),\n          [arg1] \"r\" (req), [arg2] \"r\" (count),\n          [arg3] \"r\" (success_count), [arg4] \"r\" (domid)\n        : \"memory\", \"cc\"\n    );\n    return ret;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "34-hardware-assisted-virtualization-intel-vt-x--amd-v",
+      children: "3.4 Hardware-Assisted Virtualization (Intel VT-x / AMD-V)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Intel introduced ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "VT-x"
+      }), " (formerly Vanderpool) in 2005 on Pentium 4. AMD introduced ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "AMD-V"
+      }), " (formerly Pacifica) on Athlon 64."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "new-cpu-modes",
+      children: "New CPU Modes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Without VT-x:\n+------------------------------------+\n|  Ring 0:  Host OS / VMM            |\n|  Ring 1:  (guest, but problematic) |\n|  Ring 2:  (unused)                 |\n|  Ring 3:  User applications        |\n+------------------------------------+\n  Problem: x86 has non-trapping sensitive instructions\n\nWith VT-x:\n+------------------------------------+\n|  VMX Root Mode:                    |\n|    Ring 0-3: Hypervisor            |\n|    (Full hardware control)         |\n+------------------------------------+\n|  VMX Non-Root Mode:                |\n|    Ring 0-3: Guest OS + Apps       |\n|    (Guest thinks it has rings)     |\n|    ALL sensitive instructions      |\n|    AUTOMATICALLY VM-exit           |\n+------------------------------------+\n  Now: All sensitive instructions trap -- solved!\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "vmx-root-mode-vs-vmx-non-root-mode",
+      children: "VMX Root Mode vs VMX Non-Root Mode"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "VMX Root Mode"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "VMX Non-Root Mode"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Who runs here"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypervisor (VMM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS + applications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ring 0 access"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes -- full kernel privileges"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest thinks so, but limited"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ring 3 access"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes -- for guest applications"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Sensitive instrs"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Execute normally (VMM is trusted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cause VM-exit (trapped to root)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VMCS access"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full read/write via VMREAD/VMWRITE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read-only (cannot modify VMCS)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory protection"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT also applies, VMM can modify EPT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT enforced (GPA -> HPA translation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Interrupt handling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full control (host IDT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest IDT for guest interrupts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O access"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct hardware access"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All port I/O causes VM-exit"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "35-full-vs-para-vs-hw-assisted-comparison",
+      children: "3.5 Full vs Para vs HW-Assisted: Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Full Virtualization"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Paravirtualization"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "HW-Assisted"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest modification"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Required (OS must be ported)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80-95% (binary translation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95-98%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "95-99%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5-20%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~2-5%"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~1-5%"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (emulated devices)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (shared ring buffers)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (virtio or passthrough)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest OS support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any (Windows, Linux, BSD)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, BSD, Solaris (PV-port)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VM exit frequency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (every privileged instr)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (only explicit hypercalls)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Complexity"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shadow page tables"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shadow page tables"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nested paging (EPT/NPT)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Legacy OS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Live migration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Easier"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supported"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Nesting"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hard"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supported"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "performance-gap-analysis",
+      children: "Performance Gap Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Binary Translation (VMware ESXi 3.x):\n  Every page table update:\n    Guest: mov cr3, eax ---> BT detects\n    VMM:  decode instruction + walk new page table\n         + synch shadow page table + resume guest\n    Total: ~2000-5000 cycles per exit\n\nHardware-Assisted (KVM + VT-x + EPT):\n  Every page table update:\n    Guest: mov cr3, eax ---> VM-exit\n    VMM:  handle exit (minimal) + VMRESUME\n    Total: ~800-1500 cycles per exit\n    Many updates DON'T exit (EPT handles GPA->HPA in HW)\n\nSavings: 2-3x fewer cycles per exit,\n         10-15x fewer exits overall (EPT vs shadow PT)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
+      id: "4-vt-x-vm-entryexit-flow-intel",
+      children: "4. VT-x VM Entry/Exit Flow (Intel)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "41-vmcs----virtual-machine-control-structure",
+      children: "4.1 VMCS -- Virtual Machine Control Structure"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "VMCS"
+      }), " is the in-memory data structure that controls VMX operations. Each logical CPU has one active VMCS at a time."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "vmcs-layout",
+      children: "VMCS Layout"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "VMCS (Virtual Machine Control Structure) -- ~4KB\n+----------------------------------------------+\n|  VMCS Revision Identifier  (4 bytes)         |\n|  VMX-abort Indicator      (4 bytes)          |\n+----------------------------------------------+\n|  VMCS Data (organized into groups):          |\n|                                              |\n|  1. Guest-State Area                         |\n|     +-------------------------------------+  |\n|     | Guest ES, CS, SS, DS, FS, GS       |  |\n|     | GDTR, IDTR, LDTR, TR               |  |\n|     | RIP, RSP, RFLAGS                   |  |\n|     | CR0, CR3, CR4                     |  |\n|     | Debug registers (DR0-DR7)         |  |\n|     +-------------------------------------+  |\n|                                              |\n|  2. Host-State Area                          |\n|     +-------------------------------------+  |\n|     | Host CR0, CR3, CR4                 |  |\n|     | Host RIP (VMM entry point)         |  |\n|     | Host RSP (VMM stack pointer)       |  |\n|     +-------------------------------------+  |\n|                                              |\n|  3. VM-Execution Control Fields              |\n|     +-------------------------------------+  |\n|     | Pin-based controls (interrupts)    |  |\n|     | Primary/secondary processor ctrl   |  |\n|     | Exception bitmap, I/O bitmap       |  |\n|     +-------------------------------------+  |\n|                                              |\n|  4. VM-Exit Control Fields                   |\n|  5. VM-Entry Control Fields                  |\n|  6. VM-Exit Information Fields               |\n|     +-------------------------------------+  |\n|     | Exit Reason (32 bits)               |  |\n|     | Exit Qualification (64 bits)        |  |\n|     | VM-exit interruption info           |  |\n|     +-------------------------------------+  |\n+----------------------------------------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "42-vm-entry-steps",
+      children: "4.2 VM Entry Steps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "VMLAUNCH (first entry) / VMRESUME (subsequent entries):\n\nStep 1: CPU checks VMCS is valid (checksum verification)\nStep 2: CPU loads guest state from VMCS Guest-State Area:\n        - Load segment registers (CS, SS, DS, ES, ...)\n        - Load control registers (CR0, CR3, CR4)\n        - Load RIP, RSP, RFLAGS\n        - Load GDTR, IDTR, LDTR, TR\nStep 3: CPU enables VMX non-root operation\nStep 4: CPU starts guest execution at the loaded RIP\n        - Guest sees Ring 0-3 (but it's non-root mode)\n        - All sensitive instructions will cause VM-exit\nStep 5: Guest executes user code (Ring 3) or kernel code (Ring 0 guest)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "43-vm-exit-steps",
+      children: "4.3 VM Exit Steps"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "VM-exit triggers:\n  - External interrupt (if \"External-interrupt exiting\" is set)\n  - Triple fault (shutdown)\n  - I/O instruction (IN, OUT, INS, OUTS)\n  - CPUID instruction\n  - HLT instruction\n  - MOV to CR0/CR3/CR4, LMSW\n  - RDMSR, WRMSR\n  - EPT violation\n  - APIC access\n  - XSETBV, INVEPT, INVVPID\n\nVM-exit Hardware Flow:\n\nStep 1:  CPU detects a VM-exit condition (e.g., guest executes IN)\nStep 2:  CPU saves guest state to VMCS Guest-State Area:\n         - RIP, RSP, RFLAGS\n         - All segment selectors + base + limit + AR bytes\n         - Control registers, Debug registers\nStep 3:  CPU populates VM-Exit Information Fields:\n         - Exit reason (e.g., 30 for I/O instruction)\n         - Exit qualification (e.g., port number, size, direction)\n         - VM-exit instruction length\n         - Guest linear address (if applicable)\nStep 4:  CPU loads host state from VMCS Host-State Area:\n         - Host RIP (VMM entry point)\n         - Host RSP (VMM stack)\n         - Host CR0, CR3, CR4\nStep 5:  CPU switches to VMX root mode\nStep 6:  CPU delivers VM exit to host (host RIP now executes)\nStep 7:  VMM reads exit reason from VMCS:\n         exit_reason = vmread(VMX_EXIT_REASON)\n         exit_qual   = vmread(VMX_EXIT_QUALIFICATION)\nStep 8:  VMM dispatches to handler based on exit_reason\nStep 9:  VMM emulates the operation or takes action\nStep 10: VMM issues VMRESUME -> CPU loads guest state and resumes\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "44-c-implementation-vm-entryexit-handler",
+      children: "4.4 C++ Implementation: VM Entry/Exit Handler"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <iostream>\n#include <cstdint>\n#include <cstring>\n#include <unordered_map>\n#include <vector>\n#include <array>\n\nenum VMXExitReason : uint32_t {\n    EXIT_CPUID         = 10,\n    EXIT_HLT           = 12,\n    EXIT_MOV_CRX       = 28,\n    EXIT_IO_INSTR      = 30,\n    EXIT_EPT_VIOLATION = 48,\n    EXIT_TRIPLE_FAULT  = 2,\n};\n\nstruct IOQualification {\n    union {\n        uint64_t raw;\n        struct {\n            uint64_t port      : 16;\n            uint64_t reserved  : 4;\n            uint64_t direction : 1;\n            uint64_t size      : 3;\n            uint64_t _reserved : 40;\n        } fields;\n    };\n};\n\nclass VMCS {\nprivate:\n    uint64_t guest_rip, guest_rsp, guest_rflags;\n    uint64_t guest_cr0, guest_cr3, guest_cr4;\n    uint64_t host_rip, host_rsp, host_cr3;\n    uint32_t m_exit_reason = 0;\n    uint64_t m_exit_qual   = 0;\n    uint32_t m_exit_inst_len = 0;\n\npublic:\n    void setGuestRIP(uint64_t r)  { guest_rip = r; }\n    void setGuestCR3(uint64_t c)  { guest_cr3 = c; }\n    void setHostRIP(uint64_t r)   { host_rip = r; }\n    void setHostRSP(uint64_t r)   { host_rsp = r; }\n    void setHostCR3(uint64_t c)   { host_cr3 = c; }\n\n    uint64_t getGuestRIP()  const { return guest_rip; }\n    uint64_t getGuestCR3()  const { return guest_cr3; }\n    uint64_t getHostRIP()   const { return host_rip; }\n\n    uint32_t getExitReason()           const { return m_exit_reason; }\n    uint64_t getExitQualification()    const { return m_exit_qual; }\n    uint32_t getExitInstructionLength()const { return m_exit_inst_len; }\n\n    void setExitReason(uint32_t r)     { m_exit_reason = r; }\n    void setExitQual(uint64_t q)       { m_exit_qual = q; }\n    void setExitInstLen(uint32_t l)    { m_exit_inst_len = l; }\n\n    void dump() {\n        printf(\"  RIP=0x%lx CR3=0x%lx Reason=%u Qual=0x%lx\\n\",\n               guest_rip, guest_cr3, m_exit_reason, m_exit_qual);\n    }\n};\n\nclass VMM {\n    VMCS vmcs;\n    uint64_t exit_count = 0;\n    uint64_t guest_rax = 0, guest_rip = 0;\n\npublic:\n    bool prepareEntry(uint64_t entry_rip, uint64_t cr3_val) {\n        vmcs.setGuestRIP(entry_rip);\n        vmcs.setGuestCR3(cr3_val);\n        vmcs.setHostRIP((uint64_t)this + 0x100);\n        vmcs.setHostRSP(0x10000);\n        vmcs.setHostCR3(0x1000);\n        printf(\"[VMM] VM entry prepared: RIP=0x%lx CR3=0x%lx\\n\", entry_rip, cr3_val);\n        return true;\n    }\n\n    void vmlaunch() {\n        printf(\"[VMLAUNCH] Entering guest\\n\");\n        guest_rip = vmcs.getGuestRIP();\n    }\n\n    void vmresume() {\n        printf(\"[VMRESUME] Resuming guest at RIP=0x%lx\\n\", guest_rip);\n    }\n\n    void handleExit(uint32_t reason, uint64_t qual, uint32_t inst_len) {\n        exit_count++;\n        vmcs.setExitReason(reason);\n        vmcs.setExitQual(qual);\n        vmcs.setExitInstLen(inst_len);\n\n        printf(\"[VM-EXIT #%lu] Reason=%u Qual=0x%lx\\n\", exit_count, reason, qual);\n\n        switch (reason) {\n            case EXIT_IO_INSTR: {\n                IOQualification io;\n                io.raw = qual;\n                if (io.fields.direction) {\n                    printf(\"  I/O IN  port=0x%x\\n\", io.fields.port);\n                } else {\n                    uint8_t data = guest_rax & 0xFF;\n                    printf(\"  I/O OUT port=0x%x data=0x%02x\\n\", io.fields.port, data);\n                }\n                break;\n            }\n            case EXIT_CPUID:\n                printf(\"  CPUID handled\\n\");\n                break;\n            case EXIT_HLT:\n                printf(\"  HLT -- guest halted\\n\");\n                break;\n            case EXIT_EPT_VIOLATION:\n                printf(\"  EPT violation at GPA=0x%lx\\n\", qual);\n                break;\n            default:\n                printf(\"  Unknown exit\\n\");\n        }\n        guest_rip += inst_len;\n    }\n\n    uint64_t getExitCount() const { return exit_count; }\n    uint64_t getGuestRIP()  const { return guest_rip; }\n};\n\nint main() {\n    printf(\"VT-x VM ENTRY/EXIT SIMULATION\\n\");\n    VMM vmm;\n    vmm.prepareEntry(0x1000, 0x2000);\n    vmm.vmlaunch();\n\n    // Simulate: OUT instruction -> VM-exit\n    IOQualification qual;\n    qual.raw = 0;\n    qual.fields.port = 0xE9;\n    qual.fields.direction = 0; // OUT\n    qual.fields.size = 0;      // 1 byte\n    vmm.handleExit(EXIT_IO_INSTR, qual.raw, 2);\n\n    // Simulate: CPUID -> VM-exit\n    vmm.handleExit(EXIT_CPUID, 0, 2);\n\n    // Simulate: HLT -> VM-exit\n    vmm.handleExit(EXIT_HLT, 0, 1);\n\n    printf(\"\\nTotal exits: %lu\\n\", vmm.getExitCount());\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "45-python-implementation-vt-x-flow-simulation",
+      children: "4.5 Python Implementation: VT-x Flow Simulation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\"\"\"\nSimulates Intel VT-x VM Entry/VM Exit cycle for educational purposes.\nDemonstrates how a hypervisor enters guest mode, handles VM exits,\nand resumes the guest.\n\"\"\"\n\nfrom enum import IntEnum\nfrom dataclasses import dataclass\nfrom typing import Dict, List, Optional\n\n\nclass VMXExitReason(IntEnum):\n    CPUID = 10\n    HLT = 12\n    MOV_CRX = 28\n    IO_INSTR = 30\n    EPT_VIOLATION = 48\n    TRIPLE_FAULT = 2\n\n\n@dataclass\nclass VMCS:\n    \"\"\"Virtual Machine Control Structure.\"\"\"\n    guest_rip: int = 0\n    guest_cr3: int = 0\n    host_rip: int = 0\n    host_rsp: int = 0\n    host_cr3: int = 0\n    exit_reason: int = 0\n    exit_qual: int = 0\n    exit_inst_len: int = 0\n\n    def save_state(self, rip: int, cr3: int):\n        self.guest_rip = rip\n        self.guest_cr3 = cr3\n\n    def __repr__(self) -> str:\n        return f\"VMCS(exit={self.exit_reason}, RIP=0x{self.guest_rip:x})\"\n\n\nclass GuestMemory:\n    \"\"\"Guest physical address space (simulated).\"\"\"\n\n    def __init__(self, size_kb: int = 64):\n        self.mem: Dict[int, int] = {}\n\n    def load_code(self, gpa: int, code: List[int]) -> None:\n        for i, b in enumerate(code):\n            self.mem[gpa + i] = b & 0xFF\n\n    def read_byte(self, gpa: int) -> int:\n        return self.mem.get(gpa, 0x00)\n\n\nclass Hypervisor:\n    \"\"\"\n    The VMM -- manages VM Entry/VM Exit lifecycle.\n    \"\"\"\n\n    def __init__(self):\n        self.vmcs = VMCS()\n        self.exit_count = 0\n        self.guest_rax = 0\n        self.guest_rip = 0x1000\n        print(\"[Hypervisor] Initialized\")\n\n    def vmlaunch(self) -> None:\n        \"\"\"VMLAUNCH -- first VM entry.\"\"\"\n        self.vmcs.save_state(self.guest_rip, 0x2000)\n        print(f\"[VMLAUNCH] Entering guest at RIP=0x{self.guest_rip:x}\")\n\n    def vmresume(self) -> None:\n        \"\"\"VMRESUME -- resume guest after VM-exit.\"\"\"\n        print(f\"[VMRESUME] Resuming guest at RIP=0x{self.guest_rip:x}\")\n\n    def handle_io_exit(self, qual: int) -> None:\n        \"\"\"Handle I/O instruction VM-exit.\"\"\"\n        port = qual & 0xFFFF\n        direction = (qual >> 20) & 1\n        data = self.guest_rax & 0xFF\n        if direction:\n            print(f\"  [I/O] IN  port=0x{port:04x}\")\n        else:\n            print(f\"  [I/O] OUT port=0x{port:04x} <- 0x{data:02x}\")\n            if port == 0xE9 and 32 <= data < 127:\n                print(f\"  [DEBUG PORT] '{chr(data)}'\")\n\n    def handle_cpuid_exit(self) -> None:\n        \"\"\"Handle CPUID VM-exit -- mask VT-x from guest.\"\"\"\n        print(\"  [CPUID] Masking VT-x feature bit\")\n\n    def handle_hlt_exit(self) -> None:\n        \"\"\"Handle HLT VM-exit.\"\"\"\n        print(\"  [HLT] Guest halted\")\n\n    def handle_ept_violation(self, qual: int) -> None:\n        \"\"\"Handle EPT violation VM-exit.\"\"\"\n        gpa = qual & 0xFFFFFFFFFFFFF000\n        print(f\"  [EPT] Violation at GPA=0x{gpa:x}\")\n\n    def handle_vmexit(self, reason: VMXExitReason, qual: int = 0,\n                      inst_len: int = 1) -> None:\n        \"\"\"Main VM-exit handler -- dispatches by reason.\"\"\"\n        self.exit_count += 1\n        self.vmcs.exit_reason = reason\n        self.vmcs.exit_qual = qual\n        self.vmcs.exit_inst_len = inst_len\n\n        print(f\"\\n[VM-EXIT #{self.exit_count}] Reason: {reason.name} \"\n              f\"Qual=0x{qual:x}\")\n\n        handlers = {\n            VMXExitReason.IO_INSTR: lambda: self.handle_io_exit(qual),\n            VMXExitReason.CPUID: self.handle_cpuid_exit,\n            VMXExitReason.HLT: self.handle_hlt_exit,\n            VMXExitReason.EPT_VIOLATION: lambda: self.handle_ept_violation(qual),\n        }\n\n        handler = handlers.get(reason)\n        if handler:\n            handler()\n        else:\n            print(f\"  [UNHANDLED] Exit reason {reason}\")\n\n        self.guest_rip += inst_len\n\n\ndef simulate_vm_lifecycle():\n    \"\"\"Demonstrate a full VM lifecycle: Entry -> Execute -> Exit -> Resume.\"\"\"\n    print(\"=\" * 60)\n    print(\"INTEL VT-x VM ENTRY/EXIT LIFECYCLE SIMULATION\")\n    print(\"=\" * 60)\n\n    hv = Hypervisor()\n    hv.vmlaunch()\n\n    print(\"\\n--- Guest Execution (simulated) ---\")\n\n    # Guest executes OUT instruction -> VM-exit\n    print(\"\\nGuest: OUT 0xE9, 'H'\")\n    io_qual = (0 << 20) | (0 << 16) | 0xE9  # OUT, 1B, port=0xE9\n    hv.guest_rax = ord('H')\n    hv.handle_vmexit(VMXExitReason.IO_INSTR, io_qual, 2)\n    hv.vmresume()\n\n    # Guest executes OUT instruction -> VM-exit\n    print(\"\\nGuest: OUT 0xE9, 'i'\")\n    hv.guest_rax = ord('i')\n    hv.handle_vmexit(VMXExitReason.IO_INSTR, io_qual, 2)\n    hv.vmresume()\n\n    # Guest executes OUT instruction -> VM-exit\n    print(\"\\nGuest: OUT 0xE9, '!'\")\n    hv.guest_rax = ord('!')\n    hv.handle_vmexit(VMXExitReason.IO_INSTR, io_qual, 2)\n    hv.vmresume()\n\n    # Guest executes CPUID -> VM-exit\n    print(\"\\nGuest: CPUID\")\n    hv.handle_vmexit(VMXExitReason.CPUID, 0, 2)\n    hv.vmresume()\n\n    # Guest executes HLT -> VM-exit\n    print(\"\\nGuest: HLT\")\n    hv.handle_vmexit(VMXExitReason.HLT, 0, 1)\n\n    print(f\"\\n{'='*60}\")\n    print(f\"Simulation complete: {hv.exit_count} VM-exits handled\")\n    print(f\"{'='*60}\")\n\n\ndef simulate_ept_violation():\n    \"\"\"Demonstrate EPT violation handling.\"\"\"\n    print(\"\\n\\n\" + \"=\" * 60)\n    print(\"EPT VIOLATION HANDLING\")\n    print(\"=\" * 60)\n\n    hv = Hypervisor()\n    hv.vmlaunch()\n\n    print(\"\\nGuest: Access unmapped GPA 0x7000\")\n    hv.handle_vmexit(VMXExitReason.EPT_VIOLATION, 0x7000, 3)\n    print(\"  -> VMM allocates new page and updates EPT\")\n    hv.vmresume()\n\n    print(\"\\nGuest: Access mapped GPA 0x7000 again\")\n    print(\"  -> No VM-exit (EPT caches translation)\")\n\n    print(f\"\\nTotal exits: {hv.exit_count}\")\n\n\nif __name__ == \"__main__\":\n    simulate_vm_lifecycle()\n    simulate_ept_violation()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "6-memory-virtualization",
+      children: "6. Memory Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Memory virtualization is the most performance-critical subsystem in a VMM. The VMM must give each guest its own contiguous physical address space starting at zero while preventing any guest from reading or writing another guest's memory → or the VMM's own memory."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "61-the-address-space-problem",
+      children: "6.1 The Address Space Problem"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In a non-virtualized system, the OS manages three address spaces:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Virtual Address (VA)"
+        }), " → what user processes see"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Linear Address (LA)"
+        }), " → what paging sees (x86-64 collapses VA → LA)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Physical Address (PA)"
+        }), " → what the hardware bus sees"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In a virtualized system, the VMM introduces a fourth layer:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Guest Physical Address (GPA)"
+        }), " → what the guest OS ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "thinks"
+        }), " is physical memory"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Machine Physical Address (MPA)"
+        }), " → what is ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "actually"
+        }), " physical memory (also called Host Physical Address, HPA)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Now every guest memory access must go through a two-stage translation:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Guest VA  → Guest PA (guest page tables)  → Machine PA (VMM page tables)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "62-shadow-page-tables-software-approach",
+      children: "6.2 Shadow Page Tables (Software Approach)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Concept:"
+      }), " The VMM maintains shadow copies of each guest's page tables that map Guest VA directly to Machine PA → bypassing the GPA layer entirely. The guest's own page tables are write-protected; any attempt by the guest OS to modify them traps to the VMM, which updates the shadow tables accordingly."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy → Diplomatic Interpreter:"
+      }), "\nImagine a diplomat speaking French to a Chinese official. An interpreter stands in the middle, translating each sentence. Every time the diplomat speaks, the interpreter must listen, translate, and relay. The diplomat thinks he is speaking directly; in reality, every word passes through the interpreter."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Guest OS          VMM              Hardware\n  |                |                 |\n  |--- writes CR3 -|                 |\n  |                |--- allocates ---|\n  |                |   shadow PT     |\n  |                |--- loads   -----|----> CR3\n  |                |   shadow PT     |      |\n  |--- VA access --|-----------------|-----> page walk on\n  |                |                 |      shadow PT → MPA\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Implementation Steps:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Actor"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Writes to CR3 to activate new page table"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Traps to VMM (CR3 access is privileged)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Allocates a new shadow page table"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Walks guest page tables, translates GPA→MPA for each entry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Writes MPA directly into shadow page table"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Writes shadow PT physical address into real CR3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resumes → page walks now use shadow PT, never trap"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write-protects guest PT pages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tries to update guest PT → page fault → trap to VMM"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recalculates shadow entry for the modified guest PTE"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pseudocode:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function handle_cr3_write(guest_cr3_value):\n    shadow_pt = allocate_page()\n    guest_pagetable = translate_gpa_to_hpa(guest_cr3_value)\n    for each entry in guest_pagetable:\n        if entry.present:\n            shadow_pt[entry.index] = translate_gpa_to_hpa(entry.pfn) | flags\n    write_cr3(hpa_of(shadow_pt))\n    write_protect(guest_pagetable)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dry-Run Trace → Guest Page Fault on PT Update:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Guest code:  page_table[0x100] = new_pfn  // add a new mapping\n\n#1  Guest writes to PT page at GPA 0x8000\n#2  CPU: page fault → #PF handler = VMM\n#3  VMM reads fault address: GPA 0x8000 + offset 0x800 (= entry for 0x100)\n#4  VMM reads the new value the guest tried to write\n#5  VMM walks shadow_pt to find shadow entry for 0x100\n#6  VMM updates shadow entry: MPA = new_pfn mapped to MPA | guest flags\n#7  VMM marks page dirty in dirty bitmap\n#8  VMM resumes guest\n#9  Guest retries instruction → succeeds because shadow PT now has correct mapping\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Implementation Skeleton:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "class ShadowPageTable {\n    std::unordered_map<uint64_t, uint64_t> shadow_entries; // VA → MPA\n    std::unordered_map<uint64_t, uint64_t> guest_entries;  // VA → GPA\n    const MemoryMapper& mapper;\n\npublic:\n    ShadowPageTable(const MemoryMapper& m) : mapper(m) {}\n\n    void handle_cr3_write(uint64_t guest_cr3_hpa) {\n        // Read the guest page-directory from machine memory\n        uint64_t* guest_pd = mapper.get_host_pointer(guest_cr3_hpa);\n        for (int i = 0; i < 512; i++) {  // 512 entries in x86-64 page table\n            if (guest_pd[i] & 1) {  // present bit\n                uint64_t guest_pfn = guest_pd[i] >> 12;\n                uint64_t machine_pfn = mapper.gpa_to_hpa(guest_pfn << 12) >> 12;\n                uint64_t flags = guest_pd[i] & 0xFFF;\n                shadow_entries[i] = (machine_pfn << 12) | flags;\n            }\n        }\n    }\n\n    uint64_t handle_page_fault(uint64_t fault_va, uint64_t guest_cr2) {\n        auto it = shadow_entries.find(fault_va >> 21);  // PDP index\n        if (it == shadow_entries.end())\n            return 0; // inject genuine page fault to guest\n        return it->second;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation Skeleton:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ShadowPageTable:\n    def __init__(self, memory_mapper):\n        self.mapper = memory_mapper\n        self.shadow = {}  # VA -> MPA\n        self.guest_tables = {}\n\n    def handle_cr3_write(self, guest_cr3_hpa):\n        guest_pd = self.mapper.read_memory(guest_cr3_hpa, 4096)\n        for i in range(512):\n            entry = struct.unpack_from('<Q', guest_pd, i * 8)[0]\n            if entry & 1:  # present\n                guest_pfn = entry >> 12\n                machine_pfn = self.mapper.gpa_to_hpa(guest_pfn << 12) >> 12\n                self.shadow[i << 21] = (machine_pfn << 12) | (entry & 0xFFF)\n\n    def handle_page_fault(self, guest_cr2):\n        pd_index = guest_cr2 >> 21\n        return self.shadow.get(pd_index, 0)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "63-hardware-assisted-paging-ept--npt",
+      children: "6.3 Hardware-Assisted Paging (EPT / NPT)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Intel's ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Extended Page Tables (EPT)"
+      }), " and AMD's ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Nested Page Tables (NPT)"
+      }), " eliminate shadow page tables by adding a second level of paging in hardware."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "How it works:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Guest OS manages its own page tables (VA → GPA) normally → no traps"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The VMM sets up a separate EPT/NPT structure that maps GPA → MPA"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The hardware automatically walks BOTH page tables on every memory access"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The result is combined: VA → GPA (guest PT) → MPA (EPT)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy → Bilingual Signage:"
+      }), "\nThink of a bilingual airport: signs are written in both English and the local language. A traveler reads only the English part (VA→GPA), and the airport's signs simultaneously provide the local-language equivalent (EPT mapping GPA→MPA). No interpreter needed → both translations are pre-written."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "The Two-Dimensional Page Walk:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Every memory access requires up to ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "24 memory references"
+      }), " on x86-64 with 4-level paging + EPT:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Guest page walk: 4 memory reads (PML4 → PDPT → PD → PT)"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["EPT page walk: 4 memory reads for ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "each"
+        }), " guest walk level = 16 memory reads"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Total: 4 + 16 = 20→24 memory references per access"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "VA translation using 4-level paging + EPT:\n\nGuest walk (4 levels):         EPT walks (4Ã—4 = 16 levels):\n  PML4[0] @ GPA_X1  ──EPT──►  PML4E[0]  @ MPA_A\n  PDPT[1] @ GPA_X2  ──EPT──►  PDPTE[1]  @ MPA_B\n  PD[2]   @ GPA_X3  ──EPT──►  PDE[2]    @ MPA_C\n  PT[3]   @ GPA_X4  ──EPT──►  PTE[3]    @ MPA_D\n                              └──► Final MPA\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "EPT Violation (EPT Miss):"
+      }), "\nWhen EPT doesn't have a mapping for a GPA, a VM-exit occurs (EPT violation). The VMM must:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Read the faulting GPA from VMCS"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Allocate a new machine page"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Install an EPT entry mapping GPA → MPA"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Resume the guest (VM-entry)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Skeleton for EPT Handler:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "class EPT {\n    struct EPTEntry {\n        uint64_t mpa : 52;   // machine physical address\n        uint64_t r   : 1;    // read\n        uint64_t w   : 1;    // write\n        uint64_t x   : 1;    // execute\n        // ... 9 more bits\n    };\n\n    EPTEntry* ept_pml4;  // root of EPT structure\n\npublic:\n    void handle_ept_violation(uint64_t fault_gpa, VMCS& vmcs) {\n        // Allocate a 4KB machine page\n        uint64_t mpa = alloc_machine_page();\n        // Zero it for security (prevent cross-guest data leak)\n        memset(get_host_ptr(mpa), 0, 4096);\n        // Install EPT entry\n        auto [pml4e, pdpte, pde, pte] = walk_ept(fault_gpa);\n        *pte = {.mpa = mpa, .r = 1, .w = 1, .x = 1};\n        // Invalidate TLB for this GPA range\n        invept();\n        // Resume guest\n        vmcs.vm_resume();\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Implementation → EPT Lifecycle:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class EPT:\n    def __init__(self, host_memory):\n        self.host_memory = host_memory\n        self.ept_pml4 = bytearray(4096)  # 512 entries Ã— 8 bytes\n\n    def translate(self, gpa):\n        \"\"\"Translate GPA to MPA using EPT (simulated 2-level walk)\"\"\"\n        pml4e = struct.unpack_from('<Q', self.ept_pml4, (gpa >> 39) * 8)[0]\n        if not (pml4e & 1):\n            raise EPTViolation(gpa, \"PML4E not present\")\n        pdpt_hpa = pml4e & 0xFFFFFFFFFF000\n        pdpte = struct.unpack_from('<Q', self.host_memory, pdpt_hpa + ((gpa >> 30) & 0x1FF) * 8)[0]\n        if not (pdpte & 1):\n            raise EPTViolation(gpa, \"PDPTE not present\")\n        if pdpte & (1 << 7):  # huge page (1GB)\n            return (pdpte & 0xFFFFFC0000000000) | (gpa & 0x3FFFFFFF)\n        pd_hpa = pdpte & 0xFFFFFFFFFF000\n        pde = struct.unpack_from('<Q', self.host_memory, pd_hpa + ((gpa >> 21) & 0x1FF) * 8)[0]\n        if not (pde & 1):\n            raise EPTViolation(gpa, \"PDE not present\")\n        if pde & (1 << 7):  # large page (2MB)\n            return (pde & 0xFFFFFFFE00000) | (gpa & 0x1FFFFF)\n        pt_hpa = pde & 0xFFFFFFFFFF000\n        pte = struct.unpack_from('<Q', self.host_memory, pt_hpa + ((gpa >> 12) & 0x1FF) * 8)[0]\n        if not (pte & 1):\n            raise EPTViolation(gpa, \"PTE not present\")\n        return (pte & 0xFFFFFFFFFF000) | (gpa & 0xFFF)\n\n    def handle_violation(self, gpa):\n        mpa = self.alloc_zeroed_page()\n        self.install_ept_entry(gpa, mpa, r=True, w=True, x=True)\n        self.invept()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "64-shadow-vs-ept-comparison",
+      children: "6.4 Shadow vs EPT Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Shadow Page Tables"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "EPT/NPT"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (works on any CPU)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires VT-x/AMD-V with EPT/NPT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest PT modifications"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Always trap to VMM"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No traps → guest manages freely"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page walk cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 memory references"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20-24 memory references"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One shadow PT per guest PT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One EPT structure per VM"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TLB pressure"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Less (single walk)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "More (TLB covers both walks)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Context switch cost"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (must reinstall shadow PT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (EPT root stays)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Ballooning support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Live migration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Challenging (must migrate shadow state)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Straightforward"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "KVM support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Removed in 2015 (!)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default since Linux 3.x"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "65-complexity-analysis",
+      children: "6.5 Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Shadow PT"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "EPT"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest page table walk"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4 memory refs (trap + walk + install)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "24 memory refs (full 2D walk)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT violation handler"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N/A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) → allocate page + install entry"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest CR3 write"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(512) → rebuild shadow table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) → no action"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest PT modification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) → update single shadow entry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) → no action"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory overcommit (balloon)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(n) → rebuild affected shadows"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "O(1) → update single EPT entry"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "66-edge-cases-in-memory-virtualization",
+      children: "6.6 Edge Cases in Memory Virtualization"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mitigation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "TLB shootdown"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest OS invalidates TLB on one vCPU → need cross-vCPU coordination"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM must send IPI to all pCPUs running that VM"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page table aliasing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Two guest PTs map same guest PFN through different shadow PTs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMM deduplicates shadow entries"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory overcommit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Total guest memory > host physical memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Balloon driver inflates to reclaim pages"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "NUMA migration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Guest memory migrates between NUMA nodes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT entries must be updated; TLB flush required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page sharing (KSM)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Identical pages deduplicated across VMs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write access must break COW; EPT must be updated"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Device DMA"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Device writes directly to MPA, bypassing EPT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IOMMU (VT-d) must provide separate translation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "5-level paging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "x86-64 57-bit VA with 5-level EPT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adds 2 more EPT walk levels = 30+ memory refs"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "7-io-virtualization",
+      children: "7. I/O Virtualization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "I/O virtualization gives each guest its own view of devices (disk, NIC, GPU) while enforcing isolation and sharing. There are three approaches: emulated, paravirtualized, and direct assignment."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-emulated-io-full-device-emulation",
+      children: "7.1 Emulated I/O (Full Device Emulation)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Concept:"
+      }), " The VMM presents a software-emulated device that mimics real hardware. The guest OS loads its native driver for that device, and every MMIO/PIO access traps to the VMM, which simulates the device behavior."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy → Phone Interpreter:"
+      }), "\nTwo people who don't speak the same language communicate through a human interpreter. Each sentence must be translated back and forth. It works, but it's slow → every word goes through the bottleneck."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "How It Works:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Guest driver writes to a device register (e.g., NIC MMIO region)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "CPU exits to VMM (EPT violation or PIO exit)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VMM decodes the instruction and simulates device behavior"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VMM may DMA to/from guest memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VMM resumes guest"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Emulated NIC Skeleton:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "class EmulatedNIC {\n    uint8_t mac[6] = {0x52, 0x54, 0x00, 0x12, 0x34, 0x56};\n    uint8_t* rx_ring;     // guest physical address of receive ring\n    uint32_t rx_ring_size;\n    uint8_t* tx_ring;\n    DeviceState state = DEVICE_IDLE;\n\npublic:\n    bool handle_mmio_write(uint64_t gpa, uint64_t value, uint8_t size) {\n        switch (gpa - MMIO_BASE) {\n        case TX_DESC_ADDR:\n            tx_ring = gpa_to_hpa(value);  // guest gives us its TX ring\n            break;\n        case TX_START:\n            transmit_packet(tx_ring);     // emulate a send\n            break;\n        case MAC_ADDR0 ... MAC_ADDR5:\n            mac[gpa - MAC_ADDR0] = value & 0xFF;\n            break;\n        default:\n            return false;  // not our register\n        }\n        return true;\n    }\n\n    void transmit_packet(uint8_t* guest_tx_desc) {\n        // Read the descriptor from guest memory\n        TxDesc desc;\n        memcpy(&desc, get_host_ptr(guest_tx_desc), sizeof(TxDesc));\n        // Copy packet data from guest memory\n        uint8_t packet[1514];\n        memcpy(packet, get_host_ptr(desc.buffer_addr), desc.len);\n        // Write to host tap device\n        write(host_tap_fd, packet, desc.len);\n        // Write completion status back to guest\n        desc.status = TX_COMPLETE;\n        memcpy(get_host_ptr(guest_tx_desc), &desc, sizeof(TxDesc));\n        // Interrupt the guest\n        interrupt_guest();\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Simulated Emulated Disk:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class EmulatedDisk:\n    def __init__(self, image_path: str, size_mb: int = 256):\n        self.image = bytearray(size_mb * 1024 * 1024)\n        self.prdt = []  # physical region descriptor table\n\n    def handle_mmio(self, addr: int, write: bool, data: int = 0) -> int:\n        reg = addr & 0xFF\n        if reg == DISK_SECTOR_NUM:\n            self.sector = data\n            return 0\n        elif reg == DISK_CMD:\n            return self.execute_command(data)\n        elif reg == DISK_BUFFER_ADDR:\n            self.buffer_gpa = data\n            return 0\n        return 0\n\n    def execute_command(self, cmd: int) -> int:\n        if cmd == CMD_READ:\n            sector_data = self.image[self.sector * 512:(self.sector + 1) * 512]\n            # DMA: copy data to guest memory\n            self.vmm.write_guest_memory(self.buffer_gpa, sector_data)\n            self.interrupt_guest()\n            return 0\n        elif cmd == CMD_WRITE:\n            sector_data = self.vmm.read_guest_memory(self.buffer_gpa, 512)\n            self.image[self.sector * 512:(self.sector + 1) * 512] = sector_data\n            self.interrupt_guest()\n            return 0\n        return ERR_UNKNOWN_CMD\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "72-paravirtualized-io-virtio",
+      children: "7.2 Paravirtualized I/O (Virtio)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Concept:"
+      }), " The guest and VMM agree on a shared ring buffer (virtqueue) in guest memory. The guest places I/O requests directly into the ring; the VMM polls the ring and processes requests asynchronously. This eliminates MMIO traps for each I/O operation."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy → Dropbox Shared Folder:"
+      }), "\nInstead of calling a translator for each sentence, both people write to a shared notebook. One writes a request, the other reads it later and writes back the result. Neither needs to interrupt the other → they check the notebook when convenient."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Virtio Ring Layout:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "+------------------+      +------------------+\n| Available Ring   |      | Used Ring        |\n| (Guest writes)   |      | (Host writes)    |\n+------------------+      +------------------+\n| desc[0] = read    |      | desc[2] = done   |\n| desc[1] = write   |      | desc[0] = done   |\n| desc[2] = read    |      +------------------+\n+------------------+\n         |                       ^\n         |  +--------------------+\n         v  |\n+------------------+\n| Descriptor Table |\n+------------------+\n| buf_addr, len, flags |\n| buf_addr, len, flags |\n+------------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Virtio Queue Implementation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "struct VirtqDesc {\n    uint64_t addr;   // guest physical address of buffer\n    uint32_t len;\n    uint16_t flags;\n    uint16_t next;\n};\n\nstruct VirtqAvail {\n    uint16_t flags;\n    uint16_t idx;      // guest writes here when it adds requests\n    uint16_t ring[];\n};\n\nstruct VirtqUsed {\n    uint16_t flags;\n    uint16_t idx;      // host writes here when it completes requests\n    struct UsedElem {\n        uint32_t id;\n        uint32_t len;\n    } ring[];\n};\n\nclass VirtQueue {\n    VirtqDesc* desc;\n    VirtqAvail* avail;\n    VirtqUsed* used;\n    uint16_t queue_size;\n\npublic:\n    VirtQueue(uint64_t desc_hpa, uint64_t avail_hpa, uint64_t used_hpa, uint16_t sz)\n        : queue_size(sz) {\n        desc  = get_host_ptr(desc_hpa);\n        avail = get_host_ptr(avail_hpa);\n        used  = get_host_ptr(used_hpa);\n    }\n\n    void process_requests() {\n        uint16_t avail_idx = __atomic_load_n(&avail->idx, __ATOMIC_ACQUIRE);\n        uint16_t used_idx = __atomic_load_n(&used->idx, __ATOMIC_RELAXED);\n\n        while (used_idx != avail_idx) {\n            uint16_t desc_id = avail->ring[used_idx % queue_size];\n            // Process the descriptor chain\n            uint16_t current = desc_id;\n            while (current < queue_size) {\n                VirtqDesc& d = desc[current];\n                if (d.flags & VIRTQ_DESC_F_WRITE) {\n                    // Device-to-guest (read completion)\n                    handle_guest_read(&d);\n                } else {\n                    // Guest-to-device (write request)\n                    handle_guest_write(&d);\n                }\n                current = d.next;\n            }\n            // Mark as used\n            used->ring[used_idx % queue_size] = {desc_id, 0};\n            used_idx++;\n            __atomic_store_n(&used->idx, used_idx, __ATOMIC_RELEASE);\n        }\n        // Notify guest if notification is enabled\n        if (used_idx - avail->last_notified > queue_size / 2)\n            interrupt_guest();\n    }\n\n    void handle_guest_read(VirtqDesc* d) {\n        // Copy data from host backing store to guest buffer\n        memcpy(get_host_ptr(d->addr), host_buffer, d->len);\n        host_buffer += d->len;\n    }\n\n    void handle_guest_write(VirtqDesc* d) {\n        // Copy data from guest buffer to host backing store\n        memcpy(host_buffer, get_host_ptr(d->addr), d->len);\n        host_buffer += d->len;\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Simulated Virtio-Block:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class VirtioBlock:\n    QUEUE_SIZE = 256\n\n    def __init__(self, image_path: str):\n        self.image = open(image_path, 'r+b')\n        self.desc = None\n        self.avail = None\n        self.used = None\n\n    def set_queue(self, desc_gpa: int, avail_gpa: int, used_gpa: int):\n        self.desc = memoryview(self.vmm.gpa_to_hva(desc_gpa, 16 * self.QUEUE_SIZE)).cast('B')\n        self.avail = memoryview(self.vmm.gpa_to_hva(avail_gpa, 4 + 2 * self.QUEUE_SIZE)).cast('B')\n        self.used = memoryview(self.vmm.gpa_to_hva(used_gpa, 8 * self.QUEUE_SIZE)).cast('B')\n\n    def poll(self):\n        avail_idx = struct.unpack_from('<H', self.avail, 2)[0]\n        used_idx = struct.unpack_from('<H', self.used, 2)[0]\n        while used_idx != avail_idx:\n            desc_id = struct.unpack_from('<H', self.avail, 4 + (used_idx % self.QUEUE_SIZE) * 2)[0]\n            self.process_desc(desc_id)\n            used_idx += 1\n            struct.pack_into('<H', self.used, 2, used_idx)\n\n    def process_desc(self, desc_id: int):\n        off = desc_id * 16\n        addr = struct.unpack_from('<Q', self.desc, off)[0]\n        length = struct.unpack_from('<I', self.desc, off + 8)[0]\n        flags = struct.unpack_from('<H', self.desc, off + 12)[0]\n        if flags & 2:\n            data = self.image.read(length)\n            self.vmm.write_guest_memory(addr, data)\n        else:\n            data = self.vmm.read_guest_memory(addr, length)\n            self.image.write(data)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "73-direct-io-assignment-sr-iov",
+      children: "7.3 Direct I/O Assignment (SR-IOV)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Concept:"
+      }), " A physical device presents itself as multiple Virtual Functions (VFs) via Single Root I/O Virtualization (SR-IOV). Each VF can be assigned directly to a guest → the guest driver talks to real hardware with zero VMM involvement on the data path."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy → Apartment Mailbox:"
+      }), "\nInstead of all mail going through a front desk (emulated) or a shared bin (virtio), each resident gets their own private mailbox. The mail carrier puts mail directly into each box. The management only sets up the boxes once."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "SR-IOV Architecture:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "+--------------------------------------------------+\n|                   Physical Device                 |\n|  +------------------+  +-----------------------+  |\n|  | Physical Function|  | Virtual Functions      |  |\n|  | (PF - management) |  | VF1  VF2  VF3 ... VFn |  |\n|  +------------------+  +-----------------------+  |\n+--------------------------------------------------+\n           |                     |   |   |   |\n     VMM driver             VM1  VM2 VM3 ... VMn\n                           (passthrough VF via VT-d)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Steps to Assign a VF to a Guest:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Enable SR-IOV on the PF: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "echo 4 > /sys/class/net/eth0/device/sriov_numvfs"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Detach VF from host driver: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "driverctl unbind pci 0000:01:00.1"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Assign VF via VFIO: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "qemu-system-x86_64 -device vfio-pci,host=01:00.1 ..."
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Configure IOMMU (VT-d) to allow the guest DMA access to the VF BARs"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Performance Comparison:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Operation          Emulated    Virtio      SR-IOV\n-----------------  --------    ------      -----\nNetwork latency    50-100Âµs    10-20Âµs     1-3Âµs\nThroughput         1-5 Gbps   10-25 Gbps  30-50+ Gbps\nCPU overhead       ~80%        ~30%        ~5%\nContext switches   1 per I/O   0 (polling) 0\nVMM involvement    Every op    Batch poll  Setup only\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "74-virtio-vs-sr-iov-comparison",
+      children: "7.4 Virtio vs SR-IOV Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Virtio"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "SR-IOV"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hardware support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (pure software)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Device must support SR-IOV"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IOMMU/VT-d required"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Live migration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supported"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Very difficult (device state on hardware)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VMM data path"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Polls virtqueue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "None (direct pass-through)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VM density"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unlimited"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited by number of VFs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Feature support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All (software-defined)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-dependent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Driver requirements"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Special virtio driver"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native device driver"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-native"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "General purpose"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High-performance workloads (NVMe, GPU, 100GbE)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "8-containerization-os-level-virtualization",
+      children: "8. Containerization (OS-Level Virtualization)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Containers virtualize the OS rather than the hardware. Multiple containers share the same host kernel but get isolated views of the filesystem, process tree, network stack, and resource limits."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "81-namespaces--what-containers-see",
+      children: ["8.1 Namespaces → What Containers ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "See"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Namespaces restrict what a process can see. Each namespace wraps a global OS resource in an abstraction that makes the process think it has its own private instance."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Namespace"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Isolates"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Since Linux"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Created by"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "PID"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Process IDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.6.24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWPID)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Network"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network interfaces, IP, routing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.6.29"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWNET)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mount"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Filesystem mount points"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.4.19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWNS)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "UTS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hostname, domain name"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.6.19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWUTS)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IPC"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "System V IPC, POSIX message queues"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.6.19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWIPC)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "User"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User and group IDs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWUSER)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Cgroup"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cgroup root directory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWCGROUP)"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Time (CLOCK_MONOTONIC, CLOCK_BOOTTIME)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "clone(CLONE_NEWTIME)"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy → Cubicles in an Office:"
+      }), "\nEach engineer in a cubicle has their own desk, phone, filing cabinet, and name plate. They can't see their neighbor's desk or papers. But they all share the same building, electricity, and plumbing. If you walk through the office, each cubicle looks like its own mini-office."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Namespace Creation (Linux syscall):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <sched.h>\n#include <unistd.h>\n#include <sys/wait.h>\n\nint child_func(void* arg) {\n    // Inside new namespaces\n    sethostname(\"container-1\", 11);\n    mount(\"none\", \"/proc\", \"proc\", 0, nullptr);\n    execlp(\"/bin/bash\", \"/bin/bash\", nullptr);\n    return 0;\n}\n\nint main() {\n    constexpr int STACK_SIZE = 1024 * 1024;\n    char* stack = new char[STACK_SIZE];\n\n    // Create child in new PID, UTS, mount, network, IPC namespaces\n    int flags = CLONE_NEWPID | CLONE_NEWUTS | CLONE_NEWNS |\n                CLONE_NEWNET | CLONE_NEWIPC | SIGCHLD;\n\n    pid_t pid = clone(child_func, stack + STACK_SIZE, flags, nullptr);\n    if (pid < 0) {\n        perror(\"clone\");\n        return 1;\n    }\n    waitpid(pid, nullptr, 0);\n    delete[] stack;\n    return 0;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Simulated Namespace:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import os\nimport ctypes\n\nLIBC = ctypes.CDLL(\"libc.so.6\")\nCLONE_NEWPID = 0x20000000\nCLONE_NEWNS = 0x00020000\nCLONE_NEWUTS = 0x04000000\nCLONE_NEWNET = 0x40000000\nSTACK_SIZE = 1024 * 1024\n\ndef run_in_new_namespaces():\n    stack = ctypes.create_string_buffer(STACK_SIZE)\n    flags = CLONE_NEWPID | CLONE_NEWNS | CLONE_NEWUTS | CLONE_NEWNET | os.SIGCHLD\n\n    pid = LIBC.clone(\n        ctypes.CFUNCTYPE(ctypes.c_int)(child_function),\n        ctypes.byref(stack, STACK_SIZE - 8),\n        flags,\n        None\n    )\n    if pid < 0:\n        raise OSError(\"clone failed\")\n    os.waitpid(pid, 0)\n\n# Usage: run_in_new_namespaces() creates isolated process\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h3, {
+      id: "82-cgroups--what-containers-use",
+      children: ["8.2 Cgroups → What Containers ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "Use"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Cgroups (control groups) limit, account for, and isolate resource usage (CPU, memory, disk I/O, network). While namespaces dictate visibility, cgroups enforce boundaries."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Cgroup Controller"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Controls"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "File"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "cpu"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU shares, quota, period"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "cpu.cfs_quota_us"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "cpu.shares"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "memory"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory limit, swap, OOM"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "memory.limit_in_bytes"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "memory.oom_control"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "blkio"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Block I/O throttling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "blkio.throttle.read_bps_device"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "cpuset"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU core pinning"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "cpuset.cpus"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "cpuset.mems"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "pids"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Max number of processes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "pids.max"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "net_cls"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network traffic classification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "net_cls.classid"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "freezer"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Suspend/resume processes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "freezer.state"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "hugetlb"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Huge page usage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "hugetlb.2MB.limit_in_bytes"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Analogy → Cafeteria Meal Plan:"
+      }), "\nA university cafeteria gives each student a meal card with daily limits: $20 spending cap, 3 meal entries max, no more than 2 desserts. The student can choose what to eat within those limits. Cgroups are the meal card limits → they set the boundaries, not the content."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Skeleton for Cgroup Setup:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "class CgroupManager {\n    std::string cgroup_path;\n\npublic:\n    CgroupManager(const std::string& name) {\n        cgroup_path = \"/sys/fs/cgroup/\" + name;\n        mkdir(cgroup_path.c_str(), 0755);\n    }\n\n    void set_cpu_limit(int quota_us, int period_us = 100000) {\n        write_file(cgroup_path + \"/cpu.cfs_quota_us\", std::to_string(quota_us));\n        write_file(cgroup_path + \"/cpu.cfs_period_us\", std::to_string(period_us));\n    }\n\n    void set_memory_limit(uint64_t bytes) {\n        write_file(cgroup_path + \"/memory.limit_in_bytes\", std::to_string(bytes));\n    }\n\n    void add_process(pid_t pid) {\n        write_file(cgroup_path + \"/cgroup.procs\", std::to_string(pid));\n    }\n\n    void set_pids_limit(int max) {\n        write_file(cgroup_path + \"/pids.max\", std::to_string(max));\n    }\n\n    void freeze() {\n        write_file(cgroup_path + \"/freezer.state\", \"FROZEN\");\n    }\n\n    void thaw() {\n        write_file(cgroup_path + \"/freezer.state\", \"THAWED\");\n    }\n};\n\n// Usage:\n// CgroupManager cg(\"/docker/container1\");\n// cg.set_cpu_limit(50000);  // 50% of one core (50000/100000)\n// cg.set_memory_limit(512UL * 1024 * 1024);  // 512MB\n// cg.add_process(1234);  // restrict existing process\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Cgroup Limiter:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import os\n\nclass CgroupLimiter:\n    def __init__(self, name: str):\n        self.path = f\"/sys/fs/cgroup/{name}\"\n        os.makedirs(self.path, exist_ok=True)\n\n    def limit_cpu(self, quota_us: int, period_us: int = 100000):\n        with open(f\"{self.path}/cpu.max\", \"w\") as f:\n            f.write(f\"{quota_us} {period_us}\")\n\n    def limit_memory(self, bytes: int):\n        with open(f\"{self.path}/memory.max\", \"w\") as f:\n            f.write(f\"{bytes}\")\n\n    def limit_processes(self, max: int):\n        with open(f\"{self.path}/pids.max\", \"w\") as f:\n            f.write(f\"{max}\")\n\n    def add_process(self, pid: int):\n        with open(f\"{self.path}/cgroup.procs\", \"w\") as f:\n            f.write(f\"{pid}\")\n\n# cg = CgroupLimiter(\"my-container\")\n# cg.limit_cpu(50000, 100000)\n# cg.limit_memory(256 * 1024 * 1024)\n# cg.add_process(os.getpid())\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "83-docker-architecture",
+      children: "8.3 Docker Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Docker uses Linux namespaces + cgroups + union filesystems (overlay2) to package and run containers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "+---------------------------------------------------------------------+\n|                        Docker Architecture                          |\n+---------------------------------------------------------------------+\n|  Client (docker CLI)                                                 |\n|    |                                                                 |\n|    v                                                                 |\n|  Docker Daemon (dockerd)                                             |\n|    ├── containerd  (container lifecycle management)                  |\n|    │   └── runc     (OCI runtime → creates namespaces + cgroups)     |\n|    ├── image management (layered storage)                            |\n|    └── network management (CNI plugins)                              |\n+---------------------------------------------------------------------+\n|  Host Kernel (shared by all containers)                              |\n+---------------------------------------------------------------------+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Container vs VM at the Process Level:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Virtual Machine:                      Container:\n+------------------+                 +------------------+\n| VM: App A        |                 | Container: App A |\n|   Guest kernel   |                 |                  |\n|   Hypervisor ----|---- VMM         |   Docker         |\n+------------------+                 +------------------+\n+------------------+                 +------------------+\n| VM: App B        |                 | Container: App B |\n|   Guest kernel   |                 |                  |\n|   Hypervisor ----|---- VMM         |   Docker         |\n+------------------+                 +------------------+\n       |                                     |\n   Host Kernel                         Host Kernel\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "84-container-vs-vm-comprehensive-comparison",
+      children: "8.4 Container vs VM Comprehensive Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Virtual Machine"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Container"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Isolation level"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-enforced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel-enforced (namespaces)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest OS"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Any OS with kernel"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same kernel as host"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Boot time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30-90 seconds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "< 1 second"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Image size"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-10 GB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50-500 MB"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100MB-1GB (guest kernel + services)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-50MB (just the app)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5-20% (VMM + 2D page walk)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-3% (syscall overhead)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Density per host"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2-10 typical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "50-500+ typical"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Live migration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Supported"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not natively supported"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security boundary"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Strong (hardware isolation)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weaker (single kernel)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Persistence"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateful by design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Stateless by convention"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Update model"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Patch guest OS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rebuild image"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtio: good; SR-IOV: near-native"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Native (direct host syscalls)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use case"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Workloads needing full OS isolation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microservices, stateless apps"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "C++ Lightweight Container Simulation:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-cpp",
+        children: "#include <unistd.h>\n#include <sys/mount.h>\n#include <sys/syscall.h>\n#include <sched.h>\n\nclass Container {\n    std::string rootfs;\n    std::string hostname;\n    int cpu_quota;\n    int mem_limit_mb;\n\npublic:\n    Container(const std::string& fs, const std::string& name, int cpu, int mem)\n        : rootfs(fs), hostname(name), cpu_quota(cpu), mem_limit_mb(mem) {}\n\n    void run(const std::vector<std::string>& command) {\n        pid_t pid = syscall(SYS_clone, SIGCHLD | CLONE_NEWPID | CLONE_NEWNS |\n                           CLONE_NEWUTS | CLONE_NEWNET | CLONE_NEWIPC, 0, nullptr, nullptr);\n        if (pid == 0) {\n            // Child: inside the container\n            setup_namespaces();\n            setup_cgroups();\n            sethostname(hostname.c_str(), hostname.length());\n            chroot(rootfs.c_str());\n            chdir(\"/\");\n            mount(\"proc\", \"/proc\", \"proc\", 0, nullptr);\n            // Execute the command\n            execvp(command[0].c_str(), const_cast<char**>(command.data()));\n        }\n    }\n\nprivate:\n    void setup_cgroups() {\n        // Write PID to cgroup.procs\n        std::string cg_path = \"/sys/fs/cgroup/containers/\" + hostname + \"/\";\n        mkdir(cg_path.c_str(), 0755);\n        write_file(cg_path + \"cpu.max\",\n                   std::to_string(cpu_quota) + \" 100000\");\n        write_file(cg_path + \"memory.max\",\n                   std::to_string(mem_limit_mb * 1024 * 1024));\n        write_file(cg_path + \"pids.max\", \"128\");\n        write_file(cg_path + \"cgroup.procs\", std::to_string(getpid()));\n    }\n\n    void setup_namespaces() {\n        // Only needed for parent → children inherit automatically\n    }\n};\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Python Simulated Container Manager:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import os\nimport subprocess\nimport ctypes\n\nclass Container:\n    def __init__(self, name: str, rootfs: str, mem_mb: int = 256, cpu_quota: int = 50000):\n        self.name = name\n        self.rootfs = rootfs\n        self.mem_mb = mem_mb\n        self.cpu_quota = cpu_quota\n        self.cg_path = f\"/sys/fs/cgroup/containers/{name}\"\n\n    def start(self, command: list):\n        # Set up cgroups\n        os.makedirs(self.cg_path, exist_ok=True)\n        self._write_cgroup(\"memory.max\", f\"{self.mem_mb * 1024 * 1024}\")\n        self._write_cgroup(\"cpu.max\", f\"{self.cpu_quota} 100000\")\n        self._write_cgroup(\"pids.max\", \"128\")\n\n        # Fork into namespaces (simplified via unshare)\n        pid = os.fork()\n        if pid == 0:  # child\n            self._unshare_namespaces()\n            os.sethostname(self.name)\n            os.chroot(self.rootfs)\n            os.chdir(\"/\")\n            subprocess.run(command)\n        else:\n            self._write_cgroup(\"cgroup.procs\", str(pid))\n\n    def _unshare_namespaces(self):\n        libc = ctypes.CDLL(\"libc.so.6\")\n        libc.unshare(0x20000000 | 0x00020000 | 0x04000000 | 0x40000000)\n\n    def _write_cgroup(self, file: str, value: str):\n        with open(f\"{self.cg_path}/{file}\", \"w\") as f:\n            f.write(value)\n\n    def stop(self):\n        self._write_cgroup(\"freezer.state\", \"FROZEN\")\n        # Kill processes\n        with open(f\"{self.cg_path}/cgroup.procs\") as f:\n            for pid_str in f:\n                os.kill(int(pid_str.strip()), 9)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "85-firecracker--microvm-approach",
+      children: "8.5 Firecracker → MicroVM Approach"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AWS Firecracker is a VMM designed specifically for serverless workloads (Lambda, Fargate). It uses KVM with a minimized device model → no PCI bus, BIOS, or ACPI → giving container-like density with VM-level isolation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Design Points:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Single process, ~50K LOC in Rust"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Boots a microVM in ~125ms"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "5MB memory overhead per microVM (vs 100MB+ for QEMU)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Minimal device model: virtio-block, virtio-net, serial console only"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Uses Linux 5.10+ with 5-level page table support for memory efficiency"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Firecracker VM Boot Flow:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "1. Open /dev/kvm\n2. Create VM fd (KVM_CREATE_VM)\n3. Create vCPU fd (KVM_CREATE_VCPU)\n4. Set up guest memory (KVM_SET_USER_MEMORY_REGION)\n5. Load Linux kernel (direct boot → no GRUB)\n6. Load initrd with minimal bootstrap\n7. Set up virtio-mmio devices\n8. Run vCPU (KVM_RUN) → guest boots in ~50-125ms\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Firecracker vs Docker vs QEMU:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "            Firecracker    Docker         QEMU\nBoot time   125ms          <1s            30-90s\nMemory      5MB            5-50MB         100MB-1GB\nIsolation   HW (KVM)       Namespaces     HW (KVM)\nDensity     1000+/host     1000+/host     2-10/host\nSecurity    Strong         Moderate       Strong\nGuest OS    Linux only     Same kernel    Any OS\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "9-interview-corner",
+      children: "9. Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-what-is-the-difference-between-vt-x-and-amd-v",
+      children: "Q1: What is the difference between VT-x and AMD-V?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Intel VT-x and AMD-V are CPU extensions that enable hardware-assisted virtualization. They achieve the same goal → reducing the VMM's complexity and improving performance → but differ in implementation details."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Intel VT-x"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "AMD-V"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Root mode"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMX root (VMM) / non-root (guest)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Host / Guest mode"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VM entry/exit"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VM entries / VM exits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMRUN / #VMEXIT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Page table hardware"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT (Extended Page Tables)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NPT (Nested Page Tables)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "IOMMU"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VT-d"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AMD-Vi"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MSR bitmaps"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (per-VM)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No (global intercept)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Posted interrupts"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes (APICv)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AVIC"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "VMCS format"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proprietary (documented)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMCB (documented)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ASID for TLB tagging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VPID"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ASID"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "EPT violation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Specific exit reason with GPA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "NPT fault with nested page fault info"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-what-is-nested-virtualization-how-does-it-work",
+      children: "Q2: What is nested virtualization? How does it work?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Nested virtualization is running a VMM ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "inside"
+      }), " a VM → for example, running KVM inside a VMware VM on AWS. The inner VMM must handle VMX instructions that the outer VMM normally handles."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Challenge:"
+      }), " When the inner VMM executes ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "VMXON"
+      }), ", the outer VMM intercepts it (it's a VM-exit). The outer VMM must:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recognize that the guest is trying to start a hypervisor"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Emulate VMX instruction behavior"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Map inner guest VMCS to outer shadow VMCS structures"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Implementation (KVM on KVM):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outer KVM intercepts guest VMLAUNCH/VMRESUME"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outer KVM maps inner VMCS fields to shadow VMCS"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Outer KVM uses hardware nested virtualization support (VMX \"VMCS shadowing\" on Intel, or \"Nested Nested Page Tables\" on AMD)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Intel VMCS Shadowing:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Special VM-execution controls enable \"VMCS shadowing\""
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inner VMM's VMREAD/VMWRITE to \"shadow VMCS\" succeed without VM-exit"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Writes to the \"active VMCS\" (real hardware VMCS) still trap to outer VMM"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reduces VM-exit frequency from thousands/sec to dozens/sec"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-can-paravirtualization-be-combined-with-hardware-virtualization",
+      children: "Q3: Can paravirtualization be combined with hardware virtualization?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Yes → this is the dominant architecture today. KVM uses VT-x/AMD-V for CPU virtualization (hardware-assisted) AND virtio for I/O (paravirtualized). This gives the best of both:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VT-x handles CPU and memory with minimal traps"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Virtio handles I/O with efficient ring buffers"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-what-happens-when-a-vm-is-overcommitted-on-memory",
+      children: "Q4: What happens when a VM is overcommitted on memory?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When total guest memory exceeds host physical memory, the host must reclaim pages:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Balloon driver"
+        }), ": Guest kernel module inflates (allocates memory), forcing the guest to page out; VMM reuses the now-free GPA range"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Host swapping"
+        }), ": VMM pages out guest memory to the host swap device"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "KSM (Kernel Same-page Merging)"
+        }), ": Host deduplicates identical pages across VMs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory compaction"
+        }), ": VMM migrates pages to reduce fragmentation"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Overcommit risks: OOM killer may kill the VMM or a critical VM; performance thrashes under pressure; live migration becomes slower."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-how-does-live-migration-work-in-memory-virtualization",
+      children: "Q5: How does live migration work in memory virtualization?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Live migration transfers a running VM from one host to another with minimal downtime:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pre-copy phase"
+        }), ": VMM iteratively copies dirty pages to target host"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Stop-and-copy phase"
+        }), ": VM paused, final dirty pages transferred"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Resume"
+        }), ": VM continues on target host"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For memory virtualization:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Shadow PT: VMM must also migrate shadow page tables (complex)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "EPT: VMM migrates EPT structures alongside guest memory (simpler)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Downtime target: < 100ms for most workloads."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-why-did-kvm-remove-shadow-page-table-support-in-2015",
+      children: "Q6: Why did KVM remove shadow page table support in 2015?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By 2015, EPT hardware was universally available on server-class CPUs. Shadow page tables required a VM-exit on every guest CR3 write and every page table modification → significantly hurting performance for workloads with frequent context switches or page table activity (e.g., database workloads with large working sets). EPT removed this overhead completely."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-what-is-the-cause-of-vm-exit-storm",
+      children: "Q7: What is the cause of \"VM-Exit storm\"?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A VM-Exit storm occurs when the VMM resumes the guest and it immediately exits again on the next instruction. Causes:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "EPT violation on every access"
+        }), ": Guest touches a GPA that has no EPT mapping, VMM maps it, guest runs one instruction, next instruction touches unmapped GPA"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "I/O port emulation"
+        }), ": Guest program does PIO to an emulated device at high frequency"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interrupt injection"
+        }), ": VMM injects interrupt, guest processes it, immediately exits due to pending interrupt"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detection:"
+      }), " If VM-exit rate exceeds ~100K/sec per vCPU, investigate exit reason distribution."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-how-does-timekeeping-work-in-a-vm",
+      children: "Q8: How does timekeeping work in a VM?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Guest OS uses time sources that are virtualized:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "TSC (Time Stamp Counter)"
+        }), ": Must be stable across vCPU migration → use TSC scaling + TSC offsetting (VT-x) or constant TSC + invariant TSC"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "KVM-clock (paravirtualized)"
+        }), ": Guest reads time from a shared memory page updated by the host"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PIT/HPET (emulated)"
+        }), ": Interrupt-driven, slower but compatible with unmodified guests"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Without invariant TSC, a guest migrated between different-speed CPUs could see time jump backward → breaking applications."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "10-applications-in-real-systems",
+      children: "10. Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "101-kvm-kernel-based-virtual-machine",
+      children: "10.1 KVM (Kernel-based Virtual Machine)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (kernel module) + Type 2 (QEMU userspace)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hardware-assisted (VT-x/AMD-V) via /dev/kvm"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT/NPT (shadow PT removed in 2015)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtio (primary), SR-IOV, VFIO passthrough"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "libvirt, virsh, virt-manager"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, Windows, *BSD"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Notable users"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS (EC2 Nitro), Google Cloud, OpenStack"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Lines of code"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernel: ~150K; QEMU: ~1.5M"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "102-xen",
+      children: "10.2 Xen"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (bare-metal hypervisor)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PV (paravirtualized) → HVM (hardware-assisted)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shadow PT (original) → EPT (later)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Split drivers (dom0 ↔ domU), PV drivers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "xl, XAPI, Xen Orchestra"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux, Windows (HVM), NetBSD"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Notable users"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS (EC2 Classic), Oracle VM, Citrix Hypervisor"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Architecture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microkernel (< 1M LOC); dom0 is privileged management VM"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "103-vmware-esxi",
+      children: "10.3 VMware ESXi"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (bare-metal / \"hypervisor\" in VMware terms)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binary translation (pre-VT-x) + HW-assisted (VT-x/AMD-V)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shadow PT (legacy) → EPT/NPT"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VMXNET (paravirtualized NIC), PVSCSI, SR-IOV"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "vCenter, vSphere, ESXCLI"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100+ OS types in compatibility matrix"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Notable users"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enterprise data centers, VDI"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Features"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "vMotion, DRS, HA, FT, vSAN"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "104-microsoft-hyper-v",
+      children: "10.4 Microsoft Hyper-V"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type 1 (runs directly on hardware, parent partition)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HW-assisted only (no software fallback)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT with SLAT (Second-Level Address Translation)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SynIC (synthetic interrupt controller), VMBus, SR-IOV"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Management"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hyper-V Manager, System Center VMM, PowerShell"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Guest support"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Windows, Linux (with Integration Services)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Notable users"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Azure (entire cloud runs on Hyper-V)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Features"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Live Migration, Replica, Shielded VMs, Nested Virtualization"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "105-docker-container-runtime",
+      children: "10.5 Docker (Container Runtime)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OS-level virtualization (namespace-based)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Isolation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespaces + cgroups"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Image format"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OCI (Open Container Initiative)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Storage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OverlayFS, aufs, devicemapper"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Networking"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CNI plugins (bridge, overlay, macvlan)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Orchestration"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kubernetes, Docker Swarm, Nomad"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Performance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near-native (direct syscalls)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Seccomp, AppArmor, SELinux, user namespaces"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "106-aws-firecracker",
+      children: "10.6 AWS Firecracker"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Detail"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Type"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MicroVM (VMM) → KVM-based"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "CPU virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KVM + VT-x"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Memory virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EPT with 5-level page table support"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "I/O virt"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Virtio-mmio (block + net only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Overhead"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~5MB per microVM"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Boot time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "~125ms (kernel + init)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Language"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rust (~50K LOC)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Users"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AWS Lambda, AWS Fargate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Security"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "KVM hardware isolation + jailer process"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-quiz",
+      children: "11. Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the key difference between Type 1 and Type 2 hypervisors?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Type 1 runs directly on hardware; Type 2 runs on a host OS."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Why is EPT faster than shadow page tables for most workloads?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "EPT eliminates VM-exits on guest page table modifications."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the primary advantage of paravirtualized I/O (virtio) over full device emulation?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Virtio uses shared ring buffers, eliminating MMIO traps for each I/O."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the minimum number of memory accesses for a 4-level page walk with EPT?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "20-24 (4 guest walk Ã— 4 EPT walk + extra for TLB miss)."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Why can't containers run a different kernel than the host?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Containers share the host kernel through syscalls; they don't have their own kernel."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What mechanism does the VMM use to enforce memory isolation between guests?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "EPT (hardware) or shadow page tables (software) ensure Guest A cannot access Guest B's memory."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the purpose of the balloon driver?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "To reclaim guest memory under overcommit by inflating inside the guest."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What is the key trade-off between SR-IOV and virtio?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "SR-IOV has near-native performance but prevents live migration; virtio supports live migration with slightly lower performance."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "What happens on a VM exit?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "CPU saves guest state to VMCS, loads host state, enters VMM. VMM handles the exit reason and resumes the guest."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does live migration achieve sub-100ms downtime?"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Pre-copy phase iteratively transfers dirty pages; final stop-and-copy phase pauses the VM only long enough to transfer remaining dirtied pages."
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-typescript-implementation--nested-page-walk-simulator",
+      children: "12. TypeScript Implementation — Nested Page Walk Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "/**\n * NestedPageWalkSimulator: Models a guest virtual address translation\n * through 4-level guest page tables and 4-level EPT (Extended Page Tables).\n * \n * Demonstrates why EPT/NPT requires up to 24 memory accesses per translation.\n */\ninterface PageWalkResult {\n  levels: PageWalkLevel[];\n  totalMemoryAccesses: number;\n  eptViolation: boolean;\n}\n\ninterface PageWalkLevel {\n  level: number;           // 0=L4, 1=L3, 2=L2, 3=L1\n  type: 'guest' | 'ept';\n  virtualAddr: string;     // partial VPN\n  pfn: number;             // page frame number from table entry\n  tableAddr: string;       // physical address of page table\n  entryAddr: string;       // physical address of table entry\n  entryValue: string;      // raw entry bits\n}\n\nclass MemoryVirtualizationSimulator {\n  // Simulated physical memory for page tables\n  private readonly PAGE_SIZE = 4096;\n  private readonly BITS_PER_LEVEL = 9;  // x86-64 uses 9 bits per level\n  private readonly ENTRY_SIZE = 8;      // 8 bytes per PTE\n\n  /**\n   * Walk a guest virtual address through 4 guest levels + 4 EPT levels.\n   * Guest VA → Guest Page Tables → GPA → EPT → HPA\n   */\n  walkGuestAddress(guestVA: string, guestCR3: number, eptp: number): PageWalkResult {\n    const va = BigInt(guestVA);\n    const levels: PageWalkLevel[] = [];\n    let totalAccesses = 0;\n\n    // Extract 4 VPN indices from guest VA\n    const vpn4 = Number((va >> BigInt(39)) & BigInt(0x1FF));  // bits 47:39\n    const vpn3 = Number((va >> BigInt(30)) & BigInt(0x1FF));  // bits 38:30\n    const vpn2 = Number((va >> BigInt(21)) & BigInt(0x1FF));  // bits 29:21\n    const vpn1 = Number((va >> BigInt(12)) & BigInt(0x1FF));  // bits 20:12\n    const offset = Number(va & BigInt(0xFFF));                 // bits 11:0\n\n    console.log(`Guest VA: ${guestVA}`);\n    console.log(`  VPN4=${vpn4.toString().padStart(3)} VPN3=${vpn3.toString().padStart(3)} VPN2=${vpn2.toString().padStart(3)} VPN1=${vpn1.toString().padStart(3)} Offset=${offset.toString(16).padStart(3,'0')}`);\n\n    // Simulate 4-level guest page walk\n    let currentTable = guestCR3;\n    const vpns = [vpn4, vpn3, vpn2, vpn1];\n\n    for (let level = 0; level < 4; level++) {\n      // Each level requires:\n      // 1. Read guest PML4 entry → 1 guest memory access\n      // 2. If using EPT: each guest access triggers an EPT walk to translate the GPA\n      \n      const entryAddr = currentTable + vpns[level] * this.ENTRY_SIZE;\n      \n      // Guest page table access\n      levels.push({\n        level: level + 1, type: 'guest',\n        virtualAddr: `VPN${4-level}=${vpns[level]}`,\n        pfn: 0x1000 + level, tableAddr: `0x${currentTable.toString(16)}`,\n        entryAddr: `0x${entryAddr.toString(16)}`, entryValue: `[simulated] P=1 PFN=0x${(0x1000+level).toString(16)}`\n      });\n      totalAccesses++;  // Guest PT read\n\n      // EPT walk for the GPA (each guest memory access triggers EPT walk)\n      if (currentTable !== guestCR3 || level === 0) {\n        // Simulate 4-level EPT walk for the guest page table base\n        for (let eptLevel = 0; eptLevel < 4; eptLevel++) {\n          levels.push({\n            level: eptLevel + 1, type: 'ept',\n            virtualAddr: `EPT-L${4-eptLevel}`,\n            pfn: 0x5000 + eptLevel, tableAddr: `EPT-0x${eptLevel}`,\n            entryAddr: `EPT-entry-${eptLevel}`,\n            entryValue: `[simulated EPT] R=1 W=1 X=1`\n          });\n          totalAccesses++;  // EPT walk memory access\n        }\n      }\n\n      // Move to next table (simulated)\n      currentTable = 0x2000 + level * 0x1000;\n    }\n\n    // Final data access: read from 0x{final GPA}\n    const finalGPA = currentTable + offset;\n    console.log(`  GPA (after guest walk): 0x${finalGPA.toString(16)}`);\n\n    // One more EPT walk to translate the final GPA to HPA\n    for (let eptLevel = 0; eptLevel < 4; eptLevel++) {\n      levels.push({\n        level: eptLevel + 1, type: 'ept',\n        virtualAddr: `EPT-FINAL-L${4-eptLevel}`,\n        pfn: 0x9000 + eptLevel,\n        tableAddr: `EPT-FINAL-0x${eptLevel}`,\n        entryAddr: `EPT-FINAL-entry-${eptLevel}`,\n        entryValue: `[simulated] R=1 W=1 X=1`\n      });\n      totalAccesses++;\n    }\n\n    const eptViolation = false;\n\n    console.log(`\\nTotal memory accesses for this translation: ${totalAccesses}`);\n    console.log(`  Guest PT walks: 4 reads`);\n    console.log(`  EPT walks: 4 × ${totalAccesses - 4} translations for guest table reads + final data`);\n    console.log(`  Data access (final GPA → HPA via EPT): 4 EPT reads`);\n\n    return { levels, totalMemoryAccesses, eptViolation };\n  }\n\n  compareShadowVsEPT(): void {\n    console.log('\\n========== Shadow Page Tables vs EPT/NPT ==========');\n    console.log('\\nShadow Page Tables:');\n    console.log('  VMM maintains shadow copies of guest page tables.');\n    console.log('  Guest PT modifications → VM-exit → VMM updates shadow PT → VM-entry.');\n    console.log('  Memory accesses per translation: 4 (guest walk via shadow PT, no EPT)');\n    console.log('  BUT: every guest page table modification causes a VM-exit!');\n    console.log('  Cost: applications that frequently modify page tables (fork, mmap, munmap)');\n    console.log('         suffer thousands of VM-exits per second.');\n\n    console.log('\\nEPT/NPT (Nested Page Tables):');\n    console.log('  Hardware walks both guest PT and EPT simultaneously.');\n    console.log('  Guest PT modifications DO NOT cause VM-exits.');\n    console.log('  Memory accesses per translation: up to 24 (4 guest × 4 EPT + 4 data EPT)');\n    console.log('  BUT: no VM-exits for page table operations.');\n\n    console.log('\\nComparison:');\n    console.log('  Metric            | Shadow PT   | EPT/NPT');\n    console.log('  VM-exits on PT op | High        | None');\n    console.log('  Translation cost  | ~4 accesses | ~24 accesses');\n    console.log('  Overall perf      | Good for   | Good for');\n    console.log('                    | static maps | dynamic maps');\n    console.log('  Modern usage      | Legacy      | Default (since ~2010)');\n  }\n}\n\n// Example: Walk a guest virtual address\nconst sim = new MemoryVirtualizationSimulator();\nconsole.log('=== Nested Page Walk Demonstration ===');\nconsole.log('Guest VA: 0x7F00_1234_5678, Guest CR3: 0x100000, EPTP: 0x200000\\n');\n\nsim.walkGuestAddress('0x7F0012345678', 0x100000, 0x200000);\nsim.compareShadowVsEPT();\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "13-chapter-quiz-multiple-choice",
+      children: "13. Chapter Quiz (Multiple Choice)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "```"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the key difference between Type 1 and Type 2 hypervisors?\na) Type 1 runs directly on hardware; Type 2 runs on a host OS\nb) Type 1 is faster; Type 2 is slower\nc) Type 1 supports more VMs; Type 2 supports fewer\nd) Type 1 is open-source; Type 2 is proprietary"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Why is EPT faster than shadow page tables for most workloads?\na) EPT reduces the number of memory accesses per translation\nb) EPT eliminates VM-exits on guest page table modifications\nc) EPT uses larger page sizes\nd) EPT requires no hardware support"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the primary advantage of paravirtualized I/O (virtio) over full device emulation?\na) Virtio supports more device types\nb) Virtio uses shared ring buffers, eliminating MMIO traps for each I/O\nc) Virtio is easier to implement in the VMM\nd) Virtio requires no guest driver changes"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the minimum number of memory accesses for a 4-level page walk with EPT?\na) 4\nb) 8\nc) 16-20\nd) 20-24"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Why can't containers run a different kernel than the host?\na) Containers share the host kernel through syscalls\nb) Container images don't include kernel binaries\nc) The host firewall blocks kernel loading\nd) The VMM prevents kernel execution in containers"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What mechanism does the VMM use to enforce memory isolation between guests?\na) Memory ballooning\nb) EPT (hardware) or shadow page tables (software)\nc) Virtual memory segmentation\nd) Cryptographic memory encryption"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the purpose of the balloon driver?\na) To compress guest memory\nb) To reclaim guest memory under overcommit\nc) To accelerate guest network I/O\nd) To provide live migration support"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What happens on a VM exit?\na) The guest OS exits gracefully\nb) CPU saves guest state, loads host state, enters VMM\nc) The VM is migrated to another host\nd) The VMM is terminated"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "How does live migration achieve sub-100ms downtime?\na) By compressing memory pages before transfer\nb) Pre-copy phase transfers dirty pages; stop-and-copy phase is brief\nc) By using InfiniBand network interconnects\nd) By running the VM on both hosts simultaneously"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the primary trade-off between SR-IOV and virtio?\na) SR-IOV is faster but prevents live migration; virtio supports migration\nb) SR-IOV is open-source; virtio is proprietary\nc) SR-IOV supports more VFs; virtio supports fewer\nd) SR-IOV requires special hardware; virtio works on any NIC"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers:"
+      }), " 1-a, 2-b, 3-b, 4-d, 5-a, 6-b, 7-b, 8-b, 9-b, 10-a\n```"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "14-summary",
+      children: "14. Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Virtualization"
+        }), " abstracts hardware resources so multiple OS instances share a single physical machine."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hypervisors"
+        }), " come in Type 1 (bare-metal: KVM, ESXi, Hyper-V, Xen) and Type 2 (hosted: VirtualBox, VMware Workstation)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "CPU virtualization"
+        }), " evolved from binary translation (VMware) → paravirtualization (Xen PV) → hardware-assisted (VT-x/AMD-V)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Memory virtualization"
+        }), " evolved from shadow page tables → EPT/NPT, eliminating costly VM-exits on guest page table operations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "I/O virtualization"
+        }), " has three tiers: emulated (slow, compatible), virtio (balanced, efficient), SR-IOV (fast, no migration)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Containerization"
+        }), " uses namespaces for isolation and cgroups for resource limits → all sharing the host kernel."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Performance hierarchy"
+        }), ": Containers > SR-IOV > Virtio > Shadow PT > Emulated I/O."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Key trade-offs"
+        }), ": Isolation vs density, migration support vs performance, compatibility vs efficiency."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "13-exercises",
+      children: "13. Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Trace a memory access"
+          }), ": Given a guest VA 0x7F00_1234_5678, show the 4-level guest page walk and the 4-level EPT walk. Assume each level produces the same PFN (i.e., no huge pages). Calculate total memory references."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare boot sequences"
+          }), ": Write the boot sequence for a VM (QEMU + KVM) vs a container (Docker). Identify what steps are unique to each and explain why one is 100x faster."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a virtio device"
+          }), ": Specify the virtqueue layout, descriptor format, and processing flow for a virtio-random-number-generator. The guest sends an empty request, and the host writes a 64-byte random value back."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Calculate overcommit ratios"
+          }), ": A host has 64GB RAM. If each VM needs 8GB (reserved) + 2GB (balloonable), and the OS needs 4GB, how many VMs can run with a 2:1 overcommit ratio? What are the risks?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Implement a minimal VMM"
+          }), ": Using KVM's API (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/dev/kvm"
+          }), "), write C++ code that creates one VM with one vCPU, loads a tiny \"guest\" binary that writes \"Hello from guest\" to a virtual serial port, and outputs it on the host. (Hint: Use KVM_CREATE_VM, KVM_CREATE_VCPU, KVM_SET_USER_MEMORY_REGION, KVM_RUN.)"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare migration approaches"
+          }), ": For a VM with 16GB RAM and 10Gbps network, how long would the pre-copy phase take with 100ms downtime target? Assume the VM dirties 10MB/sec. Show your calculation."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Container escape analysis"
+          }), ": Given a container with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "--privileged"
+          }), " flag and host PID namespace sharing, what attacks are possible? What namespace configuration would prevent them?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "SR-IOV capacity planning"
+          }), ": A host has one 100GbE NIC with 128 VFs. Each VM needs 10Gbps. How many VMs can you assign VFs to? What happens if a VM needs 40Gbps?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Nested virtualization performance"
+          }), ": If a nested VM (KVM → QEMU → KVM → guest) takes a VM-exit, how many exits actually occur on the physical CPU? Trace the exit path."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a hypervisor comparison matrix"
+          }), ": Create a table comparing KVM, Xen, ESXi, and Hyper-V across: CPU virt method, memory virt method, I/O method, management interface, guest OS support, maximum vCPUs per VM, maximum RAM per VM, live migration support, and fault tolerance."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "additional-exercises",
+      children: "Additional Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "11",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "VM-Exit frequency analyzer"
+          }), ": Write a KVM-based tool (using ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "perf kvm stat"
+          }), " or ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/sys/kernel/debug/kvm/*"
+          }), ") that profiles VM-exit reasons for a running VM. Measure exit counts for: EPT violation, I/O instruction, CPUID, HLT, MSR access, and control register access. Identify the top 3 exit reasons and suggest optimizations."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Overcommit risk calculator"
+          }), ": Extend the TypeScript RaidCalculator pattern to build a memory overcommit risk model. Given: physical RAM, per-VM reserved memory, per-VM balloonable memory, workload memory pressure distribution, and acceptable risk level (e.g., 99.9% no swap), calculate the maximum number of VMs that can run."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Nested virtualization performance"
+          }), ": Benchmark nested virtualization by running a CPU-bound workload at four levels: native, L1 VM (KVM), L2 VM (KVM nested in L1), and L3 VM (KVM in L2). Measure: SPECrate score degradation at each level, VM-exit cost (in cycles), and memory access latency. Calculate the performance multiplier per nesting level."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "virtio ring buffer simulator"
+          }), ": Implement a virtio virtqueue in TypeScript with: descriptor table (address, length, flags, next), available ring (guest-to-host notifications), and used ring (host-to-Guest completions). Simulate a network device sending and receiving packets through the ring buffer. Measure throughput vs a simple MMIO-based emulated device."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Live migration cost model"
+          }), ": Build a mathematical model for live migration. Given: VM memory size (D), memory dirtying rate (R), network bandwidth (B), and downtime target (T), compute: number of pre-copy rounds, total migration time, total data transferred, and final downtime. Show results for: 8GB VM with 20MB/s dirty rate over 1Gbps, 10Gbps, and 100Gbps links."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Container vs VM density comparison"
+          }), ": Given a host with 32 vCPUs, 128GB RAM, and 1TB SSD, compare maximum density for: (a) Docker containers (each: 0.1 vCPU, 256MB RAM, 1GB storage) vs (b) VMs (each: 1 vCPU, 2GB RAM, 20GB storage). Include OS overhead for each VM (assume 512MB for guest OS). Calculate total application instances achievable."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "KVM module performance test"
+          }), ": Write a C program using ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "/dev/kvm"
+          }), " to: create a VM with a vCPU, run a tiny guest code that executes a CPUID instruction, measure the latency of a VM-entry/VM-exit round trip. Run 10,000 iterations and report average, min, max, and percentile latencies. Compare with and without hardware virtualization features."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Firecracker microVM vs Docker benchmark"
+          }), ": Compare AWS Firecracker microVMs vs Docker containers on: boot time (to first process execution), memory overhead per instance, maximum instances on a 16GB host, and security isolation (using a syscall count attack surface metric). Explain the scenarios where each is preferable."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Page table isolation (KPTI) simulation"
+          }), ": Implement a TypeScript simulation of Kernel Page Table Isolation (KPTI / KAISER) used to mitigate Meltdown. Show the difference between: (a) without KPTI — user page tables include kernel mappings, (b) with KPTI — user page tables contain only minimal kernel entries. Measure the syscall overhead of TLB flushing for KPTI."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "GPU passthrough performance"
+          }), ": Write a benchmark that measures GPU compute performance (using CUDA or Vulkan) across: bare metal, VM with GPU passthrough (VFIO), VM with GPU paravirtualization (virtio-gpu), and VM with emulated GPU (QEMU stdvga). Report: GFLOPS, frame rate, and API call latency. Explain which workloads are suitable for each approach."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

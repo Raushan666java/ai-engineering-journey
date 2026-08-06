@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
-<title data-rh="true">Chapter 16: Cloud Networking | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 16: Cloud Networking | AI Engineering Journey"><meta data-rh="true" name="description" content="Learning Objectives"><meta data-rh="true" property="og:description" content="Learning Objectives"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Computer Networks","item":"https://raushan666java.github.io/ai-engineering-journey/computer-networks/index"},{"@type":"ListItem","position":2,"name":"Chapter 16: Cloud Networking","item":"https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.68ae8ef5.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.4470784e.js" defer="defer"></script>
-<script src="/ai-engineering-journey/assets/js/main.bc7a9306.js" defer="defer"></script>
+<title data-rh="true">Chapter 16: Cloud Networking | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 16: Cloud Networking | AI Engineering Journey"><meta data-rh="true" name="description" content="Learning Objectives"><meta data-rh="true" property="og:description" content="Learning Objectives"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Computer Networks","item":"https://raushan666java.github.io/ai-engineering-journey/computer-networks/index"},{"@type":"ListItem","position":2,"name":"Chapter 16: Cloud Networking","item":"https://raushan666java.github.io/ai-engineering-journey/computer-networks/16-cloud-networking"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.c8464654.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.64107b2c.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.9d4b1971.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -750,7 +750,7 @@
 
 
 
-<table><thead><tr><th>Step</th><th>Check</th><th>Result</th></tr></thead><tbody><tr><td>1</td><td>Connection tracking lookup</td><td>No existing flow</td></tr><tr><td>2</td><td>Direction = inbound</td><td>Evaluates inbound rules</td></tr><tr><td>3</td><td>Rule 1: TCP/443 from 0.0.0.0/0</td><td>Port 22 â‰  443</td></tr><tr><td>4</td><td>Rule 2: TCP/80 from 0.0.0.0/0</td><td>Port 22 â‰  80</td></tr><tr><td>5</td><td>Rule 3: TCP/22 from 10.0.0.0/16</td><td>203.0.113.5 not in 10.0.0.0/16</td></tr><tr><td>6</td><td>No rules matched</td><td><strong>DENY</strong></td></tr></tbody></table>
+<table><thead><tr><th>Step</th><th>Check</th><th>Result</th></tr></thead><tbody><tr><td>1</td><td>Connection tracking lookup</td><td>No existing flow</td></tr><tr><td>2</td><td>Direction = inbound</td><td>Evaluates inbound rules</td></tr><tr><td>3</td><td>Rule 1: TCP/443 from 0.0.0.0/0</td><td>Port 22 ≠ 443</td></tr><tr><td>4</td><td>Rule 2: TCP/80 from 0.0.0.0/0</td><td>Port 22 ≠ 80</td></tr><tr><td>5</td><td>Rule 3: TCP/22 from 10.0.0.0/16</td><td>203.0.113.5 not in 10.0.0.0/16</td></tr><tr><td>6</td><td>No rules matched</td><td><strong>DENY</strong></td></tr></tbody></table>
 <p><strong>Trace: SSH from 10.0.1.5</strong></p>
 
 
@@ -1352,7 +1352,7 @@
 
 
 
-<table><thead><tr><th>Feature</th><th>ALB (Layer 7)</th><th>NLB (Layer 4)</th><th>GLB (Layer 3)</th></tr></thead><tbody><tr><td>OSI Layer</td><td>7 (Application)</td><td>4 (Transport)</td><td>3 (Network)</td></tr><tr><td>Protocols</td><td>HTTP, HTTPS, gRPC, WebSocket</td><td>TCP, UDP, TLS</td><td>IP (GENEVE)</td></tr><tr><td>Latency</td><td>1-5ms</td><td>~100Î¼s</td><td>~200Î¼s</td></tr><tr><td>Path-based routing</td><td>âœ“</td><td>âœ—</td><td>âœ—</td></tr><tr><td>Host-based routing</td><td>âœ“</td><td>âœ—</td><td>âœ—</td></tr><tr><td>Static IP per AZ</td><td>âœ— (uses DNS name)</td><td>âœ“</td><td>âœ“</td></tr><tr><td>Client IP preservation</td><td>âœ— (X-Forwarded-For)</td><td>âœ“</td><td>âœ“</td></tr><tr><td>TLS termination</td><td>âœ“</td><td>âœ“</td><td>âœ—</td></tr><tr><td>SNI support</td><td>âœ“</td><td>âœ“</td><td>âœ—</td></tr><tr><td>Sticky sessions</td><td>âœ“ (cookie)</td><td>âœ“ (flow hash)</td><td>âœ—</td></tr><tr><td>WebSocket support</td><td>âœ“</td><td>âœ— (raw TCP)</td><td>âœ—</td></tr><tr><td>gRPC support</td><td>âœ“ (HTTP/2)</td><td>âœ“ (TCP)</td><td>âœ—</td></tr><tr><td>Target types</td><td>IP, instance, Lambda, ALB</td><td>IP, instance, ALB</td><td>IP, instance</td></tr><tr><td>Health checks</td><td>HTTP/HTTPS</td><td>TCP, HTTP, HTTPS</td><td>TCP</td></tr><tr><td>Use case</td><td>Microservices, web apps</td><td>Gaming, real-time, low-latency</td><td>Firewall appliances, IDS/IPS</td></tr><tr><td>Pricing</td><td>Per LCU</td><td>Per LCU (more expensive)</td><td>Per appliance + data</td></tr><tr><td>Cross-zone support</td><td>âœ“</td><td>âœ“ (can disable)</td><td>âœ“</td></tr></tbody></table>
+<table><thead><tr><th>Feature</th><th>ALB (Layer 7)</th><th>NLB (Layer 4)</th><th>GLB (Layer 3)</th></tr></thead><tbody><tr><td>OSI Layer</td><td>7 (Application)</td><td>4 (Transport)</td><td>3 (Network)</td></tr><tr><td>Protocols</td><td>HTTP, HTTPS, gRPC, WebSocket</td><td>TCP, UDP, TLS</td><td>IP (GENEVE)</td></tr><tr><td>Latency</td><td>1-5ms</td><td>~100μs</td><td>~200μs</td></tr><tr><td>Path-based routing</td><td>✓</td><td>✗</td><td>✗</td></tr><tr><td>Host-based routing</td><td>✓</td><td>✗</td><td>✗</td></tr><tr><td>Static IP per AZ</td><td>✗ (uses DNS name)</td><td>✓</td><td>✓</td></tr><tr><td>Client IP preservation</td><td>✗ (X-Forwarded-For)</td><td>✓</td><td>✓</td></tr><tr><td>TLS termination</td><td>✓</td><td>✓</td><td>✗</td></tr><tr><td>SNI support</td><td>✓</td><td>✓</td><td>✗</td></tr><tr><td>Sticky sessions</td><td>✓ (cookie)</td><td>✓ (flow hash)</td><td>✗</td></tr><tr><td>WebSocket support</td><td>✓</td><td>✗ (raw TCP)</td><td>✗</td></tr><tr><td>gRPC support</td><td>✓ (HTTP/2)</td><td>✓ (TCP)</td><td>✗</td></tr><tr><td>Target types</td><td>IP, instance, Lambda, ALB</td><td>IP, instance, ALB</td><td>IP, instance</td></tr><tr><td>Health checks</td><td>HTTP/HTTPS</td><td>TCP, HTTP, HTTPS</td><td>TCP</td></tr><tr><td>Use case</td><td>Microservices, web apps</td><td>Gaming, real-time, low-latency</td><td>Firewall appliances, IDS/IPS</td></tr><tr><td>Pricing</td><td>Per LCU</td><td>Per LCU (more expensive)</td><td>Per appliance + data</td></tr><tr><td>Cross-zone support</td><td>✓</td><td>✓ (can disable)</td><td>✓</td></tr></tbody></table>
 <p><strong>How to Choose:</strong></p>
 <ul>
 <li class="">Use <strong>ALB</strong> for HTTP/HTTPS applications that need path/host routing, WebSocket, or Lambda targets.</li>
@@ -1615,7 +1615,7 @@
 
 
 
-<table><thead><tr><th>Operation</th><th>Time</th><th>Space</th><th>Why</th></tr></thead><tbody><tr><td>Simple DNS resolution</td><td>O(R)</td><td>O(R)</td><td>R = records; one random selection</td></tr><tr><td>Weighted routing</td><td>O(R)</td><td>O(R)</td><td>Weighted random selection, sum + scan</td></tr><tr><td>Latency-based</td><td>O(R * P)</td><td>O(R)</td><td>R records Ã— P probe locations</td></tr><tr><td>DNS caching</td><td>O(1) avg</td><td>O(C)</td><td>Hash map; C = cache entries</td></tr><tr><td>Health check</td><td>O(H)</td><td>O(H)</td><td>H = health check endpoints</td></tr></tbody></table>
+<table><thead><tr><th>Operation</th><th>Time</th><th>Space</th><th>Why</th></tr></thead><tbody><tr><td>Simple DNS resolution</td><td>O(R)</td><td>O(R)</td><td>R = records; one random selection</td></tr><tr><td>Weighted routing</td><td>O(R)</td><td>O(R)</td><td>Weighted random selection, sum + scan</td></tr><tr><td>Latency-based</td><td>O(R * P)</td><td>O(R)</td><td>R records × P probe locations</td></tr><tr><td>DNS caching</td><td>O(1) avg</td><td>O(C)</td><td>Hash map; C = cache entries</td></tr><tr><td>Health check</td><td>O(H)</td><td>O(H)</td><td>H = health check endpoints</td></tr></tbody></table>
 <p><strong>Why DNS caching is critical:</strong> Each query avoided by cache saves 20-120ms of resolution time. At 1000 QPS, a 90% cache hit rate saves 90,000ms of total resolution time per second.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-cloud-dns">Advantages &amp; Disadvantages of Cloud DNS<a href="#advantages--disadvantages-of-cloud-dns" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of Cloud DNS" title="Direct link to Advantages &amp; Disadvantages of Cloud DNS" translate="no">​</a></h3>
 
@@ -2353,7 +2353,7 @@
 
 
 <table><thead><tr><th>Operation</th><th>Time</th><th>Space</th><th>Why</th></tr></thead><tbody><tr><td>IKE Phase 1 (4 messages)</td><td>O(1)</td><td>O(1)</td><td>Fixed 4-message exchange with DH</td></tr><tr><td>IKE Phase 2 (3 messages)</td><td>O(1)</td><td>O(1)</td><td>Fixed 3-message quick mode</td></tr><tr><td>AES-256 encryption (per packet)</td><td>O(N)</td><td>O(N)</td><td>N = packet size; block cipher per 16-byte block</td></tr><tr><td>HMAC verification (per packet)</td><td>O(N)</td><td>O(1)</td><td>Hash entire payload once</td></tr><tr><td>BGP route propagation</td><td>O(R)</td><td>O(R)</td><td>R = route prefixes; BGP update per prefix</td></tr></tbody></table>
-<p><strong>Why AES-256 is O(N) and not O(1):</strong> Each 16-byte block must be encrypted sequentially. A 1500-byte packet requires ~94 AES block operations. Hardware AES-NI instructions make this ~1 CPU cycle per byte, which is 1.5Î¼s for a 1500-byte packet at 1GHz.</p>
+<p><strong>Why AES-256 is O(N) and not O(1):</strong> Each 16-byte block must be encrypted sequentially. A 1500-byte packet requires ~94 AES block operations. Hardware AES-NI instructions make this ~1 CPU cycle per byte, which is 1.5μs for a 1500-byte packet at 1GHz.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-cloud-vpn">Advantages &amp; Disadvantages of Cloud VPN<a href="#advantages--disadvantages-of-cloud-vpn" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of Cloud VPN" title="Direct link to Advantages &amp; Disadvantages of Cloud VPN" translate="no">​</a></h3>
 
 
@@ -3008,7 +3008,7 @@
 
 
 
-<table><thead><tr><th>Step</th><th>Component</th><th>Action</th></tr></thead><tbody><tr><td>1</td><td>frontend pod</td><td>Sends HTTP GET to <a href="http://backend/api/data" target="_blank" rel="noopener noreferrer" class="">http://backend/api/data</a></td></tr><tr><td>2</td><td>iptables (frontend)</td><td>Redirects outbound port 80 to Envoy sidecar (15001)</td></tr><tr><td>3</td><td>Envoy (frontend)</td><td>Looks up VirtualService for &quot;backend&quot;</td></tr><tr><td>4</td><td>Envoy</td><td>Weighted routing: random(100) = 73 → 73 â‰¤ 80 → v1</td></tr><tr><td>5</td><td>Envoy</td><td>Identifies backend-v1 endpoint: 10.0.1.20:8080</td></tr><tr><td>6</td><td>Envoy</td><td>Initiate mTLS with backend-v1 Envoy</td></tr><tr><td>7</td><td>mTLS handshake</td><td>Certificate exchange, ALPN h2 negotiation (~3ms)</td></tr><tr><td>8</td><td>Envoy (frontend)</td><td>Forwards over encrypted tunnel</td></tr><tr><td>9</td><td>Envoy (backend)</td><td>Decrypts, forwards to backend-v1 container on localhost</td></tr><tr><td>10</td><td>backend-v1</td><td>Processes request, returns response</td></tr><tr><td>11</td><td>Envoy (backend)</td><td>Encrypts response, adds trace headers</td></tr><tr><td>12</td><td>Envoy (frontend)</td><td>Decrypts, returns to frontend container</td></tr><tr><td></td><td><strong>Total</strong></td><td><strong>~8ms (including mTLS)</strong></td></tr></tbody></table>
+<table><thead><tr><th>Step</th><th>Component</th><th>Action</th></tr></thead><tbody><tr><td>1</td><td>frontend pod</td><td>Sends HTTP GET to <a href="http://backend/api/data" target="_blank" rel="noopener noreferrer" class="">http://backend/api/data</a></td></tr><tr><td>2</td><td>iptables (frontend)</td><td>Redirects outbound port 80 to Envoy sidecar (15001)</td></tr><tr><td>3</td><td>Envoy (frontend)</td><td>Looks up VirtualService for &quot;backend&quot;</td></tr><tr><td>4</td><td>Envoy</td><td>Weighted routing: random(100) = 73 → 73 ≤ 80 → v1</td></tr><tr><td>5</td><td>Envoy</td><td>Identifies backend-v1 endpoint: 10.0.1.20:8080</td></tr><tr><td>6</td><td>Envoy</td><td>Initiate mTLS with backend-v1 Envoy</td></tr><tr><td>7</td><td>mTLS handshake</td><td>Certificate exchange, ALPN h2 negotiation (~3ms)</td></tr><tr><td>8</td><td>Envoy (frontend)</td><td>Forwards over encrypted tunnel</td></tr><tr><td>9</td><td>Envoy (backend)</td><td>Decrypts, forwards to backend-v1 container on localhost</td></tr><tr><td>10</td><td>backend-v1</td><td>Processes request, returns response</td></tr><tr><td>11</td><td>Envoy (backend)</td><td>Encrypts response, adds trace headers</td></tr><tr><td>12</td><td>Envoy (frontend)</td><td>Decrypts, returns to frontend container</td></tr><tr><td></td><td><strong>Total</strong></td><td><strong>~8ms (including mTLS)</strong></td></tr></tbody></table>
 <p><strong>Request 2: Circuit breaker opens</strong></p>
 
 
@@ -3639,7 +3639,7 @@
 <p><strong>What makes security groups stateful?</strong></p>
 <ul>
 <li class="">a) Rules apply to both directions</li>
-<li class="">b) Return traffic is automatically allowed âœ“</li>
+<li class="">b) Return traffic is automatically allowed ✓</li>
 <li class="">c) They process rules in order</li>
 <li class="">d) They support deny rules</li>
 </ul>
@@ -3648,7 +3648,7 @@
 <p><strong>Which load balancer type provides a static IP per AZ?</strong></p>
 <ul>
 <li class="">a) ALB</li>
-<li class="">b) NLB âœ“</li>
+<li class="">b) NLB ✓</li>
 <li class="">c) CLB</li>
 <li class="">d) GLB</li>
 </ul>
@@ -3657,7 +3657,7 @@
 <p><strong>What does VXLAN use to identify tenant segments?</strong></p>
 <ul>
 <li class="">a) VLAN ID</li>
-<li class="">b) VNI âœ“</li>
+<li class="">b) VNI ✓</li>
 <li class="">c) GRE key</li>
 <li class="">d) Subnet ID</li>
 </ul>
@@ -3666,7 +3666,7 @@
 <p><strong>Which CDN feature reduces origin load?</strong></p>
 <ul>
 <li class="">a) Edge computing</li>
-<li class="">b) Tiered caching âœ“</li>
+<li class="">b) Tiered caching ✓</li>
 <li class="">c) Dynamic acceleration</li>
 <li class="">d) DNS routing</li>
 </ul>
@@ -3675,7 +3675,7 @@
 <p><strong>What AWS service acts as a hub for VPC and on-premises connectivity?</strong></p>
 <ul>
 <li class="">a) VPC Peering</li>
-<li class="">b) Transit Gateway âœ“</li>
+<li class="">b) Transit Gateway ✓</li>
 <li class="">c) Direct Connect</li>
 <li class="">d) VPN Gateway</li>
 </ul>
@@ -3684,7 +3684,7 @@
 <p><strong>What is the time complexity of round-robin load balancer selection?</strong></p>
 <ul>
 <li class="">a) O(N)</li>
-<li class="">b) O(1) âœ“</li>
+<li class="">b) O(1) ✓</li>
 <li class="">c) O(log N)</li>
 <li class="">d) O(N^2)</li>
 </ul>
@@ -3693,7 +3693,7 @@
 <p><strong>Which cloud DNS routing policy is best for canary deployments?</strong></p>
 <ul>
 <li class="">a) Simple</li>
-<li class="">b) Weighted âœ“</li>
+<li class="">b) Weighted ✓</li>
 <li class="">c) Latency-based</li>
 <li class="">d) Geolocation</li>
 </ul>
@@ -3702,7 +3702,7 @@
 <p><strong>How many VNIs does VXLAN support?</strong></p>
 <ul>
 <li class="">a) 4096</li>
-<li class="">b) ~16 million âœ“</li>
+<li class="">b) ~16 million ✓</li>
 <li class="">c) ~65,000</li>
 <li class="">d) ~4 billion</li>
 </ul>
@@ -3711,7 +3711,7 @@
 <p><strong>Which service mesh component handles certificate management for mTLS?</strong></p>
 <ul>
 <li class="">a) Pilot</li>
-<li class="">b) Citadel âœ“</li>
+<li class="">b) Citadel ✓</li>
 <li class="">c) Envoy</li>
 <li class="">d) Mixer</li>
 </ul>
@@ -3749,7 +3749,7 @@
 <li class="">
 <p>A CDN receives 100 GB/s of traffic at peak. The cache hit ratio is 85%. The origin server can handle 10 GB/s. Is the origin capacity adequate? If not, propose two solutions.</p>
 <ul>
-<li class=""><strong>Solution:</strong> Origin handles 15 GB/s (100 Ã— 0.15). This exceeds 10 GB/s capacity. Solutions: (a) increase cache hit ratio to 90%+ by pre-warming cache and optimizing TTLs, (b) implement tiered caching with regional cache nodes, (c) increase origin bandwidth to 20 GB/s.</li>
+<li class=""><strong>Solution:</strong> Origin handles 15 GB/s (100 × 0.15). This exceeds 10 GB/s capacity. Solutions: (a) increase cache hit ratio to 90%+ by pre-warming cache and optimizing TTLs, (b) implement tiered caching with regional cache nodes, (c) increase origin bandwidth to 20 GB/s.</li>
 </ul>
 </li>
 <li class="">

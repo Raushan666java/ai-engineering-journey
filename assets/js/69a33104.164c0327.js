@@ -1,0 +1,1114 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[34652],{
+
+/***/ 56136
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_laravel_14_ai_sdk_media_md_69a_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-laravel-14-ai-sdk-media-md-69a.json
+const site_docs_courses_laravel_14_ai_sdk_media_md_69a_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/laravel/14-ai-sdk-media","title":"Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings","description":"Previous Laravel MCP -- Model Context Protocol","source":"@site/docs/courses/laravel/14-ai-sdk-media.md","sourceDirName":"courses/laravel","slug":"/laravel/14-ai-sdk-media","permalink":"/ai-engineering-journey/laravel/14-ai-sdk-media","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":14,"frontMatter":{"id":"14-ai-sdk-media","slug":"/laravel/14-ai-sdk-media","title":"Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings","sidebar_label":"Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings","sidebar_position":14},"sidebar":"coursesSidebar","previous":{"title":"Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools","permalink":"/ai-engineering-journey/laravel/13-ai-sdk-tools"},"next":{"title":"Chapter 15: Laravel MCP → Model Context Protocol","permalink":"/ai-engineering-journey/laravel/15-mcp"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/laravel/14-ai-sdk-media.md
+
+
+const frontMatter = {
+	id: '14-ai-sdk-media',
+	slug: '/laravel/14-ai-sdk-media',
+	title: 'Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings',
+	sidebar_label: 'Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings',
+	sidebar_position: 14
+};
+const contentTitle = 'Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "14.1 Image Generation",
+  "id": "141-image-generation",
+  "level": 3
+}, {
+  "value": "14.2 Text-to-Speech (TTS) Audio",
+  "id": "142-text-to-speech-tts-audio",
+  "level": 3
+}, {
+  "value": "14.3 Speech-to-Text Transcription",
+  "id": "143-speech-to-text-transcription",
+  "level": 3
+}, {
+  "value": "14.4 Embeddings",
+  "id": "144-embeddings",
+  "level": 3
+}, {
+  "value": "14.4.1 The <code>Str</code> Helper",
+  "id": "1441-the-str-helper",
+  "level": 4
+}, {
+  "value": "14.4.2 The <code>Embeddings</code> Class",
+  "id": "1442-the-embeddings-class",
+  "level": 4
+}, {
+  "value": "14.4.3 Querying with Embeddings",
+  "id": "1443-querying-with-embeddings",
+  "level": 4
+}, {
+  "value": "14.5 Caching Embeddings",
+  "id": "145-caching-embeddings",
+  "level": 3
+}, {
+  "value": "14.6 Reranking",
+  "id": "146-reranking",
+  "level": 3
+}, {
+  "value": "14.7 Files and Vector Stores",
+  "id": "147-files-and-vector-stores",
+  "level": 3
+}, {
+  "value": "14.8 Failover and Retry",
+  "id": "148-failover-and-retry",
+  "level": 3
+}, {
+  "value": "14.9 Testing AI SDK Operations",
+  "id": "149-testing-ai-sdk-operations",
+  "level": 3
+}, {
+  "value": "14.10 Events",
+  "id": "1410-events",
+  "level": 3
+}, {
+  "value": "14.11 Complete Example: Multi-Modal Content Analysis",
+  "id": "1411-complete-example-multi-modal-content-analysis",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference — AI SDK Media Methods",
+  "id": "quick-reference--ai-sdk-media-methods",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-14-laravel-ai-sdk--images-audio-transcriptions--embeddings",
+        children: "Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Previous:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "./13-ai-sdk-tools",
+          children: "Laravel AI SDK -- Tools, MCP Tools & Provider Tools"
+        }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "./15-mcp",
+          children: "Laravel MCP -- Model Context Protocol"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Generate images from text prompts using the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Image"
+        }), " class with multi-provider support"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Produce text-to-speech audio and transcribe spoken audio to text using the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Audio"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Transcript"
+        }), " classes"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Create text embeddings with the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Embeddings"
+        }), " class and use them for vector similarity operations"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement caching strategies for embeddings to reduce API costs and latency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply reranking to improve search result relevance using supported providers"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test and mock AI SDK operations using the built-in fake implementations"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/14-ai-sdk-media/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/14-ai-sdk-media/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/14-ai-sdk-media/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/14-ai-sdk-media/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/laravel/14-ai-sdk-media/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/laravel/14-ai-sdk-media/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Topics"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Image Generation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Text-to-image, provider selection, options"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Text-to-Speech"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Audio synthesis, voice selection"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Speech-to-Text"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transcription, timestamps"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Embeddings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Str helper, Embeddings class, batch processing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedding Caching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache keys, observer invalidation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reranking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cross-encoder rescoring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector Stores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File management, provider-side storage"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Failover & Retry"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Provider chaining, exponential backoff"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Testing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fakes for all AI SDK operations"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Image Generation] --> B[Text-to-Speech]\n    B --> C[Speech-to-Text]\n    C --> D[Embeddings]\n    D --> E[Embedding Caching]\n    E --> F[Reranking]\n    F --> G[Vector Stores]\n    G --> H[Failover & Retry]\n    H --> I[Testing & Fakes]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/14-ai-sdk-media.png",
+        alt: "AI SDK Media"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "141-image-generation",
+      children: "14.1 Image Generation"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " The Image class provides a unified interface for generating images across providers like OpenAI (DALL-E 3), Gemini, and Azure."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Laravel\\Ai\\Image"
+      }), " class provides a unified interface for generating images from text prompts. Supported providers include OpenAI (DALL-E 3), Gemini, xAI, Azure OpenAI, Amazon Bedrock, and OpenRouter."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Basic image generation returns raw image content as a string, which you save to a file:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Support\\Facades\\Storage;\nuse Laravel\\Ai\\Image;\n\nclass ImageController extends Controller\n{\n    public function generate(Request $request): array\n    {\n        $request->validate(['prompt' => 'required|string|min:10|max:1000']);\n\n        $rawContent = Image::of($request->input('prompt'))->generate();\n\n        $filename = 'generated/' . md5($request->input('prompt')) . '.png';\n\n        Storage::disk('public')->put($filename, $rawContent);\n\n        return [\n            'url' => Storage::disk('public')->url($filename),\n            'size_bytes' => strlen($rawContent),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Specify the provider, model, and provider-specific options:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Support\\Facades\\Storage;\nuse Laravel\\Ai\\Image;\nuse Laravel\\Ai\\Lab;\n\nclass ImageController extends Controller\n{\n    public function generateWithOptions(Request $request): array\n    {\n        $request->validate(['prompt' => 'required|string']);\n\n        $rawContent = Image::of($request->input('prompt'))\n            ->using(Lab::OpenAI)\n            ->model('dall-e-3')\n            ->generate([\n                'size' => '1792x1024',\n                'quality' => 'hd',\n                'style' => 'vivid',\n            ]);\n\n        $filename = 'generated/' . str()->uuid() . '.png';\n\n        Storage::disk('public')->put($filename, $rawContent);\n\n        return ['url' => Storage::disk('public')->url($filename)];\n\n> **Pro Tip:** Always validate and sanitize image prompts before sending to the API. Provider content policies vary — what works on OpenAI may be rejected by Gemini. Append style guidance ('photorealistic', 'digital art') for consistent results.\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "142-text-to-speech-tts-audio",
+      children: "14.2 Text-to-Speech (TTS) Audio"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " The Audio class converts text to spoken audio with support for OpenAI TTS-1, ElevenLabs, and Gemini, accepting voice and stability parameters."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Laravel\\Ai\\Audio"
+      }), " class converts text to spoken audio. Supported providers include OpenAI (TTS-1), ElevenLabs, and Gemini:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Support\\Facades\\Storage;\nuse Laravel\\Ai\\Audio;\nuse Laravel\\Ai\\Lab;\n\nclass AudioController extends Controller\n{\n    public function synthesize(Request $request): array\n    {\n        $request->validate(['text' => 'required|string|max:5000']);\n\n        $rawAudio = Audio::of($request->input('text'))\n            ->using(Lab::ElevenLabs)\n            ->model('eleven_multilingual_v2')\n            ->generate([\n                'voice' => '21m00Tcm4TlvDq8ikWAM',\n                'stability' => 0.5,\n                'similarity_boost' => 0.75,\n            ]);\n\n        $filename = 'audio/' . str()->uuid() . '.mp3';\n\n        Storage::disk('public')->put($filename, $rawAudio);\n\n        return ['url' => Storage::disk('public')->url($filename)];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "143-speech-to-text-transcription",
+      children: "14.3 Speech-to-Text Transcription"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " The Transcript class transcribes audio files to text with Whisper, supporting word-level timestamps for segmented analysis."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Laravel\\Ai\\Transcript"
+      }), " class transcribes audio to text. Supported providers include OpenAI (Whisper), ElevenLabs, Mistral, and Gemini:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Laravel\\Ai\\Lab;\nuse Laravel\\Ai\\Transcript;\n\nclass TranscriptionController extends Controller\n{\n    public function transcribe(Request $request): array\n    {\n        $request->validate([\n            'audio' => 'required|file|mimes:mp3,wav,m4a,ogg|max:25600',\n        ]);\n\n        $storePath = $request->file('audio')->store('uploads/audio', 'local');\n\n        $text = Transcript::of($storePath)\n            ->using(Lab::OpenAI)\n            ->model('whisper-1')\n            ->fromFile([\n                'language' => $request->input('language', 'en'),\n                'response_format' => 'text',\n                'temperature' => 0.0,\n            ]);\n\n        return ['text' => $text];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "For timestamped word-level transcription:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Laravel\\Ai\\Transcript;\n\nclass TranscriptionController extends Controller\n{\n    public function transcribeWithTimestamps(Request $request): array\n    {\n        $request->validate([\n            'audio' => 'required|file|mimes:mp3,wav,m4a|max:51200',\n        ]);\n\n        $storePath = $request->file('audio')->store('uploads/audio', 'local');\n\n        $response = Transcript::of($storePath)\n            ->fromFileWithResponse([\n                'timestamp_granularities' => ['segment', 'word'],\n                'response_format' => 'verbose_json',\n            ]);\n\n        return [\n            'text' => $response['text'],\n            'segments' => array_map(fn($s) => [\n                'start' => $s['start'],\n                'end' => $s['end'],\n                'text' => $s['text'],\n            ], $response['segments'] ?? []),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "144-embeddings",
+      children: "14.4 Embeddings"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Str::toEmbeddings() handles single texts while Embeddings::for([...])->generate() batch-processes multiple texts in a single API call for efficiency."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Embeddings convert text into high-dimensional vector representations capturing semantic meaning. The SDK provides two approaches."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h4, {
+      id: "1441-the-str-helper",
+      children: ["14.4.1 The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Str"
+      }), " Helper"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "Str::toEmbeddings()"
+      }), " returns an embedding array for a single text string:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Console\\Commands;\n\nuse App\\Models\\Document;\nuse Illuminate\\Console\\Command;\nuse Illuminate\\Support\\Str;\n\nclass IndexDocuments extends Command\n{\n    protected $signature = 'documents:index';\n    protected $description = 'Generate embeddings for unindexed documents';\n\n    public function handle(): int\n    {\n        Document::whereNull('embedding_indexed_at')\n            ->each(function (Document $document): void {\n                $text = $document->title . \"\\n\\n\" . $document->content;\n                $embedding = Str::of($text)->toEmbeddings();\n\n> **Remember:** Embedding API calls are stateless — generating the same text twice costs twice. Always implement caching with content-hash keys (md5 of the input text) to avoid redundant API costs.\n                $document->forceFill([\n                    'embedding' => $embedding,\n                    'embedding_indexed_at' => now(),\n                ])->save();\n                $this->info(\"Indexed document {$document->id}\");\n            });\n\n        return Command::SUCCESS;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.h4, {
+      id: "1442-the-embeddings-class",
+      children: ["14.4.2 The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Embeddings"
+      }), " Class"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For batch operations, use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Embeddings"
+      }), " → it sends all texts in a single API request:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Console\\Commands;\n\nuse App\\Models\\Document;\nuse Illuminate\\Console\\Command;\nuse Laravel\\Ai\\Embeddings;\n\nclass BatchIndexDocuments extends Command\n{\n    protected $signature = 'documents:batch-index {chunk=100}';\n    protected $description = 'Batch generate embeddings';\n\n    public function handle(): int\n    {\n        $chunkSize = (int) $this->argument('chunk');\n\n        Document::whereNull('embedding_indexed_at')\n            ->chunk($chunkSize, function ($documents): void {\n                $texts = $documents->map(fn($d) => $d->title . \"\\n\\n\" . $d->content)->toArray();\n                $embeddings = Embeddings::for($texts)->generate();\n                foreach ($documents as $index => $document) {\n                    $document->forceFill([\n                        'embedding' => $embeddings[$index] ?? [],\n                        'embedding_indexed_at' => now(),\n                    ])->save();\n                }\n            });\n\n        $this->info('Batch indexing complete.');\n\n        return Command::SUCCESS;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "1443-querying-with-embeddings",
+      children: "14.4.3 Querying with Embeddings"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Semantic search compares a query embedding against stored vectors using cosine similarity:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Models\\Document;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Str;\n\nclass SearchController extends Controller\n{\n    public function search(Request $request): array\n    {\n        $request->validate(['query' => 'required|string|min:2']);\n\n        $queryVector = Str::of($request->input('query'))->toEmbeddings();\n        $queryJson = json_encode($queryVector);\n\n        $results = Document::select('id', 'title', 'content')\n            ->selectRaw('1 - (embedding <=> ?::vector) as similarity', [$queryJson])\n            ->whereRaw('embedding IS NOT NULL')\n            ->orderByRaw('similarity DESC')\n            ->limit(10)\n            ->get()\n            ->filter(fn($d) => $d->similarity > 0.78)\n            ->values();\n\n        return [\n            'results' => $results->map(fn($d) => [\n                'id' => $d->id,\n                'title' => $d->title,\n                'similarity' => round($d->similarity, 4),\n            ]),\n            'count' => $results->count(),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "145-caching-embeddings",
+      children: "14.5 Caching Embeddings"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Cache embeddings using content-hash keys to avoid redundant API calls; observer hooks invalidate caches when documents change."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Cache embeddings using a deterministic hash to avoid redundant API calls:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Console\\Commands;\n\nuse App\\Models\\Document;\nuse Illuminate\\Console\\Command;\nuse Illuminate\\Support\\Facades\\Cache;\nuse Illuminate\\Support\\Str;\n\nclass IndexDocumentsCached extends Command\n{\n    protected $signature = 'documents:index-cached';\n    protected $description = 'Index with embedding caching';\n\n    public function handle(): int\n    {\n        Document::whereNull('embedding_indexed_at')->each(function (Document $document): void {\n            $text = $document->title . \"\\n\\n\" . $document->content;\n            $hash = md5($text);\n            $embedding = Cache::remember('embedding:' . $hash, 86400 * 30, function () use ($text): array {\n                return Str::of($text)->toEmbeddings();\n            });\n            $document->forceFill(['embedding' => $embedding, 'embedding_indexed_at' => now()])->save();\n        });\n\n        return Command::SUCCESS;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Invalidate cached embeddings when content changes:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Observers;\n\nuse App\\Models\\Document;\nuse Illuminate\\Support\\Facades\\Cache;\n\nclass DocumentObserver\n{\n    public function saving(Document $document): void\n    {\n        if ($document->isDirty('content') || $document->isDirty('title')) {\n            $document->embedding_indexed_at = null;\n            $oldHash = md5($document->getOriginal('title') . \"\\n\\n\" . $document->getOriginal('content'));\n            Cache::forget('embedding:' . $oldHash);\n            $newHash = md5($document->title . \"\\n\\n\" . $document->content);\n            Cache::forget('embedding:' . $newHash);\n        }\n    }\n\n    public function deleted(Document $document): void\n    {\n        Cache::forget('embedding:' . md5($document->title . \"\\n\\n\" . $document->content));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "146-reranking",
+      children: "14.6 Reranking"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " Reranking rescales initial search results using cross-encoder models from Cohere, Jina, and VoyageAI for improved precision."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Reranking rescores initial results using a cross-encoder model. Supported providers: Cohere, Jina, VoyageAI."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Laravel\\Ai\\Reranking;\n\nclass RerankController extends Controller\n{\n    public function rerank(Request $request): array\n    {\n        $request->validate(['query' => 'required|string']);\n\n        $documents = [\n            'Laravel provides a clean routing system.',\n            'Symfony is a set of reusable PHP components.',\n            'Laravel includes Eloquent ORM for database interaction.',\n        ];\n\n        $results = Reranking::of($documents)->rerank($request->input('query'));\n\n> **Warning:** Reranking adds latency and cost per operation. Only rerank the top 20-50 results from your initial retrieval, not the entire corpus. The two-stage retrieve-then-rerank pattern balances speed with accuracy.\n\n        return [\n            'results' => $results->map(fn($r) => [\n                'document' => $r->document,\n                'score' => round($r->score, 4),\n            ]),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Use the ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "rerank()"
+      }), " macro on Eloquent collections:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Models\\Document;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Support\\Facades\\Str;\n\nclass SearchController extends Controller\n{\n    public function searchWithRerank(Request $request): array\n    {\n        $request->validate(['query' => 'required|string']);\n\n        $queryVector = Str::of($request->input('query'))->toEmbeddings();\n        $queryJson = json_encode($queryVector);\n\n        $initial = Document::select('id', 'title', 'content')\n            ->selectRaw('1 - (embedding <=> ?::vector) as similarity', [$queryJson])\n            ->whereRaw('embedding IS NOT NULL')\n            ->orderByRaw('similarity DESC')\n            ->limit(20)\n            ->get();\n\n        $reranked = $initial->rerank('content', $request->input('query'));\n\n        return [\n            'results' => $reranked->take(5)->map(fn($r) => [\n                'id' => $r->item->id,\n                'title' => $r->item->title,\n                'relevance_score' => round($r->score, 4),\n            ]),\n        ];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "147-files-and-vector-stores",
+      children: "14.7 Files and Vector Stores"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Laravel\\Ai\\Files"
+      }), " namespace provides ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Document"
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Image"
+      }), " classes with three factory methods: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fromStorage($disk, $path)"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "fromPath($absolutePath)"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "upload($file)"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Vector stores manage provider-side file storage for file search:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Laravel\\Ai\\Facades\\Agent;\nuse Laravel\\Ai\\VectorStores;\n\nclass VectorStoreController extends Controller\n{\n    public function createAndSearch(Request $request): array\n    {\n        $request->validate(['query' => 'required|string']);\n\n        $store = VectorStores::create('product-docs');\n        $store->addFile(storage_path('app/documents/introduction.md'));\n\n        $response = Agent::make()\n            ->instructions('Answer based on provided files.')\n            ->withFileSearch(vectorStoreIds: [$store->id()])\n            ->prompt($request->input('query'));\n\n        return ['answer' => $response->text()];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "148-failover-and-retry",
+      children: "14.8 Failover and Retry"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Automatic failover chains providers with priority ordering:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse Laravel\\Ai\\Image;\nuse Laravel\\Ai\\Lab;\nuse Laravel\\Ai\\Provider;\n\nclass ResilientImageController extends Controller\n{\n    public function generate(Request $request): array\n    {\n        $request->validate(['prompt' => 'required|string']);\n\n        $rawContent = Image::of($request->input('prompt'))\n            ->using(\n                Provider::failover()\n                    ->with(Lab::OpenAI, 3)\n                    ->with(Lab::Gemini, 2)\n                    ->with(Lab::Azure, 1)\n            )\n            ->generate([\n                'retry' => [\n                    'max_attempts' => 3,\n                    'delay' => 1000,\n                    'backoff' => 'exponential',\n                ],\n            ]);\n\n        return ['image' => base64_encode($rawContent)];\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "149-testing-ai-sdk-operations",
+      children: "14.9 Testing AI SDK Operations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One-Sentence Takeaway:"
+        }), " The SDK provides fake implementations for Agent, Image, Audio, Transcript, Embedding, and Reranking, enabling deterministic, side-effect-free testing."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The SDK provides fake implementations for deterministic testing."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace Tests\\Feature;\n\nuse App\\Ai\\Agents\\SalesCoach;\nuse Illuminate\\Support\\Str;\nuse Laravel\\Ai\\Embeddings;\nuse Laravel\\Ai\\Facades\\Agent;\nuse Laravel\\Ai\\Facades\\Audio;\nuse Laravel\\Ai\\Facades\\Embedding;\nuse Laravel\\Ai\\Facades\\Image;\nuse Laravel\\Ai\\Facades\\Reranking as RerankingFacade;\nuse Laravel\\Ai\\Facades\\Transcript;\nuse Laravel\\Ai\\Reranking;\nuse Tests\\TestCase;\n\nclass AiSdkTest extends TestCase\n{\n    public function test_agent_fake(): void\n    {\n        Agent::fake([\n            SalesCoach::make()->shouldRespond('Great call!'),\n        ]);\n\n        $response = SalesCoach::make()->prompt('Analyze this transcript.');\n\n        $this->assertEquals('Great call!', $response->text());\n    }\n\n    public function test_agent_assertions(): void\n    {\n        Agent::fake();\n\n        SalesCoach::make()->prompt('Analyze this transcript: Hello');\n\n        Agent::assertPrompted(fn(string $m): bool => str_contains($m, 'Analyze'));\n    }\n\n    public function test_image_generation(): void\n    {\n        Image::fake(['fake-image-content']);\n        $result = Image::of('A sunset')->generate();\n        $this->assertEquals('fake-image-content', $result);\n    }\n\n    public function test_image_prompt_assertion(): void\n    {\n        Image::fake();\n        Image::of('A cat')->generate();\n        Image::assertGenerated(fn(string $p): bool => str_contains($p, 'cat'));\n    }\n\n    public function test_audio_synthesis(): void\n    {\n        Audio::fake(['fake-mp3']);\n        $this->assertEquals('fake-mp3', Audio::of('Hello')->generate());\n    }\n\n    public function test_transcription(): void\n    {\n        Transcript::fake(['Hello world.']);\n        $this->assertEquals('Hello world.', Transcript::of('a.mp3')->fromFile());\n    }\n\n    public function test_embedding(): void\n    {\n        Embedding::fake([[0.1, 0.2, 0.3]]);\n        $this->assertEquals([0.1, 0.2, 0.3], Str::of('Hi')->toEmbeddings());\n    }\n\n    public function test_batch_embeddings(): void\n    {\n        Embedding::fake([[0.1, 0.2], [0.3, 0.4]]);\n        $results = Embeddings::for(['A', 'B'])->generate();\n        $this->assertCount(2, $results);\n    }\n\n    public function test_reranking(): void\n    {\n        RerankingFacade::fake([\n            ['document' => 'Laravel is a framework.', 'score' => 0.95, 'index' => 0],\n        ]);\n\n        $results = Reranking::of(['Laravel is a framework.'])->rerank('Laravel');\n\n        $this->assertEquals(0.95, $results->first()->score);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1410-events",
+      children: "14.10 Events"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Key event types include ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiTextGenerated"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiStreamChunk"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiToolCalled"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiToolCompleted"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiImageGenerated"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiAudioGenerated"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiTranscriptionCompleted"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiEmbeddingGenerated"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiError"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Listeners;\n\nuse Illuminate\\Support\\Facades\\Log;\nuse Laravel\\Ai\\Events\\AiTextGenerated;\n\nclass LogAiUsage\n{\n    public function handle(AiTextGenerated $event): void\n    {\n        Log::info('AI text generation completed', [\n            'agent' => $event->agent,\n            'input_tokens' => $event->inputTokens,\n            'output_tokens' => $event->outputTokens,\n            'duration_ms' => $event->durationMs,\n            'model' => $event->model,\n            'provider' => $event->provider,\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1411-complete-example-multi-modal-content-analysis",
+      children: "14.11 Complete Example: Multi-Modal Content Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This action combines image analysis, audio transcription, embedding search, and reranking:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-php",
+        children: "<?php\n\nnamespace App\\Actions;\n\nuse App\\Models\\Document;\nuse App\\Models\\MediaAnalysis;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Support\\Str;\nuse Laravel\\Ai\\Facades\\Agent;\nuse Laravel\\Ai\\Files\\Image as AiImage;\nuse Laravel\\Ai\\Transcript;\n\nclass MultiModalAnalyzer\n{\n    public function analyze(string $imagePath, string $audioPath, string $searchQuery): MediaAnalysis\n    {\n        $imageDescription = Agent::make()\n            ->instructions('You are a visual analyst. Describe everything you see in detail.')\n            ->withAttachment(AiImage::fromPath($imagePath))\n            ->prompt('Describe this image in detail.');\n\n        $transcription = Transcript::of($audioPath)->fromFile();\n\n        $audioSummary = Agent::make()\n            ->instructions('You are an audio analyst. Summarize key points.')\n            ->prompt('Summarize: ' . $transcription);\n\n        $queryVector = Str::of($searchQuery)->toEmbeddings();\n        $queryJson = json_encode($queryVector);\n\n        $similarDocs = Document::select('id', 'title', 'content')\n            ->selectRaw('1 - (embedding <=> ?::vector) as similarity', [$queryJson])\n            ->whereRaw('embedding IS NOT NULL')\n            ->orderByRaw('similarity DESC')\n            ->limit(10)\n            ->get();\n\n        $rerankedDocs = $similarDocs->rerank('content', $searchQuery);\n\n        return MediaAnalysis::create([\n            'image_description' => $imageDescription->text(),\n            'audio_transcription' => $transcription,\n            'audio_summary' => $audioSummary->text(),\n            'search_query' => $searchQuery,\n            'relevant_documents' => $rerankedDocs->take(3)->map(fn($r) => [\n                'id' => $r->item->id,\n                'title' => $r->item->title,\n                'relevance' => round($r->score, 4),\n            ])->toArray(),\n        ]);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Str::toEmbeddings()"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Embeddings::for()"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scope"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single text"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple texts (batch)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "API Calls"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 per invocation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1 for entire batch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Efficiency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lower (per-text call)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Higher (batched)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use Case"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time search query"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Batch document indexing"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference--ai-sdk-media-methods",
+      children: "Quick Reference — AI SDK Media Methods"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Image::of($prompt)->generate()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generate image"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Audio::of($text)->generate()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Text-to-speech"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Transcript::of($file)->fromFile()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Speech-to-text"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Str::of($text)->toEmbeddings()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single embedding"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Embeddings::for([$texts])->generate()"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Batch embeddings"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Reranking::of($docs)->rerank($query)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Re-rank results"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Media App"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Content Platform"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Enterprise Search"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Image Gen"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thumbnails, covers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Social media posts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Report headers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TTS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Audiobooks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Article narration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Accessibility"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Embeddings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Video descriptions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Article search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Document retrieval"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reranking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Search relevance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Content discovery"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compliance search"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Caching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Video metadata"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Article embeddings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Legal documents"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "1. Which method generates a single text embedding?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) Embeddings::for([$text])->generate()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) Str::of($text)->toEmbeddings()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) Text::embed($text)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) Vector::create($text)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "2. What is the purpose of Reranking in a search pipeline?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) To reduce the number of search results"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) To rescale initial results using a cross-encoder"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) To generate search query embeddings"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) To cache search results"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "3. Which facade provides fake implementations for testing?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) Agent::fake(), Image::fake(), Audio::fake()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) Mock::fake(), Stub::fake()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) Test::fake(), Assert::fake()"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) Fake::agent(), Fake::image()"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "4. How does failover work in the AI SDK?"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a) By retrying the same provider"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "b) By chaining providers with priority ordering"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "c) By switching to a local model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "d) By caching the last successful response"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answers: 1-b, 2-b, 3-a, 4-b"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Image generation uses ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Image::of(prompt)->generate()"
+        }), " with support for OpenAI, Gemini, xAI, Azure, Bedrock, and OpenRouter"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["TTS uses ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Audio::of(text)->generate()"
+        }), "; STT uses ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Transcript::of(file)->fromFile()"
+        }), " with OpenAI, ElevenLabs, Mistral, and Gemini"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Embeddings via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Str::toEmbeddings()"
+        }), " (single) or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Embeddings::for([...])->generate()"
+        }), " (batch) enable vector similarity search"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Reranking with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Reranking::of([documents])->rerank(query)"
+        }), " rescales results using Cohere, Jina, and VoyageAI"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Embedding caching with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Cache::remember()"
+        }), " using content-hash keys reduces API costs; observers handle invalidation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Failover via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Provider::failover()->with()"
+        }), " chains fallback providers with configurable retry logic"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Fake implementations for Agent, Image, Audio, Transcript, Embedding, Reranking, File, and VectorStore enable deterministic testing"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Events like ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "AiTextGenerated"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "AiImageGenerated"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "AiEmbeddingGenerated"
+        }), " provide observability hooks"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Explain the differences between the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Image"
+          }), " class and the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Files\\Image"
+          }), " class. When would you use each?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Compare ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Str::toEmbeddings()"
+          }), " with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Embeddings::for([...])->generate()"
+          }), ". What are the performance implications of each?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Describe the purpose of reranking in a search pipeline. Why is two-stage retrieval superior to either stage alone?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "How does the failover system work? What happens when the primary provider errors and a fallback is configured?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What AI SDK event types are available and what is the recommended approach for tracking AI usage?"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Build an Artisan command that reads files from a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "documents/"
+          }), " directory, generates embeddings using ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Embeddings"
+          }), ", stores them in a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "document_embeddings"
+          }), " table with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "pgvector"
+          }), ", and implements caching with a 7-day TTL. Accept a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "--provider"
+          }), " option."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Create a controller endpoint that accepts an uploaded audio file, transcribes it with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Transcript"
+          }), ", sends the transcription to an agent for summarization, generates an embedding of the summary, and stores all artifacts in a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "media_analyses"
+          }), " table."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Build a search endpoint that accepts a query, generates its embedding, performs vector similarity against a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "products"
+          }), " table, reranks the top 20 using Cohere, and returns the top 5 with relevance scores. Cache the query embedding for 24 hours."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Design a complete multi-modal content moderation pipeline that: (1) accepts an image and optional audio via a single upload, (2) sends the image to an agent for content analysis via ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Files\\Image"
+      }), ", (3) transcribes audio with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Transcript"
+      }), " and analyzes for prohibited topics, (4) generates embeddings for the image description and transcription, (5) searches a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "moderation_rules"
+      }), " vector store via cosine similarity, (6) reranks matched rules, (7) returns structured verdict with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "is_approved"
+      }), " (boolean), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "flags"
+      }), " (array), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "confidence"
+      }), " (float), and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "matched_rules"
+      }), " (array), (8) dispatches an ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "AiTextGenerated"
+      }), " listener logging to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "moderation_logs"
+      }), ", (9) includes a complete test suite using all relevant fake implementations."]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

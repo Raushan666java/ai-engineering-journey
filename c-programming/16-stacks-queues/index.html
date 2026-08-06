@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
-<title data-rh="true">Chapter 16: Stacks and Queues | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 16: Stacks and Queues | AI Engineering Journey"><meta data-rh="true" name="description" content="Previous The C Standard Library"><meta data-rh="true" property="og:description" content="Previous The C Standard Library"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"C Programming","item":"https://raushan666java.github.io/ai-engineering-journey/c-programming/index"},{"@type":"ListItem","position":2,"name":"Chapter 16: Stacks and Queues","item":"https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.68ae8ef5.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.4470784e.js" defer="defer"></script>
-<script src="/ai-engineering-journey/assets/js/main.bc7a9306.js" defer="defer"></script>
+<title data-rh="true">Chapter 16: Stacks and Queues | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 16: Stacks and Queues | AI Engineering Journey"><meta data-rh="true" name="description" content="Previous The C Standard Library"><meta data-rh="true" property="og:description" content="Previous The C Standard Library"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"C Programming","item":"https://raushan666java.github.io/ai-engineering-journey/c-programming/index"},{"@type":"ListItem","position":2,"name":"Chapter 16: Stacks and Queues","item":"https://raushan666java.github.io/ai-engineering-journey/c-programming/16-stacks-queues"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.c8464654.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.64107b2c.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.9d4b1971.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -753,7 +753,7 @@ c. If mismatch → <strong>unbalanced</strong>.</li>
 
 
 
-<table><thead><tr><th>Step</th><th>Char</th><th>Stack before</th><th>Action</th><th>Stack after</th></tr></thead><tbody><tr><td>1</td><td><code>(</code></td><td>[]</td><td>push <code>(</code></td><td>[<code>(</code>]</td></tr><tr><td>2</td><td><code>{</code></td><td>[<code>(</code>]</td><td>push <code>{</code></td><td>[<code>(</code>, <code>{</code>]</td></tr><tr><td>3</td><td><code>)</code></td><td>[<code>(</code>, <code>{</code>]</td><td>pop → <code>{</code>; <code>{</code> â‰  <code>(</code> → <strong>mismatch</strong></td><td>→</td></tr></tbody></table>
+<table><thead><tr><th>Step</th><th>Char</th><th>Stack before</th><th>Action</th><th>Stack after</th></tr></thead><tbody><tr><td>1</td><td><code>(</code></td><td>[]</td><td>push <code>(</code></td><td>[<code>(</code>]</td></tr><tr><td>2</td><td><code>{</code></td><td>[<code>(</code>]</td><td>push <code>{</code></td><td>[<code>(</code>, <code>{</code>]</td></tr><tr><td>3</td><td><code>)</code></td><td>[<code>(</code>, <code>{</code>]</td><td>pop → <code>{</code>; <code>{</code> ≠ <code>(</code> → <strong>mismatch</strong></td><td>→</td></tr></tbody></table>
 <p><strong>Unbalanced →</strong> <code>{</code> does not match <code>)</code>.</p>
 <p><strong>Dry Run → <code>&quot;((())&quot;</code>:</strong></p>
 
@@ -918,7 +918,7 @@ c. If mismatch → <strong>unbalanced</strong>.</li>
 <li class="">If <strong>operand</strong> (letter/digit) → append to postfix output.</li>
 <li class="">If <code>(</code> → push onto stack.</li>
 <li class="">If <code>)</code> → pop and output until <code>(</code> is encountered; discard <code>(</code>.</li>
-<li class="">If <strong>operator</strong> → while stack not empty AND top has â‰¥ precedence, pop to output; then push current operator.</li>
+<li class="">If <strong>operator</strong> → while stack not empty AND top has ≥ precedence, pop to output; then push current operator.</li>
 <li class="">After scan, pop all remaining operators to output.</li>
 </ol>
 <p><strong>Pseudocode:</strong></p>
@@ -2213,7 +2213,7 @@ c. If mismatch → <strong>unbalanced</strong>.</li>
 
 
 
-<table><thead><tr><th>Situation</th><th>Choose</th><th>Why</th></tr></thead><tbody><tr><td>Need to reverse order</td><td>Stack</td><td>Last in is first out = natural reversal</td></tr><tr><td>Nested structures (brackets, HTML tags)</td><td>Stack</td><td>Innermost must close first</td></tr><tr><td>Function call management</td><td>Stack</td><td>Call stack is LIFO</td></tr><tr><td>FIFO ordering required</td><td>Queue</td><td>First come, first served</td></tr><tr><td>Fair resource allocation</td><td>Queue</td><td>Round-robin scheduling</td></tr><tr><td>Level-order processing</td><td>Queue</td><td>BFS uses queue</td></tr><tr><td>Undo/Redo feature</td><td>Stack (Ã—2)</td><td>Undo stack + redo stack</td></tr></tbody></table>
+<table><thead><tr><th>Situation</th><th>Choose</th><th>Why</th></tr></thead><tbody><tr><td>Need to reverse order</td><td>Stack</td><td>Last in is first out = natural reversal</td></tr><tr><td>Nested structures (brackets, HTML tags)</td><td>Stack</td><td>Innermost must close first</td></tr><tr><td>Function call management</td><td>Stack</td><td>Call stack is LIFO</td></tr><tr><td>FIFO ordering required</td><td>Queue</td><td>First come, first served</td></tr><tr><td>Fair resource allocation</td><td>Queue</td><td>Round-robin scheduling</td></tr><tr><td>Level-order processing</td><td>Queue</td><td>BFS uses queue</td></tr><tr><td>Undo/Redo feature</td><td>Stack (×2)</td><td>Undo stack + redo stack</td></tr></tbody></table>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1613-queue-applications">16.13 Queue Applications<a href="#1613-queue-applications" class="hash-link" aria-label="Direct link to 16.13 Queue Applications" title="Direct link to 16.13 Queue Applications" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="16131-breadth-first-search-bfs">16.13.1 Breadth-First Search (BFS)<a href="#16131-breadth-first-search-bfs" class="hash-link" aria-label="Direct link to 16.13.1 Breadth-First Search (BFS)" title="Direct link to 16.13.1 Breadth-First Search (BFS)" translate="no">​</a></h3>
@@ -2630,7 +2630,7 @@ A) 13   B) 21   C) 25   D) 17</p>
 </li>
 <li class="">
 <p><strong>Two-stack queue:</strong> What is the amortized time complexity of dequeue in a two-stack queue implementation?
-A) O(1)   B) O(N)   C) O(log N)   D) O(NÂ²)</p>
+A) O(1)   B) O(N)   C) O(log N)   D) O(N²)</p>
 <details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;**A)** Amortized O(1) → each element is moved between stacks at most once.</summary><div><div class="collapsibleContent_i85q"></div></div></details>
 </li>
 <li class="">
@@ -2681,7 +2681,7 @@ A) Undo in editor   B) Browser back button   C) Print spooling   D) Function cal
 <p><strong>Decimal to binary using stack:</strong> Write a function <code>void dec_to_bin(int n)</code> that uses a stack to convert a decimal number to binary. Push remainders, pop to print.</p>
 </li>
 <li class="">
-<p><strong>Printer queue simulation:</strong> Simulate a printer queue: jobs arrive every 1â€“5 seconds (<code>rand() % 5 + 1</code>), each taking 1â€“3 seconds to print. Run for 30 simulated seconds and report average wait time.</p>
+<p><strong>Printer queue simulation:</strong> Simulate a printer queue: jobs arrive every 1–5 seconds (<code>rand() % 5 + 1</code>), each taking 1–3 seconds to print. Run for 30 simulated seconds and report average wait time.</p>
 </li>
 <li class="">
 <p><strong>Reverse a queue:</strong> Given a queue, reverse its elements using a stack. Hint: dequeue all into a stack, then pop all and enqueue back.</p>

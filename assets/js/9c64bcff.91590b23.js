@@ -1,0 +1,1355 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[68304],{
+
+/***/ 32038
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_digital_logic_06_sequential_circuits_md_9c6_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-digital-logic-06-sequential-circuits-md-9c6.json
+const site_docs_courses_digital_logic_06_sequential_circuits_md_9c6_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/digital-logic/06-sequential-circuits","title":"Chapter 6: Sequential Circuits","description":"Prereq: Chapter 5 (Combinational Circuits) ? sequential circuits add memory to combinational logic.","source":"@site/docs/courses/digital-logic/06-sequential-circuits.md","sourceDirName":"courses/digital-logic","slug":"/digital-logic/06-sequential-circuits","permalink":"/ai-engineering-journey/digital-logic/06-sequential-circuits","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":6,"frontMatter":{"id":"06-sequential-circuits","slug":"/digital-logic/06-sequential-circuits","title":"Chapter 6: Sequential Circuits","sidebar_label":"Chapter 6: Sequential Circuits","sidebar_position":6},"sidebar":"coursesSidebar","previous":{"title":"Chapter 5: Combinational Circuits","permalink":"/ai-engineering-journey/digital-logic/05-combinational-circuits"},"next":{"title":"Chapter 7: State Machines","permalink":"/ai-engineering-journey/digital-logic/07-state-machines"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/digital-logic/06-sequential-circuits.md
+
+
+const frontMatter = {
+	id: '06-sequential-circuits',
+	slug: '/digital-logic/06-sequential-circuits',
+	title: 'Chapter 6: Sequential Circuits',
+	sidebar_label: 'Chapter 6: Sequential Circuits',
+	sidebar_position: 6
+};
+const contentTitle = 'Chapter 6: Sequential Circuits';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "6.1 Introduction to Sequential Circuits",
+  "id": "61-introduction-to-sequential-circuits",
+  "level": 2
+}, {
+  "value": "6.1.1 Sequential Circuit Model",
+  "id": "611-sequential-circuit-model",
+  "level": 3
+}, {
+  "value": "6.1.2 Classification",
+  "id": "612-classification",
+  "level": 3
+}, {
+  "value": "6.2 Latches",
+  "id": "62-latches",
+  "level": 2
+}, {
+  "value": "6.2.1 SR Latch (NOR Implementation)",
+  "id": "621-sr-latch-nor-implementation",
+  "level": 3
+}, {
+  "value": "6.2.2 D Latch",
+  "id": "622-d-latch",
+  "level": 3
+}, {
+  "value": "6.3 Flip-Flops",
+  "id": "63-flip-flops",
+  "level": 2
+}, {
+  "value": "6.3.1 Edge Detection",
+  "id": "631-edge-detection",
+  "level": 3
+}, {
+  "value": "6.3.2 D Flip-Flop",
+  "id": "632-d-flip-flop",
+  "level": 3
+}, {
+  "value": "6.3.3 JK Flip-Flop",
+  "id": "633-jk-flip-flop",
+  "level": 3
+}, {
+  "value": "6.3.4 T Flip-Flop",
+  "id": "634-t-flip-flop",
+  "level": 3
+}, {
+  "value": "6.3.5 Flip-Flop Conversion",
+  "id": "635-flip-flop-conversion",
+  "level": 3
+}, {
+  "value": "6.4 Characteristic and Excitation Tables",
+  "id": "64-characteristic-and-excitation-tables",
+  "level": 2
+}, {
+  "value": "6.4.1 Characteristic Table",
+  "id": "641-characteristic-table",
+  "level": 3
+}, {
+  "value": "6.4.2 Excitation Table",
+  "id": "642-excitation-table",
+  "level": 3
+}, {
+  "value": "6.5 Registers",
+  "id": "65-registers",
+  "level": 2
+}, {
+  "value": "6.5.1 Register with Enable",
+  "id": "651-register-with-enable",
+  "level": 3
+}, {
+  "value": "6.6 Shift Registers",
+  "id": "66-shift-registers",
+  "level": 2
+}, {
+  "value": "6.6.1 Universal Shift Register",
+  "id": "661-universal-shift-register",
+  "level": 3
+}, {
+  "value": "6.7 Counters",
+  "id": "67-counters",
+  "level": 2
+}, {
+  "value": "6.7.1 Binary Ripple Counter",
+  "id": "671-binary-ripple-counter",
+  "level": 3
+}, {
+  "value": "6.7.2 Synchronous Binary Counter",
+  "id": "672-synchronous-binary-counter",
+  "level": 3
+}, {
+  "value": "6.7.3 Up/Down Counter",
+  "id": "673-updown-counter",
+  "level": 3
+}, {
+  "value": "6.7.4 Ring Counter",
+  "id": "674-ring-counter",
+  "level": 3
+}, {
+  "value": "6.8 Timing Analysis",
+  "id": "68-timing-analysis",
+  "level": 2
+}, {
+  "value": "6.8.1 Setup and Hold Time",
+  "id": "681-setup-and-hold-time",
+  "level": 3
+}, {
+  "value": "6.8.2 Clock Skew",
+  "id": "682-clock-skew",
+  "level": 3
+}, {
+  "value": "6.8.3 Maximum Clock Frequency",
+  "id": "683-maximum-clock-frequency",
+  "level": 3
+}, {
+  "value": "6.9 Metastability",
+  "id": "69-metastability",
+  "level": 2
+}, {
+  "value": "6.9.1 Mean Time Between Failures (MTBF)",
+  "id": "691-mean-time-between-failures-mtbf",
+  "level": 3
+}, {
+  "value": "6.9.2 Synchroniser Chain",
+  "id": "692-synchroniser-chain",
+  "level": 3
+}, {
+  "value": "6.10 Flip-Flop Timing Parameters in Practice",
+  "id": "610-flip-flop-timing-parameters-in-practice",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Answers",
+  "id": "answers",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-6-sequential-circuits",
+        children: "Chapter 6: Sequential Circuits"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prereq:"
+        }), " Chapter 5 (Combinational Circuits) ? sequential circuits add memory to combinational logic.\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " Chapter 7 (State Machines) ? sequential circuits with a systematic state-transition structure."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the conclusion of this chapter, the student shall be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/digital-logic/06-sequential-circuits/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/digital-logic/06-sequential-circuits/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/digital-logic/06-sequential-circuits/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/digital-logic/06-sequential-circuits/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/digital-logic/06-sequential-circuits/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/digital-logic/06-sequential-circuits/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Distinguish between latches and flip-flops and explain their timing behaviour"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyse SR, D, JK, and T flip-flops using characteristic tables and excitation tables"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design edge-triggered flip-flops using master-slave and transmission-gate topologies"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compute setup time, hold time, and propagation delay constraints"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Build registers, shift registers, and counters from flip-flop primitives"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyse clock skew and its effect on sequential circuit timing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify and eliminate race conditions and metastability"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "61-introduction-to-sequential-circuits",
+      children: "6.1 Introduction to Sequential Circuits"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "sequential circuit"
+      }), " differs from a combinational circuit in one critical respect: its output depends on ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "both the present inputs and the past history"
+      }), " of those inputs. This memory is implemented using ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "bistable elements"
+      }), " ? circuits that can store one bit of state indefinitely."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph LR\n    X[Inputs X] --> COMB[Combinational<br>Logic]\n    COMB --> Y[Outputs Y]\n    STATE[State Memory] --> COMB\n    COMB --> NEXT[Next State] --> STATE\n    CLK[Clock] --> STATE\n    style STATE fill:#f9f,stroke:#333,stroke-width:2px\n    style COMB fill:#e6f3ff,stroke:#4a90d9,stroke-width:2px\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "611-sequential-circuit-model",
+      children: "6.1.1 Sequential Circuit Model"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A sequential circuit is defined by:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next-state function:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "S? = f(X, S)"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Output function:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Y = g(X, S)"
+        }), " (Mealy) or ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Y = g(S)"
+        }), " (Moore)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Where ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "S"
+      }), " is the current state, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "S?"
+      }), " is the next state, and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "X"
+      }), " are the primary inputs."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "612-classification",
+      children: "6.1.2 Classification"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Clocked?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Output Depends On"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Asynchronous"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inputs + state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SR latch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Synchronous (Moore)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State machine"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Synchronous (Mealy)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inputs + state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State machine"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "62-latches",
+      children: "6.2 Latches"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "latch"
+      }), " is a level-sensitive memory element ? it follows its inputs while the enable signal is asserted and holds its value when the enable is de-asserted."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "621-sr-latch-nor-implementation",
+      children: "6.2.1 SR Latch (NOR Implementation)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    S[S] --> NOR1[=1]\n    R[R] --> NOR2[=1]\n    NOR1 --> Q[Q]\n    NOR2 --> Qn[?Q]\n    Qn --> NOR1\n    Q --> NOR2\n    style NOR1 fill:#faa,stroke:#333,stroke-width:1px\n    style NOR2 fill:#faa,stroke:#333,stroke-width:1px\n"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Q?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "?Q?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mode"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hold"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reset"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Invalid"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type LatchState = { Q: number; Qn: number };\n\nfunction srLatch(S: number, R: number, prev: LatchState): LatchState {\n    if (S === 1 && R === 0) return { Q: 1, Qn: 0 }; // Set\n    if (S === 0 && R === 1) return { Q: 0, Qn: 1 }; // Reset\n    if (S === 0 && R === 0) return prev;              // Hold\n    return { Q: 0, Qn: 0 };                           // Invalid (S=R=1)\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Critical constraint:"
+      }), " The SR = 11 input combination is forbidden because it forces both outputs low, and when both inputs return to 0 simultaneously, the latch enters a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "race condition"
+      }), " where the final state is unpredictable."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "622-d-latch",
+      children: "6.2.2 D Latch"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The D latch (transparent latch) eliminates the SR invalid state by adding an inverter between S and R."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Q? = D when Enable = 1\nQ? = Q  when Enable = 0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    D[D] --> AND1[&]\n    EN[Enable] --> AND1\n    D --> NOT[NOT]\n    NOT --> AND2[&]\n    EN --> AND2\n    AND1 --> OR1[=1]\n    AND2 --> OR2[=1]\n    OR1 --> Q[Q]\n    OR2 --> Qn[?Q]\n    Qn --> OR1\n    Q --> OR2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function dLatch(D: number, enable: number, prev: number): number {\n    return enable === 1 ? D : prev;\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "63-flip-flops",
+      children: "6.3 Flip-Flops"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "flip-flop"
+      }), " is an edge-triggered memory element ? it samples its inputs only on a clock edge (rising or falling) and holds the value between edges."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "timeline\n    title Edge-Triggered Behaviour\n    Clock : Rising edge samples input : Output stable between edges\n    Data : Must be stable before edge : Held after edge\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "631-edge-detection",
+      children: "6.3.1 Edge Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type EdgeType = 'rising' | 'falling' | 'none';\n\nfunction detectEdge(clk: number, prevClk: number): EdgeType {\n    if (clk === 1 && prevClk === 0) return 'rising';\n    if (clk === 0 && prevClk === 1) return 'falling';\n    return 'none';\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "632-d-flip-flop",
+      children: "6.3.2 D Flip-Flop"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The D flip-flop is the most widely used storage element in digital design. On each clock edge, it copies the D input to the Q output."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Q? = D  (on rising edge of clock)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    D[D] --> M1[Master<br>D Latch]\n    CLK[Clock] --> INV[NOT]\n    INV --> M1\n    M1 --> M2[Slave<br>D Latch]\n    CLK --> M2\n    M2 --> Q[Q]\n    style M1 fill:#f9f,stroke:#333,stroke-width:1px\n    style M2 fill:#f9f,stroke:#333,stroke-width:1px\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface FlipFlop {\n    Q: number;\n    update(D: number, clk: number): void;\n}\n\nclass DFlipFlop implements FlipFlop {\n    Q: number = 0;\n    private prevClk: number = 0;\n\n    update(D: number, clk: number): void {\n        if (clk === 1 && this.prevClk === 0) { // rising edge\n            this.Q = D;\n        }\n        this.prevClk = clk;\n    }\n}\n\n// Simulate a D flip-flop\nconst dff = new DFlipFlop();\nfor (const [clk, D] of [[0,0],[1,0],[0,0],[1,1],[0,1],[1,0],[0,0]]) {\n    dff.update(D, clk);\n    console.log(`CLK=${clk} D=${D} ? Q=${dff.Q}`);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "633-jk-flip-flop",
+      children: "6.3.3 JK Flip-Flop"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The JK flip-flop is a universal flip-flop that combines the behaviour of all other types."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "J"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "K"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Q?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mode"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hold"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Reset"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "?Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Toggle"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class JKFlipFlop implements FlipFlop {\n    Q: number = 0;\n    private prevClk: number = 0;\n\n    update(J: number, K: number, clk: number): void {\n        if (clk === 1 && this.prevClk === 0) {\n            this.Q = (J & ~this.Q) | (~K & this.Q);\n            // Alternative: T = J & ~Q | ~K & Q\n        }\n        this.prevClk = clk;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "634-t-flip-flop",
+      children: "6.3.4 T Flip-Flop"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The T flip-flop toggles its state whenever T=1 on a clock edge."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Q? = Q ? T\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class TFlipFlop implements FlipFlop {\n    Q: number = 0;\n    private prevClk: number = 0;\n\n    update(T: number, clk: number): void {\n        if (clk === 1 && this.prevClk === 0) {\n            this.Q = this.Q ^ T; // toggle\n        }\n        this.prevClk = clk;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "635-flip-flop-conversion",
+      children: "6.3.5 Flip-Flop Conversion"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Any flip-flop type can be converted to another by deriving the appropriate input equations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function dToJK(D: number, Q: number): { J: number; K: number } {\n    return { J: D, K: ~D & 1 };\n}\n\nfunction jkToD(J: number, K: number): number {\n    // D = J?Q? + K??Q ? but for next state, D = Q?\n    // We need the excitation function\n    if (J === 0 && K === 1) return 0;\n    if (J === 1 && K === 0) return 1;\n    if (J === 0 && K === 0) return J; // meaningless here\n    return -1; // toggle case needs Q\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "64-characteristic-and-excitation-tables",
+      children: "6.4 Characteristic and Excitation Tables"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "641-characteristic-table",
+      children: "6.4.1 Characteristic Table"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Describes the next state ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Q?"
+      }), " as a function of current state ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Q"
+      }), " and inputs."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Flip-Flop"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Characteristic Equation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q? = D"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q? = S + ?R?Q"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "JK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q? = J??Q + ?K?Q"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q? = Q ? T"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "642-excitation-table",
+      children: "6.4.2 Excitation Table"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Describes the required input to produce a desired state transition. Essential for sequential circuit design."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Transition Q ? Q?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "R"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "J"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "K"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "T"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0 ? 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0 ? 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1 ? 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1 ? 1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "X"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "65-registers",
+      children: "6.5 Registers"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "register"
+      }), " is an array of D flip-flops sharing a common clock, enabling parallel storage of an N-bit word."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class Register {\n    private flops: DFlipFlop[];\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.flops = Array.from({ length: width }, () => new DFlipFlop());\n    }\n\n    get value(): number {\n        let val = 0;\n        for (let i = 0; i < this.width; i++) {\n            val |= (this.flops[i].Q << i);\n        }\n        return val;\n    }\n\n    load(data: number, clk: number): void {\n        for (let i = 0; i < this.width; i++) {\n            this.flops[i].update((data >> i) & 1, clk);\n        }\n    }\n}\n\nconst reg = new Register(8);\nreg.load(0b10101100, 1);\nreg.load(0b10101100, 0); // ignored (not rising edge)\nconsole.log(`Register value: ${reg.value.toString(2).padStart(8, '0')}`);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "651-register-with-enable",
+      children: "6.5.1 Register with Enable"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Many designs require conditional loading. An enable signal gates the clock or the data."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class EnabledRegister {\n    private flops: DFlipFlop[];\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.flops = Array.from({ length: width }, () => new DFlipFlop());\n    }\n\n    get value(): number {\n        let val = 0;\n        for (let i = 0; i < this.width; i++) {\n            val |= (this.flops[i].Q << i);\n        }\n        return val;\n    }\n\n    load(data: number, enable: number, clk: number): void {\n        // MUX at input: D = enable ? data_in : Q\n        const actualData = enable === 1 ? data : this.value;\n        for (let i = 0; i < this.width; i++) {\n            this.flops[i].update((actualData >> i) & 1, clk);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "66-shift-registers",
+      children: "6.6 Shift Registers"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "shift register"
+      }), " moves data one position per clock cycle. It is the fundamental building block for serial communication, delay lines, and sequence generators."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph LR\n    SI[Serial In] --> FF0[DFF0]\n    FF0 --> FF1[DFF1]\n    FF1 --> FF2[DFF2]\n    FF2 --> FF3[DFF3]\n    FF3 --> SO[Serial Out]\n    CLK --> FF0\n    CLK --> FF1\n    CLK --> FF2\n    CLK --> FF3\n    style FF0 fill:#f9f,stroke:#333,stroke-width:2px\n    style FF1 fill:#f9f,stroke:#333,stroke-width:2px\n    style FF2 fill:#f9f,stroke:#333,stroke-width:2px\n    style FF3 fill:#f9f,stroke:#333,stroke-width:2px\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class ShiftRegister {\n    private flops: DFlipFlop[];\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.flops = Array.from({ length: width }, () => new DFlipFlop());\n    }\n\n    get value(): number {\n        let val = 0;\n        for (let i = 0; i < this.width; i++) {\n            val |= (this.flops[i].Q << i);\n        }\n        return val;\n    }\n\n    shift(serialIn: number, clk: number): number {\n        const serialOut = this.flops[this.width - 1].Q;\n        for (let i = this.width - 1; i > 0; i--) {\n            const prevQ = this.flops[i - 1].Q;\n            this.flops[i].update(prevQ, clk);\n        }\n        this.flops[0].update(serialIn, clk);\n        return serialOut;\n    }\n}\n\n// Serial-in, parallel-out demo\nconst sr = new ShiftRegister(4);\nsr.shift(1, 1); sr.shift(0, 1); sr.shift(1, 1); sr.shift(1, 1);\nconsole.log(`SIPO: ${sr.value.toString(2).padStart(4, '0')}`); // 1101 (LSB first)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "661-universal-shift-register",
+      children: "6.6.1 Universal Shift Register"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A universal shift register supports parallel load, shift left, shift right, and hold ? controlled by mode select lines S1, S0."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "S1"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "S0"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Operation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hold"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shift right"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shift left"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Parallel load"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class UniversalShiftRegister {\n    private flops: DFlipFlop[];\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.flops = Array.from({ length: width }, () => new DFlipFlop());\n    }\n\n    get value(): number {\n        let val = 0;\n        for (let i = 0; i < this.width; i++) {\n            val |= (this.flops[i].Q << i);\n        }\n        return val;\n    }\n\n    operate(data: number, sLeft: number, sRight: number, mode: number, clk: number): void {\n        const S0 = mode & 1;\n        const S1 = (mode >> 1) & 1;\n\n        const D = new Array(this.width);\n        const cur = this.value;\n\n        for (let i = 0; i < this.width; i++) {\n            if (S1 === 0 && S0 === 0) D[i] = (cur >> i) & 1; // Hold\n            else if (S1 === 0 && S0 === 1) {                   // Shift right\n                D[i] = (i === 0) ? sRight : (cur >> (i-1)) & 1;\n            } else if (S1 === 1 && S0 === 0) {                 // Shift left\n                D[i] = (i === this.width - 1) ? sLeft : (cur >> (i+1)) & 1;\n            } else {                                            // Parallel load\n                D[i] = (data >> i) & 1;\n            }\n        }\n\n        for (let i = 0; i < this.width; i++) {\n            this.flops[i].update(D[i], clk);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "67-counters",
+      children: "6.7 Counters"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "counter"
+      }), " is a sequential circuit that cycles through a predetermined sequence of states."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "671-binary-ripple-counter",
+      children: "6.7.1 Binary Ripple Counter"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The simplest counter: T flip-flops with each output driving the clock of the next stage."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph TD\n    CLK[Clock] --> T0[T FF0]\n    T0 --> Q0[Q0]\n    Q0 --> T1[T FF1]\n    T1 --> Q1[Q1]\n    Q1 --> T2[T FF2]\n    T2 --> Q2[Q2]\n    Q2 --> T3[T FF3]\n    T3 --> Q3[Q3]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class RippleCounter {\n    private flops: TFlipFlop[];\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.flops = Array.from({ length: width }, () => new TFlipFlop());\n    }\n\n    get value(): number {\n        let val = 0;\n        for (let i = 0; i < this.width; i++) {\n            val |= (this.flops[i].Q << i);\n        }\n        return val;\n    }\n\n    tick(): void {\n        // Ripple: each stage toggles when the previous stage's output falls\n        for (let i = 0; i < this.width; i++) {\n            const prevClk = (i === 0) ? 1 : this.flops[i - 1].Q;\n            // We need to simulate clock edges ? simplified here\n            this.flops[i].update(1, prevClk);\n        }\n    }\n}\n\n// Simulate a 4-bit ripple counter\nconst rc = new RippleCounter(4);\nfor (let step = 0; step < 16; step++) {\n    rc.tick();\n    console.log(`Step ${step + 1}: ${rc.value}`);\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem:"
+      }), " Ripple counters are slow ? the Nth stage toggles only after N gate delays."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "672-synchronous-binary-counter",
+      children: "6.7.2 Synchronous Binary Counter"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "All flip-flops share a common clock. The T input of each stage is the AND of all lower-order bits."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "T0 = 1           (always toggle)\nT1 = Q0\nT2 = Q1 ? Q0\nT3 = Q2 ? Q1 ? Q0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class SyncCounter {\n    private flops: TFlipFlop[];\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.flops = Array.from({ length: width }, () => new TFlipFlop());\n    }\n\n    get value(): number {\n        let val = 0;\n        for (let i = 0; i < this.width; i++) {\n            val |= (this.flops[i].Q << i);\n        }\n        return val;\n    }\n\n    tick(clk: number): void {\n        let enable = 1;\n        for (let i = 0; i < this.width; i++) {\n            this.flops[i].update(this.value === (1 << i) - 1 ? 1 : 0, clk);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "673-updown-counter",
+      children: "6.7.3 Up/Down Counter"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class UpDownCounter {\n    private flops: TFlipFlop[];\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.flops = Array.from({ length: width }, () => new TFlipFlop());\n    }\n\n    get value(): number {\n        let val = 0;\n        for (let i = 0; i < this.width; i++) {\n            val |= (this.flops[i].Q << i);\n        }\n        return val;\n    }\n\n    tick(up: number, clk: number): void {\n        const cur = this.value;\n        for (let i = 0; i < this.width; i++) {\n            const allLowerOnes = ((cur & ((1 << i) - 1)) === ((1 << i) - 1)) ? 1 : 0;\n            const allLowerZeros = ((cur & ((1 << i) - 1)) === 0) ? 1 : 0;\n            const toggle = up === 1 ? allLowerOnes : allLowerZeros;\n            this.flops[i].update(toggle, clk);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "674-ring-counter",
+      children: "6.7.4 Ring Counter"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A ring counter is a shift register with the serial output fed back to the serial input. It produces a single 1 that circulates through the register."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class RingCounter {\n    private sr: ShiftRegister;\n    readonly width: number;\n\n    constructor(width: number) {\n        this.width = width;\n        this.sr = new ShiftRegister(width);\n    }\n\n    init(): void {\n        // No clean way to set initial state in this model\n        // In hardware, use a preset/reset to set Q0=1, others=0\n    }\n\n    tick(clk: number): void {\n        const serialOut = this.sr.shift(this.sr.value, clk);\n    }\n\n    get value(): number { return this.sr.value; }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "68-timing-analysis",
+      children: "6.8 Timing Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "681-setup-and-hold-time",
+      children: "6.8.1 Setup and Hold Time"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Setup time (t??):"
+      }), " the minimum time data must be stable ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "before"
+      }), " the clock edge.\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Hold time (t?):"
+      }), " the minimum time data must be stable ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "after"
+      }), " the clock edge."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text",
+        children: "          _________         _________\nClock   _|         |_______|         |______\n          |  tsetup |\nData    XXXXXXXXXXXX|XXXXXXXXX\n                    |  thold  |\nData    XXXXXXXXXXXX|XXXXXXXXX\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function checkTiming(\n    dataTransition: number,  // time of last data change\n    clockEdge: number,\n    tSetup: number,\n    tHold: number\n): boolean {\n    const actualSetup = clockEdge - dataTransition;\n    const actualHold = dataTransition - clockEdge; // negative if after edge\n\n    if (actualSetup < tSetup) {\n        console.log(`Setup violation: ${actualSetup} < ${tSetup}`);\n        return false;\n    }\n    if (actualHold < tHold) {\n        console.log(`Hold violation: ${actualHold} < ${tHold}`);\n        return false;\n    }\n    return true;\n}\n\n// For a flip-flop with 2ns setup and 1ns hold\nconsole.log(checkTiming(8, 10, 2, 1));  // true (2ns setup, 2ns hold margin)\nconsole.log(checkTiming(9.5, 10, 2, 1)); // false (0.5ns setup violation)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "682-clock-skew",
+      children: "6.8.2 Clock Skew"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Clock skew is the difference in arrival time of the clock at different flip-flops. It can causehold violations if the destination flip-flop receives the clock later than the source."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "t_c > t? + t_skew  ?  hold failure\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph LR\n    CLK_SRC[Clock Source] --> |Long wire| FF1[FF1]\n    CLK_SRC --> |Short wire| FF2[FF2]\n    subgraph \"Clock Skew\"\n        SK[?t = t2 - t1]\n    end\n    FF1 --> FF2\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "683-maximum-clock-frequency",
+      children: "6.8.3 Maximum Clock Frequency"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The minimum clock period is determined by:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "T_min = t_clk-to-Q + t_logic_max + t_su + t_skew\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Where:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "t_clk-to-Q: clock-to-output delay of the flip-flop"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "t_logic_max: maximum combinational logic delay"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "t_su: setup time of the receiving flip-flop"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "t_skew: clock skew (adds margin if present)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function maxFreq(\n    tClkQ: number, tLogic: number, tSetup: number, tSkew: number\n): number {\n    const Tmin = tClkQ + tLogic + tSetup + tSkew;\n    return 1 / (Tmin * 1e-9); // frequency in Hz (times in ns)\n}\n\nconsole.log(`${maxFreq(0.5, 5, 0.3, 0.2)} MHz`); // ~166.7 MHz\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "69-metastability",
+      children: "6.9 Metastability"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Metastability"
+      }), " occurs when a flip-flop's input changes within the setup/hold window, causing the output to enter an undefined voltage state that can take arbitrarily long to resolve."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "graph LR\n    D[Data] --> FF[DFF]\n    CLK[Clock] --> FF\n    FF --> Q[Q]\n    FF --> |Metastable| M[Unknown]\n    style M fill:#faa,stroke:#f00,stroke-width:2px\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "691-mean-time-between-failures-mtbf",
+      children: "6.9.1 Mean Time Between Failures (MTBF)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "MTBF = exp(t_res / t) / (f_clk ? f_data ? t_W)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Where t is the flip-flop's metastability time constant and t_W is the sampling window."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "function mtbf(tRes: number, tau: number, fClk: number, fData: number, tW: number): number {\n    return Math.exp(tRes / tau) / (fClk * fData * tW);\n}\n\n// Typical values: t = 0.1ns, tW = 0.05ns, fClk=100MHz, fData=10MHz\nconsole.log(`${mtbf(2e-9, 0.1e-9, 100e6, 10e6, 0.05e-9)} seconds`); // ? 5.4e7 s\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "692-synchroniser-chain",
+      children: "6.9.2 Synchroniser Chain"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "To mitigate metastability when crossing clock domains, cascade two (or more) flip-flops:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "class Synchronizer {\n    private ff1: DFlipFlop;\n    private ff2: DFlipFlop;\n\n    constructor() {\n        this.ff1 = new DFlipFlop();\n        this.ff2 = new DFlipFlop();\n    }\n\n    synchronize(asyncData: number, clk: number): number {\n        this.ff1.update(asyncData, clk);\n        this.ff2.update(this.ff1.Q, clk);\n        return this.ff2.Q;\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "610-flip-flop-timing-parameters-in-practice",
+      children: "6.10 Flip-Flop Timing Parameters in Practice"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Parameter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "74LS74 (TTL)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "74HC74 (CMOS)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "74LVC1G74 (LVCMOS)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t_clk-to-Q"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "15 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3.7 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t_su"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "20 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.0 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t_h"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.5 ns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Max freq"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "25 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "30 MHz"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200 MHz"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "t (MTBF)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.3 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.15 ns"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.05 ns"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Use D flip-flops for most designs"
+        }), " ? they are the simplest to work with and map directly to register-transfer-level (RTL) code"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Never gate the clock"
+        }), " ? use clock enable signals instead; gated clocks introduce skew and glitches"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Synchronous design avoids race conditions"
+        }), " ? edge-triggered flip-flops with a single clock domain eliminate most timing hazards"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Always synchronise asynchronous inputs"
+        }), " ? a two-flip-flop synchroniser gives MTBF in the range of years at typical clock frequencies"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Keep timing margins"
+        }), " ? account for process, voltage, and temperature (PVT) variation in addition to setup/hold requirements"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// sequential circuits\n// boolean-circuits-sequential implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface Task { id: string; name: string; status: string; data: unknown }\nclass Processor {\nprivate tasks: Task[] = []\nprivate maxConcurrency: number\nconstructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }\nasync add(task: Omit<Task, \"status\">): Promise<void> {\nthis.tasks.push({ ...task, status: \"pending\" })\n}\nasync runAll(): Promise<void> {\nconst running: Promise<void>[] = []\nfor (const t of this.tasks) {\nif (running.length >= this.maxConcurrency) { await Promise.race(running) }\nconst p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })\nrunning.push(p)\n}\nawait Promise.all(running)\n}\nprivate async execute(t: Task): Promise<void> {\nt.status = \"running\"\nawait new Promise(r => setTimeout(r, 10))\nt.status = \"done\"\n}\ngetResults(): Task[] { return this.tasks }\ngetStats(): { done: number; pending: number; running: number } {\nconst done = this.tasks.filter(t => t.status === \"done\").length\nconst pending = this.tasks.filter(t => t.status === \"pending\").length\nconst running = this.tasks.filter(t => t.status === \"running\").length\nreturn { done, pending, running }\n}\n}\nasync function main() {\nconst proc = new Processor(2)\nawait proc.add({ id: '1', name: 'sequential circuits', data: { topic: 'boolean-circuits-sequential' } })\nawait proc.runAll()\nconsole.log('Stats:', proc.getStats())\n}\nmain().catch(console.error)\nexport { Processor, Task }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "// sequential circuits - additional TS implementations"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }\nclass Cache {\nprivate store: Map<string, CacheEntry> = new Map()\nconstructor(private defaultTTL: number = 60000) {}\nset(key: string, value: unknown, ttl?: number): void {\nthis.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })\n}\nget(key: string): unknown | undefined {\nconst entry = this.store.get(key)\nif (!entry) return undefined\nif (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }\nreturn entry.value\n}\ndelete(key: string): boolean { return this.store.delete(key) }\nclear(): void { this.store.clear() }\nsize(): number { return this.store.size }\nkeys(): string[] { return Array.from(this.store.keys()) }\n}\nclass Logger {\nprivate entries: string[] = []\nlog(level: string, msg: string, meta?: Record<string, unknown>): void {\nconst entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })\nthis.entries.push(entry)\nconsole.log(entry)\n}\ninfo(msg: string, meta?: Record<string, unknown>): void { this.log(\"info\", msg, meta) }\nwarn(msg: string, meta?: Record<string, unknown>): void { this.log(\"warn\", msg, meta) }\nerror(msg: string, meta?: Record<string, unknown>): void { this.log(\"error\", msg, meta) }\ngetLogs(): string[] { return [...this.entries] }\nclear(): void { this.entries = [] }\n}\nfunction computeHash(input: string): string {\nlet hash = 0\nfor (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }\nreturn Math.abs(hash).toString(16)\n}\nasync function demo(): Promise<void> {\nconst cache = new Cache(5000)\ncache.set('key1', 'digital-circuits demo')\nconst log = new Logger()\nlog.info('Cache demo started', { course: 'digital-logic', chapter: 'sequential circuits' })\nconst v = cache.get(\"key1\")\nconsole.log('Cached:', v)\nconsole.log('Hash:', computeHash('digital-circuits'))\n}\ndemo()\nexport { Cache, Logger, computeHash, CacheEntry }"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This chapter introduced the core building blocks of sequential circuits. We covered the behaviour of latches and flip-flops (SR, D, JK, T), their characteristic and excitation tables, and the timing constraints that govern their reliable operation. Registers, shift registers, and counters were presented as practical applications, from simple storage to universal shift registers and synchronous counters. The critical concepts of setup/hold time, clock skew, and metastability provide the foundation for reliable sequential system design. The next chapter systematises these elements into finite state machines ? the formal framework for controlling sequential behaviour."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1."
+      }), " Which flip-flop type is the most universal (can emulate all others)?\na) D\nb) SR\nc) JK\nd) T"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2."
+      }), " The minimum clock period in a sequential circuit depends on:\na) t_clk-to-Q + t_logic + t_su\nb) t_clk-to-Q + t_logic\nc) t_clk-to-Q + t_su\nd) t_logic + t_su"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3."
+      }), " A transparent D latch samples its input when:\na) The clock is low\nb) The enable is asserted\nc) The clock rises\nd) The clock falls"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4."
+      }), " Metastability is resolved by:\na) Lowering the clock frequency\nb) Using a two-flip-flop synchroniser\nc) Adding a Schmitt trigger\nd) Increasing the supply voltage"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5."
+      }), " In a synchronous up-counter, the T input of bit i is:\na) The AND of Q0 through Q??1\nb) The OR of Q0 through Q??1\nc) The XOR of all lower bits\nd) Always 1"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "answers",
+      children: "Answers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Q1: c | Q2: a | Q3: b | Q4: b | Q5: a"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Flip-flop conversion:"
+          }), " Design a JK flip-flop using a D flip-flop and external logic. Implement the excitation logic and verify with TypeScript."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Excitation table practice:"
+          }), " Given a desired state machine with states S0?S1?S2?S3?S0, determine the JK input equations for each flip-flop."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "8-bit register with reset:"
+          }), " Extend the EnabledRegister class with an asynchronous reset input that forces all outputs to 0."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "LFSR:"
+          }), " Implement a 4-bit linear feedback shift register (LFSR) with polynomial x4 + x? + 1. Generate the full 15-state sequence (non-zero states)."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Timing analysis:"
+          }), " For a circuit with t_clk-to-Q = 1ns, t_logic = 8ns, t_su = 0.5ns, t_skew = 0.3ns, compute (a) maximum clock frequency and (b) MTBF with f_data = 5 MHz, t = 0.1ns, t_W = 0.03ns."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Dual-clock FIFO:"
+          }), " Design a synchroniser for passing a 2-bit Gray-coded pointer between clock domains. Explain why Gray encoding is preferred."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Counter with reset:"
+          }), " Implement a synchronous 8-bit counter that resets to 0 when an external reset line is asserted. Include a count-enable input."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Johnson counter:"
+          }), " Design and simulate a 4-bit Johnson counter (twisted ring counter) that produces 8 unique states. Compare its state sequence with a standard ring counter."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Hold time fix:"
+          }), " A critical path has a hold time violation when t_skew = 200ps. Propose three solutions and analyse their impact on maximum clock frequency."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Power analysis:"
+          }), " Estimate the dynamic power consumption of an 8-bit synchronous counter vs. a ripple counter at 100 MHz, assuming each flip-flop transition consumes 20 pJ. Which is more power-efficient and why?"]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

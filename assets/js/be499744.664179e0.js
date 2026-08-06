@@ -1,0 +1,5055 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[88253],{
+
+/***/ 83400
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_artificial_intelligence_03_informed_search_md_be4_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-artificial-intelligence-03-informed-search-md-be4.json
+const site_docs_courses_artificial_intelligence_03_informed_search_md_be4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/artificial-intelligence/03-informed-search","title":"Chapter 3: Informed Search and Heuristics","description":"Prerequisites Problem Solving by Searching — Uninformed search strategies | Next Adversarial Search and Games — Game-playing and minimax","source":"@site/docs/courses/artificial-intelligence/03-informed-search.md","sourceDirName":"courses/artificial-intelligence","slug":"/artificial-intelligence/03-informed-search","permalink":"/ai-engineering-journey/artificial-intelligence/03-informed-search","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"id":"03-informed-search","slug":"/artificial-intelligence/03-informed-search","title":"Chapter 3: Informed Search and Heuristics","sidebar_label":"Chapter 3: Informed Search and Heuristics","sidebar_position":4},"sidebar":"coursesSidebar","previous":{"title":"Chapter 2: Problem-Solving by Search","permalink":"/ai-engineering-journey/artificial-intelligence/02-problem-solving"},"next":{"title":"Chapter 3: Solving Problems by Searching","permalink":"/ai-engineering-journey/artificial-intelligence/03-search"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/artificial-intelligence/03-informed-search.md
+
+
+const frontMatter = {
+	id: '03-informed-search',
+	slug: '/artificial-intelligence/03-informed-search',
+	title: 'Chapter 3: Informed Search and Heuristics',
+	sidebar_label: 'Chapter 3: Informed Search and Heuristics',
+	sidebar_position: 4
+};
+const contentTitle = 'Chapter 3: Informed Search and Heuristics';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Why Informed Search Matters",
+  "id": "why-informed-search-matters",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 3
+}, {
+  "value": "3.1 Heuristics",
+  "id": "31-heuristics",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition",
+  "level": 3
+}, {
+  "value": "Algorithm Steps — Designing a Heuristic",
+  "id": "algorithm-steps--designing-a-heuristic",
+  "level": 3
+}, {
+  "value": "Pseudocode — Heuristic Function Template",
+  "id": "pseudocode--heuristic-function-template",
+  "level": 3
+}, {
+  "value": "Step-by-Step Dry Run — 8-Puzzle Heuristic Computation",
+  "id": "step-by-step-dry-run--8-puzzle-heuristic-computation",
+  "level": 3
+}, {
+  "value": "h1 — Misplaced Tiles (excluding blank)",
+  "id": "h1--misplaced-tiles-excluding-blank",
+  "level": 4
+}, {
+  "value": "h2 — Manhattan Distance",
+  "id": "h2--manhattan-distance",
+  "level": 4
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages of Heuristic Functions",
+  "id": "advantages--disadvantages-of-heuristic-functions",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases",
+  "level": 3
+}, {
+  "value": "3.2 Greedy Best-First Search",
+  "id": "32-greedy-best-first-search",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition-1",
+  "level": 3
+}, {
+  "value": "Algorithm Steps",
+  "id": "algorithm-steps",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode",
+  "level": 3
+}, {
+  "value": "Step-by-Step Dry Run",
+  "id": "step-by-step-dry-run",
+  "level": 3
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-1",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-1",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-1",
+  "level": 3
+}, {
+  "value": "3.3 A* Search",
+  "id": "33-a-search",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition-2",
+  "level": 3
+}, {
+  "value": "Algorithm Steps",
+  "id": "algorithm-steps-1",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-1",
+  "level": 3
+}, {
+  "value": "Step-by-Step Dry Run",
+  "id": "step-by-step-dry-run-1",
+  "level": 3
+}, {
+  "value": "A* Trace Table",
+  "id": "a-trace-table",
+  "level": 4
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-2",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-2",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-1",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-2",
+  "level": 3
+}, {
+  "value": "3.3.1 Admissibility",
+  "id": "331-admissibility",
+  "level": 3
+}, {
+  "value": "3.3.2 Consistency (Monotonicity)",
+  "id": "332-consistency-monotonicity",
+  "level": 3
+}, {
+  "value": "3.3.3 Optimality of A*",
+  "id": "333-optimality-of-a",
+  "level": 3
+}, {
+  "value": "3.4 Iterative Deepening A* (IDA*)",
+  "id": "34-iterative-deepening-a-ida",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition-3",
+  "level": 3
+}, {
+  "value": "Algorithm Steps",
+  "id": "algorithm-steps-2",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-2",
+  "level": 3
+}, {
+  "value": "Step-by-Step Dry Run",
+  "id": "step-by-step-dry-run-2",
+  "level": 3
+}, {
+  "value": "Iteration 1 — bound = h(S) = 5",
+  "id": "iteration-1--bound--hs--5",
+  "level": 4
+}, {
+  "value": "Iteration 2 — bound = 6",
+  "id": "iteration-2--bound--6",
+  "level": 4
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-3",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-3",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-2",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-3",
+  "level": 3
+}, {
+  "value": "3.5 Recursive Best-First Search (RBFS)",
+  "id": "35-recursive-best-first-search-rbfs",
+  "level": 2
+}, {
+  "value": "Definition",
+  "id": "definition-4",
+  "level": 3
+}, {
+  "value": "Algorithm Steps",
+  "id": "algorithm-steps-3",
+  "level": 3
+}, {
+  "value": "Pseudocode",
+  "id": "pseudocode-3",
+  "level": 3
+}, {
+  "value": "Step-by-Step Dry Run",
+  "id": "step-by-step-dry-run-3",
+  "level": 3
+}, {
+  "value": "Python Implementation",
+  "id": "python-implementation-4",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-4",
+  "level": 3
+}, {
+  "value": "Advantages &amp; Disadvantages",
+  "id": "advantages--disadvantages-3",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-4",
+  "level": 3
+}, {
+  "value": "3.6 Heuristic Functions Comparison",
+  "id": "36-heuristic-functions-comparison",
+  "level": 2
+}, {
+  "value": "Informedness and Dominance",
+  "id": "informedness-and-dominance",
+  "level": 3
+}, {
+  "value": "Uninformed vs Informed Search",
+  "id": "uninformed-vs-informed-search",
+  "level": 2
+}, {
+  "value": "Interview Corner",
+  "id": "interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: What conditions guarantee A* is optimal?",
+  "id": "q1-what-conditions-guarantee-a-is-optimal",
+  "level": 3
+}, {
+  "value": "Q2: How do you design an admissible heuristic?",
+  "id": "q2-how-do-you-design-an-admissible-heuristic",
+  "level": 3
+}, {
+  "value": "Q3: Can an inadmissible heuristic ever be useful?",
+  "id": "q3-can-an-inadmissible-heuristic-ever-be-useful",
+  "level": 3
+}, {
+  "value": "Q4: Compare A*, IDA*, and RBFS.",
+  "id": "q4-compare-a-ida-and-rbfs",
+  "level": 3
+}, {
+  "value": "Q5: What is the difference between tree search and graph search in A*?",
+  "id": "q5-what-is-the-difference-between-tree-search-and-graph-search-in-a",
+  "level": 3
+}, {
+  "value": "Applications in Real Systems",
+  "id": "applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "GPS Navigation (A*)",
+  "id": "gps-navigation-a",
+  "level": 3
+}, {
+  "value": "Video Game Pathfinding (A* on Navigation Meshes)",
+  "id": "video-game-pathfinding-a-on-navigation-meshes",
+  "level": 3
+}, {
+  "value": "Robotics (D* Lite)",
+  "id": "robotics-d-lite",
+  "level": 3
+}, {
+  "value": "Other Domains",
+  "id": "other-domains",
+  "level": 3
+}, {
+  "value": "Concept Comparison",
+  "id": "concept-comparison",
+  "level": 2
+}, {
+  "value": "Quick Reference — Heuristic Design",
+  "id": "quick-reference--heuristic-design",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problem",
+  "id": "challenge-problem",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-3-informed-search-and-heuristics",
+        children: "Chapter 3: Informed Search and Heuristics"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Prerequisites:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/artificial-intelligence/02-problem-solving",
+          children: "Chapter 2: Problem Solving by Searching"
+        }), " — Uninformed search strategies | ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Next:"
+        }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/artificial-intelligence/04-adversarial-search",
+          children: "Chapter 4: Adversarial Search and Games"
+        }), " — Game-playing and minimax"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, students will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/artificial-intelligence/03-informed-search/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/artificial-intelligence/03-informed-search/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/artificial-intelligence/03-informed-search/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/artificial-intelligence/03-informed-search/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/artificial-intelligence/03-informed-search/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/artificial-intelligence/03-informed-search/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design admissible and consistent heuristic functions using relaxation and pattern databases."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement and analyze greedy best-first search and A* search on graph problems."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prove the optimality of A* under specified conditions (admissibility and consistency)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply memory-bounded variants (IDA*, RBFS) for large state-space problems."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare heuristics (Manhattan, Euclidean, Hamming) and choose the right one for a given domain."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "why-informed-search-matters",
+      children: "Why Informed Search Matters"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Imagine driving to an unfamiliar restaurant across town. You have two options:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Blind search (BFS/DFS):"
+        }), " Drive every possible street systematically until you stumble upon the restaurant. You might find it, but you'll waste hours exploring dead ends."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.em, {
+          children: [(0,jsx_runtime.jsx)(_components.em, {
+            children: "Informed search (A"
+          }), " / GPS):"]
+        }), "* Your GPS knows traffic conditions. It estimates travel time using distance (how far each road goes) + traffic data (current congestion). It combines ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "what you've already traveled"
+        }), " (g) with ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "an intelligent guess of what's left"
+        }), " (h) to pick the fastest route."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The GPS never tries every street — it uses ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "domain knowledge"
+      }), " (heuristics) to focus on promising paths. This is exactly what informed search algorithms do. They convert raw exploration into directed, efficient problem-solving, reducing exponential explosion to near-linear performance when the heuristic is good."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Key Insight:"
+        }), " Without a heuristic, search is blind. The difference between BFS and A* on a 20-city traveling salesman problem is the difference between checking 3 billion routes and checking a few hundred."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Topics"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Terms"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Heuristics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Heuristic function design, relaxation, pattern databases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Admissible, consistent, dominates, relaxed problem"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Greedy Best-First Search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pure heuristic search, minimal h(n) expansion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not complete, not optimal, heuristic-dependent"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A* Search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "f(n) = g(n) + h(n), optimality proof"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Admissibility, consistency, optimal efficiency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IDA*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Iterative deepening with f-cost bound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linear space, node re-expansion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RBFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recursive best-first with f-limit tracking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory-efficient, re-exploration"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Heuristic Comparison"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manhattan, Euclidean, Hamming, Diagonal, Chebyshev"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Informedness, dominance, computational cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Admissibility & Consistency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Triangle inequality for heuristics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lower bound, monotonicity, non-decreasing f"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    A[Start: Heuristic Functions] --> B[Greedy Best-First Search]\n    A --> C[A* Search]\n    C --> D[Admissibility]\n    C --> E[Consistency]\n    D --> F[Optimality of A*]\n    E --> F\n    A --> G[Memory-Bounded Search]\n    G --> H1[IDA* - Iterative Deepening A*]\n    G --> H2[RBFS - Recursive Best-First Search]\n    A --> I[Heuristic Comparison Table]\n    I --> J[Choose Heuristic for Problem]\n    F --> K[Interview Corner]\n    H1 --> K\n    H2 --> K\n    K --> L[Applications in Real Systems]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "31-heuristics",
+      children: "3.1 Heuristics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " When your GPS estimates \"15 minutes to destination\", it's using a heuristic — an approximate, educated guess based on distance and average speed. It doesn't know about every traffic light or construction zone, but the estimate is good enough to guide decision-making. A perfect prediction is impossible (and computationally expensive), but a reasonable lower bound tells you which direction to go."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "heuristic function"
+      }), " $h(n)$ estimates the cost of the cheapest path from node $n$ to a goal state. Unlike the cost-so-far $g(n)$ (which is exact), $h(n)$ is an estimate — domain knowledge injected into the search to prune unpromising branches."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "$$h(n) \\approx \\text{cost}(n \\rightarrow \\text{goal})$$"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "algorithm-steps--designing-a-heuristic",
+      children: "Algorithm Steps — Designing a Heuristic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify the state space and goal condition."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Choose an abstract representation that drops some problem constraints (", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "relaxation"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compute the exact solution cost for the relaxed problem."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Verify the heuristic never overestimates (", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "admissibility"
+        }), ": $h(n) \\leq h^*(n)$)."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Optionally verify consistency: $h(n) \\leq c(n, a, n') + h(n')$ for all successors."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Compare against a baseline heuristic to confirm ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "dominance"
+        }), " ($h_2(n) \\geq h_1(n)$ for all $n$)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode--heuristic-function-template",
+      children: "Pseudocode — Heuristic Function Template"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function HEURISTIC(state, goal):\n    // Relaxed-problem estimate: drop movement constraints\n    distance <- 0\n    for each tile/piece in state:\n        target <- goal position of tile\n        distance <- distance + MANHATTAN-DISTANCE(tile, target)\n    return distance\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "step-by-step-dry-run--8-puzzle-heuristic-computation",
+      children: "Step-by-Step Dry Run — 8-Puzzle Heuristic Computation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "State:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "+---+---+---+\n| 2 | 8 | 3 |\n+---+---+---+\n| 1 | 6 | 4 |\n+---+---+---+\n| 7 |   | 5 |\n+---+---+---+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Goal:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "+---+---+---+\n| 1 | 2 | 3 |\n+---+---+---+\n| 8 |   | 4 |\n+---+---+---+\n| 7 | 6 | 5 |\n+---+---+---+\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "h1--misplaced-tiles-excluding-blank",
+      children: "h1 — Misplaced Tiles (excluding blank)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Tile"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Goal"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Misplaced?"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,2)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "h1 = 4"
+      }), " (tiles 1, 2, 6, 8 misplaced)"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "h2--manhattan-distance",
+      children: "h2 — Manhattan Distance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Tile"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Current"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Goal"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "dx"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "dy"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Distance"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(2,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(0,1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "(1,0)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "h2 = 1 + 1 + 1 + 2 = 5"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Notice $h_2(n) \\geq h_1(n)$: Manhattan distance ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "dominates"
+      }), " misplaced tiles (gives a tighter, higher estimate while staying admissible)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "# Heuristic functions for the 8-puzzle\ndef misplaced_tiles(state, goal):\n    count = 0\n    for i in range(3):\n        for j in range(3):\n            if state[i][j] != 0 and state[i][j] != goal[i][j]:\n                count += 1\n    return count\n\ndef manhattan_distance(state, goal):\n    goal_pos = {}\n    for i in range(3):\n        for j in range(3):\n            goal_pos[goal[i][j]] = (i, j)\n\n    total = 0\n    for i in range(3):\n        for j in range(3):\n            tile = state[i][j]\n            if tile != 0:\n                gi, gj = goal_pos[tile]\n                total += abs(i - gi) + abs(j - gj)\n    return total\n\n# Example usage\nstate = [[2, 8, 3], [1, 6, 4], [7, 0, 5]]\ngoal  = [[1, 2, 3], [8, 0, 4], [7, 6, 5]]\n\nprint(\"Misplaced tiles (h1):\", misplaced_tiles(state, goal))    # 4\nprint(\"Manhattan distance (h2):\", manhattan_distance(state, goal))  # 5\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation time per call"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$O(N)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N = number of elements (tiles, variables). Each element contributes a constant-time distance computation."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space per call"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$O(1)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Only a running total and optional lookup table. No recursion or dynamic structures."
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Design cost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Problem-dependent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deriving a relaxed problem requires domain expertise. Once built, evaluating is cheap."
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(N)?"
+      }), " For the 8-puzzle, we visit each of the 9 positions once. For each non-blank tile, we compute an absolute difference (constant time). With n tiles, the total is O(n). For the N-puzzle, this is O(N^2) scan — still fast for any practical puzzle size."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-of-heuristic-functions",
+      children: "Advantages & Disadvantages of Heuristic Functions"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dramatically reduces search space — exponential speedup possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires domain expertise to design well"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Enables optimal search (A* with admissible heuristics)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Poor heuristic can be worse than no heuristic (misleading)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be automatically derived via relaxation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tension between informedness and computational cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple heuristics can be combined (max, sum for disjoint)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Memory overhead for pattern databases"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zero heuristic (h(n) = 0):"
+        }), " A* degenerates to uniform-cost search (Dijkstra's). Admissible but completely uninformed — no pruning."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Overestimating heuristic:"
+        }), " Destroys optimality. If h(n) > h*(n), A* may return a suboptimal solution."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Heuristic much cheaper than true cost:"
+        }), " A* expands nearly as many nodes as UCS. Information gain is minimal."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Inconsistent heuristic:"
+        }), " Graph search may miss optimal paths or re-explore nodes. Tree search remains optimal with admissibility alone."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Computationally expensive heuristic:"
+        }), " If evaluating h(n) costs more than the search it replaces, the heuristic is counterproductive."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "32-greedy-best-first-search",
+      children: "3.2 Greedy Best-First Search"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " You're in a hedge maze and can see the castle tower above the walls. You always walk in the direction that makes the tower look closest. This gets you near the tower quickly, but you might hit a wall and have to backtrack. Greedy best-first is like a tourist who always walks toward the Eiffel Tower — it works until a building blocks the path."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition-1",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Greedy best-first search expands the node with the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "lowest heuristic value"
+      }), " $h(n)$ at each step. It completely ignores the cost already incurred ($g(n)$). The frontier is a priority queue ordered by $h(n)$ alone."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation function:"
+      }), " $f(n) = h(n)$"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "algorithm-steps",
+      children: "Algorithm Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize the frontier with the start node. Priority: lowest h(n)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize an empty explored set."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["While the frontier is not empty:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Pop the node with the smallest h(n)."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "If it is the goal, return the solution."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Add its state to the explored set."
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["For each successor:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "Skip if already explored or in the frontier."
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "Otherwise, add to frontier with its h(n) as priority."
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the frontier empties, return failure."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function GREEDY-BEST-FIRST-SEARCH(problem, h) returns solution or failure\n    node <- NODE(problem.INITIAL)\n    if problem.GOAL-TEST(node.STATE) then return SOLUTION(node)\n    frontier <- priority queue ordered by h, containing node\n    explored <- empty set\n    loop do\n        if EMPTY?(frontier) then return failure\n        node <- POP(frontier)\n        add node.STATE to explored\n        for each action in problem.ACTIONS(node.STATE) do\n            child <- CHILD-NODE(problem, node, action)\n            if child.STATE not in explored and child.STATE not in frontier then\n                if problem.GOAL-TEST(child.STATE) then return SOLUTION(child)\n                frontier <- INSERT(child, frontier)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "step-by-step-dry-run",
+      children: "Step-by-Step Dry Run"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Problem Graph:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Edge"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Cost"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S -> A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S -> B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S -> C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A -> D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "B -> E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "B -> F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "C -> G"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "D -> G"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "E -> G"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "F -> G"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Heuristic values h(n):"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "h(n)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Estimated 5 steps to G"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Close to D, both lead toward G"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Closer to the goal region"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct connection to G"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One hop from G, costly"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Near G via short edge"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Direct short edge to G"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "G"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Goal"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Trace Table:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Node Expanded"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Frontier (h-sorted)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Discovered Nodes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Init"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "[S(5)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "-"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "[B(3), C(3), A(4)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "A(h=4), B(h=3), C(h=3)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "[C(3), E(2), F(2), A(4)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "E(h=2), F(h=2)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "[F(2), C(3), A(4), G(0)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "G(h=0)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "G"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "[F(2), C(3), A(4)]"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Goal! Path: S->B->E->G, cost=7"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Greedy found path S->B->E->G (cost = 2+3+2 = 7), but the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "optimal"
+      }), " path is S->B->F->G (cost = 2+2+2 = 6). Greedy was misled by the heuristic and returned a suboptimal solution."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-1",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import heapq\n\ndef greedy_best_first_search(graph, start, goal, heuristic):\n    frontier = [(heuristic[start], start)]\n    heapq.heapify(frontier)\n    explored = set()\n    parent = {start: None}\n\n    while frontier:\n        _, current = heapq.heappop(frontier)\n        if current == goal:\n            path = []\n            while current is not None:\n                path.append(current)\n                current = parent[current]\n            return path[::-1]\n\n        explored.add(current)\n\n        for neighbor, cost in graph[current]:\n            if neighbor not in explored and neighbor not in {n for _, n in frontier}:\n                parent[neighbor] = current\n                heapq.heappush(frontier, (heuristic[neighbor], neighbor))\n\n    return None\n\ngraph = {\n    'S': [('A', 3), ('B', 2), ('C', 4)],\n    'A': [('D', 2)], 'B': [('E', 3), ('F', 2)],\n    'C': [('G', 3)], 'D': [('G', 5)],\n    'E': [('G', 2)], 'F': [('G', 2)], 'G': []\n}\nheuristic = {'S': 5, 'A': 4, 'B': 3, 'C': 3, 'D': 3, 'E': 2, 'F': 2, 'G': 0}\n\npath = greedy_best_first_search(graph, 'S', 'G', heuristic)\nprint(\"Greedy path:\", path)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-1",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Worst"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(b^m)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(b^m)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Same as DFS/BFS if heuristic is uninformed; b = branching factor, m = max depth"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Best"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(bd)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(bd)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "With perfect heuristic, expands only nodes along solution path; d = depth"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Average"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Between best and worst"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Same"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Highly dependent on heuristic quality"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why exponential?"
+      }), " Greedy best-first is still a form of DFS — it can explore an exponential number of nodes because it has no mechanism to recover from bad heuristic choices. Unlike A*, it doesn't use path cost to correct course."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Very fast when heuristic is accurate"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Not optimal"
+            }), " — may return suboptimal path"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple to implement — only needs h(n)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Not complete"
+            }), " — can get stuck in infinite loops"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low memory variant possible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "May oscillate between promising regions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Useful subroutine in complex algorithms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance entirely heuristic-dependent"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-1",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Misleading heuristic:"
+        }), " If h(n) wrongly favors a region with no goal, greedy explores that area exhaustively."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Cyclic graphs without explored set:"
+        }), " Greedy may loop indefinitely between two nodes with low h-values."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zero heuristic (h=0):"
+        }), " Greedy becomes random search among frontier nodes. No meaningful direction."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Goal unreachable:"
+        }), " Greedy explores all reachable states before returning failure — exponential worst case."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "33-a-search",
+      children: "3.3 A* Search"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " Your GPS navigation calculates arrival time as: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "time already driven (g) + estimated remaining time based on traffic (h)"
+      }), ". If you've already spent 20 minutes in traffic (g=20) and the remaining distance estimates 10 more minutes (h=10), the total estimate is 30 minutes (f=30). A* always considers ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "both"
+      }), " how far you've come and how far you have to go — unlike greedy, which only looks ahead."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition-2",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A* search (Hart, Nilsson, and Raphael, 1968) combines the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "cost-so-far"
+      }), " $g(n)$ with the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "estimated cost-to-go"
+      }), " $h(n)$:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "$$f(n) = g(n) + h(n)$$"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "where:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$g(n)$ = exact cost from the start to node $n$ (known)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$h(n)$ = heuristic estimate from $n$ to the goal (estimated)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "$f(n)$ = estimated total cost of the cheapest solution passing through $n$"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["A* expands nodes in order of increasing $f$, making it both ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "complete"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "optimal"
+      }), " (with an admissible heuristic)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "algorithm-steps-1",
+      children: "Algorithm Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize the frontier as a priority queue keyed by f(n) = g(n) + h(n). Add the start node with g=0."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Initialize an explored (closed) set."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["While the frontier is not empty:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Pop the node with the smallest f(n)."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "If it is the goal, reconstruct and return the solution path."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Add it to the explored set."
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["For each successor n' reachable by action a:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "Compute g(n') = g(n) + cost(a)."
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "Compute f(n') = g(n') + h(n')."
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "If n' is not in the explored set or frontier, add it."
+              }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                children: "If n' is in the frontier with a higher g, replace with the new lower-cost entry."
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the frontier empties, return failure."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-1",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function A*-SEARCH(problem, h) returns solution or failure\n    node <- NODE(problem.INITIAL)\n    node.g <- 0\n    node.f <- h(problem.INITIAL)\n    frontier <- priority queue ordered by f, containing node\n    explored <- empty set\n    while not EMPTY?(frontier) do\n        node <- POP(frontier)\n        if problem.GOAL-TEST(node.STATE) then return SOLUTION(node)\n        add node.STATE to explored\n        for each action in problem.ACTIONS(node.STATE) do\n            child <- CHILD-NODE(problem, node, action)\n            child.g <- node.g + step-cost(node, action, child)\n            child.f <- child.g + h(child.STATE)\n            if child.STATE not in explored and child.STATE not in frontier then\n                frontier <- INSERT(child, frontier)\n            else if child.STATE already in frontier with higher g then\n                REPLACE(frontier, child)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "step-by-step-dry-run-1",
+      children: "Step-by-Step Dry Run"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Using the same graph and heuristic as the greedy example."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Graph:"
+      }), " S->A(3), S->B(2), S->C(4), A->D(2), B->E(3), B->F(2), C->G(3), D->G(5), E->G(2), F->G(2)"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Heuristic h:"
+      }), " S=5, A=4, B=3, C=3, D=3, E=2, F=2, G=0"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "All heuristics are admissible AND consistent (verified against triangle inequality)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "a-trace-table",
+      children: "A* Trace Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Pop"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Expanded"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "g"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "h"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Frontier After Expansion"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Init"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "[S(g=0,h=5,f=5)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "[B(g=2,h=3,f=5), A(g=3,h=4,f=7), C(g=4,h=3,f=7)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "[F(g=4,h=2,f=6), A(g=3,h=4,f=7), C(g=4,h=3,f=7), E(g=5,h=2,f=7)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "[G(g=6,h=0,f=6), A(f=7), C(f=7), E(f=7)]"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "G"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "6"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Goal! Path: S->B->F->G, cost=6"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detailed Step 1:"
+      }), " Pop S (f=5)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A: g=0+3=3, f=3+4=7"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B: g=0+2=2, f=2+3=5"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C: g=0+4=4, f=4+3=7"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detailed Step 2:"
+      }), " Pop B (f=5)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "E: g=2+3=5, f=5+2=7"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "F: g=2+2=4, f=4+2=6"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Detailed Step 3:"
+      }), " Pop F (f=6)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "G: g=4+2=6, f=6+0=6"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Comparison with Greedy:"
+      }), " Greedy found S->B->E->G (cost 7) because it ignored g. A* found S->B->F->G (cost 6) because it considered B->F=4 vs B->E=5, even though both had the same h. The g value broke the tie correctly."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-2",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import heapq\n\ndef a_star_search(graph, start, goal, heuristic):\n    frontier = [(heuristic[start], 0, start)]\n    heapq.heapify(frontier)\n    explored = {}\n    parent = {start: None}\n    g_score = {start: 0}\n\n    while frontier:\n        f, g, current = heapq.heappop(frontier)\n        if current in explored and explored[current] <= g:\n            continue\n        explored[current] = g\n\n        if current == goal:\n            path = []\n            while current is not None:\n                path.append(current)\n                current = parent[current]\n            return path[::-1]\n\n        for neighbor, cost in graph[current]:\n            new_g = g + cost\n            if neighbor not in explored or new_g < g_score.get(neighbor, float('inf')):\n                g_score[neighbor] = new_g\n                f_new = new_g + heuristic[neighbor]\n                parent[neighbor] = current\n                heapq.heappush(frontier, (f_new, new_g, neighbor))\n\n    return None\n\n# Same graph\ngraph = {\n    'S': [('A', 3), ('B', 2), ('C', 4)],\n    'A': [('D', 2)], 'B': [('E', 3), ('F', 2)],\n    'C': [('G', 3)], 'D': [('G', 5)],\n    'E': [('G', 2)], 'F': [('G', 2)], 'G': []\n}\nheuristic = {'S': 5, 'A': 4, 'B': 3, 'C': 3, 'D': 3, 'E': 2, 'F': 2, 'G': 0}\n\npath = a_star_search(graph, 'S', 'G', heuristic)\nprint(\"A* path:\", path)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-2",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Case"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Worst"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(b^d)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(b^d)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "If h is uninformed (close to 0), A* expands all nodes like UCS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Best (perfect heuristic)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(bd)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(bd)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "With h(n) = h*(n), A* expands only nodes on the optimal path"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "With good heuristic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Sub-exponential"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(b^d)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why exponential in worst case?"
+      }), " The number of distinct f-values below the optimal cost C* can still be exponential. A* stores all generated nodes in memory — the space bottleneck usually hits before the time bottleneck. With b=10 and d=20, A* may store 10^20 nodes."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why sub-exponential with good heuristic?"
+      }), " If |h(n) - h*(n)| is in O(log h*(n)), the number of expanded nodes is polynomial rather than exponential."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-1",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Optimal"
+            }), " — guarantees cheapest solution with admissible h"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Exponential space"
+            }), " — stores all generated nodes"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Complete"
+            }), " — always finds solution if one exists"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance degrades with poor heuristic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Optimally efficient"
+            }), " — no other optimal algorithm using same heuristic expands fewer nodes"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cycle checking adds overhead"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Works on any graph (directed, undirected, weighted)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires admissible heuristic for optimality"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-2",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Zero heuristic (h=0):"
+        }), " A* becomes uniform-cost search (Dijkstra's). Complete and optimal, but explores in all directions equally."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Overestimating heuristic:"
+        }), " A* may return suboptimal solution. Optimality guarantee lost."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Inadmissible heuristic:"
+        }), " If h(n) > h*(n) for any node, A* tree search can terminate with non-optimal path."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Inconsistent heuristic:"
+        }), " Graph search (with explored set) may miss optimal paths. Tree search still optimal with admissibility alone."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multiple goals:"
+        }), " A* finds the cheapest goal, not the first goal encountered."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Disconnected graph:"
+        }), " A* exhausts all reachable nodes and returns failure."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "331-admissibility",
+      children: "3.3.1 Admissibility"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " A taxi driver tells you the fare will be \"at most $25\". When you arrive, the meter reads $22. The estimate was ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "admissible"
+      }), " — it never overestimated. If they'd said \"at most $20\" and the meter read $22, they would have underestimated, and you'd be short on cash."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition:"
+      }), " A heuristic $h$ is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "admissible"
+      }), " if for every node $n$:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "$$h(n) \\leq h^*(n)$$"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "where $h^*(n)$ is the true optimal cost from $n$ to the nearest goal. In other words, $h$ never overestimates the remaining cost."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why it matters:"
+      }), " Admissibility is the key condition for A* optimality. If $h$ is admissible, A* using ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "tree search"
+      }), " (no explored set) guarantees finding the optimal solution."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Implication"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "$h(n) \\leq h^*(n)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Never overestimates"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "$h(\\text{goal}) = 0$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Goal state has zero remaining cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "$h(n) = 0$ for all $n$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Trivially admissible (degenerates to UCS)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Checking admissibility:"
+      }), " For the 8-puzzle, h2 (Manhattan distance) is admissible because any tile must move at least its Manhattan distance to reach its goal position — it's a physical lower bound. Euclidean distance is always admissible for grid movement because the straight line is the shortest possible path."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Overconfident heuristic:"
+        }), " Overestimates for even one node invalidates admissibility. A* may return suboptimal path."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.em, {
+          children: [(0,jsx_runtime.jsx)(_components.em, {
+            children: "Perfect heuristic (h = h"
+          }), "):"]
+        }), "* The best possible admissible heuristic. A* expands only nodes on the optimal path."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dominance:"
+        }), " If h2(n) >= h1(n) for all n and both are admissible, h2 ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "dominates"
+        }), " h1 and leads to fewer node expansions."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "332-consistency-monotonicity",
+      children: "3.3.2 Consistency (Monotonicity)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " In a well-designed trip, each step brings you strictly closer to your destination. If you're driving from New York to Boston, every mile north should reduce your estimated remaining distance by at most one mile. Consistency formalizes this with the triangle inequality."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition:"
+      }), " A heuristic $h$ is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "consistent"
+      }), " (or ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "monotone"
+      }), ") if for every node $n$ and every successor $n'$ reachable by action $a$:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "$$h(n) \\leq c(n, a, n') + h(n')$$"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["where $c(n, a, n')$ is the step cost. This is the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "triangle inequality"
+      }), " applied to heuristics: the direct estimate from n to the goal should not exceed the cost of going through n' plus the estimate from n'."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Consistency implies admissibility"
+      }), " (but not vice versa). Proof: by induction from the goal, where h(goal) = 0."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key property — Non-decreasing f:"
+      }), " If h is consistent, then along any path, f(n) never decreases:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "$$f(n') = g(n') + h(n') = g(n) + c(n,n') + h(n') \\geq g(n) + h(n) = f(n)$$"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["This means A* ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "never re-opens nodes"
+      }), " from the explored set — when a node is first expanded, it has been reached via the optimal path."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Property"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Admissibility"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Consistency"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "h(n) <= h*(n)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Required"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Implied"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "h(n) <= c(n,n') + h(n')"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Not required"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Required"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A* tree search optimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A* graph search optimal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Non-decreasing f"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Not guaranteed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Guaranteed"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge Cases:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Admissible but inconsistent:"
+        }), " Graph search may re-open explored nodes or miss the optimal path. Tree search remains optimal."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Non-negative step costs:"
+        }), " If all step costs are non-negative and h is consistent, A* graph search is optimally efficient."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Consistency is harder to satisfy:"
+        }), " A heuristic may be admissible without being consistent. Pattern database heuristics are often consistent if designed properly."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "333-optimality-of-a",
+      children: "3.3.3 Optimality of A*"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Theorem:"
+      }), " If $h$ is admissible, then A* using ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "tree search"
+      }), " returns an optimal solution. If $h$ is consistent, then A* using ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "graph search"
+      }), " returns an optimal solution."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Proof Sketch (Tree Search):"
+      }), " Suppose A* returns a suboptimal goal G with cost C > C*, where C* is the optimal cost. Let n be a node on the optimal path that remains on the frontier when A* terminates. Since h is admissible:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["$$f(n) = g(n) + h(n) \\leq g(n) + h^", (0,jsx_runtime.jsx)(_components.em, {
+        children: "(n) = C^"
+      }), "$$"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Since A* expands nodes in order of increasing f, and the goal G has f(G) = C > C*, node n would be expanded before G — a contradiction. Thus, A* must return an optimal solution."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Intuitive Explanation:"
+      }), " A* never expands a node with f(n) > C* as long as any node on the optimal path (f <= C*) remains on the frontier. The search frontier forms a \"contour\" of nodes with f < C* that are all expanded before any suboptimal goal is reached."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Optimal Efficiency:"
+      }), " A* is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "optimally efficient"
+      }), " — no other optimal algorithm using the same heuristic expands fewer nodes than A*. Formally, any algorithm that guarantees optimality must expand every node that A* expands."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Graph Search vs Tree Search:"
+      })
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Variant"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Heuristic Requirement"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tree search (no explored set)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Admissible"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proof only uses admissibility; cycles cause infinite loops but optimality of solution holds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Graph search (with explored set)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Consistent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Without consistency, a node may be expanded before the optimal path to it is discovered"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Consistency check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "h(n) <= c(n,n') + h(n')"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ensures f is non-decreasing along paths, so first expansion is optimal"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "34-iterative-deepening-a-ida",
+      children: "3.4 Iterative Deepening A* (IDA*)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " You're searching for a lost earring in a large house. You first check all rooms within 5 feet of your current position. Not found? Expand to 10 feet. Then 15 feet. Each iteration, you search a wider radius, systematically expanding until you find it. IDA* does this with cost thresholds instead of distance."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition-3",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["IDA* combines iterative deepening depth-first search (IDDFS) with A*'s f-cost evaluation. Instead of using depth as the cutoff, IDA* uses an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "f-cost bound"
+      }), ". Each iteration performs a depth-first search, pruning any branch whose f(n) = g(n) + h(n) > bound. If no solution is found, the bound increases to the minimum f-value that exceeded the previous bound."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "algorithm-steps-2",
+      children: "Algorithm Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set bound = h(start)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Perform a depth-first search where each node's f(n) = g(n) + h(n) is computed."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prune (don't expand) any node with f(n) > bound."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Record the minimum f that exceeded the bound as next_bound."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the goal is found, return the solution."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If no node is pruned (DFS completed without solution), return failure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set bound = next_bound and go to step 2."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-2",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function IDA*(problem, h) returns solution or failure\n    root <- NODE(problem.INITIAL)\n    root.f <- h(problem.INITIAL)\n    bound <- root.f\n    loop do\n        result, new_bound <- DFS-CONTOUR(root, 0, bound)\n        if result != cutoff then return result\n        if new_bound = INF then return failure\n        bound <- new_bound\n\nfunction DFS-CONTOUR(node, g, bound) returns (solution or cutoff, new_bound)\n    f <- g + h(node.STATE)\n    if f > bound then return (cutoff, f)\n    if problem.GOAL-TEST(node.STATE) then return (SOLUTION(node), bound)\n    new_bound <- INF\n    for each successor of node do\n        solution, child_bound <- DFS-CONTOUR(child, g + cost(node, child), bound)\n        if solution != cutoff then return (solution, bound)\n        new_bound <- MIN(new_bound, child_bound)\n    return (cutoff, new_bound)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "step-by-step-dry-run-2",
+      children: "Step-by-Step Dry Run"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Same graph. Heuristic: S=5, A=4, B=3, C=3, D=3, E=2, F=2, G=0."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "iteration-1--bound--hs--5",
+      children: "Iteration 1 — bound = h(S) = 5"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "DFS Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "g"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "h"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f <= 5?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prune (record 7)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prune (record 7)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prune (record 6)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prune (record 7)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Min pruned f = 6. New bound = 6. No solution found in iteration 1."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "iteration-2--bound--6",
+      children: "Iteration 2 — bound = 6"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "DFS Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Node"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "g"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "h"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f <= 6?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prune"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "E"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Prune"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Expand"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "G"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Goal!"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Result:"
+      }), " Path S->B->F->G, cost = 6. Found in 2 iterations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-3",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def ida_star_search(graph, start, goal, heuristic):\n    def dfs(node, g, bound):\n        f = g + heuristic[node]\n        if f > bound:\n            return None, f\n        if node == goal:\n            return [node], bound\n\n        new_bound = float('inf')\n        for neighbor, cost in graph.get(node, []):\n            path, child_bound = dfs(neighbor, g + cost, bound)\n            if path is not None:\n                return [node] + path, bound\n            new_bound = min(new_bound, child_bound)\n        return None, new_bound\n\n    bound = heuristic[start]\n    while True:\n        path, new_bound = dfs(start, 0, bound)\n        if path is not None:\n            return path\n        if new_bound == float('inf'):\n            return None\n        bound = new_bound\n\n# Test\npath = ida_star_search(graph, 'S', 'G', heuristic)\nprint(\"IDA* path:\", path)   # S -> B -> F -> G\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-3",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time (worst)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(b^d)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In worst case, same as A*; each iteration re-explores many nodes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(bd)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DFS-based: only stores current path (depth d, branching factor b)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Node re-expansions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Exponential"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Each iteration re-expands all nodes from previous iterations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Overhead vs A*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "10-30% typically"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "For good heuristics, most nodes are pruned at or near the optimal bound"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Why O(bd) space?"
+      }), " IDA* uses depth-first search internally, which only stores the current path (depth d) and its siblings (branching factor b). This is a dramatic improvement over A*'s O(b^d) space."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-2",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Linear memory"
+            }), " — O(bd) vs A* exponential O(b^d)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Re-expands nodes"
+            }), " — nodes visited in every iteration"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete and optimal (admissible heuristic)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can be slow for problems with large f-value ranges"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Works well for integer step costs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Loses A*'s optimal efficiency guarantee"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No priority queue overhead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Struggles when many nodes share the same f-cost"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-3",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Large f-value range:"
+        }), " If f-costs range from 10 to 10,000, IDA* may require hundreds of iterations."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Real-valued costs:"
+        }), " IDA* requires successive cost increments. With real values, the algorithm may loop forever. Use incremental bounding."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Multiple nodes with same f:"
+        }), " Large contour of identical f means many nodes expanded per bound and re-expanded in the next iteration."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "35-recursive-best-first-search-rbfs",
+      children: "3.5 Recursive Best-First Search (RBFS)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Real-World Analogy:"
+      }), " While hiking a mountain trail, you reach a fork. You estimate the left trail is 2 miles to the summit, the right is 3 miles. You take the left trail, but keep checking: \"If this goes nowhere, the right trail was estimated at 3 miles.\" At every step, RBFS remembers the best alternative route's cost, so it can backtrack only when necessary."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "definition-4",
+      children: "Definition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["RBFS performs a recursive depth-first search while tracking the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "best alternative path"
+      }), " f-value. It only switches to an alternative branch when the current path's f-value exceeds the stored alternative. This gives it A*-like behavior with O(bd) memory."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "algorithm-steps-3",
+      children: "Algorithm Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start at the root with f-limit = infinity."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Evaluate all successors and compute their f-values."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Find the best successor (smallest f) and second-best successor."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Recurse on the best successor with f-limit = min(current f-limit, second-best f)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If recursion fails (returns a new f-limit), update the current node's f-value and iterate."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Each successor's f = max(own f, parent f) to propagate information up the tree."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-3",
+      children: "Pseudocode"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "function RBFS(problem, node, f_limit) returns solution or failure\n    if problem.GOAL-TEST(node.STATE) then return SOLUTION(node)\n    successors <- for each action in problem.ACTIONS(node.STATE):\n        child <- CHILD-NODE(problem, node, action)\n        child.f <- max(g(child) + h(child.STATE), node.f)\n        return child sorted by f\n    if EMPTY?(successors) then return failure\n    loop do\n        best <- first successor (lowest f)\n        if best.f > f_limit then return failure\n        alternative <- second successor's f (or INF if none)\n        result <- RBFS(problem, best, MIN(f_limit, alternative))\n        if result != failure then return result\n        best.f <- result\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "step-by-step-dry-run-3",
+      children: "Step-by-Step Dry Run"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Same graph and heuristic."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Current"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Best"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Second-Best"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f-limit"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "S"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "B(5)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A(7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "INF"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recurse on B"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "max(5,5)=5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F(6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "E(7)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "min(INF,7)=7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recurse on F"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "F"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "max(6,5)=6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "G(6)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "min(7,INF)=7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Recurse on G"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "G"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Goal! S->B->F->G"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-4",
+      children: "Python Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "def rbfs(graph, start, goal, heuristic):\n    def rbfs_rec(node, g, f_limit):\n        f = max(g + heuristic[node], f_limit if node != start else g + heuristic[node])\n        if node == goal:\n            return [node], f\n\n        successors = []\n        for neighbor, cost in graph.get(node, []):\n            new_g = g + cost\n            new_f = max(new_g + heuristic[neighbor], f)\n            successors.append((new_f, new_g, neighbor))\n        successors.sort()\n\n        if not successors:\n            return None, float('inf')\n\n        while True:\n            best_f, best_g, best_node = successors[0]\n            if best_f > f_limit:\n                return None, best_f\n\n            alt_f = successors[1][0] if len(successors) > 1 else float('inf')\n            result, new_f = rbfs_rec(best_node, best_g, min(f_limit, alt_f))\n\n            if result is not None:\n                return [node] + result, new_f\n\n            successors[0] = (new_f, best_g, best_node)\n            successors.sort()\n\n    path, _ = rbfs_rec(start, 0, float('inf'))\n    return path\n\npath = rbfs(graph, 'S', 'G', heuristic)\nprint(\"RBFS path:\", path)   # S -> B -> F -> G\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-4",
+      children: "Complexity Analysis"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Aspect"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Explanation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time (worst)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(b^d)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In worst case, same as A*; may re-explore nodes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(bd)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DFS-based: stores current path + sibling list"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Re-exploration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Lower than IDA*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tracks alternative f-values, reducing re-expansion"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wall-clock"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Near A* for good heuristics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Practical efficiency close to A* with far less memory"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "advantages--disadvantages-3",
+      children: "Advantages & Disadvantages"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Advantages"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Disadvantages"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Linear memory"
+            }), " — O(bd) vs A* exponential"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Re-explores nodes"
+            }), " — can revisit previously explored regions"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete and optimal (admissible h)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex implementation — tracking successor f-values"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Often faster than IDA* (less re-expansion)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overhead from sorting successors at each node"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Works on graphs and trees"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Degrades when h is not informative"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-4",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Admissible but not consistent:"
+        }), " RBFS remains optimal because it uses tree-search semantics with backtracking, not an explored set."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One child per node:"
+        }), " RBFS degenerates to DFS with a simple bound check. No alternative path to switch to."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tight f-limits:"
+        }), " When many nodes have f equal to the bound, RBFS switches branches frequently."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "36-heuristic-functions-comparison",
+      children: "3.6 Heuristic Functions Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Heuristic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Formula"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Admissible?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Cost"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Best For"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Manhattan Distance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "x_1-x_2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "+"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "y_1-y_2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Euclidean Distance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$\\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes (any movement)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(1)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open terrain, continuous spaces"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Chebyshev Distance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$\\max("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "x_1-x_2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: ","
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "y_1-y_2"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Diagonal Distance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "$\\min("
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "dx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: ","
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dy"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hamming Distance"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Count of differing positions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes (if each change costs >= 1)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(n)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pattern matching, 8-puzzle"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Misplaced Tiles"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Count tiles not in goal position"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(n)$"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8-puzzle, 15-puzzle"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Pattern Database"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precomputed subproblem cost"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(1)$ look-up"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large puzzles (Rubik's cube)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Relaxed Problem"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve simplified version"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Problem-dependent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Domain-specific (scheduling)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Landmark (ALT)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precomputed distances via landmarks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "$O(1)$ per landmark"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Road networks (GPS)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "informedness-and-dominance",
+      children: "Informedness and Dominance"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition:"
+      }), " Heuristic $h_2$ ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "dominates"
+      }), " $h_1$ if $h_2(n) \\geq h_1(n)$ for all nodes $n$ and both are admissible. A* with $h_2$ expands a subset of the nodes expanded by A* with $h_1$."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Dominance chain for 8-puzzle:"
+      }), " $h_{\\text{Manhattan}} \\geq h_{\\text{misplaced}} \\geq h_{\\text{zero}}$"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Trade-off:"
+      }), " A more informed heuristic (higher h) = fewer nodes expanded = more time per evaluation. Sweet spot minimizes ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "total time"
+      }), " = (nodes expanded) x (time per evaluation)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "uninformed-vs-informed-search",
+      children: "Uninformed vs Informed Search"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Uninformed Search (BFS, DFS, UCS)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Informed Search (A*, Greedy)"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Domain knowledge"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None — explores blindly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Uses heuristic function h(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Evaluation function"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "g(n) or nothing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f(n) = g(n) + h(n) or h(n)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimality"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "BFS/UCS: yes; DFS: no"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A*: yes (admissible h); Greedy: no"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Completeness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "BFS/UCS/DFS: yes (finite graphs)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A*/IDA*/RBFS: yes; Greedy: no"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Space complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "BFS: O(b^d); DFS: O(bm)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A*: O(b^d); IDA*/RBFS: O(bd)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Time complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d) or O(b^m)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d) worst; much better with good h"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalability"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Poor — exponential in all cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Good — heuristic dramatically prunes search"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "When to use"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Small state spaces, no heuristic"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Large state spaces, domain knowledge available"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Examples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Puzzle solving without hints"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "GPS, game AI, robotics pathfinding"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-corner",
+      children: "Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-what-conditions-guarantee-a-is-optimal",
+      children: "Q1: What conditions guarantee A* is optimal?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " A* is optimal if:"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The heuristic h is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "admissible"
+        }), " (h(n) <= h*(n) for all n) for tree search."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The heuristic h is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "consistent"
+        }), " (h(n) <= c(n,a,n') + h(n')) for graph search."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "All step costs are non-negative (required for any shortest-path algorithm)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-how-do-you-design-an-admissible-heuristic",
+      children: "Q2: How do you design an admissible heuristic?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " The most common technique is ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "relaxation"
+      }), ":"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start with the original problem constraints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Remove (relax) one or more constraints to create a simpler problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The exact optimal cost of the relaxed problem is an admissible heuristic for the original problem (fewer constraints = cheaper or equal cost)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Example — 8-puzzle:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Relax \"tiles cannot occupy same square\" -> ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "misplaced tiles heuristic"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Relax \"tiles can only move to empty adjacent square\" -> ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Manhattan distance"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Relax both constraints -> ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "0 heuristic"
+        }), " (trivially admissible, useless)"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-can-an-inadmissible-heuristic-ever-be-useful",
+      children: "Q3: Can an inadmissible heuristic ever be useful?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      }), " Yes. Inadmissible heuristics (which overestimate) can find solutions faster if you accept near-optimal solutions. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Weighted A"
+      }), "* uses f(n) = g(n) + eps*h(n) with eps > 1. This biases search toward the goal, often finding a solution 2-5x faster that is within eps of optimal (bounded suboptimal search)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-compare-a-ida-and-rbfs",
+      children: "Q4: Compare A*, IDA*, and RBFS."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Algorithm"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Memory"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Node Re-expansion"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Complexity"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "None"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Low"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "IDA*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(bd)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "High (every iteration)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Medium"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "RBFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(bd)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Moderate (on backtrack)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "High"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Rule of thumb:"
+      }), " Use A* if memory permits. Use IDA* or RBFS when the state space is too large for A*'s memory."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-what-is-the-difference-between-tree-search-and-graph-search-in-a",
+      children: "Q5: What is the difference between tree search and graph search in A*?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tree search:"
+        }), " No explored set. Requires only admissibility for optimality, but may loop infinitely on cyclic graphs."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Graph search:"
+        }), " Maintains an explored set. Requires consistency for optimality. Handles cycles correctly."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "applications-in-real-systems",
+      children: "Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "gps-navigation-a",
+      children: "GPS Navigation (A*)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Major GPS platforms (Google Maps, Waze, Apple Maps) use A*-like algorithms augmented with:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Landmark heuristics (ALT):"
+        }), " Precomputed distances to landmark nodes provide tight lower bounds — often within 1% of true distance."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hierarchical search:"
+        }), " Road networks are preprocessed into levels (highways -> arterial -> local). A* searches at the highest level first."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Traffic-aware costs:"
+        }), " Edge weights are dynamic — updated from real-time traffic data."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.em, {
+          children: [(0,jsx_runtime.jsx)(_components.em, {
+            children: "Bidirectional A"
+          }), ":"]
+        }), "* Two simultaneous searches (start->goal and goal->start) meet in the middle."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Modern GPS computes optimal routes across 50 million nodes in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "milliseconds"
+      }), " — a problem BFS would take hours to solve."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "video-game-pathfinding-a-on-navigation-meshes",
+      children: "Video Game Pathfinding (A* on Navigation Meshes)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Popular game engines (Unreal Engine, Unity) use A* variants:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Navigation meshes (NavMesh):"
+        }), " The game world is abstracted into a graph of convex polygons. A* searches over polygons rather than pixels."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsxs)(_components.em, {
+          children: [(0,jsx_runtime.jsx)(_components.em, {
+            children: "Hierarchical A"
+          }), " (HNA"]
+        }), "):** A coarse search identifies which region the path traverses, then fine-grained search fills in details."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Dynamic obstacles:"
+        }), " Detected via incremental replanning (D* Lite). When a new wall appears, only affected nodes are re-evaluated."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Example:"
+        }), " In ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "StarCraft II"
+        }), ", pathfinding computes 100+ unit paths per second over complex terrain."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "robotics-d-lite",
+      children: "Robotics (D* Lite)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Robots use ", (0,jsx_runtime.jsxs)(_components.em, {
+        children: [(0,jsx_runtime.jsx)(_components.em, {
+          children: "D"
+        }), " Lite"]
+      }), "* (A* variant with incremental replanning):"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Initial path:"
+        }), " A* computes the optimal route."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Sensor feedback:"
+        }), " As the robot moves, sensors discover new obstacles."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Incremental repair:"
+        }), " Only nodes whose costs changed are updated."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Real-world use:"
+        }), " Mars rovers (Opportunity, Curiosity) use D* Lite for autonomous navigation."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "other-domains",
+      children: "Other Domains"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Domain"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Algorithm"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Heuristic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Why"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Logistics (UPS/FedEx)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A* + ALT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Landmark distance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "50,000 stops, need optimal routing in seconds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Protein folding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "IDA*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Fragment-based energy"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Vast state space, O(bd) memory essential"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Natural language parsing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Lexicalized PCFG scores"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Need best parse, not any parse"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Circuit layout (EDA)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "A*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Manhattan wire-length"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Physical lower bound is tight"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Tile puzzle solvers"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "IDA*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Pattern databases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Exhaustive search, memory limited"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison",
+      children: "Concept Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Algorithm"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Evaluation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Complete?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Optimal?"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Space"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Time (Worst)"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "When to Use"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Greedy Best-First"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "h(n) only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^m)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^m)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast approximate, good heuristic"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A* (Tree Search)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f = g + h"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes (admissible h)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimal search, enough memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A* (Graph Search)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f = g + h"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes (consistent h)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimal search with cycles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IDA*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "f-cost bound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(bd)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large spaces, limited memory"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RBFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "max(f, f_parent)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Yes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(bd)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "O(b^d)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deep search, moderate re-expansion"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference--heuristic-design",
+      children: "Quick Reference — Heuristic Design"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Method"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "left"
+            },
+            children: "How It Works"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Relaxation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Drop constraints, solve simplified problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manhattan distance (8-puzzle)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Relax adjacency constraint -> tiles can teleport to goal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pattern Database"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Store exact costs for subproblem abstractions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disjoint pattern DBs (15-puzzle)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Store optimal costs for subsets (tiles 1-4, 5-8, etc.)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Landmarks (ALT)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Precompute costs via landmarks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Road network routing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Pick k landmark nodes; precompute all-pair distances to them"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Linear Programming"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve LP relaxation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scheduling heuristics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Drop integer constraints -> solve linear program"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Look-ahead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simulate a few steps ahead"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Game-playing heuristics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Run shallow search; use resulting state evaluation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Abstraction"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Group similar states"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Grid pathfinding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "left"
+            },
+            children: "Abstract 10x10 grid cells into single nodes"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Technique"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "ML Engineering"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Computer Vision"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "NLP"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Research"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Greedy Best-First"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Feature selection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Image segmentation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Dependency parsing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Ablation studies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "A* Search"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Bayesian network inference"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Stereo matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Parsing (PCFG)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Algorithm comparison"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "IDA*"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Hyperparameter tuning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "State-space analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RBFS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Complexity research"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pattern Databases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Combinatorial games"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Relaxation Heuristics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Loss function design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "-"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Text summarization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            style: {
+              textAlign: "center"
+            },
+            children: "Approximation algorithms"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q1:"
+      }), " What is the key difference between A* tree-search and A* graph-search?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) Tree-search is faster"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) Tree-search requires only admissibility; graph-search requires consistency"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) Graph-search uses more memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Tree-search cannot handle cycles"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nB. A* tree-search is optimal with admissible heuristics; graph-search (with explored set) requires consistency to guarantee optimality.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q2:"
+      }), " Which memory-bounded heuristic search combines IDDFS with A*'s cost function?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) SMA*"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) IDA*"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) RBFS"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) Weighted A*"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nB. IDA* (Iterative Deepening A*) performs depth-first search with increasing f-cost bounds.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q3:"
+      }), " If heuristic h2 dominates h1 (both admissible), what does this mean?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) h2 expands more nodes than h1"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) h2(n) >= h1(n) for all n, so A* with h2 expands fewer nodes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) h2 is easier to compute"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) h2 guarantees optimality but h1 does not"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nB. h2(n) >= h1(n) for all n means h2 is closer to h*(n), so A* with h2 expands fewer nodes.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q4:"
+      }), " Why does greedy best-first search sometimes fail to find the optimal path?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) It explores too many nodes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) It ignores the cost already incurred (g)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) It uses too much memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) It cannot handle cycles"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nB. Greedy best-first uses only h(n) — it ignores g(n). A cheap-looking heuristic path may actually be very long when cumulative cost is considered.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q5:"
+      }), " What happens if A* uses an overestimating heuristic?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) A* becomes faster but may return a suboptimal solution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) A* stops working entirely"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) A* uses more memory"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) A* becomes complete but not optimal"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nA. Overestimating h violates admissibility. A* may prune the optimal path and return a more expensive solution.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Q6:"
+      }), " Which problem is best suited for IDA* over A*?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A) A small graph with 10 nodes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "B) A large graph with limited available memory (e.g., embedded system)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "C) A problem with no known heuristic"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "D) A dynamic environment with changing costs"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\nB. IDA* uses only O(bd) memory vs A*'s O(b^d). For large state spaces where memory is the primary constraint, IDA* is the better choice.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prove that consistency implies admissibility, but the converse does not hold. Provide a counterexample heuristic that is admissible but not consistent."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Why does A* using graph search require consistency for optimality, while tree search requires only admissibility?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain how IDA* differs from A* in its memory usage and node re-expansion behavior."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare RBFS and IDA*. Under what conditions would each be preferred?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Why is A* optimally efficient? What does \"optimally efficient\" mean formally?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Design admissible heuristics for the 15-puzzle. Compare the expected performance of h1 (misplaced tiles) and h2 (Manhattan distance). Compute both for:"
+        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "+----+----+----+----+\n|  1 |  2 |  3 |  4 |\n+----+----+----+----+\n|  5 |  6 |  7 |  8 |\n+----+----+----+----+\n|  9 | 10 | 11 | 12 |\n+----+----+----+----+\n| 13 | 15 | 14 |    |\n+----+----+----+----+\n"
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Consider finding the shortest path on a grid with obstacles where movement costs 1 per step. Prove that Euclidean distance is an admissible heuristic. Is it consistent?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "For the graph below, run A* by hand. Show the frontier after each expansion (ordered by f)."
+        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "Nodes: S, A, B, C, G\nEdges: S->A(2), S->B(3), A->C(4), B->C(1), C->G(2), B->G(5)\nh: S=6, A=4, B=4, C=2, G=0\n"
+          })
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problem",
+      children: "Challenge Problem"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "9",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Implement A* search with Manhattan distance heuristic for the 8-puzzle. Calculate the effective branching factor for each of 10 random start states. Compare performance with IDA* on the same instances. Report:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Number of nodes expanded by each algorithm."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Effective branching factor: b* = N^(1/d) where N = nodes expanded, d = solution depth."
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Memory usage (estimated by max frontier size)."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Design a heuristic for the ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "pancake sorting problem"
+          }), " (sorting a stack of pancakes by flipping prefixes) and prove it is admissible. Implement A* using this heuristic and compare its performance to BFS."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Summary:"
+        }), " Informed search uses heuristic functions to dramatically reduce search effort. A* is optimally efficient and optimal with admissible/consistent heuristics. Memory-bounded variants (IDA*, RBFS) extend A* to large state spaces. The quality of the heuristic determines the algorithm's performance — invest effort in designing well-informed heuristics via relaxation and pattern databases."]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

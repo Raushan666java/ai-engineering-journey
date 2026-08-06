@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.2">
-<title data-rh="true">Chapter 12: Reducibility and Advanced Undecidability | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 12: Reducibility and Advanced Undecidability | AI Engineering Journey"><meta data-rh="true" name="description" content="Previous Time Complexity"><meta data-rh="true" property="og:description" content="Previous Time Complexity"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Theory Of Computation","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/index"},{"@type":"ListItem","position":2,"name":"Chapter 12: Reducibility and Advanced Undecidability","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.68ae8ef5.css">
-<script src="/ai-engineering-journey/assets/js/runtime~main.4470784e.js" defer="defer"></script>
-<script src="/ai-engineering-journey/assets/js/main.bc7a9306.js" defer="defer"></script>
+<title data-rh="true">Chapter 12: Reducibility and Advanced Undecidability | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 12: Reducibility and Advanced Undecidability | AI Engineering Journey"><meta data-rh="true" name="description" content="Previous Time Complexity"><meta data-rh="true" property="og:description" content="Previous Time Complexity"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Theory Of Computation","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/index"},{"@type":"ListItem","position":2,"name":"Chapter 12: Reducibility and Advanced Undecidability","item":"https://raushan666java.github.io/ai-engineering-journey/theory-of-computation/12-reducibility"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.c8464654.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.64107b2c.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.9d4b1971.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -83,58 +83,58 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="theory">Theory<a href="#theory" class="hash-link" aria-label="Direct link to Theory" title="Direct link to Theory" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/theory-of-computation/11-reducibility.png" alt="Reducibility Flowchart" class="img_ev3q"></p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="111-mapping-reductions-many-one-reductions">11.1 Mapping Reductions (Many-One Reductions)<a href="#111-mapping-reductions-many-one-reductions" class="hash-link" aria-label="Direct link to 11.1 Mapping Reductions (Many-One Reductions)" title="Direct link to 11.1 Mapping Reductions (Many-One Reductions)" translate="no">​</a></h3>
-<p>A <strong>mapping reduction</strong> from language A to language B (written A â‰¤_m B) is a computable function f: Î£* → Î£* such that w âˆˆ A iff f(w) âˆˆ B.</p>
+<p>A <strong>mapping reduction</strong> from language A to language B (written A ≤_m B) is a computable function f: Σ* → Σ* such that w ∈ A iff f(w) ∈ B.</p>
 <p><strong>Key properties:</strong></p>
 <ul>
-<li class="">If A â‰¤_m B and B is decidable, then A is decidable.</li>
-<li class="">If A â‰¤_m B and A is undecidable, then B is undecidable.</li>
-<li class="">If A â‰¤_m B and B is RE, then A is RE.</li>
-<li class="">If A â‰¤_m B and A is not RE, then B is not RE.</li>
+<li class="">If A ≤_m B and B is decidable, then A is decidable.</li>
+<li class="">If A ≤_m B and A is undecidable, then B is undecidable.</li>
+<li class="">If A ≤_m B and B is RE, then A is RE.</li>
+<li class="">If A ≤_m B and A is not RE, then B is not RE.</li>
 </ul>
 <p><strong>Completeness:</strong> A language A is <strong>RE-complete</strong> (or m-complete for RE) if:</p>
 <ol>
-<li class="">A âˆˆ RE.</li>
-<li class="">For every language B âˆˆ RE, B â‰¤_m A.</li>
+<li class="">A ∈ RE.</li>
+<li class="">For every language B ∈ RE, B ≤_m A.</li>
 </ol>
 <p>A_TM is the canonical RE-complete language.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="112-rices-theorem-in-depth">11.2 Rice&#x27;s Theorem in Depth<a href="#112-rices-theorem-in-depth" class="hash-link" aria-label="Direct link to 11.2 Rice&#x27;s Theorem in Depth" title="Direct link to 11.2 Rice&#x27;s Theorem in Depth" translate="no">​</a></h3>
 <p><strong>Rice&#x27;s Theorem (formal):</strong> Let P be a set of RE languages such that:</p>
 <ul>
-<li class="">P â‰  âˆ… (some RE languages have property P).</li>
-<li class="">P â‰  { all RE languages } (some RE languages lack property P).</li>
+<li class="">P ≠ ∅ (some RE languages have property P).</li>
+<li class="">P ≠ { all RE languages } (some RE languages lack property P).</li>
 </ul>
-<p>Then L_P = { âŸ¨MâŸ© | L(M) âˆˆ P } is undecidable.</p>
-<p><strong>Proof sketch:</strong> Assume P doesn&#x27;t contain the empty language (if it does, we can work with the complement). Let Lâˆ… be a TM with empty language. Since P is non-trivial, there exists some TM M_P with L(M_P) âˆˆ P. Given âŸ¨M, wâŸ© (instance of A_TM), construct M&#x27;:</p>
+<p>Then L_P = { ⟨M⟩ | L(M) ∈ P } is undecidable.</p>
+<p><strong>Proof sketch:</strong> Assume P doesn&#x27;t contain the empty language (if it does, we can work with the complement). Let L∅ be a TM with empty language. Since P is non-trivial, there exists some TM M_P with L(M_P) ∈ P. Given ⟨M, w⟩ (instance of A_TM), construct M&#x27;:</p>
 <ul>
 <li class="">M&#x27;(x): Simulate M on w. If M accepts w, simulate M_P on x and accept if M_P accepts.</li>
-<li class="">Then: if M accepts w, L(M&#x27;) = L(M_P) âˆˆ P. If M doesn&#x27;t accept w, L(M&#x27;) = Lâˆ… âˆ‰ P.</li>
-<li class="">Thus A_TM â‰¤_m L_P, so L_P is undecidable.</li>
+<li class="">Then: if M accepts w, L(M&#x27;) = L(M_P) ∈ P. If M doesn&#x27;t accept w, L(M&#x27;) = L∅ ∉ P.</li>
+<li class="">Thus A_TM ≤_m L_P, so L_P is undecidable.</li>
 </ul>
 <p><strong>Rice&#x27;s theorem for properties of TMs themselves:</strong> Some properties of TMs are syntactic (about the machine structure) rather than semantic (about the language). These can be decidable:</p>
 <ul>
-<li class="">Does M have exactly 5 states? <strong>Decidable</strong> (count the states in âŸ¨MâŸ©).</li>
+<li class="">Does M have exactly 5 states? <strong>Decidable</strong> (count the states in ⟨M⟩).</li>
 <li class="">Does M ever move left on blank input? <strong>Decidable</strong> (simulate on blank input up to some bound).</li>
 <li class="">Does M accept at least one string? <strong>Undecidable</strong> (semantic property of the language).</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="113-turing-reductions">11.3 Turing Reductions<a href="#113-turing-reductions" class="hash-link" aria-label="Direct link to 11.3 Turing Reductions" title="Direct link to 11.3 Turing Reductions" translate="no">​</a></h3>
-<p>A <strong>Turing reduction</strong> from A to B (written A â‰¤_T B) means there is an oracle TM that decides A given an oracle for B. This is more general than mapping reductions:</p>
+<p>A <strong>Turing reduction</strong> from A to B (written A ≤_T B) means there is an oracle TM that decides A given an oracle for B. This is more general than mapping reductions:</p>
 <ul>
 <li class="">Mapping reductions are a special case of Turing reductions.</li>
 <li class="">Turing reductions allow multiple oracle queries and can use the results arbitrarily.</li>
-<li class="">If A â‰¤_T B and B is decidable, then A is decidable.</li>
+<li class="">If A ≤_T B and B is decidable, then A is decidable.</li>
 </ul>
 <p><strong>Example:</strong> The complement of A_TM (co-A_TM) is Turing-reducible to A_TM:</p>
 <ul>
-<li class="">To decide if M doesn&#x27;t accept w, query the oracle for A_TM with âŸ¨M, wâŸ©. If it says no, then M doesn&#x27;t accept w.</li>
+<li class="">To decide if M doesn&#x27;t accept w, query the oracle for A_TM with ⟨M, w⟩. If it says no, then M doesn&#x27;t accept w.</li>
 <li class="">However, co-A_TM is NOT mapping-reducible to A_TM (it would require A_TM to be recursive).</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="114-the-post-correspondence-problem-pcp">11.4 The Post Correspondence Problem (PCP)<a href="#114-the-post-correspondence-problem-pcp" class="hash-link" aria-label="Direct link to 11.4 The Post Correspondence Problem (PCP)" title="Direct link to 11.4 The Post Correspondence Problem (PCP)" translate="no">​</a></h3>
 <p><strong>PCP Instance:</strong> A collection of dominoes, each with a top string and bottom string:
-[ tâ‚/bâ‚ ], [ tâ‚‚/bâ‚‚ ], â€¦, [ tâ‚–/bâ‚– ]</p>
+[ t₁/b₁ ], [ t₂/b₂ ], …, [ tₖ/bₖ ]</p>
 <p><strong>Question:</strong> Can we arrange a sequence of dominoes (allowing repetition) such that the concatenation of top strings equals the concatenation of bottom strings?</p>
-<p><strong>Formally:</strong> Does there exist a sequence iâ‚, iâ‚‚, â€¦, iâ‚™ (n â‰¥ 1) such that t_{iâ‚}t_{iâ‚‚}â€¦t_{iâ‚™} = b_{iâ‚}b_{iâ‚‚}â€¦b_{iâ‚™}?</p>
+<p><strong>Formally:</strong> Does there exist a sequence i₁, i₂, …, iₙ (n ≥ 1) such that t_{i₁}t_{i₂}…t_{iₙ} = b_{i₁}b_{i₂}…b_{iₙ}?</p>
 <p><strong>Theorem:</strong> PCP is undecidable.</p>
-<p><strong>Proof strategy:</strong> Reduce A_TM to PCP. Given âŸ¨M, wâŸ©, construct a set of dominoes that simulate the computation of M on w. A solution to the PCP instance exists iff M accepts w. The construction:</p>
+<p><strong>Proof strategy:</strong> Reduce A_TM to PCP. Given ⟨M, w⟩, construct a set of dominoes that simulate the computation of M on w. A solution to the PCP instance exists iff M accepts w. The construction:</p>
 <ol>
 <li class="">Encode the start configuration of M on w as the initial partial match.</li>
 <li class="">Add dominoes for each possible TM transition.</li>
@@ -152,19 +152,19 @@
 </ul>
 </li>
 <li class="">
-<p><strong>Emptiness of intersection of CFGs:</strong> Given CFGs Gâ‚ and Gâ‚‚, is L(Gâ‚) âˆ© L(Gâ‚‚) = âˆ…?</p>
+<p><strong>Emptiness of intersection of CFGs:</strong> Given CFGs G₁ and G₂, is L(G₁) ∩ L(G₂) = ∅?</p>
 <ul>
 <li class="">Also reducible from PCP.</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Equivalence of CFGs:</strong> Given CFGs Gâ‚ and Gâ‚‚, is L(Gâ‚) = L(Gâ‚‚)?</p>
+<p><strong>Equivalence of CFGs:</strong> Given CFGs G₁ and G₂, is L(G₁) = L(G₂)?</p>
 <ul>
 <li class="">Undecidable; follows from universality.</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Universality of CFGs:</strong> Does a CFG generate Î£*?</p>
+<p><strong>Universality of CFGs:</strong> Does a CFG generate Σ*?</p>
 <ul>
 <li class="">Undecidable; reduce from ambiguity or PCP.</li>
 </ul>
@@ -179,8 +179,8 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="116-complete-problems-for-re">11.6 Complete Problems for RE<a href="#116-complete-problems-for-re" class="hash-link" aria-label="Direct link to 11.6 Complete Problems for RE" title="Direct link to 11.6 Complete Problems for RE" translate="no">​</a></h3>
 <p>A problem is <strong>RE-complete</strong> if it is in RE and every RE problem reduces to it.</p>
 <p><strong>A_TM</strong> is RE-complete (by definition of RE → each RE language corresponds to a TM).</p>
-<p><strong>HALT_TM</strong> is RE-complete: HALT_TM âˆˆ RE and A_TM â‰¤_m HALT_TM (given âŸ¨M,wâŸ©, output âŸ¨M,wâŸ© → if M accepts w, M certainly halts on w; if M doesn&#x27;t accept, either M halts rejecting or loops, and we want halting in the HALT_TM case. Actually, the mapping is: given âŸ¨M,wâŸ©, construct M&#x27; that halts iff M accepts. More precisely: A_TM â‰¤_m HALT_TM by mapping âŸ¨M,wâŸ© to âŸ¨M&#x27;, wâŸ© where M&#x27; simulates M and halts when M accepts, loops when M rejects.)</p>
-<p><strong>PCP</strong> is also RE-complete: PCP is RE (we can nondeterministically try sequences) and A_TM â‰¤_m PCP.</p>
+<p><strong>HALT_TM</strong> is RE-complete: HALT_TM ∈ RE and A_TM ≤_m HALT_TM (given ⟨M,w⟩, output ⟨M,w⟩ → if M accepts w, M certainly halts on w; if M doesn&#x27;t accept, either M halts rejecting or loops, and we want halting in the HALT_TM case. Actually, the mapping is: given ⟨M,w⟩, construct M&#x27; that halts iff M accepts. More precisely: A_TM ≤_m HALT_TM by mapping ⟨M,w⟩ to ⟨M&#x27;, w⟩ where M&#x27; simulates M and halts when M accepts, loops when M rejects.)</p>
+<p><strong>PCP</strong> is also RE-complete: PCP is RE (we can nondeterministically try sequences) and A_TM ≤_m PCP.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="117-oracle-separations-and-the-limits-of-diagonalization">11.7 Oracle Separations and the Limits of Diagonalization<a href="#117-oracle-separations-and-the-limits-of-diagonalization" class="hash-link" aria-label="Direct link to 11.7 Oracle Separations and the Limits of Diagonalization" title="Direct link to 11.7 Oracle Separations and the Limits of Diagonalization" translate="no">​</a></h3>
 <p>The Baker-Gill-Solovay theorem (1975) showed:</p>
 <p>[\exists A: P^A = NP^A \quad \text{and} \quad \exists B: P^B \neq NP^B]</p>
@@ -211,47 +211,47 @@
 <p><strong>Key results:</strong></p>
 <ul>
 <li class="">BB(n) is not computable (otherwise we could solve the halting problem).</li>
-<li class="">BB(1) = 1, BB(2) = 6, BB(3) = 21, BB(4) = 107, BB(5) â‰¥ 47,176,870, BB(6) is astronomically large.</li>
+<li class="">BB(1) = 1, BB(2) = 6, BB(3) = 21, BB(4) = 107, BB(5) ≥ 47,176,870, BB(6) is astronomically large.</li>
 </ul>
 <p>The busy beaver problem is an elegant example of a non-computable function → one that grows faster than any computable function.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="examples">Examples<a href="#examples" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-111-mapping-reduction-from-a_tm-to-halt_tm">Example 11.1: Mapping Reduction from A_TM to HALT_TM<a href="#example-111-mapping-reduction-from-a_tm-to-halt_tm" class="hash-link" aria-label="Direct link to Example 11.1: Mapping Reduction from A_TM to HALT_TM" title="Direct link to Example 11.1: Mapping Reduction from A_TM to HALT_TM" translate="no">​</a></h3>
-<p>Define f(âŸ¨M, wâŸ©) = âŸ¨M&#x27;, wâŸ© where M&#x27; is:</p>
+<p>Define f(⟨M, w⟩) = ⟨M&#x27;, w⟩ where M&#x27; is:</p>
 <ul>
 <li class="">M&#x27;(x): Run M on x. If M accepts, halt (accept). If M rejects, enter an infinite loop.</li>
 </ul>
 <p>Then:</p>
 <ul>
-<li class="">âŸ¨M, wâŸ© âˆˆ A_TM âŸ¹ M accepts w âŸ¹ M&#x27; halts on w âŸ¹ âŸ¨M&#x27;, wâŸ© âˆˆ HALT_TM.</li>
-<li class="">âŸ¨M, wâŸ© âˆ‰ A_TM âŸ¹ M rejects or loops on w âŸ¹ M&#x27; loops (if M loops) or M&#x27; loops (if M rejects) âŸ¹ âŸ¨M&#x27;, wâŸ© âˆ‰ HALT_TM.</li>
+<li class="">⟨M, w⟩ ∈ A_TM ⟹ M accepts w ⟹ M&#x27; halts on w ⟹ ⟨M&#x27;, w⟩ ∈ HALT_TM.</li>
+<li class="">⟨M, w⟩ ∉ A_TM ⟹ M rejects or loops on w ⟹ M&#x27; loops (if M loops) or M&#x27; loops (if M rejects) ⟹ ⟨M&#x27;, w⟩ ∉ HALT_TM.</li>
 </ul>
-<p>Thus A_TM â‰¤_m HALT_TM.</p>
+<p>Thus A_TM ≤_m HALT_TM.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-112-pcp-instance">Example 11.2: PCP Instance<a href="#example-112-pcp-instance" class="hash-link" aria-label="Direct link to Example 11.2: PCP Instance" title="Direct link to Example 11.2: PCP Instance" translate="no">​</a></h3>
-<p>Consider dominoes: [ab/a], [b/ba], [a/ab], [Îµ/a].</p>
+<p>Consider dominoes: [ab/a], [b/ba], [a/ab], [ε/a].</p>
 <p>Can we find a match? Try: [ab/a][b/ba] = top: abb, bottom: aba. Not matching.</p>
 <p>Try: [ab/a][b/ba][a/ab] = top: abba, bottom: abaab. No.</p>
 <p>This demonstrates that finding solutions is nontrivial → and the problem is undecidable in general.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-113-valid-mapping-reduction-proof">Example 11.3: Valid Mapping Reduction Proof<a href="#example-113-valid-mapping-reduction-proof" class="hash-link" aria-label="Direct link to Example 11.3: Valid Mapping Reduction Proof" title="Direct link to Example 11.3: Valid Mapping Reduction Proof" translate="no">​</a></h3>
-<p>Show that EMPTY_TM = { âŸ¨MâŸ© | L(M) = âˆ… } is not RE.</p>
-<p><strong>Proof:</strong> Reduce A_TM&#x27;s complement to EMPTY_TM. Given âŸ¨M, wâŸ©, construct M&#x27;:</p>
+<p>Show that EMPTY_TM = { ⟨M⟩ | L(M) = ∅ } is not RE.</p>
+<p><strong>Proof:</strong> Reduce A_TM&#x27;s complement to EMPTY_TM. Given ⟨M, w⟩, construct M&#x27;:</p>
 <ul>
 <li class="">M&#x27;(x): Simulate M on w. If M accepts w, accept x.</li>
 </ul>
 <p>Then:</p>
 <ul>
-<li class="">If M accepts w, L(M&#x27;) = Î£* â‰  âˆ….</li>
-<li class="">If M doesn&#x27;t accept w (rejects or loops), L(M&#x27;) = âˆ….</li>
+<li class="">If M accepts w, L(M&#x27;) = Σ* ≠ ∅.</li>
+<li class="">If M doesn&#x27;t accept w (rejects or loops), L(M&#x27;) = ∅.</li>
 </ul>
-<p>So: âŸ¨M, wâŸ© âˆ‰ A_TM iff âŸ¨M&#x27;âŸ© âˆˆ EMPTY_TM.</p>
+<p>So: ⟨M, w⟩ ∉ A_TM iff ⟨M&#x27;⟩ ∈ EMPTY_TM.</p>
 <p>Since co-A_TM is not RE, and EMPTY_TM is RE (we can simulate a TM and check if it accepts any string), this shows that the reduction goes the right way to prove EMPTY_TM is not RE.</p>
-<p>Wait → actually we need co-A_TM â‰¤_m EMPTY_TM. Since co-A_TM is not RE, this would show EMPTY_TM is not RE either. But EMPTY_TM is known to be not RE (we can prove this).</p>
+<p>Wait → actually we need co-A_TM ≤_m EMPTY_TM. Since co-A_TM is not RE, this would show EMPTY_TM is not RE either. But EMPTY_TM is known to be not RE (we can prove this).</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-114-rices-theorem--is-lm-infinite">Example 11.4: Rice&#x27;s Theorem → Is L(M) Infinite?<a href="#example-114-rices-theorem--is-lm-infinite" class="hash-link" aria-label="Direct link to Example 11.4: Rice&#x27;s Theorem → Is L(M) Infinite?" title="Direct link to Example 11.4: Rice&#x27;s Theorem → Is L(M) Infinite?" translate="no">​</a></h3>
 <p>Property P = { L | L is infinite }. P is non-trivial:</p>
 <ul>
-<li class="">Some RE languages are infinite (e.g., Î£*).</li>
-<li class="">Some are not (e.g., âˆ…).</li>
+<li class="">Some RE languages are infinite (e.g., Σ*).</li>
+<li class="">Some are not (e.g., ∅).</li>
 </ul>
-<p>By Rice&#x27;s theorem, INFINITE_TM = { âŸ¨MâŸ© | L(M) is infinite } is undecidable.</p>
+<p>By Rice&#x27;s theorem, INFINITE_TM = { ⟨M⟩ | L(M) is infinite } is undecidable.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-115-proving-cfg-ambiguity-is-undecidable">Example 11.5: Proving CFG Ambiguity is Undecidable<a href="#example-115-proving-cfg-ambiguity-is-undecidable" class="hash-link" aria-label="Direct link to Example 11.5: Proving CFG Ambiguity is Undecidable" title="Direct link to Example 11.5: Proving CFG Ambiguity is Undecidable" translate="no">​</a></h3>
 <p>We reduce PCP to CFG ambiguity. Given PCP instance D = {(t1,b1), ..., (t?,b?)}:</p>
 <p><strong>Construction:</strong> Create CFG G with variables {S, T, B, T1,...,T?, B1,...,B?} and productions:</p>
@@ -264,12 +264,12 @@
 </ul>
 <p><strong>Key insight:</strong> T generates all strings formed by concatenating top strings (with markers showing the sequence). B generates all strings formed by concatenating bottom strings. The grammar is ambiguous for a string s iff s can be generated by both T and B with the same sequence of domino indices — exactly a PCP solution.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-116-mapping-reduction-for-cfg-ambiguity">Example 11.6: Mapping Reduction for CFG Ambiguity<a href="#example-116-mapping-reduction-for-cfg-ambiguity" class="hash-link" aria-label="Direct link to Example 11.6: Mapping Reduction for CFG Ambiguity" title="Direct link to Example 11.6: Mapping Reduction for CFG Ambiguity" translate="no">​</a></h3>
-<p>Given PCP instance with dominoes (tâ‚,bâ‚), â€¦, (tâ‚–,bâ‚–), construct CFG:</p>
+<p>Given PCP instance with dominoes (t₁,b₁), …, (tₖ,bₖ), construct CFG:</p>
 <ul>
 <li class="">S → T | B</li>
-<li class="">T → tâ‚T | tâ‚Tâ‚ | tâ‚‚T | tâ‚‚Tâ‚‚ | â€¦ | tâ‚–T | tâ‚–Tâ‚–</li>
-<li class="">B → bâ‚B | bâ‚Bâ‚ | bâ‚‚B | bâ‚‚Bâ‚‚ | â€¦ | bâ‚–B | bâ‚–Bâ‚–
-Where Táµ¢ and Báµ¢ are &quot;marker&quot; variables.</li>
+<li class="">T → t₁T | t₁T₁ | t₂T | t₂T₂ | … | tₖT | tₖTₖ</li>
+<li class="">B → b₁B | b₁B₁ | b₂B | b₂B₂ | … | bₖB | bₖBₖ
+Where Tᵢ and Bᵢ are &quot;marker&quot; variables.</li>
 </ul>
 <p>The idea: T generates sequences of top strings; B generates sequences of bottom strings. The grammar is ambiguous for some string iff the same sequence of dominoes (indices) can generate it from both T and B → i.e., there&#x27;s a PCP solution.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-implications-of-undecidability-in-software">Practical Implications of Undecidability in Software<a href="#practical-implications-of-undecidability-in-software" class="hash-link" aria-label="Direct link to Practical Implications of Undecidability in Software" title="Direct link to Practical Implications of Undecidability in Software" translate="no">​</a></h2>

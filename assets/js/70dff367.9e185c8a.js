@@ -1,0 +1,2229 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[8756],{
+
+/***/ 50700
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_java_p_1_java_syntax_md_70d_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-java-p-1-java-syntax-md-70d.json
+const site_docs_courses_java_p_1_java_syntax_md_70d_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/java/p1-java-syntax","title":"Java Syntax & Fundamentals","description":"Learning Objectives","source":"@site/docs/courses/java/p1-java-syntax.md","sourceDirName":"courses/java","slug":"/java/p1-java-syntax","permalink":"/ai-engineering-journey/java/p1-java-syntax","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":76,"frontMatter":{"id":"p1-java-syntax","slug":"/java/p1-java-syntax","title":"Java Syntax & Fundamentals","sidebar_label":"Java Syntax & Fundamentals","sidebar_position":76},"sidebar":"coursesSidebar","previous":{"title":"66. Behavioral Interview — Q&A","permalink":"/ai-engineering-journey/java/66-interview-behavioral"},"next":{"title":"Object-Oriented Programming in Java","permalink":"/ai-engineering-journey/java/p2-java-oop"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/java/p1-java-syntax.md
+
+
+const frontMatter = {
+	id: 'p1-java-syntax',
+	slug: '/java/p1-java-syntax',
+	title: 'Java Syntax & Fundamentals',
+	sidebar_label: 'Java Syntax & Fundamentals',
+	sidebar_position: 76
+};
+const contentTitle = 'Java Syntax & Fundamentals';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "Table of Contents",
+  "id": "table-of-contents",
+  "level": 2
+}, {
+  "value": "1. A Brief History of Java",
+  "id": "1-a-brief-history-of-java",
+  "level": 2
+}, {
+  "value": "1.1 Key LTS Releases",
+  "id": "11-key-lts-releases",
+  "level": 3
+}, {
+  "value": "1.2 JDK vs JRE vs JVM",
+  "id": "12-jdk-vs-jre-vs-jvm",
+  "level": 3
+}, {
+  "value": "1.3 The Compilation, Deployment, and Execution Pipeline",
+  "id": "13-the-compilation-deployment-and-execution-pipeline",
+  "level": 3
+}, {
+  "value": "1.4 Compiling and Running → Command-Line Reference",
+  "id": "14-compiling-and-running--command-line-reference",
+  "level": 3
+}, {
+  "value": "2. Primitive Types &amp; Type Conversion",
+  "id": "2-primitive-types--type-conversion",
+  "level": 2
+}, {
+  "value": "2.1 The Eight Primitive Types",
+  "id": "21-the-eight-primitive-types",
+  "level": 3
+}, {
+  "value": "2.2 Type Conversion",
+  "id": "22-type-conversion",
+  "level": 3
+}, {
+  "value": "2.3 Autoboxing and Unboxing",
+  "id": "23-autoboxing-and-unboxing",
+  "level": 3
+}, {
+  "value": "3. Operators",
+  "id": "3-operators",
+  "level": 2
+}, {
+  "value": "3.1 Arithmetic Operators",
+  "id": "31-arithmetic-operators",
+  "level": 3
+}, {
+  "value": "3.2 Relational Operators",
+  "id": "32-relational-operators",
+  "level": 3
+}, {
+  "value": "3.3 Logical Operators",
+  "id": "33-logical-operators",
+  "level": 3
+}, {
+  "value": "3.4 Bitwise Operators",
+  "id": "34-bitwise-operators",
+  "level": 3
+}, {
+  "value": "3.5 instanceof and Ternary Operator",
+  "id": "35-instanceof-and-ternary-operator",
+  "level": 3
+}, {
+  "value": "4. Control Flow",
+  "id": "4-control-flow",
+  "level": 2
+}, {
+  "value": "4.1 if/else Statement",
+  "id": "41-ifelse-statement",
+  "level": 3
+}, {
+  "value": "4.2 Switch Expressions (Traditional vs Arrow Syntax)",
+  "id": "42-switch-expressions-traditional-vs-arrow-syntax",
+  "level": 3
+}, {
+  "value": "4.3 Loops: for, while, do-while",
+  "id": "43-loops-for-while-do-while",
+  "level": 3
+}, {
+  "value": "4.4 Break/Continue with Labels",
+  "id": "44-breakcontinue-with-labels",
+  "level": 3
+}, {
+  "value": "5. Arrays",
+  "id": "5-arrays",
+  "level": 2
+}, {
+  "value": "5.1 Declaration, Initialization, and Access",
+  "id": "51-declaration-initialization-and-access",
+  "level": 3
+}, {
+  "value": "5.2 Multidimensional Arrays",
+  "id": "52-multidimensional-arrays",
+  "level": 3
+}, {
+  "value": "5.3 Utility Methods (java.util.Arrays)",
+  "id": "53-utility-methods-javautilarrays",
+  "level": 3
+}, {
+  "value": "6. Strings",
+  "id": "6-strings",
+  "level": 2
+}, {
+  "value": "6.1 String Immutability and the String Pool",
+  "id": "61-string-immutability-and-the-string-pool",
+  "level": 3
+}, {
+  "value": "6.2 StringBuilder and StringBuffer",
+  "id": "62-stringbuilder-and-stringbuffer",
+  "level": 3
+}, {
+  "value": "6.3 Essential String Methods",
+  "id": "63-essential-string-methods",
+  "level": 3
+}, {
+  "value": "6.4 Text Blocks",
+  "id": "64-text-blocks",
+  "level": 3
+}, {
+  "value": "7. The var Keyword",
+  "id": "7-the-var-keyword",
+  "level": 2
+}, {
+  "value": "7.1 Rules and Restrictions",
+  "id": "71-rules-and-restrictions",
+  "level": 3
+}, {
+  "value": "8. Records",
+  "id": "8-records",
+  "level": 2
+}, {
+  "value": "8.1 Basic Records",
+  "id": "81-basic-records",
+  "level": 3
+}, {
+  "value": "8.2 Records with Custom Constructors and Methods",
+  "id": "82-records-with-custom-constructors-and-methods",
+  "level": 3
+}, {
+  "value": "8.3 Records with Generics",
+  "id": "83-records-with-generics",
+  "level": 3
+}, {
+  "value": "8.4 Records with Annotations and Serialization",
+  "id": "84-records-with-annotations-and-serialization",
+  "level": 3
+}, {
+  "value": "9. Switch Expressions",
+  "id": "9-switch-expressions",
+  "level": 2
+}, {
+  "value": "9.1 Arrow Syntax and Yield",
+  "id": "91-arrow-syntax-and-yield",
+  "level": 3
+}, {
+  "value": "9.2 Exhaustive Switch Expressions",
+  "id": "92-exhaustive-switch-expressions",
+  "level": 3
+}, {
+  "value": "9.3 Switch Expressions in Depth",
+  "id": "93-switch-expressions-in-depth",
+  "level": 3
+}, {
+  "value": "10. Pattern Matching",
+  "id": "10-pattern-matching",
+  "level": 2
+}, {
+  "value": "10.1 instanceof Pattern Matching",
+  "id": "101-instanceof-pattern-matching",
+  "level": 3
+}, {
+  "value": "10.2 Switch Pattern Matching",
+  "id": "102-switch-pattern-matching",
+  "level": 3
+}, {
+  "value": "10.3 Guarded Patterns",
+  "id": "103-guarded-patterns",
+  "level": 3
+}, {
+  "value": "10.4 Record Patterns",
+  "id": "104-record-patterns",
+  "level": 3
+}, {
+  "value": "10.5 Practical Pattern Matching Examples",
+  "id": "105-practical-pattern-matching-examples",
+  "level": 3
+}, {
+  "value": "11. Text Blocks",
+  "id": "11-text-blocks",
+  "level": 2
+}, {
+  "value": "11.1 Indentation Algorithm",
+  "id": "111-indentation-algorithm",
+  "level": 3
+}, {
+  "value": "11.2 Text Block Usage Patterns",
+  "id": "112-text-block-usage-patterns",
+  "level": 3
+}, {
+  "value": "12. Main Method Evolution",
+  "id": "12-main-method-evolution",
+  "level": 2
+}, {
+  "value": "12.1 The Traditional Main Method",
+  "id": "121-the-traditional-main-method",
+  "level": 3
+}, {
+  "value": "12.2 The Modern Main Method (Java 21 Preview)",
+  "id": "122-the-modern-main-method-java-21-preview",
+  "level": 3
+}, {
+  "value": "12.3 Multiple Main Method Styles",
+  "id": "123-multiple-main-method-styles",
+  "level": 3
+}, {
+  "value": "12.4 Running Java Programs",
+  "id": "124-running-java-programs",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference",
+  "id": "quick-reference",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    blockquote: "blockquote",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "java-syntax--fundamentals",
+        children: "Java Syntax & Fundamentals"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/p1-java-syntax/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/p1-java-syntax/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/p1-java-syntax/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/p1-java-syntax/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/java/p1-java-syntax/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/java/p1-java-syntax/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Insight"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Practical Takeaway"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Core Concepts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Foundational understanding for Java development"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Master these before Spring"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code Examples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Runnable, compilable examples"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type, compile, run, refactor"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Practice Exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hands-on skill building"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply what you learn"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[Fundamentals] --> B[Core Concepts]\n    B --> C[Code Examples]\n    C --> D[Practice Exercises]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "By the end of this chapter, you will be able to:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the history of Java, the role of the JVM, and the differences between JDK, JRE, and JVM across LTS releases"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Declare and use all eight primitive types, perform type conversions, and explain autoboxing and unboxing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply arithmetic, relational, logical, bitwise, ternary, and instanceof operators correctly in expressions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write structured control flow using if/else, switch expressions (arrow syntax with yield), loops (for, while, do-while), and labeled break/continue"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Create and manipulate single- and multi-dimensional arrays using the java.util.Arrays utility class"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Work with String immutability, the string pool, StringBuilder/StringBuffer, text blocks, and essential String methods"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Declare local variables with var, define records with compact constructors and custom methods, and use switch expressions with exhaustive cases, arrow syntax, yield, and null-case handling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply pattern matching techniques including instanceof pattern matching, switch pattern matching, guarded patterns, and record patterns"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "table-of-contents",
+      children: "Table of Contents"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        src: "https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/p1-java-syntax.png",
+        alt: "Java Syntax Fundamentals - Mindmap"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#1-a-brief-history-of-java",
+          children: "A Brief History of Java"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#2-primitive-types--type-conversion",
+          children: "Primitive Types & Type Conversion"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#3-operators",
+          children: "Operators"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#4-control-flow",
+          children: "Control Flow"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#5-arrays",
+          children: "Arrays"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#6-strings",
+          children: "Strings"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#7-the-var-keyword",
+          children: "The var Keyword"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#8-records",
+          children: "Records"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#9-switch-expressions",
+          children: "Switch Expressions"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#10-pattern-matching",
+          children: "Pattern Matching"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#11-text-blocks",
+          children: "Text Blocks"
+        })
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "#12-main-method-evolution",
+          children: "Main Method Evolution"
+        })
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1-a-brief-history-of-java",
+      children: "1. A Brief History of Java"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Java was created by ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "James Gosling"
+      }), ", Mike Sheridan, and Patrick Naughton at Sun Microsystems in the early 1990s. The project, initially called ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "Oak"
+      }), ", was designed for set-top boxes and embedded systems. Sun released the first public version, Java 1.0, in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "1996"
+      }), " with the slogan ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "\"Write Once, Run Anywhere\""
+      }), " (WORA). Oracle Corporation acquired Sun Microsystems in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "2010"
+      }), " and has stewarded the language ever since."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "11-key-lts-releases",
+      children: "1.1 Key LTS Releases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Java follows a strict time-based release cadence (every six months) with a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Long-Term Support (LTS)"
+      }), " release every two to three years. The major LTS versions are:"]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Release"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Year"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Features"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Java 8 (LTS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2014"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lambda expressions, Streams API, Optional, new Date/Time API, default methods"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Java 11 (LTS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2018"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP Client (standard), local-variable syntax for lambda parameters, Flight Recorder"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Java 17 (LTS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2021"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sealed classes, pattern matching for instanceof, records, text blocks (standardized)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Java 21 (LTS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2023"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pattern matching for switch, record patterns, virtual threads, sequenced collections, string templates (preview)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "12-jdk-vs-jre-vs-jvm",
+      children: "1.2 JDK vs JRE vs JVM"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "These three acronyms are often confused. Here is the exact hierarchy:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "JDK (Java Development Kit)\n ├── JRE (Java Runtime Environment)\n │    └── JVM (Java Virtual Machine)\n └── Development Tools (javac, jar, javadoc, etc.)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JVM (Java Virtual Machine)"
+        }), " → The abstract machine that executes Java bytecode. Each operating system has its own JVM implementation. The JVM loads ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".class"
+        }), " files, verifies bytecode, interprets and JIT-compiles it to native code, and manages memory via garbage collection."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JRE (Java Runtime Environment)"
+        }), " → Contains the JVM plus the core class libraries (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "rt.jar"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "charsets.jar"
+        }), ", etc.). End users need the JRE to run Java applications, but they cannot compile new programs with it."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "JDK (Java Development Kit)"
+        }), " → Contains the JRE plus development tools: the Java compiler (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "javac"
+        }), "), the archiver (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "jar"
+        }), "), the documentation generator (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "javadoc"
+        }), "), and the module system tools (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "jlink"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "jmod"
+        }), "). Developers always download the JDK."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Note:"
+        }), " Since Java 9, Oracle no longer ships a separate JRE. The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "jlink"
+        }), " tool creates custom runtime images that contain only the modules your application needs."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "13-the-compilation-deployment-and-execution-pipeline",
+      children: "1.3 The Compilation, Deployment, and Execution Pipeline"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every Java program goes through the following lifecycle:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Step 1: Write source code  →  HelloWorld.java\n// Step 2: Compile            →  javac HelloWorld.java → HelloWorld.class (bytecode)\n// Step 3: Execute            →  java HelloWorld       → JVM interprets/runs bytecode\n\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello from Java 21!\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-text",
+        children: "Compile time:  javac HelloWorld.java       produces HelloWorld.class (bytecode)\nRun time:      java HelloWorld              JVM loads, verifies, executes bytecode\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The JVM's ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Just-In-Time (JIT) compiler"
+      }), " identifies hot methods (executed frequently) and compiles them to native machine code at runtime, giving Java near-native performance."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "14-compiling-and-running--command-line-reference",
+      children: "1.4 Compiling and Running → Command-Line Reference"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "# Compile a single source file\njavac HelloWorld.java\n\n# Run the compiled class (no .class extension)\njava HelloWorld\n\n# Compile and run in one step (Java 11+)\njava HelloWorld.java\n\n# Package into a JAR\njar cf hello.jar HelloWorld.class\n\n# Run a JAR\njava -jar hello.jar\n\n# Create a custom runtime image (Java 9+) containing only required modules\njlink --module-path $JAVA_HOME/jmods --add-modules java.base --output mini-jre\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "2-primitive-types--type-conversion",
+      children: "2. Primitive Types & Type Conversion"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Java has ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "eight primitive types"
+      }), ". Everything else in Java is an object (reference type). Primitives are stored directly on the stack (or inline in objects), making them memory-efficient and fast."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "21-the-eight-primitive-types",
+      children: "2.1 The Eight Primitive Types"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Type"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Size"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Min"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Max"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Default"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Example"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "byte"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8-bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-128"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "127"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "byte b = 100;"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "short"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16-bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-32,768"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "32,767"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "short s = 30_000;"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "int"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "32-bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-2³¹"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2³¹-1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "int i = 2_000_000_000;"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "long"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "64-bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "-2⁶³"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2⁶³-1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0L"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "long l = 100_000_000_000L;"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "float"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "32-bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "±1.4e-45"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "±3.4e+38"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.0f"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "float f = 3.14f;"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "double"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "64-bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "±4.9e-324"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "±1.8e+308"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0.0d"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "double d = 3.14159265358979;"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "16-bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "65,535 (Unicode)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "'\\u0000'"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char c = 'A';"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "boolean"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "JVM-dependent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "→"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "false"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "boolean flag = true;"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class PrimitiveTypesDemo {\n    public static void main(String[] args) {\n        // --- Integer types ---\n        byte  b = 127;                     // 8-bit, max value\n        short s = 32_767;                  // 16-bit, underscores for readability\n        int   i = 2_000_000_000;           // 32-bit, most common integer type\n        long  l = 9_000_000_000_000L;      // 64-bit, requires L suffix\n\n        System.out.println(\"byte:   \" + b);\n        System.out.println(\"short:  \" + s);\n        System.out.println(\"int:    \" + i);\n        System.out.println(\"long:   \" + l);\n\n        // --- Floating-point types ---\n        float  f = 3.141592653589793f;     // 32-bit, ~7 decimal digits precision, requires f suffix\n        double d = 3.141592653589793;      // 64-bit, ~15 decimal digits precision\n\n        System.out.println(\"float:  \" + f);  // prints 3.1415927 (precision lost)\n        System.out.println(\"double: \" + d);  // prints 3.141592653589793\n\n        // --- Character type ---\n        char c1 = 'A';                     // single 16-bit Unicode character\n        char c2 = 65;                      // ASCII value of 'A'\n        char c3 = '\\u0041';                // Unicode escape for 'A'\n\n        System.out.println(\"char c1: \" + c1);\n        System.out.println(\"char c2: \" + c2);\n        System.out.println(\"char c3: \" + c3);\n\n        // --- Boolean type ---\n        boolean bool1 = true;\n        boolean bool2 = false;\n\n        System.out.println(\"boolean: \" + bool1 + \" and \" + bool2);\n\n        // --- Literal formats ---\n        int hex      = 0xFF;               // 255, hexadecimal literal\n        int binary   = 0b1100;             // 12, binary literal (Java 7+)\n        int octal    = 077;                // 63, octal literal (rarely used)\n        double sci   = 1.23e4;             // 12300.0, scientific notation\n\n        System.out.println(\"hex 0xFF:     \" + hex);\n        System.out.println(\"binary 0b1100: \" + binary);\n        System.out.println(\"octal 077:    \" + octal);\n        System.out.println(\"sci 1.23e4:   \" + sci);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "22-type-conversion",
+      children: "2.2 Type Conversion"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Java supports both ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "widening"
+      }), " (implicit, automatic) and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "narrowing"
+      }), " (explicit, requires cast) conversions."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Widening conversion path"
+      }), " (no data loss):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "byte → short → int → long → float → double\n                 ↑\n                char\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class TypeConversionDemo {\n    public static void main(String[] args) {\n        // --- Widening (implicit) conversions ---\n        byte   b = 42;\n        short  s = b;      // byte → short: OK\n        int    i = s;      // short → int: OK\n        long   l = i;      // int → long: OK\n        float  f = l;      // long → float: possible precision loss, but no cast required\n        double d = f;      // float → double: OK\n\n        // char can widen to int\n        char   c = 'Z';\n        int    charToInt = c;   // 90 (Unicode value of 'Z')\n\n        System.out.println(\"byte \" + b + \" → short \" + s + \" → int \" + i\n                         + \" → long \" + l + \" → float \" + f + \" → double \" + d);\n        System.out.println(\"char '\" + c + \"' widens to int \" + charToInt);\n\n        // --- Narrowing (explicit) conversions ---\n        double pi = 3.14159;\n        int truncated = (int) pi;          // truncates fractional part → 3\n        byte narrowed = (byte) truncated;  // int to byte, safe here\n\n        int large = 300;\n        byte overflow = (byte) large;      // 300 % 256 = 44\n\n        System.out.println(\"(int) 3.14159 = \" + truncated);\n        System.out.println(\"(byte) 300 = \" + overflow);  // 44\n\n        // --- Overflow in arithmetic ---\n        int maxInt = Integer.MAX_VALUE;    // 2_147_483_647\n        int overflowed = maxInt + 1;       // wraps to -2_147_483_648\n        System.out.println(\"MAX_VALUE + 1 = \" + overflowed);  // Integer.MIN_VALUE\n\n        // Use Math.addExact() to detect overflow at runtime\n        try {\n            int safe = Math.addExact(maxInt, 1);\n        } catch (ArithmeticException e) {\n            System.out.println(\"Overflow detected via addExact: \" + e.getMessage());\n        }\n\n        // --- Compound assignment gotcha ---\n        int total = 0;\n        total = total + 5;                 // works\n        total += 5;                        // works, equivalent\n        // total = total + 5L;             // compile error: long + int → long, can't assign to int\n        total += 5L;                       // OK! compound assignments include implicit cast\n        System.out.println(\"total after compound ops: \" + total);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "23-autoboxing-and-unboxing",
+      children: "2.3 Autoboxing and Unboxing"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Autoboxing"
+      }), " is the automatic conversion of a primitive to its corresponding wrapper class. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Unboxing"
+      }), " is the reverse. This feature bridges the gap between primitives and the collections framework, which only works with objects."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Primitive"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Wrapper Class"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "byte"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Byte"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "short"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Short"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "int"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Integer"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "long"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Long"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "float"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Float"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "double"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Double"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "char"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Character"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "boolean"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "Boolean"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.ArrayList;\nimport java.util.List;\n\npublic class AutoboxingDemo {\n    public static void main(String[] args) {\n        // --- Autoboxing: primitive → wrapper ---\n        Integer boxed = 42;                // autoboxing: int → Integer\n        Double  dBox  = 3.14;              // autoboxing: double → Double\n        Boolean bBox  = true;              // autoboxing: boolean → Boolean\n        Character cBox = 'X';              // autoboxing: char → Character\n\n        System.out.println(\"Boxed Integer: \" + boxed);\n        System.out.println(\"Boxed Double:  \" + dBox);\n        System.out.println(\"Boxed Boolean: \" + bBox);\n        System.out.println(\"Boxed Char:    \" + cBox);\n\n        // --- Unboxing: wrapper → primitive ---\n        Integer wrapped = Integer.valueOf(100);\n        int    value    = wrapped;          // unboxing: Integer → int\n\n        System.out.println(\"Unboxed value: \" + value);\n\n        // --- Autoboxing in collections ---\n        List<Integer> numbers = new ArrayList<>();\n        numbers.add(10);                    // autoboxing: int → Integer\n        numbers.add(20);\n        numbers.add(30);\n        int first = numbers.get(0);         // unboxing: Integer → int\n        System.out.println(\"First in list: \" + first);\n\n        // --- Pitfall: null unboxing ---\n        Integer nullable = null;\n        try {\n            int danger = nullable;          // throws NullPointerException\n        } catch (NullPointerException e) {\n            System.out.println(\"Cannot unbox null: \" + e.getMessage());\n        }\n\n        // --- Pitfall: == with boxed values ---\n        Integer a = 127;\n        Integer b = 127;\n        Integer c = 128;\n        Integer d = 128;\n\n        System.out.println(\"127 == 127:        \" + (a == b));     // true (cached by IntegerCache)\n        System.out.println(\"128 == 128:        \" + (c == d));     // false (outside cache range)\n        System.out.println(\"128.equals(128):   \" + c.equals(d));  // true (always use equals())\n\n        // --- Performance cost: autoboxing in loops ---\n        long start = System.nanoTime();\n        Long sum = 0L;                      // boxed Long, NOT primitive long\n        for (int idx = 0; idx < 10_000; idx++) {\n            sum += idx;                     // autoboxing + unboxing every iteration\n        }\n        long end = System.nanoTime();\n        System.out.println(\"Boxed sum: \" + sum + \" (took \" + (end - start) / 1_000_000 + \" ms)\");\n        // Always use primitive long in performance-sensitive loops\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "3-operators",
+      children: "3. Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Java provides a rich set of operators organized into several categories."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "31-arithmetic-operators",
+      children: "3.1 Arithmetic Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class ArithmeticOperatorsDemo {\n    public static void main(String[] args) {\n        int a = 20;\n        int b = 7;\n\n        int sum       = a + b;    // 27\n        int diff      = a - b;    // 13\n        int product   = a * b;    // 140\n        int quotient  = a / b;    // 2  (integer division truncates)\n        int remainder = a % b;    // 6  (modulo)\n\n        System.out.println(a + \" + \" + b + \" = \" + sum);\n        System.out.println(a + \" - \" + b + \" = \" + diff);\n        System.out.println(a + \" * \" + b + \" = \" + product);\n        System.out.println(a + \" / \" + b + \" = \" + quotient);\n        System.out.println(a + \" % \" + b + \" = \" + remainder);\n\n        // --- Precision with floating-point ---\n        double x = 20.0;\n        double y = 7.0;\n        System.out.println(\"20.0 / 7.0 = \" + (x / y));  // 2.857142857142857\n\n        // --- Unary operators ---\n        int value = 10;\n        System.out.println(\"++value: \" + (++value));      // pre-increment:  11\n        System.out.println(\"value++: \" + (value++));      // post-increment: 11 (then becomes 12)\n        System.out.println(\"after post: \" + value);       // 12\n        System.out.println(\"--value: \" + (--value));      // pre-decrement:  11\n        System.out.println(\"-value:  \" + (-value));       // unary negation: -11\n\n        // --- Division by zero ---\n        try {\n            int bad = 10 / 0;               // throws ArithmeticException\n        } catch (ArithmeticException e) {\n            System.out.println(\"Integer / by zero: \" + e.getMessage());\n        }\n\n        double inf = 10.0 / 0.0;            // Infinity (no exception for floating-point)\n        double nan = 0.0 / 0.0;             // NaN (Not a Number)\n        System.out.println(\"10.0 / 0.0 = \" + inf);\n        System.out.println(\"0.0 / 0.0  = \" + nan);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "32-relational-operators",
+      children: "3.2 Relational Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class RelationalOperatorsDemo {\n    public static void main(String[] args) {\n        int x = 10;\n        int y = 20;\n\n        System.out.println(\"x = \" + x + \", y = \" + y);\n        System.out.println(\"x == y: \" + (x == y));    // false\n        System.out.println(\"x != y: \" + (x != y));    // true\n        System.out.println(\"x < y:  \" + (x < y));     // true\n        System.out.println(\"x > y:  \" + (x > y));     // false\n        System.out.println(\"x <= y: \" + (x <= y));    // true\n        System.out.println(\"x >= y: \" + (x >= y));    // false\n\n        // --- String comparison: ALWAYS use .equals(), never == ---\n        String s1 = new String(\"hello\");\n        String s2 = new String(\"hello\");\n        System.out.println(\"s1 == s2:           \" + (s1 == s2));       // false (reference equality)\n        System.out.println(\"s1.equals(s2):      \" + s1.equals(s2));    // true (value equality)\n\n        // --- Comparing floating-point: use epsilon ---\n        double a = 0.1 + 0.2;\n        double b = 0.3;\n        System.out.println(\"0.1 + 0.2 == 0.3:   \" + (a == b));        // false (rounding error)\n        double epsilon = 1e-10;\n        System.out.println(\"Math.abs(a-b) < eps: \" + (Math.abs(a - b) < epsilon));  // true\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "33-logical-operators",
+      children: "3.3 Logical Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class LogicalOperatorsDemo {\n    public static void main(String[] args) {\n        boolean t = true;\n        boolean f = false;\n\n        System.out.println(\"true  && false: \" + (t && f));   // false (short-circuit AND)\n        System.out.println(\"true  || false: \" + (t || f));   // true  (short-circuit OR)\n        System.out.println(\"!true:          \" + (!t));       // false (logical NOT)\n        System.out.println(\"true  ^ false:  \" + (t ^ f));    // true  (XOR)\n\n        // --- Short-circuit evaluation ---\n        String name = null;\n        // name.length() would throw NullPointerException, but && short-circuits\n        boolean valid = name != null && name.length() > 5;\n        System.out.println(\"Short-circuit result: \" + valid);  // false, no NPE\n\n        // Non-short-circuit & and | (rarely used)\n        boolean result = f & t;     // evaluates both sides (no short circuit)\n        System.out.println(\"Non-SC &: \" + result);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "34-bitwise-operators",
+      children: "3.4 Bitwise Operators"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bitwise operators operate on the individual bits of integer types."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class BitwiseOperatorsDemo {\n    public static void main(String[] args) {\n        int a = 0b1100;   // 12 in binary\n        int b = 0b1010;   // 10 in binary\n\n        System.out.println(\"a = 0b\" + Integer.toBinaryString(a) + \" (\" + a + \")\");\n        System.out.println(\"b = 0b\" + Integer.toBinaryString(b) + \" (\" + b + \")\");\n\n        int and = a & b;    // 0b1000 = 8   (both bits 1)\n        int or  = a | b;    // 0b1110 = 14  (at least one bit 1)\n        int xor = a ^ b;    // 0b0110 = 6   (bits differ)\n        int not = ~a;       // inverts all bits\n\n        System.out.println(\"a & b = \" + and + \" (\" + Integer.toBinaryString(and) + \")\");\n        System.out.println(\"a | b = \" + or  + \" (\" + Integer.toBinaryString(or)  + \")\");\n        System.out.println(\"a ^ b = \" + xor + \" (\" + Integer.toBinaryString(xor) + \")\");\n        System.out.println(\"~a    = \" + not + \" (\" + Integer.toBinaryString(not) + \")\");\n\n        // --- Shift operators ---\n        int value = 0b0001_0000;  // 16\n\n        int leftShift  = value << 2;   // 0b0100_0000 = 64  (multiply by 2^n)\n        int rightShift = value >> 2;   // 0b0000_0100 = 4   (divide by 2^n)\n        int unsignedRS = value >>> 2;  // same as >> for positive numbers\n\n        System.out.println(value + \" << 2 = \" + leftShift);\n        System.out.println(value + \" >> 2 = \" + rightShift);\n        System.out.println(value + \" >>> 2 = \" + unsignedRS);\n\n        // --- Difference between >> and >>> ---\n        int negative = -16;\n        System.out.println(\"\\nNegative shift:\");\n        System.out.println(\"-16       = \" + Integer.toBinaryString(negative));\n        System.out.println(\"-16 >> 2  = \" + Integer.toBinaryString(negative >> 2)   + \" = \" + (negative >> 2));\n        System.out.println(\"-16 >>> 2 = \" + Integer.toBinaryString(negative >>> 2)  + \" = \" + (negative >>> 2));\n        // >> preserves sign bit (fills with 1s for negatives)\n        // >>> fills with 0s regardless of sign\n\n        // --- Practical use: flag bitmasks ---\n        int READ    = 1 << 0;  // 001\n        int WRITE   = 1 << 1;  // 010\n        int EXECUTE = 1 << 2;  // 100\n\n        int permissions = READ | WRITE;                  // 011\n        System.out.println(\"\\nBitmask demo:\");\n        System.out.println(\"Has read?    \" + ((permissions & READ)    != 0));  // true\n        System.out.println(\"Has write?   \" + ((permissions & WRITE)   != 0));  // true\n        System.out.println(\"Has execute? \" + ((permissions & EXECUTE) != 0));  // false\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "35-instanceof-and-ternary-operator",
+      children: "3.5 instanceof and Ternary Operator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class InstanceofTernaryDemo {\n    public static void main(String[] args) {\n        // --- instanceof operator ---\n        Object obj = \"Hello, Java!\";\n\n        boolean isString = obj instanceof String;\n        System.out.println(\"obj instanceof String: \" + isString);  // true\n        System.out.println(\"obj instanceof Integer: \" + (obj instanceof Integer));  // false\n        System.out.println(\"obj instanceof Object:  \" + (obj instanceof Object));   // true\n        System.out.println(\"obj instanceof CharSequence: \" + (obj instanceof CharSequence));  // true\n\n        // null instanceof anything → false\n        Object nothing = null;\n        System.out.println(\"null instanceof String: \" + (nothing instanceof String));  // false\n\n        // --- Ternary operator ( ? : ) ---\n        int age = 20;\n        String status = age >= 18 ? \"Adult\" : \"Minor\";\n        System.out.println(\"Age \" + age + \" → \" + status);\n\n        // Nested ternary (use sparingly → readability matters)\n        int score = 85;\n        String grade = score >= 90 ? \"A\"\n                     : score >= 80 ? \"B\"\n                     : score >= 70 ? \"C\"\n                     : score >= 60 ? \"D\"\n                     : \"F\";\n        System.out.println(\"Score \" + score + \" → Grade \" + grade);\n\n        // Ternary with method calls\n        int x = 5;\n        int y = 10;\n        int max = x > y ? x : y;\n        System.out.println(\"max(\" + x + \", \" + y + \") = \" + max);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "4-control-flow",
+      children: "4. Control Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "41-ifelse-statement",
+      children: "4.1 if/else Statement"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class IfElseDemo {\n    public static void main(String[] args) {\n        int temperature = 30;\n\n        if (temperature > 35) {\n            System.out.println(\"Extreme heat warning!\");\n        } else if (temperature >= 25) {\n            System.out.println(\"Warm day.\");\n        } else if (temperature >= 15) {\n            System.out.println(\"Pleasant day.\");\n        } else if (temperature >= 5) {\n            System.out.println(\"Cool day.\");\n        } else {\n            System.out.println(\"Freezing conditions.\");\n        }\n\n        // Ternary equivalent for simple branches\n        int number = 7;\n        String parity = number % 2 == 0 ? \"even\" : \"odd\";\n        System.out.println(number + \" is \" + parity);\n\n        // Guard clause pattern\n        public static String classifyNumber(int n) {\n            if (n < 0) {\n                return \"negative\";\n            }\n            if (n == 0) {\n                return \"zero\";\n            }\n            // n > 0 guaranteed here\n            return n % 2 == 0 ? \"positive even\" : \"positive odd\";\n        }\n\n        System.out.println(classifyNumber(-5));\n        System.out.println(classifyNumber(0));\n        System.out.println(classifyNumber(42));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "42-switch-expressions-traditional-vs-arrow-syntax",
+      children: "4.2 Switch Expressions (Traditional vs Arrow Syntax)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class SwitchExpressionDemo {\n    public static void main(String[] args) {\n        // --- Traditional switch (statement, fall-through) ---\n        String dayName = \"TUESDAY\";\n        String type;\n\n        switch (dayName) {\n            case \"MONDAY\":\n            case \"TUESDAY\":\n            case \"WEDNESDAY\":\n            case \"THURSDAY\":\n            case \"FRIDAY\":\n                type = \"Weekday\";\n                break;\n            case \"SATURDAY\":\n            case \"SUNDAY\":\n                type = \"Weekend\";\n                break;\n            default:\n                type = \"Invalid day\";\n        }\n        System.out.println(dayName + \" is a \" + type);\n\n        // --- Switch expression with arrow syntax (Java 14+) ---\n        String season = switch (dayName) {\n            case \"DECEMBER\", \"JANUARY\", \"FEBRUARY\" -> \"Winter\";\n            case \"MARCH\", \"APRIL\", \"MAY\"           -> \"Spring\";\n            case \"JUNE\", \"JULY\", \"AUGUST\"          -> \"Summer\";\n            case \"SEPTEMBER\", \"OCTOBER\", \"NOVEMBER\" -> \"Autumn\";\n            default                                 -> \"Unknown\";\n        };\n        System.out.println(dayName + \" is in \" + season);\n\n        // --- Switch expression with yield (for multi-line blocks) ---\n        int score = 85;\n        String letterGrade = switch (score / 10) {\n            case 10, 9 -> \"A\";\n            case 8 -> {\n                System.out.println(\"  B order: close to A!\");\n                yield \"B\";\n            }\n            case 7 -> \"C\";\n            case 6 -> \"D\";\n            default -> {\n                System.out.println(\"  Failing grade\");\n                yield \"F\";\n            }\n        };\n        System.out.println(\"Score \" + score + \" → Letter grade: \" + letterGrade);\n\n        // --- Switch with enum (exhaustive, no default needed) ---\n        enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }\n\n        Day today = Day.WEDNESDAY;\n        boolean isWeekend = switch (today) {\n            case SATURDAY, SUNDAY -> true;\n            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> false;\n        };\n        System.out.println(today + \" is weekend? \" + isWeekend);\n\n        // --- null-case in switch (Java 21+) ---\n        String input = null;\n        String result = switch (input) {\n            case null    -> \"Received null input\";\n            case \"hello\" -> \"Greeting received\";\n            default      -> \"Unknown: \" + input;\n        };\n        System.out.println(\"null switch result: \" + result);\n\n        // --- Exhaustive switch with sealed types ---\n        sealed interface Shape permits Circle, Rectangle {}\n        record Circle(double radius) implements Shape {}\n        record Rectangle(double w, double h) implements Shape {}\n\n        Shape shape = new Circle(5.0);\n        String description = switch (shape) {\n            case Circle c    -> \"Circle with radius \" + c.radius();\n            case Rectangle r -> \"Rectangle \" + r.w() + \" x \" + r.h();\n        };\n        System.out.println(description);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "43-loops-for-while-do-while",
+      children: "4.3 Loops: for, while, do-while"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.Arrays;\n\npublic class LoopDemo {\n    public static void main(String[] args) {\n        // --- Traditional for loop ---\n        System.out.println(\"Traditional for:\");\n        for (int i = 0; i < 5; i++) {\n            System.out.print(i + \" \");\n        }\n        System.out.println();\n\n        // --- For loop with multiple variables ---\n        for (int i = 0, j = 10; i < j; i++, j--) {\n            System.out.println(\"i=\" + i + \", j=\" + j);\n        }\n\n        // --- Enhanced for-each loop ---\n        int[] numbers = {10, 20, 30, 40, 50};\n        int sum = 0;\n        for (int n : numbers) {\n            sum += n;\n        }\n        System.out.println(\"Sum via for-each: \" + sum);\n\n        // --- While loop ---\n        int count = 0;\n        while (count < 5) {\n            System.out.print(\"while:\" + count + \" \");\n            count++;\n        }\n        System.out.println();\n\n        // --- Do-while loop (executes at least once) ---\n        int value = 0;\n        do {\n            System.out.print(\"do-while:\" + value + \" \");\n            value++;\n        } while (value < 3);\n        System.out.println();\n\n        // --- Infinite loops → be careful ---\n        // for (;;) { ... }         // infinite for loop\n        // while (true) { ... }     // infinite while loop\n\n        // --- Iterating over a 2D array ---\n        int[][] matrix = {\n            {1, 2, 3},\n            {4, 5, 6},\n            {7, 8, 9}\n        };\n\n        System.out.println(\"Matrix:\");\n        for (int[] row : matrix) {\n            for (int cell : row) {\n                System.out.print(cell + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "44-breakcontinue-with-labels",
+      children: "4.4 Break/Continue with Labels"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Labels allow you to break out of or continue ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "outer"
+      }), " loops from within nested loops."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class BreakContinueLabelsDemo {\n    public static void main(String[] args) {\n        // --- Labeled break ---\n        System.out.println(\"Labeled break - find first pair summing to 10:\");\n        outer:\n        for (int i = 1; i <= 5; i++) {\n            for (int j = 1; j <= 5; j++) {\n                if (i + j == 10) {\n                    System.out.println(\"Found: \" + i + \" + \" + j + \" = 10\");\n                    break outer;   // exits BOTH loops\n                }\n                System.out.print(\"(\" + i + \",\" + j + \") \");\n            }\n            System.out.println();\n        }\n        System.out.println(\"\\nExited outer loop via labeled break.\");\n\n        // --- Labeled continue ---\n        System.out.println(\"\\nLabeled continue - skip outer loop when i == j:\");\n        outer:\n        for (int i = 1; i <= 3; i++) {\n            for (int j = 1; j <= 3; j++) {\n                if (i == j) {\n                    System.out.print(\"skip(\" + i + \",\" + j + \") \");\n                    continue outer;  // skips to next outer iteration\n                }\n                System.out.print(\"(\" + i + \",\" + j + \") \");\n            }\n            System.out.println();\n        }\n        System.out.println();\n\n        // --- Practical: searching in a 2D array ---\n        int[][] grid = {\n            {1, 2, 3},\n            {4, 5, 6},\n            {7, 8, 9}\n        };\n        int target = 5;\n        boolean found = false;\n        int[] position = {-1, -1};\n\n        search:\n        for (int row = 0; row < grid.length; row++) {\n            for (int col = 0; col < grid[row].length; col++) {\n                if (grid[row][col] == target) {\n                    found = true;\n                    position = new int[]{row, col};\n                    break search;\n                }\n            }\n        }\n\n        if (found) {\n            System.out.println(\"Found \" + target + \" at grid[\" + position[0] + \"][\" + position[1] + \"]\");\n        } else {\n            System.out.println(target + \" not found in grid.\");\n        }\n\n        // --- Unlabeled continue in a while loop ---\n        int num = 0;\n        while (num < 10) {\n            num++;\n            if (num % 2 == 0) {\n                continue;  // skip even numbers\n            }\n            System.out.print(num + \" \");  // prints odd numbers only\n        }\n        System.out.println();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "5-arrays",
+      children: "5. Arrays"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Arrays are fixed-length, zero-indexed containers for elements of the same type. They are ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "objects"
+      }), " on the heap, even when holding primitives."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "51-declaration-initialization-and-access",
+      children: "5.1 Declaration, Initialization, and Access"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.Arrays;\n\npublic class ArraysDemo {\n    public static void main(String[] args) {\n        // --- Declaration and initialization ---\n\n        // Method 1: literal initialization\n        int[] primes = {2, 3, 5, 7, 11, 13};\n\n        // Method 2: explicit size, then assign\n        int[] squares = new int[5];           // all elements default to 0\n        squares[0] = 1;\n        squares[1] = 4;\n        squares[2] = 9;\n        squares[3] = 16;\n        squares[4] = 25;\n\n        // Method 3: declare, then allocate with new\n        int[] cubes;\n        cubes = new int[]{1, 8, 27, 64, 125};\n\n        System.out.println(\"Primes:  \" + Arrays.toString(primes));\n        System.out.println(\"Squares: \" + Arrays.toString(squares));\n        System.out.println(\"Cubes:   \" + Arrays.toString(cubes));\n\n        // --- Accessing elements ---\n        System.out.println(\"First prime:     \" + primes[0]);       // 2\n        System.out.println(\"Last prime:      \" + primes[primes.length - 1]);  // 13\n\n        // --- Array length ---\n        System.out.println(\"Number of primes: \" + primes.length);\n\n        // --- Out of bounds ---\n        try {\n            int bad = primes[100];\n        } catch (ArrayIndexOutOfBoundsException e) {\n            System.out.println(\"Array index out of bounds: \" + e.getMessage());\n        }\n\n        // --- Iterating ---\n        System.out.print(\"All primes: \");\n        for (int i = 0; i < primes.length; i++) {\n            System.out.print(primes[i] + \" \");\n        }\n        System.out.println();\n\n        System.out.print(\"All squares (for-each): \");\n        for (int s : squares) {\n            System.out.print(s + \" \");\n        }\n        System.out.println();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "52-multidimensional-arrays",
+      children: "5.2 Multidimensional Arrays"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.Arrays;\n\npublic class MultiDimArrayDemo {\n    public static void main(String[] args) {\n        // --- Rectangular 2D array ---\n        int[][] matrix = new int[3][4];\n\n        // Fill with values\n        for (int row = 0; row < matrix.length; row++) {\n            for (int col = 0; col < matrix[row].length; col++) {\n                matrix[row][col] = row * 4 + col + 1;\n            }\n        }\n\n        System.out.println(\"Rectangular 3x4 matrix:\");\n        printMatrix(matrix);\n\n        // --- Ragged (jagged) array → each row can have different length ---\n        int[][] triangle = new int[5][];\n        for (int row = 0; row < triangle.length; row++) {\n            triangle[row] = new int[row + 1];\n            for (int col = 0; col < triangle[row].length; col++) {\n                triangle[row][col] = col + 1;\n            }\n        }\n\n        System.out.println(\"Pascal-like triangle (jagged array):\");\n        printMatrix(triangle);\n\n        // --- Literal 2D initialization ---\n        int[][] identity = {\n            {1, 0, 0},\n            {0, 1, 0},\n            {0, 0, 1}\n        };\n        System.out.println(\"3x3 identity matrix:\");\n        printMatrix(identity);\n\n        // --- 3D array (rare, but valid) ---\n        int[][][] threeD = {\n            { {1, 2}, {3, 4} },\n            { {5, 6}, {7, 8} }\n        };\n        System.out.println(\"3D array [0][1][0]: \" + threeD[0][1][0]);  // 3\n\n        // --- deepEquals and deepToString ---\n        int[][] a = {{1, 2}, {3, 4}};\n        int[][] b = {{1, 2}, {3, 4}};\n        System.out.println(\"Arrays.deepEquals(a, b): \" + Arrays.deepEquals(a, b));\n        System.out.println(\"Arrays.deepToString(a):  \" + Arrays.deepToString(a));\n    }\n\n    private static void printMatrix(int[][] matrix) {\n        for (int[] row : matrix) {\n            System.out.println(\"  \" + Arrays.toString(row));\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "53-utility-methods-javautilarrays",
+      children: "5.3 Utility Methods (java.util.Arrays)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.Arrays;\nimport java.util.Comparator;\n\npublic class ArraysUtilityDemo {\n    public static void main(String[] args) {\n        int[] numbers = {42, 7, 19, 3, 88, 56, 12};\n\n        // --- sort() ---\n        int[] sorted = numbers.clone();\n        Arrays.sort(sorted);\n        System.out.println(\"Original: \" + Arrays.toString(numbers));\n        System.out.println(\"Sorted:   \" + Arrays.toString(sorted));\n\n        // --- binarySearch() → array MUST be sorted first ---\n        int index = Arrays.binarySearch(sorted, 19);\n        System.out.println(\"Index of 19 in sorted array: \" + index);  // 2\n        System.out.println(\"Index of 99 (not found):     \" + Arrays.binarySearch(sorted, 99));  // negative\n\n        // --- fill() ---\n        int[] zeros = new int[5];\n        Arrays.fill(zeros, 42);\n        System.out.println(\"After fill(42): \" + Arrays.toString(zeros));\n\n        // --- copyOf() and copyOfRange() ---\n        int[] original = {1, 2, 3, 4, 5};\n        int[] copy = Arrays.copyOf(original, 7);    // extra elements are zero-filled\n        System.out.println(\"copyOf(original, 7): \" + Arrays.toString(copy));\n\n        int[] range = Arrays.copyOfRange(original, 1, 4);  // {2, 3, 4}\n        System.out.println(\"copyOfRange(1, 4): \" + Arrays.toString(range));\n\n        // --- equals() and deepEquals() ---\n        int[] arr1 = {1, 2, 3};\n        int[] arr2 = {1, 2, 3};\n        int[] arr3 = {1, 2, 4};\n        System.out.println(\"arr1.equals(arr2): \" + Arrays.equals(arr1, arr2));  // true\n        System.out.println(\"arr1.equals(arr3): \" + Arrays.equals(arr1, arr3));  // false\n\n        // --- compare() and mismatch() (Java 9+) ---\n        int[] a = {1, 2, 3, 4};\n        int[] b = {1, 2, 5, 4};\n        System.out.println(\"compare(a, b): \" + Arrays.compare(a, b));   // negative (3 < 5 at index 2)\n        System.out.println(\"mismatch(a, b): \" + Arrays.mismatch(a, b)); // 2 (first differing index)\n\n        // --- parallelSort() → uses ForkJoinPool for large arrays ---\n        int[] large = new int[10_000];\n        for (int i = 0; i < large.length; i++) {\n            large[i] = (int) (Math.random() * 100_000);\n        }\n        long start = System.nanoTime();\n        Arrays.parallelSort(large);\n        long end = System.nanoTime();\n        System.out.println(\"Parallel sort of 10k elements: \" + (end - start) / 1_000_000 + \" ms\");\n\n        // --- setAll() and parallelSetAll() (Java 8+) ---\n        int[] squares = new int[10];\n        Arrays.setAll(squares, i -> i * i);\n        System.out.println(\"setAll squares: \" + Arrays.toString(squares));\n\n        // --- Sorting with comparator (object arrays only) ---\n        String[] names = {\"Charlie\", \"Alice\", \"Bob\", \"Dave\"};\n        Arrays.sort(names);\n        System.out.println(\"Sorted names: \" + Arrays.toString(names));\n\n        // Sort in reverse order\n        Arrays.sort(names, Comparator.reverseOrder());\n        System.out.println(\"Reverse sorted: \" + Arrays.toString(names));\n\n        // --- toArray on collections ---\n        // Not directly in Arrays, but related:\n        String[] fromList = java.util.List.of(\"x\", \"y\", \"z\").toArray(new String[0]);\n        System.out.println(\"Collection to array: \" + Arrays.toString(fromList));\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "6-strings",
+      children: "6. Strings"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Strings in Java are ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "immutable"
+      }), " → once created, their internal character array cannot be modified. All methods that appear to modify a String actually return a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "new"
+      }), " String object."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "61-string-immutability-and-the-string-pool",
+      children: "6.1 String Immutability and the String Pool"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class StringBasicsDemo {\n    public static void main(String[] args) {\n        // --- String immutability ---\n        String s = \"Hello\";\n        String upper = s.toUpperCase();  // creates a NEW string \"HELLO\"\n        System.out.println(\"Original: \" + s);     // \"Hello\" (unchanged!)\n        System.out.println(\"Upper:    \" + upper); // \"HELLO\"\n\n        // --- String pool ---\n        String a = \"hello\";          // string literal → goes into the pool\n        String b = \"hello\";          // reuses the same pool entry\n        String c = new String(\"hello\");  // explicitly creates a NEW object on the heap\n\n        System.out.println(\"a == b:        \" + (a == b));   // true (same reference, same pool entry)\n        System.out.println(\"a == c:        \" + (a == c));   // false (c is a distinct object)\n        System.out.println(\"a.equals(c):   \" + a.equals(c)); // true (same value)\n\n        // --- intern() → manually add to pool ---\n        String d = c.intern();        // returns the pooled version\n        System.out.println(\"a == d:        \" + (a == d));   // true (both pointing to pool)\n\n        // --- Concatenation ---\n        String s1 = \"Java\";\n        String s2 = \"Spring\";\n        String combined = s1 + \" \" + s2;          // creates a new String\n        String formatted = String.format(\"%s %s\", s1, s2);\n        String joined = String.join(\" \", s1, s2);\n\n        System.out.println(\"+ operator:    \" + combined);\n        System.out.println(\"format:        \" + formatted);\n        System.out.println(\"String.join:   \" + joined);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "62-stringbuilder-and-stringbuffer",
+      children: "6.2 StringBuilder and StringBuffer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.code, {
+        children: "StringBuilder"
+      }), " (non-synchronized, faster) and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "StringBuffer"
+      }), " (synchronized, thread-safe) are ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "mutable"
+      }), " sequences of characters. Use them when you need to build or modify strings in a loop."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class StringBuilderDemo {\n    public static void main(String[] args) {\n        // --- Why StringBuilder matters ---\n        String result = \"\";\n        for (int i = 0; i < 10_000; i++) {\n            result += i;            // BAD: creates 10,000 intermediate String objects\n        }\n        // This is extremely slow and memory-intensive.\n\n        // --- StringBuilder (preferred) ---\n        StringBuilder sb = new StringBuilder();\n        for (int i = 0; i < 10_000; i++) {\n            sb.append(i);           // mutates internal buffer, no new objects\n        }\n        String efficient = sb.toString();\n        System.out.println(\"StringBuilder length: \" + efficient.length());\n        System.out.println(\"StringBuilder (first 50 chars): \" + efficient.substring(0, 50));\n\n        // --- Common StringBuilder operations ---\n        StringBuilder builder = new StringBuilder(\"Hello\");\n\n        builder.append(\", World!\");                // append\n        builder.insert(5, \" there\");               // insert at index 5\n        builder.replace(0, 5, \"Hi\");               // replace range\n        builder.delete(9, 14);                     // delete range\n        builder.reverse();                         // reverse the entire sequence\n\n        System.out.println(\"After various ops: \" + builder.toString());\n\n        // --- StringBuilder capacities ---\n        StringBuilder sb2 = new StringBuilder();                 // default capacity 16\n        StringBuilder sb3 = new StringBuilder(1000);   // pre-allocate for known size\n        System.out.println(\"Default capacity: \" + sb2.capacity() + \", custom: \" + sb3.capacity());\n\n        // --- StringBuffer (thread-safe version) ---\n        StringBuffer buffer = new StringBuffer(\"Thread-safe\");\n        buffer.append(\" StringBuffer\");\n        System.out.println(\"StringBuffer: \" + buffer.toString());\n\n        // --- Performance comparison ---\n        long start, end;\n\n        start = System.nanoTime();\n        String slow = \"\";\n        for (int i = 0; i < 50_000; i++) {\n            slow += \"x\";\n        }\n        end = System.nanoTime();\n        System.out.println(\"String +=  (50k): \" + (end - start) / 1_000_000 + \" ms\");\n\n        start = System.nanoTime();\n        StringBuilder fast = new StringBuilder(50_000);\n        for (int i = 0; i < 50_000; i++) {\n            fast.append(\"x\");\n        }\n        end = System.nanoTime();\n        System.out.println(\"StringBuilder (50k): \" + (end - start) / 1_000_000 + \" ms\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "63-essential-string-methods",
+      children: "6.3 Essential String Methods"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class StringMethodsDemo {\n    public static void main(String[] args) {\n        String text = \"  Hello, Java World!  \";\n\n        // --- Inspection ---\n        System.out.println(\"length():         \" + text.length());           // 22\n        System.out.println(\"isEmpty():        \" + text.isEmpty());          // false\n        System.out.println(\"isBlank():        \" + text.isBlank());          // false (Java 11+)\n\n        // --- Character access ---\n        System.out.println(\"charAt(1):        \" + text.charAt(1));          // ' '\n        System.out.println(\"chars().count():  \" + text.chars().count());    // 22\n        System.out.println(\"codePointAt(0):   \" + text.codePointAt(0));     // 32 (space)\n\n        // --- Comparison ---\n        String a = \"Java\";\n        String b = \"java\";\n        System.out.println(\"equals():         \" + a.equals(b));             // false\n        System.out.println(\"equalsIgnoreCase():\" + a.equalsIgnoreCase(b));  // true\n        System.out.println(\"compareTo():      \" + a.compareTo(b));          // negative ('J' < 'j')\n        System.out.println(\"compareToIgnore:  \" + a.compareToIgnoreCase(b));// 0\n\n        // --- Searching ---\n        System.out.println(\"contains('Java'): \" + text.contains(\"Java\"));   // true\n        System.out.println(\"indexOf('J'):     \" + text.indexOf('J'));       // 9\n        System.out.println(\"indexOf('a', 10): \" + text.indexOf('a', 10));   // 12\n        System.out.println(\"lastIndexOf('!'): \" + text.lastIndexOf('!'));   // 19\n        System.out.println(\"startsWith('  '): \" + text.startsWith(\"  \"));   // true\n        System.out.println(\"endsWith('!  '):  \" + text.endsWith(\"!  \"));    // true\n\n        // --- Substrings ---\n        System.out.println(\"substring(9):     '\" + text.substring(9) + \"'\");\n        System.out.println(\"substring(9, 13): '\" + text.substring(9, 13) + \"'\");\n\n        // --- Transformation ---\n        System.out.println(\"trim():            '\" + text.trim() + \"'\");\n        System.out.println(\"strip():           '\" + text.strip() + \"'\");      // Java 11+, handles Unicode\n        System.out.println(\"stripLeading():   '\" + text.stripLeading() + \"'\");\n        System.out.println(\"stripTrailing():  '\" + text.stripTrailing() + \"'\");\n        System.out.println(\"toLowerCase():    \" + text.toLowerCase());\n        System.out.println(\"toUpperCase():    \" + text.toUpperCase());\n\n        // --- Replacement ---\n        System.out.println(\"replace('a','X'): \" + text.replace('a', 'X'));\n        System.out.println(\"replace('Java','Kotlin'): \" + text.replace(\"Java\", \"Kotlin\"));\n        System.out.println(\"replaceAll(\\\\\\\\s):    \" + text.replaceAll(\"\\\\s+\", \"_\"));\n        System.out.println(\"replaceFirst(\\\\\\\\s):  \" + text.replaceFirst(\"\\\\s+\", \"_\"));\n\n        // --- Splitting ---\n        String csv = \"apple,banana,cherry,date\";\n        String[] fruits = csv.split(\",\");\n        System.out.println(\"split result: \" + java.util.Arrays.toString(fruits));\n\n        // split with limit\n        String[] limited = csv.split(\",\", 2);\n        System.out.println(\"split(, 2): \" + java.util.Arrays.toString(limited));\n\n        // --- Joining ---\n        String joined = String.join(\" | \", fruits);\n        System.out.println(\"String.join: \" + joined);\n\n        // --- repeat (Java 11+) ---\n        System.out.println(\"'Ha'.repeat(3): \" + \"Ha\".repeat(3));  // HaHaHa\n\n        // --- Lines (Java 11+) ---\n        String multiline = \"line1\\nline2\\nline3\";\n        multiline.lines().forEach(line -> System.out.println(\"  line: \" + line));\n\n        // --- Transform (Java 12+) ---\n        String transformed = \"42\".transform(s -> String.valueOf(Integer.parseInt(s) * 2));\n        System.out.println(\"transform double: \" + transformed);  // \"84\"\n\n        // --- indent (Java 12+) ---\n        String indented = \"Hello\".indent(4);\n        System.out.println(\"indented: '\" + indented + \"'\");\n\n        // --- formatted (Java 15+) / String.formatted ---\n        String formatted = \"%s scored %d points\".formatted(\"Alice\", 95);\n        System.out.println(\"formatted: \" + formatted);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "64-text-blocks",
+      children: "6.4 Text Blocks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Text blocks provide a clean way to write multi-line string literals. They are delimited by three double quotes ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "\"\"\""
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class TextBlockDemo {\n    public static void main(String[] args) {\n        // --- Basic text block ---\n        String json = \"\"\"\n            {\n                \"name\": \"Java 21\",\n                \"type\": \"LTS\",\n                \"year\": 2023,\n                \"features\": [\"Pattern Matching\", \"Virtual Threads\", \"Record Patterns\"]\n            }\n            \"\"\";\n\n        System.out.println(\"JSON text block:\");\n        System.out.println(json);\n\n        // --- HTML in a text block ---\n        String html = \"\"\"\n            <html>\n                <body>\n                    <h1>Hello, Java!</h1>\n                    <p>This is a text block example.</p>\n                </body>\n            </html>\n            \"\"\";\n\n        System.out.println(\"HTML text block:\");\n        System.out.println(html);\n\n        // --- SQL query ---\n        String query = \"\"\"\n            SELECT u.name, u.email, o.total\n            FROM users u\n            JOIN orders o ON u.id = o.user_id\n            WHERE o.status = 'COMPLETED'\n              AND o.total > 100.0\n            ORDER BY o.total DESC\n            LIMIT 10\n            \"\"\";\n\n        System.out.println(\"SQL query:\");\n        System.out.println(query);\n\n        // --- Indentation control ---\n        // The closing \"\"\" determines the common indentation\n        String noIndent = \"\"\"\n            first line\n            second line\n            third line\n        \"\"\";\n\n        System.out.println(\"No indent: '\" + noIndent + \"'\");\n\n        // --- stripIndent() and translateEscapes() (Java 14+) ---\n        String code = \"\"\"\n            class Example {\n                public static void main(String[] args) {\n                    System.out.println(\"Hello\");\n                }\n            }\n            \"\"\".stripIndent();\n        System.out.println(\"Stripped code block:\");\n        System.out.println(code);\n\n        // --- Escape sequences in text blocks ---\n        String escapes = \"\"\"\n            Line 1: \"Double quotes\" are fine inside text blocks.\n            Line 2: \\\\\\\"Three double quotes\\\\\\\" need escaping.\n            Line 3: Tab\\\\there.\n            Line 4: Newline\\\\ninside (literal \\\\n vs actual newline).\n            \"\"\";\n        System.out.println(\"Escapes demo:\");\n        System.out.println(escapes);\n\n        // --- Trailing spaces (visible with \\s, Java 14+) ---\n        String aligned = \"\"\"\n            left   \\s\n            center \\s\n            right  \\s\n            \"\"\";\n        System.out.println(\"Aligned with \\\\s:\");\n        for (String line : aligned.split(\"\\n\")) {\n            System.out.println(\"  '\" + line + \"'\");\n        }\n\n        // --- Avoiding trailing newline (terminating \\ with newline) ---\n        String noTrailing = \"\"\"\n            Hello, \\\n            World! \\\n            \"\"\";\n        System.out.println(\"No trailing newline: '\" + noTrailing.replace(\"\\n\", \"\\\\n\") + \"'\");\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "7-the-var-keyword",
+      children: "7. The var Keyword"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Introduced in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 10"
+      }), " (JEP 286), ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "var"
+      }), " enables ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "local variable type inference"
+      }), ". The compiler infers the type from the initializer. It reduces boilerplate without sacrificing type safety."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "71-rules-and-restrictions",
+      children: "7.1 Rules and Restrictions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.*;\nimport java.util.function.Predicate;\nimport java.util.stream.*;\n\npublic class VarKeywordDemo {\n    public static void main(String[] args) {\n        // --- Valid uses of var ---\n\n        // Clear inference from literal\n        var name = \"Java 21\";               // inferred as String\n        var count = 42;                     // inferred as int\n        var price = 29.99;                  // inferred as double\n        var active = true;                  // inferred as boolean\n\n        // Generic types\n        var list = new ArrayList<String>();      // inferred as ArrayList<String>\n        var map = new HashMap<String, Integer>(); // inferred as HashMap<String, Integer>\n\n        // With collections\n        list.add(\"Hello\");\n        list.add(\"World\");\n        System.out.println(\"var list: \" + list);\n\n        // With streams\n        var stream = list.stream()\n            .filter(s -> s.startsWith(\"H\"))\n            .map(String::toUpperCase);\n        stream.forEach(System.out::println);\n\n        // With complex generic types\n        var complex = new HashMap<String, List<Map<Integer, String>>>();\n        System.out.println(\"Complex type: \" + complex.getClass().getName());\n\n        // Loop variables\n        for (var i = 0; i < 5; i++) {\n            System.out.print(\"var index: \" + i + \", \");\n        }\n        System.out.println();\n\n        var numbers = List.of(10, 20, 30, 40, 50);\n        for (var n : numbers) {\n            System.out.print(n + \" \");\n        }\n        System.out.println();\n\n        // With anonymous classes\n        var runnable = new Runnable() {\n            @Override\n            public void run() {\n                System.out.println(\"Anonymous class via var\");\n            }\n        };\n        runnable.run();\n\n        // With ternary expression\n        var result = count > 0 ? \"positive\" : \"non-positive\";\n        System.out.println(\"Result from var: \" + result);\n\n        // --- Invalid uses of var (all compile errors, shown as comments) ---\n\n        // var without initializer:\n        // var x;                           // ERROR: cannot infer type for local variable\n\n        // var initialized to null:\n        // var y = null;                    // ERROR: variable initializer is null\n\n        // var for fields:\n        // class Foo { var field = 42; }    // ERROR: 'var' is not allowed here\n\n        // var for method parameters:\n        // void method(var param) {}        // ERROR: 'var' is not allowed here\n\n        // var for method return type:\n        // var method() { return 42; }      // ERROR: 'var' is not allowed here\n\n        // var in lambda expressions:\n        // Predicate<String> p = (var a, var b) -> true;   // ERROR: lambda needs explicit types for all params\n        // BUT: var is allowed in lambdas with explicit types (Java 11+):\n        // Predicate<String> p = (var a) -> a.isEmpty();   // OK (Java 11+)\n\n        // var with array literal:\n        // var arr = {1, 2, 3};             // ERROR: array initializer needs explicit type\n\n        // --- When to use var ---\n        // DO use var when the right-hand side clearly indicates the type:\n        var reader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));\n\n        // DON'T use var when it hurts readability:\n        // var x = someMethod();            // Unclear what type someMethod() returns\n        // Prefer: SomeType x = someMethod();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "8-records",
+      children: "8. Records"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Records"
+      }), " (Java 16+, JEP 395) are transparent carriers for immutable data. A record is a class whose state is entirely described by its components. The compiler automatically generates the constructor, accessor methods, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "equals()"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "hashCode()"
+      }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "toString()"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "81-basic-records",
+      children: "8.1 Basic Records"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// A simple record → the entire class in one line\nrecord Point(int x, int y) {}\n\n// A record with multiple components\nrecord Person(String name, int age, String email) {}\n\npublic class BasicRecordDemo {\n    public static void main(String[] args) {\n        // --- Creating records ---\n        Point p1 = new Point(3, 4);\n        Point p2 = new Point(3, 4);\n        Point p3 = new Point(5, 6);\n\n        // --- Auto-generated accessors ---\n        System.out.println(\"p1.x(): \" + p1.x());\n        System.out.println(\"p1.y(): \" + p1.y());\n\n        // --- Auto-generated toString() ---\n        System.out.println(\"p1: \" + p1);   // Point[x=3, y=4]\n\n        // --- Auto-generated equals() and hashCode() ---\n        System.out.println(\"p1.equals(p2): \" + p1.equals(p2));  // true\n        System.out.println(\"p1.equals(p3): \" + p1.equals(p3));  // false\n        System.out.println(\"p1.hashCode(): \" + p1.hashCode());\n        System.out.println(\"p2.hashCode(): \" + p2.hashCode());  // same as p1\n\n        // --- Records work with collections ---\n        var people = new java.util.ArrayList<Person>();\n        people.add(new Person(\"Alice\", 30, \"alice@example.com\"));\n        people.add(new Person(\"Bob\", 25, \"bob@example.com\"));\n        System.out.println(\"People: \" + people);\n\n        // --- Records are immutable ---\n        // p1.x = 5;   // COMPILE ERROR: cannot assign to final field\n\n        // --- Pattern matching with records ---\n        Object obj = new Point(10, 20);\n        if (obj instanceof Point(int x, int y)) {\n            System.out.println(\"Destructured Point: x=\" + x + \", y=\" + y);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "82-records-with-custom-constructors-and-methods",
+      children: "8.2 Records with Custom Constructors and Methods"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "record Range(int start, int end) {\n\n    // --- Compact constructor (no parameter list → components are implicitly available) ---\n    public Range {\n        if (start > end) {\n            throw new IllegalArgumentException(\"Start (\" + start + \") must be <= end (\" + end + \")\");\n        }\n        // The compiler assigns this.start = start; this.end = end; automatically\n    }\n\n    // --- Canonical constructor (explicit parameter list → must assign all fields) ---\n    // public Range(int start, int end) {\n    //     if (start > end) throw new IllegalArgumentException(...);\n    //     this.start = start;\n    //     this.end = end;\n    // }\n\n    // --- Custom instance methods ---\n    public int length() {\n        return end - start;\n    }\n\n    public boolean contains(int value) {\n        return value >= start && value <= end;\n    }\n\n    public boolean overlapsWith(Range other) {\n        return this.start <= other.end && other.start <= this.end;\n    }\n\n    // --- Static factory method ---\n    public static Range of(int start, int end) {\n        return new Range(start, end);\n    }\n\n    // --- Static constant ---\n    public static final Range EMPTY = new Range(0, 0);\n}\n\npublic class CustomRecordDemo {\n    public static void main(String[] args) {\n        var r1 = new Range(10, 20);\n        var r2 = Range.of(15, 25);\n        var r3 = new Range(30, 40);\n\n        System.out.println(\"r1: \" + r1);\n        System.out.println(\"r1.length(): \" + r1.length());         // 10\n        System.out.println(\"r1.contains(15): \" + r1.contains(15));  // true\n        System.out.println(\"r1.contains(5): \" + r1.contains(5));    // false\n        System.out.println(\"r1.overlapsWith(r2): \" + r1.overlapsWith(r2));  // true\n        System.out.println(\"r1.overlapsWith(r3): \" + r1.overlapsWith(r3));  // false\n\n        // Validation\n        try {\n            var invalid = new Range(10, 5);\n        } catch (IllegalArgumentException e) {\n            System.out.println(\"Validation caught: \" + e.getMessage());\n        }\n\n        System.out.println(\"EMPTY range: \" + Range.EMPTY);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "83-records-with-generics",
+      children: "8.3 Records with Generics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "record Pair<A, B>(A first, B second) {\n\n    // Compact constructor → can add validation\n    public Pair {\n        if (first == null || second == null) {\n            throw new IllegalArgumentException(\"Neither component may be null\");\n        }\n    }\n\n    // Custom method\n    public Pair<B, A> swap() {\n        return new Pair<>(this.second, this.first);\n    }\n}\n\npublic class GenericRecordDemo {\n    public static void main(String[] args) {\n        var nameAge = new Pair<>(\"Alice\", 30);\n        System.out.println(\"Pair: \" + nameAge);\n        System.out.println(\"First: \" + nameAge.first());\n        System.out.println(\"Second: \" + nameAge.second());\n\n        var swapped = nameAge.swap();\n        System.out.println(\"Swapped: \" + swapped);\n\n        // Nested records\n        record Coordinate(double lat, double lon) {}\n\n        var location = new Pair<>(\"Home\", new Coordinate(40.7128, -74.0060));\n        System.out.println(\"Location: \" + location);\n        System.out.println(\"Lat: \" + location.second().lat());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "84-records-with-annotations-and-serialization",
+      children: "8.4 Records with Annotations and Serialization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.io.*;\n\n// Records work naturally with serialization\nrecord Config(String host, int port, boolean secure) implements Serializable {}\n\n// Annotations on components\nrecord User(\n    @jakarta.validation.constraints.NotBlank String username,\n    @jakarta.validation.constraints.Email String email\n) {}\n\npublic class RecordAdvancedDemo {\n    public static void main(String[] args) throws Exception {\n        // --- Serialization ---\n        var config = new Config(\"localhost\", 8080, true);\n\n        // Serialize\n        try (var out = new ObjectOutputStream(new FileOutputStream(\"config.ser\"))) {\n            out.writeObject(config);\n        }\n\n        // Deserialize\n        try (var in = new ObjectInputStream(new FileInputStream(\"config.ser\"))) {\n            var loaded = (Config) in.readObject();\n            System.out.println(\"Deserialized: \" + loaded);\n            System.out.println(\"Equals original: \" + config.equals(loaded));\n        }\n\n        // Clean up\n        new java.io.File(\"config.ser\").delete();\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "9-switch-expressions",
+      children: "9. Switch Expressions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Switch ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "expressions"
+      }), " (as opposed to switch ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "statements"
+      }), ") were standardized in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 14"
+      }), " (JEP 361). They introduce arrow syntax, yield, and exhaustiveness checking."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "91-arrow-syntax-and-yield",
+      children: "9.1 Arrow Syntax and Yield"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class SwitchExpressionsFullDemo {\n    public static void main(String[] args) {\n        // --- Arrow syntax (single expression per case) ---\n        enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }\n\n        Day day = Day.WEDNESDAY;\n\n        String type = switch (day) {\n            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> \"Weekday\";\n            case SATURDAY, SUNDAY -> \"Weekend\";\n        };\n        System.out.println(day + \" is a \" + type);\n\n        // --- yield for multi-line blocks ---\n        int hour = 14;\n        String greeting = switch (hour / 6) {\n            case 0 -> \"Good night\";           // 0-5\n            case 1 -> \"Good morning\";         // 6-11\n            case 2 -> \"Good afternoon\";       // 12-17\n            case 3 -> \"Good evening\";         // 18-23\n            default -> {\n                // Multi-line block with yield\n                var msg = \"Hour \" + hour + \" is out of range\";\n                System.err.println(msg);\n                yield msg;\n            }\n        };\n        System.out.println(greeting);\n\n        // --- Exhaustiveness: compiler enforces all cases covered ---\n        // For enums, every constant must be matched OR a default must be provided.\n\n        // --- null-case (Java 21) ---\n        String input = null;\n        String safe = switch (input) {\n            case null -> \"null input detected\";\n            case \"hello\" -> \"Hi there!\";\n            case \"bye\" -> \"See you!\";\n            default -> \"Unknown: \" + input;\n        };\n        System.out.println(\"null case result: \" + safe);\n\n        // --- switch with sealed types ---\n        sealed interface Animal permits Dog, Cat {}\n        record Dog(String breed) implements Animal {}\n        record Cat(boolean indoor) implements Animal {}\n\n        Animal pet = new Dog(\"Labrador\");\n        String sound = switch (pet) {\n            case Dog d  -> d.breed() + \" barks\";\n            case Cat c  -> c.indoor() ? \"Purrs\" : \"Hisses\";\n        };\n        System.out.println(sound);\n\n        // --- switch with pattern matching ---\n        Object value = 42;\n        String classified = switch (value) {\n            case Integer i && i > 0 -> \"Positive integer: \" + i;\n            case Integer i          -> \"Non-positive integer: \" + i;\n            case String s           -> \"String of length \" + s.length();\n            case null               -> \"Null value\";\n            default                 -> \"Unknown type: \" + value.getClass().getSimpleName();\n        };\n        System.out.println(\"Classified: \" + classified);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "92-exhaustive-switch-expressions",
+      children: "9.2 Exhaustive Switch Expressions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class ExhaustiveSwitchDemo {\n    public static void main(String[] args) {\n        // --- Exhaustiveness with sealed hierarchy ---\n        sealed interface Tree permits Leaf, Node {}\n        record Leaf(int value) implements Tree {}\n        record Node(Tree left, Tree right) implements Tree {}\n\n        Tree tree = new Node(new Leaf(1), new Leaf(2));\n\n        int sum = switch (tree) {\n            case Leaf(int v) -> v;\n            case Node(var l, var r) -> {\n                // Recursive evaluation (simplified)\n                yield evaluate(l) + evaluate(r);\n            }\n        };\n        System.out.println(\"Tree sum: \" + sum);\n\n        // --- Enum exhaustiveness ---\n        enum Status { PENDING, ACTIVE, SUSPENDED, CLOSED }\n\n        Status status = Status.ACTIVE;\n\n        String label = switch (status) {\n            case PENDING   -> \"Awaiting activation\";\n            case ACTIVE    -> \"Account is active\";\n            case SUSPENDED -> \"Account suspended\";\n            case CLOSED    -> \"Account closed\";\n            // No default needed → all cases covered\n        };\n        System.out.println(\"Status: \" + label);\n    }\n\n    static int evaluate(Tree t) {\n        return switch (t) {\n            case Leaf(int v) -> v;\n            case Node(var l, var r) -> evaluate(l) + evaluate(r);\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "93-switch-expressions-in-depth",
+      children: "9.3 Switch Expressions in Depth"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.time.DayOfWeek;\nimport java.time.LocalDate;\n\npublic class SwitchEverywhereDemo {\n    public static void main(String[] args) {\n        // --- Switch as a method return ---\n        DayOfWeek today = LocalDate.now().getDayOfWeek();\n        System.out.println(\"Today is \" + today + \" → \" + businessImpact(today));\n        System.out.println(\"Work hours: \" + workHours(today));\n    }\n\n    static String businessImpact(DayOfWeek day) {\n        return switch (day) {\n            case SATURDAY, SUNDAY -> \"Weekend → reduced operations\";\n            case FRIDAY           -> \"End of week → deployments discouraged\";\n            case MONDAY           -> \"Start of week → high traffic expected\";\n            case TUESDAY, WEDNESDAY, THURSDAY -> \"Standard business day\";\n        };\n    }\n\n    static String workHours(DayOfWeek day) {\n        return switch (day) {\n            case SATURDAY -> \"10:00 - 16:00\";\n            case SUNDAY   -> \"Closed\";\n            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> {\n                if (day == DayOfWeek.FRIDAY) {\n                    yield \"08:00 - 15:00 (early close)\";\n                }\n                yield \"08:00 - 18:00\";\n            }\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "10-pattern-matching",
+      children: "10. Pattern Matching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pattern matching allows you to test whether a value has a certain structure and extract its components in a single operation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "101-instanceof-pattern-matching",
+      children: "10.1 instanceof Pattern Matching"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Standardized in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 16"
+      }), " (JEP 394)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class InstanceofPatternDemo {\n    public static void main(String[] args) {\n        // --- Before pattern matching (Java 15 and earlier) ---\n        Object obj = \"Hello, Java\";\n        if (obj instanceof String) {\n            String s = (String) obj;        // explicit cast required\n            System.out.println(\"Old way: \" + s.toUpperCase());\n        }\n\n        // --- With pattern matching (Java 16+) ---\n        if (obj instanceof String s) {\n            // s is automatically in scope and already cast\n            System.out.println(\"Pattern matching: \" + s.toUpperCase());\n        }\n\n        // --- Combined with boolean operators ---\n        Object value = \"Hello\";\n\n        if (value instanceof String s && s.length() > 3) {\n            System.out.println(\"Long string: \" + s);\n        }\n\n        // Scope of the pattern variable\n        // s is in scope in the true block of the if AND in any following && conditions\n\n        // --- Practical example: simplified equals() ---\n        record Name(String first, String last) {}\n\n        var name1 = new Name(\"Alice\", \"Smith\");\n        var name2 = new Name(\"Alice\", \"Smith\");\n\n        System.out.println(\"Names equal: \" + name1.equals(name2));\n\n        // --- Nested pattern matching ---\n        Object data = java.util.List.of(\"hello\", 42, 3.14);\n\n        for (Object item : (java.util.List<?>) data) {\n            if (item instanceof String s) {\n                System.out.println(\"String: \" + s + \" (length \" + s.length() + \")\");\n            } else if (item instanceof Integer i) {\n                System.out.println(\"Integer: \" + i + \" (squared: \" + (i * i) + \")\");\n            } else if (item instanceof Double d) {\n                System.out.println(\"Double: \" + d);\n            } else {\n                System.out.println(\"Unknown type: \" + item);\n            }\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "102-switch-pattern-matching",
+      children: "10.2 Switch Pattern Matching"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Standardized in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 21"
+      }), " (JEP 441)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class SwitchPatternMatchingDemo {\n    public static void main(String[] args) {\n        System.out.println(classify(42));\n        System.out.println(classify(\"Hello, World!\"));\n        System.out.println(classify(3.14159));\n        System.out.println(classify(java.util.List.of(1, 2, 3)));\n        System.out.println(classify(null));\n        System.out.println(classify(new int[]{1, 2, 3}));\n    }\n\n    static String classify(Object obj) {\n        return switch (obj) {\n            case null              -> \"null value\";\n            case Integer i         -> \"Integer: \" + i + \" (parity: \" + (i % 2 == 0 ? \"even\" : \"odd\") + \")\";\n            case String s          -> \"String: \\\"\" + s + \"\\\" (length: \" + s.length() + \")\";\n            case Double d          -> \"Double: \" + d;\n            case Float f           -> \"Float: \" + f;\n            case Boolean b         -> \"Boolean: \" + b;\n            case java.util.List<?> list -> \"List with \" + list.size() + \" elements\";\n            case int[] arr         -> \"int array of length \" + arr.length;\n            default                -> \"Unknown type: \" + obj.getClass().getSimpleName();\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "103-guarded-patterns",
+      children: "10.3 Guarded Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class GuardedPatternsDemo {\n    public static void main(String[] args) {\n        System.out.println(describe(5));\n        System.out.println(describe(-3));\n        System.out.println(describe(0));\n        System.out.println(describe(\"Hello\"));\n        System.out.println(describe(\"\"));\n        System.out.println(describe(java.util.List.of(1, 2, 3)));\n        System.out.println(describe(java.util.List.of()));\n        System.out.println(describe(null));\n        System.out.println(describe(new java.util.HashMap<String, Integer>()));\n    }\n\n    static String describe(Object obj) {\n        return switch (obj) {\n            case null                          -> \"Null value\";\n            case String s && s.isEmpty()       -> \"Empty string\";\n            case String s && s.length() > 10   -> \"Long string: \\\"\" + s + \"\\\"\";\n            case String s                      -> \"Short string: \\\"\" + s + \"\\\"\";\n            case Integer i && i > 0            -> \"Positive number: \" + i;\n            case Integer i && i == 0           -> \"Zero\";\n            case Integer i                     -> \"Negative number: \" + i;\n            case java.util.Collection<?> c && c.isEmpty() -> \"Empty collection\";\n            case java.util.Collection<?> c && c.size() > 5 -> \"Large collection (\" + c.size() + \" elements)\";\n            case java.util.Collection<?> c     -> \"Collection with \" + c.size() + \" elements\";\n            case int[] arr && arr.length == 0  -> \"Empty array\";\n            case int[] arr                     -> \"Array with \" + arr.length + \" elements\";\n            default                            -> \"Other: \" + obj.getClass().getSimpleName();\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "104-record-patterns",
+      children: "10.4 Record Patterns"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Standardized in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 21"
+      }), " (JEP 440)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class RecordPatternsDemo {\n    public static void main(String[] args) {\n        // --- Simple record pattern ---\n        record Point(int x, int y) {}\n\n        Object obj = new Point(10, 20);\n\n        if (obj instanceof Point(int x, int y)) {\n            System.out.println(\"Point at (\" + x + \", \" + y + \")\");\n        }\n\n        // --- Nested record patterns ---\n        record Line(Point start, Point end) {}\n\n        var line = new Line(new Point(0, 0), new Point(10, 10));\n\n        if (line instanceof Line(Point(int x1, int y1), Point(int x2, int y2))) {\n            double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));\n            System.out.println(\"Line from (\" + x1 + \",\" + y1 + \") to (\" + x2 + \",\" + y2 + \")\");\n            System.out.println(\"Distance: \" + distance);\n        }\n\n        // --- Record patterns in switch ---\n        sealed interface Shape permits Circle, Rectangle, Triangle {}\n        record Circle(double radius) implements Shape {}\n        record Rectangle(double width, double height) implements Shape {}\n        record Triangle(double base, double height) implements Shape {}\n\n        Shape[] shapes = {\n            new Circle(5.0),\n            new Rectangle(4.0, 6.0),\n            new Triangle(3.0, 8.0)\n        };\n\n        for (Shape shape : shapes) {\n            double area = switch (shape) {\n                case Circle(double r)            -> Math.PI * r * r;\n                case Rectangle(double w, double h) -> w * h;\n                case Triangle(double b, double h)  -> 0.5 * b * h;\n            };\n            System.out.printf(\"%s area: %.2f%n\", shape.getClass().getSimpleName(), area);\n        }\n\n        // --- Generic record patterns ---\n        record Box<T>(T content) {}\n\n        var stringBox = new Box<>(\"Hello\");\n        var intBox = new Box<>(42);\n\n        if (stringBox instanceof Box(String content)) {\n            System.out.println(\"String box contains: \" + content);\n        }\n        if (intBox instanceof Box(Integer content)) {\n            System.out.println(\"Integer box contains: \" + content);\n        }\n\n        // --- Record patterns with guards ---\n        Object shape = new Circle(0.0);\n        String result = switch (shape) {\n            case Circle(double r) && r == 0      -> \"Degenerate circle (point)\";\n            case Circle(double r) && r < 0       -> \"Invalid circle\";\n            case Circle(double r)                -> \"Circle with radius \" + r;\n            case Rectangle(double w, double h) && w == h -> \"Square \" + w + \" x \" + h;\n            case Rectangle(double w, double h)   -> \"Rectangle \" + w + \" x \" + h\";\n            default                              -> \"Unknown shape\";\n        };\n        System.out.println(\"Shape result: \" + result);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "105-practical-pattern-matching-examples",
+      children: "10.5 Practical Pattern Matching Examples"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "import java.util.*;\n\npublic class PatternMatchingInPractice {\n    public static void main(String[] args) {\n        // --- JSON-like tree evaluation ---\n        sealed interface JsonNode permits JsonObject, JsonArray, JsonString, JsonNumber, JsonNull {}\n\n        record JsonObject(Map<String, JsonNode> fields) implements JsonNode {}\n        record JsonArray(List<JsonNode> elements) implements JsonNode {}\n        record JsonString(String value) implements JsonNode {}\n        record JsonNumber(double value) implements JsonNode {}\n        record JsonNull() implements JsonNode {}\n\n        JsonNode data = new JsonObject(new LinkedHashMap<>(Map.of(\n            \"name\", new JsonString(\"Alice\"),\n            \"age\", new JsonNumber(30),\n            \"active\", new JsonNull(),\n            \"tags\", new JsonArray(List.of(new JsonString(\"admin\"), new JsonString(\"user\")))\n        )));\n\n        System.out.println(\"JSON tree evaluation:\");\n        printJson(data, 0);\n\n        // --- Expression evaluator ---\n        sealed interface Expr permits Const, Add, Multiply {}\n        record Const(int value) implements Expr {}\n        record Add(Expr left, Expr right) implements Expr {}\n        record Multiply(Expr left, Expr right) implements Expr {}\n\n        // Build expression: (3 + 4) * 5\n        Expr expr = new Multiply(new Add(new Const(3), new Const(4)), new Const(5));\n        System.out.println(\"\\nExpression (3+4)*5 = \" + evaluate(expr));\n\n        // --- Optional unwrapping with pattern matching ---\n        Optional<String> maybeName = Optional.of(\"Alice\");\n        if (maybeName instanceof Optional<String> opt && opt.isPresent()) {\n            System.out.println(\"Name present: \" + opt.get());\n        }\n\n        // --- Map destructuring ---\n        var config = Map.of(\n            \"host\", \"localhost\",\n            \"port\", 8080,\n            \"debug\", true\n        );\n\n        // Without pattern matching (since Map.Entry doesn't support record patterns)\n        for (var entry : config.entrySet()) {\n            System.out.println(\"  \" + entry.getKey() + \" = \" + entry.getValue());\n        }\n    }\n\n    static void printJson(JsonNode node, int indent) {\n        String prefix = \"  \".repeat(indent);\n        switch (node) {\n            case JsonObject(var fields) -> {\n                System.out.println(prefix + \"{\");\n                for (var entry : fields.entrySet()) {\n                    System.out.print(prefix + \"  \\\"\" + entry.getKey() + \"\\\": \");\n                    printJson(entry.getValue(), indent + 1);\n                }\n                System.out.println(prefix + \"}\");\n            }\n            case JsonArray(var elements) -> {\n                System.out.println(prefix + \"[\");\n                for (var elem : elements) {\n                    System.out.print(prefix + \"  \");\n                    printJson(elem, indent + 1);\n                }\n                System.out.println(prefix + \"]\");\n            }\n            case JsonString(var v) -> System.out.println(\"\\\"\" + v + \"\\\"\");\n            case JsonNumber(var v) -> System.out.println(v);\n            case JsonNull() -> System.out.println(\"null\");\n        }\n    }\n\n    static int evaluate(Expr expr) {\n        return switch (expr) {\n            case Const(var v)                  -> v;\n            case Add(var l, var r)             -> evaluate(l) + evaluate(r);\n            case Multiply(var l, var r)        -> evaluate(l) * evaluate(r);\n        };\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-text-blocks",
+      children: "11. Text Blocks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Text blocks were introduced as a preview in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 13"
+      }), " and standardized in ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 15"
+      }), " (JEP 378). They allow multi-line string literals without the clutter of escaped newlines and concatenation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "111-indentation-algorithm",
+      children: "11.1 Indentation Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class TextBlockIndentationDemo {\n    public static void main(String[] args) {\n        // The closing \"\"\" determines the common indentation.\n        // Java strips the common leading whitespace from all lines.\n\n        String example = \"\"\"\n                Line 1: indented 16 spaces\n                    Line 2: indented 20 spaces\n                Line 3: back to 16 spaces\n            \"\"\";  // closing \"\"\" at 12 spaces → common indent is 12\n\n        for (String line : example.split(\"\\n\")) {\n            System.out.println(\"'\" + line + \"'\");\n        }\n        System.out.println(\"---\");\n\n        // --- stripIndent() ---\n        String raw = \"    Hello\\n    World\\n\";\n        String stripped = raw.stripIndent();  // removes common leading whitespace\n        System.out.println(\"stripIndent: '\" + stripped.replace(\"\\n\", \"\\\\n\") + \"'\");\n\n        // --- translateEscapes() ---\n        String raw2 = \"Hello\\\\nWorld\\\\tTab\";\n        String translated = raw2.translateEscapes();  // \\n becomes newline, \\t becomes tab\n        System.out.println(\"translateEscapes: \" + translated);\n\n        // --- formatted() with text blocks ---\n        String template = \"\"\"\n            Dear %s,\n            \n            Your order #%d has been %s.\n            \n            Thank you for your business.\n            \"\"\";\n\n        String email = template.formatted(\"Alice\", 12345, \"shipped\");\n        System.out.println(email);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "112-text-block-usage-patterns",
+      children: "11.2 Text Block Usage Patterns"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class TextBlockPatternsDemo {\n    public static void main(String[] args) {\n        // --- SQL with parameters ---\n        String baseQuery = \"\"\"\n            SELECT id, name, email, created_at\n            FROM users\n            WHERE status = '%s'\n              AND created_at >= '%s'\n            ORDER BY created_at DESC\n            LIMIT %d\n            \"\"\";\n\n        String query = baseQuery.formatted(\"ACTIVE\", \"2024-01-01\", 100);\n        System.out.println(\"SQL query:\");\n        System.out.println(query);\n\n        // --- XML/HTML generation ---\n        String html = \"\"\"\n            <!DOCTYPE html>\n            <html lang=\"en\">\n            <head>\n                <meta charset=\"UTF-8\">\n                <title>%s</title>\n            </head>\n            <body>\n                <h1>%s</h1>\n                <p>%s</p>\n            </body>\n            </html>\n            \"\"\".formatted(\"Java Text Blocks\", \"Hello!\", \"This is generated with a text block.\");\n\n        System.out.println(\"HTML:\");\n        System.out.println(html);\n\n        // --- YAML or properties ---\n        String yaml = \"\"\"\n            server:\n              port: %d\n              host: \"%s\"\n            database:\n              url: \"%s\"\n              pool:\n                min: %d\n                max: %d\n            \"\"\".formatted(8080, \"localhost\", \"jdbc:postgresql://localhost/db\", 2, 10);\n\n        System.out.println(\"YAML config:\");\n        System.out.println(yaml);\n\n        // --- Regex patterns (no double escaping needed) ---\n        String regex = \"\"\"\n            ^                # start of line\n            [A-Za-z0-9._%%+-]+  # username\n            @                # literal @\n            [A-Za-z0-9.-]+  # domain name\n            \\\\.[A-Za-z]{2,}  # TLD\n            $                # end of line\n            \"\"\";\n        System.out.println(\"Regex pattern:\");\n        System.out.println(regex);\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-main-method-evolution",
+      children: "12. Main Method Evolution"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The traditional ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "public static void main(String[] args)"
+      }), " signature has been a hallmark of Java since version 1.0. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Java 21"
+      }), " introduces a simplified main method as a preview feature (JEP 445)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "121-the-traditional-main-method",
+      children: "12.1 The Traditional Main Method"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class TraditionalMain {\n    // The standard signature since Java 1.0\n    public static void main(String[] args) {\n        System.out.println(\"Traditional main method:\");\n        System.out.println(\"  Number of arguments: \" + args.length);\n\n        if (args.length > 0) {\n            System.out.println(\"  First argument: \" + args[0]);\n        }\n\n        // --- Anatomy of the signature ---\n        // public:  JVM needs to call this method from outside the class\n        // static:  no instance exists yet when the JVM starts\n        // void:    the JVM does not expect a return value\n        // main:    the JVM looks for this exact method name\n        // String[] args: command-line arguments passed by the OS/JVM\n\n        System.out.println(\"Hello from Java \" + Runtime.version());\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "122-the-modern-main-method-java-21-preview",
+      children: "12.2 The Modern Main Method (Java 21 Preview)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Java 21 introduces ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "unnamed classes"
+      }), " and ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "instance main methods"
+      }), ", allowing a much simpler entry point."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// --- This is an UNNAMED CLASS (no class declaration needed) ---\n// Save this in a file called HelloModern.java and compile with:\n//   javac --release 21 --enable-preview HelloModern.java\n//   java --enable-preview HelloModern\n\n// Unnamed class → no explicit class declaration\n\nvoid main() {\n    System.out.println(\"Hello from the modern main method!\");\n    System.out.println(\"No 'public static void' boilerplate needed.\");\n    System.out.println(\"Java version: \" + Runtime.version());\n}\n\n// --- Equivalent traditional form ---\n// The compiler implicitly wraps the above in:\n//\n// final class HelloModern {\n//     void main() {\n//         System.out.println(\"...\");\n//     }\n// }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "123-multiple-main-method-styles",
+      children: "12.3 Multiple Main Method Styles"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "// Demonstrating all valid main method signatures\n// (In real code, only use one per class)\n\npublic class MainStyles {\n    // --- Traditional ---\n    public static void main(String[] args) {\n        System.out.println(\"Hello from Java \" + Runtime.version());\n\n        // --- Varargs instead of array (equivalent to String[]) ---\n        // public static void main(String... args) is also valid\n\n        // --- Modern equivalent (Java 21 preview) ---\n        // void main() { ... }                    // no args\n        // void main(String[] args) { ... }       // with args (instance method)\n        // void main(String... args) { ... }      // with varargs\n\n        // --- The three pillars of the modern main ---\n        System.out.println(\"\"\"\n            The three changes (JEP 445):\n            1. Instance main → no 'static' required\n            2. Simplified signature → no 'public' required\n            3. Unnamed classes → no enclosing class declaration\n            \"\"\");\n    }\n\n    // --- Passing arguments example ---\n    public static void demonstrateArgs(String[] args) {\n        if (args.length == 0) {\n            System.out.println(\"No arguments provided.\");\n            return;\n        }\n\n        System.out.println(\"Arguments received:\");\n        for (int i = 0; i < args.length; i++) {\n            System.out.println(\"  [\" + i + \"]: \" + args[i]);\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "124-running-java-programs",
+      children: "12.4 Running Java Programs"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-java",
+        children: "public class RunningJavaDemo {\n    public static void main(String[] args) {\n        System.out.println(\"=== Running Java Programs ===\");\n        System.out.println(\"Compile:       javac MyFile.java\");\n        System.out.println(\"Run:           java MyFile\");\n        System.out.println(\"With args:     java MyFile arg1 arg2 arg3\");\n        System.out.println(\"Single step:   java MyFile.java (Java 11+)\");\n        System.out.println(\"Enable preview: java --enable-preview MyFile\");\n        System.out.println(\"Version:       java --version\");\n        System.out.println();\n\n        // Demonstrate argument handling\n        System.out.println(\"This program was started with \" + args.length + \" argument(s).\");\n        for (int i = 0; i < args.length; i++) {\n            System.out.println(\"  args[\" + i + \"] = \\\"\" + args[i] + \"\\\"\");\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This chapter covered the foundational syntax and features of Java 21 that every developer must master before working with Spring Boot:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Java Platform"
+        }), ": Java was created by James Gosling at Sun Microsystems. The JDK contains the JRE plus development tools. The JVM executes bytecode with JIT compilation. Major LTS releases are Java 8, 11, 17, and 21."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Primitive Types"
+        }), ": Eight types (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "byte"
+        }), " through ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "boolean"
+        }), ") with widening (implicit) and narrowing (explicit) conversions. Autoboxing/unboxing bridges primitives and their wrapper classes, but introduces null-safety and performance pitfalls."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Operators"
+        }), ": Arithmetic, relational, logical, bitwise, instanceof, and ternary operators. Bitwise operators work on integer bits; instanceof checks type compatibility."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Control Flow"
+        }), ": if/else, switch expressions (arrow syntax with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "->"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "yield"
+        }), "), for, while, do-while, and labeled break/continue for nested loop control."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Arrays"
+        }), ": Fixed-length containers with literal and explicit initialization syntax. The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "java.util.Arrays"
+        }), " utility provides sorting, searching, copying, and filling operations. Multidimensional arrays can be rectangular or ragged."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Strings"
+        }), ": Immutable objects backed by a string pool for efficient sharing. ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "StringBuilder"
+        }), " (non-synchronized, fast) and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "StringBuffer"
+        }), " (thread-safe) provide mutable alternatives for string construction."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "var Keyword"
+        }), ": Local variable type inference (Java 10+) reduces boilerplate. Restricted to local variables with non-null initializers."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Records"
+        }), ": Immutable data carriers with automatically generated constructor, accessors, ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "equals()"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "hashCode()"
+        }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "toString()"
+        }), ". Support compact constructors, custom methods, generics, and serialization."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Switch Expressions"
+        }), ": Arrow syntax with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "yield"
+        }), " for multi-line blocks. Compiler-enforced exhaustiveness for enums and sealed types. Null-case support in Java 21."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pattern Matching"
+        }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "instanceof"
+        }), " pattern matching (Java 16+) eliminates explicit casts. Switch pattern matching (Java 21+) allows type dispatch with patterns. Guarded patterns add conditional filtering. Record patterns destructure record components, including nested patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Text Blocks"
+        }), ": Multi-line string literals delimited by ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "\"\"\""
+        }), ". Automatic indentation stripping via ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "stripIndent()"
+        }), ". ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "formatted()"
+        }), " provides parameterized templates."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Main Method Evolution"
+        }), ": The traditional ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "public static void main(String[])"
+        }), " can be simplified to a plain ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "void main()"
+        }), " instance method in unnamed classes (Java 21 preview)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pro Tip:"
+        }), " Type every code example yourself → muscle memory for Java syntax is built through active practice, not passive reading."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Remember:"
+        }), " Understanding the \"why\" behind Java language features is more important than memorizing syntax."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Concept"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Distinction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Use Case"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Primitives"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Value types stored on stack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed size, pass by value"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Performance-critical code"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Reference Types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Object instances on heap"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Variable size, pass by reference"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex data structures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Immutable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot change after creation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread-safe, cacheable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DTOs, keys, configuration"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference",
+      children: "Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Category"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Points"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Common Pitfalls"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Syntax"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Java is case-sensitive, class-based, statically typed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Missing semicolons, case errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Types"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "8 primitives, object wrappers, String"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Autoboxing overhead in loops"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Control Flow"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "if/else, switch (arrow/yield), loops, break/continue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Switch fall-through without break"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Web Apps"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Microservices"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Batch"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Mobile"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Records"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DTOs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API contracts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data pipelines"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data classes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Pattern Matching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type-safe visitors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Request routing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Event classification"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State handling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Switch Expressions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Request dispatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error code mapping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Status transitions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Navigation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which is NOT a valid Java primitive type?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) int"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) boolean"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) string"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) char"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**C) string.** String is a reference type (java.lang.String), not a primitive.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["What is the default value of a boolean field in a class?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) true"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) false"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) null"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) undefined"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) false.** Class fields are initialized to default values.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Which keyword prevents a method from being overridden?\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A) static"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "B) final"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "C) private"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "D) abstract"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Answer</summary>\n**B) final.** A final method cannot be overridden by subclasses.\n"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the difference between the JDK, JRE, and JVM? Why did Oracle stop shipping a separate JRE after Java 9?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Describe the widening and narrowing conversion paths. Why does ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "(int) 3.14"
+          }), " truncate instead of rounding?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What is the output of ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "10 / 3"
+          }), " in Java? What is the output of ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "10.0 / 3"
+          }), "? Explain why they differ."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Explain the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "&&"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "&"
+          }), " in Java. When would you use each?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Why does ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "new String(\"hello\") == new String(\"hello\")"
+          }), " return ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "false"
+          }), ", but ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "\"hello\" == \"hello\""
+          }), " returns ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "true"
+          }), "?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["When should you use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "StringBuilder"
+          }), " instead of String concatenation with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "+"
+          }), "? Provide a concrete example where the difference matters."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["What are the restrictions on the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "var"
+          }), " keyword? Why can't it be used for fields, method parameters, or without an initializer?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["In a switch expression, what is the difference between ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "->"
+          }), " (arrow) and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ":"
+          }), " (colon) syntax? When must you use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "yield"
+          }), "?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is a guarded pattern in the context of pattern matching for switch? How does the order of cases affect the result?"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "A record automatically generates which methods? Can a record have additional methods or validation logic?"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Temperature Converter"
+          }), ": Write a program that converts temperatures between Celsius, Fahrenheit, and Kelvin. Use a record ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Temperature(double value, String scale)"
+          }), " to represent temperatures. Implement ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "convertTo(String targetScale)"
+          }), " using a switch expression. Handle absolute-zero constraints with a compact constructor."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Matrix Operations"
+          }), ": Create a program that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Generates a 4x4 matrix of random integers between 1 and 100"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Prints the matrix in grid format"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Computes and prints the sum of each row and each column"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Sorts each row in ascending order using ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Arrays.sort()"
+            })]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Finds the maximum value in the entire matrix using nested loops with labeled break"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "All operations must be implemented as static methods"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "String Analyzer"
+          }), ": Write a program that:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Accepts a string input (hard-coded or via command-line args)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Counts vowels, consonants, digits, and whitespace characters"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Reverses the string using StringBuilder"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Checks if the string is a palindrome (ignoring case and non-alphanumeric characters)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Converts the string to title case (first letter of each word capitalized)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "All methods must use complete, compilable code with proper error handling"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Shape Classifier"
+          }), ": Implement a sealed interface ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Shape"
+          }), " with records ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Circle"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Rectangle"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Triangle"
+          }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Square"
+          }), " (where Square extends Rectangle). Write a method that uses switch pattern matching with guards to:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Calculate the area of each shape"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Identify squares (equal width and height in a Rectangle)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Detect degenerate shapes (zero or negative dimensions via compact constructors)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Use record patterns to destructure and compute"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Student Gradebook"
+          }), ": Define a record ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Student(String name, int id, List<Integer> grades)"
+          }), ". Implement:"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A compact constructor that validates grades are between 0 and 100 and id is positive"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Methods to compute average, minimum, and maximum grade"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A method that returns a letter grade based on the average using a switch expression"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "A method that uses a text block to format a grade report string"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Store multiple students in an array and print formatted reports"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problems",
+      children: "Challenge Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "JSON Query Engine"
+          }), ": Build a mini JSON query engine using records and pattern matching."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Requirements:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Define a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "JsonNode"
+            }), " sealed interface with implementations for object, array, string, number, boolean, and null"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "JsonObject"
+            }), " should store fields as a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Map<String, JsonNode>"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "JsonArray"
+            }), " should store elements as a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "List<JsonNode>"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Implement a method ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "query(String path)"
+            }), " that traverses the tree using a dot-separated path (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "\"users.0.name\""
+            }), ")"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Use a switch expression with pattern matching in the query method"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["The path parser must handle array indices (e.g., ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".0."
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".1."
+            }), ")"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Provide a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "prettyPrint()"
+            }), " method using text blocks or StringBuilder"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Test with a nested JSON structure representing a university course catalog"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Example input structure:"
+        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            className: "language-json",
+            children: "{\n  \"course\": {\n    \"title\": \"Java & Spring Boot\",\n    \"students\": [\n      {\"name\": \"Alice\", \"grade\": 92},\n      {\"name\": \"Bob\", \"grade\": 78}\n    ]\n  }\n}\n"
+          })
+        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Expected query behavior:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "\"course.title\""
+            }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "JsonString(\"Java & Spring Boot\")"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "\"course.students.0.name\""
+            }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "JsonString(\"Alice\")"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "\"course.students.1.grade\""
+            }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "JsonNumber(78.0)"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Expression Evaluator with Variables"
+          }), ": Extend the expression evaluator from the chapter to support variables and simplification."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Requirements:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Define a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "sealed interface Expr"
+            }), " with at least: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Const"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Variable"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Add"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Subtract"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Multiply"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Divide"
+            }), ", and ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Negate"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "Variable"
+            }), " stores a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "String name"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Implement ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "evaluate(Expr expr, Map<String, Integer> vars)"
+            }), " that resolves variables from the map"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Implement ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "simplify(Expr expr)"
+            }), " that applies constant folding:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "Add(Const(3), Const(4))"
+                }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+                  children: "Const(7)"
+                })]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "Multiply(Const(1), x)"
+                }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+                  children: "x"
+                })]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "Add(Const(0), x)"
+                }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+                  children: "x"
+                })]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "Multiply(Const(0), x)"
+                }), " → ", (0,jsx_runtime.jsx)(_components.code, {
+                  children: "Const(0)"
+                })]
+              }), "\n"]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Implement ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "toPrettyString(Expr expr)"
+            }), " returning human-readable form"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Implement ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "derivative(Expr expr, String variable)"
+            }), " returning the derivative as a new expression"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Use pattern matching with switch expressions throughout"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Test with expressions like ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "3*x + 5*x^2"
+            }), " (use Multiply for powers)"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Generic Record Graph"
+          }), ": Build a generic graph data structure using records, generics, and pattern matching."]
+        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Requirements:"
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Define ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "record Graph<T>(Set<Node<T>> nodes, Set<Edge<T>> edges)"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Define ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "record Node<T>(T value)"
+            }), " that implements ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Comparable"
+            }), " based on ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "toString()"
+            }), " for sorting"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Define ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "record Edge<T>(Node<T> source, Node<T> target, int weight)"
+            })]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Implement methods:\n", (0,jsx_runtime.jsxs)(_components.ul, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "addNode(T value)"
+                }), " → adds a node, returns it"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "addEdge(T from, T to, int weight)"
+                }), " → adds a weighted edge"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "List<Node<T>> shortestPath(T from, T to)"
+                }), " → Dijkstra's algorithm"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "boolean hasCycle()"
+                }), " → cycle detection in directed graph"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "Graph<T> subgraph(Set<T> keepValues)"
+                }), " → filter to a subset of nodes"]
+              }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "String toDOT()"
+                }), " → export to Graphviz DOT format using a text block template"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Use records with compact constructors for validation (no negative weights)"
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Use pattern matching in any conditional logic"
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "shortestPath"
+            }), " method must use a ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "record DistAndPath(int distance, List<Node<T>> path)"
+            }), " as an intermediate structure"]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Test with a graph of cities (String values) and roads (integer distances)"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

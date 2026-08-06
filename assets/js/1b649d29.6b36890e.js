@@ -1,0 +1,760 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[77428],{
+
+/***/ 36163
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_agent_engineer_13_advanced_vector_search_md_1b6_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-agent-engineer-13-advanced-vector-search-md-1b6.json
+const site_docs_courses_ai_agent_engineer_13_advanced_vector_search_md_1b6_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-agent-engineer/13-advanced-vector-search","title":"Chapter 13 — Advanced Vector Search & RAG","description":"Duration: 2 weeks, ~22 hours","source":"@site/docs/courses/ai-agent-engineer/13-advanced-vector-search.md","sourceDirName":"courses/ai-agent-engineer","slug":"/ai-agent-engineer/13-advanced-vector-search","permalink":"/ai-engineering-journey/ai-agent-engineer/13-advanced-vector-search","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":14,"frontMatter":{"id":"13-advanced-vector-search","slug":"/ai-agent-engineer/13-advanced-vector-search","title":"Chapter 13 — Advanced Vector Search & RAG","sidebar_label":"Chapter 13 — Advanced Vector Search & RAG","sidebar_position":14},"sidebar":"coursesSidebar","previous":{"title":"Chapter 12 — AI Observability & Debugging","permalink":"/ai-engineering-journey/ai-agent-engineer/12-ai-observability-debugging"},"next":{"title":"IBPS SO IT Officer Scale 1 — Complete Preparation Guide","permalink":"/ai-engineering-journey/government-pyqs/index"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-agent-engineer/13-advanced-vector-search.md
+
+
+const frontMatter = {
+	id: '13-advanced-vector-search',
+	slug: '/ai-agent-engineer/13-advanced-vector-search',
+	title: 'Chapter 13 — Advanced Vector Search & RAG',
+	sidebar_label: 'Chapter 13 — Advanced Vector Search & RAG',
+	sidebar_position: 14
+};
+const contentTitle = 'Chapter 13 — Advanced Vector Search & RAG';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Topic Table",
+  "id": "topic-table",
+  "level": 2
+}, {
+  "value": "13.1 Hybrid Search",
+  "id": "131-hybrid-search",
+  "level": 2
+}, {
+  "value": "BM25 + Dense Vector + Sparse Vector",
+  "id": "bm25--dense-vector--sparse-vector",
+  "level": 3
+}, {
+  "value": "13.2 Multi-Vector Retrieval",
+  "id": "132-multi-vector-retrieval",
+  "level": 2
+}, {
+  "value": "ColBERT-Style Late Interaction",
+  "id": "colbert-style-late-interaction",
+  "level": 3
+}, {
+  "value": "13.3 Advanced Retrieval Strategies",
+  "id": "133-advanced-retrieval-strategies",
+  "level": 2
+}, {
+  "value": "HyDE (Hypothetical Document Embedding)",
+  "id": "hyde-hypothetical-document-embedding",
+  "level": 3
+}, {
+  "value": "13.4 Re-Ranking Deep-Dive",
+  "id": "134-re-ranking-deep-dive",
+  "level": 2
+}, {
+  "value": "Cross-Encoder Re-Ranker",
+  "id": "cross-encoder-re-ranker",
+  "level": 3
+}, {
+  "value": "13.5 HNSW Index Tuning",
+  "id": "135-hnsw-index-tuning",
+  "level": 2
+}, {
+  "value": "13.6 Metadata Filtering &amp; Hybrid Queries",
+  "id": "136-metadata-filtering--hybrid-queries",
+  "level": 2
+}, {
+  "value": "13.7 Vector Quantization",
+  "id": "137-vector-quantization",
+  "level": 2
+}, {
+  "value": "13.8 Multi-Modal RAG",
+  "id": "138-multi-modal-rag",
+  "level": 2
+}, {
+  "value": "13.9 Graph RAG",
+  "id": "139-graph-rag",
+  "level": 2
+}, {
+  "value": "13.10 Streaming Ingestion &amp; Real-Time Updates",
+  "id": "1310-streaming-ingestion--real-time-updates",
+  "level": 2
+}, {
+  "value": "13.11 Vector DB Comparison",
+  "id": "1311-vector-db-comparison",
+  "level": 2
+}, {
+  "value": "Migration Strategy",
+  "id": "migration-strategy",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    hr: "hr",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-13--advanced-vector-search--rag",
+        children: "Chapter 13 — Advanced Vector Search & RAG"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Duration:"
+      }), " 2 weeks, ~22 hours\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Goal:"
+      }), " Master advanced retrieval — hybrid search, multi-vector retrieval, re-ranking architectures, and production-scale vector database tuning. Move beyond basic cosine similarity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "topic-table",
+      children: "Topic Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Subtopic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hours"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Done checkpoint"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hybrid search (dense + sparse + BM25)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement a hybrid search that combines 3 retrieval methods with RRF"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-vector retrieval (ColBERT, late interaction)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain why multi-vector beats single-vector for fine-grained relevance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced retrieval strategies (HyDE, query rewriting, multi-query)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement query expansion that improves recall by 15% on your eval set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Re-ranking deep-dive"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Deploy a cross-encoder re-ranker and measure NDCG improvement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HNSW index tuning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tune HNSW parameters (M, efConstruction, efSearch) for your dataset"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Metadata filtering & hybrid queries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build a filtered search that combines vector distance with metadata constraints"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector quantization (PQ, scalar quantization)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement quantization to reduce memory by 75% with minimal accuracy loss"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-modal RAG (text + image + tables)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design a RAG pipeline that searches across text, images, and structured data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Graph RAG (knowledge graphs + vector search)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Combine vector similarity with knowledge graph traversal"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Streaming ingestion & real-time updates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build a real-time ingestion pipeline that indexes documents within 5 seconds"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vector DB comparison & migration strategies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Compare ChromaDB, Qdrant, pgvector, Pinecone for your use case"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "131-hybrid-search",
+      children: "13.1 Hybrid Search"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "bm25--dense-vector--sparse-vector",
+      children: "BM25 + Dense Vector + Sparse Vector"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import math\nfrom collections import Counter\nimport numpy as np\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\nclass BM25:\n    \"\"\"Okapi BM25 implementation for sparse retrieval.\"\"\"\n\n    def __init__(self, k1: float = 1.5, b: float = 0.75):\n        self.k1 = k1\n        self.b = b\n        self.documents: list[str] = []\n        self.doc_lengths: list[int] = []\n        self.avg_doc_length: float = 0\n        self.idf: dict[str, float] = {}\n        self.doc_freq: dict[str, int] = {}\n        self.total_docs: int = 0\n\n    def fit(self, documents: list[str]):\n        self.documents = documents\n        self.doc_lengths = [len(doc.split()) for doc in documents]\n        self.avg_doc_length = np.mean(self.doc_lengths)\n        self.total_docs = len(documents)\n\n        # Term frequency across documents\n        for doc in documents:\n            terms = set(doc.lower().split())\n            for term in terms:\n                self.doc_freq[term] = self.doc_freq.get(term, 0) + 1\n\n        # IDF calculation\n        for term, doc_count in self.doc_freq.items():\n            self.idf[term] = math.log(1 + (self.total_docs - doc_count + 0.5) / (doc_count + 0.5))\n\n    def score(self, query: str, doc_index: int) -> float:\n        \"\"\"Calculate BM25 score for a query-document pair.\"\"\"\n        query_terms = query.lower().split()\n        doc = self.documents[doc_index]\n        doc_terms = doc.lower().split()\n        doc_length = self.doc_lengths[doc_index]\n\n        score = 0.0\n        term_counts = Counter(doc_terms)\n\n        for term in set(query_terms):\n            if term in self.idf:\n                tf = term_counts.get(term, 0)\n                idf = self.idf[term]\n                numerator = tf * (self.k1 + 1)\n                denominator = tf + self.k1 * (1 - self.b + self.b * doc_length / self.avg_doc_length)\n                score += idf * (numerator / denominator)\n\n        return score\n\n    def search(self, query: str, top_k: int = 10) -> list[tuple[int, float]]:\n        scores = [(i, self.score(query, i)) for i in range(len(self.documents))]\n        scores.sort(key=lambda x: x[1], reverse=True)\n        return scores[:top_k]\n\n# Hybrid search with Reciprocal Rank Fusion\nclass HybridSearch:\n    \"\"\"Combine BM25 + dense vector + sparse vector with RRF.\"\"\"\n\n    def __init__(\n        self,\n        dense_weight: float = 1.0,\n        sparse_weight: float = 1.0,\n        bm25_weight: float = 1.0,\n        rrf_k: int = 60,\n    ):\n        self.dense_weight = dense_weight\n        self.sparse_weight = sparse_weight\n        self.bm25_weight = bm25_weight\n        self.rrf_k = rrf_k\n        self.bm25 = BM25()\n        self.bm25_fitted = False\n\n    def fit_bm25(self, documents: list[str]):\n        self.bm25.fit(documents)\n        self.bm25_fitted = True\n\n    def rrf_score(self, rank: int) -> float:\n        return 1.0 / (self.rrf_k + rank)\n\n    def search(\n        self,\n        query: str,\n        query_dense: list[float],\n        query_sparse: dict[str, float] | None = None,\n        top_k: int = 10,\n    ) -> list[tuple[str, float, dict]]:\n        \"\"\"Hybrid search combining all methods.\"\"\"\n        all_scores: dict[int, float] = {}\n\n        # Dense vector search\n        dense_results = chroma_collection.query(\n            query_embeddings=[query_dense],\n            n_results=top_k * 2\n        )\n        for i in range(len(dense_results[\"ids\"][0])):\n            doc_id = dense_results[\"ids\"][0][i]\n            all_scores[doc_id] = all_scores.get(doc_id, 0) + self.rrf_score(i) * self.dense_weight\n\n        # Sparse vector search (if available)\n        if query_sparse:\n            sparse_results = chroma_collection.query(\n                query_embeddings=[list(query_sparse.values())],\n                n_results=top_k * 2\n            )\n            for i in range(len(sparse_results[\"ids\"][0])):\n                doc_id = sparse_results[\"ids\"][0][i]\n                all_scores[doc_id] = all_scores.get(doc_id, 0) + self.rrf_score(i) * self.sparse_weight\n\n        # BM25 search\n        if self.bm25_fitted:\n            bm25_results = self.bm25.search(query, top_k=top_k * 2)\n            for doc_idx, score in bm25_results:\n                all_scores[str(doc_idx)] = all_scores.get(str(doc_idx), 0) + self.rrf_score(doc_idx) * self.bm25_weight\n\n        # Sort combined scores\n        ranked = sorted(all_scores.items(), key=lambda x: x[1], reverse=True)[:top_k]\n\n        # Fetch content for top results\n        results = []\n        for doc_id, score in ranked:\n            results.append((\n                doc_id,\n                score / (self.dense_weight + self.sparse_weight + self.bm25_weight),  # Normalized score\n                {\"method\": \"hybrid\", \"bm25_used\": self.bm25_fitted}\n            ))\n\n        return results\n\n# Usage\ndef hybrid_search_demo(query: str):\n    # Dense embedding\n    dense_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n\n    # Sparse embedding (using SPLADE or similar — simplified example)\n    sparse_vec = {\"term1\": 0.8, \"term2\": 0.5}  # Placeholder\n\n    # BM25 fits on document collection\n    bm25_docs = [\"Lease terms in Dubai Marina\", \"Annual rent payment options\", \"Ejari registration process\"]\n\n    hybrid = HybridSearch()\n    hybrid.fit_bm25(bm25_docs)\n    return hybrid.search(query, dense_vec, sparse_vec, top_k=5)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "132-multi-vector-retrieval",
+      children: "13.2 Multi-Vector Retrieval"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "colbert-style-late-interaction",
+      children: "ColBERT-Style Late Interaction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import numpy as np\nfrom typing import NamedTuple\n\nclass MultiVectorResult(NamedTuple):\n    doc_id: str\n    score: float\n    token_matches: list[tuple[str, str, float]]  # (query_token, doc_token, similarity)\n\nclass ColBERTRetriever:\n    \"\"\"\n    Multi-vector retrieval using late interaction (ColBERT-style).\n    Each document is represented as a bag of token-level embeddings,\n    not a single pooled vector.\n    \"\"\"\n\n    def __init__(self):\n        self.doc_embeddings: dict[str, list[tuple[str, list[float]]]] = {}\n\n    def index_document(self, doc_id: str, tokens: list[str], embeddings: list[list[float]]):\n        \"\"\"Store per-token embeddings for a document.\"\"\"\n        self.doc_embeddings[doc_id] = list(zip(tokens, embeddings))\n\n    def search(self, query_tokens: list[str], query_embeddings: list[list[float]], top_k: int = 5) -> list[MultiVectorResult]:\n        \"\"\"MaxSim late interaction scoring.\"\"\"\n        results = []\n\n        for doc_id, doc_vectors in self.doc_embeddings.items():\n            doc_embs = np.array([dv[1] for dv in doc_vectors])\n            query_embs = np.array(query_embeddings)\n\n            # MaxSim: for each query token, find max cosine similarity with any doc token\n            query_norm = query_embs / np.linalg.norm(query_embs, axis=1, keepdims=True)\n            doc_norm = doc_embs / np.linalg.norm(doc_embs, axis=1, keepdims=True)\n\n            similarities = np.dot(query_norm, doc_norm.T)  # (n_query_tokens, n_doc_tokens)\n            max_scores = similarities.max(axis=1)  # Best match per query token\n            total_score = max_scores.sum()\n\n            # Find best matches for interpretability\n            token_matches = []\n            for qi, q_token in enumerate(query_tokens):\n                best_di = similarities[qi].argmax()\n                token_matches.append((q_token, doc_vectors[best_di][0], float(similarities[qi][best_di])))\n\n            results.append(MultiVectorResult(doc_id, float(total_score), token_matches))\n\n        results.sort(key=lambda x: x.score, reverse=True)\n        return results[:top_k]\n\n# Usage\nretriever = ColBERTRetriever()\n\n# Index a document with per-token embeddings\ntokens = [\"lease\", \"terms\", \"dubai\", \"12\", \"months\"]\nembeddings = [client.embeddings.create(input=t, model=\"text-embedding-3-small\").data[0].embedding for t in tokens]\nretriever.index_document(\"doc1\", tokens, embeddings)\n\nquery_tokens = [\"what\", \"lease\", \"term\", \"dubai\"]\nquery_embs = [client.embeddings.create(input=t, model=\"text-embedding-3-small\").data[0].embedding for t in query_tokens]\n\nresults = retriever.search(query_tokens, query_embs)\nfor r in results:\n    print(f\"Doc {r.doc_id}: score={r.score:.4f}\")\n    for qt, dt, sim in r.token_matches[:3]:\n        print(f\"  '{qt}' ? '{dt}': {sim:.3f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "133-advanced-retrieval-strategies",
+      children: "13.3 Advanced Retrieval Strategies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "hyde-hypothetical-document-embedding",
+      children: "HyDE (Hypothetical Document Embedding)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class HyDERetriever:\n    \"\"\"\n    HyDE: Generate a hypothetical document that answers the query,\n    then embed that document and search. Bridges the query-document gap.\n    \"\"\"\n\n    def generate_hypothetical(self, query: str) -> str:\n        \"\"\"Generate a document that would ideally answer this query.\"\"\"\n        response = client.chat.completions.create(\n            model=\"gpt-4o-mini\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"Write a short passage that answers the user's question in a factual, document-like style.\"},\n                {\"role\": \"user\", \"content\": query}\n            ],\n            max_tokens=200\n        )\n        return response.choices[0].message.content\n\n    def search(self, query: str, top_k: int = 5) -> list[str]:\n        \"\"\"Search using HyDE: query ? hypothetical doc ? embed ? search.\"\"\"\n        hypothetical = self.generate_hypothetical(query)\n        hyde_embedding = client.embeddings.create(\n            input=hypothetical,\n            model=\"text-embedding-3-large\"  # Using larger model for HyDE\n        ).data[0].embedding\n\n        results = chroma_collection.query(\n            query_embeddings=[hyde_embedding],\n            n_results=top_k\n        )\n        return results[\"documents\"][0]\n\n# Query expansion\ndef expand_query(query: str, n_queries: int = 3) -> list[str]:\n    \"\"\"Generate multiple query variations to improve recall.\"\"\"\n    response = client.beta.chat.completions.parse(\n        model=\"gpt-4o-mini\",\n        messages=[\n            {\"role\": \"system\", \"content\": f\"Generate {n_queries} distinct search queries that explore different aspects of the user's question.\"},\n            {\"role\": \"user\", \"content\": query}\n        ],\n        response_format=type(\"Queries\", (BaseModel,), {\"queries\": list[str]})\n    )\n    return [query] + response.choices[0].message.parsed.queries\n\ndef multi_query_search(query: str, top_k: int = 5) -> list[str]:\n    \"\"\"Search with multiple query variations and merge results.\"\"\"\n    queries = expand_query(query)\n\n    all_docs = []\n    seen = set()\n\n    for q in queries:\n        q_vec = client.embeddings.create(input=q, model=\"text-embedding-3-small\").data[0].embedding\n        results = chroma_collection.query(query_embeddings=[q_vec], n_results=top_k)\n\n        for doc in results[\"documents\"][0]:\n            doc_hash = hash(doc[:100])\n            if doc_hash not in seen:\n                seen.add(doc_hash)\n                all_docs.append(doc)\n\n    return all_docs[:top_k]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "134-re-ranking-deep-dive",
+      children: "13.4 Re-Ranking Deep-Dive"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "cross-encoder-re-ranker",
+      children: "Cross-Encoder Re-Ranker"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from sentence_transformers import CrossEncoder\n\nclass ReRanker:\n    \"\"\"\n    Cross-encoder re-ranker: scores each (query, document) pair directly.\n    More accurate than bi-encoder (cosine similarity) but slower.\n    \"\"\"\n\n    def __init__(self, model_name: str = \"cross-encoder/ms-marco-MiniLM-L-6-v2\"):\n        self.model = CrossEncoder(model_name, max_length=512)\n        self.model_name = model_name\n\n    def rerank(self, query: str, documents: list[str], top_k: int = 5) -> list[tuple[str, float]]:\n        \"\"\"Score and re-rank documents.\"\"\"\n        pairs = [[query, doc[:500]] for doc in documents]\n        scores = self.model.predict(pairs)\n\n        scored = list(zip(documents, scores))\n        scored.sort(key=lambda x: x[1], reverse=True)\n\n        return scored[:top_k]\n\n# LLM-based re-ranker (when you can't run a local model)\nclass LLMReranker:\n    \"\"\"Use an LLM to re-rank by scoring relevance directly.\"\"\"\n\n    def rerank(self, query: str, documents: list[str], top_k: int = 5) -> list[tuple[str, float]]:\n        \"\"\"Ask LLM to score each document's relevance to the query.\"\"\"\n        scored = []\n        for doc in documents[:10]:  # Only re-rank top-10 (LLM is expensive)\n            response = client.beta.chat.completions.parse(\n                model=\"gpt-4o-mini\",\n                messages=[\n                    {\"role\": \"system\", \"content\": \"Score the relevance of the document to the query from 0.0 (irrelevant) to 1.0 (perfect match).\"},\n                    {\"role\": \"user\", \"content\": f\"Query: {query}\\n\\nDocument: {doc[:500]}\"}\n                ],\n                response_format=type(\"Relevance\", (BaseModel,), {\"score\": float, \"reasoning\": str})\n            )\n            result = response.choices[0].message.parsed\n            scored.append((doc, result.score))\n\n        scored.sort(key=lambda x: x[1], reverse=True)\n        return scored[:top_k]\n\n# Evaluation: NDCG@K\nimport math\n\ndef ndcg_at_k(retrieved: list[str], relevant: set[str], k: int = 10) -> float:\n    \"\"\"Normalized Discounted Cumulative Gain @ K.\"\"\"\n    dcg = 0.0\n    for i, doc in enumerate(retrieved[:k]):\n        if doc in relevant:\n            dcg += 1 / math.log2(i + 2)  # 2-based log (i+2 because 0-indexed)\n\n    # Ideal DCG (all relevant at top)\n    ideal_relevant = min(k, len(relevant))\n    idcg = sum(1 / math.log2(i + 2) for i in range(ideal_relevant))\n\n    return dcg / idcg if idcg > 0 else 0.0\n\n# Example: compare retrieval with and without re-ranking\ndef compare_retrieval_methods(query: str, relevant_docs: set[str]) -> dict:\n    \"\"\"Compare vanilla vector search vs re-ranked search.\"\"\"\n    q_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n    raw_results = chroma_collection.query(query_embeddings=[q_vec], n_results=20)\n    raw_docs = raw_results[\"documents\"][0]\n\n    # Without re-ranking\n    ndcg_raw = ndcg_at_k(raw_docs[:10], relevant_docs)\n\n    # With re-ranking\n    reranker = ReRanker()\n    reranked = reranker.rerank(query, raw_docs, top_k=10)\n    reranked_docs = [d for d, s in reranked]\n    ndcg_reranked = ndcg_at_k(reranked_docs, relevant_docs)\n\n    return {\n        \"ndcg_raw\": round(ndcg_raw, 4),\n        \"ndcg_reranked\": round(ndcg_reranked, 4),\n        \"improvement\": f\"{(ndcg_reranked - ndcg_raw) / ndcg_raw * 100:.1f}%\" if ndcg_raw > 0 else \"N/A\"\n    }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "135-hnsw-index-tuning",
+      children: "13.5 HNSW Index Tuning"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class HNSWTuner:\n    \"\"\"\n    Tune HNSW index parameters for your specific dataset and latency requirements.\n    \"\"\"\n\n    def __init__(self):\n        self.results: list[dict] = []\n\n    def test_config(\n        self,\n        M: int,\n        ef_construction: int,\n        ef_search: int,\n        queries: list[str],\n        ground_truth: dict[str, list[str]],\n    ) -> dict:\n        \"\"\"Test a specific HNSW configuration and return metrics.\"\"\"\n        # Create index with these parameters\n        # In ChromaDB: collection.modify() doesn't expose HNSW params directly\n        # In Qdrant: you can set them at collection creation\n        # In pgvector: SET hnsw.ef_search = value;\n        # This is a simulation for learning purposes\n\n        latencies = []\n        recall_at_10 = []\n\n        for query in queries:\n            t0 = time.time()\n            q_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n            results = chroma_collection.query(query_embeddings=[q_vec], n_results=10)\n            latency = (time.time() - t0) * 1000\n            latencies.append(latency)\n\n            # Check recall\n            relevant = set(ground_truth.get(query, []))\n            retrieved = set(results[\"ids\"][0])\n            if relevant:\n                recall_at_10.append(len(retrieved & relevant) / len(relevant))\n\n        return {\n            \"config\": {\"M\": M, \"ef_construction\": ef_construction, \"ef_search\": ef_search},\n            \"avg_latency_ms\": round(np.mean(latencies), 1),\n            \"p95_latency_ms\": round(np.percentile(latencies, 95), 1),\n            \"avg_recall\": round(np.mean(recall_at_10), 4) if recall_at_10 else 0,\n            \"latency_overhead\": round(np.mean(latencies) / 50, 2),  # Compared to flat baseline\n        }\n\n    def tuner_guide(self) -> dict:\n        \"\"\"Return guidance on HNSW parameter tuning.\"\"\"\n        return {\n            \"M (neighbors per node)\": {\n                \"range\": \"8-64\",\n                \"default\": 16,\n                \"higher\": \"Better recall, more memory, slower indexing\",\n                \"lower\": \"Less memory, faster indexing, lower recall\",\n                \"memory_formula\": \"M * 4 bytes per edge * num_elements\",\n                \"recommendation\": \"16-32 for most datasets under 1M vectors; 32-48 for > 1M\"\n            },\n            \"ef_construction (build-time search width)\": {\n                \"range\": \"100-500\",\n                \"default\": 200,\n                \"higher\": \"Higher recall at build time, slower index build\",\n                \"lower\": \"Faster build, potentially lower quality\",\n                \"recommendation\": \"200-400 — diminishing returns above 400\"\n            },\n            \"ef_search (query-time search width)\": {\n                \"range\": \"1-2000 (but typically 50-500)\",\n                \"default\": 50,\n                \"higher\": \"Higher recall at query time, slower queries\",\n                \"lower\": \"Faster queries, lower recall\",\n                \"recommendation\": \"Start at ef_search = top_k * 10, tune from there\"\n            },\n            \"tuning_workflow\": [\n                \"1. Set ef_construction = 200, M = 16 (conservative start)\",\n                \"2. Build index, measure recall on validation set\",\n                \"3. If recall < 0.95, increase M (16 ? 24 ? 32)\",\n                \"4. If latency > target, decrease ef_search (500 ? 200 ? 100)\",\n                \"5. If recall still low and M is already 48, increase ef_construction to 400\",\n                \"6. Final check: measure P95 latency and recall on holdout set\"\n            ],\n            \"performance_tradeoffs\": {\n                \"flat_search\": {\"latency_ms\": 500, \"recall\": 1.0, \"memory\": \"Lowest\"},\n                \"hnsw_m16_ef100\": {\"latency_ms\": 20, \"recall\": 0.95, \"memory\": \"Low\"},\n                \"hnsw_m32_ef200\": {\"latency_ms\": 50, \"recall\": 0.98, \"memory\": \"Medium\"},\n                \"hnsw_m48_ef500\": {\"latency_ms\": 120, \"recall\": 0.995, \"memory\": \"High\"},\n            }\n        }\n\ntuner = HNSWTuner()\nprint(json.dumps(tuner.tuner_guide(), indent=2))\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "136-metadata-filtering--hybrid-queries",
+      children: "13.6 Metadata Filtering & Hybrid Queries"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class FilteredSearch:\n    \"\"\"Vector search with metadata filters and hybrid queries.\"\"\"\n\n    def search(\n        self,\n        query_vector: list[float],\n        filters: dict | None = None,\n        top_k: int = 10,\n    ) -> list[dict]:\n        \"\"\"Search with metadata filters (pre-filtering).\"\"\"\n        # Build ChromaDB filter expression\n        where_filter = None\n        if filters:\n            conditions = []\n            for key, value in filters.items():\n                if isinstance(value, dict):\n                    conditions.append({key: value})  # e.g., {\"price\": {\"$gte\": 20000}}\n                elif isinstance(value, list):\n                    conditions.append({key: {\"$in\": value}})\n                else:\n                    conditions.append({key: {\"$eq\": value}})\n\n            where_filter = {\"$and\": conditions} if len(conditions) > 1 else conditions[0]\n\n        results = chroma_collection.query(\n            query_embeddings=[query_vector],\n            n_results=top_k,\n            where=where_filter,\n        )\n\n        return [\n            {\n                \"id\": results[\"ids\"][0][i],\n                \"content\": results[\"documents\"][0][i],\n                \"metadata\": results[\"metadatas\"][0][i] if results[\"metadatas\"] else {},\n                \"distance\": results[\"distances\"][0][i] if results[\"distances\"] else 0,\n            }\n            for i in range(len(results[\"ids\"][0]))\n        ]\n\n# Complex filter examples\nFILTER_EXAMPLES = {\n    \"exact_match\": {\"city\": \"Dubai\"},\n    \"range\": {\"price\": {\"$gte\": 20000, \"$lte\": 50000}},\n    \"in_list\": {\"property_type\": {\"$in\": [\"apartment\", \"villa\"]}},\n    \"composite\": {\n        \"$and\": [\n            {\"city\": {\"$eq\": \"Dubai\"}},\n            {\"price\": {\"$lte\": 50000}},\n            {\"bedrooms\": {\"$gte\": 2}},\n        ]\n    },\n    \"with_null_check\": {\n        \"$or\": [\n            {\"available_from\": {\"$eq\": None}},\n            {\"available_from\": {\"$lte\": \"2026-07-01\"}},\n        ]\n    },\n}\n\n# Usage\nsearcher = FilteredSearch()\nquery = \"apartment in Dubai under 50000 AED\"\nq_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n\nresults = searcher.search(q_vec, filters={\n    \"property_type\": {\"$in\": [\"apartment\"]},\n    \"price\": {\"$lte\": 50000},\n}, top_k=5)\n\nfor r in results:\n    meta = r[\"metadata\"]\n    print(f\"{meta.get('title', '?')} — {meta.get('price', '?')} AED — distance: {r['distance']:.4f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "137-vector-quantization",
+      children: "13.7 Vector Quantization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import numpy as np\nfrom typing import NamedTuple\n\nclass QuantizedVector(NamedTuple):\n    codes: np.ndarray       # Compressed representation\n    centroids: np.ndarray   # Codebook\n    original_dims: int\n    n_subvectors: int\n\nclass ProductQuantizer:\n    \"\"\"\n    Product Quantization (PQ): split vectors into subvectors,\n    quantize each subvector independently. Reduces memory by 75-95%.\n    \"\"\"\n\n    def __init__(self, n_subvectors: int = 8, n_centroids: int = 256):\n        self.M = n_subvectors  # Number of subvectors\n        self.K = n_centroids   # Centroids per subvector (256 = 8 bits)\n        self.codebooks: list[np.ndarray] = []\n        self.D: int = 0  # Original dimensionality\n\n    def fit(self, vectors: np.ndarray):\n        \"\"\"Learn codebook from training vectors.\"\"\"\n        self.D = vectors.shape[1]\n        assert self.D % self.M == 0, f\"D={self.D} must be divisible by M={self.M}\"\n\n        sub_dim = self.D // self.M\n        self.codebooks = []\n\n        for m in range(self.M):\n            subvectors = vectors[:, m * sub_dim:(m + 1) * sub_dim]\n            # K-means clustering (simplified — use sklearn in production)\n            centroids = subvectors[:self.K]  # Initialize with first K vectors\n            for _ in range(20):  # Simple k-means iterations\n                distances = np.linalg.norm(subvectors[:, None, :] - centroids[None, :, :], axis=2)\n                assignments = distances.argmin(axis=1)\n                for k in range(self.K):\n                    mask = assignments == k\n                    if mask.any():\n                        centroids[k] = subvectors[mask].mean(axis=0)\n            self.codebooks.append(centroids)\n\n    def encode(self, vectors: np.ndarray) -> np.ndarray:\n        \"\"\"Encode vectors to compact codes.\"\"\"\n        sub_dim = self.D // self.M\n        codes = np.zeros((vectors.shape[0], self.M), dtype=np.uint8)\n\n        for m in range(self.M):\n            subvectors = vectors[:, m * sub_dim:(m + 1) * sub_dim]\n            distances = np.linalg.norm(subvectors[:, None, :] - self.codebooks[m][None, :, :], axis=2)\n            codes[:, m] = distances.argmin(axis=1)\n\n        return codes\n\n    def memory_savings(self, n_vectors: int) -> dict:\n        \"\"\"Calculate memory savings.\"\"\"\n        original_bytes = n_vectors * self.D * 4  # float32\n        quantized_bytes = n_vectors * self.M  # uint8\n        codebook_bytes = sum(cb.nbytes for cb in self.codebooks)\n\n        return {\n            \"original_mb\": round(original_bytes / 1e6, 2),\n            \"quantized_mb\": round((quantized_bytes + codebook_bytes) / 1e6, 2),\n            \"compression_ratio\": f\"{original_bytes / (quantized_bytes + codebook_bytes):.1f}x\",\n            \"savings_pct\": f\"{(1 - (quantized_bytes + codebook_bytes) / original_bytes) * 100:.0f}%\"\n        }\n\n# Scalar Quantization (SQ)\nclass ScalarQuantizer:\n    \"\"\"Convert float32 vectors to uint8 with min-max scaling. 4x memory reduction.\"\"\"\n\n    def __init__(self):\n        self.mins: np.ndarray | None = None\n        self.maxs: np.ndarray | None = None\n\n    def fit(self, vectors: np.ndarray):\n        self.mins = vectors.min(axis=0)\n        self.maxs = vectors.max(axis=0)\n\n    def encode(self, vectors: np.ndarray) -> np.ndarray:\n        scaled = (vectors - self.mins) / (self.maxs - self.mins + 1e-10)\n        return (scaled * 255).astype(np.uint8)\n\n    def decode(self, codes: np.ndarray) -> np.ndarray:\n        scaled = codes.astype(np.float32) / 255.0\n        return scaled * (self.maxs - self.mins) + self.mins\n\n# Usage\ndimension = 1536\nvectors = np.random.randn(1000, dimension).astype(np.float32)\n\npq = ProductQuantizer(n_subvectors=16, n_centroids=256)\npq.fit(vectors)\nprint(f\"Memory: {json.dumps(pq.memory_savings(vectors.shape[0]))}\")\n\nsq = ScalarQuantizer()\nsq.fit(vectors)\ncompressed = sq.encode(vectors[:5])\nrestored = sq.decode(compressed)\nmse = np.mean((vectors[:5] - restored) ** 2)\nprint(f\"SQ MSE: {mse:.6f}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "138-multi-modal-rag",
+      children: "13.8 Multi-Modal RAG"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from PIL import Image\nimport base64\nfrom io import BytesIO\n\nclass MultiModalRAG:\n    \"\"\"\n    RAG pipeline that searches across text and images.\n    Uses CLIP-style embeddings for cross-modal retrieval.\n    \"\"\"\n\n    def __init__(self):\n        self.text_collection = chroma_client.get_or_create_collection(\"text_docs\")\n        self.image_collection = chroma_client.get_or_create_collection(\"image_embeddings\")\n\n    def embed_image(self, image_path: str) -> list[float]:\n        \"\"\"Embed image using vision-language model.\"\"\"\n        with open(image_path, \"rb\") as f:\n            image_b64 = base64.b64encode(f.read()).decode()\n\n        response = client.chat.completions.create(\n            model=\"gpt-4o-mini\",\n            messages=[\n                {\"role\": \"user\", \"content\": [\n                    {\"type\": \"text\", \"text\": \"Describe this image in detail for search indexing.\"},\n                    {\"type\": \"image_url\", \"image_url\": {\"url\": f\"data:image/png;base64,{image_b64}\"}}\n                ]}\n            ],\n            max_tokens=100\n        )\n        description = response.choices[0].message.content\n\n        # Embed the description\n        embedding = client.embeddings.create(\n            input=description,\n            model=\"text-embedding-3-small\"\n        ).data[0].embedding\n\n        return embedding, description\n\n    def search(\n        self,\n        query: str,\n        search_images: bool = True,\n        search_text: bool = True,\n        top_k: int = 5,\n    ) -> list[dict]:\n        \"\"\"Search across text and image collections.\"\"\"\n        q_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n        results = []\n\n        if search_text:\n            text_results = self.text_collection.query(\n                query_embeddings=[q_vec],\n                n_results=top_k\n            )\n            for i in range(len(text_results[\"ids\"][0])):\n                results.append({\n                    \"type\": \"text\",\n                    \"content\": text_results[\"documents\"][0][i],\n                    \"metadata\": text_results[\"metadatas\"][0][i] if text_results[\"metadatas\"] else {},\n                    \"score\": 1 - text_results[\"distances\"][0][i] if text_results[\"distances\"] else 0,\n                })\n\n        if search_images:\n            image_results = self.image_collection.query(\n                query_embeddings=[q_vec],\n                n_results=top_k\n            )\n            for i in range(len(image_results[\"ids\"][0])):\n                results.append({\n                    \"type\": \"image\",\n                    \"content\": image_results[\"documents\"][0][i],\n                    \"metadata\": image_results[\"metadatas\"][0][i] if image_results[\"metadatas\"] else {},\n                    \"score\": 1 - image_results[\"distances\"][0][i] if image_results[\"distances\"] else 0,\n                })\n\n        results.sort(key=lambda x: x[\"score\"], reverse=True)\n        return results[:top_k]\n\n# Multi-modal generation\ndef generate_with_images(query: str, text_context: str, image_paths: list[str]) -> str:\n    \"\"\"Generate response with both text context and image references.\"\"\"\n    image_contents = []\n    for path in image_paths:\n        with open(path, \"rb\") as f:\n            image_b64 = base64.b64encode(f.read()).decode()\n            image_contents.append({\n                \"type\": \"image_url\",\n                \"image_url\": {\"url\": f\"data:image/png;base64,{image_b64}\"}\n            })\n\n    response = client.chat.completions.create(\n        model=\"gpt-4o-mini\",\n        messages=[\n            {\"role\": \"system\", \"content\": \"Answer using the provided text context and images.\"},\n            {\"role\": \"user\", \"content\": [\n                {\"type\": \"text\", \"text\": f\"Context:\\n{text_context}\\n\\nQuery: {query}\"},\n                *image_contents\n            ]}\n        ]\n    )\n    return response.choices[0].message.content\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "139-graph-rag",
+      children: "13.9 Graph RAG"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class GraphRAG:\n    \"\"\"\n    Combine knowledge graph traversal with vector search.\n    Find entities via vector search, then traverse relationships.\n    \"\"\"\n\n    def __init__(self):\n        self.graph: dict[str, dict] = {}  # entity_id -> {properties, relationships}\n\n    def add_entity(self, entity_id: str, properties: dict, relationships: list[tuple[str, str, str]]):\n        \"\"\"Add entity with typed relationships: (target_id, relation_type, label).\"\"\"\n        self.graph[entity_id] = {\n            \"properties\": properties,\n            \"relationships\": relationships,\n        }\n\n    def vector_search_entities(self, query: str, top_k: int = 5) -> list[str]:\n        \"\"\"Find entities via vector search on their text representation.\"\"\"\n        q_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n\n        entity_texts = []\n        entity_ids = []\n        for eid, data in self.graph.items():\n            entity_texts.append(\" \".join(str(v) for v in data[\"properties\"].values()))\n            entity_ids.append(eid)\n\n        # Simple embedding-based search\n        entity_embeddings = []\n        for text in entity_texts:\n            emb = client.embeddings.create(input=text, model=\"text-embedding-3-small\").data[0].embedding\n            entity_embeddings.append(emb)\n\n        similarities = cosine_similarity([q_vec], entity_embeddings)[0]\n        top_indices = np.argsort(similarities)[-top_k:][::-1]\n\n        return [entity_ids[i] for i in top_indices]\n\n    def traverse(self, start_entities: list[str], max_depth: int = 2) -> dict:\n        \"\"\"BFS traversal from starting entities.\"\"\"\n        visited: dict[str, int] = {eid: 0 for eid in start_entities}\n        queue = [(eid, 0) for eid in start_entities]\n        relations = []\n\n        while queue:\n            current, depth = queue.pop(0)\n            if depth >= max_depth:\n                continue\n\n            if current not in self.graph:\n                continue\n\n            for target, rel_type, label in self.graph[current][\"relationships\"]:\n                relations.append({\n                    \"from\": current,\n                    \"to\": target,\n                    \"type\": rel_type,\n                    \"label\": label\n                })\n                if target not in visited:\n                    visited[target] = depth + 1\n                    queue.append((target, depth + 1))\n\n        return {\n            \"entities\": {eid: self.graph.get(eid, {}).get(\"properties\", {}) for eid in visited},\n            \"relationships\": relations,\n        }\n\n    def hybrid_search(self, query: str, top_k: int = 5) -> dict:\n        \"\"\"Vector search entities ? traverse ? return enriched results.\"\"\"\n        seed_entities = self.vector_search_entities(query, top_k=3)\n        graph_context = self.traverse(seed_entities, max_depth=2)\n\n        # Build enriched context for LLM\n        context_parts = [\"Related entities found:\", \"\"]\n        for eid, props in graph_context[\"entities\"].items():\n            context_parts.append(f\"- {props.get('name', eid)}: {props.get('description', '')}\")\n\n        context_parts.append(\"\")\n        context_parts.append(\"Relationships:\")\n        for rel in graph_context[\"relationships\"][:10]:\n            context_parts.append(f\"- {rel['from']} --[{rel['type']}]--> {rel['to']}\")\n\n        return {\n            \"graph_context\": \"\\n\".join(context_parts),\n            \"entities\": graph_context[\"entities\"],\n            \"relationships\": graph_context[\"relationships\"],\n        }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1310-streaming-ingestion--real-time-updates",
+      children: "13.10 Streaming Ingestion & Real-Time Updates"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import asyncio\nfrom datetime import datetime\n\nclass StreamingIngestion:\n    \"\"\"\n    Real-time document ingestion with < 5 second index latency.\n    Uses async processing with batch embedding.\n    \"\"\"\n\n    def __init__(self, batch_size: int = 10, flush_interval_seconds: int = 2):\n        self.batch_size = batch_size\n        self.flush_interval = flush_interval_seconds\n        self.buffer: list[dict] = []\n        self.last_flush = datetime.now()\n        self.total_indexed = 0\n\n    async def ingest(self, document: dict):\n        \"\"\"Add document to buffer for batch indexing.\"\"\"\n        self.buffer.append(document)\n\n        if len(self.buffer) >= self.batch_size:\n            await self.flush()\n        elif (datetime.now() - self.last_flush).seconds >= self.flush_interval:\n            await self.flush()\n\n    async def flush(self):\n        \"\"\"Embed and index all buffered documents.\"\"\"\n        if not self.buffer:\n            return\n\n        texts = [d[\"content\"] for d in self.buffer]\n        embeddings_list = await self._embed_batch(texts)\n\n        for doc, embedding in zip(self.buffer, embeddings_list):\n            chroma_collection.add(\n                documents=[doc[\"content\"]],\n                embeddings=[embedding],\n                metadatas=[{\n                    **doc.get(\"metadata\", {}),\n                    \"indexed_at\": datetime.now().isoformat(),\n                    \"source\": doc.get(\"source\", \"stream\"),\n                }]\n            )\n\n        self.total_indexed += len(self.buffer)\n        self.buffer = []\n        self.last_flush = datetime.now()\n\n    async def _embed_batch(self, texts: list[str]) -> list[list[float]]:\n        \"\"\"Batch embed texts asynchronously.\"\"\"\n        loop = asyncio.get_event_loop()\n        response = await loop.run_in_executor(\n            None,\n            lambda: client.embeddings.create(\n                input=texts,\n                model=\"text-embedding-3-small\"\n            )\n        )\n        return [d.embedding for d in response.data]\n\n    async def delete_document(self, doc_id: str):\n        \"\"\"Remove a document from the index by ID.\"\"\"\n        chroma_collection.delete(where={\"doc_id\": doc_id})\n\n    async def update_document(self, doc_id: str, new_content: str, metadata: dict | None = None):\n        \"\"\"Update a document in-place (delete + re-index).\"\"\"\n        await self.delete_document(doc_id)\n        await self.ingest({\n            \"content\": new_content,\n            \"metadata\": {\"doc_id\": doc_id, **(metadata or {})},\n            \"source\": \"update\"\n        })\n\n    def get_stats(self) -> dict:\n        return {\n            \"total_indexed\": self.total_indexed,\n            \"buffer_size\": len(self.buffer),\n            \"last_flush\": self.last_flush.isoformat(),\n        }\n\n# Usage\nasync def run_ingestion():\n    ingestor = StreamingIngestion(batch_size=5, flush_interval_seconds=3)\n\n    # Simulate real-time document stream\n    for i in range(20):\n        await ingestor.ingest({\n            \"content\": f\"Document {i}: Lease terms in Dubai...\",\n            \"metadata\": {\"doc_id\": f\"doc_{i}\", \"source\": \"webhook\"},\n            \"source\": \"webhook\"\n        })\n        await asyncio.sleep(0.5)\n\n    # Force flush remaining\n    await ingestor.flush()\n    print(f\"Indexed: {ingestor.get_stats()}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1311-vector-db-comparison",
+      children: "13.11 Vector DB Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "ChromaDB"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Qdrant"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "pgvector"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Pinecone"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Setup"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pip install, run locally"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Docker container"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Postgres extension"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SaaS, API key"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Persistence"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Embedded (single process)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server + disk"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Postgres tables"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Serverless pods"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Scaling"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single node"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Horizontal sharding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Postgres scaling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto-scaling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "HNSW params"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full control"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "SET hnsw.ef_search"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Managed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Filtering"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Basic where clauses"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rich filters + payload"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL WHERE"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Metadata filters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Hybrid search"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not natively"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "should"
+            }), " + ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "must"
+            }), " queries"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BM25 via tsvector"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not natively"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Quantization"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Not built-in"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scalar + Product PQ"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "IVFFlat only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Multi-tenancy"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-collection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Payload filtering"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Row-level security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Namespaces"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Client libraries"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Python, JS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Python, Rust, Go, JS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL (any Postgres client)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Python, JS, Go, Java"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Best for"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Dev/ prototyping, small-medium"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production, large scale"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "You already use Postgres"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Managed, zero ops"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "migration-strategy",
+      children: "Migration Strategy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class VectorDBMigrator:\n    \"\"\"Migrate vectors between different vector databases.\"\"\"\n\n    def __init__(self):\n        self.batch_size = 100\n\n    def export_from_chromadb(self, collection_name: str) -> list[dict]:\n        \"\"\"Export all vectors from ChromaDB.\"\"\"\n        collection = chroma_client.get_collection(collection_name)\n        count = collection.count()\n\n        all_data = []\n        offset = 0\n        while offset < count:\n            results = collection.get(limit=self.batch_size, offset=offset)\n            for i in range(len(results[\"ids\"])):\n                all_data.append({\n                    \"id\": results[\"ids\"][i],\n                    \"embedding\": results[\"embeddings\"][i],\n                    \"document\": results[\"documents\"][i],\n                    \"metadata\": results[\"metadatas\"][i] if results[\"metadatas\"] else {},\n                })\n            offset += self.batch_size\n\n        return all_data\n\n    def import_to_qdrant(self, data: list[dict], collection_name: str):\n        \"\"\"Import into Qdrant.\"\"\"\n        from qdrant_client import QdrantClient\n        from qdrant_client.models import PointStruct, VectorParams, Distance\n\n        client = QdrantClient(host=\"localhost\", port=6333)\n\n        # Recreate collection\n        client.recreate_collection(\n            collection_name=collection_name,\n            vectors_config=VectorParams(\n                size=len(data[0][\"embedding\"]),\n                distance=Distance.COSINE,\n            ),\n        )\n\n        # Batch upload\n        for i in range(0, len(data), self.batch_size):\n            batch = data[i:i + self.batch_size]\n            points = [\n                PointStruct(\n                    id=hash(item[\"id\"]) % (2**63),\n                    vector=item[\"embedding\"],\n                    payload={\"text\": item[\"document\"], **item[\"metadata\"]}\n                )\n                for item in batch\n            ]\n            client.upsert(collection_name=collection_name, points=points)\n\n        return len(data)\n\n    def verify_migration(self, chroma_collection: str, qdrant_collection: str, n_queries: int = 10) -> dict:\n        \"\"\"Verify migration by comparing search results.\"\"\"\n        from qdrant_client import QdrantClient\n\n        qdrant = QdrantClient(host=\"localhost\", port=6333)\n        chroma_coll = chroma_client.get_collection(chroma_collection)\n\n        matches = 0\n        test_queries = [\"test\", \"lease terms\", \"Dubai\", \"apartment\", \"rent\"]\n\n        for query in test_queries:\n            q_vec = client.embeddings.create(input=query, model=\"text-embedding-3-small\").data[0].embedding\n\n            # ChromaDB results\n            chroma_result = chroma_coll.query(query_embeddings=[q_vec], n_results=5)\n            chroma_ids = set(chroma_result[\"ids\"][0])\n\n            # Qdrant results\n            qdrant_result = qdrant.search(\n                collection_name=qdrant_collection,\n                query_vector=q_vec,\n                limit=5\n            )\n            qdrant_ids = set(str(r.id) for r in qdrant_result)\n\n            overlap = len(chroma_ids & qdrant_ids)\n            matches += overlap\n\n        return {\n            \"test_queries\": len(test_queries),\n            \"total_overlap\": matches,\n            \"avg_overlap_per_query\": round(matches / len(test_queries), 1),\n            \"max_possible\": len(test_queries) * 5,\n        }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["interface Task { id: string; description: string; status: \"pending\"|\"running\"|\"done\"|\"failed\"; dependencies: string[]; result?: string }\nclass Orchestrator {\nprivate tasks: Map<string,Task> = new Map()\nprivate agents: Map<string,(t:Task)=>Promise<string>> = new Map()\nregisterAgent(name: string, fn: (t:Task)=>Promise<string>): void { this.agents.set(name,fn) }\naddTask(t: Task): void { this.tasks.set(t.id,t) }\nasync runAll(): Promise<void> {\nlet pending = Array.from(this.tasks.values()).filter(t=>t.status===\"pending\")\nwhile(pending.length) {\nconst runnable = pending.filter(t=>t.dependencies.every(d=>this.tasks.get(d)?.status===\"done\"))\nawait Promise.all(runnable.map(async t => { t.status=\"running\"\ntry { t.result = await this.agents.get(\"default\")!(t); t.status=\"done\" } catch { t.status=\"failed\" }\n}))\npending = Array.from(this.tasks.values()).filter(t=>t.status===\"pending\")\n}\n}\ngetResults(): Task[] { return Array.from(this.tasks.values()) }\n}\nclass Decomposer {\ndecompose(goal: string): Task[] {\nconst parts = goal.split(\". \"); const tasks: Task[] = []\nparts.forEach((p,i) => tasks.push({id:", (0,jsx_runtime.jsx)(_components.code, {
+        children: "task-${i}"
+      }), ",description:p,status:\"pending\",dependencies:i>0?[", (0,jsx_runtime.jsx)(_components.code, {
+        children: "task-${i-1}"
+      }), "]:[],result:undefined}))\nreturn tasks\n}\n}\nexport { Orchestrator, Task, Decomposer }"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Hybrid search"
+          }), ": Implement hybrid search (BM25 + dense vector + RRF) on your RAG pipeline. Measure recall@10 improvement over pure vector search."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "HNSW tuning"
+          }), ": Create a test dataset of 10K vectors. Tune HNSW parameters (M, ef_construction, ef_search) to minimize latency while maintaining >0.95 recall."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Re-ranker deployment"
+          }), ": Add a cross-encoder re-ranker to your RAG pipeline. Measure NDCG@10 improvement and the latency cost."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Multi-modal search"
+          }), ": Add image search to your RAG pipeline. Index 20+ images and test with text queries that should match image content."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Vector DB migration"
+          }), ": Export your ChromaDB vectors, import into Qdrant (or pgvector), and verify migration accuracy with 10 test queries."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

@@ -1,0 +1,3977 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[99141],{
+
+/***/ 87835
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_computer_networks_17_troubleshooting_md_ed4_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-computer-networks-17-troubleshooting-md-ed4.json
+const site_docs_courses_computer_networks_17_troubleshooting_md_ed4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/computer-networks/17-troubleshooting","title":"Chapter 17: Network Troubleshooting","description":"Learning Objectives","source":"@site/docs/courses/computer-networks/17-troubleshooting.md","sourceDirName":"courses/computer-networks","slug":"/computer-networks/17-troubleshooting","permalink":"/ai-engineering-journey/computer-networks/17-troubleshooting","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":17,"frontMatter":{"id":"17-troubleshooting","slug":"/computer-networks/17-troubleshooting","title":"Chapter 17: Network Troubleshooting","sidebar_label":"Chapter 17: Network Troubleshooting","sidebar_position":17},"sidebar":"coursesSidebar","previous":{"title":"Chapter 16: Cloud Networking","permalink":"/ai-engineering-journey/computer-networks/16-cloud-networking"},"next":{"title":"Chapter 18: Modern Networking → Complete Reference","permalink":"/ai-engineering-journey/computer-networks/18-modern"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/computer-networks/17-troubleshooting.md
+
+
+const frontMatter = {
+	id: '17-troubleshooting',
+	slug: '/computer-networks/17-troubleshooting',
+	title: 'Chapter 17: Network Troubleshooting',
+	sidebar_label: 'Chapter 17: Network Troubleshooting',
+	sidebar_position: 17
+};
+const contentTitle = 'Chapter 17: Network Troubleshooting';
+
+const assets = {
+
+};
+
+/*End Image Gallery*/
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "17.0 The Troubleshooting Mindset",
+  "id": "170-the-troubleshooting-mindset",
+  "level": 2
+}, {
+  "value": "The Doctor Diagnosis Analogy",
+  "id": "the-doctor-diagnosis-analogy",
+  "level": 3
+}, {
+  "value": "OSI-Layer Troubleshooting Philosophy",
+  "id": "osi-layer-troubleshooting-philosophy",
+  "level": 3
+}, {
+  "value": "OSI Layer Troubleshooting Quick Reference Table",
+  "id": "osi-layer-troubleshooting-quick-reference-table",
+  "level": 3
+}, {
+  "value": "17.1 OSI-Layer Troubleshooting Methodology",
+  "id": "171-osi-layer-troubleshooting-methodology",
+  "level": 2
+}, {
+  "value": "17.1.1 Systematic 8-Step Process",
+  "id": "1711-systematic-8-step-process",
+  "level": 3
+}, {
+  "value": "17.1.2 Pseudocode: General Troubleshooting Algorithm",
+  "id": "1712-pseudocode-general-troubleshooting-algorithm",
+  "level": 3
+}, {
+  "value": "17.1.3 Dry Run: Multi-Layer Troubleshooting Walkthrough",
+  "id": "1713-dry-run-multi-layer-troubleshooting-walkthrough",
+  "level": 3
+}, {
+  "value": "17.2 Physical Layer Issues (Layer 1)",
+  "id": "172-physical-layer-issues-layer-1",
+  "level": 2
+}, {
+  "value": "17.2.1 Overview",
+  "id": "1721-overview",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy",
+  "level": 3
+}, {
+  "value": "Numbered Troubleshooting Steps",
+  "id": "numbered-troubleshooting-steps",
+  "level": 3
+}, {
+  "value": "Pseudocode: Physical Layer Diagnostics",
+  "id": "pseudocode-physical-layer-diagnostics",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table",
+  "id": "dry-run-trace-table",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases",
+  "level": 3
+}, {
+  "value": "17.3 Data Link Layer Issues (Layer 2)",
+  "id": "173-data-link-layer-issues-layer-2",
+  "level": 2
+}, {
+  "value": "17.3.1 Overview",
+  "id": "1731-overview",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-1",
+  "level": 3
+}, {
+  "value": "Numbered Troubleshooting Steps",
+  "id": "numbered-troubleshooting-steps-1",
+  "level": 3
+}, {
+  "value": "Pseudocode: Duplex Mismatch Detector",
+  "id": "pseudocode-duplex-mismatch-detector",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table",
+  "id": "dry-run-trace-table-1",
+  "level": 3
+}, {
+  "value": "Pseudocode: MAC Flood Detection",
+  "id": "pseudocode-mac-flood-detection",
+  "level": 3
+}, {
+  "value": "C++ Implementation: Duplex/Speed Analyzer",
+  "id": "c-implementation-duplexspeed-analyzer",
+  "level": 3
+}, {
+  "value": "Python Implementation: MAC Flood Detector",
+  "id": "python-implementation-mac-flood-detector",
+  "level": 3
+}, {
+  "value": "Complexity Analysis for Data Link Diagnostics",
+  "id": "complexity-analysis-for-data-link-diagnostics",
+  "level": 3
+}, {
+  "value": "Edge Cases for Data Link",
+  "id": "edge-cases-for-data-link",
+  "level": 3
+}, {
+  "value": "17.4 Network Layer Issues (Layer 3)",
+  "id": "174-network-layer-issues-layer-3",
+  "level": 2
+}, {
+  "value": "17.4.1 Overview",
+  "id": "1741-overview",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-2",
+  "level": 3
+}, {
+  "value": "Numbered Troubleshooting Steps",
+  "id": "numbered-troubleshooting-steps-2",
+  "level": 3
+}, {
+  "value": "Pseudocode: Routing Loop Detector",
+  "id": "pseudocode-routing-loop-detector",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table",
+  "id": "dry-run-trace-table-2",
+  "level": 3
+}, {
+  "value": "C++ Implementation: Ping Simulator with TTL",
+  "id": "c-implementation-ping-simulator-with-ttl",
+  "level": 3
+}, {
+  "value": "Python: Traceroute Analyzer + Path MTU",
+  "id": "python-traceroute-analyzer--path-mtu",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-1",
+  "level": 3
+}, {
+  "value": "17.5 Transport Layer Issues (Layer 4)",
+  "id": "175-transport-layer-issues-layer-4",
+  "level": 2
+}, {
+  "value": "17.5.1 Overview",
+  "id": "1751-overview",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-3",
+  "level": 3
+}, {
+  "value": "Numbered Steps",
+  "id": "numbered-steps",
+  "level": 3
+}, {
+  "value": "Pseudocode: Port Scanner",
+  "id": "pseudocode-port-scanner",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table",
+  "id": "dry-run-trace-table-3",
+  "level": 3
+}, {
+  "value": "C++: TCP Port Scanner (Threaded)",
+  "id": "c-tcp-port-scanner-threaded",
+  "level": 3
+}, {
+  "value": "Python: Connection State Analyzer",
+  "id": "python-connection-state-analyzer",
+  "level": 3
+}, {
+  "value": "Complexity &amp; Edge Cases",
+  "id": "complexity--edge-cases",
+  "level": 3
+}, {
+  "value": "17.6 Application Layer Issues (Layers 5-7)",
+  "id": "176-application-layer-issues-layers-5-7",
+  "level": 2
+}, {
+  "value": "17.6.1 Overview",
+  "id": "1761-overview",
+  "level": 3
+}, {
+  "value": "Real-World Analogy",
+  "id": "real-world-analogy-4",
+  "level": 3
+}, {
+  "value": "Numbered Steps",
+  "id": "numbered-steps-1",
+  "level": 3
+}, {
+  "value": "Pseudocode: DNS Checker",
+  "id": "pseudocode-dns-checker",
+  "level": 3
+}, {
+  "value": "Dry Run Trace Table",
+  "id": "dry-run-trace-table-4",
+  "level": 3
+}, {
+  "value": "C++: HTTP Status Checker",
+  "id": "c-http-status-checker",
+  "level": 3
+}, {
+  "value": "Python: TLS Certificate Diagnoser",
+  "id": "python-tls-certificate-diagnoser",
+  "level": 3
+}, {
+  "value": "Complexity Analysis",
+  "id": "complexity-analysis-1",
+  "level": 3
+}, {
+  "value": "Edge Cases",
+  "id": "edge-cases-2",
+  "level": 3
+}, {
+  "value": "17.7 Troubleshooting Tools → Deep Dive",
+  "id": "177-troubleshooting-tools--deep-dive",
+  "level": 2
+}, {
+  "value": "17.7.1 ping → ICMP Echo",
+  "id": "1771-ping--icmp-echo",
+  "level": 3
+}, {
+  "value": "TypeScript Implementation: PingTracer",
+  "id": "typescript-implementation-pingtracer",
+  "level": 4
+}, {
+  "value": "17.7.2 traceroute / mtr",
+  "id": "1772-traceroute--mtr",
+  "level": 3
+}, {
+  "value": "TypeScript Implementation: TracerouteSim",
+  "id": "typescript-implementation-traceroutesim",
+  "level": 4
+}, {
+  "value": "17.7.3 netstat / ss",
+  "id": "1773-netstat--ss",
+  "level": 3
+}, {
+  "value": "17.7.4 nslookup / dig",
+  "id": "1774-nslookup--dig",
+  "level": 3
+}, {
+  "value": "17.7.5 tcpdump",
+  "id": "1775-tcpdump",
+  "level": 3
+}, {
+  "value": "tcpdump Filter Syntax → Quick Reference",
+  "id": "tcpdump-filter-syntax--quick-reference",
+  "level": 3
+}, {
+  "value": "17.7.6 Wireshark → Capture Workflow",
+  "id": "1776-wireshark--capture-workflow",
+  "level": 3
+}, {
+  "value": "17.7.7 nmap",
+  "id": "1777-nmap",
+  "level": 3
+}, {
+  "value": "17.7.8 iperf / iperf3",
+  "id": "1778-iperf--iperf3",
+  "level": 3
+}, {
+  "value": "TypeScript Implementation: PacketAnalyzer",
+  "id": "typescript-implementation-packetanalyzer",
+  "level": 4
+}, {
+  "value": "17.8 Common Issues per Layer → Summary Table",
+  "id": "178-common-issues-per-layer--summary-table",
+  "level": 2
+}, {
+  "value": "17.9 Tools Comparison Table",
+  "id": "179-tools-comparison-table",
+  "level": 2
+}, {
+  "value": "17.10 Interview Corner",
+  "id": "1710-interview-corner",
+  "level": 2
+}, {
+  "value": "Q1: When ping fails but the application works, what is happening?",
+  "id": "q1-when-ping-fails-but-the-application-works-what-is-happening",
+  "level": 3
+}, {
+  "value": "Q2: How does traceroute work, and what does it mean when a hop shows asterisks?",
+  "id": "q2-how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks",
+  "level": 3
+}, {
+  "value": "Q3: What is the difference between &quot;port unreachable,&quot; &quot;connection refused,&quot; and &quot;timeout&quot;?",
+  "id": "q3-what-is-the-difference-between-port-unreachable-connection-refused-and-timeout",
+  "level": 3
+}, {
+  "value": "Q4: How do you determine if high latency is caused by propagation delay vs queuing delay?",
+  "id": "q4-how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay",
+  "level": 3
+}, {
+  "value": "Q5: What causes TIME_WAIT exhaustion and how do you fix it?",
+  "id": "q5-what-causes-time_wait-exhaustion-and-how-do-you-fix-it",
+  "level": 3
+}, {
+  "value": "Q6: How do you identify a routing loop from a traceroute?",
+  "id": "q6-how-do-you-identify-a-routing-loop-from-a-traceroute",
+  "level": 3
+}, {
+  "value": "Q7: What does &quot;Connection refused&quot; versus &quot;No route to host&quot; mean?",
+  "id": "q7-what-does-connection-refused-versus-no-route-to-host-mean",
+  "level": 3
+}, {
+  "value": "Q8: How do you test if a firewall is blocking a specific port?",
+  "id": "q8-how-do-you-test-if-a-firewall-is-blocking-a-specific-port",
+  "level": 3
+}, {
+  "value": "Q9: What is asymmetric routing and how does it affect troubleshooting?",
+  "id": "q9-what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting",
+  "level": 3
+}, {
+  "value": "Q10: How does path MTU discovery work and why does it fail?",
+  "id": "q10-how-does-path-mtu-discovery-work-and-why-does-it-fail",
+  "level": 3
+}, {
+  "value": "17.11 Applications in Real Systems",
+  "id": "1711-applications-in-real-systems",
+  "level": 2
+}, {
+  "value": "Case Study 1: E-commerce Platform Slowdown at Peak Hours",
+  "id": "case-study-1-e-commerce-platform-slowdown-at-peak-hours",
+  "level": 3
+}, {
+  "value": "Case Study 2: Database Connection Pool Exhaustion",
+  "id": "case-study-2-database-connection-pool-exhaustion",
+  "level": 3
+}, {
+  "value": "Case Study 3: Mysterious MTU-Related Timeout",
+  "id": "case-study-3-mysterious-mtu-related-timeout",
+  "level": 3
+}, {
+  "value": "Case Study 4: ARP Poisoning in a Hotel Network",
+  "id": "case-study-4-arp-poisoning-in-a-hotel-network",
+  "level": 3
+}, {
+  "value": "Case Study 5: WAF Rule Blocking Legitimate API Traffic",
+  "id": "case-study-5-waf-rule-blocking-legitimate-api-traffic",
+  "level": 3
+}, {
+  "value": "Pro Tips (Expanded)",
+  "id": "pro-tips-expanded",
+  "level": 2
+}, {
+  "value": "One-Sentence Takeaways",
+  "id": "one-sentence-takeaways",
+  "level": 2
+}, {
+  "value": "Concept Comparison Table",
+  "id": "concept-comparison-table",
+  "level": 2
+}, {
+  "value": "Quick Reference: TCP Connection States",
+  "id": "quick-reference-tcp-connection-states",
+  "level": 2
+}, {
+  "value": "Cross-Application Matrix",
+  "id": "cross-application-matrix",
+  "level": 2
+}, {
+  "value": "Troubleshooting Methodology Flow",
+  "id": "troubleshooting-methodology-flow",
+  "level": 3
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Review Questions",
+  "id": "review-questions",
+  "level": 3
+}, {
+  "value": "Application Problems",
+  "id": "application-problems",
+  "level": 3
+}, {
+  "value": "Challenge Problems",
+  "id": "challenge-problems",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    em: "em",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    img: "img",
+    li: "li",
+    map: "map",
+    ol: "ol",
+    p: "p",
+    port: "port",
+    pre: "pre",
+    section: "section",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "chapter-17-network-troubleshooting",
+        children: "Chapter 17: Network Troubleshooting"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Apply a systematic OSI-layer troubleshooting methodology to isolate network faults."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Diagnose physical layer issues: cable faults, signal degradation, power over Ethernet problems."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Detect and resolve data link layer issues: duplex mismatches, MAC flooding, STP problems."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Troubleshoot network layer issues: routing loops, MTU mismatches, ICMP filtering."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Identify transport layer issues: port blocking, TIME_WAIT exhaustion, connection limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Debug application layer issues: DNS resolution failures, HTTP status errors, SSL/TLS handshake failures."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Master diagnostic tools: ping, traceroute, netstat/ss, nslookup/dig, tcpdump/Wireshark, nmap, iperf, mtr."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyze packet captures and build systematic troubleshooting workflows."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "lesson-visuals",
+      "aria-label": "Visual learning resources",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.header, {
+        children: [(0,jsx_runtime.jsx)(_components.span, {
+          children: "VISUAL LEARNING"
+        }), (0,jsx_runtime.jsx)(_components.h2, {
+          children: "See it. Review it. Remember it."
+        })]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/computer-networks/17-troubleshooting/handwritten-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/computer-networks/17-troubleshooting/handwritten-notes.png",
+          alt: "Handwritten notes",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Handwritten notes"
+          }), "Condensed notes for deliberate review."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/computer-networks/17-troubleshooting/sticky-notes.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/computer-networks/17-troubleshooting/sticky-notes.png",
+          alt: "Sticky-note revision",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sticky-note revision"
+          }), "Fast recall prompts for revision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.a, {
+        className: "lesson-visual-card",
+        href: "../../assets/images/lessons/computer-networks/17-troubleshooting/visual-explanation.png",
+        target: "_blank",
+        rel: "noopener",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.img, {
+          src: "../../assets/images/lessons/computer-networks/17-troubleshooting/visual-explanation.png",
+          alt: "Visual concept guide",
+          loading: "lazy"
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.span, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Visual concept guide"
+          }), "A connected explanation of the key ideas."]
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "170-the-troubleshooting-mindset",
+      children: "17.0 The Troubleshooting Mindset"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "the-doctor-diagnosis-analogy",
+      children: "The Doctor Diagnosis Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network troubleshooting mirrors medical diagnosis. A doctor does not prescribe treatment without examination; a network engineer does not change configuration without evidence."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Medical Diagnosis Phase"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Network Troubleshooting Equivalent"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Patient reports symptom"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User reports \"the website is slow\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Triage (vitals check)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping test, link lights check"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "History & physical exam"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check recent changes, configuration review"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Differential diagnosis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "List possible causes per OSI layer"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Diagnostic tests"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump, traceroute, iperf"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interpret results"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Analyze packet captures, latency data"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Treatment plan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Configuration change, hardware replacement"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Follow-up"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify fix, monitor for recurrence"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Triage protocol:"
+      }), " Always start with the simplest, least-invasive test. If the patient has a fever, you check temperature before ordering an MRI. If the network is slow, you check ping RTT before deploying a full packet capture."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "The 80/20 rule:"
+      }), " 80% of network problems are at the physical or data link layer. Start from the bottom of the OSI model and work up. A cable fault causes the same symptom (no connectivity) as a firewall rule, but checking the cable takes 10 seconds and checking the firewall takes 10 minutes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "osi-layer-troubleshooting-philosophy",
+      children: "OSI-Layer Troubleshooting Philosophy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The OSI model provides a natural diagnostic hierarchy. Each layer depends on the layers below it. If Layer 1 is broken, Layer 2 cannot work, Layer 3 cannot work, and so on."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Bottom-up approach (recommended for most scenarios):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Physical — link lights, cable tester"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data Link — ARP, MAC tables, switch logs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Network — ping, traceroute, routing tables"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Transport — port connectivity, socket states"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Application — application logs, HTTP status codes"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Top-down approach (better for application-specific issues):"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Application — browser console, server logs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Transport — telnet to port, ss/tcpdump"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Network — verify routing, firewall rules"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Data Link — check ARP, VLAN membership"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Physical — verify link state"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Divide and conquer approach:"
+      }), "\nTest at the middle layer (Network). If ping works, the problem is above Layer 3. If ping fails, the problem is below Layer 3. This eliminates half the possibilities in one test."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "osi-layer-troubleshooting-quick-reference-table",
+      children: "OSI Layer Troubleshooting Quick Reference Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Problem Symptom"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Likely OSI Layer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Primary Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Secondary Tool"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No link light"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 1 — Physical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cable tester"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interface statistics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermittent connectivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 1 — Physical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TDR, signal analyzer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interface error counters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow throughput, no errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 2 — Data Link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Duplex check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interface statistics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MAC address conflicts"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 2 — Data Link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ARP table inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MAC table audit"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No connectivity to remote net"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 3 — Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping, traceroute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Routing table check"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Routing loops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 3 — Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "traceroute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TTL expiry debug"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MTU-related failures"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 3 — Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping with DF bit"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump ICMP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Port unreachable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 4 — Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "telnet, nc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ss -tln"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection resets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 4 — Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireshark TCP analysis"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TIME_WAIT exhaustion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 4 — Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ss -s, netstat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection tracking"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Name resolution failure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 5-7 — Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nslookup, dig"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS server logs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP 4xx/5xx errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 7 — Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl -v"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server access logs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SSL/TLS handshake failure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer 5-7 — Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "openssl s_client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireshark TLS filter"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow web browsing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cross-layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MTR, tcpdump"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Browser dev tools"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "171-osi-layer-troubleshooting-methodology",
+      children: "17.1 OSI-Layer Troubleshooting Methodology"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1711-systematic-8-step-process",
+      children: "17.1.1 Systematic 8-Step Process"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every troubleshooting session follows a structured diagnostic cycle. Skipping steps leads to wasted effort and configuration changes that do not fix the root cause."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 1 — Define the problem precisely."
+      }), " A vague problem statement (\"the network is slow\") is unusable. Quantify: \"The web application takes 8 seconds to load the login page, while the baseline is 1.2 seconds. The issue started at 2:00 PM and affects all users in the Chicago office.\""]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 2 — Check the obvious (2-minute rule)."
+      }), " Before any advanced diagnostics, check: link lights, cable connections, service status, recent configuration changes. Most outages are caused by a cable being unplugged, a service not restarting after a patch, or a firewall rule that was changed and not reverted."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 3 — Isolate the scope."
+      }), " Determine the boundary of the problem. Ask: Does this affect one user or all users? One application or all applications? One subnet or the entire network? Does it happen at specific times or continuously?"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 4 — Form a hypothesis."
+      }), " Based on scope and symptoms, list 2-3 probable causes at the appropriate OSI layer. Document each hypothesis with a specific prediction."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 5 — Select and run diagnostic tools."
+      }), " Choose the tool that tests the hypothesis fastest. Do not run every tool on every problem."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 6 — Analyze results and iterate."
+      }), " Did the test confirm or refute the hypothesis? If confirmed, proceed to fix. If refuted, return to Step 3 with new information."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 7 — Implement the fix."
+      }), " Apply the configuration change, replace the hardware, or restart the service. Make one change at a time so you know exactly which action resolved the issue."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Step 8 — Verify and document."
+      }), " Run the diagnostic test again to confirm the fix works. Document the root cause, the diagnostic steps taken, the fix applied, and any preventive measures."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1712-pseudocode-general-troubleshooting-algorithm",
+      children: "17.1.2 Pseudocode: General Troubleshooting Algorithm"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FUNCTION troubleshootNetwork(symptoms, scope):\n// Step 1: Define\nproblem = defineProblem(symptoms)\nexpectedBehavior = getExpectedBehavior(problem)\n// Step 2: Check obvious\nIF checkObvious(problem) RETURNS found:\nfixObviousIssue()\nverifyFix()\nRETURN\n// Step 3: Isolate scope\nscopeBoundary = determineScope(scope)\n// Step 4-6: OSI layer loop (bottom-up by default)\nFOR layer FROM 1 TO 7:\nhypotheses = generateHypotheses(layer, scopeBoundary)\nFOR EACH hypothesis IN hypotheses:\nIF hypothesisTest(hypothesis) IS confirmed:\nimplementFix(hypothesis.rootCause)\nverifyFix()\ndocument(problem, hypothesis, fix)\nRETURN\nescalateToVendor(problem)\nRETURN unresolved"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1713-dry-run-multi-layer-troubleshooting-walkthrough",
+      children: "17.1.3 Dry Run: Multi-Layer Troubleshooting Walkthrough"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Scenario: User cannot access intranet at ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://intranet.internal.com",
+        children: "https://intranet.internal.com"
+      }), ". Other websites work fine."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Expected vs Actual"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Decision"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Define problem"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "User interview"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Cannot reach ", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://intranet.internal.com",
+              children: "https://intranet.internal.com"
+            }), "; other sites OK"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Single URL, single user"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check obvious"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visual"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cable plugged in, link light green"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Move to next step"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Isolate scope"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Try from another PC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Another user CAN access intranet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scope = single workstation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypothesis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Layer-based reasoning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS? Network route? Hosts file?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Generate 3 hypotheses"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test #1: DNS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nslookup intranet.internal.com"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resolution returns correct 10.0.1.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS is working"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test #2: Route"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping 10.0.1.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Request timed out"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network layer issue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Test #3: Firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check local Windows Firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Intranet.exe blocked on public profile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Root cause found"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement fix"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Change network profile to Domain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Access restored"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Confirmed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "9"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Document"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write ticket resolution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RCA: Network profile mismatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Dry run trace table showing state at each iteration:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Iter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Layer Tested"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hypothesis"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test Command"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Action"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L5 - DNS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS cannot resolve intranet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nslookup intranet.internal.com"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resolved to 10.0.1.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypothesis rejected"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 - Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No route to 10.0.1.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping 10.0.1.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "100% loss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hypothesis confirmed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3a"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 - Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default gateway unreachable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping 10.0.0.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Success"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Gateway working"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3b"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 - Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall blocking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "netsh advfirewall show currentprofile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Public profile, intranet blocked"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Root cause"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Change to domain profile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "netsh advfirewall set currentprofile Domain"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ping succeeds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "172-physical-layer-issues-layer-1",
+      children: "17.2 Physical Layer Issues (Layer 1)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1721-overview",
+      children: "17.2.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The physical layer comprises cables (copper, fiber), connectors, signal repeaters, hubs, and the electrical/optical signals that carry bits. Physical layer problems account for approximately 40% of all network outages. Symptoms include: no link light, intermittent connectivity, high error rates, CRC errors, and link flapping."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Physical layer issues are like problems with a city road surface. A pothole (damaged cable) slows traffic; a collapsed bridge (severed fiber) stops all traffic. You cannot drive anywhere if the roads are broken, no matter how good your navigation system (higher-layer protocols) is."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-troubleshooting-steps",
+      children: "Numbered Troubleshooting Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify link lights. Both the switch port LED and NIC LED should be solid green. Amber or blinking indicates problems."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check cable type and length. Ethernet over Cat5e/6 is limited to 100 meters. Beyond that you need a repeater or fiber."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inspect for physical damage: bent pins, broken RJ45 tabs, kinked cables, corroded contacts."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check interface error counters: show interface port include CRC|runts|giants|collisions. Rising CRC errors suggest signal degradation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Run a cable test using TDR (Time Domain Reflectometer) to locate breaks."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with a known-good cable. Swapping the cable is faster than any analysis."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check PoE (Power over Ethernet). Verify the switch port is delivering power."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with a known-good device. If the cable tests fine but the device still fails, the NIC may be faulty."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-physical-layer-diagnostics",
+      children: "Pseudocode: Physical Layer Diagnostics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FUNCTION diagnosePhysical(interfaceName):\nlinkState = getLinkState(interfaceName)\nIF linkState IS \"down\":\ncableTesterResult = runCableDiagnostic(interfaceName)\nIF cableTesterResult INDICATES \"open\" OR \"short\":\nRETURN \"Faulty cable at \" + cableTesterResult.distance + \"m\"\nELSE:\nRETURN \"Interface admin down, check config\"\nerrors = getInterfaceErrors(interfaceName)\nIF errors.crcErrors > threshold:\nRETURN \"Signal degradation, possible faulty cable\"\nIF device IS PoE-powered:\npowerState = getPoEStatus(interfaceName)\nIF powerState IS \"fault\":\nRETURN \"PoE fault\"\nRETURN \"Physical layer OK\""
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table",
+      children: "Dry Run Trace Table"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Scenario: A security camera connected to switch port Gi0/12 goes offline."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Check"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Command"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Interpretation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Link light"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visual inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port LED is off"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Physical connectivity lost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cable test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "test cable-diagnostics Gi0/12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open at 47m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cable cut at 47m"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distance check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Measure run length"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Run length reported 50m"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cable damaged at 47m from switch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cable replacement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replace cable from 47m to camera"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Link light turns green"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Confirmed cable fault"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping camera-ip"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "64 bytes, 1ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Physical layer restored"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Auto-MDIX incompatibility: Older switches without Auto-MDIX need crossover cables."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PoE budget exceeded: Adding too many high-power devices causes switch to power-cycle ports."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Fiber dirty connectors: Microscopic dirt on fiber connector face causes intermittent errors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Crosstalk from bundled cables: Running many Cat6 cables through a single conduit causes interference."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Link flapping from EEE: Energy-Efficient Ethernet (802.3az) power saving may briefly drop link."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "173-data-link-layer-issues-layer-2",
+      children: "17.3 Data Link Layer Issues (Layer 2)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1731-overview",
+      children: "17.3.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The data link layer handles framing, MAC addressing, error detection, and media access control. Common issues include duplex mismatches, MAC address flooding, spanning tree problems, and VLAN misconfigurations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-1",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Data link problems are like a postal sorting office. Duplex mismatch = two sorting machines operating at different speeds, causing letters to pile up or get lost. MAC flooding = a bad actor sending millions of fake letters to overwhelm the sorting system. STP issues = delivery trucks going in circles because the road network has temporary loops."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-troubleshooting-steps-1",
+      children: "Numbered Troubleshooting Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check duplex and speed settings. A mismatch occurs when one side is set to \"auto\" and the other to \"full\" (or \"half\"). Symptoms: CRC errors on the full-duplex side, late collisions on the half-duplex side."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Inspect the MAC address table: show mac address-table. Unexpected MACs indicate potential bridging loops or MAC flooding."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check for STP topology changes: show spanning-tree. Frequent TCs indicate an unstable network."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify ARP entries on the host (arp -a) or router (show arp). Missing entries suggest Layer 2 problems."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check VLAN membership: show vlan brief. A port in the wrong VLAN cannot communicate across VLANs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Look for excessive broadcasts. High broadcast traffic (>1000 pkt/sec) may indicate a broadcast storm."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check port security: err-disabled ports from security violations."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-duplex-mismatch-detector",
+      children: "Pseudocode: Duplex Mismatch Detector"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FUNCTION detectDuplexMismatch(interfaceName, duration_seconds):\nbeforeCRC = getCounter(interfaceName, \"crcErrors\")\nbeforeLateColl = getCounter(interfaceName, \"lateCollisions\")\nsendTestTraffic(interfaceName, duration_seconds)\nafterCRC = getCounter(interfaceName, \"crcErrors\")\nafterLateColl = getCounter(interfaceName, \"lateCollisions\")\ncrcDelta = afterCRC - beforeCRC\nlateCollDelta = afterLateColl - beforeLateColl\nIF crcDelta > 100 AND lateCollDelta > 0:\nRETURN DUPLEX_MISMATCH_CONFIRMED\nELIF crcDelta > 10:\nRETURN POSSIBLE_DUPLEX_ISSUE\nELSE:\nRETURN NO_DUPLEX_ISSUE_DETECTED"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table-1",
+      children: "Dry Run Trace Table"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Two switches connected via trunk port Trk1. Users report intermittent connectivity."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Check"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Command"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Interpretation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Duplex settings"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show interface Trk1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PortA: Full, PortB: Auto"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Duplex mismatch!"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Error counters"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show interface Trk1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC: 1247, Late Collisions: 89"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Classic mismatch"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STP status"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show spanning-tree Trk1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Blocking -> Learning -> Forwarding cycling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TC every 30s"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set duplex consistently"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "duplex full"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Both sides full duplex"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix applied"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verify after 1 minute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show interface Trk1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC: 2 (new), Late Coll: 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Errors stopped"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Duplex Mismatch Symptom Matrix:"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Side A Setting"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Side B Setting"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Side A Symptoms"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Side B Symptoms"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC errors, FCS errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Late collisions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Half"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Late collisions, alignment errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Auto (both fail)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Late collisions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full (correct)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clean"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Clean"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-mac-flood-detection",
+      children: "Pseudocode: MAC Flood Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FUNCTION detectMACFlooding(switchName):\nentries = getMacTableEntryCount(switchName)\nbaseline = getBaseline(switchName, \"macEntries\")\nIF entries > baseline * 3:\ntopPorts = getPortsByMacCount(switchName, LIMIT=5)\nFOR EACH port IN topPorts:\nmacs = getMacsOnPort(port)\nuniqueOuis = countUniqueOUI(macs)\ntotalMacs = countMacs(macs)\nIF uniqueOuis > totalMacs * 0.8:\nRETURN \"MAC flooding attack suspected on \" + port\nELSE:\nRETURN \"High MAC count on \" + port\nRETURN \"MAC table normal\""
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-duplexspeed-analyzer",
+      children: "C++ Implementation: Duplex/Speed Analyzer"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["#include <iostream>\n#include <string>\n#include ", (0,jsx_runtime.jsx)(_components.map, {})]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "enum class DuplexMode { HALF, FULL, AUTO_FAIL };"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "struct PortStats {\nstd::string name; DuplexMode config, actual;\nint speed; int crcErrors; int lateCollisions;\n};"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "class DuplexAnalyzer {\nstd::map<std::string, PortStats> ports;\npublic:\nDuplexAnalyzer() {\nports[\"Gi0/1\"] = {\"Gi0/1\", DuplexMode::FULL, DuplexMode::FULL, 1000, 2, 0};\nports[\"Gi0/3\"] = {\"Gi0/3\", DuplexMode::FULL, DuplexMode::AUTO_FAIL, 1000, 1247, 89};\n}\nstd::string diagnose(const std::string& p) {\nif (ports.find(p) == ports.end()) return \"Not found\";\nauto& pt = ports[p];\nbool mismatch = (pt.config != pt.actual);\nif (mismatch || pt.crcErrors > 100) {\nreturn \"DUPLEX MISMATCH on \" + p + \"\\n  Config=\" + duplexStr(pt.config) + \" Actual=\" + duplexStr(pt.actual) + \"\\n  CRC=\" + std::to_string(pt.crcErrors) + \" LateColl=\" + std::to_string(pt.lateCollisions);\n}\nreturn p + \" OK (\" + duplexStr(pt.actual) + \")\";\n}\nstd::string duplexStr(DuplexMode d) {\nif (d == DuplexMode::FULL) return \"Full\";\nif (d == DuplexMode::HALF) return \"Half\";\nreturn \"Auto(fail)\";\n}\n};"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "int main() {\nDuplexAnalyzer da;\nstd::cout << da.diagnose(\"Gi0/3\") << std::endl;\nreturn 0;\n}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-implementation-mac-flood-detector",
+      children: "Python Implementation: MAC Flood Detector"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "import random, time\nfrom dataclasses import dataclass, field\nfrom typing import Dict"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "@dataclass\nclass SwitchPort:\nport_id: str; max_limit: int = 100\nmacs: Dict[str, float] = field(default_factory=dict)\nerr_disabled: bool = False; violations: int = 0"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "def learn(self, mac: str) -> bool:\n    if self.err_disabled: return False\n    if mac not in self.macs:\n        if len(self.macs) >= self.max_limit:\n            self.violations += 1\n            if self.violations >= 3: self.err_disabled = True; return False\n            oldest = min(self.macs, key=self.macs.get)\n            del self.macs[oldest]\n        self.macs[mac] = time.time()\n    return True\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["class FloodDetector:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "init"
+      }), "(self):\nself.ports: Dict[str, SwitchPort] = {}\ndef add_port(self, pid: str, limit: int = 100):\nself.ports[pid] = SwitchPort(pid, limit)\ndef attack(self, pid: str, count: int):\np = self.ports.get(pid)\nif not p: return\nfor _ in range(count):\nmac = \":\".join(f\"{random.randint(0,255):02X}\" for _ in range(6))\np.learn(mac)\nif p.err_disabled: break"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["if ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "name"
+      }), " == \"", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "main"
+      }), "\":\nfd = FloodDetector()\nfd.add_port(\"Gi0/1\", 100); fd.add_port(\"Gi0/2\", 100); fd.add_port(\"Gi0/3\", 100)\nfd.attack(\"Gi0/3\", 300)\nfor pid, p in fd.ports.items():\nutil = len(p.macs) / p.max_limit * 100\nprint(f\"[{'FLOOD' if (util>80 or p.err_disabled) else 'OK'}] {pid}: {len(p.macs)}/{p.max_limit} ({util:.0f}%)\")"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-for-data-link-diagnostics",
+      children: "Complexity Analysis for Data Link Diagnostics"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Duplex mismatch detection: O(1) → counters are hardware registers. MAC flood detection: O(m) where m = MAC entries. Space: O(m)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-for-data-link",
+      children: "Edge Cases for Data Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "VMs on hypervisor ports legitimately learn 50+ MACs across multiple OUIs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Asymmetric routing causes MAC flapping logs (not an attack)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "STP reconvergence flushes MAC tables, temporary relearning looks like flood."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "174-network-layer-issues-layer-3",
+      children: "17.4 Network Layer Issues (Layer 3)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1741-overview",
+      children: "17.4.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network layer issues involve IP addressing, routing, packet forwarding, and ICMP. Common problems: routing loops, misconfigured static routes, missing default gateways, MTU mismatches, ICMP filtering, and asymmetric routing."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-2",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network layer problems are like GPS navigation errors. A routing loop is the GPS telling you to go in circles. A misconfigured default gateway is like the GPS routing you to the wrong highway exit. MTU mismatch is like a tunnel that only allows compact cars but your delivery truck is too tall."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-troubleshooting-steps-2",
+      children: "Numbered Troubleshooting Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify IP configuration on the host: ipconfig /all or ip addr. Check IP, mask, gateway, DNS."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Ping the default gateway. If unreachable, problem is local subnet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Ping a remote IP (not hostname). Tests Layer 3 without DNS."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Run traceroute. Identify which hop stops responding."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check routing tables: show ip route, route print, ip route."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check for routing loops: same hops repeating in traceroute."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test MTU with DF bit: ping -M do -s 1472 destination."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check firewall/ACL rules blocking ICMP."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-routing-loop-detector",
+      children: "Pseudocode: Routing Loop Detector"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FUNCTION detectRoutingLoop(destination, maxHops):\nFOR attempt FROM 1 TO 3:\nhops = traceroute(destination)\nFOR i FROM 0 TO length(hops) - 3:\nIF hops[i] == hops[i+1] == hops[i+2]:\nRETURN \"Loop at hop \" + i\nIF hops[i] == hops[i+2] AND hops[i] != hops[i+1]:\nRETURN \"2-hop loop \" + hops[i] + \" <-> \" + hops[i+1]\nIF NOT reached AND length(hops) >= maxHops:\nRETURN \"Possible loop at \" + lastHop\nRETURN \"No loop\""
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table-2",
+      children: "Dry Run Trace Table"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Subnet 10.1.1.0/24 cannot reach 10.2.2.0/24."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Trace Hop"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "IP"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "RTT"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "TTL"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Observation"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.1.1.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "254"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Local gateway OK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.100.1.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "253"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WAN router"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.100.2.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "252"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Second hop"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.100.1.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "251"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "BACK TO HOP 2!"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "10.100.2.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "5ms"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "250"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Oscillating"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TTL expires at 30"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Root cause: Router R2 points to R1 for 10.2.2.0/24, R1 points back to R2."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-implementation-ping-simulator-with-ttl",
+      children: "C++ Implementation: Ping Simulator with TTL"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "#include <iostream>\n#include <string>\n#include <vector>\n#include <random>"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "struct PingResult { std::string dest; int sent, rcvd, loss; double minR, avgR, maxR; };"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "class PingSim {\nstd::mt19937 rng{std::random_device{}()};\nstruct Hop { std::string ip; double lat, jit; double loss; };\nstd::vector<Hop> path(const std::string& d) {\nif (d==\"10.2.2.100\") return {{\"gw\",1,0.5,0},{\"rtr1\",3,1,0},{\"rtr2\",10,2,0},{\"svr\",12,1,0.01}};\nreturn {};\n}\npublic:\nPingResult ping(const std::string& d, int c=5) {\nauto p = path(d); PingResult r{d,c,0,0,9999,0,0};\nfor (int i=1;i<=c;i++) {\ndouble del=0; bool lost=false;\nfor (auto& h : p) { if (std::uniform_real_distribution<>(0,1)(rng)<h.loss) { lost=true; break; } del += h.lat + std::normal_distribution<>(0,h.jit)(rng); }\nif (!lost) { double rtt=del*2; r.rcvd++; r.avgR+=rtt; if(rtt<r.minR)r.minR=rtt; if(rtt>r.maxR)r.maxR=rtt; std::cout<<\"seq=\"<<i<<\" time=\"<<rtt<<\"ms\\n\"; }\n}\nr.loss=(c-r.rcvd)*100/c; r.avgR=r.rcvd?r.avgR/r.rcvd:0;\nreturn r;\n}\n};"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "int main() {\nauto r=PingSim().ping(\"10.2.2.100\",5);\nstd::cout<<r.sent<<\" sent, \"<<r.rcvd<<\" rcvd, \"<<r.loss<<\"% loss\\n\";\nreturn 0;\n}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-traceroute-analyzer--path-mtu",
+      children: "Python: Traceroute Analyzer + Path MTU"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "import random\nfrom dataclasses import dataclass\nfrom typing import List, Optional, Tuple"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "@dataclass\nclass Hop:\nn: int; ip: str; rtts: List[Optional[float]]\n@property\ndef loss(self): return sum(1 for r in self.rtts if r is None)/3*100"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["class TraceResult:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "init"
+      }), "(self, dest: str):\nself.dest = dest; self.hops: List[Hop] = []; self.ok = False\ndef detect_loop(self) -> Optional[str]:\nfor i in range(len(self.hops)-3):\nif self.hops[i].ip == self.hops[i+2].ip and self.hops[i+1].ip == self.hops[i+3].ip:\nreturn f\"2-hop loop at {i}: {self.hops[i].ip} <-> {self.hops[i+1].ip}\"\nif self.hops[i].ip == self.hops[i+1].ip == self.hops[i+2].ip:\nreturn f\"Same-hop loop at {i}: {self.hops[i].ip}\"\nreturn None"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["class TraceSim:\nTOPS = {\n\"ok\": [(\"192.168.1.1\",1),(\"10.0.0.1\",3),(\"142.250.80.14\",12)],\n\"loop\": [(\"10.1.1.1\",1),(\"10.100.1.1\",5),(\"10.100.2.1\",5),(\"10.100.1.1\",5),(\"10.100.2.1\",5)],\n}\ndef trace(self, which=\"ok\") -> TraceResult:\ntop = self.TOPS[which]; r = TraceResult(top[-1][0])\nfor i,(ip,base) in enumerate(top,1):\nrtts = [round(base+random.uniform(-0.5,0.5)", (0,jsx_runtime.jsx)(_components.em, {
+        children: "base"
+      }), "0.2,1) for _ in range(3)]\nr.hops.append(Hop(i,ip,rtts))\nr.ok = True; return r"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def mtu_discover(max_sz=1500, min_sz=500):\npmtu = 1400; lo, hi, good = min_sz, max_sz, min_sz\nwhile lo <= hi:\nmid = (lo+hi)//2\nif mid <= pmtu: print(f\"  -s {mid}: OK\"); good=mid; lo=mid+1\nelse: print(f\"  -s {mid}: FAIL\"); hi=mid-1\nprint(f\"\\nPath MTU = {good+28}\\nMSS clamp: {good-20}\")"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["if ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "name"
+      }), " == \"", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "main"
+      }), "\":\nr = TraceSim().trace(\"loop\")\nprint([f\"{h.n}: {h.ip}\" for h in r.hops])\nloop = r.detect_loop()\nif loop: print(f\"LOOP: {loop}\")\nprint(); mtu_discover()"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Ping: O(h", (0,jsx_runtime.jsx)(_components.em, {
+        children: "c). Traceroute: O(h"
+      }), "p). MTU discovery: O(log n) binary search. Loop detection: O(h) linear scan. Binary search for MTU is critical → each probe requires network RTT wait."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-1",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ICMP blocked: ping fails but TCP works. Use curl/tcping."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Asymmetric routing: traceroute shows only forward path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ECMP: Different probes may take different paths."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tunnel MTU: VPN adds header overhead; without MSS clamping, TCP stalls."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Black hole: next hop has no return route."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "175-transport-layer-issues-layer-4",
+      children: "17.5 Transport Layer Issues (Layer 4)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1751-overview",
+      children: "17.5.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Transport layer issues involve TCP/UDP port accessibility, socket states, TIME_WAIT exhaustion, connection limits, and firewall filtering."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-3",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Like a busy restaurant phone system. Port blocked = disconnected line. TIME_WAIT exhaustion = never reusing old numbers, running out. Connection limits = 50 tables but 200 calling at once."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps",
+      children: "Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check listening port: ss -tln or netstat -an | find \"LISTEN\"."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test connectivity: telnet host port or nc -zv host port."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check firewall: iptables -L, Windows Firewall, cloud security groups."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check states: ss -s. Many TIME_WAIT (>30000) = short connections."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check backlog: non-zero Recv-Q on LISTEN = full."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check for SYN cookies: /proc/net/netstat TCPReqQFullDrop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Capture handshake with tcpdump: retransmitted SYN = server not responding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-port-scanner",
+      children: "Pseudocode: Port Scanner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FUNCTION scanPort(host, port, timeout_ms):\nsocket = createSocket(TCP)\nsocket.setTimeout(timeout_ms)\nTRY: socket.connect(host, port); RETURN {port: OPEN}\nCATCH ConnectionRefused: RETURN {port: CLOSED}\nCATCH Timeout: RETURN {port: FILTERED}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table-3",
+      children: "Dry Run Trace Table"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Web server 10.0.0.50 not responding from client 10.0.0.100."
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Command"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Interp"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server port"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ss -tln"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LISTEN :80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server listening"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client test"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["curl ", (0,jsx_runtime.jsx)(_components.a, {
+              href: "http://10.0.0.50:80",
+              children: "http://10.0.0.50:80"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection refused"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP fails"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Telnet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "telnet 10.0.0.50 80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transport issue"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump host 10.0.0.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN sent, RST rcvd"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Rejected"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iptables -L OUTPUT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DROP to 10.0.0.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Root cause"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iptables -I OUTPUT ..."
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl succeeds"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fixed"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-tcp-port-scanner-threaded",
+      children: "C++: TCP Port Scanner (Threaded)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "#include <iostream>\n#include <string>\n#include <vector>\n#include <future>\n#ifdef _WIN32\n#include <winsock2.h>\n#include <ws2tcpip.h>\n#pragma comment(lib,\"ws2_32\")\n#else\n#include <sys/socket.h>\n#include <netinet/in.h>\n#include <arpa/inet.h>\n#include <unistd.h>\n#include <fcntl.h>\n#define SOCKET int\n#define INVALID_SOCKET -1\n#define closesocket close\n#endif"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "struct Result { int port; bool open; double rtt; };\nstd::string svc(int p) {\nconst char* s[]={\"\",\"\",\"FTP\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"FTP-data\",\"SSH\",\"Telnet\",\"\",\"SMTP\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"DNS\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"HTTP\"};\nreturn (p>=0&&p<100) ? s[p] : \"?\";\n}"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Result scan(const std::string& host, int port, int tmo=2000) {\nauto start = std::chrono::steady_clock::now();\n#ifdef _WIN32\nWSADATA w; WSAStartup(MAKEWORD(2,2),&w);\n#endif\nSOCKET s = socket(AF_INET, SOCK_STREAM, 0);\nif (s == INVALID_SOCKET) return {port,false,0};\n#ifdef _WIN32\nu_long m=1; ioctlsocket(s,FIONBIO,&m);\n#endif\nsockaddr_in a{}; a.sin_family=AF_INET; a.sin_port=htons(port);\ninet_pton(AF_INET,host.c_str(),&a.sin_addr);\nconnect(s,(sockaddr*)&a,sizeof(a));\nfd_set w; FD_ZERO(&w); FD_SET(s,&w);\ntimeval tv{tmo/1000,(tmo%1000)", (0,jsx_runtime.jsx)(_components.em, {
+        children: "1000};\nbool ok = select(0,nullptr,&w,nullptr,&tv)>0;\nif (ok) { int e=0; socklen_t l=sizeof(e); getsockopt(s,SOL_SOCKET,SO_ERROR,(char"
+      }), ")&e,&l); ok=(e==0); }\nclosesocket(s);\nauto rtt = std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-start).count();\nreturn {port,ok,rtt};\n}"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "int main() {\nstd::vector<Result> res;\nstd::vector<std::future<Result>> futs;\nfor (int p=1;p<=1024;p++) {\nfuts.push_back(std::async(std::launch::async,scan,\"10.0.0.50\",p,1500));\nif (futs.size()>=50||p==1024) { for(auto&f:futs){auto r=f.get();if(r.open)res.push_back(r);} futs.clear(); }\n}\nfor (auto& r : res) std::cout << r.port << \"\\t\" << svc(r.port) << \"\\t\" << r.rtt << \"ms\\n\";\nreturn 0;\n}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-connection-state-analyzer",
+      children: "Python: Connection State Analyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "from collections import Counter\nfrom typing import List, Dict\nimport random"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "class StateAnalyzer:\ndef simulate(self, scenario=\"healthy\") -> List[str]:\ncfg = {\n\"healthy\": {\"ESTABLISHED\":150,\"TIME_WAIT\":20,\"LISTEN\":15},\n\"tw_exhaust\": {\"TIME_WAIT\":35000,\"ESTABLISHED\":200,\"LISTEN\":15},\n\"cw_leak\": {\"CLOSE_WAIT\":500,\"ESTABLISHED\":100,\"LISTEN\":15},\n\"synflood\": {\"SYN_RECV\":3000,\"ESTABLISHED\":50,\"LISTEN\":15},\n}[scenario]\nreturn [s for s,c in cfg.items() for _ in range(c)]"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "def analyze(self, states: List[str]) -> Dict:\n    c = Counter(states)\n    return {\n        \"total\": len(states),\n        \"states\": dict(c),\n        \"tw_exhaust\": c.get(\"TIME_WAIT\",0)>30000,\n        \"cw_leak\": c.get(\"CLOSE_WAIT\",0)>100,\n        \"synflood\": c.get(\"SYN_RECV\",0)>1000,\n    }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "sa = StateAnalyzer()\nfor sc in [\"healthy\",\"tw_exhaust\",\"cw_leak\",\"synflood\"]:\nr = sa.analyze(sa.simulate(sc))\nprint(f\"=== {sc} ({r['total']} conns) ===\")\nfor s,n in sorted(r[\"states\"].items(),key=lambda x:-x[1]):\nprint(f\"  {s:15} {n:>6}\")\nif r[\"tw_exhaust\"]: print(\"  [!!!] TIME_WAIT exhaustion\")\nif r[\"cw_leak\"]: print(\"  [!!!] CLOSE_WAIT leak\")\nif r[\"synflood\"]: print(\"  [!!!] SYN flood\")\nprint()"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity--edge-cases",
+      children: "Complexity & Edge Cases"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Port scan: O(p/t) threaded. State analysis: O(n). TIME_WAIT: each lasts 2*MSL (~60s). ~28K ephemeral ports = ~470 conns/sec max. SYN cookies bypass backlog but lose TCP options. Firewall RST injection kills idle connections. MSS clamping in FW affects performance."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "176-application-layer-issues-layers-5-7",
+      children: "17.6 Application Layer Issues (Layers 5-7)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1761-overview",
+      children: "17.6.1 Overview"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "DNS failures, HTTP/HTTPS errors, SSL/TLS handshake problems, application protocol violations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "real-world-analogy-4",
+      children: "Real-World Analogy"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Correct address and phone (L1-4 working) but wrong department or wrong language. DNS = missing directory. HTTP error = \"cannot help you.\" SSL = refuses identity verification."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "numbered-steps-1",
+      children: "Numbered Steps"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check DNS: nslookup/dig. Verify returned IP."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test alternate resolver: dig @8.8.8.8 hostname."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check HTTP: curl -v. Shows handshake + status."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check TLS: openssl s_client -connect host:443."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check app logs (access/error). 500 = server log check."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check WAF logs for blocked requests."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Verify HTTP method/headers."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pseudocode-dns-checker",
+      children: "Pseudocode: DNS Checker"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "FUNCTION checkDNS(hostname):\nips = dnsResolve(hostname)\nIF ips empty: RETURN {status:\"NXDOMAIN\"}\npubIps = dnsResolveWithServer(hostname, \"8.8.8.8\")\nIF ips[0] != pubIps[0]:\nRETURN {status:\"WARN\", msg:\"Split-brain DNS\"}\nRETURN {status:\"OK\", ips: ips}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "dry-run-trace-table-4",
+      children: "Dry Run Trace Table"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["502 Bad Gateway at ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://api.example.com",
+        children: "https://api.example.com"
+      }), "."]
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Step"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Check"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Result"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Interp"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dig api.example.com"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A 203.0.113.50"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS OK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl -v 203.0.113.50:443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP handshake OK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L4 OK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "openssl s_client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cert valid"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS OK"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl /health"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "502 Bad Gateway"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App error"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nginx error log"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "connect() failed to :8080"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Upstream down"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "systemctl status app"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Failed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "App crashed"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "start app"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Started"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl /health"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "200 OK"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resolved"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "c-http-status-checker",
+      children: "C++: HTTP Status Checker"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "#include <iostream>\n#include <string>\n#include <regex>\n#include <chrono>\n#ifdef _WIN32\n#include <winsock2.h>\n#include <ws2tcpip.h>\n#pragma comment(lib,\"ws2_32\")\n#else\n#include <sys/socket.h>\n#include <netdb.h>\n#include <unistd.h>\n#define SOCKET int\n#endif"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "struct HTTP { int code; std::string text; double dns, tcp, total; bool err; std::string msg; };"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "HTTP check(const std::string& h, int p=80, const std::string& path=\"/\") {\nHTTP r{0,\"\",0,0,0,false,\"\"};\nauto start = std::chrono::steady_clock::now();\n// DNS\naddrinfo hints{},*addrs; hints.ai_family=AF_INET; hints.ai_socktype=SOCK_STREAM;\nauto ds=std::chrono::steady_clock::now();\nif(getaddrinfo(h.c_str(),std::to_string(p).c_str(),&hints,&addrs)!=0) { r.err=true; r.msg=\"DNS fail\"; return r; }\nr.dns=std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-ds).count();\n// TCP\nauto ts=std::chrono::steady_clock::now();\nSOCKET s=socket(AF_INET,SOCK_STREAM,0);\nif(connect(s,addrs->ai_addr,(int)addrs->ai_addrlen)<0) { r.err=true; r.msg=\"TCP fail\"; closesocket(s); freeaddrinfo(addrs); return r; }\nr.tcp=std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-ts).count();\nfreeaddrinfo(addrs);\n// HTTP\nstd::string req=\"GET \"+path+\" HTTP/1.1\\r\\nHost: \"+h+\"\\r\\nConnection: close\\r\\n\\r\\n\";\nsend(s,req.c_str(),req.size(),0);\nstd::string resp; char buf[4096]; int n;\nwhile((n=recv(s,buf,sizeof(buf)-1,0))>0){buf[n]=0;resp+=buf;}\nr.total=std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-start).count();\nclosesocket(s);\nstd::smatch m;\nif(std::regex_search(resp,m,std::regex(\"HTTP/\\d\\.\\d\\s+(\\d+)\\s+(\\S+)\"))){ r.code=std::stoi(m[1]); r.text=m[2]; }\nreturn r;\n}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "std::string interp(int c) {\nif(c==200)return\"OK\";if(c>=300&&c<400)return\"Redirect\";\nif(c==400)return\"BadReq\";if(c==401)return\"Unauth\";if(c==403)return\"Forbid\";\nif(c==404)return\"NotFound\";if(c==429)return\"RateLimit\";if(c==500)return\"ServerErr\";\nif(c==502)return\"BadGW\";if(c==503)return\"Unavail\";if(c==504)return\"GWTimeout\";return\"?\";\n}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "int main() {\nauto r=check(\"example.com\",80,\"/\");\nif(r.err) std::cout<<\"Error: \"<<r.msg<<\"\\n\";\nelse std::cout<<\"HTTP \"<<r.code<<\" \"<<interp(r.code)<<\" (dns:\"<<r.dns<<\"ms tcp:\"<<r.tcp<<\"ms total:\"<<r.total<<\"ms)\\n\";\nreturn 0;\n}"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "python-tls-certificate-diagnoser",
+      children: "Python: TLS Certificate Diagnoser"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "from dataclasses import dataclass\nfrom datetime import datetime, timedelta\nfrom typing import List"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "@dataclass\nclass Cert:\nsub: str; iss: str; nb: datetime; na: datetime; sans: List[str]\n@property\ndef days(self): return (self.na - datetime.now()).days\n@property\ndef expired(self): return datetime.now() > self.na\ndef matches(self, host: str) -> bool:\nif host in self.sans: return True\nfor san in self.sans:\nif san.startswith(\"*.\") and host.endswith(san[1:]): return host.count(\".\") == san.count(\".\")+1\nreturn False"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def chain(host: str, sc: str = \"valid\") -> List[Cert]:\nnow = datetime.now()\nreturn {\n\"valid\": [Cert(f\"CN={host}\",\"CA-R3\",now-timedelta(30),now+timedelta(65),[host])],\n\"expired\": [Cert(f\"CN={host}\",\"CA\",now-timedelta(400),now-timedelta(30),[host])],\n\"mismatch\": [Cert(\"CN=wrong.com\",\"CA\",now-timedelta(30),now+timedelta(335),[\"wrong.com\"])],\n\"selfsigned\": [Cert(f\"CN={host}\",f\"CN={host}\",now-timedelta(30),now+timedelta(335),[host])],\n}[sc]"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def diag(host: str, sc: str = \"valid\"):\nleaf = chain(host, sc)[0]\niss = []\nif leaf.expired: iss.append(f\"EXPIRED {abs(leaf.days)}d ago\")\nelif leaf.days < 30: iss.append(f\"Expires {leaf.days}d\")\nif not leaf.matches(host): iss.append(f\"Hostname mismatch: SAN={leaf.sans}\")\nstatus = \"FAIL\" if iss and (\"EXPIRED\" in iss[0] or \"mismatch\" in iss[0]) else \"WARN\" if iss else \"PASS\"\nprint(f\"[{status}] {host}\\n  Subj: {leaf.sub}\\n  Exp: {leaf.na.date()} ({leaf.days}d)\\n  Iss: {leaf.iss}\")\nfor i in iss: print(f\"  [!] {i}\")\nprint()"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "for sc in [\"valid\",\"expired\",\"mismatch\",\"selfsigned\"]:\ndiag(\"api.example.com\", sc)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "complexity-analysis-1",
+      children: "Complexity Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "TLS: O(c) chain length. HTTP: O(1). DNS: O(d) delegation depth."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "edge-cases-2",
+      children: "Edge Cases"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DNS split-brain: different IPs inside vs outside."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TLS SNI: no SNI = wrong certificate."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "OCSP unreachable: some browsers soft-fail, some hard-fail."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "HSTS preload: no HTTP fallback."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "HTTP/2 coalescing: one crash affects all on shared connection."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "177-troubleshooting-tools--deep-dive",
+      children: "17.7 Troubleshooting Tools → Deep Dive"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1771-ping--icmp-echo",
+      children: "17.7.1 ping → ICMP Echo"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Purpose:"
+      }), " Test basic IP connectivity, measure RTT, detect packet loss."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Command syntax:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "ping [options] <destination>\n  -c count      Number of packets (Linux)\n  -n count      Number of packets (Windows)\n  -i interval   Seconds between packets\n  -s size       Packet payload size\n  -M do         Set DF bit (Linux)\n  -f            Set DF bit (Windows)\n  -W timeout    Per-response timeout\n  -4 / -6       Force IPv4/IPv6\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interpretation:"
+      }), " Loss > 1% is concerning for real-time apps. RTT variance (jitter) > 10ms affects VoIP. TTL = 64 (Linux default) or 128 (Windows). Hops = initial TTL - received TTL."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(c * h) per test. c = count, h = hops."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      }), " ICMP blocked = false positive. Rate limiting = false loss. Large packets fragment without DF, drop with DF."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "typescript-implementation-pingtracer",
+      children: "TypeScript Implementation: PingTracer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface PingResult {\n  destination: string;\n  packetsSent: number;\n  packetsReceived: number;\n  packetLoss: number;\n  rttMin: number;\n  rttMax: number;\n  rttAvg: number;\n  rttStdDev: number;\n  jitter: number;\n}\n\ninterface PingProbe {\n  sequenceNumber: number;\n  sentAt: number;\n  receivedAt: number | null;\n  ttl: number;\n}\n\nclass PingTracer {\n  private probes: PingProbe[] = [];\n  private timeout: number;\n\n  constructor(private destination: string, private count: number = 4, timeoutMs: number = 1000) {\n    this.timeout = timeoutMs;\n  }\n\n  sendProbe(seq: number): PingProbe {\n    const probe: PingProbe = {\n      sequenceNumber: seq,\n      sentAt: Date.now(),\n      receivedAt: null,\n      ttl: 64,\n    };\n    // Simulate ICMP echo request\n    const simulatedRtt = 10 + Math.random() * 40; // 10-50ms\n    if (Math.random() > 0.05) { // 95% delivery rate\n      probe.receivedAt = probe.sentAt + simulatedRtt;\n    }\n    return probe;\n  }\n\n  execute(): PingResult {\n    for (let i = 0; i < this.count; i++) {\n      this.probes.push(this.sendProbe(i));\n    }\n\n    const received = this.probes.filter(p => p.receivedAt !== null);\n    const rtts = received.map(p => p.receivedAt! - p.sentAt);\n    const avg = rtts.reduce((a, b) => a + b, 0) / rtts.length;\n    const variance = rtts.reduce((a, b) => a + (b - avg) ** 2, 0) / rtts.length;\n\n    return {\n      destination: this.destination,\n      packetsSent: this.count,\n      packetsReceived: received.length,\n      packetLoss: ((this.count - received.length) / this.count) * 100,\n      rttMin: Math.min(...rtts),\n      rttMax: Math.max(...rtts),\n      rttAvg: avg,\n      rttStdDev: Math.sqrt(variance),\n      jitter: rtts.length > 1 ? rtts.slice(1).reduce((a, b, i) => a + Math.abs(b - rtts[i]), 0) / (rtts.length - 1) : 0,\n    };\n  }\n}\n\n// Usage\nconst ping = new PingTracer(\"8.8.8.8\", 5);\nconst result = ping.execute();\n// console.log(`Loss: ${result.packetLoss}%, Avg RTT: ${result.rttAvg.toFixed(2)}ms, Jitter: ${result.jitter.toFixed(2)}ms`);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1772-traceroute--mtr",
+      children: "17.7.2 traceroute / mtr"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Purpose:"
+      }), " Discover path, per-hop latency, routing loops, packet loss location."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Command syntax:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "traceroute [options] <destination>\n  -n            Skip DNS\n  -q probes     Probes per hop (default 3)\n  -w timeout    Wait time per probe\n  -m max_ttl    Max TTL (default 30)\n  -I            Use ICMP Echo (Linux)\n  -T            Use TCP SYN (Linux)\n\nmtr [options] <destination>\n  --report      Single-pass report\n  -c count      Pings per hop\n  -i interval   Seconds between pings\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interpretation:"
+      }), " Asterisks indicate no ICMP Time Exceeded response (firewall). Three probes per hop show variance. MTR running for 5-10 minutes catches intermittent loss."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(h * p). h = hops, p = probes per hop (3)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Edge cases:"
+      }), " Firewalls block ICMP Time Exceeded. ECMP shows alternating paths. Asymmetric routing hides return path loss. MPLS tunnels may not decrement TTL."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "typescript-implementation-traceroutesim",
+      children: "TypeScript Implementation: TracerouteSim"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface HopResult {\n  hopNumber: number;\n  ipAddress: string;\n  rtt1: number;\n  rtt2: number;\n  rtt3: number;\n  isTimeout: boolean;\n}\n\nclass TracerouteSim {\n  simulate(destination: string, maxHops: number = 30): HopResult[] {\n    const results: HopResult[] = [];\n    const baseLatency = 5; // ms per hop\n\n    for (let ttl = 1; ttl <= maxHops; ttl++) {\n      if (Math.random() < 0.02) {\n        // Simulate a timeout (firewall blocking ICMP Time Exceeded)\n        results.push({ hopNumber: ttl, ipAddress: '*', rtt1: 0, rtt2: 0, rtt3: 0, isTimeout: true });\n        continue;\n      }\n\n      // Simulate a router IP\n      const ip = `10.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 254) + 1}`;\n      const jitter = () => baseLatency * ttl + (Math.random() - 0.5) * 10;\n\n      results.push({\n        hopNumber: ttl,\n        ipAddress: ip,\n        rtt1: Math.max(0.1, jitter()),\n        rtt2: Math.max(0.1, jitter()),\n        rtt3: Math.max(0.1, jitter()),\n        isTimeout: false,\n      });\n\n      // Simulate reaching destination\n      if (ttl === Math.floor(Math.random() * 10) + 15) {\n        results[results.length - 1].ipAddress = destination;\n        break;\n      }\n    }\n    return results;\n  }\n}\n\n// Usage\nconst traceroute = new TracerouteSim();\nconst hops = traceroute.simulate(\"93.184.216.34\"); // example.com\n// hops.forEach(h => console.log(`${h.hopNumber}. ${h.isTimeout ? '* * *' : `${h.ipAddress} ${h.rtt1.toFixed(2)}ms ${h.rtt2.toFixed(2)}ms ${h.rtt3.toFixed(2)}ms`}`));\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1773-netstat--ss",
+      children: "17.7.3 netstat / ss"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Purpose:"
+      }), " Display connections, routing tables, interface stats."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Command syntax:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "ss [options]\n  -t            TCP only          -u   UDP only\n  -l            Listening only    -n   Numeric\n  -p            Show process      -s   Summary\n  -o            Timer info        -e   Extended\n  -i            TCP internal (cwnd, rtt)\n\nnetstat [options]\n  -a            All connections   -n   Numeric\n  -o            Process ID        -p tcp   TCP filter\n  -s            Protocol stats    -r   Routing\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(n) where n = active connections. Kernel enumerates hash table."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1774-nslookup--dig",
+      children: "17.7.4 nslookup / dig"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Purpose:"
+      }), " DNS query and resolution diagnostics."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "nslookup [hostname] [dns-server]\n  -type=record  A, AAAA, MX, NS, etc.\n\ndig [@server] [hostname] [type] [options]\n  +short        Brief output           +trace   Delegation chain\n  +tcp          Force TCP              -x IP    Reverse lookup\n  +dnssec       Show DNSSEC records    +norecurse   Non-recursive\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(d) where d = delegation depth (typically 3-5). Each level = one query."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1775-tcpdump",
+      children: "17.7.5 tcpdump"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Purpose:"
+      }), " Capture and analyze packets at interface level."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "tcpdump [options] [filter]\n  -i iface      Interface               -nn  No DNS/port resolution\n  -v/-vv/-vvv   Verbosity               -X   Hex + ASCII\n  -A            ASCII only              -s   Snaplen\n  -c count      Stop after count        -w file.pcap  Write\n  -r file.pcap  Read                    -e   MAC headers\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tcpdump-filter-syntax--quick-reference",
+      children: "tcpdump Filter Syntax → Quick Reference"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Expression"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "host 10.0.0.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match src or dst 10.0.0.1"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "src 10.0.0.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Source IP only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "net 10.0.0.0/24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Match subnet"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "port 80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Src or dst port 80"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "udp"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UDP only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "icmp"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp port 80 and host 10.0.0.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AND condition"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp port 80 or udp port 53"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "OR condition"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "not arp"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Exclude ARP"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp[13] & 2 != 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN flag set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp[13] & 16 != 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ACK flag set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp[13] & 18 == 18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN-ACK set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp[13] & 1 != 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "FIN flag set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcp[13] & 4 != 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RST flag set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ip[6:2] & 0x2000 != 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DF bit set"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "greater 1000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet len > 1000"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "less 100"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet len < 100"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "broadcast"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ethernet broadcast"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "vlan"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "802.1Q tagged"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "icmp[icmptype] == 3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP Dest Unreachable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "icmp[icmptype] == 8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP Echo Request"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "icmp[icmptype] == 0"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP Echo Reply"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "icmp[icmptype] == 11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP Time Exceeded"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Common Diagnosis Patterns:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "# See any traffic at all\ntcpdump -i eth0 -nn -c 10\n# Watch TCP handshake to server\ntcpdump -i eth0 -nn host 10.0.0.50 and port 443\n# Retransmissions\ntcpdump -i eth0 -nn tcp[13] & 4 != 0 or tcp[13] & 1 != 0\n# ICMP errors (MTU, unreachable)\ntcpdump -i eth0 -nn icmp\n# SYN flood detection\ntcpdump -i eth0 -nn 'tcp[13] & 2 != 0 and tcp[13] & 16 == 0'\n# Follow TCP stream\ntcpdump -i eth0 -nn -X host 10.0.0.50 and host 10.0.0.100\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1776-wireshark--capture-workflow",
+      children: "17.7.6 Wireshark → Capture Workflow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 1 → Capture Planning"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Define scope: what traffic, between which hosts, on which interface?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Set capture filter: host 10.0.0.50 and port 443 to reduce noise."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Choose mode: full packet (protocol analysis) or header-only (performance)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start capture, reproduce problem, stop capture."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 2 → Initial Analysis"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check Expert Info: retransmissions, duplicate ACKs, zero window, checksum errors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Protocol Hierarchy Statistics: which protocols dominate."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Conversations: top talkers by bytes/packets."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 3 → Focused Analysis"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Display filter: ip.addr == 10.0.0.50."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Follow TCP Stream: see application conversation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Time between SYN and SYN-ACK = server processing delay."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Time between request and response = app response time."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Filter: tcp.analysis.retransmission for packet loss."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Filter: tcp.analysis.zero_window for receiver overwhelm."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Filter: tcp.analysis.fast_retransmission for dup ACKs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check window scale in SYN packets."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 4 → Performance Analysis"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "I/O Graph (Statistics > I/O Graph): visualize throughput over time."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TCP Stream Graph > Time-Sequence Graph: see congestion window behavior."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TCP Stream Graph > Round Trip Time: RTT trends over session."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Flow Graph: visualize entire conversation timeline."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1777-nmap",
+      children: "17.7.7 nmap"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Purpose:"
+      }), " Network discovery, port scanning, OS detection, service fingerprinting."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "nmap [scan type] [options] <target>\n  -sS       SYN stealth scan (default)\n  -sT       TCP connect scan\n  -sU       UDP scan\n  -sV       Version detection\n  -O        OS detection\n  -A        Aggressive (OS + version + script + traceroute)\n  -p ports  Port range (e.g., -p 1-1000, -p 80,443)\n  -T0-5     Timing template (0=paranoid, 5=insane)\n  -n        Skip DNS resolution\n  --script  Script category (e.g., --script http-headers)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Port states:"
+      }), " open (responding application), closed (RST received), filtered (no response, likely firewall), unfiltered (accessible but state unknown), open|filtered (UDP no response)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Complexity:"
+      }), " O(p * r) where p = ports, r = retries. With -T5 and -n, typical scan of 1000 ports completes in < 10 seconds."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "1778-iperf--iperf3",
+      children: "17.7.8 iperf / iperf3"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Purpose:"
+      }), " TCP and UDP throughput measurement between two endpoints."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "iperf3 -s -p 5201              # Server mode\niperf3 -c server -t 30         # Client, 30s TCP test\niperf3 -c server -P 4 -t 30    # 4 parallel streams\niperf3 -c server -u -b 100M    # UDP, 100Mbps target\niperf3 -c server -R -t 30      # Reverse (server -> client)\niperf3 -c server --bidir       # Bidirectional test\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Interpret TCP results:"
+      }), " Throughput near link speed = good. Throughput = (MSS * 8) / RTT * sqrt(3/4 * loss_rate) → Mathis equation. Compare expected vs actual throughput. Low throughput can mean congestion, bufferbloat, or application bottleneck."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "UDP results:"
+      }), " Reports jitter (inter-packet delay variation) and packet loss percentage. Jitter < 1ms is excellent for VoIP. Loss > 1% degrades voice quality."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "typescript-implementation-packetanalyzer",
+      children: "TypeScript Implementation: PacketAnalyzer"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface PacketHeader {\n  ethSrc: string;\n  ethDst: string;\n  ethType: string;\n  ipSrc: string;\n  ipDst: string;\n  ipProtocol: string;\n  tcpSrcPort?: number;\n  tcpDstPort?: number;\n  tcpFlags?: string[];\n  payloadSize: number;\n}\n\nclass PacketAnalyzer {\n  private packets: PacketHeader[] = [];\n\n  // Simulate packet capture from a hex dump\n  parseHexDump(hexData: string): PacketHeader {\n    // Simplified parsing — real implementation would use pcap\n    const header: PacketHeader = {\n      ethSrc: Array.from({ length: 6 }, () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')).join(':'),\n      ethDst: Array.from({ length: 6 }, () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')).join(':'),\n      ethType: '0x0800', // IPv4\n      ipSrc: `${Math.floor(Math.random() * 223) + 1}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 254) + 1}`,\n      ipDst: `${Math.floor(Math.random() * 223) + 1}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 254) + 1}`,\n      ipProtocol: Math.random() > 0.5 ? 'TCP' : 'UDP',\n      payloadSize: Math.floor(Math.random() * 1400) + 40,\n    };\n\n    if (header.ipProtocol === 'TCP') {\n      header.tcpSrcPort = Math.floor(Math.random() * 65535);\n      header.tcpDstPort = Math.floor(Math.random() * 65535);\n      const flags = ['SYN', 'ACK', 'FIN', 'RST', 'PSH', 'URG'];\n      header.tcpFlags = flags.filter(() => Math.random() > 0.7);\n    }\n\n    this.packets.push(header);\n    return header;\n  }\n\n  filterByProtocol(protocol: string): PacketHeader[] {\n    return this.packets.filter(p => p.ipProtocol === protocol);\n  }\n\n  filterByPort(port: number): PacketHeader[] {\n    return this.packets.filter(p => p.tcpSrcPort === port || p.tcpDstPort === port);\n  }\n\n  getStatistics() {\n    return {\n      totalPackets: this.packets.length,\n      tcpCount: this.packets.filter(p => p.ipProtocol === 'TCP').length,\n      udpCount: this.packets.filter(p => p.ipProtocol === 'UDP').length,\n      uniqueDstIps: new Set(this.packets.map(p => p.ipDst)).size,\n      avgPayloadSize: this.packets.reduce((a, b) => a + b.payloadSize, 0) / this.packets.length,\n    };\n  }\n\n  detectRetransmissions(): number {\n    // Detect TCP retransmissions by finding duplicate IP+port pairs\n    const seen = new Set<string>();\n    let retransmissions = 0;\n    for (const p of this.packets) {\n      const key = `${p.ipSrc}:${p.tcpSrcPort}->${p.ipDst}:${p.tcpDstPort}`;\n      if (seen.has(key)) retransmissions++;\n      seen.add(key);\n    }\n    return retransmissions;\n  }\n}\n\n// Usage\nconst analyzer = new PacketAnalyzer();\nfor (let i = 0; i < 100; i++) analyzer.parseHexDump('');\n// console.log(`TCP: ${analyzer.getStatistics().tcpCount}, UDP: ${analyzer.getStatistics().udpCount}, Retransmissions: ${analyzer.detectRetransmissions()}`);\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "178-common-issues-per-layer--summary-table",
+      children: "17.8 Common Issues per Layer → Summary Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Layer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Common Issue"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Symptom"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Diagnostic Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Likely Fix"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L1 Physical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Faulty cable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No link light"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cable tester, TDR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replace cable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L1 Physical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Signal attenuation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC errors, intermittent"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Interface counters"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check distance, replace cable"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L1 Physical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Faulty SFP/GBIC"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Link flapping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show interface transceiver"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Replace optics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L2 Data Link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Duplex mismatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CRC errors, late collisions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show interface, duplex check"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Set duplex consistently"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L2 Data Link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MAC flooding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MAC table full, unicast flooding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show mac address-table"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port security, MAC limiting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L2 Data Link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "STP loop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadcast storm, high CPU"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show spanning-tree"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enable loop guard, BPDU guard"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L2 Data Link"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VLAN mismatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No cross-VLAN communication"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show vlan brief"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix VLAN membership"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Routing loop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TTL expiring in trace"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "traceroute, show ip route"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix static/dynamic routes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MTU mismatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Large packets dropped"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping -M do -s sizes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enable path MTU discovery, MSS clamp"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Default gateway wrong"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can ping local, not remote"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "show ip route, ipconfig"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix gateway address"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L3 Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP filtered"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ping fails, apps work"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcping, curl, traceroute -T"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use TCP-based tests"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L4 Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port blocked"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection refused"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "telnet, nc, ss -tln"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Open firewall port"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L4 Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TIME_WAIT exhaustion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cannot create new connections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ss -s, netstat"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Enable tcp_tw_reuse, keepalive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L4 Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Listen backlog full"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection drops under load"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ss -tln (Recv-Q)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Increase somaxconn, backlog"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L4 Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN flood"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Half-open connections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump, netstat -s"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN cookies, rate limiting"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L5-7 Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS failure"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Name not resolving"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nslookup, dig +trace"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix DNS records, check NS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L5-7 Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP 4xx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client error"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl -v"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix URL, auth, permissions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L5-7 Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP 5xx"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server error"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl -v, app logs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix app code, restart service"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L5-7 Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS cert expired"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SSL error in browser"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "openssl s_client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Renew certificate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L5-7 Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS hostname mismatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SSL warning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "openssl s_client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fix certificate SAN"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "L5-7 Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WAF blocking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requests dropped"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WAF logs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Tune WAF rules"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "179-tools-comparison-table",
+      children: "17.9 Tools Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Protocol"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "OSI Layer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Measures"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Strengths"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Weaknesses"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RTT, loss, TTL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple, universally available"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP often blocked"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "traceroute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP/UDP/TCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Path, hop latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Finds where packets drop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Asterisks not definitive"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MTR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continuous path+loss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermittent issue capture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires installation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Raw"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L2-L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet capture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full protocol visibility"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Binary output, complex filters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireshark"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Raw"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L2-L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visual packet analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "GUI, follow stream, expert"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Overhead on high-speed links"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "/proc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L4-L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Socket state, queues"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast, detailed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Linux only"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "nmap"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP/UDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L3-L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port scan, OS/version"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Comprehensive scanning"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Can trigger IDS alerts"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "iperf3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP/UDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Throughput, jitter, loss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Controlled measurement"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Requires server instance"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "nslookup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Name resolution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simple, universal"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Limited features"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "dig"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Full DNS diagnostics"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "+trace, all record types"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Verbose output"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "openssl"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TLS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L5-L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certificate validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Detailed chain inspection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complex command syntax"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "telnet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port connectivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Simplest TCP test"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No encryption, deprecated"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "nc (netcat)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP/UDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port connectivity, transfer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Versatile"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Inconsistent across platforms"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "curl"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "L7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP response, timing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Protocol support, verbose"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP-focused only"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1710-interview-corner",
+      children: "17.10 Interview Corner"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-when-ping-fails-but-the-application-works-what-is-happening",
+      children: "Q1: When ping fails but the application works, what is happening?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Ping uses ICMP Echo Request/Reply. Many firewalls and security groups block ICMP while allowing TCP traffic for applications. This is a security best practice → ICMP offers no encryption and can be used for reconnaissance. ICMP blocking does not indicate a network problem. Always use a TCP-based connectivity test (telnet, nc, curl) to verify actual application reachability."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks",
+      children: "Q2: How does traceroute work, and what does it mean when a hop shows asterisks?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Traceroute sends packets with increasing TTL values. Hop 1 gets TTL=1, Hop 2 gets TTL=2, etc. Each router decrements TTL; when TTL reaches 0, the router sends an ICMP Time Exceeded message back. Asterisks (* * *) for a hop mean no response was received → the router may be configured not to send ICMP Time Exceeded, or the response is filtered. Three asterisks in a row mean the hop is not responding, but packets may still pass through it. If all subsequent hops also show asterisks, the path is likely broken at that point."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-what-is-the-difference-between-port-unreachable-connection-refused-and-timeout",
+      children: "Q3: What is the difference between \"port unreachable,\" \"connection refused,\" and \"timeout\"?"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Response"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Means"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Likely Cause"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Port unreachable (ICMP type 3 code 3)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "A router or firewall sent ICMP saying the port is unreachable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall rule explicitly blocks the port"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection refused (TCP RST)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The server received the SYN but sent RST"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No application listening on the port, or the application is not running"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Timeout (no response)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The SYN was sent but no response was received within the timeout period"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall drops the packet silently, or the host is unreachable at Layer 3"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay",
+      children: "Q4: How do you determine if high latency is caused by propagation delay vs queuing delay?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Propagation delay is a function of distance (speed of light in fiber ~200,000 km/s). A transatlantic hop (6000 km) adds ~30ms one-way = 60ms RTT minimum. If measured RTT significantly exceeds the minimum expected for the distance, queuing delay is likely. Check by running traceroute to see which hop adds disproportionate latency. If hop 3 adds 50ms while adjacent hops add 5ms, that router has queuing delay (congestion or bufferbloat)."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-what-causes-time_wait-exhaustion-and-how-do-you-fix-it",
+      children: "Q5: What causes TIME_WAIT exhaustion and how do you fix it?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Every TCP connection termination leaves the connection in TIME_WAIT for 2 * Maximum Segment Lifetime (typically 60 seconds). If a client creates many short-lived connections (e.g., a web server proxying requests), it can exhaust the ephemeral port range (~28,000 ports on Linux). At 470+ connections/second, the client runs out of ports."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Fixes: (1) Enable tcp_tw_reuse (allows reuse of TIME_WAIT sockets for new connections). (2) Reduce tcp_fin_timeout from 60 to 30 seconds. (3) Use HTTP keep-alive to reuse connections. (4) Increase ephemeral port range: net.ipv4.ip_local_port_range = 1024 65000."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-how-do-you-identify-a-routing-loop-from-a-traceroute",
+      children: "Q6: How do you identify a routing loop from a traceroute?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A routing loop appears as a repeating pattern of the same IP addresses across multiple hops. Classic 2-hop loop: Hop A -> B -> A -> B -> A -> B (continues until TTL expires). Single-hop loop: same IP appears on consecutive hops. The TTL decreases by 1 each hop but never reaches the destination → the trace terminates at hop 30 (or the max TTL) with \"destination not reached.\""
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-what-does-connection-refused-versus-no-route-to-host-mean",
+      children: "Q7: What does \"Connection refused\" versus \"No route to host\" mean?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "\"Connection refused\" (ECONNREFUSED) means the TCP SYN reached the destination host but that host sent back a RST because nothing is listening on the port. \"No route to host\" (EHOSTUNREACH) means the IP stack could not find a route to the destination → there is no matching entry in the routing table and no default gateway, or the gateway is unreachable at Layer 2."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-how-do-you-test-if-a-firewall-is-blocking-a-specific-port",
+      children: "Q8: How do you test if a firewall is blocking a specific port?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Test from outside the firewall: (1) nc -zv <host> ", (0,jsx_runtime.jsx)(_components.port, {
+        children: " → if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking."
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q9-what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting",
+      children: "Q9: What is asymmetric routing and how does it affect troubleshooting?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Asymmetric routing occurs when packets take a different path from A to B than from B to A. This is common in networks with ECMP or multiple connections. Traceroute only shows the forward path → packet loss on the return path is invisible. This means a high-loss traceroute may not show where loss is actually occurring. MTR shows both directions only if run from both endpoints."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q10-how-does-path-mtu-discovery-work-and-why-does-it-fail",
+      children: "Q10: How does path MTU discovery work and why does it fail?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along the path needs to fragment but DF is set, it sends an ICMP \"Fragmentation Needed\" message back to the sender. The sender then reduces its packet size and retries. PMTUD fails when firewalls block the ICMP Fragmentation Needed messages. The sender never learns about the MTU restriction and keeps retransmitting the oversized packets. Fix: configure MSS clamping on the router to cap TCP segment size."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "1711-applications-in-real-systems",
+      children: "17.11 Applications in Real Systems"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-study-1-e-commerce-platform-slowdown-at-peak-hours",
+      children: "Case Study 1: E-commerce Platform Slowdown at Peak Hours"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symptom:"
+      }), " An e-commerce site became slow every day at 2 PM. Page load times increased from 1.2s to 8s. Checkout failures increased."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Initial scope:"
+      }), " Affected all users worldwide. Only the checkout flow was affected, static content loaded normally."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diagnostic steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked server CPU/memory → no exhaustion."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Ran traceroute during peak → no routing changes."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked MTR for 10 minutes → 3% packet loss at the CDN edge hop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Analyzed tcpdump → TCP retransmissions at 5% of total segments."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked the CDN provider's status page → announced edge capacity issues."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Conclusion: CDN edge node was overloaded during US lunchtime traffic spike."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fix:"
+      }), " Configured a second CDN provider as fallback and implemented origin pull traffic shaping. Page load times returned to 1.2s."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-study-2-database-connection-pool-exhaustion",
+      children: "Case Study 2: Database Connection Pool Exhaustion"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symptom:"
+      }), " A microservice periodically became unresponsive. Other services depending on it timed out."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Initial hypothesis:"
+      }), " Network issue between services."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diagnostic steps:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked ss -s on the affected service → 32,000 connections in TIME_WAIT."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Application was using a connection pool of 50 connections but creating new connections on every request and not closing them properly. The pool was exhausted."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked application code → missing db.close() in error handler paths."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Once sockets hit TIME_WAIT (~28K), new connections failed."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fix:"
+      }), " Fixed the connection leak in application code, set tcp_tw_reuse=1 on the host, and increased the connection pool to 100. Service stability restored."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-study-3-mysterious-mtu-related-timeout",
+      children: "Case Study 3: Mysterious MTU-Related Timeout"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symptom:"
+      }), " File uploads over VPN would stall at exactly 1400 bytes. Small files worked, large files stalled."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diagnostic:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ping with DF bit: ping -M do -s 1472 failed, but ping -M do -s 1400 succeeded."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Path MTU was 1428 bytes (1400 + 28 ICMP header)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The VPN (IPsec) added 72 bytes of overhead to the 1500-byte Ethernet MTU, making the effective path MTU 1428."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ICMP Fragmentation Needed messages were blocked by the corporate firewall."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fix:"
+      }), " Configured MSS clamping on the VPN gateway: ip tcp adjust-mss 1388 (1428 - 40 for TCP/IP headers). All TCP connections automatically capped their segment size, preventing fragmentation."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-study-4-arp-poisoning-in-a-hotel-network",
+      children: "Case Study 4: ARP Poisoning in a Hotel Network"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symptom:"
+      }), " Guest laptops reported \"duplicate IP address\" warnings. Some guests could not access the internet. Others were redirected to phishing pages."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diagnostic:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked ARP table on a guest machine → multiple IPs mapped to the same MAC address."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked switch MAC table → one port had 200+ MAC addresses with diverse OUIs (MAC flooding)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The attacker's machine was connected to the public guest VLAN, running an ARP spoofing tool."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Once the switch CAM table overflowed, the switch fell back to flooding all traffic on the VLAN (hub mode). The attacker could sniff all traffic."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fix:"
+      }), " Implemented port security with a maximum of 3 MAC addresses per port, enabled dynamic ARP inspection (DAI) and DHCP snooping on the switch. The attack was contained."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "case-study-5-waf-rule-blocking-legitimate-api-traffic",
+      children: "Case Study 5: WAF Rule Blocking Legitimate API Traffic"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symptom:"
+      }), " A mobile app could not log in. Web users were unaffected. API requests from the mobile app returned 403 Forbidden."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Diagnostic:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "curl -v from the mobile emulator → HTTP 403 Forbidden."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Checked the WAF logs → rule ID 942100 (SQL injection) was triggering on the login request."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The mobile app was sending a JSON payload with Content-Type: application/json. The WAF was scanning the JSON body and a password containing \"SELECT\" was triggering the SQL injection rule."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "False positive: the password \"S3LECT*pass\" contained \"SELECT\" as a substring."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Fix:"
+      }), " Added the specific API endpoint to the WAF exclusions list after confirming the input was parameterized in the backend. The app team also added input validation to avoid SQL-like strings. API returned to normal."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "pro-tips-expanded",
+      children: "Pro Tips (Expanded)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Use ss not netstat:"
+        }), " On modern Linux, ss is faster and shows more information. Netstat is deprecated in many distributions."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Wireshark \"Follow TCP Stream\":"
+        }), " Right-click a TCP packet, Follow > TCP Stream. Wireshark reassembles the entire application-layer conversation → perfect for HTTP, SMTP, or any text-based protocol."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ICMP blocking bluff:"
+        }), " If ping fails but web browsing works, ICMP is blocked. Use tcping or curl to test TCP connectivity."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "MTR for intermittent issues:"
+        }), " A single traceroute or ping snapshot misses transient problems. Run MTR for 5-10 minutes."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Binary search MTU:"
+        }), " Find path MTU in O(log n) probes rather than linear scanning. Start with 1500, then 750, then split difference."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Check both directions:"
+        }), " Packet loss may only occur on the return path. Run diagnostics from both endpoints when possible."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "One change at a time:"
+        }), " Making multiple changes simultaneously makes it impossible to know which one fixed the problem."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Document everything:"
+        }), " The RCA document is what makes you a professional. Include symptoms, diagnostic steps, root cause, fix, and preventive measures."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "tcpdump before restarting:"
+        }), " If a service is acting up, capture traffic before restarting. Restarting destroys the evidence."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Default gateway is the most common L3 issue:"
+        }), " Check it first when local pings work but remote pings fail."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Don't forget DNS caching:"
+        }), " After DNS changes, clients may cache stale records for the TTL duration. Use ipconfig /flushdns or systemd-resolve --flush-caches."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "one-sentence-takeaways",
+      children: "One-Sentence Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ping tests basic IP connectivity and measures RTT via ICMP Echo."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "traceroute discovers the network path hop-by-hop using TTL-limited packets."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "tcpdump and Wireshark capture and inspect packets at any protocol layer."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ss shows socket statistics: listening, established, and connection states."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "iperf measures TCP/UDP throughput between two endpoints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A systematic layer-by-layer approach isolates the root cause efficiently."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "80% of problems are at Layers 1-2 → start with physical checks."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Duplex mismatches cause CRC errors and late collisions."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "TIME_WAIT exhaustion is the most common TCP state issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "ICMP blocking is a security feature, not a network failure."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "concept-comparison-table",
+      children: "Concept Comparison Table"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Tool"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Protocol"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Layer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Measures"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Output"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RTT, loss, hop count (TTL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency stats per destination"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "traceroute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP/UDP/TCP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Path, per-hop latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "List of hops with RTTs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MTR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ICMP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Continuous path + loss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Per-hop loss % + latency"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "tcpdump"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Raw"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2-7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Packet capture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "pcap (binary or hex)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Wireshark"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Raw"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2-7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Visual packet analysis"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Display filters, streams, stats"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "/proc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4-7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Socket state, queues"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection table by state"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "iperf3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP/UDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Throughput"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Mbps, jitter, loss %"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "nmap"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP/UDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port scan, OS detection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port states, service versions"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "dig"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Name resolution"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Delegation chain, records"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "quick-reference-tcp-connection-states",
+      children: "Quick Reference: TCP Connection States"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "State"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What to Check"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LISTEN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server waiting for connection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Service running? Port correct?"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN_SENT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client sent SYN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall blocking outbound?"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ESTABLISHED"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Connection active"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Send/Receive queues"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FIN_WAIT_1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Initiating close"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application hanging?"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "FIN_WAIT_2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Waiting for remote close"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Many = socket leak?"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CLOSE_WAIT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Remote closed; local hasn't"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application close() bug"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "TIME_WAIT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Final cleanup (2 MSL)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High counts = too many short connections"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CLOSED"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No connection state"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Normal"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "cross-application-matrix",
+      children: "Cross-Application Matrix"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Symptom"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Most Likely Cause"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test Command"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Tool"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "No connectivity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Link down, firewall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping, curl"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping, curl"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow web pages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High latency, loss"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping -c 100, mtr"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MTR"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermittent drops"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Congestion, errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "mtr --report-wide"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MTR"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Low throughput"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP window, congestion"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iperf3 -c server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iperf3"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS resolution fail"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Wrong NS, TTL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dig +trace"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "dig"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Application timeout"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Service not listening"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ss -tln, telnet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ss"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "File transfer slow"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MTU mismatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping -M do -s 1472"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP 4xx errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Client issue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl -v"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "HTTP 5xx errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server issue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl -v, app logs"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "curl"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SSL errors"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cert issue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "openssl s_client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "openssl"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Port unreachable"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall blocking"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "telnet, nc"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "netcat"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "troubleshooting-methodology-flow",
+      children: "Troubleshooting Methodology Flow"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    classDef problem fill:#fbb,stroke:#a33,stroke-width:2\n    classDef action fill:#bfb,stroke:#282,stroke-width:2\n    classDef verify fill:#bbf,stroke:#33a,stroke-width:2\n    classDef resolve fill:#beb,stroke:#292,stroke-width:2\n\n    A[Problem Reported] --> B{Define Scope}\n    B --> C[Who is affected?]\n    B --> D[What exactly fails?]\n    B --> E[When did it start?]\n    \n    C & D & E --> F[Check Physical Layer]\n    \n    F --> G{Link lights on?}\n    G -- Yes --> H[Check Layer 2]\n    G -- No --> I[Replace cable/termination]\n    I --> J[Verify link restored]\n    J --> H\n    \n    H --> K{ARP resolved?}\n    K -- Yes --> L[Check Layer 3]\n    K -- No --> M[Fix VLAN/STP issues]\n    M --> N[Re-check ARP]\n    N --> L\n    \n    L --> O{Ping successful?}\n    O -- Yes --> P[Check Layer 4]\n    O -- No --> Q[Check routing table]\n    Q --> R{Fix routes / gateway}\n    R --> P\n    \n    P --> S{TCP handshake?}\n    S -- Yes --> T[Check Application Layer]\n    S -- No --> U[Check firewall / ports]\n    U --> V[Open port / fix ACL]\n    V --> T\n    \n    T --> W{Application responds?}\n    W -- Yes --> X[Performance check]\n    W -- No --> Y[Check service / logs]\n    Y --> Z[Restart service / fix config]\n    Z --> X\n    \n    X --> AA{Meets SLA?}\n    AA -- Yes --> AB[Document RCA]\n    AA -- No --> AC[Tune performance]\n    AC --> AB\n    \n    class A,B,F,H,L,O,P,T,X problem\n    class C,D,E,G,K,S,W action\n    class I,J,M,N,Q,R,U,V,Y,Z,AC resolve\n    class AB verify\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Application"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Start at Layer 1"
+            }), " → 80% of problems are physical"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Check link lights, cables, and interface counters before anything else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Use the OSI model as your checklist"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Work up layer by layer: Physical → Datalink → Network → Transport → Application"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "ICMP blocking ≠ network failure"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Use TCP-based tests (telnet, nc, curl) when ping fails but apps work"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MTR reveals intermittent loss"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Run MTR for 5-10 minutes to catch transient packet loss that ping misses"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "tcpdump before restarting"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Restarting destroys evidence — capture traffic first, then restart"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Document every step"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Good RCA documents include symptoms, diagnostics, root cause, fix, and prevention"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "One change at a time"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiple simultaneous changes make it impossible to identify which fix worked"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Network troubleshooting is a systematic process that follows the OSI layer model from bottom to top. Physical layer issues (cable faults, bad SFPs) account for the majority of problems. Data link issues include duplex mismatches, MAC flooding, and STP loops. Network layer problems involve routing loops, MTU mismatches, and ICMP filtering. Transport layer issues include port blocking, TIME_WAIT exhaustion, and listen backlog overflows."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Key tools include ping (ICMP connectivity), traceroute (path discovery), tcpdump/Wireshark (packet capture and analysis), ss (socket state), iperf3 (throughput measurement), and nmap (port scanning). Each tool operates at specific OSI layers and provides targeted information for diagnosis."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The most important skill in troubleshooting is the ability to isolate — using the OSI layer model to narrow down the problem space, checking one layer at a time, and making one change at a time. Documentation of the entire process (symptoms → diagnosis → root cause → fix → prevention) distinguishes professional network engineers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Question"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "A"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "B"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "C"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "D"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Answer"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which OSI layer should you check first when troubleshooting?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transport"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Network"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Physical"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "D"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What does a timeout (no response) during a port test typically indicate?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Port is open"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Application is listening"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall is dropping packets silently"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Server is overloaded but responding"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "C"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which tool shows per-hop latency and packet loss continuously over time?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ping"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "traceroute"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MTR"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iperf3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "C"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "What causes TIME_WAIT exhaustion on a busy server?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Too many concurrent connections"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Short-lived connections accumulating 2MSL wait"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SYN flood attack"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MTU mismatch"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "How does path MTU discovery fail in practice?"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Routers fragment packets incorrectly"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewalls block ICMP Fragmentation Needed messages"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "TCP window scaling breaks PMTUD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The DF bit is never set"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "B"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "review-questions",
+      children: "Review Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain why the OSI model is used as a troubleshooting framework. Why start at Layer 1?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nThe OSI model provides a systematic layer-by-layer checklist. Starting at Layer 1 (Physical) ensures that lower-layer problems are ruled out before investigating higher layers. Since 80% of network problems are physical (cable faults, power issues, bad SFPs), starting at Layer 1 is the most efficient approach.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "2",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the difference between a timeout, connection refused, and port unreachable?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nTimeout: No response at all (firewall silently drops). Connection refused (TCP RST): Server received SYN but nothing is listening. Port unreachable (ICMP type 3 code 3): Router/firewall explicitly blocks the port.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "3",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How can you distinguish between propagation delay and queuing delay?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nPropagation delay is determined by distance (~5ms per 1000 km in fiber). If measured RTT significantly exceeds the distance-based minimum, queuing delay is present. Use traceroute to find which hop adds disproportionate latency.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is asymmetric routing and why does it complicate troubleshooting?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nAsymmetric routing means packets take different paths in each direction. Traceroute only shows the forward path, so packet loss on the return path is invisible. MTR run from both endpoints is needed to see both directions.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "5",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Why should you capture traffic before restarting a service?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nRestarting destroys all evidence: TCP connection states, socket buffers, and kernel statistics are reset. The root cause (connection leak, buffer overflow, stuck state) becomes invisible after restart.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "application-problems",
+      children: "Application Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "A web server at 192.168.1.100:443 is unreachable from a client at 10.0.0.50. Design a systematic troubleshooting plan covering each OSI layer."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nLayer 1: Check link lights on both ends. Layer 2: Check ARP table, VLAN membership. Layer 3: Ping gateway, ping server IP. Layer 4: telnet/nc to port 443. Layer 5-7: curl -v, check certificates. Use tcpdump on server to see if SYN packets arrive. Check firewall rules.\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "7",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "An MTR report shows 5% packet loss at hop 4 but 0% loss at hops 5-10. What does this indicate?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\nThis indicates that the router at hop 4 is rate-limiting its ICMP Time Exceeded responses, not actual packet loss. If the loss were real, all subsequent hops would also show loss. This is a common known behavior of Cisco routers.\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "challenge-problems",
+      children: "Challenge Problems"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Design a network monitoring and alerting system for a 5000-employee enterprise network. Include: (a) what metrics to collect at each OSI layer, (b) alert thresholds with justification, (c) data retention policy, (d) escalation procedure. Explain how you would distinguish between a true outage and a false positive."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.summary, {
+        children: "Solution"
+      }), "\n(a) L1: interface errors, link state; L2: MAC table utilization, STP changes; L3: routing table changes, ICMP reachability; L4: TCP connection rates, SYN backlog; L5-7: HTTP response codes, DNS query times. (b) Thresholds: L1 errors > 0.1% in 5 min window, L4 SYN backlog > 1024, L7 5xx > 1% in 1 min. (c) Metrics 1s resolution for 7 days, 1m for 30 days, 5m for 1 year. (d) Tier 1: automated ping/trace, Tier 2: application-level check, Tier 3: on-call engineer. False positive reduction: require 2 consecutive samples above threshold, correlate across layers.\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

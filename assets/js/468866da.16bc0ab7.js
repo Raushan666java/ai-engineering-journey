@@ -1,0 +1,664 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[71504],{
+
+/***/ 13973
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_system_design_index_md_468_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-system-design-index-md-468.json
+const site_docs_courses_system_design_index_md_468_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/system-design/index","title":"System Design — Complete University Textbook","description":"Course Description","source":"@site/docs/courses/system-design/index.md","sourceDirName":"courses/system-design","slug":"/system-design/index","permalink":"/ai-engineering-journey/system-design/index","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":25,"frontMatter":{"id":"index","slug":"/system-design/index","title":"System Design — Complete University Textbook","sidebar_label":"System Design — Complete University Textbook","sidebar_position":25},"sidebar":"coursesSidebar","previous":{"title":"Chapter 21: Concurrency, Multiprocessing & Parallelism","permalink":"/ai-engineering-journey/python-programming/21-concurrency-multiprocessing"},"next":{"title":"Chapter 1: Introduction to System Design","permalink":"/ai-engineering-journey/system-design/01-introduction"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/system-design/index.md
+
+
+const frontMatter = {
+	id: 'index',
+	slug: '/system-design/index',
+	title: 'System Design — Complete University Textbook',
+	sidebar_label: 'System Design — Complete University Textbook',
+	sidebar_position: 25
+};
+const contentTitle = 'System Design — Complete University Textbook';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Course Description",
+  "id": "course-description",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Part I: Foundations",
+  "id": "part-i-foundations",
+  "level": 2
+}, {
+  "value": "Part II: Low-Level Design",
+  "id": "part-ii-low-level-design",
+  "level": 2
+}, {
+  "value": "Part III: Distributed Systems Deep Dive",
+  "id": "part-iii-distributed-systems-deep-dive",
+  "level": 2
+}, {
+  "value": "Part IV: Real-World Case Studies",
+  "id": "part-iv-real-world-case-studies",
+  "level": 2
+}, {
+  "value": "Part V: Interview Preparation",
+  "id": "part-v-interview-preparation",
+  "level": 2
+}, {
+  "value": "Study Path",
+  "id": "study-path",
+  "level": 2
+}, {
+  "value": "Supplementary Resources",
+  "id": "supplementary-resources",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    h1: "h1",
+    h2: "h2",
+    header: "header",
+    li: "li",
+    p: "p",
+    strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "system-design--complete-university-textbook",
+        children: "System Design — Complete University Textbook"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "course-description",
+      children: "Course Description"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "System Design is the discipline of defining the architecture, components, modules, interfaces, and data for large-scale distributed systems. This course provides a rigorous, university-level treatment of the principles and practices required to design systems that operate reliably at internet scale. It bridges the gap between theoretical computer science concepts—such as the CAP theorem, consistency models, and algorithmic efficiency—and the practical engineering decisions that determine whether a system survives real-world traffic."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The curriculum is divided into four parts:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Part I: Foundations (Chapters 1–9)"
+        }), " — Scalability, caching, databases, partitioning, consistency, messaging, microservices, and coordination theory with quantitative trade-off analysis."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Part II: Low-Level Design (Chapters 10–12)"
+        }), " — SOLID principles, OOP design, Gang of Four and concurrency design patterns, UML class/sequence diagrams, and component-level design of common real-world objects."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Part III: Distributed Systems Deep Dive (Chapters 13–16)"
+        }), " — Consistent hashing, bloom filters, CDN and DNS architecture, CQRS, event sourcing, API gateways, observability, and production resiliency patterns."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Part IV: Real-World Case Studies (Chapters 17–22)"
+        }), " — Complete end-to-end design walkthroughs of WhatsApp, Netflix, Uber, Twitter, Dropbox, and classic problems (URL shortener, rate limiter, pastebin) using a structured four-phase methodology."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Part V: Interview Preparation (Chapter 23)"
+        }), " — A curated interview prep guide with company-specific question banks, estimation frameworks, and mock interview strategies."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data Structures and Algorithms:"
+        }), " Proficiency in complexity analysis (Big O), hash maps, trees, and graph algorithms"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Computer Networking:"
+        }), " Understanding of TCP/IP, HTTP, DNS, and OSI model layers"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Operating Systems:"
+        }), " Familiarity with processes, threads, concurrency, and I/O models"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Database Fundamentals:"
+        }), " Basic knowledge of SQL and relational database concepts"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-i-foundations",
+      children: "Part I: Foundations"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chapter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topics"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "01"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/01-introduction",
+              children: "Introduction to System Design"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Scope of system design, non-functional requirements (scalability, reliability, availability, maintainability), structured four-phase design process, latency vs. throughput, cost vs. performance trade-offs, back-of-the-envelope estimation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "02"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/02-scalability-load-balancing",
+              children: "Scalability and Load Balancing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vertical vs. horizontal scaling, OSI-layer load balancers (L4 vs L7), load balancing algorithms (round-robin, least-connections, IP hash, consistent hash), reverse proxies (Nginx, HAProxy), DNS load balancing, global server load balancing (GSLB), health checks, auto-scaling strategies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "03"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/03-caching",
+              children: "Caching Strategies and Patterns"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache hierarchy (L1/L2/L3), locality of reference, caching patterns (cache-aside, read-through, write-through, write-behind), eviction policies (LRU, LFU, FIFO, MRU, ARC), cache invalidation strategies, thundering herd problem, distributed caching (Redis, Memcached), CDN caching, write skew and staleness"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "04"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/04-database-foundations",
+              children: "Database Foundations: Replication and Indexing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "B-Tree and LSM-Tree index internals, single-leader replication, multi-leader replication, leaderless replication (Dynamo-style), sync vs. async replication, replication lag and its consequences (read-your-writes, monotonic reads, consistent prefix reads), conflict resolution strategies, version vectors, CRDTs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "05"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/05-partitioning-sharding",
+              children: "Data Partitioning and Sharding"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Vertical vs. horizontal partitioning, range-based sharding, hash-based sharding, directory-based sharding, consistent hashing, rebalancing challenges, hotspot mitigation, cross-shard queries, secondary indexes in sharded environments, database per service pattern"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "06"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/06-distributed-consistency",
+              children: "CAP Theorem and Distributed Consistency"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "CAP theorem formal proof, PACELC extension, strong consistency vs. eventual consistency, quorum-based systems (read/write quorums), Dynamo-style quorum, gossip protocol, conflict-free replicated data types (CRDTs), logical clocks (Lamport, vector clocks), distributed snapshots (Chandy-Lamport)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "07"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/07-message-queues",
+              children: "Message Queues and Event-Driven Architecture"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Synchronous vs. asynchronous communication, point-to-point vs. pub-sub models, message brokers (Kafka, RabbitMQ, AWS SQS/SNS), delivery guarantees (at-most-once, at-least-once, exactly-once), consumer groups, partitioning in Kafka, event ordering, dead-letter queues, event sourcing, change data capture (CDC), backpressure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "08"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/08-microservices-apis",
+              children: "Microservices and API Design"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monolith vs. microservices decomposition, bounded contexts (DDD), API gateway pattern, REST vs. gRPC vs. GraphQL, service mesh (Istio/Linkerd), distributed transactions (2PC, SAGA pattern), orchestration vs. choreography, idempotency, service versioning, contract testing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "09"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/09-distributed-coordination",
+              children: "Distributed Coordination and Service Discovery"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Service registry, client-side vs. server-side discovery, ZooKeeper and Etcd internals, leader election (Paxos, Raft, Zab), distributed locks, heartbeats and failure detection (Phi-accrual), membership protocols (SWIM), distributed consensus, coordination-free systems"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-ii-low-level-design",
+      children: "Part II: Low-Level Design"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chapter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topics"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/10-lld-solid-oop",
+              children: "Low-Level Design: SOLID Principles and OOP"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SRP, OCP, LSP, ISP, DIP with concrete examples, encapsulation and abstraction, composition over inheritance, interface segregation in practice, dependency injection, package principles (REP, CCP, CRP), coupling and cohesion metrics"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "11"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/11-lld-design-patterns",
+              children: "Low-Level Design: Design Patterns"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Creational (Singleton, Factory, Abstract Factory, Builder, Prototype), Structural (Adapter, Decorator, Facade, Proxy, Composite), Behavioral (Observer, Strategy, Command, State, Template Method, Chain of Responsibility), concurrency patterns (Producer-Consumer, Reader-Writer, Thread Pool), anti-patterns to avoid"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "12"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/12-lld-component-design",
+              children: "Low-Level Design: Component and Class Design"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "UML class diagrams (relationships, multiplicity, composition, aggregation), sequence diagrams, activity diagrams, state machine diagrams, designing vending machine, elevator system, parking lot, chess game, library management system, log aggregator, rate limiter library"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "13"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/13-lld-concurrency",
+              children: "Low-Level Design: Concurrency and Threading"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread safety, synchronization primitives (mutex, semaphore, condition variable), lock-free data structures, atomic operations, Amdahl's Law, thread pools, async/await internals, actor model (Akka), goroutines and CSP, dining philosophers problem, concurrent LRU cache implementation"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-iii-distributed-systems-deep-dive",
+      children: "Part III: Distributed Systems Deep Dive"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chapter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topics"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "14"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/14-distributed-data-structures",
+              children: "Distributed Data Structures: Consistent Hashing and Beyond"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Consistent hashing with virtual nodes, hash rings, rendezvous hashing (HRW), Merkle trees for anti-entropy, bloom filters (standard, counting, scalable), count-min sketch, HyperLogLog, Cuckoo filters, Bloom filter implementation for caching layer, time-series data structures"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "15"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/15-cdn-dns-edge",
+              children: "CDN, DNS, and Edge Computing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DNS hierarchy (root, TLD, authoritative), DNS caching and TTL, anycast routing, CDN architecture (pull vs. push zones), edge caching strategies, image optimization pipelines, CDN providers (CloudFront, Cloudflare, Akamai), origin shielding, DDoS mitigation at the edge, edge computing with Lambda@Edge / Cloudflare Workers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "16"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/16-api-gateways-cqrs",
+              children: "API Gateways, CQRS, and Event Sourcing"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API gateway vs. load balancer, rate limiting, authentication, request aggregation, CQRS pattern with separate read/write models, event sourcing fundamentals, event store design, event versioning, rebuilding state from events, snapshotting, event sourcing + CQRS integration, practical trade-offs and when to avoid"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/17-observability-resiliency",
+              children: "Observability and Resiliency Patterns"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Monitoring (RED method, USE method, Four Golden Signals), distributed tracing (OpenTelemetry, Jaeger, Zipkin, W3C TraceContext), structured logging, metrics aggregation (Prometheus + Grafana), circuit breaker pattern (Hystrix/Resilience4J), bulkhead isolation, retry with exponential backoff and jitter, rate limiting internals, graceful degradation, load shedding, chaos engineering principles"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-iv-real-world-case-studies",
+      children: "Part IV: Real-World Case Studies"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chapter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topics"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "18"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/18-case-studies-classic",
+              children: "Case Study: URL Shortener, Rate Limiter, Pastebin"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "URL shortener with key generation service, distributed rate limiting with sliding window, pastebin with content-addressable storage, four-phase design for each, capacity planning for 100M+ users, sharding strategies, caching optimizations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "19"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/19-case-study-whatsapp",
+              children: "Case Study: WhatsApp and Real-Time Messaging"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Messaging architecture for 2B+ users, WhatsApp's Erlang/ejabberd origins, message fan-out strategies (push vs. pull model, hybrid), last-seen and typing indicators, end-to-end encryption (Signal Protocol), group chat design, media upload and CDN, presence detection, offline message storage, serverless WebSocket management"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "20"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/20-case-study-netflix",
+              children: "Case Study: Netflix and Video Streaming"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Netflix's migration to microservices, CDN and Open Connect Appliances, DASH adaptive bitrate streaming, personalized recommendation pipeline, Chaos Monkey and Simian Army, Hystrix circuit breaker, Zuul API gateway, content delivery pipeline (encoding, packaging), watch history and resume playback, multi-region active-active deployment"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "21"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/21-case-study-uber",
+              children: "Case Study: Uber and Location-Based Services"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Ride-hailing architecture at global scale, geospatial indexing (QuadTree, Google S2, H3), real-time location updates with WebSocket/gRPC streams, dispatch and matching algorithms, surge pricing engine, GPS trajectory smoothing, ETA prediction with ML, historical trip data and OLAP, Kafka event backbone, sharding by city/region"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "22"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/22-case-study-twitter",
+              children: "Case Study: Twitter and News Feed"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Timeline generation (fan-on-write vs. fan-on-read, hybrid), social graph storage (Flocks, Prana, Manhattan), tweet indexing with Earlybird, trending topics with real-time aggregation (Bloom filter + Count-min sketch), media pipeline, search architecture (Lucene partial updates), ML ranking for timeline, rate limiting at scale, disaster recovery from \"fail whale\""
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "23"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/23-case-study-dropbox",
+              children: "Case Study: Dropbox and File Storage"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "File synchronization architecture (delta sync, block-level sync), conflict resolution (LAN sync, version history), deduplication with content hashing, metadata store (sharded MySQL), NAS integration, streaming file download with range requests, team collaboration (Paper), client architecture (file watcher, indexing), Magic Pocket block storage"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "part-v-interview-preparation",
+      children: "Part V: Interview Preparation"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chapter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topics"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "24"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "/ai-engineering-journey/system-design/24-interview-preparation",
+              children: "System Design Interview Preparation"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Company-specific question catalogs (FAANG + top tech), structured answer framework, estimation cheat sheet, common pitfalls, system design interview rubrics, mock interview workflow, time management strategies, follow-up question handling, resources and reading list"
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "study-path",
+      children: "Study Path"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The chapters follow a progressive dependency chain. Begin with Part I (Chapters 1–9) to establish the design philosophy and infrastructure layer. Then proceed to Part II (Chapters 10–13) for low-level design skills. Part III (Chapters 14–17) builds distributed systems depth. Part IV (Chapters 18–23) synthesizes everything through applied case studies. Part V (Chapter 24) is your interview preparation capstone."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Readers with strong distributed systems background may study Parts III and IV concurrently."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "supplementary-resources",
+      children: "Supplementary Resources"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Designing Data-Intensive Applications"
+        }), " by Martin Kleppmann — the definitive reference for distributed data systems"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "System Design Interview"
+        }), " (Volumes 1 & 2) by Alex Xu — practice-oriented interview preparation with worked examples"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Design Patterns: Elements of Reusable Object-Oriented Software"
+        }), " by GoF — the canonical reference for design patterns"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Clean Architecture"
+        }), " by Robert C. Martin — SOLID principles and software design philosophy"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "High Scalability"
+        }), " (highscalability.com) — curated real-world architecture breakdowns"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Google SRE Books"
+        }), " — production engineering and operations best practices"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The System Design Primer"
+        }), " (github.com/donnemartin/system-design-primer) — community resource for interview preparation"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Awesome Scalability"
+        }), " (github.com/binhnguyennus/awesome-scalability) — curated list of scalable architecture patterns"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

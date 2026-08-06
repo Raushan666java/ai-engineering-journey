@@ -69,7 +69,7 @@ flowchart LR
 
 **1. Encoding Strategy:**
 - Generate a unique ID (base 62 encoded: 0-9, a-z, A-Z) for each URL
-- 7 characters = 62^7 â‰ˆ 3.5 trillion combinations
+- 7 characters = 62^7 ≈ 3.5 trillion combinations
 
 ```java
 public class UrlEncoder {

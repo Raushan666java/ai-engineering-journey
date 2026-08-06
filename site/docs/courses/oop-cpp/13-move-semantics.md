@@ -347,9 +347,9 @@ int main() {
 
 | Argument | int& (lvalue ref) | const int& (const lvalue ref) | int&& (rvalue ref) |
 |----------|------------------|------------------------------|-------------------|
-| lvalue int | âœ“ (exact) | âœ“ (conversion) | âœ— |
-| const lvalue | âœ— | âœ“ | âœ— |
-| rvalue int | âœ— | âœ“ (conversion → binds!) | âœ“ (exact → preferred) |
+| lvalue int | ✓ (exact) | ✓ (conversion) | ✗ |
+| const lvalue | ✗ | ✓ | ✗ |
+| rvalue int | ✗ | ✓ (conversion → binds!) | ✓ (exact → preferred) |
 
 The compiler prefers int&& for rvalues over const int&, enabling move semantics.
 
@@ -1626,7 +1626,7 @@ rvalue
 |-----------|----------------|----------------|----------------|
 | `std::vector<int>` (n elements) | O(n) allocation + copy | O(1) pointer swap | n (100x for n=1000) |
 | `std::string` (n characters) | O(n) allocation + copy | O(1) pointer swap | n |
-| `std::unique_ptr<T>` | Not copyable | O(1) pointer copy | âˆž (copy disallowed) |
+| `std::unique_ptr<T>` | Not copyable | O(1) pointer copy | ∞ (copy disallowed) |
 | `std::shared_ptr<T>` | O(1) atomic increment | O(1) atomic swap | Small constant |
 | `std::array<int, N>` | O(N) | O(N) (no benefit) | 1x (same) |
 | `int` (trivially copyable) | O(1) | O(1) | 1x (same) |
@@ -2268,13 +2268,13 @@ private:
 
 | Property | lvalue | prvalue | xvalue | glvalue | rvalue |
 |----------|--------|---------|--------|---------|--------|
-| Has identity | âœ“ | âœ— | âœ“ | âœ“ | âœ— |
-| Movable from | âœ— | âœ“ | âœ“ | → | âœ“ |
-| Can take address | âœ“ | âœ— | âœ“ | âœ“ | âœ— |
+| Has identity | ✓ | ✗ | ✓ | ✓ | ✗ |
+| Movable from | ✗ | ✓ | ✓ | → | ✓ |
+| Can take address | ✓ | ✗ | ✓ | ✓ | ✗ |
 | Example | `int x; x` | `42` | `std::move(x)` | `x`, `std::move(x)` | `42`, `std::move(x)` |
-| Binds to T& | âœ“ | âœ— | âœ— | → | âœ— |
-| Binds to const T& | âœ“ | âœ“ | âœ“ | → | âœ“ |
-| Binds to T&& | âœ— | âœ“ | âœ“ | → | âœ“ |
+| Binds to T& | ✓ | ✗ | ✗ | → | ✗ |
+| Binds to const T& | ✓ | ✓ | ✓ | → | ✓ |
+| Binds to T&& | ✗ | ✓ | ✓ | → | ✓ |
 | Polymorphic | type known | dynamic type | type known | → | → |
 
 ### 13.17.2 std::move vs std::forward Detailed Table
@@ -2287,8 +2287,8 @@ private:
 | Template param | Optional (deduced) | Required (must specify T) |
 | Returns for T& lvalue | `T&&` (rvalue) | `T&` (lvalue) |
 | Returns for T rvalue | `T&&` (rvalue) | `T&&` (rvalue) |
-| Use in forwarding function | âŒ Discards lvalue category | âœ… Preserves category |
-| Use in move ctor body | âœ… `data_(std::move(other.data_))` | âŒ Needless complexity |
+| Use in forwarding function | ❌ Discards lvalue category | ✅ Preserves category |
+| Use in move ctor body | ✅ `data_(std::move(other.data_))` | ❌ Needless complexity |
 | Can be used on const | Yes, but no-op (copy fallback) | Same |
 | Implemented as | `static_cast<remove_reference_t<T>&&>(t)` | `static_cast<T&&>(t)` |
 
@@ -2477,7 +2477,7 @@ Both are rvalues (they can be moved from), but they differ in identity:
 
 A prvalue is a "pure" temporary with no name or address. An xvalue has a name/address but is about to expire (its resources can be reused).
 
-The taxonomy: rvalue = prvalue âˆª xvalue; glvalue = lvalue âˆª xvalue.
+The taxonomy: rvalue = prvalue ∪ xvalue; glvalue = lvalue ∪ xvalue.
 
 ### Q7: What is the Rule of Five? When should I apply it?
 

@@ -1595,7 +1595,7 @@ public class OrderSagaOrchestrator {
 **1. God Class**
 
 ```java
-// âŒ Anti-pattern: One class does everything
+// ❌ Anti-pattern: One class does everything
 @Service
 public class OrderManager {
     public void validate(Order o) { /* ... */ }
@@ -1612,7 +1612,7 @@ public class OrderManager {
 **2. Circular Dependencies**
 
 ```java
-// âŒ Anti-pattern
+// ❌ Anti-pattern
 @Service
 public class OrderService {
     @Autowired private InventoryService inventoryService;
@@ -1629,7 +1629,7 @@ public class InventoryService {
 **3. Lazy Loading in Transactions**
 
 ```java
-// âŒ Anti-pattern: N+1 queries in transaction
+// ❌ Anti-pattern: N+1 queries in transaction
 @Service
 @Transactional
 public class OrderService {
@@ -1644,13 +1644,13 @@ public class OrderService {
 **4. Using Field Injection (prefer constructor injection)**
 
 ```java
-// âŒ Anti-pattern: Field injection
+// ❌ Anti-pattern: Field injection
 @Service
 public class OrderService {
     @Autowired private OrderRepository orderRepository;  // Can't be final
 }
 
-// âœ… Better: Constructor injection
+// ✅ Better: Constructor injection
 @Service
 public class OrderService {
     private final OrderRepository orderRepository;
@@ -1664,7 +1664,7 @@ public class OrderService {
 **5. Throwaway Service Layer**
 
 ```java
-// âŒ Anti-pattern: Service that just delegates
+// ❌ Anti-pattern: Service that just delegates
 @Service
 public class OrderService {
     @Autowired private OrderRepository repo;
@@ -1680,14 +1680,14 @@ public class OrderService {
 **6. Catch and Ignore**
 
 ```java
-// âŒ Anti-pattern
+// ❌ Anti-pattern
 try {
     paymentService.charge(order);
 } catch (Exception e) {
     // Swallowing the exception → completely silent failure
 }
 
-// âœ… Better
+// ✅ Better
 try {
     paymentService.charge(order);
 } catch (PaymentException e) {
@@ -1699,7 +1699,7 @@ try {
 **7. Using exceptions for flow control**
 
 ```java
-// âŒ Anti-pattern
+// ❌ Anti-pattern
 try {
     userService.findByEmail(email);
     throw new DuplicateEmailException("Email already exists");
@@ -2396,7 +2396,7 @@ public class OrderService {
 **Answer:** A design guideline that says an object should only communicate with its immediate collaborators, not with their sub-components. "Only talk to your immediate friends."
 
 ```java
-// âŒ Violates Law of Demeter
+// ❌ Violates Law of Demeter
 public class OrderService {
     public BigDecimal calculateTotal(Order order) {
         return order.getCustomer()        // friend
@@ -2406,7 +2406,7 @@ public class OrderService {
     }
 }
 
-// âœ… Follows Law of Demeter
+// ✅ Follows Law of Demeter
 public class OrderService {
     public BigDecimal calculateTotal(Order order) {
         return order.calculateTotalWithTax();
@@ -2443,12 +2443,12 @@ Benefits: reduced coupling, easier refactoring, more maintainable code. Costs: m
 **Favor composition over inheritance** is a key GoF principle:
 
 ```java
-// âŒ Inheritance (brittle)
+// ❌ Inheritance (brittle)
 public class OrderService extends BaseService {
     // Can't change behavior without affecting BaseService
 }
 
-// âœ… Composition (flexible)
+// ✅ Composition (flexible)
 @Component
 public class OrderService {
     private final BaseService baseService;  // Injected
@@ -2514,7 +2514,7 @@ In modern Java, annotations are typically preferred over marker interfaces (e.g.
 **Design considerations:**
 
 ```java
-// âœ… Good: checked exception when caller can reasonably recover
+// ✅ Good: checked exception when caller can reasonably recover
 public class InsufficientFundsException extends Exception {
     public InsufficientFundsException(BigDecimal balance, BigDecimal required) {
         super("Balance: " + balance + ", required: " + required);
@@ -2526,7 +2526,7 @@ public void processPayment(Order order) throws InsufficientFundsException {
     // ...
 }
 
-// âœ… Good: unchecked exception when caller cannot recover
+// ✅ Good: unchecked exception when caller cannot recover
 public class OrderNotFoundException extends RuntimeException {
     public OrderNotFoundException(Long orderId) {
         super("Order not found: " + orderId);
@@ -2636,18 +2636,18 @@ Spring Boot is a framework: it calls your `@Controller` methods, your `@Service`
 
 | | High Cohesion | Low Cohesion |
 |---|--------------|--------------|
-| **Good** | Class has one clear responsibility | âŒ God class |
+| **Good** | Class has one clear responsibility | ❌ God class |
 | **Example** | `OrderValidator.validate(order)` | `OrderManager.validate() + sendEmail() + processPayment()` |
 
 | | Low Coupling | High Coupling |
 |---|-------------|--------------|
-| **Good** | Class depends on interfaces | âŒ Class depends on concrete implementations |
+| **Good** | Class depends on interfaces | ❌ Class depends on concrete implementations |
 | **Example** | `OrderService(PaymentGateway gateway)` | `OrderService(StripePaymentGateway gateway)` |
 
 **Goal: High cohesion + Low coupling.**
 
 ```java
-// âœ… High cohesion + low coupling
+// ✅ High cohesion + low coupling
 @Service
 public class OrderService {
     private final PaymentGateway gateway;  // Interface = low coupling
@@ -2674,7 +2674,7 @@ public class OrderService {
 **Answer:** DRY states that every piece of knowledge must have a single, unambiguous representation within a system. Avoid duplication in code through abstraction, but don't force premature abstraction.
 
 ```java
-// âŒ Violates DRY → repeated validation logic
+// ❌ Violates DRY → repeated validation logic
 @PostMapping("/orders")
 public ResponseEntity<Order> createOrder(@RequestBody @Valid OrderRequest request) {
     if (request.getUserId() == null) {
@@ -2691,7 +2691,7 @@ public ResponseEntity<Draft> saveDraft(@RequestBody @Valid OrderRequest request)
     // ...
 }
 
-// âœ… DRY → extract validation
+// ✅ DRY → extract validation
 public class OrderValidator {
     public void validate(OrderRequest request) {
         if (request.getUserId() == null) {
@@ -2712,7 +2712,7 @@ public class OrderValidator {
 **Answer:** YAGNI states that you should not add functionality until it's actually needed. Premature abstraction and over-engineering are wastes of time.
 
 ```java
-// âŒ YAGNI violation → building for hypothetical future needs
+// ❌ YAGNI violation → building for hypothetical future needs
 public interface OrderRepository extends
     JpaRepository<Order, Long>,
     JpaSpecificationExecutor<Order>,
@@ -2721,7 +2721,7 @@ public interface OrderRepository extends
     // User only needs save() and findById() today
 }
 
-// âœ… Build what's needed now
+// ✅ Build what's needed now
 public interface OrderRepository extends JpaRepository<Order, Long> {
     // Add specification support only when actually needed
 }
@@ -2740,7 +2740,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 4. **Remove dependencies** → each new class should have minimal dependencies
 
 ```java
-// âŒ Before: God Class
+// ❌ Before: God Class
 @Service
 public class OrderManager {
     public void validate(Order o) { /* ... */ }
@@ -2751,7 +2751,7 @@ public class OrderManager {
     public void arrangeShipping(Order o) { /* ... */ }
 }
 
-// âœ… After: Separated responsibilities
+// ✅ After: Separated responsibilities
 @Service
 public class OrderService {
     private final OrderValidator validator;
@@ -2780,7 +2780,7 @@ public class OrderService {
 **1. Dependency Injection (DI)**
 
 ```java
-// âœ… Testable: dependencies are injected, can be mocked
+// ✅ Testable: dependencies are injected, can be mocked
 @Service
 public class OrderService {
     private final PaymentGateway gateway;

@@ -132,7 +132,7 @@ Recruiters don't read responsibilities; they read impact. Every bullet should fo
 | Team player, client handling | High availability, CI/CD | Concurrency, performance |
 | Analytical skills | Product thinking | Research, innovation |
 
-> **Pro Tip:** Tailor your skills section to each job description → if the posting emphasizes Redis and microservices, those should be listed prominently, not buried at the bottom. ATS systems weight keywords by position and frequency. Keep your master list long, but trim to 8â€“12 relevant technologies per application.
+> **Pro Tip:** Tailor your skills section to each job description → if the posting emphasizes Redis and microservices, those should be listed prominently, not buried at the bottom. ATS systems weight keywords by position and frequency. Keep your master list long, but trim to 8–12 relevant technologies per application.
 
 ### 1.5 Common Mistakes (And How to Fix Them)
 
@@ -179,31 +179,31 @@ Platforms:       AWS (EC2, S3), Heroku
 PROJECTS
 
 Student Portal Backend  |  Java, Spring Boot, MySQL  |  Jan 2024 - Apr 2024
-â€¢ Architected RESTful APIs for a college portal serving 5,000+ users with role-based
+• Architected RESTful APIs for a college portal serving 5,000+ users with role-based
   access (Admin, Faculty, Student)
-â€¢ Implemented JWT authentication, OTP-based password reset, and paginated course listings
-â€¢ Reduced API response time by 35% through connection pooling and query optimization
-â€¢ Deployed on AWS EC2 with automated CI/CD via GitHub Actions and Docker
+• Implemented JWT authentication, OTP-based password reset, and paginated course listings
+• Reduced API response time by 35% through connection pooling and query optimization
+• Deployed on AWS EC2 with automated CI/CD via GitHub Actions and Docker
 
 E-Commerce Inventory Service  |  Python, Flask, PostgreSQL  |  Aug 2023 - Nov 2023
-â€¢ Built an inventory management microservice handling 10,000+ product records
-â€¢ Designed normalized database schema with 8 tables and implemented CRUD endpoints
-â€¢ Added barcode scanning integration and inventory threshold alerts via email
-â€¢ Achieved 95% test coverage using Pytest with unit and integration tests
+• Built an inventory management microservice handling 10,000+ product records
+• Designed normalized database schema with 8 tables and implemented CRUD endpoints
+• Added barcode scanning integration and inventory threshold alerts via email
+• Achieved 95% test coverage using Pytest with unit and integration tests
 
 INTERNSHIP
 
 TechCorp Solutions, Mumbai  |  Software Developer Intern  |  Jun 2024 - Aug 2024
-â€¢ Developed 12 REST API endpoints for an internal HRMS module using Spring Boot
-â€¢ Wrote JUnit tests achieving 85% code coverage on the leave-management service
-â€¢ Automated monthly report generation using Python scripts, saving 8 hours/cycle
-â€¢ Participated in daily stand-ups and sprint planning in an Agile team of 6
+• Developed 12 REST API endpoints for an internal HRMS module using Spring Boot
+• Wrote JUnit tests achieving 85% code coverage on the leave-management service
+• Automated monthly report generation using Python scripts, saving 8 hours/cycle
+• Participated in daily stand-ups and sprint planning in an Agile team of 6
 
 ACHIEVEMENTS
-â€¢ Secured top 5% in InfyTQ certification (All India Rank 1,240 among 80,000+)
-â€¢ CodeChef Rating 1,650 (3-star) | LeetCode Solved 180+ problems
-â€¢ NPTEL Elite certification: "Database Management Systems" (81% score)
-â€¢ Organized college techfest with 2,000+ attendees as Event Lead
+• Secured top 5% in InfyTQ certification (All India Rank 1,240 among 80,000+)
+• CodeChef Rating 1,650 (3-star) | LeetCode Solved 180+ problems
+• NPTEL Elite certification: "Database Management Systems" (81% score)
+• Organized college techfest with 2,000+ attendees as Event Lead
 ```
 
 ### 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)
@@ -233,37 +233,37 @@ Infrastructure:  Docker, Kubernetes, AWS (ECS, RDS, ElastiCache), Terraform
 EXPERIENCE
 
 Razorpay  |  Software Engineering Intern  |  May 2024 - Jul 2024
-â€¢ Engineered a payment dispute resolution service in Go, processing 500+ disputes/day
+• Engineered a payment dispute resolution service in Go, processing 500+ disputes/day
   across 3 payment gateways with automated evidence submission
-â€¢ Reduced manual intervention by 60% via rule-based auto-escalation engine
-â€¢ Designed PostgreSQL sharding strategy handling 2M+ dispute records with <50ms P99 reads
-â€¢ Wrote comprehensive unit + integration tests achieving 92% coverage
+• Reduced manual intervention by 60% via rule-based auto-escalation engine
+• Designed PostgreSQL sharding strategy handling 2M+ dispute records with <50ms P99 reads
+• Wrote comprehensive unit + integration tests achieving 92% coverage
 
 Flipkart Grid 4.0  |  SDE Intern (Won)  |  Jan 2024 - Mar 2024
-â€¢ Built a real-time price intelligence dashboard tracking 100K+ products across 5 platforms
-â€¢ Implemented WebSocket-based live updates consuming 5M+ events/day via Kafka
-â€¢ Optimized React rendering reducing re-renders by 70% using virtualization and memoization
-â€¢ Awarded 2nd place nationally among 4,500+ teams
+• Built a real-time price intelligence dashboard tracking 100K+ products across 5 platforms
+• Implemented WebSocket-based live updates consuming 5M+ events/day via Kafka
+• Optimized React rendering reducing re-renders by 70% using virtualization and memoization
+• Awarded 2nd place nationally among 4,500+ teams
 
 PROJECTS
 
 URL Shortener (NanoLink)  |  Go, Redis, PostgreSQL, Docker  |  Sep 2024
-â€¢ Designed a distributed URL shortener supporting 10M+ redirects/day with base62 encoding
-â€¢ Achieved <5ms redirect latency using Redis caching with LRU eviction (hit rate: 94%)
-â€¢ Implemented rate limiting (token bucket), custom slugs, and click analytics dashboard
-â€¢ Load tested with k6: 15K RPS sustained at P99 latency of 12ms
+• Designed a distributed URL shortener supporting 10M+ redirects/day with base62 encoding
+• Achieved <5ms redirect latency using Redis caching with LRU eviction (hit rate: 94%)
+• Implemented rate limiting (token bucket), custom slugs, and click analytics dashboard
+• Load tested with k6: 15K RPS sustained at P99 latency of 12ms
 
 Real-Time Chat Platform  |  TypeScript, Node.js, WebSocket, Redis  |  Jun 2024
-â€¢ Built WebSocket-based chat handling 10K concurrent connections on a single node
-â€¢ Implemented horizontal scaling via Redis Pub/Sub across 4 instances
-â€¢ Added typing indicators, read receipts, offline message queuing (Redis streams)
-â€¢ Deployed on AWS ECS Fargate with auto-scaling based on connection count
+• Built WebSocket-based chat handling 10K concurrent connections on a single node
+• Implemented horizontal scaling via Redis Pub/Sub across 4 instances
+• Added typing indicators, read receipts, offline message queuing (Redis streams)
+• Deployed on AWS ECS Fargate with auto-scaling based on connection count
 
 ACHIEVEMENTS
-â€¢ CodeChef Rating 1,950 (5-star) | LeetCode: Knight badge (1,900+ rating, 350+ problems)
-â€¢ ICPC Regionals 2023: Rank 124 (team of 3) among 3,000+ teams
-â€¢ Google Code Jam 2024: Round 2 qualifier (Global Rank 1,850)
-â€¢ Published article: "Scaling WebSockets with Redis Pub/Sub" on Medium (2.5K+ reads)
+• CodeChef Rating 1,950 (5-star) | LeetCode: Knight badge (1,900+ rating, 350+ problems)
+• ICPC Regionals 2023: Rank 124 (team of 3) among 3,000+ teams
+• Google Code Jam 2024: Round 2 qualifier (Global Rank 1,850)
+• Published article: "Scaling WebSockets with Redis Pub/Sub" on Medium (2.5K+ reads)
 ```
 
 ### 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)
@@ -293,46 +293,46 @@ Infrastructure: Kubernetes, Istio, Prometheus, Grafana, Envoy
 EXPERIENCE
 
 Google Summer of Code → Apache Cassandra  |  Contributor  |  May 2024 - Aug 2024
-â€¢ Implemented an asynchronous compaction strategy in C++ that reduced write stalls by 40%
+• Implemented an asynchronous compaction strategy in C++ that reduced write stalls by 40%
   on write-heavy workloads by overlapping compaction with incoming mutations
-â€¢ Added comprehensive metrics via JMX for SSTable compaction progress tracking
-â€¢ Reviewed and merged 12 PRs; benchmarked against existing strategies using YCSB workloads
-â€¢ Mentored by PMC member; code shipped in Cassandra 5.1 release
+• Added comprehensive metrics via JMX for SSTable compaction progress tracking
+• Reviewed and merged 12 PRs; benchmarked against existing strategies using YCSB workloads
+• Mentored by PMC member; code shipped in Cassandra 5.1 release
 
 Amazon  |  SDE Intern (AWS Lambda)  |  Jan 2024 - Apr 2024
-â€¢ Optimized cold-start latency for Java Lambda functions by implementing a snap-start
+• Optimized cold-start latency for Java Lambda functions by implementing a snap-start
   mechanism that reduced init time from 1.2s to 180ms (85% improvement)
-â€¢ Built a profiling pipeline using async-profiler + FlameGraphs to identify
+• Built a profiling pipeline using async-profiler + FlameGraphs to identify
   ClassLoader bottlenecks in the sandbox bootstrap sequence
-â€¢ Delivered design doc, load-test results (1K concurrent invocations), and monitoring
+• Delivered design doc, load-test results (1K concurrent invocations), and monitoring
   dashboards to the team before shipping to 50% canary
 
 PROJECTS
 
 Distributed KV Store (GekkoDB)  |  C++, Raft, RocksDB  |  Sep 2024
-â€¢ Implemented a strongly-consistent distributed key-value store using the Raft consensus
+• Implemented a strongly-consistent distributed key-value store using the Raft consensus
   algorithm with leader election, log replication, and snapshotting
-â€¢ Achieved 22K writes/sec across 5 nodes with linearizable semantics verified by Jepsen
-â€¢ Added MVCC-based snapshot isolation and point-in-time recovery from WAL
-â€¢ Integration-tested with custom failure injection (network partitions, leader crashes)
+• Achieved 22K writes/sec across 5 nodes with linearizable semantics verified by Jepsen
+• Added MVCC-based snapshot isolation and point-in-time recovery from WAL
+• Integration-tested with custom failure injection (network partitions, leader crashes)
 
 Concurrent Web Server  |  Rust, Tokio, mio  |  Jun 2024
-â€¢ Built an event-driven HTTP/1.1 server from scratch using epoll (mio) with a
+• Built an event-driven HTTP/1.1 server from scratch using epoll (mio) with a
   thread-per-core architecture handling 50K+ concurrent connections
-â€¢ Implemented connection pooling, keep-alive, and graceful shutdown with SIGINT handling
-â€¢ Benchmarked at 120K req/s (static file) on a c5.large, outperforming nginx by 15%
+• Implemented connection pooling, keep-alive, and graceful shutdown with SIGINT handling
+• Benchmarked at 120K req/s (static file) on a c5.large, outperforming nginx by 15%
 
 POSITIONS OF RESPONSIBILITY
-â€¢ Teaching Assistant → CS302 (Data Structures), IIT Kanpur: Conducted tutorials for 80+
+• Teaching Assistant → CS302 (Data Structures), IIT Kanpur: Conducted tutorials for 80+
   students, designed problem sets, graded exams (Spring 2024)
-â€¢ Competitive Programming Lead → Programming Club: Organized 8 intra-college contests
+• Competitive Programming Lead → Programming Club: Organized 8 intra-college contests
   with 500+ participants; mentored junior teams for ACM ICPC
 
 ACHIEVEMENTS
-â€¢ ICPC Asia West Regionals 2023: Rank 47 | 2022: Rank 63
-â€¢ Google Code Jam 2024: Round 3 qualifier (Global Rank 412)
-â€¢ Codeforces: Candidate Master (Rating 1,902) | LeetCode: Guardian (2,100+)
-â€¢ Published research: "Efficient Cold-Start Mitigation in Serverless Computing" →
+• ICPC Asia West Regionals 2023: Rank 47 | 2022: Rank 63
+• Google Code Jam 2024: Round 3 qualifier (Global Rank 412)
+• Codeforces: Candidate Master (Rating 1,902) | LeetCode: Guardian (2,100+)
+• Published research: "Efficient Cold-Start Mitigation in Serverless Computing" →
   ACM SYSTOR 2024 (Poster, acceptance rate: 28%)
 ```
 
@@ -345,7 +345,7 @@ Before you submit, verify every item:
 [ ] Single page (unless >5 years experience)
 [ ] PDF format, file name: FirstName_LastName_CompanyName.pdf
 [ ] No spelling or grammar errors
-[ ] Font size â‰¥ 10pt body, consistent throughout
+[ ] Font size ≥ 10pt body, consistent throughout
 [ ] Contact info: phone, email, LinkedIn, GitHub (links clickable in PDF)
 [ ] CGPA clearly listed (omit if < 6.5 unless asked)
 [ ] Education section: degree, college, CGPA, year
@@ -355,7 +355,7 @@ Before you submit, verify every item:
 [ ] No "I", "me", "my", "we", "our"
 [ ] No irrelevant hobbies (unless unique/impressive)
 [ ] No photo, age, gender, religion
-[ ] Consistent bullet style (all same delimiter: â€¢ or â€“)
+[ ] Consistent bullet style (all same delimiter: • or –)
 [ ] Dates right-aligned or consistently formatted (Mon YYYY)
 [ ] GitHub links to projects that are well-documented (README, clean code)
 [ ] LinkedIn profile matches resume details
@@ -463,8 +463,8 @@ Posting on LinkedIn builds your brand. You don't need to be an influencer; 1-2 p
 > Built [Project Name] using [Tech Stack]. It does [what] and achieved [metric].
 >
 > Key challenges I solved:
-> â€¢ [Challenge 1] → [solution]
-> â€¢ [Challenge 2] → [solution]
+> • [Challenge 1] → [solution]
+> • [Challenge 2] → [solution]
 >
 > Results: [N users | X% improvement | Y latency]
 >
@@ -526,12 +526,12 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 
 | Concept | Formula |
 |---------|---------|
-| Percentage change | `((New - Old) / Old) Ã— 100` |
+| Percentage change | `((New - Old) / Old) × 100` |
 | Successive increase | `a + b + (ab/100)` → two increments of a% and b% |
-| Discount | `MP Ã— (100 - D%) / 100 = SP` |
-| Profit % | `(Profit / CP) Ã— 100` |
-| Population after n years | `P Ã— (1 + r/100)^n` |
-| Depreciation after n years | `P Ã— (1 - r/100)^n` |
+| Discount | `MP × (100 - D%) / 100 = SP` |
+| Profit % | `(Profit / CP) × 100` |
+| Population after n years | `P × (1 + r/100)^n` |
+| Depreciation after n years | `P × (1 - r/100)^n` |
 
 #### Time, Speed & Distance
 
@@ -552,15 +552,15 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 - If `A : B = x : y` and `B : C = p : q`, then `A : B : C = xp : yp : yq`
 - If `A : B = p : q` and `B : C = r : s`, then `A : C = pr : qs`
 - If `A = kB` (A directly proportional to B) → `A1/B1 = A2/B2`
-- If `A = k/B` (A inversely proportional to B) → `A1 Ã— B1 = A2 Ã— B2`
+- If `A = k/B` (A inversely proportional to B) → `A1 × B1 = A2 × B2`
 
 #### Averages
 
 | Concept | Formula |
 |---------|---------|
 | Average | `Sum / Count` |
-| Weighted average | `(w1Ã—a1 + w2Ã—a2 + ...) / (w1 + w2 + ...)` |
-| Combined average (two groups) | `(n1Ã—a1 + n2Ã—a2) / (n1 + n2)` |
+| Weighted average | `(w1×a1 + w2×a2 + ...) / (w1 + w2 + ...)` |
+| Combined average (two groups) | `(n1×a1 + n2×a2) / (n1 + n2)` |
 | Age average (after n years) | Each person's age increases by n |
 
 #### Profit, Loss & Discount
@@ -569,29 +569,29 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 |---------|---------|
 | Profit | `SP - CP` (when SP > CP) |
 | Loss | `CP - SP` (when CP > SP) |
-| Profit % | `(Profit / CP) Ã— 100` |
-| Loss % | `(Loss / CP) Ã— 100` |
+| Profit % | `(Profit / CP) × 100` |
+| Loss % | `(Loss / CP) × 100` |
 | Discount | `MP - SP` |
-| Discount % | `(Discount / MP) Ã— 100` |
+| Discount % | `(Discount / MP) × 100` |
 | Successive discount | `a + b - (ab/100)` for two discounts a% and b% |
 
 #### Simple & Compound Interest
 
 | Concept | Formula |
 |---------|---------|
-| Simple Interest | `SI = (P Ã— R Ã— T) / 100` |
+| Simple Interest | `SI = (P × R × T) / 100` |
 | Amount (SI) | `P + SI` |
-| Compound Interest | `CI = P Ã— (1 + R/100)^T - P` |
-| Amount (CI) | `P Ã— (1 + R/100)^T` |
-| Half-yearly CI | `P Ã— (1 + R/200)^(2T)` |
-| Quarterly CI | `P Ã— (1 + R/400)^(4T)` |
+| Compound Interest | `CI = P × (1 + R/100)^T - P` |
+| Amount (CI) | `P × (1 + R/100)^T` |
+| Half-yearly CI | `P × (1 + R/200)^(2T)` |
+| Quarterly CI | `P × (1 + R/400)^(4T)` |
 
 #### Permutations & Combinations
 
 | Concept | Formula |
 |---------|---------|
 | nPr | `n! / (n-r)!` |
-| nCr | `n! / (r! Ã— (n-r)!)` |
+| nCr | `n! / (r! × (n-r)!)` |
 | Circular permutation (n distinct) | `(n-1)!` |
 | Arrangements with repetition | `n^k` |
 
@@ -601,8 +601,8 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 |---------|---------|
 | Probability of event | `Favorable Outcomes / Total Outcomes` |
 | P(Not E) | `1 - P(E)` |
-| P(A or B) | `P(A) + P(B) - P(Aâˆ©B)` |
-| P(A and B) independent | `P(A) Ã— P(B)` |
+| P(A or B) | `P(A) + P(B) - P(A∩B)` |
+| P(A and B) independent | `P(A) × P(B)` |
 
 #### Number System Quick Facts
 
@@ -612,7 +612,7 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 - Divisibility by 8: Last three digits divisible by 8
 - Divisibility by 9: Sum of digits divisible by 9
 - Divisibility by 11: Difference of (sum of odd-placed digits) and (sum of even-placed digits) = 0 or multiple of 11
-- HCF Ã— LCM = Product of numbers
+- HCF × LCM = Product of numbers
 - HCF of fractions = `HCF of numerators / LCM of denominators`
 - LCM of fractions = `LCM of numerators / HCF of denominators`
 
@@ -630,8 +630,8 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 
 Using successive percentage formula: `a + b + c + (ab + bc + ca)/100 + (abc)/10000`
 
-First two changes: `20 - 10 + (20 Ã— (-10))/100 = 10 - 2 = 8%`
-Now apply 25% on 108: `8 + 25 + (8 Ã— 25)/100 = 33 + 2 = 35%`
+First two changes: `20 - 10 + (20 × (-10))/100 = 10 - 2 = 8%`
+Now apply 25% on 108: `8 + 25 + (8 × 25)/100 = 33 + 2 = 35%`
 
 **Answer: 35% increase**
 
@@ -643,9 +643,9 @@ Now apply 25% on 108: `8 + 25 + (8 Ã— 25)/100 = 33 + 2 = 35%`
 
 **Solution:**
 
-Relative speed = `60 + 40 = 100 km/h = 100 Ã— 5/18 = 250/9 m/s`
+Relative speed = `60 + 40 = 100 km/h = 100 × 5/18 = 250/9 m/s`
 Total distance to cover = `140 + 160 = 300m`
-Time = `Distance / Speed = 300 / (250/9) = 300 Ã— 9/250 = 2700/250 = 10.8 seconds`
+Time = `Distance / Speed = 300 / (250/9) = 300 × 9/250 = 2700/250 = 10.8 seconds`
 
 **Answer: 10.8 seconds**
 
@@ -661,8 +661,8 @@ Time = `Distance / Speed = 300 / (250/9) = 300 Ã— 9/250 = 2700/250 = 10.8 sec
 A : B = 2 : 3
 B : C = 5 : 7
 Make B equal: LCM of 3 and 5 = 15
-A : B = 2Ã—5 : 3Ã—5 = 10 : 15
-B : C = 5Ã—3 : 7Ã—3 = 15 : 21
+A : B = 2×5 : 3×5 = 10 : 15
+B : C = 5×3 : 7×3 = 15 : 21
 A : B : C = 10 : 15 : 21
 ```
 
@@ -676,8 +676,8 @@ A : B : C = 10 : 15 : 21
 
 **Solution:**
 
-Total marks of 20 students = `20 Ã— 72 = 1440`
-Total marks of 12 boys = `12 Ã— 68 = 816`
+Total marks of 20 students = `20 × 72 = 1440`
+Total marks of 12 boys = `12 × 68 = 816`
 Total marks of 8 girls = `1440 - 816 = 624`
 Average of girls = `624 / 8 = 78`
 
@@ -707,10 +707,10 @@ Profit = 119 - 100 = 19%
 
 **Solution:**
 
-`CI = P Ã— (1 + R/200)^(2T) - P`
-`CI = 10,000 Ã— (1 + 10/200)^(4) - 10,000`
-`CI = 10,000 Ã— (1.05)^4 - 10,000`
-`CI = 10,000 Ã— 1.21550625 - 10,000`
+`CI = P × (1 + R/200)^(2T) - P`
+`CI = 10,000 × (1 + 10/200)^(4) - 10,000`
+`CI = 10,000 × (1.05)^4 - 10,000`
+`CI = 10,000 × 1.21550625 - 10,000`
 `CI = 12,155.06 - 10,000 = 2,155.06`
 
 **Answer: Rs. 2,155.06**
@@ -730,18 +730,18 @@ This requires casework by letter usage patterns:
 **Case 1:** All 4 letters distinct
 Choose 4 from 8 distinct letters: `C(8,4) = 70` ways
 Arrange each: 4! = 24
-Total = `70 Ã— 24 = 1680`
+Total = `70 × 24 = 1680`
 
 **Case 2:** 1 letter repeated twice, 2 distinct
 Repeated can be M, A, or T (3 options)
 Choose 2 distinct from remaining 7: `C(7,2) = 21`
 Arrange: 4!/2! = 12
-Total = `3 Ã— 21 Ã— 12 = 756`
+Total = `3 × 21 × 12 = 756`
 
 **Case 3:** 2 letters repeated twice
 Choose 2 from {M, A, T}: `C(3,2) = 3`
-Arrange: 4!/(2!Ã—2!) = 6
-Total = `3 Ã— 6 = 18`
+Arrange: 4!/(2!×2!) = 6
+Total = `3 × 6 = 18`
 
 **Case 4:** 1 letter repeated 3 times → not possible (max frequency = 2)
 
@@ -773,10 +773,10 @@ Probability = `6 / 1326 = 1 / 221`
 
 Work done per day: A = 1/12, B = 1/15, C = 1/20
 Combined (A+B+C) = `1/12 + 1/15 + 1/20 = (5+4+3)/60 = 12/60 = 1/5`
-Work done in 3 days = `3 Ã— 1/5 = 3/5`
+Work done in 3 days = `3 × 1/5 = 3/5`
 Remaining work = `1 - 3/5 = 2/5`
 B + C per day = `1/15 + 1/20 = (4+3)/60 = 7/60`
-Days needed = `(2/5) / (7/60) = (2/5) Ã— (60/7) = 120/35 = 24/7 = 3 3/7`
+Days needed = `(2/5) / (7/60) = (2/5) × (60/7) = 120/35 = 24/7 = 3 3/7`
 
 **Answer: 3 3/7 days**
 
@@ -808,9 +808,9 @@ So milk : water = 4 : 1
 
 **Solution:**
 
-The number N must satisfy: N â‰¡ 5 (mod 8), N â‰¡ 5 (mod 12), N â‰¡ 5 (mod 15)
-So N = LCM(8, 12, 15) Ã— k + 5
-LCM(8, 12, 15) = 2Â³ Ã— 3 Ã— 5 = 120
+The number N must satisfy: N ≡ 5 (mod 8), N ≡ 5 (mod 12), N ≡ 5 (mod 15)
+So N = LCM(8, 12, 15) × k + 5
+LCM(8, 12, 15) = 2³ × 3 × 5 = 120
 Smallest number (k=0): N = 120 + 5 = 125
 
 **Answer: 125**
@@ -827,7 +827,7 @@ First seat the 5 boys: 5! = 120 ways
 This creates 6 gaps (4 between + 2 at ends): _ B _ B _ B _ B _ B _
 Choose 3 gaps for girls: `C(6,3) = 20` ways
 Arrange girls in chosen gaps: 3! = 6
-Total = `120 Ã— 20 Ã— 6 = 14,400`
+Total = `120 × 20 × 6 = 14,400`
 
 **Answer: 14,400**
 
@@ -839,8 +839,8 @@ Total = `120 Ã— 20 Ã— 6 = 14,400`
 
 **Solution:**
 
-Total outcomes = 6 Ã— 6 = 36
-Favorable (sum â‰¥ 10):
+Total outcomes = 6 × 6 = 36
+Favorable (sum ≥ 10):
 (4,6), (5,5), (5,6), (6,4), (6,5), (6,6) = 6 outcomes
 Probability = 6/36 = 1/6
 
@@ -858,12 +858,12 @@ Let boat speed = x km/h
 Upstream speed = (x - 5), Time = 30/(x-5)
 Downstream speed = (x + 5), Time = 30/(x+5)
 Total time: `30/(x-5) + 30/(x+5) = 8`
-`30(x+5 + x-5) / (xÂ²-25) = 8`
-`30(2x) / (xÂ²-25) = 8`
-`60x = 8(xÂ²-25)`
-`60x = 8xÂ² - 200`
-`8xÂ² - 60x - 200 = 0`
-`2xÂ² - 15x - 50 = 0`
+`30(x+5 + x-5) / (x²-25) = 8`
+`30(2x) / (x²-25) = 8`
+`60x = 8(x²-25)`
+`60x = 8x² - 200`
+`8x² - 60x - 200 = 0`
+`2x² - 15x - 50 = 0`
 `(2x + 5)(x - 10) = 0`
 x = 10 (x = -2.5 invalid)
 
@@ -878,8 +878,8 @@ x = 10 (x = -2.5 invalid)
 **Solution:**
 
 If sum doubles, Interest = P (the original amount)
-`SI = (P Ã— R Ã— T) / 100`
-`P = (P Ã— R Ã— 8) / 100`
+`SI = (P × R × T) / 100`
+`P = (P × R × 8) / 100`
 `R = 100/8 = 12.5%`
 
 **Answer: 12.5% per annum**
@@ -892,9 +892,9 @@ If sum doubles, Interest = P (the original amount)
 
 **Solution:**
 
-`P = 80,000 Ã— (1 + 5/100)Â³`
-`P = 80,000 Ã— (1.05)Â³`
-`P = 80,000 Ã— 1.157625`
+`P = 80,000 × (1 + 5/100)³`
+`P = 80,000 × (1.05)³`
+`P = 80,000 × 1.157625`
 `P = 92,610`
 
 **Answer: 92,610**
@@ -907,10 +907,10 @@ If sum doubles, Interest = P (the original amount)
 
 **Solution:**
 
-A's investment = 3 Ã— 8 = 24 (units Ã— months)
-B's investment = 5 Ã— 12 = 60
+A's investment = 3 × 8 = 24 (units × months)
+B's investment = 5 × 12 = 60
 Profit ratio A:B = 24:60 = 2:5
-A's share = `(2/7) Ã— 56,000 = Rs. 16,000`
+A's share = `(2/7) × 56,000 = Rs. 16,000`
 
 **Answer: Rs. 16,000**
 
@@ -936,9 +936,9 @@ Time = 60 minutes
 
 **Solution:**
 
-Total age of 5 members = 5 Ã— 25 = 125
+Total age of 5 members = 5 × 25 = 125
 New average = 25 + 4 = 29
-Total age of 6 members = 6 Ã— 29 = 174
+Total age of 6 members = 6 × 29 = 174
 Grandfather's age = 174 - 125 = 49
 
 **Answer: 49 years**
@@ -953,7 +953,7 @@ Grandfather's age = 174 - 125 = 49
 
 Total balls = 15
 Total outcomes = `C(15,3) = 455`
-Favorable = 1 red Ã— 1 blue Ã— 1 green = `C(4,1) Ã— C(5,1) Ã— C(6,1) = 4 Ã— 5 Ã— 6 = 120`
+Favorable = 1 red × 1 blue × 1 green = `C(4,1) × C(5,1) × C(6,1) = 4 × 5 × 6 = 120`
 Probability = `120/455 = 24/91`
 
 **Answer: 24/91**
@@ -1032,7 +1032,7 @@ Probability = `120/455 = 24/91`
 | Letter shift | CAT → DDU | Each letter +1 position (+1,+1,+1) |
 | Reverse | ABC → CBA | Reverse the string |
 | Vowel replacement | CAT → C_T | Vowels coded as numbers (A=1, E=2, etc.) |
-| Pattern-based | 123 → 236 | Each digit Ã— 2 |
+| Pattern-based | 123 → 236 | Each digit × 2 |
 
 ---
 
@@ -1123,7 +1123,7 @@ Probability = `120/455 = 24/91`
 **Q6.** In a bag containing only red and blue balls, 40% are red. If 10 more red balls are added, the percentage of red becomes 50%. How many blue balls are there?
   a) 30   b) 40   c) 50   d) 60
 
-**Q7.** If `logâ‚â‚€ 5 = 0.6990`, find `logâ‚â‚€ 20`.
+**Q7.** If `log₁₀ 5 = 0.6990`, find `log₁₀ 20`.
   a) 1.3010   b) 1.3980   c) 0.6990   d) 1.0000
 
 **Q8.** A man covers a distance at 60 km/h and returns at 40 km/h. Find his average speed.
@@ -1165,7 +1165,7 @@ Probability = `120/455 = 24/91`
 **Q17.** Five friends A, B, C, D, E sit in a row. C is between A and E. B is to the immediate left of A. D is not at either end. Who is at the left end?
   a) A   b) B   c) C   d) D
 
-**Q18.** If 7 Ã— 3 = 28, 8 Ã— 4 = 48, 9 Ã— 5 = 72, then 6 Ã— 2 = ?
+**Q18.** If 7 × 3 = 28, 8 × 4 = 48, 9 × 5 = 72, then 6 × 2 = ?
   a) 12   b) 18   c) 20   d) 16
 
 #### Section C: Verbal Ability (Q19-Q25)
@@ -1201,15 +1201,15 @@ Probability = `120/455 = 24/91`
 
 | Q | Answer | Explanation |
 |---|--------|-------------|
-| 1 | a) Rs. 800 | SP = MP Ã— (100-10)/100; 720 = MP Ã— 0.9; MP = 800 |
+| 1 | a) Rs. 800 | SP = MP × (100-10)/100; 720 = MP × 0.9; MP = 800 |
 | 2 | b) 41 | Let numbers be x-4, x-2, x, x+2, x+4. Sum = 5x = 185; x = 37; Largest = 37+4 = 41 |
-| 3 | b) 72 | Speed = 180/9 = 20 m/s = 20 Ã— 18/5 = 72 km/h |
-| 4 | b) 18 | M1 Ã— D1 = M2 Ã— D2; 15 Ã— 24 = 20 Ã— D2; D2 = 360/20 = 18 |
-| 5 | d) Rs. 2,648 | CI = 8000 Ã— (1 + 10/100)Â³ - 8000 = 10,648 - 8000 = 2,648 |
-| 6 | a) 30 | Let total = x. Red = 0.4x. After adding 10: (0.4x+10)/(x+10) = 0.5; 0.4x+10 = 0.5x+5; 0.1x = 5; x = 50. Blue = 0.6 Ã— 50 = 30 |
+| 3 | b) 72 | Speed = 180/9 = 20 m/s = 20 × 18/5 = 72 km/h |
+| 4 | b) 18 | M1 × D1 = M2 × D2; 15 × 24 = 20 × D2; D2 = 360/20 = 18 |
+| 5 | d) Rs. 2,648 | CI = 8000 × (1 + 10/100)³ - 8000 = 10,648 - 8000 = 2,648 |
+| 6 | a) 30 | Let total = x. Red = 0.4x. After adding 10: (0.4x+10)/(x+10) = 0.5; 0.4x+10 = 0.5x+5; 0.1x = 5; x = 50. Blue = 0.6 × 50 = 30 |
 | 7 | a) 1.3010 | log 20 = log(100/5) = log 100 - log 5 = 2 - 0.6990 = 1.3010 |
-| 8 | a) 48 | Avg = 2ab/(a+b) = 2Ã—60Ã—40/(100) = 4800/100 = 48 km/h |
-| 9 | c) 20 | x + y = 32, xy = 240. Solve: xÂ² - 32x + 240 = 0; (x-12)(x-20) = 0; numbers 12 and 20 |
+| 8 | a) 48 | Avg = 2ab/(a+b) = 2×60×40/(100) = 4800/100 = 48 km/h |
+| 9 | c) 20 | x + y = 32, xy = 240. Solve: x² - 32x + 240 = 0; (x-12)(x-20) = 0; numbers 12 and 20 |
 | 10 | c) 6 | A works 8 min: fills 8/12 = 2/3. B works t min: fills t/18. (2/3) + (t/18) = 1; t/18 = 1/3; t = 6 |
 
 #### Section B: Logical Reasoning
@@ -1220,23 +1220,23 @@ Probability = `120/455 = 24/91`
 | 12 | a) Son | Mother's only daughter = Priya herself. Her son is the man. |
 | 13 | b) Only II | Some intelligent people are rich = Some rich people are intelligent (converse). No link between doctors and rich. |
 | 14 | b) 2, 5, 1, 3, 4 | Infant → Toddler → Child → Adolescent → Adult |
-| 15 | c) 42 | Pattern: 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7 = 42 |
+| 15 | c) 42 | Pattern: 1×2, 2×3, 3×4, 4×5, 5×6, 6×7 = 42 |
 | 16 | b) 23 | Total = Left + Right - 1 = 15 + 9 - 1 = 23 |
 | 17 | b) B | Order: B A C E D (B at left end, D at right end, C between A and E) |
-| 18 | d) 16 | Pattern: a Ã— b = a Ã— (a+b-2). 7Ã—3 = 7Ã—4=28, 8Ã—4 = 8Ã—6=48, 6Ã—2 = 6Ã—6=36... Wait. Let me recheck. 7Ã—3=28 = (7+3)Ã—2+8? No. 7Ã—4=28? 7Ã—(3+1)? Pattern: a Ã— (b+1)? 7Ã—4=28, 8Ã—5=40 no. Actually: 7Ã—3=21+7=28, 8Ã—4=32+16=48, 9Ã—5=45+27=72. So aÃ—b + aÃ—? No. Pattern: aÃ—b + aÃ—(b-1)? 7Ã—3+7Ã—1=28, 8Ã—4+8Ã—2=48, 9Ã—5+9Ã—3=72. So formula: aÃ—b + aÃ—(b-1) = a(2b-1). 6Ã—2 = 6(4-1) = 18. Hmm. Let me try another: 7Ã—3 = 7+3=10, middle? No. 7Ã—3=28 → (7-2)Ã—(3+? ). Pattern: 7Ã—3=(7-3)Ã—7? = 4Ã—7=28. 8Ã—4=(8-4)Ã—8=4Ã—8=32 (no). Another: aÃ—b = (a-1)Ã—(b+1)? 6Ã—4=24 no. Let me look at outputs: 28, 48, 72. These are 4Ã—7=28, 6Ã—8=48, 8Ã—9=72... 7-3=4, 7Ã—4=28. 8-4=4, 8Ã—4=32 not 48. Hmm. Pattern: 7Ã—3=28 (7Ã—4). 8Ã—4=48 (8Ã—6). 9Ã—5=72 (9Ã—8). So the multiplier goes 4,6,8 = +2 each time. 3→4(+1), 4→6(+2), 5→8(+3). So 2→? The next is +4 → 6. So 6Ã—6=... But that doesn't match pattern. Actually: 7Ã—(3+1)=28. 8Ã—(4+2)=48. 9Ã—(5+3)=72. So multiplier = aÃ—b + (b-2)? No. aÃ—b + aÃ—(b-3)? 7Ã—3+7Ã—1=28 yes. 8Ã—4+8Ã—2=48 yes. 9Ã—5+9Ã—3=72 yes. So formula: aÃ—b + aÃ—(b-3) = a(2b-3). 6Ã—2 = 6(4-3)=6. Not matching options.
+| 18 | d) 16 | Pattern: a × b = a × (a+b-2). 7×3 = 7×4=28, 8×4 = 8×6=48, 6×2 = 6×6=36... Wait. Let me recheck. 7×3=28 = (7+3)×2+8? No. 7×4=28? 7×(3+1)? Pattern: a × (b+1)? 7×4=28, 8×5=40 no. Actually: 7×3=21+7=28, 8×4=32+16=48, 9×5=45+27=72. So a×b + a×? No. Pattern: a×b + a×(b-1)? 7×3+7×1=28, 8×4+8×2=48, 9×5+9×3=72. So formula: a×b + a×(b-1) = a(2b-1). 6×2 = 6(4-1) = 18. Hmm. Let me try another: 7×3 = 7+3=10, middle? No. 7×3=28 → (7-2)×(3+? ). Pattern: 7×3=(7-3)×7? = 4×7=28. 8×4=(8-4)×8=4×8=32 (no). Another: a×b = (a-1)×(b+1)? 6×4=24 no. Let me look at outputs: 28, 48, 72. These are 4×7=28, 6×8=48, 8×9=72... 7-3=4, 7×4=28. 8-4=4, 8×4=32 not 48. Hmm. Pattern: 7×3=28 (7×4). 8×4=48 (8×6). 9×5=72 (9×8). So the multiplier goes 4,6,8 = +2 each time. 3→4(+1), 4→6(+2), 5→8(+3). So 2→? The next is +4 → 6. So 6×6=... But that doesn't match pattern. Actually: 7×(3+1)=28. 8×(4+2)=48. 9×(5+3)=72. So multiplier = a×b + (b-2)? No. a×b + a×(b-3)? 7×3+7×1=28 yes. 8×4+8×2=48 yes. 9×5+9×3=72 yes. So formula: a×b + a×(b-3) = a(2b-3). 6×2 = 6(4-3)=6. Not matching options.
 
-Let me try: (a-1)Ã—(b+3)? 6Ã—6=36 no. aÃ—b = aÂ² - (a-b)Â²? 49-16=33 no.
+Let me try: (a-1)×(b+3)? 6×6=36 no. a×b = a² - (a-b)²? 49-16=33 no.
 
-Actually: 7Ã—3 = 28. 7+3=10, 7-3=4, 10+... hmm.
-Maybe: (a+b)Ã—(a-b+? )... (7+3)Ã—(7-3+? ) =10Ã—4=40 no.
+Actually: 7×3 = 28. 7+3=10, 7-3=4, 10+... hmm.
+Maybe: (a+b)×(a-b+? )... (7+3)×(7-3+? ) =10×4=40 no.
 
 Let me try the simplest recurring pattern: 
-7Ã—3 = 28 = 7Ã—(3) + 7Ã—1 = 7Ã—3 + 7
-8Ã—4 = 48 = 8Ã—4 + 8Ã—2 = 8Ã—4 + 16
-9Ã—5 = 72 = 9Ã—5 + 9Ã—3 = 9Ã—5 + 27
+7×3 = 28 = 7×(3) + 7×1 = 7×3 + 7
+8×4 = 48 = 8×4 + 8×2 = 8×4 + 16
+9×5 = 72 = 9×5 + 9×3 = 9×5 + 27
 
-So: a Ã— b + a Ã— (b-2) = a(2b-2)
-6Ã—2 = 6(4-2) = 12
+So: a × b + a × (b-2) = a(2b-2)
+6×2 = 6(4-2) = 12
 
 Answer: 12 (a)
 
@@ -1292,19 +1292,19 @@ Answer: 12 (a)
 25. If the side of a square increases by 10%, find the percentage increase in area.
 26. A number when multiplied by 5/3 gives 45. Find the number.
 27. Find the value of 1 + 1/2 + 1/4 + 1/8.
-28. Simplify: 25 - 5 Ã— 3 + 8 Ã· 4.
+28. Simplify: 25 - 5 × 3 + 8 ÷ 4.
 29. Convert 7/12 to decimal.
 30. What is the unit digit of 7^105?
 31. The sum of digits of a two-digit number is 9. When digits are reversed, the number decreases by 45. Find the number.
 32. Find the smallest prime number greater than 50.
 33. Classify 0.123123123... as rational or irrational.
-34. Find the value of âˆš(256) + âˆš(169).
+34. Find the value of √(256) + √(169).
 35. What is the remainder when 2^50 is divided by 5?
 36. Simplify: (27)^(2/3).
-37. If a+b = 12 and ab = 35, find aÂ² + bÂ².
+37. If a+b = 12 and ab = 35, find a² + b².
 38. Find the decimal expansion of 53/99.
 39. Arrange in ascending order: 3/5, 5/8, 7/12, 11/15.
-40. If x = 3 + 2âˆš2, find 1/x.
+40. If x = 3 + 2√2, find 1/x.
 41. 2 hours 15 minutes is what percentage of 1 day?
 42. In a mixture of 60 litres, milk and water are in ratio 7:5. How much water must be added to reverse the ratio?
 43. If the marked price is Rs. 800 and discount is 15%, find selling price.
@@ -1419,7 +1419,7 @@ Answer: 12 (a)
 146. A man rows 20 km downstream in 2 hours and 12 km upstream in 3 hours. Find boat speed and stream speed.
 147. A car travels up a hill at 30 km/h and down at 50 km/h. Total time 4 hours. Find one-way distance.
 148. Two cyclists start at same time from opposite ends of 35 km road and meet in 42 minutes. If one is 5 km/h faster, find speeds.
-149. A metro train runs at 80 km/h between stations 2 km apart. Acceleration and deceleration are 1 m/sÂ². Find shortest travel time.
+149. A metro train runs at 80 km/h between stations 2 km apart. Acceleration and deceleration are 1 m/s². Find shortest travel time.
 150. A man runs around a circular track of 600 m at 10 m/s and another at 15 m/s in opposite direction. Find meeting time.
 
 **Permutation-Combination / Probability / Data Interpretation (Q151-Q200)**
@@ -1442,7 +1442,7 @@ Answer: 12 (a)
 166. Two coins tossed. Find probability of at least one head.
 167. A box has 4 defective and 6 good items. Two drawn without replacement. Find both defective probability.
 168. A die rolled twice. Find probability sum > 9.
-169. P(A) = 0.4, P(B) = 0.3, P(Aâˆ©B) = 0.1. Find P(AâˆªB).
+169. P(A) = 0.4, P(B) = 0.3, P(A∩B) = 0.1. Find P(A∪B).
 170. A card is drawn from 52 cards. Find probability of red king or queen.
 171. Find the median of: 12, 15, 18, 22, 25, 30.
 172. Find the mode of: 2, 3, 5, 3, 7, 8, 3, 9.
@@ -1488,7 +1488,7 @@ Answer: 12 (a)
 | 25 | 21% | 26 | 27 | 27 | 15/8 | 28 | 13 |
 | 29 | 0.5833 | 30 | 7 | 31 | 72 | 32 | 53 |
 | 33 | Rational | 34 | 29 | 35 | 4 | 36 | 9 |
-| 37 | 74 | 38 | 0.5353 | 39 | 7/12,3/5,5/8,11/15 | 40 | 3-2âˆš2 |
+| 37 | 74 | 38 | 0.5353 | 39 | 7/12,3/5,5/8,11/15 | 40 | 3-2√2 |
 | 41 | 9.375% | 42 | 24 L | 43 | Rs. 680 | 44 | 50% |
 | 45 | 0% | 46 | 3960 | 47 | 1:2 | 48 | 6:5 |
 | 49 | 80% | 50 | 28% | 51 | 25% | 52 | Rs. 510 |
@@ -1714,7 +1714,7 @@ Answer: 12 (a)
 | 49 | 6th | 50 | 9 | 51 | Green | 52 | Black |
 | 53 | A | 54 | G | 55 | R | 56 | 15 |
 | 57 | 10 | 58 | 17 | 59 | 40 | 60 | A or D |
-| 61 | Sunday | 62 | 7.5Â° | 63 | 11 | 64 | Wednesday |
+| 61 | Sunday | 62 | 7.5° | 63 | 11 | 64 | Wednesday |
 | 65 | Thursday | 66 | 8 years | 67 | 10 years | 68 | 35 years |
 | 69 | 25:12 | 70 | 25 L | 71 | 36 days | 72 | 14 days |
 | 73 | 15 L | 74 | Rs. 1500 | 75 | 5:2 | 76 | 30 |
@@ -1900,27 +1900,27 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 **Pattern Recognition / Series Completion (Q1-Q25)**
 
 1. Find the next figure in series: Circle, Square, Triangle, Circle, Square, ?
-2. Identify the odd one: ○, △, □, â˜†, ◇
+2. Identify the odd one: ○, △, □, ☆, ◇
 3. Complete pattern: (↑↓), (←→), (↕↔), (↑↓), (←→), ?
-4. In a sequence of shapes, each shape rotates 90Â° clockwise. If current shape is ▲, what is next?
+4. In a sequence of shapes, each shape rotates 90° clockwise. If current shape is ▲, what is next?
 5. Pattern: ■, □, ■■, □□, ■■■, ?
 6. Find next: 0, 1, 1, 2, 3, 5, 8, ?
 7. Find missing term: 1, 4, 9, 16, ?, 36
 8. Shape pattern: Triangle has 3 lines, Square has 4, Pentagon has 5, Hexagon has ?
 9. Pattern: Z, Y, X, W, V, ?
 10. Find next: 1A, 2B, 3C, 4D, ?
-11. Series: â˜…, â˜…â˜…, â˜…â˜…â˜…, ?, â˜…â˜…â˜…â˜…â˜…
+11. Series: ★, ★★, ★★★, ?, ★★★★★
 12. Which figure completes the matrix? [◐, ◑, ◒] [◓, ?, ◐]
 13. Pattern: (↗), (↘), (↙), (↖), (↗), ?
 14. Find the odd image out: Red circle, Blue square, Green triangle, Red square → all same size. Which is different?
 15. Complete: 2, 6, 18, 54, ?
 16. Pattern: █, ▓, ▒, ░, █, ?
-17. Identify the missing shape in a 3Ã—3 grid where first row has circles, second row has squares, third row has ?
+17. Identify the missing shape in a 3×3 grid where first row has circles, second row has squares, third row has ?
 18. Series: ● ○ ○ ● ● ○ ○ ○ ● ● ●. What comes next?
 19. Pattern: All figures have 4 sides except one. Which is the exception?
 20. Next pattern: □ ▣ ▣ □ □ ▣ ▣ ▣ ▣ □ □ □ ?
 21. Find the missing domino: [3|4], [2|5], [6|1], [4|?]
-22. Complete the sequence: âˆŽ, âˆŽâˆŽ, âˆŽâˆŽâˆŽ, âˆŽâˆŽâˆŽâˆŽ, ?
+22. Complete the sequence: ∎, ∎∎, ∎∎∎, ∎∎∎∎, ?
 23. Pattern: 1, 2, 2, 4, 8, 32, ?
 24. A cube has how many faces?
 25. A square rotated in 3D around one edge forms a?
@@ -1931,18 +1931,18 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 27. What is the mirror image of "b" on horizontal axis?
 28. Mirror image of "AMBULANCE" on a horizontal mirror?
 29. If the time in a clock is 3:00, what will be its mirror image time?
-30. Which of the following is a mirror image: (A) → (A), (B) → (Æ†), (C) → (O)? Identify correct mapping.
+30. Which of the following is a mirror image: (A) → (A), (B) → (Ɔ), (C) → (O)? Identify correct mapping.
 31. Mirror image of number 2 0 2 4 on vertical axis?
 32. Figure X is folded to form a cube. Which of A, B, C, D matches?
 33. A sheet of paper with a hole is folded. Where does the hole appear on the unfolded sheet?
 34. Count the number of triangles in a given figure with 3 horizontal lines and 4 vertical lines.
-35. How many squares in a 4Ã—4 grid?
-36. A cube with 1 cm sides has each face painted. It is cut into 1 cmÂ³ cubes. How many have paint on exactly 2 faces?
-37. How many cubes in a 3Ã—3Ã—3 structure (all visible)?
+35. How many squares in a 4×4 grid?
+36. A cube with 1 cm sides has each face painted. It is cut into 1 cm³ cubes. How many have paint on exactly 2 faces?
+37. How many cubes in a 3×3×3 structure (all visible)?
 38. The figure below has how many lines of symmetry? (square with both diagonals)
 39. Which shape has more lines of symmetry: square or rectangle?
 40. A net of a cube has how many squares?
-41. Count the number of rectangles in a 3Ã—3 grid.
+41. Count the number of rectangles in a 3×3 grid.
 42. Figure classification: Circle, Ellipse, Square, Rectangle. Which does not belong?
 43. Which of these letters is symmetrical: A, B, F, G?
 44. How many faces, edges, and vertices does a rectangular prism have?
@@ -1950,26 +1950,26 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 46. A die has numbers 1-6 with opposite faces summing to 7. If 1 is on top and 2 is in front, what number is on the right?
 47. Which Venn diagram correctly shows the relationship between Squares, Rectangles, and Rhombuses?
 48. Count the number of straight lines used to form the letter "E" in block capitals.
-49. How many cubes in a 4Ã—3Ã—2 cuboid?
+49. How many cubes in a 4×3×2 cuboid?
 50. A figure has rotational symmetry of order 4. How many degrees must it rotate to match its original?
 
 **Answer Key → Spatial Ability**
 
 | Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
 |----|--------|----|--------|----|--------|----|--------|
-| 1 | Triangle | 2 | â˜† (non-geometric shape) | 3 | (↕↔) | 4 | ▼ (rotated) |
+| 1 | Triangle | 2 | ☆ (non-geometric shape) | 3 | (↕↔) | 4 | ▼ (rotated) |
 | 5 | □□□ | 6 | 13 | 7 | 25 | 8 | 6 |
-| 9 | U | 10 | 5E | 11 | â˜…â˜…â˜…â˜… | 12 | ◒ |
+| 9 | U | 10 | 5E | 11 | ★★★★ | 12 | ◒ |
 | 13 | (↘) | 14 | Red square (color-shape mismatch) | 15 | 162 | 16 | ▓ |
 | 17 | Triangles | 18 | ○ (count of circles increasing) | 19 | Triangle (3 sides) | 20 | ▣ (pattern follows Fibonacci) |
-| 21 | 3 (sum = 7) | 22 | âˆŽâˆŽâˆŽâˆŽâˆŽ | 23 | 256 | 24 | 6 |
-| 25 | Cylinder | 26 | d (reverse) | 27 | q | 28 | 3Æ†Ð˜Aâ…ƒUá—ºMA |
-| 29 | 9:00 | 30 | (B) → (Æ†) | 31 | hOShO | 32 | Depends on configuration |
+| 21 | 3 (sum = 7) | 22 | ∎∎∎∎∎ | 23 | 256 | 24 | 6 |
+| 25 | Cylinder | 26 | d (reverse) | 27 | q | 28 | 3ƆИA⅃UᗺMA |
+| 29 | 9:00 | 30 | (B) → (Ɔ) | 31 | hOShO | 32 | Depends on configuration |
 | 33 | All holes appear symmetrically | 34 | 18 | 35 | 30 | 36 | 12 |
 | 37 | 27 | 38 | 4 | 39 | Square (4 vs 2) | 40 | 6 |
 | 41 | 36 | 42 | Circle (no straight lines) | 43 | A (vertical symmetry) | 44 | 6, 12, 8 |
 | 45 | 2 | 46 | 3 | 47 | Square inside Rectangle inside Rhombus? No → all are subtypes of parallelogram | 48 | 4 |
-| 49 | 24 | 50 | 90Â° |
+| 49 | 24 | 50 | 90° |
 
 ## Complete Resume Templates (Markdown)
 
@@ -1989,7 +1989,7 @@ Bengaluru, Karnataka | +91 98765 43210 | rahul.sharma@email.com | linkedin.com/i
 ## EDUCATION
 
 **National Institute of Technology, Surathkal** | B.Tech in Computer Science and Engineering
-*CGPA: 8.72 / 10.0* | *Nov 2022 â€“ May 2026*
+*CGPA: 8.72 / 10.0* | *Nov 2022 – May 2026*
 
 **Relevant Coursework:** Data Structures and Algorithms, Operating Systems, Database Management Systems,
 Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Systems, Compiler Design
@@ -2001,13 +2001,13 @@ Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Sy
 
 ## INTERNSHIPS
 
-**TechCorp India Pvt. Ltd.** | Software Engineering Intern | *Bengaluru (Remote)* | *May 2025 â€“ Jul 2025*
+**TechCorp India Pvt. Ltd.** | Software Engineering Intern | *Bengaluru (Remote)* | *May 2025 – Jul 2025*
 - Designed and implemented a real-time chat microservice handling **10,000+ concurrent WebSocket connections** using Spring Boot, Redis Pub/Sub, and WebSocket STOMP protocol, reducing message delivery latency to under **50ms**
 - Built a distributed rate-limiting layer using Redis Sliding Window algorithm, preventing API abuse and reducing 429 errors by **85%** across 12 internal services
 - Wrote comprehensive unit and integration tests using JUnit 5 and Mockito, achieving **92% code coverage** on the messaging module
 - Containerized the chat service using Docker and deployed on AWS ECS with auto-scaling policies, handling 3x traffic spikes during production load tests
 
-**AlphaStart (Fintech Startup)** | Software Development Intern | *Remote* | *Dec 2024 â€“ Jan 2025*
+**AlphaStart (Fintech Startup)** | Software Development Intern | *Remote* | *Dec 2024 – Jan 2025*
 - Developed RESTful APIs for a loan origination system using Node.js, Express, and PostgreSQL, reducing document processing time by **60%** through automated validation pipelines
 - Integrated Redis caching for frequently accessed customer data, reducing database query load by **70%** and improving API response times from 400ms to 120ms
 
@@ -2048,7 +2048,7 @@ Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Sy
 
 ## ACHIEVEMENTS
 
-- **CodeChef Rating 2100+ (6â˜…)** → Global rank #47 in CodeChef Starters 124, highest rating among college batch
+- **CodeChef Rating 2100+ (6★)** → Global rank #47 in CodeChef Starters 124, highest rating among college batch
 - **LeetCode Guardian (2400+ rating)** → Solved **850+ problems** including 250+ hard; weekly contest global rank #132
 - **ACM ICPC 2024 Regionalist** → Secured rank #128 among 3,500+ teams in ICPC Asia-Kanpur regionals
 - **Google Kick Start** → Global rank #256 in Round F 2024
@@ -2058,11 +2058,11 @@ Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Sy
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Competitive Programming Lead, Coding Club → NIT Surathkal** | *Aug 2024 â€“ Present*
+**Competitive Programming Lead, Coding Club → NIT Surathkal** | *Aug 2024 – Present*
 - Mentor 60+ juniors in DSA and competitive programming; conduct weekly training sessions covering advanced graph algorithms, dynamic programming, and segment trees
 - Organized **CodeSprint 2025**, a 24-hour inter-college hackathon with 500+ participants and 120 teams
 
-**Teaching Assistant → Data Structures & Algorithms** | *Jan 2025 â€“ Apr 2025*
+**Teaching Assistant → Data Structures & Algorithms** | *Jan 2025 – Apr 2025*
 - Conducted weekly tutorial sessions for 80+ second-year students; designed lab assignments on trees, graphs, and sorting algorithms; average student feedback score: 4.6/5.0
 
 ---
@@ -2096,7 +2096,7 @@ Mumbai, Maharashtra | +91 87654 32109 | priya.verma@email.com | linkedin.com/in/
 ## EDUCATION
 
 **Veermata Jijabai Technological Institute (VJTI), Mumbai** | B.Tech in Computer Engineering
-*CGPA: 8.45 / 10.0* | *Aug 2022 â€“ Jun 2026*
+*CGPA: 8.45 / 10.0* | *Aug 2022 – Jun 2026*
 
 **Relevant Coursework:** Data Structures, Algorithms, Web Development, Software Engineering, DBMS, Computer Networks,
 Operating Systems, Cloud Computing, UI/UX Design
@@ -2147,7 +2147,7 @@ Operating Systems, Cloud Computing, UI/UX Design
 **HackDTU 2025 → Winner (1st Place)** | *Delhi* | *Mar 2025*
 - Developed "MediTrack" → a blockchain-based vaccine supply chain tracker ensuring cold-chain compliance
 - Implemented smart contracts on Ethereum testnet for immutable audit logs with QR-based verification
-- Prize: â‚¹50,000 and incubation opportunity
+- Prize: ₹50,000 and incubation opportunity
 
 **Flipkart Grid 4.0 → National Semi-Finalist** | *Online* | *Jun 2025*
 - Designed a real-time product recommendation engine using collaborative filtering and approximate nearest neighbor search
@@ -2189,13 +2189,13 @@ Operating Systems, Cloud Computing, UI/UX Design
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Technical Lead, Open Source Club → VJTI** | *Jul 2024 â€“ Present*
+**Technical Lead, Open Source Club → VJTI** | *Jul 2024 – Present*
 - Lead team of 25 students contributing to open-source projects; organized monthly "Hacktoberfest Prep" workshops
 - Spearheaded the college's first GitHub Campus Program application, securing free GitHub Team access for 200+ students
 
-**Student Coordinator, TechFest 2025** | *VJTI* | *Jan 2025 â€“ Mar 2025*
+**Student Coordinator, TechFest 2025** | *VJTI* | *Jan 2025 – Mar 2025*
 - Coordinated the "Code Wars" track with 300+ registrants; managed a team of 15 volunteers for event execution
-- Raised â‚¹2.5L in sponsorships from GitHub, Postman, and DigitalOcean
+- Raised ₹2.5L in sponsorships from GitHub, Postman, and DigitalOcean
 
 ---
 
@@ -2229,7 +2229,7 @@ Lucknow, Uttar Pradesh | +91 76543 21098 | aman.gupta@email.com | linkedin.com/i
 ## EDUCATION
 
 **Ajay Kumar Garg Engineering College, Ghaziabad** | B.Tech in Information Technology
-*CGPA: 7.65 / 10.0* | *Oct 2022 â€“ Jun 2026* | *No active backlogs*
+*CGPA: 7.65 / 10.0* | *Oct 2022 – Jun 2026* | *No active backlogs*
 
 **Relevant Coursework:** Programming in C, Object-Oriented Programming, Database Management Systems, Computer Networks,
 Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
@@ -2299,7 +2299,7 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 
 ## TRAINING & WORKSHOPS
 
-**Java Full Stack Development → Internshala Training** | *Jun 2024 â€“ Aug 2024*
+**Java Full Stack Development → Internshala Training** | *Jun 2024 – Aug 2024*
 - Completed 8-week online training covering Java, Spring Boot, Hibernate, REST APIs, HTML/CSS, and JavaScript
 - Built a library management system as capstone project → awarded **"Outstanding Project"** among 500+ trainees
 
@@ -2311,7 +2311,7 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 ## ACHIEVEMENTS
 
 - **NPTEL Elite Certificate** in Python for Data Science → scored **71%** (top 5% of course)
-- **HackerRank 5â˜…** in Java, **4â˜…** in SQL, **3â˜…** in Problem Solving
+- **HackerRank 5★** in Java, **4★** in SQL, **3★** in Problem Solving
 - **College Tech Fest Winner** → 2nd place in Web Development competition (2024)
 - **National Service Scheme (NSS)** → Completed 120+ hours of community service; organized blood donation camp with 80+ donors
 - **Class Representative** for IT Department (2024-25) → Liaised between faculty and 65 students
@@ -2320,7 +2320,7 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Event Coordinator → TechVibes 2025** | *AKGEC Ghaziabad* | *Feb 2025 â€“ Apr 2025*
+**Event Coordinator → TechVibes 2025** | *AKGEC Ghaziabad* | *Feb 2025 – Apr 2025*
 - Coordinated the "Web Weavers" web development competition with 120+ participants from 15 colleges
 - Managed event logistics, created problem statements, and led a team of 8 volunteers
 
@@ -2359,7 +2359,7 @@ Pune, Maharashtra | +91 65432 10987 | neha.patel@email.com | linkedin.com/in/neh
 ## EDUCATION
 
 **College of Engineering, Pune (COEP)** | B.Tech in Computer Science and Engineering (AI/ML Specialization)
-*CGPA: 9.12 / 10.0* | *Aug 2022 â€“ Jun 2026*
+*CGPA: 9.12 / 10.0* | *Aug 2022 – Jun 2026*
 
 **Relevant Coursework:** Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Probability &
 Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, Database Systems
@@ -2440,7 +2440,7 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 - **Kaggle Notebooks Master** → 6 gold medals (4 solo), 14 silver; 2 notebooks featured on Kaggle homepage
 - **Published 2 research papers** (1 journal, 1 conference under review)
-- **LeetCode SQL 5â˜…** → Top 2% in database problems
+- **LeetCode SQL 5★** → Top 2% in database problems
 - **Harvard CS50x Puzzle Day Winner** → Completed all puzzles in under 4 hours (2024)
 - **Best Project Award** → COEP TechFest 2024 for the Traffic Sign Recognition project
 
@@ -2448,11 +2448,11 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Co-Lead, Data Science Club → COEP** | *Jul 2024 â€“ Present*
+**Co-Lead, Data Science Club → COEP** | *Jul 2024 – Present*
 - Organize weekly paper-reading sessions covering recent NeurIPS, ICML, and ICLR publications; average attendance: 40+ students
 - Mentored 5 teams for Kaggle competitions; 2 teams achieved top 10% finishes
 
-**Teaching Assistant → Machine Learning (UG Course)** | *Jan 2025 â€“ May 2025*
+**Teaching Assistant → Machine Learning (UG Course)** | *Jan 2025 – May 2025*
 - Graded assignments and projects for 120+ students; conducted Python and scikit-learn lab sessions
 - Created 3 hands-on assignments on regression, classification, and clustering used across semester
 
@@ -2497,7 +2497,7 @@ Jaipur, Rajasthan | +91 54321 09876 | arjun.singh@email.com | linkedin.com/in/ar
 ## EDUCATION
 
 **Manipal Institute of Technology, Manipal** | B.Tech in Computer Science and Engineering
-*CGPA: 8.21 / 10.0* | *Aug 2022 â€“ Jun 2026*
+*CGPA: 8.21 / 10.0* | *Aug 2022 – Jun 2026*
 
 **Relevant Coursework:** Web Technologies, Database Systems, Computer Networks, Software Engineering, Operating Systems,
 Object-Oriented Programming, User Interface Design, Cloud Computing
@@ -2509,15 +2509,15 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 ## WORK EXPERIENCE
 
-**Freelance Full-Stack Developer | Self-Employed** | *Remote* | *Jun 2024 â€“ Present*
+**Freelance Full-Stack Developer | Self-Employed** | *Remote* | *Jun 2024 – Present*
 *Clients include: 2 funded startups, 3 small businesses, 1 NGO*
 - Architected and built a MERN-stack SaaS application (TaskFlow) serving **5,000+ daily active users** with team collaboration features including real-time boards, file sharing, and activity feeds
 - Designed RESTful + GraphQL hybrid API architecture handling **200+ requests/second** with rate limiting and caching layers
 - Migrated a client's monolithic Ruby on Rails e-commerce platform to a microservices architecture using Node.js and Docker, reducing deployment time by **80%** and enabling independent service scaling
 - Delivered projects end-to-end: requirements gathering, UI/UX design (Figma → React), backend development, cloud deployment, and post-launch maintenance
-- Earned **â‚¹4.2L+** in freelance revenue over 18 months across 7 completed projects
+- Earned **₹4.2L+** in freelance revenue over 18 months across 7 completed projects
 
-**Upwork → Top Rated Plus Freelancer** | *Remote* | *Jan 2024 â€“ Present*
+**Upwork → Top Rated Plus Freelancer** | *Remote* | *Jan 2024 – Present*
 - Completed 35+ projects with **100% job success score**; earned "Top Rated Plus" status within 12 months
 - Built custom CRM dashboards, booking systems, inventory management portals, and real-time analytics platforms
 - Average client rating: 4.97 / 5.00 across 42 reviews
@@ -2594,12 +2594,12 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Founder & Lead, Web Development Wing → MIT Manipal Coding Club** | *Aug 2024 â€“ Present*
+**Founder & Lead, Web Development Wing → MIT Manipal Coding Club** | *Aug 2024 – Present*
 - Established the Web Development wing with 30+ active members; conduct weekly hands-on workshops on React, Node.js, and deployment
 - Led the development of the club's official website (next.clubweb.mitm) serving as portfolio for 100+ members
 - Organized "ShipIt 2025" → a 2-week build sprint where 12 teams launched production-ready web apps
 
-**Technical Mentor → Google Developer Student Clubs (GDSC)** | *Sep 2024 â€“ Present*
+**Technical Mentor → Google Developer Student Clubs (GDSC)** | *Sep 2024 – Present*
 - Mentored 50+ students in web development; conducted 6 workshops on React, Firebase, and Cloud deployment
 - Guided 3 student teams to build and deploy full-stack projects for GDSC Solution Challenge
 
@@ -2647,19 +2647,19 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 | Topic | Key Resource | Time Investment | Impact |
 |-------|------------|-----------------|--------|
-| Resume | Single-column ATS format, quantified bullets | 2â€“3 days to draft + iterate | High (shortlisting gate) |
-| LinkedIn | Complete profile + weekly posts | 1â€“2 hours initial + 30 min/week | Medium (referral source) |
-| Aptitude | Formula sheets + timed practice | 2â€“4 hours/week for 4 weeks | High (first-round filter) |
-| Cover Letter | 4-paragraph template | 1 hour per application | Lowâ€“Medium (tiebreaker) |
-| GitHub | 6 pinned repos with clean READMEs | 1â€“2 days initial setup | Medium (product companies) |
+| Resume | Single-column ATS format, quantified bullets | 2–3 days to draft + iterate | High (shortlisting gate) |
+| LinkedIn | Complete profile + weekly posts | 1–2 hours initial + 30 min/week | Medium (referral source) |
+| Aptitude | Formula sheets + timed practice | 2–4 hours/week for 4 weeks | High (first-round filter) |
+| Cover Letter | 4-paragraph template | 1 hour per application | Low–Medium (tiebreaker) |
+| GitHub | 6 pinned repos with clean READMEs | 1–2 days initial setup | Medium (product companies) |
 
 ## Cross-Application Matrix
 
 | Preparation Area | Service-Based (TCS, Infy) | Product-Based (Flipkart, Uber) | FAANG (Google, Microsoft) |
 |-----------------|--------------------------|-------------------------------|---------------------------|
 | Resume Focus | CGPA, skills, certifications | Projects, internships, impact metrics | Publications, open-source, competitive programming |
-| LinkedIn Priority | Lowâ€“Medium | Mediumâ€“High | High (referrals) |
-| Aptitude Weight | High (mandatory section) | Medium (initial filter) | Lowâ€“Medium (Google assessment) |
+| LinkedIn Priority | Low–Medium | Medium–High | High (referrals) |
+| Aptitude Weight | High (mandatory section) | Medium (initial filter) | Low–Medium (Google assessment) |
 | Cover Letter | Rarely read | Sometimes read | Usually required for off-campus |
 | ATS Sensitivity | Very High | High | Moderate |
 
@@ -2778,15 +2778,15 @@ Your GitHub profile is often the second thing a recruiter looks at after your re
 
 **Example Profile README snippet:**
 ```markdown
-### Hi there ðŸ‘‹
+### Hi there 👋
 
 
 I'm a Computer Science student passionate about distributed systems and developer tooling.
 
-ðŸ”­ Currently working on: [Project Name] → a real-time collaborative code editor
-ðŸŒ± Learning: System Design, Kubernetes, Apache Kafka
-ðŸ‘¯ Looking to collaborate on: Open-source developer tools
-ðŸ“« Reach me: [email] | [LinkedIn] | [Portfolio]
+🔭 Currently working on: [Project Name] → a real-time collaborative code editor
+🌱 Learning: System Design, Kubernetes, Apache Kafka
+👯 Looking to collaborate on: Open-source developer tools
+📫 Reach me: [email] | [LinkedIn] | [Portfolio]
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact)
@@ -2849,7 +2849,7 @@ ATS software extracts the following fields from your resume:
 | No tables, columns, or text boxes | ATS reads left-to-right, top-to-bottom |
 | No headers/footers with critical info | Many ATS skip header/footer content |
 | Standard fonts only (Arial, Calibri, Times New Roman) | Unusual fonts may not render in ATS preview |
-| Bullet points using standard characters ( - * â€¢ ) | Custom bullet symbols may be skipped |
+| Bullet points using standard characters ( - * • ) | Custom bullet symbols may be skipped |
 | Spell out acronyms at least once (e.g., "AWS (Amazon Web Services)") | ATS may match "AWS" or "Amazon Web Services" |
 | Include a Keywords section or skill tags | Direct keyword matching is how ATS scores resumes |
 

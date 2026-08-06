@@ -1,20 +1,20 @@
 ---
 id: 04-hindi-writing
 slug: /hindi-language/04-hindi-writing
-title: "Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)"
-sidebar_label: "Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)"
+title: "Chapter 4: हिंदी लेखन (Hindi Writing)"
+sidebar_label: "Chapter 4: हिंदी लेखन (Hindi Writing)"
 sidebar_position: 4
 ---
-# Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)
+# Chapter 4: हिंदी लेखन (Hindi Writing)
 
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- Write formal and informal letters (à¤ªà¤¤à¥à¤°) in the correct Hindi format
-- Draft applications (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°) and business correspondence
-- Structure essays (à¤¨à¤¿à¤¬à¤‚à¤§) on common exam topics
+- Write formal and informal letters (पत्र) in the correct Hindi format
+- Draft applications (प्रार्थना पत्र) and business correspondence
+- Structure essays (निबंध) on common exam topics
 - Write reports, summaries, and dialogues in Hindi
-- Use official Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€) terminology for government documentation
+- Use official Hindi (कार्यालयी हिंदी) terminology for government documentation
 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
@@ -47,7 +47,7 @@ Hindi writing is a high-scoring section in many government exams:
 - State PCS: Hindi writing section
 - CTET: Hindi pedagogy includes writing skills
 
-### 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)
+### 4.2 Letter Writing (पत्र लेखन)
 
 ```mermaid
 flowchart TD
@@ -66,52 +66,52 @@ flowchart TD
     F --> F2[Maal ki maang]
 ```
 
-#### A. à¤”à¤ªà¤šà¤¾à¤°à¤¿à¤• à¤ªà¤¤à¥à¤° (Formal Letter) Format
+#### A. औपचारिक पत्र (Formal Letter) Format
 
 ```
-à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚,
-à¤¶à¥à¤°à¥€à¤®à¤¾à¤¨ _______________ (à¤ªà¤¦à¤¨à¤¾à¤®/à¤¸à¤‚à¤¸à¥à¤¥à¤¾ à¤•à¤¾ à¤¨à¤¾à¤®)
-_______________ (à¤ªà¤¤à¤¾)
-_______________ (à¤¶à¤¹à¤°, à¤ªà¤¿à¤¨ à¤•à¥‹à¤¡)
+सेवा में,
+श्रीमान _______________ (पदनाम/संस्था का नाम)
+_______________ (पता)
+_______________ (शहर, पिन कोड)
 
-à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: ____/____/_______
+दिनांक: ____/____/_______
 
-à¤µà¤¿à¤·à¤¯: _______________
+विषय: _______________
 
-à¤®à¤¹à¥‹à¤¦à¤¯/à¤®à¤¹à¥‹à¤¦à¤¯à¤¾,
+महोदय/महोदया,
 
-[à¤ªà¤¤à¥à¤° à¤•à¤¾ à¤®à¥à¤–à¥à¤¯ à¤­à¤¾à¤— â€” 3-4 à¤ªà¥ˆà¤°à¤¾à¤—à¥à¤°à¤¾à¤«]
-1. à¤ªà¤°à¤¿à¤šà¤¯ à¤”à¤° à¤µà¤¿à¤·à¤¯ à¤•à¤¾ à¤‰à¤²à¥à¤²à¥‡à¤–
-2. à¤¸à¤®à¤¸à¥à¤¯à¤¾/à¤…à¤¨à¥à¤°à¥‹à¤§ à¤•à¤¾ à¤µà¤¿à¤µà¤°à¤£
-3. à¤¸à¤®à¤¾à¤§à¤¾à¤¨/à¤•à¤¾à¤°à¥à¤°à¤µà¤¾à¤ˆ à¤•à¤¾ à¤…à¤¨à¥à¤°à¥‹à¤§
-4. à¤§à¤¨à¥à¤¯à¤µà¤¾à¤¦
+[पत्र का मुख्य भाग — 3-4 पैराग्राफ]
+1. परिचय और विषय का उल्लेख
+2. समस्या/अनुरोध का विवरण
+3. समाधान/कार्रवाई का अनुरोध
+4. धन्यवाद
 
-à¤­à¤µà¤¦à¥€à¤¯,
-_______________ (à¤¹à¤¸à¥à¤¤à¤¾à¤•à¥à¤·à¤°)
-_______________ (à¤¨à¤¾à¤®)
-_______________ (à¤ªà¤¤à¤¾)
-_______________ (à¤¸à¤‚à¤ªà¤°à¥à¤•)
+भवदीय,
+_______________ (हस्ताक्षर)
+_______________ (नाम)
+_______________ (पता)
+_______________ (संपर्क)
 ```
 
-#### B. à¤…à¤¨à¥Œà¤ªà¤šà¤¾à¤°à¤¿à¤• à¤ªà¤¤à¥à¤° (Informal Letter) Format
+#### B. अनौपचारिक पत्र (Informal Letter) Format
 
 ```
-à¤ªà¤¤à¤¾: _______________
-à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: ____/____/_______
+पता: _______________
+दिनांक: ____/____/_______
 
-à¤ªà¥à¤°à¤¿à¤¯ _______________,
+प्रिय _______________,
 
-[à¤ªà¤¤à¥à¤° à¤•à¤¾ à¤®à¥à¤–à¥à¤¯ à¤­à¤¾à¤—]
-1. à¤•à¥à¤¶à¤²à¤•à¥à¤·à¥‡à¤®
-2. à¤¸à¤®à¤¾à¤šà¤¾à¤° à¤”à¤° à¤˜à¤Ÿà¤¨à¤¾à¤à¤
-3. à¤­à¤¾à¤µà¤¨à¤¾à¤à¤ à¤”à¤° à¤…à¤¨à¥à¤­à¤µ
-4. à¤†à¤—à¤¾à¤®à¥€ à¤¯à¥‹à¤œà¤¨à¤¾à¤à¤
+[पत्र का मुख्य भाग]
+1. कुशलक्षेम
+2. समाचार और घटनाएँ
+3. भावनाएँ और अनुभव
+4. आगामी योजनाएँ
 
-à¤†à¤ªà¤•à¤¾ à¤…à¤ªà¤¨à¤¾,
+आपका अपना,
 _______________
 ```
 
-### 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)
+### 4.3 Application Writing (प्रार्थना पत्र)
 
 | Type | Recipient | Purpose |
 |------|-----------|---------|
@@ -124,29 +124,29 @@ _______________
 **Example Format:**
 
 ```
-à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚,
-à¤¶à¥à¤°à¥€à¤®à¤¾à¤¨ à¤ªà¥à¤°à¤§à¤¾à¤¨à¤¾à¤šà¤¾à¤°à¥à¤¯,
-____________________ (à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤•à¤¾ à¤¨à¤¾à¤®)
-____________________ (à¤ªà¤¤à¤¾)
+सेवा में,
+श्रीमान प्रधानाचार्य,
+____________________ (विद्यालय का नाम)
+____________________ (पता)
 
-à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: 15/08/2026
+दिनांक: 15/08/2026
 
-à¤µà¤¿à¤·à¤¯: à¤¦à¥‹ à¤¦à¤¿à¤¨ à¤•à¥€ à¤›à¥à¤Ÿà¥à¤Ÿà¥€ à¤¹à¥‡à¤¤à¥ à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°
+विषय: दो दिन की छुट्टी हेतु प्रार्थना पत्र
 
-à¤®à¤¹à¥‹à¤¦à¤¯,
+महोदय,
 
-à¤¸à¤µà¤¿à¤¨à¤¯ à¤¨à¤¿à¤µà¥‡à¤¦à¤¨ à¤¹à¥ˆ à¤•à¤¿ à¤®à¥ˆà¤‚ à¤•à¤•à¥à¤·à¤¾ __ à¤•à¤¾ à¤›à¤¾à¤¤à¥à¤°/à¤›à¤¾à¤¤à¥à¤°à¤¾ ____ à¤¹à¥‚à¤à¥¤ à¤•à¤² à¤¦à¤¿à¤¨à¤¾à¤‚à¤• 16/08/2026 à¤•à¥‹ à¤®à¥‡à¤°à¥‡ à¤¬à¤¡à¤¼à¥‡ à¤­à¤¾à¤ˆ à¤•à¤¾ à¤µà¤¿à¤µà¤¾à¤¹ à¤¹à¥ˆà¥¤ à¤‡à¤¸ à¤•à¤¾à¤°à¤£ à¤®à¥ˆà¤‚ à¤¦à¤¿à¤¨à¤¾à¤‚à¤• 16/08/2026 à¤¸à¥‡ 17/08/2026 à¤¤à¤• à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤®à¥‡à¤‚ à¤‰à¤ªà¤¸à¥à¤¥à¤¿à¤¤ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹ à¤ªà¤¾à¤Šà¤à¤—à¤¾/à¤¹à¥‚à¤à¤—à¥€à¥¤
+सविनय निवेदन है कि मैं कक्षा __ का छात्र/छात्रा ____ हूँ। कल दिनांक 16/08/2026 को मेरे बड़े भाई का विवाह है। इस कारण मैं दिनांक 16/08/2026 से 17/08/2026 तक विद्यालय में उपस्थित नहीं हो पाऊँगा/हूँगी।
 
-à¤…à¤¤à¤ƒ à¤†à¤ªà¤¸à¥‡ à¤µà¤¿à¤¨à¤®à¥à¤° à¤¨à¤¿à¤µà¥‡à¤¦à¤¨ à¤¹à¥ˆ à¤•à¤¿ à¤®à¥à¤à¥‡ à¤¦à¥‹ à¤¦à¤¿à¤¨ à¤•à¥€ à¤›à¥à¤Ÿà¥à¤Ÿà¥€ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¨à¥‡ à¤•à¥€ à¤•à¥ƒà¤ªà¤¾ à¤•à¤°à¥‡à¤‚à¥¤
+अतः आपसे विनम्र निवेदन है कि मुझे दो दिन की छुट्टी प्रदान करने की कृपा करें।
 
-à¤§à¤¨à¥à¤¯à¤µà¤¾à¤¦ à¤¸à¤¹à¤¿à¤¤,
-à¤†à¤ªà¤•à¤¾ à¤†à¤œà¥à¤žà¤¾à¤•à¤¾à¤°à¥€ à¤›à¤¾à¤¤à¥à¤°,
+धन्यवाद सहित,
+आपका आज्ञाकारी छात्र,
 _______________
-à¤•à¤•à¥à¤·à¤¾: ___
-à¤…à¤¨à¥à¤•à¥à¤°à¤®à¤¾à¤‚à¤•: ___
+कक्षा: ___
+अनुक्रमांक: ___
 ```
 
-### 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)
+### 4.4 Essay Writing (निबंध लेखन)
 
 ```mermaid
 mindmap
@@ -209,14 +209,14 @@ vanaropan, rasayanik khadon ka kam upyog, solar urja ka upyog, jansanchar ke
 madhyam se jagrukta.
 
 Upasanghar: Paryavaran sanrakshan har nagrik ka kartavy hai. "Prakriti ki raksha,
-kal ki suraksha" â€” is mantr ke saath hamein paryavaran ki suraksha ke liye age
+kal ki suraksha" — is mantr ke saath hamein paryavaran ki suraksha ke liye age
 aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 ```
 
-### 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)
+### 4.5 Report Writing (रिपोर्ट लेखन)
 
 **Report Components:**
-1. Shikashak (Heading) â€” Title
+1. Shikashak (Heading) — Title
 2. Sthan aur Tarikh (Place & Date)
 3. Pranamika (Salutation / Address to authority)
 4. Ghatna ka Vivran (Details of event)
@@ -227,29 +227,29 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 **Sample Report Start:**
 
 ```
-à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨ / à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ
+प्रतिवेदन / रिपोर्ट
 
-à¤µà¤¿à¤·à¤¯: à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤®à¥‡à¤‚ à¤®à¤¨à¤¾à¤ à¤—à¤ "à¤¹à¤¿à¤‚à¤¦à¥€ à¤¦à¤¿à¤µà¤¸" à¤•à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨
+विषय: विद्यालय में मनाए गए "हिंदी दिवस" का प्रतिवेदन
 
-à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: 15 à¤¸à¤¿à¤¤à¤‚à¤¬à¤° 2026
+दिनांक: 15 सितंबर 2026
 
-à¤®à¤¹à¥‹à¤¦à¤¯,
+महोदय,
 
-à¤¨à¤¿à¤µà¥‡à¤¦à¤¨ à¤¹à¥ˆ à¤•à¤¿ à¤¦à¤¿à¤¨à¤¾à¤‚à¤• 14 à¤¸à¤¿à¤¤à¤‚à¤¬à¤° 2026 à¤•à¥‹ à¤¹à¤®à¤¾à¤°à¥‡ à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤®à¥‡à¤‚ à¤¹à¤¿à¤‚à¤¦à¥€ à¤¦à¤¿à¤µà¤¸ à¤¬à¤¡à¤¼à¥‡
-à¤¹à¤°à¥à¤·à¥‹à¤²à¥à¤²à¤¾à¤¸ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤®à¤¨à¤¾à¤¯à¤¾ à¤—à¤¯à¤¾à¥¤ à¤‡à¤¸ à¤…à¤µà¤¸à¤° à¤ªà¤° à¤¨à¤¿à¤®à¥à¤¨à¤²à¤¿à¤–à¤¿à¤¤ à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤® à¤†à¤¯à¥‹à¤œà¤¿à¤¤ à¤•à¤¿à¤ à¤—à¤:
+निवेदन है कि दिनांक 14 सितंबर 2026 को हमारे विद्यालय में हिंदी दिवस बड़े
+हर्षोल्लास के साथ मनाया गया। इस अवसर पर निम्नलिखित कार्यक्रम आयोजित किए गए:
 
-1. à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤¸à¤­à¤¾ à¤®à¥‡à¤‚ à¤¹à¤¿à¤‚à¤¦à¥€ à¤¦à¤¿à¤µà¤¸ à¤•à¤¾ à¤®à¤¹à¤¤à¥à¤µ à¤¬à¤¤à¤¾à¤¯à¤¾ à¤—à¤¯à¤¾à¥¤
-2. à¤¨à¤¿à¤¬à¤‚à¤§ à¤ªà¥à¤°à¤¤à¤¿à¤¯à¥‹à¤—à¤¿à¤¤à¤¾, à¤µà¤¾à¤¦-à¤µà¤¿à¤µà¤¾à¤¦ à¤ªà¥à¤°à¤¤à¤¿à¤¯à¥‹à¤—à¤¿à¤¤à¤¾ à¤”à¤° à¤•à¤µà¤¿à¤¤à¤¾ à¤ªà¤¾à¤  à¤•à¤¾ à¤†à¤¯à¥‹à¤œà¤¨ à¤¹à¥à¤†à¥¤
-3. à¤ªà¥à¤°à¤¾à¤šà¤¾à¤°à¥à¤¯ à¤®à¤¹à¥‹à¤¦à¤¯ à¤¨à¥‡ à¤¹à¤¿à¤‚à¤¦à¥€ à¤­à¤¾à¤·à¤¾ à¤•à¥‡ à¤‡à¤¤à¤¿à¤¹à¤¾à¤¸ à¤ªà¤° à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤¡à¤¾à¤²à¤¾à¥¤
-4. à¤µà¤¿à¤œà¥‡à¤¤à¤¾à¤“à¤‚ à¤•à¥‹ à¤ªà¥à¤°à¤¸à¥à¤•à¤¾à¤° à¤µà¤¿à¤¤à¤°à¤¿à¤¤ à¤•à¤¿à¤ à¤—à¤à¥¤
+1. प्रार्थना सभा में हिंदी दिवस का महत्व बताया गया।
+2. निबंध प्रतियोगिता, वाद-विवाद प्रतियोगिता और कविता पाठ का आयोजन हुआ।
+3. प्राचार्य महोदय ने हिंदी भाषा के इतिहास पर प्रकाश डाला।
+4. विजेताओं को पुरस्कार वितरित किए गए।
 
-à¤¯à¤¹ à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨ à¤†à¤ªà¤•à¥€ à¤œà¤¾à¤¨à¤•à¤¾à¤°à¥€ à¤®à¥‡à¤‚ à¤ªà¥à¤°à¤¸à¥à¤¤à¥à¤¤ à¤•à¤¿à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤
+यह प्रतिवेदन आपकी जानकारी में प्रस्तुत किया जाता है।
 
-à¤†à¤ªà¤•à¤¾ à¤†à¤œà¥à¤žà¤¾à¤•à¤¾à¤°à¥€,
-à¤¸à¤šà¤¿à¤µ / à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤® à¤¸à¤‚à¤¯à¥‹à¤œà¤•
+आपका आज्ञाकारी,
+सचिव / कार्यक्रम संयोजक
 ```
 
-### 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)
+### 4.6 Summary Writing (सारांश लेखन)
 
 **Rules:** Write in 1/3 of original text, only main ideas, in your own words.
 
@@ -261,7 +261,7 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 | 4 | Mool gadyansh ka 1/3 se adhik na ho |
 | 5 | Kisi bhi vyaktigat rai ko na jodein |
 
-### 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)
+### 4.7 Dialogue Writing (संवाद लेखन)
 
 **Guidelines:**
 - Bhasha sahitiyik aur svabhavik ho
@@ -269,7 +269,7 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 - Vaky chhote aur spasht hone chahiye
 - Bhavon ko vyakt karne ka avsar mile
 
-### 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)
+### 4.8 Office Hindi (कार्यालयी हिंदी)
 
 | English Term | Hindi Equivalent |
 |-------------|------------------|
@@ -407,7 +407,7 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ## Examples
 
-### Example 1: TypeScript â€” Letter Format Validator
+### Example 1: TypeScript — Letter Format Validator
 
 ```typescript
 interface Letter {
@@ -421,12 +421,12 @@ interface Letter {
 
 function validateLetter(letter: Letter): string[] {
   const errors: string[] = [];
-  if (!letter.to) errors.push("à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤à¤•à¤°à¥à¤¤à¤¾ (to) à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
-  if (!letter.subject && letter.type === "formal") errors.push("à¤µà¤¿à¤·à¤¯ à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
-  if (!letter.body || letter.body.length < 20) errors.push("à¤ªà¤¤à¥à¤° à¤•à¤¾ à¤®à¥à¤–à¥à¤¯ à¤­à¤¾à¤— à¤¬à¤¹à¥à¤¤ à¤›à¥‹à¤Ÿà¤¾ à¤¹à¥ˆ");
-  if (!letter.signature) errors.push("à¤¹à¤¸à¥à¤¤à¤¾à¤•à¥à¤·à¤° à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
-  if (!letter.date) errors.push("à¤¦à¤¿à¤¨à¤¾à¤‚à¤• à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
-  if (letter.type === "formal" && !letter.body.includes("à¤­à¤µà¤¦à¥€à¤¯")) errors.push("'à¤­à¤µà¤¦à¥€à¤¯' à¤•à¤¾ à¤ªà¥à¤°à¤¯à¥‹à¤— à¤†à¤µà¤¶à¥à¤¯à¤• à¤¹à¥ˆ");
+  if (!letter.to) errors.push("प्राप्तकर्ता (to) अनिवार्य है");
+  if (!letter.subject && letter.type === "formal") errors.push("विषय अनिवार्य है");
+  if (!letter.body || letter.body.length < 20) errors.push("पत्र का मुख्य भाग बहुत छोटा है");
+  if (!letter.signature) errors.push("हस्ताक्षर अनिवार्य है");
+  if (!letter.date) errors.push("दिनांक अनिवार्य है");
+  if (letter.type === "formal" && !letter.body.includes("भवदीय")) errors.push("'भवदीय' का प्रयोग आवश्यक है");
   return errors;
 }
 
@@ -442,7 +442,7 @@ const sampleLetter: Letter = {
 console.log(validateLetter(sampleLetter));
 ```
 
-### Example 2: TypeScript â€” Essay Outliner
+### Example 2: TypeScript — Essay Outliner
 
 ```typescript
 interface EssayOutline {
@@ -469,7 +469,7 @@ console.log("Essay outline ready:", outline.title);
 outline.bodyPoints.forEach(bp => console.log("Point:", bp));
 ```
 
-### Example 3: TypeScript â€” Official Letter Generator
+### Example 3: TypeScript — Official Letter Generator
 
 ```typescript
 function generateApplication(
@@ -494,7 +494,7 @@ const app = generateApplication("Ravi", "10th", "101", "Bade bhai ke vivah", 2, 
 console.log(app);
 ```
 
-### Example 4: TypeScript â€” Report Generator
+### Example 4: TypeScript — Report Generator
 
 ```typescript
 interface ReportEvent {
@@ -508,13 +508,13 @@ interface ReportEvent {
 }
 
 function generateReport(event: ReportEvent): string {
-  let report = `à¤µà¤¿à¤·à¤¯: ${event.eventName} à¤•à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨\n\n`;
-  report += `à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: ${event.date}\nà¤¸à¥à¤¥à¤¾à¤¨: ${event.venue}\n\n`;
-  report += `à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤® à¤µà¤¿à¤µà¤°à¤£:\n`;
+  let report = `विषय: ${event.eventName} का प्रतिवेदन\n\n`;
+  report += `दिनांक: ${event.date}\nस्थान: ${event.venue}\n\n`;
+  report += `कार्यक्रम विवरण:\n`;
   event.activities.forEach((a, i) => report += `${i+1}. ${a}\n`);
-  report += `\nà¤ªà¥à¤°à¤¤à¤¿à¤­à¤¾à¤—à¥€: ${event.participants}\n`;
-  report += `à¤µà¤¿à¤œà¥‡à¤¤à¤¾: ${event.winner}\n\n`;
-  report += `à¤¸à¥à¤à¤¾à¤µ:\n`;
+  report += `\nप्रतिभागी: ${event.participants}\n`;
+  report += `विजेता: ${event.winner}\n\n`;
+  report += `सुझाव:\n`;
   event.suggestions.forEach(s => report += `- ${s}\n`);
   return report;
 }
@@ -545,7 +545,7 @@ d) Sewa mein, vishay, dinank, bhavdeey
 
 **Q2.** Nibandh lekhan mein sabse lambe bhag kaun sa hota hai?
 a) Bhumika b) Sharir c) Upasanghar d) Shikshak
-**Answer:** b) Sharir (Body â€” 70% of essay)
+**Answer:** b) Sharir (Body — 70% of essay)
 
 **Q3.** Saransh lekhan mein mool gadyansh ka kitne bhag ka saransh likhna chahiye?
 a) Aadha b) 1/3 c) 1/4 d) 1/5
@@ -557,7 +557,7 @@ a) Smriti patra b) Karyalay adesh c) Paripatra d) Adhisoochana
 
 **Q5.** Anaupcharik patra mein "Sewa mein" ka upyog kahan kiya jata hai?
 a) Hamesha b) Kabhi nahi c) Keval formal mein d) Kuch logo ke saath
-**Answer:** b) Kabhi nahi â€” Anaupcharik patra mein "Sewa mein" nahi likha jaata
+**Answer:** b) Kabhi nahi — Anaupcharik patra mein "Sewa mein" nahi likha jaata
 
 **Q6.** Prarthana patra mein "Vishay" ke baad kya aata hai?
 a) Sewa mein b) Mahoday c) Patra ka mukhya bhag d) Dinank
@@ -620,16 +620,16 @@ a) Sharir b) Shikshak c) Bhumika d) Upasanghar
 **English Summary:**
 - Letter writing has two types: Formal (Aupcharik) and Informal (Anaupcharik) with different formats.
 - Formal letters require "Sewa mein", subject (vishay), and "Bhavdeey" as essential elements.
-- Essays have three parts: Introduction (Bhumika), Body (Sharir â€” 70%), Conclusion (Upasanghar).
+- Essays have three parts: Introduction (Bhumika), Body (Sharir — 70%), Conclusion (Upasanghar).
 - Reports must include event details, place, date, and recommendations.
 - Summaries should be 1/3 of original text written in one's own words.
 - Office Hindi requires knowledge of Hindi equivalents for English administrative terms.
 
 ## Practical Takeaways
 
-1. For letters: Memorize the format structure â€” "Sewa mein" and "Bhavdeey" are non-negotiable for formal letters.
-2. For essays: Use the 15-70-15 rule â€” 15% intro, 70% body (with 3-4 arguments), 15% conclusion.
-3. For reports: Include the 5 Ws â€” Kya (what), Kahan (where), Kab (when), Kaun (who), Kyun (why).
+1. For letters: Memorize the format structure — "Sewa mein" and "Bhavdeey" are non-negotiable for formal letters.
+2. For essays: Use the 15-70-15 rule — 15% intro, 70% body (with 3-4 arguments), 15% conclusion.
+3. For reports: Include the 5 Ws — Kya (what), Kahan (where), Kab (when), Kaun (who), Kyun (why).
 4. For office drafting: Keep sentences under 20 words; use active voice; avoid Persian/Arabic synonyms where Hindi wording exists.
 5. For competitive exams: Practice writing on current topics within a 30-minute time limit for essays.
 
@@ -637,7 +637,7 @@ a) Sharir b) Shikshak c) Bhumika d) Upasanghar
 
 **Q1.** Nibandh ke kis bhag mein visheshan aur udaharan die jaate hain?
 a) Bhumika b) Sharir c) Upasanghar d) Shikshak
-<details><summary>Answer</summary>b) Sharir â€” Body mein vishleshan aur udaharan hote hain.</details>
+<details><summary>Answer</summary>b) Sharir — Body mein vishleshan aur udaharan hote hain.</details>
 
 **Q2.** "Sewa mein" ka upyog kis patra mein hota hai?
 a) Anaupcharik b) Aupcharik c) Dono mein d) Kisi mein nahi
@@ -684,7 +684,7 @@ Write short reports on:
 
 ### Summary Writing (Q16-Q20)
 Write a 1/3 summary of:
-16. "Jal hi jeevan hai â€” jal sanrakshan ka mahtva..."
+16. "Jal hi jeevan hai — jal sanrakshan ka mahtva..."
 17. "Bharatiya sanskriti vishwa ki sabase prachin sanskritiyon mein se ek hai..."
 18. "Digital India ne bharat ke arthik paridrishya ko badal diya hai..."
 19. "Shaikshik kshetra mein prodyogiki ke naye prayog..."
@@ -712,7 +712,7 @@ Translate to Hindi:
 
 **Essays (Q6-Q10):** Each should have Bhumika (2-3 lines), Sharir (8-10 lines with 3-4 points), Upasanghar (2-3 lines).
 
-**Reports (Q11-Q15):** Must include â€” Shikshak, Sthan, Dinank, Ghatna vivran, Siddhiyan, Sujhao.
+**Reports (Q11-Q15):** Must include — Shikshak, Sthan, Dinank, Ghatna vivran, Siddhiyan, Sujhao.
 
 **Summary (Q16-Q20):** Original text ka 1/3, kewal mukhya bindu, apne shabdon mein.
 

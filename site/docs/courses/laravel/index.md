@@ -24,17 +24,17 @@ The course is organized into ten parts, each building on the last.
 
 | Part | Chapters | Focus |
 |------|----------|-------|
-| 0 | P1â€“P6 | Foundations → PHP, MySQL, HTML, CSS, JavaScript, AI/ML fundamentals |
-| I | 1â€“6 | Laravel Fundamentals → from zero to working application |
-| II | 7â€“11 | Advanced Laravel → APIs, real-time, packages, testing, performance |
-| III | 12â€“18 | AI & Automation → AI SDK, MCP, vector search, Boost, automation patterns |
-| IV | 19â€“21 | System Design → architecture patterns, scaling, enterprise design |
-| V | 22â€“24 | Case Studies & Capstone → real-world applications end-to-end |
-| VI | 25â€“26 | Multi-Agent Systems & Business Automation → agent orchestration, workflows |
-| VII | 27â€“36 | Industry Verticals → AI/automation per sector (healthcare, finance, education, logistics, HR, marketing, customer service, real estate, legal, manufacturing) |
+| 0 | P1–P6 | Foundations → PHP, MySQL, HTML, CSS, JavaScript, AI/ML fundamentals |
+| I | 1–6 | Laravel Fundamentals → from zero to working application |
+| II | 7–11 | Advanced Laravel → APIs, real-time, packages, testing, performance |
+| III | 12–18 | AI & Automation → AI SDK, MCP, vector search, Boost, automation patterns |
+| IV | 19–21 | System Design → architecture patterns, scaling, enterprise design |
+| V | 22–24 | Case Studies & Capstone → real-world applications end-to-end |
+| VI | 25–26 | Multi-Agent Systems & Business Automation → agent orchestration, workflows |
+| VII | 27–36 | Industry Verticals → AI/automation per sector (healthcare, finance, education, logistics, HR, marketing, customer service, real estate, legal, manufacturing) |
 | VIII | 37 | Enterprise Capstone → multi-agent platform integrating all patterns |
-| IX | 38â€“48 | Interview Preparation → general Laravel + 10 industry-specific interview Q&A chapters |
-| X | 49â€“54 | Foundations Interview Preparation → PHP, MySQL, HTML, CSS, JS, AI/ML interview Q&A |
+| IX | 38–48 | Interview Preparation → general Laravel + 10 industry-specific interview Q&A chapters |
+| X | 49–54 | Foundations Interview Preparation → PHP, MySQL, HTML, CSS, JS, AI/ML interview Q&A |
 
 ## Chapter Listing
 
@@ -159,7 +159,7 @@ The course is organized into ten parts, each building on the last.
 - [Laracasts](https://laracasts.com) → Video tutorials
 - [Laravel News](https://laravel-news.com) → Community news and tutorials
 - *Laravel: Up & Running* by Matt Stauffer (O'Reilly)
-- *Laravel Design Patterns and Best Practices* by Arda KÄ±lÄ±Ã§daÄŸÄ± and H. Ä°brahim YÄ±lmaz
+- *Laravel Design Patterns and Best Practices* by Arda Kılıçdağı and H. İbrahim Yılmaz
 - [Laravel AI SDK GitHub](https://github.com/laravel/ai)
 - [Laravel MCP GitHub](https://github.com/laravel/mcp)
 - [Laravel Boost GitHub](https://github.com/laravel/boost)

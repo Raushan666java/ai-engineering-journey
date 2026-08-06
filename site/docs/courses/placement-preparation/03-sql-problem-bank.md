@@ -2670,7 +2670,7 @@ ORDER BY n;
 
 ---
 
-## Section 8: NoSQL → MongoDB (Q51â€“Q57)
+## Section 8: NoSQL → MongoDB (Q51–Q57)
 
 MongoDB is a document-oriented NoSQL database. Problems below use MongoDB shell (`mongosh`) syntax.
 
@@ -3068,7 +3068,7 @@ db.tasks.updateOne(
 
 ---
 
-## Section 9: NoSQL → Redis (Q58â€“Q62)
+## Section 9: NoSQL → Redis (Q58–Q62)
 
 Redis is an in-memory key-value store used for caching, messaging, and real-time data. All commands below run in `redis-cli`.
 
@@ -3351,7 +3351,7 @@ EXPIRE session:abc123 1800
 
 ---
 
-## Section 10: Query Optimization & EXPLAIN (Q63â€“Q68)
+## Section 10: Query Optimization & EXPLAIN (Q63–Q68)
 
 Understanding query plans is essential for database performance tuning. Problems below use PostgreSQL syntax.
 
@@ -3426,7 +3426,7 @@ Execution Time: 18.230 ms
 
 | Index Type | Best For | Example Query | Internal Structure |
 |---|---|---|---|
-| **B-tree** (default) | Equality, range,æŽ’åº, `ORDER BY` | `WHERE price > 100` `WHERE id = 5` | Balanced tree → log(N) lookup |
+| **B-tree** (default) | Equality, range,排序, `ORDER BY` | `WHERE price > 100` `WHERE id = 5` | Balanced tree → log(N) lookup |
 | **Hash** | Equality only | `WHERE status = 'active'` | Hash table → O(1) lookup, no ordering |
 | **GiST** | Geospatial, full-text, range overlap | `WHERE location <@ box` `WHERE period && '[2024-01,2024-06]'` | Generalized Search Tree |
 | **GIN** | Composite values (arrays, JSONB, tsvector) | `WHERE tags @> ARRAY['sql']` `WHERE data @> '{"key":"val"}'` | Inverted index → maps values to rows |
@@ -3483,30 +3483,30 @@ CREATE INDEX idx_emp_dept_hiredate ON employees (department, hire_date);
 **Answer:**
 
 ```sql
--- âœ… Index used: matches leftmost prefix
+-- ✅ Index used: matches leftmost prefix
 SELECT * FROM employees WHERE department = 'Engineering';
 -- Uses index → query on leading column only
 
--- âœ… Index used: both columns match (most efficient)
+-- ✅ Index used: both columns match (most efficient)
 SELECT * FROM employees WHERE department = 'Engineering' AND hire_date > '2023-01-01';
 -- Uses index → can filter both columns
 
--- âœ… Index used: equality on first column + range on second
+-- ✅ Index used: equality on first column + range on second
 SELECT * FROM employees
 WHERE department = 'Engineering'
   AND hire_date BETWEEN '2023-01-01' AND '2023-12-31';
 -- B-tree composite index can handle equality + range efficiently
 
--- âŒ Index NOT used (or partially used): skipping leading column
+-- ❌ Index NOT used (or partially used): skipping leading column
 SELECT * FROM employees WHERE hire_date > '2023-01-01';
 -- Cannot use index → department is missing from WHERE
 
--- âŒ Index NOT used: equality on second column only
+-- ❌ Index NOT used: equality on second column only
 SELECT * FROM employees WHERE department = 'Engineering' AND salary > 100000;
 -- Index covers department but not salary → OK for department filter,
 -- but salary filter requires a table scan of matching rows
 
--- âš ï¸ Order matters: put high-selectivity column first
+-- ⚠️ Order matters: put high-selectivity column first
 CREATE INDEX idx_emp_status_dept ON employees (status, department);
 -- If status has only 3 values (active, inactive, terminated) and department has 50,
 -- this index is less effective. Better:
@@ -3777,7 +3777,7 @@ Finalize Aggregate  (cost=8500.00..8500.01 rows=1 width=8)
 
 ---
 
-## Section 11: Transaction Isolation Levels (Q69â€“Q75)
+## Section 11: Transaction Isolation Levels (Q69–Q75)
 
 Understanding transaction isolation prevents concurrency anomalies. Examples use PostgreSQL 14+ (default: READ COMMITTED).
 
@@ -4207,9 +4207,9 @@ COMMIT;
 | Isolation Level | Dirty Read | Non-Repeatable Read | Phantom Read | Serialization Anomaly | Lost Update |
 |---|---|---|---|---|---|
 | **READ UNCOMMITTED** | Possible* | Possible | Possible | Possible | Possible |
-| **READ COMMITTED** | âœ… Prevented | Possible | Possible | Possible | Possible |
-| **REPEATABLE READ** | âœ… Prevented | âœ… Prevented | âœ… Prevented** | Possible | âœ… Prevented |
-| **SERIALIZABLE** | âœ… Prevented | âœ… Prevented | âœ… Prevented | âœ… Prevented | âœ… Prevented |
+| **READ COMMITTED** | ✅ Prevented | Possible | Possible | Possible | Possible |
+| **REPEATABLE READ** | ✅ Prevented | ✅ Prevented | ✅ Prevented** | Possible | ✅ Prevented |
+| **SERIALIZABLE** | ✅ Prevented | ✅ Prevented | ✅ Prevented | ✅ Prevented | ✅ Prevented |
 
 *\* PostgreSQL doesn't allow dirty reads → READ UNCOMMITTED behaves like READ COMMITTED.*
 *\*\* PostgreSQL REPEATABLE READ prevents phantoms via snapshot isolation (stricter than SQL standard).*

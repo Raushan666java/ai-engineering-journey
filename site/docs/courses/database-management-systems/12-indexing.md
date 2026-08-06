@@ -1988,7 +1988,7 @@ The code implements a minimal B+ Tree index with search, insert, and range scan 
 
 ```typescript
 // ============================================================
-// B+ Tree Index Simulator â€” TypeScript
+// B+ Tree Index Simulator — TypeScript
 // ============================================================
 
 class BPlusTreeNode {
@@ -2029,7 +2029,7 @@ class BPlusTree {
   insert(key: number, value: number): void {
     const result = this.insertRecursive(this.root, key, value);
     if (result) {
-      // Root was split â€” create new root
+      // Root was split — create new root
       const newRoot = new BPlusTreeNode(this.order);
       newRoot.keys = [result.key];
       newRoot.children = [this.root, result.right];
@@ -2050,12 +2050,12 @@ class BPlusTree {
       return null;
     }
 
-    // Internal node â€” find child
+    // Internal node — find child
     let i = 0;
     while (i < node.keys.length && key >= node.keys[i]) i++;
     const result = this.insertRecursive(node.children[i], key, value);
     if (result) {
-      // Child was split â€” insert separator key
+      // Child was split — insert separator key
       const idx = node.keys.findIndex(k => k > result.key);
       const pos = idx >= 0 ? idx : node.keys.length;
       node.keys.splice(pos, 0, result.key);

@@ -1987,7 +1987,7 @@ public class PerformanceController {
     public Mono<String> concurrentDownstreamCalls() {
         Instant start = Instant.now();
 
-        // Sequential: 3 calls Ã— 200ms = 600ms
+        // Sequential: 3 calls × 200ms = 600ms
         Mono<String> seq = Mono.fromCallable(() -> {
             Thread.sleep(200);
             return "A";
@@ -2003,7 +2003,7 @@ public class PerformanceController {
         .map(result -> "Sequential: " + result + " in " +
             Duration.between(start, Instant.now()).toMillis() + "ms");
 
-        // Parallel: 3 calls Ã— 200ms = ~200ms
+        // Parallel: 3 calls × 200ms = ~200ms
         Mono<String> par = Mono.zip(
             Mono.fromCallable(() -> {
                 Thread.sleep(200);
@@ -2206,10 +2206,10 @@ record ProductRouter(ProductRepository repository) {
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | ✓ | ✗ | ✓ |
+| Enterprise system | ✓ | ✓ | ✗ |
+| High-throughput API | ✗ | ✓ | ✓ |
+| Event-driven | ✗ | ✓ | ✓ |
 
 ## Chapter Quiz
 

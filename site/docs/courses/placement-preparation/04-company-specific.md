@@ -1431,7 +1431,7 @@ public class AnagramCheck {
 Question: Find the missing number in the sequence: 2, 6, 12, 20, ?, 42
 
 Answer: 30
-Pattern: 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7
+Pattern: 1×2, 2×3, 3×4, 4×5, 5×6, 6×7
 Or: +4, +6, +8, +10, +12
 ```
 
@@ -1486,7 +1486,7 @@ A:C = 10:21
 **Q2: Work and Time**
 ```
 A can complete a work in 12 days. B is 50% more efficient than A. How many days will B take?
-Solution: B's efficiency = 1.5 Ã— A's efficiency
+Solution: B's efficiency = 1.5 × A's efficiency
 B's time = 12 / 1.5 = 8 days
 ```
 
@@ -1804,7 +1804,7 @@ Beyond FAANG and product companies, premium semiconductor firms (NVIDIA, Qualcom
 - **Low-level coding** → Semiconductors ask pointer manipulation, memory management, bit manipulation
 - **System design** → Enterprise companies focus on distributed systems handling millions of transactions
 - **Behavioral fit** → Cultural alignment with company values is heavily weighted
-- **Compensation** → â‚¹25-60 LPA for software roles; competitive with FAANG for senior positions
+- **Compensation** → ₹25-60 LPA for software roles; competitive with FAANG for senior positions
 
 ---
 

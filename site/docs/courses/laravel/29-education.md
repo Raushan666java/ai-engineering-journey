@@ -875,7 +875,7 @@ PROMPT;
             'total_score' => 0,
             'percentage' => 0,
             'letter_grade' => 'F',
-            'feedback' => 'Grading failed Ã¢â‚¬â€ please review manually.',
+            'feedback' => 'Grading failed — please review manually.',
             'criterion_scores' => [],
             'strengths' => [],
             'improvements' => ['Submission could not be evaluated by the automated system.'],
@@ -1267,7 +1267,7 @@ Rules:
 - If accuracy is above 80%, target harder questions
 - If accuracy is below 50%, target easier questions
 - Never change difficulty more than one level per question
-- Maintain engagement Ã¢â‚¬â€ avoid overly easy or impossibly hard questions
+- Maintain engagement — avoid overly easy or impossibly hard questions
 
 Select the next question from the pool that matches the target difficulty.
 PROMPT;
@@ -1646,7 +1646,7 @@ PROMPT;
             $flags[] = [
                 'type' => 'low_gpa',
                 'severity' => 'critical',
-                'message' => "GPA is {$this->student->gpa} Ã¢â‚¬â€ below 2.0 threshold.",
+                'message' => "GPA is {$this->student->gpa} — below 2.0 threshold.",
             ];
         }
 
@@ -1837,7 +1837,7 @@ class MonitorStudentProgress extends Command
 
             $this->line("---");
             $this->line("Student: {$student->student_id} (GPA: {$student->gpa})");
-            $this->line("Risk Score: {$analysis['risk_score']} Ã¢â‚¬â€ {$analysis['risk_level']}");
+            $this->line("Risk Score: {$analysis['risk_score']} — {$analysis['risk_level']}");
             $this->line("Flags: " . count($analysis['flags']));
 
             if ($this->option('notify') && $analysis['risk_level'] === 'critical') {
@@ -1862,7 +1862,7 @@ class MonitorStudentProgress extends Command
 
 > **One-Sentence Takeaway:** Enrollment agents handle registration, prerequisites, waitlists, and notifications.
 
-Enrollment automation handles course registration, prerequisite validation, waitlist management, and notification Ã¢â‚¬â€ replacing manual administrative processes with an AI-driven workflow.
+Enrollment automation handles course registration, prerequisite validation, waitlist management, and notification — replacing manual administrative processes with an AI-driven workflow.
 
 #### The EnrollmentAgent
 
@@ -1914,7 +1914,7 @@ class EnrollmentAgent implements Agent
 You are an enrollment workflow automation agent.
 
 Student: {$this->student->student_id} ({$this->student->major})
-Course: {$this->course->code} Ã¢â‚¬â€ {$this->course->title}
+Course: {$this->course->code} — {$this->course->title}
 Credits: {$this->course->credits} | Current Load: {$currentCredits}/{$maxCredits}
 
 Prerequisites Required: " . implode(', ', $prerequisites) . "
@@ -2441,10 +2441,10 @@ This chapter demonstrated how to build a comprehensive AI-powered education plat
 - **Content generation**: A `ContentGenerationAgent` that produces quizzes, lesson plans, study guides, and assignments from course specifications
 - **Adaptive quizzes**: An `AdaptiveQuizAgent` that adjusts question difficulty in real-time based on consecutive correct/incorrect answers, maintaining appropriate challenge levels
 - **Progress tracking**: A `ProgressTrackingAgent` with an early warning system that calculates risk scores, detects flags (low GPA, declining trends, missing grades), and identifies at-risk students
-- **Enrollment automation**: An `EnrollmentAgent` that validates prerequisites, checks credit limits, manages waitlists, and sends confirmations Ã¢â‚¬â€ replacing manual administrative processes
+- **Enrollment automation**: An `EnrollmentAgent` that validates prerequisites, checks credit limits, manages waitlists, and sends confirmations — replacing manual administrative processes
 - **Curriculum recommendations**: A `CurriculumRecommendationAgent` using both AI-powered analysis and vector similarity search to match course content with student career goals
 
-The architectural pattern across all sections is consistent: database models store education domain data, agent classes encapsulate AI reasoning, and controllers expose API endpoints that connect the two. This makes the system modular, testable, and extensible Ã¢â‚¬â€ each agent can be improved independently without affecting the others.
+The architectural pattern across all sections is consistent: database models store education domain data, agent classes encapsulate AI reasoning, and controllers expose API endpoints that connect the two. This makes the system modular, testable, and extensible — each agent can be improved independently without affecting the others.
 
 ---
 
@@ -2481,6 +2481,6 @@ The architectural pattern across all sections is consistent: database models sto
 5. **Progress Monitoring**: The `ProgressTrackingAgent` runs weekly, flagging at-risk students and sending intervention recommendations
 6. **Curriculum Adjustment**: Based on progress data, the `CurriculumRecommendationAgent` suggests course adjustments for the next semester
 7. **Enrollment Automation**: At registration time, the `EnrollmentAgent` validates prerequisites, manages waitlists, and confirms enrollment
-8. **Analytics Dashboard**: A reporting command summarizes system-wide metrics Ã¢â‚¬â€ average risk scores, grade distributions, recommendation adoption rates, and waitlist statistics
+8. **Analytics Dashboard**: A reporting command summarizes system-wide metrics — average risk scores, grade distributions, recommendation adoption rates, and waitlist statistics
 
 Implement all agents, controllers, routes, notifications, and the weekly monitoring command. Include proper error handling, logging, and at least three notification types.

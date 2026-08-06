@@ -370,7 +370,7 @@ console.log("Jalad =", getM("Jalad"));
 ## Practical Takeaways
 
 1. For synonyms: Group by theme (nature: Agni, Pavan, Jal, Aakash; body: Hast, Netra, Mukh).
-2. For antonyms: Focus on the 50 most common pairs â€” 80% of exam questions come from these.
+2. For antonyms: Focus on the 50 most common pairs — 80% of exam questions come from these.
 3. For idioms: Learn the muhavara and its exact usage in a sentence.
 4. For word origins: Tatsam words are formal/literary; Tadbhav are more common in speech.
 5. Memory technique: Create flashcard decks with 10 words per day; use spaced repetition.
@@ -389,7 +389,7 @@ a) Daani b) Kanjoos c) Gareeb d) Ameer
 a) Baal katvana b) Mushkil se bachna c) Taiyar hona d) Nahana
 <details><summary>Answer</summary>b) Narrow escape</details>
 
-**Q4.** "Anal" aur "Anil" â€” sahi yugm:
+**Q4.** "Anal" aur "Anil" — sahi yugm:
 a) Anal=Jal, Anil=Agni b) Anal=Agni, Anil=Vayu c) Anal=Vayu, Anil=Agni
 <details><summary>Answer</summary>b) Anal=Agni, Anil=Vayu</details>
 
@@ -692,7 +692,7 @@ console.log(spellCheck("Haath"));  // correct
 console.log(spellCheck("Hath"));   // suggestion: Haath
 ```
 
-### Example 13: Opposite Finder â€” Batch Processing
+### Example 13: Opposite Finder — Batch Processing
 
 ```typescript
 function findOpposites(words: string[]): Record<string, string> {
@@ -854,7 +854,7 @@ mindmap
 a) Sambhav b) Anishchay c) Pakka d) Sankalp
 **Answer:** b) Anishchay
 
-**Q16.** "Kya aap mujhe ek glass paani de sakte hain?" â€” is vakya mein kis prakar ka vakya hai:
+**Q16.** "Kya aap mujhe ek glass paani de sakte hain?" — is vakya mein kis prakar ka vakya hai:
 a) Aadesh b) Nivedan c) Prashna d) Vismay
 **Answer:** b) Nivedan (Request)
 

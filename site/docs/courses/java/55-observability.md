@@ -2820,7 +2820,7 @@ receivers:
   - name: 'slack-critical'
     slack_configs:
       - channel: '#critical-alerts'
-        title: 'ðŸš¨ CRITICAL: {{ .GroupLabels.alertname }}'
+        title: '🚨 CRITICAL: {{ .GroupLabels.alertname }}'
         text: '{{ template "slack.text" . }}'
         color: 'danger'
         send_resolved: true
@@ -2828,7 +2828,7 @@ receivers:
   - name: 'slack-warnings'
     slack_configs:
       - channel: '#alerts-warnings'
-        title: 'âš ï¸ WARNING: {{ .GroupLabels.alertname }}'
+        title: '⚠️ WARNING: {{ .GroupLabels.alertname }}'
         text: '{{ template "slack.text" . }}'
         color: 'warning'
 
@@ -2850,7 +2850,7 @@ receivers:
   - name: 'slo-review'
     slack_configs:
       - channel: '#slo-review'
-        title: 'ðŸ“Š SLO Alert: {{ .GroupLabels.alertname }}'
+        title: '📊 SLO Alert: {{ .GroupLabels.alertname }}'
         text: 'SLO violation detected. Review required: {{ .GroupLabels.alertname }}'
         color: '#FFA500'
 
@@ -3015,10 +3015,10 @@ receivers:
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | ✓ | ✗ | ✓ |
+| Enterprise system | ✓ | ✓ | ✗ |
+| High-throughput API | ✗ | ✓ | ✓ |
+| Event-driven | ✗ | ✓ | ✓ |
 
 ## Chapter Quiz
 

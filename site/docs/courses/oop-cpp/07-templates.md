@@ -151,7 +151,7 @@ FUNCTION max_of_double(a: double, b: double) -> double:
 
 | Approach | Lines of Code | Maintenance Cost | Runtime Overhead | Type Safety |
 |----------|--------------|-----------------|------------------|-------------|
-| Manual overloading | O(N) types Ã— body | High → fix every copy | None | Full |
+| Manual overloading | O(N) types × body | High → fix every copy | None | Full |
 | Templates | O(1) | Low → fix once | None (zero-cost) | Full |
 | Macros (#define) | O(1) | Medium → debug nightmare | None | None |
 | void* + casts | O(1) | High | Cast overhead | Lost |
@@ -239,11 +239,11 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 │ 2     │ Check argument types             │ 3: int, 7: int                        │
 │ 3     │ Name lookup for max_of           │ Found template max_of<T>              │
 │ 4     │ Deduce T from argument types     │ T = int (both args are int)           │
-│ 5     │ Check template parameter count   │ 1 parameter, 1 provided âœ“             │
+│ 5     │ Check template parameter count   │ 1 parameter, 1 provided ✓             │
 │ 6     │ Substitute T → int in signature  │ int max_of(int a, int b)              │
-│ 7     │ Check constraint (if any)        │ No concepts, unconditional âœ“          │
+│ 7     │ Check constraint (if any)        │ No concepts, unconditional ✓          │
 │ 8     │ Substitute T → int in body       │ return (a > b) ? a : b;               │
-│ 9     │ Type-check the body with T=int   │ int > int → bool, OK âœ“               │
+│ 9     │ Type-check the body with T=int   │ int > int → bool, OK ✓               │
 │ 10    │ Generate object code             │ Machine instructions emitted          │
 │ 11    │ Store in object file             │ Symbol: int max_of(int, int)          │
 │ 12    │ (Link time) Merge duplicates     │ COMDAT folding if multiple TUs        │
@@ -269,7 +269,7 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
                          However, all three functions are IDENTICAL in structure  │
                          at the source level.                                     │
                          ─────────────────────────────────────────────────────────│
-                         Binary size impact: ~3Ã— a single function                 │
+                         Binary size impact: ~3× a single function                 │
                          Optimization potential: linker may deduplicate identical │
                          machine code if the types produce identical instructions │
                          (e.g., int and long on many platforms)                   │
@@ -281,7 +281,7 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 | Metric | Complexity | Explanation |
 |--------|-----------|-------------|
 | **Template definition** | O(1) | One definition serves N types |
-| **Compile-time cost** | O(N Ã— S) | N = number of types, S = size of template |
+| **Compile-time cost** | O(N × S) | N = number of types, S = size of template |
 | **Runtime performance** | O(1) → optimal | Generated code = hand-written quality |
 | **Binary size (code bloat)** | O(N) | Each type gets its own function |
 | **Deduplication (linker)** | O(N) worst, often O(1) | COMDAT folding merges identical machine code |
@@ -422,7 +422,7 @@ int main() {
 │ 2      │ Substitute T → int in body      │ int data_[5];                 │
 │ 3      │ Substitute N → 5 in body        │ size() returns 5              │
 │ 4      │ Generate class layout           │ sizeof = 5 * sizeof(int) = 20 │
-│ 5      │ Verify N > 0 (implicit)         │ 5 > 0 âœ“                       │
+│ 5      │ Verify N > 0 (implicit)         │ 5 > 0 ✓                       │
 │ 6      │ Instantiate constructor         │ FixedArray() → default init   │
 │ 7      │ Instantiate size()              │ returns 5 (constexpr)         │
 │ 8      │ Instantiate fill()              │ loops 5 times                 │
@@ -431,7 +431,7 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- **Memory:** sizeof(T) Ã— N → deterministic and known at compile time
+- **Memory:** sizeof(T) × N → deterministic and known at compile time
 - **Access:** O(1) → direct indexing, same as raw array
 - **Safety:** Array bounds checked at compile time for constant indices → zero-cost
 - **Compare to `std::vector`:** `FixedArray` allocates on stack (no heap), has no dynamic resizing overhead, and N is part of the type → `FixedArray<int, 5>` and `FixedArray<int, 10>` are different types.
@@ -557,7 +557,7 @@ int main() {
 │ 4      │ Constructor generated            │ Stack<int>::Stack()            │
 │ 5      │ push(42) called                  │ push(const int&) needed        │
 │ 6      │ push template instantiated       │ void push(const int&) code gen │
-│ 7      │ Check push body validity         │ vector<int>::push_back(int) âœ“  │
+│ 7      │ Check push body validity         │ vector<int>::push_back(int) ✓  │
 │ 8      │ empty(), size(), top()           │ NOT instantiated (lazy)        │
 │        │ not called                       │ → no code generated            │
 └────────┴──────────────────────────────────┴────────────────────────────────┘
@@ -717,7 +717,7 @@ class Adapter { /* ... */ };
 
 **Complexity Analysis:**
 - **Flexibility cost:** Compile-time only → no runtime cost
-- **Binary size:** O(N Ã— M) where N = types used, M = containers used
+- **Binary size:** O(N × M) where N = types used, M = containers used
 - **Maintenance:** One implementation works with any compatible container
 
 **Real-world use:** `std::stack`, `std::queue`, and `std::priority_queue` in the STL accept a template template parameter for the underlying container:
@@ -818,7 +818,7 @@ hello
 │ Call                 │ Candidates                     │ Result            │
 ├──────────────────────┼────────────────────────────────┼──────────────────┤
 │ describe(42)         │ primary<T> with T=int          │ generic available │
-│                      │ full spec for int              │ FULL match âœ“     │
+│                      │ full spec for int              │ FULL match ✓     │
 │                      │ Full spec wins                 │ "Integer type"   │
 ├──────────────────────┼────────────────────────────────┼──────────────────┤
 │ describe(3.14)       │ primary<T> with T=double       │ only option      │
@@ -828,7 +828,7 @@ hello
 │                      │ (no spec for const char*)      │ "Unknown type"   │
 ├──────────────────────┼────────────────────────────────┼──────────────────┤
 │ describe(string)     │ primary<T> with T=string       │ generic available│
-│                      │ full spec for string            │ FULL match âœ“    │
+│                      │ full spec for string            │ FULL match ✓    │
 │                      │ Full spec wins                 │ "hello"          │
 └──────────────────────┴────────────────────────────────┴──────────────────┘
 ```
@@ -884,14 +884,14 @@ int**:     1
 ├──────────────────┬─────────┬──────────────┬──────────────────┬───────────┤
 │ Type             │ Primary │ Partial<T*>   │ Partial<const T*>│ Selected  │
 ├──────────────────┼─────────┼──────────────┼──────────────────┼───────────┤
-│ int              │ âœ“       │ âœ—             │ âœ—                 │ Primary   │
-│ int*             │ âœ“       │ âœ“ (T=int)    │ âœ—                 │ Part: T*  │
-│ const int*       │ âœ“       │ âœ—             │ âœ“ (T=int)         │ Part: c T*│
-│ int&             │ âœ“       │ âœ—             │ âœ—                 │ Primary   │
-│ int**            │ âœ“       │ âœ“ (T=int*)   │ âœ—                 │ Part: T*  │
-│ int***           │ âœ“       │ âœ“ (T=int**)  │ âœ—                 │ Part: T*  │
-│ vector<int>*     │ âœ“       │ âœ“ (T=vector) │ âœ—                 │ Part: T*  │
-│ const char*      │ âœ“       │ âœ—             │ âœ“ (T=char)        │ Part: c T*│
+│ int              │ ✓       │ ✗             │ ✗                 │ Primary   │
+│ int*             │ ✓       │ ✓ (T=int)    │ ✗                 │ Part: T*  │
+│ const int*       │ ✓       │ ✗             │ ✓ (T=int)         │ Part: c T*│
+│ int&             │ ✓       │ ✗             │ ✗                 │ Primary   │
+│ int**            │ ✓       │ ✓ (T=int*)   │ ✗                 │ Part: T*  │
+│ int***           │ ✓       │ ✓ (T=int**)  │ ✗                 │ Part: T*  │
+│ vector<int>*     │ ✓       │ ✓ (T=vector) │ ✗                 │ Part: T*  │
+│ const char*      │ ✓       │ ✗             │ ✓ (T=char)        │ Part: c T*│
 └──────────────────┴─────────┴──────────────┴──────────────────┴───────────┘
 ```
 
@@ -1405,7 +1405,7 @@ using enable_if_t = typename enable_if<B, T>::type;
 │ 1. T deduced │ T = int                  │ T = int (also considered)     │
 │ 2. condition │ is_integral<int> = true  │ is_floating_point<int> = false│
 │ 3. enable_if │ enable_if<true, bool>    │ enable_if<false, bool>        │
-│ 4. ::type    │ ::type = bool âœ“          │ ::type does not EXIST âœ—       │
+│ 4. ::type    │ ::type = bool ✓          │ ::type does not EXIST ✗       │
 │ 5. SFINAE?   │ No → valid substitution  │ YES → removed from overload   │
 │              │                          │ set                           │
 │ 6. RESULT    │ Template 1 selected      │ →                             │
@@ -1422,7 +1422,7 @@ using enable_if_t = typename enable_if<B, T>::type;
 │ 2. condition │ is_integral<const char*> │ is_floating_point<const char*>│
 │              │ = false                  │ = false                       │
 │ 3. enable_if │ enable_if<false, bool>   │ enable_if<false, bool>        │
-│ 4. ::type    │ ::type does not EXIST âœ—  │ ::type does not EXIST âœ—       │
+│ 4. ::type    │ ::type does not EXIST ✗  │ ::type does not EXIST ✗       │
 │ 5. SFINAE?   │ YES → removed            │ YES → removed                 │
 │ 6. RESULT    │ No viable candidates     │ → compilation ERROR           │
 └──────────────┴──────────────────────────┴───────────────────────────────┘
@@ -1764,8 +1764,8 @@ T max_of(T a, T b) {
 In template parameter declarations, `typename` and `class` are interchangeable:
 
 ```cpp
-template <typename T> void func(T);    // âœ“
-template <class T> void func(T);       // âœ“ → identical meaning
+template <typename T> void func(T);    // ✓
+template <class T> void func(T);       // ✓ → identical meaning
 ```
 
 ### The Historical Distinction
@@ -1813,11 +1813,11 @@ void func2() {
 
 | Purpose | `typename` | `class` |
 |---------|-----------|---------|
-| Template type parameter | âœ“ `template <typename T>` | âœ“ `template <class T>` |
-| Disambiguate dependent names | âœ“ `typename T::type` | âœ— (not allowed) |
-| Template template param (pre-C++17) | âœ— | âœ“ `template<typename> class Cont` |
-| Template template param (C++17+) | âœ“ | âœ“ |
-| Self-documenting that T can be any type | âœ“ | âœ— (misleading name) |
+| Template type parameter | ✓ `template <typename T>` | ✓ `template <class T>` |
+| Disambiguate dependent names | ✓ `typename T::type` | ✗ (not allowed) |
+| Template template param (pre-C++17) | ✗ | ✓ `template<typename> class Cont` |
+| Template template param (C++17+) | ✓ | ✓ |
+| Self-documenting that T can be any type | ✓ | ✗ (misleading name) |
 
 ### Recommendation
 
@@ -2095,9 +2095,9 @@ int main() {
 
 **Complexity Analysis:**
 - **Runtime overhead:** Zero → policy functions are inlined at compile time
-- **Compile-time cost:** O(P Ã— M) where P = policies, M = methods
-- **Binary size:** Each policy combination creates a separate type → O(N Ã— P)
-- **Flexibility:** N types Ã— M threading Ã— L logging = NÃ—MÃ—L combinations with zero runtime cost
+- **Compile-time cost:** O(P × M) where P = policies, M = methods
+- **Binary size:** Each policy combination creates a separate type → O(N × P)
+- **Flexibility:** N types × M threading × L logging = N×M×L combinations with zero runtime cost
 
 ### 7.10.5 Type Traits Library
 

@@ -503,7 +503,7 @@ Developed by Microsoft in 1999. Six threat categories mapped to security propert
 ### 4.3 PASTA (Process for Attack Simulation and Threat Analysis)
 
 
-Created by Tony UcedaVÃ©lez (VerSprite). Seven-stage risk-centric methodology. Unlike STRIDE which categorizes threats bottom-up, PASTA starts with business objectives and works down.
+Created by Tony UcedaVélez (VerSprite). Seven-stage risk-centric methodology. Unlike STRIDE which categorizes threats bottom-up, PASTA starts with business objectives and works down.
 
 **PASTA Stages:**
 
@@ -1798,20 +1798,20 @@ Every security control maps to one or more CIA elements. Understanding which CIA
 
 | Control Type | Confidentiality | Integrity | Availability | Example Technologies |
 |-------------|:---:|:---:|:---:|---------------------|
-| Encryption (transit) | âœ… Primary | âœ… Secondary | âŒ | TLS, IPsec, SSH |
-| Encryption (rest) | âœ… Primary | âŒ | âŒ | AES-256, BitLocker, LUKS |
-| Hashing | âŒ | âœ… Primary | âŒ | SHA-256, SHA-3 |
-| Digital Signatures | âŒ | âœ… Primary | âŒ | RSA, ECDSA, Ed25519 |
-| Access Control (DAC/MAC/RBAC) | âœ… Primary | âŒ | âŒ | Linux ACLs, Windows NTFS, AWS IAM |
-| Firewall | âŒ | âŒ | âœ… Network | iptables, pfSense, AWS SG |
-| WAF | âŒ | âœ… Data flow | âœ… Partial | ModSecurity, AWS WAF, Cloudflare |
-| IDS/IPS | âŒ | âœ… Detection | âœ… Prevention | Snort, Suricata, Wazuh |
-| Backup | âŒ | âœ… Recovery | âœ… Primary | Veeam, rsync, AWS Backup |
-| Load Balancer | âŒ | âŒ | âœ… Primary | HAProxy, NGINX, ELB |
-| MFA | âœ… Auth | âŒ | âŒ | TOTP, FIDO2, Push notification |
-| DDoS Protection | âŒ | âŒ | âœ… Primary | Cloudflare, AWS Shield, Akamai |
-| Audit Logging | âŒ | âœ… Non-repudiation | âŒ | auditd, Windows Event Log, SIEM |
-| Data Masking | âœ… Primary | âŒ | âŒ | Dynamic masking, Tokenization |
+| Encryption (transit) | ✅ Primary | ✅ Secondary | ❌ | TLS, IPsec, SSH |
+| Encryption (rest) | ✅ Primary | ❌ | ❌ | AES-256, BitLocker, LUKS |
+| Hashing | ❌ | ✅ Primary | ❌ | SHA-256, SHA-3 |
+| Digital Signatures | ❌ | ✅ Primary | ❌ | RSA, ECDSA, Ed25519 |
+| Access Control (DAC/MAC/RBAC) | ✅ Primary | ❌ | ❌ | Linux ACLs, Windows NTFS, AWS IAM |
+| Firewall | ❌ | ❌ | ✅ Network | iptables, pfSense, AWS SG |
+| WAF | ❌ | ✅ Data flow | ✅ Partial | ModSecurity, AWS WAF, Cloudflare |
+| IDS/IPS | ❌ | ✅ Detection | ✅ Prevention | Snort, Suricata, Wazuh |
+| Backup | ❌ | ✅ Recovery | ✅ Primary | Veeam, rsync, AWS Backup |
+| Load Balancer | ❌ | ❌ | ✅ Primary | HAProxy, NGINX, ELB |
+| MFA | ✅ Auth | ❌ | ❌ | TOTP, FIDO2, Push notification |
+| DDoS Protection | ❌ | ❌ | ✅ Primary | Cloudflare, AWS Shield, Akamai |
+| Audit Logging | ❌ | ✅ Non-repudiation | ❌ | auditd, Windows Event Log, SIEM |
+| Data Masking | ✅ Primary | ❌ | ❌ | Dynamic masking, Tokenization |
 
 ### 14.2 CIA Attacks → Detailed Breakdown by Attack Type
 
@@ -2206,7 +2206,7 @@ The managing partner accepts residual risk of Low-Medium after controls are impl
 
 1. Saltzer, J.H. and Schroeder, M.D. (1975). "The Protection of Information in Computer Systems." → The original seven security principles.
 2. Microsoft Corporation. (1999). "The STRIDE Threat Model." → Original STRIDE documentation.
-3. UcedaVÃ©lez, T. and Morana, M.M. (2015). "Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis." → PASTA methodology book.
+3. UcedaVélez, T. and Morana, M.M. (2015). "Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis." → PASTA methodology book.
 4. Deng, M. et al. (2011). "A Privacy Threat Analysis Framework: LINDDUN." → Original LINDDUN paper.
 5. Schneier, B. (1999). "Attack Trees." Dr. Dobb's Journal. → Attack tree methodology.
 6. NIST SP 800-37 Rev. 2. (2018). "Risk Management Framework for Information Systems and Organizations."

@@ -43,7 +43,7 @@ By the end of this chapter, you will be able to:
 ### 3.1 What is Data Sufficiency?
 
 
-Data Sufficiency (DS) questions test your ability to determine whether the information provided is adequate to answer a given question â€”ithout actually solving it completely.
+Data Sufficiency (DS) questions test your ability to determine whether the information provided is adequate to answer a given question —ithout actually solving it completely.
 
 Each question has:
 - A **question stem** asking for a value, a comparison, or a verification
@@ -62,14 +62,14 @@ flowchart TD
     B -->|Yes| C{Can Q be answered<br/>using Statement 2 alone?}
     B -->|No| D{Can Q be answered<br/>using Statement 2 alone?}
     
-    C -->|Yes| E[Answer: D â€”ach Alone Sufficient]
-    C -->|No| F[Answer: A â€”nly Statement 1 Sufficient]
+    C -->|Yes| E[Answer: D —ach Alone Sufficient]
+    C -->|No| F[Answer: A —nly Statement 1 Sufficient]
     
-    D -->|Yes| G[Answer: B â€”nly Statement 2 Sufficient]
+    D -->|Yes| G[Answer: B —nly Statement 2 Sufficient]
     D -->|No| H{Can Q be answered<br/>using BOTH together?}
     
-    H -->|Yes| I[Answer: C â€”oth Together Sufficient]
-    H -->|No| J[Answer: E â€”either Sufficient]
+    H -->|Yes| I[Answer: C —oth Together Sufficient]
+    H -->|No| J[Answer: E —either Sufficient]
     
     style E fill:#2E8B57,color:#fff
     style F fill:#4A90D9,color:#fff
@@ -89,7 +89,7 @@ flowchart TD
 | **D** | Each statement alone is sufficient | Q: What is x? (1) x² = 25 (2) x³ = 125 |
 | **E** | Both together are still not sufficient | Q: What is x? (1) x + y = 10 (2) x - z = 5 |
 
-### 3.3 The Decision Process â€”tep by Step
+### 3.3 The Decision Process —tep by Step
 
 
 **Step 1: Analyse the question stem**
@@ -169,11 +169,11 @@ The question asks for a comparison that can be answered "yes" or "no".
 | False sufficiency | Is x > y? (1) x > z (2) z > y | Both needed together | Test with numbers: z = 5, x > 5, y < 5 ? x > y definitely |
 | Hidden assumption | What is the area? (1) side = 5 | Assumes it's a square but not stated | Identify the shape first |
 | Both mean same | (1) x + y = 10 (2) 2x + 2y = 20 | Same equation, not independent | Check if statements are equivalent |
-| Answer is "No" | Is x > 5? (1) x = 3 | Gives "No" â€”till sufficient | "No" is a valid answer |
-| Ambiguous wording | "x is multiple of 3" â€”ould be 3, 6, 9, ... | Insufficient unless range given | Look for constraints that limit possibilities |
+| Answer is "No" | Is x > 5? (1) x = 3 | Gives "No" —till sufficient | "No" is a valid answer |
+| Ambiguous wording | "x is multiple of 3" —ould be 3, 6, 9, ... | Insufficient unless range given | Look for constraints that limit possibilities |
 | Redundant info | (1) A > B (2) B < A | Same information repeated | Redundant statements do not add new data |
 
-### 3.6 When Is Data Sufficient? â€”he Criteria
+### 3.6 When Is Data Sufficient? —he Criteria
 
 
 Data is **sufficient** when:
@@ -232,9 +232,9 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 - Time = Distance / Speed
 
 **Sufficiency patterns:**
-1. **Distance known, speed known ? Time** â€”ufficient (one equation, one unknown)
-2. **Distance known, time unknown, speed unknown** â€”ot sufficient
-3. **Ratio of speeds + total time + distance** â€”ufficient (two equations)
+1. **Distance known, speed known ? Time** —ufficient (one equation, one unknown)
+2. **Distance known, time unknown, speed unknown** —ot sufficient
+3. **Ratio of speeds + total time + distance** —ufficient (two equations)
 4. **Relative speed concept:** If two objects move toward each other, combined speed = sum. If same direction, combined speed = difference.
 
 **Example:** What is the speed of train A?
@@ -253,10 +253,10 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 - Discount % = (Discount / MP) × 100
 
 **Sufficiency patterns:**
-1. **CP and SP known ? Profit %** â€”ufficient
-2. **Only CP known OR only SP known** â€”ot sufficient
-3. **CP and Profit % known ? SP** â€”ufficient
-4. **MP and Discount % known ? SP** â€”ufficient, but need CP for profit %
+1. **CP and SP known ? Profit %** —ufficient
+2. **Only CP known OR only SP known** —ot sufficient
+3. **CP and Profit % known ? SP** —ufficient
+4. **MP and Discount % known ? SP** —ufficient, but need CP for profit %
 
 **Example:** What is the profit percentage?
 - (1) CP = ?500, SP = ?650 ? Profit = 150, Profit % = 30% ? Sufficient
@@ -286,7 +286,7 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 
 
 **Strategy 1: Pick extreme values**
-If a statement says "x > 5", test with x = 6 and x = 100 â€”o they give the same answer to the question? If yes, the statement is likely sufficient for that answer direction.
+If a statement says "x > 5", test with x = 6 and x = 100 —o they give the same answer to the question? If yes, the statement is likely sufficient for that answer direction.
 
 **Strategy 2: Consider zero and negative**
 Many DS mistakes involve forgetting about zero, negative numbers, or fractions:
@@ -299,7 +299,7 @@ Many DS mistakes involve forgetting about zero, negative numbers, or fractions:
 Sometimes both statements are independently sufficient (Answer D). To detect this:
 - If statement (1) gives a clear answer, check statement (2) separately
 - If statement (2) also gives a clear answer (possibly different, but definitive), it's D
-- The two statements don't need to give the same answer â€”ach just needs to be sufficient
+- The two statements don't need to give the same answer —ach just needs to be sufficient
 
 **Strategy 4: The "One Number" Verification**
 For "What is X?" questions, if a statement yields exactly one possible value, it's sufficient. The most common trap is quadratic equations that give two values.
@@ -318,7 +318,7 @@ For "What is X?" questions, if a statement yields exactly one possible value, it
 **Reasoning:**
 - (1): P = Pencils + 30. Total = P + (P-30) = 100 ? 2P = 130 ? P = 65. Sufficient alone.
 - (2): P:Pencils = 3:2 ? P = 3k, Pencils = 2k ? 5k = 100 ? k = 20 ? P = 60. Sufficient alone.
-- Each alone sufficient. Answer: D (Note: the two statements give different answers â€”5 vs 60 â€”ut this is fine for DS as each statement defines its own scenario.)
+- Each alone sufficient. Answer: D (Note: the two statements give different answers —5 vs 60 —ut this is fine for DS as each statement defines its own scenario.)
 
 **Q2:** Are there more pens than pencils?
 - (1) There are 30 more pens than pencils.
@@ -357,7 +357,7 @@ A common misconception is that "No" means insufficient. This is WRONG.
 
 **Example:** Is x > 10?
 - Statement: x = 5
-- Answer: x = 5 ? 5 is NOT > 10 ? The answer is "No" â€”ut it's DEFINITIVE.
+- Answer: x = 5 ? 5 is NOT > 10 ? The answer is "No" —ut it's DEFINITIVE.
 - This statement IS sufficient.
 
 **Example:** Is x > 10?
@@ -534,7 +534,7 @@ For each, evaluate in 20 seconds:
 - If only Profit % given, need either CP or SP for actual profit
 - Discount % needs MP and SP, or discount amount and MP
 
-### 3.9b The "C-Trap" â€”hen Both Statements Are Needed but Seemingly Not
+### 3.9b The "C-Trap" —hen Both Statements Are Needed but Seemingly Not
 
 Some questions appear solvable with one statement but actually need both:
 
@@ -551,7 +551,7 @@ Some questions appear solvable with one statement but actually need both:
 
 **The key insight:** Even though each equation has two variables, combined they form a solvable system of two independent equations.
 
-### 3.9c The "D-Trap" â€”hen Both Statements Seem Insufficient
+### 3.9c The "D-Trap" —hen Both Statements Seem Insufficient
 
 **Example:** Is x > 0?
 
@@ -565,7 +565,7 @@ Some questions appear solvable with one statement but actually need both:
 
 **Why it's a trap:** Many test-takers think (2) also proves x > 0, but x² > 0 is true for both positive and negative numbers.
 
-### 3.9d The "E-Trap" â€”hen the Answer Seems Obvious
+### 3.9d The "E-Trap" —hen the Answer Seems Obvious
 
 **Example:** Is x > y?
 
@@ -616,10 +616,10 @@ Some questions appear solvable with one statement but actually need both:
 Recent exams have introduced variations in DS questions:
 
 **Variation 1: Three Statements**
-Some exams give three statements and ask which combination is sufficient. The approach remains the same â€”valuate each statement individually, then in pairs, then all three together.
+Some exams give three statements and ask which combination is sufficient. The approach remains the same —valuate each statement individually, then in pairs, then all three together.
 
 **Variation 2: Match the Sufficiency**
-Questions that ask: "Which of the following pairs of statements is sufficient to answer the question?" â€”valuate each pair separately.
+Questions that ask: "Which of the following pairs of statements is sufficient to answer the question?" —valuate each pair separately.
 
 **Variation 3: Data Comparison**
 Instead of standard DS, some exams ask to compare two quantities:
@@ -627,7 +627,7 @@ Instead of standard DS, some exams ask to compare two quantities:
 - Quantity B: Given other data
 - Answer: A > B, B > A, A = B, or Cannot determine
 
-The logic is the same â€”valuate whether each quantity can be uniquely determined and compare.
+The logic is the same —valuate whether each quantity can be uniquely determined and compare.
 
 ### 3.9g Comparison of DS with Other DI Types
 
@@ -636,7 +636,7 @@ Data Sufficiency is fundamentally different from other DI types:
 | Aspect | Data Sufficiency | Standard DI |
 |--------|-----------------|-------------|
 | Goal | Determine if answer is possible | Compute the actual answer |
-| Calculation | Minimal â€”ust enough to test sufficiency | Full calculation required |
+| Calculation | Minimal —ust enough to test sufficiency | Full calculation required |
 | Time per question | ~2 minutes | ~3-4 minutes |
 | Decision points | 5 possible answers (A-E) | 4 answer choices |
 | Skill tested | Logical reasoning | Numerical computation |
@@ -1000,7 +1000,7 @@ c) Both together are sufficient
 Combined: 3q - 4 + q = 12 ? 4q = 16 ? q = 4, p = 8. p/q = 2. Sufficient.
 </details>
 
-### 3.13 Advanced DS â€”rick Questions Solved
+### 3.13 Advanced DS —rick Questions Solved
 
 **Q26.** Is x > 0?
 
@@ -1027,7 +1027,7 @@ c) Both together are sufficient
 (1): x could be 11, 12, 13, 14, 15, 16, 17, 18, 19. Not unique.
 (2): x could be 2, 3, 5, 7, 11, 13, 17, 19... Not unique.
 Combined: Prime between 10 and 20: 11, 13, 17, 19. Still 4 options. Hmm, still not unique.
-Actually this is E â€”ven combined, there are 4 possible values. Neither sufficient.
+Actually this is E —ven combined, there are 4 possible values. Neither sufficient.
 
 Correction: Answer is e) Neither statement alone, nor both together, is sufficient.
 </details>

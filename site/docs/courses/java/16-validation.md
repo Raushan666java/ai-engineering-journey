@@ -127,10 +127,10 @@ Hibernate Validator implements all standard constraints and provides additional 
 | `@NotEmpty` | String, Collection, Map, Array | Must not be `null` **and** must have size > 0 |
 | `@NotBlank` | String only | Must not be `null` **and** must contain at least one non-whitespace character |
 | `@Size(min, max)` | String, Collection, Map, Array | Length/size must be between `min` and `max` |
-| `@Min(value)` | `long`, `int`, `short`, `byte`, `BigDecimal`, `BigInteger` | Must be â‰¥ `value` |
-| `@Max(value)` | Same as `@Min` | Must be â‰¤ `value` |
-| `@DecimalMin(value)` | `BigDecimal`, `BigInteger`, `CharSequence`, numeric wrappers | Must be â‰¥ `value` (string-based comparison for precision) |
-| `@DecimalMax(value)` | Same as `@DecimalMin` | Must be â‰¤ `value` |
+| `@Min(value)` | `long`, `int`, `short`, `byte`, `BigDecimal`, `BigInteger` | Must be ≥ `value` |
+| `@Max(value)` | Same as `@Min` | Must be ≤ `value` |
+| `@DecimalMin(value)` | `BigDecimal`, `BigInteger`, `CharSequence`, numeric wrappers | Must be ≥ `value` (string-based comparison for precision) |
+| `@DecimalMax(value)` | Same as `@DecimalMin` | Must be ≤ `value` |
 | `@Negative` | Numeric types | Must be strictly negative |
 | `@NegativeOrZero` | Numeric types | Must be negative or zero |
 | `@Positive` | Numeric types | Must be strictly positive |

@@ -425,11 +425,11 @@ List<Post> findAllPostsWithComments();
 The critical difference: plain `JOIN` adds a WHERE/HAVING filter → it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
 
 ```java
-// âŒ Plain LEFT JOIN → comments are still lazy
+// ❌ Plain LEFT JOIN → comments are still lazy
 @Query("SELECT p FROM Post p LEFT JOIN p.comments c WHERE c.approved = true")
 List<Post> findApprovedCommentPosts(); // p.getComments() will still trigger lazy load!
 
-// âœ… JOIN FETCH → comments are loaded
+// ✅ JOIN FETCH → comments are loaded
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 ```

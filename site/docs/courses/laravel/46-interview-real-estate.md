@@ -261,7 +261,7 @@ class Transaction extends Model
 
 A CMA estimates a property's value by comparing it to recently sold, similar properties in the same area. Automation requires:
 
-1. **Identify comparables** → Query recently sold properties (last 6 months) within a radius (0.5â€“1 mile) with similar attributes (Â±20% square footage, Â±1 bedroom/bathroom, same property type).
+1. **Identify comparables** → Query recently sold properties (last 6 months) within a radius (0.5–1 mile) with similar attributes (±20% square footage, ±1 bedroom/bathroom, same property type).
 2. **Adjust for differences** → Apply $/sqft adjustments, feature premiums (pool, garage, renovated kitchen), and location factors.
 3. **Weight comparables** → More recent and geographically closer sales get higher weight.
 4. **Generate price range** → Output low/average/high estimates with confidence.
@@ -464,7 +464,7 @@ class ValuationPredictionAgent
     ): float {
         $adjustment = 1.0;
 
-        // Market trend adjustment (up to Â±5%)
+        // Market trend adjustment (up to ±5%)
         $adjustment += $marketTrends['quarterly_change'] / 100 * 0.5;
 
         // AI-suggested adjustments
@@ -1174,7 +1174,7 @@ A production real estate platform typically follows a layered architecture:
 │  Web (Blade/Inertia)  │  Mobile API  │  Public API  │
 ├─────────────────────────────────────────────────────┤
 │                   Application Layer                  │
-│  Agents (Listing, Valuation, Tour, Document, Leadâ€¦) │
+│  Agents (Listing, Valuation, Tour, Document, Lead…) │
 │  Services (Valuation, Search, MLS Sync, Pricing)    │
 │  Jobs (Sync MLS, Generate Reports, Send Reminders)  │
 │  Events (ListingCreated, OfferAccepted, ShowingBooked)│

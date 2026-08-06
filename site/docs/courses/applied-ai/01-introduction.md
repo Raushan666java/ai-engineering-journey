@@ -275,17 +275,17 @@ Initial state: m=0.0, b=0.0, lr=0.01, data=[(1,50), (2,55), (3,65), (4,70), (5,7
 | 100 | 59.136 | 14.362 | 59.14 | 177.41 | 354.82 | 9.64 | -0.93 | -1.73 |
 | 500 | 62.086 | 16.917 | 62.09 | 186.26 | 372.52 | 9.36 | ~0 | ~0 |
 
-**Observation:** The slope m converges to ~62.09 and intercept b to ~16.92, meaning the model learned: Score â‰ˆ 62.09 + 16.92 Ã— Hours. The MSE dropped from 4408 to 9.36.
+**Observation:** The slope m converges to ~62.09 and intercept b to ~16.92, meaning the model learned: Score ≈ 62.09 + 16.92 × Hours. The MSE dropped from 4408 to 9.36.
 
 ### Complexity Analysis
 
 
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
-| **Training (single epoch)** | O(n Ã— d) | O(n Ã— d) | Each of n samples multiplied by d features |
-| **Full Training (E epochs)** | O(E Ã— n Ã— d) | O(n Ã— d) | E passes over the entire dataset |
+| **Training (single epoch)** | O(n × d) | O(n × d) | Each of n samples multiplied by d features |
+| **Full Training (E epochs)** | O(E × n × d) | O(n × d) | E passes over the entire dataset |
 | **Inference (single prediction)** | O(d) | O(d) | Only one dot product + bias |
-| **Gradient Descent (batch)** | O(n Ã— d) per step | O(n Ã— d) | Full batch computes gradient over all n samples |
+| **Gradient Descent (batch)** | O(n × d) per step | O(n × d) | Full batch computes gradient over all n samples |
 
 > **Why training is expensive but inference is cheap:** During training we must propagate every sample through the model, compute gradients, and update parameters. After training, we freeze the parameters and only run a single forward pass → a few multiplications per feature.
 
@@ -563,12 +563,12 @@ FUNCTION ai_pipeline(raw_data_path, config):
 | Stage | Time Complexity | Why |
 |-------|----------------|-----|
 | Data Collection | O(N) | Read N records from source at O(1) per record |
-| Preprocessing | O(N Ã— F) | Scan N records Ã— F features for cleaning |
-| Feature Engineering | O(N Ã— F') | Transform F features into F' expanded features |
-| Training (Random Forest) | O(T Ã— M Ã— N Ã— log N) | T trees, M features sampled per split, N log N per tree |
+| Preprocessing | O(N × F) | Scan N records × F features for cleaning |
+| Feature Engineering | O(N × F') | Transform F features into F' expanded features |
+| Training (Random Forest) | O(T × M × N × log N) | T trees, M features sampled per split, N log N per tree |
 | Evaluation | O(N) | Single pass over test set |
 | Deployment | O(1) amortized | Model size determines upload time |
-| Monitoring (drift) | O(N Ã— F) | Compare N new records Ã— F features to baseline |
+| Monitoring (drift) | O(N × F) | Compare N new records × F features to baseline |
 
 ### Advantages & Disadvantages
 

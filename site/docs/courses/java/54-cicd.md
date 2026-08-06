@@ -1559,7 +1559,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `ðŸš€ Preview deployed at https://pr-${context.issue.number}.preview.myapp.com`
+              body: `🚀 Preview deployed at https://pr-${context.issue.number}.preview.myapp.com`
             })
 ```
 
@@ -2422,10 +2422,10 @@ jobs:
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | ✓ | ✗ | ✓ |
+| Enterprise system | ✓ | ✓ | ✗ |
+| High-throughput API | ✗ | ✓ | ✓ |
+| Event-driven | ✗ | ✓ | ✓ |
 
 ## Chapter Quiz
 
@@ -2494,4 +2494,4 @@ jobs:
 
 9. **Database migrations:** Integrate Flyway migrations into your CI pipeline. Include a migration verification step that runs against a fresh PostgreSQL container.
 
-10. **Approval gate:** Configure a production deployment that requires manual approval. Add quality gate checks (coverage â‰¥ 80%, SonarQube pass, no critical security findings).
+10. **Approval gate:** Configure a production deployment that requires manual approval. Add quality gate checks (coverage ≥ 80%, SonarQube pass, no critical security findings).

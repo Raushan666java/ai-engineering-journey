@@ -239,7 +239,7 @@ Step 4: Cloud logs → AWS CloudTrail exported to S3 bucket evidence-2024-cloudt
 Step 5: Logged → all items timestamped in collection manifest
 ```
 
-**Complexity: O(c Ã— s)** where c = collection methods, s = size of evidence.
+**Complexity: O(c × s)** where c = collection methods, s = size of evidence.
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -292,7 +292,7 @@ Step 4: Timeline → Plaso generated super timeline from 2024-01-01 to 2024-06-1
 Step 5: Carving → PhotoRec recovered 284 files including 12 JPEG, 3 PDF, 1 ZIP
 ```
 
-**Complexity: O(d Ã— f)** where d = data volume, f = number of files/artifacts.
+**Complexity: O(d × f)** where d = data volume, f = number of files/artifacts.
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -348,7 +348,7 @@ Step 4: Exfiltration → 1.2 GB data transferred via FTP to 198.51.100.50 at 15:
 Step 5: Attribution → Email originated from spoofed vendor domain with Russian-language metadata.
 ```
 
-**Complexity: O(e Ã— c)** where e = evidence items, c = correlation paths.
+**Complexity: O(e × c)** where e = evidence items, c = correlation paths.
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1318,7 +1318,7 @@ Volatility Commands:
 
 | Factor | Impact |
 |--------|--------|
-| Memory dump size | 4 GB RAM â‰ˆ 4 GB file. Analysis time â‰ˆ 10-30 minutes |
+| Memory dump size | 4 GB RAM ≈ 4 GB file. Analysis time ≈ 10-30 minutes |
 | Number of processes | Each additional process adds scan time |
 | Plugin complexity | netscan is slower than pslist (more data structures) |
 | Hardware | SSD storage + 16 GB+ RAM recommended for analysis |
@@ -1600,10 +1600,10 @@ event http_request(c: connection, method: string, original_uri: string,
 
 | Factor | Impact |
 |--------|--------|
-| PCAP file size | 1 GB PCAP â‰ˆ 5-15 min processing in Wireshark |
+| PCAP file size | 1 GB PCAP ≈ 5-15 min processing in Wireshark |
 | Packet count | 10M+ packets requires CLI tools (tshark, zeek) |
 | Zeek processing | ~100 MB/min throughput on commodity hardware |
-| Storage for logs | Zeek logs â‰ˆ 5-10% of original PCAP size |
+| Storage for logs | Zeek logs ≈ 5-10% of original PCAP size |
 | Analysis bottleneck | Human review is the limiting factor |
 # Chapter 8: Forensics & Incident Response
 
@@ -2331,8 +2331,8 @@ aws ec2 create-network-acl-entry \
 | Mean Time to Respond (MTTR) | <15 min for critical | Sum(Time to Respond) / Number of Incidents |
 | Mean Time to Contain (MTTC) | <1 hour for active threats | Sum(Time to Contain) / Number of Incidents |
 | Alert Volume | Varies | Total alerts per day |
-| False Positive Rate | <10% | False Positives / Total Alerts Ã— 100 |
-| Escalation Rate | 20-30% | Escalated / Total Triaged Ã— 100 |
+| False Positive Rate | <10% | False Positives / Total Alerts × 100 |
+| Escalation Rate | 20-30% | Escalated / Total Triaged × 100 |
 | Time to Resolution | <24 hours for P3 | Sum(Resolved Time) / Number of Incidents |
 
 ### 9.3 SIEM vs SOAR vs XDR
@@ -3231,8 +3231,8 @@ tsk_recover -o 2048 -e /evidence/case-001/hr-01.dd /evidence/case-001/recovered/
 #    □ Hash Lookup (NSRL)
 #    □ File Type Identification
 #    □ Extension Mismatch Detection
-#    â˜‘ Email Parser
-#    â˜‘ Interesting Files Identifier
+#    ☑ Email Parser
+#    ☑ Interesting Files Identifier
 #    □ Keyword Search (add: "password", "admin", "185.234.72")
 #    □ Timeline
 # 5. Run Ingest (may take 30-60 min for 500 GB)
@@ -4099,7 +4099,7 @@ def automated_forensics(alert):
 | Framework | Forensics/IR Requirements |
 |-----------|--------------------------|
 | **PCI DSS 4.0** | Requirement 12.10: Incident response plan, annual testing, forensic investigation for cardholder data breaches |
-| **HIPAA** | 45 CFR Â§164.308: Security incident procedures, response and reporting |
+| **HIPAA** | 45 CFR §164.308: Security incident procedures, response and reporting |
 | **GDPR** | Article 33: Breach notification within 72 hours. Article 32: Appropriate technical measures (includes logging and forensics) |
 | **NIST CSF** | RS.AN (Analysis): Investigate incidents. RS.MI (Mitigation): Contain incidents. RC.RP (Recovery): Restore operations |
 | **ISO 27001** | A.16.1: Incident management → roles, response, evidence collection, lessons learned |

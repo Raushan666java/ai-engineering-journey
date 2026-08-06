@@ -1419,7 +1419,7 @@ class RouteOptimizationAgent
     ): array {
         $legsSummary = collect($legs)->map(
             fn ($l) => sprintf(
-                '%s Ã¢â€ â€™ %s (%.1f km, %d min)',
+                '%s → %s (%.1f km, %d min)',
                 $l['from'], $l['to'], $l['distance_km'], $l['duration_minutes']
             )
         )->implode("\n");
@@ -1798,7 +1798,7 @@ class TrackingUpdate
 
 > **One-Sentence Takeaway:** Supplier agents evaluate supplier performance against KPIs and automate procurement workflows.
 
-Supplier management agents evaluate vendor performance across multiple dimensions Ã¢â‚¬â€ on-time delivery, product quality, pricing competitiveness, and communication responsiveness. The agent generates scorecards, identifies underperforming suppliers, and automates procurement decisions.
+Supplier management agents evaluate vendor performance across multiple dimensions — on-time delivery, product quality, pricing competitiveness, and communication responsiveness. The agent generates scorecards, identifies underperforming suppliers, and automates procurement decisions.
 
 ```php
 <?php
@@ -3329,7 +3329,7 @@ class SupplyChainReport
 
 In this chapter, we built a complete logistics and supply chain intelligence system using Laravel and AI agents:
 
-- **Data models** for shipments, inventory, suppliers, warehouses, purchase orders, and fleet vehicles Ã¢â‚¬â€ each with migrations, Eloquent relationships, casts, and query scopes that enforce domain invariants at the database level.
+- **Data models** for shipments, inventory, suppliers, warehouses, purchase orders, and fleet vehicles — each with migrations, Eloquent relationships, casts, and query scopes that enforce domain invariants at the database level.
 - **Inventory prediction agents** that calculate daily demand, standard deviation, safety stock, reorder points, and economic order quantities, then consult an AI model for natural-language recommendations.
 - **Route optimization agents** that solve nearest-neighbor traveling-salesperson problems with priority weighting, integrate with Google Maps APIs for real distance matrices, and surface AI-generated fuel and time savings tips.
 - **Shipment tracking automation** that polls carrier APIs, detects status changes and delivery exceptions, records tracking events, and dispatches notifications with AI-generated customer messages and escalation logic.

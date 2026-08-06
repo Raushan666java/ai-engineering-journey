@@ -132,7 +132,7 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 **Automata-theoretic approach:**
 1. Model the system as a finite automaton (a Kripke structure) M.
 2. Convert the specification (in LTL or CTL) to an automaton A that accepts violating behaviors.
-3. Compute the product automaton M Ã— A.
+3. Compute the product automaton M × A.
 4. Check if the product has any accepting path → if so, the specification is violated.
 
 **Applications:**
@@ -155,7 +155,7 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 **Computational hardness assumptions:**
 - **Factoring:** Given product of two large primes, find the factors. (Used in RSA.)
-- **Discrete log:** Given g, p, and gË£ mod p, find x. (Used in Diffie-Hellman, ElGamal.)
+- **Discrete log:** Given g, p, and gˣ mod p, find x. (Used in Diffie-Hellman, ElGamal.)
 - **Lattice problems:** Learning With Errors (LWE), Shortest Vector Problem (SVP). (Used in post-quantum cryptography.)
 - **SAT hardness:** Many cryptographic constructions rely on the hardness of NP-complete problems.
 
@@ -182,7 +182,7 @@ Complexity theory provides the foundation for modern cryptography. In particular
 **Type systems** and automata theory:
 - **Regular types:** Types described by regular expressions (e.g., nullable types, option types).
 - **Context-free grammars** describe syntax, and **attribute grammars** extend CFGs with semantic actions.
-- **Recursive types** (e.g., lists, trees) correspond to concepts in Âµ-calculus and alternating automata.
+- **Recursive types** (e.g., lists, trees) correspond to concepts in µ-calculus and alternating automata.
 
 **Domain-specific languages (DSLs):** Many DSLs are designed to be regular or context-free, enabling efficient parsing and analysis. Examples: SQL, HTML/CSS (regular for practical purposes), JSON.
 
@@ -232,10 +232,10 @@ Understanding undecidability helps engineers recognize what **cannot** be automa
 **BQP** (Bounded-error Quantum Polynomial Time): The class of problems efficiently solvable by quantum computers.
 
 **Relationship to classical classes:**
-- P âŠ† BQP âŠ† PSPACE
-- It's believed that NP âŠ„ BQP (quantum computers won't solve NP-complete problems efficiently).
-- Shor's algorithm: Factoring âˆˆ BQP (threatens RSA).
-- Grover's algorithm: Unstructured search in O(âˆšn) (quadratic speedup).
+- P ⊆ BQP ⊆ PSPACE
+- It's believed that NP ⊄ BQP (quantum computers won't solve NP-complete problems efficiently).
+- Shor's algorithm: Factoring ∈ BQP (threatens RSA).
+- Grover's algorithm: Unstructured search in O(√n) (quadratic speedup).
 
 **Implications for the Church-Turing thesis:**
 The **extended Church-Turing thesis** (every physically realizable computation can be simulated by a probabilistic TM with polynomial slowdown) is challenged by quantum computing. Whether quantum computers provide a super-polynomial advantage remains an active research question.
@@ -500,7 +500,7 @@ REs: KEYWORD = if|while|else, ID = [a-z]+, NUM = [0-9]+, OP = +|-|*|/
 
 The combined DFA is constructed by:
 1. Building NFAs for each pattern.
-2. Combining via Îµ-transitions from a new start state.
+2. Combining via ε-transitions from a new start state.
 3. Converting to a DFA via subset construction.
 4. At each step, record which patterns are matched.
 
@@ -510,9 +510,9 @@ When multiple patterns match at the same position (e.g., "if" matches both KEYWO
 
 Consider a mutual exclusion protocol with two processes. The specification (safety property): "never both processes in critical section simultaneously."
 
-The model is a Kripke structure M with states (p_state, q_state) where each process state âˆˆ {idle, want, critical}. Transitions follow the protocol rules.
+The model is a Kripke structure M with states (p_state, q_state) where each process state ∈ {idle, want, critical}. Transitions follow the protocol rules.
 
-The property is expressed in LTL as: G Â¬(in_csâ‚ âˆ§ in_csâ‚‚).
+The property is expressed in LTL as: G ¬(in_cs₁ ∧ in_cs₂).
 
 Model checking constructs the product of M and the automaton for the negation of the property. If any accepting cycle exists, the system model violates mutual exclusion and a counterexample path is produced.
 
@@ -527,13 +527,13 @@ This is the practical consequence of Rice's theorem → static analysis tools mu
 
 ### Example 15.4: RNA Secondary Structure Prediction with CFGs
 
-RNA bases {A, C, G, U} pair: A-U, C-G, G-U (wobble). Secondary structure prediction using Nussinov algorithm (DP, O(nÂ³)):
+RNA bases {A, C, G, U} pair: A-U, C-G, G-U (wobble). Secondary structure prediction using Nussinov algorithm (DP, O(n³)):
 
 **Grammar for RNA structure:**
-S → Îµ | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S
+S → ε | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S
 
 Each production corresponds to a structural element:
-- Îµ: empty structure.
+- ε: empty structure.
 - a S: unpaired base.
 - a S u: paired bases (a-u).
 - S S: branch point.

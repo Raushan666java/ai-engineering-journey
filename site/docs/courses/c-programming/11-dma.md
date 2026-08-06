@@ -245,7 +245,7 @@ Step 4 → free(arr); arr = NULL;
 | **Lifetime** | Entire program | Function scope | Until freed |
 | **Resizeable?** | No | No | Yes (via realloc) |
 | **Speed** | Fastest (no runtime overhead) | Very fast (stack pointer adjust) | Slow (system call, freelist search) |
-| **Typical size** | Smallâ€“medium | Small (KBâ€“MB, stack size limited) | Large (up to virtual memory limit) |
+| **Typical size** | Small–medium | Small (KB–MB, stack size limited) | Large (up to virtual memory limit) |
 | **Risk** | None | Stack overflow | Leaks, fragmentation, dangling pointers |
 | **Example** | `static int x;` | `int x;` | `malloc(n)` |
 
@@ -267,7 +267,7 @@ Step 4 → free(arr); arr = NULL;
 | **Speed** | Instant → no runtime overhead | Slower → heap management overhead |
 | **Safety** | Automatic lifetime management | Manual → leaks and dangling pointers are easy to introduce |
 | **Flexibility** | Fixed size → cannot grow | Can grow, shrink, and be freed at will |
-| **Memory** | Stack limited (typically 1â€“8 MB per thread) | Heap limited by system RAM + swap |
+| **Memory** | Stack limited (typically 1–8 MB per thread) | Heap limited by system RAM + swap |
 | **Control** | None → compiler manages everything | Full control over lifetime |
 
 ### Edge Cases
@@ -369,8 +369,8 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 
 | Aspect | Stack | Heap |
 |--------|-------|------|
-| **Size** | Small (1â€“8 MB default per thread on Linux/Windows) | Large (up to virtual address space → GB on 64-bit) |
-| **Speed** | Fast → single instruction to adjust stack pointer (~ns) | Slow → freelist search, possible syscall (~Î¼s) |
+| **Size** | Small (1–8 MB default per thread on Linux/Windows) | Large (up to virtual address space → GB on 64-bit) |
+| **Speed** | Fast → single instruction to adjust stack pointer (~ns) | Slow → freelist search, possible syscall (~μs) |
 | **Lifetime** | Automatic → variable dies when function returns | Manual → variable lives until `free` |
 | **Management** | Compiler-managed (push/pop frames) | Programmer-managed (malloc/free) |
 | **Fragmentation** | None → LIFO ensures contiguous frames | External fragmentation → freed blocks scatter |
@@ -567,11 +567,11 @@ Assume a Linux process with this approximate layout:
 
 | Variable | Segment | Address range | Size |
 |----------|---------|---------------|------|
-| `main()` function code | Text | 0x400000â€“0x4000ff | ~256 bytes |
-| `global_init = 100` | Data | 0x404000â€“0x404003 | 4 bytes |
-| `global_uninit` | BSS | 0x405000â€“0x405003 | 4 bytes |
-| `p = malloc(1000)` → p | Heap | 0x1000100â€“0x10004e7 | 1008 bytes (8 header + 1000 data) |
-| `local = 10` | Stack | 0x7ffffffde040â€“0x7ffffffde043 | 4 bytes |
+| `main()` function code | Text | 0x400000–0x4000ff | ~256 bytes |
+| `global_init = 100` | Data | 0x404000–0x404003 | 4 bytes |
+| `global_uninit` | BSS | 0x405000–0x405003 | 4 bytes |
+| `p = malloc(1000)` → p | Heap | 0x1000100–0x10004e7 | 1008 bytes (8 header + 1000 data) |
+| `local = 10` | Stack | 0x7ffffffde040–0x7ffffffde043 | 4 bytes |
 
 ---
 
@@ -729,13 +729,13 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 
 | Step | Code | Heap State | Note |
 |------|------|------------|------|
-| 0 | → | [FREE: 0x1000â€“0x1FFF (4 KB available)] | Empty heap |
-| 1 | `int *a = malloc(4)` | [BLOCK: 0x1000â€“0x1007 (8 bytes: 4 hdr + 4 data)] [FREE: remainder] | Allocator rounds up, adds header |
+| 0 | → | [FREE: 0x1000–0x1FFF (4 KB available)] | Empty heap |
+| 1 | `int *a = malloc(4)` | [BLOCK: 0x1000–0x1007 (8 bytes: 4 hdr + 4 data)] [FREE: remainder] | Allocator rounds up, adds header |
 | 2 | `*a = 42` | [BLOCK: a=42] [FREE] | Data written |
-| 3 | `int *b = malloc(8)` | [BLOCK: a=42] [BLOCK: b: 0x1008â€“0x1017 (8 hdr+8 data)] [FREE] | Second allocation |
-| 4 | `free(a)` | [FREE: 0x1000â€“0x1007] [BLOCK: b] [FREE] | a's block returned to freelist |
+| 3 | `int *b = malloc(8)` | [BLOCK: a=42] [BLOCK: b: 0x1008–0x1017 (8 hdr+8 data)] [FREE] | Second allocation |
+| 4 | `free(a)` | [FREE: 0x1000–0x1007] [BLOCK: b] [FREE] | a's block returned to freelist |
 | 5 | `int *c = malloc(4)` | [BLOCK: c: 0x1000 (reused)] [BLOCK: b] [FREE] | Freelist block reused |
-| 6 | `free(b); free(c)` | [FREE: 0x1000â€“0x1017 (coalesced)] [FREE: remainder] | Adjacent blocks coalesced |
+| 6 | `free(b); free(c)` | [FREE: 0x1000–0x1017 (coalesced)] [FREE: remainder] | Adjacent blocks coalesced |
 
 ### Complexity Analysis
 
@@ -752,7 +752,7 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Flexibility** | Allocate any size at runtime | Overhead: each allocation has a metadata header (8â€“16 bytes) |
+| **Flexibility** | Allocate any size at runtime | Overhead: each allocation has a metadata header (8–16 bytes) |
 | **Lifetime** | Persists until freed | Manual management → easy to forget free |
 | **Reusability** | Freed blocks are reused | Fragmentation → free blocks may be too small for future allocations |
 | **Portability** | Standard C library → everywhere | System call overhead for initial heap growth |
@@ -1216,7 +1216,7 @@ realloc(A, 64):
   Allocator checks block after A → 64 bytes free, enough for 32 more
   Expands A in-place: [BLOCK A: 64 bytes at 0x1000]
   Returns same address 0x1000
-  Data at 0x1000â€“0x101F preserved, 0x1020â€“0x103F now also part of block
+  Data at 0x1000–0x101F preserved, 0x1020–0x103F now also part of block
 ```
 
 **Case 2: Move (no room after)**
@@ -1442,7 +1442,7 @@ When you call `free(ptr)`, the heap manager:
                                 |  data     |
                                 |  ...      |
    Block start →► +----------+  +----------+
-                  |  size    |  ← metadata (4â€“16 bytes)
+                  |  size    |  ← metadata (4–16 bytes)
                   |  flags   |
                   |  prev/next| (for freelist linking)
                   +----------+
@@ -1564,7 +1564,7 @@ void memory_leak(void) {
 | **Can fail** | Out of memory | Out of memory | Out of memory (original kept) |
 | **ptr can be NULL** | N/A (N receives size) | N/A | Yes → acts like malloc(new_size) |
 | **new_size = 0** | Implementation-defined | N/A | Implementation-defined (often free) |
-| **Header overhead** | Per-allocation (8â€“16 bytes) | Same as malloc | Same + possible copy cost |
+| **Header overhead** | Per-allocation (8–16 bytes) | Same as malloc | Same + possible copy cost |
 
 ### Decision Flowchart
 
@@ -1945,7 +1945,7 @@ int main(void) {
 | Operation | Time | Space |
 |-----------|------|-------|
 | NULL-after-free | O(1) | O(1) |
-| Dangling pointer detection (Valgrind) | Runtime slowdown 10â€“20x | Increased memory usage |
+| Dangling pointer detection (Valgrind) | Runtime slowdown 10–20x | Increased memory usage |
 | Use-after-free exploit | → | Can lead to arbitrary code execution |
 
 ### Advantages and Disadvantages
@@ -1955,7 +1955,7 @@ int main(void) {
 |-----------|------|------|
 | NULL after free | Simple, prevents access | Only one level → double-pointer indirection still dangerous |
 | Static analysis | Finds many cases at compile time | Limited to obvious patterns |
-| Valgrind/ASan | Catches all use-after-free at runtime | Slows program 2â€“20x |
+| Valgrind/ASan | Catches all use-after-free at runtime | Slows program 2–20x |
 | Smart pointers (C++) | Automatic lifetime management | Language feature → not available in C |
 | Pool/arena allocator | Freed all at once → no individual dangling | Requires architectural change |
 
@@ -2022,7 +2022,7 @@ int main(void) {
 ### Heap Metadata Corruption
 
 
-Each malloc'd block has a metadata header (typically 8â€“16 bytes) just before the returned pointer. Overwriting this header corrupts the heap:
+Each malloc'd block has a metadata header (typically 8–16 bytes) just before the returned pointer. Overwriting this header corrupts the heap:
 
 ```
 Memory before free:
@@ -2105,7 +2105,7 @@ Aborted (core dumped)
 |--------|-------------|---------------|
 | **Bounds checking** | Always verify indices before accessing arrays | High → prevents overflow at source |
 | **Address Sanitizer** | `-fsanitize=address` → detects overflow, use-after-free | Very high → catches ~95% of bugs |
-| **Valgrind memcheck** | Runs binary on synthetic CPU, checks every access | Very high → 2â€“20x slowdown |
+| **Valgrind memcheck** | Runs binary on synthetic CPU, checks every access | Very high → 2–20x slowdown |
 | **Canary values** | Place known values at buffer boundaries; check for corruption | Medium → detects overflow but not at runtime by default |
 | **Static analysis** | `clang --analyze`, `cppcheck` | Medium → finds obvious patterns |
 | **Safe allocators** | ElectricFence, Guard pages around allocations | High → immediate segfault on overflow |
@@ -2678,9 +2678,9 @@ int main(void) {
 
 | Aspect | Stack | Heap |
 |--------|-------|------|
-| **Typical size** | 1â€“8 MB per thread | GB (virtual address space) |
-| **Allocation time** | ~1â€“3 ns | ~50â€“300 ns (small block) |
-| **Deallocation time** | ~0 ns (SP adjust) | ~20â€“100 ns |
+| **Typical size** | 1–8 MB per thread | GB (virtual address space) |
+| **Allocation time** | ~1–3 ns | ~50–300 ns (small block) |
+| **Deallocation time** | ~0 ns (SP adjust) | ~20–100 ns |
 | **Lifetime** | Function scope | Until explicit free |
 | **Management** | Compiler | Programmer |
 | **Data structure** | LIFO (stack) | Arbitrary (freelist) |
@@ -2747,7 +2747,7 @@ int main(void) {
 ### Q8: What is the difference between stack and heap allocation?
 
 
-**Answer:** Stack allocation is fast (single instruction to adjust stack pointer), automatic (compiler manages), and limited in size (~1â€“8 MB). Heap allocation is slower (freelist search, potential syscall), manual (programmer must free), and can be very large (up to virtual address limits). Stack variables are LIFO and have function scope; heap variables have arbitrary lifetime.
+**Answer:** Stack allocation is fast (single instruction to adjust stack pointer), automatic (compiler manages), and limited in size (~1–8 MB). Heap allocation is slower (freelist search, potential syscall), manual (programmer must free), and can be very large (up to virtual address limits). Stack variables are LIFO and have function scope; heap variables have arbitrary lifetime.
 
 ### Q9: What happens when `free` is called with a pointer that was not returned by `malloc`?
 
@@ -2757,7 +2757,7 @@ int main(void) {
 ### Q10: How do you detect memory leaks at runtime?
 
 
-**Answer:** Use **Valgrind** (runs on synthetic CPU, intercepts all alloc/free → 2â€“20x slowdown) or **AddressSanitizer** (compiler instrumentation via `-fsanitize=address` → ~2x slowdown, ~2x memory). Valgrind catches leaks, use-after-free, and uninitialized reads. ASan catches buffer overflows, use-after-free, and leaks. For production, you can implement a simple wrapper that tracks outstanding allocations (see 11.9.3).
+**Answer:** Use **Valgrind** (runs on synthetic CPU, intercepts all alloc/free → 2–20x slowdown) or **AddressSanitizer** (compiler instrumentation via `-fsanitize=address` → ~2x slowdown, ~2x memory). Valgrind catches leaks, use-after-free, and uninitialized reads. ASan catches buffer overflows, use-after-free, and leaks. For production, you can implement a simple wrapper that tracks outstanding allocations (see 11.9.3).
 
 ### Q11: What is memory fragmentation? Why is it bad?
 

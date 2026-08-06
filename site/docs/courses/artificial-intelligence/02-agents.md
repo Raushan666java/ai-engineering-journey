@@ -227,7 +227,7 @@ A **rational agent** is one that acts so as to achieve the best outcome or, when
 3. The **actions** that the agent can perform.
 4. The agent's **percept sequence** to date.
 
-> **Important:** Rationality â‰  Perfection. A rational agent may fail because of incomplete information. An omniscient agent knows the actual outcome; a rational agent maximizes expected outcome. A rational agent can fail; an omniscient agent cannot.
+> **Important:** Rationality ≠ Perfection. A rational agent may fail because of incomplete information. An omniscient agent knows the actual outcome; a rational agent maximizes expected outcome. A rational agent can fail; an omniscient agent cannot.
 
 #### Rationality Decision Process
 
@@ -323,7 +323,7 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} → Action: NoOp
 
 #### Complexity Analysis
 
-- **Time Complexity:** O(A Ã— S) where A = number of possible actions and S = cost of simulating state transition per action.
+- **Time Complexity:** O(A × S) where A = number of possible actions and S = cost of simulating state transition per action.
 - **Space Complexity:** O(S) for state storage + O(A) for temporary action evaluation.
 - **Why:** Each decision cycle evaluates every possible action. If the simulation function is expensive (e.g., full physics simulation), this dominates the runtime.
 
@@ -1081,13 +1081,13 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} -> Action: NoOp
 
 | Feature | Simple Reflex | Model-Based Reflex | Goal-Based | Utility-Based |
 |---------|:---:|:---:|:---:|:---:|
-| Internal State | x | âœ“ | âœ“ | âœ“ |
-| World Model | x | âœ“ | âœ“ | âœ“ |
-| Goal Knowledge | x | x | âœ“ | âœ“ |
-| Utility Function | x | x | x | âœ“ |
-| Handles Partial Observability | x | âœ“ | âœ“ | âœ“ |
-| Planning / Search | x | x | âœ“ | âœ“ |
-| Trade-off Decisions | x | x | x | âœ“ |
+| Internal State | x | ✓ | ✓ | ✓ |
+| World Model | x | ✓ | ✓ | ✓ |
+| Goal Knowledge | x | x | ✓ | ✓ |
+| Utility Function | x | x | x | ✓ |
+| Handles Partial Observability | x | ✓ | ✓ | ✓ |
+| Planning / Search | x | x | ✓ | ✓ |
+| Trade-off Decisions | x | x | x | ✓ |
 | Computational Cost | O(1) | O(S) | O(b^d) | O(A-C) |
 | Memory Requirement | Minimal | Moderate | High (stores search tree) | Moderate |
 | Implementation Complexity | Very Low | Low | Medium | High |
@@ -1161,11 +1161,11 @@ A highly complex agent requiring sophisticated sensors and actuators.
 
 | Agent Type | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Simple Reflex | âœ“ | âœ— | âœ— | âœ— |
-| Model-Based | âœ“ | âœ“ | âœ“ | âœ“ |
-| Goal-Based | âœ“ | âœ“ | âœ“ | âœ“ |
-| Utility-Based | âœ“ | âœ— | âœ— | âœ“ |
-| Learning Agent | âœ“ | âœ“ | âœ“ | âœ“ |
+| Simple Reflex | ✓ | ✗ | ✗ | ✗ |
+| Model-Based | ✓ | ✓ | ✓ | ✓ |
+| Goal-Based | ✓ | ✓ | ✓ | ✓ |
+| Utility-Based | ✓ | ✗ | ✗ | ✓ |
+| Learning Agent | ✓ | ✓ | ✓ | ✓ |
 
 ---
 

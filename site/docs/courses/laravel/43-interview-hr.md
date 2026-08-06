@@ -128,7 +128,7 @@ Each stage has distinct statuses, SLAs, and automation opportunities. An AI agen
 - **FCRA (Fair Credit Reporting Act)** → Disclosure and consent for background checks, adverse-action letters
 - **FLSA / Wage & Hour** → Accurate time tracking, overtime calculations, exempt/non-exempt classification
 - **HIPAA** (if handling health data) → Medical information separation, limited access
-- **Record Retention** → Varies by jurisdiction (typically 1â€“5 years for applicants, indefinitely for key employment records)
+- **Record Retention** → Varies by jurisdiction (typically 1–5 years for applicants, indefinitely for key employment records)
 
 In Laravel, these translate to encrypted PII columns, audit trails with `spatie/laravel-activitylog`, role-based access with `spatie/laravel-permission`, data-retention schedules as queued jobs, and consent-flags on the `candidates` and `employees` tables.
 
@@ -224,7 +224,7 @@ class ResumeScreeningAgent extends Agent
         You are a senior technical recruiter. Given a job description and a candidate resume:
 
         1. Extract structured fields: name, email, phone, skills, years of experience, education, recent employers
-        2. Score the candidate 0â€“100 against the job requirements
+        2. Score the candidate 0–100 against the job requirements
         3. Provide a brief justification for the score
         4. Flag any red flags (employment gaps, mismatched seniority, exaggerated claims)
 
@@ -666,8 +666,8 @@ Store the original file in S3 for audit trail. Return an import summary with cou
 │              Laravel Application Layer                    │
 │  ┌──────────────────────────────────────────────────┐   │
 │  │  Multi-Tenant Middleware (TenantResolver)         │   │
-│  │  â€¢ Reads subdomain or header → resolves Tenant   │   │
-│  │  â€¢ Sets scoped config (DB, storage, cache prefix) │   │
+│  │  • Reads subdomain or header → resolves Tenant   │   │
+│  │  • Sets scoped config (DB, storage, cache prefix) │   │
 │  └──────────────────────────────────────────────────┘   │
 │  ┌──────────┬──────────┬──────────┬─────────────────┐   │
 │  │ Core ATS │ AI Agents│ Reporting│  Integrations   │   │

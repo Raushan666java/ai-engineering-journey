@@ -1179,8 +1179,8 @@ END PROCEDURE
 |---|---|---|
 | 1 | Connection tracking lookup | No existing flow |
 | 2 | Direction = inbound | Evaluates inbound rules |
-| 3 | Rule 1: TCP/443 from 0.0.0.0/0 | Port 22 â‰  443 |
-| 4 | Rule 2: TCP/80 from 0.0.0.0/0 | Port 22 â‰  80 |
+| 3 | Rule 1: TCP/443 from 0.0.0.0/0 | Port 22 ≠ 443 |
+| 4 | Rule 2: TCP/80 from 0.0.0.0/0 | Port 22 ≠ 80 |
 | 5 | Rule 3: TCP/22 from 10.0.0.0/16 | 203.0.113.5 not in 10.0.0.0/16 |
 | 6 | No rules matched | **DENY** |
 
@@ -2191,21 +2191,21 @@ console.log(drainer.getStatus());
 |---------|---------------|---------------|---------------|
 | OSI Layer | 7 (Application) | 4 (Transport) | 3 (Network) |
 | Protocols | HTTP, HTTPS, gRPC, WebSocket | TCP, UDP, TLS | IP (GENEVE) |
-| Latency | 1-5ms | ~100Î¼s | ~200Î¼s |
-| Path-based routing | âœ“ | âœ— | âœ— |
-| Host-based routing | âœ“ | âœ— | âœ— |
-| Static IP per AZ | âœ— (uses DNS name) | âœ“ | âœ“ |
-| Client IP preservation | âœ— (X-Forwarded-For) | âœ“ | âœ“ |
-| TLS termination | âœ“ | âœ“ | âœ— |
-| SNI support | âœ“ | âœ“ | âœ— |
-| Sticky sessions | âœ“ (cookie) | âœ“ (flow hash) | âœ— |
-| WebSocket support | âœ“ | âœ— (raw TCP) | âœ— |
-| gRPC support | âœ“ (HTTP/2) | âœ“ (TCP) | âœ— |
+| Latency | 1-5ms | ~100μs | ~200μs |
+| Path-based routing | ✓ | ✗ | ✗ |
+| Host-based routing | ✓ | ✗ | ✗ |
+| Static IP per AZ | ✗ (uses DNS name) | ✓ | ✓ |
+| Client IP preservation | ✗ (X-Forwarded-For) | ✓ | ✓ |
+| TLS termination | ✓ | ✓ | ✗ |
+| SNI support | ✓ | ✓ | ✗ |
+| Sticky sessions | ✓ (cookie) | ✓ (flow hash) | ✗ |
+| WebSocket support | ✓ | ✗ (raw TCP) | ✗ |
+| gRPC support | ✓ (HTTP/2) | ✓ (TCP) | ✗ |
 | Target types | IP, instance, Lambda, ALB | IP, instance, ALB | IP, instance |
 | Health checks | HTTP/HTTPS | TCP, HTTP, HTTPS | TCP |
 | Use case | Microservices, web apps | Gaming, real-time, low-latency | Firewall appliances, IDS/IPS |
 | Pricing | Per LCU | Per LCU (more expensive) | Per appliance + data |
-| Cross-zone support | âœ“ | âœ“ (can disable) | âœ“ |
+| Cross-zone support | ✓ | ✓ (can disable) | ✓ |
 
 **How to Choose:**
 - Use **ALB** for HTTP/HTTPS applications that need path/host routing, WebSocket, or Lambda targets.
@@ -2639,7 +2639,7 @@ for i in range(5):
 |---|---|---|---|
 | Simple DNS resolution | O(R) | O(R) | R = records; one random selection |
 | Weighted routing | O(R) | O(R) | Weighted random selection, sum + scan |
-| Latency-based | O(R * P) | O(R) | R records Ã— P probe locations |
+| Latency-based | O(R * P) | O(R) | R records × P probe locations |
 | DNS caching | O(1) avg | O(C) | Hash map; C = cache entries |
 | Health check | O(H) | O(H) | H = health check endpoints |
 
@@ -3900,7 +3900,7 @@ vpn.status()
 | HMAC verification (per packet) | O(N) | O(1) | Hash entire payload once |
 | BGP route propagation | O(R) | O(R) | R = route prefixes; BGP update per prefix |
 
-**Why AES-256 is O(N) and not O(1):** Each 16-byte block must be encrypted sequentially. A 1500-byte packet requires ~94 AES block operations. Hardware AES-NI instructions make this ~1 CPU cycle per byte, which is 1.5Î¼s for a 1500-byte packet at 1GHz.
+**Why AES-256 is O(N) and not O(1):** Each 16-byte block must be encrypted sequentially. A 1500-byte packet requires ~94 AES block operations. Hardware AES-NI instructions make this ~1 CPU cycle per byte, which is 1.5μs for a 1500-byte packet at 1GHz.
 
 ### Advantages & Disadvantages of Cloud VPN
 
@@ -4630,7 +4630,7 @@ END PROCEDURE
 | 1 | frontend pod | Sends HTTP GET to http://backend/api/data |
 | 2 | iptables (frontend) | Redirects outbound port 80 to Envoy sidecar (15001) |
 | 3 | Envoy (frontend) | Looks up VirtualService for "backend" |
-| 4 | Envoy | Weighted routing: random(100) = 73 → 73 â‰¤ 80 → v1 |
+| 4 | Envoy | Weighted routing: random(100) = 73 → 73 ≤ 80 → v1 |
 | 5 | Envoy | Identifies backend-v1 endpoint: 10.0.1.20:8080 |
 | 6 | Envoy | Initiate mTLS with backend-v1 Envoy |
 | 7 | mTLS handshake | Certificate exchange, ALPN h2 negotiation (~3ms) |
@@ -5501,55 +5501,55 @@ Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). Th
 
 1. **What makes security groups stateful?**
    - a) Rules apply to both directions
-   - b) Return traffic is automatically allowed âœ“
+   - b) Return traffic is automatically allowed ✓
    - c) They process rules in order
    - d) They support deny rules
 
 2. **Which load balancer type provides a static IP per AZ?**
    - a) ALB
-   - b) NLB âœ“
+   - b) NLB ✓
    - c) CLB
    - d) GLB
 
 3. **What does VXLAN use to identify tenant segments?**
    - a) VLAN ID
-   - b) VNI âœ“
+   - b) VNI ✓
    - c) GRE key
    - d) Subnet ID
 
 4. **Which CDN feature reduces origin load?**
    - a) Edge computing
-   - b) Tiered caching âœ“
+   - b) Tiered caching ✓
    - c) Dynamic acceleration
    - d) DNS routing
 
 5. **What AWS service acts as a hub for VPC and on-premises connectivity?**
    - a) VPC Peering
-   - b) Transit Gateway âœ“
+   - b) Transit Gateway ✓
    - c) Direct Connect
    - d) VPN Gateway
 
 6. **What is the time complexity of round-robin load balancer selection?**
    - a) O(N)
-   - b) O(1) âœ“
+   - b) O(1) ✓
    - c) O(log N)
    - d) O(N^2)
 
 7. **Which cloud DNS routing policy is best for canary deployments?**
    - a) Simple
-   - b) Weighted âœ“
+   - b) Weighted ✓
    - c) Latency-based
    - d) Geolocation
 
 8. **How many VNIs does VXLAN support?**
    - a) 4096
-   - b) ~16 million âœ“
+   - b) ~16 million ✓
    - c) ~65,000
    - d) ~4 billion
 
 9. **Which service mesh component handles certificate management for mTLS?**
    - a) Pilot
-   - b) Citadel âœ“
+   - b) Citadel ✓
    - c) Envoy
    - d) Mixer
 
@@ -5584,7 +5584,7 @@ Cloud networking delivers software-defined network constructs → VPCs, subnets,
 8. Design a VPC architecture for a multi-tier web application with: public web servers, private application servers, and a private database. Include subnets, route tables, security groups, NAT Gateway, and load balancer placement. Support deployment in two availability zones.
 
 9. A CDN receives 100 GB/s of traffic at peak. The cache hit ratio is 85%. The origin server can handle 10 GB/s. Is the origin capacity adequate? If not, propose two solutions.
-   - **Solution:** Origin handles 15 GB/s (100 Ã— 0.15). This exceeds 10 GB/s capacity. Solutions: (a) increase cache hit ratio to 90%+ by pre-warming cache and optimizing TTLs, (b) implement tiered caching with regional cache nodes, (c) increase origin bandwidth to 20 GB/s.
+   - **Solution:** Origin handles 15 GB/s (100 × 0.15). This exceeds 10 GB/s capacity. Solutions: (a) increase cache hit ratio to 90%+ by pre-warming cache and optimizing TTLs, (b) implement tiered caching with regional cache nodes, (c) increase origin bandwidth to 20 GB/s.
 
 10. A company has on-premises data centers in New York and London, connected via MPLS. The company migrates applications to AWS in us-east-1 and eu-west-1. Design the hybrid connectivity: specify Direct Connect configuration, Transit Gateway routing, and DNS routing policy for active-active failover.
 

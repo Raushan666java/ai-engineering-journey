@@ -1475,7 +1475,7 @@ public class UserPreferenceLocaleResolver extends AbstractLocaleResolver {
 # General
 app.title=My Application
 app.description=Welcome to our e-commerce platform
-app.footer.copyright=Â© 2026 My App Inc. All rights reserved.
+app.footer.copyright=© 2026 My App Inc. All rights reserved.
 
 # Navigation
 nav.home=Home
@@ -1531,14 +1531,14 @@ user.paymentMethods=Payment Methods
 # General
 app.title=Mon Application
 app.description=Bienvenue sur notre plateforme e-commerce
-app.footer.copyright=Â© 2026 My App Inc. Tous droits rÃ©servÃ©s.
+app.footer.copyright=© 2026 My App Inc. Tous droits réservés.
 
 # Navigation
 nav.home=Accueil
 nav.products=Produits
 nav.cart=Panier
 nav.profile=Mon Profil
-nav.logout=DÃ©connexion
+nav.logout=Déconnexion
 nav.login=Connexion
 nav.register=S'inscrire
 
@@ -1554,11 +1554,11 @@ product.addReview=Donner votre avis
 
 # Order
 order.confirmation=Confirmation de commande
-order.number=NumÃ©ro de commande
+order.number=Numéro de commande
 order.date=Date de commande
 order.status=Statut de la commande
 order.total=Montant total
-order.items=Articles commandÃ©s
+order.items=Articles commandés
 order.shippingAddress=Adresse de livraison
 order.placeOrder=Passer la commande
 order.cancel=Annuler la commande
@@ -1569,13 +1569,13 @@ cart.total=Total du panier
 cart.checkout=Commander
 cart.continueShopping=Continuer vos achats
 cart.remove=Supprimer
-cart.quantity=QuantitÃ©
-cart.summary=RÃ©capitulatif du panier
+cart.quantity=Quantité
+cart.summary=Récapitulatif du panier
 
 # User
 user.welcome=Bienvenue, {0}
 user.profile=Mon Profil
-user.settings=ParamÃ¨tres
+user.settings=Paramètres
 user.orders=Mes commandes
 user.addresses=Mes adresses
 user.paymentMethods=Moyens de paiement
@@ -1587,7 +1587,7 @@ user.paymentMethods=Moyens de paiement
 # General
 app.title=Meine Anwendung
 app.description=Willkommen auf unserer E-Commerce-Plattform
-app.footer.copyright=Â© 2026 My App Inc. Alle Rechte vorbehalten.
+app.footer.copyright=© 2026 My App Inc. Alle Rechte vorbehalten.
 
 # Navigation
 nav.home=Startseite
@@ -1609,7 +1609,7 @@ product.reviews=Bewertungen
 product.addReview=Bewertung schreiben
 
 # Order
-order.confirmation=BestellbestÃ¤tigung
+order.confirmation=Bestellbestätigung
 order.number=Bestellnummer
 order.date=Bestelldatum
 order.status=Bestellstatus
@@ -1626,7 +1626,7 @@ cart.checkout=Zur Kasse
 cart.continueShopping=Einkauf fortsetzen
 cart.remove=Entfernen
 cart.quantity=Menge
-cart.summary=WarenkorbÃ¼bersicht
+cart.summary=Warenkorbübersicht
 
 # User
 user.welcome=Willkommen, {0}
@@ -1749,12 +1749,12 @@ public class LocaleController {
     public List<Map<String, String>> getSupportedLocales() {
         return List.of(
                 Map.of("code", "en", "name", "English"),
-                Map.of("code", "fr", "name", "FranÃ§ais"),
+                Map.of("code", "fr", "name", "Français"),
                 Map.of("code", "de", "name", "Deutsch"),
-                Map.of("code", "es", "name", "EspaÃ±ol"),
-                Map.of("code", "ja", "name", "æ—¥æœ¬èªž"),
-                Map.of("code", "zh-CN", "name", "ä¸­æ–‡"),
-                Map.of("code", "pt-BR", "name", "PortuguÃªs (Brasil)")
+                Map.of("code", "es", "name", "Español"),
+                Map.of("code", "ja", "name", "日本語"),
+                Map.of("code", "zh-CN", "name", "中文"),
+                Map.of("code", "pt-BR", "name", "Português (Brasil)")
         );
     }
 }
@@ -1864,19 +1864,19 @@ NotBlank.orderRequest.customerName=Le nom du client est obligatoire
 NotBlank.orderRequest.email=L'adresse e-mail est obligatoire
 NotBlank.orderRequest.shippingAddress=L'adresse de livraison est obligatoire
 Email.orderRequest.email=Veuillez fournir une adresse e-mail valide
-Positive.orderRequest.totalAmount=Le montant total doit Ãªtre positif
-Size.orderRequest.customerName=Le nom doit contenir entre {2} et {1} caractÃ¨res
+Positive.orderRequest.totalAmount=Le montant total doit être positif
+Size.orderRequest.customerName=Le nom doit contenir entre {2} et {1} caractères
 Min.orderRequest.totalAmount=Le montant minimum est de {1}
 Max.orderRequest.totalAmount=Le montant maximum est de {1}
-Pattern.orderRequest.phone=Le numÃ©ro de tÃ©lÃ©phone doit correspondre au format {1}
+Pattern.orderRequest.phone=Le numéro de téléphone doit correspondre au format {1}
 
 # Global validation messages
 jakarta.validation.constraints.NotBlank.message={field} est obligatoire
-jakarta.validation.constraints.Email.message={field} doit Ãªtre un e-mail valide
-jakarta.validation.constraints.Positive.message={field} doit Ãªtre positif
-jakarta.validation.constraints.Size.message={field} doit contenir entre {min} et {max} caractÃ¨res
-jakarta.validation.constraints.Min.message={field} doit Ãªtre au moins {value}
-jakarta.validation.constraints.Max.message={field} doit Ãªtre au plus {value}
+jakarta.validation.constraints.Email.message={field} doit être un e-mail valide
+jakarta.validation.constraints.Positive.message={field} doit être positif
+jakarta.validation.constraints.Size.message={field} doit contenir entre {min} et {max} caractères
+jakarta.validation.constraints.Min.message={field} doit être au moins {value}
+jakarta.validation.constraints.Max.message={field} doit être au plus {value}
 jakarta.validation.constraints.NotNull.message={field} est obligatoire
 jakarta.validation.constraints.Pattern.message={field} a un format invalide
 ```
@@ -1965,7 +1965,7 @@ ValidDateRange.orderRequest=End date must be after start date
 French:
 
 ```properties
-ValidDateRange.orderRequest=La date de fin doit Ãªtre postÃ©rieure Ã  la date de dÃ©but
+ValidDateRange.orderRequest=La date de fin doit être postérieure à la date de début
 ```
 
 ### 1.12 Programmatic Message Resolution in REST Controllers
@@ -2334,7 +2334,7 @@ public class LoggingAspect {
             return result;
 
         } catch (Exception e) {
-            log.error("âœ— {}.{} failed: {}", className, methodName, e.getMessage(), e);
+            log.error("✗ {}.{} failed: {}", className, methodName, e.getMessage(), e);
             throw e;
         } finally {
             MDC.clear();

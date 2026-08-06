@@ -145,7 +145,7 @@ public class Post {
     private List<Comment> comments;
 }
 
-// âŒ Triggers N+1 queries:
+// ❌ Triggers N+1 queries:
 // SELECT p FROM Post p                          -- 1 query
 // for each post: SELECT c FROM Comment c WHERE c.post_id = ?  -- N queries
 List<Post> posts = em.createQuery("SELECT p FROM Post p", Post.class)
@@ -159,7 +159,7 @@ Solutions, from best to worst:
 
 **1. JOIN FETCH → one query with a join:**
 ```java
-// âœ… Single query with LEFT JOIN FETCH
+// ✅ Single query with LEFT JOIN FETCH
 TypedQuery<Post> q = em.createQuery(
     "SELECT p FROM Post p LEFT JOIN FETCH p.comments", Post.class);
 List<Post> posts = q.getResultList();
@@ -827,11 +827,11 @@ List<Post> findAllPostsWithComments();
 The critical difference: plain `JOIN` adds a WHERE/HAVING filter → it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
 
 ```java
-// âŒ Plain LEFT JOIN → comments are still lazy
+// ❌ Plain LEFT JOIN → comments are still lazy
 @Query("SELECT p FROM Post p LEFT JOIN p.comments c WHERE c.approved = true")
 List<Post> findApprovedCommentPosts(); // p.getComments() will still trigger lazy load!
 
-// âœ… JOIN FETCH → comments are loaded
+// ✅ JOIN FETCH → comments are loaded
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 ```
@@ -1821,8 +1821,8 @@ For updates, `order_updates=true` groups statements by entity type:
 ```java
 @Transactional
 public void bulkStatusUpdate(List<Long> ids, String newStatus) {
-    // âŒ Without batching: N separate UPDATEs (one per entity)
-    // âœ… With order_updates: batched UPDATE ... WHERE id IN (...)
+    // ❌ Without batching: N separate UPDATEs (one per entity)
+    // ✅ With order_updates: batched UPDATE ... WHERE id IN (...)
 
     for (Long id : ids) {
         User u = em.find(User.class, id);

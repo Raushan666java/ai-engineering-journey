@@ -108,7 +108,7 @@ li:nth-child(odd) { background: #f5f5f5; }
 
 /* pseudo-element → part-based */
 blockquote::first-letter { font-size: 3em; float: left; }
-.card::before { content: "â˜…"; color: gold; }
+.card::before { content: "★"; color: gold; }
 ```
 
 ### Q4: How does `:is()` and `:where()` affect specificity?
@@ -961,7 +961,7 @@ body {
 /* multiple transforms → applied right to left */
 .composed {
   transform: translateX(50px) rotate(45deg) scale(1.2);
-  /* 1. scale to 1.2x, 2. rotate 45Â°, 3. move 50px right */
+  /* 1. scale to 1.2x, 2. rotate 45°, 3. move 50px right */
 }
 
 /* individual transform properties (modern browsers) */

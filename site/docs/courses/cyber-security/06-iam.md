@@ -2751,7 +2751,7 @@ Set-Cookie: session=abc123;
 
 ### Password Security
 
-- [ ] bcrypt/argon2id with cost â‰¥ 12 / t=2,m=19456
+- [ ] bcrypt/argon2id with cost ≥ 12 / t=2,m=19456
 - [ ] Password policy: minimum 12 characters (not complexity rules)
 - [ ] Check passwords against breached password list (HaveIBeenPwned API)
 - [ ] No password hints, no security questions (use recovery codes/email reset)

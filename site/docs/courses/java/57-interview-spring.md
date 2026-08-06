@@ -5532,11 +5532,11 @@ Lowest priority:
 // === Relaxed binding examples ===
 /*
 Property source         Binds to @ConfigurationProperties(prefix="app.datasource")
-app.datasource.url      âœ“ kebab case
-app.datasource.url      âœ“ camel case (same)
-app.datasource.url      âœ“ underscore
-APP_DATASOURCE_URL       âœ“ uppercase (env variable)
-app.datasource.url      âœ“ lowercase
+app.datasource.url      ✓ kebab case
+app.datasource.url      ✓ camel case (same)
+app.datasource.url      ✓ underscore
+APP_DATASOURCE_URL       ✓ uppercase (env variable)
+app.datasource.url      ✓ lowercase
 */
 
 // === Using @Value ===

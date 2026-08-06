@@ -1272,7 +1272,7 @@ while True:
 | t=0 | `recv(fd, buf, 1024, 0)` | No data in recv buffer → **block thread** |
 | t=5 | (blocked) | Packet arrives; kernel copies to recv buffer |
 | t=5 | (woken up) | Copies data to user buf; returns n=100 |
-| t=5+Îµ | User processes data | → |
+| t=5+ε | User processes data | → |
 
 **Total wall time = 5s. Thread was parked for 5s.**
 
@@ -1281,7 +1281,7 @@ while True:
 | Time | Thread Action | Kernel Action |
 |------|--------------|---------------|
 | t=0 | `recv(fd, buf, 1024, 0)` | No data → returns -1, EAGAIN |
-| t=0+1Âµs | Do other work | → |
+| t=0+1µs | Do other work | → |
 | t=500ms | `recv(fd, buf, 1024, 0)` | Still no data → returns -1, EAGAIN |
 | t=1.0s | `recv(fd, buf, 1024, 0)` | Data arrived → returns n=100 |
 | t=1.001s | Process data | → |
@@ -1468,10 +1468,10 @@ Client sent 22 bytes
 
 ## 13.5 I/O Multiplexing: select, poll, epoll, kqueue
 
-### Real-World Analogy: The MaÃ®tre d'
+### Real-World Analogy: The Maître d'
 
 
-You're a maÃ®tre d' at a busy restaurant with 50 tables. Each table has a call button.
+You're a maître d' at a busy restaurant with 50 tables. Each table has a call button.
 
 - **No multiplexing (blocking)**: You stand at one table until they finish. The other 49 tables starve.
 - **Busy polling (non-blocking)**: You walk to each table every 2 seconds asking "Ready to order?" Waste of steps.
@@ -1507,7 +1507,7 @@ function select_echo_server(port):
     server_fd = socket() → bind() → listen()
     clients = []
     while true:
-        read_fds = {server_fd} âˆª clients
+        read_fds = {server_fd} ∪ clients
         nready = select(max_fd+1, &read_fds, NULL, NULL, NULL)
         if FD_ISSET(server_fd, read_fds):
             client_fd = accept(server_fd)
@@ -2284,7 +2284,7 @@ if __name__ == '__main__':
 | 5 | Data transfer | Kernel memcpy between process buffers |
 | 6 | `close()` | Removes socket inode |
 
-**Latency benchmark**: Unix domain sockets typically complete in 5-15Âµs per round-trip vs 30-60Âµs for TCP loopback.
+**Latency benchmark**: Unix domain sockets typically complete in 5-15µs per round-trip vs 30-60µs for TCP loopback.
 
 ### Edge Cases → Unix Domain Sockets
 
@@ -2658,8 +2658,8 @@ Speedup: ~1000x
 **Solution**: Event-driven architecture with epoll/kqueue + non-blocking I/O + small state per connection (~1KB). Modern servers (Nginx, HAProxy, Redis) handle 100k-1M concurrent connections.
 
 ```
-Thread-per-connection:  10,000 clients Ã— 8MB stack = 80GB  âœ—
-Event-driven epoll:     10,000 clients Ã— 1KB state = 10MB  âœ“
+Thread-per-connection:  10,000 clients × 8MB stack = 80GB  ✗
+Event-driven epoll:     10,000 clients × 1KB state = 10MB  ✓
 ```
 
 ### Q3: TIME_WAIT and SO_REUSEADDR
@@ -2667,7 +2667,7 @@ Event-driven epoll:     10,000 clients Ã— 1KB state = 10MB  âœ“
 
 **Why does TIME_WAIT exist?**
 
-TIME_WAIT (2 * MSL â‰ˆ 60 seconds) prevents two problems:
+TIME_WAIT (2 * MSL ≈ 60 seconds) prevents two problems:
 1. **Delayed segments**: A packet from a closed connection arriving at a new connection with the same IP:port.
 2. **Reliable FIN**: The final ACK might be lost; the server retransmits FIN, and TIME_WAIT ensures the client can ACK again.
 

@@ -106,7 +106,7 @@ $ridge = new Ridge(1.0); // alpha controls regularization strength
 **Answer:** Bias is the error from incorrect assumptions in the learning algorithm (underfitting). Variance is the error from sensitivity to small fluctuations in the training set (overfitting). The tradeoff: increasing bias reduces variance and vice versa. The goal is to find the sweet spot where total error is minimized.
 
 ```
-Total Error = BiasÂ² + Variance + Irreducible Error
+Total Error = Bias² + Variance + Irreducible Error
 
 High Bias → underfit, simple model (linear regression on non-linear data)
 High Variance → overfit, complex model (deep tree on small data)
@@ -133,7 +133,7 @@ $matrix = [
 
 ### Q5: Explain regression evaluation metrics.
 
-**Answer:** **MSE** (Mean Squared Error) penalizes large errors more heavily. **RMSE** (Root MSE) is in the same units as the target. **MAE** (Mean Absolute Error) is less sensitive to outliers. **RÂ²** (coefficient of determination) measures variance explained → 1.0 is perfect, 0.0 means no better than mean prediction.
+**Answer:** **MSE** (Mean Squared Error) penalizes large errors more heavily. **RMSE** (Root MSE) is in the same units as the target. **MAE** (Mean Absolute Error) is less sensitive to outliers. **R²** (coefficient of determination) measures variance explained → 1.0 is perfect, 0.0 means no better than mean prediction.
 
 ```php
 use Rubix\ML\CrossValidation\Metrics\RMSE;
@@ -202,7 +202,7 @@ $embedded = $tsne->fitTransform($dataset);
 
 ### Q11: What is gradient descent? Explain batch, stochastic, and mini-batch variants.
 
-**Answer:** Gradient descent iteratively adjusts model parameters to minimize the loss function by moving in the direction of the negative gradient. **Batch GD** uses the entire dataset per step → accurate but slow. **Stochastic GD** (SGD) uses one sample per step → fast but noisy convergence. **Mini-batch GD** uses a subset (e.g., 32â€“256 samples) → best of both worlds.
+**Answer:** Gradient descent iteratively adjusts model parameters to minimize the loss function by moving in the direction of the negative gradient. **Batch GD** uses the entire dataset per step → accurate but slow. **Stochastic GD** (SGD) uses one sample per step → fast but noisy convergence. **Mini-batch GD** uses a subset (e.g., 32–256 samples) → best of both worlds.
 
 ```php
 use Rubix\ML\NeuralNet\Optimizers\Adam;
@@ -250,8 +250,8 @@ $adaboost = new AdaBoost(new ClassificationTree(3), 50);
 **Answer:** Entropy measures impurity or uncertainty in a dataset. Information gain measures how much a feature reduces entropy. Decision trees split on the feature with the highest information gain at each node.
 
 ```php
-// Entropy = -Î£ p(i) * logâ‚‚(p(i))
-// For a 50/50 split: -(0.5*logâ‚‚(0.5) + 0.5*logâ‚‚(0.5)) = 1.0
+// Entropy = -Σ p(i) * log₂(p(i))
+// For a 50/50 split: -(0.5*log₂(0.5) + 0.5*log₂(0.5)) = 1.0
 // A pure node (all one class) has entropy = 0
 
 use Rubix\ML\Classifiers\ClassificationTree;
@@ -613,8 +613,8 @@ $pipeline = new Pipeline([
 ], $classifier);
 
 // Before TF-IDF: "the" appears 10 times in doc1
-// After TF-IDF:  "the" weight â‰ˆ 0.01 (appears in all docs)
-//                "quantum" weight â‰ˆ 0.85 (rare word, highly relevant)
+// After TF-IDF:  "the" weight ≈ 0.01 (appears in all docs)
+//                "quantum" weight ≈ 0.85 (rare word, highly relevant)
 ```
 
 ### Q34: How do you build a text classification pipeline in Rubix ML?
@@ -648,7 +648,7 @@ $result = $pipeline->predict([['Free money!!!']]); // 'spam'
 
 ### Q35: What are word embeddings and why are they better than bag-of-words?
 
-**Answer:** Embeddings map words to dense vectors (e.g., 300 dimensions) where similar words have similar vectors. Unlike bag-of-words (sparse, loses semantics), embeddings capture analogy: `king - man + woman â‰ˆ queen`. BoW is simple but loses context and order; embeddings capture semantic relationships. In Laravel, use external services (OpenAI, HuggingFace) for embeddings since PHP lacks native embedding models.
+**Answer:** Embeddings map words to dense vectors (e.g., 300 dimensions) where similar words have similar vectors. Unlike bag-of-words (sparse, loses semantics), embeddings capture analogy: `king - man + woman ≈ queen`. BoW is simple but loses context and order; embeddings capture semantic relationships. In Laravel, use external services (OpenAI, HuggingFace) for embeddings since PHP lacks native embedding models.
 
 ```php
 use Illuminate\Support\Facades\Http;
@@ -1009,7 +1009,7 @@ $ordinal = new OrdinalEncoder();
 
 ### Q51: How do you detect and handle outliers?
 
-**Answer:** Detection methods: Z-score (points beyond 3Ïƒ), IQR (below Q1-1.5*IQR or above Q3+1.5*IQR), Isolation Forest, or domain-specific rules. Handling: remove (if measurement error), cap/winsorize (clamp to percentile), or transform (log scale reduces outlier impact).
+**Answer:** Detection methods: Z-score (points beyond 3σ), IQR (below Q1-1.5*IQR or above Q3+1.5*IQR), Isolation Forest, or domain-specific rules. Handling: remove (if measurement error), cap/winsorize (clamp to percentile), or transform (log scale reduces outlier impact).
 
 ```php
 class OutlierDetector

@@ -1183,7 +1183,7 @@ The `java.util.concurrent` package provides collections designed for concurrent 
 
 `ConcurrentHashMap` is the go-to concurrent map. Key design points in Java 8+:
 
-- **Internal structure:** array of bins (Node&lt;K,V&gt;[]). Each bin is a linked list or tree (when bin depth â‰¥ 8).
+- **Internal structure:** array of bins (Node&lt;K,V&gt;[]). Each bin is a linked list or tree (when bin depth ≥ 8).
 - **Locking:** fine-grained → individual bins are locked using `synchronized` (Java 8+) rather than the entire map.
 - **Resize:** resizing is done concurrently by multiple threads (the "transfer" phase).
 - **Iteration:** weakly consistent → iterators reflect the state at creation but can tolerate concurrent modifications without throwing `ConcurrentModificationException`.

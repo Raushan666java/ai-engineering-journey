@@ -1,13 +1,13 @@
 ---
 id: 16-redis
 slug: /database-management-systems/16-redis
-title: "Chapter 16: Redis â†’ In-Memory Data Store"
-sidebar_label: "Chapter 16: Redis â†’ In-Memory Data Store"
+title: "Chapter 16: Redis → In-Memory Data Store"
+sidebar_label: "Chapter 16: Redis → In-Memory Data Store"
 sidebar_position: 16
 ---
-# Chapter 16: Redis â†’ In-Memory Data Store
+# Chapter 16: Redis → In-Memory Data Store
 
-> **Prev:** [Chapter 15 â†’ MongoDB](15-mongodb.md) | **Next:** [Chapter 17 â†’ Distributed DB](17-distributed-db.md)
+> **Prev:** [Chapter 15 → MongoDB](15-mongodb.md) | **Next:** [Chapter 17 → Distributed DB](17-distributed-db.md)
 
 ## Learning Objectives
 
@@ -42,7 +42,7 @@ sidebar_position: 16
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| **In-Memory Storage** | All data in RAM, disk for persistence only | Monitor memory usage â†’ Redis performance drops sharply when data exceeds RAM |
+| **In-Memory Storage** | All data in RAM, disk for persistence only | Monitor memory usage → Redis performance drops sharply when data exceeds RAM |
 | **Data Structures** | Strings, Lists, Sets, Hashes, Sorted Sets, Bitmaps, HLL, Geo, Streams | Choose the structure that matches your access pattern |
 | **Persistence** | RDB (snapshot) + AOF (append-only log) | Use both: RDB for recovery, AOF for durability |
 | **Pub/Sub** | Real-time message broadcasting to channels | Ideal for chat, notifications, and live updates; messages are fire-and-forget |
@@ -76,17 +76,17 @@ flowchart LR
 ### 16.1 Redis Overview
 
 
-**Analogy:** Redis is like a **mechanical keyboard** for data access. A mechanical keyboard registers every keystroke instantly with zero lag because the switch is directly under your finger â†’ no membrane layer to press through. Redis keeps every byte in RAM, so reads and writes complete in microseconds without waiting for spinning disks or SSD controllers. Just as a typist relies on that instant key registration for speed, every Redis operation fires directly from RAM with microsecond latency.
+**Analogy:** Redis is like a **mechanical keyboard** for data access. A mechanical keyboard registers every keystroke instantly with zero lag because the switch is directly under your finger → no membrane layer to press through. Redis keeps every byte in RAM, so reads and writes complete in microseconds without waiting for spinning disks or SSD controllers. Just as a typist relies on that instant key registration for speed, every Redis operation fires directly from RAM with microsecond latency.
 
 Redis (Remote Dictionary Server) is an **in-memory data structure store** used as a cache, message broker, and database. Created by Salvatore Sanfilippo in 2009. It processes over 100,000 operations per second on modest hardware.
 
 **Core Characteristics:**
 
 - **In-memory:** All data resides in RAM (microsecond latency). Disk is only for persistence.
-- **Single-threaded event loop:** All commands execute sequentially on one thread using an event-driven reactor pattern (like Node.js). This means every command is atomic â†’ no race conditions within a single instance.
+- **Single-threaded event loop:** All commands execute sequentially on one thread using an event-driven reactor pattern (like Node.js). This means every command is atomic → no race conditions within a single instance.
 - **Persistence optional:** RDB snapshots, AOF logs, hybrid mode, or purely ephemeral.
 - **Rich data types:** Strings, lists, sets, sorted sets, hashes, bitmaps, HyperLogLog, geospatial, streams.
-- **Client-server protocol:** RESP (REdis Serialization Protocol) â†’ simple, human-readable, binary-safe.
+- **Client-server protocol:** RESP (REdis Serialization Protocol) → simple, human-readable, binary-safe.
 - **Built-in replication, HA, and clustering:** Master-replica for read scaling, Sentinel for failover, Cluster for sharding.
 
 **When to use Redis:**
@@ -104,8 +104,8 @@ Redis (Remote Dictionary Server) is an **in-memory data structure store** used a
 
 - Primary data store for critical financial data (RDBMS provides stronger ACID guarantees)
 - Complex queries with joins, subqueries, or aggregations
-- Data larger than available RAM (in-memory limitation â†’ can lead to OOM or heavy eviction)
-- ACID transactions across multiple keys (limited rollback â†’ Redis transactions don't roll back on failure)
+- Data larger than available RAM (in-memory limitation → can lead to OOM or heavy eviction)
+- ACID transactions across multiple keys (limited rollback → Redis transactions don't roll back on failure)
 - Long-term archival storage (use a disk-based database)
 
 **How RESP Works:**
@@ -125,11 +125,11 @@ Simple string reply: "OK"
 | `\r\n` | CRLF delimiter |
 | `+OK` | Simple string reply |
 
-**Key Design Decision â†’ Why Single-Threaded?**
+**Key Design Decision → Why Single-Threaded?**
 
 | Aspect | Consequence |
 |--------|-------------|
-| No locks needed | Atomicity is free â†’ no mutex, no contention |
+| No locks needed | Atomicity is free → no mutex, no contention |
 | Predictable latency | No context-switch jitter from thread preemption |
 | Simple codebase | No concurrent data structure complexity |
 | CPU-bound operations slow everything | A slow O(n) command like KEYS * blocks all other commands |
@@ -149,12 +149,12 @@ Simple string reply: "OK"
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| SET key value | O(1) | Direct hash table insert â†’ key hashed to bucket, value stored |
-| GET key | O(1) | Direct hash table lookup â†’ no iteration needed |
+| SET key value | O(1) | Direct hash table insert → key hashed to bucket, value stored |
+| GET key | O(1) | Direct hash table lookup → no iteration needed |
 | DEL key | O(1) | Hash table delete and free value pointer |
 | EXISTS key | O(1) | Hash table membership check |
-| KEYS pattern | O(N) | Must iterate every key in the keyspace â†’ blocks event loop |
-| FLUSHALL | O(N) | Deletes every key â†’ O(N) in total keys; instantaneous in effect but blocking |
+| KEYS pattern | O(N) | Must iterate every key in the keyspace → blocks event loop |
+| FLUSHALL | O(N) | Deletes every key → O(N) in total keys; instantaneous in effect but blocking |
 
 **Edge Cases:**
 
@@ -171,17 +171,17 @@ Simple string reply: "OK"
 ### 16.2 Data Types and Commands
 
 
-**Analogy:** Think of Redis data types as a **Swiss Army knife** â†’ each tool is designed for a specific cut. A blade (string) does the common jobs, scissors (list) handle linear sequences, pliers (hash) grip multi-faceted objects, and the awl (sorted set) pierces with precision scoring. Using the wrong tool is like cutting rope with scissors â†’ it works, but slowly.
+**Analogy:** Think of Redis data types as a **Swiss Army knife** → each tool is designed for a specific cut. A blade (string) does the common jobs, scissors (list) handle linear sequences, pliers (hash) grip multi-faceted objects, and the awl (sorted set) pierces with precision scoring. Using the wrong tool is like cutting rope with scissors → it works, but slowly.
 
 Each type is a first-class data structure with specialized commands. Memcached only stores opaque byte blobs; Redis stores **typed** data that it can manipulate server-side.
 
 #### 16.2.1 Strings
 
-**Analogy:** Strings are like **sticky notes on a monitor** â†’ you write a short value, stick it somewhere memorable, and read it instantly. The value can be a number you increment (like a tally mark), a JSON blob (like a detailed note), or binary data (like a photo). They're the simplest and most versatile tool.
+**Analogy:** Strings are like **sticky notes on a monitor** → you write a short value, stick it somewhere memorable, and read it instantly. The value can be a number you increment (like a tally mark), a JSON blob (like a detailed note), or binary data (like a photo). They're the simplest and most versatile tool.
 
 The most basic Redis type. A value can be a string, number, binary data, or serialized JSON. Maximum value size: 512MB.
 
-**Numbered Steps â†’ String Operations:**
+**Numbered Steps → String Operations:**
 
 1. Client sends `SET user:1:name "Alice"` as RESP array to server
 2. Server receives command in event loop, parses key `user:1:name` and value `"Alice"`
@@ -190,7 +190,7 @@ The most basic Redis type. A value can be a string, number, binary data, or seri
 5. Returns `+OK` to client
 6. On `GET user:1:name`, Redis looks up key in dict, returns `$5\r\nAlice\r\n`
 
-**Pseudocode â†’ Core String Implementation:**
+**Pseudocode → Core String Implementation:**
 
 ```
 function SET(key, value):
@@ -216,13 +216,13 @@ function INCR(key):
     return dict[key]
 ```
 
-**Dry Run â†’ INCR Operations:**
+**Dry Run → INCR Operations:**
 
 | Step | Command | State (key: counter) | Result | Explanation |
 |------|---------|---------------------|--------|-------------|
 | 1 | `SET counter 100` | counter = "100" | OK | String value "100" stored |
 | 2 | `INCR counter` | counter = "101" | 101 | Parsed as integer, incremented, stored back |
-| 3 | `INCRBY counter 50` | counter = "151" | 151 | Atomic add of 50 â†’ no race possible |
+| 3 | `INCRBY counter 50` | counter = "151" | 151 | Atomic add of 50 → no race possible |
 | 4 | `DECR counter` | counter = "150" | 150 | Atomic decrement |
 | 5 | `GET counter` | counter = "150" | "150" | Returns string representation |
 | 6 | `INCR nonexistent` | nonexistent = "1" | 1 | Auto-creates key with value 0 before increment |
@@ -236,7 +236,7 @@ SET user:1:email "alice@example.com"       # OK
 GET user:1:name                            # "Alice"
 EXISTS user:1:name                         # (integer) 1
 EXISTS user:1:phone                        # (integer) 0
-DEL user:1:email                           # (integer) 1 â†’ returns count of deleted keys
+DEL user:1:email                           # (integer) 1 → returns count of deleted keys
 
 # Numeric operations
 SET counter 100                            # OK
@@ -244,14 +244,14 @@ INCR counter                               # 101
 INCRBY counter 50                          # 151
 DECR counter                               # 150
 DECRBY counter 10                          # 140
-INCRBYFLOAT price 15.99                    # 115.99 â†’ floating-point increment
+INCRBYFLOAT price 15.99                    # 115.99 → floating-point increment
 
 # Expiration (TTL)
 SET session:abc123 "user_data" EX 3600     # Expire in 1 hour
 SETEX session:abc123 3600 "user_data"      # Same as above, atomic
 TTL session:abc123                          # e.g., 3599 (seconds remaining)
 EXPIRE session:abc123 7200                  # Extend TTL to 2 hours
-PERSIST session:abc123                      # Remove TTL â†’ persists forever
+PERSIST session:abc123                      # Remove TTL → persists forever
 
 # Batch operations
 MSET user:1:name "Alice" user:1:email "alice@example.com"   # OK
@@ -263,15 +263,15 @@ SET user:1:email "new@example.com" XX       # Set only if key exists
 SET user:1:email "new@example.com" NX EX 3600  # If not exists, set with TTL
 
 # Get old value and set new
-GETSET user:1:name "Bob"                   # "Alice" â†’ returns old, sets new
+GETSET user:1:name "Bob"                   # "Alice" → returns old, sets new
 
 # Range operations (bit-level)
 SET mykey "hello"                          # OK
-GETRANGE mykey 0 2                         # "hel" â†’ substring
-STRLEN mykey                                # 5 â†’ string length
+GETRANGE mykey 0 2                         # "hel" → substring
+STRLEN mykey                                # 5 → string length
 
 # Append to string
-APPEND mykey " world"                      # 11 â†’ new length
+APPEND mykey " world"                      # 11 → new length
 GET mykey                                   # "hello world"
 ```
 
@@ -297,7 +297,7 @@ void stringOperations() {
 
         // Numeric operations (atomic)
         redis.set("counter", "100");
-        long val = redis.incr("counter");        // 101 â†’ atomic increment
+        long val = redis.incr("counter");        // 101 → atomic increment
         std::cout << "Counter: " << val << std::endl;
 
         val = redis.incrby("counter", 50);        // 151
@@ -353,14 +353,14 @@ name = r.get('user:1:name')       # 'Alice'
 exists = r.exists('user:1:name')  # 1 (True)
 r.delete('user:1:phone')          # 0 (key didn't exist)
 
-# Numeric operations (atomic â†’ no race conditions across processes)
+# Numeric operations (atomic → no race conditions across processes)
 r.set('counter', 100)
 val = r.incr('counter')           # 101
 val = r.incrby('counter', 50)     # 151
 val = r.decr('counter')           # 150
 val = r.incrbyfloat('price', 15.99)  # 115.99
 
-# TTL â†’ automatic expiration
+# TTL → automatic expiration
 r.set('session:abc123', 'user_data', ex=3600)  # Expires in 1 hour
 ttl = r.ttl('session:abc123')     # ~3599 seconds
 
@@ -384,7 +384,7 @@ substr = r.getrange('mykey', 0, 4)  # 'hello'
 |-----------|------------|-----|
 | SET | O(1) | Direct hash table insert; no iteration needed |
 | GET | O(1) | Direct hash table lookup by key |
-| INCR | O(1) | Parse string to int, increment, store â†’ all constant time |
+| INCR | O(1) | Parse string to int, increment, store → all constant time |
 | APPEND | O(1) amortized | String reallocation may copy data, but amortized O(1) |
 | STRLEN | O(1) | String length stored as metadata |
 | GETRANGE | O(N) for N chars | Must copy substring bytes |
@@ -396,7 +396,7 @@ substr = r.getrange('mykey', 0, 4)  # 'hello'
 |-----------|-------------|
 | Simplest data type with universal support | No field-level access within a value |
 | Supports numeric operations (INCR, INCRBY) | 512MB max value size |
-| Binary-safe â†’ can store images, serialized data | String encoding wastes space for numeric types |
+| Binary-safe → can store images, serialized data | String encoding wastes space for numeric types |
 | Built-in TTL expiry for automatic cleanup | Large strings block replication (10MB+ is dangerous) |
 | Batch operations (MSET/MGET) reduce RTT | No server-side sub-string manipulation (only getrange) |
 
@@ -405,35 +405,35 @@ substr = r.getrange('mykey', 0, 4)  # 'hello'
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
 | INCR on non-numeric string | Returns error: "ERR value is not an integer" | Validate value type before increment |
-| Key with TTL already expired | GET returns nil, key auto-deleted | Check return value â†’ never assume key exists |
+| Key with TTL already expired | GET returns nil, key auto-deleted | Check return value → never assume key exists |
 | Value exceeds 512MB | Returns error for string commands | Compress large data or chunk into multiple keys |
 | SET NX on existing key | Returns nil (not error) | Check return value before proceeding |
 | MGET with mixed existing/non-existing keys | Returns array with nil for missing keys | Handle nil values in application code |
-| INCR on key with TTL | Preserves TTL â†’ never clears it | Use SET with EX to reset TTL if needed |
+| INCR on key with TTL | Preserves TTL → never clears it | Use SET with EX to reset TTL if needed |
 
 #### 16.2.2 Lists
 
-**Analogy:** A Redis list is like a **conveyor belt in a warehouse** â†’ items arrive on the left (LPUSH), workers pick them off the right (RPOP) for processing. It's a perfect FIFO queue. You can also use it as a stack (LPUSH + LPOP = LIFO), or a timeline (LPUSH + LRANGE to show recent items). The linked-list implementation means millions of items barely slow down head/tail operations.
+**Analogy:** A Redis list is like a **conveyor belt in a warehouse** → items arrive on the left (LPUSH), workers pick them off the right (RPOP) for processing. It's a perfect FIFO queue. You can also use it as a stack (LPUSH + LPOP = LIFO), or a timeline (LPUSH + LRANGE to show recent items). The linked-list implementation means millions of items barely slow down head/tail operations.
 
-Ordered sequences of strings implemented as **linked lists** â†’ fast head/tail operations (O(1)), slow random access by index (O(N)). Maximum length: 2^32 - 1 (over 4 billion elements).
+Ordered sequences of strings implemented as **linked lists** → fast head/tail operations (O(1)), slow random access by index (O(N)). Maximum length: 2^32 - 1 (over 4 billion elements).
 
-**Numbered Steps â†’ List Queue Pattern (FIFO):**
+**Numbered Steps → List Queue Pattern (FIFO):**
 
-1. Producer calls `LPUSH queue:task "process_email"` â†’ item prepended to list head
+1. Producer calls `LPUSH queue:task "process_email"` → item prepended to list head
 2. Redis creates/updates key as list type; links new node at head
-3. Consumer calls `RPOP queue:task` â†’ item removed from tail
+3. Consumer calls `RPOP queue:task` → item removed from tail
 4. If list empties, consumer can use `BRPOP queue:task 0` to block indefinitely
 5. On blocking pop, Redis subscribes client to key notifications; when new LPUSH arrives, the waiting client is notified and given the element
-6. Multiple consumers can block on the same key â†’ each element goes to exactly one consumer
+6. Multiple consumers can block on the same key → each element goes to exactly one consumer
 
-**Pseudocode â†’ List Queue Implementation:**
+**Pseudocode → List Queue Implementation:**
 
 ```
 function LPUSH(key, value):
     if key not in dict:
         dict[key] = new LinkedList()
     list = dict[key]
-    list.prepend(value)              // O(1) â†’ link new head node
+    list.prepend(value)              // O(1) → link new head node
     notify_waiting_blocked_clients(key)
     return list.length
 
@@ -443,7 +443,7 @@ function RPOP(key):
     list = dict[key]
     if list is empty:
         return nil
-    value = list.removeTail()        // O(1) â†’ unlink tail node
+    value = list.removeTail()        // O(1) → unlink tail node
     return value
 
 function LRANGE(key, start, stop):
@@ -468,7 +468,7 @@ function BRPOP(key, timeout_ms):
         if value is not nil:
             return [key, value]
         if timeout_ms == 0:
-            // Block indefinitely â†’ subscribe to push notifications
+            // Block indefinitely → subscribe to push notifications
             wait_on_key_notifications(key)
         else if elapsed >= timeout_ms:
             return nil
@@ -476,9 +476,9 @@ function BRPOP(key, timeout_ms):
             wait_on_key_notifications(key, remaining_time)
 ```
 
-**Dry Run â†’ List Timeline (Recent Items):**
+**Dry Run → List Timeline (Recent Items):**
 
-| Step | Command | List State (left â†’ right) | Result | Explanation |
+| Step | Command | List State (left → right) | Result | Explanation |
 |------|---------|---------------------------|--------|-------------|
 | 1 | `LPUSH timeline:user1 "post:3"` | ["post:3"] | 1 | Head insert |
 | 2 | `LPUSH timeline:user1 "post:2"` | ["post:2", "post:3"] | 2 | Prepended to head |
@@ -494,12 +494,12 @@ function BRPOP(key, timeout_ms):
 RPUSH queue:tasks "task:1"           # 1
 RPUSH queue:tasks "task:2"           # 2
 RPUSH queue:tasks "task:3"           # 3
-LPOP queue:tasks                     # "task:1" â†’ oldest item first
+LPOP queue:tasks                     # "task:1" → oldest item first
 
 # Create a stack (LIFO: LPUSH + LPOP)
 LPUSH stack:actions "action:1"       # 1
 LPUSH stack:actions "action:2"       # 2
-LPOP stack:actions                   # "action:2" â†’ most recent first
+LPOP stack:actions                   # "action:2" → most recent first
 
 # Timeline (most recent first)
 LPUSH timeline:user:42 "post:301"    # 1
@@ -513,9 +513,9 @@ BLPOP queue:tasks 0                  # Wait indefinitely
 
 # Move element between lists (reliable queue)
 RPOPLPUSH queue:processing queue:backup "task:1"
-# Atomic: RPOP from source â†’ LPUSH to destination
+# Atomic: RPOP from source → LPUSH to destination
 
-# Blocking variant â†’ used for reliable queues
+# Blocking variant → used for reliable queues
 BRPOPLPUSH queue:processing queue:backup 30
 
 # Insert at position
@@ -617,8 +617,8 @@ time.sleep(5)  # Let consumers process
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| LPUSH / RPUSH | O(1) | Link new node at head or tail â†’ pointer assignment |
-| LPOP / RPOP | O(1) | Unlink head or tail node â†’ pointer reassignment |
+| LPUSH / RPUSH | O(1) | Link new node at head or tail → pointer assignment |
+| LPOP / RPOP | O(1) | Unlink head or tail node → pointer reassignment |
 | LINDEX | O(N) | Must traverse from head to index N |
 | LRANGE start stop | O(S + N) for start offset S + N elements | Must skip S nodes, then collect N |
 | LINSERT | O(N) | Traverse to pivot position, then link |
@@ -630,7 +630,7 @@ time.sleep(5)  # Let consumers process
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| O(1) head/tail operations â†’ ideal for queues/stacks | O(N) random access â†’ no indexed lookup |
+| O(1) head/tail operations → ideal for queues/stacks | O(N) random access → no indexed lookup |
 | Blocking pop (BRPOP/BLPOP) for consumer patterns | Linked list overhead per element (extra pointers) |
 | Atomic RPOPLPUSH for reliable queue processing | No built-in TTL per element (entire key expires) |
 | Can be used as timeline, queue, stack, or deque | No built-in deduplication (use Set for that) |
@@ -645,16 +645,16 @@ time.sleep(5)  # Let consumers process
 | LINDEX with negative index | Counts from tail (-1 is last element) | Document this behavior for team |
 | LSET on non-existent index | Returns error "ERR index out of range" | Validate list length first with LLEN |
 | Single element left after RPOP | Key is deleted from keyspace | Key disappears; EXISTS returns 0 |
-| LRANGE start exceeds list length | Returns empty array | No error â†’ safe to call |
+| LRANGE start exceeds list length | Returns empty array | No error → safe to call |
 | LTRIM removes all elements | Key is deleted (empty list removed) | EXISTS returns 0 after LTRIM 0 0 on single element |
 
 #### 16.2.3 Sets
 
-**Analogy:** Redis sets are like a **bouncer's clipboard at an exclusive club** â†’ each name is checked once (unique), membership is instant (SISMEMBER), and you can combine two clipboards to find the combined guest list (union), the mutual friends (intersection), or who's on one list but not the other (difference). No duplicates allowed â†’ the bouncer crosses out repeated names instantly.
+**Analogy:** Redis sets are like a **bouncer's clipboard at an exclusive club** → each name is checked once (unique), membership is instant (SISMEMBER), and you can combine two clipboards to find the combined guest list (union), the mutual friends (intersection), or who's on one list but not the other (difference). No duplicates allowed → the bouncer crosses out repeated names instantly.
 
 Unordered collections of unique strings. Implemented as hash tables (or integer-sets for small integer-only sets). Maximum membership: 2^32 - 1 elements per set.
 
-**Numbered Steps â†’ Set Intersection (Mutual Friends):**
+**Numbered Steps → Set Intersection (Mutual Friends):**
 
 1. Pre-populate `SADD group:friends:alice "bob" "carol" "dave"`
 2. Pre-populate `SADD group:friends:bob "alice" "carol" "eve"`
@@ -662,9 +662,9 @@ Unordered collections of unique strings. Implemented as hash tables (or integer-
 4. Redis picks the smaller set as the iteration base (optimization)
 5. For each member in the smaller set, Redis checks membership in the larger set (O(1) per check)
 6. Collects matching members and returns them
-7. Result: `"carol"` â†’ the mutual friend
+7. Result: `"carol"` → the mutual friend
 
-**Pseudocode â†’ Set Intersection:**
+**Pseudocode → Set Intersection:**
 
 ```
 function SINTER(key1, key2, ...):
@@ -694,12 +694,12 @@ function SADD(key, member):
     return 0                        // Already existed
 ```
 
-**Dry Run â†’ Set Operations (Social Graph):**
+**Dry Run → Set Operations (Social Graph):**
 
 | Step | Command | Set State (alice) | Set State (bob) | Result | Explanation |
 |------|---------|-------------------|------------------|--------|-------------|
-| 1 | `SADD friends:alice "bob"` | {bob} | â†’ | 1 | Added |
-| 2 | `SADD friends:alice "carol"` | {bob, carol} | â†’ | 1 | Added |
+| 1 | `SADD friends:alice "bob"` | {bob} | → | 1 | Added |
+| 2 | `SADD friends:alice "carol"` | {bob, carol} | → | 1 | Added |
 | 3 | `SADD friends:bob "alice"` | {bob, carol} | {alice} | 1 | Added |
 | 4 | `SADD friends:bob "carol"` | {bob, carol} | {alice, carol} | 1 | Added |
 | 5 | `SINTER friends:alice friends:bob` | unchanged | unchanged | {"carol"} | Mutual friend |
@@ -720,9 +720,9 @@ SISMEMBER user:1:interests "swimming"                              # 0
 
 # Get all members
 SMEMBERS user:1:interests                                          # all members (unordered)
-SCARD user:1:interests                                             # 3 â†’ cardinality
+SCARD user:1:interests                                             # 3 → cardinality
 
-# Set operations â†’ social features
+# Set operations → social features
 SADD group:devs "alice" "bob" "carol"                              # 3
 SADD group:managers "carol" "dave"                                 # 2
 
@@ -736,7 +736,7 @@ SINTER group:devs group:managers                                   # "carol"
 SDIFF group:devs group:managers                                    # "alice", "bob"
 
 # Store results in a new set
-SINTERSTORE group:dev_managers group:devs group:managers           # 1 â†’ creates new set
+SINTERSTORE group:dev_managers group:devs group:managers           # 1 → creates new set
 SUNIONSTORE group:all_employees group:devs group:managers          # 4
 
 # Random member (for sampling)
@@ -747,7 +747,7 @@ SPOP user:1:interests 1                                            # Remove and 
 SMOVE group:devs group:managers "carol"                            # Move carol to managers
 ```
 
-**C++ Implementation (Set â†’ Social Graph):**
+**C++ Implementation (Set → Social Graph):**
 
 ```cpp
 #include <sw/redis++/redis++.h>
@@ -775,7 +775,7 @@ void setOperations() {
     redis.sadd("group:devs", devs.begin(), devs.end());
     redis.sadd("group:managers", managers.begin(), managers.end());
 
-    // Intersection â†’ mutual members
+    // Intersection → mutual members
     std::vector<std::string> mutual;
     redis.sinter({"group:devs", "group:managers"}, std::back_inserter(mutual));
     for (const auto& m : mutual) {
@@ -792,7 +792,7 @@ void setOperations() {
 }
 ```
 
-**Python Implementation (Set â†’ Tags and Filtering):**
+**Python Implementation (Set → Tags and Filtering):**
 
 ```python
 import redis
@@ -807,11 +807,11 @@ r.sadd('article:99:tags', 'redis', 'nosql', 'performance')
 redis_articles = r.smembers('article:42:tags')
 print(f"Article 42 tags: {redis_articles}")
 
-# Tag intersection â†’ find common tags
+# Tag intersection → find common tags
 common = r.sinter('article:42:tags', 'article:99:tags')
 print(f"Common tags: {common}")  # {'redis'}
 
-# Tag union â†’ all unique tags across articles
+# Tag union → all unique tags across articles
 all_tags = r.sunion('article:42:tags', 'article:99:tags')
 print(f"All tags: {all_tags}")
 
@@ -827,7 +827,7 @@ print(f"Articles with redis AND nosql: {both}")  # {'99'}
 # Random sampling
 sample = r.srandmember('article:42:tags', 2)  # 2 random tags
 
-# Spop â†’ remove and return (useful for job assignment)
+# Spop → remove and return (useful for job assignment)
 task = r.spop('queue:pending')
 ```
 
@@ -835,22 +835,22 @@ task = r.spop('queue:pending')
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| SADD | O(1) | Hash table insert â†’ direct bucket insertion |
-| SREM | O(1) | Hash table delete â†’ direct bucket removal |
-| SISMEMBER | O(1) | Hash table lookup â†’ constant time |
+| SADD | O(1) | Hash table insert → direct bucket insertion |
+| SREM | O(1) | Hash table delete → direct bucket removal |
+| SISMEMBER | O(1) | Hash table lookup → constant time |
 | SCARD | O(1) | Set cardinality stored as metadata counter |
 | SMEMBERS | O(N) | Must iterate and return all N elements |
 | SINTER | O(N * M) | N = smallest set size, M = number of sets |
-| SUNION | O(N) | Sum of all set sizes â†’ iterate and deduplicate |
-| SDIFF | O(N) | Size of first set â†’ iterate and check exclusion |
+| SUNION | O(N) | Sum of all set sizes → iterate and deduplicate |
+| SDIFF | O(N) | Size of first set → iterate and check exclusion |
 | SRANDMEMBER | O(1) | Random index into hash table (with compact encoding) |
 
 **A&D Table:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| O(1) membership check â†’ instant existence test | Unordered â†’ no ranking or ordering within set |
-| Built-in set algebra (union, intersect, diff) | No duplicate tracking â†’ duplicates silently ignored |
+| O(1) membership check → instant existence test | Unordered → no ranking or ordering within set |
+| Built-in set algebra (union, intersect, diff) | No duplicate tracking → duplicates silently ignored |
 | Automatic deduplication | SMEMBERS on large sets can block Redis (O(N)) |
 | Scalable to millions of elements | Higher memory overhead than List per element |
 | SPOP for fair random selection | No TTL per element (entire key expires) |
@@ -860,23 +860,23 @@ task = r.spop('queue:pending')
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
 | SADD of existing member | Returns 0 (not error) | Check return value to know if added |
-| SREM of non-existing member | Returns 0 | No error â†’ idempotent operation |
+| SREM of non-existing member | Returns 0 | No error → idempotent operation |
 | SINTER with empty set | Returns empty array | Handle empty results gracefully |
 | SMEMBERS on set with millions | Blocks Redis for seconds | Use SSCAN for cursor-based iteration |
-| Set with all integer members | Automatically encoded as intset (memory efficient) | No action needed â†’ Redis handles encoding |
+| Set with all integer members | Automatically encoded as intset (memory efficient) | No action needed → Redis handles encoding |
 | Last member removed by SREM | Key is deleted from keyspace | EXISTS returns 0 automatically |
 #### 16.2.4 Sorted Sets
 
-**Analogy:** A sorted set is like a **gaming leaderboard at an arcade** â†’ each player has a high score (the "score"), and the machine displays them in perfect order. When a player beats their score, the board updates instantly, sliding them up or down without reshuffling every entry. Ties are broken by insertion order (earliest first). You can query the top 10, check your rank, or ask "who's in the 1000-2000 score range?" â†’ all in logarithmic time.
+**Analogy:** A sorted set is like a **gaming leaderboard at an arcade** → each player has a high score (the "score"), and the machine displays them in perfect order. When a player beats their score, the board updates instantly, sliding them up or down without reshuffling every entry. Ties are broken by insertion order (earliest first). You can query the top 10, check your rank, or ask "who's in the 1000-2000 score range?" → all in logarithmic time.
 
 Sets with a score for each member. Ordered by score (ascending). Implemented using a **skip list + hash table** dual structure. Indispensable for leaderboards, rate limiters, and time-series queries.
 
-**Numbered Steps â†’ Sorted Set Leaderboard Update:**
+**Numbered Steps → Sorted Set Leaderboard Update:**
 
-1. `ZADD leaderboard:week1 1500 "alice"` â†’ Redis looks up key in dict
+1. `ZADD leaderboard:week1 1500 "alice"` → Redis looks up key in dict
 2. If key exists as sorted set, inserts member `"alice"` with score `1500`
 3. Insert into skip list: O(log N) find position, O(1) link node
-4. Insert into hash table: O(1) map member â†’ score for direct lookups
+4. Insert into hash table: O(1) map member → score for direct lookups
 5. On `ZINCRBY leaderboard:week1 300 "alice"`:
    - Hash table lookup finds current score: 1500 (O(1))
    - Remove from skip list (O(log N))
@@ -887,7 +887,7 @@ Sets with a score for each member. Ordered by score (ascending). Implemented usi
    - Traverse skip list from tail (highest score), collect 3 members
    - O(log N) to find start position + O(M) for M elements returned
 
-**Pseudocode â†’ Sorted Set Implementation:**
+**Pseudocode → Sorted Set Implementation:**
 
 ```
 function ZADD(key, score, member):
@@ -925,9 +925,9 @@ function ZREVRANGE(key, start, stop, WITHSCORES?):
     return result
 ```
 
-**Dry Run â†’ Sorted Set Leaderboard:**
+**Dry Run → Sorted Set Leaderboard:**
 
-| Step | Command | State (member â†’ score) | Rank Order (lowâ†’high) | Result | Explanation |
+| Step | Command | State (member → score) | Rank Order (low→high) | Result | Explanation |
 |------|---------|----------------------|----------------------|--------|-------------|
 | 1 | `ZADD lb 1500 "alice"` | alice=1500 | [(alice,1500)] | 1 | Inserted |
 | 2 | `ZADD lb 2200 "bob"` | alice=1500, bob=2200 | [(alice,1500),(bob,2200)] | 1 | Bob at end (higher score) |
@@ -935,7 +935,7 @@ function ZREVRANGE(key, start, stop, WITHSCORES?):
 | 4 | `ZADD lb 950 "dave"` | +dave=950 | [(dave,950),(alice,1500),(carol,1800),(bob,2200)] | 1 | Dave at lowest |
 | 5 | `ZRANK lb "alice"` | unchanged | unchanged | 2 | 0-indexed rank: 2nd from bottom |
 | 6 | `ZREVRANK lb "alice"` | unchanged | unchanged | 1 | 2nd from top (0-indexed) |
-| 7 | `ZINCRBY lb 300 "alice"` | alice=1500â†’1800 | [(dave,950),(carol,1800),(alice,1800),(bob,2200)] | "1800" | Alice ties carol at 1800; alice after carol (insertion order) |
+| 7 | `ZINCRBY lb 300 "alice"` | alice=1500→1800 | [(dave,950),(carol,1800),(alice,1800),(bob,2200)] | "1800" | Alice ties carol at 1800; alice after carol (insertion order) |
 | 8 | `ZREVRANGE lb 0 1` | unchanged | unchanged | [bob, alice/carol] | Top 2 |
 | 9 | `ZSCORE lb "alice"` | unchanged | unchanged | "1800" | Direct score lookup |
 
@@ -962,13 +962,13 @@ ZREVRANGE leaderboard:week1 0 2 WITHSCORES                    # Top 3 with score
 ZRANGE leaderboard:week1 0 -1 WITHSCORES                      # All members ascending
 
 # Score updates
-ZINCRBY leaderboard:week1 300 "alice"                          # "1800" â†’ atomic increment
+ZINCRBY leaderboard:week1 300 "alice"                          # "1800" → atomic increment
 ZADD leaderboard:week1 2500 "alice"                            # Direct score update to 2500
 
 # Score-based queries
 ZSCORE leaderboard:week1 "alice"                               # "1800"
 ZRANGEBYSCORE leaderboard:week1 1500 2000 WITHSCORES           # Members with 1500 <= score <= 2000
-ZCOUNT leaderboard:week1 1000 2000                             # 2 â†’ count in score range
+ZCOUNT leaderboard:week1 1000 2000                             # 2 → count in score range
 
 # Remove
 ZREM leaderboard:week1 "dave"                                  # 1
@@ -978,18 +978,18 @@ ZREMRANGEBYSCORE leaderboard:week1 0 1000                      # Remove scores <
 # Lexicographical operations (same score)
 ZADD lex:set 0 "apple" 0 "banana" 0 "cherry"                   # All score 0
 ZRANGEBYLEX lex:set "[banana" "[cherry"                        # Lex range: banana, cherry
-ZLEXCOUNT lex:set "-" "+"                                      # 3 â†’ all members
+ZLEXCOUNT lex:set "-" "+"                                      # 3 → all members
 ZREMRANGEBYLEX lex:set "[a" "[c"                               # Remove members lexicographically
 
 # Intersection / Union (weighted)
 ZINTERSTORE dest 2 zset1 zset2 WEIGHTS 1 2 AGGREGATE SUM       # Weighted intersection
 ZUNIONSTORE dest 2 zset1 zset2 AGGREGATE MAX                    # Union with max score
 
-# Blocking pop â†’ BZPOPMIN / BZPOPMAX (Redis 6.2+)
+# Blocking pop → BZPOPMIN / BZPOPMAX (Redis 6.2+)
 BZPOPMIN leaderboard:week1 30                                  # Pop lowest with score
 ```
 
-**C++ Implementation (Sorted Set â†’ Leaderboard):**
+**C++ Implementation (Sorted Set → Leaderboard):**
 
 ```cpp
 #include <sw/redis++/redis++.h>
@@ -1049,7 +1049,7 @@ void leaderboard() {
 }
 ```
 
-**Python Implementation (Sorted Set â†’ Rate Limiter with Sliding Window):**
+**Python Implementation (Sorted Set → Rate Limiter with Sliding Window):**
 
 ```python
 import redis
@@ -1082,7 +1082,7 @@ class SlidingWindowRateLimiter:
         # Set TTL for automatic cleanup
         pipe.expire(key, self.window)
 
-        # Execute pipeline â†’ returns list of results
+        # Execute pipeline → returns list of results
         _, count, _, _ = pipe.execute()
 
         return count <= self.max_reqs   # Allow if under limit
@@ -1102,9 +1102,9 @@ for i in range(10):
 | Operation | Complexity | Why |
 |-----------|------------|-----|
 | ZADD | O(log N) | Skip list insertion at sorted position (log N level traversal) |
-| ZRANK | O(log N) | Skip list rank query â†’ traverse levels summing span |
+| ZRANK | O(log N) | Skip list rank query → traverse levels summing span |
 | ZREVRANK | O(log N) | Same as ZRANK, traversing from tail |
-| ZSCORE | O(1) | Hash table lookup â†’ direct member â†’ score map |
+| ZSCORE | O(1) | Hash table lookup → direct member → score map |
 | ZRANGE by index | O(log N + M) | Skip to start (log N) then traverse M elements |
 | ZRANGEBYSCORE | O(log N + M) | Find first score in range (log N), traverse M |
 | ZINCRBY | O(log N) | Remove (log N) + re-insert (log N) |
@@ -1117,8 +1117,8 @@ for i in range(10):
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Dual structure: O(1) score lookup + O(log N) ordered access | Higher memory overhead (skip list levels + hash table) |
-| Built-in ranking and range queries | Score is a single 64-bit double â†’ precision limits for large integers |
-| Atomic score increment (ZINCRBY) â†’ no race conditions | Members with equal scores ordered lexicographically |
+| Built-in ranking and range queries | Score is a single 64-bit double → precision limits for large integers |
+| Atomic score increment (ZINCRBY) → no race conditions | Members with equal scores ordered lexicographically |
 | Weighted union/intersection for aggregated scores | Limited to 2^32 members (practically infinite) |
 | Lexicographical operations on same-score members | Complex implementation (~2,000 lines of C in redis/src/t_zset.c) |
 
@@ -1130,26 +1130,26 @@ for i in range(10):
 | ZSCORE for non-existing member | Returns nil | Always check return value |
 | Score equals NaN or infinity | Returns error | Validate scores before insertion |
 | Multiple members same score | Ordered lexicographically | Use lex commands (ZRANGEBYLEX) for deterministic ordering |
-| ZREVRANGE start > length | Returns empty array | Safe â†’ no error thrown |
-| ZINCRBY on non-existing member | Creates member with score = increment amount | Auto-creates â†’ may not be desired |
+| ZREVRANGE start > length | Returns empty array | Safe → no error thrown |
+| ZINCRBY on non-existing member | Creates member with score = increment amount | Auto-creates → may not be desired |
 | Elements with scores near double precision limit | Precision loss possible for very large integers | Use two sorted sets or string-encoded scores |
 
 #### 16.2.5 Hashes
 
-**Analogy:** A Redis hash is like a **file folder with labeled tabs** â†’ the folder is the key (user:1001), each tab is a field (name, email, age), and behind each tab is a specific value. Unlike a string that stores a whole JSON blob, a hash lets you read or write a single field without touching the others. It's the difference between pulling one document from a filing cabinet (hash) vs photocopying the entire drawer (string).
+**Analogy:** A Redis hash is like a **file folder with labeled tabs** → the folder is the key (user:1001), each tab is a field (name, email, age), and behind each tab is a specific value. Unlike a string that stores a whole JSON blob, a hash lets you read or write a single field without touching the others. It's the difference between pulling one document from a filing cabinet (hash) vs photocopying the entire drawer (string).
 
 Maps of field-value pairs. Ideal for representing objects with multiple attributes. Memory-efficient for small objects (uses ziplist encoding internally).
 
-**Numbered Steps â†’ Hash Object Operations:**
+**Numbered Steps → Hash Object Operations:**
 
-1. `HSET user:1001 name "Alice Chen"` â†’ creates hash key if not exists
-2. Redis checks encoding: small hash â†’ ziplist (memory efficient), large â†’ hash table
+1. `HSET user:1001 name "Alice Chen"` → creates hash key if not exists
+2. Redis checks encoding: small hash → ziplist (memory efficient), large → hash table
 3. Inserts field "name" with value "Alice Chen" into internal structure
-4. `HGET user:1001 name` â†’ direct field lookup, returns value
-5. `HGETALL user:1001` â†’ iterate all field-value pairs
-6. `HINCRBY user:1001 login_count 1` â†’ atomic field increment (like INCR for hash fields)
+4. `HGET user:1001 name` → direct field lookup, returns value
+5. `HGETALL user:1001` → iterate all field-value pairs
+6. `HINCRBY user:1001 login_count 1` → atomic field increment (like INCR for hash fields)
 
-**Pseudocode â†’ Hash Operations:**
+**Pseudocode → Hash Operations:**
 
 ```
 function HSET(key, field, value):
@@ -1183,9 +1183,9 @@ function HINCRBY(key, field, increment):
     return val
 ```
 
-**Dry Run â†’ Hash User Profile:**
+**Dry Run → Hash User Profile:**
 
-| Step | Command | Hash State (field â†’ value) | Result | Explanation |
+| Step | Command | Hash State (field → value) | Result | Explanation |
 |------|---------|---------------------------|--------|-------------|
 | 1 | `HSET user:1001 name "Alice"` | name="Alice" | 1 | New field |
 | 2 | `HSET user:1001 email "a@x.com"` | +email="a@x.com" | 1 | New field |
@@ -1208,7 +1208,7 @@ HMSET user:1002 name "Bob Smith" email "bob@example.com" age 35  # OK
 
 # Get fields
 HGET user:1001 name                                       # "Alice Chen"
-HGET user:1001 age                                        # (nil) â†’ not set
+HGET user:1001 age                                        # (nil) → not set
 
 # Get all fields and values
 HGETALL user:1001                                         # name, email, age
@@ -1240,11 +1240,11 @@ HDEL user:1001 age                                        # 1
 HSETNX user:1001 phone "555-0100"                         # 1 (set)
 HSETNX user:1001 phone "555-0200"                         # 0 (already exists)
 
-# Incremental fetch â†’ HSCAN (non-blocking)
+# Incremental fetch → HSCAN (non-blocking)
 HSCAN user:1001 0 COUNT 100                               # Cursor-based iteration
 ```
 
-**C++ Implementation (Hash â†’ Session Store):**
+**C++ Implementation (Hash → Session Store):**
 
 ```cpp
 #include <sw/redis++/redis++.h>
@@ -1294,7 +1294,7 @@ void hashSessionExample() {
 }
 ```
 
-**Python Implementation (Hash â†’ User Profile):**
+**Python Implementation (Hash → User Profile):**
 
 ```python
 import redis
@@ -1349,21 +1349,21 @@ while cursor != 0:
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| HSET | O(1) | Hash table insert â†’ direct bucket placement |
+| HSET | O(1) | Hash table insert → direct bucket placement |
 | HGET | O(1) | Hash table lookup by field |
 | HDEL | O(1) | Hash table delete by field |
 | HGETALL | O(N) | Must iterate all N field-value pairs |
 | HKEYS / HVALS | O(N) | Must iterate all fields |
 | HLEN | O(1) | Field count stored as metadata |
 | HEXISTS | O(1) | Hash table membership check |
-| HINCRBY | O(1) | Parse, add, store â†’ all constant time |
+| HINCRBY | O(1) | Parse, add, store → all constant time |
 | HSCAN | O(1) per cursor step | Incremental, non-blocking iteration |
 
 **A&D Table:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Field-level access â†’ no need to read/write entire object | Cannot set TTL on individual fields (entire key expires) |
+| Field-level access → no need to read/write entire object | Cannot set TTL on individual fields (entire key expires) |
 | Memory efficient for small objects (ziplist encoding) | HGETALL on large hash blocks Redis (O(N)) |
 | Atomic field operations (HINCRBY for counters) | No nested structures (cannot have hash-of-hashes) |
 | Avoids key explosion (user:1001:name, etc.) | Fixed field order not guaranteed after modification |
@@ -1381,7 +1381,7 @@ while cursor != 0:
 
 #### 16.2.6 Bitmaps
 
-**Analogy:** A bitmap is like a **parking lot occupancy board** â†’ each parking spot is either occupied (1) or empty (0). You can ask "is spot #42 occupied?" (GETBIT), count all occupied spots (BITCOUNT), or find empty spots between rows (BITOP). At 1 bit per entry, a million users' daily activity fits in just 122 KB.
+**Analogy:** A bitmap is like a **parking lot occupancy board** → each parking spot is either occupied (1) or empty (0). You can ask "is spot #42 occupied?" (GETBIT), count all occupied spots (BITCOUNT), or find empty spots between rows (BITOP). At 1 bit per entry, a million users' daily activity fits in just 122 KB.
 
 **Commands with Sample Data:**
 
@@ -1389,8 +1389,8 @@ while cursor != 0:
 # Track user active status for January 2026 (key: user:active:202601)
 SETBIT user:active:202601 42 1           # User 42 active on day index 42
 SETBIT user:active:202601 100 1          # User 100 active
-GETBIT user:active:202601 42             # 1 â†’ user 42 was active
-GETBIT user:active:202601 999            # 0 â†’ user 999 wasn't
+GETBIT user:active:202601 42             # 1 → user 42 was active
+GETBIT user:active:202601 999            # 0 → user 999 wasn't
 
 # Count active users
 BITCOUNT user:active:202601              # e.g., 2
@@ -1401,30 +1401,30 @@ SETBIT dau:2026-01-01 200 1              # User 200 active Jan 1
 SETBIT dau:2026-01-02 100 1              # User 100 active Jan 2
 SETBIT dau:2026-01-02 300 1              # User 300 active Jan 2
 
-# Union â†’ users active on either day
+# Union → users active on either day
 BITOP OR dau:week1 dau:2026-01-01 dau:2026-01-02
-BITCOUNT dau:week1                        # 3 â†’ users 100, 200, 300
+BITCOUNT dau:week1                        # 3 → users 100, 200, 300
 
-# Intersection â†’ users active on both days
+# Intersection → users active on both days
 BITOP AND dau:both dau:2026-01-01 dau:2026-01-02
-BITCOUNT dau:both                         # 1 â†’ user 100
+BITCOUNT dau:both                         # 1 → user 100
 
 # Find first set bit
 BITPOS user:active:202601 1               # Position of first active user
 ```
 
-**Complexity:** O(1) for GETBIT/SETBIT (byte-aligned). O(N) for BITCOUNT/BITOP (N = bytes processed). BITCOUNT uses Hamming weight (popcount) hardware instructions on modern CPUs â†’ extremely fast.
+**Complexity:** O(1) for GETBIT/SETBIT (byte-aligned). O(N) for BITCOUNT/BITOP (N = bytes processed). BITCOUNT uses Hamming weight (popcount) hardware instructions on modern CPUs → extremely fast.
 
 #### 16.2.7 HyperLogLog
 
-**Analogy:** HyperLogLog is like **estimating the crowd at a concert** without counting every person â†’ you look at the number of unique birthday months in the first 100 people (if you see Jan, Feb, Mar... then Dec, you have probably ~365+ people). HLL uses clever probability theory to estimate cardinality using ~12KB of memory, regardless of whether you've seen 1,000 or 1 billion unique items.
+**Analogy:** HyperLogLog is like **estimating the crowd at a concert** without counting every person → you look at the number of unique birthday months in the first 100 people (if you see Jan, Feb, Mar... then Dec, you have probably ~365+ people). HLL uses clever probability theory to estimate cardinality using ~12KB of memory, regardless of whether you've seen 1,000 or 1 billion unique items.
 
 **Commands with Sample Data:**
 
 ```bash
 # Track unique visitors per day
 PFADD daily:visitors:2026-01-01 "ip:192.168.1.1" "ip:192.168.1.2" "ip:10.0.0.1"
-PFADD daily:visitors:2026-01-01 "ip:192.168.1.1"                    # Duplicate â†’ not counted
+PFADD daily:visitors:2026-01-01 "ip:192.168.1.1"                    # Duplicate → not counted
 PFCOUNT daily:visitors:2026-01-01                                    # ~3 (actual count)
 
 # Merge multiple days
@@ -1441,7 +1441,7 @@ PFCOUNT week1                                                         # ~6 (uniq
 
 #### 16.2.8 Geospatial
 
-**Analogy:** Geo indices are like a **GPS-enabled friend-finder app** â†’ you can register your location (GEOADD), ask "who's within 5km?" (GEORADIUS), or "how far is Alice from Bob?" (GEODIST). Internally, Redis encodes lat/lon pairs as a 52-bit Geohash stored in a sorted set.
+**Analogy:** Geo indices are like a **GPS-enabled friend-finder app** → you can register your location (GEOADD), ask "who's within 5km?" (GEORADIUS), or "how far is Alice from Bob?" (GEODIST). Internally, Redis encodes lat/lon pairs as a 52-bit Geohash stored in a sorted set.
 
 **Commands with Sample Data:**
 
@@ -1476,21 +1476,21 @@ GEOHASH locations "Palermo"                         # "sqc8b49rny0"
 
 #### 16.2.9 Streams
 
-**Analogy:** Streams are like an **airport black box flight recorder** â†’ every event is logged sequentially with a timestamp (the entry ID), you can replay from any point, and multiple analysts (consumer groups) can independently read the same log without interfering. Unlike Pub/Sub (think: radio broadcast â†’ if you tune in late, you missed it), streams persist messages until explicitly trimmed.
+**Analogy:** Streams are like an **airport black box flight recorder** → every event is logged sequentially with a timestamp (the entry ID), you can replay from any point, and multiple analysts (consumer groups) can independently read the same log without interfering. Unlike Pub/Sub (think: radio broadcast → if you tune in late, you missed it), streams persist messages until explicitly trimmed.
 
 Append-only log data structure (added in Redis 5.0). Each entry has a unique auto-generated ID (`timestamp-sequence`) and field-value pairs. Supports consumer groups for work distribution across multiple consumers.
 
-**Numbered Steps â†’ Stream Consumer Group Processing:**
+**Numbered Steps → Stream Consumer Group Processing:**
 
-1. `XADD sensor:temp * sensor_id "s1" temperature 22.5` â†’ server generates ID `1735689600000-0`
+1. `XADD sensor:temp * sensor_id "s1" temperature 22.5` → server generates ID `1735689600000-0`
 2. Entry appended to radix tree at the key `sensor:temp`
-3. `XGROUP CREATE sensor:temp group1 $` â†’ creates consumer group, $ means "new entries only"
-4. `XREADGROUP GROUP group1 consumer1 COUNT 1 STREAMS sensor:temp >` â†’ ">" means "give me entries I haven't read"
-5. Redis tracks pending entries per consumer (PEL â†’ Pending Entry List)
+3. `XGROUP CREATE sensor:temp group1 $` → creates consumer group, $ means "new entries only"
+4. `XREADGROUP GROUP group1 consumer1 COUNT 1 STREAMS sensor:temp >` → ">" means "give me entries I haven't read"
+5. Redis tracks pending entries per consumer (PEL → Pending Entry List)
 6. Consumer processes message and calls `XACK sensor:temp group1 <entry-id>` to acknowledge
-7. Unacknowledged entries remain in PEL â†’ other consumers can claim them via `XAUTOCLAIM`
+7. Unacknowledged entries remain in PEL → other consumers can claim them via `XAUTOCLAIM`
 
-**Pseudocode â†’ Stream Consumer Group:**
+**Pseudocode → Stream Consumer Group:**
 
 ```
 function XADD(key, id, field1, value1, ...):
@@ -1520,18 +1520,18 @@ function XREADGROUP(group, consumer, streams, timeout):
         ...
 ```
 
-**Dry Run â†’ Stream Consumer Group:**
+**Dry Run → Stream Consumer Group:**
 
 | Step | Command | Stream State | PEL (pending) | Explanation |
 |------|---------|-------------|---------------|-------------|
-| 1 | `XADD events * type "login"` | ID: 1735689600000-0 | â†’ | Entry added |
-| 2 | `XADD events * type "purchase"` | ID: 1735689600001-0 | â†’ | 2nd entry |
-| 3 | `XADD events * type "logout"` | ID: 1735689600002-0 | â†’ | 3rd entry |
-| 4 | `XGROUP CREATE events grp1 $` | â†’ | â†’ | Group created, starts after last entry |
-| 5 | `XADD events * type "search"` | ID: 1735689600003-0 | â†’ | New entry (readable by group) |
-| 6 | `XREADGROUP GROUP grp1 c1 COUNT 2 STREAMS events >` | â†’ | {0003-0: c1} | c1 gets 2 pending entries |
-| 7 | `XACK events grp1 1735689600003-0` | â†’ | {0004-0: c1} | First entry acknowledged |
-| 8 | `XREADGROUP GROUP grp1 c1 STREAMS events >` | â†’ | {0004-0: c1} | No more new entries |
+| 1 | `XADD events * type "login"` | ID: 1735689600000-0 | → | Entry added |
+| 2 | `XADD events * type "purchase"` | ID: 1735689600001-0 | → | 2nd entry |
+| 3 | `XADD events * type "logout"` | ID: 1735689600002-0 | → | 3rd entry |
+| 4 | `XGROUP CREATE events grp1 $` | → | → | Group created, starts after last entry |
+| 5 | `XADD events * type "search"` | ID: 1735689600003-0 | → | New entry (readable by group) |
+| 6 | `XREADGROUP GROUP grp1 c1 COUNT 2 STREAMS events >` | → | {0003-0: c1} | c1 gets 2 pending entries |
+| 7 | `XACK events grp1 1735689600003-0` | → | {0004-0: c1} | First entry acknowledged |
+| 8 | `XREADGROUP GROUP grp1 c1 STREAMS events >` | → | {0004-0: c1} | No more new entries |
 | 9 | `XADD events * type "click"` | ID: 1735689600005-0 | {0004-0: c1, 0005-0: c1} | Auto-assigned to c1 |
 
 **Stream Commands with Sample Data:**
@@ -1563,7 +1563,7 @@ XACK sensor:temp temp_group 1735689600000-0
 # Check pending entries
 XPENDING sensor:temp temp_group                   # Summary of pending per consumer
 
-# Autoclaim â†’ handle crashed consumers (after 60 seconds)
+# Autoclaim → handle crashed consumers (after 60 seconds)
 XAUTOCLAIM sensor:temp temp_group consumer1 60000 0-0
 
 # Stream length & trimming
@@ -1575,7 +1575,7 @@ XINFO GROUPS sensor:temp                          # List consumer groups
 XINFO CONSUMERS sensor:temp temp_group             # List consumers in group
 ```
 
-**C++ Implementation (Stream â†’ Producer/Consumer):**
+**C++ Implementation (Stream → Producer/Consumer):**
 
 ```cpp
 #include <sw/redis++/redis++.h>
@@ -1603,7 +1603,7 @@ void consumer(Redis& redis, const std::string& name) {
         redis.xgroup_create("orders", "order_workers", "$",
                             XgroupCreateOptions::MKSTREAM);
     } catch (const Error&) {
-        // Group already exists â†’ ignore
+        // Group already exists → ignore
     }
 
     while (true) {
@@ -1622,7 +1622,7 @@ void consumer(Redis& redis, const std::string& name) {
 }
 ```
 
-**Python Implementation (Stream â†’ Event Processing):**
+**Python Implementation (Stream → Event Processing):**
 
 ```python
 import redis
@@ -1668,7 +1668,7 @@ def process_orders(consumer_name):
                     print(f"{consumer_name} processing {fields['order_id']}")
                     time.sleep(0.3)  # Simulate work
 
-                    # Acknowledge â†’ remove from pending list
+                    # Acknowledge → remove from pending list
                     r.xack(STREAM, GROUP, entry_id)
 
                     # Optional: store processing result
@@ -1721,16 +1721,16 @@ time.sleep(10)  # Let consumers process
 ### 16.3 Persistence
 
 
-**Analogy:** Redis persistence is like a **journal and a photograph** of your desk. The AOF (journal) records every single action you take â†’ "picked up pen," "wrote note," "moved paper" â†’ so you can replay everything exactly. The RDB (photograph) takes a picture of the current state â†’ fast to load, but any changes after the photo are lost. The hybrid mode is like taking a photo and then keeping a small journal of changes since the photo: best of both.
+**Analogy:** Redis persistence is like a **journal and a photograph** of your desk. The AOF (journal) records every single action you take → "picked up pen," "wrote note," "moved paper" → so you can replay everything exactly. The RDB (photograph) takes a picture of the current state → fast to load, but any changes after the photo are lost. The hybrid mode is like taking a photo and then keeping a small journal of changes since the photo: best of both.
 
 #### 16.3.1 RDB (Redis Database File)
 
 Point-in-time snapshots. Redis forks a child process that writes the entire dataset to disk.
 
-**Numbered Steps â†’ RDB Save:**
+**Numbered Steps → RDB Save:**
 
 1. Client issues `SAVE` (sync) or `BGSAVE` (async), or a `save` config condition triggers
-2. On `BGSAVE`, parent process forks via `fork()` â†’ creates a child process
+2. On `BGSAVE`, parent process forks via `fork()` → creates a child process
 3. Child process inherits parent's memory pages (copy-on-write)
 4. While child writes RDB file, parent continues serving requests
 5. Parent's COW: if parent modifies a page, OS copies the page before writing (parent writes to copy, child writes original to RDB)
@@ -1738,7 +1738,7 @@ Point-in-time snapshots. Redis forks a child process that writes the entire data
 7. After complete, child atomically renames temp to `dump.rdb`
 8. Child signals parent and exits
 
-**Pseudocode â†’ RDB Save:**
+**Pseudocode → RDB Save:**
 
 ```
 function BGSAVE():
@@ -1757,7 +1757,7 @@ function BGSAVE():
         return OK
 
 function SAVE():
-    // Blocking â†’ no fork needed
+    // Blocking → no fork needed
     for each database:
         for each key, value in database:
             write_key_value("dump.rdb", key, value, expiry)
@@ -1780,19 +1780,19 @@ rdbchecksum yes        # CRC64 checksum for integrity
 stop-writes-on-bgsave-error yes  # Reject writes if BGSAVE fails
 ```
 
-**Dry Run â†’ COW Memory During BGSAVE:**
+**Dry Run → COW Memory During BGSAVE:**
 
 | Step | Time | Process | Action | RSS (Memory) |
 |------|------|---------|--------|-------------|
 | 1 | T0 | Parent | Running normally with 4GB data | 4.0 GB |
 | 2 | T1 | Parent | BGSAVE called, fork() | 4.0 GB (shared) |
 | 3 | T1 | Child | Starts writing RDB, reading shared pages | ~0 MB (shared pages) |
-| 4 | T2 | Parent | Modifies a key â†’ page fault, OS copies page | 4.0 GB + 4KB per modified page |
-| 5 | T3 | Parent | Continue accepting writes | Grows by modified pages Ãƒâ€” 4KB |
+| 4 | T2 | Parent | Modifies a key → page fault, OS copies page | 4.0 GB + 4KB per modified page |
+| 5 | T3 | Parent | Continue accepting writes | Grows by modified pages × 4KB |
 | 6 | T4 | Child | Finishes writing RDB | Child exits, pages freed |
 | 7 | T5 | Parent | COW pages reclaimed | Back to ~4.0 GB |
 
-**Python â†’ Manual RDB Save with Monitoring:**
+**Python → Manual RDB Save with Monitoring:**
 
 ```python
 import redis
@@ -1807,7 +1807,7 @@ info = r.info('persistence')
 print(f"RDB last save: {info['rdb_last_save_time']}")
 print(f"RDB status: {'saving' if info['rdb_bgsave_in_progress'] else 'idle'}")
 
-# Or trigger sync save (blocking â†’ do not use in production)
+# Or trigger sync save (blocking → do not use in production)
 # r.save()
 
 # Configure save conditions
@@ -1827,7 +1827,7 @@ r.config_set('save', '900 1 300 10 60 10000')
 
 Logs every write operation. Redis rewrites the AOF periodically to compact it.
 
-**Numbered Steps â†’ AOF Rewrite:**
+**Numbered Steps → AOF Rewrite:**
 
 1. `BGREWRITEAOF` called (manual or auto-triggered)
 2. Parent forks child process
@@ -1836,7 +1836,7 @@ Logs every write operation. Redis rewrites the AOF periodically to compact it.
 5. When child finishes, parent appends buffered commands to new AOF
 6. Parent atomically swaps new AOF for old one
 
-**Pseudocode â†’ AOF Logging:**
+**Pseudocode → AOF Logging:**
 
 ```
 function log_to_aof(command, args):
@@ -1872,7 +1872,7 @@ auto-aof-rewrite-min-size 64mb    # Minimum size for rewrite
 aof-load-truncated yes            # Load truncated AOF (for crash recovery)
 ```
 
-**Dry Run â†’ AOF Contents:**
+**Dry Run → AOF Contents:**
 
 ```
 # After SET user:1 "Alice":
@@ -1885,7 +1885,7 @@ aof-load-truncated yes            # Load truncated AOF (for crash recovery)
 *4\r\n$4\r\nHSET\r\n$9\r\nuser:1001\r\n$4\r\nname\r\n$3\r\nBob\r\n
 ```
 
-**Python â†’ AOF Configuration:**
+**Python → AOF Configuration:**
 
 ```python
 import redis
@@ -1904,13 +1904,13 @@ print(f"AOF current size: {info['aof_current_size']} bytes")
 print(f"AOF base size: {info['aof_base_size']} bytes")
 ```
 
-#### 16.3.3 Hybrid Persistence (RDB + AOF â†’ Redis 6.2+)
+#### 16.3.3 Hybrid Persistence (RDB + AOF → Redis 6.2+)
 
-**Numbered Steps â†’ Hybrid Persistence Load:**
+**Numbered Steps → Hybrid Persistence Load:**
 
 1. On startup, Redis checks for AOF file (if `appendonly yes`)
 2. AOF file begins with RDB format header (hybrid mode)
-3. Redis loads the RDB portion â†’ fast bulk load of all data
+3. Redis loads the RDB portion → fast bulk load of all data
 4. Then replays the incremental AOF commands after the RDB portion
 5. Result: fast load (RDB) + full durability (AOF)
 
@@ -1923,7 +1923,7 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 **AOF+RDB hybrid file structure:**
 ```
 [RDB preamble: full dataset snapshot]
-[INCR user:1:counter ...]          â† incremental commands after snapshot
+[INCR user:1:counter ...]          ← incremental commands after snapshot
 [SET user:2:name "Bob" ...]
 [...more AOF entries...]
 ```
@@ -1934,7 +1934,7 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 |--------|-----|-----|-------------------|
 | **Data loss window** | Last N minutes (configurable) | ~1 second (everysec) / 0 (always) | ~1 second (everysec) |
 | **File size** | Compact (~30-50% of dataset) | Larger (command replay) | Medium (compact + commands) |
-| **Load speed** | Fast â†’ single file load | Slow â†’ replay all commands | Medium â†’ RDB load + command replay |
+| **Load speed** | Fast → single file load | Slow → replay all commands | Medium → RDB load + command replay |
 | **Impact on writes** | Minimal (fork + COW) | Moderate (append + fsync) | Similar to AOF |
 | **Human readable** | No (binary) | Yes (RESP protocol) | Partial (RDB binary + AOF text) |
 | **Backup strategy** | Copy dump.rdb | Copy .aof (may be large) | Copy file |
@@ -1947,23 +1947,23 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 
 | Use Case | Persistence Choice |
 |----------|-------------------|
-| **Cache only** (no persistence) | None â†’ max performance |
-| **Session store** with restart tolerance | RDB â†’ fast restart |
-| **Message queue** (no message loss) | AOF everysec â†’ minimal data loss |
+| **Cache only** (no persistence) | None → max performance |
+| **Session store** with restart tolerance | RDB → fast restart |
+| **Message queue** (no message loss) | AOF everysec → minimal data loss |
 | **Database + cache** | Hybrid (RDB+AOF) |
-| **Analytics / time series** | RDB â†’ periodic snapshots |
-| **Financial / critical data** | AOF always â†’ zero data loss (at performance cost) |
+| **Analytics / time series** | RDB → periodic snapshots |
+| **Financial / critical data** | AOF always → zero data loss (at performance cost) |
 
 **Edge Cases:**
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
-| BGSAVE fails (disk full) | `stop-writes-on-bgsave-error yes` â†’ writes rejected | Monitor disk space; disable in cache-only mode |
+| BGSAVE fails (disk full) | `stop-writes-on-bgsave-error yes` → writes rejected | Monitor disk space; disable in cache-only mode |
 | Fork fails (OOM) | BGSAVE returns error; no snapshot taken | Set `vm.overcommit_memory=1` in sysctl |
-| AOF file truncated (crash) | `aof-load-truncated yes` â†’ loads partially | Enable; set to no for strict environments |
-| AOF rewrite fails mid-way | New temp file deleted; old AOF preserved | No data loss â†’ retry on next trigger |
+| AOF file truncated (crash) | `aof-load-truncated yes` → loads partially | Enable; set to no for strict environments |
+| AOF rewrite fails mid-way | New temp file deleted; old AOF preserved | No data loss → retry on next trigger |
 | Large key (>10MB) in COW | Every write to that key copies 10MB during BGSAVE | Avoid giant keys; split into chunks |
-| Multiple BGSAVE/AOF rewrites | Serialized â†’ second call returns error | Check `info persistence` before triggering |
+| Multiple BGSAVE/AOF rewrites | Serialized → second call returns error | Check `info persistence` before triggering |
 
 > **One-Sentence Takeaway:** RDB provides fast point-in-time snapshots; AOF provides durability with second-level granularity; hybrid mode (Redis 6.2+) offers fast recovery and minimal data loss.
 
@@ -1972,11 +1972,11 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 
 **Analogy:** Redis replication is like **a professor writing on a whiteboard while students copy into their notebooks**. The professor (master) writes everything. Each student (replica) maintains their own notebook (copy of data). If the professor leaves (master goes down), the class can have one student step up and continue (failover). Students can raise their hands and ask questions (read requests), but only the professor can make changes (write requests).
 
-**Numbered Steps â†’ Replication Handshake:**
+**Numbered Steps → Replication Handshake:**
 
 1. Replica sends `REPLICAOF master_host master_port` 
 2. Master and replica: TCP connection established (non-blocking)
-3. Master: `PSYNC ? -1` â†’ replica asks for full sync (no partial sync state)
+3. Master: `PSYNC ? -1` → replica asks for full sync (no partial sync state)
 4. Master: starts background save (BGSAVE) to generate RDB
 5. Master: buffers all write commands during BGSAVE in replication buffer
 6. Master: sends RDB file to replica over socket
@@ -1986,7 +1986,7 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 10. Steady state: master sends live commands as RESP (replication stream)
 11. Master: sends periodic `PING` every 10s to check replica liveness
 
-**Pseudocode â†’ Replication Stream (Steady State):**
+**Pseudocode → Replication Stream (Steady State):**
 
 ```
 // On every write command to master:
@@ -2027,11 +2027,11 @@ min-replicas-to-write 1          # Require at least 1 replica connected
 min-replicas-max-lag 10          # Max replica lag (seconds)
 ```
 
-**Dry Run â†’ Replication Synchronization:**
+**Dry Run → Replication Synchronization:**
 
 | Time | Master | Replica | Explanation |
 |------|--------|---------|-------------|
-| T0 | Running, data=4GB | Empty, connects | â†’ |
+| T0 | Running, data=4GB | Empty, connects | → |
 | T1 | BGSAVE starts | Waiting | Fork + COW begins |
 | T2 | Writes continue (buffered) | Waiting | Buffer accumulates |
 | T3 | BGSAVE done, RDB ready | Waiting | ~15 seconds for 4GB on SSD |
@@ -2040,7 +2040,7 @@ min-replicas-max-lag 10          # Max replica lag (seconds)
 | T6 | Steady state: streams commands | Replays in real-time | Lag &lt; 1 second |
 | T7 | PING every 10s | Responds PONG | Health check |
 
-**C++ â†’ Minimal Replication Check:**
+**C++ → Minimal Replication Check:**
 
 ```cpp
 #include <sw/redis++/redis++.h>
@@ -2068,7 +2068,7 @@ void checkReplication() {
 }
 ```
 
-**Python â†’ Replication Monitoring:**
+**Python → Replication Monitoring:**
 
 ```python
 import redis
@@ -2118,25 +2118,25 @@ if replica_info['role'] == 'slave':
 
 > **One-Sentence Takeaway:** Replication provides read scaling by maintaining one or more read-only copies of the data, with automatic reconnection and partial resync.
 
-### 16.5 Redis Sentinel â†’ High Availability
+### 16.5 Redis Sentinel → High Availability
 
 
 **Analogy:** Sentinel is like a **building's emergency generator system with automatic switchover**. Multiple backup generators (3 Sentinels) monitor the main power (master Redis). If the main power fails, the generators automatically detect the outage, decide among themselves which takes over (quorum), and switch on a backup generator (promote a replica to master). The building's tenants (clients) barely notice the flicker.
 
-**Numbered Steps â†’ Sentinel Failover:**
+**Numbered Steps → Sentinel Failover:**
 
 1. Sentinel checks master health every `sentinel down-after-milliseconds` (default 30s)
 2. If master doesn't respond, Sentinel marks it as **subjectively down** (S-DOWN)
 3. Sentinel queries other Sentinels: "Do you also see master as down?"
-4. If Ã¢â€°Â¥ `quorum` Sentinels agree, master marked **objectively down** (O-DOWN)
+4. If ≥ `quorum` Sentinels agree, master marked **objectively down** (O-DOWN)
 5. Sentinel leader election: Sentinels use Raft consensus to elect a leader to orchestrate failover
 6. Leader Sentinel selects best replica as new master (highest replication offset, lowest run ID)
-7. Leader sends `SLAVEOF NO ONE` to the chosen replica â†’ it becomes master
+7. Leader sends `SLAVEOF NO ONE` to the chosen replica → it becomes master
 8. Leader reconfigures other replicas to follow new master
 9. If old master reconnects, it's configured as replica of new master
 10. Clients receive notifications via Pub/Sub on `+switch-master` channel
 
-**Pseudocode â†’ Sentinel Leader Election (Raft-like):**
+**Pseudocode → Sentinel Leader Election (Raft-like):**
 
 ```
 function failover_if_needed(master_name):
@@ -2162,7 +2162,7 @@ function select_best_replica(master_name):
     return replicas[0]
 ```
 
-**Dry Run â†’ Sentinel Failover:**
+**Dry Run → Sentinel Failover:**
 
 | Time | Master M1 | Replica R1 | Replica R2 | Sentinel S1 | Sentinels S2,S3 |
 |------|-----------|------------|------------|-------------|-----------------|
@@ -2187,7 +2187,7 @@ sentinel notification-script mymaster /path/to/notify.sh  # Alert on failover
 sentinel client-reconfig-script mymaster /path/to/reconfig.sh  # Update client configs
 ```
 
-**Python â†’ Sentinel Client with Auto-Failover:**
+**Python → Sentinel Client with Auto-Failover:**
 
 ```python
 from redis.sentinel import Sentinel
@@ -2206,7 +2206,7 @@ master = sentinel.master_for('mymaster', socket_timeout=0.1,
 replica = sentinel.slave_for('mymaster', socket_timeout=0.1,
                               password='strongpassword')
 
-# Normal operations â†’ auto-failover handled by Sentinel
+# Normal operations → auto-failover handled by Sentinel
 master.set('foo', 'bar')          # Writes to current master
 result = replica.get('foo')       # Reads from replica (may be stale)
 
@@ -2221,7 +2221,7 @@ for message in pubsub.listen():
         # +switch-master mymaster 10.0.0.1 6379 10.0.0.2 6379
 ```
 
-**C++ â†’ Sentinel Client:**
+**C++ → Sentinel Client:**
 
 ```cpp
 #include <sw/redis++/redis++.h>
@@ -2264,27 +2264,27 @@ int main() {
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
 | Split-brain | Two masters may briefly exist | Sentinel eventually demotes old master |
-| Quorum not reached | No failover â†’ all replicas stale | Deploy odd number of Sentinels (3, 5, 7) |
+| Quorum not reached | No failover → all replicas stale | Deploy odd number of Sentinels (3, 5, 7) |
 | Old master rejoins after promotion | Becomes replica of new master | Auto-handled by Sentinel |
-| All Sentinels lose master simultaneously | No O-DOWN â†’ no failover | Impossible with proper quorum |
-| Failover during heavy write load | Data loss â†’ unsynced writes on old master | Use WAIT command for synchronous replication |
-### 16.6 Redis Cluster â†’ Automatic Sharding
+| All Sentinels lose master simultaneously | No O-DOWN → no failover | Impossible with proper quorum |
+| Failover during heavy write load | Data loss → unsynced writes on old master | Use WAIT command for synchronous replication |
+### 16.6 Redis Cluster → Automatic Sharding
 
 
-**Analogy:** A Redis Cluster is like a **warehouse with multiple shelves labeled A-Z** â†’ you don't search every shelf for an item; the manifest tells you which shelf holds which items. Each shelf (node) holds a range of letters (hash slots). Adding a shelf means redistributing labels â†’ you can expand without rebuilding the warehouse. If one shelf collapses, its backup shelf takes over while you fix it.
+**Analogy:** A Redis Cluster is like a **warehouse with multiple shelves labeled A-Z** → you don't search every shelf for an item; the manifest tells you which shelf holds which items. Each shelf (node) holds a range of letters (hash slots). Adding a shelf means redistributing labels → you can expand without rebuilding the warehouse. If one shelf collapses, its backup shelf takes over while you fix it.
 
 Automatic sharding across multiple Redis nodes. Uses a **hash slot** scheme: 16384 slots total, each key hashed to a slot via CRC16 modulo 16384.
 
-**Numbered Steps â†’ Cluster Key Lookup:**
+**Numbered Steps → Cluster Key Lookup:**
 
-1. Client computes CRC16(`user:1001`) & 16383 â†’ slot 1234
-2. Client's cluster client knows slot â†’ node mapping
+1. Client computes CRC16(`user:1001`) & 16383 → slot 1234
+2. Client's cluster client knows slot → node mapping
 3. Client sends command directly to the correct node (smart client)
 4. If client sends to wrong node: node returns `-MOVED 1234 10.0.0.1:6379`
 5. Smart client updates its slot map and redirects to correct node
 6. `-ASK` redirection: slot is being migrated (temporary redirect)
 
-**Pseudocode â†’ Cluster Key Routing:**
+**Pseudocode → Cluster Key Routing:**
 
 ```
 function get_slot(key):
@@ -2298,7 +2298,7 @@ function send_command(key, command, args):
     node = slot_table[slot]
     response = send_to_node(node, command, args)
     if response.type == "MOVED":
-        // Permanent slot migration â†’ update table
+        // Permanent slot migration → update table
         slot_table[slot] = response.node
         return send_to_node(response.node, command, args)
     if response.type == "ASK":
@@ -2323,18 +2323,18 @@ appendonly yes
 #   --cluster-replicas 1
 ```
 
-**Dry Run â†’ Cluster Slot Redirection:**
+**Dry Run → Cluster Slot Redirection:**
 
 | Step | Client | Node 1 (slots 0-5460) | Node 2 (slots 5461-10922) | Node 3 (slots 10923-16383) |
 |------|--------|----------------------|--------------------------|---------------------------|
-| 1 | Computes slot for `user:1001` | slot 8964 (node 2) | â†’ | â†’ |
-| 2 | Sends GET `user:1001` | Wrong node! | Correct node | â†’ |
-| 3 | | Returns `-MOVED 8964 10.0.0.2:6379` | â†’ | â†’ |
-| 4 | Updates slot map, resends | â†’ | Returns "Alice" | â†’ |
-| 5 | Re-sharding: slot 8964 moves to node 3 | â†’ | Returns `-ASK 8964 10.0.0.3:6379` | Ready to receive |
-| 6 | Sends ASKING, then GET | â†’ | â†’ | Returns "Alice" |
+| 1 | Computes slot for `user:1001` | slot 8964 (node 2) | → | → |
+| 2 | Sends GET `user:1001` | Wrong node! | Correct node | → |
+| 3 | | Returns `-MOVED 8964 10.0.0.2:6379` | → | → |
+| 4 | Updates slot map, resends | → | Returns "Alice" | → |
+| 5 | Re-sharding: slot 8964 moves to node 3 | → | Returns `-ASK 8964 10.0.0.3:6379` | Ready to receive |
+| 6 | Sends ASKING, then GET | → | → | Returns "Alice" |
 
-**Python â†’ Cluster Client:**
+**Python → Cluster Client:**
 
 ```python
 from redis.cluster import RedisCluster
@@ -2344,12 +2344,12 @@ rc = RedisCluster(host='10.0.0.1', port=6379,
                   password='strongpassword',
                   decode_responses=True)
 
-# Normal operations â†’ client handles routing
+# Normal operations → client handles routing
 rc.set('user:1001:name', 'Alice')
 rc.set('user:2001:name', 'Bob')
 name = rc.get('user:1001:name')
 
-# Pipeline in cluster â†’ keys must be in same slot (use hash tags)
+# Pipeline in cluster → keys must be in same slot (use hash tags)
 pipe = rc.pipeline()
 pipe.set('{user:1001}:name', 'Alice')
 pipe.set('{user:1001}:email', 'alice@example.com')
@@ -2386,12 +2386,12 @@ for node in rc.get_nodes():
 | Replica promotion | ~5-15s | Detection + election + promotion |
 | Gossip messages | O(N) per node per heartbeat | Each node talks to random subset each second |
 
-**A&D Table â†’ Sentinel vs Cluster:**
+**A&D Table → Sentinel vs Cluster:**
 
 | Aspect | Sentinel | Cluster |
 |--------|----------|---------|
 | Purpose | High availability | High availability + horizontal scaling |
-| Data sharding | No â†’ all nodes have full data | Yes â†’ 16384 hash slots across nodes |
+| Data sharding | No → all nodes have full data | Yes → 16384 hash slots across nodes |
 | Max dataset | Limited by single node RAM | Sum of all node RAM (scales linearly) |
 | Write throughput | Limited to single master CPU | Scales with number of master nodes |
 | Multi-key operations | Any keys | Same slot only (use hash tags) |
@@ -2410,7 +2410,7 @@ for node in rc.get_nodes():
 | Resharding in progress | Latency spikes; ASKING redirects | Perform during low traffic |
 | Node failure | Cluster unavailable if replica missing | Always have 1+ replica per master |
 | Network partition | Minority partition stops accepting writes | cluster-require-full-coverage may be "yes" |
-| Large dataset reshard | Slow â†’ one key at a time | Use Redis Enterprise for live resharding |
+| Large dataset reshard | Slow → one key at a time | Use Redis Enterprise for live resharding |
 | Cluster down (majority lost) | All operations fail | Ensure odd number of nodes across failure domains |
 
 > **One-Sentence Takeaway:** Redis Cluster provides automatic sharding across multiple nodes with master-replica replication and failure tolerance for datasets exceeding a single machine's RAM.
@@ -2418,17 +2418,17 @@ for node in rc.get_nodes():
 ### 16.7 Pub/Sub
 
 
-**Analogy:** Redis Pub/Sub is like a **radio station** â†’ the DJ (publisher) broadcasts music on a frequency (channel), and anyone with a radio tuned to that frequency (subscriber) hears the broadcast in real-time. If you tune in late, you miss what was played. There's no recording, no replay, no guarantee you heard everything. It's perfect for live events, not for important announcements.
+**Analogy:** Redis Pub/Sub is like a **radio station** → the DJ (publisher) broadcasts music on a frequency (channel), and anyone with a radio tuned to that frequency (subscriber) hears the broadcast in real-time. If you tune in late, you miss what was played. There's no recording, no replay, no guarantee you heard everything. It's perfect for live events, not for important announcements.
 
-**Numbered Steps â†’ Pub/Sub Messaging:**
+**Numbered Steps → Pub/Sub Messaging:**
 
-1. Subscriber: `SUBSCRIBE news:sports` â†’ joins the channel
+1. Subscriber: `SUBSCRIBE news:sports` → joins the channel
 2. Redis adds subscriber's connection to channel's subscriber list
 3. Publisher: `PUBLISH news:sports "Lakers win 112-108"`
 4. Redis iterates subscriber list for channel `news:sports`
 5. For each subscriber: writes message to connection buffer
 6. If subscriber's buffer full (slow consumer): message dropped
-7. Message is **fire-and-forget** â†’ no persistence, no delivery guarantee
+7. Message is **fire-and-forget** → no persistence, no delivery guarantee
 
 **Pub/Sub Commands with Sample Data:**
 
@@ -2456,7 +2456,7 @@ PUBSUB NUMSUB news:sports                           # Count subscribers per chan
 PUBSUB NUMPAT                                       # Count pattern subscriptions
 ```
 
-**Python â†’ Pub/Sub Chat Application:**
+**Python → Pub/Sub Chat Application:**
 
 ```python
 import redis
@@ -2494,7 +2494,7 @@ for msg in messages:
 time.sleep(5)
 ```
 
-**Python â†’ Pattern Subscribe for Monitoring:**
+**Python → Pattern Subscribe for Monitoring:**
 
 ```python
 import redis
@@ -2525,12 +2525,12 @@ for message in pubsub.listen():
 | UNSUBSCRIBE | O(1) | Remove connection from channel list |
 | PUBSUB CHANNELS | O(M) where M = active channels | Scan channel dictionary |
 
-**A&D Table â†’ Pub/Sub vs Streams:**
+**A&D Table → Pub/Sub vs Streams:**
 
 | Aspect | Pub/Sub | Streams |
 |--------|---------|---------|
-| Message persistence | None â†’ fire and forget | Persistent until trimmed |
-| Consumer groups | No â†’ broadcast to all | Yes â†’ load-balanced delivery |
+| Message persistence | None → fire and forget | Persistent until trimmed |
+| Consumer groups | No → broadcast to all | Yes → load-balanced delivery |
 | Message replay | Impossible | Full replay from any entry ID |
 | Delivery guarantee | At-most-once | At-least-once (with XACK) |
 | Ordering | Within a published batch | Strict by entry ID (timestamp-seq) |
@@ -2557,19 +2557,19 @@ for message in pubsub.listen():
 ### 16.8 Transactions (MULTI/EXEC)
 
 
-**Analogy:** Redis transactions are like a **batch of commands on a shopping list** â†’ you write down everything you want to do (MULTI), check the list once, then execute every item in sequence (EXEC). If the store closes mid-list, you keep going and finish the rest (no rollback). Unlike SQL databases where a failed transaction undoes everything, Redis guarantees everything in the batch runs **without interruption** but keeps going past failures.
+**Analogy:** Redis transactions are like a **batch of commands on a shopping list** → you write down everything you want to do (MULTI), check the list once, then execute every item in sequence (EXEC). If the store closes mid-list, you keep going and finish the rest (no rollback). Unlike SQL databases where a failed transaction undoes everything, Redis guarantees everything in the batch runs **without interruption** but keeps going past failures.
 
-**Numbered Steps â†’ Transaction with WATCH:**
+**Numbered Steps → Transaction with WATCH:**
 
-1. Client: `WATCH balance` â†’ sets optimistic lock on key
-2. Client: `GET balance` â†’ 100 (outside transaction, for logic)
-3. Client: `MULTI` â†’ enters transaction mode
-4. Client: `DECRBY balance 50` â†’ queued (not executed)
-5. Client: `EXEC` â†’ Redis checks if `balance` was modified since WATCH
-6. If modified â†’ return nil (transaction aborted)
-7. If not modified â†’ execute all queued commands atomically
+1. Client: `WATCH balance` → sets optimistic lock on key
+2. Client: `GET balance` → 100 (outside transaction, for logic)
+3. Client: `MULTI` → enters transaction mode
+4. Client: `DECRBY balance 50` → queued (not executed)
+5. Client: `EXEC` → Redis checks if `balance` was modified since WATCH
+6. If modified → return nil (transaction aborted)
+7. If not modified → execute all queued commands atomically
 
-**Pseudocode â†’ WATCH/MULTI/EXEC:**
+**Pseudocode → WATCH/MULTI/EXEC:**
 
 ```
 function WATCH(keys):
@@ -2590,19 +2590,19 @@ function EXEC():
     return results
 ```
 
-**Dry Run â†’ Transaction with WATCH:**
+**Dry Run → Transaction with WATCH:**
 
 | Step | Client A | Client B | Balance | Explanation |
 |------|----------|----------|---------|-------------|
-| 1 | WATCH balance | â†’ | 100 | A sets watch |
-| 2 | GET balance â†’ 100 | â†’ | 100 | Read current value |
-| 3 | MULTI | â†’ | 100 | Begin transaction |
-| 4 | DECRBY balance 50 | â†’ | 100 | Queued |
-| 5 | â†’ | SET balance 200 | 200 | B modifies! |
-| 6 | EXEC | â†’ | 200 | **FAILS** â†’ balance changed since WATCH |
-| 7 | Returns nil | â†’ | 200 | A must retry |
+| 1 | WATCH balance | → | 100 | A sets watch |
+| 2 | GET balance → 100 | → | 100 | Read current value |
+| 3 | MULTI | → | 100 | Begin transaction |
+| 4 | DECRBY balance 50 | → | 100 | Queued |
+| 5 | → | SET balance 200 | 200 | B modifies! |
+| 6 | EXEC | → | 200 | **FAILS** → balance changed since WATCH |
+| 7 | Returns nil | → | 200 | A must retry |
 
-**Python â†’ Transaction with WATCH and Retry:**
+**Python → Transaction with WATCH and Retry:**
 
 ```python
 import redis
@@ -2632,7 +2632,7 @@ def transfer_funds(from_key, to_key, amount, max_retries=5):
             print(f"Transfer successful. From: {from_bal - amount}, To: {to_bal + amount}")
             return results
         except redis.exceptions.WatchError:
-            # Someone modified watched keys â†’ retry
+            # Someone modified watched keys → retry
             if attempt == max_retries - 1:
                 raise
             print(f"Retry attempt {attempt + 1}")
@@ -2664,7 +2664,7 @@ transfer_funds('account:a', 'account:b', 200)
 |----------|----------|------------|
 | Command failure in transaction | Remaining commands still execute (no rollback) | Validate inputs before transaction |
 | WATCH key modified after WATCH before MULTI | Transaction will fail at EXEC | Retry immediately |
-| WATCH key modified but same value | Still fails â†’ version changed | Race condition; retry |
+| WATCH key modified but same value | Still fails → version changed | Race condition; retry |
 | Transaction buffer overflow | Returns error; EXEC refused | Keep transactions small |
 | WATCH + UNWATCH mid-stream | Watched keys cleared; EXEC proceeds | Rare usage; document pattern |
 
@@ -2673,9 +2673,9 @@ transfer_funds('account:a', 'account:b', 200)
 ### 16.9 Lua Scripting
 
 
-**Analogy:** Lua scripts are like a **macro recording on your keyboard** â†’ you record a sequence of complex keystrokes (commands), save it as one key (EVALSHA), and replay it with a single press. The macro runs entirely inside the application (Redis server), processing data locally without network round-trips between each step.
+**Analogy:** Lua scripts are like a **macro recording on your keyboard** → you record a sequence of complex keystrokes (commands), save it as one key (EVALSHA), and replay it with a single press. The macro runs entirely inside the application (Redis server), processing data locally without network round-trips between each step.
 
-**Numbered Steps â†’ Lua Script Execution:**
+**Numbered Steps → Lua Script Execution:**
 
 1. Client sends `EVAL "script" numkeys key1 ... arg1 ...`
 2. Redis loads script into Lua VM (embedded in Redis process)
@@ -2685,7 +2685,7 @@ transfer_funds('account:a', 'account:b', 200)
 6. Script returns value to Redis, which returns to client
 7. If `EVALSHA`: Redis uses SHA1 hash; loads script only if not cached
 
-**Pseudocode â†’ Lua Script in Redis:**
+**Pseudocode → Lua Script in Redis:**
 
 ```lua
 -- Atomic compare-and-delete (CAS for cache invalidation)
@@ -2706,7 +2706,7 @@ end
 return 0   -- No change (value didn't match)
 ```
 
-**Python â†’ Atomic Inventory Check with Lua:**
+**Python → Atomic Inventory Check with Lua:**
 
 ```python
 import redis
@@ -2785,23 +2785,23 @@ end
 | Aspect | Complexity | Why |
 |--------|------------|-----|
 | EVAL (first call) | O(N + S) loading + execution | Load script (O(S) parse) + execute N commands |
-| EVALSHA (cached) | O(N) execution only | No parse overhead â†’ just execute |
-| Script execution | Blocking â†’ all other commands queued | Single-threaded: script holds event loop |
+| EVALSHA (cached) | O(N) execution only | No parse overhead → just execute |
+| Script execution | Blocking → all other commands queued | Single-threaded: script holds event loop |
 | Script replication | O(N) across replicas | Scripts replicated as commands + effects |
 
 **A&D Table:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Atomic multi-command logic without network RTT | Blocks the event loop â†’ no other commands processed during execution |
-| Script caching via EVALSHA (reduces bandwidth) | No debugging support â†’ error messages are cryptic |
-| Conditional logic (if/else) impossible with plain MULTI/EXEC | Memory limit â†’ must not exceed `lua-time-limit` (5s default) |
-| Replicated to replicas (deterministic) | Must be deterministic â†’ no random/date calls unless using `redis.replicate_commands()` |
+| Atomic multi-command logic without network RTT | Blocks the event loop → no other commands processed during execution |
+| Script caching via EVALSHA (reduces bandwidth) | No debugging support → error messages are cryptic |
+| Conditional logic (if/else) impossible with plain MULTI/EXEC | Memory limit → must not exceed `lua-time-limit` (5s default) |
+| Replicated to replicas (deterministic) | Must be deterministic → no random/date calls unless using `redis.replicate_commands()` |
 | Server-side data processing | Scripts use `redis.sha1hex` for hashing; no external calls |
 ### 16.10 Caching Patterns
 
 
-**Analogy:** Caching strategies are like different **meal-prep approaches** for a busy week. Cache-aside: you check the fridge first; if the meal isn't there, you cook it and put leftovers in the fridge. Read-through: a personal chef (cache library) checks the fridge and cooks if needed without you thinking about it. Write-through: you cook and immediately package the leftovers â†’ nothing is raw. Refresh-ahead: you guess tomorrow's lunch and pre-cook it while everyone's asleep.
+**Analogy:** Caching strategies are like different **meal-prep approaches** for a busy week. Cache-aside: you check the fridge first; if the meal isn't there, you cook it and put leftovers in the fridge. Read-through: a personal chef (cache library) checks the fridge and cooks if needed without you thinking about it. Write-through: you cook and immediately package the leftovers → nothing is raw. Refresh-ahead: you guess tomorrow's lunch and pre-cook it while everyone's asleep.
 
 #### 16.10.1 Cache-Aside (Lazy Loading)
 
@@ -2813,7 +2813,7 @@ The application is responsible for both the cache and the database. Most common 
 2. Application queries database (`SELECT * FROM users WHERE id=42`)
 3. Application stores result in cache with TTL (`SET user:42 data EX 3600`)
 4. Application returns data to caller
-5. Next request: cache hit â†’ return immediately
+5. Next request: cache hit → return immediately
 
 ```python
 import redis
@@ -2835,7 +2835,7 @@ class UserRepository:
         if cached is not None:
             return json.loads(cached)  # Cache hit
 
-        # 2. Cache miss â†’ load from database
+        # 2. Cache miss → load from database
         user = self.db.query(
             "SELECT id, name, email, age FROM users WHERE id = ?",
             [user_id]
@@ -2855,7 +2855,7 @@ class UserRepository:
             "UPDATE users SET name = ?, email = ? WHERE id = ?",
             [data['name'], data['email'], user_id]
         )
-        # Invalidate cache â†’ next read will repopulate
+        # Invalidate cache → next read will repopulate
         self.cache.delete(f"user:{user_id}")
 ```
 
@@ -2870,11 +2870,11 @@ A cache library/loader abstraction sits between app and cache. The app always ta
 
 **Numbered Steps:**
 
-1. Application calls `cache.get("user:42")` â†’ the cache library handles the logic
-2. Cache misses â†’ loader function is called automatically
+1. Application calls `cache.get("user:42")` → the cache library handles the logic
+2. Cache misses → loader function is called automatically
 3. Loader queries DB and returns data
 4. Cache library stores data with TTL and returns to app
-5. Application is unaware of the database â†’ it just asks the cache
+5. Application is unaware of the database → it just asks the cache
 
 ```python
 import redis
@@ -2893,7 +2893,7 @@ class ReadThroughCache:
         if cached is not None:
             return json.loads(cached)
 
-        # Cache miss â†’ call loader
+        # Cache miss → call loader
         data = self.loader(key)
         if data is None:
             return None
@@ -2917,7 +2917,7 @@ user_cache = ReadThroughCache(
     ttl=3600
 )
 
-# App just calls get() â†’ cache library handles everything
+# App just calls get() → cache library handles everything
 user = user_cache.get("user:42")
 ```
 
@@ -2954,7 +2954,7 @@ class WriteThroughCache:
             "ON DUPLICATE KEY UPDATE name=VALUES(name), email=VALUES(email)",
             [user_id, data['name'], data['email']]
         )
-        # Note: if DB fails, cache has stale data â†’ rollback pattern needed
+        # Note: if DB fails, cache has stale data → rollback pattern needed
 
     def get_user(self, user_id):
         cached = self.cache.get(f"user:{user_id}")
@@ -3046,14 +3046,14 @@ class RefreshAheadCache:
         ttl = self.cache.ttl(key)
 
         if ttl < 0:
-            # Key expired or doesn't exist â†’ load fresh
+            # Key expired or doesn't exist → load fresh
             data = self.loader(key)
             if data:
                 self.cache.setex(key, self.ttl, json.dumps(data))
             return data
 
         if ttl < self.refresh_before:
-            # Nearing expiry â†’ trigger async refresh in background
+            # Nearing expiry → trigger async refresh in background
             threading.Thread(target=self._async_refresh, args=(key,), daemon=True).start()
 
         # Return cached value (even if refresh is happening)
@@ -3118,8 +3118,8 @@ maxmemory-samples 5                 # LRU/LFU sample size (higher = more accurat
 4. Evict that key
 5. Retry the client's command
 
-This is NOT true LRU â†’ it's an approximation that works well in practice.
-Higher maxmemory-samples (10) â†’ more accurate, more CPU.
+This is NOT true LRU → it's an approximation that works well in practice.
+Higher maxmemory-samples (10) → more accurate, more CPU.
 ```
 
 ```python
@@ -3195,23 +3195,23 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 
 #### Q1: When should I use Redis vs a traditional database?
 
-**Answer:** Use Redis when your workload is **read-heavy, latency-sensitive, and fits in RAM**. Redis excels at sub-millisecond reads for caching, session storage, real-time analytics, and leaderboards. Use PostgreSQL/MySQL when you need complex queries, joins, ACID transactions across keys, data larger than RAM, or long-term durability. Redis is a force multiplier for your database â†’ not a replacement.
+**Answer:** Use Redis when your workload is **read-heavy, latency-sensitive, and fits in RAM**. Redis excels at sub-millisecond reads for caching, session storage, real-time analytics, and leaderboards. Use PostgreSQL/MySQL when you need complex queries, joins, ACID transactions across keys, data larger than RAM, or long-term durability. Redis is a force multiplier for your database → not a replacement.
 
 #### Q2: How does cache invalidation work in Redis?
 
-**Answer:** Three strategies: (a) **TTL-based**: set `EXPIRE` and let Redis auto-delete â†’ simplest, but may serve stale data within TTL window. (b) **Explicit invalidation**: on data update, `DEL` the cache key â†’ next read repopulates (cache-aside). (c) **Write-through**: update cache and DB simultaneously â†’ strong consistency, higher write latency. Redis keyspace notifications (`__keyspace@0__:*`) can trigger invalidation across services.
+**Answer:** Three strategies: (a) **TTL-based**: set `EXPIRE` and let Redis auto-delete → simplest, but may serve stale data within TTL window. (b) **Explicit invalidation**: on data update, `DEL` the cache key → next read repopulates (cache-aside). (c) **Write-through**: update cache and DB simultaneously → strong consistency, higher write latency. Redis keyspace notifications (`__keyspace@0__:*`) can trigger invalidation across services.
 
-#### Q3: Redis vs Memcached â†’ which and when?
+#### Q3: Redis vs Memcached → which and when?
 
-**Answer:** Memcached for simple caching with maximum throughput (multi-threaded, lower overhead). Redis when you need data structures (lists, sets, sorted sets), persistence (RDB/AOF), replication, Pub/Sub, or value sizes > 1MB. In modern systems, Redis is almost always preferred because the feature advantage outweighs the minor performance gap. Benchmarks show Redis on modern hardware handles 100K-1M ops/sec â†’ sufficient for most applications.
+**Answer:** Memcached for simple caching with maximum throughput (multi-threaded, lower overhead). Redis when you need data structures (lists, sets, sorted sets), persistence (RDB/AOF), replication, Pub/Sub, or value sizes > 1MB. In modern systems, Redis is almost always preferred because the feature advantage outweighs the minor performance gap. Benchmarks show Redis on modern hardware handles 100K-1M ops/sec → sufficient for most applications.
 
-#### Q4: Sentinel vs Cluster â†’ which deployment should I use?
+#### Q4: Sentinel vs Cluster → which deployment should I use?
 
 **Answer:** **Sentinel** when your dataset fits in a single node's RAM and you need HA with automatic failover. **Cluster** when your dataset exceeds a single node's RAM and you need to scale writes horizontally. Sentinel: simpler, supports multi-key operations on any keys, 3+ Sentinel nodes + master + replica. Cluster: 6+ nodes (3 master + 3 replica minimum), keys must use hash tags for multi-key operations, smarter client required.
 
-#### Q5: How do distributed locks work â†’ is Redlock safe?
+#### Q5: How do distributed locks work → is Redlock safe?
 
-**Answer:** Use `SET key uuid NX PX 30000` â†’ acquire by setting key with unique ID, release by comparing UUID and DEL. **Redlock** (Redis-based distributed lock) uses N independent Redis instances: acquire lock on majority, release on all. Martin Kleppmann argued Redlock has flaws with GC pauses and clock drift. Practical advice: for most systems, single-node Redis lock with fencing tokens is sufficient. Redlock is overkill for internal systems with reasonable clock synchronization. Consider ZooKeeper or etcd if you need absolute distributed lock safety.
+**Answer:** Use `SET key uuid NX PX 30000` → acquire by setting key with unique ID, release by comparing UUID and DEL. **Redlock** (Redis-based distributed lock) uses N independent Redis instances: acquire lock on majority, release on all. Martin Kleppmann argued Redlock has flaws with GC pauses and clock drift. Practical advice: for most systems, single-node Redis lock with fencing tokens is sufficient. Redlock is overkill for internal systems with reasonable clock synchronization. Consider ZooKeeper or etcd if you need absolute distributed lock safety.
 
 #### Q6: How does the N+1 query problem apply to Redis caching?
 
@@ -3219,7 +3219,7 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 
 #### Q7: How do you handle cache stampede (thundering herd)?
 
-**Answer:** When a cached key expires and N concurrent requests all trigger a cache miss, they all hit the database simultaneously. Solutions: (a) **Mutex lock**: first request acquires a lock on the cache key, others wait. (b) **Stale-while-revalidate**: serve expired data while asynchronously refreshing (Redis doesn't support this natively â†’ implement in application). (c) **Early recalculation** (refresh-ahead): proactively refresh before expiry. (d) **Jittered TTL**: add random variance to TTL values so keys don't expire simultaneously.
+**Answer:** When a cached key expires and N concurrent requests all trigger a cache miss, they all hit the database simultaneously. Solutions: (a) **Mutex lock**: first request acquires a lock on the cache key, others wait. (b) **Stale-while-revalidate**: serve expired data while asynchronously refreshing (Redis doesn't support this natively → implement in application). (c) **Early recalculation** (refresh-ahead): proactively refresh before expiry. (d) **Jittered TTL**: add random variance to TTL values so keys don't expire simultaneously.
 
 ### 16.14 Applications in Real Systems
 
@@ -3351,20 +3351,20 @@ time.sleep(5)
 
 ## Pro Tips
 
-1. **Use hashes instead of plain keys for objects** â†’ individual keys for each field (user:1001:name, user:1001:email) cause key explosion. Use `HSET user:1001 name "Alice" email "alice@example.com"` instead.
-2. **Always set TTL for cache data** â†’ without expiration, unused keys waste memory forever. Redis eviction policies are a safety net, not a strategy.
-3. **SCAN is your production friend, not KEYS** â†’ `KEYS *` blocks Redis for potentially seconds on large datasets. `SCAN` with cursor-based iteration is non-blocking.
-4. **Sorted sets are Redis's superpower** â†’ leaderboards, rate limiters, priority queues, and time-series queries all benefit from the O(log N) insertion + O(log N + M) range query.
-5. **Be careful with large keys/values** â†’ a single key larger than 10MB can block replication and slow down the entire instance. Consider compression or splitting.
-6. **Hash tags for cluster multi-key ops** â†’ use `{user:1001}:name` and `{user:1001}:email` to force same slot, enabling atomic multi-key operations in Cluster mode.
-7. **Pipeline or lose throughput** â†’ sending 100 commands individually costs 100 round-trips. Pipelining sends them all in one batch for ~1 round-trip.
-8. **Monitor for BGSAVE memory spikes** â†’ `fork()` may cause 2x memory usage with COW under heavy writes. Set `vm.overcommit_memory=1` and monitor RSS.
+1. **Use hashes instead of plain keys for objects** → individual keys for each field (user:1001:name, user:1001:email) cause key explosion. Use `HSET user:1001 name "Alice" email "alice@example.com"` instead.
+2. **Always set TTL for cache data** → without expiration, unused keys waste memory forever. Redis eviction policies are a safety net, not a strategy.
+3. **SCAN is your production friend, not KEYS** → `KEYS *` blocks Redis for potentially seconds on large datasets. `SCAN` with cursor-based iteration is non-blocking.
+4. **Sorted sets are Redis's superpower** → leaderboards, rate limiters, priority queues, and time-series queries all benefit from the O(log N) insertion + O(log N + M) range query.
+5. **Be careful with large keys/values** → a single key larger than 10MB can block replication and slow down the entire instance. Consider compression or splitting.
+6. **Hash tags for cluster multi-key ops** → use `{user:1001}:name` and `{user:1001}:email` to force same slot, enabling atomic multi-key operations in Cluster mode.
+7. **Pipeline or lose throughput** → sending 100 commands individually costs 100 round-trips. Pipelining sends them all in one batch for ~1 round-trip.
+8. **Monitor for BGSAVE memory spikes** → `fork()` may cause 2x memory usage with COW under heavy writes. Set `vm.overcommit_memory=1` and monitor RSS.
 
 ## One-Sentence Takeaways
 
 - **16.1:** Redis is an in-memory data structure store offering sub-millisecond latency for strings, lists, sets, sorted sets, hashes, and streams.
-- **16.2:** Each data type has specialized commands optimized for its structure â†’ LPUSH/RPOP for queues, ZADD/ZRANGE for leaderboards, HSET/HGET for objects.
-- **16.3:** Persistence options â†’ RDB (point-in-time snapshots), AOF (append-only log), and hybrid â†’ offer different durability vs. performance trade-offs.
+- **16.2:** Each data type has specialized commands optimized for its structure → LPUSH/RPOP for queues, ZADD/ZRANGE for leaderboards, HSET/HGET for objects.
+- **16.3:** Persistence options → RDB (point-in-time snapshots), AOF (append-only log), and hybrid → offer different durability vs. performance trade-offs.
 - **16.4:** Replication provides read scaling; Sentinel provides automatic failover with Raft-like consensus.
 - **16.5:** Redis Cluster provides automatic sharding across 16384 hash slots for datasets exceeding a single node's RAM.
 - **16.6:** Pub/Sub is fire-and-forget broadcast; Streams are persistent, consumer-group-aware message logs.
@@ -3420,7 +3420,7 @@ The TypeScript implementation simulates Redis data structures, commands, TTL, an
 
 ```typescript
 // ============================================================
-// Redis Command Executor â€” TypeScript
+// Redis Command Executor — TypeScript
 // ============================================================
 
 type RedisValue = string | number | string[];
@@ -3584,8 +3584,8 @@ class CacheAside {
       console.log('[Cache] HIT for ' + key);
       return cached;
     }
-    // Cache miss â€” load from DB
-    console.log('[Cache] MISS for ' + key + ' â€” loading from DB');
+    // Cache miss — load from DB
+    console.log('[Cache] MISS for ' + key + ' — loading from DB');
     const value = this.db.get(key) || null;
     if (value !== null) {
       this.store.set(key, value);

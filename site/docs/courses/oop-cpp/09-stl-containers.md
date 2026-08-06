@@ -186,7 +186,7 @@ The growth factor is implementation-defined:
 
 **Why is push_back amortized O(1)?**
 
-Consider a sequence of N push_back operations. Capacity grows geometrically (e.g., 1, 2, 4, 8, 16...). Total copy cost = sum of capacities at each reallocation = 1 + 2 + 4 + ... + N/2 + N = 2N - 1. Spread over N operations: (2N - 1) / N = 2 - 1/N â‰ˆ O(1) per operation.
+Consider a sequence of N push_back operations. Capacity grows geometrically (e.g., 1, 2, 4, 8, 16...). Total copy cost = sum of capacities at each reallocation = 1 + 2 + 4 + ... + N/2 + N = 2N - 1. Spread over N operations: (2N - 1) / N = 2 - 1/N ≈ O(1) per operation.
 
 **Why is insert in the middle O(n)?**
 
@@ -888,7 +888,7 @@ A Red-Black tree is a self-balancing binary search tree with these properties:
 (black)10 (black)25 (black)35 (black)50
 ```
 
-These properties guarantee O(log n) height (max depth â‰¤ 2 * log2(n+1)).
+These properties guarantee O(log n) height (max depth ≤ 2 * log2(n+1)).
 
 **Tree node structure (libstdc++):**
 ```
@@ -1435,7 +1435,7 @@ Key components:
 
 **Why average O(1)?**
 
-The hash function distributes keys uniformly across buckets. With `size / bucket_count â‰ˆ 1.0` (default max load factor), the expected chain length is 0-2 elements. Finding an element means: compute hash (constant time), index into bucket array (constant time), walk a chain of expected length â‰¤ 2 (constant time).
+The hash function distributes keys uniformly across buckets. With `size / bucket_count ≈ 1.0` (default max load factor), the expected chain length is 0-2 elements. Finding an element means: compute hash (constant time), index into bucket array (constant time), walk a chain of expected length ≤ 2 (constant time).
 
 **Why worst-case O(n)?**
 
@@ -1978,7 +1978,7 @@ A binary heap is a complete binary tree stored in an array where:
 
 **Why O(log n) for push/pop?**
 
-The heap is a complete binary tree with height âŒŠlog2(n)âŒ‹. `push_heap` (sift-up) moves the new element up the tree, comparing with its parent at each level -- at most log2(n) comparisons. `pop_heap` (sift-down) moves the root down the tree, comparing with larger child -- also O(log n).
+The heap is a complete binary tree with height ⌊log2(n)⌋. `push_heap` (sift-up) moves the new element up the tree, comparing with its parent at each level -- at most log2(n) comparisons. `pop_heap` (sift-down) moves the root down the tree, comparing with larger child -- also O(log n).
 
 #### C++ Code with Output
 
@@ -2479,7 +2479,7 @@ Deque occupies a middle ground:
 
 For 1 million insert/find operations on a modern CPU:
 ```
-map:              ~180 ms (20 log2(1M) â‰ˆ 20 comparisons per op)
+map:              ~180 ms (20 log2(1M) ≈ 20 comparisons per op)
 unordered_map:    ~80 ms (good hash, load factor 0.75)
 unordered_map:   ~300 ms (bad hash, all collide)
 ```

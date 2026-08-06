@@ -845,33 +845,33 @@ d) ConfigMap
 
 #### Google Style
 
-1. **Explain the core idea of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+1. **Explain the core idea of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
 
-2. **Design a minimal, well-typed function that demonstrates Kubernetes Scaling — HPA, Autoscaling, and Cluster Management.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+2. **Design a minimal, well-typed function that demonstrates Kubernetes Scaling — HPA, Autoscaling, and Cluster Management.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
 
-3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
+3. **What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
 
-4. **Describe a production bug caused by misunderstanding Kubernetes Scaling — HPA, Autoscaling, and Cluster Management. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+4. **Describe a production bug caused by misunderstanding Kubernetes Scaling — HPA, Autoscaling, and Cluster Management. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
 
-5. **How would you scale a system that relies on Kubernetes Scaling — HPA, Autoscaling, and Cluster Management from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
+5. **How would you scale a system that relies on Kubernetes Scaling — HPA, Autoscaling, and Cluster Management from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
 
-6. **Compare Kubernetes Scaling — HPA, Autoscaling, and Cluster Management with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+6. **Compare Kubernetes Scaling — HPA, Autoscaling, and Cluster Management with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
 
-7. **Walk through how you would test a component that depends on Kubernetes Scaling — HPA, Autoscaling, and Cluster Management.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
+7. **Walk through how you would test a component that depends on Kubernetes Scaling — HPA, Autoscaling, and Cluster Management.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
 
-8. **How does Kubernetes Scaling — HPA, Autoscaling, and Cluster Management behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+8. **How does Kubernetes Scaling — HPA, Autoscaling, and Cluster Management behave differently at scale — memory, throughput, or precision-wise?** — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
 
-9. **How would you make an implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
+9. **How would you make an implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
 
-10. **Write the smallest possible implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
+10. **Write the smallest possible implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
 
@@ -890,37 +890,37 @@ d) ConfigMap
 
 ## True/False
 
-1. **True or False:** Kubernetes Scaling — HPA, Autoscaling, and Cluster Management builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
-2. **True or False:** You should write at least one code example for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
-3. **True or False:** The complexity analysis for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
-4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in production. â€” **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Kubernetes Scaling — HPA, Autoscaling, and Cluster Management chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+1. **True or False:** Kubernetes Scaling — HPA, Autoscaling, and Cluster Management builds directly on the fundamentals covered in the earlier chapters of this module. — **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in production. — **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Kubernetes Scaling — HPA, Autoscaling, and Cluster Management chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
-1. The chapter that covers Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is Chapter ___ of this module. â€” Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is ___. â€” Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
-4. The tools commonly used to debug Kubernetes Scaling — HPA, Autoscaling, and Cluster Management issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
-5. The related topic that connects to Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in the next chapter is ___. â€” Answer: see the Next Topic section.
+1. The chapter that covers Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is Chapter ___ of this module. — Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is ___. — Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Kubernetes Scaling — HPA, Autoscaling, and Cluster Management issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in the next chapter is ___. — Answer: see the Next Topic section.
 
 ## Scenario Questions
 
-1. **Scenario:** A teammate ships a change involving Kubernetes Scaling — HPA, Autoscaling, and Cluster Management that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+1. **Scenario:** A teammate ships a change involving Kubernetes Scaling — HPA, Autoscaling, and Cluster Management that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
-3. **Scenario:** A new hire asks you to explain Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+3. **Scenario:** A new hire asks you to explain Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
-4. **Scenario:** Your team's codebase has three different patterns for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+4. **Scenario:** Your team's codebase has three different patterns for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
-2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
-3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
-4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
-5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+1. **What is the output of the simplest correct implementation of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -932,7 +932,7 @@ d) ConfigMap
 
 ## Tips & Tricks
 
-- Always write a one-line example of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management from memory before opening the chapter â€” active recall first.
+- Always write a one-line example of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management from memory before opening the chapter — active recall first.
 - Use the chapter's Revision Notes as a checklist: you have mastered Kubernetes Scaling — HPA, Autoscaling, and Cluster Management when you can explain each bullet.
 - Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
 - For interviews, practice explaining Kubernetes Scaling — HPA, Autoscaling, and Cluster Management twice: once with a technical audience, once with a non-technical audience.
@@ -941,10 +941,10 @@ d) ConfigMap
 ## Memory Tricks
 
 - **Acronym**: build a mnemonic from the 5 key concepts of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management listed in the Chapter at a Glance table.
-- **Story**: link Kubernetes Scaling — HPA, Autoscaling, and Cluster Management to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Story**: link Kubernetes Scaling — HPA, Autoscaling, and Cluster Management to a familiar story — the analogy in the Visual Analogy section is designed to stick.
 - **Number anchor**: remember the complexity of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management by connecting it to a known algorithm of the same class.
 - **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
-- **Teach-back**: explain Kubernetes Scaling — HPA, Autoscaling, and Cluster Management to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
+- **Teach-back**: explain Kubernetes Scaling — HPA, Autoscaling, and Cluster Management to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
@@ -956,23 +956,23 @@ d) ConfigMap
 
 ## Related Topics
 
-- The previous chapter in this module (see table of contents) â€” foundational for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management
-- The next chapter (see Next Topic below) â€” builds on Kubernetes Scaling — HPA, Autoscaling, and Cluster Management
-- The system design chapters in Module 07 â€” how Kubernetes Scaling — HPA, Autoscaling, and Cluster Management fits into production architectures
-- The interview preparation module â€” how Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is asked in screening rounds
-- The capstone project â€” where Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is applied end-to-end
+- The previous chapter in this module (see table of contents) — foundational for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management
+- The next chapter (see Next Topic below) — builds on Kubernetes Scaling — HPA, Autoscaling, and Cluster Management
+- The system design chapters in Module 07 — how Kubernetes Scaling — HPA, Autoscaling, and Cluster Management fits into production architectures
+- The interview preparation module — how Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is asked in screening rounds
+- The capstone project — where Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is applied end-to-end
 
 ## FAQs
 
-1. **Do I need to memorize all of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
-2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
-3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
-4. **Is Kubernetes Scaling — HPA, Autoscaling, and Cluster Management asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
-5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+1. **Do I need to memorize all of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management, or understand the big picture?** — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Kubernetes Scaling — HPA, Autoscaling, and Cluster Management asked in interviews?** — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-- Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is a core requirement for the rest of this module â€” do not skip the examples.
+- Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is a core requirement for the rest of this module — do not skip the examples.
 - Always analyze complexity (time and space) when working with Kubernetes Scaling — HPA, Autoscaling, and Cluster Management.
 - Production correctness means handling edge cases, not just the happy path.
 - Interview answers should start with the definition, then the example, then the trade-offs.
@@ -980,9 +980,9 @@ d) ConfigMap
 
 ## Historical Context
 
-- Kubernetes Scaling — HPA, Autoscaling, and Cluster Management emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- Kubernetes Scaling — HPA, Autoscaling, and Cluster Management emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews.
 - The tools used for Kubernetes Scaling — HPA, Autoscaling, and Cluster Management today evolved from simpler versions; the chapter covers the modern, recommended approach.
-- Interviewers value knowing one historical fact about Kubernetes Scaling — HPA, Autoscaling, and Cluster Management â€” it shows genuine interest, not just cramming.
+- Interviewers value knowing one historical fact about Kubernetes Scaling — HPA, Autoscaling, and Cluster Management — it shows genuine interest, not just cramming.
 - The library/tooling ecosystem around Kubernetes Scaling — HPA, Autoscaling, and Cluster Management changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
@@ -996,21 +996,21 @@ d) ConfigMap
 ## ML Intuition
 
 - Kubernetes Scaling — HPA, Autoscaling, and Cluster Management appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
-- Understanding Kubernetes Scaling — HPA, Autoscaling, and Cluster Management helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- Understanding Kubernetes Scaling — HPA, Autoscaling, and Cluster Management helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs.
 - In production ML, the Kubernetes Scaling — HPA, Autoscaling, and Cluster Management concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
 - When optimizing ML systems, Kubernetes Scaling — HPA, Autoscaling, and Cluster Management skills let you profile and fix the data path, not just the training loop.
-- Interview follow-up: how would you apply Kubernetes Scaling — HPA, Autoscaling, and Cluster Management to a dataset of 10 million records? â€” Batching and vectorization.
+- Interview follow-up: how would you apply Kubernetes Scaling — HPA, Autoscaling, and Cluster Management to a dataset of 10 million records? — Batching and vectorization.
 
 ## Analogies
 
 - **Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
 - **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
-- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm — build for the storm.
 - **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Kubernetes Scaling — HPA, Autoscaling, and Cluster Management skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) — this chapter contributes the Kubernetes Scaling — HPA, Autoscaling, and Cluster Management skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
@@ -1084,24 +1084,24 @@ d) ConfigMap
 
 - Start with `print()` or a debugger to inspect intermediate values in Kubernetes Scaling — HPA, Autoscaling, and Cluster Management code.
 - Reproduce the failure with the smallest possible input before changing code.
-- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- Check the common failure modes listed in Common Mistakes — most bugs are listed there.
 - For performance problems, profile before optimizing: measure, then fix.
 - When stuck, re-read the chapter's Examples and compare line by line with your code.
 - Use `pdb` or your IDE's debugger to step through the Kubernetes Scaling — HPA, Autoscaling, and Cluster Management example code.
 
 ## Mock Interview Section
 
-**Round 1 â€” Screening (15 min)**
+**Round 1 — Screening (15 min)**
 - Explain Kubernetes Scaling — HPA, Autoscaling, and Cluster Management in 60 seconds.
 - Write a minimal working example of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management.
 - What is the complexity of your example?
 
-**Round 2 â€” Coding (45 min)**
+**Round 2 — Coding (45 min)**
 - Solve the Medium exercise from this chapter under time pressure.
 - State your assumptions, then implement with type hints.
 - Test with edge cases: empty input, boundary values, invalid input.
 
-**Round 3 â€” Behavioral + System (30 min)**
+**Round 3 — Behavioral + System (30 min)**
 - Tell me about a time you debugged a Kubernetes Scaling — HPA, Autoscaling, and Cluster Management problem in a project.
 - How would you design a system where Kubernetes Scaling — HPA, Autoscaling, and Cluster Management is used at scale?
 - What metrics would you monitor?
@@ -1144,7 +1144,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Real-World Examples
 
-- **Startup**: a small team uses Kubernetes Scaling — HPA, Autoscaling, and Cluster Management daily in their data pipeline â€” the chapter's examples mirror their code.
+- **Startup**: a small team uses Kubernetes Scaling — HPA, Autoscaling, and Cluster Management daily in their data pipeline — the chapter's examples mirror their code.
 - **E-commerce**: Kubernetes Scaling — HPA, Autoscaling, and Cluster Management patterns appear in order processing, inventory checks, and recommendation feeds.
 - **Fintech**: Kubernetes Scaling — HPA, Autoscaling, and Cluster Management principles apply to transaction validation and fraud detection flows.
 - **ML platform**: Kubernetes Scaling — HPA, Autoscaling, and Cluster Management shows up in feature engineering and model-serving infrastructure.
@@ -1156,7 +1156,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Limitations
 
-- Kubernetes Scaling — HPA, Autoscaling, and Cluster Management, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- Kubernetes Scaling — HPA, Autoscaling, and Cluster Management, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory).
 - The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
-- Performance of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management depends on input size and distribution â€” always benchmark for your own data.
+- Performance of Kubernetes Scaling — HPA, Autoscaling, and Cluster Management depends on input size and distribution — always benchmark for your own data.
 - This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

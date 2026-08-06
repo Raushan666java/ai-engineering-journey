@@ -141,7 +141,7 @@ public class Post {
     private List<Comment> comments;
 }
 
-// âŒ Triggers N+1 queries:
+// ❌ Triggers N+1 queries:
 // SELECT p FROM Post p                          -- 1 query
 // for each post: SELECT c FROM Comment c WHERE c.post_id = ?  -- N queries
 List<Post> posts = em.createQuery("SELECT p FROM Post p", Post.class)
@@ -155,7 +155,7 @@ Solutions, from best to worst:
 
 **1. JOIN FETCH → one query with a join:**
 ```java
-// âœ… Single query with LEFT JOIN FETCH
+// ✅ Single query with LEFT JOIN FETCH
 TypedQuery<Post> q = em.createQuery(
     "SELECT p FROM Post p LEFT JOIN FETCH p.comments", Post.class);
 List<Post> posts = q.getResultList();

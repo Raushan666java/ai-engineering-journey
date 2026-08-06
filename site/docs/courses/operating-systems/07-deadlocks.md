@@ -48,7 +48,7 @@ sidebar_position: 7
 | **Necessary Conditions** | Mutual exclusion, hold-and-wait, no preemption, circular wait (all 4 required) |
 | **Prevention** | Break at least one condition → most commonly circular wait via resource ordering |
 | **Avoidance** | Banker Algorithm: safe state ensures no deadlock even with maximum claims |
-| **Detection** | Wait-for graph cycle detection for single-instance; O(mÂ·nÂ²) algorithm for multi-instance |
+| **Detection** | Wait-for graph cycle detection for single-instance; O(m·n²) algorithm for multi-instance |
 | **Recovery** | Process termination or resource preemption with victim selection and rollback |
 
 ## Chapter Roadmap
@@ -82,7 +82,7 @@ Imagine four cars arrive simultaneously at a four-way stop, each wanting to turn
 ```
         Car A (wants to go straight)
             ↑
-    Car D ← âœš → Car B (wants to turn left)
+    Car D ← ✚ → Car B (wants to turn left)
             ↓
         Car C (wants to turn left)
 ```
@@ -97,9 +97,9 @@ Each car holds one resource (its lane) and waits for another. Nobody moves. **De
 #### Formal Definition
 
 ```
-Deadlock ⇔ âˆ€ Páµ¢ âˆˆ DeadlockSet: Páµ¢ is waiting for a resource held by Pâ±¼ âˆˆ DeadlockSet
-         âˆ§ âˆ€ Páµ¢ âˆˆ DeadlockSet: Páµ¢ will never release its held resources
-         âˆ§ The set is non-empty
+Deadlock ⇔ ∀ Pᵢ ∈ DeadlockSet: Pᵢ is waiting for a resource held by Pⱼ ∈ DeadlockSet
+         ∧ ∀ Pᵢ ∈ DeadlockSet: Pᵢ will never release its held resources
+         ∧ The set is non-empty
 ```
 
 #### Numbered Steps to Identify a Deadlock
@@ -115,7 +115,7 @@ Deadlock ⇔ âˆ€ Páµ¢ âˆˆ DeadlockSet: Páµ¢ is waiting for a resour
 #### Pseudocode: Deadlock Detection (Single-Instance Resources)
 
 ```
-INPUT:  Wait-for matrix W[n][n] where W[i][j] = 1 if Páµ¢ waits for Pâ±¼
+INPUT:  Wait-for matrix W[n][n] where W[i][j] = 1 if Pᵢ waits for Pⱼ
 OUTPUT: true if deadlock detected
 
 FUNCTION hasDeadlock(W, n):
@@ -162,7 +162,7 @@ System with 4 processes, single-instance resources:
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time Complexity** | O(nÂ²) | DFS traverses adjacency matrix; each edge examined once |
+| **Time Complexity** | O(n²) | DFS traverses adjacency matrix; each edge examined once |
 | **Space Complexity** | O(n) | visited[] and recStack[] arrays of size n |
 | **For n=100 processes** | ~10,000 checks | Acceptable for periodic detection |
 
@@ -173,7 +173,7 @@ System with 4 processes, single-instance resources:
 | Simple to implement | Only works for single-instance resource types |
 | Early detection possible | Periodic invocation may miss transient deadlocks |
 | Algorithm is deterministic | Cycle does not guarantee deadlock for multi-instance |
-| Low overhead (O(nÂ²)) | Does not identify which processes to terminate optimally |
+| Low overhead (O(n²)) | Does not identify which processes to terminate optimally |
 
 ---
 
@@ -189,7 +189,7 @@ For a deadlock to occur, all four conditions must hold **simultaneously**. Break
 | 1 | **Mutual Exclusion** | At least one resource must be held in non-sharable mode | A conference room can only hold one meeting at a time | Make resources sharable (spooling, read-only) | Not always possible; some resources inherently exclusive |
 | 2 | **Hold and Wait** | A process holding resources waits to acquire more held by others | You hold your parking spot while waiting for another spot to open | Request all resources at once, or release before requesting | Low utilization; resources idle while held unnecessarily |
 | 3 | **No Preemption** | Resources cannot be forcibly taken → must be released voluntarily | A book you're reading cannot be taken from your hands | Allow preemption (OS can take resources) | Complex; may corrupt state if preempted mid-update |
-| 4 | **Circular Wait** | There exists a cycle where Pâ‚€ waits for Pâ‚, Pâ‚ waits for Pâ‚‚, ..., Pâ‚™ waits for Pâ‚€ | Four cars blocking each other at an intersection | Enforce total resource ordering | Most practical; ordering must be global and respected |
+| 4 | **Circular Wait** | There exists a cycle where P₀ waits for P₁, P₁ waits for P₂, ..., Pₙ waits for P₀ | Four cars blocking each other at an intersection | Enforce total resource ordering | Most practical; ordering must be global and respected |
 
 #### Condition 1: Mutual Exclusion in Detail
 
@@ -244,7 +244,7 @@ Circular wait exists iff there is a cycle in the wait-for graph:
 #### Necessary Conditions: Formal Proof Sketch
 
 ```
-Theorem: Deadlock ⇒ (Mutual Exclusion âˆ§ Hold-and-Wait âˆ§ No Preemption âˆ§ Circular Wait)
+Theorem: Deadlock ⇒ (Mutual Exclusion ∧ Hold-and-Wait ∧ No Preemption ∧ Circular Wait)
 Proof:
   - If no mutual exclusion: all resources sharable → no process ever blocks → no deadlock
   - If no hold-and-wait: process either has no resources or requests nothing → no circular dependency
@@ -262,16 +262,16 @@ Converse is false: all four conditions can hold without deadlock (e.g., processe
 
 A **Resource-Allocation Graph (RAG)** is a directed graph that models the system state:
 
-- **Processes** (circles Páµ¢): active entities that request/use resources
-- **Resources** (squares Râ±¼ with dots for instances): system resources
-- **Request edge** (Páµ¢ → Râ±¼): process i wants resource j
-- **Assignment edge** (Râ±¼ → Páµ¢): resource j is allocated to process i
+- **Processes** (circles Pᵢ): active entities that request/use resources
+- **Resources** (squares Rⱼ with dots for instances): system resources
+- **Request edge** (Pᵢ → Rⱼ): process i wants resource j
+- **Assignment edge** (Rⱼ → Pᵢ): resource j is allocated to process i
 
 #### RAG Construction Rules
 
-1. When process Páµ¢ requests resource Râ±¼: add a request edge Páµ¢ → Râ±¼
-2. When the request is granted: convert to assignment edge Râ±¼ → Páµ¢
-3. When Páµ¢ releases Râ±¼: remove the assignment edge
+1. When process Pᵢ requests resource Rⱼ: add a request edge Pᵢ → Rⱼ
+2. When the request is granted: convert to assignment edge Rⱼ → Pᵢ
+3. When Pᵢ releases Rⱼ: remove the assignment edge
 
 #### RAG Example: Deadlock State
 
@@ -331,10 +331,10 @@ Resources: R1 (2 instances), R2 (2 instances)
 ```
 FUNCTION isDeadlock(RAG):
     REPEAT:
-        Find a process Páµ¢ whose request edges can all be satisfied
-        (for each request edge Páµ¢ → Râ±¼, there is a free instance of Râ±¼)
+        Find a process Pᵢ whose request edges can all be satisfied
+        (for each request edge Pᵢ → Rⱼ, there is a free instance of Rⱼ)
         IF found:
-            Remove Páµ¢ (pretend it finishes and releases all resources)
+            Remove Pᵢ (pretend it finishes and releases all resources)
         ELSE:
             BREAK
     UNTIL no more processes can be removed
@@ -345,7 +345,7 @@ FUNCTION isDeadlock(RAG):
 
 #### Dry Run: RAG Reduction
 
-System: R1 (2 instances), R2 (1 instance). P0 holds R1Ã—1, requests R2. P1 holds R2, requests R1Ã—1. P2 holds R1Ã—1.
+System: R1 (2 instances), R2 (1 instance). P0 holds R1×1, requests R2. P1 holds R2, requests R1×1. P2 holds R1×1.
 
 | Iteration | Process | Request can be satisfied? | Reason | Action |
 |-----------|---------|--------------------------|--------|--------|
@@ -354,15 +354,15 @@ System: R1 (2 instances), R2 (1 instance). P0 holds R1Ã—1, requests R2. P1 ho
 
 Let me redo with clearer state:
 
-R1 has 3 instances. Initial allocation: P0:1, P1:0, P2:1. Available R1=1, R2=1. P0 needs R2. P1 needs R1Ã—1. P2 needs nothing.
+R1 has 3 instances. Initial allocation: P0:1, P1:0, P2:1. Available R1=1, R2=1. P0 needs R2. P1 needs R1×1. P2 needs nothing.
 
 | Iteration | Process | Holds | Needs | Available | Can run? |
 |-----------|---------|-------|-------|-----------|----------|
-| 1 | P2 | R1Ã—1 | none | R1=1, R2=1 | Yes |
+| 1 | P2 | R1×1 | none | R1=1, R2=1 | Yes |
 | After P2 | release R1 | - | - | R1=2, R2=1 | - |
-| 2 | P1 | none | R1Ã—1 | R1=2, R2=1 | Yes |
+| 2 | P1 | none | R1×1 | R1=2, R2=1 | Yes |
 | After P1 | - | - | - | R1=2, R2=1 | - |
-| 3 | P0 | R1Ã—1 | R2Ã—1 | R1=2, R2=1 | Yes |
+| 3 | P0 | R1×1 | R2×1 | R1=2, R2=1 | Yes |
 | All removed → **No deadlock** | | | | | |
 
 #### Edge Case: RAG with Multiple Resource Units
@@ -370,16 +370,16 @@ R1 has 3 instances. Initial allocation: P0:1, P1:0, P2:1. Available R1=1, R2=1. 
 ```
 Resources: R1 (5 instances), R2 (3 instances)
 
-Process  P0: holds R1Ã—3, holds R2Ã—1, requests R2Ã—1
-Process  P1: holds R1Ã—2, requests R1Ã—1
-Process  P2: holds R2Ã—2, requests R1Ã—1
+Process  P0: holds R1×3, holds R2×1, requests R2×1
+Process  P1: holds R1×2, requests R1×1
+Process  P2: holds R2×2, requests R1×1
 
 Available: R1=0, R2=0
 
 Check:
-- P0 needs R2Ã—1 but R2=0 available → blocked
-- P1 needs R1Ã—1 but R1=0 available → blocked
-- P2 needs R1Ã—1 but R1=0 available → blocked
+- P0 needs R2×1 but R2=0 available → blocked
+- P1 needs R1×1 but R1=0 available → blocked
+- P2 needs R1×1 but R1=0 available → blocked
 
 All blocked → DEADLOCK (even though each resource has multiple instances)
 ```
@@ -390,8 +390,8 @@ All blocked → DEADLOCK (even though each resource has multiple instances)
 |--------|-------|-----|
 | **Construction** | O(E) where E = #edges | Each request/allocation adds one edge |
 | **Cycle detection (single-instance)** | O(V+E) | DFS on graph with V vertices |
-| **Reduction (multi-instance)** | O(nÂ·m) | n processes, m resources; each iteration checks all processes |
-| **Space** | O(nÂ·m) | Adjacency matrix or edge list |
+| **Reduction (multi-instance)** | O(n·m) | n processes, m resources; each iteration checks all processes |
+| **Space** | O(n·m) | Adjacency matrix or edge list |
 
 #### Advantages & Disadvantages of RAG Approach
 
@@ -571,14 +571,14 @@ void unsafe_process() {
 
 ```
 Assume deadlock exists despite ordering. Then there is a cycle:
-  P0 → Râ±¼ → P1 → Râ‚– → P2 → ... → Pn → Râ‚— → P0
+  P0 → Rⱼ → P1 → Rₖ → P2 → ... → Pn → Rₗ → P0
 
 By the ordering rule:
-  If Páµ¢ holds Râ‚ and requests Ráµ¦, then a < b.
+  If Pᵢ holds Rₐ and requests Rᵦ, then a < b.
   
 In the cycle, each process requests a resource held by the next:
-  P0 holds Râ‚“ and wants Râ±¼: x < j
-  P1 holds Râ±¼ and wants Râ‚–: j < k
+  P0 holds Rₓ and wants Rⱼ: x < j
+  P1 holds Rⱼ and wants Rₖ: j < k
   ...by transitivity: x < j < k < ... < l < x
   
 But this implies x < x, which is impossible.
@@ -594,7 +594,7 @@ Ordering: R0(0) < R1(1) < R2(2) < R3(3)
 Scenario → P0 needs R1 and R3:
   Step 1: request(R1) → OK, order starts at 0
   Step 2: request(R3) → OK, 1 < 3
-  Step 3: use, release(R3), release(R1) âœ“
+  Step 3: use, release(R3), release(R1) ✓
 
 Scenario → P1 needs R2 and R1:
   Step 1: request(R2) → OK
@@ -637,18 +637,18 @@ Avoidance requires that the system knows in advance the **maximum** number of re
 
 #### Real-World Analogy: The Banker
 
-A banker has limited funds (â‚¹10,000). Several businesses need loans:
+A banker has limited funds (₹10,000). Several businesses need loans:
 
 ```
-Banker (OS) with â‚¹10,000 capital (available resources)
+Banker (OS) with ₹10,000 capital (available resources)
   ┌─────────────────────────────────────┐
-  │  Biz A: max â‚¹7K, already owes â‚¹2K   │  Needs up to â‚¹5K more
-  │  Biz B: max â‚¹3K, already owes â‚¹1K   │  Needs up to â‚¹2K more  
-  │  Biz C: max â‚¹9K, already owes â‚¹5K   │  Needs up to â‚¹4K more
+  │  Biz A: max ₹7K, already owes ₹2K   │  Needs up to ₹5K more
+  │  Biz B: max ₹3K, already owes ₹1K   │  Needs up to ₹2K more  
+  │  Biz C: max ₹9K, already owes ₹5K   │  Needs up to ₹4K more
   └─────────────────────────────────────┘
-           Cash on hand: â‚¹2K
+           Cash on hand: ₹2K
 
-The banker asks: "If I grant Biz B's request for â‚¹1K more, can all businesses
+The banker asks: "If I grant Biz B's request for ₹1K more, can all businesses
 eventually finish?" This is the safety check.
 ```
 
@@ -665,7 +665,7 @@ Safe State:
     │ After P2: available = 5            │
     │ P1 needs 5, has 2 → can finish     │
     │ After P1: available = 7            │
-    │ P0 needs 7, has 0 → can finish âœ“   │
+    │ P0 needs 7, has 0 → can finish ✓   │
     │                                    │
     │ Safe sequence: <P2, P1, P0>        │
     └─────────────────────────────────────┘
@@ -674,7 +674,7 @@ Unsafe State (but not deadlock):
     ┌─────────────────────────────────────┐
     │ Available = 1 unit                 │
     │                                    │
-    │ No process has Need â‰¤ Available    │
+    │ No process has Need ≤ Available    │
     │ All processes could still progress  │
     │ if they release resources          │
     │ But we can't guarantee it          │
@@ -696,16 +696,16 @@ Deadlock:
 n = number of processes
 m = number of resource types
 
-Available[m]:     Available[j] = k → k instances of Râ±¼ are free
-Max[n][m]:        Max[i][j] = k → Páµ¢ will need at most k instances of Râ±¼
-Allocation[n][m]: Allocation[i][j] = k → Páµ¢ currently holds k instances
+Available[m]:     Available[j] = k → k instances of Rⱼ are free
+Max[n][m]:        Max[i][j] = k → Pᵢ will need at most k instances of Rⱼ
+Allocation[n][m]: Allocation[i][j] = k → Pᵢ currently holds k instances
 Need[n][m]:       Need[i][j] = Max[i][j] - Allocation[i][j]
-Request[i][m]:    Request[i][j] = k → Páµ¢ is requesting k instances of Râ±¼
+Request[i][m]:    Request[i][j] = k → Pᵢ is requesting k instances of Rⱼ
 
 Invariants:
-  Need[i][j] â‰¥ 0 for all i, j
-  Allocation[i][j] â‰¤ Max[i][j] for all i, j
-  Î£ Allocation[i][j] + Available[j] = total instances of Râ±¼
+  Need[i][j] ≥ 0 for all i, j
+  Allocation[i][j] ≤ Max[i][j] for all i, j
+  Σ Allocation[i][j] + Available[j] = total instances of Rⱼ
 ```
 
 #### Safety Algorithm (Banker's Core)
@@ -722,8 +722,8 @@ FUNCTION isSafe(Available, Allocation, Need, n, m):
     WHILE true:
         found = false
         FOR i = 0 TO n-1:
-            IF Finish[i] == false AND Need[i] â‰¤ Work:
-                // Páµ¢ can complete
+            IF Finish[i] == false AND Need[i] ≤ Work:
+                // Pᵢ can complete
                 Work = Work + Allocation[i]
                 Finish[i] = true
                 found = true
@@ -738,8 +738,8 @@ FUNCTION isSafe(Available, Allocation, Need, n, m):
     
     RETURN true                 // Safe state
     
-    // Note: â‰¤ operator on vectors means all elements satisfy â‰¤ individually
-    // Need[i] â‰¤ Work ⇔ âˆ€ j: Need[i][j] â‰¤ Work[j]
+    // Note: ≤ operator on vectors means all elements satisfy ≤ individually
+    // Need[i] ≤ Work ⇔ ∀ j: Need[i][j] ≤ Work[j]
 ```
 
 #### Resource-Request Algorithm
@@ -749,13 +749,13 @@ INPUT:  Process i, Request[m]
 OUTPUT: true if request granted, false otherwise
 
 FUNCTION requestResources(i, Request):
-    // Step 1: Check if request â‰¤ Need
+    // Step 1: Check if request ≤ Need
     IF Request > Need[i]:           // Error: exceeded max claim
         RETURN false
     
-    // Step 2: Check if request â‰¤ Available
+    // Step 2: Check if request ≤ Available
     IF Request > Available:         // Not enough resources right now
-        RETURN false                // Páµ¢ must wait
+        RETURN false                // Pᵢ must wait
     
     // Step 3: Pretend to allocate
     Available = Available - Request
@@ -795,7 +795,7 @@ Available = [3, 3, 2]
 
 Iteration 1:
   P0: Need=[7,4,3] > Available=[3,3,2] → cannot run
-  P1: Need=[1,2,2] â‰¤ Available=[3,3,2] → CAN RUN âœ“
+  P1: Need=[1,2,2] ≤ Available=[3,3,2] → CAN RUN ✓
   Execute P1:
     Work = [3,3,2] + Allocation[1]=[2,0,0] = [5,3,2]
     Finish[1] = true
@@ -803,25 +803,25 @@ Iteration 1:
 Iteration 2:
   P0: Need=[7,4,3] > Work=[5,3,2] → cannot run
   P2: Need=[6,0,0] > Work=[5,3,2] → cannot run
-  P3: Need=[0,1,1] â‰¤ Work=[5,3,2] → CAN RUN âœ“
+  P3: Need=[0,1,1] ≤ Work=[5,3,2] → CAN RUN ✓
   Execute P3:
     Work = [5,3,2] + Allocation[3]=[2,1,1] = [7,4,3]
     Finish[3] = true
 
 Iteration 3:
-  P0: Need=[7,4,3] â‰¤ Work=[7,4,3] → CAN RUN âœ“
+  P0: Need=[7,4,3] ≤ Work=[7,4,3] → CAN RUN ✓
   Execute P0:
     Work = [7,4,3] + Allocation[0]=[0,1,0] = [7,5,3]
     Finish[0] = true
 
 Iteration 4:
-  P2: Need=[6,0,0] â‰¤ Work=[7,5,3] → CAN RUN âœ“
+  P2: Need=[6,0,0] ≤ Work=[7,5,3] → CAN RUN ✓
   Execute P2:
     Work = [7,5,3] + Allocation[2]=[3,0,2] = [10,5,5]
     Finish[2] = true
 
 Iteration 5:
-  P4: Need=[4,3,1] â‰¤ Work=[10,5,5] → CAN RUN âœ“
+  P4: Need=[4,3,1] ≤ Work=[10,5,5] → CAN RUN ✓
   Execute P4:
     Work = [10,5,5] + Allocation[4]=[0,0,2] = [10,5,7]
     Finish[4] = true
@@ -832,7 +832,7 @@ Safe sequence: P1 → P3 → P0 → P2 → P4
 
 **Dry Run Trace Table (Step-by-Step):**
 
-| Iter | Process | Need | Work (Start) | Need â‰¤ Work? | Work (End) | Finish |
+| Iter | Process | Need | Work (Start) | Need ≤ Work? | Work (End) | Finish |
 |------|---------|------|-------------|--------------|------------|--------|
 | 1 | P0 | [7,4,3] | [3,3,2] | No | - | - |
 | 1 | P1 | [1,2,2] | [3,3,2] | **Yes** | [5,3,2] | Yes |
@@ -848,8 +848,8 @@ Safe sequence: P1 → P3 → P0 → P2 → P4
 ```
 P1 Request = [1, 0, 2]
 
-Check 1: Request â‰¤ Need[1]? [1,0,2] â‰¤ [1,2,2] → Yes âœ“
-Check 2: Request â‰¤ Available? [1,0,2] â‰¤ [3,3,2] → Yes âœ“
+Check 1: Request ≤ Need[1]? [1,0,2] ≤ [1,2,2] → Yes ✓
+Check 2: Request ≤ Available? [1,0,2] ≤ [3,3,2] → Yes ✓
 
 Pretend allocation:
   Available = [3,3,2] - [1,0,2] = [2,3,0]
@@ -869,21 +869,21 @@ Safety check on new state:
 
 Iteration 1:
   P0: [7,4,3] > [2,3,0] → No
-  P1: [0,2,0] â‰¤ [2,3,0] → YES → Work = [5,3,2], Finish[1]=true
+  P1: [0,2,0] ≤ [2,3,0] → YES → Work = [5,3,2], Finish[1]=true
   (check P2, P3, P4: none can run yet)
 
 Iteration 2:
   P0: [7,4,3] > [5,3,2] → No
-  P3: [0,1,1] â‰¤ [5,3,2] → YES → Work = [7,4,3], Finish[3]=true
+  P3: [0,1,1] ≤ [5,3,2] → YES → Work = [7,4,3], Finish[3]=true
 
 Iteration 3:
-  P0: [7,4,3] â‰¤ [7,4,3] → YES → Work = [7,5,3], Finish[0]=true
+  P0: [7,4,3] ≤ [7,4,3] → YES → Work = [7,5,3], Finish[0]=true
 
 Iteration 4:
-  P2: [6,0,0] â‰¤ [7,5,3] → YES → Work = [10,5,5], Finish[2]=true
+  P2: [6,0,0] ≤ [7,5,3] → YES → Work = [10,5,5], Finish[2]=true
 
 Iteration 5:
-  P4: [4,3,1] â‰¤ [10,5,5] → YES → Work = [10,5,7], Finish[4]=true
+  P4: [4,3,1] ≤ [10,5,5] → YES → Work = [10,5,7], Finish[4]=true
 
 All finished → SAFE → Request GRANTED
 Safe sequence: P1 → P3 → P0 → P2 → P4
@@ -896,8 +896,8 @@ Current available = [2, 3, 0]
 
 P4 Request = [3, 3, 0]
 
-Check 1: Request â‰¤ Need[4]? [3,3,0] â‰¤ [4,3,1] → Yes âœ“
-Check 2: Request â‰¤ Available? [3,3,0] â‰¤ [2,3,0] → No → Request DENIED
+Check 1: Request ≤ Need[4]? [3,3,0] ≤ [4,3,1] → Yes ✓
+Check 2: Request ≤ Available? [3,3,0] ≤ [2,3,0] → No → Request DENIED
 (P4 must wait)
 ```
 
@@ -908,8 +908,8 @@ Current available = [2, 3, 0]
 
 P0 Request = [0, 2, 0]
 
-Check 1: Request â‰¤ Need[0]? [0,2,0] â‰¤ [7,4,3] → Yes âœ“
-Check 2: Request â‰¤ Available? [0,2,0] â‰¤ [2,3,0] → Yes âœ“
+Check 1: Request ≤ Need[0]? [0,2,0] ≤ [7,4,3] → Yes ✓
+Check 2: Request ≤ Available? [0,2,0] ≤ [2,3,0] → Yes ✓
 
 Pretend allocation:
   Available = [2,3,0] - [0,2,0] = [2,1,0]
@@ -1046,23 +1046,23 @@ public:
             cout << request[j] << (j < m-1 ? "," : "");
         cout << "] ===\n";
 
-        // Step 1: Check if request â‰¤ need
+        // Step 1: Check if request ≤ need
         for (int j = 0; j < m; j++) {
             if (request[j] > need[pid][j]) {
                 cout << "ERROR: Request exceeds maximum claim.\n";
                 return false;
             }
         }
-        cout << "Step 1: Request â‰¤ Need âœ“\n";
+        cout << "Step 1: Request ≤ Need ✓\n";
 
-        // Step 2: Check if request â‰¤ available
+        // Step 2: Check if request ≤ available
         for (int j = 0; j < m; j++) {
             if (request[j] > available[j]) {
                 cout << "Step 2: Request > Available → must wait\n";
                 return false;
             }
         }
-        cout << "Step 2: Request â‰¤ Available âœ“\n";
+        cout << "Step 2: Request ≤ Available ✓\n";
 
         // Step 3: Pretend to allocate
         for (int j = 0; j < m; j++) {
@@ -1074,7 +1074,7 @@ public:
         // Step 4: Safety check
         vector<int> safeSeq;
         if (isSafe(safeSeq)) {
-            cout << "Step 4: State is SAFE → Request GRANTED âœ“\n";
+            cout << "Step 4: State is SAFE → Request GRANTED ✓\n";
             return true;
         } else {
             // Rollback
@@ -1083,7 +1083,7 @@ public:
                 allocation[pid][j] -= request[j];
                 need[pid][j] += request[j];
             }
-            cout << "Step 4: State is UNSAFE → Request DENIED âœ—\n";
+            cout << "Step 4: State is UNSAFE → Request DENIED ✗\n";
             return false;
         }
     }
@@ -1234,14 +1234,14 @@ class BankersAlgorithm:
             if request[j] > self.need[pid][j]:
                 print("ERROR: Request exceeds maximum claim!")
                 return False
-        print("Step 1 âœ“: Request <= Need")
+        print("Step 1 ✓: Request <= Need")
         
         # Step 2: Check request <= available
         for j in range(self.m):
             if request[j] > self.available[j]:
-                print("Step 2 âœ—: Request > Available → must wait")
+                print("Step 2 ✗: Request > Available → must wait")
                 return False
-        print("Step 2 âœ“: Request <= Available")
+        print("Step 2 ✓: Request <= Available")
         
         # Step 3: Pretend allocation
         for j in range(self.m):
@@ -1252,7 +1252,7 @@ class BankersAlgorithm:
         # Step 4: Safety check
         safe, seq = self.is_safe()
         if safe:
-            print(f"Step 4 âœ“: SAFE → Request GRANTED. Sequence: {seq}")
+            print(f"Step 4 ✓: SAFE → Request GRANTED. Sequence: {seq}")
             return True
         else:
             # Rollback
@@ -1260,7 +1260,7 @@ class BankersAlgorithm:
                 self.available[j] += request[j]
                 self.allocation[pid][j] -= request[j]
                 self.need[pid][j] += request[j]
-            print("Step 4 âœ—: UNSAFE → Request DENIED, rolled back")
+            print("Step 4 ✗: UNSAFE → Request DENIED, rolled back")
             return False
     
     def print_state(self):
@@ -1320,8 +1320,8 @@ P4         [4, 3, 3]       [0, 0, 2]       [4, 3, 1]
 Available: [3, 3, 2]
 
 === P1 requests [1, 0, 2] ===
-Step 1 âœ“: Request <= Need
-Step 2 âœ“: Request <= Available
+Step 1 ✓: Request <= Need
+Step 2 ✓: Request <= Available
 
 === Safety Algorithm ===
 Initial Work: [2, 3, 0]
@@ -1336,30 +1336,30 @@ P2 can run. Need=[6, 0, 0] <= Work=[7, 5, 3]
 P4 can run. Need=[4, 3, 1] <= Work=[10, 5, 5]
   New Work: [10, 5, 7]
 Safe sequence: [1, 3, 0, 2, 4]
-Step 4 âœ“: SAFE → Request GRANTED. Sequence: [1, 3, 0, 2, 4]
+Step 4 ✓: SAFE → Request GRANTED. Sequence: [1, 3, 0, 2, 4]
 ```
 
 #### Complexity Analysis of Banker's Algorithm
 
 | Operation | Time Complexity | Why |
 |-----------|----------------|-----|
-| Safety check | O(mÂ·nÂ²) | For each of n processes (outer loop), we scan n processes Ã— m resources |
-| Resource request | O(mÂ·nÂ²) | One safety check after pretend allocation |
-| Need calculation | O(mÂ·n) | Single pass through nÃ—m matrix |
-| Space | O(mÂ·n) | Store Max, Allocation, Need matrices |
+| Safety check | O(m·n²) | For each of n processes (outer loop), we scan n processes × m resources |
+| Resource request | O(m·n²) | One safety check after pretend allocation |
+| Need calculation | O(m·n) | Single pass through n×m matrix |
+| Space | O(m·n) | Store Max, Allocation, Need matrices |
 
-**Detailed breakdown of safety check O(mÂ·nÂ²):**
+**Detailed breakdown of safety check O(m·n²):**
 
 ```
 Outer loop: runs up to n times (once per process)
   For each iteration:
     Scan all n processes: O(n)
       For each unfinished process, check m resources: O(m)
-  Inner complexity: O(nÂ·m)
-Total: O(n Ã— nÂ·m) = O(mÂ·nÂ²)
+  Inner complexity: O(n·m)
+Total: O(n × n·m) = O(m·n²)
 
-With n=5, m=3: 5 Ã— 5 Ã— 3 = 75 operations → trivial
-With n=100, m=10: 100 Ã— 100 Ã— 10 = 100,000 operations → still reasonable
+With n=5, m=3: 5 × 5 × 3 = 75 operations → trivial
+With n=100, m=10: 100 × 100 × 10 = 100,000 operations → still reasonable
 ```
 
 #### Advantages & Disadvantages of Banker's Algorithm
@@ -1368,7 +1368,7 @@ With n=100, m=10: 100 Ã— 100 Ã— 10 = 100,000 operations → still reasonab
 |-----------|-------------|
 | Guarantees deadlock freedom | Requires advance knowledge of maximum resource needs |
 | No resource utilization sacrifice | Processes rarely declare true max → over-reservation |
-| Graceful handling of requests | O(mÂ·nÂ²) complexity scales quadratically |
+| Graceful handling of requests | O(m·n²) complexity scales quadratically |
 | Rollback ensures no unsafe decisions | Starvation not addressed (process may wait forever for unsafe state to clear) |
 | Theoretically optimal | Impractical for most real OS (processes don't know future needs) |
 
@@ -1383,8 +1383,8 @@ P1: Max=[1,2], Allocation=[0,1], Need=[1,1]
 Available=[1,1]
 
 Safety check:
-  P0: Need=[1,1] â‰¤ Work=[1,1] → run → Work=[2,1]
-  P1: Need=[1,1] â‰¤ Work=[2,1] → run → Work=[2,2]
+  P0: Need=[1,1] ≤ Work=[1,1] → run → Work=[2,1]
+  P1: Need=[1,1] ≤ Work=[2,1] → run → Work=[2,2]
   SAFE
 
 Scenario where multi-instance prevents deadlock but single-instance wouldn't:
@@ -1416,7 +1416,7 @@ P0: Need=[2,1], Work=[2,1]
 Avoidance says: "This state could lead to deadlock, deny the request."
 Detection says: "I'll allow it. If deadlock happens, I'll find and fix it."
 
-In an avoidance system, unsafe â‰  deadlock. The system is being conservative.
+In an avoidance system, unsafe ≠ deadlock. The system is being conservative.
 ```
 
 ---
@@ -1451,7 +1451,7 @@ def has_deadlock(wait_for_graph, n):
     """
     Detect deadlock in a wait-for graph.
     Args:
-        wait_for_graph: nÃ—n adjacency matrix
+        wait_for_graph: n×n adjacency matrix
         n: number of processes
     Returns:
         (has_deadlock, deadlocked_processes)
@@ -1519,11 +1519,11 @@ FUNCTION detectDeadlock(Available, Allocation, Request, n, m):
         ELSE:
             Finish[i] = false
     
-    // Find an unfinished process whose request â‰¤ work
+    // Find an unfinished process whose request ≤ work
     WHILE true:
         found = false
         FOR i = 0 TO n-1:
-            IF NOT Finish[i] AND Request[i] â‰¤ Work:
+            IF NOT Finish[i] AND Request[i] ≤ Work:
                 Work = Work + Allocation[i]
                 Finish[i] = true
                 found = true
@@ -1534,7 +1534,7 @@ FUNCTION detectDeadlock(Available, Allocation, Request, n, m):
     // Any process still unfinished → deadlocked
     FOR i = 0 TO n-1:
         IF NOT Finish[i]:
-            mark Páµ¢ as deadlocked
+            mark Pᵢ as deadlocked
     
     RETURN any unfinished found
 ```
@@ -1653,13 +1653,13 @@ State:
   P4      | [0, 0, 2] | [0, 0, 2]
 
 Initial Finish:
-  P0: Allocation=[0,1,0] â‰  zero → Finish[0]=false
-  P1: Allocation=[2,0,0] â‰  zero → Finish[1]=false
-  P2: Allocation=[3,0,2] â‰  zero → Finish[2]=false
-  P3: Allocation=[2,1,1] â‰  zero → Finish[3]=false
-  P4: Allocation=[0,0,2] â‰  zero → Finish[4]=false
+  P0: Allocation=[0,1,0] ≠ zero → Finish[0]=false
+  P1: Allocation=[2,0,0] ≠ zero → Finish[1]=false
+  P2: Allocation=[3,0,2] ≠ zero → Finish[2]=false
+  P3: Allocation=[2,1,1] ≠ zero → Finish[3]=false
+  P4: Allocation=[0,0,2] ≠ zero → Finish[4]=false
 
-Iteration | Process | Request | Work (Start) | Request â‰¤ Work? | Work (End) | Finish
+Iteration | Process | Request | Work (Start) | Request ≤ Work? | Work (End) | Finish
 ----------|---------|---------|-------------|-----------------|------------|-------
 1         | P0      | [0,0,0] | [0,1,0]     | Yes             | [0,2,0]   | True
 1         | P1      | [2,0,2] | [0,2,0]     | [2 > 0 → No]    | -          | -
@@ -1680,7 +1680,7 @@ All finished → NO DEADLOCK
   P1      | [0, 1, 0] | [0, 0, 1]   → wants R3, holds R2
   P2      | [0, 0, 1] | [1, 0, 0]   → wants R1, holds R3
 
-Iteration | Process | Request | Work | Request â‰¤ Work? | Finish
+Iteration | Process | Request | Work | Request ≤ Work? | Finish
 ----------|---------|---------|------|-----------------|-------
 1         | P0      | [0,1,0] | [0,0,0] | No (1>0)    | -
 1         | P1      | [0,0,1] | [0,0,0] | No (1>0)    | -
@@ -1694,8 +1694,8 @@ DEADLOCK: P0, P1, P2 all deadlocked
 
 | Aspect | Value | Why |
 |--------|-------|-----|
-| **Time Complexity** | O(mÂ·nÂ²) | Same as Banker: scan all n processes, up to n times, each checking m resources |
-| **Space Complexity** | O(mÂ·n) | Store available (m), allocation (nÃ—m), request (nÃ—m) |
+| **Time Complexity** | O(m·n²) | Same as Banker: scan all n processes, up to n times, each checking m resources |
+| **Space Complexity** | O(m·n) | Store available (m), allocation (n×m), request (n×m) |
 | **For n=100, m=10** | ~100K operations | Runs in milliseconds; can be invoked periodically |
 
 #### How Often to Run Detection
@@ -1711,8 +1711,8 @@ DEADLOCK: P0, P1, P2 all deadlocked
 ```
 Resources: R1 (2 instances), R2 (2 instances)
 
-P0: holds R1Ã—2, needs R2Ã—1
-P1: holds R2Ã—2, needs R1Ã—1
+P0: holds R1×2, needs R2×1
+P1: holds R2×2, needs R1×1
 P2: holds nothing, needs nothing (idle)
 
 Available: R1=0, R2=0
@@ -1770,33 +1770,33 @@ void abort_one_by_one(int deadlocked[], int count) {
 
 | Pro | Con |
 |-----|-----|
-| Lower overhead: only abort what's necessary | Must re-run detection after each abort (O(mÂ·nÂ²) each time) |
+| Lower overhead: only abort what's necessary | Must re-run detection after each abort (O(m·n²) each time) |
 | Selective: choose victim with minimum cost | May take multiple iterations |
 
 **Selection Criteria (victim selection):**
 
 ```
 Cost function for victim selection:
-  cost(P) = wâ‚Â·priority(P)â»Â¹ + wâ‚‚Â·runtime(P) + wâ‚ƒÂ·resources_held(P) + wâ‚„Â·remaining_time(P)
+  cost(P) = w₁·priority(P)⁻¹ + w₂·runtime(P) + w₃·resources_held(P) + w₄·remaining_time(P)
 
 Where:
   priority(P)   = process priority (higher = more important → higher cost to abort)
   runtime(P)    = CPU time used so far (more runtime = more lost work → higher cost)
   resources_held(P) = number of resources held (more resources to reclaim → lower cost)
   remaining_time(P) = estimated time to completion (more remaining = lower cost to abort)
-  wâ‚, wâ‚‚, wâ‚ƒ, wâ‚„ = weighting factors
+  w₁, w₂, w₃, w₄ = weighting factors
 ```
 
 **Numbered Steps for Process Termination Recovery:**
 
 1. Detect deadlock, get set of deadlocked processes D
-2. For each process Páµ¢ âˆˆ D, compute cost(Páµ¢) using selection criteria
+2. For each process Pᵢ ∈ D, compute cost(Pᵢ) using selection criteria
 3. Sort D by cost in descending order (highest cost = worst to abort)
-4. Select victim Pâ±¼ = lowest cost process in D
-5. Terminate Pâ±¼ and all its child threads
-6. Reclaim all resources held by Pâ±¼
+4. Select victim Pⱼ = lowest cost process in D
+5. Terminate Pⱼ and all its child threads
+6. Reclaim all resources held by Pⱼ
 7. Run deadlock detection again
-8. If deadlock persists, go to step 2 with reduced set D \ {Pâ±¼}
+8. If deadlock persists, go to step 2 with reduced set D \ {Pⱼ}
 9. If deadlock resolved, resume normal operation
 
 #### Approach 2: Resource Preemption
@@ -1841,17 +1841,17 @@ PreemptionTarget select_victim_resource(bool deadlocked[], int n, int m) {
 |-----------|-------------|----------|
 | **1. Victim Selection** | Which process/resource to preempt? | Preempt processes holding preemptable resources (memory pages, not mutexes) |
 | **2. Rollback** | Preempted process must be restored to safe state | Checkpoint at known safe points (syscall boundaries, transaction commits) |
-| **3. Starvation** | Same process repeatedly selected | Include preemption count in cost metric: cost(P) Ã— (1 + preemption_count(P)) |
+| **3. Starvation** | Same process repeatedly selected | Include preemption count in cost metric: cost(P) × (1 + preemption_count(P)) |
 
 **Numbered Steps for Resource Preemption:**
 
 1. Identify preemptable resources from deadlocked set (schedulable resources only: CPU, memory, disk space)
-2. Select victim process Pâ±¼ using weighted cost function that includes preemption history
+2. Select victim process Pⱼ using weighted cost function that includes preemption history
 3. Checkpoint: save process state at last safe point (register file, stack pointer)
-4. Preempt: forcibly remove resource from Pâ±¼ (revoke memory pages, take back disk blocks)
-5. Restart Pâ±¼ from last checkpoint (may lose some computation)
+4. Preempt: forcibly remove resource from Pⱼ (revoke memory pages, take back disk blocks)
+5. Restart Pⱼ from last checkpoint (may lose some computation)
 6. Allocate preempted resource to the waiting process
-7. Record preemption in Pâ±¼'s starvation counter
+7. Record preemption in Pⱼ's starvation counter
 8. If deadlock persists, repeat from step 1
 
 #### Comparison: Termination vs Preemption
@@ -1877,7 +1877,7 @@ PreemptionTarget select_victim_resource(bool deadlocked[], int n, int m) {
 | **Resource utilization** | Low (especially hold-and-wait prevention) | Moderate | High |
 | **Throughput** | Lower | Moderate | High |
 | **Advance knowledge needed** | None | Yes → processes must declare Max need | None |
-| **Runtime overhead** | Low (check ordering) | High (O(mÂ·nÂ²) per request) | Low (periodic detection) |
+| **Runtime overhead** | Low (check ordering) | High (O(m·n²) per request) | Low (periodic detection) |
 | **Implementation complexity** | Low (circular wait ordering) | High (maintain matrices, safe state check) | Moderate (detection algorithm + recovery) |
 | **When deadlock possible?** | Never | Never (conservative) | Yes, but handled |
 | **Starvation possible?** | Yes (hold-and-wait) | Yes (process may wait indefinitely for safe state) | Yes (during preemption) |
@@ -1894,7 +1894,7 @@ PreemptionTarget select_victim_resource(bool deadlocked[], int n, int m) {
 | Property | Deadlock | Starvation |
 |----------|----------|------------|
 | **Definition** | Set of processes blocked forever, each waiting for a resource held by another | A process is indefinitely delayed because higher-priority processes always get the resource first |
-| **Blocked set** | â‰¥ 2 processes involved | 1 process is the victim |
+| **Blocked set** | ≥ 2 processes involved | 1 process is the victim |
 | **Can affected processes run?** | No → all are blocked waiting | The starving process could run if scheduler allowed it |
 | **Resource held by victim?** | Yes → each holds resources | Maybe → starving process may hold no resources |
 | **Self-recovery** | Impossible without external action | Possible when load decreases |
@@ -2034,9 +2034,9 @@ For N philosophers with ordered chopstick pickup:
 At most 4 philosophers can hold chopstick 0 (one gets it).
 The one who gets 0 will also get their second chopstick.
 No cycle can form because:
-  - To have a cycle, we'd need Pâ‚€ waiting for Pâ‚, Pâ‚ waiting for Pâ‚‚, etc.
-  - But Pâ‚„ picks up 0 first (not 4), and 0 is the lowest number
-  - Pâ‚„ cannot be part of a decreasing-order cycle
+  - To have a cycle, we'd need P₀ waiting for P₁, P₁ waiting for P₂, etc.
+  - But P₄ picks up 0 first (not 4), and 0 is the lowest number
+  - P₄ cannot be part of a decreasing-order cycle
 ```
 
 **Alternative Solution: Limit the number of eaters.**
@@ -2075,7 +2075,7 @@ Used by: Most general-purpose OS (Linux, Windows, macOS) for most resources.
 
 Rationale:
   - Deadlocks are rare in correctly designed systems
-  - Cost of prevention (reduced utilization, O(mÂ·nÂ²) checks) exceeds cost of occasional reboot
+  - Cost of prevention (reduced utilization, O(m·n²) checks) exceeds cost of occasional reboot
   - Users are tolerant of occasional freezes if they're infrequent
   - Developer effort is better spent elsewhere
 
@@ -2460,28 +2460,28 @@ Detection approaches:
 **Edge-Chasing Algorithm (Distributed Deadlock):**
 
 ```
-// Probe format: (i, j, k) → initiated by Páµ¢, sent from Pâ±¼ to Pâ‚–
-// Pâ±¼ waits for Pâ‚– (Pâ±¼ → Pâ‚– in wait-for graph)
+// Probe format: (i, j, k) → initiated by Pᵢ, sent from Pⱼ to Pₖ
+// Pⱼ waits for Pₖ (Pⱼ → Pₖ in wait-for graph)
 
 PROCEDURE send_probe(i, j, k):
-    // Pâ±¼ sends probe to Pâ‚– on behalf of initiator Páµ¢
-    // Pâ‚– is the process Pâ±¼ is waiting for
-    IF Pâ‚– is waiting for some process:
-        FOR each Pâ‚˜ that Pâ‚– waits for:
-            send probe (i, k, m) to Pâ‚˜
+    // Pⱼ sends probe to Pₖ on behalf of initiator Pᵢ
+    // Pₖ is the process Pⱼ is waiting for
+    IF Pₖ is waiting for some process:
+        FOR each Pₘ that Pₖ waits for:
+            send probe (i, k, m) to Pₘ
 
 UPON receiving probe (i, j, k):
-    // Pâ‚– received probe (i, j, k)
-    IF Pâ‚– is blocked:
+    // Pₖ received probe (i, j, k)
+    IF Pₖ is blocked:
         IF k == i:  // Probe returned to initiator
             DEADLOCK DETECTED!
-            Print: "Deadlock involving Páµ¢, ..., Pâ‚–"
+            Print: "Deadlock involving Pᵢ, ..., Pₖ"
             Initiate recovery
         ELSE:
             // Forward probe along wait edges
-            send_probe(i, k, next) for each blocked Pâ‚– → next
+            send_probe(i, k, next) for each blocked Pₖ → next
     ELSE:
-        // Pâ‚– is not blocked → discard probe
+        // Pₖ is not blocked → discard probe
         RETURN
 ```
 
@@ -2851,7 +2851,7 @@ console.log('Cycle detected:', wfg.hasCycle());
 - **Deadlock** requires four conditions: mutual exclusion, hold-and-wait, no preemption, circular wait
 - **Resource-allocation graphs** detect cycles; single-instance cycle = deadlock, multi-instance needs reduction
 - **Prevention** breaks one condition; circular wait via resource ordering is most practical
-- **Avoidance (Banker's algorithm)** uses O(mÂ·nÂ²) safety checks before granting each request
+- **Avoidance (Banker's algorithm)** uses O(m·n²) safety checks before granting each request
 - **Detection** uses wait-for graph (single-instance) or Banker-like algorithm (multi-instance)
 - **Recovery** via process termination (simple but lossy) or resource preemption (complex but preserves work)
 - **Real systems**: Linux lockdep validates ordering at boot; InnoDB detects cycles on every lock wait; Java's jstack reports deadlocks on demand
@@ -2900,9 +2900,9 @@ console.log('Cycle detected:', wfg.hasCycle());
 
 4. What is the time complexity of Banker's safety algorithm?
    - a) O(n)
-   - b) O(mÂ·n)
-   - c) O(mÂ·nÂ²)
-   - d) O(2â¿)
+   - b) O(m·n)
+   - c) O(m·n²)
+   - d) O(2ⁿ)
 
 5. Most general-purpose OS handle deadlocks by:
    - a) Prevention

@@ -5,7 +5,7 @@ title: "22 Mock Test 8"
 sidebar_label: "22 Mock Test 8"
 sidebar_position: 19
 ---
-ï»¿# GATE CS Mock Test 8 Ã¢â‚¬â€� Full-Length Practice Paper (Hardest Edition)
+﻿# GATE CS Mock Test 8 â€â€� Full-Length Practice Paper (Hardest Edition)
 
 
 ## Chapter at a Glance
@@ -73,19 +73,19 @@ flowchart LR
 
 | Questions | Type | Marks | Negative Marking |
 |-----------|------|-------|-----------------|
-| Q1Ã¢â‚¬â€œQ10 (GA) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
-| Q11Ã¢â‚¬â€œQ15 (GA) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
-| Q16Ã¢â‚¬â€œQ20 (Math) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
-| Q21Ã¢â‚¬â€œQ25 (Math) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
-| Q26Ã¢â‚¬â€œQ45 (Technical) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
-| Q46Ã¢â‚¬â€œQ55 (Technical) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
+| Q1–Q10 (GA) | MCQ | 1 each | −1/3 |
+| Q11–Q15 (GA) | MCQ | 2 each | −2/3 |
+| Q16–Q20 (Math) | MCQ | 1 each | −1/3 |
+| Q21–Q25 (Math) | MCQ | 2 each | −2/3 |
+| Q26–Q45 (Technical) | MCQ | 1 each | −1/3 |
+| Q46–Q55 (Technical) | MCQ | 2 each | −2/3 |
 
 **Difficulty:** Very Hard (GATE Topper Level)
 **Recommended Time per Section:** GA 25 min, Math 30 min, Technical 125 min
 
 ---
 
-## Section A: General Aptitude (Questions 1Ã¢â‚¬â€œ15)
+## Section A: General Aptitude (Questions 1–15)
 
 **Q1 (1 Mark):** Find the missing number in the series: 2, 6, 15, 31, 56, ?
 
@@ -123,12 +123,12 @@ flowchart LR
 
 ---
 
-**Q5 (1 Mark):** A man spends 40% of his income on rent, 30% of the remainder on food, and 25% of what is left on transportation. He saves the remaining Ã¢â€šÂ¹12,600. What is his monthly income?
+**Q5 (1 Mark):** A man spends 40% of his income on rent, 30% of the remainder on food, and 25% of what is left on transportation. He saves the remaining ₹12,600. What is his monthly income?
 
-(A) Ã¢â€šÂ¹35,000
-(B) Ã¢â€šÂ¹40,000
-(C) Ã¢â€šÂ¹42,000
-(D) Ã¢â€šÂ¹45,000
+(A) ₹35,000
+(B) ₹40,000
+(C) ₹42,000
+(D) ₹45,000
 
 ---
 
@@ -162,12 +162,12 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q9 (1 Mark):** The compound interest on a sum for 2 years at 10% per annum is Ã¢â€šÂ¹420. What is the simple interest on the same sum at the same rate for 3 years?
+**Q9 (1 Mark):** The compound interest on a sum for 2 years at 10% per annum is ₹420. What is the simple interest on the same sum at the same rate for 3 years?
 
-(A) Ã¢â€šÂ¹540
-(B) Ã¢â€šÂ¹560
-(C) Ã¢â€šÂ¹600
-(D) Ã¢â€šÂ¹630
+(A) ₹540
+(B) ₹560
+(C) ₹600
+(D) ₹630
 
 ---
 
@@ -225,27 +225,27 @@ Which conclusion(s) follow(s)?
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16Ã¢â‚¬â€œ25)
+## Section B: Engineering Mathematics (Questions 16–25)
 
-**Q16 (1 Mark):** If A = [[1, 2, 3], [0, 1, 4], [0, 0, 1]], then AÃ¢Â�Â»Ã‚Â¹ equals:
+**Q16 (1 Mark):** If A = [[1, 2, 3], [0, 1, 4], [0, 0, 1]], then AâÂ�»¹ equals:
 
-(A) [[1, Ã¢Ë†â€™2, 5], [0, 1, Ã¢Ë†â€™4], [0, 0, 1]]
-(B) [[1, 2, Ã¢Ë†â€™5], [0, 1, 4], [0, 0, 1]]
-(C) [[1, Ã¢Ë†â€™2, Ã¢Ë†â€™5], [0, 1, Ã¢Ë†â€™4], [0, 0, 1]]
-(D) [[1, 2, 5], [0, 1, Ã¢Ë†â€™4], [0, 0, 1]]
+(A) [[1, −2, 5], [0, 1, −4], [0, 0, 1]]
+(B) [[1, 2, −5], [0, 1, 4], [0, 0, 1]]
+(C) [[1, −2, −5], [0, 1, −4], [0, 0, 1]]
+(D) [[1, 2, 5], [0, 1, −4], [0, 0, 1]]
 
 ---
 
 **Q17 (1 Mark):** The generating function for the sequence 1, 2, 3, 4, ... is:
 
-(A) 1/(1Ã¢Ë†â€™x)
-(B) 1/(1Ã¢Ë†â€™x)Ã‚Â²
-(C) x/(1Ã¢Ë†â€™x)Ã‚Â²
-(D) 1/(1+x)Ã‚Â²
+(A) 1/(1−x)
+(B) 1/(1−x)²
+(C) x/(1−x)²
+(D) 1/(1+x)²
 
 ---
 
-**Q18 (1 Mark):** lim_{xÃ¢â€ â€™0} (tan x Ã¢Ë†â€™ x) / (x Ã¢Ë†â€™ sin x) equals:
+**Q18 (1 Mark):** lim_{x→0} (tan x − x) / (x − sin x) equals:
 
 (A) 0
 (B) 1
@@ -254,12 +254,12 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q19 (1 Mark):** The chromatic polynomial of a complete graph KÃ¢â€šâ€ž is:
+**Q19 (1 Mark):** The chromatic polynomial of a complete graph K₄ is:
 
-(A) k(kÃ¢Ë†â€™1)(kÃ¢Ë†â€™2)(kÃ¢Ë†â€™3)
-(B) kÃ¢Â�Â´ Ã¢Ë†â€™ 6kÃ‚Â³ + 11kÃ‚Â² Ã¢Ë†â€™ 6k
-(C) k(kÃ¢Ë†â€™1)(kÃ¢Ë†â€™2)(kÃ¢Ë†â€™3)(kÃ¢Ë†â€™4)
-(D) k(kÃ¢Ë†â€™1)Ã¢Â�Â´
+(A) k(k−1)(k−2)(k−3)
+(B) kâÂ�´ − 6k³ + 11k² − 6k
+(C) k(k−1)(k−2)(k−3)(k−4)
+(D) k(k−1)âÂ�´
 
 ---
 
@@ -272,16 +272,16 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q21 (2 Marks):** The eigenvalues of matrix A = [[2, Ã¢Ë†â€™1, 0], [Ã¢Ë†â€™1, 2, Ã¢Ë†â€™1], [0, Ã¢Ë†â€™1, 2]] are:
+**Q21 (2 Marks):** The eigenvalues of matrix A = [[2, −1, 0], [−1, 2, −1], [0, −1, 2]] are:
 
 (A) 2, 2, 2
-(B) 2, 2+Ã¢Ë†Å¡2, 2Ã¢Ë†â€™Ã¢Ë†Å¡2
-(C) Ã¢Ë†Å¡2, 2, 2+Ã¢Ë†Å¡2
+(B) 2, 2+√2, 2−√2
+(C) √2, 2, 2+√2
 (D) 1, 2, 3
 
 ---
 
-**Q22 (2 Marks):** The number of distinct subgraphs of a 3-cycle (CÃ¢â€šÆ’) that are trees is:
+**Q22 (2 Marks):** The number of distinct subgraphs of a 3-cycle (C₃) that are trees is:
 
 (A) 3
 (B) 6
@@ -290,7 +290,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q23 (2 Marks):** Let X be a continuous random variable with PDF f(x) = 3xÃ‚Â² for 0 &lt; x < 1, and 0 otherwise. The variance of X is:
+**Q23 (2 Marks):** Let X be a continuous random variable with PDF f(x) = 3x² for 0 &lt; x < 1, and 0 otherwise. The variance of X is:
 
 (A) 1/20
 (B) 3/80
@@ -299,7 +299,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q24 (2 Marks):** The number of solutions to the equation xÃ¢â€šÂ� + xÃ¢â€šâ€š + xÃ¢â€šÆ’ + xÃ¢â€šâ€ž = 15, where each xÃ¡ÂµÂ¢ is a non-negative integer and xÃ¢â€šÂ� Ã¢â€°Â¥ 2, xÃ¢â€šâ€š Ã¢â€°Â¥ 3, is:
+**Q24 (2 Marks):** The number of solutions to the equation xâ‚Â� + x₂ + x₃ + x₄ = 15, where each xᵢ is a non-negative integer and xâ‚Â� ≥ 2, x₂ ≥ 3, is:
 
 (A) 220
 (B) 286
@@ -308,7 +308,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q25 (2 Marks):** Let R be the relation on Ã¢â€žâ€¢ (natural numbers) defined by aRb if a + 2b is divisible by 3. R is:
+**Q25 (2 Marks):** Let R be the relation on ℕ (natural numbers) defined by aRb if a + 2b is divisible by 3. R is:
 
 (A) Reflexive but not symmetric or transitive
 (B) Reflexive and symmetric but not transitive
@@ -317,7 +317,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-## Section C: Technical Subjects (Questions 26Ã¢â‚¬â€œ55)
+## Section C: Technical Subjects (Questions 26–55)
 
 **Q26 (1 Mark) [DS]:** A circular doubly linked list with a single node has how many NULL pointers?
 
@@ -328,21 +328,21 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q27 (1 Mark) [Algo]:** The recurrence T(n) = T(Ã¢Ë†Å¡n) + O(1) solves to:
+**Q27 (1 Mark) [Algo]:** The recurrence T(n) = T(√n) + O(1) solves to:
 
 (A) O(log n)
 (B) O(log log n)
-(C) O(Ã¢Ë†Å¡n)
-(D) O(log n Ã‚Â· log log n)
+(C) O(√n)
+(D) O(log n · log log n)
 
 ---
 
 **Q28 (1 Mark) [OS]:** In a system using segmented memory management, if the logical address has segment number s and offset d, and the segment table entry for s contains base b and limit l, the physical address is:
 
 (A) b + d, only if d &lt; l
-(B) b Ãƒâ€” d, only if d &lt; l
-(C) l Ã¢Ë†â€™ d + b
-(D) l + b Ã¢Ë†â€™ d
+(B) b × d, only if d &lt; l
+(C) l − d + b
+(D) l + b − d
 
 ---
 
@@ -364,7 +364,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q31 (1 Mark) [TOC]:** L = {aÃ¢Â�Â¿bÃ¡ÂµÂ�cÃ¢Â�Â¿dÃ¡ÂµÂ� | n, m Ã¢â€°Â¥ 0}. Which of the following is true about L?
+**Q31 (1 Mark) [TOC]:** L = {aâÂ�¿báµÂ�câÂ�¿dáµÂ� | n, m ≥ 0}. Which of the following is true about L?
 
 (A) L is regular
 (B) L is context-free but not regular
@@ -382,12 +382,12 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q33 (1 Mark) [DL]:** The Boolean function f(A, B, C) = ÃŽÂ£m(0, 4, 5, 6, 7) simplifies to:
+**Q33 (1 Mark) [DL]:** The Boolean function f(A, B, C) = Σm(0, 4, 5, 6, 7) simplifies to:
 
-(A) CÃŒâ€¦ + ABÃŒâ€¦
-(B) BÃŒâ€¦CÃŒâ€¦ + ACÃŒâ€¦
-(C) AÃŒâ€¦CÃŒâ€¦ + ABÃŒâ€¦
-(D) BÃŒâ€¦CÃŒâ€¦ + A
+(A) C̅ + AB̅
+(B) B̅C̅ + AC̅
+(C) A̅C̅ + AB̅
+(D) B̅C̅ + A
 
 ---
 
@@ -400,7 +400,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q35 (1 Mark) [DS]:** Which of the following operations on a binary search tree has worst-case time complexity ÃŽËœ(n) when the tree is not balanced?
+**Q35 (1 Mark) [DS]:** Which of the following operations on a binary search tree has worst-case time complexity Θ(n) when the tree is not balanced?
 
 (A) Search
 (B) Insert
@@ -411,10 +411,10 @@ Which conclusion(s) follow(s)?
 
 **Q36 (1 Mark) [Algo]:** The minimum number of comparisons required to find both the minimum and maximum of an array of n elements is:
 
-(A) n Ã¢Ë†â€™ 1
-(B) 2n Ã¢Ë†â€™ 2
-(C) Ã¢Å’Ë†3n/2Ã¢Å’â€° Ã¢Ë†â€™ 2
-(D) n + Ã¢Å’Ë†log nÃ¢Å’â€° Ã¢Ë†â€™ 2
+(A) n − 1
+(B) 2n − 2
+(C) ⌈3n/2⌉ − 2
+(D) n + ⌈log n⌉ − 2
 
 ---
 
@@ -447,14 +447,14 @@ Which conclusion(s) follow(s)?
 
 **Q40 (1 Mark) [TOC]:** Which of the following languages is not recursively enumerable?
 
-(A) {Ã¢Å¸Â¨MÃ¢Å¸Â© | M is a TM that halts on all inputs}
-(B) {Ã¢Å¸Â¨MÃ¢Å¸Â© | M is a TM that accepts ÃŽÂµ}
-(C) {Ã¢Å¸Â¨MÃ¢Å¸Â© | M is a TM that loops on some input}
-(D) {Ã¢Å¸Â¨MÃ¢Å¸Â© | M is a TM that writes a 1 on the tape}
+(A) {⟨M⟩ | M is a TM that halts on all inputs}
+(B) {⟨M⟩ | M is a TM that accepts ε}
+(C) {⟨M⟩ | M is a TM that loops on some input}
+(D) {⟨M⟩ | M is a TM that writes a 1 on the tape}
 
 ---
 
-**Q41 (1 Mark) [CD]:** The grammar S Ã¢â€ â€™ aS | Sb | ab generates:
+**Q41 (1 Mark) [CD]:** The grammar S → aS | Sb | ab generates:
 
 (A) All strings with equal number of a's and b's
 (B) All strings that start with a and end with b
@@ -476,7 +476,7 @@ Which conclusion(s) follow(s)?
 
 (A) 0
 (B) 127
-(C) Ã¢Ë†â€™127
+(C) −127
 (D) 1
 
 ---
@@ -493,18 +493,18 @@ Which conclusion(s) follow(s)?
 **Q45 (1 Mark) [Algo]:** The Floyd-Warshall algorithm for all-pairs shortest paths has a time complexity of:
 
 (A) O(V + E)
-(B) O(VÃ‚Â²)
-(C) O(VÃ‚Â³)
+(B) O(V²)
+(C) O(V³)
 (D) O(V log V)
 
 ---
 
-**Q46 (2 Marks) [DS]:** An expression tree has inorder traversal A + B Ãƒâ€” C Ã¢Ë†â€™ D and postorder traversal A B C Ãƒâ€” + D Ã¢Ë†â€™. What is the preorder traversal?
+**Q46 (2 Marks) [DS]:** An expression tree has inorder traversal A + B × C − D and postorder traversal A B C × + D −. What is the preorder traversal?
 
-(A) Ã¢Ë†â€™ A + Ãƒâ€” B C D
-(B) + A Ã¢Ë†â€™ Ãƒâ€” B C D
-(C) Ã¢Ë†â€™ + A Ãƒâ€” B C D
-(D) + A Ãƒâ€” B C Ã¢Ë†â€™ D
+(A) − A + × B C D
+(B) + A − × B C D
+(C) − + A × B C D
+(D) + A × B C − D
 
 ---
 
@@ -522,12 +522,12 @@ The time complexity of this algorithm is:
 
 (A) O(n)
 (B) O(n log n)
-(C) O(nÃ‚Â²)
-(D) O(nÃ‚Â² log n)
+(C) O(n²)
+(D) O(n² log n)
 
 ---
 
-**Q48 (2 Marks) [OS]:** A system has a hard disk with 200 cylinders (0Ã¢â‚¬â€œ199). The disk head is at cylinder 100 moving toward 199. The pending requests in FIFO order are: 50, 150, 30, 180, 40, 160, 20, 170. Using the C-SCAN algorithm, the total head movement is:
+**Q48 (2 Marks) [OS]:** A system has a hard disk with 200 cylinders (0–199). The disk head is at cylinder 100 moving toward 199. The pending requests in FIFO order are: 50, 150, 30, 180, 40, 160, 20, 170. Using the C-SCAN algorithm, the total head movement is:
 
 (A) 290
 (B) 310
@@ -554,7 +554,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q50 (2 Marks) [DBMS]:** Consider R(A, B, C, D, E) with functional dependencies: AB Ã¢â€ â€™ C, C Ã¢â€ â€™ D, D Ã¢â€ â€™ B, D Ã¢â€ â€™ E. Which of the following is a candidate key?
+**Q50 (2 Marks) [DBMS]:** Consider R(A, B, C, D, E) with functional dependencies: AB → C, C → D, D → B, D → E. Which of the following is a candidate key?
 
 (A) A
 (B) AB
@@ -563,7 +563,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q51 (2 Marks) [CN]:** A 10 Mbps Ethernet link connects two nodes that are 5 km apart. The propagation speed is 2 Ãƒâ€” 10Ã¢Â�Â¸ m/s. The minimum frame size required for CSMA/CD to work is:
+**Q51 (2 Marks) [CN]:** A 10 Mbps Ethernet link connects two nodes that are 5 km apart. The propagation speed is 2 × 10âÂ�¸ m/s. The minimum frame size required for CSMA/CD to work is:
 
 (A) 250 bits
 (B) 500 bits
@@ -572,7 +572,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q52 (2 Marks) [TOC]:** The language L = {ww | w Ã¢Ë†Ë† {a, b}Ã¢Â�Âº} is:
+**Q52 (2 Marks) [TOC]:** The language L = {ww | w ∈ {a, b}âÂ�º} is:
 
 (A) Context-free
 (B) Context-sensitive but not context-free
@@ -581,7 +581,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q53 (2 Marks) [CD]:** For the grammar S Ã¢â€ â€™ aAb | bBA, A Ã¢â€ â€™ aS | b, B Ã¢â€ â€™ bS | a, which of the following strings is generated by the grammar?
+**Q53 (2 Marks) [CD]:** For the grammar S → aAb | bBA, A → aS | b, B → bS | a, which of the following strings is generated by the grammar?
 
 (A) aaabbb
 (B) ababab
@@ -590,7 +590,7 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 
 ---
 
-**Q54 (2 Marks) [DL]:** A sequential circuit has two JK flip-flops with JÃ¢â€šÂ� = QÃ¢â€šâ€š, KÃ¢â€šÂ� = QÃŒâ€¦Ã¢â€šâ€š, JÃ¢â€šâ€š = QÃŒâ€¦Ã¢â€šÂ�, KÃ¢â€šâ€š = QÃ¢â€šÂ�. If the initial state is QÃ¢â€šÂ�QÃ¢â€šâ€š = 00, the next state after two clock cycles is:
+**Q54 (2 Marks) [DL]:** A sequential circuit has two JK flip-flops with Jâ‚Â� = Q₂, Kâ‚Â� = Q̅₂, J₂ = Q̅â‚Â�, K₂ = Qâ‚Â�. If the initial state is Qâ‚Â�Q₂ = 00, the next state after two clock cycles is:
 
 (A) 00
 (B) 01
@@ -627,60 +627,60 @@ Using preemptive Shortest Remaining Time First (SRTF) scheduling, the average tu
 ## Detailed Solutions
 
 **Q1 (1 Mark) [GA]:** The sequence is 2, 6, 15, 31, 56, ?
-Differences: 6Ã¢Ë†â€™2 = 4 = 2Ã‚Â², 15Ã¢Ë†â€™6 = 9 = 3Ã‚Â², 31Ã¢Ë†â€™15 = 16 = 4Ã‚Â², 56Ã¢Ë†â€™31 = 25 = 5Ã‚Â².
-So next difference = 6Ã‚Â² = 36. Next term = 56 + 36 = 92.
+Differences: 6−2 = 4 = 2², 15−6 = 9 = 3², 31−15 = 16 = 4², 56−31 = 25 = 5².
+So next difference = 6² = 36. Next term = 56 + 36 = 92.
 
 **Q2 (1 Mark) [GA]:** Container 1: milk = 2/(2+3) = 2/5, water = 3/5. Container 2: milk = 3/8, water = 5/8. Container 3: milk = 4/11, water = 7/11. With equal volumes V, total milk = V(2/5 + 3/8 + 4/11) = V(176/440 + 165/440 + 160/440) = 501V/440. Total water = V(3/5 + 5/8 + 7/11) = V(264/440 + 275/440 + 280/440) = 819V/440. Ratio = 501:819 = 167:273 (dividing by 3). Option A.
 
 **Q3 (1 Mark) [GA]:** "Recalcitrant" means stubbornly defiant. The opposite is "obedient".
 
-**Q4 (1 Mark) [GA]:** The code reverses the letter order. CHALLENGE reversed: E Ã¢â€ â€™ G Ã¢â€ â€™ N Ã¢â€ â€™ E Ã¢â€ â€™ L Ã¢â€ â€™ L Ã¢â€ â€™ A Ã¢â€ â€™ H Ã¢â€ â€™ C. Result: EGNELLAHC. Option B.
+**Q4 (1 Mark) [GA]:** The code reverses the letter order. CHALLENGE reversed: E → G → N → E → L → L → A → H → C. Result: EGNELLAHC. Option B.
 
-**Q5 (1 Mark) [GA]:** Let income = I. Rent: 0.4I. Remaining: 0.6I. Food: 30% of 0.6I = 0.18I. Remaining after food: 0.42I. Transport: 25% of 0.42I = 0.105I. Savings: 0.42I Ã¢Ë†â€™ 0.105I = 0.315I = 12600. I = 12600/0.315 = 40000. Option B.
+**Q5 (1 Mark) [GA]:** Let income = I. Rent: 0.4I. Remaining: 0.6I. Food: 30% of 0.6I = 0.18I. Remaining after food: 0.42I. Transport: 25% of 0.42I = 0.105I. Savings: 0.42I − 0.105I = 0.315I = 12600. I = 12600/0.315 = 40000. Option B.
 
-**Q6 (1 Mark) [GA]:** Pattern: nÃ‚Â³ Ã¢Ë†â€™ 1 for n = 2,3,4,5,6,7: 7, 26, 63, 124, 215, 342. Missing term = 6Ã‚Â³ Ã¢Ë†â€™ 1 = 215. Option A.
+**Q6 (1 Mark) [GA]:** Pattern: n³ − 1 for n = 2,3,4,5,6,7: 7, 26, 63, 124, 215, 342. Missing term = 6³ − 1 = 215. Option A.
 
-**Q7 (1 Mark) [GA]:** All musicians are artists (M Ã¢Å â€  A). No artist is a doctor (A Ã¢Ë†Â© D = Ã¢Ë†â€¦). So M Ã¢Ë†Â© D = Ã¢Ë†â€¦ Ã¢â€ â€™ No musician is a doctor (II follows). Some doctors are engineers (D Ã¢Ë†Â© E Ã¢â€°Â  Ã¢Ë†â€¦). Since D Ã¢Ë†Â© M = Ã¢Ë†â€¦, those engineers who are doctors cannot be musicians Ã¢â€ â€™ Some engineers are not musicians (I follows). Both follow. Option C.
+**Q7 (1 Mark) [GA]:** All musicians are artists (M ⊆ A). No artist is a doctor (A ∩ D = ∅). So M ∩ D = ∅ → No musician is a doctor (II follows). Some doctors are engineers (D ∩ E ≠ ∅). Since D ∩ M = ∅, those engineers who are doctors cannot be musicians → Some engineers are not musicians (I follows). Both follow. Option C.
 
-**Q8 (1 Mark) [GA]:** Work rate: 1 man = 1/(12Ãƒâ€”15) = 1/180 per day. 1 woman = 1/(18Ãƒâ€”20) = 1/360 per day. 1 child = 1/(24Ãƒâ€”30) = 1/720 per day. Combined: 8/180 + 8/360 + 12/720 = 32/720 + 16/720 + 12/720 = 60/720 = 1/12 per day. Days = 12. Option C.
+**Q8 (1 Mark) [GA]:** Work rate: 1 man = 1/(12×15) = 1/180 per day. 1 woman = 1/(18×20) = 1/360 per day. 1 child = 1/(24×30) = 1/720 per day. Combined: 8/180 + 8/360 + 12/720 = 32/720 + 16/720 + 12/720 = 60/720 = 1/12 per day. Days = 12. Option C.
 
-**Q9 (1 Mark) [GA]:** CI = P(1+0.10)Ã‚Â² Ã¢Ë†â€™ P = 0.21P = 420 Ã¢â€ â€™ P = 2000. SI = 2000 Ãƒâ€” 10 Ãƒâ€” 3/100 = 600. Option C.
+**Q9 (1 Mark) [GA]:** CI = P(1+0.10)² − P = 0.21P = 420 → P = 2000. SI = 2000 × 10 × 3/100 = 600. Option C.
 
-**Q10 (1 Mark) [GA]:** Total balls = 20. P(no black) = C(12,3)/C(20,3) = 220/1140 = 11/57. P(at least one black) = 1 Ã¢Ë†â€™ 11/57 = 46/57. Option B.
+**Q10 (1 Mark) [GA]:** Total balls = 20. P(no black) = C(12,3)/C(20,3) = 220/1140 = 11/57. P(at least one black) = 1 − 11/57 = 46/57. Option B.
 
-**Q11 (2 Marks) [GA]:** Speeds: A = 5x, B = 4x m/s. A runs 2000 m in 2000/(5x) = 400/x s. B runs 1800 m in 1800/(4x) = 450/x s. A beats B by 20 s: 450/x Ã¢Ë†â€™ 400/x = 50/x = 20 Ã¢â€ â€™ x = 2.5. A's time = 400/2.5 = 160 s. Option C.
+**Q11 (2 Marks) [GA]:** Speeds: A = 5x, B = 4x m/s. A runs 2000 m in 2000/(5x) = 400/x s. B runs 1800 m in 1800/(4x) = 450/x s. A beats B by 20 s: 450/x − 400/x = 50/x = 20 → x = 2.5. A's time = 400/2.5 = 160 s. Option C.
 
 **Q12 (2 Marks) [GA]:** Total = 12 marbles. P(R first) = 3/12 = 1/4. P(G second | R drawn) = 5/11. P(B third | R,G drawn) = 4/10 = 2/5. P(R,G,B in order) = (1/4)(5/11)(2/5) = 10/220 = 1/22. Option B.
 
-**Q13 (2 Marks) [GA]:** |P Ã¢Ë†Âª Q Ã¢Ë†Âª R| = |P| + |Q| + |R| Ã¢Ë†â€™ |PÃ¢Ë†Â©Q| Ã¢Ë†â€™ |QÃ¢Ë†Â©R| Ã¢Ë†â€™ |PÃ¢Ë†Â©R| + |PÃ¢Ë†Â©QÃ¢Ë†Â©R| = 180 + 160 + 140 Ã¢Ë†â€™ 50 Ã¢Ë†â€™ 40 Ã¢Ë†â€™ 30 + 15 = 375. Option D.
+**Q13 (2 Marks) [GA]:** |P ∪ Q ∪ R| = |P| + |Q| + |R| − |P∩Q| − |Q∩R| − |P∩R| + |P∩Q∩R| = 180 + 160 + 140 − 50 − 40 − 30 + 15 = 375. Option D.
 
-**Q14 (2 Marks) [GA]:** MATHEMATICS: M(2), A(2), T(2), H(1), E(1), I(1), C(1), S(1). Vowels: A, E, A, I (4 letters, A repeated twice). Treat vowels as block: internal arrangements = 4!/2! = 12. Block + 7 consonants = 8 entities, with M(2), T(2): 8!/(2!2!) = 10080. Total = 10080 Ãƒâ€” 12 = 120960. Option C.
+**Q14 (2 Marks) [GA]:** MATHEMATICS: M(2), A(2), T(2), H(1), E(1), I(1), C(1), S(1). Vowels: A, E, A, I (4 letters, A repeated twice). Treat vowels as block: internal arrangements = 4!/2! = 12. Block + 7 consonants = 8 entities, with M(2), T(2): 8!/(2!2!) = 10080. Total = 10080 × 12 = 120960. Option C.
 
-**Q15 (2 Marks) [GA]:** Rate A = 1/20, B = 1/30, C = Ã¢Ë†â€™1/15 per min. Net with all three: 1/20 + 1/30 Ã¢Ë†â€™ 1/15 = (3+2Ã¢Ë†â€™4)/60 = 1/60. In 10 min: 10/60 = 1/6 filled. Remaining: 5/6. Rate A+B = 1/20 + 1/30 = 1/12. Time = (5/6)/(1/12) = 10 min. Total = 20 min. Option D.
+**Q15 (2 Marks) [GA]:** Rate A = 1/20, B = 1/30, C = −1/15 per min. Net with all three: 1/20 + 1/30 − 1/15 = (3+2−4)/60 = 1/60. In 10 min: 10/60 = 1/6 filled. Remaining: 5/6. Rate A+B = 1/20 + 1/30 = 1/12. Time = (5/6)/(1/12) = 10 min. Total = 20 min. Option D.
 
-**Q16 (1 Mark) [Math]:** A is upper triangular with 1s on diagonal. Let AÃ¢Â�Â»Ã‚Â¹ = [[1,a,b],[0,1,c],[0,0,1]]. Solve AAÃ¢Â�Â»Ã‚Â¹ = I: row1Ãƒâ€”col2: 1Ã‚Â·a + 2Ã‚Â·1 + 3Ã‚Â·0 = a+2 = 0 Ã¢â€ â€™ a = Ã¢Ë†â€™2. Row1Ãƒâ€”col3: 1Ã‚Â·b + 2Ã‚Â·c + 3Ã‚Â·1 = b+2c+3 = 0. Row2Ãƒâ€”col3: 0Ã‚Â·b + 1Ã‚Â·c + 4Ã‚Â·1 = c+4 = 0 Ã¢â€ â€™ c = Ã¢Ë†â€™4. Then b = Ã¢Ë†â€™2(Ã¢Ë†â€™4)Ã¢Ë†â€™3 = 5. AÃ¢Â�Â»Ã‚Â¹ = [[1,Ã¢Ë†â€™2,5],[0,1,Ã¢Ë†â€™4],[0,0,1]]. Option A.
+**Q16 (1 Mark) [Math]:** A is upper triangular with 1s on diagonal. Let AâÂ�»¹ = [[1,a,b],[0,1,c],[0,0,1]]. Solve AAâÂ�»¹ = I: row1×col2: 1·a + 2·1 + 3·0 = a+2 = 0 → a = −2. Row1×col3: 1·b + 2·c + 3·1 = b+2c+3 = 0. Row2×col3: 0·b + 1·c + 4·1 = c+4 = 0 → c = −4. Then b = −2(−4)−3 = 5. AâÂ�»¹ = [[1,−2,5],[0,1,−4],[0,0,1]]. Option A.
 
-**Q17 (1 Mark) [Math]:** ÃŽÂ£_{n=0}^{Ã¢Ë†Å¾} (n+1)xÃ¢Â�Â¿ = 1/(1Ã¢Ë†â€™x)Ã‚Â². Verified by differentiating ÃŽÂ£ xÃ¢Â�Â¿ = 1/(1Ã¢Ë†â€™x). Option B.
+**Q17 (1 Mark) [Math]:** Σ_{n=0}^{∞} (n+1)xâÂ�¿ = 1/(1−x)². Verified by differentiating Σ xâÂ�¿ = 1/(1−x). Option B.
 
-**Q18 (1 Mark) [Math]:** Taylor series: tan x = x + xÃ‚Â³/3 + 2xÃ¢Â�Âµ/15 + O(xÃ¢Â�Â·), sin x = x Ã¢Ë†â€™ xÃ‚Â³/6 + xÃ¢Â�Âµ/120 + O(xÃ¢Â�Â·). tan x Ã¢Ë†â€™ x = xÃ‚Â³/3 + O(xÃ¢Â�Âµ). x Ã¢Ë†â€™ sin x = xÃ‚Â³/6 + O(xÃ¢Â�Âµ). Limit = (xÃ‚Â³/3)/(xÃ‚Â³/6) = 2. Option C.
+**Q18 (1 Mark) [Math]:** Taylor series: tan x = x + x³/3 + 2xâÂ�µ/15 + O(xâÂ�·), sin x = x − x³/6 + xâÂ�µ/120 + O(xâÂ�·). tan x − x = x³/3 + O(xâÂ�µ). x − sin x = x³/6 + O(xâÂ�µ). Limit = (x³/3)/(x³/6) = 2. Option C.
 
-**Q19 (1 Mark) [Math]:** For complete graph KÃ¢â€šâ€ž, all 4 vertices are mutually adjacent. Chromatic polynomial: P(KÃ¢â€šâ€ž,k) = k(kÃ¢Ë†â€™1)(kÃ¢Ë†â€™2)(kÃ¢Ë†â€™3). Option A.
+**Q19 (1 Mark) [Math]:** For complete graph K₄, all 4 vertices are mutually adjacent. Chromatic polynomial: P(K₄,k) = k(k−1)(k−2)(k−3). Option A.
 
-**Q20 (1 Mark) [Math]:** A relation symmetric and anti-symmetric can only contain (a,a) pairs. For a 3-element set {1,2,3}, the diagonal pairs are (1,1),(2,2),(3,3). Each can be present or absent: 2Ã‚Â³ = 8 relations. Option C.
+**Q20 (1 Mark) [Math]:** A relation symmetric and anti-symmetric can only contain (a,a) pairs. For a 3-element set {1,2,3}, the diagonal pairs are (1,1),(2,2),(3,3). Each can be present or absent: 2³ = 8 relations. Option C.
 
-**Q21 (2 Marks) [Math]:** det(AÃ¢Ë†â€™ÃŽÂ»I) = det[[2Ã¢Ë†â€™ÃŽÂ»,Ã¢Ë†â€™1,0],[Ã¢Ë†â€™1,2Ã¢Ë†â€™ÃŽÂ»,Ã¢Ë†â€™1],[0,Ã¢Ë†â€™1,2Ã¢Ë†â€™ÃŽÂ»]] = 0. Expanding: (2Ã¢Ë†â€™ÃŽÂ»)[(2Ã¢Ë†â€™ÃŽÂ»)Ã‚Â²Ã¢Ë†â€™1] + 1Ã‚Â·[Ã¢Ë†â€™1Ã‚Â·(2Ã¢Ë†â€™ÃŽÂ»)] = (2Ã¢Ë†â€™ÃŽÂ»)[(2Ã¢Ë†â€™ÃŽÂ»)Ã‚Â²Ã¢Ë†â€™2] = 0. ÃŽÂ» = 2 or (2Ã¢Ë†â€™ÃŽÂ»)Ã‚Â² = 2 Ã¢â€ â€™ ÃŽÂ» = 2Ã‚Â±Ã¢Ë†Å¡2. Eigenvalues: 2, 2+Ã¢Ë†Å¡2, 2Ã¢Ë†â€™Ã¢Ë†Å¡2. Option B.
+**Q21 (2 Marks) [Math]:** det(A−λI) = det[[2−λ,−1,0],[−1,2−λ,−1],[0,−1,2−λ]] = 0. Expanding: (2−λ)[(2−λ)²−1] + 1·[−1·(2−λ)] = (2−λ)[(2−λ)²−2] = 0. λ = 2 or (2−λ)² = 2 → λ = 2±√2. Eigenvalues: 2, 2+√2, 2−√2. Option B.
 
-**Q22 (2 Marks) [Math]:** CÃ¢â€šÆ’ has 3 vertices and 3 edges. Subgraphs that are trees: single vertex (3), single edge (3), path of length 2 (3). Total = 9. Option C.
+**Q22 (2 Marks) [Math]:** C₃ has 3 vertices and 3 edges. Subgraphs that are trees: single vertex (3), single edge (3), path of length 2 (3). Total = 9. Option C.
 
-**Q23 (2 Marks) [Math]:** E[X] = Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ xÃ‚Â·3xÃ‚Â² dx = 3Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ xÃ‚Â³ dx = 3/4. E[XÃ‚Â²] = Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ xÃ‚Â²Ã‚Â·3xÃ‚Â² dx = 3Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ xÃ¢Â�Â´ dx = 3/5. Var = E[XÃ‚Â²] Ã¢Ë†â€™ (E[X])Ã‚Â² = 3/5 Ã¢Ë†â€™ 9/16 = (48Ã¢Ë†â€™45)/80 = 3/80. Option B.
+**Q23 (2 Marks) [Math]:** E[X] = ∫₀¹ x·3x² dx = 3∫₀¹ x³ dx = 3/4. E[X²] = ∫₀¹ x²·3x² dx = 3∫₀¹ xâÂ�´ dx = 3/5. Var = E[X²] − (E[X])² = 3/5 − 9/16 = (48−45)/80 = 3/80. Option B.
 
-**Q24 (2 Marks) [Math]:** Let yÃ¢â€šÂ� = xÃ¢â€šÂ�Ã¢Ë†â€™2 Ã¢â€°Â¥ 0, yÃ¢â€šâ€š = xÃ¢â€šâ€šÃ¢Ë†â€™3 Ã¢â€°Â¥ 0. Equation: yÃ¢â€šÂ�+yÃ¢â€šâ€š+xÃ¢â€šÆ’+xÃ¢â€šâ€ž = 15Ã¢Ë†â€™2Ã¢Ë†â€™3 = 10. Non-negative solutions: C(10+4Ã¢Ë†â€™1, 4Ã¢Ë†â€™1) = C(13,3) = 286. Option B.
+**Q24 (2 Marks) [Math]:** Let yâ‚Â� = xâ‚Â�−2 ≥ 0, y₂ = x₂−3 ≥ 0. Equation: yâ‚Â�+y₂+x₃+x₄ = 15−2−3 = 10. Non-negative solutions: C(10+4−1, 4−1) = C(13,3) = 286. Option B.
 
-**Q25 (2 Marks) [Math]:** Reflexive: a+2a = 3a divisible by 3 Ã¢Å“â€œ. Symmetric: aRb Ã¢â€ â€™ a+2b Ã¢â€°Â¡ 0 (mod 3) Ã¢â€ â€™ a Ã¢â€°Â¡ b (mod 3) Ã¢â€ â€™ b+2a Ã¢â€°Â¡ b+2b = 3b Ã¢â€°Â¡ 0 Ã¢Å“â€œ. Transitive: aRb, bRc Ã¢â€ â€™ aÃ¢â€°Â¡bÃ¢â€°Â¡c (mod 3) Ã¢â€ â€™ aRc Ã¢Å“â€œ. Equivalence relation. Option C.
+**Q25 (2 Marks) [Math]:** Reflexive: a+2a = 3a divisible by 3 ✓. Symmetric: aRb → a+2b ≡ 0 (mod 3) → a ≡ b (mod 3) → b+2a ≡ b+2b = 3b ≡ 0 ✓. Transitive: aRb, bRc → a≡b≡c (mod 3) → aRc ✓. Equivalence relation. Option C.
 
 **Q26 (1 Mark) [DS]:** In a circular doubly linked list with one node, the node's next and prev both point to itself. Zero NULL pointers. Option A.
 
-**Q27 (1 Mark) [Algo]:** Let n = 2^{2^k}. Then Ã¢Ë†Å¡n = 2^{2^{k-1}}. T(2^{2^k}) = T(2^{2^{k-1}}) + O(1) Ã¢â€ â€™ S(k) = S(k-1) + O(1) Ã¢â€ â€™ S(k) = O(k) Ã¢â€ â€™ O(log log n). Option B.
+**Q27 (1 Mark) [Algo]:** Let n = 2^{2^k}. Then √n = 2^{2^{k-1}}. T(2^{2^k}) = T(2^{2^{k-1}}) + O(1) → S(k) = S(k-1) + O(1) → S(k) = O(k) → O(log log n). Option B.
 
 **Q28 (1 Mark) [OS]:** In segmentation, logical address (s,d) is checked against limit l. Physical address = base b + offset d, only if d &lt; l. Option A.
 
@@ -688,70 +688,70 @@ So next difference = 6Ã‚Â² = 36. Next term = 56 + 36 = 92.
 
 **Q30 (1 Mark) [CN]:** AAAA record maps domain name to IPv6 address. A is IPv4, CNAME is alias, MX is mail. Option C.
 
-**Q31 (1 Mark) [TOC]:** L = {aÃ¢Â�Â¿bÃ¡ÂµÂ�cÃ¢Â�Â¿dÃ¡ÂµÂ�} requires matching aÃ¢â€ â€�c and bÃ¢â€ â€�d simultaneously. A PDA can track one count (stack) but not two independent pairs. An LBA can handle it. L is context-sensitive but not context-free. Option C.
+**Q31 (1 Mark) [TOC]:** L = {aâÂ�¿báµÂ�câÂ�¿dáµÂ�} requires matching aâ†â€�c and bâ†â€�d simultaneously. A PDA can track one count (stack) but not two independent pairs. An LBA can handle it. L is context-sensitive but not context-free. Option C.
 
-**Q32 (1 Mark) [CD]:** Compilation phases: lexical, syntax, semantic, intermediate code generation, code optimization, code generation. Symbol table management is cross-cutting (not a separate phase). Linker resolution happens after compilation. The question asks for what is NOT a compilation phase Ã¢â‚¬â€� both symbol table management and linker resolution are not phases, but linker resolution is the more definitive answer as it is external to the compiler. Option D.
+**Q32 (1 Mark) [CD]:** Compilation phases: lexical, syntax, semantic, intermediate code generation, code optimization, code generation. Symbol table management is cross-cutting (not a separate phase). Linker resolution happens after compilation. The question asks for what is NOT a compilation phase â€â€� both symbol table management and linker resolution are not phases, but linker resolution is the more definitive answer as it is external to the compiler. Option D.
 
-**Q33 (1 Mark) [DL]:** f = ÃŽÂ£m(0,4,5,6,7) = AÃŒâ€¦BÃŒâ€¦CÃŒâ€¦ + ABÃŒâ€¦CÃŒâ€¦ + ABÃŒâ€¦C + ABCÃŒâ€¦ + ABC. Factor: = AÃŒâ€¦BÃŒâ€¦CÃŒâ€¦ + A(BÃŒâ€¦CÃŒâ€¦ + BÃŒâ€¦C + BCÃŒâ€¦ + BC) = AÃŒâ€¦BÃŒâ€¦CÃŒâ€¦ + A = A + BÃŒâ€¦CÃŒâ€¦. K-map: 
+**Q33 (1 Mark) [DL]:** f = Σm(0,4,5,6,7) = A̅B̅C̅ + AB̅C̅ + AB̅C + ABC̅ + ABC. Factor: = A̅B̅C̅ + A(B̅C̅ + B̅C + BC̅ + BC) = A̅B̅C̅ + A = A + B̅C̅. K-map: 
 ```
      BC
      00 01 11 10
 A 0  1  0  0  0
   1  1  1  1  1
 ```
-Group minterm 0 (AÃŒâ€¦BÃŒâ€¦CÃŒâ€¦) and all A=1 cells. Result: A + BÃŒâ€¦CÃŒâ€¦ = BÃŒâ€¦CÃŒâ€¦ + A. Option D.
+Group minterm 0 (A̅B̅C̅) and all A=1 cells. Result: A + B̅C̅ = B̅C̅ + A. Option D.
 
-**Q34 (1 Mark) [COA]:** Load instruction: IFÃ¢â€ â€™IDÃ¢â€ â€™EXÃ¢â€ â€™MEMÃ¢â€ â€™WB. Next ALU instruction needs load result in EX stage. Without forwarding, load-use hazard: the load goes through MEM in cycle 4, ALU needs data in EX in cycle 3 Ã¢â€ â€™ stall 2 cycles (insert bubbles). Option B.
+**Q34 (1 Mark) [COA]:** Load instruction: IF→ID→EX→MEM→WB. Next ALU instruction needs load result in EX stage. Without forwarding, load-use hazard: the load goes through MEM in cycle 4, ALU needs data in EX in cycle 3 → stall 2 cycles (insert bubbles). Option B.
 
-**Q35 (1 Mark) [DS]:** In an unbalanced BST, all operations (search, insert, delete, find min) have worst-case ÃŽËœ(n) time because the tree may be skewed (degenerating to a linked list). Option D.
+**Q35 (1 Mark) [DS]:** In an unbalanced BST, all operations (search, insert, delete, find min) have worst-case Θ(n) time because the tree may be skewed (degenerating to a linked list). Option D.
 
-**Q36 (1 Mark) [Algo]:** Tournament method: compare elements in pairs (Ã¢Å’Å n/2Ã¢Å’â€¹ comparisons). Winners (Ã¢Å’Ë†n/2Ã¢Å’â€°) compete for max, losers compete for min. Total = Ã¢Å’Ë†3n/2Ã¢Å’â€° Ã¢Ë†â€™ 2. Option C.
+**Q36 (1 Mark) [Algo]:** Tournament method: compare elements in pairs (⌊n/2⌋ comparisons). Winners (⌈n/2⌉) compete for max, losers compete for min. Total = ⌈3n/2⌉ − 2. Option C.
 
-**Q37 (1 Mark) [OS]:** Belady's anomaly (more frames Ã¢â€ â€™ more page faults) occurs only with FIFO page replacement. Optimal and LRU are stack algorithms and never exhibit it. Option A.
+**Q37 (1 Mark) [OS]:** Belady's anomaly (more frames → more page faults) occurs only with FIFO page replacement. Optimal and LRU are stack algorithms and never exhibit it. Option A.
 
 **Q38 (1 Mark) [DBMS]:** Dirty read occurs when a transaction reads uncommitted data from another transaction. This is allowed only in Read Uncommitted isolation level. Option D.
 
 **Q39 (1 Mark) [CN]:** TCP Reno: three duplicate ACKs triggers fast recovery (halve congestion window, enter congestion avoidance, retransmit lost segment). Option C.
 
-**Q40 (1 Mark) [TOC]:** The language {Ã¢Å¸Â¨MÃ¢Å¸Â© | M halts on all inputs} = the complement of the halting problem, which is not recursively enumerable. It is co-RE but not RE. Option A.
+**Q40 (1 Mark) [TOC]:** The language {⟨M⟩ | M halts on all inputs} = the complement of the halting problem, which is not recursively enumerable. It is co-RE but not RE. Option A.
 
-**Q41 (1 Mark) [CD]:** Grammar S Ã¢â€ â€™ aS | Sb | ab generates strings by prepending a's and appending b's starting from 'ab'. The language = {aÃ¢Â�Â¿bÃ¡ÂµÂ� | n,m Ã¢â€°Â¥ 1} = all strings with at least one a followed by at least one b. Option C.
+**Q41 (1 Mark) [CD]:** Grammar S → aS | Sb | ab generates strings by prepending a's and appending b's starting from 'ab'. The language = {aâÂ�¿báµÂ� | n,m ≥ 1} = all strings with at least one a followed by at least one b. Option C.
 
-**Q42 (1 Mark) [DL]:** 3-bit ripple counter: worst-case propagation = 3 Ãƒâ€” 10 ns = 30 ns. Max frequency = 1/(30Ãƒâ€”10Ã¢Â�Â»Ã¢Â�Â¹) = 33.33 MHz. Option A.
+**Q42 (1 Mark) [DL]:** 3-bit ripple counter: worst-case propagation = 3 × 10 ns = 30 ns. Max frequency = 1/(30×10âÂ�»âÂ�¹) = 33.33 MHz. Option A.
 
 **Q43 (1 Mark) [COA]:** IEEE 754 single-precision: value 0.0 is represented with biased exponent = 0 (all exponent bits 0) and significand = 0. Option A.
 
-**Q44 (1 Mark) [DS]:** Complete binary tree: left child at 2i, right child at 2i+1. Node index 12: right child = 2Ãƒâ€”12+1 = 25. Option C.
+**Q44 (1 Mark) [DS]:** Complete binary tree: left child at 2i, right child at 2i+1. Node index 12: right child = 2×12+1 = 25. Option C.
 
-**Q45 (1 Mark) [Algo]:** Floyd-Warshall all-pairs shortest path uses three nested loops over vertices. Time complexity = O(VÃ‚Â³). Option C.
+**Q45 (1 Mark) [Algo]:** Floyd-Warshall all-pairs shortest path uses three nested loops over vertices. Time complexity = O(V³). Option C.
 
-**Q46 (2 Marks) [DS]:** Postorder A B C Ãƒâ€” + D Ã¢Ë†â€™: parse using stack. AÃ¢â€ â€™push, BÃ¢â€ â€™push, CÃ¢â€ â€™push, Ãƒâ€”Ã¢â€ â€™pop B,C Ã¢â€ â€™ BÃƒâ€”CÃ¢â€ â€™push, +Ã¢â€ â€™pop A,(BÃƒâ€”C)Ã¢â€ â€™ A+BÃƒâ€”CÃ¢â€ â€™push, DÃ¢â€ â€™push, Ã¢Ë†â€™Ã¢â€ â€™pop (A+BÃƒâ€”C),D Ã¢â€ â€™ (A+BÃƒâ€”C)Ã¢Ë†â€™D. Tree root = Ã¢Ë†â€™, left subtree = + with children A and Ãƒâ€”(B,C), right subtree = D. Preorder: Ã¢Ë†â€™ + A Ãƒâ€” B C D. Option C.
+**Q46 (2 Marks) [DS]:** Postorder A B C × + D −: parse using stack. A→push, B→push, C→push, ×→pop B,C → B×C→push, +→pop A,(B×C)→ A+B×C→push, D→push, −→pop (A+B×C),D → (A+B×C)−D. Tree root = −, left subtree = + with children A and ×(B,C), right subtree = D. Preorder: − + A × B C D. Option C.
 
-**Q47 (2 Marks) [Algo]:** Outer loop: i = 1 to n. Inner while: j starts at 1, doubles until j Ã¢â€°Â¥ i. For a given i, inner iterations = Ã¢Å’Ë†logÃ¢â€šâ€š iÃ¢Å’â€°. Total = ÃŽÂ£_{i=1}^{n} Ã¢Å’Ë†logÃ¢â€šâ€š iÃ¢Å’â€° Ã¢â€°Ë† logÃ¢â€šâ€š(n!) = O(n log n). Option B.
+**Q47 (2 Marks) [Algo]:** Outer loop: i = 1 to n. Inner while: j starts at 1, doubles until j ≥ i. For a given i, inner iterations = ⌈log₂ i⌉. Total = Σ_{i=1}^{n} ⌈log₂ i⌉ ≈ log₂(n!) = O(n log n). Option B.
 
-**Q48 (2 Marks) [OS]:** C-SCAN: head at 100 moving up. Service requests Ã¢â€°Â¥ 100 in order: 150,160,170,180. Movement: 100Ã¢â€ â€™150(50), 150Ã¢â€ â€™160(10), 160Ã¢â€ â€™170(10), 170Ã¢â€ â€™180(10), 180Ã¢â€ â€™199(19) = 99. Jump 199Ã¢â€ â€™0 = 199. Service remaining: 20,30,40,50: 0Ã¢â€ â€™20(20), 20Ã¢â€ â€™30(10), 30Ã¢â€ â€™40(10), 40Ã¢â€ â€™50(10) = 50. Total = 99+199+50 = 348 Ã¢â€°Ë† 350. Option C.
+**Q48 (2 Marks) [OS]:** C-SCAN: head at 100 moving up. Service requests ≥ 100 in order: 150,160,170,180. Movement: 100→150(50), 150→160(10), 160→170(10), 170→180(10), 180→199(19) = 99. Jump 199→0 = 199. Service remaining: 20,30,40,50: 0→20(20), 20→30(10), 30→40(10), 40→50(10) = 50. Total = 99+199+50 = 348 ≈ 350. Option C.
 
 **Q49 (2 Marks) [OS]:** SRTF schedule:
-t=0: P1 runs. t=2: P1(7), P2(4)Ã¢â€ â€™P2 runs. t=3: P1(7), P2(3), P3(9)Ã¢â€ â€™P2 continues. t=5: P1(7), P2(1), P3(9), P4(3)Ã¢â€ â€™P2 continues. t=6: P2 finishes. P1(7), P3(9), P4(3)Ã¢â€ â€™P4 runs. t=9: P4 finishes. P1(7), P3(9)Ã¢â€ â€™P1 runs. t=16: P1 finishes. P3(9)Ã¢â€ â€™runs. t=25: P3 finishes.
+t=0: P1 runs. t=2: P1(7), P2(4)→P2 runs. t=3: P1(7), P2(3), P3(9)→P2 continues. t=5: P1(7), P2(1), P3(9), P4(3)→P2 continues. t=6: P2 finishes. P1(7), P3(9), P4(3)→P4 runs. t=9: P4 finishes. P1(7), P3(9)→P1 runs. t=16: P1 finishes. P3(9)→runs. t=25: P3 finishes.
 Turnaround: P1=16, P2=4, P3=22, P4=4. Avg = 46/4 = 11.5. Option B.
 
-**Q50 (2 Marks) [DBMS]:** FDs: ABÃ¢â€ â€™C, CÃ¢â€ â€™D, DÃ¢â€ â€™B, DÃ¢â€ â€™E. Compute closures: AÃ¢Â�Âº=A, ABÃ¢Â�Âº=ABCDE, ADÃ¢Â�Âº=ABCDE. Candidate keys: AB and AD. Among options, AB is a candidate key. Option B.
+**Q50 (2 Marks) [DBMS]:** FDs: AB→C, C→D, D→B, D→E. Compute closures: AâÂ�º=A, ABâÂ�º=ABCDE, ADâÂ�º=ABCDE. Candidate keys: AB and AD. Among options, AB is a candidate key. Option B.
 
-**Q51 (2 Marks) [CN]:** CSMA/CD minimum frame = 2 Ãƒâ€” propagation delay Ãƒâ€” bandwidth. Distance = 5 km = 5000 m. Speed = 2Ãƒâ€”10Ã¢Â�Â¸ m/s. Propagation delay (one-way) = 5000/(2Ãƒâ€”10Ã¢Â�Â¸) = 25 ÃŽÂ¼s. RTT = 50 ÃŽÂ¼s. Min frame = 50Ãƒâ€”10Ã¢Â�Â»Ã¢Â�Â¶ Ãƒâ€” 10Ãƒâ€”10Ã¢Â�Â¶ = 500 bits. Option B.
+**Q51 (2 Marks) [CN]:** CSMA/CD minimum frame = 2 × propagation delay × bandwidth. Distance = 5 km = 5000 m. Speed = 2×10âÂ�¸ m/s. Propagation delay (one-way) = 5000/(2×10âÂ�¸) = 25 μs. RTT = 50 μs. Min frame = 50×10âÂ�»âÂ�¶ × 10×10âÂ�¶ = 500 bits. Option B.
 
-**Q52 (2 Marks) [TOC]:** L = {ww | w Ã¢Ë†Ë† {a,b}Ã¢Â�Âº}. Not regular (requires pumping for ww). Not context-free (PDA cannot compare first half with second half without a marker Ã¢â‚¬â€� proven by pumping lemma for CFLs). It is context-sensitive (LBA can recognize by marking midpoint and comparing). Option B.
+**Q52 (2 Marks) [TOC]:** L = {ww | w ∈ {a,b}âÂ�º}. Not regular (requires pumping for ww). Not context-free (PDA cannot compare first half with second half without a marker â€â€� proven by pumping lemma for CFLs). It is context-sensitive (LBA can recognize by marking midpoint and comparing). Option B.
 
-**Q53 (2 Marks) [CD]:** Grammar: S Ã¢â€ â€™ aAb | bBA, A Ã¢â€ â€™ aS | b, B Ã¢â€ â€™ bS | a. Try derivation for aaabbb: S Ã¢â€ â€™ aAb Ã¢â€ â€™ a(aS)b Ã¢â€ â€™ aa(aAb)b Ã¢â€ â€™ aaa(b)b = aaabbb. Verified: the string is generated. Option A.
+**Q53 (2 Marks) [CD]:** Grammar: S → aAb | bBA, A → aS | b, B → bS | a. Try derivation for aaabbb: S → aAb → a(aS)b → aa(aAb)b → aaa(b)b = aaabbb. Verified: the string is generated. Option A.
 
-**Q54 (2 Marks) [DL]:** Initial QÃ¢â€šÂ�QÃ¢â€šâ€š=00. After clock 1: JÃ¢â€šÂ�=QÃ¢â€šâ€š=0, KÃ¢â€šÂ�=QÃŒâ€¦Ã¢â€šâ€š=1 Ã¢â€ â€™ QÃ¢â€šÂ�=0. JÃ¢â€šâ€š=QÃŒâ€¦Ã¢â€šÂ�=1, KÃ¢â€šâ€š=QÃ¢â€šÂ�=0 Ã¢â€ â€™ QÃ¢â€šâ€š=1. State: 01. After clock 2: JÃ¢â€šÂ�=QÃ¢â€šâ€š=1, KÃ¢â€šÂ�=QÃŒâ€¦Ã¢â€šâ€š=0 Ã¢â€ â€™ QÃ¢â€šÂ�=1. JÃ¢â€šâ€š=QÃŒâ€¦Ã¢â€šÂ�=1, KÃ¢â€šâ€š=QÃ¢â€šÂ�=0 Ã¢â€ â€™ QÃ¢â€šâ€š=1. State: 11. Option D.
+**Q54 (2 Marks) [DL]:** Initial Qâ‚Â�Q₂=00. After clock 1: Jâ‚Â�=Q₂=0, Kâ‚Â�=Q̅₂=1 → Qâ‚Â�=0. J₂=Q̅â‚Â�=1, K₂=Qâ‚Â�=0 → Q₂=1. State: 01. After clock 2: Jâ‚Â�=Q₂=1, Kâ‚Â�=Q̅₂=0 → Qâ‚Â�=1. J₂=Q̅â‚Â�=1, K₂=Qâ‚Â�=0 → Q₂=1. State: 11. Option D.
 
-**Q55 (2 Marks) [COA]:** Base CPI = 1.5. 40% branches Ãƒâ€” 10% misprediction rate = 4% of all instructions mispredicted. Each misprediction costs 3 cycles. Extra CPI = 0.04 Ãƒâ€” 3 = 0.12. Effective CPI = 1.5 + 0.12 = 1.62. Option A.
+**Q55 (2 Marks) [COA]:** Base CPI = 1.5. 40% branches × 10% misprediction rate = 4% of all instructions mispredicted. Each misprediction costs 3 cycles. Extra CPI = 0.04 × 3 = 0.12. Effective CPI = 1.5 + 0.12 = 1.62. Option A.
 
 ## Summary
 
 Mock Test 8 is the final comprehensive test covering all GATE CS subjects with emphasis on numerical problem-solving. Key takeaways:
-- **Algorithm Analysis**: Tournament method (?3n/2? - 2 comparisons), Floyd-Warshall (O(VÂ³)), and nested loop complexity analysis are important.
-- **Operating Systems**: C-SCAN disk scheduling (348 Ëœ 350), SRTF scheduling (avg turnaround 11.5), and Belady's anomaly are numerically intensive.
+- **Algorithm Analysis**: Tournament method (?3n/2? - 2 comparisons), Floyd-Warshall (O(V³)), and nested loop complexity analysis are important.
+- **Operating Systems**: C-SCAN disk scheduling (348 ˜ 350), SRTF scheduling (avg turnaround 11.5), and Belady's anomaly are numerically intensive.
 - **Databases & Networks**: Candidate key identification, CSMA/CD minimum frame size, TCP Reno fast recovery, and isolation levels require conceptual clarity.
 - **Digital Logic & COA**: Ripple counter max frequency, IEEE 754 zero representation, and branch misprediction CPI calculations appear as numerical problems.
 
@@ -763,7 +763,7 @@ The \MockTestSimulator\ class (enhanced) adds subject-wise breakdown, difficulty
 
 \\\	ypescript
 /**
- * MockTestSimulator â€” Enhanced with subject-wise analysis,
+ * MockTestSimulator — Enhanced with subject-wise analysis,
  * difficulty tracking, and comprehensive reporting.
  */
 interface Question {

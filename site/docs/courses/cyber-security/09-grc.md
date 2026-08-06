@@ -10,7 +10,7 @@ sidebar_position: 8
 
 > **Prereq:** Chapter 8 (Forensics & IR) → incident findings feed into risk assessments and compliance reporting.
 > **Next:** Chapter 10 (Pentesting) → GRC frameworks inform penetration testing scope and methodology.
-> **Reading Time:** 4â€“5 hours | **Level:** Intermediateâ€“Advanced
+> **Reading Time:** 4–5 hours | **Level:** Intermediate–Advanced
 
 ---
 
@@ -308,10 +308,10 @@ Uses descriptive scales (Low, Medium, High, Critical) for likelihood and impact.
 **Risk scoring formula:** `Risk Score = Likelihood * Impact`
 
 **Risk level thresholds (example):**
-- **1â€“3:** Low → Accept, monitor annually
-- **4â€“6:** Medium → Accept with monitoring, review quarterly
-- **8â€“12:** High → Mitigation plan required, review monthly
-- **15â€“25:** Critical → Immediate remediation, escalate to Board
+- **1–3:** Low → Accept, monitor annually
+- **4–6:** Medium → Accept with monitoring, review quarterly
+- **8–12:** High → Mitigation plan required, review monthly
+- **15–25:** Critical → Immediate remediation, escalate to Board
 
 **Qualitative assessment walkthrough → Dry Run:**
 
@@ -457,7 +457,7 @@ FAIR is the leading quantitative risk analysis model (now FAIR-TM, maintained by
 | Secondary loss | $50K | $200K | $1M | Triangular |
 | **Annualized risk** | **$3K** | **$105K** | **$1.8M** | → |
 
-*Monte Carlo simulation would run 10,000+ iterations to produce a probability distribution, giving the 5thâ€“95th percentile range.*
+*Monte Carlo simulation would run 10,000+ iterations to produce a probability distribution, giving the 5th–95th percentile range.*
 
 ### 2.8 Business Impact Analysis (BIA)
 
@@ -569,7 +569,7 @@ A BIA identifies critical business functions, the impact of their disruption, an
 | 6 | **Integrity and confidentiality** | Process data securely | Encryption at rest and in transit, access controls |
 | 7 | **Accountability** | Demonstrate compliance | Maintain Records of Processing Activities (ROPA), DPIAs |
 
-#### Data Subject Rights (GDPR Articles 12â€“23)
+#### Data Subject Rights (GDPR Articles 12–23)
 
 | Right | Article | Description | Response Timeline |
 |-------|---------|-------------|-------------------|
@@ -665,8 +665,8 @@ Step 7: CLOSE
 
 #### GDPR Fines (Tier Structure)
 
-**Tier 1:** Up to EUR 10M or 2% global annual turnover → violations of Articles 8, 11, 25â€“39, 41â€“43
-**Tier 2:** Up to EUR 20M or 4% global annual turnover → violations of Articles 5â€“7, 9, 12â€“22, 44â€“49
+**Tier 1:** Up to EUR 10M or 2% global annual turnover → violations of Articles 8, 11, 25–39, 41–43
+**Tier 2:** Up to EUR 20M or 4% global annual turnover → violations of Articles 5–7, 9, 12–22, 44–49
 
 ### 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard
 
@@ -722,8 +722,8 @@ Step 7: CLOSE
 | Level | Merchant Criteria (Mastercard) | Validation Requirement |
 |-------|-------------------------------|----------------------|
 | 1 | Over 6M transactions/year | Annual QSA assessment + quarterly ASV scans |
-| 2 | 1Mâ€“6M transactions/year | Annual QSA assessment + quarterly ASV scans |
-| 3 | 20Kâ€“1M e-commerce transactions/year | Annual SAQ + quarterly ASV scans |
+| 2 | 1M–6M transactions/year | Annual QSA assessment + quarterly ASV scans |
+| 3 | 20K–1M e-commerce transactions/year | Annual SAQ + quarterly ASV scans |
 | 4 | Less than 20K e-commerce or up to 1M total | Annual SAQ + quarterly ASV scans |
 
 ### 3.5 HIPAA → Health Insurance Portability and Accountability Act
@@ -784,7 +784,7 @@ Step 7: CLOSE
 
 **SOC 2 Report Types:**
 - **Type I:** Controls are suitably designed at a point in time
-- **Type II:** Controls are suitably designed AND operating effectively over a period (typically 6â€“12 months)
+- **Type II:** Controls are suitably designed AND operating effectively over a period (typically 6–12 months)
 
 **Common Criteria (CC) → 9 categories of control criteria:**
 1. CC1 → Control Environment
@@ -869,7 +869,7 @@ Data classification is the process of categorizing data based on its sensitivity
 **Data Classification Process:**
 
 1. **Identify data** → Take inventory of all data stores (databases, file shares, SaaS, email, backups)
-2. **Define levels** → Establish classification schema (3â€“5 levels)
+2. **Define levels** → Establish classification schema (3–5 levels)
 3. **Classify** → Tag data with classification level (manual, automated via DLP, or hybrid)
 4. **Apply controls** → Map classification to security controls (encryption, access, retention, disposal)
 5. **Train** → Employees must understand classification and handling requirements
@@ -1223,9 +1223,9 @@ CIS Controls are 18 prioritized safeguards (reduced from 20 in v7) mapped to com
 | **Audit requirement** | Self-assessment | Annual surveillance + 3-year recertification | Self-assessment | Annual (Level 1 QSA); quarterly ASV scans |
 | **Flexibility** | Very high → any controls can map | Moderate → SoA documents chosen controls | Moderate → IG1/2/3 tiers | Low → specific technical requirements |
 | **Maturity model** | 4 Tiers | Not inherent (but can combine with ISO 330xx) | IG1/2/3 | Not inherent (SAQ A-D) |
-| **Supply chain** | New GV.SC category | 5.19â€“5.23 supplier controls | Control 15 (Service Provider Management) | Requires TPSP program for service providers |
+| **Supply chain** | New GV.SC category | 5.19–5.23 supplier controls | Control 15 (Service Provider Management) | Requires TPSP program for service providers |
 | **Cloud inclusion** | Implicit across all functions | 5.23 Cloud services control | No dedicated cloud control | CDE scope includes cloud |
-| **Cost to implement** | $50Kâ€“$200K | $100Kâ€“$500K + certification audit | $30Kâ€“$150K | $50Kâ€“$300K + QSA fees |
+| **Cost to implement** | $50K–$200K | $100K–$500K + certification audit | $30K–$150K | $50K–$300K + QSA fees |
 | **Best for** | Strategic program design, Board communication | Formal ISMS with certification | Quick, actionable implementation priorities | Payment processing compliance |
 
 ### 4.6 Framework Selection → Decision Tree
@@ -1429,9 +1429,9 @@ Phase 5: Offboarding
 
 | Total Score | Risk Tier | Action |
 |-------------|-----------|--------|
-| 0â€“10 | Low | Accept, monitor annually |
-| 11â€“25 | Medium | Remediation plan required within 90 days |
-| 26â€“40 | High | Approve only with compensating controls; re-assess q90 |
+| 0–10 | Low | Accept, monitor annually |
+| 11–25 | Medium | Remediation plan required within 90 days |
+| 26–40 | High | Approve only with compensating controls; re-assess q90 |
 | 41+ | Critical | Do not onboard without remediation; escalate to CISO |
 
 ---
@@ -1514,7 +1514,7 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 | **Scope** | Wider → all controls, departments | Narrower → defined by standard or regulation |
 | **Independence** | Moderate (reports to audit committee) | High (no relationship with audited org) |
 | **Reporting** | Management report, board summary | Formal audit report, certificate (if passed) |
-| **Cost** | Lower (internal resources) | Higher ($30Kâ€“$150K per engagement) |
+| **Cost** | Lower (internal resources) | Higher ($30K–$150K per engagement) |
 
 ### 8.2 Audit Process
 
@@ -1649,9 +1649,9 @@ KRIs are leading indicators that predict an increased risk of a negative event.
 
 **Timeline:**
 - **March 7, 2017:** Apache Struts CVE-2017-5638 (RCE) disclosed with patch available
-- **March 8â€“May 13:** Equifax failed to scan for vulnerable Struts instances (no asset inventory)
+- **March 8–May 13:** Equifax failed to scan for vulnerable Struts instances (no asset inventory)
 - **May 13:** Attackers scan internet, find Equifax's vulnerable system → exploit and establish foothold
-- **May 13â€“July 29:** Attackers move laterally, exfiltrate 147M records over 76 days → no detection
+- **May 13–July 29:** Attackers move laterally, exfiltrate 147M records over 76 days → no detection
 - **July 29:** Expired TLS certificate causes monitoring failure → security team finally detects the breach
 - **September 7:** Public disclosure → stock drops 35%
 - **September 15:** CEO Richard Smith retires
@@ -1695,7 +1695,7 @@ Equifax had **policies** but no **enforcement.** The infosec policy required pat
 
 **Timeline:**
 - **2014:** Attackers compromise Starwood reservation system (via RDP brute force)
-- **2014â€“2016:** Attackers maintain persistence, escalate privileges, install keyloggers on payment systems, exfiltrate records over 2+ years
+- **2014–2016:** Attackers maintain persistence, escalate privileges, install keyloggers on payment systems, exfiltrate records over 2+ years
 - **2016:** Marriott acquires Starwood for $13.6B → accelerates IT integration
 - **2018 (Sept):** Marriott security detects anomalous database queries in Starwood systems
 - **2018 (Nov):** Marriott publicly discloses breach → 339M records (133M with structured PII including passport numbers)
@@ -1739,9 +1739,9 @@ Equifax had **policies** but no **enforcement.** The infosec policy required pat
 
 | Violation | GDPR Article | Details | Fine Component |
 |-----------|-------------|---------|----------------|
-| Children's privacy settings | Art 5(1)(c) → Data minimization | TikTok's platform settings for 13â€“17 year olds were not private by default. Public profiles, public videos, public comments were default | EUR 120M |
+| Children's privacy settings | Art 5(1)(c) → Data minimization | TikTok's platform settings for 13–17 year olds were not private by default. Public profiles, public videos, public comments were default | EUR 120M |
 | Age verification | Art 5(1)(f) → Integrity and confidentiality | "Family Pairing" mode allowed adults to bypass teen privacy protections | EUR 80M |
-| Dark patterns | Art 5(1)(a) → Lawfulness, fairness, transparency | Push notifications during "bedtime hours" (10PMâ€“8AM) for 13â€“17 year olds incentivized addictive use | EUR 100M |
+| Dark patterns | Art 5(1)(a) → Lawfulness, fairness, transparency | Push notifications during "bedtime hours" (10PM–8AM) for 13–17 year olds incentivized addictive use | EUR 100M |
 | Transparency of processing | Art 12 → Transparent information | Privacy information presented to children was not designed in a child-friendly manner | EUR 45M |
 
 **Total Fine:** EUR 345M (2nd largest GDPR fine at the time, after Meta's EUR 1.2B)
@@ -1758,7 +1758,7 @@ TikTok's **Data Protection Impact Assessment (DPIA)** was inadequate → it iden
 
 ---
 
-### Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure
+### Case Study 4: Wells Fargo (2016–2020) → Governance Failure
 
 
 **Background:** Wells Fargo employees created 3.5 million unauthorized bank and credit card accounts to meet aggressive sales quotas. While primarily a consumer fraud case, it's the definitive case study in **governance failure** with cascading consequences.

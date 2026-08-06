@@ -63,7 +63,7 @@ Train (Linked List) analogy:
 | Recursive Reversal | Implicit stack; elegant but risky | O(n) space due to call stack; avoid for long lists |
 | Cycle Detection | Floyd Tortoise and Hare algorithm | Slow + fast pointer meet if cycle exists; O(n) time, O(1) space |
 | Sentinel / Dummy Node | Placeholder node eliminates edge cases | Simplifies insertion/deletion code significantly |
-| Find Middle | Slow + fast (fast moves 2Ã—) | O(n) time, O(1) space; one-pass |
+| Find Middle | Slow + fast (fast moves 2×) | O(n) time, O(1) space; one-pass |
 
 ## Chapter Roadmap
 
@@ -998,7 +998,7 @@ Node<T>* reverseRecursive(Node<T>* node) {
 // Usage: head = reverseRecursive(head);
 ```
 
-**âš ï¸ Warning:** For a list of 100,000 nodes, the recursive version uses ~100,000 stack frames (~8 MB). The iterative version uses exactly 3 pointers. Prefer iterative in production.
+**⚠️ Warning:** For a list of 100,000 nodes, the recursive version uses ~100,000 stack frames (~8 MB). The iterative version uses exactly 3 pointers. Prefer iterative in production.
 
 ---
 
@@ -1035,8 +1035,8 @@ function hasCycle():
 | Step | slow ptr | fast ptr | Condition | Notes |
 |------|----------|----------|-----------|-------|
 | 0 | →10 | →10 | → | Initialise both at head |
-| 1 | →20 | →30 | slowâ‰ fast | fast moves 2Ã— |
-| 2 | →30 | →50 (→30) | slowâ‰ fast | fast wraps around |
+| 1 | →20 | →30 | slow≠fast | fast moves 2× |
+| 2 | →30 | →50 (→30) | slow≠fast | fast wraps around |
 | 3 | →40 | →40 | **slow==fast** | **Cycle detected!** |
 
 **C++ Implementation:**
@@ -1206,7 +1206,7 @@ function findMiddle():
 | Step | slow ptr | fast ptr | Condition |
 |------|----------|----------|-----------|
 | 0 | →10 | →10 | → |
-| 1 | →20 | →30 | fastâ‰ null, fast.nextâ‰ null |
+| 1 | →20 | →30 | fast≠null, fast.next≠null |
 | 2 | →30 | →50 (end) | fast.next=null → stop |
 | Result: **slow→30 (middle)** |
 
@@ -1938,7 +1938,7 @@ Graph representations use an array of singly linked lists → one list per verte
 |---------|----------|------------|
 | Reverse list | 3-pointer iteration (prev, curr, next) | O(n), O(1) |
 | Detect cycle | Floyd's (slow + fast) | O(n), O(1) |
-| Find middle | Slow + fast (fast 2Ã—) | O(n), O(1) |
+| Find middle | Slow + fast (fast 2×) | O(n), O(1) |
 | Remove nth from end | Two pointers, offset by n | O(n), O(1) |
 | Merge sorted lists | Dummy head + compare | O(n+m), O(1) |
 | Palindrome check | Find middle → reverse second half → compare | O(n), O(1) |
@@ -2127,46 +2127,46 @@ class SinglyLinkedList<T> {
 
 25. **Delete N nodes after M nodes**: Given a linked list, delete N nodes after skipping M nodes. Implement in one pass.
    - c) O(log n)
-   - d) O(nÂ²)
+   - d) O(n²)
 
 2. **What is needed for O(1) tail insertion?**
    - a) Dummy node
-   - b) Tail pointer âœ…
+   - b) Tail pointer ✅
    - c) Circular list
    - d) Doubly linked
 
 3. **Floyd's cycle detection uses:**
    - a) Hash table
-   - b) Slow + fast pointer âœ…
+   - b) Slow + fast pointer ✅
    - c) Recursion
    - d) Binary search
 
 4. **What is the space complexity of iterative reversal?**
    - a) O(n)
-   - b) O(1) âœ…
+   - b) O(1) ✅
    - c) O(log n)
-   - d) O(nÂ²)
+   - d) O(n²)
 
 5. **A sentinel (dummy) node helps with:**
    - a) Faster search
-   - b) Edge case elimination âœ…
+   - b) Edge case elimination ✅
    - c) Less memory
    - d) Cycle detection
 
 6. **Which operation is O(1) for singly linked lists but O(n) for arrays?**
    - a) Access by index
-   - b) Insert at head âœ…
+   - b) Insert at head ✅
    - c) Search
    - d) Find length
 
 7. **What happens if you apply Floyd's algorithm to a list with no cycle?**
    - a) Infinite loop
-   - b) Returns false when fast reaches null âœ…
+   - b) Returns false when fast reaches null ✅
    - c) Returns true incorrectly
    - d) Segfault
 
 8. **Why can't you delete a node in O(1) in a singly linked list if you only have a pointer to that node (not the previous one)?**
-   - a) Need to update previous node's next pointer, which is inaccessible without traversal âœ…
+   - a) Need to update previous node's next pointer, which is inaccessible without traversal ✅
    - b) Node doesn't have a prev pointer
    - c) Both a and b
    - d) Memory constraints

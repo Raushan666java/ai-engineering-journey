@@ -429,7 +429,7 @@ The lost update at T3 is a **data race**. Both threads read 0 before either writ
 | Creating a thread | O(1) thread creation + OS scheduling overhead | ~1 MB per thread (default stack size) |
 | join() | O(1) blocking → thread must complete | 0 (existing thread stack) |
 | detach() | O(1) handle release | Thread continues until completion |
-| Context switch (per switch) | ~1â€“10 microseconds | ~cache flush, TLB invalidate |
+| Context switch (per switch) | ~1–10 microseconds | ~cache flush, TLB invalidate |
 
 > **Rule of Thumb:** Creating threads is expensive. For fine-grained tasks, use a thread pool or `std::async`.
 
@@ -1433,7 +1433,7 @@ int main() {
 | Aspect | std::atomic | std::mutex |
 |--------|-------------|------------|
 | Mechanism | CPU instruction (CAS, LL/SC) | OS kernel object |
-| Overhead | 1â€“10 CPU cycles | ~50â€“1000 cycles (syscall on contention) |
+| Overhead | 1–10 CPU cycles | ~50–1000 cycles (syscall on contention) |
 | Blocking | Never blocks → spin retry on CAS | Blocks thread (context switch) |
 | Suitable for | Simple counters, flags, single variables | Complex critical sections, multiple variables |
 | Memory ordering | Explicit control (6 orders) | acquire/release semantics on lock/unlock |
@@ -1470,8 +1470,8 @@ void mutex_worker() {
 ```
 
 Approximate results on modern hardware:
-- **Atomic (relaxed):** ~50ms (2 threads Ã— 10M increments each)
-- **Mutex:** ~500ms (mutex ~10Ã— slower for simple increments)
+- **Atomic (relaxed):** ~50ms (2 threads × 10M increments each)
+- **Mutex:** ~500ms (mutex ~10× slower for simple increments)
 
 > **Key Insight:** Atomics are faster because they use CPU instructions with no OS involvement. But they only protect ONE variable. Mutexes can protect complex data structures spanning many variables.
 
@@ -2255,7 +2255,7 @@ Implement a `ThreadSafeQueue<T>` class using `std::mutex` and `std::condition_va
 Use `std::shared_mutex` to implement a thread-safe cache. Multiple threads can read concurrently; writes are exclusive. Show that reads don't block reads.
 
 **4. Thread Pool:**
-Implement the `ThreadPool` class from Â§15.11 and benchmark `enqueue(work)` vs creating `std::thread` directly for 10,000 small tasks.
+Implement the `ThreadPool` class from §15.11 and benchmark `enqueue(work)` vs creating `std::thread` directly for 10,000 small tasks.
 
 **5. Lock-Free Stack:**
 Implement a simple lock-free stack using `std::atomic<Node*>` and CAS. Add hazard pointer or epoch-based reclamation to solve the ABA problem.

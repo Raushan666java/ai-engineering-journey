@@ -153,7 +153,7 @@ Assume `example.txt` exists:
 |-----------|------|-----|
 | `fopen` | O(1) *amortized* | System call overhead dominates; path resolution is O(path length) but treated as O(1) for typical use |
 | `fclose` | O(1) | Flush buffer (O(buffer size)) + release handle |
-| Memory usage | sizeof(FILE) â‰ˆ 500 bytes | Holds buffer, flags, file descriptor |
+| Memory usage | sizeof(FILE) ≈ 500 bytes | Holds buffer, flags, file descriptor |
 
 ### A&D Table
 
@@ -203,18 +203,18 @@ Opening a file with different modes is like checking out a library book under di
 
 | Mode | Read | Write | Append | Create? | Truncate? | Position Start | Notes |
 |------|------|-------|--------|---------|-----------|----------------|-------|
-| `"r"` | âœ“ | | | No | No | Beginning | File must exist |
-| `"w"` | | âœ“ | | Yes | Yes | Beginning | Creates new or overwrites |
-| `"a"` | | | âœ“ | Yes | No | End | Writes always go to end |
-| `"r+"` | âœ“ | âœ“ | | No | No | Beginning | File must exist; read & write |
-| `"w+"` | âœ“ | âœ“ | | Yes | Yes | Beginning | Creates new or overwrites |
-| `"a+"` | âœ“ | | âœ“ | Yes | No | End | Read anywhere, write only at end |
-| `"rb"` | âœ“ | | | No | No | Beginning | Binary, must exist |
-| `"wb"` | | âœ“ | | Yes | Yes | Beginning | Binary, creates or overwrites |
-| `"ab"` | | | âœ“ | Yes | No | End | Binary append |
-| `"r+b"` | âœ“ | âœ“ | | No | No | Beginning | Binary read/write, must exist |
-| `"w+b"` | âœ“ | âœ“ | | Yes | Yes | Beginning | Binary read/write, create/truncate |
-| `"a+b"` | âœ“ | | âœ“ | Yes | No | End | Binary read + append |
+| `"r"` | ✓ | | | No | No | Beginning | File must exist |
+| `"w"` | | ✓ | | Yes | Yes | Beginning | Creates new or overwrites |
+| `"a"` | | | ✓ | Yes | No | End | Writes always go to end |
+| `"r+"` | ✓ | ✓ | | No | No | Beginning | File must exist; read & write |
+| `"w+"` | ✓ | ✓ | | Yes | Yes | Beginning | Creates new or overwrites |
+| `"a+"` | ✓ | | ✓ | Yes | No | End | Read anywhere, write only at end |
+| `"rb"` | ✓ | | | No | No | Beginning | Binary, must exist |
+| `"wb"` | | ✓ | | Yes | Yes | Beginning | Binary, creates or overwrites |
+| `"ab"` | | | ✓ | Yes | No | End | Binary append |
+| `"r+b"` | ✓ | ✓ | | No | No | Beginning | Binary read/write, must exist |
+| `"w+b"` | ✓ | ✓ | | Yes | Yes | Beginning | Binary read/write, create/truncate |
+| `"a+b"` | ✓ | | ✓ | Yes | No | End | Binary read + append |
 
 ### Critical Detail: Text vs Binary on Windows
 
@@ -474,7 +474,7 @@ Reading a file character by character is like **reading a scroll one letter at a
 ### Why Return int?
 
 
-`fgetc` returns `int` (not `char` or `unsigned char`) so it can represent all 256 possible byte values (0â€“255) PLUS the special value `EOF` (typically -1). If it returned `char`, you could never distinguish EOF from the byte 0xFF.
+`fgetc` returns `int` (not `char` or `unsigned char`) so it can represent all 256 possible byte values (0–255) PLUS the special value `EOF` (typically -1). If it returned `char`, you could never distinguish EOF from the byte 0xFF.
 
 ### Steps
 
@@ -936,7 +936,7 @@ Read 4 employees
 ### Dry Run Trace → fread with sizeof(Employee) = 40
 
 
-File: `employees.bin` (160 bytes = 4 Ã— 40)
+File: `employees.bin` (160 bytes = 4 × 40)
 
 | Iteration | ptr | element_size | count | Returns | Position After |
 |-----------|-----|-------------|-------|---------|----------------|
@@ -985,7 +985,7 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 | `fgetc` | Character | Every call | `int` (byte or EOF) | N/A | N/A | Char-by-char parsing |
 | `fgets` | Line | Newline or size-1 | `char*` or NULL | Yes (newline) | Yes (width limit) | Line-oriented text |
 | `fscanf` | Formatted | Whitespace/format | Items matched or EOF | No | Only with width specifier | Structured text parsing |
-| `fread` | Binary blocks | End of file or count | Items read | N/A | Yes (sizeÃ—count) | Binary data, structs |
+| `fread` | Binary blocks | End of file or count | Items read | N/A | Yes (size×count) | Binary data, structs |
 
 ### Read Functions → Complexity Comparison
 
@@ -1356,8 +1356,8 @@ ID     Name          Score  Grade
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Time | O(format_length + total_output) | Format parsing + number-to-string conversion + buffering |
-| Conversion (integers) | O(logâ‚â‚€(value)) | Integer-to-ASCII requires division per digit |
-| Conversion (floats) | O(precision Ã— logâ‚â‚€(value)) | Float-to-string involves repeated multiplication |
+| Conversion (integers) | O(log₁₀(value)) | Integer-to-ASCII requires division per digit |
+| Conversion (floats) | O(precision × log₁₀(value)) | Float-to-string involves repeated multiplication |
 | Space | O(format_length) | Format string stored in read-only memory |
 
 ### A&D Table
@@ -1555,7 +1555,7 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 | `fputc` | O(1) amortized | O(1) | ~0 (buffered) |
 | `fputs` | O(strlen(s)) | O(1) + string storage | ~0 (buffered) |
 | `fprintf` | O(output_length + format_length) | O(format_length) | ~0 (buffered) |
-| `fwrite` | O(element_size Ã— count) | O(element_size Ã— count) | ~0 (buffered) |
+| `fwrite` | O(element_size × count) | O(element_size × count) | ~0 (buffered) |
 
 ---
 
@@ -2177,11 +2177,11 @@ Value: 0
 
 | Function | Return | Sets Position? | Gets Position? | Clears Flags? | Large File? |
 |----------|--------|---------------|---------------|---------------|-------------|
-| `fseek` | 0/-1 | âœ“ | | | Limited (long) |
-| `ftell` | long/-1L | | âœ“ | | Limited (long) |
-| `rewind` | void | âœ“ | | âœ“ | Limited (long) |
-| `fgetpos` | 0/-1 | | âœ“ (fpos_t) | | âœ“ |
-| `fsetpos` | 0/-1 | âœ“ (fpos_t) | | | âœ“ |
+| `fseek` | 0/-1 | ✓ | | | Limited (long) |
+| `ftell` | long/-1L | | ✓ | | Limited (long) |
+| `rewind` | void | ✓ | | ✓ | Limited (long) |
+| `fgetpos` | 0/-1 | | ✓ (fpos_t) | | ✓ |
+| `fsetpos` | 0/-1 | ✓ (fpos_t) | | | ✓ |
 
 ---
 
@@ -2334,15 +2334,15 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 | Functions | fgetc, fgets, fscanf, fread, fputc, fputs, fprintf, fwrite | fseek, ftell, rewind, fgetpos, fsetpos |
 | Speed (sequential) | Fast (exploits buffering) | Slower (cache misses, seeks) |
 | Use case | Log processing, text files, streaming | Databases, indexed records, binary formats |
-| Pipe/socket support | âœ“ | âœ— (not seekable) |
-| stdin support | âœ“ | âœ— |
+| Pipe/socket support | ✓ | ✗ (not seekable) |
+| stdin support | ✓ | ✗ |
 | Implementation | Simple loops | Requires position management |
 | Buffering benefit | Excellent (prefetching) | Poor (random access patterns) |
 
 ### Performance Comparison
 
 
-| Operation | Sequential (10â¶ records) | Random (10â¶ records) |
+| Operation | Sequential (10⁶ records) | Random (10⁶ records) |
 |-----------|------------------------|---------------------|
 | Read time | ~0.2s (SSD) | ~2-5s (SSD) |
 | Cache efficiency | High (sequential prefetch) | Low (TLB/cache misses) |
@@ -2510,10 +2510,10 @@ remove(template);  /* manual cleanup needed */
 
 | Function | Standard | Auto-delete | Named? | Security | Best For |
 |----------|----------|-------------|--------|----------|----------|
-| `tmpfile()` | C89+ | âœ“ | No (temp name) | Safe | Short-lived scratch data |
-| `tmpnam()` | C89+ | âœ— | Yes | UNSAFE (TOCTOU) | **Avoid** |
-| `mkstemp()` | POSIX | âœ— | Yes (template) | Safe | POSIX systems |
-| Manual naming | → | âœ— | Yes | Depends on precautions | When you need a named temp file |
+| `tmpfile()` | C89+ | ✓ | No (temp name) | Safe | Short-lived scratch data |
+| `tmpnam()` | C89+ | ✗ | Yes | UNSAFE (TOCTOU) | **Avoid** |
+| `mkstemp()` | POSIX | ✗ | Yes (template) | Safe | POSIX systems |
+| Manual naming | → | ✗ | Yes | Depends on precautions | When you need a named temp file |
 
 ### Complexity Analysis
 
@@ -2795,7 +2795,7 @@ printf("feof: %d\n", feof(fp));  /* 0 */
 ### Q3: Why does fgetc return int instead of char?
 
 
-To distinguish EOF (-1, typically) from the 256 possible byte values (0â€“255). If `fgetc` returned `unsigned char`, it could never signal EOF. If it returned `char`, byte 0xFF (255) would be indistinguishable from -1 (EOF) on platforms where char is signed.
+To distinguish EOF (-1, typically) from the 256 possible byte values (0–255). If `fgetc` returned `unsigned char`, it could never signal EOF. If it returned `char`, byte 0xFF (255) would be indistinguishable from -1 (EOF) on platforms where char is signed.
 
 ```c
 /* WRONG → loses ability to distinguish EOF from 0xFF */
@@ -3258,7 +3258,7 @@ int main(int argc, char *argv[])
 6. Why does `fgetc` return `int` rather than `char`?
    A) Historical accident
    B) To support Unicode
-   C) To distinguish EOF (typically -1) from all valid byte values (0â€“255)
+   C) To distinguish EOF (typically -1) from all valid byte values (0–255)
    D) To improve performance
 
 <details><summary>Answer&lt;/summary&gt;**C)** If `fgetc` returned `char`, byte 0xFF (255) would be indistinguishable from EOF on platforms with signed `char`. Using `int` provides all 256 byte values plus a distinct EOF sentinel.</details>

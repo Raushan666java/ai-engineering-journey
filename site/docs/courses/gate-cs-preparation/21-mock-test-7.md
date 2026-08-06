@@ -5,7 +5,7 @@ title: "21 Mock Test 7"
 sidebar_label: "21 Mock Test 7"
 sidebar_position: 18
 ---
-ï»¿# GATE CS Mock Test 7 Ã¢â€ â€™ Full-Length Practice Paper
+﻿# GATE CS Mock Test 7 → Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -73,19 +73,19 @@ flowchart LR
 
 | Questions | Type | Marks | Negative Marking |
 |-----------|------|-------|-----------------|
-| Q1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q10 (GA) | MCQ | 1 each | ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1/3 |
-| Q11ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q15 (GA) | MCQ | 2 each | ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2/3 |
-| Q16ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q20 (Math) | MCQ | 1 each | ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1/3 |
-| Q21ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q25 (Math) | MCQ | 2 each | ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2/3 |
-| Q26ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q45 (Technical) | MCQ | 1 each | ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1/3 |
-| Q46ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q55 (Technical) | MCQ | 2 each | ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2/3 |
+| Q1–Q10 (GA) | MCQ | 1 each | −1/3 |
+| Q11–Q15 (GA) | MCQ | 2 each | −2/3 |
+| Q16–Q20 (Math) | MCQ | 1 each | −1/3 |
+| Q21–Q25 (Math) | MCQ | 2 each | −2/3 |
+| Q26–Q45 (Technical) | MCQ | 1 each | −1/3 |
+| Q46–Q55 (Technical) | MCQ | 2 each | −2/3 |
 
 **Difficulty:** Hard  
 **Recommended Time per Section:** GA 30 min, Math 30 min, Technical 120 min
 
 ---
 
-## Section A: General Aptitude (Questions 1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“15)
+## Section A: General Aptitude (Questions 1–15)
 
 **Q1 (1 Mark):** Choose the word that is most similar in meaning to "PERFUNCTORY":
 
@@ -134,10 +134,10 @@ flowchart LR
 
 **Q6 (1 Mark):** A clock shows 4:30. What is the angle between the hour and minute hands?
 
-(A) 30Ãƒâ€šÃ‚Â°
-(B) 45Ãƒâ€šÃ‚Â°
-(C) 60Ãƒâ€šÃ‚Â°
-(D) 75Ãƒâ€šÃ‚Â°
+(A) 30°
+(B) 45°
+(C) 60°
+(D) 75°
 
 ---
 
@@ -186,12 +186,12 @@ flowchart LR
 
 ---
 
-**Q12 (2 Marks):** A sum of money becomes ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹10,000 in 5 years and ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹12,000 in 7 years at simple interest. Principal?
+**Q12 (2 Marks):** A sum of money becomes ₹10,000 in 5 years and ₹12,000 in 7 years at simple interest. Principal?
 
-(A) ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹5,000
-(B) ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹6,000
-(C) ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹7,000
-(D) ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹8,000
+(A) ₹5,000
+(B) ₹6,000
+(C) ₹7,000
+(D) ₹8,000
 
 ---
 
@@ -204,7 +204,7 @@ flowchart LR
 
 ---
 
-**Q14 (2 Marks):** xÃƒâ€šÃ‚Â² ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 5x + 6 = 0 and xÃƒâ€šÃ‚Â² ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 8x + 15 = 0 have a common root. The common root is:
+**Q14 (2 Marks):** x² − 5x + 6 = 0 and x² − 8x + 15 = 0 have a common root. The common root is:
 
 (A) 2
 (B) 3
@@ -222,14 +222,14 @@ flowchart LR
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“25)
+## Section B: Engineering Mathematics (Questions 16–25)
 
 **Q16 (1 Mark):** det([[1,2],[3,4]]) is:
 
-(A) ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2
+(A) −2
 (B) 2
 (C) 4
-(D) ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢4
+(D) −4
 
 ---
 
@@ -242,7 +242,7 @@ flowchart LR
 
 ---
 
-**Q18 (1 Mark):** Evaluate ÃƒÂ¢Ã‹â€ Ã‚Â«ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬Ãƒâ€šÃ‚Â¹ xÃƒâ€šÃ‚Â² dx.
+**Q18 (1 Mark):** Evaluate ∫₀¹ x² dx.
 
 (A) 1/4
 (B) 1/3
@@ -251,7 +251,7 @@ flowchart LR
 
 ---
 
-**Q19 (1 Mark):** If P(A) = 0.5, P(B) = 0.4, and P(AÃƒÂ¢Ã‹â€ Ã‚Â©B) = 0.2, find P(A ÃƒÂ¢Ã‹â€ Ã‚Âª B).
+**Q19 (1 Mark):** If P(A) = 0.5, P(B) = 0.4, and P(A∩B) = 0.2, find P(A ∪ B).
 
 (A) 0.5
 (B) 0.6
@@ -287,7 +287,7 @@ flowchart LR
 
 ---
 
-**Q23 (2 Marks):** For matrix A = [[2, ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1, 0], [ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1, 2, ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1], [0, ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1, 2]], the number of positive eigenvalues is:
+**Q23 (2 Marks):** For matrix A = [[2, −1, 0], [−1, 2, −1], [0, −1, 2]], the number of positive eigenvalues is:
 
 (A) 0
 (B) 2
@@ -305,7 +305,7 @@ flowchart LR
 
 ---
 
-**Q25 (2 Marks):** The chromatic number of a 5-cycle graph CÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Â¦ is:
+**Q25 (2 Marks):** The chromatic number of a 5-cycle graph C₅ is:
 
 (A) 2
 (B) 3
@@ -314,7 +314,7 @@ flowchart LR
 
 ---
 
-## Section C: Technical Subjects (Questions 26ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“55)
+## Section C: Technical Subjects (Questions 26–55)
 
 **Q26 (1 Mark) [DS&A]:** A priority queue can be implemented efficiently using:
 
@@ -352,12 +352,12 @@ flowchart LR
 
 ---
 
-**Q30 (1 Mark) [TOC]:** The empty language ÃƒÂ¢Ã‹â€ Ã¢â‚¬Â¦ and the language containing only the empty string {ÃƒÅ½Ã‚Âµ}:
+**Q30 (1 Mark) [TOC]:** The empty language ∅ and the language containing only the empty string {ε}:
 
 (A) Both are regular.
 (B) Neither is regular.
-(C) Only ÃƒÂ¢Ã‹â€ Ã¢â‚¬Â¦ is regular.
-(D) Only {ÃƒÅ½Ã‚Âµ} is regular.
+(C) Only ∅ is regular.
+(D) Only {ε} is regular.
 
 ---
 
@@ -408,23 +408,23 @@ flowchart LR
 
 **Q36 (1 Mark) [CN]:** What is the maximum window size in Go-Back-N ARQ?
 
-(A) 2ÃƒÂ¢Ã‚Â�Ã‚Â¿ ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1
-(B) 2ÃƒÂ¢Ã‚Â�Ã‚Â¿
-(C) 2^{nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1}
-(D) 2^{nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1} ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1
+(A) 2âÂÂ�¿ − 1
+(B) 2âÂÂ�¿
+(C) 2^{n−1}
+(D) 2^{n−1} − 1
 
 ---
 
 **Q37 (1 Mark) [DBMS]:** Which of the following is a lossless and dependency-preserving decomposition?
 
-(A) R(ABCD) Ã¢â€ â€™ R1(AB), R2(CD) with FDs ABÃ¢â€ â€™C, CÃ¢â€ â€™D
-(B) R(ABCD) Ã¢â€ â€™ R1(ABC), R2(ACD) with FDs AÃ¢â€ â€™B, CÃ¢â€ â€™D
-(C) R(ABCDE) Ã¢â€ â€™ R1(ABC), R2(ADE) with FDs AÃ¢â€ â€™BC, DÃ¢â€ â€™E
-(D) R(ABCD) Ã¢â€ â€™ R1(ABD), R2(BCD) with FDs AÃ¢â€ â€™D, BÃ¢â€ â€™C
+(A) R(ABCD) → R1(AB), R2(CD) with FDs AB→C, C→D
+(B) R(ABCD) → R1(ABC), R2(ACD) with FDs A→B, C→D
+(C) R(ABCDE) → R1(ABC), R2(ADE) with FDs A→BC, D→E
+(D) R(ABCD) → R1(ABD), R2(BCD) with FDs A→D, B→C
 
 ---
 
-**Q38 (1 Mark) [TOC]:** L = {0ÃƒÂ¢Ã‚Â�Ã‚Â¿1Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‚Â�Ã‚Â¿ | n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 0}. Which is true?
+**Q38 (1 Mark) [TOC]:** L = {0âÂÂ�¿1²âÂÂ�¿ | n ≥ 0}. Which is true?
 
 (A) L is regular.
 (B) L is context-free but not regular.
@@ -433,7 +433,7 @@ flowchart LR
 
 ---
 
-**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr Ã¢â€ â€™ expr + term {$$ = $1 + $3;} represents:
+**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr → expr + term {$$ = $1 + $3;} represents:
 
 (A) Synthesized attribute
 (B) Inherited attribute
@@ -453,10 +453,10 @@ flowchart LR
 
 **Q41 (1 Mark) [COA]:** An instruction uses 24-bit addresses, 32-bit data, and 8-bit opcode. Word-addressable memory. Max memory size?
 
-(A) 2Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‚Â�Ã‚Â´ words
-(B) 2Ãƒâ€šÃ‚Â³Ãƒâ€šÃ‚Â² words
-(C) 2ÃƒÂ¢Ã‚Â�Ã‚Â¸ words
-(D) 2ÃƒÂ¢Ã‚Â�Ã‚Â¶ÃƒÂ¢Ã‚Â�Ã‚Â´ words
+(A) 2²âÂÂ�´ words
+(B) 2³² words
+(C) 2âÂÂ�¸ words
+(D) 2âÂÂ�¶âÂÂ�´ words
 
 ---
 
@@ -465,7 +465,7 @@ flowchart LR
 (A) O(log n)
 (B) O(n)
 (C) O(n log n)
-(D) O(ÃƒÂ¢Ã‹â€ Ã…Â¡n)
+(D) O(√n)
 
 ---
 
@@ -523,7 +523,7 @@ flowchart LR
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** Two transactions: T1: read(A); A = A+50; write(A); read(B); B = BÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢50; write(B). T2: read(B); B = B+100; write(B); read(A); A = AÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢100; write(A). Which interleaving preserves consistency?
+**Q49 (2 Marks) [DBMS]:** Two transactions: T1: read(A); A = A+50; write(A); read(B); B = B−50; write(B). T2: read(B); B = B+100; write(B); read(A); A = A−100; write(A). Which interleaving preserves consistency?
 
 (A) T1 then T2
 (B) T2 then T1
@@ -532,7 +532,7 @@ flowchart LR
 
 ---
 
-**Q50 (2 Marks) [TOC]:** The language {aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¢Ã‚Â�Ã‚Â¿cÃƒÂ¢Ã‚Â�Ã‚Â¿ | n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 0} is:
+**Q50 (2 Marks) [TOC]:** The language {aâÂÂ�¿bâÂÂ�¿câÂÂ�¿ | n ≥ 0} is:
 
 (A) Regular
 (B) Context-free
@@ -541,20 +541,20 @@ flowchart LR
 
 ---
 
-**Q51 (2 Marks) [CD]:** For grammar S Ã¢â€ â€™ aS | bA, A Ã¢â€ â€™ cA | ÃƒÅ½Ã‚Âµ, what is FIRST(S)?
+**Q51 (2 Marks) [CD]:** For grammar S → aS | bA, A → cA | ε, what is FIRST(S)?
 
 (A) {a, b}
 (B) {a, b, c}
-(C) {a, b, ÃƒÅ½Ã‚Âµ}
+(C) {a, b, ε}
 (D) {a}
 
 ---
 
-**Q52 (2 Marks) [DL]:** The Boolean expression ABÃƒÅ’Ã¢â‚¬Â¦ + AÃƒÅ’Ã¢â‚¬Â¦B + AB simplifies to:
+**Q52 (2 Marks) [DL]:** The Boolean expression AB̅ + A̅B + AB simplifies to:
 
 (A) A + B
 (B) AB
-(C) AÃƒÅ’Ã¢â‚¬Â¦BÃƒÅ’Ã¢â‚¬Â¦
+(C) A̅B̅
 (D) 1
 
 ---
@@ -587,7 +587,7 @@ print(x, y)
 
 ---
 
-**Q55 (2 Marks) [OS]:** A system uses THT (Token Holding Time) of 10 ms in a token ring with 100 stations. Propagation delay = 5 ÃƒÅ½Ã‚Â¼s between adjacent stations. Total ring latency is:
+**Q55 (2 Marks) [OS]:** A system uses THT (Token Holding Time) of 10 ms in a token ring with 100 stations. Propagation delay = 5 μs between adjacent stations. Total ring latency is:
 
 (A) 0.5 ms
 (B) 5 ms
@@ -618,47 +618,47 @@ print(x, y)
 
 **Q1:** Perfunctory means carried out with minimal effort or reflection, i.e., superficial or half-hearted. The opposite would be thorough, but the question asks for the most similar meaning, so superficial is correct.
 
-**Q2:** Let numbers be x and y. x + y = 26, xy = 144. (x ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ y)Ãƒâ€šÃ‚Â² = (x+y)Ãƒâ€šÃ‚Â² ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 4xy = 676 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 576 = 100. So x ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ y = 10.
+**Q2:** Let numbers be x and y. x + y = 26, xy = 144. (x − y)² = (x+y)² − 4xy = 676 − 576 = 100. So x − y = 10.
 
 **Q3:** When "neither...nor" connects two subjects, the verb agrees with the closer subject. "friends" is plural, so "are" is correct. Option C uses past tense "were" but the present tense context calls for "are coming."
 
-**Q4:** Each letter is shifted forward by 2 positions: H+2=J, A+2=C, R+2=T, D+2=F. Similarly SÃ¢â€ â€™U, OÃ¢â€ â€™Q, FÃ¢â€ â€™H, TÃ¢â€ â€™V. Applying to EASY: E+2=G, A+2=C, S+2=U, Y+2=A, giving GCUA.
+**Q4:** Each letter is shifted forward by 2 positions: H+2=J, A+2=C, R+2=T, D+2=F. Similarly S→U, O→Q, F→H, T→V. Applying to EASY: E+2=G, A+2=C, S+2=U, Y+2=A, giving GCUA.
 
 **Q5:** Since all squares are rectangles, and some rectangles are not polygons, it does not guarantee any square is in that subset. But we know no squares overlap circles, meaning no square is inside any circle. Therefore, some circles (any circle) are definitely not squares. Option C is guaranteed true.
 
-**Q6:** At 4:30, hour hand is at 4ÃƒÆ’Ã¢â‚¬â€�30 + 30ÃƒÆ’Ã¢â‚¬â€�0.5 = 120 + 15 = 135Ãƒâ€šÃ‚Â°. Minute hand is at 30ÃƒÆ’Ã¢â‚¬â€�6 = 180Ãƒâ€šÃ‚Â°. Difference = 180 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 135 = 45Ãƒâ€šÃ‚Â°.
+**Q6:** At 4:30, hour hand is at 4Ãâ€â€�30 + 30Ãâ€â€�0.5 = 120 + 15 = 135°. Minute hand is at 30Ãâ€â€�6 = 180°. Difference = 180 − 135 = 45°.
 
-**Q7:** The pattern is nÃƒâ€šÃ‚Â² ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1 for n = 2, 4, 6, 8, 10, 12: 2Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1=3, 4Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1=15, 6Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1=35, 8Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1=63, 10Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1=99, 12Ãƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1=143. Missing term is 63.
+**Q7:** The pattern is n² − 1 for n = 2, 4, 6, 8, 10, 12: 2²−1=3, 4²−1=15, 6²−1=35, 8²−1=63, 10²−1=99, 12²−1=143. Missing term is 63.
 
-**Q8:** Downstream speed = 12/2 = 6 km/h. Upstream speed = 8/4 = 2 km/h. Stream speed = (downstream ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ upstream)/2 = (6ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2)/2 = 2 km/h.
+**Q8:** Downstream speed = 12/2 = 6 km/h. Upstream speed = 8/4 = 2 km/h. Stream speed = (downstream − upstream)/2 = (6−2)/2 = 2 km/h.
 
-**Q9:** Let CP = 100. MP = 130. Discounted price = 130 ÃƒÆ’Ã¢â‚¬â€� 0.9 = 117. Effective weight: 950 g sold as 1000 g, so actual cost per 1000 g nominal = 100 ÃƒÆ’Ã¢â‚¬â€� (1000/950) ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  105.26. Profit on 1000 g = 117 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 105.26 ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  11.74 on cost of 105.26, giving ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  26%.
+**Q9:** Let CP = 100. MP = 130. Discounted price = 130 Ãâ€â€� 0.9 = 117. Effective weight: 950 g sold as 1000 g, so actual cost per 1000 g nominal = 100 Ãâ€â€� (1000/950) ≈ 105.26. Profit on 1000 g = 117 − 105.26 ≈ 11.74 on cost of 105.26, giving ≈ 26%.
 
-**Q10:** |A ÃƒÂ¢Ã‹â€ Ã‚Âª B| = |A| + |B| ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ |A ÃƒÂ¢Ã‹â€ Ã‚Â© B| where A = divisible by 4, B = divisible by 6. |A| = ÃƒÂ¢Ã…â€™Ã…Â 1000/4ÃƒÂ¢Ã…â€™Ã¢â‚¬Â¹ = 250. |B| = ÃƒÂ¢Ã…â€™Ã…Â 1000/6ÃƒÂ¢Ã…â€™Ã¢â‚¬Â¹ = 166. |AÃƒÂ¢Ã‹â€ Ã‚Â©B| = ÃƒÂ¢Ã…â€™Ã…Â 1000/12ÃƒÂ¢Ã…â€™Ã¢â‚¬Â¹ = 83. Total = 250 + 166 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 83 = 333.
+**Q10:** |A ∪ B| = |A| + |B| − |A ∩ B| where A = divisible by 4, B = divisible by 6. |A| = ⌊1000/4⌋ = 250. |B| = ⌊1000/6⌋ = 166. |A∩B| = ⌊1000/12⌋ = 83. Total = 250 + 166 − 83 = 333.
 
 **Q11:** Speed of first train = (200 + 100) / 30 = 300 / 30 = 10 m/s. The second train crosses a pole = its own length. Time = 150 / 10 = 15 s.
 
-**Q12:** Simple interest for 2 years (from year 5 to 7) = 12,000 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 10,000 = 2,000. Annual interest = 1,000. Amount in 5 years = P + 5ÃƒÆ’Ã¢â‚¬â€�1000 = 10,000, so P = 5,000.
+**Q12:** Simple interest for 2 years (from year 5 to 7) = 12,000 − 10,000 = 2,000. Annual interest = 1,000. Amount in 5 years = P + 5Ãâ€â€�1000 = 10,000, so P = 5,000.
 
-**Q13:** After each operation, milk remaining = original ÃƒÆ’Ã¢â‚¬â€� (1 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 6/60) = 60 ÃƒÆ’Ã¢â‚¬â€� (0.9)Ãƒâ€šÃ‚Â³ = 60 ÃƒÆ’Ã¢â‚¬â€� 0.729 = 43.74 L.
+**Q13:** After each operation, milk remaining = original Ãâ€â€� (1 − 6/60) = 60 Ãâ€â€� (0.9)³ = 60 Ãâ€â€� 0.729 = 43.74 L.
 
-**Q14:** Roots of xÃƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢5x+6=0 are 2, 3. Roots of xÃƒâ€šÃ‚Â²ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢8x+15=0 are 3, 5. The common root is 3.
+**Q14:** Roots of x²−5x+6=0 are 2, 3. Roots of x²−8x+15=0 are 3, 5. The common root is 3.
 
-**Q15:** P(A wins on first toss) = 1/2. P(A wins on third toss) = (1/2)Ãƒâ€šÃ‚Â³ = 1/8 (both miss first two). This is a geometric series: 1/2 + 1/8 + 1/32 + ... = (1/2)/(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1/4) = (1/2)/(3/4) = 2/3.
+**Q15:** P(A wins on first toss) = 1/2. P(A wins on third toss) = (1/2)³ = 1/8 (both miss first two). This is a geometric series: 1/2 + 1/8 + 1/32 + ... = (1/2)/(1−1/4) = (1/2)/(3/4) = 2/3.
 
-**Q16:** det([[1,2],[3,4]]) = 1ÃƒÆ’Ã¢â‚¬â€�4 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 2ÃƒÆ’Ã¢â‚¬â€�3 = 4 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 6 = ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2.
+**Q16:** det([[1,2],[3,4]]) = 1Ãâ€â€�4 − 2Ãâ€â€�3 = 4 − 6 = −2.
 
-**Q17:** In a regular graph, sum of degrees = 2E. 8 ÃƒÆ’Ã¢â‚¬â€� 3 = 2E, so E = 12.
+**Q17:** In a regular graph, sum of degrees = 2E. 8 Ãâ€â€� 3 = 2E, so E = 12.
 
-**Q18:** ÃƒÂ¢Ã‹â€ Ã‚Â«ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬Ãƒâ€šÃ‚Â¹ xÃƒâ€šÃ‚Â² dx = [xÃƒâ€šÃ‚Â³/3]ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬Ãƒâ€šÃ‚Â¹ = 1/3.
+**Q18:** ∫₀¹ x² dx = [x³/3]₀¹ = 1/3.
 
-**Q19:** P(A ÃƒÂ¢Ã‹â€ Ã‚Âª B) = P(A) + P(B) ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ P(AÃƒÂ¢Ã‹â€ Ã‚Â©B) = 0.5 + 0.4 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 0.2 = 0.7.
+**Q19:** P(A ∪ B) = P(A) + P(B) − P(A∩B) = 0.5 + 0.4 − 0.2 = 0.7.
 
 **Q20:** Number of 3-element subsets of a 7-element set = C(7,3) = 35.
 
-**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3ÃƒÂ¢Ã‚Â�Ã‚Â´ ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ C(3,1)ÃƒÆ’Ã¢â‚¬â€�2ÃƒÂ¢Ã‚Â�Ã‚Â´ + C(3,2)ÃƒÆ’Ã¢â‚¬â€�1ÃƒÂ¢Ã‚Â�Ã‚Â´ = 81 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 3ÃƒÆ’Ã¢â‚¬â€�16 + 3ÃƒÆ’Ã¢â‚¬â€�1 = 81 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
+**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3âÂÂ�´ − C(3,1)Ãâ€â€�2âÂÂ�´ + C(3,2)Ãâ€â€�1âÂÂ�´ = 81 − 3Ãâ€â€�16 + 3Ãâ€â€�1 = 81 − 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
 
-**Q22:** Number of one-to-one functions from 3-element to 5-element set = P(5,3) = 5ÃƒÆ’Ã¢â‚¬â€�4ÃƒÆ’Ã¢â‚¬â€�3 = 60.
+**Q22:** Number of one-to-one functions from 3-element to 5-element set = P(5,3) = 5Ãâ€â€�4Ãâ€â€�3 = 60.
 
 **Q23:** The matrix is symmetric and positive definite (all leading principal minors positive: 2>0, 3>0, 4>0). All 3 eigenvalues are positive.
 
@@ -666,13 +666,13 @@ print(x, y)
 
 Wait, Catalan(7) = 429. Catalan(6) = 132. So with 7 nodes, answer is 429. Let me fix.
 
-And Q25: Chromatic number of CÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Â¦ = 3 (odd cycle needs 3 colors, at least and at most 3 colors). Answer B ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“.
+And Q25: Chromatic number of C₅ = 3 (odd cycle needs 3 colors, at least and at most 3 colors). Answer B ✓.
 
-Let me fix all the errors now.<ÃƒÂ¯Ã‚Â½Ã…â€œendÃ¢â€“Â�ofÃ¢â€“Â�thinkingÃƒÂ¯Ã‚Â½Ã…â€œ>
+Let me fix all the errors now.<｜endâ–Â�ofâ–Â�thinking｜>
 
-<ÃƒÂ¯Ã‚Â½Ã…â€œÃƒÂ¯Ã‚Â½Ã…â€œDSMLÃƒÂ¯Ã‚Â½Ã…â€œÃƒÂ¯Ã‚Â½Ã…â€œtool_calls>
-<ÃƒÂ¯Ã‚Â½Ã…â€œÃƒÂ¯Ã‚Â½Ã…â€œDSMLÃƒÂ¯Ã‚Â½Ã…â€œÃƒÂ¯Ã‚Â½Ã…â€œinvoke name="read">
-<ÃƒÂ¯Ã‚Â½Ã…â€œÃƒÂ¯Ã‚Â½Ã…â€œDSMLÃƒÂ¯Ã‚Â½Ã…â€œÃƒÂ¯Ã‚Â½Ã…â€œparameter name="filePath" string="true">C:\xampp\htdocs\ai-engineering-journey\docs\courses\gate-cs-preparation\13-mock-test-7.md
+<｜｜DSML｜｜tool_calls>
+<｜｜DSML｜｜invoke name="read">
+<｜｜DSML｜｜parameter name="filePath" string="true">C:\xampp\htdocs\ai-engineering-journey\docs\courses\gate-cs-preparation\13-mock-test-7.md
 ## Summary
 
 Mock Test 7 focuses on discrete mathematics, automata theory, and compiler construction. Key takeaways:
@@ -689,7 +689,7 @@ The \MockTestSimulator\ class picks random questions from a question bank, track
 
 \\\	ypescript
 /**
- * MockTestSimulator â€” Picks random questions from a
+ * MockTestSimulator — Picks random questions from a
  * question bank, enforces time limits, and scores responses.
  */
 interface Question {
@@ -796,12 +796,12 @@ class MockTestSimulator {
 // Example usage
 const sim = new MockTestSimulator();
 sim.loadBank([
-  { id: 1, text: 'P ? Q = ?', subject: 'Math', difficulty: 1, marks: 1, negativeMark: 0.25, correctAnswer: 'Â¬P ? Q' },
+  { id: 1, text: 'P ? Q = ?', subject: 'Math', difficulty: 1, marks: 1, negativeMark: 0.25, correctAnswer: '¬P ? Q' },
   { id: 2, text: 'Which is a DCFL?', subject: 'TOC', difficulty: 2, marks: 2, negativeMark: 0.66, correctAnswer: 'L = {anbn}' },
 ]);
 sim.selectRandom(2);
 sim.start();
-sim.answerQuestion(1, 'Â¬P ? Q');
+sim.answerQuestion(1, '¬P ? Q');
 const res = sim.endTest();
 console.log(sim.summary(res));
 \\\

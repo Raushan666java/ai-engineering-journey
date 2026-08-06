@@ -2441,7 +2441,7 @@ void parse_packet(unsigned char *packet)
 ### 4.15.4 Compiler Optimizations: Jump Tables
 
 
-For a compact range of case values (e.g., 0â€“255), compilers generate a **jump table** → an array of code addresses indexed by the switch expression:
+For a compact range of case values (e.g., 0–255), compilers generate a **jump table** → an array of code addresses indexed by the switch expression:
 
 ```asm
 ; Pseudocode for switch(x) with cases 0-3
@@ -2770,7 +2770,7 @@ while (!done && !error) {
 
 ### Application Problems
 
-1. **Days in Month:** Write a program that reads an integer month number (1â€“12) and prints the number of days in that month. Use a `switch` statement. Account for February having 28 days (ignore leap years).
+1. **Days in Month:** Write a program that reads an integer month number (1–12) and prints the number of days in that month. Use a `switch` statement. Account for February having 28 days (ignore leap years).
 
 2. **Triangle Type:** Write a program that reads three sides of a triangle and determines whether it is equilateral, isosceles, or scalene. Use `if-else` chains.
 
@@ -2794,7 +2794,7 @@ while (!done && !error) {
 
 ### Challenge Problem
 
-**Calendar Printer:** Write a program that reads a year and a month (1â€“12) and prints the calendar for that month. Use `switch` to determine the number of days. To determine the starting day of the month, use Zeller's congruence (research the formula). Print the calendar in the format:
+**Calendar Printer:** Write a program that reads a year and a month (1–12) and prints the calendar for that month. Use `switch` to determine the number of days. To determine the starting day of the month, use Zeller's congruence (research the formula). Print the calendar in the format:
 ```
      March 2025
 Su Mo Tu We Th Fr Sa

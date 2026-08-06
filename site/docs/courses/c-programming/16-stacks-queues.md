@@ -704,7 +704,7 @@ Final stack empty → **Balanced.**
 |------|------|-------------|--------|-------------|
 | 1 | `(` | [] | push `(` | [`(`] |
 | 2 | `{` | [`(`] | push `{` | [`(`, `{`] |
-| 3 | `)` | [`(`, `{`] | pop → `{`; `{` â‰  `(` → **mismatch** | → |
+| 3 | `)` | [`(`, `{`] | pop → `{`; `{` ≠ `(` → **mismatch** | → |
 
 **Unbalanced →** `{` does not match `)`.
 
@@ -831,7 +831,7 @@ Expression   Result
 2. If **operand** (letter/digit) → append to postfix output.
 3. If `(` → push onto stack.
 4. If `)` → pop and output until `(` is encountered; discard `(`.
-5. If **operator** → while stack not empty AND top has â‰¥ precedence, pop to output; then push current operator.
+5. If **operator** → while stack not empty AND top has ≥ precedence, pop to output; then push current operator.
 6. After scan, pop all remaining operators to output.
 
 **Pseudocode:**
@@ -2157,7 +2157,7 @@ Dequeue order: 200 300 100
 | FIFO ordering required | Queue | First come, first served |
 | Fair resource allocation | Queue | Round-robin scheduling |
 | Level-order processing | Queue | BFS uses queue |
-| Undo/Redo feature | Stack (Ã—2) | Undo stack + redo stack |
+| Undo/Redo feature | Stack (×2) | Undo stack + redo stack |
 
 ---
 
@@ -2729,7 +2729,7 @@ madam                          -> palindrome
    <details><summary>Answer&lt;/summary&gt;**C)** (2+3)*5 = 25.</details>
 
 8. **Two-stack queue:** What is the amortized time complexity of dequeue in a two-stack queue implementation?
-   A) O(1)   B) O(N)   C) O(log N)   D) O(NÂ²)
+   A) O(1)   B) O(N)   C) O(log N)   D) O(N²)
    <details><summary>Answer&lt;/summary&gt;**A)** Amortized O(1) → each element is moved between stacks at most once.</details>
 
 9. **Deque full form:** What does "deque" stand for?
@@ -2775,7 +2775,7 @@ madam                          -> palindrome
 
 3. **Decimal to binary using stack:** Write a function `void dec_to_bin(int n)` that uses a stack to convert a decimal number to binary. Push remainders, pop to print.
 
-4. **Printer queue simulation:** Simulate a printer queue: jobs arrive every 1â€“5 seconds (`rand() % 5 + 1`), each taking 1â€“3 seconds to print. Run for 30 simulated seconds and report average wait time.
+4. **Printer queue simulation:** Simulate a printer queue: jobs arrive every 1–5 seconds (`rand() % 5 + 1`), each taking 1–3 seconds to print. Run for 30 simulated seconds and report average wait time.
 
 5. **Reverse a queue:** Given a queue, reverse its elements using a stack. Hint: dequeue all into a stack, then pop all and enqueue back.
 

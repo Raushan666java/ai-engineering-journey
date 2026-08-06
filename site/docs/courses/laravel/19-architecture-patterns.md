@@ -77,7 +77,7 @@ flowchart LR
 
 > **One-Sentence Takeaway:** The service layer extracts business logic from controllers into dedicated non-framework classes with constructor injection.
 
-As Laravel applications grow, controllers accumulate business logic that belongs elsewhere. The service layer extracts this logic into dedicated classes, leaving controllers to handle only HTTP concerns Ã¢â‚¬â€ request validation, response transformation, and status codes.
+As Laravel applications grow, controllers accumulate business logic that belongs elsewhere. The service layer extracts this logic into dedicated classes, leaving controllers to handle only HTTP concerns — request validation, response transformation, and status codes.
 
 #### Service Classes and Constructor Injection
 
@@ -176,7 +176,7 @@ class SubscriptionController extends Controller
 
 #### Single-Responsibility Services
 
-Each service owns one domain concern. A violation Ã¢â‚¬â€ "God service" Ã¢â‚¬â€ looks like:
+Each service owns one domain concern. A violation — "God service" — looks like:
 
 ```php
 // Anti-pattern: one service does everything
@@ -641,22 +641,22 @@ public function boot(CommandBus $bus): void
 
 ```
 app/Actions/
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Auth/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ RegisterUserAction.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ LoginAction.php
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ VerifyEmailAction.php
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Subscriptions/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ StartTrialAction.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ CancelSubscriptionAction.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ UpgradePlanAction.php
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ HandleFailedPaymentAction.php
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Orders/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ PlaceOrderAction.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ CalculateShippingAction.php
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ApplyDiscountAction.php
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Reports/
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ GenerateRevenueReportAction.php
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ExportSubscribersAction.php
+├── Auth/
+│   ├── RegisterUserAction.php
+│   ├── LoginAction.php
+│   └── VerifyEmailAction.php
+├── Subscriptions/
+│   ├── StartTrialAction.php
+│   ├── CancelSubscriptionAction.php
+│   ├── UpgradePlanAction.php
+│   └── HandleFailedPaymentAction.php
+├── Orders/
+│   ├── PlaceOrderAction.php
+│   ├── CalculateShippingAction.php
+│   └── ApplyDiscountAction.php
+└── Reports/
+    ├── GenerateRevenueReportAction.php
+    └── ExportSubscribersAction.php
 ```
 
 ---
@@ -734,7 +734,7 @@ class SubscriptionData
 
 #### Spatie Data Package
 
-For advanced DTO needs Ã¢â‚¬â€ validation, transformation, nesting:
+For advanced DTO needs — validation, transformation, nesting:
 
 ```php
 use Spatie\LaravelData\Data;
@@ -800,48 +800,48 @@ DDD tactical patterns map naturally to Laravel when you organize by bounded cont
 
 ```
 app/Domain/
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Billing/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Models/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Subscription.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Invoice.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ PaymentMethod.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Actions/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ StartTrialAction.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ CancelSubscriptionAction.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ DomainEvents/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SubscriptionStarted.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SubscriptionCanceled.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ PaymentFailed.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Repositories/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SubscriptionRepository.php (interface)
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ EloquentSubscriptionRepository.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ValueObjects/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Money.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ BillingPeriod.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ SubscriptionStatus.php
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ DomainServices/
-Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SubscriptionRenewalService.php
-Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ DunningService.php
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Inventory/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Models/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Product.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ StockMovement.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Actions/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ReserveStockAction.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ReleaseStockAction.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ DomainEvents/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ StockDepleted.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Repositories/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ProductRepository.php
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ValueObjects/
-Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SKU.php
-Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ StockQuantity.php
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Shared/
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ValueObjects/
-    Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Email.php
-    Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Address.php
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Bus/
-        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ DomainEventBus.php
+├── Billing/
+│   ├── Models/
+│   │   ├── Subscription.php
+│   │   ├── Invoice.php
+│   │   └── PaymentMethod.php
+│   ├── Actions/
+│   │   ├── StartTrialAction.php
+│   │   └── CancelSubscriptionAction.php
+│   ├── DomainEvents/
+│   │   ├── SubscriptionStarted.php
+│   │   ├── SubscriptionCanceled.php
+│   │   └── PaymentFailed.php
+│   ├── Repositories/
+│   │   ├── SubscriptionRepository.php (interface)
+│   │   └── EloquentSubscriptionRepository.php
+│   ├── ValueObjects/
+│   │   ├── Money.php
+│   │   ├── BillingPeriod.php
+│   │   └── SubscriptionStatus.php
+│   └── DomainServices/
+│       ├── SubscriptionRenewalService.php
+│       └── DunningService.php
+├── Inventory/
+│   ├── Models/
+│   │   ├── Product.php
+│   │   └── StockMovement.php
+│   ├── Actions/
+│   │   ├── ReserveStockAction.php
+│   │   └── ReleaseStockAction.php
+│   ├── DomainEvents/
+│   │   └── StockDepleted.php
+│   ├── Repositories/
+│   │   └── ProductRepository.php
+│   └── ValueObjects/
+│       ├── SKU.php
+│       └── StockQuantity.php
+└── Shared/
+    ├── ValueObjects/
+    │   ├── Email.php
+    │   └── Address.php
+    └── Bus/
+        └── DomainEventBus.php
 ```
 
 #### Aggregates
@@ -1010,34 +1010,34 @@ class Invoice extends Model
 The hexagonal pattern places business logic at the center, with "ports" (interfaces) on the boundary and "adapters" (implementations) outside.
 
 ```
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š           Application Core              Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š         Domain Services           Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€šSub  Ã¢â€â€š  Ã¢â€â€šOrd  Ã¢â€â€š  Ã¢â€â€šInv  Ã¢â€â€š      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€šSvc  Ã¢â€â€š  Ã¢â€â€šSvc  Ã¢â€â€š  Ã¢â€â€šSvc  Ã¢â€â€š      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š     Ã¢â€â€š         Ã¢â€â€š        Ã¢â€â€š         Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€š     Port Interfaces    Ã¢â€â€š      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€š (RepositoryInterface)  Ã¢â€â€š      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ      Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â€šÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€š
-Ã¢â€â€š                 Ã¢â€â€š                        Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â€šÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š    Adapters  Ã¢â€â€š                    Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š         Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â              Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š         Ã¢â€â€š EloquentÃ¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š         Ã¢â€â€š  Repo   Ã¢â€â€š  Ã¢â€â€š Cache  Ã¢â€â€š  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š         Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€š AdapterÃ¢â€â€š  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š                      Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€š HTTP     Ã¢â€â€š  Ã¢â€â€š CLI/Artisan  Ã¢â€â€š  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€š ControllerÃ¢â€â€š  Ã¢â€â€š Command      Ã¢â€â€š  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+┌─────────────────────────────────────────┐
+│           Application Core              │
+│  ┌───────────────────────────────────┐   │
+│  │         Domain Services           │   │
+│  │  ┌─────┐  ┌─────┐  ┌─────┐      │   │
+│  │  │Sub  │  │Ord  │  │Inv  │      │   │
+│  │  │Svc  │  │Svc  │  │Svc  │      │   │
+│  │  └──┬──┘  └──┬──┘  └──┬──┘      │   │
+│  │     │         │        │         │   │
+│  │  ┌──┴─────────┴────────┴──┐      │   │
+│  │  │     Port Interfaces    │      │   │
+│  │  │ (RepositoryInterface)  │      │   │
+│  │  └───────────┬────────────┘      │   │
+│  └──────────────│────────────────────┘   │
+│                 │                        │
+│  ┌──────────────│────────────────────┐   │
+│  │    Adapters  │                    │   │
+│  │         ┌────┴────┐              │   │
+│  │         │ Eloquent│  ┌────────┐  │   │
+│  │         │  Repo   │  │ Cache  │  │   │
+│  │         └─────────┘  │ Adapter│  │   │
+│  │                      └────────┘  │   │
+│  │  ┌──────────┐  ┌──────────────┐  │   │
+│  │  │ HTTP     │  │ CLI/Artisan  │  │   │
+│  │  │ Controller│  │ Command      │  │   │
+│  │  └──────────┘  └──────────────┘  │   │
+│  └──────────────────────────────────┘   │
+└─────────────────────────────────────────┘
 ```
 
 #### Repository Interfaces as Ports
@@ -1123,7 +1123,7 @@ public function register(): void
 | Aspect | Traditional Laravel | Hexagonal Laravel |
 |--------|-------------------|-------------------|
 | Repository location | `app/Repositories/` (infrastructure) | `app/Domain/*/Ports/` (domain) |
-| Dependency direction | Controller Ã¢â€ â€™ Repository | Domain defines port, infra implements |
+| Dependency direction | Controller → Repository | Domain defines port, infra implements |
 | Framework coupling | High (extends Eloquent) | Low (plain PHP in domain) |
 | Testability | Requires database setup | Fakes on port interface |
 
@@ -1477,7 +1477,7 @@ dispatch(new ProcessSubscription($subscription))
 
 | Feature | Implementation |
 |---------|---------------|
-| Domain identification | `mytenant.yourapp.com` Ã¢â€ â€™ `Tenant` model lookup |
+| Domain identification | `mytenant.yourapp.com` → `Tenant` model lookup |
 | Database isolation | Each tenant gets isolated database |
 | Cache isolation | Prefixes all cache keys with tenant ID |
 | File isolation | Separate storage directories per tenant |
@@ -1499,69 +1499,69 @@ A modular monolith organizes code into modules that can later graduate to micros
 
 ```
 Modules/
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Sales/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ app/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Controllers/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ OrderController.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ InvoiceController.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Models/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Order.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Invoice.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Actions/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ PlaceOrderAction.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ GenerateInvoiceAction.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Events/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ OrderPlaced.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Listeners/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ NotifySalesTeam.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Providers/
-Ã¢â€â€š   Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ SalesServiceProvider.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ database/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ migrations/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ 2025_01_01_000001_create_orders_table.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ 2025_01_01_000002_create_invoices_table.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ seeders/
-Ã¢â€â€š   Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ SalesDatabaseSeeder.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ routes/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ api.php
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ tests/
-Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Feature/
-Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Unit/
-Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ PestTest.php
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Inventory/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ app/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Controllers/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ProductController.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Models/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Product.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Actions/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ReserveStockAction.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ReorderStockAction.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Events/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ StockReserved.php
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Providers/
-Ã¢â€â€š   Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ InventoryServiceProvider.php
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ database/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ migrations/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ seeders/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ routes/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ api.php
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ tests/
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Billing/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ app/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Controllers/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Models/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Actions/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Events/
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Providers/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ database/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ routes/
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ tests/
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Notifications/
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ app/
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ database/
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ routes/
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ tests/
+├── Sales/
+│   ├── app/
+│   │   ├── Controllers/
+│   │   │   ├── OrderController.php
+│   │   │   └── InvoiceController.php
+│   │   ├── Models/
+│   │   │   ├── Order.php
+│   │   │   └── Invoice.php
+│   │   ├── Actions/
+│   │   │   ├── PlaceOrderAction.php
+│   │   │   └── GenerateInvoiceAction.php
+│   │   ├── Events/
+│   │   │   └── OrderPlaced.php
+│   │   ├── Listeners/
+│   │   │   └── NotifySalesTeam.php
+│   │   └── Providers/
+│   │       └── SalesServiceProvider.php
+│   ├── database/
+│   │   ├── migrations/
+│   │   │   ├── 2025_01_01_000001_create_orders_table.php
+│   │   │   └── 2025_01_01_000002_create_invoices_table.php
+│   │   └── seeders/
+│   │       └── SalesDatabaseSeeder.php
+│   ├── routes/
+│   │   └── api.php
+│   └── tests/
+│       ├── Feature/
+│       ├── Unit/
+│       └── PestTest.php
+├── Inventory/
+│   ├── app/
+│   │   ├── Controllers/
+│   │   │   └── ProductController.php
+│   │   ├── Models/
+│   │   │   └── Product.php
+│   │   ├── Actions/
+│   │   │   ├── ReserveStockAction.php
+│   │   │   └── ReorderStockAction.php
+│   │   ├── Events/
+│   │   │   └── StockReserved.php
+│   │   └── Providers/
+│   │       └── InventoryServiceProvider.php
+│   ├── database/
+│   │   ├── migrations/
+│   │   └── seeders/
+│   ├── routes/
+│   │   └── api.php
+│   └── tests/
+├── Billing/
+│   ├── app/
+│   │   ├── Controllers/
+│   │   ├── Models/
+│   │   ├── Actions/
+│   │   ├── Events/
+│   │   └── Providers/
+│   ├── database/
+│   ├── routes/
+│   └── tests/
+└── Notifications/
+    ├── app/
+    ├── database/
+    ├── routes/
+    └── tests/
 ```
 
 #### Module Service Providers
@@ -1740,7 +1740,7 @@ eadonly properties | Cross-layer data transfer |
 - Repository interfaces decouple data access from business logic, supporting Eloquent, cache, and fake implementations that are swappable via Laravel's service container
 - Action classes encapsulate single use cases behind `__invoke()`, and can be organized with a command bus for structured input/output handling
 - DTOs provide immutable, typed data carriers that keep Eloquent models isolated from command handlers and HTTP contexts
-- DDD tactical patterns Ã¢â‚¬â€ bounded contexts, aggregates, domain events, value objects Ã¢â‚¬â€ map naturally to Laravel's directory structure and service container
+- DDD tactical patterns — bounded contexts, aggregates, domain events, value objects — map naturally to Laravel's directory structure and service container
 - Hexagonal architecture places domain ports at the center, with infrastructure adapters on the boundary, enforcing dependency inversion
 - Event sourcing captures every state change as an append-only event, while CQRS separates read and write concerns for optimized query models
 - Multi-tenancy strategies range from simple tenant_id column scoping to isolated databases per tenant, each with distinct trade-offs for isolation and complexity
@@ -1769,7 +1769,7 @@ eadonly properties | Cross-layer data transfer |
 
 2. **Design a CQRS flow**: A reporting dashboard needs to show (a) total revenue per plan per month, (b) churn rate over time, and (c) active subscriber counts. Design an event-sourced write model and a projected read model. Include the event classes, the projector, and the read model table schema.
 
-3. **Module boundaries exercise**: Given the following features Ã¢â‚¬â€ user authentication, product catalog, shopping cart, order management, payment processing, shipping, reviews, recommendations, and customer support tickets Ã¢â‚¬â€ draw the bounded context boundaries and write the contract interfaces for inter-module communication between at least three modules.
+3. **Module boundaries exercise**: Given the following features — user authentication, product catalog, shopping cart, order management, payment processing, shipping, reviews, recommendations, and customer support tickets — draw the bounded context boundaries and write the contract interfaces for inter-module communication between at least three modules.
 
 ### Challenge Problem
 

@@ -51,7 +51,7 @@ flowchart LR
     E --> I[DSA + Design + Fintech]
 ```
 
-> Comprehensive compilation of actual coding problems, behavioral questions, and system design problems asked by top companies during campus placements (2023â€“2025). Each problem includes a complete, compilable Java solution.
+> Comprehensive compilation of actual coding problems, behavioral questions, and system design problems asked by top companies during campus placements (2023–2025). Each problem includes a complete, compilable Java solution.
 
 ---
 
@@ -3748,7 +3748,7 @@ public class PrimeCheck {
     }
 }
 ```
-**Time:** O(âˆšn) | **Space:** O(1)
+**Time:** O(√n) | **Space:** O(1)
 
 ---
 
@@ -4230,7 +4230,7 @@ public class MaxMinArray {
 #### Q1: Percentage
 **Question:** In an examination, a student scored 42% and failed by 18 marks. Another student scored 56% and passed by 12 marks. Find the maximum marks.
 
-**Answer:** Let max marks = M. Pass mark = 0.42M + 18 = 0.56M - 12. 0.14M = 30. M = 214.28 â‰ˆ 214.
+**Answer:** Let max marks = M. Pass mark = 0.42M + 18 = 0.56M - 12. 0.14M = 30. M = 214.28 ≈ 214.
 
 #### Q2: Work Efficiency
 **Question:** A is 50% more efficient than B. Together they can complete a work in 20 days. How many days would B take alone?
@@ -4424,7 +4424,7 @@ public class PerfectNumber {
     }
 }
 ```
-**Time:** O(âˆšn) | **Space:** O(1)
+**Time:** O(√n) | **Space:** O(1)
 
 ---
 
@@ -5400,7 +5400,7 @@ public class WordBreak {
     }
 }
 ```
-**Time:** O(nÂ²) | **Space:** O(n)
+**Time:** O(n²) | **Space:** O(n)
 
 ---
 
@@ -6031,7 +6031,7 @@ public class NumberOfIslands {
 - C) Google
 - D) Wipro
 
-<details><summary><b>Answer&lt;/b></summary&gt;C) Google â€“ FAANG companies frequently test system design even at intern level.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;C) Google – FAANG companies frequently test system design even at intern level.</details>
 
 **Q2:** What is the most common data structure asked across all company types?
 
@@ -6040,7 +6040,7 @@ public class NumberOfIslands {
 - C) Segment Tree
 - D) Red-Black Tree
 
-<details><summary><b>Answer&lt;/b></summary&gt;B) Arrays and Strings â€“ they form the foundation of almost every coding interview across all company tiers.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) Arrays and Strings – they form the foundation of almost every coding interview across all company tiers.</details>
 
 **Q3:** Which service-based company has the most rigorous aptitude section?
 
@@ -6049,7 +6049,7 @@ public class NumberOfIslands {
 - C) Wipro
 - D) Infosys
 
-<details><summary><b>Answer&lt;/b></summary&gt;B) TCS NQT â€“ the TCS National Qualifier Test has one of the most comprehensive aptitude sections among service-based companies.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) TCS NQT – the TCS National Qualifier Test has one of the most comprehensive aptitude sections among service-based companies.</details>
 
 **Q4:** What percentage of top product company interviews include at least one medium-difficulty DP problem?
 
@@ -6058,12 +6058,12 @@ public class NumberOfIslands {
 - C) About 50%
 - D) Over 75%
 
-<details><summary><b>Answer&lt;/b></summary&gt;C) About 50% â€“ DP is one of the most frequently tested patterns in product company interviews.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;C) About 50% – DP is one of the most frequently tested patterns in product company interviews.</details>
 
 ## One-Sentence Takeaway
 
-Company-wise PYQs reveal patterns: FAANG tests depth, service companies test breadth, and product-India companies sit in between â€“ tailor your preparation accordingly and practice with actual past problems.
+Company-wise PYQs reveal patterns: FAANG tests depth, service companies test breadth, and product-India companies sit in between – tailor your preparation accordingly and practice with actual past problems.
 
 ---
 
-*This compilation is based on actual campus placement experiences reported between 2023â€“2025. Problems and solution approaches may vary across interview rounds and locations.*
+*This compilation is based on actual campus placement experiences reported between 2023–2025. Problems and solution approaches may vary across interview rounds and locations.*

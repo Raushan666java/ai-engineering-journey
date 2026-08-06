@@ -1312,7 +1312,7 @@ airodump-ng wlan0
 # BSSID              PWR  Beacons    #Data, CH  MB   ENC  CIPHER AUTH ESSID
 # 00:11:22:33:44:55 -45   120        532    6   54e  WPA2 CCMP   PSK   Corporate-WiFi
 # AA:BB:CC:DD:EE:FF -30  5          0      11  54e  WPA2 CCMP   PSK   !FREE_WIFI!   ← ROUGE (stronger signal, unknown ESSID)
-# 66:77:88:99:AA:BB -65   45         0      1   54e  WPA2 CCMP   PSK   â‹¯
+# 66:77:88:99:AA:BB -65   45         0      1   54e  WPA2 CCMP   PSK   ⋯
 
 # 2. Check for APs with same SSID but different BSSID (evil twin)
 # Any SSID advertised by multiple BSSIDs should be investigated

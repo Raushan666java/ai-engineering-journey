@@ -203,7 +203,7 @@ int main() {
 
     out << "Hello, File I/O!\n";
     out << "Line 2: The answer is " << 42 << "\n";
-    out << "Line 3: Pi â‰ˆ " << 3.14159 << "\n";
+    out << "Line 3: Pi ≈ " << 3.14159 << "\n";
     out.close();   // explicit close (optional)
 
     // --- READING ---
@@ -227,7 +227,7 @@ int main() {
 ```
 Read: Hello, File I/O!
 Read: Line 2: The answer is 42
-Read: Line 3: Pi â‰ˆ 3.14159
+Read: Line 3: Pi ≈ 3.14159
 ```
 
 ### Dry Run Trace Table → Writing Phase
@@ -247,7 +247,7 @@ Read: Line 3: Pi â‰ˆ 3.14159
 | 1 | `ifstream in("example.txt")` | good=true, eof=false | → | → |
 | 2 | `getline(in, line)` → call 1 | good=true | `"Hello, File I/O!"` | `Read: Hello, File I/O!` |
 | 3 | `getline(in, line)` → call 2 | good=true | `"Line 2: The answer is 42"` | `Read: Line 2: The answer is 42` |
-| 4 | `getline(in, line)` → call 3 | good=true | `"Line 3: Pi â‰ˆ 3.14159"` | `Read: Line 3: Pi â‰ˆ 3.14159` |
+| 4 | `getline(in, line)` → call 3 | good=true | `"Line 3: Pi ≈ 3.14159"` | `Read: Line 3: Pi ≈ 3.14159` |
 | 5 | `getline(in, line)` → call 4 | eof=true, fail=true | `""` | Loop exits (no output) |
 
 ### Complexity Analysis
@@ -295,12 +295,12 @@ Open modes are like **instructions you give a librarian** about how you want to 
 
 | Flag | Full Name | Effect | Default for ifstream | Default for ofstream | Default for fstream |
 |------|-----------|--------|---------------------|---------------------|---------------------|
-| `ios::in` | Input | Open for reading | âœ… Yes | âŒ No | âœ… Yes |
-| `ios::out` | Output | Open for writing (implies trunc unless combined with in, app, or ate) | âŒ No | âœ… Yes | âœ… Yes |
-| `ios::app` | Append | Always write at the end; file created if it doesn't exist | âŒ No | → | → |
-| `ios::ate` | At End | Seek to end immediately after opening | âŒ No | → | → |
-| `ios::trunc` | Truncate | If file exists, discard its contents | âŒ No | âœ… Yes (with out) | âŒ No |
-| `ios::binary` | Binary | No newline translation; raw byte I/O | âŒ No | âŒ No | âŒ No |
+| `ios::in` | Input | Open for reading | ✅ Yes | ❌ No | ✅ Yes |
+| `ios::out` | Output | Open for writing (implies trunc unless combined with in, app, or ate) | ❌ No | ✅ Yes | ✅ Yes |
+| `ios::app` | Append | Always write at the end; file created if it doesn't exist | ❌ No | → | → |
+| `ios::ate` | At End | Seek to end immediately after opening | ❌ No | → | → |
+| `ios::trunc` | Truncate | If file exists, discard its contents | ❌ No | ✅ Yes (with out) | ❌ No |
+| `ios::binary` | Binary | No newline translation; raw byte I/O | ❌ No | ❌ No | ❌ No |
 
 ### Combining Modes (Bitwise OR)
 
@@ -621,7 +621,7 @@ out.put('\n');
 std::ofstream out("data.bin", std::ios::binary);
 int numbers[] = {1, 2, 3, 4, 5};
 out.write(reinterpret_cast<const char*>(numbers), sizeof(numbers));
-// Writes 20 bytes (5 ints Ã— 4 bytes each)
+// Writes 20 bytes (5 ints × 4 bytes each)
 ```
 
 ### Formatting Output
@@ -980,7 +980,7 @@ Employee at index 2: Charlie (ID: 103, Salary: $82000)
 |-----------|------|-------|-----|
 | `seekg(n)` | O(1) | O(1) | Just moves a file offset number in the OS file table |
 | `tellg()` | O(1) | O(1) | Returns stored file offset value |
-| Random access read | O(1) | O(1) | Disk can seek to any position (HDD â‰ˆ 10ms, SSD â‰ˆ 0.1ms) |
+| Random access read | O(1) | O(1) | Disk can seek to any position (HDD ≈ 10ms, SSD ≈ 0.1ms) |
 | Sequential read | O(N) | O(1) | Must transfer N bytes |
 | `seekg` past EOF | Implementation-defined | → | On read: sets failbit. On write: creates a "sparse" file (or extends) |
 
@@ -1142,13 +1142,13 @@ Error code: generic:2
 ### Complete Error Handling Checklist
 
 ```
-âœ“ Check if file opened (!file or file.fail())
-âœ“ Check is_open() for open-status (separate from state)
-âœ“ Check reads in loop condition (while (file >> x))
-âœ“ Distinguish EOF from format error (eof() vs fail())
-âœ“ Use clear() to recover from non-fatal errors
-âœ“ Use exceptions() for exception-based error handling (optional)
-âœ“ Check after every read/write in critical code
+✓ Check if file opened (!file or file.fail())
+✓ Check is_open() for open-status (separate from state)
+✓ Check reads in loop condition (while (file >> x))
+✓ Distinguish EOF from format error (eof() vs fail())
+✓ Use clear() to recover from non-fatal errors
+✓ Use exceptions() for exception-based error handling (optional)
+✓ Check after every read/write in critical code
 ```
 
 ### Complexity Analysis → Error Handling

@@ -112,7 +112,7 @@ Each user's segment is stored in a `user_segments` pivot table. Targeting then b
 
 **Q8: How would you architect a content generation pipeline that produces blog posts, social copy, and email variants?**
 
-The pipeline follows a producer-consumer pattern. A `ContentGenerationAgent` receives a brief from the marketing team → topic, target audience, channel, desired tone, key talking points, SEO keywords → stored in a `content_requests` table. The agent generates 3â€“5 variants per piece using the AI SDK with different temperature settings (higher temperature = more creative, lower = more conservative). Each variant is stored in a `content_drafts` table with a `variant_group_id` linking the set.
+The pipeline follows a producer-consumer pattern. A `ContentGenerationAgent` receives a brief from the marketing team → topic, target audience, channel, desired tone, key talking points, SEO keywords → stored in a `content_requests` table. The agent generates 3–5 variants per piece using the AI SDK with different temperature settings (higher temperature = more creative, lower = more conservative). Each variant is stored in a `content_drafts` table with a `variant_group_id` linking the set.
 
 ```php
 $variants = [];
@@ -145,7 +145,7 @@ If `p_value < 0.05` and the minimum sample size is met, the agent declares a win
 
 **Q10: How would you implement an SEO analysis agent that performs on-page audits and recommends content improvements?**
 
-The `SeoAnalysisAgent` takes a URL and optionally a target keyword. It fetches the page content, strips markup, and analyzes several dimensions. **Keyword analysis** checks if the target keyword appears in the H1, first 100 words, meta description, URL slug, image alt text, and at least 3 body headings → each missing element is a negative signal. **Content structure** evaluates heading hierarchy (H1 → H2 → H3 is correct; skipping levels is flagged), paragraph length (target 2â€“4 sentences), and use of bulleted/numbered lists. **Readability** computes the Flesch-Kincaid grade level and flags if it exceeds the target audience's reading level. **Technical factors** check for meta description presence and length (120â€“158 characters), Open Graph tags, canonical URL, and mobile viewport meta tag. The agent uses the AI SDK for higher-level analysis → evaluating content comprehensiveness against competing pages, identifying missing subtopics, and suggesting internal linking opportunities:
+The `SeoAnalysisAgent` takes a URL and optionally a target keyword. It fetches the page content, strips markup, and analyzes several dimensions. **Keyword analysis** checks if the target keyword appears in the H1, first 100 words, meta description, URL slug, image alt text, and at least 3 body headings → each missing element is a negative signal. **Content structure** evaluates heading hierarchy (H1 → H2 → H3 is correct; skipping levels is flagged), paragraph length (target 2–4 sentences), and use of bulleted/numbered lists. **Readability** computes the Flesch-Kincaid grade level and flags if it exceeds the target audience's reading level. **Technical factors** check for meta description presence and length (120–158 characters), Open Graph tags, canonical URL, and mobile viewport meta tag. The agent uses the AI SDK for higher-level analysis → evaluating content comprehensiveness against competing pages, identifying missing subtopics, and suggesting internal linking opportunities:
 
 ```php
 $suggestions = Agent::make('seo-consultant')
@@ -155,7 +155,7 @@ $suggestions = Agent::make('seo-consultant')
     ->run();
 ```
 
-The output writes to a `seo_audits` table with `url`, `overall_score` (0â€“100), per-dimension scores, and a JSON `recommendations` array. The agent integrates with the content generation pipeline: accepted recommendations can auto-create content requests for new or updated pages.
+The output writes to a `seo_audits` table with `url`, `overall_score` (0–100), per-dimension scores, and a JSON `recommendations` array. The agent integrates with the content generation pipeline: accepted recommendations can auto-create content requests for new or updated pages.
 
 **Q11: Describe how to build a social media scheduling agent that manages posts across multiple platforms.**
 
@@ -190,7 +190,7 @@ $score = collect($lead->interactions)
     ->sum(fn ($interaction) => $weights[$interaction['type']] ?? 0 * decay($interaction['created_at']));
 ```
 
-The decay function reduces older signals: `exp(-days_since / 90)` → a click 90 days ago is worth 37% of a click today. Leads are classified: `< 20` cold, `20â€“49` warm, `50+` hot. The `LeadNurturingAgent` handles workflows → when a lead crosses a threshold, it triggers an action from a `nurture_sequences` table: "If lead reaches _warm_, send the _case study_ email in 1 hour; if lead reaches _hot_, notify sales via Slack and assign to the next available rep." These are implemented as Laravel notifications and jobs queued conditionally via a `LeadObserver` that fires on score update. The AI layer enriches the agent by analyzing lead activity patterns and suggesting personalized next-touch content: "This lead spent 12 minutes on the API docs page → recommend sending the developer-focused integration guide rather than the standard ROI deck."
+The decay function reduces older signals: `exp(-days_since / 90)` → a click 90 days ago is worth 37% of a click today. Leads are classified: `< 20` cold, `20–49` warm, `50+` hot. The `LeadNurturingAgent` handles workflows → when a lead crosses a threshold, it triggers an action from a `nurture_sequences` table: "If lead reaches _warm_, send the _case study_ email in 1 hour; if lead reaches _hot_, notify sales via Slack and assign to the next available rep." These are implemented as Laravel notifications and jobs queued conditionally via a `LeadObserver` that fires on score update. The AI layer enriches the agent by analyzing lead activity patterns and suggesting personalized next-touch content: "This lead spent 12 minutes on the API docs page → recommend sending the developer-focused integration guide rather than the standard ROI deck."
 
 **Q13: How would you build a marketing analytics and reporting agent that generates natural-language executive summaries?**
 
@@ -334,7 +334,7 @@ I would approach this systematically, starting with data analysis and then layer
 
 ```php
 $insights = Agent::make('email-consultant')
-    ->withInstructions('Compare high-performing and low-performing email variants and identify 3â€“5 structural or content differences that explain the performance gap.')
+    ->withInstructions('Compare high-performing and low-performing email variants and identify 3–5 structural or content differences that explain the performance gap.')
     ->withInput([
         'high_performers' => $topEmails,
         'low_performers' => $bottomEmails,
@@ -363,16 +363,16 @@ Step 3 → weight adjustment: an agent analyzes the correlation data and suggest
 
 **Q24: How would you design a system that automatically generates and tests ad creative variants at scale?**
 
-The system would be an automated creative engine with a feedback loop. **Generation**: a `CreativeGenerationAgent` takes a campaign brief and generates ad variants across multiple dimensions → headline (3 options), body copy (3 options), CTA (2 options), image/video concept (2 options). This creates 3 Ã— 3 Ã— 2 Ã— 2 = 36 base variants. The agent uses the AI SDK with image generation:
+The system would be an automated creative engine with a feedback loop. **Generation**: a `CreativeGenerationAgent` takes a campaign brief and generates ad variants across multiple dimensions → headline (3 options), body copy (3 options), CTA (2 options), image/video concept (2 options). This creates 3 × 3 × 2 × 2 = 36 base variants. The agent uses the AI SDK with image generation:
 
 ```php
 $image = Image::of("Professional SaaS dashboard screenshot, blue tones, minimalist, {$concept}")
     ->generate();
 ```
 
-**Distribution**: variants are organized into a factorial experiment design rather than testing each individually. A `Taguchi orthogonal array` reduces 36 variants to a representative subset of 8â€“12 that still isolates the effect of each dimension. Each variant is deployed to a small traffic allocation (5% of campaign audience) for a statistical exploration phase.
+**Distribution**: variants are organized into a factorial experiment design rather than testing each individually. A `Taguchi orthogonal array` reduces 36 variants to a representative subset of 8–12 that still isolates the effect of each dimension. Each variant is deployed to a small traffic allocation (5% of campaign audience) for a statistical exploration phase.
 
-**Analysis**: after the exploration phase (500â€“1000 impressions per variant), the agent analyzes which dimension level performs best. "Headline option B (question format) outperforms A and C by 40% CTR. CTA option 1 ('Start Free Trial') beats option 2 ('Learn More') by 22%. Image concept 2 (dashboard) beats concept 1 (team photo) by 15%." The winning combination is constructed → headline B + body A + CTA 1 + image 2 → and deployed to the remaining 95% of the audience as the champion. A challenger slot remains for the next generation cycle.
+**Analysis**: after the exploration phase (500–1000 impressions per variant), the agent analyzes which dimension level performs best. "Headline option B (question format) outperforms A and C by 40% CTR. CTA option 1 ('Start Free Trial') beats option 2 ('Learn More') by 22%. Image concept 2 (dashboard) beats concept 1 (team photo) by 15%." The winning combination is constructed → headline B + body A + CTA 1 + image 2 → and deployed to the remaining 95% of the audience as the champion. A challenger slot remains for the next generation cycle.
 
 **Learning**: all results feed into a `creative_insights` table paired to the brand. Over time, the agent learns that for this brand, question headlines outperform declarative ones, screenshots outperform stock photography, and CTAs with "Free" consistently win. These insights guide future generation without retesting every dimension from scratch.
 

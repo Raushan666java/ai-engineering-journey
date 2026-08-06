@@ -79,10 +79,10 @@ sidebar_position: 18
 ### 18.1.1 Why IPv6? The Address Exhaustion Problem
 
 
-IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated the last IPv4 blocks in 2011; regional registries exhausted by 2019. With 30+ billion IoT devices projected, IPv6 is mandatory.
+IPv4 uses 32-bit addresses = 2^32 ≈ 4.3 billion addresses. IANA allocated the last IPv4 blocks in 2011; regional registries exhausted by 2019. With 30+ billion IoT devices projected, IPv6 is mandatory.
 
 **Key benefits:**
-- **128-bit address space:** 2^128 = 340 undecillion = 6.7 Ã— 10^17 addresses per mmÂ² of Earth's surface.
+- **128-bit address space:** 2^128 = 340 undecillion = 6.7 × 10^17 addresses per mm² of Earth's surface.
 - **No NAT required:** Every device gets a globally routable public IP. End-to-end connectivity restored.
 - **Simplified header:** Fixed 40-byte header (no options in base), no checksum (reduces router processing).
 - **Auto-configuration (SLAAC):** Devices generate their own IPv6 address without DHCP.
@@ -368,7 +368,7 @@ FUNCTION decompress_ipv6(compressed, context):
 | Mesh-under routing | O(h) per hop | 0 bytes (L2 only) | Forwarding at MAC layer; h = number of mesh hops |
 | Decompression | O(1) per packet | 40-48 bytes output | Fixed-size table lookup, no iteration |
 
-**Why it matters:** 6LoWPAN compression is the difference between fitting a packet in one radio frame (compressed) or requiring 3+ fragments (uncompressed). More fragments = more radio time = more battery drain. At scale (10K devices), 3Ã— fragmentation means 20K extra transmissions per hour.
+**Why it matters:** 6LoWPAN compression is the difference between fitting a packet in one radio frame (compressed) or requiring 3+ fragments (uncompressed). More fragments = more radio time = more battery drain. At scale (10K devices), 3× fragmentation means 20K extra transmissions per hour.
 
 ### 18.2.2 MQTT → Message Queuing Telemetry Transport
 
@@ -380,7 +380,7 @@ FUNCTION decompress_ipv6(compressed, context):
 **Numbered Steps → MQTT Publish-Subscribe:**
 1. Client A connects to the broker (CONNECT → CONNACK).
 2. Client A subscribes to topic "sensors/temperature" (SUBSCRIBE → SUBACK).
-3. Client B publishes 25.5Â°C to topic "sensors/temperature" (PUBLISH).
+3. Client B publishes 25.5°C to topic "sensors/temperature" (PUBLISH).
 4. Broker receives the PUBLISH message, checks the subscription list.
 5. Broker forwards the message to Client A (and any other subscribers).
 6. Client A receives the message and processes the payload.
@@ -634,7 +634,7 @@ asyncio.run(observe_temperature())
 |---------|------|------|------|
 | Transport | TCP (or TLS) | UDP (or DTLS) | TCP (or QUIC/HTTP3) |
 | Model | Pub-sub | Request-response (REST) | Request-response |
-| Header size | 2â€“14 bytes | 4 bytes | ~100-800 bytes |
+| Header size | 2–14 bytes | 4 bytes | ~100-800 bytes |
 | Reliability | QoS 0, 1, 2 | CON/NON/ACK/RST | TCP guaranteed |
 | Stateful | Session-based | Stateless | Stateless (cookies stateful) |
 | Caching | No native | Yes (max-age option) | Yes (ETag, Cache-Control) |
@@ -735,7 +735,7 @@ sensor.simulate(10);
 - **HSS (Home Subscriber Server):** Subscriber database (SIM credentials, service subscriptions).
 - **PCRF (Policy and Charging Rules Function):** QoS policy, credit control.
 
-**Key metrics:** 100 Mbpsâ€“1 Gbps downlink, 30-50 ms RTT latency, 500 km/h mobility (high-speed trains).
+**Key metrics:** 100 Mbps–1 Gbps downlink, 30-50 ms RTT latency, 500 km/h mobility (high-speed trains).
 
 **Protocol stack:** CPRI (fronthaul) → OFDMA (air interface) → IP/MPLS (backhaul) → EPC (core).
 
@@ -778,14 +778,14 @@ The 5G core (3GPP Release 15/16) uses a Service-Based Architecture (SBA). Networ
 | Peak data rate | 1 Gbps | 20 Gbps | 1 Tbps |
 | Latency (air interface) | 10-30 ms | 1 ms | 0.01-0.1 ms |
 | Bandwidth | Up to 20 MHz | Up to 400 MHz (mmWave) | Up to 100 GHz (sub-THz) |
-| Frequency range | 700 MHzâ€“2.6 GHz | 600 MHzâ€“52.6 GHz | 100 GHzâ€“3 THz |
-| MIMO | 8Ã—8 | 64Ã—64 (massive MIMO) | 1024Ã—1024 (holographic MIMO) |
+| Frequency range | 700 MHz–2.6 GHz | 600 MHz–52.6 GHz | 100 GHz–3 THz |
+| MIMO | 8×8 | 64×64 (massive MIMO) | 1024×1024 (holographic MIMO) |
 | Core architecture | EPC (control + user) | SBA (services over HTTP/2) | SBA + AI-native + compute fabric |
 | Air interface | OFDMA | OFDMA + OFDM | OTFS + AI-based waveform |
 | Slicing | No | Yes (3GPP defined) | Yes + compute slicing |
 | Edge computing | Limited | MEC (native) | AI fabric, in-network compute |
 | Positioning accuracy | ~50 m (cell ID) | ~1 m (mmWave beam) | <1 cm (THz + AI) |
-| Energy efficiency | 1Ã— baseline | 10Ã— vs 4G | 100Ã— vs 5G |
+| Energy efficiency | 1× baseline | 10× vs 4G | 100× vs 5G |
 | AI integration | OAM (operations only) | SON (self-organizing) | AI-native: air interface, core, apps |
 | Use cases | Mobile broadband | eMBB + uRLLC + mMTC | Holographic, digital twin, pervasive AI |
 | Deployment | 2010-2020 | 2020-2030 | 2030+ |
@@ -802,7 +802,7 @@ The 5G core (3GPP Release 15/16) uses a Service-Based Architecture (SBA). Networ
 | Authentication | SIM-based (PKI) | WPA3 (PSK/802.1X) |
 | Cost | Carrier subscription | Free (ISP+wifi infrastructure) |
 | Handover | Seamless (inter-gNB) | Inefficient |
-| Density | 1M devices/kmÂ² | 2000 devices/AP |
+| Density | 1M devices/km² | 2000 devices/AP |
 
 ---
 
@@ -827,7 +827,7 @@ QUIC (Quick UDP Internet Connections, RFC 9000) is a transport protocol original
 
 
 ```
-| Connection ID (0â€“20 B) | Version (4 B) | Packet Number (1â€“4 B) | Encrypted Payload |
+| Connection ID (0–20 B) | Version (4 B) | Packet Number (1–4 B) | Encrypted Payload |
 ```
 
 Long-header packets establish connections; short-header packets carry data. The connection ID may be zero-length for single-path connections to reduce overhead.
@@ -1150,12 +1150,12 @@ with manager.connect(**device) as m:
 
 | Approach | Time to Configure N Devices | Space | Why |
 |----------|---------------------------|-------|-----|
-| Manual SSH | O(N Ã— M) commands | N/A | Each device, each command typed individually; M = commands per device |
+| Manual SSH | O(N × M) commands | N/A | Each device, each command typed individually; M = commands per device |
 | Ansible push | O(N) parallel SSH sessions | O(1) playbook | Parallel execution; playbook size constant regardless of N |
 | NETCONF transactional | O(N) sessions + O(1) commit | O(playbook + device schema) | Validation + commit phases; schema cached |
 | RESTCONF | O(N) HTTP requests | O(1) per resource | Standard HTTP semantics; each resource = one request |
 
-**Why it matters:** Manual configuration does not scale. At 100 devices, Ansible completes in seconds (parallel). Manual SSH with 10 commands Ã— 100 devices Ã— 30 seconds = 300 minutes of typing, with a 5-15% error rate. Automation eliminates the error rate and reduces time by 99%+.
+**Why it matters:** Manual configuration does not scale. At 100 devices, Ansible completes in seconds (parallel). Manual SSH with 10 commands × 100 devices × 30 seconds = 300 minutes of typing, with a 5-15% error rate. Automation eliminates the error rate and reduces time by 99%+.
 
 ### 18.7.5 Edge Cases
 
@@ -1316,10 +1316,10 @@ print(f"Threshold (95th percentile MSE): {threshold:.4f}")
 
 | Technique | Training Time | Inference Time | Memory | Why |
 |-----------|--------------|---------------|--------|-----|
-| LSTM for anomaly detection | O(T Ã— L Ã— HÂ²) | O(L Ã— H) per sample | O(HÂ²) weights | L = seq length, H = hidden units, T = training steps; quadratic in hidden units |
-| Random Forest classification | O(N Ã— K Ã— log N) | O(K Ã— log N) per sample | O(K Ã— N) trees | N = samples, K = trees; each tree is O(log N) traversal |
-| Prophet forecasting | O(N Ã— seasonality) | O(1) per forecast | O(N) trend params | Decomposes time series into trend + seasonality; N = historical points |
-| Graph neural network routing | O(V Ã— E Ã— L) | O(V Ã— E) per inference | O(V Ã— d) embeddings | V = routers, E = links, L = GNN layers; each layer aggregates neighbors |
+| LSTM for anomaly detection | O(T × L × H²) | O(L × H) per sample | O(H²) weights | L = seq length, H = hidden units, T = training steps; quadratic in hidden units |
+| Random Forest classification | O(N × K × log N) | O(K × log N) per sample | O(K × N) trees | N = samples, K = trees; each tree is O(log N) traversal |
+| Prophet forecasting | O(N × seasonality) | O(1) per forecast | O(N) trend params | Decomposes time series into trend + seasonality; N = historical points |
+| Graph neural network routing | O(V × E × L) | O(V × E) per inference | O(V × d) embeddings | V = routers, E = links, L = GNN layers; each layer aggregates neighbors |
 
 **Why it matters:** AI inference must be faster than the phenomena it detects. For DDoS detection, model inference must complete within 10-100 ms (before the attack overwhelms the link). LSTM with 64 hidden units over 10 time steps → ~0.3 ms inference on GPU → suitable for real-time detection. Random Forest with 100 trees on a 10-feature flow → ~0.1 ms → even faster for classification.
 
@@ -1348,10 +1348,10 @@ The only mature quantum networking technology. QKD allows two parties to share a
 **BB84 Protocol (Bennett-Brassard 1984):**
 
 **Numbered Steps → BB84 QKD:**
-1. Alice generates random bits (0, 1) and random bases (rectilinear + or diagonal Ã—).
+1. Alice generates random bits (0, 1) and random bases (rectilinear + or diagonal ×).
 2. Alice encodes each bit in a photon polarization:
-   - Basis +: |0âŸ© = 0Â° (horizontal), |1âŸ© = 90Â° (vertical)
-   - Basis Ã—: |0âŸ© = 45Â°, |1âŸ© = 135Â°
+   - Basis +: |0⟩ = 0° (horizontal), |1⟩ = 90° (vertical)
+   - Basis ×: |0⟩ = 45°, |1⟩ = 135°
 3. Alice sends photons to Bob over quantum channel (fiber or free-space).
 4. Bob randomly chooses basis for each photon and measures.
 5. Alice and Bob publicly compare which bases they used (not the bit values).
@@ -1365,7 +1365,7 @@ The only mature quantum networking technology. QKD allows two parties to share a
 ```
 ALICE:
   bits ← RANDOM_BITS(n)
-  bases ← RANDOM_BASES(n)  # + or Ã—
+  bases ← RANDOM_BASES(n)  # + or ×
   qubits ← ENCODE(bits, bases)
   SEND(qubits, quantum_channel)
 
@@ -1466,7 +1466,7 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Edge inference (CNN) | O(kÂ² Ã— d Ã— F) per frame | O(F) parameters | k = kernel size, d = depth, F = feature maps; convolution dominates |
+| Edge inference (CNN) | O(k² × d × F) per frame | O(F) parameters | k = kernel size, d = depth, F = feature maps; convolution dominates |
 | Cloud offload decision | O(1) comparison | O(1) | Simple heuristic: latency budget vs compute capacity |
 | Model update (OTA) | O(F) download | O(F) storage | Downloading new model weights (10-500 MB per model) |
 | Data aggregation | O(N) merge | O(N) buffer | N = edge devices; merging time-series data is O(N) |
@@ -1686,11 +1686,11 @@ with tracer.start_as_current_span("backend-service") as span:
 |-----------|-------------------|-------------|-----|
 | eBPF XDP drop | ~50 ns (hardware bypass) | 0 bytes stored | Runs at driver level; no memory allocation for dropped packets |
 | eBPF kprobe trace | ~100-500 ns | Per-event (32-128 bytes) | Function hook overhead; writes to perf ring buffer |
-| OpenTelemetry tracing | ~1-10 Î¼s per span | 100-500 bytes per span | Context propagation (W3C headers), span creation, exporter batching |
-| Full packet capture (pcap) | ~100 Î¼s per packet | Full packet (~1500 bytes) | Packet copy from kernel to userspace; disk write |
-| sFlow/NetFlow sampling | ~1 Î¼s per packet | 1:1000-1:10000 sampled | Sampling eliminates per-packet processing for most traffic |
+| OpenTelemetry tracing | ~1-10 μs per span | 100-500 bytes per span | Context propagation (W3C headers), span creation, exporter batching |
+| Full packet capture (pcap) | ~100 μs per packet | Full packet (~1500 bytes) | Packet copy from kernel to userspace; disk write |
+| sFlow/NetFlow sampling | ~1 μs per packet | 1:1000-1:10000 sampled | Sampling eliminates per-packet processing for most traffic |
 
-**Why it matters:** eBPF enables observability with &lt;1% CPU overhead for most operations, making it feasible to monitor 100% of traffic in production. Full packet capture at 10 Gbps requires ~20% CPU per core; eBPF XDP drop at 10 Gbps requires <1% CPU per core. OpenTelemetry adds ~5 Î¼s per span, acceptable for most services but problematic for latency-critical (<1 ms) paths.
+**Why it matters:** eBPF enables observability with &lt;1% CPU overhead for most operations, making it feasible to monitor 100% of traffic in production. Full packet capture at 10 Gbps requires ~20% CPU per core; eBPF XDP drop at 10 Gbps requires <1% CPU per core. OpenTelemetry adds ~5 μs per span, acceptable for most services but problematic for latency-critical (<1 ms) paths.
 
 ---
 
@@ -1836,7 +1836,7 @@ AWS Wavelength embeds AWS compute (EC2, EBS) at 5G base station sites, providing
 
 
 Google B4 is the private WAN connecting Google data centers worldwide. Key innovations:
-- **Centralized TE (Traffic Engineering) server:** Collects flow-level utilization from all switches, runs optimization every 60 seconds using min-cost flow with edge weight = link utilizationÂ² (penalizes near-congested links).
+- **Centralized TE (Traffic Engineering) server:** Collects flow-level utilization from all switches, runs optimization every 60 seconds using min-cost flow with edge weight = link utilization² (penalizes near-congested links).
 - **Bandwidth allocation:** Achieves 95% link utilization (vs 30-40% traditional WAN). Saves $100M+ by avoiding new fiber.
 - **ML-based prediction:** LSTM model predicts traffic matrix 5 minutes ahead. TE server pre-allocates bandwidth based on predictions, reducing on-demand rerouting.
 - **eBPF monitoring:** Google uses eBPF-based monitoring (Maglev load balancer) for per-flow latency and loss at scale.
@@ -1857,8 +1857,8 @@ Cisco SD-Access implements IBN for enterprise campus networks:
 - **QUIC 0-RTT is powerful but risky**: 0-RTT data is vulnerable to replay attacks. Use single-use tokens, timestamp validation, or idempotent semantics for 0-RTT requests. Never allow 0-RTT for non-idempotent operations like payment submissions.
 - **MQTT QoS 2 is expensive**: Exactly-once delivery uses a 4-way handshake per message. For sensor telemetry where occasional duplicates are acceptable, use QoS 0 (fire-and-forget) or QoS 1 (at-least-once with dedup).
 - **LoRaWAN ADR is essential at scale**: Without Adaptive Data Rate, all devices use the most robust (slowest) spreading factor, limiting network capacity. Enable ADR for stationary devices and optimize SF allocation for gateways.
-- **Intent-based networking â‰  IaC**: IBN translates business intent into policies and verifies them. IaC (Terraform, Ansible) automates device configuration. They complement each other: IBN generates the design; IaC deploys it.
-- **eBPF for DDoS mitigation**: XDP programs can drop DDoS traffic at line rate (~20M pps per core) before the kernel network stack processes packets. This is 10Ã— faster than iptables and 100Ã— faster than userspace packet filtering.
+- **Intent-based networking ≠ IaC**: IBN translates business intent into policies and verifies them. IaC (Terraform, Ansible) automates device configuration. They complement each other: IBN generates the design; IaC deploys it.
+- **eBPF for DDoS mitigation**: XDP programs can drop DDoS traffic at line rate (~20M pps per core) before the kernel network stack processes packets. This is 10× faster than iptables and 100× faster than userspace packet filtering.
 - **Zero Trust is a mindset, not a product**: No single "Zero Trust appliance" exists. ZTNA, SASE, microsegmentation, and identity-aware proxies are individual components. Success depends on policy design (least privilege, continuous verification), not tool selection.
 - **5G network slicing requires orchestration**: Slicing is not automatic → it requires a management layer (NSSF, NEF, service orchestration) that programs the network functions for each slice. The orchestration complexity is often underestimated.
 - **OpenTelemetry sampling matters**: At 100,000 requests/second, full distributed tracing generates 300+ GB/day. Use tail-based sampling (store slow/failed traces, sample fast traces at 1:100) to reduce cost while maintaining observability of anomalies.
@@ -1907,7 +1907,7 @@ Cisco SD-Access implements IBN for enterprise campus networks:
 
 **Quantum Networking:** QKD (BB84 protocol) uses single-photon polarization to distribute cryptographic keys with information-theoretic security. Limited to metro distances (~100 km fiber, 1,200 km satellite). Quantum repeaters and memory are active research areas.
 
-**Edge Computing:** Four tiers (device → local → regional → cloud) based on latency requirements. Enables sub-10 ms real-time applications (autonomous vehicles, AR, industrial automation). Reduces bandwidth by 100Ã— through local processing.
+**Edge Computing:** Four tiers (device → local → regional → cloud) based on latency requirements. Enables sub-10 ms real-time applications (autonomous vehicles, AR, industrial automation). Reduces bandwidth by 100× through local processing.
 
 **Network Observability:** eBPF provides kernel-level programmability for packet processing (XDP, tc, socket filters) with &lt;1% CPU overhead. OpenTelemetry provides standardized distributed tracing (W3C TraceContext) across network boundaries.
 

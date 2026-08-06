@@ -34,7 +34,7 @@ By the conclusion of this chapter, the student will be able to: (1) formulate pr
 
 ## Why Constraint Satisfaction Matters
 
-**Real-World Analogy — Scheduling University Classes:** Imagine you are the registrar at a university. You have 50 classes to schedule across 10 time slots and 20 rooms. Each professor can only teach during certain hours, no two classes can share the same room at the same time, some courses must be taken in sequence (prerequisite constraints), and some students must be able to take both AI and Machine Learning without a time conflict. This is a classic Constraint Satisfaction Problem (CSP). The variables are (class, time, room) triples, the domains are all possible time-room combinations, and the constraints capture every real-world restriction. Without a CSP framework, you would resort to brute-force enumeration — evaluating 20Â¹â�° possible room assignments alone. With CSP techniques (backtracking, forward checking, AC-3), you prune invalid branches early and find a feasible schedule in seconds instead of centuries. CSPs are the mathematical backbone of timetabling, Sudoku, register allocation in compilers, and even NASA's Deep Space Network antenna scheduling.
+**Real-World Analogy — Scheduling University Classes:** Imagine you are the registrar at a university. You have 50 classes to schedule across 10 time slots and 20 rooms. Each professor can only teach during certain hours, no two classes can share the same room at the same time, some courses must be taken in sequence (prerequisite constraints), and some students must be able to take both AI and Machine Learning without a time conflict. This is a classic Constraint Satisfaction Problem (CSP). The variables are (class, time, room) triples, the domains are all possible time-room combinations, and the constraints capture every real-world restriction. Without a CSP framework, you would resort to brute-force enumeration — evaluating 20¹â�° possible room assignments alone. With CSP techniques (backtracking, forward checking, AC-3), you prune invalid branches early and find a feasible schedule in seconds instead of centuries. CSPs are the mathematical backbone of timetabling, Sudoku, register allocation in compilers, and even NASA's Deep Space Network antenna scheduling.
 
 ## Chapter at a Glance
 
@@ -72,7 +72,7 @@ CSPs differ fundamentally from general search (DFS, BFS, A*):
 | **Path matters?** | Yes — the sequence of actions matters | No — only the final assignment matters |
 | **Action set** | Varies per state | Fixed: assign value to unassigned variable |
 | **Commutativity** | Not commutative | Commutative — order of assignments irrelevant |
-| **Branching factor** | Often small | Large (domain size Ã— number of unassigned vars) |
+| **Branching factor** | Often small | Large (domain size × number of unassigned vars) |
 | **Search space** | O(b^d) | O(d^n) where d = domain size, n = #variables |
 | **Heuristics** | Domain-specific (admissible, consistent) | Domain-independent (MRV, LCV, forward checking) |
 | **Completeness guarantee**| Varies by algorithm | Backtracking is complete; local search is not |
@@ -83,10 +83,10 @@ CSPs differ fundamentally from general search (DFS, BFS, A*):
 |------|-------|---------|----------|
 | **Unary** | 1 variable | "WA cannot be red" | $C_1: WA \neq red$ |
 | **Binary** | 2 variables | "WA and NT cannot have same color" | $C_2: WA \neq NT$ |
-| **Global** | k variables (k â‰¥ 2) | "All seven territories must have distinct colors" | $C_3: Alldifferent(WA, NT, SA, Q, NSW, V, T)$ |
+| **Global** | k variables (k ≥ 2) | "All seven territories must have distinct colors" | $C_3: Alldifferent(WA, NT, SA, Q, NSW, V, T)$ |
 | **Preference (soft)** | arbitrary | "Avoid scheduling Prof. Smith at 8AM" | $C_4: minimize\ Smith\_8AM\_slots$ |
 
-- **Unary constraints** reduce a variable's domain directly (e.g., "X â‰  red" removes red from D_X).
+- **Unary constraints** reduce a variable's domain directly (e.g., "X ≠ red" removes red from D_X).
 - **Binary constraints** relate variable pairs — the most common type, forming a constraint graph.
 - **Global constraints** compactly represent complex interactions — $Alldifferent$ alone captures $\binom{k}{2}$ binary inequalities.
 
@@ -847,9 +847,9 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 | Technique | Type | Preprocessing? | Guarantee | Complexity |
 |-----------|:---:|:---:|:---:|:---:|
 | Backtracking | Search | No | Complete | O(d^n) worst case |
-| Forward Checking | Propagation | On assignment | Domain filtering | O(nÂ²dÂ²) |
-| AC-3 | Propagation | Yes/Interleaved | Arc consistency | O(nÂ²dÂ³) |
-| MAC | Propagation+Search | Interleaved | More pruning than FC | O(nÂ²dÂ³) per step |
+| Forward Checking | Propagation | On assignment | Domain filtering | O(n²d²) |
+| AC-3 | Propagation | Yes/Interleaved | Arc consistency | O(n²d³) |
+| MAC | Propagation+Search | Interleaved | More pruning than FC | O(n²d³) per step |
 | Min-Conflicts | Iterative | Random start | Incomplete | Polynomial typically |
 
 ## Quick Reference — CSP Heuristics
@@ -892,12 +892,12 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 <details><summary>Answer&lt;/summary&gt;B) AC-3 enforces arc consistency between all variable pairs in a CSP.</details>
 
 **Q3:** A tree-structured CSP can be solved in what time complexity?
-- A) O(nÂ²)
-- B) O(n dÂ²)
+- A) O(n²)
+- B) O(n d²)
 - C) O(d^n)
 - D) O(n log n)
 
-<details><summary>Answer&lt;/summary&gt;B) Tree-structured CSPs are solvable in O(n dÂ²) time — linear in the number of variables and quadratic in the domain size.</details>
+<details><summary>Answer&lt;/summary&gt;B) Tree-structured CSPs are solvable in O(n d²) time — linear in the number of variables and quadratic in the domain size.</details>
 
 **Q4:** Which technique combines backtracking search with AC-3 propagation after each assignment?
 - A) Forward checking
@@ -908,12 +908,12 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 <details><summary>Answer&lt;/summary&gt;C) MAC interleaves AC-3 with backtracking for the most aggressive pruning during search.</details>
 
 **Q5:** In the worst case, AC-3 runs in:
-- A) O(nÂ²)
+- A) O(n²)
 - B) O(n d)
-- C) O(nÂ² dÂ³)
+- C) O(n² d³)
 - D) O(d^n)
 
-<details><summary>Answer&lt;/summary&gt;C) O(nÂ² dÂ³) — nÂ² arcs, each revised at most d times, each revision costing O(dÂ²).</details>
+<details><summary>Answer&lt;/summary&gt;C) O(n² d³) — n² arcs, each revised at most d times, each revision costing O(d²).</details>
 
 ---
 

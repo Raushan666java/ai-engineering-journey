@@ -387,13 +387,13 @@ int main() {
 
 ### Scheduling
 
-Windows implements a **priority-driven preemptive scheduler** with 32 priority levels (0â€“31).
+Windows implements a **priority-driven preemptive scheduler** with 32 priority levels (0–31).
 
 | Priority Level | Category | Assignment | Boost Behavior |
 |----------------|----------|------------|----------------|
 | 0 | Zero page thread | System idle | Never boosted |
-| 1â€“15 | Variable | Dynamic class | Priority boosted on I/O completion, GUI input |
-| 16â€“31 | Real-time | Real-time class | No automatic boosting |
+| 1–15 | Variable | Dynamic class | Priority boosted on I/O completion, GUI input |
+| 16–31 | Real-time | Real-time class | No automatic boosting |
 
 **Scheduling policies**:
 - Priority boosts: Thread receives +6 for foreground window, +2 for I/O completion, +8 for GUI input
@@ -451,14 +451,14 @@ int main() {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch | ~1-2 Âµs (user thread), ~5-10 Âµs (cross-process) |
+| Context switch | ~1-2 µs (user thread), ~5-10 µs (cross-process) |
 | System call entry | ~200-500 cycles (syscall instruction) |
-| Process creation | O(n) where n = handle count, typically 200-1000 Âµs |
+| Process creation | O(n) where n = handle count, typically 200-1000 µs |
 | Page fault handling | ~100 ns-10 ms (soft vs hard fault, disk I/O) |
 | Memory allocation (kernel) | O(log n) via look-aside lists |
 | Registry lookup | O(log n) via B-tree |
-| Thread wakeup latency | ~5-20 Âµs (depends on priority, CPU load) |
-| ALPC message round-trip | ~3-5 Âµs on same machine |
+| Thread wakeup latency | ~5-20 µs (depends on priority, CPU load) |
+| ALPC message round-trip | ~3-5 µs on same machine |
 
 ### A&D Table: Windows vs Others
 
@@ -792,12 +792,12 @@ int main() {
 
 ### Scheduling
 
-Linux historically used CFS (Completely Fair Scheduler, v2.6.23â€“v6.5), replaced by **EEVDF** (Earliest Eligible Virtual Deadline First) in v6.6 (2023).
+Linux historically used CFS (Completely Fair Scheduler, v2.6.23–v6.5), replaced by **EEVDF** (Earliest Eligible Virtual Deadline First) in v6.6 (2023).
 
-**CFS (legacy, v2.6.23â€“v6.5)**:
+**CFS (legacy, v2.6.23–v6.5)**:
 - Uses a **red-black tree** of tasks ordered by `vruntime` (virtual runtime)
 - Picks leftmost node (smallest vruntime) → task with the most "unfair" scheduling deficit
-- Calculates time slice = `targeted_latency / nr_running` (typically 6â€“24 ms)
+- Calculates time slice = `targeted_latency / nr_running` (typically 6–24 ms)
 - **nice values** map to weight: `vruntime += (NICE_0_LOAD / weight) * actual_runtime`
 - Group scheduling: CFS can schedule task groups (cgroups) fairly
 
@@ -868,7 +868,7 @@ int main() {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch | ~0.5-3 Âµs (same process), ~3-10 Âµs (cross-process) |
+| Context switch | ~0.5-3 µs (same process), ~3-10 µs (cross-process) |
 | System call entry | ~100-300 cycles (syscall instruction) |
 | Process creation (fork) | O(1) copy-on-write (page tables + task_struct clone) |
 | Page fault (minor) | ~100-500 ns (page already in memory) |
@@ -1202,13 +1202,13 @@ int main() {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch (thread) | ~1-3 Âµs (user thread) |
-| mach_msg round-trip | ~3-5 Âµs (local IPC) |
+| Context switch (thread) | ~1-3 µs (user thread) |
+| mach_msg round-trip | ~3-5 µs (local IPC) |
 | Memory allocation (Mach zone) | O(1) from per-CPU zone caches |
 | Page fault (minor) | ~200-500 ns |
 | Task creation | O(n) where n = port count + thread count |
 | System call entry | ~200-400 cycles (syscall on Apple Silicon) |
-| QoS thread dispatch (GCD) | ~5-10 Âµs |
+| QoS thread dispatch (GCD) | ~5-10 µs |
 | Sandbox policy check | ~50-200 ns (cached result) |
 
 ### A&D Table: macOS vs Others
@@ -1604,11 +1604,11 @@ new Thread(() -> {
 | Aspect | Complexity |
 |--------|------------|
 | App startup (cold start) | ~200-500 ms (depends on APK size, ART AOT state) |
-| Binder IPC transaction | ~5-30 Âµs (same process), ~50-200 Âµs (cross-process) |
+| Binder IPC transaction | ~5-30 µs (same process), ~50-200 µs (cross-process) |
 | Zygote fork | ~5-20 ms (pre-loaded page table copy) |
-| HAL call (HIDL/AIDL) | ~10-100 Âµs (binderized HAL) |
+| HAL call (HIDL/AIDL) | ~10-100 µs (binderized HAL) |
 | Art GC pause | 2-8 ms (concurrent, most pauses &lt; 5 ms) |
-| ION allocation | ~50-500 Âµs (depends on size and contiguous requirement) |
+| ION allocation | ~50-500 µs (depends on size and contiguous requirement) |
 | SELinux check | ~200-500 ns (AVC cache hit) |
 | LMK kill latency | ~5-50 ms (detection → signal → process cleanup) |
 
@@ -1963,8 +1963,8 @@ DispatchQueue.main.async(qos: .userInteractive) {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch (Mach thread) | ~1-3 Âµs |
-| Mach IPC (XPC) round-trip | ~5-20 Âµs |
+| Context switch (Mach thread) | ~1-3 µs |
+| Mach IPC (XPC) round-trip | ~5-20 µs |
 | Jetsam kill + cleanup | ~10-100 ms |
 | App cold launch | ~200-600 ms |
 | Secure Enclave operation | ~5-50 ms (depending on biometric) |
@@ -2308,12 +2308,12 @@ void setup(void) {
 |--------|----------|---------|
 | Context switch | ~200-500 cycles (Cortex-M) | ~500-1000 cycles |
 | ISR latency | ~50-200 cycles (deterministic) | ~100-300 cycles |
-| Task creation | ~5-20 Âµs (static stack) | ~10-50 Âµs |
-| Message queue send | ~1-5 Âµs | ~3-10 Âµs |
-| Semaphore give/take | ~1-3 Âµs (no contention) | ~2-8 Âµs |
+| Task creation | ~5-20 µs (static stack) | ~10-50 µs |
+| Message queue send | ~1-5 µs | ~3-10 µs |
+| Semaphore give/take | ~1-3 µs (no contention) | ~2-8 µs |
 | Minimal footprint | 6-12 KB kernel | ~200 KB (VxWorks 7) |
-| Heap malloc (heap_4) | ~5-50 Âµs (first-fit) | ~10-100 Âµs (partition) |
-| Tick interrupt | ~10-50 Âµs (includes task switch) | ~20-100 Âµs |
+| Heap malloc (heap_4) | ~5-50 µs (first-fit) | ~10-100 µs (partition) |
+| Tick interrupt | ~10-50 µs (includes task switch) | ~20-100 µs |
 
 ### A&D Table: RTOS vs GPOS
 
@@ -2341,7 +2341,7 @@ void setup(void) {
 
 ### Overview and History
 
-FreeBSD is a complete, open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD) lineage. It traces its roots to 1977 when the Computer Systems Research Group (CSRG) at UC Berkeley released 1BSD for the PDP-11. After the AT&T lawsuit settlement (USL v. BSDi, 1992â€“1994), 4.4BSD-Lite was released free of licensing encumbrances. FreeBSD 1.0 followed in 1993.
+FreeBSD is a complete, open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD) lineage. It traces its roots to 1977 when the Computer Systems Research Group (CSRG) at UC Berkeley released 1BSD for the PDP-11. After the AT&T lawsuit settlement (USL v. BSDi, 1992–1994), 4.4BSD-Lite was released free of licensing encumbrances. FreeBSD 1.0 followed in 1993.
 
 FreeBSD is known for **stability**, **performance**, and **advanced features** → ZFS, DTrace, Jails, pf firewall, and the Ports Collection. It powers Netflix's CDN appliances (Open Connect), WhatsApp's messaging infrastructure, and PlayStation 4/5's system software. It has a permissive BSD license (2-clause), allowing commercial use without GPL obligations.
 
@@ -2449,7 +2449,7 @@ Minix (Mini-Unix) was created by Andrew Tanenbaum in 1987 as an educational oper
 - Minix 3 (2006, latest stable) runs about 12,000 lines of kernel code
 - All device drivers are user-mode processes (crashed driver can be restarted without kernel panic)
 - Each driver runs in its own isolated process with restricted privileges
-- IPC latency: ~2-10 Âµs (kernel-to-userspace message passing overhead)
+- IPC latency: ~2-10 µs (kernel-to-userspace message passing overhead)
 - Direct inspiration for the Microkernel vs Monolithic kernel debate (Tanenbaum-Torvalds debate, 1992)
 
 ```
@@ -2551,7 +2551,7 @@ seL4_ARM_Page_Map(page_cap, vspace_cap, vaddr,
 
 ## OS Comparison Tables
 
-### All-OS Comparison (6 OS Ã— 15 Criteria)
+### All-OS Comparison (6 OS × 15 Criteria)
 
 | Criterion | Linux | Windows | macOS | Android | iOS | RTOS (FreeRTOS/VxWorks) |
 |-----------|-------|---------|-------|---------|-----|------------------------|
@@ -2828,7 +2828,7 @@ Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the
 | **ETHREAD** | Windows kernel thread object (executive thread block) |
 | **IRQL** | Interrupt Request Level → Windows interrupt prioritization scheme |
 | **DISPATCH_LEVEL** | IRQL level where thread scheduling occurs (no page faults allowed) |
-| **CFS** | Completely Fair Scheduler → Linux's fair scheduling algorithm (v2.6.23â€“v6.5) |
+| **CFS** | Completely Fair Scheduler → Linux's fair scheduling algorithm (v2.6.23–v6.5) |
 | **EEVDF** | Earliest Eligible Virtual Deadline First → Linux scheduler (v6.6+) |
 | **VFS** | Virtual File System → Linux abstraction layer over file system implementations |
 | **task_struct** | Linux kernel structure representing a process or thread |
@@ -3218,7 +3218,7 @@ analyzer.compareByMetric('kernelType');
 
 6. Write a **C program** demonstrating priority inheritance on Linux. Create three threads at different priorities that share a mutex (use `pthread_mutexattr_setprotocol` with `PTHREAD_PRIO_INHERIT`). Show the thread execution order with and without priority inheritance. Measure execution time of each thread.
 
-7. **FreeRTOS exercise**: Write a FreeRTOS application with 3 tasks: a temperature sensor reader (2 Hz), a display update task (1 Hz), and an alert task (triggered when temperature > 50Â°C). Use a queue to pass data between the sensor reader and the display task. Use a binary semaphore for the alert task. Measure worst-case execution time.
+7. **FreeRTOS exercise**: Write a FreeRTOS application with 3 tasks: a temperature sensor reader (2 Hz), a display update task (1 Hz), and an alert task (triggered when temperature > 50°C). Use a queue to pass data between the sensor reader and the display task. Use a binary semaphore for the alert task. Measure worst-case execution time.
 
 8. **Linux scheduling**: Write a C program that creates 5 threads at different CFS nice values (-20, -10, 0, 10, 19). Each thread performs the same CPU-bound computation. Measure how many iterations each thread completes in 10 seconds. Explain the ratio of iterations in terms of the weight map in CFS/EEVDF.
 

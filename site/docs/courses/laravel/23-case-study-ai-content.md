@@ -1,11 +1,11 @@
 ---
 id: 23-case-study-ai-content
 slug: /laravel/23-case-study-ai-content
-title: "Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform"
-sidebar_label: "Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform"
+title: "Chapter 23: Case Study — AI-Powered Content Platform"
+sidebar_label: "Chapter 23: Case Study — AI-Powered Content Platform"
 sidebar_position: 23
 ---
-# Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform
+# Chapter 23: Case Study — AI-Powered Content Platform
 
 > **Previous:** [Case Study E-Commerce](./22-case-study-ecommerce.md) | **Next:** [Capstone](./24-capstone.md)
 
@@ -69,7 +69,7 @@ flowchart LR
 
 
 
-## Theory Ã¢â‚¬â€ End-to-End Design
+## Theory — End-to-End Design
 
 ![AI Content Case Study](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/23-case-study-ai-content.png)
 
@@ -115,62 +115,62 @@ The platform enables content teams to author, edit, search, and publish articles
 The system consists of five layers: API gateway, Laravel backend, vector database, AI SDK agent layer, and external service integrations.
 
 ```
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š                          Content Platform UI                             Ã¢â€â€š
-Ã¢â€â€š            (Livewire / Inertia + Vue 3, Reverb WebSockets)               Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
-                                    Ã¢â€â€š
-                            Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-                            Ã¢â€â€š   Load BalancerÃ¢â€â€š
-                            Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
-                                    Ã¢â€â€š
-                    Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-                    Ã¢â€â€š       Laravel Octane           Ã¢â€â€š
-                    Ã¢â€â€š   Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€â€š
-                    Ã¢â€â€š   Ã¢â€â€š  API Controllers       Ã¢â€â€š   Ã¢â€â€š
-                    Ã¢â€â€š   Ã¢â€â€š  AI Agent Orchestrator Ã¢â€â€š   Ã¢â€â€š
-                    Ã¢â€â€š   Ã¢â€â€š  MCP Server Handlers   Ã¢â€â€š   Ã¢â€â€š
-                    Ã¢â€â€š   Ã¢â€â€š  Document Service      Ã¢â€â€š   Ã¢â€â€š
-                    Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€š
-                    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
-                                    Ã¢â€â€š
-        Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-        Ã¢â€â€š                           Ã¢â€â€š                           Ã¢â€â€š
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š  PostgreSQL    Ã¢â€â€š           Ã¢â€â€š    Redis       Ã¢â€â€š           Ã¢â€â€š  Queue Workers Ã¢â€â€š
-Ã¢â€â€š  + pgvector    Ã¢â€â€š           Ã¢â€â€š                Ã¢â€â€š           Ã¢â€â€š  (Horizon)     Ã¢â€â€š
-Ã¢â€â€š  (documents,   Ã¢â€â€š           Ã¢â€â€š Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â Ã¢â€â€š           Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â Ã¢â€â€š
-Ã¢â€â€š   embeddings,  Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š Embeddings Ã¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šModeration Ã¢â€â€š Ã¢â€â€š
-Ã¢â€â€š   vectors)     Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š Cache      Ã¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šPipeline   Ã¢â€â€š Ã¢â€â€š
-Ã¢â€â€š               Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š Search TTL  Ã¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šEmbed Gen  Ã¢â€â€š Ã¢â€â€š
-Ã¢â€â€š               Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š AI ResponsesÃ¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šContent GenÃ¢â€â€š Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ           Ã¢â€â€š Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ Ã¢â€â€š
-        Ã¢â€â€š                   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ           Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
-        Ã¢â€â€š                           Ã¢â€â€š                           Ã¢â€â€š
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â                   Ã¢â€â€š
-Ã¢â€â€š  AI SDK Layer  Ã¢â€â€š           Ã¢â€â€š   Reverb WS    Ã¢â€â€š                   Ã¢â€â€š
-Ã¢â€â€š Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€â€š           Ã¢â€â€š (collaboration  Ã¢â€â€š                   Ã¢â€â€š
-Ã¢â€â€š Ã¢â€â€š ResearcherÃ¢â€â€š  Ã¢â€â€š           Ã¢â€â€š  edit status,   Ã¢â€â€š                   Ã¢â€â€š
-Ã¢â€â€š Ã¢â€â€š Writer    Ã¢â€â€š  Ã¢â€â€š           Ã¢â€â€š  agent progress Ã¢â€â€š                   Ã¢â€â€š
-Ã¢â€â€š Ã¢â€â€š Editor    Ã¢â€â€š  Ã¢â€â€š           Ã¢â€â€š  broadcasts)   Ã¢â€â€š                   Ã¢â€â€š
-Ã¢â€â€š Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€š           Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                   Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                                               Ã¢â€â€š
-        Ã¢â€â€š                                                       Ã¢â€â€š
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â                                               Ã¢â€â€š
-Ã¢â€â€š External APIs  Ã¢â€â€š                                               Ã¢â€â€š
-Ã¢â€â€š (OpenAI,      Ã¢â€â€š                                               Ã¢â€â€š
-Ã¢â€â€š  Perplexity,  Ã¢â€â€š                                               Ã¢â€â€š
-Ã¢â€â€š  Claude)      Ã¢â€â€š                                               Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                                               Ã¢â€â€š
-        Ã¢â€â€š                                                       Ã¢â€â€š
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â                                               Ã¢â€â€š
-Ã¢â€â€š   MCP Servers  Ã¢â€â€š                                              Ã¢â€â€š
-Ã¢â€â€š (search_docs, Ã¢â€â€š                                               Ã¢â€â€š
-Ã¢â€â€š  generate,    Ã¢â€â€š                                               Ã¢â€â€š
-Ã¢â€â€š  analyze)     Ã¢â€â€š                                               Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                                               Ã¢â€â€š
-        Ã¢â€â€š                                                       Ã¢â€â€š
-        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+┌──────────────────────────────────────────────────────────────────────────┐
+│                          Content Platform UI                             │
+│            (Livewire / Inertia + Vue 3, Reverb WebSockets)               │
+└──────────────────────────────────────────────────────────────────────────┘
+                                    │
+                            ┌───────┴───────┐
+                            │   Load Balancer│
+                            └───────┬───────┘
+                                    │
+                    ┌───────────────┴───────────────┐
+                    │       Laravel Octane           │
+                    │   ┌───────────────────────┐   │
+                    │   │  API Controllers       │   │
+                    │   │  AI Agent Orchestrator │   │
+                    │   │  MCP Server Handlers   │   │
+                    │   │  Document Service      │   │
+                    │   └───────────────────────┘   │
+                    └───────────────┬───────────────┘
+                                    │
+        ┌───────────────────────────┼───────────────────────────┐
+        │                           │                           │
+┌───────┴───────┐           ┌───────┴───────┐           ┌───────┴───────┐
+│  PostgreSQL    │           │    Redis       │           │  Queue Workers │
+│  + pgvector    │           │                │           │  (Horizon)     │
+│  (documents,   │           │ ┌────────────┐ │           │  ┌───────────┐ │
+│   embeddings,  │           │ │ Embeddings │ │           │  │Moderation │ │
+│   vectors)     │           │ │ Cache      │ │           │  │Pipeline   │ │
+│               │           │ │ Search TTL  │ │           │  │Embed Gen  │ │
+│               │           │ │ AI Responses│ │           │  │Content Gen│ │
+└───────┬───────┘           │ └────────────┘ │           │  └───────────┘ │
+        │                   └───────┬───────┘           └───────┬───────┘
+        │                           │                           │
+┌───────┴───────┐           ┌───────┴───────┐                   │
+│  AI SDK Layer  │           │   Reverb WS    │                   │
+│ ┌───────────┐  │           │ (collaboration  │                   │
+│ │ Researcher│  │           │  edit status,   │                   │
+│ │ Writer    │  │           │  agent progress │                   │
+│ │ Editor    │  │           │  broadcasts)   │                   │
+│ └───────────┘  │           └───────────────┘                   │
+└───────┬───────┘                                               │
+        │                                                       │
+┌───────┴───────┐                                               │
+│ External APIs  │                                               │
+│ (OpenAI,      │                                               │
+│  Perplexity,  │                                               │
+│  Claude)      │                                               │
+└───────────────┘                                               │
+        │                                                       │
+┌───────┴───────┐                                               │
+│   MCP Servers  │                                              │
+│ (search_docs, │                                               │
+│  generate,    │                                               │
+│  analyze)     │                                               │
+└───────────────┘                                               │
+        │                                                       │
+        └───────────────────────────────────────────────────────┘
 ```
 
 ### 7.3 Data Model
@@ -698,7 +698,7 @@ class RagService
 
         // 3. Build context from retrieved chunks
         $context = collect($results)
-            ->map(fn ($r) => "Ã¢â‚¬â€ {$r->chunk_text} (source: {$r->title}, similarity: " . round($r->similarity, 3) . ")")
+            ->map(fn ($r) => "— {$r->chunk_text} (source: {$r->title}, similarity: " . round($r->similarity, 3) . ")")
             ->implode("\n\n");
 
         $sources = collect($results)
@@ -724,7 +724,7 @@ class RagService
             'from_cache' => false,
         ];
 
-        // 5. Cache result (TTL based on query specificity Ã¢â‚¬â€ shorter for vague queries)
+        // 5. Cache result (TTL based on query specificity — shorter for vague queries)
         $ttl = strlen($query) > 50 ? 3600 : 300;
         Cache::put($cacheKey, $result, $ttl);
 
@@ -1066,7 +1066,7 @@ PROMPT;
 
 #### 7.5.5 Agent Chaining Workflow
 
-The full content generation pipeline chains the Researcher Ã¢â€ â€™ Writer Ã¢â€ â€™ Editor in sequence.
+The full content generation pipeline chains the Researcher → Writer → Editor in sequence.
 
 ```php
 // App\Services\ContentGenerationService.php
@@ -1234,7 +1234,7 @@ class ReindexEmbeddings extends Command
 
 > **One-Sentence Takeaway:** Expose content search and generation as MCP tools for external AI agents to discover and use.
 
-The platform exposes its AI capabilities through MCP (Model Context Protocol) servers. This allows external AI clientsÃ¢â‚¬â€like Claude Desktop, Cursor, or custom agentsÃ¢â‚¬â€to search the knowledge base, generate content, and analyze sentiment directly.
+The platform exposes its AI capabilities through MCP (Model Context Protocol) servers. This allows external AI clients—like Claude Desktop, Cursor, or custom agents—to search the knowledge base, generate content, and analyze sentiment directly.
 
 ```php
 // App/Mcp/Servers/ContentMcpServer.php
@@ -1808,11 +1808,11 @@ class AgentProgressUpdated implements ShouldBroadcast
 
 ## Summary
 
-- The RAG pipeline follows a five-step sequence: text ingestion Ã¢â€ â€™ chunking Ã¢â€ â€™ embedding generation (OpenAI text-embedding-3-small, 1536 dimensions) Ã¢â€ â€™ pgvector storage with HNSW index Ã¢â€ â€™ similarity search + LLM augmentation.
+- The RAG pipeline follows a five-step sequence: text ingestion → chunking → embedding generation (OpenAI text-embedding-3-small, 1536 dimensions) → pgvector storage with HNSW index → similarity search + LLM augmentation.
 - Three specialized AI agents handle content production: Writer (generates articles from briefs with structured JSON output), Editor (reviews for grammar, style, and factual consistency), and Researcher (performs web search and returns fact-checked citations).
-- Agent chaining creates a production pipeline: Researcher Ã¢â€ â€™ Writer Ã¢â€ â€™ Editor. Each step broadcasts progress via Reverb so the UI provides real-time feedback.
+- Agent chaining creates a production pipeline: Researcher → Writer → Editor. Each step broadcasts progress via Reverb so the UI provides real-time feedback.
 - The vector store is partitioned by `content_type` (article, comment, metadata) with separate HNSW indexes. A periodic `embeddings:reindex` artisan command handles stale embeddings.
-- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score Ãƒ→ 0.7 + fts_score Ãƒ→ 0.3`.
+- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score Ã→ 0.7 + fts_score Ã→ 0.3`.
 - MCP tools (search_documents, generate_content, analyze_sentiment) expose platform capabilities to external AI clients through a JSON-RPC interface.
 - Content moderation runs asynchronously: submitted documents and images pass through AI analysis queues. Text is scored for toxicity and NSFW content; images are analyzed via vision model.
 - A multi-layer caching strategy reduces API costs: embedding cache (24h, content-addressed), search result cache (5-60 min), AI response cache (1h), and moderation cache (24h).

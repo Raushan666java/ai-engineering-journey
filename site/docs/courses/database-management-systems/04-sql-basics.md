@@ -2130,7 +2130,7 @@ The TypeScript implementation below validates SQL DDL and DML statements, checks
 
 ```typescript
 // ============================================================
-// SQL Validator & Execution Simulator â€” TypeScript
+// SQL Validator & Execution Simulator — TypeScript
 // ============================================================
 
 interface ColumnDef {
@@ -2178,7 +2178,7 @@ class SQLValidator {
         case 'DELETE':
           return this.delete(stmt.table, stmt.where);
         case 'GRANT':
-          return 'GRANT ' + stmt.privilege + ' ON ' + stmt.table + ' TO ' + stmt.user + ' â€” OK';
+          return 'GRANT ' + stmt.privilege + ' ON ' + stmt.table + ' TO ' + stmt.user + ' — OK';
         case 'BEGIN':
           this.inTransaction = true;
           this.transactionLog = [];
@@ -2186,11 +2186,11 @@ class SQLValidator {
         case 'COMMIT':
           this.inTransaction = false;
           this.transactionLog = [];
-          return 'COMMIT â€” ' + this.transactionLog.length + ' changes persisted';
+          return 'COMMIT — ' + this.transactionLog.length + ' changes persisted';
         case 'ROLLBACK':
           this.rollbackTransaction();
           this.inTransaction = false;
-          return 'ROLLBACK â€” all changes undone';
+          return 'ROLLBACK — all changes undone';
       }
     } catch (e) {
       if (this.inTransaction) this.rollbackTransaction();
@@ -2202,7 +2202,7 @@ class SQLValidator {
     if (this.tables.has(table.name)) throw new Error('Table ' + table.name + ' already exists');
     this.tables.set(table.name, table);
     this.rows.set(table.name, []);
-    return 'CREATE TABLE ' + table.name + ' â€” ' + table.columns.length + ' columns';
+    return 'CREATE TABLE ' + table.name + ' — ' + table.columns.length + ' columns';
   }
 
   private getTable(name: string): TableDef {
@@ -2235,7 +2235,7 @@ class SQLValidator {
       this.transactionLog.push({ table: tableName, row: { ...values }, action: 'INSERT' });
     }
     this.rows.get(tableName)!.push(values);
-    return 'INSERT INTO ' + tableName + ' â€” 1 row inserted';
+    return 'INSERT INTO ' + tableName + ' — 1 row inserted';
   }
 
   private select(tableName: string, columns: string[], where?: (row: Record<string, unknown>) => boolean): string {
@@ -2270,7 +2270,7 @@ class SQLValidator {
         count++;
       }
     }
-    return 'UPDATE ' + tableName + ' â€” ' + count + ' rows updated';
+    return 'UPDATE ' + tableName + ' — ' + count + ' rows updated';
   }
 
   private delete(tableName: string, where?: (row: Record<string, unknown>) => boolean): string {
@@ -2283,7 +2283,7 @@ class SQLValidator {
       }
     }
     this.rows.set(tableName, where ? rows.filter(r => !where(r)) : []);
-    return 'DELETE FROM ' + tableName + ' â€” ' + toDelete.length + ' rows deleted';
+    return 'DELETE FROM ' + tableName + ' — ' + toDelete.length + ' rows deleted';
   }
 
   private rollbackTransaction(): void {

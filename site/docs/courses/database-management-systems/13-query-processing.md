@@ -129,15 +129,15 @@ The tokens are assembled into a parse tree according to SQL grammar rules.
 
 ```
 QUERY
-â”œâ”€â”€ SELECT
-â”‚   â”œâ”€â”€ e.name
-â”‚   â””â”€â”€ (implicit all columns not shown)
-â”œâ”€â”€ FROM
-â”‚   â””â”€â”€ employees AS e
-â””â”€â”€ WHERE
-    â””â”€â”€ Comparison (>)
-        â”œâ”€â”€ Attribute: e.salary
-        â””â”€â”€ Literal: 50000
+├── SELECT
+│   ├── e.name
+│   └── (implicit all columns not shown)
+├── FROM
+│   └── employees AS e
+└── WHERE
+    └── Comparison (>)
+        ├── Attribute: e.salary
+        └── Literal: 50000
 ```
 
 The parser uses a context-free grammar (CFG) with rules like:
@@ -227,20 +227,20 @@ WHERE e.salary > 50000;
 Parse tree (conceptual):
 ```
 QUERY (type: SELECT)
-â”œâ”€â”€ SELECT_LIST
-â”‚   â”œâ”€â”€ QUALIFIED_COLUMN: e.name
-â”‚   â””â”€â”€ QUALIFIED_COLUMN: d.dept_name
-â”œâ”€â”€ FROM_CLAUSE
-â”‚   â”œâ”€â”€ TABLE_REFERENCE: employees (alias: e)
-â”‚   â””â”€â”€ TABLE_REFERENCE: departments (alias: d)
-â”œâ”€â”€ JOIN_CONDITION
-â”‚   â””â”€â”€ EQUALS
-â”‚       â”œâ”€â”€ QUALIFIED_COLUMN: e.dept_id
-â”‚       â””â”€â”€ QUALIFIED_COLUMN: d.dept_id
-â””â”€â”€ WHERE_CLAUSE
-    â””â”€â”€ GREATER_THAN
-        â”œâ”€â”€ QUALIFIED_COLUMN: e.salary
-        â””â”€â”€ LITERAL: 50000
+├── SELECT_LIST
+│   ├── QUALIFIED_COLUMN: e.name
+│   └── QUALIFIED_COLUMN: d.dept_name
+├── FROM_CLAUSE
+│   ├── TABLE_REFERENCE: employees (alias: e)
+│   └── TABLE_REFERENCE: departments (alias: d)
+├── JOIN_CONDITION
+│   └── EQUALS
+│       ├── QUALIFIED_COLUMN: e.dept_id
+│       └── QUALIFIED_COLUMN: d.dept_id
+└── WHERE_CLAUSE
+    └── GREATER_THAN
+        ├── QUALIFIED_COLUMN: e.salary
+        └── LITERAL: 50000
 ```
 
 **Preprocessing (Semantic Analysis):**
@@ -2616,7 +2616,7 @@ The following code simulates a query optimizer that estimates costs for differen
 
 ```typescript
 // ============================================================
-// Query Cost Model Simulator â€” TypeScript
+// Query Cost Model Simulator — TypeScript
 // ============================================================
 
 interface TableStats {
@@ -2760,7 +2760,7 @@ flowchart LR
     c) The number of indexes
     d) The number of columns selected
 
-14. In query optimization, selectivity of a predicate Ïƒ<col='value'>(R) is:
+14. In query optimization, selectivity of a predicate σ<col='value'>(R) is:
     a) The number of rows in R
     b) The fraction of rows that satisfy the predicate
     c) The size of the index

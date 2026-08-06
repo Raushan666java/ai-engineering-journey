@@ -2507,37 +2507,37 @@ d) Content that requires human review
 
 ## True/False
 
-1. **True or False:** Toxicity & Content Moderation builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
-2. **True or False:** You should write at least one code example for Toxicity & Content Moderation before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
-3. **True or False:** The complexity analysis for Toxicity & Content Moderation is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
-4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Toxicity & Content Moderation in production. â€” **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Toxicity & Content Moderation chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+1. **True or False:** Toxicity & Content Moderation builds directly on the fundamentals covered in the earlier chapters of this module. — **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Toxicity & Content Moderation before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Toxicity & Content Moderation is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Toxicity & Content Moderation in production. — **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Toxicity & Content Moderation chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
-1. The chapter that covers Toxicity & Content Moderation is Chapter ___ of this module. â€” Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Toxicity & Content Moderation is ___. â€” Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Toxicity & Content Moderation is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
-4. The tools commonly used to debug Toxicity & Content Moderation issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
-5. The related topic that connects to Toxicity & Content Moderation in the next chapter is ___. â€” Answer: see the Next Topic section.
+1. The chapter that covers Toxicity & Content Moderation is Chapter ___ of this module. — Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Toxicity & Content Moderation is ___. — Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Toxicity & Content Moderation is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Toxicity & Content Moderation issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Toxicity & Content Moderation in the next chapter is ___. — Answer: see the Next Topic section.
 
 ## Scenario Questions
 
-1. **Scenario:** A teammate ships a change involving Toxicity & Content Moderation that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+1. **Scenario:** A teammate ships a change involving Toxicity & Content Moderation that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Toxicity & Content Moderation is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of Toxicity & Content Moderation is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
-3. **Scenario:** A new hire asks you to explain Toxicity & Content Moderation in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+3. **Scenario:** A new hire asks you to explain Toxicity & Content Moderation in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
-4. **Scenario:** Your team's codebase has three different patterns for Toxicity & Content Moderation and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+4. **Scenario:** Your team's codebase has three different patterns for Toxicity & Content Moderation and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Toxicity & Content Moderation on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
-2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
-3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
-4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
-5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+1. **What is the output of the simplest correct implementation of Toxicity & Content Moderation on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -2549,7 +2549,7 @@ d) Content that requires human review
 
 ## Tips & Tricks
 
-- Always write a one-line example of Toxicity & Content Moderation from memory before opening the chapter â€” active recall first.
+- Always write a one-line example of Toxicity & Content Moderation from memory before opening the chapter — active recall first.
 - Use the chapter's Revision Notes as a checklist: you have mastered Toxicity & Content Moderation when you can explain each bullet.
 - Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
 - For interviews, practice explaining Toxicity & Content Moderation twice: once with a technical audience, once with a non-technical audience.
@@ -2558,10 +2558,10 @@ d) Content that requires human review
 ## Memory Tricks
 
 - **Acronym**: build a mnemonic from the 5 key concepts of Toxicity & Content Moderation listed in the Chapter at a Glance table.
-- **Story**: link Toxicity & Content Moderation to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Story**: link Toxicity & Content Moderation to a familiar story — the analogy in the Visual Analogy section is designed to stick.
 - **Number anchor**: remember the complexity of Toxicity & Content Moderation by connecting it to a known algorithm of the same class.
 - **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
-- **Teach-back**: explain Toxicity & Content Moderation to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
+- **Teach-back**: explain Toxicity & Content Moderation to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
@@ -2573,23 +2573,23 @@ d) Content that requires human review
 
 ## Related Topics
 
-- The previous chapter in this module (see table of contents) â€” foundational for Toxicity & Content Moderation
-- The next chapter (see Next Topic below) â€” builds on Toxicity & Content Moderation
-- The system design chapters in Module 07 â€” how Toxicity & Content Moderation fits into production architectures
-- The interview preparation module â€” how Toxicity & Content Moderation is asked in screening rounds
-- The capstone project â€” where Toxicity & Content Moderation is applied end-to-end
+- The previous chapter in this module (see table of contents) — foundational for Toxicity & Content Moderation
+- The next chapter (see Next Topic below) — builds on Toxicity & Content Moderation
+- The system design chapters in Module 07 — how Toxicity & Content Moderation fits into production architectures
+- The interview preparation module — how Toxicity & Content Moderation is asked in screening rounds
+- The capstone project — where Toxicity & Content Moderation is applied end-to-end
 
 ## FAQs
 
-1. **Do I need to memorize all of Toxicity & Content Moderation, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
-2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
-3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
-4. **Is Toxicity & Content Moderation asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
-5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+1. **Do I need to memorize all of Toxicity & Content Moderation, or understand the big picture?** — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Toxicity & Content Moderation asked in interviews?** — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-- Toxicity & Content Moderation is a core requirement for the rest of this module â€” do not skip the examples.
+- Toxicity & Content Moderation is a core requirement for the rest of this module — do not skip the examples.
 - Always analyze complexity (time and space) when working with Toxicity & Content Moderation.
 - Production correctness means handling edge cases, not just the happy path.
 - Interview answers should start with the definition, then the example, then the trade-offs.
@@ -2597,9 +2597,9 @@ d) Content that requires human review
 
 ## Historical Context
 
-- Toxicity & Content Moderation emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- Toxicity & Content Moderation emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews.
 - The tools used for Toxicity & Content Moderation today evolved from simpler versions; the chapter covers the modern, recommended approach.
-- Interviewers value knowing one historical fact about Toxicity & Content Moderation â€” it shows genuine interest, not just cramming.
+- Interviewers value knowing one historical fact about Toxicity & Content Moderation — it shows genuine interest, not just cramming.
 - The library/tooling ecosystem around Toxicity & Content Moderation changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
@@ -2613,21 +2613,21 @@ d) Content that requires human review
 ## ML Intuition
 
 - Toxicity & Content Moderation appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
-- Understanding Toxicity & Content Moderation helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- Understanding Toxicity & Content Moderation helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs.
 - In production ML, the Toxicity & Content Moderation concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
 - When optimizing ML systems, Toxicity & Content Moderation skills let you profile and fix the data path, not just the training loop.
-- Interview follow-up: how would you apply Toxicity & Content Moderation to a dataset of 10 million records? â€” Batching and vectorization.
+- Interview follow-up: how would you apply Toxicity & Content Moderation to a dataset of 10 million records? — Batching and vectorization.
 
 ## Analogies
 
 - **Toxicity & Content Moderation is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
 - **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
-- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm — build for the storm.
 - **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Toxicity & Content Moderation skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) — this chapter contributes the Toxicity & Content Moderation skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
@@ -2701,24 +2701,24 @@ d) Content that requires human review
 
 - Start with `print()` or a debugger to inspect intermediate values in Toxicity & Content Moderation code.
 - Reproduce the failure with the smallest possible input before changing code.
-- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- Check the common failure modes listed in Common Mistakes — most bugs are listed there.
 - For performance problems, profile before optimizing: measure, then fix.
 - When stuck, re-read the chapter's Examples and compare line by line with your code.
 - Use `pdb` or your IDE's debugger to step through the Toxicity & Content Moderation example code.
 
 ## Mock Interview Section
 
-**Round 1 â€” Screening (15 min)**
+**Round 1 — Screening (15 min)**
 - Explain Toxicity & Content Moderation in 60 seconds.
 - Write a minimal working example of Toxicity & Content Moderation.
 - What is the complexity of your example?
 
-**Round 2 â€” Coding (45 min)**
+**Round 2 — Coding (45 min)**
 - Solve the Medium exercise from this chapter under time pressure.
 - State your assumptions, then implement with type hints.
 - Test with edge cases: empty input, boundary values, invalid input.
 
-**Round 3 â€” Behavioral + System (30 min)**
+**Round 3 — Behavioral + System (30 min)**
 - Tell me about a time you debugged a Toxicity & Content Moderation problem in a project.
 - How would you design a system where Toxicity & Content Moderation is used at scale?
 - What metrics would you monitor?
@@ -2761,7 +2761,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Real-World Examples
 
-- **Startup**: a small team uses Toxicity & Content Moderation daily in their data pipeline â€” the chapter's examples mirror their code.
+- **Startup**: a small team uses Toxicity & Content Moderation daily in their data pipeline — the chapter's examples mirror their code.
 - **E-commerce**: Toxicity & Content Moderation patterns appear in order processing, inventory checks, and recommendation feeds.
 - **Fintech**: Toxicity & Content Moderation principles apply to transaction validation and fraud detection flows.
 - **ML platform**: Toxicity & Content Moderation shows up in feature engineering and model-serving infrastructure.
@@ -2773,7 +2773,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Limitations
 
-- Toxicity & Content Moderation, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- Toxicity & Content Moderation, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory).
 - The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
-- Performance of Toxicity & Content Moderation depends on input size and distribution â€” always benchmark for your own data.
+- Performance of Toxicity & Content Moderation depends on input size and distribution — always benchmark for your own data.
 - This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

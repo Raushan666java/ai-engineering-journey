@@ -9,7 +9,7 @@ sidebar_position: 7
 
 > **Previous:** [Performance Tuning & Profiling](./06-performance.md) | **Next:** [Gradle Deep Dive](./08-gradle.md)
 
-Maven is the de facto standard build tool for Java enterprise development. It provides declarative build configuration, transitive dependency management, a standardized project lifecycle, and an extensible plugin ecosystem. Understanding Maven deeply is essential for any professional Java developer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â not just to build projects, but to understand how Spring Boot, multi-module architectures, and enterprise CI/CD pipelines work under the hood.
+Maven is the de facto standard build tool for Java enterprise development. It provides declarative build configuration, transitive dependency management, a standardized project lifecycle, and an extensible plugin ecosystem. Understanding Maven deeply is essential for any professional Java developer — not just to build projects, but to understand how Spring Boot, multi-module architectures, and enterprise CI/CD pipelines work under the hood.
 
 This chapter covers Maven in full depth: the POM structure, the build lifecycle, every major plugin, dependency management mechanics, profiles, multi-module builds, BOMs, custom plugin development, repository management, and production best practices. All XML and Java examples are complete and ready to use.
 
@@ -85,7 +85,7 @@ flowchart LR
 
 ---
 
-## 1. POM Structure ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Project Object Model
+## 1. POM Structure — The Project Object Model
 
 ![Maven Build Lifecycle & POM Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/07-maven.png)
 
@@ -161,10 +161,10 @@ The parent provides:
 
 Properties allow you to define reusable values in the POM. Maven properties use `${property.name}` syntax. There are four categories:
 
-1. **POM properties** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â built-in references like `${project.version}`, `${project.build.directory}`
-2. **Settings properties** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â from `~/.m2/settings.xml`, referenced as `${settings.*}`
-3. **System properties** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â JVM system properties from `-Dproperty=value`
-4. **Custom properties** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â defined in `<properties>`, referenced as `${custom.name}`
+1. **POM properties** — built-in references like `${project.version}`, `${project.build.directory}`
+2. **Settings properties** — from `~/.m2/settings.xml`, referenced as `${settings.*}`
+3. **System properties** — JVM system properties from `-Dproperty=value`
+4. **Custom properties** — defined in `<properties>`, referenced as `${custom.name}`
 
 ```xml
 <properties>
@@ -200,11 +200,11 @@ The `<packaging>` element determines the default lifecycle bindings and the outp
 
 | Packaging | Extension | Description |
 |-----------|-----------|-------------|
-| `jar` | `.jar` | Java archive ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the default; for libraries and standalone applications |
-| `war` | `.war` | Web application archive ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â for traditional Java EE web apps |
-| `pom` | `.pom` | POM-only ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â for parent POMs, aggregators, and BOMs |
-| `ear` | `.ear` | Enterprise archive ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â for Java EE applications |
-| `maven-plugin` | `.jar` | Maven plugin ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â uses the `maven-plugin` packaging lifecycle |
+| `jar` | `.jar` | Java archive — the default; for libraries and standalone applications |
+| `war` | `.war` | Web application archive — for traditional Java EE web apps |
+| `pom` | `.pom` | POM-only — for parent POMs, aggregators, and BOMs |
+| `ear` | `.ear` | Enterprise archive — for Java EE applications |
+| `maven-plugin` | `.jar` | Maven plugin — uses the `maven-plugin` packaging lifecycle |
 
 ---
 
@@ -255,17 +255,17 @@ Maven defines 23 phases in the default lifecycle. The most important are:
 ### 2.3 Lifecycle Binding
 
 
-Each packaging type defines default bindings ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â which plugin goals are bound to which phases. For `jar` packaging:
+Each packaging type defines default bindings — which plugin goals are bound to which phases. For `jar` packaging:
 
 ```
-process-resources      ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ resources:resources
-compile                ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ compiler:compile
-process-test-resources ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ resources:testResources
-test-compile           ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ compiler:testCompile
-test                   ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ surefire:test
-package                ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ jar:jar
-install                ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ install:install
-deploy                 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ deploy:deploy
+process-resources      → resources:resources
+compile                → compiler:compile
+process-test-resources → resources:testResources
+test-compile           → compiler:testCompile
+test                   → surefire:test
+package                → jar:jar
+install                → install:install
+deploy                 → deploy:deploy
 ```
 
 For `war` packaging, `war:war` is bound to `package` instead of `jar:jar`. For `maven-plugin` packaging, additional goals bind for plugin descriptor generation.
@@ -274,14 +274,14 @@ For `war` packaging, `war:war` is bound to `package` instead of `jar:jar`. For `
 
 
 ```
-pre-clean ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ clean (clean:clean) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ post-clean
+pre-clean → clean (clean:clean) → post-clean
 ```
 
 ### 2.5 Site Lifecycle
 
 
 ```
-pre-site ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ site (site:site) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ post-site ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ site-deploy (site:deploy)
+pre-site → site (site:site) → post-site → site-deploy (site:deploy)
 ```
 
 ### 2.6 Phase Execution Order Example
@@ -332,7 +332,7 @@ Multiple executions of the same plugin can have different IDs, phases, goals, an
 
 ## 3. Maven Plugins
 
-Plugins are the heart of Maven's functionality. Every build operation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â compiling, testing, packaging, deploying ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â is performed by a plugin. Plugins contain **goals** (also called mojos), which are atomic build operations.
+Plugins are the heart of Maven's functionality. Every build operation — compiling, testing, packaging, deploying — is performed by a plugin. Plugins contain **goals** (also called mojos), which are atomic build operations.
 
 ### 3.1 Compiler Plugin (`maven-compiler-plugin`)
 
@@ -389,7 +389,7 @@ The compiler plugin compiles Java source code. It is bound to `compile` and `tes
 Key configuration options:
 
 - **`source` / `target` / `release`**: Java version for source compatibility and target output. Prefer `release` in JDK 9+ as it ensures the compiled code only uses APIs available in that release.
-- **`annotationProcessorPaths`**: The correct way to configure Lombok, MapStruct, and Spring Boot configuration processor ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â using `<annotationProcessorPaths>` instead of declaring them as compile dependencies.
+- **`annotationProcessorPaths`**: The correct way to configure Lombok, MapStruct, and Spring Boot configuration processor — using `<annotationProcessorPaths>` instead of declaring them as compile dependencies.
 - **`compilerArgs`**: Additional arguments passed to `javac`. Common flags include `-Xlint:all` for all warnings and `-parameters` to retain parameter names for reflection.
 - **`fork`**: Run compilation in a separate JVM. Useful when you need to set specific memory limits.
 - **`maxmem` / `meminitial`**: JVM heap settings for the forked compiler.
@@ -457,7 +457,7 @@ Key features:
 - **Fork options**: `forkCount` controls how many JVM processes are created. `reuseForks=true` avoids the overhead of creating a new JVM for each test class.
 - **argLine**: JVM arguments passed to the forked test JVM. Use this to set heap sizes and GC settings.
 - **skipTests**: Global flag to skip test execution. Set via `-DskipTests=true`.
-- **reportFormat**: Controls console output ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â `brief` shows a summary, `plain` shows individual results.
+- **reportFormat**: Controls console output — `brief` shows a summary, `plain` shows individual results.
 - **trimStackTrace**: When `false`, shows full stack traces for failures.
 
 Surefire generates XML and HTML reports in `${project.build.directory}/surefire-reports/`.
@@ -502,8 +502,8 @@ Failsafe is designed for integration tests. The key difference from Surefire is 
 
 Best practice is to separate unit and integration tests by naming convention:
 
-- `*Test.java` / `*Tests.java` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Surefire (unit tests, fast)
-- `*IT.java` / `*IntegrationTest.java` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Failsafe (integration tests, slower)
+- `*Test.java` / `*Tests.java` → Surefire (unit tests, fast)
+- `*IT.java` / `*IntegrationTest.java` → Failsafe (integration tests, slower)
 
 Run `mvn verify` to execute both, or `mvn integration-test` to run integration tests after packaging.
 
@@ -1064,7 +1064,7 @@ Use the Enforcer plugin to enforce version consistency:
 
 ## 5. Maven Profiles
 
-Profiles enable build-time configuration changes ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â different environments, JDK versions, or deployment targets ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â without modifying POM files.
+Profiles enable build-time configuration changes — different environments, JDK versions, or deployment targets — without modifying POM files.
 
 ### 5.1 Profile Activation
 
@@ -2263,4 +2263,4 @@ mvn package
 
 ---
 
-> **Next Chapter:** Spring Boot in Depth ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â building production-grade applications with auto-configuration, starters, and embedded servers.
+> **Next Chapter:** Spring Boot in Depth — building production-grade applications with auto-configuration, starters, and embedded servers.

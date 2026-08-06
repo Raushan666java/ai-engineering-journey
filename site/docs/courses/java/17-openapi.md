@@ -73,13 +73,13 @@ flowchart LR
     G --> H[Programmatic Extension]
 ```
 
-> **Pro Tip:** Add springdoc-openapi-starter-webmvc-ui as a dependency and visit /swagger-ui.html to see your API documentation instantly Ã¢â‚¬â€ no extra configuration needed.
+> **Pro Tip:** Add springdoc-openapi-starter-webmvc-ui as a dependency and visit /swagger-ui.html to see your API documentation instantly — no extra configuration needed.
 
 ## Theory
 
 ![OpenAPI / Swagger Documentation Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/17-openapi.png)
 
-### 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture
+### 1. OpenAPI and Swagger — The Big Picture
 
 
 OpenAPI is a specification (formerly Swagger 2.0, now OpenAPI 3.x) for describing HTTP APIs in a machine-readable format (JSON or YAML). Swagger UI renders that spec as interactive documentation. SpringDoc bridges Spring Boot and OpenAPI 3.0 without requiring the legacy SpringFox library.
@@ -108,7 +108,7 @@ OpenAPI Specification (openapi.yaml)
 ### 2. Project Setup
 
 
-Add the SpringDoc starter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it auto-configures everything, scanning every `@RestController` and building the OpenAPI document.
+Add the SpringDoc starter — it auto-configures everything, scanning every `@RestController` and building the OpenAPI document.
 
 **build.gradle (Gradle)**
 
@@ -222,7 +222,7 @@ public class OpenApiConfig {
 
 The most important annotations live in the `io.swagger.v3.oas.annotations` package.
 
-#### 4.1 @Tag ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Grouping Controllers
+#### 4.1 @Tag — Grouping Controllers
 
 ```java
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -238,7 +238,7 @@ public class PetController {
 }
 ```
 
-#### 4.2 @Operation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Describing Individual Endpoints
+#### 4.2 @Operation — Describing Individual Endpoints
 
 ```java
 import io.swagger.v3.oas.annotations.Operation;
@@ -414,7 +414,7 @@ public class PetController {
 }
 ```
 
-### 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs
+### 5. @Schema — Modeling DTOs
 
 
 ```java
@@ -615,7 +615,7 @@ public class ErrorResponse {
 }
 ```
 
-### 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation
+### 6. @Parameter — Fine-Grained Parameter Documentation
 
 
 Use `@Parameter` on method parameters or at the method level for shared parameters.
@@ -686,7 +686,7 @@ public class ParameterExamplesController {
 }
 ```
 
-### 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec
+### 7. GroupedOpenApi — Partitioning the Spec
 
 
 Split the API specification into logical groups (useful for microservices or role-specific docs).
@@ -861,7 +861,7 @@ public class AdminController {
     @GetMapping("/health")
     @Operation(
         summary = "Health check (no auth)",
-        security = {}   // overrides global security ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no auth required
+        security = {}   // overrides global security — no auth required
     )
     public ResponseEntity<HealthResponse> health() {
         return ResponseEntity.ok(new HealthResponse("UP"));
@@ -869,7 +869,7 @@ public class AdminController {
 }
 ```
 
-### 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples
+### 9. @Content and @ExampleObject — Rich Examples
 
 
 ```java
@@ -1040,10 +1040,10 @@ public OpenAPI versionedOpenAPI() {
                 
                 ### Changelog
 
-                - **2.5.0** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Added medical records endpoints
-                - **2.4.0** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Added batch operations
-                - **2.3.0** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Deprecated `/api/v1/pets` in favor of `/api/pets`
-                - **2.0.0** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Major overhaul, OpenAPI 3.0 migration
+                - **2.5.0** — Added medical records endpoints
+                - **2.4.0** — Added batch operations
+                - **2.3.0** — Deprecated `/api/v1/pets` in favor of `/api/pets`
+                - **2.0.0** — Major overhaul, OpenAPI 3.0 migration
                 """));
 }
 ```
@@ -1158,7 +1158,7 @@ public class HateoasPetController {
     @GetMapping("/{petId}/owner")
     @Operation(summary = "Get owner of a pet")
     public ResponseEntity<EntityModel<?>> getOwner(@PathVariable Long petId) {
-        // Dummy response ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the link is what matters for documentation
+        // Dummy response — the link is what matters for documentation
         return ResponseEntity.ok().build();
     }
 }
@@ -1272,7 +1272,7 @@ import java.lang.annotation.*;
 @Operation
 @ApiResponse(
     responseCode = "401",
-    description = "Authentication required ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â provide a valid JWT token",
+    description = "Authentication required — provide a valid JWT token",
     content = @Content(schema = @Schema(implementation = ErrorResponse.class))
 )
 @ApiResponse(
@@ -1346,7 +1346,7 @@ public class MetaAnnotationController {
 }
 ```
 
-### 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation
+### 14. OpenApiCustomizer — Programmatic Spec Manipulation
 
 
 ```java
@@ -1509,7 +1509,7 @@ public class HiddenEndpointsController {
         return ResponseEntity.ok(new Metrics());
     }
 
-    // 3. @Parameter(hidden = true) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â hides a specific parameter
+    // 3. @Parameter(hidden = true) — hides a specific parameter
     @GetMapping("/pets")
     @Operation(summary = "Search pets")
     public ResponseEntity<List<Pet>> search(
@@ -1943,7 +1943,7 @@ ummary
 | @Parameter | Documents query/path/header parameters with metadata |
 | @Tag | Groups related endpoints under a named section |
 | GroupedOpenApi | Spring bean that partitions the specification (public/admin/internal) |
-| Security Schemes | Bearer JWT, OAuth2, API Key ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â defined via `Components` or annotations |
+| Security Schemes | Bearer JWT, OAuth2, API Key — defined via `Components` or annotations |
 | @Content/@ExampleObject | Provide structured request/response examples |
 | API Versioning | Info.version, URL path versioning, media-type or header-based |
 | HATEOAS | SpringDoc natively supports EntityModel/CollectionModel |
@@ -1999,9 +1999,9 @@ Annotate a `Product` DTO with `@Schema`:
 ### Exercise 4: Grouped APIs
 
 Create three `GroupedOpenApi` beans:
-- `public-api` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â paths `/api/products/**`, `/api/search/**`
-- `admin-api` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â paths `/api/admin/**`
-- `internal-api` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â paths `/api/internal/**`
+- `public-api` — paths `/api/products/**`, `/api/search/**`
+- `admin-api` — paths `/api/admin/**`
+- `internal-api` — paths `/api/internal/**`
 
 Each with a distinct title and description.
 
@@ -2056,4 +2056,4 @@ Write a `MockMvc` test that:
 
 ---
 
-*End of Chapter 17 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â API Documentation with OpenAPI/Swagger*
+*End of Chapter 17 — API Documentation with OpenAPI/Swagger*

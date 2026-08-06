@@ -239,7 +239,7 @@ A002: 400
 ### 1.2.2 OOP Style → Data and Behaviour Are United
 
 
-The same logic in OOP style (as shown in Â§1.1.2) groups data and behaviour inside the class. The object protects its data and exposes only intentional operations.
+The same logic in OOP style (as shown in §1.1.2) groups data and behaviour inside the class. The object protects its data and exposes only intentional operations.
 
 ### 1.2.3 Deep Comparison Table
 
@@ -267,12 +267,12 @@ The same logic in OOP style (as shown in Â§1.1.2) groups data and behaviour in
 
 | Scenario | Use Procedural | Use OOP |
 |----------|---------------|---------|
-| Write a 50-line data-crunching script | âœ“ | Decent but overkill |
-| Build a GUI with 200 buttons, windows, dialogs | Painful | âœ“ Natural fit |
-| Implement a physics engine | âœ“ Core algorithms are functional | Some OOP for entities |
-| Design a banking system with 50 account types | Maintenance nightmare | âœ“ Inheritance handles this |
-| Write firmware for a microcontroller | âœ“ (limited resources) | Needle in a haystack |
-| Build a web framework (e.g., Spring, ASP.NET) | Not practical | âœ“ Framework design demands OOP |
+| Write a 50-line data-crunching script | ✓ | Decent but overkill |
+| Build a GUI with 200 buttons, windows, dialogs | Painful | ✓ Natural fit |
+| Implement a physics engine | ✓ Core algorithms are functional | Some OOP for entities |
+| Design a banking system with 50 account types | Maintenance nightmare | ✓ Inheritance handles this |
+| Write firmware for a microcontroller | ✓ (limited resources) | Needle in a haystack |
+| Build a web framework (e.g., Spring, ASP.NET) | Not practical | ✓ Framework design demands OOP |
 
 ---
 
@@ -662,7 +662,7 @@ Remaining cash: $800
 | **Polymorphism** | One interface, many implementations | A "play" button works on DVD, Spotify, YouTube differently | Virtual functions + overriding | Extensibility, generic code |
 | **Abstraction** | Hide complexity; expose only what's needed | Driving a car: you use steering wheel + pedals, not the engine internals | Pure virtual classes / interfaces | Reduce cognitive load, decouple usage from implementation |
 
-### Detailed Exploration of Each Pillar (Sections 1.6.1â€“1.6.4)
+### Detailed Exploration of Each Pillar (Sections 1.6.1–1.6.4)
 
 
 ### 1.6.1 Encapsulation → The First Pillar
@@ -886,13 +886,13 @@ Whiskers is purring.
 
 | Member type | Inherited? | Notes |
 |-------------|-----------|-------|
-| Public member functions | âœ“ Yes | Accessible through derived object |
-| Protected member variables | âœ“ Yes | Accessible inside derived class methods |
-| Private member variables | âœ— Not directly | Exist in memory but inaccessible by name |
-| Constructors | âœ— Not inherited | Must be called explicitly from derived ctor |
-| Destructors | âœ“ Yes (virtual recommended) | Automatically called in reverse order |
-| Friend functions | âœ— Not inherited | Friendship is not transitive |
-| Assignment operator | âœ— Not inherited | Compiler-generated if not user-defined |
+| Public member functions | ✓ Yes | Accessible through derived object |
+| Protected member variables | ✓ Yes | Accessible inside derived class methods |
+| Private member variables | ✗ Not directly | Exist in memory but inaccessible by name |
+| Constructors | ✗ Not inherited | Must be called explicitly from derived ctor |
+| Destructors | ✓ Yes (virtual recommended) | Automatically called in reverse order |
+| Friend functions | ✗ Not inherited | Friendship is not transitive |
+| Assignment operator | ✗ Not inherited | Compiler-generated if not user-defined |
 
 ---
 
@@ -901,7 +901,7 @@ Whiskers is purring.
 
 > **One-Sentence Takeaway:** Polymorphism lets one interface work with multiple types → the same function call behaves differently depending on the object's actual type.
 
-**Etymology:** From Greek *polys* (many) + *morphÄ“* (form) = "many forms."
+**Etymology:** From Greek *polys* (many) + *morphē* (form) = "many forms."
 
 **Why it matters:** Without polymorphism, every type check requires explicit conditional logic. With polymorphism, adding a new type requires zero changes to existing code.
 
@@ -1273,7 +1273,7 @@ public:
         waterLevel_ -= 200;
         beanLevel_  -= 20;
 
-        return "Here is your " + type + "! â˜•";
+        return "Here is your " + type + "! ☕";
     }
 
     int getWaterLevel() const { return waterLevel_; }
@@ -1327,9 +1327,9 @@ int main() {
 Alice asks for Espresso
 CoffeeMachine: Machine is off!
 Alice asks for Latte
-CoffeeMachine: Here is your Latte! â˜•
+CoffeeMachine: Here is your Latte! ☕
 Bob asks for Cappuccino
-CoffeeMachine: Here is your Cappuccino! â˜•
+CoffeeMachine: Here is your Cappuccino! ☕
 
 Water left: 600 ml
 Beans left: 460 g
@@ -2487,9 +2487,9 @@ void process(Rectangle& r) {
 
 int main() {
     Rectangle r;
-    process(r);     // Area = 20  âœ“
+    process(r);     // Area = 20  ✓
     Square s;
-    process(s);     // Area = 16  âœ— (called with Square, gets 16 not 20!)
+    process(s);     // Area = 16  ✗ (called with Square, gets 16 not 20!)
     return 0;
 }
 ```
@@ -2668,7 +2668,7 @@ The best programmers are **multi-paradigm** → they choose the right tool for t
 
 ### Challenge Problems
 
-6. **Refactor Procedural to OOP**: Take the procedural `Account` code from Â§1.2.1 and refactor it to OOP. Add at least two new account types (SavingsAccount, CheckingAccount) using inheritance. Demonstrate polymorphism in a single loop.
+6. **Refactor Procedural to OOP**: Take the procedural `Account` code from §1.2.1 and refactor it to OOP. Add at least two new account types (SavingsAccount, CheckingAccount) using inheritance. Demonstrate polymorphism in a single loop.
 
 7. **Design a Messaging System**: Model a simplified email system with classes `Message`, `Inbox`, `User`. Demonstrate message passing where `User` sends a `Message` to another `User`, and the receiving `User`'s `Inbox` stores it. Add a `SpamFilter` as a polymorphic component.
 

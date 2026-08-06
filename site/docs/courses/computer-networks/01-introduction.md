@@ -371,7 +371,7 @@ Networks are classified by geographical span, transmission technology, and switc
 - **Range:** ~10 meters
 - **Purpose:** Connect personal devices (phone, laptop, smartwatch, headphones)
 - **Technology:** Bluetooth, USB, Zigbee, IR
-- **Data rate:** 1â€“100 Mbps (Bluetooth 5: 2 Mbps; USB 3.0: 5 Gbps)
+- **Data rate:** 1–100 Mbps (Bluetooth 5: 2 Mbps; USB 3.0: 5 Gbps)
 - **Example:** Smartphone tethering to laptop via Bluetooth
 
 ### 1.2.2 Local-Area Network (LAN)
@@ -389,7 +389,7 @@ Networks are classified by geographical span, transmission technology, and switc
 ### 1.2.3 Metropolitan-Area Network (MAN)
 
 
-- **Range:** City/metropolitan region, 5â€“50 km
+- **Range:** City/metropolitan region, 5–50 km
 - **Purpose:** Aggregate LANs from multiple locations across a city
 - **Technology:** Fiber optic rings (SONET/SDH), DOCSIS cable, WiMAX
 - **Data rate:** 100 Mbps to 10 Gbps
@@ -404,7 +404,7 @@ Networks are classified by geographical span, transmission technology, and switc
 - **Purpose:** Connect geographically dispersed sites
 - **Technology:** Leased lines, fiber optic submarine cables, satellite
 - **Data rate:** 1 Mbps to 400 Gbps (submarine cables)
-- **Propagation delay:** 10â€“200 ms (cross-continent)
+- **Propagation delay:** 10–200 ms (cross-continent)
 - **Topology:** Mesh (routers interconnected for redundancy)
 - **Ownership:** Multiple organizations, telecom carriers
 - **Example:** The Internet itself → the largest WAN in existence
@@ -425,10 +425,10 @@ Networks are classified by geographical span, transmission technology, and switc
 
 | Feature | LAN | MAN | WAN |
 |---------|-----|-----|-----|
-| **Geographic span** | < 1 km (building/campus) | 5â€“50 km (city) | Unlimited (country/world) |
-| **Typical data rate** | 100 Mbps â€“ 100 Gbps | 100 Mbps â€“ 10 Gbps | 1 Mbps â€“ 400 Gbps |
-| **Propagation delay** | Microseconds | Milliseconds | 10â€“200 ms |
-| **Error rate** | Very low (10â»Â¹Â¹ â€“ 10â»Â¹Â²) | Low (10â»Â¹â° â€“ 10â»Â¹Â¹) | Higher (10â»â¶ â€“ 10â»Â¹â°) |
+| **Geographic span** | < 1 km (building/campus) | 5–50 km (city) | Unlimited (country/world) |
+| **Typical data rate** | 100 Mbps – 100 Gbps | 100 Mbps – 10 Gbps | 1 Mbps – 400 Gbps |
+| **Propagation delay** | Microseconds | Milliseconds | 10–200 ms |
+| **Error rate** | Very low (10⁻¹¹ – 10⁻¹²) | Low (10⁻¹⁰ – 10⁻¹¹) | Higher (10⁻⁶ – 10⁻¹⁰) |
 | **Ownership** | Single organization | Provider or consortium | Multiple carriers |
 | **Topology** | Star (dominant) | Ring, star | Mesh |
 | **Media** | Twisted pair, fiber, WiFi | Fiber, coax | Fiber, satellite, leased line |
@@ -727,15 +727,15 @@ Every node has a dedicated point-to-point link to every other node. Full mesh (e
 - Fault tolerance → routing protocols automatically reroute around failures
 
 **Disadvantages:**
-- Extremely high cabling cost → N nodes need NÃ—(Nâˆ’1)/2 links
+- Extremely high cabling cost → N nodes need N×(N−1)/2 links
 - Complex installation and management
-- Each node needs Nâˆ’1 I/O ports
-- Not practical beyond ~8â€“10 nodes for full mesh
+- Each node needs N−1 I/O ports
+- Not practical beyond ~8–10 nodes for full mesh
 - Typically used only for backbone routers (partial mesh)
 
 **Cabling cost formula:** For N nodes in full mesh:
-- Number of links = N Ã— (N âˆ’ 1) / 2
-- Ports per node = N âˆ’ 1
+- Number of links = N × (N − 1) / 2
+- Ports per node = N − 1
 
 | Nodes | Links Required | Ports per Node |
 |-------|---------------|----------------|
@@ -1123,7 +1123,7 @@ if __name__ == "__main__":
 |----------|-----------------|-------|-----|
 | Bus | O(N) | O(1) | Broadcast reaches all N nodes; signal propagates along shared medium |
 | Star | O(1) | O(1) | Switch forwards directly to destination; constant hop count |
-| Ring | O(N) | O(N) | Worst case: data traverses all Nâˆ’1 intermediate nodes |
+| Ring | O(N) | O(N) | Worst case: data traverses all N−1 intermediate nodes |
 | Mesh | O(1) | O(1) | Direct point-to-point link; constant time regardless of network size |
 | Tree | O(log N) | O(1) | Hierarchical traversal depth grows logarithmically with leaf count |
 
@@ -1940,8 +1940,8 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 | 7 → Application | 4 → Application | TCP/IP collapses presentation and session into application |
 | 6 → Presentation | 4 → Application | Encryption (TLS) is implemented in the application layer |
 | 5 → Session | 4 → Application | Session state is managed by the application itself |
-| 4 → Transport | 3 → Transport | Direct mapping: TCP â‰ˆ OSI L4 service |
-| 3 → Network | 2 → Internet | Direct mapping: IP â‰ˆ OSI L3 service |
+| 4 → Transport | 3 → Transport | Direct mapping: TCP ≈ OSI L4 service |
+| 3 → Network | 2 → Internet | Direct mapping: IP ≈ OSI L3 service |
 | 2 → Data Link | 1 → Link | TCP/IP does not distinguish LLC from MAC |
 | 1 → Physical | 1 → Link | Physical medium details left unspecified |
 
@@ -2236,7 +2236,7 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 ### Q2: Why are network layers useful? Wouldn't direct communication be simpler?
 
 
-**Answer:** Layers are essential because they manage *complexity*. Direct communication between every pair of network components would create O(NÂ²) protocol implementations → every application would need to handle routing, error detection, retransmission, and flow control. With layering, the network layer handles routing for all applications, the transport layer handles reliability for all applications, and applications only worry about their own data. This is the **separation of concerns** principle applied to networking.
+**Answer:** Layers are essential because they manage *complexity*. Direct communication between every pair of network components would create O(N²) protocol implementations → every application would need to handle routing, error detection, retransmission, and flow control. With layering, the network layer handles routing for all applications, the transport layer handles reliability for all applications, and applications only worry about their own data. This is the **separation of concerns** principle applied to networking.
 
 | Without layers | With layers |
 |---------------|-------------|
@@ -2281,7 +2281,7 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 **Answer:** Fragmentation occurs.
 1. The 1 GB data is segmented by TCP into segments (typically ~1460 bytes each to fit within 1500 byte MTU).
-2. Total segments = 1 GB / 1460 bytes â‰ˆ 731,000 segments.
+2. Total segments = 1 GB / 1460 bytes ≈ 731,000 segments.
 3. Each segment gets a TCP header, IP header, and Ethernet header → adding ~920 million bytes of header overhead.
 4. Each segment is transmitted independently; if any is lost, only that segment is retransmitted (not the entire 1 GB).
 
@@ -2351,7 +2351,7 @@ Internet standards are developed through an open, consensus-based process manage
 | Bus topology | All nodes share a single cable | Low cost, collision-prone, backbone failure = total loss | Legacy 10Base2 Ethernet |
 | Star topology | All nodes connect to central switch | Dedicated bandwidth, central fail point, easy mgmt | Modern Ethernet LANs |
 | Ring topology | Nodes in a closed loop | Token-passing, deterministic access, single-node break risk | FDDI, SONET |
-| Mesh topology | Point-to-point links between all pairs | Maximum redundancy, O(NÂ²) cost, complex | WAN routers |
+| Mesh topology | Point-to-point links between all pairs | Maximum redundancy, O(N²) cost, complex | WAN routers |
 | Connection-Oriented | Three-phase: setup, data, teardown | Guarantees ordering and reliability | File transfer, web browsing (TCP) |
 | Connectionless | Independent message delivery | No state, no ordering guarantee | DNS queries, video streaming (UDP) |
 | Encapsulation | Each layer adds its own header | Creates nested frame structure | Debugging network traces |
@@ -2363,7 +2363,7 @@ Internet standards are developed through an open, consensus-based process manage
 
 | Category | Key Points |
 |----------|------------|
-| **Network Scale** | PAN (~10m) → LAN (<1km) → MAN (5â€“50km) → WAN (unlimited) |
+| **Network Scale** | PAN (~10m) → LAN (<1km) → MAN (5–50km) → WAN (unlimited) |
 | **OSI Layers (7→1)** | Application → Presentation → Session → Transport → Network → Data Link → Physical |
 | **TCP/IP Layers (4→1)** | Application → Transport → Internet → Link |
 | **Key OSI Mnemonic** | "Please Do Not Throw Sausage Pizza Away" (bottom-up: Physical → Application) |

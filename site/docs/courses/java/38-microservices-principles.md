@@ -105,7 +105,7 @@ flowchart TD
 ### Domain-Driven Design and Bounded Context
 
 
-Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** Ã¢â‚¬â€ a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
+Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** — a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
 
 ![Microservices Architecture Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/38-microservices-principles.png)
 
@@ -125,7 +125,7 @@ Three primary strategies guide service decomposition:
 
 1. **By Business Capability**: Map each business capability (e.g., Order Management, Inventory, Shipping) to a separate service
 2. **By Subdomain**: Use DDD subdomains (core, supporting, generic) to identify service boundaries
-3. **By Conway's Law**: Structure services to match the team organization Ã¢â‚¬â€ "organizations design systems that mirror their communication structure"
+3. **By Conway's Law**: Structure services to match the team organization — "organizations design systems that mirror their communication structure"
 
 ### Inter-Service Communication
 
@@ -139,7 +139,7 @@ Three primary strategies guide service decomposition:
 ### Data Ownership
 
 
-**Database-per-service** is the preferred pattern Ã¢â‚¬â€ each service owns its data exclusively and exposes it only through its API. The **shared-database anti-pattern** couples services at the data layer, creating hidden dependencies that prevent independent evolution.
+**Database-per-service** is the preferred pattern — each service owns its data exclusively and exposes it only through its API. The **shared-database anti-pattern** couples services at the data layer, creating hidden dependencies that prevent independent evolution.
 
 ### Service Mesh
 
@@ -342,7 +342,7 @@ management:
         include: health,info,metrics
 ```
 
-### Domain Model Ã¢â‚¬â€ Value Objects
+### Domain Model — Value Objects
 
 ```java
 package com.course.microservices.order.domain.vo;
@@ -862,7 +862,7 @@ public class PaymentReceivedEvent extends DomainEvent {
 }
 ```
 
-### Domain Model Ã¢â‚¬â€ Entity & Aggregate
+### Domain Model — Entity & Aggregate
 
 ```java
 package com.course.microservices.order.domain.model;

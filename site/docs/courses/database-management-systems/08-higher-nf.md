@@ -1769,7 +1769,7 @@ The following code detects multi-valued dependency violations and recommends den
 
 ```typescript
 // ============================================================
-// MVD Detector & Denormalization Advisor â€” TypeScript
+// MVD Detector & Denormalization Advisor — TypeScript
 // ============================================================
 
 interface TableData {
@@ -1806,7 +1806,7 @@ class MVDAnalyzer {
             if (g.count === expected) {
               mvdCandidates.push(
                 'MVD detected: ' + otherCols.join(',') + ' -->> ' + colA + ' (independent of ' + colB + ')' +
-                ' â€” ' + g.count + ' rows = ' + g.aVals.size + ' x ' + g.bVals.size
+                ' — ' + g.count + ' rows = ' + g.aVals.size + ' x ' + g.bVals.size
               );
             }
           }
@@ -1829,7 +1829,7 @@ class MVDAnalyzer {
     }
     for (const [pair, count] of joinCounts) {
       if (count > 100) {
-        recs.push('High-frequency join: ' + pair + ' (' + count + ' queries) â€” Consider denormalization');
+        recs.push('High-frequency join: ' + pair + ' (' + count + ' queries) — Consider denormalization');
       }
     }
     return recs;

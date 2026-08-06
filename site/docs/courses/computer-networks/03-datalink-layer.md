@@ -45,7 +45,7 @@ sidebar_position: 3
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Framing | Three methods: character count, byte stuffing, bit stuffing | Bit stuffing has bounded overhead; byte stuffing overhead varies with payload |
-| Error Detection | CRC-32 catches all bursts â‰¤ 32 bits | Use CRC for link-layer integrity; checksums (Internet) are weaker but simpler |
+| Error Detection | CRC-32 catches all bursts ≤ 32 bits | Use CRC for link-layer integrity; checksums (Internet) are weaker but simpler |
 | Error Correction | Hamming codes correct single-bit errors with minimal redundancy | Parity positions at powers of 2 enable pinpoint correction |
 | Flow Control | Stop-and-wait vs sliding window | Window must match bandwidth-delay product for full utilization |
 | ARQ Protocols | Stop-and-Wait, Go-Back-N, Selective Repeat | Selective Repeat most efficient on error-prone links; Go-Back-N simpler |
@@ -451,7 +451,7 @@ Receiver processing:
 | 9 | 0x5D | XOR with 0x20 → 0x7D, append | `[41, 42, 7E, 43, 44, 7D]` |
 | 10 | 0x45 | Normal byte, append | `[41, 42, 7E, 43, 44, 7D, 45]` |
 | 11 | 0x46 | Normal byte, append | `[41, 42, 7E, 43, 44, 7D, 45, 46]` |
-| 12 | 0x7E | End flag → deliver payload | `[41,42,7E,43,44,7D,45,46]` âœ“ |
+| 12 | 0x7E | End flag → deliver payload | `[41,42,7E,43,44,7D,45,46]` ✓ |
 
 #### Complexity Analysis
 
@@ -679,7 +679,7 @@ Final extracted payload: `11111011111111110` → matches original input exactly.
 | **Overhead** | 1 byte per frame (fixed) | Variable: 0-100% depending on payload | Bounded: max 20% (1 bit per 5 data bits) |
 | **Error recovery** | Impossible → single error desyncs permanently | Self-synchronizing → next flag resyncs | Self-synchronizing → next flag resyncs |
 | **Processing** | Byte-granular, O(1) | Byte-granular, O(n) | Bit-granular, O(n) |
-| **Worst-case expansion** | None | 2Ã— (payload all 0x7E) | 1.2Ã— (payload all 1s) |
+| **Worst-case expansion** | None | 2× (payload all 0x7E) | 1.2× (payload all 1s) |
 | **Complexity** | Simplest | Moderate | Most complex (bit manipulation) |
 | **Used in** | Legacy Bisync | PPP, SLIP | HDLC, SDLC, USB |
 | **Protocol examples** | IBM Bisync (1960s) | PPP (RFC 1661) | HDLC (ISO 13239) |
@@ -757,9 +757,9 @@ Note: 1111111 with two errors → 11110111 (4 ones) → even → error NOT detec
 
 #### Two-Dimensional Parity
 
-Two-dimensional parity arranges data in a matrix (rows Ã— columns) and computes parity for each row and each column.
+Two-dimensional parity arranges data in a matrix (rows × columns) and computes parity for each row and each column.
 
-Example: 4Ã—4 data matrix
+Example: 4×4 data matrix
 ```
 Data bits:    Row parity:
 1 0 1 1      1
@@ -776,7 +776,7 @@ A single-bit error at position (2,3) flips that bit. Row 2 parity check fails; c
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Single-bit parity | O(n) | O(1) | Must scan all bits once |
-| 2D parity | O(n) | O(âˆšn) | Row and column parity buffers |
+| 2D parity | O(n) | O(√n) | Row and column parity buffers |
 | Detection strength | 50% of error patterns | → | Odd-count errors caught; even-count errors missed |
 
 #### A&D Table
@@ -876,7 +876,7 @@ Data (8 bytes): 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08
 | 0x0506 | 0x0506 | 0x090C |
 | 0x0708 | 0x0708 | 0x1014 |
 | Complement | ~0x1014 = 0xEFEB | Checksum = 0xEFEB |
-| Verification sum: 0x0102 + 0x0304 + 0x0506 + 0x0708 + 0xEFEB | | 0x1 0000 → wrap: 0x0000 + 0x0001 = 0xFFFF âœ“ |
+| Verification sum: 0x0102 + 0x0304 + 0x0506 + 0x0708 + 0xEFEB | | 0x1 0000 → wrap: 0x0000 + 0x0001 = 0xFFFF ✓ |
 
 #### Complexity Analysis
 
@@ -923,7 +923,7 @@ Imagine you and a friend agree on a secret divisor number (e.g., 7). You have a 
 6. Transmit the original data followed by the remainder: $D(x) \cdot x^k + R(x)$.
 7. Receiver divides the received polynomial by $G(x)$. Non-zero remainder → error detected.
 
-#### Worked Example: CRC-3 with G(x) = xÂ³ + x + 1 (binary 1011)
+#### Worked Example: CRC-3 with G(x) = x³ + x + 1 (binary 1011)
 
 Data: `1101` (binary) → $D(x) = x^3 + x^2 + 1$
 
@@ -1144,8 +1144,8 @@ print(f"Error detected: {crc != crc2}")
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| CRC computation (software, bit-at-a-time) | O(nÂ·k) | O(1) | Each byte requires k iterations of bit shifts |
-| CRC computation (lookup table) | O(n) | O(256Â·k) bits | Precomputed table trades memory for speed |
+| CRC computation (software, bit-at-a-time) | O(n·k) | O(1) | Each byte requires k iterations of bit shifts |
+| CRC computation (lookup table) | O(n) | O(256·k) bits | Precomputed table trades memory for speed |
 | CRC hardware implementation | O(n/k) | O(k) registers | Parallel CRC computation in 1 clock per word |
 | Detection strength | O(1) check | O(1) | Single polynomial division |
 
@@ -1155,7 +1155,7 @@ print(f"Error detected: {crc != crc2}")
 
 | Aspect | Detail |
 |--------|--------|
-| Advantage | Detects ALL bursts of length â‰¤ k (where k = degree of generator) |
+| Advantage | Detects ALL bursts of length ≤ k (where k = degree of generator) |
 | Advantage | Detects all single-bit errors, all double-bit errors (if G(x) is primitive) |
 | Advantage | Detects all odd-count errors |
 | Advantage | Extremely efficient in hardware → simple shift register implementation |
@@ -1279,18 +1279,18 @@ Given data bits D3=1, D5=0, D6=1, D7=0:
 | Value | ? | ? | 1 | ? | 0 | 1 | 0 |
 
 Compute parity:
-- p1 covers {1,3,5,7}: p1 âŠ• 1 âŠ• 0 âŠ• 0 = 0 → p1 = 1
-- p2 covers {2,3,6,7}: p2 âŠ• 1 âŠ• 1 âŠ• 0 = 0 → p2 = 0
-- p4 covers {4,5,6,7}: p4 âŠ• 0 âŠ• 1 âŠ• 0 = 0 → p4 = 1
+- p1 covers {1,3,5,7}: p1 ⊕ 1 ⊕ 0 ⊕ 0 = 0 → p1 = 1
+- p2 covers {2,3,6,7}: p2 ⊕ 1 ⊕ 1 ⊕ 0 = 0 → p2 = 0
+- p4 covers {4,5,6,7}: p4 ⊕ 0 ⊕ 1 ⊕ 0 = 0 → p4 = 1
 
 Transmitted codeword: `1 0 1 1 0 1 0` (positions 1-7)
 
 If position 5 flips (0 → 1), received = `1 0 1 1 1 1 0`
 
 **Syndrome calculation:**
-- p1 check: 1 âŠ• 1 âŠ• 1 âŠ• 0 = 1 → fails (syndrome bit 0 = 1)
-- p2 check: 0 âŠ• 1 âŠ• 1 âŠ• 0 = 0 → passes (syndrome bit 1 = 0)
-- p4 check: 1 âŠ• 1 âŠ• 1 âŠ• 0 = 1 → fails (syndrome bit 2 = 1)
+- p1 check: 1 ⊕ 1 ⊕ 1 ⊕ 0 = 1 → fails (syndrome bit 0 = 1)
+- p2 check: 0 ⊕ 1 ⊕ 1 ⊕ 0 = 0 → passes (syndrome bit 1 = 0)
+- p4 check: 1 ⊕ 1 ⊕ 1 ⊕ 0 = 1 → fails (syndrome bit 2 = 1)
 
 Syndrome = `101` binary = 5 → position 5 is the error! Flip it back to 0.
 
@@ -1516,12 +1516,12 @@ print(f"  Correct?       {decoded2 == data} (likely wrong → Hamming corrects o
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Encoding | O(rÂ·n) = O(log n Â· n) | O(n) | For each parity bit r, scan all n positions |
-| Syndrome calculation | O(rÂ·n) = O(log n Â· n) | O(1) | Recompute parity for each of r groups |
+| Encoding | O(r·n) = O(log n · n) | O(n) | For each parity bit r, scan all n positions |
+| Syndrome calculation | O(r·n) = O(log n · n) | O(1) | Recompute parity for each of r groups |
 | Decoding + correction | O(n) | O(n) | After syndrome, single flip at known position |
 | Lookup-table decode | O(1) | O(2^n) | Syndrome → position map; exponential space |
 
-**Why O(rÂ·n):** Each of the $r \approx \log_2 n$ parity groups covers roughly half the codeword. So each group requires scanning $n/2$ positions on average → total $O(r \cdot n/2) = O(n \log n)$. For (7,4): r=3, n=7 → 21 parity checks total.
+**Why O(r·n):** Each of the $r \approx \log_2 n$ parity groups covers roughly half the codeword. So each group requires scanning $n/2$ positions on average → total $O(r \cdot n/2) = O(n \log n)$. For (7,4): r=3, n=7 → 21 parity checks total.
 
 #### A&D Table
 
@@ -1761,7 +1761,7 @@ END
 |----------|----------------|--------|
 | Stop-and-Wait | 1 | Only one frame outstanding; 1-bit seq num (0/1) |
 | Go-Back-N | $2^k - 1$ | Needs one spare seq num to avoid ambiguity on timeout |
-| Selective Repeat | $2^{k-1}$ | Must satisfy SWS + RWS â‰¤ $2^k$ to prevent window overlap |
+| Selective Repeat | $2^{k-1}$ | Must satisfy SWS + RWS ≤ $2^k$ to prevent window overlap |
 
 ### 3.5.3 Piggybacking
 
@@ -2307,7 +2307,7 @@ Key observation: Frame 2 was lost. Even though frame 3 was received correctly, t
 | Sender per frame | O(1) | O(N) | Window buffer of N frames |
 | Sender on timeout | O(N) | O(1) | Retransmits up to N frames |
 | Receiver per frame | O(1) | O(1) | No out-of-order buffering |
-| Bandwidth wasted per error | O(NÂ·L) | → | Retransmits N frames Ã— L bits each |
+| Bandwidth wasted per error | O(N·L) | → | Retransmits N frames × L bits each |
 
 #### A&D Table
 
@@ -2777,7 +2777,7 @@ PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP au
 ### Q1: CRC vs Checksum → Which is better for link-layer error detection?
 
 
-CRC is always better for link-layer error detection. CRC-32 detects: (a) all single-bit errors, (b) all double-bit errors when the generator is primitive, (c) any odd number of errors, (d) any burst â‰¤ 32 bits, and (e) 99.99999998% of longer bursts. The Internet checksum used in TCP/UDP is weaker → it was designed for 1970s CPUs where a 16-bit add was one instruction but CRC bit manipulation was slow. On modern hardware, CRC-32 in hardware (or with a lookup table) takes a few cycles per byte. **Never use a checksum where CRC is available.**
+CRC is always better for link-layer error detection. CRC-32 detects: (a) all single-bit errors, (b) all double-bit errors when the generator is primitive, (c) any odd number of errors, (d) any burst ≤ 32 bits, and (e) 99.99999998% of longer bursts. The Internet checksum used in TCP/UDP is weaker → it was designed for 1970s CPUs where a 16-bit add was one instruction but CRC bit manipulation was slow. On modern hardware, CRC-32 in hardware (or with a lookup table) takes a few cycles per byte. **Never use a checksum where CRC is available.**
 
 ### Q2: How do you calculate the optimal sliding window size?
 
@@ -2798,13 +2798,13 @@ If window is smaller than BDP, the link is underutilized. If larger than BDP and
 
 | Condition | Choose |
 |-----------|--------|
-| Low error rate (< 10â»â¶ BER) | Go-Back-N (simpler, lower overhead) |
+| Low error rate (< 10⁻⁶ BER) | Go-Back-N (simpler, lower overhead) |
 | High error rate (wireless, satellite) | Selective Repeat (avoids wasting bandwidth on retransmissions) |
 | Simple receiver (limited memory) | Go-Back-N (no reorder buffer needed) |
 | Precious bandwidth (satellite, cellular) | Selective Repeat |
-| Window small (N â‰¤ 4) | Go-Back-N (cost of full retransmission is low) |
+| Window small (N ≤ 4) | Go-Back-N (cost of full retransmission is low) |
 
-The crossover point is roughly when retransmission cost (N Ã— frame size) exceeds buffer cost (N Ã— frame buffer at receiver).
+The crossover point is roughly when retransmission cost (N × frame size) exceeds buffer cost (N × frame buffer at receiver).
 
 ### Q4: HDLC vs PPP → What are the key differences?
 
@@ -2828,9 +2828,9 @@ Ethernet operates over noisy copper cables (originally coaxial). A weak detectio
 ### Q6: How many bits does a (7,4) Hamming code need to correct two errors?
 
 
-A (7,4) Hamming code has minimum Hamming distance $d_{\min} = 3$. To correct up to $t$ errors, we need $d_{\min} \ge 2t + 1$. For $t=1$: $3 \ge 3$ âœ“. For $t=2$: $3 \ge 5$ âœ—. To correct two errors, we need $d_{\min} = 5$, achieved by increasing redundancy. The extended Hamming (8,4) code has $d_{\min} = 4$ (detects 2, corrects 1). True double-error correction requires BCH codes or a longer Hamming code with more parity bits.
+A (7,4) Hamming code has minimum Hamming distance $d_{\min} = 3$. To correct up to $t$ errors, we need $d_{\min} \ge 2t + 1$. For $t=1$: $3 \ge 3$ ✓. For $t=2$: $3 \ge 5$ ✗. To correct two errors, we need $d_{\min} = 5$, achieved by increasing redundancy. The extended Hamming (8,4) code has $d_{\min} = 4$ (detects 2, corrects 1). True double-error correction requires BCH codes or a longer Hamming code with more parity bits.
 
-### Q7: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?
+### Q7: Why 2³¹ - 1 maximum window for Go-Back-N but 2³⁰ for Selective Repeat?
 
 
 For Go-Back-N with 31-bit sequence numbers ($2^{31} - 1$), the receiver's window is 1 (only accepts in-order). The constraint is $W_s \le 2^k - 1$ → the spare sequence number prevents old retransmissions from being mistaken for new frames. For Selective Repeat, both sender and receiver windows are non-trivial ($SWS = RWS = W$). The constraint $2W \le 2^k$ (i.e., $W \le 2^{k-1}$) prevents the windows from overlapping after sequence number wrap-around.
@@ -2867,7 +2867,7 @@ PPP's framing (flag byte 0x7E, bit stuffing, FCS) is directly derived from HDLC.
 Wi-Fi operates over the inherently unreliable radio medium. The 802.11 MAC uses a Stop-and-Wait ARQ variant:
 
 1. Station A sends a DATA frame.
-2. Station B responds with an ACK frame after a Short Interframe Space (SIFS, 10 Âµs for 802.11g).
+2. Station B responds with an ACK frame after a Short Interframe Space (SIFS, 10 µs for 802.11g).
 3. If Station A doesn't receive ACK within SIFS + timeout, it contends for the channel and retransmits.
 
 Additional 802.11 ARQ features:
@@ -2914,7 +2914,7 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 | Character Count Framing | Length field in header | Fragile → single-bit error desyncs receiver | Legacy Bisync protocol |
 | Byte Stuffing | Flag bytes with escape insertion | Variable overhead depending on payload | PPP over serial links |
 | Bit Stuffing | Insert 0 after five consecutive 1s | Bounded overhead (max 20%) | HDLC, modern link protocols |
-| CRC-32 | Polynomial division remainder | Detects all bursts â‰¤ 32 bits | Ethernet, Wi-Fi |
+| CRC-32 | Polynomial division remainder | Detects all bursts ≤ 32 bits | Ethernet, Wi-Fi |
 | Internet Checksum | One's complement sum | Weaker but simpler than CRC | TCP, UDP, IP headers |
 | Hamming Code | Parity at power-of-2 positions | Corrects single-bit errors | Memory ECC, not networking |
 | Stop-and-Wait ARQ | Transmit one, wait for ACK | Simple but high-latency inefficiency | Low-throughput reliable links |
@@ -2928,11 +2928,11 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 
 | Category | Key Points |
 |----------|------------|
-| **Framing Methods** | Character count (fragile), Byte stuffing (variable overhead, PPP), Bit stuffing (â‰¤20% overhead, HDLC) |
-| **CRC-32 Properties** | Detects: all single-bit, all double-bit, odd-count errors, bursts â‰¤ 32 bits |
+| **Framing Methods** | Character count (fragile), Byte stuffing (variable overhead, PPP), Bit stuffing (≤20% overhead, HDLC) |
+| **CRC-32 Properties** | Detects: all single-bit, all double-bit, odd-count errors, bursts ≤ 32 bits |
 | **Hamming Formula** | $2^r \ge m + r + 1$ for data bits $m$ and parity bits $r$ |
 | **ARQ Comparison** | Stop-and-Wait: $U = T_t/(T_t + 2T_p)$; GBN: wasteful on errors; SR: efficient but complex |
-| **Efficiency Rule** | Window â‰¥ BDP in frames to achieve 100% link utilization |
+| **Efficiency Rule** | Window ≥ BDP in frames to achieve 100% link utilization |
 | **HDLC Frame Types** | I-frames (data with seq), S-frames (RR/RNR/REJ/SREJ), U-frames (SABM/DISC/UA) |
 | **PPP Stack** | LCP (link setup) → Auth (PAP/CHAP) → NCP (IPCP) → Data |
 | **Sequence Constraints** | GBN: $W \le 2^k - 1$; SR: $W \le 2^{k-1}$ (when SWS=RWS) |

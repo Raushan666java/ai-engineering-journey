@@ -70,48 +70,48 @@ flowchart LR
 ### 6.1 What is a Pushdown Automaton?
 
 
-A pushdown automaton (PDA) extends an NFA with a **stack** → an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order. This additional memory enables PDAs to recognize **context-free languages** → languages that NFAs/DFAs cannot recognize (like {aâ¿bâ¿ | n â‰¥ 0}).
+A pushdown automaton (PDA) extends an NFA with a **stack** → an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order. This additional memory enables PDAs to recognize **context-free languages** → languages that NFAs/DFAs cannot recognize (like {aⁿbⁿ | n ≥ 0}).
 
 The stack is a powerful addition: it provides unlimited memory, but the LIFO restriction means not all types of unbounded memory are available (unlike the Turing machine's tape).
 
 ### 6.2 Formal Definition of a PDA
 
 
-A **pushdown automaton** is a 6-tuple (Q, Î£, Î“, Î´, qâ‚€, F) where:
+A **pushdown automaton** is a 6-tuple (Q, Σ, Γ, δ, q₀, F) where:
 
 - **Q** is a finite set of states.
-- **Î£** is the finite input alphabet.
-- **Î“** is the finite **stack alphabet** (symbols that can be pushed onto the stack).
-- **Î´: Q Ã— (Î£ âˆª {Îµ}) Ã— (Î“ âˆª {Îµ}) → P(Q Ã— (Î“ âˆª {Îµ}))** is the transition function.
-- **qâ‚€ âˆˆ Q** is the start state.
-- **F âŠ† Q** is the set of accepting states.
+- **Σ** is the finite input alphabet.
+- **Γ** is the finite **stack alphabet** (symbols that can be pushed onto the stack).
+- **δ: Q × (Σ ∪ {ε}) × (Γ ∪ {ε}) → P(Q × (Γ ∪ {ε}))** is the transition function.
+- **q₀ ∈ Q** is the start state.
+- **F ⊆ Q** is the set of accepting states.
 
-A transition Î´(q, a, X) contains (p, Y), meaning:
-- From state q, reading input symbol a (or Îµ), with X on top of the stack (or Îµ = any/no check),
-- Move to state p and replace X with Y (if Y = Îµ, pop X; if Y = X, no change; if Y = ZW, push W then Z → effectively pushing a string).
+A transition δ(q, a, X) contains (p, Y), meaning:
+- From state q, reading input symbol a (or ε), with X on top of the stack (or ε = any/no check),
+- Move to state p and replace X with Y (if Y = ε, pop X; if Y = X, no change; if Y = ZW, push W then Z → effectively pushing a string).
 
 **Stack convention:** Usually the top of the stack is written first when pushing a string.
 
 ### 6.3 PDA Computation
 
 
-A **configuration** (or instantaneous description) of a PDA is a triple (q, w, Î³) where:
-- q âˆˆ Q is the current state.
-- w âˆˆ Î£* is the remaining input.
-- Î³ âˆˆ Î“* is the stack content (top of stack first).
+A **configuration** (or instantaneous description) of a PDA is a triple (q, w, γ) where:
+- q ∈ Q is the current state.
+- w ∈ Σ* is the remaining input.
+- γ ∈ Γ* is the stack content (top of stack first).
 
 Transitions between configurations follow the transition function.
 
-**Acceptance:** A PDA accepts a string w if there exists a computation path from (qâ‚€, w, Îµ) to (q, Îµ, Î³) where q âˆˆ F (accepting state).
+**Acceptance:** A PDA accepts a string w if there exists a computation path from (q₀, w, ε) to (q, ε, γ) where q ∈ F (accepting state).
 
 **Acceptance by empty stack:** An alternative definition requires the stack to be empty at the end. The two definitions are equivalent.
 
 ### 6.4 Deterministic vs Nondeterministic PDA
 
 
-A PDA is **deterministic (DPDA)** if for each (q, a, X) where a âˆˆ Î£ âˆª {Îµ} and X âˆˆ Î“ âˆª {Îµ}, there is at most one possible next configuration. Nondeterministic (NPDA) PDAs may have multiple choices.
+A PDA is **deterministic (DPDA)** if for each (q, a, X) where a ∈ Σ ∪ {ε} and X ∈ Γ ∪ {ε}, there is at most one possible next configuration. Nondeterministic (NPDA) PDAs may have multiple choices.
 
-**Key difference:** Deterministic and nondeterministic PDA are **NOT** equivalent! There are context-free languages that require nondeterminism. Example: { wwÊ€ | w âˆˆ {a,b}* } (even-length palindromes) requires nondeterminism to guess the midpoint.
+**Key difference:** Deterministic and nondeterministic PDA are **NOT** equivalent! There are context-free languages that require nondeterminism. Example: { wwʀ | w ∈ {a,b}* } (even-length palindromes) requires nondeterminism to guess the midpoint.
 
 **DPDA languages** are called deterministic context-free languages (DCFLs), which form a proper subset of CFLs.
 
@@ -122,7 +122,7 @@ A PDA is **deterministic (DPDA)** if for each (q, a, X) where a âˆˆ Î£ âˆ
 
 **Direction 1 (CFG → PDA):** Given CFG G, construct PDA that simulates a leftmost derivation:
 1. Push S (start symbol) onto the stack.
-2. If top of stack is a variable A, nondeterministically choose a production A → Î± and replace A with Î± (push Î± in reverse).
+2. If top of stack is a variable A, nondeterministically choose a production A → α and replace A with α (push α in reverse).
 3. If top of stack is a terminal matching the next input, pop and advance input.
 4. If stack is empty, accept.
 
@@ -143,73 +143,73 @@ Common patterns for PDA design:
 
 ## Examples
 
-### Example 6.1: PDA for L = { aâ¿bâ¿ | n â‰¥ 0 }
+### Example 6.1: PDA for L = { aⁿbⁿ | n ≥ 0 }
 
 Design: Push a's onto the stack; for each b, pop one a.
 
-States: qâ‚€ (start), qâ‚ (reading b's), qâ‚‚ (accept).
+States: q₀ (start), q₁ (reading b's), q₂ (accept).
 
 Transitions:
-- Î´(qâ‚€, a, Îµ) = {(qâ‚€, A)} → push A for each a
-- Î´(qâ‚€, b, A) = {(qâ‚, Îµ)} → switch to b-reading, start popping
-- Î´(qâ‚, b, A) = {(qâ‚, Îµ)} → continue popping for b's
-- Î´(qâ‚, Îµ, Îµ) = {(qâ‚‚, Îµ)} → accept when done
-- (also: Î´(qâ‚€, Îµ, Îµ) = {(qâ‚‚, Îµ)} for empty string)
+- δ(q₀, a, ε) = {(q₀, A)} → push A for each a
+- δ(q₀, b, A) = {(q₁, ε)} → switch to b-reading, start popping
+- δ(q₁, b, A) = {(q₁, ε)} → continue popping for b's
+- δ(q₁, ε, ε) = {(q₂, ε)} → accept when done
+- (also: δ(q₀, ε, ε) = {(q₂, ε)} for empty string)
 
 Computation for "aabb":
-(qâ‚€, aabb, Îµ) → (qâ‚€, abb, A) → (qâ‚€, bb, AA) → (qâ‚, b, A) → (qâ‚, Îµ, Îµ) → (qâ‚‚, Îµ, Îµ). Accept.
+(q₀, aabb, ε) → (q₀, abb, A) → (q₀, bb, AA) → (q₁, b, A) → (q₁, ε, ε) → (q₂, ε, ε). Accept.
 
-### Example 6.2: PDA for Palindromes L = { wwÊ€ | w âˆˆ {a,b}* }
+### Example 6.2: PDA for Palindromes L = { wwʀ | w ∈ {a,b}* }
 
 Design: Push symbols onto the stack; nondeterministically guess the midpoint; then pop matching each input symbol.
 
-States: qâ‚€ (push mode), qâ‚ (pop mode), qâ‚‚ (accept).
+States: q₀ (push mode), q₁ (pop mode), q₂ (accept).
 
 Transitions:
-- Push mode: Î´(qâ‚€, a, Îµ) = {(qâ‚€, A)}, Î´(qâ‚€, b, Îµ) = {(qâ‚€, B)}
-- Guess midpoint (Îµ-transition): Î´(qâ‚€, Îµ, Îµ) = {(qâ‚, Îµ)}
-- Pop mode: Î´(qâ‚, a, A) = {(qâ‚, Îµ)}, Î´(qâ‚, b, B) = {(qâ‚, Îµ)}
-- Accept: Î´(qâ‚, Îµ, Îµ) = {(qâ‚‚, Îµ)}
+- Push mode: δ(q₀, a, ε) = {(q₀, A)}, δ(q₀, b, ε) = {(q₀, B)}
+- Guess midpoint (ε-transition): δ(q₀, ε, ε) = {(q₁, ε)}
+- Pop mode: δ(q₁, a, A) = {(q₁, ε)}, δ(q₁, b, B) = {(q₁, ε)}
+- Accept: δ(q₁, ε, ε) = {(q₂, ε)}
 
 Nondeterminism is essential here: the PDA must "guess" when the first half ends.
 
 Computation for "abba":
-(qâ‚€, abba, Îµ) → (qâ‚€, bba, A) → (qâ‚€, ba, BA) → (qâ‚, ba, BA) [guess midpoint] → (qâ‚, a, A) → (qâ‚, Îµ, Îµ) → (qâ‚‚, Îµ, Îµ). Accept.
+(q₀, abba, ε) → (q₀, bba, A) → (q₀, ba, BA) → (q₁, ba, BA) [guess midpoint] → (q₁, a, A) → (q₁, ε, ε) → (q₂, ε, ε). Accept.
 
-### Example 6.3: PDA for { aâ¿bÂ²â¿ | n â‰¥ 0 }
+### Example 6.3: PDA for { aⁿb²ⁿ | n ≥ 0 }
 
 Push two symbols for each a, pop one for each b.
 
-Î´(qâ‚€, a, Îµ) = {(qâ‚€, AA)} → push two A's for each a
-Î´(qâ‚€, b, A) = {(qâ‚, Îµ)} → start popping
-Î´(qâ‚, b, A) = {(qâ‚, Îµ)} → continue popping
-Î´(qâ‚, Îµ, Îµ) = {(qâ‚‚, Îµ)} → accept
+δ(q₀, a, ε) = {(q₀, AA)} → push two A's for each a
+δ(q₀, b, A) = {(q₁, ε)} → start popping
+δ(q₁, b, A) = {(q₁, ε)} → continue popping
+δ(q₁, ε, ε) = {(q₂, ε)} → accept
 
 Computation for "aabbbb" (n=2):
-(qâ‚€, aabbbb, Îµ) → (qâ‚€, abbbb, AA) → (qâ‚€, bbbb, AAAA) → (qâ‚, bbb, AAA) → (qâ‚, bb, AA) → (qâ‚, b, A) → (qâ‚, Îµ, Îµ) → (qâ‚‚, Îµ, Îµ). Accept.
+(q₀, aabbbb, ε) → (q₀, abbbb, AA) → (q₀, bbbb, AAAA) → (q₁, bbb, AAA) → (q₁, bb, AA) → (q₁, b, A) → (q₁, ε, ε) → (q₂, ε, ε). Accept.
 
 ### Example 6.4: CFG to PDA Conversion
 
-Convert G: S → aSb | Îµ to a PDA.
+Convert G: S → aSb | ε to a PDA.
 
 Using the top-down construction:
-- One-state PDA: Q = {q}, start qâ‚€ = q, accept F = {q}.
-- Initialize: Î´(q, Îµ, Îµ) = {(q, S$)} → push S and bottom marker $
-- For S → aSb: Î´(q, Îµ, S) = {(q, bSa)} → replace S with reverse of aSb
-- For S → Îµ: Î´(q, Îµ, S) = {(q, Îµ)} → pop S
-- For matching terminals: Î´(q, a, a) = {(q, Îµ)}, Î´(q, b, b) = {(q, Îµ)}
-- Accept: Î´(q, Îµ, $) = {(q, Îµ)}
+- One-state PDA: Q = {q}, start q₀ = q, accept F = {q}.
+- Initialize: δ(q, ε, ε) = {(q, S$)} → push S and bottom marker $
+- For S → aSb: δ(q, ε, S) = {(q, bSa)} → replace S with reverse of aSb
+- For S → ε: δ(q, ε, S) = {(q, ε)} → pop S
+- For matching terminals: δ(q, a, a) = {(q, ε)}, δ(q, b, b) = {(q, ε)}
+- Accept: δ(q, ε, $) = {(q, ε)}
 
 This PDA simulates leftmost derivations of G.
 
 ### Example 6.5: PDA for Balanced Parentheses
 
-L = { w âˆˆ {(,)}* | parentheses are properly matched }.
+L = { w ∈ {(,)}* | parentheses are properly matched }.
 
 Transitions:
-- Î´(qâ‚€, (, Îµ) = {(qâ‚€, P)} → push P for each '('
-- Î´(qâ‚€, ), P) = {(qâ‚€, Îµ)} → pop P for each ')'
-- Î´(qâ‚€, Îµ, Îµ) = {(qâ‚€, Îµ)} → Îµ transition (non-consuming)
+- δ(q₀, (, ε) = {(q₀, P)} → push P for each '('
+- δ(q₀, ), P) = {(q₀, ε)} → pop P for each ')'
+- δ(q₀, ε, ε) = {(q₀, ε)} → ε transition (non-consuming)
 - Accept with empty stack (using empty stack acceptance)
 
 The stack counts the nesting depth. At any point, the number of P's on the stack equals the current nesting level. If we try to pop when stack is empty, the computation dies (reject). After processing all input, accept if stack is empty.
@@ -901,27 +901,27 @@ export { Processor, Task }
 
 ### Basic
 
-1. Design a PDA for L = { aâ¿báµcâ¿ | n, m â‰¥ 0 }.
-2. Design a PDA for L = { w âˆˆ {a,b}* | w has equal numbers of a's and b's }.
+1. Design a PDA for L = { aⁿbᵐcⁿ | n, m ≥ 0 }.
+2. Design a PDA for L = { w ∈ {a,b}* | w has equal numbers of a's and b's }.
 3. Trace the PDA from Example 6.1 on input "ab" and "aab".
-4. Design a PDA for L = { aâ¿bâ¿cáµ | n, m â‰¥ 0 }.
-5. Convert the CFG S → aSa | bSb | Îµ to a PDA.
+4. Design a PDA for L = { aⁿbⁿcᵐ | n, m ≥ 0 }.
+5. Convert the CFG S → aSa | bSb | ε to a PDA.
 
 ### Intermediate
 
-6. Design a PDA for L = { aâ¿báµ | n â‰¤ m â‰¤ 2n }.
+6. Design a PDA for L = { aⁿbᵐ | n ≤ m ≤ 2n }.
 7. Convert the PDA from Example 6.2 to a CFG.
-8. Prove that the PDA from Example 6.3 correctly recognizes { aâ¿bÂ²â¿ } by induction on n.
-9. Design a PDA for L = { w âˆˆ {a,b}* | w contains at least as many a's as b's }.
-10. Show that the language { aâ¿bâ¿câ¿ | n â‰¥ 0 } cannot be recognized by a PDA (it is not context-free). Use the intuition of the single stack's limitations.
+8. Prove that the PDA from Example 6.3 correctly recognizes { aⁿb²ⁿ } by induction on n.
+9. Design a PDA for L = { w ∈ {a,b}* | w contains at least as many a's as b's }.
+10. Show that the language { aⁿbⁿcⁿ | n ≥ 0 } cannot be recognized by a PDA (it is not context-free). Use the intuition of the single stack's limitations.
 
 ### Advanced
 
 11. Prove that DPDA languages are closed under complement, but NPDA languages are not.
-12. Design a PDA for L = { wâ‚cwâ‚‚ | wâ‚, wâ‚‚ âˆˆ {a,b}* and wâ‚ â‰  wâ‚‚ }. This requires nondeterminism → explain why.
+12. Design a PDA for L = { w₁cw₂ | w₁, w₂ ∈ {a,b}* and w₁ ≠ w₂ }. This requires nondeterminism → explain why.
 13. Show formally that if PDA P accepts by final state, there is an equivalent PDA P' that accepts by empty stack, and vice versa.
 14. Design a PDA for the language of arithmetic expressions generated by E → E + T | T, T → T * F | F, F → (E) | i. Show the stack behavior for "i + i * i".
-15. Prove that the language { aâ¿báµ | n â‰  m } is a DCFL by constructing a DPDA for it.
+15. Prove that the language { aⁿbᵐ | n ≠ m } is a DCFL by constructing a DPDA for it.
 16. Implement a TypeScript function that converts a CFG to a PDA using the top-down construction (single-state method). Test it on the grammar for palindromes.
 17. Show that the language L = { a?b?c? | i, j, k = 0, i = j or j = k } is context-free by designing a PDA for it. Explain why nondeterminism is required.
 18. Write a TypeScript simulator for the shift-reduce PDA and test it on a grammar for balanced parentheses.

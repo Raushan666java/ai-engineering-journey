@@ -201,9 +201,9 @@ for f in result['findings']:
 | Metric | Before AI | After AI | Improvement |
 |--------|-----------|----------|-------------|
 | Pneumonia detection sensitivity | 72% | 88% (CheXNet) | +16% |
-| Radiology report turnaround | 24â€“48 hours | 15 minutes | 96% faster |
+| Radiology report turnaround | 24–48 hours | 15 minutes | 96% faster |
 | Drug candidate screening | 5,000 compounds/month | 500,000 compounds/month | 100x throughput |
-| Clinical trial failure rate | 90% | 30â€“50% (AI-predicted) | 40â€“60% reduction |
+| Clinical trial failure rate | 90% | 30–50% (AI-predicted) | 40–60% reduction |
 | Diabetic retinopathy screening | 50% of patients screened | 85% (automated) | +35% coverage |
 
 ### Advantages & Disadvantages
@@ -214,10 +214,10 @@ for f in result['findings']:
 | 24/7 availability with consistent performance | Requires large labeled datasets for training |
 | Can detect subtle patterns invisible to humans | Poor generalization across different hospitals/equipment |
 | Processes thousands of images per hour | Black-box predictions difficult to explain to patients |
-| Reduces radiologist burnout from repetitive cases | Regulatory approval (FDA) takes 3â€“7 years |
+| Reduces radiologist burnout from repetitive cases | Regulatory approval (FDA) takes 3–7 years |
 | Enables screening at population scale | Liability unclear when AI makes diagnostic errors |
 | Standardizes diagnosis across institutions | Demographic bias if training data lacks diversity |
-| Accelerates drug discovery 10â€“100x | Adversarial vulnerability → small pixel changes flip predictions |
+| Accelerates drug discovery 10–100x | Adversarial vulnerability → small pixel changes flip predictions |
 
 ### Edge Cases
 
@@ -348,7 +348,7 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 |--------|-------------|------------|-------------|
 | Fraud detection rate | 65% | 92% | +27% |
 | False positive rate | 5% | 0.8% | 84% reduction |
-| Trade execution latency | 500Âµs | 10Âµs (FPGA-based) | 50x faster |
+| Trade execution latency | 500µs | 10µs (FPGA-based) | 50x faster |
 | Credit risk model AUC | 0.72 | 0.89 (XGBoost) | +0.17 |
 | Portfolio rebalance | Quarterly | Real-time | Continuous |
 | Compliance reporting | 40 person-hours | 2 minutes (NLP extraction) | 99.9% faster |
@@ -386,9 +386,9 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 1. **Perception:** Sensors (cameras, LIDAR, radar, ultrasonic) capture raw environment data. Deep learning models detect objects (vehicles, pedestrians, cyclists, animals), classify traffic signs, identify lane markings, and estimate depth.
 2. **Localization:** GPS provides coarse position; IMU + wheel odometry provides dead reckoning; LIDAR point-cloud matching (ICP, NDT) against HD maps provides centimeter-level localization.
-3. **Prediction:** Trajectory prediction models (Social LSTM, VectorNet, Scene Transformer) forecast the future positions of all dynamic agents 3â€“8 seconds ahead, modeling multimodal outcomes (turn left, go straight, stop).
+3. **Prediction:** Trajectory prediction models (Social LSTM, VectorNet, Scene Transformer) forecast the future positions of all dynamic agents 3–8 seconds ahead, modeling multimodal outcomes (turn left, go straight, stop).
 4. **Planning:** Behavior planner selects high-level actions (follow lane, change left, yield, stop). Motion planner generates a smooth, collision-free trajectory respecting kinematics, comfort constraints, and traffic rules.
-5. **Control:** PID or Model Predictive Control (MPC) converts the planned trajectory into steering, throttle, and brake commands at 50â€“100 Hz.
+5. **Control:** PID or Model Predictive Control (MPC) converts the planned trajectory into steering, throttle, and brake commands at 50–100 Hz.
 6. **Safety Monitoring:** Redundant systems cross-check perception and planning outputs, apply Operational Design Domain (ODD) limits, and execute minimal risk maneuvers if confidence drops.
 
 ### Perception Pipeline Pseudocode
@@ -798,7 +798,7 @@ if result is not None:
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
 | Game level design time | 2 weeks | 2 hours (PCG) | 98% faster |
-| NPC behavior variety | 10â€“20 states | Continuous learning | Unlimited |
+| NPC behavior variety | 10–20 states | Continuous learning | Unlimited |
 | Art asset generation | $500/image | $0.01/image | 99.998% cost reduction |
 | Music composition speed | 1 track/week | 50 tracks/hour | 8,400x faster |
 | Bug discovery rate | 200 bugs/week | 5,000 bugs/week (RL testing) | 25x |
@@ -838,7 +838,7 @@ if result is not None:
 1. **Remote Sensing:** Drones and satellites capture multispectral imagery (NDVI, NDWI, thermal). Computer vision models detect crop health, water stress, nutrient deficiency, and pest infestation from spectral signatures.
 2. **Soil Analysis:** IoT sensors measure soil moisture, pH, temperature, electrical conductivity, and nutrient levels. ML models map soil variability at sub-meter resolution, creating prescription maps for variable-rate application.
 3. **Yield Prediction:** Time-series models (LSTM, Transformer) integrate weather forecasts, soil data, satellite imagery, and historical yields to predict harvest output months in advance, enabling supply chain optimization.
-4. **Pest & Disease Detection:** CNN classifiers identify pests, fungi, and bacterial infections from leaf images with 90â€“98% accuracy, enabling targeted pesticide application rather than blanket spraying.
+4. **Pest & Disease Detection:** CNN classifiers identify pests, fungi, and bacterial infections from leaf images with 90–98% accuracy, enabling targeted pesticide application rather than blanket spraying.
 5. **Autonomous Machinery:** Self-driving tractors and harvesters use GPS-RTK, computer vision, and path planning algorithms to operate 24/7 with sub-2.5cm accuracy, reducing labor dependency.
 6. **Supply Chain Optimization:** Reinforcement learning optimizes harvest scheduling, cold chain logistics, and distribution routing to minimize post-harvest loss (currently 30-40% globally).
 
@@ -1190,7 +1190,7 @@ function climateForecastingPipeline(location, forecastDays):
     # 3. Downscale to local resolution
     localForecast = {}
     for timestamp, state in futureStates:
-        highRes = superResolutionCNN(state)  # 0.25Â° -> 1km
+        highRes = superResolutionCNN(state)  # 0.25° -> 1km
         localForecast[timestamp] = {
             temperature_2m: highRes.temperature,
             precipitation: highRes.precipitation,
@@ -1332,14 +1332,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 | Industry | Adoption Phase | Maturity Level | Key Players | Investment ($B) | Time to Scale | Regulatory Barrier |
 |----------|---------------|:--------------:|-------------|:----------------:|:-------------:|:------------------:|
-| Healthcare | Accelerating | Growth (2.5/4) | DeepMind, PathAI, Zebra Medical | $45 | 5â€“10 years | Very High (FDA, CE) |
-| Finance | Mature | Scale (3.5/4) | JPMorgan, BlackRock, Kensho | $65 | 1â€“3 years | High (SEC, Basel) |
-| Transportation | Early deployment | Growth (2/4) | Waymo, Tesla, Cruise, TuSimple | $35 | 10â€“15 years | Very High (NHTSA, EU) |
-| Education | Emerging | Build (1.5/4) | Khan Academy (Khanmigo), Carnegie Learning | $8 | 3â€“7 years | Medium (FERPA, GDPR) |
+| Healthcare | Accelerating | Growth (2.5/4) | DeepMind, PathAI, Zebra Medical | $45 | 5–10 years | Very High (FDA, CE) |
+| Finance | Mature | Scale (3.5/4) | JPMorgan, BlackRock, Kensho | $65 | 1–3 years | High (SEC, Basel) |
+| Transportation | Early deployment | Growth (2/4) | Waymo, Tesla, Cruise, TuSimple | $35 | 10–15 years | Very High (NHTSA, EU) |
+| Education | Emerging | Build (1.5/4) | Khan Academy (Khanmigo), Carnegie Learning | $8 | 3–7 years | Medium (FERPA, GDPR) |
 | Entertainment | Mature | Scale (3.5/4) | Netflix, Spotify, Unity, OpenAI | $50 | Immediate | Low |
-| Agriculture | Emerging | Build (1.5/4) | John Deere, Indigo Ag, The Climate Corp | $12 | 5â€“10 years | Lowâ€“Medium |
+| Agriculture | Emerging | Build (1.5/4) | John Deere, Indigo Ag, The Climate Corp | $12 | 5–10 years | Low–Medium |
 | Security | Mature | Scale (4/4) | CrowdStrike, Darktrace, Palo Alto | $55 | Immediate | Medium |
-| Environment | Nascent | Build (1/4) | Google, Planet Labs, ClimateAI | $5 | 5â€“15 years | Low |
+| Environment | Nascent | Build (1/4) | Google, Planet Labs, ClimateAI | $5 | 5–15 years | Low |
 
 ### AI Maturity Level Definitions
 
@@ -1355,28 +1355,28 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 | Domain | Task | AI Best | Human Expert | AI Better? | Since When |
 |--------|------|:-------:|:------------:|:----------:|:----------:|
-| Healthcare | Pneumonia detection (X-ray) | 88% sensitivity | 82% sensitivity | âœ… Yes | 2017 (CheXNet) |
-| Healthcare | Skin cancer classification | 91% AUC | 86% AUC | âœ… Yes | 2017 (Esteva et al.) |
-| Healthcare | Diabetic retinopathy grading | 87% accuracy | 84% accuracy | âœ… Yes | 2016 (Google) |
-| Healthcare | Protein structure prediction | 92% (GDT) | 70% (experimental) | âœ… Yes | 2021 (AlphaFold) |
-| Finance | Fraud transaction detection | 95% recall | 85% recall | âœ… Yes | 2018 (ML ensembles) |
-| Finance | Stock prediction (1-day) | 52-55% accuracy | 50-53% accuracy | âš ï¸ Marginal | Ongoing debate |
-| Finance | Credit risk prediction | 0.89 AUC | 0.72 (scorecard) | âœ… Yes | 2016 (XGBoost) |
-| Transportation | Object detection (CITYSCAPES) | 82% mAP | ~90% mAP | âŒ No | Not yet |
-| Transportation | Traffic flow optimization | 27% reduction | 12% (expert) | âœ… Yes | 2019 (RL-based) |
-| Education | Essay grading (consistency) | 92% agreement | 88% inter-rater | âœ… Yes | 2018 (BERT-based) |
-| Education | Knowledge state estimation | 0.78 AUC | 0.65 (teacher) | âœ… Yes | 2015 (DKT) |
-| Entertainment | Game playing (Go) | Superhuman | 9-dan pro | âœ… Yes | 2016 (AlphaGo) |
-| Entertainment | Game playing (StarCraft II) | Superhuman | Pro player | âœ… Yes | 2019 (AlphaStar) |
-| Entertainment | Image generation quality | 7.5 (FID) | 5.0 (pro artist) | âŒ No | Not yet |
-| Agriculture | Crop disease detection | 95% accuracy | 85% accuracy | âœ… Yes | 2020 (CNN-based) |
-| Agriculture | Yield prediction | 92% RÂ² | 80% (human) | âœ… Yes | 2019 |
-| Security | Malware classification | 96% F1 | 88% F1 (analyst) | âœ… Yes | 2017 |
-| Security | Geospatial malware detection | 0.99 AUC | 0.92 (signature) | âœ… Yes | 2018 |
-| Security | Face recognition | 99.8% | 97.5% | âœ… Yes | 2015 (DeepFace) |
-| Environment | Weather forecasting (10-day) | 90.3% ACC | 89.9% (NWP) | âš ï¸ Marginal (faster) | 2023 (GraphCast) |
-| Environment | Bird species identification | 92% accuracy | 95% (expert) | âŒ No | Not yet |
-| Environment | Methane detection (hyperspectral) | 94% recall | 70% (ground survey) | âœ… Yes | 2022 |
+| Healthcare | Pneumonia detection (X-ray) | 88% sensitivity | 82% sensitivity | ✅ Yes | 2017 (CheXNet) |
+| Healthcare | Skin cancer classification | 91% AUC | 86% AUC | ✅ Yes | 2017 (Esteva et al.) |
+| Healthcare | Diabetic retinopathy grading | 87% accuracy | 84% accuracy | ✅ Yes | 2016 (Google) |
+| Healthcare | Protein structure prediction | 92% (GDT) | 70% (experimental) | ✅ Yes | 2021 (AlphaFold) |
+| Finance | Fraud transaction detection | 95% recall | 85% recall | ✅ Yes | 2018 (ML ensembles) |
+| Finance | Stock prediction (1-day) | 52-55% accuracy | 50-53% accuracy | ⚠️ Marginal | Ongoing debate |
+| Finance | Credit risk prediction | 0.89 AUC | 0.72 (scorecard) | ✅ Yes | 2016 (XGBoost) |
+| Transportation | Object detection (CITYSCAPES) | 82% mAP | ~90% mAP | ❌ No | Not yet |
+| Transportation | Traffic flow optimization | 27% reduction | 12% (expert) | ✅ Yes | 2019 (RL-based) |
+| Education | Essay grading (consistency) | 92% agreement | 88% inter-rater | ✅ Yes | 2018 (BERT-based) |
+| Education | Knowledge state estimation | 0.78 AUC | 0.65 (teacher) | ✅ Yes | 2015 (DKT) |
+| Entertainment | Game playing (Go) | Superhuman | 9-dan pro | ✅ Yes | 2016 (AlphaGo) |
+| Entertainment | Game playing (StarCraft II) | Superhuman | Pro player | ✅ Yes | 2019 (AlphaStar) |
+| Entertainment | Image generation quality | 7.5 (FID) | 5.0 (pro artist) | ❌ No | Not yet |
+| Agriculture | Crop disease detection | 95% accuracy | 85% accuracy | ✅ Yes | 2020 (CNN-based) |
+| Agriculture | Yield prediction | 92% R² | 80% (human) | ✅ Yes | 2019 |
+| Security | Malware classification | 96% F1 | 88% F1 (analyst) | ✅ Yes | 2017 |
+| Security | Geospatial malware detection | 0.99 AUC | 0.92 (signature) | ✅ Yes | 2018 |
+| Security | Face recognition | 99.8% | 97.5% | ✅ Yes | 2015 (DeepFace) |
+| Environment | Weather forecasting (10-day) | 90.3% ACC | 89.9% (NWP) | ⚠️ Marginal (faster) | 2023 (GraphCast) |
+| Environment | Bird species identification | 92% accuracy | 95% (expert) | ❌ No | Not yet |
+| Environment | Methane detection (hyperspectral) | 94% recall | 70% (ground survey) | ✅ Yes | 2022 |
 
 > **Key Insight:** AI surpasses humans on narrow, well-defined tasks with abundant labeled data. It underperforms on open-ended, multi-modal tasks requiring common sense, physical intuition, or creativity. The most effective deployments combine AI + human (centaurs) rather than AI alone.
 
@@ -1451,7 +1451,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 | Data collection | Oversample minority via active learning | Target labels hardest to classify; reduces annotation cost |
 | Preprocessing | SMOTE, ADASYN, class weights | Apply carefully → SMOTE can generate unrealistic samples in high-dimensional spaces |
 | Training | Focal loss, weighted loss, balanced batch sampling | Focal loss down-weights easy examples and focuses on hard misclassifications |
-| Evaluation | Precision-recall AUC, FÎ², lift at k | Never use accuracy for imbalanced problems |
+| Evaluation | Precision-recall AUC, Fβ, lift at k | Never use accuracy for imbalanced problems |
 | Post-processing | Threshold tuning on validation set | Optimize threshold via cost-sensitive decision rule |
 | Deployment | Stratified sampling for monitoring | Ensure minority class appears in monitoring dashboards |
 
@@ -1497,7 +1497,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 **What it does:** Waymo (Alphabet) operates a fully autonomous ride-hailing service (Waymo One) in Phoenix, San Francisco, Los Angeles, and Austin. Their 5th-generation system (Waymo Driver) handles all SAE Level 4 driving tasks within its Operational Design Domain.
 
 **Architecture:**
-- **Perception:** 29 cameras (360Â° visibility, 500m range), 6 LIDAR (short, medium, long-range), 6 radar (weather-robust detection). Multi-modal fusion with learned uncertainty weighting.
+- **Perception:** 29 cameras (360° visibility, 500m range), 6 LIDAR (short, medium, long-range), 6 radar (weather-robust detection). Multi-modal fusion with learned uncertainty weighting.
 - **Localization:** GPS + IMU + LIDAR point-cloud matching against pre-mapped HD maps (lane geometry, traffic signs, curb heights, crosswalks). Sub-10cm accuracy.
 - **Prediction:** VectorNet / Scene Transformer models predict future trajectories of all agents 8 seconds ahead. Multi-modal outputs (8-64 possible paths per agent) with learned probabilities.
 - **Planning:** Behavior planner selects from a learned policy. Motion planner optimizes a trajectory over cost functions (safety, comfort, progress, rule compliance). Model Predictive Control executes at 100 Hz.
@@ -1559,7 +1559,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 | Transportation | Perception, planning, control | CNN, Transformer, MPC | Disengagement rate, MPdI, mAP | Safety certification, edge cases | Embedded system (vehicle) |
 | Education | Personalization, assessment | BKT, DKT, BERT | AUC for knowledge state, learning gain | Generalization across curricula | SaaS platform |
 | Entertainment | Content generation, game AI | Diffusion, MCTS, Transformer | FID, Elo rating, engagement time | Copyright, authenticity | Content pipeline / game engine |
-| Agriculture | Crop monitoring, yield prediction | CNN, LSTM, k-means | F1 per disease, RÂ² for yield | Connectivity, small farm access | Drone + IoT + cloud dashboard |
+| Agriculture | Crop monitoring, yield prediction | CNN, LSTM, k-means | F1 per disease, R² for yield | Connectivity, small farm access | Drone + IoT + cloud dashboard |
 | Security | Threat detection, authentication | IF, AE, GNN, biometric | TPR, FPR, MTTD, MTTR | Adversarial evasion, privacy | SIEM integration / endpoint agent |
 | Environment | Climate, conservation | GNN, CNN, RL | RMSE, ACC, forecast lead time | Rare event prediction, data gaps | API / research tool |
 
@@ -1582,16 +1582,16 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 | Technique | ML | CV | NLP | RL | GNN | GenAI | IoT |
 |-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Medical Diagnosis | âœ… | âœ… | âœ… | âŒ | âŒ | âœ… | âœ… |
-| Fraud Detection | âœ… | âŒ | âœ… | âŒ | âœ… | âœ… | âŒ |
-| Autonomous Vehicles | âœ… | âœ… | âŒ | âœ… | âŒ | âŒ | âœ… |
-| Personalized Learning | âœ… | âŒ | âœ… | âœ… | âŒ | âœ… | âŒ |
-| Game AI | âœ… | âœ… | âœ… | âœ… | âŒ | âœ… | âŒ |
-| Generative Content | âœ… | âœ… | âœ… | âŒ | âŒ | âœ… | âŒ |
-| Precision Agriculture | âœ… | âœ… | âŒ | âŒ | âŒ | âŒ | âœ… |
-| Network Security | âœ… | âŒ | âœ… | âŒ | âœ… | âœ… | âœ… |
-| Climate Modeling | âœ… | âœ… | âŒ | âŒ | âœ… | âœ… | âœ… |
-| Code Generation | âŒ | âŒ | âœ… | âŒ | âŒ | âœ… | âŒ |
+| Medical Diagnosis | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
+| Fraud Detection | ✅ | ❌ | ✅ | ❌ | ✅ | ✅ | ❌ |
+| Autonomous Vehicles | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ |
+| Personalized Learning | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ | ❌ |
+| Game AI | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
+| Generative Content | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Precision Agriculture | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Network Security | ✅ | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Climate Modeling | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| Code Generation | ❌ | ❌ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 ## Chapter Quiz
 

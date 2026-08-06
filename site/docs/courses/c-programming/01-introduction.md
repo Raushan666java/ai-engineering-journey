@@ -123,7 +123,7 @@ C is the Swiss Army Knife of programming languages. Other languages are like spe
 
 ### 1.1.3 Why C is Still Relevant in 2024+
 
-1. **Operating Systems**: Linux (â‰ˆ95% C), Windows kernel, macOS kernel (XNU)
+1. **Operating Systems**: Linux (≈95% C), Windows kernel, macOS kernel (XNU)
 2. **Embedded Systems**: Microcontrollers, firmware, IoT —” billions of devices run C
 3. **Language Foundation**: C syntax influenced C++, C#, Java, JavaScript, Go, Rust, Swift
 4. **Performance-Critical Code**: Game engines, databases, compilers, real-time systems
@@ -589,7 +589,7 @@ PHASE 6: Code Generation
 | **Lexical Analysis** | O(n) | O(n) | Scans each character exactly once; stores tokens linearly |
 | **Syntax Analysis** | O(n) | O(n) | Recursive descent parsers run in linear time for LL(k) grammars; AST size is proportional to token count |
 | **Semantic Analysis** | O(n) | O(n) | Walks the AST once; symbol table size proportional to declarations |
-| **Optimization** | O(n log n) to O(nÂ²) | O(n) | Some optimizations (register allocation) use graph coloring —” NP-hard in general, but heuristics run near-linear |
+| **Optimization** | O(n log n) to O(n²) | O(n) | Some optimizations (register allocation) use graph coloring —” NP-hard in general, but heuristics run near-linear |
 | **Code Generation** | O(n) | O(n) | Linear traversal of optimized IR; instruction selection is pattern matching |
 | **Overall** | O(n log n) typical | O(n) | Modern compilers use multi-pass architecture where each pass is linear or near-linear |
 
@@ -1247,32 +1247,32 @@ scanf("%lf", &d);          // %lf for double —” CORRECT (NOT %f!)
 | Feature | K&R (1978) | C89/C90 | C99 | C11 | C17 | C23 |
 |---------|-----------|---------|-----|-----|-----|-----|
 | **Year** | 1978 | 1989/1990 | 1999 | 2011 | 2018 | 2024 |
-| **Function prototypes** | âŒ | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **`//` comments** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **`long long` type** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **`_Bool` / `bool`** | âŒ | âŒ | `_Bool` | `_Bool` | `_Bool` | âœ… keyword |
-| **Inline functions** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **Variable-length arrays** | âŒ | âŒ | âœ… | optional | optional | âœ… (mandatory) |
-| **Designated initializers** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **Compound literals** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **`restrict` keyword** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **Anonymous structs/unions** | âŒ | âŒ | âŒ | âœ… | âœ… | âœ… |
-| **`_Static_assert`** | âŒ | âŒ | âŒ | âœ… | âœ… | âœ… (keyword) |
-| **`_Generic`** | âŒ | âŒ | âŒ | âœ… | âœ… | âœ… |
-| **Multithreading** | âŒ | âŒ | âŒ | `_Thread_local`, `<threads.h>` | same | enhanced |
-| **`noreturn`** | âŒ | âŒ | âŒ | `_Noreturn` | `_Noreturn` | `[[noreturn]]` |
-| **`alignas` / `alignof`** | âŒ | âŒ | âŒ | `_Alignas`, `_Alignof` | same | keywords |
-| **`constexpr`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`typeof`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`nullptr`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`#elifdef` / `#elifndef`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`bool` as keyword** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **True/false as keywords** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **Binary literals (0b...)** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`memset_s`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **Digit separators (`'`)** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`[[deprecated]]`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **Trigraphs** | âŒ | âœ… | âœ… | âœ… | âœ… | âŒ removed |
+| **Function prototypes** | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **`//` comments** | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **`long long` type** | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **`_Bool` / `bool`** | ❌ | ❌ | `_Bool` | `_Bool` | `_Bool` | ✅ keyword |
+| **Inline functions** | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **Variable-length arrays** | ❌ | ❌ | ✅ | optional | optional | ✅ (mandatory) |
+| **Designated initializers** | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **Compound literals** | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **`restrict` keyword** | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **Anonymous structs/unions** | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| **`_Static_assert`** | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ (keyword) |
+| **`_Generic`** | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| **Multithreading** | ❌ | ❌ | ❌ | `_Thread_local`, `<threads.h>` | same | enhanced |
+| **`noreturn`** | ❌ | ❌ | ❌ | `_Noreturn` | `_Noreturn` | `[[noreturn]]` |
+| **`alignas` / `alignof`** | ❌ | ❌ | ❌ | `_Alignas`, `_Alignof` | same | keywords |
+| **`constexpr`** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **`typeof`** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **`nullptr`** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **`#elifdef` / `#elifndef`** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **`bool` as keyword** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **True/false as keywords** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **Binary literals (0b...)** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **`memset_s`** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **Digit separators (`'`)** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **`[[deprecated]]`** | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| **Trigraphs** | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ removed |
 
 ### Why C Standards Matter
 
@@ -1396,10 +1396,10 @@ int main(void)   // In C: accepts exactly zero arguments
 `sizeof` is a **compile-time unary operator**, not a function. Parentheses are only needed when the operand is a type name:
 
 ```c
-sizeof(int)       // âœ” Parentheses required for types
-sizeof x          // âœ” Parentheses optional for expressions
-sizeof(x + y)     // âœ” Parentheses optional but common
-sizeof int        // âŒ Syntax error: parentheses required for type names
+sizeof(int)       // ✔ Parentheses required for types
+sizeof x          // ✔ Parentheses optional for expressions
+sizeof(x + y)     // ✔ Parentheses optional but common
+sizeof int        // ❌ Syntax error: parentheses required for type names
 ```
 
 ### Q7: What is undefined behavior (UB) in C?

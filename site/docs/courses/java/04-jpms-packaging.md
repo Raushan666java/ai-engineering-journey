@@ -611,23 +611,23 @@ At startup, the module system resolves dependencies as follows:
         │
         ▼
 [Identifies root modules]
-    â€¢ The main application module (--module/-m)
-    â€¢ Modules listed in --add-modules
-    â€¢ java.base (always a root)
+    • The main application module (--module/-m)
+    • Modules listed in --add-modules
+    • java.base (always a root)
         │
         ▼
 [Resolution phase: reads module-info.class from each JAR]
-    â€¢ Builds a directed graph where nodes are modules
-    â€¢ Edges are "requires" relationships
-    â€¢ Checks for cycles (JPMS does NOT allow module-level cycles)
-    â€¢ Checks that each "requires" target exists
-    â€¢ For each required module, recursively resolves its dependencies
+    • Builds a directed graph where nodes are modules
+    • Edges are "requires" relationships
+    • Checks for cycles (JPMS does NOT allow module-level cycles)
+    • Checks that each "requires" target exists
+    • For each required module, recursively resolves its dependencies
         │
         ▼
 [Validation phase]
-    â€¢ Exactly one version of each module must be present
-    â€¢ No split packages (same package in multiple modules)
-    â€¢ All required modules are readable
+    • Exactly one version of each module must be present
+    • No split packages (same package in multiple modules)
+    • All required modules are readable
         │
         ▼
 [Phase  → ready to run]
@@ -664,7 +664,7 @@ The module graph is a **directed acyclic graph (DAG)**:
 
 ## 4. jlink: Custom Runtime Images
 
-`jlink` creates a custom Java runtime image that contains only the modules needed by your application. This reduces the runtime from ~300 MB (full JDK) to ~30â€“50 MB for a typical application, and enables Java to compete with Go and Rust in containerized deployments.
+`jlink` creates a custom Java runtime image that contains only the modules needed by your application. This reduces the runtime from ~300 MB (full JDK) to ~30–50 MB for a typical application, and enables Java to compete with Go and Rust in containerized deployments.
 
 ### 4.1 Basic jlink Usage
 
@@ -2363,7 +2363,7 @@ The Java Platform Module System represents the most significant architectural ch
 
 - **ServiceLoader**: The standard Java service-provider loading mechanism, contrast with Spring Boot's `SpringFactoriesLoader`, lazy loading via `ServiceLoader.Stream`.
 
-- **jlink**: Custom runtime image creation that reduces JDK size from ~300 MB to ~20â€“50 MB, with options for compression, debug stripping, launcher creation, and header/man-page removal.
+- **jlink**: Custom runtime image creation that reduces JDK size from ~300 MB to ~20–50 MB, with options for compression, debug stripping, launcher creation, and header/man-page removal.
 
 - **jpackage**: Native installer generation for Windows (MSI/EXE), macOS (DMG/PKG), and Linux (DEB/RPM), with bundling of JRE via jlink images.
 

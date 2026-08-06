@@ -323,13 +323,13 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 
 | Standard | Wi-Fi Gen | Year | Freq (GHz) | Channel Width | Max Data Rate | MIMO Streams | Modulation | Subcarriers | Guard Interval |
 |----------|-----------|------|------------|---------------|--------------|-------------|------------|-------------|----------------|
-| 802.11a | WiFi 2 | 1999 | 5 | 20 MHz | 54 Mbps | 1Ã—1 (no MIMO) | OFDM (64-subcarrier) | 52 data + 4 pilot | 800 ns |
-| 802.11b | WiFi 1 | 1999 | 2.4 | 20 MHz | 11 Mbps | 1Ã—1 (no MIMO) | DSSS (CCK) | N/A (DSSS) | N/A |
-| 802.11g | WiFi 3 | 2003 | 2.4 | 20 MHz | 54 Mbps | 1Ã—1 (no MIMO) | OFDM (64-subcarrier) | 52 data + 4 pilot | 800 ns |
-| 802.11n | WiFi 4 | 2009 | 2.4/5 | 20/40 MHz | 600 Mbps | 4Ã—4 | MIMO-OFDM (64-subcarrier) | 52/108 data | 400/800 ns |
-| 802.11ac | WiFi 5 | 2013 | 5 | 20/40/80/160 MHz | 6.9 Gbps | 8Ã—8 (MU-MIMO DL) | MIMO-OFDM (256-subcarrier) | 234/468 | 400/800 ns |
-| 802.11ax | WiFi 6 | 2019 | 2.4/5/6 | 20/40/80/160 MHz | 9.6 Gbps | 8Ã—8 (MU-MIMO DL+UL) | OFDMA (1024-QAM) | 234/468/936/1872 | 800/1600/3200 ns |
-| 802.11be | WiFi 7 | 2024 | 2.4/5/6 | 20/40/80/160/320 MHz | 46 Gbps | 16Ã—16 (CMU-MIMO) | 4096-QAM OFDMA | 468/936/1872/3744 | 800/1600/3200 ns |
+| 802.11a | WiFi 2 | 1999 | 5 | 20 MHz | 54 Mbps | 1×1 (no MIMO) | OFDM (64-subcarrier) | 52 data + 4 pilot | 800 ns |
+| 802.11b | WiFi 1 | 1999 | 2.4 | 20 MHz | 11 Mbps | 1×1 (no MIMO) | DSSS (CCK) | N/A (DSSS) | N/A |
+| 802.11g | WiFi 3 | 2003 | 2.4 | 20 MHz | 54 Mbps | 1×1 (no MIMO) | OFDM (64-subcarrier) | 52 data + 4 pilot | 800 ns |
+| 802.11n | WiFi 4 | 2009 | 2.4/5 | 20/40 MHz | 600 Mbps | 4×4 | MIMO-OFDM (64-subcarrier) | 52/108 data | 400/800 ns |
+| 802.11ac | WiFi 5 | 2013 | 5 | 20/40/80/160 MHz | 6.9 Gbps | 8×8 (MU-MIMO DL) | MIMO-OFDM (256-subcarrier) | 234/468 | 400/800 ns |
+| 802.11ax | WiFi 6 | 2019 | 2.4/5/6 | 20/40/80/160 MHz | 9.6 Gbps | 8×8 (MU-MIMO DL+UL) | OFDMA (1024-QAM) | 234/468/936/1872 | 800/1600/3200 ns |
+| 802.11be | WiFi 7 | 2024 | 2.4/5/6 | 20/40/80/160/320 MHz | 46 Gbps | 16×16 (CMU-MIMO) | 4096-QAM OFDMA | 468/936/1872/3744 | 800/1600/3200 ns |
 
 ### 12.3.2 Complexity Analysis
 
@@ -340,7 +340,7 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 
 **QAM Order**: Each bit increase in QAM order (e.g., 256-QAM → 512-QAM → 1024-QAM) adds 1 bit per subcarrier per symbol. Data rate scales logarithmically with QAM order: $O(\log_2 M)$. Higher QAM requires better SNR → at range, the link falls back to lower QAM.
 
-**Why WiFi 7 reaches 46 Gbps**: 320 MHz Ã— 16 streams Ã— 4096-QAM (12 bits/symbol) Ã— 5/6 code rate Ã— OFDMA efficiency â‰ˆ 46 Gbps. The 320 MHz channel alone (doubled from WiFi 6's 160 MHz) doubles throughput. 16Ã—16 MIMO doubles it again vs WiFi 6's 8Ã—8. 4096-QAM adds ~20% more bits per symbol than 1024-QAM.
+**Why WiFi 7 reaches 46 Gbps**: 320 MHz × 16 streams × 4096-QAM (12 bits/symbol) × 5/6 code rate × OFDMA efficiency ≈ 46 Gbps. The 320 MHz channel alone (doubled from WiFi 6's 160 MHz) doubles throughput. 16×16 MIMO doubles it again vs WiFi 6's 8×8. 4096-QAM adds ~20% more bits per symbol than 1024-QAM.
 
 ### 12.3.3 A&D of Wi-Fi Standards
 
@@ -350,10 +350,10 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 | 802.11b | Longest range at 2.4 GHz, wide device support | Only 11 Mbps, no OFDM, 3 non-overlapping channels |
 | 802.11a | Clean 5 GHz band, 54 Mbps, 24 non-overlapping channels | Shorter range (higher freq), no 2.4 GHz backward compatibility |
 | 802.11g | 54 Mbps at 2.4 GHz, backward compatible with 11b | Same crowded 3-channel limitation |
-| 802.11n | First MIMO (4Ã—4), dual-band, 40 MHz channels | Legacy preamble reduces efficiency with mixed clients |
+| 802.11n | First MIMO (4×4), dual-band, 40 MHz channels | Legacy preamble reduces efficiency with mixed clients |
 | 802.11ac | MU-MIMO DL, 160 MHz, 256-QAM, 6.9 Gbps | 5 GHz only, no OFDMA, UL still SU-MIMO |
 | 802.11ax (WiFi 6) | OFDMA, 1024-QAM, 6 GHz band, TWT, UL MU-MIMO | Higher complexity, needs WiFi 6 clients to benefit |
-| 802.11be (WiFi 7) | 320 MHz, 4096-QAM, 16Ã—16 MIMO, multi-link, 46 Gbps | Early adoption, expensive hardware, backward compatibility overhead |
+| 802.11be (WiFi 7) | 320 MHz, 4096-QAM, 16×16 MIMO, multi-link, 46 Gbps | Early adoption, expensive hardware, backward compatibility overhead |
 ## 12.4 CSMA/CA → Carrier Sense Multiple Access with Collision Avoidance
 
 WiFi uses CSMA/CA instead of CSMA/CD because wireless transceivers cannot listen while transmitting (half-duplex), making collision detection impossible. Instead of detecting collisions after they occur, CSMA/CA tries to prevent them before transmission.
@@ -364,8 +364,8 @@ WiFi uses CSMA/CA instead of CSMA/CD because wireless transceivers cannot listen
 **NAV (Network Allocation Vector)**: A virtual carrier-sense mechanism. Each station maintains a NAV counter indicating how long the medium will be busy. Stations set their NAV based on the Duration field in received frames. NAV = "the channel will be busy for this many microseconds." A station defers its own transmission while NAV > 0. This prevents collisions even when stations cannot hear each other's physical signals.
 
 **Inter-Frame Spacing (IFS)**:
-- **SIFS (Short IFS)**: 10 Âµs (802.11b/g) or 16 Âµs (802.11a/n/ac/ax). Used for ACK, CTS, and data frame bursts.
-- **DIFS (DCF IFS)**: 50 Âµs (802.11b) or 34 Âµs (802.11a/g). SIFS + 2 Ã— slot time. Stations wait DIFS before starting backoff.
+- **SIFS (Short IFS)**: 10 µs (802.11b/g) or 16 µs (802.11a/n/ac/ax). Used for ACK, CTS, and data frame bursts.
+- **DIFS (DCF IFS)**: 50 µs (802.11b) or 34 µs (802.11a/g). SIFS + 2 × slot time. Stations wait DIFS before starting backoff.
 - **EIFS (Extended IFS)**: Used after a frame reception error, giving time for the receiver to send ACK.
 
 **Backoff Procedure**:
@@ -390,11 +390,11 @@ Imagine a group conversation where only one person speaks at a time:
 ### 12.4.3 Numbered Steps: CSMA/CA Transmission
 
 
-1. **Physical Carrier Sense**: Check if the medium is idle for DIFS duration (34 Âµs for 802.11a/g).
+1. **Physical Carrier Sense**: Check if the medium is idle for DIFS duration (34 µs for 802.11a/g).
 2. **Backoff Selection**: If medium was busy or this is a retransmission, select backoff $B = \text{random}[0, CW]$ where CW starts at $CW_{min} = 15$.
-3. **Backoff Countdown**: Decrement $B$ each idle slot time (9 Âµs for 802.11a/g). If medium becomes busy, freeze $B$.
+3. **Backoff Countdown**: Decrement $B$ each idle slot time (9 µs for 802.11a/g). If medium becomes busy, freeze $B$.
 4. **Transmission**: When $B = 0$, transmit the frame.
-5. **ACK Wait**: Wait for ACK within SIFS + ACK_Timeout (typically ~50 Âµs).
+5. **ACK Wait**: Wait for ACK within SIFS + ACK_Timeout (typically ~50 µs).
 6. **Success**: If ACK received, set $CW = CW_{min}$ for next frame.
 7. **Collision**: If no ACK, double $CW = \min(2 \times CW, 1023)$. Increment retry count. Go to step 2.
 8. **Drop**: After retry limit ($\text{short} = 7$, $\text{long} = 4$), discard the frame.
@@ -453,24 +453,24 @@ procedure csma_ca_transmit(frame, sta)
 ### 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations
 
 
-Parameters: Slot time = 9 Âµs, DIFS = 34 Âµs, SIFS = 16 Âµs, CW_min = 15, CW_max = 1023.
-Data frame transmission time = 200 Âµs (1500-byte frame at 54 Mbps). ACK = 30 Âµs.
+Parameters: Slot time = 9 µs, DIFS = 34 µs, SIFS = 16 µs, CW_min = 15, CW_max = 1023.
+Data frame transmission time = 200 µs (1500-byte frame at 54 Mbps). ACK = 30 µs.
 
 Three stations (A, B, C) all have a frame to send. The medium starts idle.
 
-| Time (Âµs) | Event | Station A Backoff | Station B Backoff | Station C Backoff | Medium State |
+| Time (µs) | Event | Station A Backoff | Station B Backoff | Station C Backoff | Medium State |
 |-----------|-------|------------------|------------------|------------------|-------------|
 | 0 | DIFS idle period starts | → | → | → | IDLE |
 | 34 | DIFS ends, all pick backoff | B=7 | B=3 | B=12 | IDLE |
-| 43 | Slot 1 decrement (9 Âµs) | 6 | 2 | 11 | IDLE |
+| 43 | Slot 1 decrement (9 µs) | 6 | 2 | 11 | IDLE |
 | 52 | Slot 2 decrement | 5 | 1 | 10 | IDLE |
 | 61 | Slot 3 decrement | 4 | 0 | 9 | IDLE |
 | 61 | B backoff reaches 0 | 4 | **TRANSMIT** | 9 | BUSY |
 | 61 | A and C freeze backoff | 4 (frozen) | → | 9 (frozen) | BUSY (B data) |
 | 261 | B transmission ends | 4 (frozen) | → | 9 (frozen) | IDLE |
-| 277 | SIFS (16 Âµs) | 4 (frozen) | → | 9 (frozen) | IDLE (ACK) |
+| 277 | SIFS (16 µs) | 4 (frozen) | → | 9 (frozen) | IDLE (ACK) |
 | 307 | ACK from B's AP | 4 (frozen) | → | 9 (frozen) | IDLE |
-| 341 | DIFS (34 Âµs) after ACK | → | → | → | IDLE |
+| 341 | DIFS (34 µs) after ACK | → | → | → | IDLE |
 | 341 | A and C resume backoff | 4 | → | 9 | IDLE |
 | 350 | Slot 1 decrement | 3 | → | 8 | IDLE |
 | 359 | Slot 2 decrement | 2 | → | 7 | IDLE |
@@ -483,7 +483,7 @@ Three stations (A, B, C) all have a frame to send. The medium starts idle.
 | 627 | C resumes and decrements | → | → | 5→4→3→2→1→0 | IDLE |
 | 672 | C transmits at slot 0 | → | → | **TRANSMIT** | BUSY |
 
-Total time for 3 stations: 672 Âµs. Without CSMA/CA (all transmitting simultaneously), all 3 frames would collide. CSMA/CA serialized the transmissions with ~100% channel utilization (minus overhead).
+Total time for 3 stations: 672 µs. Without CSMA/CA (all transmitting simultaneously), all 3 frames would collide. CSMA/CA serialized the transmissions with ~100% channel utilization (minus overhead).
 
 ### 12.4.6 C++ Implementation: CSMA/CA Simulator
 
@@ -938,7 +938,7 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 | Field | Size | Description |
 |-------|------|-------------|
 | Frame Control | 2 B | Protocol version, Type, Subtype, To DS, From DS, More Frag, Retry, Pwr Mgmt, More Data, Protected Frame, Order |
-| Duration | 2 B | NAV reservation time (Âµs) or STA ID (PS-Poll) |
+| Duration | 2 B | NAV reservation time (µs) or STA ID (PS-Poll) |
 | Address 1 | 6 B | Receiver address (RA) |
 | Address 2 | 6 B | Transmitter address (TA) |
 | Address 3 | 6 B | Varies by frame type → usually BSSID, DA, or SA |
@@ -1016,18 +1016,18 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 
 1. **Sender RTS**: Sender transmits RTS (20 bytes) to receiver. RTS contains Receiver Address and Duration (= time needed for entire exchange).
-2. **Receiver CTS**: Receiver waits SIFS (16 Âµs), transmits CTS (14 bytes) to sender. CTS copies the Duration field, subtracting SIFS + CTS time. All other stations that hear CTS set their NAV.
+2. **Receiver CTS**: Receiver waits SIFS (16 µs), transmits CTS (14 bytes) to sender. CTS copies the Duration field, subtracting SIFS + CTS time. All other stations that hear CTS set their NAV.
 3. **Data Transmission**: Sender waits SIFS after CTS, transmits data frame. All stations that heard RTS (but not CTS) or CTS (but not RTS) maintain their NAV.
 4. **ACK**: Receiver waits SIFS after data, transmits ACK. Stations update their NAV based on the Duration field (typically 0, indicating end of exchange).
 
-**When RTS/CTS is used**: RTS threshold is typically 2346 bytes (disabled by default on many devices). For small frames, RTS/CTS overhead (RTS + CTS â‰ˆ 34 bytes + 2Ã—SIFS = 52 Âµs plus contention) exceeds its benefit. RTS/CTS is recommended in dense or high-interference environments.
+**When RTS/CTS is used**: RTS threshold is typically 2346 bytes (disabled by default on many devices). For small frames, RTS/CTS overhead (RTS + CTS ≈ 34 bytes + 2×SIFS = 52 µs plus contention) exceeds its benefit. RTS/CTS is recommended in dense or high-interference environments.
 
 ### 12.6.5 Dry Run Trace: RTS/CTS Exchange
 
 
 Scenario: Station A (STA A) sends to AP. Station C is hidden from A but can hear AP.
 
-| Time (Âµs) | Sender | Frame | Duration (Âµs) | NAV at A | NAV at AP | NAV at C | Notes |
+| Time (µs) | Sender | Frame | Duration (µs) | NAV at A | NAV at AP | NAV at C | Notes |
 |-----------|--------|-------|--------------|----------|-----------|----------|-------|
 | 0 | A | RTS to AP | 400 | → | → | → | A sends RTS |
 | 16 | → | SIFS | → | → | → | → | Inter-frame spacing |
@@ -1038,10 +1038,10 @@ Scenario: Station A (STA A) sends to AP. Station C is hidden from A but can hear
 | 48 | AP | ACK to A | 0 | → | → | 0 | NAV cleared by C |
 | 370 | → | End | → | → | → | → | C may now contend |
 
-Duration calculation: RTS duration = Data(338) + SIFS(16) + ACK(30) + 3Ã—SIFS(48) = 400 Âµs.
-CTS duration = 400 - SIFS(16) - CTS_time(14B @ 54 Mbps â‰ˆ 4 Âµs) â‰ˆ 370 Âµs (rounding).
+Duration calculation: RTS duration = Data(338) + SIFS(16) + ACK(30) + 3×SIFS(48) = 400 µs.
+CTS duration = 400 - SIFS(16) - CTS_time(14B @ 54 Mbps ≈ 4 µs) ≈ 370 µs (rounding).
 
-During the entire exchange (0-370 Âµs), Station C defers because its NAV > 0. The hidden terminal collision is avoided.
+During the entire exchange (0-370 µs), Station C defers because its NAV > 0. The hidden terminal collision is avoided.
 
 ### 12.6.6 Pseudocode: RTS/CTS Protocol
 
@@ -1083,7 +1083,7 @@ procedure rts_cts_send(data_frame, receiver)
 **RTS Collision (Hidden Terminals Still Colliding)**:
 Two hidden stations (A and C) both sense the medium as idle (neither hears the other). Both send RTS to the AP at the same time. The AP receives garbled data. Both A and C time out waiting for CTS and double their CW. After backoff, the one with the smaller backoff wins. RTS frames themselves are short (20 bytes), so the collision is brief, but it does happen.
 
-**Non-RTS/CTS Hidden Terminal**: Without RTS/CTS, hidden stations A and C transmit data frames simultaneously. Both frames collide at the AP. Neither A nor C receives an ACK. Both double CW and retry. They may collide again if they pick the same backoff value (probability â‰ˆ 1/CW). With CW=15, P(same backoff) â‰ˆ 6.7%.
+**Non-RTS/CTS Hidden Terminal**: Without RTS/CTS, hidden stations A and C transmit data frames simultaneously. Both frames collide at the AP. Neither A nor C receives an ACK. Both double CW and retry. They may collide again if they pick the same backoff value (probability ≈ 1/CW). With CW=15, P(same backoff) ≈ 6.7%.
 
 **Exposed Terminal with RTS/CTS**: Station C hears B's RTS to AP A. C defers (setting NAV based on RTS duration). But C could safely transmit to D (far from A). RTS/CTS actually makes the exposed terminal problem worse in this case → C defers when it could otherwise transmit.
 
@@ -1149,7 +1149,7 @@ Bluetooth (IEEE 802.15.1) is a short-range wireless technology operating in the 
 - All communication is master-to-slave or slave-to-master. Slaves do not communicate directly.
 - The master determines the frequency-hopping sequence (derived from the master's clock and BD_ADDR).
 - The master polls each slave in turn using a TDD (Time Division Duplex) scheme.
-- Time is divided into 625 Âµs slots (1600 slots/second).
+- Time is divided into 625 µs slots (1600 slots/second).
 - Master transmits in even slots, slave responds in odd slots.
 - Slaves speak only when addressed by the master.
 
@@ -1159,7 +1159,7 @@ Bluetooth (IEEE 802.15.1) is a short-range wireless technology operating in the 
 - BR (Basic Rate): 1 Mbps, GFSK modulation.
 - EDR (Enhanced Data Rate): 2-3 Mbps, DQPSK/8DPSK modulation.
 - BLE (Bluetooth Low Energy 4.0): 1 Mbps, very low power, 40 channels (3 advertising + 37 data).
-- Bluetooth 5: 2 Mbps (LE 2M PHY), 4Ã— range, advertising extensions, mesh networking.
+- Bluetooth 5: 2 Mbps (LE 2M PHY), 4× range, advertising extensions, mesh networking.
 - Bluetooth 5.2: LE Audio, LC3 codec, multi-stream audio.
 - Bluetooth 5.3/5.4: Periodic advertising, encrypted advertising data, isochronous channels.
 
@@ -1548,7 +1548,7 @@ if __name__ == "__main__":
 | HSS (Home Subscriber Server) | Subscriber database, authentication vectors, subscription profiles |
 | PCRF (Policy and Charging Rules Function) | QoS policy, charging rules, gating control |
 
-**OFDMA in LTE Downlink**: 15 kHz subcarrier spacing. Resource Block = 12 subcarriers Ã— 7 OFDM symbols (normal CP) = 84 REs. For 20 MHz bandwidth: 100 RBs available. Each RB carries 84 symbols. With 64-QAM (6 bits/symbol) and code rate 3/4: 84 Ã— 6 Ã— 0.75 = 378 bits per RB per 0.5 ms slot.
+**OFDMA in LTE Downlink**: 15 kHz subcarrier spacing. Resource Block = 12 subcarriers × 7 OFDM symbols (normal CP) = 84 REs. For 20 MHz bandwidth: 100 RBs available. Each RB carries 84 symbols. With 64-QAM (6 bits/symbol) and code rate 3/4: 84 × 6 × 0.75 = 378 bits per RB per 0.5 ms slot.
 
 **SC-FDMA in LTE Uplink**: Single-carrier FDMA reduces PAPR (Peak-to-Average Power Ratio), improving battery life and power amplifier efficiency compared to OFDMA.
 
@@ -1561,11 +1561,11 @@ if __name__ == "__main__":
 |----------|----------|---------|-------------|---------|----------|
 | eMBB | 20 Gbps | 4 ms | 99.9% | → | Video streaming, AR/VR |
 | uRLLC | → | 1 ms | 99.999% | → | Industrial control, autonomous driving |
-| mMTC | → | → | → | 1M/kmÂ² | IoT sensors, smart city |
+| mMTC | → | → | → | 1M/km² | IoT sensors, smart city |
 
 **Flexible Numerology**: Subcarrier spacing = $15 \times 2^\mu$ kHz.
 
-| $\mu$ | SCS (kHz) | Symbol Duration (Âµs) | Slot Duration (ms) | Max BW (MHz) | Use Case |
+| $\mu$ | SCS (kHz) | Symbol Duration (µs) | Slot Duration (ms) | Max BW (MHz) | Use Case |
 |-------|-----------|---------------------|-------------------|-------------|----------|
 | 0 | 15 | 66.7 | 1 | 50 | LTE coexistence |
 | 1 | 30 | 33.3 | 0.5 | 100 | Urban macro |
@@ -1595,7 +1595,7 @@ if __name__ == "__main__":
 | Subcarrier spacing | 15 kHz fixed | 15-240 kHz flexible |
 | OFDM numerology | Single | Flexible ($15 \times 2^\mu$) |
 | Max carrier bandwidth | 20 MHz (100 MHz with CA) | 100 MHz (sub-6), 400 MHz (mmWave) |
-| MIMO | Up to 8Ã—8 DL, 4Ã—4 UL | Up to 64Ã—64 (massive MIMO) |
+| MIMO | Up to 8×8 DL, 4×4 UL | Up to 64×64 (massive MIMO) |
 | Beamforming | Not in spec (proprietary) | Native (3D beamforming) |
 | Core architecture | EPC (MME, SGW, PGW) | SBA (AMF, SMF, UPF, NRF) |
 | Network slicing | Not supported | Native (end-to-end slices) |
@@ -1604,7 +1604,7 @@ if __name__ == "__main__":
 | Channel access | OFDMA (DL), SC-FDMA (UL) | OFDMA (both DL and UL) |
 | Duplex | FDD primarily | FDD, TDD, flexible duplex |
 | Mobility | 350 km/h | 500 km/h |
-| Energy efficiency | Reference | 100Ã— better per bit (target) |
+| Energy efficiency | Reference | 100× better per bit (target) |
 
 ### 12.9.4 Real-World Analogy: Highway System
 
@@ -1721,7 +1721,7 @@ Total handoffs: 2
 | Frequency bands | 2.4, 5, 6 GHz | 2.4 GHz ISM | 700-2600 MHz, 24-47 GHz |
 | Channel access | CSMA/CA contention | Master-slave TDMA/FHSS | Scheduled OFDMA |
 | Mobility support | Low (walking speed) | Very low (static) | High (500 km/h for 5G) |
-| Handover | Roaming between APs (â‰ˆ100 ms) | Connection transfer (â‰ˆ3 s) | Seamless handover (<50 ms 5G) |
+| Handover | Roaming between APs (≈100 ms) | Connection transfer (≈3 s) | Seamless handover (<50 ms 5G) |
 | Security | WPA3 (AES-SAE) | Security Manager (AES-CCM) | 5G-AKA, IPsec |
 | Infrastructure | AP + DS (autonomous) | Master-slave (ad-hoc) | eNB/gNB + Core Network |
 | Cost per bit | Very low | Moderate | Highest |
@@ -1732,7 +1732,7 @@ Total handoffs: 2
 
 | Requirement | Best Choice | Why |
 |-------------|-------------|-----|
-| File transfer at close range (home) | WiFi (802.11ac/ax) | 100-1000Ã— faster than Bluetooth |
+| File transfer at close range (home) | WiFi (802.11ac/ax) | 100-1000× faster than Bluetooth |
 | Wireless headset (phone) | Bluetooth | Designed for audio, low power |
 | Wireless headphones (lossless) | Bluetooth with LDAC/LC3 | Sufficient for CD-quality audio |
 | Large IoT deployment | BLE or LoRaWAN | BLE for indoor, LoRaWAN for outdoor |
@@ -1762,7 +1762,7 @@ Total handoffs: 2
 
 
 **Answer**: MIMO (Multiple Input Multiple Output) uses multiple antennas at both transmitter and receiver. Three benefits:
-- **Spatial multiplexing**: Multiple data streams transmitted simultaneously over the same frequency → throughput increases linearly with stream count (up to 8Ã— in WiFi 6, 16Ã— in WiFi 7, 64Ã— in 5G).
+- **Spatial multiplexing**: Multiple data streams transmitted simultaneously over the same frequency → throughput increases linearly with stream count (up to 8× in WiFi 6, 16× in WiFi 7, 64× in 5G).
 - **Spatial diversity**: Same data sent over multiple paths → improves reliability and range.
 - **Beamforming**: Weight antenna signals to focus energy in a specific direction → improves SNR and reduces interference.
 
@@ -1771,7 +1771,7 @@ Total handoffs: 2
 
 **Answer**: Orthogonal Frequency Division Multiple Access divides a channel into smaller sub-channels (Resource Units, RUs) that can be allocated to different users simultaneously. In WiFi 5 (OFDM), only one user could transmit per channel per slot. WiFi 6 (OFDMA) allows 9 users (20 MHz) to 74 users (160 MHz) to transmit simultaneously.
 
-Real-world benefit: In a crowded office, OFDMA handles many small packets efficiently. A 20 MHz OFDMA transmission can serve 9 devices simultaneously instead of serializing them (9Ã— latency reduction for small frames).
+Real-world benefit: In a crowded office, OFDMA handles many small packets efficiently. A 20 MHz OFDMA transmission can serve 9 devices simultaneously instead of serializing them (9× latency reduction for small frames).
 
 ### Q6: Compare WiFi and LTE for voice over wireless.
 
@@ -1806,7 +1806,7 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 ### 12.12.3 IoT Wireless Technologies
 
 
-**LoRaWAN**: Long-range (2-15 km), sub-GHz (868/915 MHz), ultra-low power (10+ years on battery). Data rate: 0.25-50 kbps. Use case: smart city parking sensors that report occupancy every 5 minutes. Each transmission costs ~0.01 ÂµAh. A single gateway covers an entire city district.
+**LoRaWAN**: Long-range (2-15 km), sub-GHz (868/915 MHz), ultra-low power (10+ years on battery). Data rate: 0.25-50 kbps. Use case: smart city parking sensors that report occupancy every 5 minutes. Each transmission costs ~0.01 µAh. A single gateway covers an entire city district.
 
 **Zigbee (802.15.4)**: Mesh networking at 2.4 GHz, 250 kbps, 100 m range. Used in smart lighting, thermostats, and door locks. Zigbee Coordinator manages the network; Routers extend coverage; End Devices sleep most of the time. A typical smart home has 20-60 Zigbee devices in a mesh.
 
@@ -1856,7 +1856,7 @@ Roaming allows a mobile device to connect to a visited network. The visited netw
 
 **5G Roaming**: 5G adds roaming based on SEPP (Security Edge Protection Proxy) for signaling security and improved Home Routed / Local Breakout architectures with N32 interface security.
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
 
 - **Avoid 2.4 GHz for dense deployments**: The 2.4 GHz band has only 3 non-overlapping channels. In apartment buildings or offices with many APs, use 5 GHz (more channels, less interference) or 6 GHz (WiFi 6E/7).
 - **WPA3 is not optional for new networks**: WPA2 is still common but vulnerable to KRACK attacks. Deploy WPA3 with SAE for forward secrecy and dictionary-attack resistance.
@@ -1885,10 +1885,10 @@ Roaming allows a mobile device to connect to a visited network. The visited netw
 |----------|------|----------|------|---------|------------|-------------|
 | 802.11b | 1999 | 11 Mbps | No | 20 MHz | DSSS | First mass-market WiFi |
 | 802.11g | 2003 | 54 Mbps | No | 20 MHz | OFDM | 2.4 GHz broadband |
-| 802.11n | 2009 | 600 Mbps | 4Ã—4 | 40 MHz | MIMO-OFDM | Dual-band, MIMO |
-| 802.11ac | 2013 | 6.9 Gbps | 8Ã—8 | 160 MHz | MU-MIMO | 5 GHz Gigabit WiFi |
-| 802.11ax (WiFi 6) | 2019 | 9.6 Gbps | 8Ã—8 | 160 MHz | OFDMA + MU-MIMO | Efficient dense deployment |
-| 802.11be (WiFi 7) | 2024 | 46 Gbps | 16Ã—16 | 320 MHz | 4096-QAM, multi-link | Ultra-high throughput |
+| 802.11n | 2009 | 600 Mbps | 4×4 | 40 MHz | MIMO-OFDM | Dual-band, MIMO |
+| 802.11ac | 2013 | 6.9 Gbps | 8×8 | 160 MHz | MU-MIMO | 5 GHz Gigabit WiFi |
+| 802.11ax (WiFi 6) | 2019 | 9.6 Gbps | 8×8 | 160 MHz | OFDMA + MU-MIMO | Efficient dense deployment |
+| 802.11be (WiFi 7) | 2024 | 46 Gbps | 16×16 | 320 MHz | 4096-QAM, multi-link | Ultra-high throughput |
 
 ## Cross-Application Matrix
 

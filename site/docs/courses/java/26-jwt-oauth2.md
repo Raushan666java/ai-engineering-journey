@@ -109,7 +109,7 @@ flowchart TD
 
 ---
 
-## JWT Ã¢â‚¬â€ JSON Web Token
+## JWT — JSON Web Token
 
 ![OAuth2 Authorization Code Flow with JWT](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/26-jwt-oauth2.png)
 
@@ -124,7 +124,7 @@ A JWT consists of three Base64-URL-encoded segments separated by dots:
 header.payload.signature
 ```
 
-**Header** Ã¢â‚¬â€ describes the signing algorithm and token type:
+**Header** — describes the signing algorithm and token type:
 
 ```json
 {
@@ -134,7 +134,7 @@ header.payload.signature
 }
 ```
 
-**Payload** Ã¢â‚¬â€ contains the claims (statements about the subject):
+**Payload** — contains the claims (statements about the subject):
 
 ```json
 {
@@ -148,7 +148,7 @@ header.payload.signature
 }
 ```
 
-**Signature** Ã¢â‚¬â€ proves the token was issued by a trusted party and has not been tampered with. For HMAC it is computed as:
+**Signature** — proves the token was issued by a trusted party and has not been tampered with. For HMAC it is computed as:
 
 ```
 HMACSHA256(
@@ -291,7 +291,7 @@ import java.util.Map;
 
 public class JjwtTokenCreator {
 
-    // HMAC key Ã¢â‚¬â€ in production, load from a secure vault
+    // HMAC key — in production, load from a secure vault
     private static final SecretKey SECRET_KEY = Keys.hmacShaKeyFor(
         Base64.getDecoder().decode(
             "dGhpcyBpcyBhIHZlcnkgbG9uZyBzZWNyZXQga2V5IGZvciBKU1dTIHRoYXQgbXVzdCBiZSAyNTYgYml0cyBsb25n"))
@@ -590,7 +590,7 @@ public class TokenBlacklist {
     }
 ```
 
-### Token Service Ã¢â‚¬â€ Complete
+### Token Service — Complete
 
 
 ```java
@@ -887,7 +887,7 @@ public class ClientCredentialsFlow {
     }
 
     private String extractAccessToken(String responseBody) {
-        // Simple parsing Ã¢â‚¬â€ use Jackson in production
+        // Simple parsing — use Jackson in production
         int start = responseBody.indexOf("\"access_token\":\"") + 17;
         int end = responseBody.indexOf("\"", start);
         return responseBody.substring(start, end);
@@ -964,7 +964,7 @@ import java.util.Base64;
 public class RopcFlow {
 
     // WARNING: This flow is deprecated in OAuth 2.1.
-    // The client has access to the user's password Ã¢â‚¬â€ a security risk.
+    // The client has access to the user's password — a security risk.
 
     private static final String TOKEN_URL = "https://auth.example.com/token";
     private static final String CLIENT_ID = "legacy-client";
@@ -1778,7 +1778,7 @@ public class IdTokenValidator {
 
         // Standard OIDC claims
         return new IdTokenClaims(
-            claims.getSubject(),           // sub Ã¢â‚¬â€ unique identifier
+            claims.getSubject(),           // sub — unique identifier
             claims.get("name", String.class),
             claims.get("email", String.class),
             claims.get("email_verified", Boolean.class),
@@ -2248,7 +2248,7 @@ public class AccountLinkingService {
                 .orElseGet(() -> createNewUser(provider, providerId, email, name));
         }
 
-        // No email Ã¢â‚¬â€ try by provider + providerId
+        // No email — try by provider + providerId
         return localUserRepository
             .findByProviderAndProviderId(provider, providerId)
             .orElseGet(() -> createNewUser(provider, providerId, email, name));

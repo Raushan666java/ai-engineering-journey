@@ -7,7 +7,7 @@ sidebar_position: 14
 ---
 # Chapter 14: NoSQL Databases
 
-> **Prev:** [Chapter 13â€”Query Processing](13-query-processing.md) | **Next:** [Chapter 15â€”MongoDB](15-mongodb.md)
+> **Prev:** [Chapter 13—Query Processing](13-query-processing.md) | **Next:** [Chapter 15—MongoDB](15-mongodb.md)
 
 ## Learning Objectives
 
@@ -67,7 +67,7 @@ flowchart LR
 
 ---
 
-## 14.1 NoSQL Overview â€” What, Why, When
+## 14.1 NoSQL Overview — What, Why, When
 
 ### 14.1.1 What Is NoSQL?
 
@@ -79,19 +79,19 @@ NoSQL (Not Only SQL) refers to a class of database management systems that do no
 - 2009: Johan Oskarsson popularized the term for distributed non-relational databases
 - 2010s: Shifted from "No SQL" to "Not Only SQL" as systems added SQL-like query support
 
-### 14.1.2 Why NoSQL? â€” The Motivation
+### 14.1.2 Why NoSQL? — The Motivation
 
 
 Relational databases dominated for decades, but three forces drove the NoSQL revolution:
 
 **1. Scale (The Web Scale Problem)**
 - Google, Amazon, Facebook needed petabytes across thousands of servers
-- Relational databases scale vertically (bigger servers) â€” hits hardware limits
-- NoSQL scales horizontally (more servers) â€” commodity hardware, linear cost growth
+- Relational databases scale vertically (bigger servers) — hits hardware limits
+- NoSQL scales horizontally (more servers) — commodity hardware, linear cost growth
 
 **2. Schema Flexibility**
 - Agile development: schemas evolve rapidly, relational migrations are painful
-- Semi-structured data: JSON, XML, logs â€” not a perfect fit for normalized tables
+- Semi-structured data: JSON, XML, logs — not a perfect fit for normalized tables
 - NoSQL uses schema-on-read (interpret structure at query time), not schema-on-write
 
 **3. High Availability**
@@ -118,13 +118,13 @@ Object-Relational Mapping (ORM) tools like Hibernate exist because relational ta
 ```
 Application Data Needs
     |
-    â”œâ”€â”€ Need multi-row ACID transactions? â†’ SQL (PostgreSQL, MySQL)
-    â”œâ”€â”€ Need complex joins and ad-hoc queries? â†’ SQL
-    â”œâ”€â”€ Schema changes weekly? â†’ NoSQL Document
-    â”œâ”€â”€ Data is a connected graph? â†’ NoSQL Graph
-    â”œâ”€â”€ Need 100K+ writes/sec on commodity hardware? â†’ NoSQL Column-Family
-    â”œâ”€â”€ Just need fast key-based lookups? â†’ NoSQL Key-Value
-    â””â”€â”€ Need full-text search ranking? â†’ Elasticsearch (separate category)
+    ├── Need multi-row ACID transactions? → SQL (PostgreSQL, MySQL)
+    ├── Need complex joins and ad-hoc queries? → SQL
+    ├── Schema changes weekly? → NoSQL Document
+    ├── Data is a connected graph? → NoSQL Graph
+    ├── Need 100K+ writes/sec on commodity hardware? → NoSQL Column-Family
+    ├── Just need fast key-based lookups? → NoSQL Key-Value
+    └── Need full-text search ranking? → Elasticsearch (separate category)
 ```
 
 ### 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)
@@ -146,7 +146,7 @@ Scaling: build a bigger library (vertical) or a second library with complex cros
 Boxes stored on pallets labeled with a barcode (key)
 Box contains whatever fits: electronics, clothes, documents (no schema)
 To find a box: scan the barcode (key lookup)
-To find "all blue items": open every box and check (no join â€” scan)
+To find "all blue items": open every box and check (no join — scan)
 Advantage: flexible, fast put/get, scale by adding more pallet racks (horizontal)
 Disadvantage: complex queries require opening many boxes, no global organization
 Scaling: add more racks, shift pallets between racks (rebalancing), no downtime
@@ -158,7 +158,7 @@ Scaling: add more racks, shift pallets between racks (rebalancing), no downtime
 
 ---
 
-## 14.2 SQL vs. NoSQL â€” Head-to-Head Comparison (18 Criteria)
+## 14.2 SQL vs. NoSQL — Head-to-Head Comparison (18 Criteria)
 
 | # | Criteria | SQL (RDBMS) | NoSQL |
 |---|----------|-------------|-------|
@@ -184,7 +184,7 @@ Scaling: add more racks, shift pallets between racks (rebalancing), no downtime
 ### 14.2.1 When Polyglot Persistence Wins
 
 
-Modern applications rarely choose one over the other â€” they use both:
+Modern applications rarely choose one over the other — they use both:
 
 ```python
 # Polyglot persistence stack for an e-commerce platform
@@ -253,10 +253,10 @@ Partition State:
 **Critical Insight:** Partitions *will* happen in distributed systems (network failures, switches dying, cables cut). Since P is unavoidable, you must choose between C and A *during a partition*.
 
 **PACELC Extension** (Daniel Abadi, 2010):
-- If a **P**artition occurs â†’ trade **A**vailability vs **C**onsistency
-- **E**lse (no partition) â†’ trade **L**atency vs **C**onsistency
+- If a **P**artition occurs → trade **A**vailability vs **C**onsistency
+- **E**lse (no partition) → trade **L**atency vs **C**onsistency
 
-### 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables
+### 14.3.3 CAP Trade-off Scenarios — Dry Run Trace Tables
 
 
 **Scenario 1: CP System (e.g., HBase, MongoDB with w=majority)**
@@ -293,7 +293,7 @@ Step | Event                          | Node A (balance) | Node B (balance) | Ac
 
 **Outcome:** Reads from partition B return stale data but never fail. System is AP.
 
-**Scenario 3: CA System (Single-node PostgreSQL) â€” Not Distributed**
+**Scenario 3: CA System (Single-node PostgreSQL) — Not Distributed**
 
 ```
 Initial State: key "balance" = 100 on single server
@@ -308,20 +308,20 @@ Step | Event                          | Value | Action
 
 **Outcome:** When the server is up, data is consistent and available. But a crash = total unavailability. In a true distributed system with partitions, CA is impossible.
 
-### 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P
+### 14.3.4 CAP Theorem — Detailed Explanation of C, A, P
 
 
 **Consistency (in the CAP sense):** Linearizability. All nodes agree on the order of operations and the value of every key. Equivalent to having a single, atomic copy of the data.
 
-**Availability (in the CAP sense):** Every request to a non-failing node returns a response. This does NOT mean "99.999% uptime" â€” it means during a partition, every node that is still reachable will respond (even if the response is stale).
+**Availability (in the CAP sense):** Every request to a non-failing node returns a response. This does NOT mean "99.999% uptime" — it means during a partition, every node that is still reachable will respond (even if the response is stale).
 
 **Partition Tolerance:** The system's ability to function despite nodes being unable to communicate. Without P, a network split takes down the entire system.
 
 **Common Misconception:**
-- âŒ "CAP says you can only have 2 out of 3 at all times."
-- âœ… "CAP says only during a network partition must you choose between C and A. When no partition exists, you can have C + A."
+- ❌ "CAP says you can only have 2 out of 3 at all times."
+- ✅ "CAP says only during a network partition must you choose between C and A. When no partition exists, you can have C + A."
 
-### 14.3.5 CAP Simulator â€” Python
+### 14.3.5 CAP Simulator — Python
 
 
 ```python
@@ -447,7 +447,7 @@ if __name__ == "__main__":
     sim_ap.simulate()
 ```
 
-**Dry Run â€” CP Simulator Output:**
+**Dry Run — CP Simulator Output:**
 ```
 === CAP Simulator: CP ===
 Initial: balance=100 on all 3 nodes
@@ -461,7 +461,7 @@ Initial: balance=100 on all 3 nodes
 [5] Final: All nodes balance=200
 ```
 
-**Dry Run â€” AP Simulator Output:**
+**Dry Run — AP Simulator Output:**
 ```
 === CAP Simulator: AP ===
 Initial: balance=100 on all 3 nodes
@@ -484,7 +484,7 @@ Initial: balance=100 on all 3 nodes
 
 **Why this complexity?** Each node stores its own copy of all keys. During partition, nodes cannot synchronize, so stale reads or unavailability is the trade-off. Healing requires comparing all replicas to find the latest value.
 
-### 14.3.6 CAP Simulator â€” C++
+### 14.3.6 CAP Simulator — C++
 
 
 ```cpp
@@ -614,9 +614,9 @@ int main() {
 - Healing: O(n) to rebuild peer lists + O(n) for data sync
 - Overall: O(n) per operation where n = number of replicas
 
-**Why not O(log n)?** Peer lists are fully connected â€” each node talks to every other node. This gives maximum fault tolerance at the cost of linear-time reconnection.
+**Why not O(log n)?** Peer lists are fully connected — each node talks to every other node. This gives maximum fault tolerance at the cost of linear-time reconnection.
 
-### 14.3.7 CAP Theorem â€” Advantages & Disadvantages
+### 14.3.7 CAP Theorem — Advantages & Disadvantages
 
 
 | Aspect | Advantages | Disadvantages |
@@ -646,7 +646,7 @@ int main() {
 | **Isolation** | Concurrent transactions appear serial | Relaxed; dirty reads possible |
 | **Durability** | Committed data survives failures | Tunable durability (async/sync replication) |
 | **Availability** | Limited during failures or replication lag | Designed for continuous availability |
-| **State** | Consistent state at all times | Soft state â€” changes without input |
+| **State** | Consistent state at all times | Soft state — changes without input |
 | **Schema** | Rigid, predefined | Flexible, dynamic |
 | **Scaling** | Primarily vertical | Horizontal by design |
 | **Model** | Pessimistic (lock data to prevent conflicts) | Optimistic (assume conflicts rare, resolve later) |
@@ -670,7 +670,7 @@ int main() {
 
 **Soft State:** The system state can change over time without any new input, due to background processes (anti-entropy, gossip protocols, hinted handoff replay).
 
-**Eventual Consistency:** If no new writes arrive, all replicas will eventually converge to the same value. There is no time bound â€” "eventually" means "given enough time without updates."
+**Eventual Consistency:** If no new writes arrive, all replicas will eventually converge to the same value. There is no time bound — "eventually" means "given enough time without updates."
 
 ### 14.4.4 When to Choose ACID vs. BASE
 
@@ -688,7 +688,7 @@ int main() {
 - Shopping cart data (losing an item is worse than stale data)
 - Systems where 99.999% uptime is required
 
-**The Middle Ground â€” NewSQL (CockroachDB, Spanner, YugabyteDB):**
+**The Middle Ground — NewSQL (CockroachDB, Spanner, YugabyteDB):**
 These systems attempt to provide both ACID transactions and horizontal scalability by combining:
 - Strong consistency via distributed consensus (Raft, Paxos)
 - Horizontal scaling through automatic sharding
@@ -697,7 +697,7 @@ These systems attempt to provide both ACID transactions and horizontal scalabili
 
 ---
 
-## 14.5 NoSQL Data Models â€” Deep Dive
+## 14.5 NoSQL Data Models — Deep Dive
 
 ### 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)
 
@@ -717,17 +717,17 @@ These systems attempt to provide both ACID transactions and horizontal scalabili
 ```
 
 **Operations:**
-1. GET(key) â†’ Returns value or nil
-2. SET(key, value) â†’ Stores value
-3. DELETE(key) â†’ Removes key
-4. EXISTS(key) â†’ Boolean check
-5. TTL(key, seconds) â†’ Set time-to-live for auto-expiration
+1. GET(key) → Returns value or nil
+2. SET(key, value) → Stores value
+3. DELETE(key) → Removes key
+4. EXISTS(key) → Boolean check
+5. TTL(key, seconds) → Set time-to-live for auto-expiration
 
 **Key Design Principles:**
 - Keys should be meaningful and organized (user:1001:name, not just "1001")
 - Namespace with colons (Redis convention)
 - Size matters: large keys waste memory, small keys collide
-- Query by key only â€” no secondary indexes (unless using DynamoDB GSI)
+- Query by key only — no secondary indexes (unless using DynamoDB GSI)
 
 **Performance:**
 - GET: O(1) amortized (hash table)
@@ -743,9 +743,9 @@ These systems attempt to provide both ACID transactions and horizontal scalabili
 | Scaling | Simple sharding by key hash | No cross-key operations or transactions |
 
 **Edge Cases:**
-- **Hot Keys:** A single key receiving disproportionate traffic â†’ replicate or cache locally
-- **Large Values:** >1MB values cause network and memory pressure â†’ store metadata in KV, blob in S3
-- **Key Collisions:** Two entities with same key â†’ namespace carefully (e.g., `user:{id}:profile`)
+- **Hot Keys:** A single key receiving disproportionate traffic → replicate or cache locally
+- **Large Values:** >1MB values cause network and memory pressure → store metadata in KV, blob in S3
+- **Key Collisions:** Two entities with same key → namespace carefully (e.g., `user:{id}:profile`)
 
 ### 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)
 
@@ -753,7 +753,7 @@ These systems attempt to provide both ACID transactions and horizontal scalabili
 **Data Model:** Semi-structured documents (JSON, BSON, XML). Each document is self-contained with its own schema. Documents in the same collection can have different fields (schema-on-read).
 
 ```javascript
-// MongoDB document â€” product catalog
+// MongoDB document — product catalog
 {
   "_id": ObjectId("507f1f77bcf86cd799439011"),
   "sku": "LAP-2026-001",
@@ -816,10 +816,10 @@ db.products.aggregate([
 | Query Power | Rich query language, secondary indexes, aggregation | Limited JOIN capabilities; denormalization needed |
 
 **Edge Cases:**
-- **Document Size Limit:** MongoDB 16MB limit â†’ use GridFS for larger files
+- **Document Size Limit:** MongoDB 16MB limit → use GridFS for larger files
 - **Nested Array Growth:** Unbounded arrays cause document rewriting overhead
-- **Schema Drift:** Different documents in same collection with wildly different schemas â†’ query complexity increases
-- **Denormalization Consistency:** Duplicated data across documents can diverge â†’ application-level sync needed
+- **Schema Drift:** Different documents in same collection with wildly different schemas → query complexity increases
+- **Denormalization Consistency:** Duplicated data across documents can diverge → application-level sync needed
 
 ### 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)
 
@@ -895,7 +895,7 @@ WHERE sensor_id = 123e4567-e89b-12d3-a456-426614174000
 - Write: O(1) per node (sequential append to commit log + MemTable)
 - Point read by partition key: O(1) (hash lookup)
 - Range read within partition: O(log n) where n = rows in partition
-- Full table scan: O(p * r) where p = partitions, r = rows per partition â€” catastrophic
+- Full table scan: O(p * r) where p = partitions, r = rows per partition — catastrophic
 
 **Why O(1) writes?** Column-family stores append-only. No in-place updates, no locking, no index maintenance during writes. This is why Cassandra achieves millions of writes per second.
 
@@ -906,10 +906,10 @@ WHERE sensor_id = 123e4567-e89b-12d3-a456-426614174000
 | Scalability | Linear scale, add nodes without downtime | Complex compaction tuning; tombstone management |
 
 **Edge Cases:**
-- **Tombstones:** Deletes create tombstones (markers) that persist until compaction â€” too many tombstones degrade read performance
-- **Hot Partitions:** Uneven data distribution causes hotspots â†’ choose partition keys carefully
-- **Large Partitions:** Too many rows in one partition â†’ query latency increases â†’ partition splitting
-- **Hinted Handoff:** If replica is down, coordinator stores hints â†’ replay when node returns
+- **Tombstones:** Deletes create tombstones (markers) that persist until compaction — too many tombstones degrade read performance
+- **Hot Partitions:** Uneven data distribution causes hotspots → choose partition keys carefully
+- **Large Partitions:** Too many rows in one partition → query latency increases → partition splitting
+- **Hinted Handoff:** If replica is down, coordinator stores hints → replay when node returns
 
 ### 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)
 
@@ -932,8 +932,8 @@ WHERE sensor_id = 123e4567-e89b-12d3-a456-426614174000
 
 **Why Graph Databases Excel:**
 - Relationship traversal is O(1) per hop (pointer chasing, not index lookup)
-- SQL (relational) join depth = O(join_cost^depth) â€” exponential with depth
-- Graph traversal depth = O(d * degree) â€” linear with depth
+- SQL (relational) join depth = O(join_cost^depth) — exponential with depth
+- Graph traversal depth = O(d * degree) — linear with depth
 
 **Neo4j Cypher Queries:**
 ```cypher
@@ -971,16 +971,16 @@ RETURN p
 | Flexibility | Add relationships/properties without migrations | Large fan-out nodes (celebrity) cause traversal bottlenecks |
 
 **Edge Cases:**
-- **Super-Node Problem:** A node with millions of edges (e.g., a celebrity on a social graph) â†’ queries through that node are slow â†’ split or limit edge fan-out
-- **Deep Traversal:** Paths longer than 5-10 hops can be expensive â†’ limit query depth
-- **Property Graph vs RDF:** Neo4j uses property graph; RDF stores (Triple Stores) use Subject-Predicate-Object â†’ different query models
+- **Super-Node Problem:** A node with millions of edges (e.g., a celebrity on a social graph) → queries through that node are slow → split or limit edge fan-out
+- **Deep Traversal:** Paths longer than 5-10 hops can be expensive → limit query depth
+- **Property Graph vs RDF:** Neo4j uses property graph; RDF stores (Triple Stores) use Subject-Predicate-Object → different query models
 
-### 14.5.5 NoSQL Types â€” Full Comparison
+### 14.5.5 NoSQL Types — Full Comparison
 
 
 | Criterion | Key-Value | Document | Column-Family | Graph |
 |-----------|-----------|----------|---------------|-------|
-| **Data Unit** | Key â†’ Value | JSON/BSON Document | Row with dynamic columns | Node + Edge |
+| **Data Unit** | Key → Value | JSON/BSON Document | Row with dynamic columns | Node + Edge |
 | **Query By** | Key only | Fields, indexes, aggregation | Partition key, clustering columns | Graph traversal (Cypher, Gremlin) |
 | **Schema** | No schema | Schema-on-read | Per-row flexibility | Flexible |
 | **ACID** | Per-key | Per-document | None (tunable) | Full ACID (Neo4j) |
@@ -993,7 +993,7 @@ RETURN p
 | **Consistency** | Strong per node | Tunable (w=majority) | Tunable (ONE/QUORUM/ALL) | Strong (single master) |
 ---
 
-## 14.6 Consistency Models â€” From Weak to Strong
+## 14.6 Consistency Models — From Weak to Strong
 
 Consistency models define the contract between a distributed data store and its clients regarding what values a read operation may return.
 
@@ -1005,7 +1005,7 @@ Weaker Consistency                          Stronger Consistency
      |                                          |
      v                                          v
 Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizable)
-  â””â”€â”€ BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â””â”€â”€ ACID â”€â”€â”€â”€â”€â”€â”€â”˜
+  └── BASE ──────────────────────────────└── ACID ───────┘
 ```
 
 ### 14.6.2 Strong Consistency (Linearizability)
@@ -1050,9 +1050,9 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 - Anti-entropy interval (seconds to minutes)
 - Hinted handoff replay
 
-**Example â€” DNS Propagation:**
+**Example — DNS Propagation:**
 ```
-1. You update a DNS record for example.com â†’ 1.2.3.4
+1. You update a DNS record for example.com → 1.2.3.4
 2. The authoritative nameserver accepts the write immediately
 3. Caching resolvers worldwide still return the old IP for up to 48 hours (TTL)
 4. Eventually, all resolvers see the new IP (after cache expiry + refresh)
@@ -1091,7 +1091,7 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 3. Reads are routed to replicas that have at least that timestamp
 4. If the local replica is behind, the read is forwarded to a replica that has the update
 
-**Example â€” Comment System:**
+**Example — Comment System:**
 ```
 1. You post a comment on a blog
 2. You refresh the page
@@ -1116,9 +1116,9 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 3. Session state tracks read/write progress (watermarks)
 4. On session expiry, guarantees reset
 
-**Example â€” E-commerce:**
+**Example — E-commerce:**
 ```
-Session 1: You add item to cart â†’ browse â†’ checkout (all operations consistent within session)
+Session 1: You add item to cart → browse → checkout (all operations consistent within session)
 Session 2 (same user on different device): Items in cart may not reflect Session 1's changes
 ```
 
@@ -1134,11 +1134,11 @@ Session 2 (same user on different device): Items in cart may not reflect Session
 2. Subsequent reads are directed to replicas with at least that timestamp
 3. If no replica has a recent enough version, the read waits
 
-**Example â€” Violation (Without Monotonic Reads):**
+**Example — Violation (Without Monotonic Reads):**
 ```
 1. User A reads "balance = 200" from Node 1
 2. Network issue, next read goes to Node 2 (lags behind)
-3. User A reads "balance = 100" â€” violation! Went back in time
+3. User A reads "balance = 100" — violation! Went back in time
 ```
 
 **Used by:** Cassandra (with read consistency > ONE), many distributed databases
@@ -1162,14 +1162,14 @@ Session 2 (same user on different device): Items in cart may not reflect Session
 |------------------|-------------|--------------|----------------------|
 | **Eventual** | O(1) | O(1) | None (async gossip) |
 | **Causal** | O(n) | O(n) | Dependency tracking vector of size n |
-| **Read-Your-Writes** | O(1) â€” O(n) | O(1) | Session state maintenance |
-| **Session** | O(1) â€” O(n) | O(1) | Session watermarks |
-| **Monotonic** | O(1) â€” O(n) | O(1) | Client version tracking |
+| **Read-Your-Writes** | O(1) — O(n) | O(1) | Session state maintenance |
+| **Session** | O(1) — O(n) | O(1) | Session watermarks |
+| **Monotonic** | O(1) — O(n) | O(1) | Client version tracking |
 | **Strong** | O(n) | O(n) | Distributed consensus (Paxos/Raft) |
 
 **Why these complexities?**
 - Strong consistency requires contacting f+1 nodes (where f = maximum tolerable failures) to guarantee the latest value. Each additional node adds a network round-trip.
-- Eventual consistency requires zero coordination â€” just accept the write locally and propagate later. This is why DynamoDB writes are sub-millisecond but reads can be stale.
+- Eventual consistency requires zero coordination — just accept the write locally and propagate later. This is why DynamoDB writes are sub-millisecond but reads can be stale.
 - Causal consistency requires tracking the vector of prior versions (vector clocks), adding O(n) space to each write.
 
 ---
@@ -1185,25 +1185,25 @@ A **vector clock** is a timestamp mechanism for tracking the causal history of d
 
 ```
 Vector Clock: [A:3, B:2, C:1]
-              â†‘    â†‘    â†‘
+              ↑    ↑    ↑
            Node A has 3 updates
            Node B has 2 updates
            Node C has 1 update
 ```
 
-### 14.7.2 How Vector Clocks Work â€” Step by Step
+### 14.7.2 How Vector Clocks Work — Step by Step
 
 
 **Initial State:**
 - Key "cart" = [] (empty), Vector Clock = [A:0, B:0]
 
-**Step 1: Alice adds "item_1" to cart â€” handled by Node A**
+**Step 1: Alice adds "item_1" to cart — handled by Node A**
 ```
 Action: PUT cart=["item_1"], Node A increments counter
 Vector Clock: [A:1, B:0]
 ```
 
-**Step 2: Alice adds "item_2" to cart â€” handled by Node B (network routes differently)**
+**Step 2: Alice adds "item_2" to cart — handled by Node B (network routes differently)**
 ```
 Action: PUT cart=["item_2"], Node B increments counter
 Vector Clock: [A:0, B:1]
@@ -1214,7 +1214,7 @@ Vector Clock: [A:0, B:1]
 Node A's state:  cart=["item_1"], VC=[A:1, B:0]
 Node B's state:  cart=["item_2"], VC=[A:0, B:1]
 
-Comparison: A:1 > A:0 AND B:0 < B:1 â†’ CONCURRENT updates!
+Comparison: A:1 > A:0 AND B:0 < B:1 → CONCURRENT updates!
 Resolution needed: both items should be in cart
 Merge result: cart=["item_1", "item_2"], VC=[A:1, B:1]
 ```
@@ -1224,12 +1224,12 @@ Merge result: cart=["item_1", "item_2"], VC=[A:1, B:1]
 
 | Condition | Meaning | Example |
 |-----------|---------|---------|
-| V1 â‰¤ V2 (all entries â‰¤) | V1 happened before V2 (causal) | [A:1, B:0] â‰¤ [A:1, B:2] |
-| V1 â‰¥ V2 (all entries â‰¥) | V1 happened after V2 (causal) | [A:2, B:1] â‰¥ [A:1, B:1] |
+| V1 ≤ V2 (all entries ≤) | V1 happened before V2 (causal) | [A:1, B:0] ≤ [A:1, B:2] |
+| V1 ≥ V2 (all entries ≥) | V1 happened after V2 (causal) | [A:2, B:1] ≥ [A:1, B:1] |
 | V1 || V2 (some >, some &lt;) | Concurrent (conflict) | [A:2, B:1] || [A:1, B:2] |
 | V1 == V2 | Identical history | [A:1, B:1] == [A:1, B:1] |
 
-### 14.7.4 Vector Clock â€” Dry Run Trace Table
+### 14.7.4 Vector Clock — Dry Run Trace Table
 
 
 ```
@@ -1240,21 +1240,21 @@ Key: "profile:user_42"
 Time | Node A                        | Node B                        | Vector Clock
 -----|-------------------------------|-------------------------------|-------------
 T0   | profile = {name:"Alice"}      | profile = {name:"Alice"}      | [A:0, B:0]
-T1   | Write name="Alice Chen"       | â€”                             | [A:1, B:0]
-T2   | â€”                             | Write age=29                  | [A:0, B:1]
-T3   | Node B sends update â†’ A       | â€”                             | â€”
-T4   | Node A receives from B        | â€”                             | â€”
-T5   | Merge: concurrent!            | â€”                             | [A:1, B:1]
-     | Both changes applied          | â€”                             |
-     | profile = {name:"Alice       | â€”                             |
-     |  Chen", age:29}              | â€”                             |
-T6   | â€”                             | Node A sends update â†’ B       | â€”
-T7   | â€”                             | Node B receives from A         | â€”
-T8   | â€”                             | Merge: concurrent!             | [A:1, B:1]
-     | â€”                             | Both changes, same result      | â€”
+T1   | Write name="Alice Chen"       | —                             | [A:1, B:0]
+T2   | —                             | Write age=29                  | [A:0, B:1]
+T3   | Node B sends update → A       | —                             | —
+T4   | Node A receives from B        | —                             | —
+T5   | Merge: concurrent!            | —                             | [A:1, B:1]
+     | Both changes applied          | —                             |
+     | profile = {name:"Alice       | —                             |
+     |  Chen", age:29}              | —                             |
+T6   | —                             | Node A sends update → B       | —
+T7   | —                             | Node B receives from A         | —
+T8   | —                             | Merge: concurrent!             | [A:1, B:1]
+     | —                             | Both changes, same result      | —
 ```
 
-### 14.7.5 Vector Clock â€” Python Implementation
+### 14.7.5 Vector Clock — Python Implementation
 
 
 ```python
@@ -1346,14 +1346,14 @@ class EventuallyConsistentStore:
             return
 
         if remote_vv.clock <= local.clock:
-            # Remote is older â€” ignore
+            # Remote is older — ignore
             print(f"[{self.node_id}] IGNORE remote (stale): {remote_vv.value}")
         elif local.clock <= remote_vv.clock:
-            # Remote is newer â€” accept
+            # Remote is newer — accept
             self.store[key] = remote_vv
             print(f"[{self.node_id}] ACCEPT remote (newer): {remote_vv.value}")
         else:
-            # CONFLICT â€” concurrent updates
+            # CONFLICT — concurrent updates
             print(f"[{self.node_id}] CONFLICT detected!")
             print(f"  Local:  {local.value} (VC={local.clock})")
             print(f"  Remote: {remote_vv.value} (VC={remote_vv.clock})")
@@ -1388,17 +1388,17 @@ if __name__ == "__main__":
     print("\n2. Node B writes cart = ['item_2'] (concurrent with A)")
     v2 = node_b.put("cart", ["item_2"])
 
-    print("\n3. Node B receives A's update â€” they are concurrent")
+    print("\n3. Node B receives A's update — they are concurrent")
     node_b.merge_remote("cart", v1)
 
-    print("\n4. Node A receives B's update â€” same conflict")
+    print("\n4. Node A receives B's update — same conflict")
     node_a.merge_remote("cart", v2)
 
     print(f"\n5. Final state A: {node_a.get('cart')}")
     print(f"   Final state B: {node_b.get('cart')}")
 ```
 
-**Dry Run â€” Complete Output:**
+**Dry Run — Complete Output:**
 ```
 ============================================================
 VECTOR CLOCK CONFLICT DETECTION DEMO
@@ -1410,13 +1410,13 @@ VECTOR CLOCK CONFLICT DETECTION DEMO
 2. Node B writes cart = ['item_2'] (concurrent with A)
 [B] PUT cart = ['item_2'], VC=[B:1]
 
-3. Node B receives A's update â€” they are concurrent
+3. Node B receives A's update — they are concurrent
 [B] CONFLICT detected!
   Local:  ['item_2'] (VC=[B:1])
   Remote: ['item_1'] (VC=[A:1])
 [B] MERGED: ['item_1', 'item_2'] (VC=[A:1, B:1, B:2])
 
-4. Node A receives B's update â€” same conflict
+4. Node A receives B's update — same conflict
 [A] CONFLICT detected!
   Local:  ['item_1'] (VC=[A:1])
   Remote: ['item_2'] (VC=[B:1])
@@ -1426,7 +1426,7 @@ VECTOR CLOCK CONFLICT DETECTION DEMO
    Final state B: cart=['item_1', 'item_2'] (VC=[A:1, B:1, B:2])
 ```
 
-### 14.7.6 Vector Clock â€” C++ Implementation
+### 14.7.6 Vector Clock — C++ Implementation
 
 
 ```cpp
@@ -1537,7 +1537,7 @@ public:
         auto local = it->second;
 
         if (remote->clock <= local->clock) {
-            // Remote is stale â€” ignore
+            // Remote is stale — ignore
             std::cout << "[" << nodeId << "] IGNORE (stale)\n";
         } else if (local->clock <= remote->clock) {
             // Remote is newer
@@ -1570,7 +1570,7 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- Vector clock comparison (â‰¤, â‰¥, ||): O(m) where m = number of nodes
+- Vector clock comparison (≤, ≥, ||): O(m) where m = number of nodes
 - Vector clock merge: O(m)
 - Space per versioned value: O(m + data_size)
 - Why O(m)? Vector clocks store one counter per node. In a 1000-node cluster, each clock is 1000 entries. This is why DynamoDB uses trimmed clocks and why Riak deprecated vector clocks in favor of dotted version vectors.
@@ -1651,7 +1651,7 @@ Result: Shard 0 has 4 keys, Shard 3 has 2 keys, Shards 1-2 are empty.
 Note: Even with 50% utilization, this distribution is severely skewed!
 ```
 
-**Better Hash Function â€” Consistent Hashing:**
+**Better Hash Function — Consistent Hashing:**
 ```
 Hash ring: 0 to 2^32 - 1
 Both nodes and keys are placed on the ring by hash
@@ -1715,11 +1715,11 @@ function split_shard(shard_id, split_point):
 **Dry Run Trace Table:**
 
 ```
-Range sharding by alphabetical username â€” 3 shards
+Range sharding by alphabetical username — 3 shards
 
-Shard 0: [A, G)   â€” keys starting with A through F
-Shard 1: [G, M)   â€” keys starting with G through L
-Shard 2: [M, Z]   â€” keys starting with M through Z
+Shard 0: [A, G)   — keys starting with A through F
+Shard 1: [G, M)   — keys starting with G through L
+Shard 2: [M, Z]   — keys starting with M through Z
 
 Key     | First Letter | Shard | Actual Shard
 --------|-------------|-------|-------------
@@ -1731,7 +1731,7 @@ Key     | First Letter | Shard | Actual Shard
 "zara"  | 'z' (122)  | [M,Z] | Shard 2
 
 Load: Shard 0 = 2 keys, Shard 1 = 2 keys, Shard 2 = 2 keys
-If "aaron", "abby", "adam"... all go to Shard 0 â€” uneven!
+If "aaron", "abby", "adam"... all go to Shard 0 — uneven!
 ```
 
 **Advantages:**
@@ -1763,8 +1763,8 @@ If "aaron", "abby", "adam"... all go to Shard 0 â€” uneven!
 
 **Use Case:**
 ```
-User in London â†’ read/write to eu-west shard (low latency)
-User in Tokyo â†’ read/write to ap-northeast shard (low latency)
+User in London → read/write to eu-west shard (low latency)
+User in Tokyo → read/write to ap-northeast shard (low latency)
 Cross-region operations: async replication with eventual consistency
 ```
 
@@ -1799,11 +1799,11 @@ function store_user_geo(user_id, geo_shard):
 - User mobility: traveling users hit different regions
 
 **Edge Cases:**
-- **User Mobility:** A user travels from US to Europe â†’ their data should follow or be accessible globally. Solution: read-from-anywhere with async sync back to primary region.
+- **User Mobility:** A user travels from US to Europe → their data should follow or be accessible globally. Solution: read-from-anywhere with async sync back to primary region.
 - **Data Sovereignty:** GDPR requires EU user data stay in EU. Solution: geo-sharding ensures data physically stays within region boundaries.
-- **Disaster Recovery:** A region goes down â†’ traffic rerouted to another region. The backup region may have stale data. Solution: multi-region active-passive or active-active replication.
+- **Disaster Recovery:** A region goes down → traffic rerouted to another region. The backup region may have stale data. Solution: multi-region active-passive or active-active replication.
 
-### 14.8.5 Sharding Strategies â€” Comparison
+### 14.8.5 Sharding Strategies — Comparison
 
 
 | Criterion | Hash Sharding | Range Sharding | Geo Sharding |
@@ -1816,7 +1816,7 @@ function store_user_geo(user_id, geo_shard):
 | **Complexity** | Simple | Moderate | High (cross-region) |
 | **Best For** | General purpose, caching | Time-series, ordered data | Global user base |
 
-### 14.8.6 Sharding â€” Advantages & Disadvantages
+### 14.8.6 Sharding — Advantages & Disadvantages
 
 
 | Aspect | Advantages | Disadvantages |
@@ -1828,7 +1828,7 @@ function store_user_geo(user_id, geo_shard):
 **Edge Cases in Sharding:**
 1. **Resharding:** Adding more shards requires moving data. With `hash % N`, all keys move. With consistent hashing, only K/N keys move. Solution: virtual nodes + gradual migration.
 2. **Hot Shard:** One shard gets disproportionate traffic. Solution: split the hot shard or replicate popular keys.
-3. **Cross-Shard Transactions:** A transaction updates keys on different shards â†’ two-phase commit (2PC) needed â†’ latency and complexity. Solution: avoid cross-shard transactions or use XA.
+3. **Cross-Shard Transactions:** A transaction updates keys on different shards → two-phase commit (2PC) needed → latency and complexity. Solution: avoid cross-shard transactions or use XA.
 4. **Skewed Data Distribution:** Range sharding naturally creates uneven shards. Solution: use hash sharding or adaptive range splitting (MongoDB chunk splits).
 ---
 
@@ -1840,8 +1840,8 @@ function store_user_geo(user_id, geo_shard):
 
 
 **Architecture:**
-- One node is the **master** (leader) â€” handles all writes
-- Multiple **slaves** (followers) â€” replicate from master, handle read traffic
+- One node is the **master** (leader) — handles all writes
+- Multiple **slaves** (followers) — replicate from master, handle read traffic
 - Writes go to master; reads can go to any slave
 
 ```
@@ -1867,7 +1867,7 @@ Flow (asynchronous replication):
 1. Master receives write request
 2. Master writes locally, acknowledges client immediately
 3. Slave pulls update from master (or master pushes async)
-4. Slave acknowledges â€” client already responded
+4. Slave acknowledges — client already responded
 ```
 
 **Pseudocode:**
@@ -1902,7 +1902,7 @@ class SlaveNode:
         return data[key]  // may be stale in async mode
 ```
 
-**Dry Run Trace Table â€” Async Replication:**
+**Dry Run Trace Table — Async Replication:**
 ```
 Initial: master.balance=100, slave1.balance=100, slave2.balance=100
 
@@ -1925,7 +1925,7 @@ Step | Client Action              | Master | Slave1 | Slave2 | Notes
 
 **Edge Cases:**
 - **Master Failure:** Write requests fail until a slave is promoted. With async replication, the last few writes may be lost.
-- **Replication Lag:** Minutes of lag during high load â†’ stale reads for minutes. Solution: read-from-master for critical data, monitoring replication lag.
+- **Replication Lag:** Minutes of lag during high load → stale reads for minutes. Solution: read-from-master for critical data, monitoring replication lag.
 - **Split-Brain:** A network partition causes two slaves to believe they are the new master (if promotion logic is flawed). Solution: use quorum-based leader election (Raft, Paxos) or STONITH (Shoot The Other Node In The Head).
 
 **Complexity:**
@@ -1945,9 +1945,9 @@ Step | Client Action              | Master | Slave1 | Slave2 | Notes
 - Conflict resolution is required for concurrent writes to the same key
 
 ```
-Client 1 Write â”€â”€>+--------+
+Client 1 Write ──>+--------+
                   | Master |<--+
-Client 2 Write â”€â”€>|    A   |   |
+Client 2 Write ──>|    A   |   |
                   +--------+   |
                        |       |
                   +--------+   |
@@ -1987,10 +1987,10 @@ class MultiMasterNode:
             data[key] = ValueWithVersion(value, version)
             return ACCEPT
         elif version == current.version:
-            // Same version â€” ignore
+            // Same version — ignore
             return IGNORE
         else:
-            // Conflict â€” need resolution
+            // Conflict — need resolution
             resolved = resolve_conflict(current.value, value)
             data[key] = ValueWithVersion(resolved, max(version, current.version))
             return RESOLVED
@@ -1999,7 +1999,7 @@ class MultiMasterNode:
         return data[key]
 ```
 
-**Dry Run Trace Table â€” Write Conflict:**
+**Dry Run Trace Table — Write Conflict:**
 
 ```
 Initial: key "counter": Master A=5, Master B=5
@@ -2008,9 +2008,9 @@ Step | Time | Action                        | Master A   | Master B
 -----|------|-------------------------------|------------|----------
 1    | T1   | Write(counter=10) to A        | counter=10 | counter=5
 2    | T2   | Write(counter=20) to B        | counter=10 | counter=20
-3    | T3   | A sends update to B (counter=10, T1) | â€”    | Conflict!
-     |      | B has counter=20 (T2 > T1)    | â€”          | LWW: 20 wins
-4    | T4   | B sends update to A (counter=20, T2) | â€”    | â€”
+3    | T3   | A sends update to B (counter=10, T1) | —    | Conflict!
+     |      | B has counter=20 (T2 > T1)    | —          | LWW: 20 wins
+4    | T4   | B sends update to A (counter=20, T2) | —    | —
 5    | T5   | A receives B's update          | counter=20 | counter=20
      |      | (T2 > T1, accept)             |            |
 6    | T6   | All consistent                 | counter=20 | counter=20
@@ -2039,7 +2039,7 @@ Step | Time | Action                        | Master A   | Master B
 
 
 **Architecture:**
-- All nodes are equal â€” there is no master
+- All nodes are equal — there is no master
 - Writes go to all replicas (or a quorum)
 - Read repair and anti-entropy ensure convergence
 
@@ -2054,13 +2054,13 @@ Used by Dynamo, Cassandra (all nodes are coordinators), Riak.
 ```
 Write Quorum (W=2, N=3):
 Client sends write to all 3 replicas
-Wait for 2 acknowledgments â†’ success
-Third replica may be down or slow â†’ client doesn't wait
+Wait for 2 acknowledgments → success
+Third replica may be down or slow → client doesn't wait
 
 Read Quorum (R=2, N=3):
 Client sends read to all 3 replicas
-Wait for 2 responses â†’ pick latest version
-Compare versions across response â€” if stale, trigger read repair
+Wait for 2 responses → pick latest version
+Compare versions across response — if stale, trigger read repair
 ```
 
 **Pseudocode:**
@@ -2091,7 +2091,7 @@ function read(key, R=2):
     return latest.value
 ```
 
-### 14.9.4 Replication Types â€” Full Comparison
+### 14.9.4 Replication Types — Full Comparison
 
 
 | Criterion | Master-Slave | Multi-Master | Peer-to-Peer (Quorum) |
@@ -2105,7 +2105,7 @@ function read(key, R=2):
 | **Complexity** | Low | Medium | High |
 | **Example** | MySQL replication, Redis | CouchDB, multi-region DynamoDB | Cassandra, Riak, Dynamo (single region) |
 
-### 14.9.5 Replication â€” Edge Cases and Trade-offs
+### 14.9.5 Replication — Edge Cases and Trade-offs
 
 
 **1. Replication Lag:**
@@ -2125,7 +2125,7 @@ During a read, if the coordinator detects that some replicas have stale data, it
 
 ---
 
-## 14.10 Simple Key-Value Store â€” Complete Implementations
+## 14.10 Simple Key-Value Store — Complete Implementations
 
 ### 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)
 
@@ -2397,11 +2397,11 @@ if __name__ == "__main__":
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | SET | O(1) avg | O(v) per key | Hash table insertion; value size v stored in memory |
-| GET | O(1) avg | â€” | Hash table lookup; no extra allocation |
+| GET | O(1) avg | — | Hash table lookup; no extra allocation |
 | DELETE | O(1) avg | O(1) cleanup | Hash table deletion; free entry |
-| EXISTS | O(1) | â€” | Hash table membership check |
+| EXISTS | O(1) | — | Hash table membership check |
 | TTL | O(1) | O(1) per key | Check expiry field; timer per entry |
-| Eviction | O(1) per entry | â€” | OrderedDict pop from head |
+| Eviction | O(1) per entry | — | OrderedDict pop from head |
 | Snapshot | O(k) | O(k) file | Serialize all k entries to disk |
 | Replication | O(n) fan-out | O(n) network | n = number of replicas |
 
@@ -2505,7 +2505,7 @@ int main() {
 }
 ```
 
-### 14.10.3 Complexity Analysis â€” Why These Complexities?
+### 14.10.3 Complexity Analysis — Why These Complexities?
 
 
 **Hash Table Lookup is O(1) Average, O(n) Worst Case:**
@@ -2514,7 +2514,7 @@ int main() {
 - This is why Redis uses hash tables, but production systems use siphash or murmurhash3 (DOS-resistant).
 
 **Why Not O(log n) Like B-Trees?**
-Hash tables sacrifice ordering for speed. B-Trees (used by SQL databases) maintain sorted order for range queries but have O(log n) lookup. Key-value stores don't need range queries on keys â€” they look up by exact key only. If you need range queries, use a document store or column-family store.
+Hash tables sacrifice ordering for speed. B-Trees (used by SQL databases) maintain sorted order for range queries but have O(log n) lookup. Key-value stores don't need range queries on keys — they look up by exact key only. If you need range queries, use a document store or column-family store.
 
 ---
 
@@ -2555,7 +2555,7 @@ Hash tables sacrifice ordering for speed. B-Trees (used by SQL databases) mainta
 
 **Example Shard Keys:**
 - Good: `user_id` (high cardinality, even distribution)
-- Bad: `status` (active/inactive â€” only 2 values, max 2 shards)
+- Bad: `status` (active/inactive — only 2 values, max 2 shards)
 - Bad: `created_at` without hashing (all today's data goes to one shard)
 
 **Cassandra Practice:** Primary key = (partition key, clustering columns). Partition key determines shard. Choose partition key to avoid large partitions and hot spots.
@@ -2602,14 +2602,14 @@ Periodically (e.g., every second), each node:
 ### Q7: What is MongoDB's replication mechanism?
 
 
-**Answer:** MongoDB uses **Replica Sets** â€” one primary (handles writes) with multiple secondaries (replicate oplog). Automatic failover: if primary fails, secondaries elect a new primary via Raft consensus.
+**Answer:** MongoDB uses **Replica Sets** — one primary (handles writes) with multiple secondaries (replicate oplog). Automatic failover: if primary fails, secondaries elect a new primary via Raft consensus.
 
 ### Q8: Compare eventual consistency with strong consistency for a shopping cart.
 
 
 **Answer:**
-- **Strong consistency:** User adds item â†’ immediate save. Even if the user refreshes rapidly, the item appears. Required for inventory (cannot oversell).
-- **Eventual consistency:** User adds item â†’ might not appear immediately on all nodes. If the user refreshes and hits a lagging node, the item might temporarily disappear. Acceptable for "saved items" but not for checkout/payment.
+- **Strong consistency:** User adds item → immediate save. Even if the user refreshes rapidly, the item appears. Required for inventory (cannot oversell).
+- **Eventual consistency:** User adds item → might not appear immediately on all nodes. If the user refreshes and hits a lagging node, the item might temporarily disappear. Acceptable for "saved items" but not for checkout/payment.
 
 ### Q9: What is the "split-brain" problem?
 
@@ -2643,7 +2643,7 @@ Each stage feeds its output to the next stage. Similar to Unix pipes.
 **Sharding:** Consistent hashing (internal Dynamo paper architecture)
 
 **Key Features:**
-- Serverless â€” no provisioning, auto-scales
+- Serverless — no provisioning, auto-scales
 - Single-digit millisecond latency at any scale
 - DAX (DynamoDB Accelerator): in-memory cache for microsecond reads
 - Transactions: ACID across multiple items (since 2018)
@@ -2667,17 +2667,17 @@ Each stage feeds its output to the next stage. Similar to Unix pipes.
 **Sharding:** Consistent hashing with virtual nodes (vnodes)
 
 **Key Features:**
-- Linear write scalability â€” add nodes for more throughput
+- Linear write scalability — add nodes for more throughput
 - No single point of failure
-- CQL (Cassandra Query Language) â€” SQL-like
+- CQL (Cassandra Query Language) — SQL-like
 - Lightweight transactions (compare-and-set)
 - Compaction strategies: SizeTiered, Leveled, TimeWindow
 
 **Use Case:** Time-series data, IoT sensor data, messaging systems, recommendation engines.
 
 **Internal Architecture:**
-- **Write Path:** CommitLog â†’ MemTable â†’ SSTable (immutable, periodically merged)
-- **Read Path:** MemTable + Row Cache + Bloom Filter â†’ SSTable
+- **Write Path:** CommitLog → MemTable → SSTable (immutable, periodically merged)
+- **Read Path:** MemTable + Row Cache + Bloom Filter → SSTable
 - **Gossip:** Node discovery and state propagation (every second)
 - **Snitch:** Determines relative host proximity (network topology awareness)
 - **Hinted Handoff:** Stores writes for downed nodes
@@ -2711,10 +2711,10 @@ Each stage feeds its output to the next stage. Similar to Unix pipes.
 
 **Sharding Architecture:**
 ```
-mongos (router) â†’ config servers (metadata)
-                â†’ shard 1 (replica set)
-                â†’ shard 2 (replica set)
-                â†’ shard N (replica set)
+mongos (router) → config servers (metadata)
+                → shard 1 (replica set)
+                → shard 2 (replica set)
+                → shard N (replica set)
 ```
 
 ### 14.12.4 Neo4j
@@ -2786,35 +2786,35 @@ mongos (router) â†’ config servers (metadata)
 
 ---
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
 
-1. **NoSQL does not mean "no SQL"** â€” many NoSQL databases support SQL-like query languages (MongoDB Aggregation, Cassandra CQL, Neo4j Cypher). The "NoSQL" label is historical.
-2. **Understand your access patterns first** â€” document DBs for complex objects, key-value for caching/sessions, column-family for time-series/analytics, graph for connected data.
-3. **The CAP theorem is not an excuse to ignore consistency** â€” most production systems use tunable consistency (quorum reads/writes) rather than extreme AP or CP.
-4. **Polyglot persistence is powerful but expensive** â€” each additional database type adds operational complexity. Use one primary store and augment only where the model mismatch is critical.
-5. **Schema-less does not mean without schema** â€” the schema moves to the application layer (ORM, validation). You must still design it carefully â€” it is just not enforced by the database.
-6. **Shard key choice is the most important design decision** â€” a bad shard key causes hot spots, uneven data distribution, and performance degradation.
-7. **Consistency level has a direct cost** â€” in Cassandra, LOCAL_ONE is 2-3x faster than QUORUM, but risks stale reads. Measure your tolerance for staleness before configuring.
-8. **Replication factor is not sharding** â€” RF=3 means 3 copies of every row; sharding means each node stores a subset of rows. Replication provides redundancy; sharding provides scale.
+1. **NoSQL does not mean "no SQL"** — many NoSQL databases support SQL-like query languages (MongoDB Aggregation, Cassandra CQL, Neo4j Cypher). The "NoSQL" label is historical.
+2. **Understand your access patterns first** — document DBs for complex objects, key-value for caching/sessions, column-family for time-series/analytics, graph for connected data.
+3. **The CAP theorem is not an excuse to ignore consistency** — most production systems use tunable consistency (quorum reads/writes) rather than extreme AP or CP.
+4. **Polyglot persistence is powerful but expensive** — each additional database type adds operational complexity. Use one primary store and augment only where the model mismatch is critical.
+5. **Schema-less does not mean without schema** — the schema moves to the application layer (ORM, validation). You must still design it carefully — it is just not enforced by the database.
+6. **Shard key choice is the most important design decision** — a bad shard key causes hot spots, uneven data distribution, and performance degradation.
+7. **Consistency level has a direct cost** — in Cassandra, LOCAL_ONE is 2-3x faster than QUORUM, but risks stale reads. Measure your tolerance for staleness before configuring.
+8. **Replication factor is not sharding** — RF=3 means 3 copies of every row; sharding means each node stores a subset of rows. Replication provides redundancy; sharding provides scale.
 
 ## One-Sentence Takeaways
 
 - **14.1:** NoSQL databases emerged to address scalability, schema flexibility, and data model diversity that relational databases struggle with.
 - **14.2:** The CAP theorem states that in a distributed system, you can only guarantee two of Consistency, Availability, and Partition Tolerance during a network partition.
 - **14.3:** BASE (Basically Available, Soft state, Eventual consistency) is the relaxed consistency model that powers most NoSQL systems.
-- **14.4:** Four major NoSQL types â€” Document (MongoDB), Key-Value (Redis), Column-Family (Cassandra), and Graph (Neo4j) â€” each optimized for different workloads.
+- **14.4:** Four major NoSQL types — Document (MongoDB), Key-Value (Redis), Column-Family (Cassandra), and Graph (Neo4j) — each optimized for different workloads.
 - **14.5:** Polyglot persistence uses multiple database types within a single application, choosing the best model for each component.
 - **14.6:** Consistency models form a spectrum from eventual (weakest) to linearizable (strongest), with causal, read-your-writes, session, and monotonic in between.
 - **14.7:** Vector clocks track causal history and detect concurrent updates, enabling conflict resolution in eventually consistent systems.
 - **14.8:** Sharding distributes data across nodes using hash, range, or geographic strategies; shard key choice is critical.
 - **14.9:** Replication provides fault tolerance through master-slave, multi-master, or peer-to-peer architectures.
-- **14.10:** NoSQL databases power real-world systems like DynamoDB, Cassandra, MongoDB, Neo4j, and Redis â€” each designed for specific workloads.
+- **14.10:** NoSQL databases power real-world systems like DynamoDB, Cassandra, MongoDB, Neo4j, and Redis — each designed for specific workloads.
 
 ## Concept Comparison Table
 
 | Feature | Relational (SQL) | Document (MongoDB) | Key-Value (Redis) | Column-Family (Cassandra) | Graph (Neo4j) |
 |---------|-----------------|---------------------|-------------------|--------------------------|--------------|
-| **Data Model** | Tables, rows | JSON/BSON documents | Key â†’ Value pairs | Rows with dynamic columns | Nodes and edges |
+| **Data Model** | Tables, rows | JSON/BSON documents | Key → Value pairs | Rows with dynamic columns | Nodes and edges |
 | **Schema** | Rigid, enforced | Flexible (schema-less) | Key-based only | Flexible per row | Flexible |
 | **Query Language** | SQL | MQL, Aggregation | Redis commands | CQL | Cypher |
 | **ACID?** | Full ACID | Document-level | Transactional | Tunable | Full ACID |
@@ -2858,7 +2858,7 @@ The code below simulates different consistency models (eventual, strong, causal)
 
 ```typescript
 // ============================================================
-// CAP Theorem & Consistency Simulator â€” TypeScript
+// CAP Theorem & Consistency Simulator — TypeScript
 // ============================================================
 
 enum ConsistencyMode { EVENTUAL, STRONG, CAUSAL }
@@ -2889,10 +2889,10 @@ class DBNode {
     for (const peer of this.peers) {
       if (peer.id !== this.id) {
         if (mode === ConsistencyMode.STRONG) {
-          // Synchronous replication â€” wait for all
+          // Synchronous replication — wait for all
           peer.receiveWrite(op);
         } else {
-          // Asynchronous replication â€” queue
+          // Asynchronous replication — queue
           setTimeout(() => peer.receiveWrite(op), this.latencyMs);
         }
       }
@@ -2950,7 +2950,7 @@ console.log('Node 2 value: ' + nodes[1].read('user:1', mode));
 console.log('CONSISTENCY VIOLATION! Different values on different nodes.');
 console.log('With STRONG consistency, this write would be rejected.');
 
-// Partition heals â€” conflict resolution
+// Partition heals — conflict resolution
 console.log('\n--- Partition Healed (Last-Write-Wins) ---');
 // Reconnect (version with latest timestamp wins)
 const allValues = [nodes[0].data.get('user:1')!, nodes[1].data.get('user:1')!];
@@ -3135,7 +3135,7 @@ quadrantChart
     
     Consider: users, tweets, follows, likes, retweets. What queries are easy/hard in each model?
 
-12. Consider the "PACELC" theorem (an extension of CAP). It states: "In a distributed system, if a partition occurs (P), you must trade between Availability (A) and Consistency (C); otherwise (E â€” Else), you trade between Latency (L) and Consistency (C)." Explain this extension and how it applies to DynamoDB's design choices.
+12. Consider the "PACELC" theorem (an extension of CAP). It states: "In a distributed system, if a partition occurs (P), you must trade between Availability (A) and Consistency (C); otherwise (E — Else), you trade between Latency (L) and Consistency (C)." Explain this extension and how it applies to DynamoDB's design choices.
 
 13. Eventual consistency can lead to "stale reads." Design a system that uses a version vector or vector clock to detect conflicting updates during an eventual consistency reconciliation process. How does Amazon Dynamo handle conflict resolution? How does Cassandra?
 

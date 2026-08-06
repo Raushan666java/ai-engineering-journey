@@ -1,11 +1,11 @@
 ---
 id: 05-hindi-translation
 slug: /hindi-language/05-hindi-translation
-title: "Chapter 5: à¤…à¤¨à¥à¤µà¤¾à¤¦ (Translation)"
-sidebar_label: "Chapter 5: à¤…à¤¨à¥à¤µà¤¾à¤¦ (Translation)"
+title: "Chapter 5: अनुवाद (Translation)"
+sidebar_label: "Chapter 5: अनुवाद (Translation)"
 sidebar_position: 5
 ---
-# Chapter 5: à¤…à¤¨à¥à¤µà¤¾à¤¦ (Translation)
+# Chapter 5: अनुवाद (Translation)
 
 ## Learning Objectives
 
@@ -47,7 +47,7 @@ Translation is a significant component in:
 - State PCS: Hindi translation from English
 - Translation exams: Central Translation Bureau, Ministry of Home Affairs
 
-### 5.2 à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤•à¥‡ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ (Principles of Translation)
+### 5.2 अनुवाद के सिद्धांत (Principles of Translation)
 
 ```mermaid
 flowchart TD
@@ -73,7 +73,7 @@ flowchart TD
 
 ### 5.3 English-to-Hindi Translation Rules
 
-#### A. à¤¸à¤°à¥à¤µà¤¨à¤¾à¤® (Pronouns)
+#### A. सर्वनाम (Pronouns)
 
 | English | Hindi |
 |---------|-------|
@@ -88,25 +88,25 @@ flowchart TD
 | These | Yeh |
 | Those | Vah |
 
-#### B. à¤•à¤¾à¤² à¤•à¤¾ à¤…à¤¨à¥à¤µà¤¾à¤¦ (Tense Translation)
+#### B. काल का अनुवाद (Tense Translation)
 
-| English Tense | Hindi Equivalent | Example EN â†’ HI |
+| English Tense | Hindi Equivalent | Example EN → HI |
 |---------------|------------------|-----------------|
-| Simple Present | Samanya Vartman | I eat â†’ Main khata hoon |
-| Present Continuous | Apurn Vartman | I am eating â†’ Main kha raha hoon |
-| Present Perfect | Purna Vartman | I have eaten â†’ Maine kha liya hai |
-| Simple Past | Samanya Bhoot | I ate â†’ Maine khaya |
-| Past Continuous | Apurn Bhoot | I was eating â†’ Main kha raha tha |
-| Simple Future | Samanya Bhavishya | I will eat â†’ Main khaunga |
-| Present Perfect Cont. | Poori Vartman | I have been eating â†’ Main kha raha hoon (since/for se) |
+| Simple Present | Samanya Vartman | I eat → Main khata hoon |
+| Present Continuous | Apurn Vartman | I am eating → Main kha raha hoon |
+| Present Perfect | Purna Vartman | I have eaten → Maine kha liya hai |
+| Simple Past | Samanya Bhoot | I ate → Maine khaya |
+| Past Continuous | Apurn Bhoot | I was eating → Main kha raha tha |
+| Simple Future | Samanya Bhavishya | I will eat → Main khaunga |
+| Present Perfect Cont. | Poori Vartman | I have been eating → Main kha raha hoon (since/for se) |
 
-#### C. à¤µà¤¾à¤šà¥à¤¯ à¤•à¤¾ à¤…à¤¨à¥à¤µà¤¾à¤¦ (Voice Translation)
+#### C. वाच्य का अनुवाद (Voice Translation)
 
 - Active to Passive: Karak vibhakti change karein
-- "Subject + Verb + Object" â†’ "Subject + se + Object + Verb (with jaana)"
-- Example: "Ram eats food" â†’ "Ram se khaana khaaya jaata hai"
+- "Subject + Verb + Object" → "Subject + se + Object + Verb (with jaana)"
+- Example: "Ram eats food" → "Ram se khaana khaaya jaata hai"
 
-#### D. à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤µà¤¿à¤¶à¥‡à¤·à¤£ à¤•à¤¾ à¤¸à¥à¤¥à¤¾à¤¨ (Adverb Placement)
+#### D. क्रिया विशेषण का स्थान (Adverb Placement)
 
 | English | Hindi |
 |---------|-------|
@@ -114,14 +114,14 @@ flowchart TD
 | I always speak truth | Main hamesha sach bolta hoon |
 | She sings beautifully | Vah khoobsurat gaati hai |
 
-#### E. à¤¸à¤‚à¤¬à¤‚à¤§à¤¸à¥‚à¤šà¤• à¤¶à¤¬à¥à¤¦ (Relative Clauses)
+#### E. संबंधसूचक शब्द (Relative Clauses)
 
 | English | Hindi | Example |
 |---------|-------|---------|
-| Who | Jo | The man who came â†’ Jo aadmi aaya |
-| Which | Jo | The book which I read â†’ Jo kitab maine padi |
-| That | Ki | I know that... â†’ Main janta hoon ki... |
-| Where | Jahan | The place where â†’ Vah sthan jahan |
+| Who | Jo | The man who came → Jo aadmi aaya |
+| Which | Jo | The book which I read → Jo kitab maine padi |
+| That | Ki | I know that... → Main janta hoon ki... |
+| Where | Jahan | The place where → Vah sthan jahan |
 
 ### 5.4 Common Pitfalls (False Friends)
 
@@ -281,7 +281,7 @@ flowchart TD
 
 ## Examples
 
-### Example 1: TypeScript â€” Translation Accuracy Checker
+### Example 1: TypeScript — Translation Accuracy Checker
 
 ```typescript
 interface Translation {
@@ -300,7 +300,7 @@ class TranslationChecker {
     const targetWords = translation.targetText.toLowerCase().split(" ");
     const errors: string[] = [];
 
-    // Simplified check â€” look for common errors
+    // Simplified check — look for common errors
     if (translation.sourceLang === "en" && translation.targetLang === "hi") {
       if (!translation.targetText.includes("hai") &&
           translation.sourceText.includes("is"))
@@ -329,7 +329,7 @@ console.log("Accuracy:", result.accuracyScore);
 console.log("Errors:", result.errors);
 ```
 
-### Example 2: TypeScript â€” Banking Term Translator
+### Example 2: TypeScript — Banking Term Translator
 
 ```typescript
 interface Term {
@@ -376,7 +376,7 @@ console.log("NPA:", translateBankingTerm("NPA")?.hi);
 console.log("Full glossary entries:", Object.keys(getHindiGlossary()).length);
 ```
 
-### Example 3: TypeScript â€” Tense-Aware Translator
+### Example 3: TypeScript — Tense-Aware Translator
 
 ```typescript
 type Tense = "present" | "past" | "future";
@@ -406,7 +406,7 @@ console.log(translateTense("padh", "past", "she"));    // Vah padhi
 console.log(translateTense("padh", "future", "they")); // Ve padhenge
 ```
 
-### Example 4: TypeScript â€” Government Term Mapper
+### Example 4: TypeScript — Government Term Mapper
 
 ```typescript
 interface GovTerm {
@@ -445,10 +445,10 @@ function hiToEn(word: string): string {
 
 console.log("Department:", enToHi("Department"));
 console.log("Vidheyak:", hiToEn("Vidheyak"));
-console.log("Legal terms:", govTerms.filter(t => t.category === "legal").map(t => `${t.en} â†’ ${t.hi}`));
+console.log("Legal terms:", govTerms.filter(t => t.category === "legal").map(t => `${t.en} → ${t.hi}`));
 ```
 
-### Example 5: TypeScript â€” False Friend Detector
+### Example 5: TypeScript — False Friend Detector
 
 ```typescript
 interface FalseFriend {
@@ -578,42 +578,42 @@ Analysis: Tense change (present perfect in EN, present in HI is acceptable). "Ul
 **Passage 2: English to Hindi**
 "Inflation is the rate at which the general level of prices for goods and services is rising."
 Translation: "Mudrasfiti vah dar hai jis per vastuon aur sewaon ke samanya mool star mein vriddhi hoti hai."
-Analysis: "Rate at which" â†’ "vah dar jis per" â€” relative clause correctly handled.
+Analysis: "Rate at which" → "vah dar jis per" — relative clause correctly handled.
 
 **Passage 3: English to Hindi**
 "The Reserve Bank of India (RBI) is the central bank of the country."
 Translation: "Bhartiya Reserve Bank (RBI) desh ka kendriya bank hai."
-Analysis: RBI remains same; "central bank" â†’ "kendriya bank" â€” accepted usage.
+Analysis: RBI remains same; "central bank" → "kendriya bank" — accepted usage.
 
 **Passage 4: Hindi to English**
 "Bharat ki sanskriti vishva ki sabase prachin sanskritiyon mein se ek hai."
 Translation: "Indian culture is one of the oldest cultures in the world."
-Analysis: "Sabase prachin" â†’ "the oldest" â€” superlative correctly translated.
+Analysis: "Sabase prachin" → "the oldest" — superlative correctly translated.
 
 **Passage 5: English to Hindi**
 "The government has launched several schemes for the welfare of farmers."
 Translation: "Sarkar ne kisanon ke kalyan ke liye anek yojnaye shuru ki hain."
-Analysis: Passive voice replaced with active; "welfare" â†’ "kalyan" â€” correct.
+Analysis: Passive voice replaced with active; "welfare" → "kalyan" — correct.
 
 **Passage 6: English to Hindi**
 "Digital payments have revolutionized India's financial landscape."
 Translation: "Digital bhungtaano ne bharat ke vitiy paridrishya mein krantikari parivartan kar diya hai."
-Analysis: "Revolutionized" â†’ "krantikari parivartan" â€” faithful.
+Analysis: "Revolutionized" → "krantikari parivartan" — faithful.
 
 **Passage 7: Hindi to English**
 "Jal sanrakshan har nagrik ka kartavy hai."
 Translation: "Water conservation is the duty of every citizen."
-Analysis: Simple N â†’ is; correctly translated.
+Analysis: Simple N → is; correctly translated.
 
 **Passage 8: English to Hindi**
 "Each one of us must contribute to the nation's progress."
 Translation: "Hamein se pratyek ko rashtra ki pragati mein yogdan dena chahiye."
-Analysis: "Each one of us" â†’ "Hamein se pratyek" â€” accurate.
+Analysis: "Each one of us" → "Hamein se pratyek" — accurate.
 
 **Passage 9: English to Hindi**
 "The new education policy aims to transform the Indian education system."
 Translation: "Nai shiksha neeti ka uddeshya bhartiya shiksha pranali mein parivartan lana hai."
-Analysis: "Aims to" â†’ "uddeshya ... lana hai" â€” correct infinitive use.
+Analysis: "Aims to" → "uddeshya ... lana hai" — correct infinitive use.
 
 **Passage 10: Hindi to English**
 "Yadi baarish samay per nahi hoti to faslein kharab ho jayengi."
@@ -623,12 +623,12 @@ Analysis: Conditional sentence correctly translated.
 **Passage 11: English to Hindi (Banking Context)**
 "The bank has reduced its lending rate by 25 basis points."
 Translation: "Bank ne apne rinn dar mein 25 basis point ki kami ki hai."
-Analysis: "Lending rate" â†’ "rinn dar"; "basis points" remains same (accepted).
+Analysis: "Lending rate" → "rinn dar"; "basis points" remains same (accepted).
 
 **Passage 12: English to Hindi**
 "Climate change poses a serious threat to biodiversity."
 Translation: "Jalvayu parivartan jiv vividhata ke liye gambhir khatra paida karta hai."
-Analysis: "Biodiversity" â†’ "jiv vividhata" â€” correct technical term.
+Analysis: "Biodiversity" → "jiv vividhata" — correct technical term.
 
 **Passage 13: Hindi to English**
 "Aapke patra dinank 15 August 2026 ke sandarbh mein..."
@@ -638,7 +638,7 @@ Analysis: Office correspondence correctly translated.
 **Passage 14: English to Hindi (Government)**
 "The undersigned is directed to convey the approval of the competent authority."
 Translation: "Adhosathak ko pradhikari pradhikaran ki anumanjuri vyakt karne ka nirdesh diya gaya hai."
-Analysis: Official tone maintained; "competent authority" â†’ "pradhikari pradhikaran."
+Analysis: Official tone maintained; "competent authority" → "pradhikari pradhikaran."
 
 **Passage 15: English to Hindi (Literature)**
 "It was the best of times, it was the worst of times."
@@ -653,7 +653,7 @@ Analysis: Parallel structure maintained.
 
 **Hindi Saransh:**
 - Anuvad ke teen mool siddhant hain: Fidelity (arth ki suraksha), Readability (sahajta), Accuracy (shuddhta).
-- Samanya gallatiyon mein "false friends" shamil hain â€” angrezi shabd jo Hindi mein alag arth rakhte hain.
+- Samanya gallatiyon mein "false friends" shamil hain — angrezi shabd jo Hindi mein alag arth rakhte hain.
 - Banking aur sarkari shabdon ke liye mank Hindi shabdon ko yaad karna avashyak hai.
 - Krim (Tense) aur vachy (Voice) ka anuvad karte samay dhyan dena hoga.
 - Muhavaron ka anuvad shabdasah anuvad se na karke, samarthak Hindi muhavare ka upyog karna chahiye.
@@ -661,7 +661,7 @@ Analysis: Parallel structure maintained.
 
 **English Summary:**
 - Three core principles of translation: Fidelity (meaning preservation), Readability (natural flow), Accuracy (correctness).
-- Common pitfalls include false friends â€” English words with different meanings in Hindi.
+- Common pitfalls include false friends — English words with different meanings in Hindi.
 - Banking and government terminology requires memorization of standard Hindi equivalents.
 - Tense and voice must be carefully mapped between English and Hindi.
 - Idioms should be translated by equivalent expressions, not word-for-word.
@@ -669,11 +669,11 @@ Analysis: Parallel structure maintained.
 
 ## Practical Takeaways
 
-1. False friends awareness: "Sympathy" â‰  "sympathi", "Patent" â‰  "spast" â€” learn the 20 most common false friends.
+1. False friends awareness: "Sympathy" ≠ "sympathi", "Patent" ≠ "spast" — learn the 20 most common false friends.
 2. Banking terms: Master the 30 key terms (Repo, CRR, SLR, NPA) in both languages.
-3. Government formats: Learn the standard opening and closing phrases: "With reference to..." â†’ "Sandarbh mein...", "The undersigned..." â†’ "Adhosathak...".
-4. Tense mapping: English present perfect (have/has + V3) â†’ Hindi Purna Vartman (V+ liya hai).
-5. Idioms: For "once in a blue moon", don't translate literally â€” use "Kabhi-kabhi" or "Bade dinon baad".
+3. Government formats: Learn the standard opening and closing phrases: "With reference to..." → "Sandarbh mein...", "The undersigned..." → "Adhosathak...".
+4. Tense mapping: English present perfect (have/has + V3) → Hindi Purna Vartman (V+ liya hai).
+5. Idioms: For "once in a blue moon", don't translate literally — use "Kabhi-kabhi" or "Bade dinon baad".
 
 ## Chapter Quiz
 
@@ -727,11 +727,11 @@ Translate these terms to Hindi:
 
 ### False Friend Correction (Q16-Q20)
 Correct the wrong translations:
-16. "I have sympathy for you." â†’ "Mujhe tumse sympathy hai."
-17. "This is a patent issue." â†’ "Yah ek patent mudda hai."
-18. "He is a liberal thinker." â†’ "Vah liberal vichardhara ka hai."
-19. "She is decent." â†’ "Vah decent hai."
-20. "What is your concern?" â†’ "Tumhara concern kya hai?"
+16. "I have sympathy for you." → "Mujhe tumse sympathy hai."
+17. "This is a patent issue." → "Yah ek patent mudda hai."
+18. "He is a liberal thinker." → "Vah liberal vichardhara ka hai."
+19. "She is decent." → "Vah decent hai."
+20. "What is your concern?" → "Tumhara concern kya hai?"
 
 ### Government Terms (Q21-Q25)
 Translate to Hindi:

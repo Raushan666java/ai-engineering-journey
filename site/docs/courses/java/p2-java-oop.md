@@ -270,10 +270,10 @@ Java provides four access levels:
 
 | Modifier | Class | Package | Subclass | World |
 |----------|-------|---------|----------|-------|
-| `private` | âœ“ | âœ— | âœ— | âœ— |
-| *default* (package-private) | âœ“ | âœ“ | âœ— | âœ— |
-| `protected` | âœ“ | âœ“ | âœ“ | âœ— |
-| `public` | âœ“ | âœ“ | âœ“ | âœ“ |
+| `private` | ✓ | ✗ | ✗ | ✗ |
+| *default* (package-private) | ✓ | ✓ | ✗ | ✗ |
+| `protected` | ✓ | ✓ | ✓ | ✗ |
+| `public` | ✓ | ✓ | ✓ | ✓ |
 
 ```java
 package com.example.bank;

@@ -16,7 +16,7 @@ sidebar_position: 37
 
 ## Learning Objectives
 
-- Synthesize all concepts from Chapters 1â€“36 into a single enterprise multi-agent platform
+- Synthesize all concepts from Chapters 1–36 into a single enterprise multi-agent platform
 - Design a centralized agent registry with capability-based service discovery and cross-sector routing
 - Build an event-driven agent communication bus using Laravel events, queues, and pub/sub patterns
 - Implement a shared memory and vector knowledge base accessible by every agent in the platform
@@ -161,7 +161,7 @@ The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where spec
 
 | Dimension | Specification |
 |-----------|--------------|
-| Agent Types | 10 industry sectors, 3â€“5 agents per sector |
+| Agent Types | 10 industry sectors, 3–5 agents per sector |
 | Communication | Event-driven pub/sub via Laravel queues |
 | Memory | PostgreSQL + pgvector for structured + vector storage |
 | Isolation | Multi-tenant per organization (database-scoped) |
@@ -174,19 +174,19 @@ The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where spec
 ```
                          ┌─────────────────────────────┐
                          │      API Gateway (REST)      │
-                         │   Rate Limit Â· Auth Â· Route  │
+                         │   Rate Limit · Auth · Route  │
                          └──────────┬──────────────────┘
                                     │
                          ┌──────────▼──────────────────┐
                          │   Enterprise Orchestrator    │
-                         │ Supervisor Â· Workflow Engine │
+                         │ Supervisor · Workflow Engine │
                          └──────────┬──────────────────┘
                                     │
           ┌─────────────────────────┼─────────────────────────┐
           │                         │                         │
  ┌────────▼────────┐   ┌───────────▼───────────┐   ┌─────────▼────────┐
  │  Agent Registry  │   │  Agent Message Bus    │   │  Shared Memory    │
- │  discover/call   │   │  pub/sub Â· events     │   │  Knowledge Base   │
+ │  discover/call   │   │  pub/sub · events     │   │  Knowledge Base   │
  └────────┬────────┘   └───────────┬───────────┘   └─────────┬────────┘
           │                         │                         │
  ┌────────▼─────────────────────────▼─────────────────────────▼────────┐

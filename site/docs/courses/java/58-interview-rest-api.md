@@ -574,7 +574,7 @@ Choose status codes to enable correct client behavior without inspecting the res
 **Answer:** Good REST URLs use nouns (not verbs), plural collection names, hierarchical paths for sub-resources, query parameters for filtering/sorting/pagination, and avoid deep nesting (max 2-3 levels). URLs should represent resources, not actions. Use kebab-case for multi-word resources.
 
 ```java
-// === âœ… GOOD URL design ===
+// === ✅ GOOD URL design ===
 /*
 Collection:        GET    /api/orders
 Single item:       GET    /api/orders/{id}
@@ -588,7 +588,7 @@ Field selection:   GET    /api/orders?fields=id,status,total
 Search:            GET    /api/orders/search?q=keyword
 */
 
-// === âŒ BAD URL design ===
+// === ❌ BAD URL design ===
 /*
 getAllOrders        → GET    /api/getAllOrders           (verb in URL)
 getOrder            → GET    /api/getOrder?id=123        (verb + query param)
@@ -5942,8 +5942,8 @@ class AuditLogger {
 // === 9. SQL injection prevention ===
 /*
 1. Always use parameterized queries (never concatenation)
-   âœ… jdbcTemplate.query("SELECT * FROM users WHERE id = ?", id)
-   âŒ jdbcTemplate.query("SELECT * FROM users WHERE id = " + id)
+   ✅ jdbcTemplate.query("SELECT * FROM users WHERE id = ?", id)
+   ❌ jdbcTemplate.query("SELECT * FROM users WHERE id = " + id)
 
 2. Use JPA/Spring Data → built-in parameter binding
    @Query("SELECT u FROM User u WHERE u.email = :email")
@@ -5988,50 +5988,50 @@ Only allow specific origins. Never use CORS for internal APIs.
 // === 12. Security checklist ===
 /*
 Transport:
-â˜ HTTPS everywhere (HSTS preload)
-â˜ TLS 1.2+ only
-â˜ Strong cipher suites
-â˜ HTTP/2 enabled
+☐ HTTPS everywhere (HSTS preload)
+☐ TLS 1.2+ only
+☐ Strong cipher suites
+☐ HTTP/2 enabled
 
 Authentication:
-â˜ JWT with short expiry (15-60 min)
-â˜ Refresh tokens for long sessions
-â˜ Password hashing (bcrypt/scrypt)
-â˜ MFA for admin endpoints
+☐ JWT with short expiry (15-60 min)
+☐ Refresh tokens for long sessions
+☐ Password hashing (bcrypt/scrypt)
+☐ MFA for admin endpoints
 
 Authorization:
-â˜ Method-level @PreAuthorize
-â˜ Principle of least privilege
-â˜ IDOR prevention (verify ownership)
-â˜ Role hierarchy
+☐ Method-level @PreAuthorize
+☐ Principle of least privilege
+☐ IDOR prevention (verify ownership)
+☐ Role hierarchy
 
 Input:
-â˜ Bean validation on all DTOs
-â˜ SQL injection prevention (parameterized queries)
-â˜ XSS sanitization
-â˜ Size limits on all inputs
+☐ Bean validation on all DTOs
+☐ SQL injection prevention (parameterized queries)
+☐ XSS sanitization
+☐ Size limits on all inputs
 
 Output:
-â˜ No stack traces in production
-â˜ No internal IDs in responses
-â˜ Consistent error format
-â˜ Security headers on all responses
+☐ No stack traces in production
+☐ No internal IDs in responses
+☐ Consistent error format
+☐ Security headers on all responses
 
 Operations:
-â˜ Rate limiting on all endpoints
-â˜ Audit logging for mutations
-â˜ IP allowlisting for admin
-â˜ Request logging (method, path, user, duration, status)
-â˜ Secret rotation (API keys, JWT secrets, DB passwords)
-â˜ Dependency vulnerability scanning
+☐ Rate limiting on all endpoints
+☐ Audit logging for mutations
+☐ IP allowlisting for admin
+☐ Request logging (method, path, user, duration, status)
+☐ Secret rotation (API keys, JWT secrets, DB passwords)
+☐ Dependency vulnerability scanning
 
 Infrastructure:
-â˜ WAF (Web Application Firewall)
-â˜ DDoS protection
-â˜ API Gateway for unified security
-â˜ Container security scanning
-â˜ Secrets management (Vault, AWS Secrets Manager)
-â˜ Regular penetration testing
+☐ WAF (Web Application Firewall)
+☐ DDoS protection
+☐ API Gateway for unified security
+☐ Container security scanning
+☐ Secrets management (Vault, AWS Secrets Manager)
+☐ Regular penetration testing
 */
 
 // === 13. Security testing ===
@@ -7310,18 +7310,18 @@ Conditional requests are the foundation of HTTP caching and optimistic concurren
 ```java
 // === 1. URL design ===
 /*
-â˜ Use nouns for resources (not verbs): /orders NOT /getOrders
-â˜ Use plural nouns: /orders NOT /order
-â˜ Use kebab-case: /order-history NOT /orderHistory
-â˜ Lowercase only: /api/orders NOT /api/Orders
-â˜ Nest related resources: /orders/1/items
-â˜ Use query parameters for filtering, sorting, pagination
-â˜ Avoid deep nesting (max 3 levels): /a/b/c
-  âŒ /orders/1/customers/2/payments/3
-  âœ… /orders/1/payments?customerId=2
-â˜ Version through URL prefix or header:
+☐ Use nouns for resources (not verbs): /orders NOT /getOrders
+☐ Use plural nouns: /orders NOT /order
+☐ Use kebab-case: /order-history NOT /orderHistory
+☐ Lowercase only: /api/orders NOT /api/Orders
+☐ Nest related resources: /orders/1/items
+☐ Use query parameters for filtering, sorting, pagination
+☐ Avoid deep nesting (max 3 levels): /a/b/c
+  ❌ /orders/1/customers/2/payments/3
+  ✅ /orders/1/payments?customerId=2
+☐ Version through URL prefix or header:
   /v1/orders or Accept: application/vnd.company.v1+json
-â˜ Use IDs in path, not in body for updates:
+☐ Use IDs in path, not in body for updates:
   PUT /orders/1 NOT PUT /orders with id in body
 */
 
@@ -7364,13 +7364,13 @@ class WellDesignedController {
 
 // === 2. HTTP methods ===
 /*
-â˜ GET: Read resources (safe, idempotent, cacheable)
-â˜ POST: Create resources (not safe, not idempotent)
-â˜ PUT: Full replacement (idempotent)
-â˜ PATCH: Partial update (not idempotent in practice)
-â˜ DELETE: Remove resource (idempotent)
-â˜ HEAD: Get headers only (safe, no body)
-â˜ OPTIONS: Get allowed methods
+☐ GET: Read resources (safe, idempotent, cacheable)
+☐ POST: Create resources (not safe, not idempotent)
+☐ PUT: Full replacement (idempotent)
+☐ PATCH: Partial update (not idempotent in practice)
+☐ DELETE: Remove resource (idempotent)
+☐ HEAD: Get headers only (safe, no body)
+☐ OPTIONS: Get allowed methods
 
 // PUT vs PATCH:
 // PUT replaces entire resource (send ALL fields)
@@ -7436,76 +7436,76 @@ class HttpStatusUtil {
 
 // === 4. Error handling best practices ===
 /*
-â˜ Use RFC 7807 Problem Details for all errors
-â˜ Include error type URL for documentation
-â˜ Never expose stack traces or internal details
-â˜ Return field-level validation errors
-â˜ Use consistent error format across all endpoints
-â˜ Include correlation ID for debugging
-â˜ Log all errors with sufficient context
-â˜ Handle unexpected exceptions gracefully (500)
+☐ Use RFC 7807 Problem Details for all errors
+☐ Include error type URL for documentation
+☐ Never expose stack traces or internal details
+☐ Return field-level validation errors
+☐ Use consistent error format across all endpoints
+☐ Include correlation ID for debugging
+☐ Log all errors with sufficient context
+☐ Handle unexpected exceptions gracefully (500)
 */
 
 // === 5. Security checklist ===
 /*
-â˜ HTTPS everywhere (enforce with redirect)
-â˜ HSTS header with preload
-â˜ Authentication: JWT Bearer tokens
-â˜ Authorization: @PreAuthorize, role/permission-based
-â˜ Input validation on all endpoints
-â˜ Rate limiting on all mutation endpoints
-â˜ CORS: specific origins only (never * with credentials)
-â˜ Security headers: X-Content-Type-Options, X-Frame-Options, CSP
-â˜ No sensitive data in URLs (passwords, tokens)
-â˜ Audit logging for all mutations
-â˜ API key rotation policy
-â˜ Regular dependency vulnerability scanning
+☐ HTTPS everywhere (enforce with redirect)
+☐ HSTS header with preload
+☐ Authentication: JWT Bearer tokens
+☐ Authorization: @PreAuthorize, role/permission-based
+☐ Input validation on all endpoints
+☐ Rate limiting on all mutation endpoints
+☐ CORS: specific origins only (never * with credentials)
+☐ Security headers: X-Content-Type-Options, X-Frame-Options, CSP
+☐ No sensitive data in URLs (passwords, tokens)
+☐ Audit logging for all mutations
+☐ API key rotation policy
+☐ Regular dependency vulnerability scanning
 */
 
 // === 6. Performance checklist ===
 /*
-â˜ Pagination for all list endpoints (default page size: 20, max: 100)
-â˜ ETag support for conditional GET (304 Not Modified)
-â˜ Cache-Control headers on GET responses
-â˜ Server-side caching (@Cacheable) for expensive operations
-â˜ Gzip compression on responses
-â˜ Database indexes on queried columns
-â˜ N+1 query prevention (JOIN FETCH, EntityGraph)
-â˜ Async processing for long operations (DeferredResult)
-â˜ Streaming for large datasets
-â˜ Connection pooling configuration
-â˜ Request size limits (multipart, JSON body)
+☐ Pagination for all list endpoints (default page size: 20, max: 100)
+☐ ETag support for conditional GET (304 Not Modified)
+☐ Cache-Control headers on GET responses
+☐ Server-side caching (@Cacheable) for expensive operations
+☐ Gzip compression on responses
+☐ Database indexes on queried columns
+☐ N+1 query prevention (JOIN FETCH, EntityGraph)
+☐ Async processing for long operations (DeferredResult)
+☐ Streaming for large datasets
+☐ Connection pooling configuration
+☐ Request size limits (multipart, JSON body)
 */
 
 // === 7. Documentation checklist ===
 /*
-â˜ OpenAPI 3.0 specification auto-generated
-â˜ Every endpoint has summary and description
-â˜ Request/response schemas documented
-â˜ All possible status codes documented per endpoint
-â˜ Authentication method documented
-â˜ Rate limit headers documented
-â˜ Pagination parameters documented
-â˜ Error response format documented
-â˜ Examples for common request/response pairs
-â˜ API changelog / version history
+☐ OpenAPI 3.0 specification auto-generated
+☐ Every endpoint has summary and description
+☐ Request/response schemas documented
+☐ All possible status codes documented per endpoint
+☐ Authentication method documented
+☐ Rate limit headers documented
+☐ Pagination parameters documented
+☐ Error response format documented
+☐ Examples for common request/response pairs
+☐ API changelog / version history
 */
 
 // === 8. API evolution checklist ===
 /*
-â˜ Version from day 1 (/v1/ prefix)
-â˜ Never remove fields from responses (add new ones only)
-â˜ Make new fields optional initially
-â˜ Document deprecations in response headers:
+☐ Version from day 1 (/v1/ prefix)
+☐ Never remove fields from responses (add new ones only)
+☐ Make new fields optional initially
+☐ Document deprecations in response headers:
   Deprecation: true
   Sunset: Sat, 1 Jan 2025 00:00:00 GMT
   Link: &lt;/v2/orders&gt;; rel="successor-version"
 
-â˜ Provide migration guides for breaking changes
-â˜ Keep old version running for minimum 6 months after deprecation
-â˜ Use HATEOAS for optional discoverability
-â˜ Test backward compatibility automatically
-â˜ Maintain API changelog
+☐ Provide migration guides for breaking changes
+☐ Keep old version running for minimum 6 months after deprecation
+☐ Use HATEOAS for optional discoverability
+☐ Test backward compatibility automatically
+☐ Maintain API changelog
 */
 
 // === 9. Pagination best practices ===
@@ -7518,11 +7518,11 @@ Cursor-based (for real-time data):
 GET /api/orders?cursor=id_100&limit=20
 Response: { data: [...], nextCursor: "id_120", hasMore: true }
 
-â˜ Always return total count for page-based pagination
-â˜ Set sensible defaults (page=0, size=20)
-â˜ Enforce maximum page size (size &lt;= 100)
-â˜ Include pagination links/headers
-â˜ Use stable sorting for consistent pagination
+☐ Always return total count for page-based pagination
+☐ Set sensible defaults (page=0, size=20)
+☐ Enforce maximum page size (size &lt;= 100)
+☐ Include pagination links/headers
+☐ Use stable sorting for consistent pagination
 */
 
 @GetMapping
@@ -7539,47 +7539,47 @@ public ResponseEntity&lt;Page<Order&gt;> getOrders(Pageable pageable) {
 // === 10. Complete checklist → concise ===
 /*
 DESIGN
-â˜ Nouns, plural, kebab-case for URLs
-â˜ Correct HTTP methods (GET/POST/PUT/PATCH/DELETE)
-â˜ Correct status codes (every endpoint)
-â˜ Consistent naming conventions
-â˜ HATEOAS optional (self links recommended)
+☐ Nouns, plural, kebab-case for URLs
+☐ Correct HTTP methods (GET/POST/PUT/PATCH/DELETE)
+☐ Correct status codes (every endpoint)
+☐ Consistent naming conventions
+☐ HATEOAS optional (self links recommended)
 
 ERRORS
-â˜ RFC 7807 Problem Details
-â˜ Field-level validation errors
-â˜ Correlation IDs
-â˜ No stack traces in production
+☐ RFC 7807 Problem Details
+☐ Field-level validation errors
+☐ Correlation IDs
+☐ No stack traces in production
 
 SECURITY
-â˜ HTTPS + HSTS
-â˜ JWT authentication
-â˜ Method-level authorization
-â˜ Input validation (Bean Validation)
-â˜ Rate limiting
-â˜ CORS whitelist
-â˜ Security headers
-â˜ Audit logging
+☐ HTTPS + HSTS
+☐ JWT authentication
+☐ Method-level authorization
+☐ Input validation (Bean Validation)
+☐ Rate limiting
+☐ CORS whitelist
+☐ Security headers
+☐ Audit logging
 
 PERFORMANCE
-â˜ Pagination (default 20, max 100)
-â˜ ETag + Cache-Control
-â˜ Database indexes
-â˜ Gzip compression
-â˜ Connection pooling
+☐ Pagination (default 20, max 100)
+☐ ETag + Cache-Control
+☐ Database indexes
+☐ Gzip compression
+☐ Connection pooling
 
 DOCUMENTATION
-â˜ OpenAPI 3.0
-â˜ Examples for all endpoints
-â˜ Error response documentation
-â˜ Auth documentation
+☐ OpenAPI 3.0
+☐ Examples for all endpoints
+☐ Error response documentation
+☐ Auth documentation
 
 EVOLUTION
-â˜ API versioning
-â˜ Backward-compatible changes
-â˜ Deprecation headers
-â˜ Migration guides
-â˜ Changelog
+☐ API versioning
+☐ Backward-compatible changes
+☐ Deprecation headers
+☐ Migration guides
+☐ Changelog
 */
 
 // === 11. Request tracing ===

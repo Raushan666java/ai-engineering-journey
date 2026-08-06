@@ -487,7 +487,7 @@ public void insert(int value) {
 | Metric | Value | Why |
 |--------|-------|-----|
 | Time (worst) | O(log n) | New element bubbles up from leaf to root. Path length = tree height = log n. |
-| Time (best) | O(1) | New element is already â‰¤ parent. No swaps. |
+| Time (best) | O(1) | New element is already ≤ parent. No swaps. |
 | Space | O(1) | In-place swaps, no extra data structures. |
 
 **Advantages & Disadvantages:**
@@ -503,7 +503,7 @@ public void insert(int value) {
 - **Single element:** Added at index 1, parent = 0, compare once. O(1).
 - **Inserting max value repeatedly:** Each insertion bubbles all the way up. O(log n) each.
 - **Inserting min value:** No bubbles. O(1).
-- **Duplicate values:** If A[parent] &lt; A[i] is strict, stable behavior. If â‰¤, boundary case → duplicates may swap unnecessarily.
+- **Duplicate values:** If A[parent] &lt; A[i] is strict, stable behavior. If ≤, boundary case → duplicates may swap unnecessarily.
 - **Very large values causing integer overflow:** Parent index computation uses integer arithmetic. For n > 2^31, index overflow is possible.
 - **Floating point NaN:** NaN comparisons are false, so NaN will sit at leaf level and never bubble up.
 
@@ -808,12 +808,12 @@ public static void heapSort(int[] arr) {
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| Time (all cases) | O(n log n) | Build O(n) + n extracts Ã— O(log n) heapify each = O(n) + O(n log n) = O(n log n) |
+| Time (all cases) | O(n log n) | Build O(n) + n extracts × O(log n) heapify each = O(n) + O(n log n) = O(n log n) |
 | Space | O(1) | In-place sorting, only a few variables |
 | Stability | Not stable | Equal elements' relative order is NOT preserved |
 | Adaptive | No | Same O(n log n) regardless of input order |
 
-**Why O(n log n) always?** Unlike quicksort (O(nÂ²) worst case) or insertion sort (O(nÂ²)), heap sort has no worst-case degradation. Every extract applies heapify from root to leaf, always log n depth, regardless of input distribution.
+**Why O(n log n) always?** Unlike quicksort (O(n²) worst case) or insertion sort (O(n²)), heap sort has no worst-case degradation. Every extract applies heapify from root to leaf, always log n depth, regardless of input distribution.
 
 **Advantages & Disadvantages:**
 
@@ -1153,7 +1153,7 @@ void sortNearlySorted(std::vector<int>& arr, int k) {
 ### Dijkstra's Shortest Path Algorithm
 - **Problem:** Find shortest path from source to all vertices in a weighted graph.
 - **Heap role:** Min-heap stores {distance, vertex} pairs. Extract min gives the nearest unvisited vertex. Decrease key updates distances when a shorter path is found.
-- **Complexity:** O((V+E) log V) with binary heap. Without heap: O(VÂ²).
+- **Complexity:** O((V+E) log V) with binary heap. Without heap: O(V²).
 
 ### Prim's Minimum Spanning Tree
 - **Problem:** Find the MST connecting all vertices with minimum total edge weight.
@@ -1189,13 +1189,13 @@ void sortNearlySorted(std::vector<int>& arr, int k) {
 - **Median finder with two heaps:** Maintain a max-heap for the lower half and a min-heap for the upper half. Insert in O(log n); the median is the max-heap's root (or average of both roots) in O(1).
 - **decreaseKey in Dijkstra:** To implement Dijkstra's algorithm efficiently, you need a priority queue that supports priority updates. A binary heap with an index array mapping vertex → heap position enables O(log n) decreaseKey.
 - **Fibonacci heap trade-off:** O(1) amortized decreaseKey and insert, but high constant factors and complex implementation. Binary heap is preferred in practice.
-- **Python's heapq is a min-heap:** For max-heap, negate values. For custom objects, store (âˆ’priority, object) tuples.
+- **Python's heapq is a min-heap:** For max-heap, negate values. For custom objects, store (−priority, object) tuples.
 - **Java's PriorityQueue is a min-heap by default:** Use `Collections.reverseOrder()` for max-heap.
 
 ## One-Sentence Takeaways
 
 - Heaps are complete binary trees stored implicitly in arrays with O(log n) insert and extract.
-- Max-heap: parent â‰¥ children; min-heap: parent â‰¤ children.
+- Max-heap: parent ≥ children; min-heap: parent ≤ children.
 - Building a heap from an array is O(n) using bottom-up heapify.
 - Heap sort sorts in place in O(n log n) time with no worst-case degradation.
 - Priority queues are typically implemented with binary heaps.
@@ -1503,35 +1503,35 @@ function dijkstra(graph: Edge[][], start: number): number[] {
 }
 ```
    - c) O(log n)
-   - d) O(nÂ²)
+   - d) O(n²)
 
 2. **In a max-heap, the root is:**
    - a) The smallest element
-   - b) The largest element âœ“
+   - b) The largest element ✓
    - c) Random
    - d) Middle element
 
 3. **What is heap sort's worst-case complexity?**
-   - a) O(n log n) âœ“
-   - b) O(nÂ²)
+   - a) O(n log n) ✓
+   - b) O(n²)
    - c) O(n)
    - d) O(log n)
 
 4. **The left child of index i (0-based) is at:**
    - a) 2i
-   - b) 2i + 1 âœ“
+   - b) 2i + 1 ✓
    - c) i/2
    - d) i + 1
 
 5. **Which data structure is a heap usually used to implement?**
    - a) Stack
-   - b) Priority queue âœ“
+   - b) Priority queue ✓
    - c) Hash table
    - d) Queue
 
 6. **Why is buildHeap O(n) instead of O(n log n)?**
    - a) Heapify never runs at the root
-   - b) Most nodes are near the bottom and need little work âœ“
+   - b) Most nodes are near the bottom and need little work ✓
    - c) The array is already sorted
    - d) Compiler optimizations
 

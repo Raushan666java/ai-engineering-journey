@@ -73,7 +73,7 @@ Service Level Agreements define measurable commitments. Key metrics include:
 - **First Response Time (FRT):** Time from ticket creation to first agent reply. Typical SLAs: 1 hour for urgent, 4 hours for standard.
 - **Resolution Time (RT):** Time to close or resolve the ticket. Often measured as Mean Time to Resolve (MTTR).
 - **SLA Compliance Rate:** Percentage of tickets meeting their SLA targets within a given period. Most teams target 90%+.
-- **Backlog Aging:** Distribution of open tickets by time buckets (e.g., &lt; 24h, 24â€“72h, 72h+).
+- **Backlog Aging:** Distribution of open tickets by time buckets (e.g., &lt; 24h, 24–72h, 72h+).
 - **Breach Count:** Number of tickets that exceeded SLA thresholds, broken down by priority and team.
 - **Business Hours vs. Calendar Hours:** Many SLAs exclude weekends and after-hours, requiring configurable support windows.
 
@@ -87,7 +87,7 @@ Multi-channel normalization solves three problems: format variance, identity res
 
 **Q5: Describe how customer satisfaction is measured in support platforms.**
 
-Satisfaction measurement typically uses post-resolution surveys dispatched automatically after ticket closure. The **CSAT (Customer Satisfaction Score)** asks "How satisfied were you with the support you received?" on a 1â€“5 scale. **FCR (First Contact Resolution)** is a binary yes/no question asking whether the issue was resolved in a single interaction. **NPS (Net Promoter Score)** asks "How likely are you to recommend us?" on a 0â€“10 scale. Response data feeds trend dashboards that track scores by agent, team, channel, and time period. Free-text survey comments are analyzed via sentiment analysis to extract emerging themes and detect negative trends requiring intervention.
+Satisfaction measurement typically uses post-resolution surveys dispatched automatically after ticket closure. The **CSAT (Customer Satisfaction Score)** asks "How satisfied were you with the support you received?" on a 1–5 scale. **FCR (First Contact Resolution)** is a binary yes/no question asking whether the issue was resolved in a single interaction. **NPS (Net Promoter Score)** asks "How likely are you to recommend us?" on a 0–10 scale. Response data feeds trend dashboards that track scores by agent, team, channel, and time period. Free-text survey comments are analyzed via sentiment analysis to extract emerging themes and detect negative trends requiring intervention.
 
 ---
 
@@ -178,7 +178,7 @@ class SentimentAnalysisAgent
 }
 ```
 
-The sentiment score (typically â€“1.0 to 1.0) is stored on both the message and the ticket for trend analysis. The agent also extracts emotion labels (frustration, urgency, satisfaction) and flags churn risk. Escalation happens at configurable thresholds, combined with ticket age to avoid false positives from isolated frustrated messages.
+The sentiment score (typically –1.0 to 1.0) is stored on both the message and the ticket for trend analysis. The agent also extracts emotion labels (frustration, urgency, satisfaction) and flags churn risk. Escalation happens at configurable thresholds, combined with ticket age to avoid false positives from isolated frustrated messages.
 
 **Q8: How would you implement a Knowledge Base RAG agent that retrieves articles and generates contextual answers?**
 
@@ -497,7 +497,7 @@ class SlaMonitoringAgent
 }
 ```
 
-The monitoring agent runs as a scheduled artisan command every 5â€“15 minutes. It checks all active tickets against their SLA policies, triggers escalation for breached thresholds, and caches compliance snapshots for dashboard consumption. Daily reports include team-level breach breakdowns and backlog aging distributions.
+The monitoring agent runs as a scheduled artisan command every 5–15 minutes. It checks all active tickets against their SLA policies, triggers escalation for breached thresholds, and caches compliance snapshots for dashboard consumption. Daily reports include team-level breach breakdowns and backlog aging distributions.
 
 **Q14: How would you implement agent skill-based routing in a Laravel support system?**
 
@@ -608,7 +608,7 @@ CREATE INDEX idx_articles_embedding ON articles
 
 3. **Two-tier retrieval:** First attempt a lightweight keyword search (Laravel Scout or full-text index) that returns results in single-digit milliseconds. Only fall back to vector search if keyword precision is below a threshold.
 
-4. **Response caching:** Cache the full RAG result for identical queries with a short TTL (30â€“60 seconds for live queries, hours for FAQ pages). Invalidate the cache when articles are updated using a model observer.
+4. **Response caching:** Cache the full RAG result for identical queries with a short TTL (30–60 seconds for live queries, hours for FAQ pages). Invalidate the cache when articles are updated using a model observer.
 
 **Q19: Design the database schema for a multi-tenant customer support platform.**
 

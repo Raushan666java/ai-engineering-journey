@@ -371,11 +371,11 @@ HTTP status codes are three-digit integers grouped into five families. The first
 
 | Family | Range | Category | Meaning | Example |
 |--------|-------|----------|---------|---------|
-| 1xx | 100â€“199 | Informational | Request received, continuing | 101 Switching Protocols |
-| 2xx | 200â€“299 | Success | Action received, understood, accepted | 200 OK, 201 Created, 204 No Content |
-| 3xx | 300â€“399 | Redirection | Further action needed | 301 Moved, 304 Not Modified |
-| 4xx | 400â€“499 | Client Error | Request contains bad syntax or cannot be fulfilled | 404 Not Found, 401 Unauthorized |
-| 5xx | 500â€“599 | Server Error | Server failed to fulfill a valid request | 500 Internal Server Error |
+| 1xx | 100–199 | Informational | Request received, continuing | 101 Switching Protocols |
+| 2xx | 200–299 | Success | Action received, understood, accepted | 200 OK, 201 Created, 204 No Content |
+| 3xx | 300–399 | Redirection | Further action needed | 301 Moved, 304 Not Modified |
+| 4xx | 400–499 | Client Error | Request contains bad syntax or cannot be fulfilled | 404 Not Found, 401 Unauthorized |
+| 5xx | 500–599 | Server Error | Server failed to fulfill a valid request | 500 Internal Server Error |
 
 **Common Status Codes with Usage:**
 
@@ -414,7 +414,7 @@ CRUD (Create, Read, Update, Delete) maps naturally to HTTP methods.
 | Update (partial) | PATCH | `/resources/{id}` | Partial data/patch ops | Updated resource | 200 OK |
 | Delete | DELETE | `/resources/{id}` | → | Empty body | 204 No Content |
 
-**Important: REST â‰  CRUD.** REST is about resources and their state transfers, not just database operations. A `cancel` action on an order could be `POST /orders/{id}/cancel` instead of `PATCH /orders/{id}` `{status:"cancelled"}`. Design resources around business actions, not table rows.
+**Important: REST ≠ CRUD.** REST is about resources and their state transfers, not just database operations. A `cancel` action on an order could be `POST /orders/{id}/cancel` instead of `PATCH /orders/{id}` `{status:"cancelled"}`. Design resources around business actions, not table rows.
 
 **Pseudocode: CRUD Controller**
 
@@ -2742,12 +2742,12 @@ An API gateway is a reverse proxy that sits between clients and backend services
 
 Common API gateways: Kong, NGINX, AWS API Gateway, Envoy, Traefik.
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
 
-- **REST â‰  CRUD**: Not every resource needs all four CRUD operations. Design resources around business actions. For example, `POST /orders/{id}/cancel` is more expressive than `PATCH /orders/{id}` with `{status: "cancelled"}`.
+- **REST ≠ CRUD**: Not every resource needs all four CRUD operations. Design resources around business actions. For example, `POST /orders/{id}/cancel` is more expressive than `PATCH /orders/{id}` with `{status: "cancelled"}`.
 - **gRPC streaming is cheaper than polling**: For real-time feeds, use gRPC server streaming instead of REST polling. One persistent gRPC stream replaces hundreds of REST GET requests, reducing both latency and server load.
-- **GraphQL query complexity limits are mandatory**: Without depth/width limiting, a single malicious query like `{users{posts{comments{user{posts{...}}}}}` can bring down your server. Always enforce max depth (5â€“7) and query cost analysis.
-- **WebRTC needs a TURN server**: STUN works for 80â€“90% of NAT types, but symmetric NAT requires TURN relay. Always deploy a TURN server (coturn) for production WebRTC applications.
+- **GraphQL query complexity limits are mandatory**: Without depth/width limiting, a single malicious query like `{users{posts{comments{user{posts{...}}}}}` can bring down your server. Always enforce max depth (5–7) and query cost analysis.
+- **WebRTC needs a TURN server**: STUN works for 80–90% of NAT types, but symmetric NAT requires TURN relay. Always deploy a TURN server (coturn) for production WebRTC applications.
 - **ETag + Cache-Control for production**: Never rely on one alone. Cache-Control gives you a freshness window, ETag provides validation when stale. Together they minimize both bandwidth and server load.
 - **Rate limit at the gateway, not each service**: Centralized rate limiting at the API gateway (Kong, Envoy) ensures consistent enforcement. Per-service rate limiting creates gaps and inconsistent user experience.
 
@@ -2826,48 +2826,48 @@ Common API gateways: Kong, NGINX, AWS API Gateway, Envoy, Traefik.
 1. **Which HTTP method is idempotent?**
    - a) POST
    - b) PATCH
-   - c) PUT âœ“
+   - c) PUT ✓
    - d) Both a and b
 
 2. **What does WebSocket use for the initial handshake?**
    - a) UDP upgrade
-   - b) HTTP upgrade âœ“
+   - b) HTTP upgrade ✓
    - c) TLS directly
    - d) DNS query
 
 3. **Which gRPC service type allows independent streams in both directions?**
    - a) Unary
    - b) Server streaming
-   - c) Bidirectional streaming âœ“
+   - c) Bidirectional streaming ✓
    - d) Client streaming
 
 4. **Which WebRTC component relays traffic when direct P2P fails?**
    - a) STUN
-   - b) TURN âœ“
+   - b) TURN ✓
    - c) ICE
    - d) SDP
 
 5. **What prevents malicious deep queries in GraphQL?**
    - a) Rate limiting
-   - b) Query complexity analysis âœ“
+   - b) Query complexity analysis ✓
    - c) JWT validation
    - d) DataLoader
 
 6. **Which Cache-Control directive prevents any caching?**
    - a) `no-cache`
-   - b) `no-store` âœ“
+   - b) `no-store` ✓
    - c) `private`
    - d) `must-revalidate`
 
 7. **What status code does a conditional GET return when the resource has NOT changed?**
    - a) 200 OK
-   - b) 204 No Content âœ“
+   - b) 204 No Content ✓
    - c) 304 Not Modified
    - d) 412 Precondition Failed
 
 8. **Which rate limiting algorithm allows burst traffic?**
    - a) Fixed window
-   - b) Token bucket âœ“
+   - b) Token bucket ✓
    - c) Leaky bucket
    - d) Sliding window log
 

@@ -341,8 +341,8 @@ For updates, `order_updates=true` groups statements by entity type:
 ```java
 @Transactional
 public void bulkStatusUpdate(List<Long> ids, String newStatus) {
-    // âŒ Without batching: N separate UPDATEs (one per entity)
-    // âœ… With order_updates: batched UPDATE ... WHERE id IN (...)
+    // ❌ Without batching: N separate UPDATEs (one per entity)
+    // ✅ With order_updates: batched UPDATE ... WHERE id IN (...)
 
     for (Long id : ids) {
         User u = em.find(User.class, id);

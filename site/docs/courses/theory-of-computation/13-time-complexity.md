@@ -82,13 +82,13 @@ flowchart LR
 ### 12.1 Time Complexity
 
 
-The **time complexity** of a Turing machine M is the function t: â„• → â„• where t(n) is the maximum number of steps M takes on any input of length n.
+The **time complexity** of a Turing machine M is the function t: ℕ → ℕ where t(n) is the maximum number of steps M takes on any input of length n.
 
 For a **multitape TM**, the time complexity is defined similarly, but one step may involve all heads simultaneously.
 
-**Big-O notation:** f(n) = O(g(n)) if there exist constants c > 0 and nâ‚€ such that for all n â‰¥ nâ‚€, f(n) â‰¤ cÂ·g(n).
+**Big-O notation:** f(n) = O(g(n)) if there exist constants c > 0 and n₀ such that for all n ≥ n₀, f(n) ≤ c·g(n).
 
-Common complexity classes: O(1), O(log n), O(n), O(n log n), O(nÂ²), O(2â¿), O(n!).
+Common complexity classes: O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ), O(n!).
 
 ### 12.2 The Time Hierarchy Theorem
 
@@ -109,7 +109,7 @@ The **time hierarchy theorem** shows that more time gives more computational pow
 ### 12.3 The Class P
 
 
-**P = âˆª_{k â‰¥ 0} TIME(náµ)**
+**P = ∪_{k ≥ 0} TIME(nᵏ)**
 
 P is the class of languages decidable in **polynomial time** on a deterministic Turing machine.
 
@@ -121,8 +121,8 @@ P is the class of languages decidable in **polynomial time** on a deterministic 
 **Problems in P:**
 - Path existence in graphs (DFS/BFS).
 - Sorting a list (O(n log n)).
-- Matrix multiplication (O(nÂ³)).
-- Linear programming (O(nÂ³Â·L)).
+- Matrix multiplication (O(n³)).
+- Linear programming (O(n³·L)).
 - GCD computation (Euclidean algorithm).
 - Context-free language membership (CYK algorithm).
 - DFA equivalence.
@@ -130,46 +130,46 @@ P is the class of languages decidable in **polynomial time** on a deterministic 
 ### 12.4 The Class NP
 
 
-**NP = âˆª_{k â‰¥ 0} NTIME(náµ)**
+**NP = ∪_{k ≥ 0} NTIME(nᵏ)**
 
 NP is the class of languages decidable in polynomial time on a **nondeterministic** Turing machine.
 
 **Equivalent characterization:** A language L is in NP if there exists a **verifier** V such that:
 - V is a polynomial-time deterministic TM.
-- For any string x âˆˆ L, there exists a proof y (|y| â‰¤ p(|x|) for some polynomial p) such that V accepts âŸ¨x, yâŸ©.
-- For any x âˆ‰ L, V rejects âŸ¨x, yâŸ© for all y.
+- For any string x ∈ L, there exists a proof y (|y| ≤ p(|x|) for some polynomial p) such that V accepts ⟨x, y⟩.
+- For any x ∉ L, V rejects ⟨x, y⟩ for all y.
 
 **Intuition:** NP = problems where solutions can be **verified** in polynomial time. The certificate y is the "solution" to the problem; checking it is efficient.
 
 **Problems in NP:**
 - SAT (Boolean satisfiability): given a formula, does a satisfying assignment exist?
-- TSP (Traveling Salesman Problem): is there a tour of length â‰¤ K?
+- TSP (Traveling Salesman Problem): is there a tour of length ≤ K?
 - CLIQUE: does a graph contain a K-clique?
 - SUBSET-SUM: does a subset of numbers sum to exactly T?
-- VERTEX-COVER: is there a vertex cover of size â‰¤ K?
+- VERTEX-COVER: is there a vertex cover of size ≤ K?
 
 **P vs NP:** The most famous open problem in computer science. Does P = NP?
 - If P = NP: all efficiently verifiable problems are efficiently solvable.
-- If P â‰  NP: some problems are inherently hard → their solutions can be verified quickly but not found quickly.
+- If P ≠ NP: some problems are inherently hard → their solutions can be verified quickly but not found quickly.
 
-Most researchers believe P â‰  NP.
+Most researchers believe P ≠ NP.
 
 ### 12.5 Polynomial-Time Reductions
 
 
-A language A is **polynomial-time reducible** to B (written A â‰¤_P B) if there exists a function f computable in polynomial time such that w âˆˆ A iff f(w) âˆˆ B.
+A language A is **polynomial-time reducible** to B (written A ≤_P B) if there exists a function f computable in polynomial time such that w ∈ A iff f(w) ∈ B.
 
 **Properties:**
-- If A â‰¤_P B and B âˆˆ P, then A âˆˆ P.
-- If A â‰¤_P B and A âˆ‰ P, then B âˆ‰ P.
-- Polynomial-time reductions are **transitive**: if A â‰¤_P B and B â‰¤_P C, then A â‰¤_P C.
+- If A ≤_P B and B ∈ P, then A ∈ P.
+- If A ≤_P B and A ∉ P, then B ∉ P.
+- Polynomial-time reductions are **transitive**: if A ≤_P B and B ≤_P C, then A ≤_P C.
 
 ### 12.6 NP-Completeness
 
 
 A language B is **NP-complete** if:
-1. B âˆˆ NP.
-2. For every A âˆˆ NP, A â‰¤_P B (B is NP-hard).
+1. B ∈ NP.
+2. For every A ∈ NP, A ≤_P B (B is NP-hard).
 
 **Significance:** If any NP-complete problem is in P, then P = NP. If any NP-complete problem is not in P, then no NP-complete problem is in P.
 
@@ -180,16 +180,16 @@ A language B is **NP-complete** if:
 
 **Proof sketch:**
 
-1. **SAT âˆˆ NP:** Given a formula and an assignment, verify in polynomial time.
-2. **SAT is NP-hard:** For any A âˆˆ NP with NTM N running in náµ time, construct a Boolean formula Ï† that is satisfiable iff N accepts w.
+1. **SAT ∈ NP:** Given a formula and an assignment, verify in polynomial time.
+2. **SAT is NP-hard:** For any A ∈ NP with NTM N running in nᵏ time, construct a Boolean formula φ that is satisfiable iff N accepts w.
 
 The formula encodes:
 - **Cell states:** Variables x_{i,j,s} meaning "cell i,j contains symbol s." (i = time step, j = tape position.)
-- **Initial state:** Ï†_start encodes the initial configuration qâ‚€ w.
-- **Valid transitions:** Ï†_move ensures each configuration follows from the previous via N's transition relation.
-- **Acceptance:** Ï†_accept ensures at least one configuration is accepting.
+- **Initial state:** φ_start encodes the initial configuration q₀ w.
+- **Valid transitions:** φ_move ensures each configuration follows from the previous via N's transition relation.
+- **Acceptance:** φ_accept ensures at least one configuration is accepting.
 
-The formula size is O(nÂ²áµ), which is polynomial in n. A satisfying assignment corresponds to an accepting computation of N.
+The formula size is O(n²ᵏ), which is polynomial in n. A satisfying assignment corresponds to an accepting computation of N.
 
 **The three-part formula f:**
 
@@ -220,15 +220,15 @@ flowchart LR
 
 
 To prove a problem B is NP-complete:
-1. **Show B âˆˆ NP:** Give a polynomial-time verifier.
-2. **Show B is NP-hard:** Choose a known NP-complete problem A and show A â‰¤_P B.
+1. **Show B ∈ NP:** Give a polynomial-time verifier.
+2. **Show B is NP-hard:** Choose a known NP-complete problem A and show A ≤_P B.
 
 **Standard NP-complete problems:**
 - **3SAT:** Boolean formulas in CNF with exactly 3 literals per clause.
-- **CLIQUE:** Does G contain a K-clique? (K â‰¤ |V|)
+- **CLIQUE:** Does G contain a K-clique? (K ≤ |V|)
 - **VERTEX-COVER:** Does G have a vertex cover of size K?
 - **HAM-CYCLE/HAM-PATH:** Does G have a Hamiltonian cycle/path?
-- **TSP:** Does the complete graph have a tour of weight â‰¤ D?
+- **TSP:** Does the complete graph have a tour of weight ≤ D?
 - **SUBSET-SUM:** Does a set of integers have a subset summing to T?
 - **PARTITION:** Can a multiset be partitioned into equal-sum subsets?
 - **BIN-PACKING:** Can items of given sizes fit into K bins of capacity C?
@@ -262,50 +262,50 @@ If P = NP, the entire polynomial hierarchy collapses to P at the first level. Th
 - All NP-complete problems.
 - Optimization versions of NP-complete problems.
 
-**co-NP:** Languages whose complements are in NP. Example: TAUTOLOGY = { Ï† | Ï† is true for all assignments } âˆˆ co-NP.
+**co-NP:** Languages whose complements are in NP. Example: TAUTOLOGY = { φ | φ is true for all assignments } ∈ co-NP.
 
-**NPI (NP-Intermediate):** If P â‰  NP, there exist problems in NP that are neither in P nor NP-complete (Ladner's theorem). Candidates: Graph Isomorphism, Factoring.
+**NPI (NP-Intermediate):** If P ≠ NP, there exist problems in NP that are neither in P nor NP-complete (Ladner's theorem). Candidates: Graph Isomorphism, Factoring.
 
 ## Examples
 
 ### Example 12.1: Proving a Problem is in NP → CLIQUE
 
-CLIQUE = { âŸ¨G, KâŸ© | G has a K-clique }.
+CLIQUE = { ⟨G, K⟩ | G has a K-clique }.
 
-**Verifier:** Given input âŸ¨G, KâŸ© and certificate (a set of K vertices V'):
+**Verifier:** Given input ⟨G, K⟩ and certificate (a set of K vertices V'):
 - Verify |V'| = K.
-- Verify that for every pair u, v âˆˆ V', (u, v) is an edge in G.
+- Verify that for every pair u, v ∈ V', (u, v) is an edge in G.
 - If all checks pass, accept; otherwise reject.
 
-Runtime: O(KÂ²) âŠ† O(|V|Â²) → polynomial. So CLIQUE âˆˆ NP.
+Runtime: O(K²) ⊆ O(|V|²) → polynomial. So CLIQUE ∈ NP.
 
-### Example 12.2: 3SAT â‰¤_P CLIQUE
+### Example 12.2: 3SAT ≤_P CLIQUE
 
-Given a 3CNF formula Ï† with k clauses, construct graph G:
+Given a 3CNF formula φ with k clauses, construct graph G:
 - Create 3 vertices per clause (one for each literal).
-- Connect vertices if they are in different clauses AND are not contradictory (not x and Â¬x).
+- Connect vertices if they are in different clauses AND are not contradictory (not x and ¬x).
 - Set K = k (number of clauses).
 
-**Correctness:** Ï† is satisfiable iff there is a k-clique in G. A clique of size k picks one literal from each clause, all of which can be simultaneously true.
+**Correctness:** φ is satisfiable iff there is a k-clique in G. A clique of size k picks one literal from each clause, all of which can be simultaneously true.
 
-Construction: O(kÂ²Â·3Â²) = O(kÂ²) → polynomial.
+Construction: O(k²·3²) = O(k²) → polynomial.
 
-### Example 12.3: VERTEX-COVER â‰¤_P CLIQUE (via complement)
+### Example 12.3: VERTEX-COVER ≤_P CLIQUE (via complement)
 
-Given graph G = (V, E) and integer k, the complement graph á¸  = (V, Ä’) where Ä’ = { (u,v) | u â‰  v and (u,v) âˆ‰ E }.
+Given graph G = (V, E) and integer k, the complement graph Ḡ = (V, Ē) where Ē = { (u,v) | u ≠ v and (u,v) ∉ E }.
 
-**Key fact:** C is a vertex cover in G iff V âˆ’ C is a clique in á¸ .
+**Key fact:** C is a vertex cover in G iff V − C is a clique in Ḡ.
 
-So: G has a k-vertex-cover iff á¸  has an (|V|âˆ’k)-clique.
+So: G has a k-vertex-cover iff Ḡ has an (|V|−k)-clique.
 
-This gives: VERTEX-COVER â‰¤_P CLIQUE.
+This gives: VERTEX-COVER ≤_P CLIQUE.
 
-### Example 12.4: SAT â‰¤_P 3SAT
+### Example 12.4: SAT ≤_P 3SAT
 
-Given SAT formula Ï†, convert to 3SAT Ï†':
-- Each clause in Ï† is replaced by a set of 3-clauses using auxiliary variables.
-- For a 1-literal clause (x): replace with (x âˆ¨ x âˆ¨ x).
-- For a 2-literal clause (x âˆ¨ y): replace with (x âˆ¨ y âˆ¨ z) âˆ§ (x âˆ¨ y âˆ¨ Â¬z) for fresh z.
+Given SAT formula φ, convert to 3SAT φ':
+- Each clause in φ is replaced by a set of 3-clauses using auxiliary variables.
+- For a 1-literal clause (x): replace with (x ∨ x ∨ x).
+- For a 2-literal clause (x ∨ y): replace with (x ∨ y ∨ z) ∧ (x ∨ y ∨ ¬z) for fresh z.
 - For a k-literal clause (k > 3): introduce k-3 new variables to split into 3-clauses.
 
 The transformation is polynomial and preserves satisfiability.
@@ -323,7 +323,7 @@ The transformation is polynomial and preserves satisfiability.
 
 ### Example 12.6: SUBSET-SUM is NP-Complete
 
-Given numbers aâ‚, â€¦, aâ‚™ and target T.
+Given numbers a₁, …, aₙ and target T.
 
 **In NP:** Certificate is the subset. Verify sum = T.
 
@@ -808,7 +808,7 @@ export { Processor, Task }
 1. Show that PATH (is there a path from s to t in a directed graph?) is in P.
 2. Show that COMPOSITE (is n composite?) is in NP.
 3. Show that P is closed under union, intersection, and complement.
-4. Explain why a polynomial-time reduction from A to B combined with B âˆˆ P implies A âˆˆ P.
+4. Explain why a polynomial-time reduction from A to B combined with B ∈ P implies A ∈ P.
 5. Classify: Sorting, TSP, Matrix multiplication, Graph connectivity → which are in P and which are in NP?
 
 ### Intermediate

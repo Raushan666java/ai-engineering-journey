@@ -835,7 +835,7 @@ export { Processor, Task }
 
 ### Application Problems
 
-5. Write the HTML for a product review form with fields for name, rating (1â€“5), email, and review text. Include appropriate validation and accessibility attributes.
+5. Write the HTML for a product review form with fields for name, rating (1–5), email, and review text. Include appropriate validation and accessibility attributes.
 6. Build a page layout using `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, and `<footer>` that represents a blog post with a sidebar containing related links.
 7. Implement an audio player with fallback text and both MP3 and OGG source formats.
 

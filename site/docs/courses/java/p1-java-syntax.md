@@ -169,10 +169,10 @@ Java has **eight primitive types**. Everything else in Java is an object (refere
 |------|------|-----|-----|---------|---------|
 | `byte` | 8-bit | -128 | 127 | 0 | `byte b = 100;` |
 | `short` | 16-bit | -32,768 | 32,767 | 0 | `short s = 30_000;` |
-| `int` | 32-bit | -2Â³Â¹ | 2Â³Â¹-1 | 0 | `int i = 2_000_000_000;` |
-| `long` | 64-bit | -2â¶Â³ | 2â¶Â³-1 | 0L | `long l = 100_000_000_000L;` |
-| `float` | 32-bit | Â±1.4e-45 | Â±3.4e+38 | 0.0f | `float f = 3.14f;` |
-| `double` | 64-bit | Â±4.9e-324 | Â±1.8e+308 | 0.0d | `double d = 3.14159265358979;` |
+| `int` | 32-bit | -2³¹ | 2³¹-1 | 0 | `int i = 2_000_000_000;` |
+| `long` | 64-bit | -2⁶³ | 2⁶³-1 | 0L | `long l = 100_000_000_000L;` |
+| `float` | 32-bit | ±1.4e-45 | ±3.4e+38 | 0.0f | `float f = 3.14f;` |
+| `double` | 64-bit | ±4.9e-324 | ±1.8e+308 | 0.0d | `double d = 3.14159265358979;` |
 | `char` | 16-bit | 0 | 65,535 (Unicode) | '\u0000' | `char c = 'A';` |
 | `boolean` | JVM-dependent | → | → | false | `boolean flag = true;` |
 

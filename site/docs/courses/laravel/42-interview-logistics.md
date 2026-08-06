@@ -85,7 +85,7 @@ These components interact through events: a new order triggers inventory reserva
 
 ---
 
-### Q2: Explain the difference between perpetual inventory and periodic inventory systems. Which isæ›´é€‚åˆ for a Laravel-based logistics platform?
+### Q2: Explain the difference between perpetual inventory and periodic inventory systems. Which is更适合 for a Laravel-based logistics platform?
 
 **Perpetual inventory** updates stock levels in real-time with every transaction (sale, receipt, adjustment, transfer). The database always reflects the current on-hand quantity. **Periodic inventory** relies on physical counts at fixed intervals, with stock levels calculated as: beginning inventory + purchases → estimated usage.
 
@@ -124,12 +124,12 @@ Safety stock is extra inventory held to buffer against demand variability and su
 The standard formula is:
 
 ```
-Safety Stock = Z Ã— Ïƒ_d Ã— âˆšL
+Safety Stock = Z × σ_d × √L
 ```
 
 Where:
 - **Z** = service level factor (1.65 for 95%, 2.33 for 99%)
-- **Ïƒ_d** = standard deviation of demand
+- **σ_d** = standard deviation of demand
 - **L** = lead time in days
 
 In a Laravel logistics agent:
@@ -183,7 +183,7 @@ Laravel logistics platforms often implement a **carrier selection agent** that e
 
 
 - **FTL (Full Truckload)**: The shipment occupies the entire trailer. The customer pays for the full truck regardless of actual fill percentage. Best for large shipments (>10 pallets or >15,000 lbs).
-- **LTL (Less-Than-Truckload)**: Multiple shippers share trailer space. The carrier consolidates shipments at hub terminals. Pricing is based on weight, dimensions, and freight class. Best for shipments between 150â€“15,000 lbs.
+- **LTL (Less-Than-Truckload)**: Multiple shippers share trailer space. The carrier consolidates shipments at hub terminals. Pricing is based on weight, dimensions, and freight class. Best for shipments between 150–15,000 lbs.
 - **Parcel Shipping**: Small packages handled by carriers like UPS, FedEx, USPS. Dimension (DIM) weight pricing applies. Best for packages under 150 lbs.
 
 A Laravel rate-shopping agent might query carrier APIs for all three modes and present a cost/speed matrix:
@@ -218,7 +218,7 @@ In a Laravel application, BOLs are typically generated as PDFs using Laravel's B
 ### Q7: Explain the concept of freight class and how it affects pricing.
 
 
-Freight class (defined by the National Motor Freight Classification → NMFC) categorizes commodities into 18 classes (50â€“500) based on four characteristics: **density**, **stowability**, **handling**, and **liability**. Higher classes mean higher cost per pound because the freight is less dense, harder to stow, more difficult to handle, or more valuable.
+Freight class (defined by the National Motor Freight Classification → NMFC) categorizes commodities into 18 classes (50–500) based on four characteristics: **density**, **stowability**, **handling**, and **liability**. Higher classes mean higher cost per pound because the freight is less dense, harder to stow, more difficult to handle, or more valuable.
 
 A Laravel rate engine might use a lookup table mapping product categories to NMFC codes, then calculate DIM weight and apply the class-based rate multiplier:
 
@@ -1291,8 +1291,8 @@ Echo.private(`shipment.${trackingNumber}`)
 
 **Phase 1 → Statistical Baseline:**
 - Calculate daily demand mean and standard deviation per SKU
-- Compute safety stock: `Z Ã— Ïƒ Ã— âˆšL`
-- Set reorder point: `(daily demand Ã— lead time) + safety stock`
+- Compute safety stock: `Z × σ × √L`
+- Set reorder point: `(daily demand × lead time) + safety stock`
 - Alert when inventory drops below reorder point
 
 **Phase 2 → Seasonal Adjustment:**
@@ -1346,7 +1346,7 @@ class InventoryPredictionService
 
 ### Q24: Describe a supply chain management platform you would build. What features, architecture, and AI capabilities would it include?
 
-**Platform:** "SupplyChainOS" → a modular, multi-tenant SCM platform for mid-market companies (50â€“500 employees) managing 10,000â€“100,000 SKUs.
+**Platform:** "SupplyChainOS" → a modular, multi-tenant SCM platform for mid-market companies (50–500 employees) managing 10,000–100,000 SKUs.
 
 **Core Modules:**
 
@@ -1510,19 +1510,19 @@ $shipment->update(['routing_rule' => 'qc_inspection']);
 
 **Strategy:** Strangler Fig pattern → gradually route functionality from the legacy system to the new Laravel platform.
 
-**Phase 1 → Parallel Read (1â€“2 weeks):**
+**Phase 1 → Parallel Read (1–2 weeks):**
 - Deploy Laravel app alongside legacy WMS
 - Both systems read from the same database (legacy writes, Laravel reads)
 - Validate that Laravel's read models match legacy output
 - Run automated comparison scripts nightly
 
-**Phase 2 → Write Pilot (2â€“4 weeks):**
+**Phase 2 → Write Pilot (2–4 weeks):**
 - Migrate receiving workflows first (lowest risk)
 - Laravel handles receiving; legacy system reads from shared database
 - Ship orders from a single test warehouse in Laravel
 - Monitor for data discrepancies
 
-**Phase 3 → Cutover by Module (4â€“8 weeks):**
+**Phase 3 → Cutover by Module (4–8 weeks):**
 
 ```
 Week 4: Receiving ──► Laravel
@@ -1897,7 +1897,7 @@ This chapter covered the interview Q&A landscape for Laravel developers targetin
 
 1. **Carrier Rate Cache**: Design a caching strategy for carrier rate quotes that balances freshness (rates change daily) with response time (shoppers expect &lt;500ms). Implement a Laravel solution using Cache tags and a background job that warms the cache each morning.
 
-2. **Warehouse Slotting Agent**: Extend the `WarehouseAutomationAgent` to analyze pick frequency per SKU and recommend bin relocations. Fast-moving items should move toé»„é‡‘ aisle locations; slow movers to deep storage.
+2. **Warehouse Slotting Agent**: Extend the `WarehouseAutomationAgent` to analyze pick frequency per SKU and recommend bin relocations. Fast-moving items should move to黄金 aisle locations; slow movers to deep storage.
 
 3. **Multi-Echelon Inventory**: Design a data model that supports multi-echelon inventory (central DC → regional warehouse → local fulfillment center). Write a Laravel agent that propagates demand signals upstream with lead-time offsets.
 

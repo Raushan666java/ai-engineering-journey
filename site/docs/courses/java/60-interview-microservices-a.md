@@ -1,11 +1,11 @@
 ---
 id: 60-interview-microservices-a
 slug: /java/60-interview-microservices-a
-title: "Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)"
-sidebar_label: "Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)"
+title: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)"
+sidebar_label: "Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)"
 sidebar_position: 64
 ---
-# Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)
+# Chapter 60: Microservices Interview Q&A (Part A → Q1–Q8)
 
 > **Previous:** [Microservices Interview Q&amp;A](./60-interview-microservices.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md)
 

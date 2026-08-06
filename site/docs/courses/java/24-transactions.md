@@ -75,7 +75,7 @@ flowchart LR
 
 ---
 
-## @Transactional Ã¢â‚¬â€ Declarative Transactions
+## @Transactional — Declarative Transactions
 
 ![Transaction Management Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/24-transactions.png)
 
@@ -244,7 +244,7 @@ public class PropagationDemoService {
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void childRequiresNew() {
         // Suspends the caller's transaction and creates a brand new one.
-        // The new transaction commits independently Ã¢â‚¬â€ even if the parent
+        // The new transaction commits independently — even if the parent
         // rolls back, this child's work is already committed.
         auditLogRepository.save(new AuditLog("requires_new child executed"));
     }
@@ -414,7 +414,7 @@ public class InventoryService {
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public void allocateInventory(Long orderId, List<OrderLine> lines) {
         // Strictest level: prevents phantoms and all anomalies
-        // Use sparingly Ã¢â‚¬â€ throughput suffers significantly
+        // Use sparingly — throughput suffers significantly
         for (OrderLine line : lines) {
             int stock = inventoryRepository.getStock(line.getProductId());
             if (stock >= line.getQuantity()) {
@@ -428,7 +428,7 @@ public class InventoryService {
 
     @Transactional(isolation = Isolation.READ_UNCOMMITTED)
     public int approximateStockLevel(Long productId) {
-        // Allows dirty reads Ã¢â‚¬â€ fastest but least safe
+        // Allows dirty reads — fastest but least safe
         return inventoryRepository.getStock(productId);
     }
 }
@@ -476,7 +476,7 @@ public class RollbackControlService {
     @Transactional(rollbackForClassName = {"java.sql.SQLException"},
                    noRollbackForClassName = {"com.course.tx.OptimisticLockException"})
     public void rollbackByClassName() {
-        // Class name strings Ã¢â‚¬â€ useful when the exception class isn't on the classpath
+        // Class name strings — useful when the exception class isn't on the classpath
         // at compile time
     }
 }
@@ -512,7 +512,7 @@ public class ReadOnlyDemoService {
 
     @Transactional(readOnly = true)
     public AccountSummary getAccountSummary(Long accountId) {
-        // Hibernate skips dirty checking Ã¢â‚¬â€ no flush at commit
+        // Hibernate skips dirty checking — no flush at commit
         // Database may optimize query path
         Account account = accountRepository.findById(accountId)
             .orElseThrow(() -> new IllegalArgumentException("Account not found"));
@@ -616,7 +616,7 @@ public class OrderFulfillmentService {
         order.setStatus("FULFILLED");
         order.setShippingLabel(label);
 
-        // 4. Log audit independently Ã¢â‚¬â€ uses REQUIRES_NEW
+        // 4. Log audit independently — uses REQUIRES_NEW
         // This persists even if the main transaction rolls back
         auditService.logAction(
             "ORDER_FULFILLED",
@@ -655,9 +655,9 @@ flowchart LR
 
 ---
 
-## TransactionTemplate Ã¢â‚¬â€ Programmatic Transactions
+## TransactionTemplate — Programmatic Transactions
 
-When you need fine-grained control over transaction boundaries Ã¢â‚¬â€ for example, looping with per-item transactions or conditionally committing Ã¢â‚¬â€ use `TransactionTemplate` instead of `@Transactional`.
+When you need fine-grained control over transaction boundaries — for example, looping with per-item transactions or conditionally committing — use `TransactionTemplate` instead of `@Transactional`.
 
 ### Basic TransactionTemplate
 
@@ -972,20 +972,20 @@ Spring's `PlatformTransactionManager` is the strategy interface that all transac
 
 ```
 PlatformTransactionManager
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ AbstractPlatformTransactionManager
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ DataSourceTransactionManager    (JDBC / single DataSource)
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ JpaTransactionManager           (JPA / EntityManager)
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ JtaTransactionManager          (JTA / application server)
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ HibernateTransactionManager    (Hibernate 5, legacy)
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ReactiveTransactionManager
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ReactiveTransactionAdapter
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ChainedTransactionManager          (multiple resources)
+├── AbstractPlatformTransactionManager
+│   ├── DataSourceTransactionManager    (JDBC / single DataSource)
+│   ├── JpaTransactionManager           (JPA / EntityManager)
+│   ├── JtaTransactionManager          (JTA / application server)
+│   └── HibernateTransactionManager    (Hibernate 5, legacy)
+├── ReactiveTransactionManager
+│   └── ReactiveTransactionAdapter
+└── ChainedTransactionManager          (multiple resources)
 ```
 
 ### DataSourceTransactionManager
 
 
-Manages transactions on a plain JDBC `DataSource`. The simplest implementation Ã¢â‚¬â€ does not support savepoints, but is lightweight and fast.
+Manages transactions on a plain JDBC `DataSource`. The simplest implementation — does not support savepoints, but is lightweight and fast.
 
 ```java
 package com.course.tx;
@@ -1069,7 +1069,7 @@ public class JtaTxConfig {
 ### ChainedTransactionManager
 
 
-The `ChainedTransactionManager` (deprecated in recent Spring versions; use `org.springframework.data.transaction.ChainedTransactionManager` from Spring Data) commits and rolls back multiple transaction managers in order. Use it when you need to coordinate across heterogeneous resources Ã¢â‚¬â€ for example, a JPA repository and a MongoDB repository in the same transactional method.
+The `ChainedTransactionManager` (deprecated in recent Spring versions; use `org.springframework.data.transaction.ChainedTransactionManager` from Spring Data) commits and rolls back multiple transaction managers in order. Use it when you need to coordinate across heterogeneous resources — for example, a JPA repository and a MongoDB repository in the same transactional method.
 
 ```java
 package com.course.tx;
@@ -1377,7 +1377,7 @@ public class SynchronizationRegistrationService {
 ### Resource Binding
 
 
-`TransactionSynchronizationManager` also manages resource binding Ã¢â‚¬â€ associating a JDBC `Connection` or JPA `EntityManager` with the current thread.
+`TransactionSynchronizationManager` also manages resource binding — associating a JDBC `Connection` or JPA `EntityManager` with the current thread.
 
 ```java
 package com.course.tx;
@@ -1448,9 +1448,9 @@ Both approaches have their place. Choose based on the complexity and nature of y
 
 | Aspect | Declarative (@Transactional) | Programmatic (TransactionTemplate) |
 |---|---|---|
-| **Boilerplate** | Minimal Ã¢â‚¬â€ single annotation | More code per method |
-| **Readability** | High Ã¢â‚¬â€ transaction scope is visible at a glance | Moderate Ã¢â‚¬â€ logic interleaved with transaction code |
-| **Control** | Coarse Ã¢â‚¬â€ applies to entire method | Fine-grained Ã¢â‚¬â€ per-item, conditional commit/rollback |
+| **Boilerplate** | Minimal — single annotation | More code per method |
+| **Readability** | High — transaction scope is visible at a glance | Moderate — logic interleaved with transaction code |
+| **Control** | Coarse — applies to entire method | Fine-grained — per-item, conditional commit/rollback |
 | **Self-invocation** | Bypassed (proxy limitation) | Works correctly |
 | **Dynamic attributes** | Fixed at compile time | Can change per invocation |
 | **Exception handling** | Declarative via rollbackFor | Full try/catch/retry |
@@ -1479,7 +1479,7 @@ public class ComparisonService {
         this.transactionTemplate = transactionTemplate;
     }
 
-    // Declarative Ã¢â‚¬â€ best for simple whole-method transactions
+    // Declarative — best for simple whole-method transactions
     @Transactional
     public void transferDeclarative(Long fromId, Long toId, BigDecimal amount) {
         Account from = accountRepository.findById(fromId).orElseThrow();
@@ -1490,7 +1490,7 @@ public class ComparisonService {
         accountRepository.save(to);
     }
 
-    // Programmatic Ã¢â‚¬â€ best when you need per-item transaction boundaries
+    // Programmatic — best when you need per-item transaction boundaries
     public void batchTransferDeclarative(List<TransferRequest> requests) {
         // BEWARE: One transaction for ALL transfers
         // One failure rolls back EVERYTHING
@@ -1499,7 +1499,7 @@ public class ComparisonService {
         }
     }
 
-    // Programmatic Ã¢â‚¬â€ each transfer is an independent transaction
+    // Programmatic — each transfer is an independent transaction
     public void batchTransferProgrammatic(List<TransferRequest> requests) {
         for (TransferRequest req : requests) {
             transactionTemplate.execute(status -> {
@@ -1519,7 +1519,7 @@ public class ComparisonService {
         }
     }
 
-    // Programmatic Ã¢â‚¬â€ conditional commit/rollback
+    // Programmatic — conditional commit/rollback
     public void conditionalProcess(List<TransferRequest> requests) {
         transactionTemplate.execute(status -> {
             int processed = 0;
@@ -1529,7 +1529,7 @@ public class ComparisonService {
                     continue;
                 }
                 if (req.amount().compareTo(BigDecimal.ZERO) <= 0) {
-                    // Invalid Ã¢â‚¬â€ roll back everything
+                    // Invalid — roll back everything
                     status.setRollbackOnly();
                     throw new IllegalArgumentException("Invalid amount: " + req.amount());
                 }
@@ -1752,7 +1752,7 @@ public class NarayanaConfig {
 3. **Scalability**: The coordinator is a single point of failure and a throughput bottleneck.
 4. **Support**: Not all databases and message brokers support XA. NoSQL databases generally do not.
 5. **Complexity**: Recovery managers, transaction logs, and heuristic outcomes (ambiguous commits) add operational burden.
-6. **Not suitable for microservices**: 2PC does not span network boundaries well Ã¢â‚¬â€ services must share the same transaction manager.
+6. **Not suitable for microservices**: 2PC does not span network boundaries well — services must share the same transaction manager.
 
 ## Chapter at a Glance
 
@@ -1800,9 +1800,9 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * Flow:
  *   1. Order Service: create order (PENDING)
- *   2. Inventory Service: reserve items  Ã¢â€ â€™  fail Ã¢â€ â€™ Order Service: CANCEL order
- *   3. Payment Service: charge card      Ã¢â€ â€™  fail Ã¢â€ â€™ Inventory: release items
- *   4. Shipping Service: create label    Ã¢â€ â€™  fail Ã¢â€ â€™ Payment: refund
+ *   2. Inventory Service: reserve items  →  fail → Order Service: CANCEL order
+ *   3. Payment Service: charge card      →  fail → Inventory: release items
+ *   4. Shipping Service: create label    →  fail → Payment: refund
  */
 @Service
 public class OrderSagaOrchestrator {
@@ -1977,7 +1977,7 @@ public class OrderSagaCoordinator {
         try {
             shippingClient.cancel(sagaId, command.getOrderId());
         } catch (Exception e) {
-            // Log and continue Ã¢â‚¬â€ best effort compensation
+            // Log and continue — best effort compensation
         }
 
         try {
@@ -2554,8 +2554,8 @@ public interface AccountLockingRepository extends JpaRepository<Account, Long> {
 
 | Lock Mode | SQL (PostgreSQL) | Behavior |
 |---|---|---|
-| `PESSIMISTIC_READ` | `SELECT ... FOR SHARE` | Shared lock Ã¢â‚¬â€ others can read but not write |
-| `PESSIMISTIC_WRITE` | `SELECT ... FOR UPDATE` | Exclusive lock Ã¢â‚¬â€ no other transaction can read or write |
+| `PESSIMISTIC_READ` | `SELECT ... FOR SHARE` | Shared lock — others can read but not write |
+| `PESSIMISTIC_WRITE` | `SELECT ... FOR UPDATE` | Exclusive lock — no other transaction can read or write |
 | `PESSIMISTIC_FORCE_INCREMENT` | `SELECT ... FOR UPDATE` + `@Version` increment | Like WRITE but also increments the version column |
 
 ### Pessimistic Locking in a Service
@@ -2600,7 +2600,7 @@ public class PessimisticLockingService {
 
     @Transactional
     public BigDecimal readWithSharedLock(Long accountId) {
-        // SELECT ... FOR SHARE Ã¢â‚¬â€ allows other shared locks
+        // SELECT ... FOR SHARE — allows other shared locks
         // but blocks exclusive locks
         Account account = accountRepository.findByIdWithPessimisticReadLock(accountId)
             .orElseThrow(() -> new IllegalArgumentException("Not found"));
@@ -3110,8 +3110,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-// @EnableTransactionManagement(order = 0) Ã¢â‚¬â€ custom order for advisors
-// @EnableTransactionManagement(mode = AdviceMode.ASPECTJ) Ã¢â‚¬â€ use AspectJ instead of proxies
+// @EnableTransactionManagement(order = 0) — custom order for advisors
+// @EnableTransactionManagement(mode = AdviceMode.ASPECTJ) — use AspectJ instead of proxies
 public class TransactionConfig {
 }
 ```
@@ -3745,11 +3745,11 @@ flowchart LR
    - Implements timeout-based abort for stuck transactions
 
 2. **Multi-Phase Saga with Axon**: Implement an Axon Framework saga for a travel booking system:
-   - Book flight Ã¢â€ â€™ Reserve hotel Ã¢â€ â€™ Rent car Ã¢â€ â€™ Confirm all
+   - Book flight → Reserve hotel → Rent car → Confirm all
    - Each step is a separate microservice with its own database
    - Compensating actions: cancel flight, release hotel, cancel car
-   - Handle partial failures Ã¢â‚¬â€ if car rental fails, cancel both flight and hotel
-   - Implement timeout handling Ã¢â‚¬â€ if any step takes longer than 30 seconds, compensate
+   - Handle partial failures — if car rental fails, cancel both flight and hotel
+   - Implement timeout handling — if any step takes longer than 30 seconds, compensate
    - Add monitoring: saga state, step status, and compensating action history
 
 3. **Concurrent Auction System**: Build a real-time bidding system that:

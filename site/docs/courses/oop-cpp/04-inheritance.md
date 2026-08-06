@@ -295,15 +295,15 @@ This table shows how base class members (with their original access level) appea
 
 | Base Member Access | Inheritance Specifier | Access in Derived | Access Outside (via Derived) |
 |--------------------|----------------------|-------------------|------------------------------|
-| `public` | `public` | `public` | âœ… Accessible |
-| `protected` | `public` | `protected` | âŒ Not accessible |
-| `private` | `public` | inaccessible | âŒ Not accessible |
-| `public` | `protected` | `protected` | âŒ Not accessible |
-| `protected` | `protected` | `protected` | âŒ Not accessible |
-| `private` | `protected` | inaccessible | âŒ Not accessible |
-| `public` | `private` | `private` | âŒ Not accessible |
-| `protected` | `private` | `private` | âŒ Not accessible |
-| `private` | `private` | inaccessible | âŒ Not accessible |
+| `public` | `public` | `public` | ✅ Accessible |
+| `protected` | `public` | `protected` | ❌ Not accessible |
+| `private` | `public` | inaccessible | ❌ Not accessible |
+| `public` | `protected` | `protected` | ❌ Not accessible |
+| `protected` | `protected` | `protected` | ❌ Not accessible |
+| `private` | `protected` | inaccessible | ❌ Not accessible |
+| `public` | `private` | `private` | ❌ Not accessible |
+| `protected` | `private` | `private` | ❌ Not accessible |
+| `private` | `private` | inaccessible | ❌ Not accessible |
 
 ### Comprehensive Demo
 
@@ -378,11 +378,11 @@ Private derived: pub=1, prot=2
 
 | Feature | `public` inheritance | `protected` inheritance | `private` inheritance |
 |---------|---------------------|------------------------|----------------------|
-| Models is-a? | âœ… Yes | âŒ No | âŒ No |
-| Base pointers work? | âœ… Yes | âŒ No | âŒ No |
-| Polymorphism? | âœ… Yes | âŒ No | âŒ No |
+| Models is-a? | ✅ Yes | ❌ No | ❌ No |
+| Base pointers work? | ✅ Yes | ❌ No | ❌ No |
+| Polymorphism? | ✅ Yes | ❌ No | ❌ No |
 | Frequency | 95%+ of use | <1% | ~4% |
-| Can further derive? | âœ… Normal | âœ… Protected access preserved | âŒ Further derived cannot access base |
+| Can further derive? | ✅ Normal | ✅ Protected access preserved | ❌ Further derived cannot access base |
 | Alternative | → | → | Composition (almost always better) |
 
 ### Runtime Type Identification with Different Inheritances
@@ -647,7 +647,7 @@ Golden Retriever says Woof!
 **Complexity:**
 - **Depth:** Each level adds one constructor call (O(depth) time for construction chain)
 - **Space:** Sum of all base members + own members
-- **Recommendation:** Keep depth â‰¤ 3. Deeper chains increase coupling and make maintenance harder. Prefer composition for deep abstraction layers.
+- **Recommendation:** Keep depth ≤ 3. Deeper chains increase coupling and make maintenance harder. Prefer composition for deep abstraction layers.
 
 ---
 
@@ -1176,9 +1176,9 @@ d.value = 99
 
 | Step | Constructor | A's initialiser | Actual A init? | Effect |
 |------|-------------|-----------------|----------------|--------|
-| 1 | `D()` calls `A(99)` | D's init list | âœ… Yes (most-derived) | value = 99 |
-| 2 | `B()` attempts `A(10)` | B's init list | âŒ No (ignored) | Skipped |
-| 3 | `C()` attempts `A(20)` | C's init list | âŒ No (ignored) | Skipped |
+| 1 | `D()` calls `A(99)` | D's init list | ✅ Yes (most-derived) | value = 99 |
+| 2 | `B()` attempts `A(10)` | B's init list | ❌ No (ignored) | Skipped |
+| 3 | `C()` attempts `A(20)` | C's init list | ❌ No (ignored) | Skipped |
 | 4 | `B()` body | → | → | Prints "B constructed" |
 | 5 | `C()` body | → | → | Prints "C constructed" |
 | 6 | `D()` body | → | → | Prints "D constructed" |
@@ -1691,8 +1691,8 @@ Upcasting (derived → base) is always safe and implicit; downcasting (base → 
 
 | Term | Direction | Safety | Syntax |
 |------|-----------|--------|--------|
-| **Upcast** | Derived* → Base* | âœ… Always safe (implicit) | `Base* bp = &derived;` |
-| **Downcast** | Base* → Derived* | âš ï¸ Needs runtime check | `Derived* dp = dynamic_cast<Derived*>(bp);` |
+| **Upcast** | Derived* → Base* | ✅ Always safe (implicit) | `Base* bp = &derived;` |
+| **Downcast** | Base* → Derived* | ⚠️ Needs runtime check | `Derived* dp = dynamic_cast<Derived*>(bp);` |
 
 ### 4.8.2 Why Upcasting is Safe
 
@@ -1826,7 +1826,7 @@ Base* bp = new Base();
 | Aspect | Upcast | Downcast (dynamic_cast) | Downcast (static_cast) |
 |--------|--------|------------------------|------------------------|
 | Direction | Derived → Base | Base → Derived | Base → Derived |
-| Safety | âœ… Always safe | âœ… Checked at runtime | âŒ Undefined if wrong |
+| Safety | ✅ Always safe | ✅ Checked at runtime | ❌ Undefined if wrong |
 | Syntax | Implicit or `static_cast` | `dynamic_cast<D*>(b)` | `static_cast<D*>(b)` |
 | Performance | Zero cost (compile-time) | Runtime cost (RTTI check) | Zero cost |
 | RTTI needed? | No | Yes (virtual function required) | No |
@@ -2158,8 +2158,8 @@ Derived::print
 | Base public members become | public | protected | private |
 | Base protected members become | protected | protected | private |
 | Base private members | inaccessible | inaccessible | inaccessible |
-| Models is-a? | âœ… Yes | âŒ No | âŒ No |
-| Can upcast to base? | âœ… Implicitly | âŒ Only within derived hierarchy | âŒ No |
+| Models is-a? | ✅ Yes | ❌ No | ❌ No |
+| Can upcast to base? | ✅ Implicitly | ❌ Only within derived hierarchy | ❌ No |
 | Frequency of use | ~95% | <1% | ~4% |
 | Common use case | Subtype polymorphism | Rare; implementation sharing | Implemented-in-terms-of |
 
@@ -2826,7 +2826,7 @@ public:
 - [ ] Is the relationship truly IS-A (LSP satisfied)?
 - [ ] Does the base class have a virtual destructor?
 - [ ] Are virtual functions avoided in constructors/destructors?
-- [ ] Is the inheritance depth manageable (â‰¤3 levels)?
+- [ ] Is the inheritance depth manageable (≤3 levels)?
 - [ ] Are diamond-shaped hierarchies using virtual inheritance?
 - [ ] Is the most-derived class initialising virtual bases?
 - [ ] Is dynamic_cast needed? If yes, RTTI is enabled?

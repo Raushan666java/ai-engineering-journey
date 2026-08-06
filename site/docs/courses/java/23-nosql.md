@@ -9,9 +9,9 @@ sidebar_position: 23
 
 # Spring Data for NoSQL
 
-Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar Ã¢â‚¬â€ repositories, templates, and consistent exception hierarchies.
+Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar — repositories, templates, and consistent exception hierarchies.
 
-This chapter covers three major NoSQL engines Ã¢â‚¬â€ MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) Ã¢â‚¬â€ through the lens of Spring Data. Every example is complete and compilable against the respective database.
+This chapter covers three major NoSQL engines — MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) — through the lens of Spring Data. Every example is complete and compilable against the respective database.
 
 ---
 
@@ -195,7 +195,7 @@ public class Product {
 }
 ```
 
-Embedded documents do not need `@Document` Ã¢â‚¬â€ they are serialized inline:
+Embedded documents do not need `@Document` — they are serialized inline:
 
 ```java
 package com.course.nosql.mongo;
@@ -722,7 +722,7 @@ public class CategoryStats {
 ### Geo-Spatial Queries
 
 
-MongoDB supports rich geo-spatial queries Ã¢â‚¬â€ finding documents near a point, within a polygon, or intersecting a geometry.
+MongoDB supports rich geo-spatial queries — finding documents near a point, within a polygon, or intersecting a geometry.
 
 ```java
 package com.course.nosql.mongo;
@@ -2802,7 +2802,7 @@ public class MultiStoreProductService {
         try {
             articleRepository.deleteById("product_" + id);
         } catch (Exception e) {
-            // Log but continue Ã¢â‚¬â€ MongoDB is source of truth
+            // Log but continue — MongoDB is source of truth
         }
         redisTemplate.delete("product:" + id);
     }
@@ -2990,10 +2990,10 @@ ummary
 ### Application Problems
 
 1. **Product Search API**: Build a REST controller with endpoints:
-   - `POST /api/products` Ã¢â‚¬â€ create a product in MongoDB
-   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` Ã¢â‚¬â€ search across MongoDB and Elasticsearch
-   - `GET /api/products/{id}` Ã¢â‚¬â€ read from Redis cache with MongoDB fallback
-   - `DELETE /api/products/{id}` Ã¢â‚¬â€ delete from all three stores with compensating actions for partial failures
+   - `POST /api/products` — create a product in MongoDB
+   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` — search across MongoDB and Elasticsearch
+   - `GET /api/products/{id}` — read from Redis cache with MongoDB fallback
+   - `DELETE /api/products/{id}` — delete from all three stores with compensating actions for partial failures
 
 2. **Session Store**: Implement a Redis-backed session store that:
    - Stores user sessions with `@RedisHash` and configurable TTL
@@ -3002,7 +3002,7 @@ ummary
    - Handles bulk session invalidation for a user
 
 3. **Analytics Dashboard**: Build MongoDB aggregation pipelines that produce:
-   - Top 10 products by revenue (quantity Ãƒ→ price)
+   - Top 10 products by revenue (quantity Ã→ price)
    - Product count by category with average rating
    - Monthly sales trends with running totals
    - Supplier performance metrics (total products, average price, stock levels)
@@ -3043,7 +3043,7 @@ ummary
    - Incremental Elasticsearch indexing on content publish
    - Search with highlighting, faceted by content type and tags
    - Scheduled re-indexing for consistency verification
-   - Graceful degradation Ã¢â‚¬â€ if Elasticsearch is down, fall back to MongoDB regex search
+   - Graceful degradation — if Elasticsearch is down, fall back to MongoDB regex search
 
 5. **Redis Streams Order Pipeline**: Implement an order processing pipeline entirely with Redis Streams:
    - Orders published to a stream from a REST endpoint

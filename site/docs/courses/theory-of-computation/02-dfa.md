@@ -207,15 +207,15 @@ A finite automaton is a simplest computational model with **finite memory**. It 
 ### 1.2 Formal Definition of a DFA
 
 
-A **deterministic finite automaton (DFA)** is a 5-tuple (Q, Î£, Î´, qâ‚€, F) where:
+A **deterministic finite automaton (DFA)** is a 5-tuple (Q, Σ, δ, q₀, F) where:
 
 - **Q** is a finite set of **states**.
-- **Î£** is a finite **input alphabet**.
-- **Î´: Q Ã— Î£ → Q** is the **transition function**.
-- **qâ‚€ âˆˆ Q** is the **start state**.
-- **F âŠ† Q** is the set of **accepting (final) states**.
+- **Σ** is a finite **input alphabet**.
+- **δ: Q × Σ → Q** is the **transition function**.
+- **q₀ ∈ Q** is the **start state**.
+- **F ⊆ Q** is the set of **accepting (final) states**.
 
-The term *deterministic* means that for each state and each input symbol, there is exactly one next state. The transition function Î´(q, a) = p means: when the automaton is in state q and reads symbol a, it moves to state p.
+The term *deterministic* means that for each state and each input symbol, there is exactly one next state. The transition function δ(q, a) = p means: when the automaton is in state q and reads symbol a, it moves to state p.
 
 > **One-Sentence Takeaway:** Transition diagrams and tables are equivalent visual and tabular representations of the same DFA transition function.
 
@@ -226,11 +226,11 @@ The term *deterministic* means that for each state and each input symbol, there 
 - Vertices represent states (circles with state names inside).
 - Accepting states are drawn as double circles.
 - The start state is indicated by an incoming arrow from nowhere.
-- Edges labeled with input symbols represent transitions Î´(q, a) = p.
+- Edges labeled with input symbols represent transitions δ(q, a) = p.
 
 **Transition Table:** A tabular representation where rows are states, columns are symbols, and entries are the next states.
 
-*Example for a DFA that accepts strings ending with '01' over Î£ = {0, 1}:*
+*Example for a DFA that accepts strings ending with '01' over Σ = {0, 1}:*
 
 Transition Diagram (text description):
 ```
@@ -243,23 +243,23 @@ q2 --0--> q0, q2 --1--> q1
 Transition Table:
 | State | 0 | 1 |
 |-------|---|---|
-| →qâ‚€   | qâ‚€ | qâ‚ |
-| qâ‚    | qâ‚‚ | qâ‚ |
-| *qâ‚‚   | qâ‚€ | qâ‚ |
+| →q₀   | q₀ | q₁ |
+| q₁    | q₂ | q₁ |
+| *q₂   | q₀ | q₁ |
 
 > **One-Sentence Takeaway:** The extended transition function lets us formally define what it means for a DFA to accept or reject any given string.
 
 ### 1.4 Language of a DFA
 
 
-The **extended transition function** Î´Ì‚: Q Ã— Î£* → Q generalizes Î´ to strings:
-- Î´Ì‚(q, Îµ) = q
-- Î´Ì‚(q, wa) = Î´(Î´Ì‚(q, w), a) for string w and symbol a
+The **extended transition function** δ̂: Q × Σ* → Q generalizes δ to strings:
+- δ̂(q, ε) = q
+- δ̂(q, wa) = δ(δ̂(q, w), a) for string w and symbol a
 
-A DFA **accepts** string w if Î´Ì‚(qâ‚€, w) âˆˆ F.
+A DFA **accepts** string w if δ̂(q₀, w) ∈ F.
 
 The **language recognized** by DFA M is:
-L(M) = { w âˆˆ Î£* | Î´Ì‚(qâ‚€, w) âˆˆ F }
+L(M) = { w ∈ Σ* | δ̂(q₀, w) ∈ F }
 
 A language is called **regular** if some DFA recognizes it.
 
@@ -282,10 +282,10 @@ To design a DFA for a language L:
 ### 1.6 Formal Description of DFA Computation
 
 
-A DFA M = (Q, Î£, Î´, qâ‚€, F) on input w = wâ‚wâ‚‚â€¦wâ‚™ (each wáµ¢ âˆˆ Î£) computes as follows:
-- Start in state qâ‚€.
-- For i = 1 to n: replace current state r with Î´(r, wáµ¢).
-- Accept if final state r âˆˆ F; reject otherwise.
+A DFA M = (Q, Σ, δ, q₀, F) on input w = w₁w₂…wₙ (each wᵢ ∈ Σ) computes as follows:
+- Start in state q₀.
+- For i = 1 to n: replace current state r with δ(r, wᵢ).
+- Accept if final state r ∈ F; reject otherwise.
 
 > **One-Sentence Takeaway:** A language is regular precisely when some DFA recognizes it — the fundamental connection between automata and formal languages.
 
@@ -369,47 +369,47 @@ The product construction proves that the class of regular languages is closed un
 
 ## Examples
 
-Design a DFA over Î£ = {0, 1} that accepts strings that begin with 0.
+Design a DFA over Σ = {0, 1} that accepts strings that begin with 0.
 
 **Solution:**
 
 We need to remember whether we have seen the first symbol and whether it was 0.
 
-- qâ‚€: Start state, haven't read any symbol yet.
-- qâ‚: First symbol was 0 (good → maybe accept).
-- qâ‚‚: First symbol was 1 (bad → will never accept).
-- qâ‚ƒ: Dead state for strings that already failed.
+- q₀: Start state, haven't read any symbol yet.
+- q₁: First symbol was 0 (good → maybe accept).
+- q₂: First symbol was 1 (bad → will never accept).
+- q₃: Dead state for strings that already failed.
 
 Transition Table:
 | State | 0 | 1 |
 |-------|---|---|
-| →qâ‚€   | qâ‚ | qâ‚‚ |
-| *qâ‚   | qâ‚ | qâ‚ |
-| qâ‚‚    | qâ‚ƒ | qâ‚ƒ |
-| qâ‚ƒ    | qâ‚ƒ | qâ‚ƒ |
+| →q₀   | q₁ | q₂ |
+| *q₁   | q₁ | q₁ |
+| q₂    | q₃ | q₃ |
+| q₃    | q₃ | q₃ |
 
-Accepting state: qâ‚. Any string beginning with 0 stays in qâ‚ and is accepted. Any string beginning with 1 goes to qâ‚‚ then qâ‚ƒ and is rejected. The empty string Îµ begins with nothing, so it is rejected (not accepted as it doesn't start with 0).
+Accepting state: q₁. Any string beginning with 0 stays in q₁ and is accepted. Any string beginning with 1 goes to q₂ then q₃ and is rejected. The empty string ε begins with nothing, so it is rejected (not accepted as it doesn't start with 0).
 
 ### Example 1.2: DFA for Exactly Two '1's
 
-Design a DFA over Î£ = {0, 1} that accepts strings containing exactly two 1s.
+Design a DFA over Σ = {0, 1} that accepts strings containing exactly two 1s.
 
 **Solution:**
 
 We count the number of 1s seen, up to 3 where we stop caring (beyond 2 is already too many).
 
-- qâ‚€: Seen zero 1s (start).
-- qâ‚: Seen exactly one 1.
-- qâ‚‚: Seen exactly two 1s (accept).
-- qâ‚ƒ: Seen three or more 1s (dead).
+- q₀: Seen zero 1s (start).
+- q₁: Seen exactly one 1.
+- q₂: Seen exactly two 1s (accept).
+- q₃: Seen three or more 1s (dead).
 
 Transitions:
 | State | 0 | 1 |
 |-------|---|---|
-| →qâ‚€   | qâ‚€ | qâ‚ |
-| qâ‚    | qâ‚ | qâ‚‚ |
-| *qâ‚‚   | qâ‚‚ | qâ‚ƒ |
-| qâ‚ƒ    | qâ‚ƒ | qâ‚ƒ |
+| →q₀   | q₀ | q₁ |
+| q₁    | q₁ | q₂ |
+| *q₂   | q₂ | q₃ |
+| q₃    | q₃ | q₃ |
 
 ```mermaid
 graph LR
@@ -426,24 +426,24 @@ On 0, each state stays in itself (count of 1s doesn't change). On 1, we advance 
 
 ### Example 1.3: DFA for Binary Numbers Divisible by 3
 
-Design a DFA over Î£ = {0, 1} that accepts binary strings representing numbers divisible by 3 (leading zeros allowed).
+Design a DFA over Σ = {0, 1} that accepts binary strings representing numbers divisible by 3 (leading zeros allowed).
 
 **Solution:**
 
 When we read a binary string left to right, we can track the remainder modulo 3. If the current remainder is r and we read bit b, the new remainder is (2r + b) mod 3.
 
-- qâ‚€: remainder 0 (start, accept → empty string represents 0).
-- qâ‚: remainder 1.
-- qâ‚‚: remainder 2.
+- q₀: remainder 0 (start, accept → empty string represents 0).
+- q₁: remainder 1.
+- q₂: remainder 2.
 
 Transitions (from remainder r with bit b to (2r + b) mod 3):
 | State | 0 | 1 |
 |-------|---|---|
-| *→qâ‚€  | qâ‚€ | qâ‚ |
-| qâ‚    | qâ‚‚ | qâ‚€ |
-| qâ‚‚    | qâ‚ | qâ‚‚ |
+| *→q₀  | q₀ | q₁ |
+| q₁    | q₂ | q₀ |
+| q₂    | q₁ | q₂ |
 
-Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (1) → qâ‚€ (0). Accept. On input "100" (binary for 4): qâ‚€ → qâ‚ (1) → qâ‚‚ (0) → qâ‚ (0). Reject.
+Check: On input "110" (binary for 6): q₀ → q₁ (1) → q₀ (1) → q₀ (0). Accept. On input "100" (binary for 4): q₀ → q₁ (1) → q₂ (0) → q₁ (0). Reject.
 
 
 ## Concept Comparison Table
@@ -954,9 +954,9 @@ main().catch(console.error)
 export { Processor, Task }
 ## Summary
 
-- A DFA is a 5-tuple (Q, Î£, Î´, qâ‚€, F) with a deterministic transition function.
+- A DFA is a 5-tuple (Q, Σ, δ, q₀, F) with a deterministic transition function.
 - The transition diagram and transition table are equivalent representations.
-- The extended transition function Î´Ì‚ processes strings inductively.
+- The extended transition function δ̂ processes strings inductively.
 - A language recognized by some DFA is called regular.
 - DFA design requires identifying the finite-state information needed to determine acceptance.
 - Every DFA has exactly one computation path for any input string.
@@ -969,29 +969,29 @@ export { Processor, Task }
 ### Basic
 
 
-1. Design a DFA over Î£ = {a, b} that accepts strings ending with "aa".
-2. Design a DFA over Î£ = {0, 1} that accepts strings of odd length.
-3. Design a DFA over Î£ = {a, b} that accepts strings where the first and last symbols are the same.
+1. Design a DFA over Σ = {a, b} that accepts strings ending with "aa".
+2. Design a DFA over Σ = {0, 1} that accepts strings of odd length.
+3. Design a DFA over Σ = {a, b} that accepts strings where the first and last symbols are the same.
 4. For the DFA in Example 1.1, list 3 strings that are accepted and 3 that are rejected.
-5. Design a DFA over Î£ = {0, 1} that accepts strings containing "000" as a substring.
+5. Design a DFA over Σ = {0, 1} that accepts strings containing "000" as a substring.
 
 ### Intermediate
 
 
 6. Design a DFA for binary strings that contain an even number of 0s and an odd number of 1s.
-7. Design a DFA over Î£ = {a, b} that accepts strings where every occurrence of "ab" is followed immediately by "a".
+7. Design a DFA over Σ = {a, b} that accepts strings where every occurrence of "ab" is followed immediately by "a".
 8. Design a DFA that accepts strings over {0, 1} where the binary number represented is at least 4 (leading zeros allowed).
 9. Design a DFA for strings over {a, b} where the number of a's is a multiple of 3 and the number of b's is even.
-10. Prove that the language L = { w âˆˆ {0,1}* | w = reverse(w) } (palindromes) is NOT regular, using the pigeonhole principle and DFA state arguments. (Hint: assume a DFA with k states exists and consider strings 0â±1 for i = 1,â€¦,k+1.)
+10. Prove that the language L = { w ∈ {0,1}* | w = reverse(w) } (palindromes) is NOT regular, using the pigeonhole principle and DFA state arguments. (Hint: assume a DFA with k states exists and consider strings 0ⁱ1 for i = 1,…,k+1.)
 
 ### Advanced
 
 
-11. Let L = { w âˆˆ {0,1}* | the number of occurrences of "01" as a substring equals the number of occurrences of "10" }. Design a DFA for L.
-12. Show that the class of regular languages is closed under complement (if L is regular, then LÌ… = Î£* âˆ’ L is regular) by constructing a DFA for LÌ… from a DFA for L.
-13. Design a DFA for the language L = { w âˆˆ {a,b}* | |w| mod 3 = 0 and w contains at least one 'a' and at least one 'b' }.
+11. Let L = { w ∈ {0,1}* | the number of occurrences of "01" as a substring equals the number of occurrences of "10" }. Design a DFA for L.
+12. Show that the class of regular languages is closed under complement (if L is regular, then L̅ = Σ* − L is regular) by constructing a DFA for L̅ from a DFA for L.
+13. Design a DFA for the language L = { w ∈ {a,b}* | |w| mod 3 = 0 and w contains at least one 'a' and at least one 'b' }.
 14. Prove formally that the DFA in Example 1.3 correctly recognizes binary strings divisible by 3 by induction on string length.
-15. Let Mâ‚ accept Lâ‚ and Mâ‚‚ accept Lâ‚‚. Show how to construct a DFA that accepts Lâ‚ âˆª Lâ‚‚ using the Cartesian product of states. Apply this to combine the DFA from Example 1.2 with the DFA from Example 1.3.
+15. Let M₁ accept L₁ and M₂ accept L₂. Show how to construct a DFA that accepts L₁ ∪ L₂ using the Cartesian product of states. Apply this to combine the DFA from Example 1.2 with the DFA from Example 1.3.
 16. Write a TypeScript function `productDFA(m1, m2, 'union')` that returns a DFA for L(m1) ? L(m2). Test it on the "even length" and "odd number of 1s" DFAs constructed earlier.
 17. Prove that the class of regular languages is closed under the **set difference** operation (L1 - L2) using DFA product construction.
 18. Implement a DFA minimization function that takes a DFA and returns the minimized version by merging equivalent states identified by the table-filling algorithm.

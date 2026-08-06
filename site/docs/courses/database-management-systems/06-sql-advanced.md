@@ -1,11 +1,11 @@
 ---
 id: 06-sql-advanced
 slug: /database-management-systems/06-sql-advanced
-title: "Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
-sidebar_label: "Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
+title: "Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
+sidebar_label: "Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
 sidebar_position: 6
 ---
-# Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables
+# Chapter 6: Advanced SQL → Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables
 
 > **Previous:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md) | **Next:** [Chapter 7: Normalization](./07-normalization.md)
 
@@ -38,9 +38,9 @@ A **subquery** (inner query / nested query) is a query embedded inside another q
 
 
 > **Scalar Subquery** = Asking "What's the average salary in this company?" before deciding your salary negotiation. One number.
-> **Row Subquery** = Asking "What's the full profile of the top performer?" â†’ one complete row.
-> **Table Subquery** = Asking "Which departments have above-average headcount?" â†’ a whole result set.
-> **Correlated Subquery** = Asking "For each employee, how does their salary compare to THEIR department's average?" â†’ the question changes per employee.
+> **Row Subquery** = Asking "What's the full profile of the top performer?" → one complete row.
+> **Table Subquery** = Asking "Which departments have above-average headcount?" → a whole result set.
+> **Correlated Subquery** = Asking "For each employee, how does their salary compare to THEIR department's average?" → the question changes per employee.
 
 ### 6.1.1 Scalar Subquery
 
@@ -103,7 +103,7 @@ HAVING AVG(salary) > (SELECT AVG(salary) FROM employees);
 | Step | Operation | Result |
 |------|-----------|--------|
 | 1 | Execute inner: `SELECT AVG(salary) FROM employees` | 75000.00 |
-| 2 | Rewrite outer: `SELECT name, salary FROM employees WHERE salary > 75000` | â†’ |
+| 2 | Rewrite outer: `SELECT name, salary FROM employees WHERE salary > 75000` | → |
 | 3 | Check Alice: 95000 > 75000 | INCLUDE |
 | 4 | Check Bob: 72000 > 75000 | EXCLUDE |
 | 5 | Check Charlie: 68000 > 75000 | EXCLUDE |
@@ -200,12 +200,12 @@ for e in above_avg:
 
 **Complexity:**
 - **Time:** O(n + m) where n = inner query rows, m = outer query rows. The scalar subquery runs once (O(n)), then the outer query uses the result for filtering (O(m)).
-- **Space:** O(1) â†’ only the single scalar value is stored between executions.
+- **Space:** O(1) → only the single scalar value is stored between executions.
 - **Why linear?** Both queries are full table scans in the worst case. If indexes exist on WHERE columns, can drop to O(log n).
 
 **Edge Cases:**
 - **No rows returned:** Scalar subquery returns NULL. If used with `>` comparison, result is empty (NULL comparison yields unknown).
-- **Multiple rows:** Runtime error â†’ scalar subquery must return exactly one row. Use `MAX()` or `TOP 1` to guarantee singleness.
+- **Multiple rows:** Runtime error → scalar subquery must return exactly one row. Use `MAX()` or `TOP 1` to guarantee singleness.
 - **NULLs in AVG:** AVG ignores NULLs. `AVG(salary)` with one NULL among five values still divides by 5.
 
 ---
@@ -300,7 +300,7 @@ for e in employees:
         print(f"Match: {e['name']}")
 ```
 
-**Complexity:** O(n) â†’ finding max requires a full scan. Row comparison is O(m) with m matching constraints.
+**Complexity:** O(n) → finding max requires a full scan. Row comparison is O(m) with m matching constraints.
 
 ---
 
@@ -358,11 +358,11 @@ WHERE max_sal > 80000;
 | Step | Operation | Intermediate Result |
 |------|-----------|-------------------|
 | 1 | Execute inner: GROUP BY department, AVG(salary) | Engineering: 83500, Sales: 78000, Marketing: 52000 |
-| 2 | Outer query joins employees with derived table | â†’ |
-| 3 | Alice: 95000 vs Engineering: 83500 â†’ diff = 11500 | INCLUDE |
-| 4 | Bob: 72000 vs Engineering: 83500 â†’ diff = -11500 | INCLUDE |
-| 5 | Charlie: 68000 vs Sales: 78000 â†’ diff = -10000 | INCLUDE |
-| 6 | Diana: 88000 vs Sales: 78000 â†’ diff = 10000 | INCLUDE |
+| 2 | Outer query joins employees with derived table | → |
+| 3 | Alice: 95000 vs Engineering: 83500 → diff = 11500 | INCLUDE |
+| 4 | Bob: 72000 vs Engineering: 83500 → diff = -11500 | INCLUDE |
+| 5 | Charlie: 68000 vs Sales: 78000 → diff = -10000 | INCLUDE |
+| 6 | Diana: 88000 vs Sales: 78000 → diff = 10000 | INCLUDE |
 | 7 | Return all rows with computed diff | 5 rows |
 
 **C++ Implementation:**
@@ -424,8 +424,8 @@ for e in employees:
 ```
 
 **Complexity:**
-- **Time:** O(n + d Ãƒâ€” m) where n = inner rows, d = distinct groups, m = outer rows matching. GROUP BY is O(n log n) worst case (sorting) or O(n) with hash aggregation.
-- **Space:** O(d) â†’ the derived table occupies memory proportional to distinct groups.
+- **Time:** O(n + d × m) where n = inner rows, d = distinct groups, m = outer rows matching. GROUP BY is O(n log n) worst case (sorting) or O(n) with hash aggregation.
+- **Space:** O(d) → the derived table occupies memory proportional to distinct groups.
 - **Why O(n log n) for GROUP BY?** Sorting-based aggregation is the default in most RDBMS when memory permits hashing.
 
 ---
@@ -433,7 +433,7 @@ for e in employees:
 ### 6.1.4 Correlated Subquery
 
 
-References columns from the **outer query**. Executed **once per outer row** â†’ the inner query depends on the current outer row's value.
+References columns from the **outer query**. Executed **once per outer row** → the inner query depends on the current outer row's value.
 
 **Real-World Analogy:** For each employee, check if their salary exceeds THEIR department's average. The question changes per department.
 
@@ -441,7 +441,7 @@ References columns from the **outer query**. Executed **once per outer row** â�
 1. Outer query fetches one row.
 2. Inner query executes using a value from that outer row (correlation).
 3. WHERE/HAVING condition evaluated with the inner result.
-4. Repeat for every outer row â†’ O(n Ãƒâ€” m) complexity.
+4. Repeat for every outer row → O(n × m) complexity.
 
 **Pseudocode:**
 ```
@@ -451,7 +451,7 @@ function correlated_subquery(outer_rows):
         inner_result = execute(
             "SELECT AVG(salary) FROM employees e2 WHERE e2.department = " + row.department
         )                                           // O(m) per iteration
-        if row.salary > inner_result:               // total O(n Ãƒâ€” m)
+        if row.salary > inner_result:               // total O(n × m)
             result.append(row)
     return result
 ```
@@ -492,11 +492,11 @@ WHERE NOT EXISTS (
 
 | Outer Row | Correlation Value | Inner Query (AVG for dept) | Condition (salary > avg) | Result |
 |-----------|-----------------|---------------------------|--------------------------|--------|
-| Alice (Eng, 95K) | Engineering | (95K+72K)/2 = 83500 | 95000 > 83500 Ã¢Å“â€œ | INCLUDE |
-| Bob (Eng, 72K) | Engineering | 83500 | 72000 > 83500 Ã¢Å“â€” | EXCLUDE |
-| Charlie (Sales, 68K) | Sales | (68K+88K)/2 = 78000 | 68000 > 78000 Ã¢Å“â€” | EXCLUDE |
-| Diana (Sales, 88K) | Sales | 78000 | 88000 > 78000 Ã¢Å“â€œ | INCLUDE |
-| Eve (Mktg, 52K) | Marketing | 52000 | 52000 > 52000 Ã¢Å“â€” | EXCLUDE |
+| Alice (Eng, 95K) | Engineering | (95K+72K)/2 = 83500 | 95000 > 83500 ✓ | INCLUDE |
+| Bob (Eng, 72K) | Engineering | 83500 | 72000 > 83500 ✗ | EXCLUDE |
+| Charlie (Sales, 68K) | Sales | (68K+88K)/2 = 78000 | 68000 > 78000 ✗ | EXCLUDE |
+| Diana (Sales, 88K) | Sales | 78000 | 88000 > 78000 ✓ | INCLUDE |
+| Eve (Mktg, 52K) | Marketing | 52000 | 52000 > 52000 ✗ | EXCLUDE |
 
 **C++ Implementation:**
 ```cpp
@@ -573,7 +573,7 @@ for e in above_dept_avg(employees):
 ```
 
 **Complexity:**
-- **Time:** O(n Ãƒâ€” m) worst case â†’ inner query runs n times, each scanning m rows. Best case O(n Ãƒâ€” log m) with index on correlation column.
+- **Time:** O(n × m) worst case → inner query runs n times, each scanning m rows. Best case O(n × log m) with index on correlation column.
 - **Space:** O(1) per iteration, no accumulation beyond outer result set.
 - **WHY correlated subqueries can be slow:** The inner query is re-executed per outer row. DBMS optimizers often rewrite correlated subqueries to JOINs. Always EXPLAIN ANALYZE correlated subqueries.
 - **Optimization:** Add index on the correlation column (e.g., `department`). This reduces inner query from O(m) to O(log m).
@@ -585,7 +585,7 @@ for e in above_dept_avg(employees):
 
 EXISTS returns TRUE if the subquery returns **at least one row**. NOT EXISTS returns TRUE if the subquery returns **zero rows**.
 
-**Real-World Analogy:** "Does at least one student have a perfect score?" â†’ you stop checking as soon as you find one.
+**Real-World Analogy:** "Does at least one student have a perfect score?" → you stop checking as soon as you find one.
 
 **Steps:**
 1. For each row in the outer query, the subquery executes.
@@ -629,9 +629,9 @@ WHERE EXISTS (
 
 | Outer Row | Subquery Check | Short-Circuit | Result |
 |-----------|---------------|---------------|--------|
-| Engineering | EXISTS(SELECT 1 FROM emp WHERE dept='Engineering' AND salary>90K) | Alice matches â†’ stop | TRUE â†’ INCLUDE |
-| Sales | EXISTS(SELECT 1 FROM emp WHERE dept='Sales' AND salary>90K) | No match | FALSE â†’ EXCLUDE |
-| Marketing | EXISTS(SELECT 1 FROM emp WHERE dept='Marketing' AND salary>90K) | No match | FALSE â†’ EXCLUDE |
+| Engineering | EXISTS(SELECT 1 FROM emp WHERE dept='Engineering' AND salary>90K) | Alice matches → stop | TRUE → INCLUDE |
+| Sales | EXISTS(SELECT 1 FROM emp WHERE dept='Sales' AND salary>90K) | No match | FALSE → EXCLUDE |
+| Marketing | EXISTS(SELECT 1 FROM emp WHERE dept='Marketing' AND salary>90K) | No match | FALSE → EXCLUDE |
 
 **C++ Implementation:**
 ```cpp
@@ -676,7 +676,7 @@ for d in ["Engineering","Sales","Marketing"]:
 
 **Complexity:**
 - **Time:** Best case O(1) if first row matches (short-circuit). Worst case O(n) if no match (full scan). With index on correlation column + salary: O(log n) per lookup.
-- **Space:** O(1) â†’ EXISTS does not materialize the subquery.
+- **Space:** O(1) → EXISTS does not materialize the subquery.
 - **WHY EXISTS beats IN for large subqueries:** IN must compute and store the entire subquery result set. EXISTS can short-circuit on the first match.
 
 ---
@@ -726,11 +726,11 @@ WHERE department = ANY (
 
 | Employee | Salary | `> ANY Sales` (threshold: > 68000) | `> ALL Sales` (threshold: > 88000) |
 |----------|--------|------------------------------------|------------------------------------|
-| Alice | 95000 | 95000 > 68000 Ã¢Å“â€œ | 95000 > 88000 Ã¢Å“â€œ |
-| Bob | 72000 | 72000 > 68000 Ã¢Å“â€œ | 72000 > 88000 Ã¢Å“â€” |
-| Charlie | 68000 | 68000 > 68000 Ã¢Å“â€” | 68000 > 88000 Ã¢Å“â€” |
-| Diana | 88000 | 88000 > 68000 Ã¢Å“â€œ | 88000 > 88000 Ã¢Å“â€” |
-| Eve | 52000 | 52000 > 68000 Ã¢Å“â€” | 52000 > 88000 Ã¢Å“â€” |
+| Alice | 95000 | 95000 > 68000 ✓ | 95000 > 88000 ✓ |
+| Bob | 72000 | 72000 > 68000 ✓ | 72000 > 88000 ✗ |
+| Charlie | 68000 | 68000 > 68000 ✗ | 68000 > 88000 ✗ |
+| Diana | 88000 | 88000 > 68000 ✓ | 88000 > 88000 ✗ |
+| Eve | 52000 | 52000 > 68000 ✗ | 52000 > 88000 ✗ |
 
 **C++ Implementation:**
 ```cpp
@@ -780,11 +780,11 @@ for name, sal in employees:
 | **Rows returned** | 1 | 1 | 0..N | 0..N |
 | **Columns returned** | 1 | 1..N | 1..N | 1..N |
 | **Executed** | Once | Once | Once | Per outer row |
-| **Runtime** | O(n) | O(n) | O(n) | O(n Ãƒâ€” m) worst |
-| **Use in SELECT** | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€” | Ã¢Å“â€œ |
-| **Use in FROM** | Ã¢Å“â€œ (as value) | Ã¢Å“â€” | Ã¢Å“â€œ (derived table) | Ã¢Å“â€” |
-| **Use in WHERE** | Ã¢Å“â€œ | Ã¢Å“â€œ (row constructors) | Ã¢Å“â€œ (IN/EXISTS) | Ã¢Å“â€œ |
-| **Can use outer refs** | Ã¢Å“â€” | Ã¢Å“â€” | Ã¢Å“â€” | Ã¢Å“â€œ |
+| **Runtime** | O(n) | O(n) | O(n) | O(n × m) worst |
+| **Use in SELECT** | ✓ | ✗ | ✗ | ✓ |
+| **Use in FROM** | ✓ (as value) | ✗ | ✓ (derived table) | ✗ |
+| **Use in WHERE** | ✓ | ✓ (row constructors) | ✓ (IN/EXISTS) | ✓ |
+| **Can use outer refs** | ✗ | ✗ | ✗ | ✓ |
 | **NULL handling** | NULL if no rows | NULL row if no rows | Empty set if no rows | Depends on comparison |
 | **Optimization** | Index on aggregated column | Index on compared columns | Index on GROUP BY/WHERE | Index on correlation column |
 
@@ -798,7 +798,7 @@ A CTE (`WITH` clause) defines a **temporary named result set** that exists only 
 
 
 > **CTE** = A sticky note you write an intermediate calculation on, then use to build your final answer. You throw the sticky note away after you're done.
-> **Recursive CTE** = Russian nesting dolls â†’ opening each doll reveals a smaller doll inside, until you reach the smallest one (anchor), then you close them back up (recursion unwind).
+> **Recursive CTE** = Russian nesting dolls → opening each doll reveals a smaller doll inside, until you reach the smallest one (anchor), then you close them back up (recursion unwind).
 
 ### 6.2.1 Basic CTE
 
@@ -806,7 +806,7 @@ A CTE (`WITH` clause) defines a **temporary named result set** that exists only 
 **Steps:**
 1. Define the CTE using `WITH cte_name AS (subquery)`.
 2. The CTE materializes (or inlines) as a temporary result.
-3. Reference the CTE by name in the main query â†’ can reference it multiple times.
+3. Reference the CTE by name in the main query → can reference it multiple times.
 
 **SQL:**
 ```sql
@@ -857,11 +857,11 @@ A recursive CTE references **itself**. It has two parts:
 2. **Recursive member:** References the CTE by name, building on the previous iteration.
 
 **Steps:**
-1. Execute the anchor member â†’ result set R0.
-2. Execute the recursive member using R0 â†’ result set R1.
-3. Execute recursive member using R1 â†’ R2.
+1. Execute the anchor member → result set R0.
+2. Execute the recursive member using R0 → result set R1.
+3. Execute recursive member using R1 → R2.
 4. Repeat until the recursive member returns **zero rows**.
-5. **UNION ALL** all result sets (R0 Ã¢Ë†Âª R1 Ã¢Ë†Âª R2 Ã¢Ë†Âª ...).
+5. **UNION ALL** all result sets (R0 ∪ R1 ∪ R2 ∪ ...).
 
 **Pseudocode:**
 ```
@@ -916,7 +916,7 @@ WITH RECURSIVE dates(d) AS (
 SELECT d FROM dates;
 ```
 
-**Dry Run Trace Table (Recursive CTE â†’ Numbers 1..5):**
+**Dry Run Trace Table (Recursive CTE → Numbers 1..5):**
 
 | Iteration | Set | Operation | Produced Rows | Accumulated Result |
 |-----------|-----|-----------|---------------|-------------------|
@@ -926,7 +926,7 @@ SELECT d FROM dates;
 | 3 | R3 | SELECT n+1 WHERE n&lt;5 using R2 | (4) | {1, 2, 3, 4} |
 | 4 | R4 | SELECT n+1 WHERE n&lt;5 using R3 | (5) | {1, 2, 3, 4, 5} |
 | 5 | R5 | SELECT n+1 WHERE n&lt;5 using R4 (n=5, not <5) | () empty | {1, 2, 3, 4, 5} |
-| End | â†’ | Empty result set â†’ stop | â†’ | {1, 2, 3, 4, 5} |
+| End | → | Empty result set → stop | → | {1, 2, 3, 4, 5} |
 
 **Dry Run Trace Table (Org Chart):**
 
@@ -936,7 +936,7 @@ SELECT d FROM dates;
 | 1 | {CEO} | VP Eng(id=2), VP Sales(id=3) | "CEO -> VP Eng", "CEO -> VP Sales" |
 | 2 | {VP Eng, VP Sales} | Eng Mgr(id=4) | "CEO -> VP Eng -> Eng Mgr" |
 | 3 | {Eng Mgr} | Alice(id=5) | "CEO -> VP Eng -> Eng Mgr -> Alice" |
-| 4 | {Alice} | (empty) | â†’ |
+| 4 | {Alice} | (empty) | → |
 
 **C++ Implementation (Recursive CTE Simulator):**
 ```cpp
@@ -1035,8 +1035,8 @@ for node in recursive_cte_simulation(employees):
 ```
 
 **Complexity:**
-- **Time:** O(n Ãƒâ€” d) where n = total rows and d = tree depth. Each level processes its parent set. For a balanced tree, O(n log n); for a chain, O(nÃ‚Â²).
-- **Space:** O(n) â†’ the accumulated result set plus the current working set.
+- **Time:** O(n × d) where n = total rows and d = tree depth. Each level processes its parent set. For a balanced tree, O(n log n); for a chain, O(n²).
+- **Space:** O(n) → the accumulated result set plus the current working set.
 - **WHY recursive CTEs have depth limits:** Most DBMS cap recursion at 100-1000 iterations (PostgreSQL: default 100, set with `SET max_recursive_iterations = 2000`). Infinite loops are prevented by this limit; if exceeded, the query errors out.
 - **MAX_RECURSION (SQL Server):** `OPTION (MAXRECURSION 0)` for unlimited (use cautiously).
 
@@ -1131,7 +1131,7 @@ WHERE rn <= 2;
 | Department | Sorted Employees (by amount DESC) | row_num |
 |-----------|-----------------------------------|---------|
 | Engineering | Alice (18000), Alice (15000), Bob (12000) | 1, 2, 3 |
-| Sales | Charlie (25000), Diana (19000), Charlie (22000â†’wait, let me re-sort) | 1, 2, 3 |
+| Sales | Charlie (25000), Diana (19000), Charlie (22000→wait, let me re-sort) | 1, 2, 3 |
 
 Actually, let me re-sort properly:
 
@@ -1188,7 +1188,7 @@ With tied values:
 Divides rows into **N approximately equal buckets**.
 
 **Steps:**
-1. Count rows in partition â†’ `total_rows`.
+1. Count rows in partition → `total_rows`.
 2. Bucket size = `total_rows / N`. If not divisible, first `total_rows % N` buckets get one extra row.
 3. Assign bucket number 1 to N sequentially.
 
@@ -1247,15 +1247,15 @@ ORDER BY emp_name, sale_date;
 |------|---------|--------|
 | 1 | Partition by emp_name, order by sale_date | Alice group sorted by date |
 | 2 | Row 1 (Alice, Jan): LAG = 0 (default) | prev_amount = 0 |
-| 3 | Row 2 (Alice, Mar): LAG looks 1 row back â†’ 15000 | prev_amount = 15000 |
-| 4 | Row 1 (Alice, Jan): LEAD looks 1 row forward â†’ 18000 | next_amount = 18000 |
+| 3 | Row 2 (Alice, Mar): LAG looks 1 row back → 15000 | prev_amount = 15000 |
+| 4 | Row 1 (Alice, Jan): LEAD looks 1 row forward → 18000 | next_amount = 18000 |
 | 5 | Row 2 (Alice, Mar): LEAD = 0 (no next row) | next_amount = 0 |
 
 ### 6.3.5 FIRST_VALUE / LAST_VALUE
 
 
 **FIRST_VALUE(col):** First value in the window frame.
-**LAST_VALUE(col):** Last value in the window frame (frame-sensitive â†’ needs RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING to get true last value of partition).
+**LAST_VALUE(col):** Last value in the window frame (frame-sensitive → needs RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING to get true last value of partition).
 
 **SQL:**
 ```sql
@@ -1447,7 +1447,7 @@ for item, rank in simulate_row_number(sales, "dept", "amount"):
 | **LAST_VALUE** | O(n) | O(n) | Requires full partition scan |
 | **SUM/AVG OVER** | O(n) | O(n) | Cumulative scan |
 
-### Window Functions â†’ Edge Cases
+### Window Functions → Edge Cases
 
 
 - **Empty partition:** Returns no rows.
@@ -1584,7 +1584,7 @@ pivoted = df.pivot_table(index="category", columns="month", values="revenue", ag
 print(pivoted)
 ```
 
-**Complexity:** O(n) â†’ PIVOT scans once, groups, and distributes into columns. The number of pivot columns is known at query time; the GROUP BY is O(n) with hash aggregation.
+**Complexity:** O(n) → PIVOT scans once, groups, and distributes into columns. The number of pivot columns is known at query time; the GROUP BY is O(n) with hash aggregation.
 
 ---
 
@@ -1665,14 +1665,14 @@ ON DUPLICATE KEY UPDATE
 |-----|------------------|---------------|--------|--------|
 | 1 | 101 | Yes, qty=10 | UPDATE: qty = 10 + 50 = 60 | Updated |
 | 2 | 102 | No | INSERT: (102, 'Gadget', 30) | Inserted |
-| 3 | â†’ | product 103 in target only | DELETE: remove 103 | Deleted |
+| 3 | → | product 103 in target only | DELETE: remove 103 | Deleted |
 
 **Complexity:** O(n + m) where n = source rows, m = target rows for the join. A hash join on the match column is O(n + m). The MERGE is a single pass; no separate SELECT + UPDATE + INSERT needed.
 
 ### Edge Cases:
 
 - **Multiple matches:** If source has multiple rows matching one target row, the MERGE fails with a "multiple rows in source match same target row" error.
-- **Concurrent MERGE:** Race conditions â†’ two concurrent MERGE statements can produce unexpected results. Use SERIALIZABLE isolation or application-level locking.
+- **Concurrent MERGE:** Race conditions → two concurrent MERGE statements can produce unexpected results. Use SERIALIZABLE isolation or application-level locking.
 - **Trigger firing:** MERGE fires INSERT, UPDATE, and DELETE triggers on the target table.
 
 ---
@@ -1780,7 +1780,7 @@ sql, params = builder.build_select("employees", where={"department": "Engineerin
 print(f"SQL: {sql}, Params: {params}")
 ```
 
-**Complexity:** O(n) â†’ the SQL string is constructed in O(k) where k is the number of dynamic parts, then the query executes at normal complexity.
+**Complexity:** O(n) → the SQL string is constructed in O(k) where k is the number of dynamic parts, then the query executes at normal complexity.
 
 **Edge Cases:**
 - **SQL Injection:** NEVER concatenate user input directly. Use parameterized queries or QUOTENAME.
@@ -1796,7 +1796,7 @@ A **stored procedure** is a pre-compiled collection of SQL statements stored on 
 ### Real-World Analogy
 
 
-> = A saved recipe in the restaurant kitchen. Instead of telling the chef the steps each time ("chop onions, sautÃƒÂ©, add tomatoes, simmer"), you just say "make marinara sauce." The recipe is pre-written, pre-practiced, and ready to execute.
+> = A saved recipe in the restaurant kitchen. Instead of telling the chef the steps each time ("chop onions, sauté, add tomatoes, simmer"), you just say "make marinara sauce." The recipe is pre-written, pre-practiced, and ready to execute.
 
 ### SQL Server Example
 
@@ -2011,7 +2011,7 @@ for row in results:
 
 | Aspect | Details |
 |--------|---------|
-| **Compilation** | Compiled once, executed many times â†’ plan reuse |
+| **Compilation** | Compiled once, executed many times → plan reuse |
 | **Network traffic** | Only the CALL/EXEC statement is sent, not the entire SQL |
 | **Security** | Users can EXECUTE without underlying table permissions |
 | **Maintenance** | Centralized logic; change one procedure, all callers benefit |
@@ -2028,7 +2028,7 @@ for row in results:
 
 Functions return a **single value** (scalar) or a **table** (table-valued). Unlike stored procedures, functions:
 - **Must** return a value.
-- **Cannot** have side effects (no INSERT/UPDATE/DELETE on tables â†’ with exceptions in some DBMS).
+- **Cannot** have side effects (no INSERT/UPDATE/DELETE on tables → with exceptions in some DBMS).
 - **Can** be used inside SELECT statements.
 
 ### Real-World Analogy
@@ -2114,9 +2114,9 @@ $$ LANGUAGE plpgsql IMMUTABLE;
 
 | Function Type | Execution Pattern | Performance |
 |--------------|------------------|-------------|
-| **Scalar (row-level)** | Called per row â†’ O(n) | Can be slow for large result sets; use carefully in WHERE/SELECT |
-| **Table-valued (inline)** | Expanded into outer query â†’ optimized | Fast â†’ optimizer inlines like a view |
-| **Table-valued (multi-stmt)** | Materialized â†’ temp table | Slower â†’ always materializes |
+| **Scalar (row-level)** | Called per row → O(n) | Can be slow for large result sets; use carefully in WHERE/SELECT |
+| **Table-valued (inline)** | Expanded into outer query → optimized | Fast → optimizer inlines like a view |
+| **Table-valued (multi-stmt)** | Materialized → temp table | Slower → always materializes |
 
 ### Python Implementation (UDF Simulator)
 
@@ -2159,7 +2159,7 @@ A **trigger** is a stored procedure that automatically executes (fires) in respo
 ### Real-World Analogy
 
 
-> = A motion-sensor light. You don't flip a switch â†’ the light automatically turns on when someone enters the room (event), checks the time (condition), and turns on (action). All happens without human intervention.
+> = A motion-sensor light. You don't flip a switch → the light automatically turns on when someone enters the room (event), checks the time (condition), and turns on (action). All happens without human intervention.
 
 ### Types of Triggers
 
@@ -2222,7 +2222,7 @@ BEGIN
 END;
 ```
 
-### INSTEAD OF Trigger (SQL Server â†’ for Views)
+### INSTEAD OF Trigger (SQL Server → for Views)
 
 
 ```sql
@@ -2251,11 +2251,11 @@ INSERT INTO emp_view(emp_id, name, salary, department_id) VALUES (100, 'John', -
 
 
 ```
-BEFORE triggers (not in SQL Server â†’ check constraints fire first)
-â†’ INSTEAD OF trigger (replaces the operation entirely)
-â†’ CHECK CONSTRAINTS
-â†’ Primary Key / Foreign Key validation
-â†’ AFTER triggers (multiple, ordered by sp_settriggerorder)
+BEFORE triggers (not in SQL Server → check constraints fire first)
+→ INSTEAD OF trigger (replaces the operation entirely)
+→ CHECK CONSTRAINTS
+→ Primary Key / Foreign Key validation
+→ AFTER triggers (multiple, ordered by sp_settriggerorder)
 ```
 
 ### C++ Implementation (Trigger Engine)
@@ -2407,7 +2407,7 @@ engine.fire(TriggerEvent.UPDATE, TriggerTiming.BEFORE, old_emp, new_emp)
 | **Recursive triggers** | A trigger that modifies the same table causing itself to fire again. SQL Server default: recursive_triggers = OFF |
 | **Nested triggers** | Trigger on Table A modifies Table B which has its own trigger. Default nesting level: 32 |
 | **Trigger recursion depth** | MySQL max_sp_recursion_depth; PostgreSQL no recursion by default; SQL Server up to 32 levels |
-| **Performance impact** | Triggers run within the same transaction â†’ they hold locks until complete |
+| **Performance impact** | Triggers run within the same transaction → they hold locks until complete |
 
 ---
 
@@ -2449,7 +2449,7 @@ SELECT * FROM sales_summary WHERE total_revenue > 10000 ORDER BY total_revenue D
 CREATE VIEW employee_public AS
 SELECT emp_id, name, department_id
 FROM employees;
--- Excludes salary, ssn, birth_date â†’ sensitive columns hidden
+-- Excludes salary, ssn, birth_date → sensitive columns hidden
 
 CREATE VIEW employee_hr AS
 SELECT * FROM employees;
@@ -2474,7 +2474,7 @@ GROUP BY product_id;
 CREATE UNIQUE CLUSTERED INDEX IX_monthly_sales_product
 ON dbo.monthly_sales(product_id);
 
--- Now the view is materialized â†’ queries use the index directly
+-- Now the view is materialized → queries use the index directly
 ```
 
 ### Materialized Views (PostgreSQL)
@@ -2492,7 +2492,7 @@ WHERE status = 'completed'
 GROUP BY 1, 2
 WITH DATA;  -- Populate immediately
 
--- Refresh (blocking â†’ table is locked during refresh)
+-- Refresh (blocking → table is locked during refresh)
 REFRESH MATERIALIZED VIEW monthly_sales_mv;
 
 -- Refresh concurrently (non-blocking, requires unique index)
@@ -2656,7 +2656,7 @@ for r in completed_view.get_data():
 | Aspect | Regular View | Indexed/Materialized View |
 |--------|-------------|---------------------------|
 | **Storage** | None (query definition only) | Disk space for result set |
-| **Query time** | O(n) â†’ runs underlying query each access | O(log n) with index â†’ precomputed |
+| **Query time** | O(n) → runs underlying query each access | O(log n) with index → precomputed |
 | **Freshness** | Always current | Stale until refresh |
 | **DML impact** | None | Refresh overhead; updates to base table may fail (SQL Server indexed view restrictions) |
 | **Index support** | No | Yes |
@@ -2678,7 +2678,7 @@ Temporary tables store intermediate results for the **duration of a session** or
 
 
 ```sql
--- Create local temp table (single # â†’ visible only to current session)
+-- Create local temp table (single # → visible only to current session)
 CREATE TABLE #dept_summary (
     department_id INT,
     department_name VARCHAR(100),
@@ -2710,7 +2710,7 @@ DROP TABLE IF EXISTS #dept_summary;
 
 
 ```sql
--- Global temp table (## â†’ visible to ALL sessions)
+-- Global temp table (## → visible to ALL sessions)
 CREATE TABLE ##global_temp_errors (
     error_id INT IDENTITY,
     error_message VARCHAR(500),
@@ -2761,8 +2761,8 @@ SELECT * FROM @ProductSales ORDER BY total_revenue DESC;
 | **Scope** | Current session | Current batch/procedure |
 | **Location** | tempdb (disk) | tempdb (mostly memory) |
 | **Indexes** | Can create explicit indexes | Only PRIMARY KEY / UNIQUE constraints |
-| **Statistics** | Yes â†’ optimizer has histogram | No â†’ optimizer assumes 1 row (can cause bad plans) |
-| **Transactions** | Participates â†’ can rollback | Participates â†’ can rollback |
+| **Statistics** | Yes → optimizer has histogram | No → optimizer assumes 1 row (can cause bad plans) |
+| **Transactions** | Participates → can rollback | Participates → can rollback |
 | **Explicit DROP** | Optional (auto-dropped) | Not needed (auto-cleared) |
 | **Nested procedures** | Visible to inner procedures | Not visible to inner procedures |
 | **When to use** | Large datasets, need indexes, multiple scopes | Small datasets ( < 100 rows ), simple lookups |
@@ -2958,19 +2958,19 @@ Most DBMS enforce a default limit to prevent infinite recursion:
 
 **Interview answer:** "Recursive CTE depth is capped to prevent infinite loops. Default is 100 in most systems. Always use a termination condition (`WHERE n < limit`) and consider whether a set-based approach (hierarchyid, nested sets) might be more performant for deep hierarchies."
 
-### Q2: Correlated vs Non-correlated subquery â†’ performance difference?
+### Q2: Correlated vs Non-correlated subquery → performance difference?
 
 
-**Non-correlated:** Inner query runs **once**. Example: `WHERE salary > (SELECT AVG(salary) FROM employees)` â†’ AVG is computed once.
-**Correlated:** Inner query runs **once per outer row**. Example: `WHERE salary > (SELECT AVG(e2.salary) FROM employees e2 WHERE e2.dept_id = e1.dept_id)` â†’ AVG computed per department.
+**Non-correlated:** Inner query runs **once**. Example: `WHERE salary > (SELECT AVG(salary) FROM employees)` → AVG is computed once.
+**Correlated:** Inner query runs **once per outer row**. Example: `WHERE salary > (SELECT AVG(e2.salary) FROM employees e2 WHERE e2.dept_id = e1.dept_id)` → AVG computed per department.
 
-**Interview answer:** "Non-correlated subqueries execute once and are generally faster. Correlated subqueries execute for each outer row and can be O(nÃ‚Â²). The optimizer may rewrite correlated subqueries to joins or apply caching (subquery decorrelation). Always check the execution plan. When possible, rewrite correlated subqueries to window functions or JOINs with GROUP BY."
+**Interview answer:** "Non-correlated subqueries execute once and are generally faster. Correlated subqueries execute for each outer row and can be O(n²). The optimizer may rewrite correlated subqueries to joins or apply caching (subquery decorrelation). Always check the execution plan. When possible, rewrite correlated subqueries to window functions or JOINs with GROUP BY."
 
 ### Q3: Can you create an index on a view?
 
 
-**Regular view:** No â†’ it's just a stored query; there's nothing to index.
-**Indexed view (SQL Server) / Materialized view (PostgreSQL/Oracle):** Yes â†’ creates a physical copy with a clustered index.
+**Regular view:** No → it's just a stored query; there's nothing to index.
+**Indexed view (SQL Server) / Materialized view (PostgreSQL/Oracle):** Yes → creates a physical copy with a clustered index.
 
 Requirements for indexed views in SQL Server:
 - `WITH SCHEMABINDING`
@@ -2982,7 +2982,7 @@ Requirements for indexed views in SQL Server:
 
 **Interview answer:** "You cannot index a regular view. For materialized views, you create a unique clustered index which physically stores the view's result set. This dramatically speeds up queries against the view but adds overhead to base table modifications."
 
-### Q4: Trigger vs CHECK constraint â†’ which to use for validation?
+### Q4: Trigger vs CHECK constraint → which to use for validation?
 
 
 **CHECK constraint:** Simple, declarative, fast. Best for: column-level validation, domain integrity.
@@ -3002,7 +3002,7 @@ BEGIN
 END;
 ```
 
-**Interview answer:** "Use CHECK constraints for simple, single-row validation â†’ they're declarative, faster, and the optimizer understands them. Use triggers only for complex business rules that span rows or tables, or when you need side effects like audit logging."
+**Interview answer:** "Use CHECK constraints for simple, single-row validation → they're declarative, faster, and the optimizer understands them. Use triggers only for complex business rules that span rows or tables, or when you need side effects like audit logging."
 
 ### Q5: What happens with NULLs in window function ORDER BY?
 
@@ -3012,7 +3012,7 @@ END;
 - **MySQL:** NULLS FIRST by default.
 - Impact: ROW_NUMBER assigns 1 to the first row in sort order; RANK/DENSE_RANK may group NULLs together.
 
-**Interview answer:** "NULL handling in window functions follows the database's NULL sort order. This affects ROW_NUMBER assignment â†’ if you're ranking salaries and some are NULL, they'll appear at the start or end depending on the DBMS. Use ORDER BY with NULLS LAST/NULLS FIRST for explicit control."
+**Interview answer:** "NULL handling in window functions follows the database's NULL sort order. This affects ROW_NUMBER assignment → if you're ranking salaries and some are NULL, they'll appear at the start or end depending on the DBMS. Use ORDER BY with NULLS LAST/NULLS FIRST for explicit control."
 
 ### Q6: Why would a MERGE statement fail with "multiple rows in source match same target"?
 
@@ -3036,7 +3036,7 @@ WHEN MATCHED THEN UPDATE SET quantity = quantity + source.qty;
 ### Q7: Can a CTE be used in multiple queries?
 
 
-No â†’ a CTE is scoped to the **single** statement that follows the WITH clause. For multiple queries, use a temp table or a view.
+No → a CTE is scoped to the **single** statement that follows the WITH clause. For multiple queries, use a temp table or a view.
 
 ```sql
 WITH cte AS (SELECT * FROM employees WHERE salary > 80000)
@@ -3046,7 +3046,7 @@ SELECT * FROM cte;          -- First query uses CTE
 -- CREATE VIEW ...          -- Use view instead for reusability
 ```
 
-### Q8: Dynamic SQL â†’ why is QUOTENAME important?
+### Q8: Dynamic SQL → why is QUOTENAME important?
 
 
 Without QUOTENAME, a malicious user can perform SQL injection:
@@ -3069,7 +3069,7 @@ SET @sql = 'SELECT * FROM ' + QUOTENAME(@table_name);
 ### PostgreSQL Window Functions
 
 
-PostgreSQL's window function support is the gold standard â†’ it supports ALL standard SQL:2003 window functions plus extensions.
+PostgreSQL's window function support is the gold standard → it supports ALL standard SQL:2003 window functions plus extensions.
 
 **Real Use Case: Stock Market Technical Analysis**
 ```sql
@@ -3311,7 +3311,7 @@ WHEN NOT MATCHED BY SOURCE AND target.is_current = 1 THEN
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| **Subqueries** | Nested queries returning scalar/row/table/correlated results | Correlated subqueries = O(nÃ‚Â²); prefer JOINs or window functions |
+| **Subqueries** | Nested queries returning scalar/row/table/correlated results | Correlated subqueries = O(n²); prefer JOINs or window functions |
 | **EXISTS/NOT EXISTS** | Short-circuit existence check | EXISTS > IN for large subqueries due to early termination |
 | **ANY/ALL** | Compare against any or all values in a set | `> ANY` = `> MIN()`; `> ALL` = `> MAX()` |
 | **CTEs** | Named temporary result sets within a single query | Use for readability, recursion, multiple references |
@@ -3322,7 +3322,7 @@ WHEN NOT MATCHED BY SOURCE AND target.is_current = 1 THEN
 | **Dynamic SQL** | Runtime SQL construction | Always use QUOTENAME/parameters; never concatenate input |
 | **Stored Procedures** | Pre-compiled server-side logic | Use for transactions, security boundaries, performance |
 | **Functions** | Deterministic computations inside queries | Scalar UDFs can be slow per-row; inline TVFs are optimized |
-| **Triggers** | Automatic execution on DML events | Use sparingly â†’ they add latency and can cause recursion |
+| **Triggers** | Automatic execution on DML events | Use sparingly → they add latency and can cause recursion |
 | **Views** | Virtual tables for abstraction and security | Indexed views for performance; regular views for encapsulation |
 | **Indexed Views** | Materialized query results with clustered index | Great for aggregations; adds base table update overhead |
 | **Temp Tables** | Session-scoped intermediate storage | Use for large datasets; statistics help optimizer |
@@ -3333,24 +3333,24 @@ WHEN NOT MATCHED BY SOURCE AND target.is_current = 1 THEN
 ## SQL Execution Order
 
 ```
-FROM / JOIN      â†’ Determines source tables and joins
-WHERE            â†’ Filters rows BEFORE grouping
-GROUP BY         â†’ Partitions rows into groups
-HAVING           â†’ Filters groups AFTER aggregation
-SELECT           â†’ Projects columns; computes window functions
-ORDER BY         â†’ Sorts the final result set
-LIMIT / OFFSET   â†’ Pagination
+FROM / JOIN      → Determines source tables and joins
+WHERE            → Filters rows BEFORE grouping
+GROUP BY         → Partitions rows into groups
+HAVING           → Filters groups AFTER aggregation
+SELECT           → Projects columns; computes window functions
+ORDER BY         → Sorts the final result set
+LIMIT / OFFSET   → Pagination
 ```
 
 ---
 
 ### 6.16 Recursive CTE Simulator (TypeScript)
 
-The following code models recursive CTE execution â€” anchor member, recursive member, and termination â€” with performance tracking.
+The following code models recursive CTE execution — anchor member, recursive member, and termination — with performance tracking.
 
 ```typescript
 // ============================================================
-// Recursive CTE Simulator â€” TypeScript
+// Recursive CTE Simulator — TypeScript
 // ============================================================
 
 interface CTEContext {
@@ -3532,9 +3532,9 @@ flowchart LR
 | Window Function | Purpose | Example |
 |----------------|---------|---------|
 | ROW_NUMBER() | Unique sequential number per partition | `ROW_NUMBER() OVER (PARTITION BY dept ORDER BY salary DESC)` |
-| RANK() | Rank with gaps for ties | `RANK() OVER (ORDER BY score DESC)` â†’ 1,1,3,4 |
-| DENSE_RANK() | Rank without gaps for ties | `DENSE_RANK() OVER (ORDER BY score DESC)` â†’ 1,1,2,3 |
-| NTILE(n) | Distribute into n buckets | `NTILE(4) OVER (ORDER BY amount)` â†’ quartiles |
+| RANK() | Rank with gaps for ties | `RANK() OVER (ORDER BY score DESC)` → 1,1,3,4 |
+| DENSE_RANK() | Rank without gaps for ties | `DENSE_RANK() OVER (ORDER BY score DESC)` → 1,1,2,3 |
+| NTILE(n) | Distribute into n buckets | `NTILE(4) OVER (ORDER BY amount)` → quartiles |
 | LAG(col, n, d) | Previous row value | `LAG(salary, 1, 0) OVER (ORDER BY hire_date)` |
 | LEAD(col, n, d) | Next row value | `LEAD(price, 1) OVER (ORDER BY trade_date)` |
 | FIRST_VALUE(col) | First value in frame | `FIRST_VALUE(price) OVER (ORDER BY date)` |
@@ -3613,19 +3613,19 @@ flowchart LR
 
 ## Summary
 
-- **Subqueries** (scalar, row, table, correlated) â†’ nested queries for single values, row comparisons, derived tables, and per-row lookups. Correlated subqueries run once per outer row; prefer JOINs when possible.
-- **EXISTS / NOT EXISTS** â†’ short-circuit existence checks. More efficient than IN for large subqueries.
-- **ANY / ALL** â†’ compare a value against any one or all values from a subquery. `> ANY = > MIN(); > ALL = > MAX()`.
-- **CTEs (WITH clause)** â†’ named temporary result sets for readability, reuse, and recursion. Recursive CTEs require an anchor, UNION ALL, and a recursive member. Depth is capped (default 100).
-- **Window Functions** (ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, SUM/AVG OVER) â†’ per-row calculations across partitions without collapsing rows.
-- **PIVOT / UNPIVOT** â†’ transform rows to columns and vice versa. CASE-based PIVOT is most portable.
-- **MERGE / UPSERT** â†’ single-statement INSERT, UPDATE, DELETE synchronization. Ensure unique source join keys.
-- **Dynamic SQL** â†’ runtime SQL construction. Always parameterize or use QUOTENAME to prevent injection.
-- **Stored Procedures** â†’ compiled server-side logic with transactions, error handling, and reusable execution plans.
-- **Functions (UDFs)** â†’ deterministic computations usable inside queries. Scalar UDFs run per-row; inline TVFs are optimized into outer queries.
-- **Triggers** â†’ automatic event-driven execution. Use for auditing, validation, cascading. Avoid complex logic that slows DML.
-- **Views** â†’ virtual tables for abstraction and security. Indexed/materialized views store results physically for performance.
-- **Temp Tables & Table Variables** â†’ session-scoped intermediate storage. Temp tables suit large datasets; table variables suit small ones.
+- **Subqueries** (scalar, row, table, correlated) → nested queries for single values, row comparisons, derived tables, and per-row lookups. Correlated subqueries run once per outer row; prefer JOINs when possible.
+- **EXISTS / NOT EXISTS** → short-circuit existence checks. More efficient than IN for large subqueries.
+- **ANY / ALL** → compare a value against any one or all values from a subquery. `> ANY = > MIN(); > ALL = > MAX()`.
+- **CTEs (WITH clause)** → named temporary result sets for readability, reuse, and recursion. Recursive CTEs require an anchor, UNION ALL, and a recursive member. Depth is capped (default 100).
+- **Window Functions** (ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, SUM/AVG OVER) → per-row calculations across partitions without collapsing rows.
+- **PIVOT / UNPIVOT** → transform rows to columns and vice versa. CASE-based PIVOT is most portable.
+- **MERGE / UPSERT** → single-statement INSERT, UPDATE, DELETE synchronization. Ensure unique source join keys.
+- **Dynamic SQL** → runtime SQL construction. Always parameterize or use QUOTENAME to prevent injection.
+- **Stored Procedures** → compiled server-side logic with transactions, error handling, and reusable execution plans.
+- **Functions (UDFs)** → deterministic computations usable inside queries. Scalar UDFs run per-row; inline TVFs are optimized into outer queries.
+- **Triggers** → automatic event-driven execution. Use for auditing, validation, cascading. Avoid complex logic that slows DML.
+- **Views** → virtual tables for abstraction and security. Indexed/materialized views store results physically for performance.
+- **Temp Tables & Table Variables** → session-scoped intermediate storage. Temp tables suit large datasets; table variables suit small ones.
 
 ---
 

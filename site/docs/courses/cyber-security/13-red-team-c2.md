@@ -36,7 +36,7 @@ By the end of this chapter, you will be able to:
 
 
 1. Execute the full red team kill chain: Planning -> Recon -> Initial Access -> Persistence -> Lateral Movement -> Exfiltration -> Reporting.
-2. Deploy and configure C2 frameworks â€” Cobalt Strike (Malleable C2 profiles, beaconing, BOFs), Sliver (mTLS/HTTP/DNS operators), and Covenant (ASP.NET, gRPC staging).
+2. Deploy and configure C2 frameworks — Cobalt Strike (Malleable C2 profiles, beaconing, BOFs), Sliver (mTLS/HTTP/DNS operators), and Covenant (ASP.NET, gRPC staging).
 3. Design and execute phishing campaigns using GoPhish with SMTP relay, evaded SPF/DKIM/DMARC checks, and tracking pixel analytics.
 4. Map adversary emulation to MITRE ATT&CK, execute Atomic Red Team tests, and simulate APT29 and APT41 TTPs.
 5. Implement evasion techniques: AMSI bypass, ETW patching, Hell's Gate/Halo's Gate syscall direct, sandbox detection.
@@ -52,9 +52,9 @@ By the end of this chapter, you will be able to:
 | Section | Key Concept | Why It Matters |
 |---------|-------------|----------------|
 | Red Team Methodology | Full kill chain from planning to reporting | Foundational process for every red team engagement |
-| C2 Frameworks â€” Cobalt Strike | Malleable C2 profiles, beaconing, stageless/staged payloads, BOFs | Industry-standard C2 with unmatched customization |
-| C2 Frameworks â€” Sliver | Open-source, mTLS/HTTP/DNS, operator/armory ecosystem | Free alternative with modern Go-based architecture |
-| C2 Frameworks â€” Covenant | ASP.NET Core, gRPC staging, dynamic compilation | Innovative .NET-based C2 with real-time UI |
+| C2 Frameworks — Cobalt Strike | Malleable C2 profiles, beaconing, stageless/staged payloads, BOFs | Industry-standard C2 with unmatched customization |
+| C2 Frameworks — Sliver | Open-source, mTLS/HTTP/DNS, operator/armory ecosystem | Free alternative with modern Go-based architecture |
+| C2 Frameworks — Covenant | ASP.NET Core, gRPC staging, dynamic compilation | Innovative .NET-based C2 with real-time UI |
 | Phishing Operations | SMTP relay, GoPhish, SPF/DKIM/DMARC evasion, tracking | Primary initial access vector in 80%+ of breaches |
 | Adversary Emulation | MITRE ATT&CK mapping, Atomic Red Team, APT emulation | Measure detection coverage with real TTPs |
 | Evasion Techniques | AMSI bypass, ETW patching, syscall direct, sandbox detection | Critical for operating in modern EDR/XDR environments |
@@ -64,12 +64,12 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. Red Team Methodology â€” The Full Kill Chain
+## 1. Red Team Methodology — The Full Kill Chain
 
 ### 1.1 The Red Team Kill Chain
 
 
-A red team engagement follows a structured, iterative process modeled on real adversary operations. Unlike a standard penetration test that checks boxes, a red team engagement is objective-driven â€” simulate a specific threat actor against a defined target.
+A red team engagement follows a structured, iterative process modeled on real adversary operations. Unlike a standard penetration test that checks boxes, a red team engagement is objective-driven — simulate a specific threat actor against a defined target.
 
 ```
                          RED TEAM KILL CHAIN
@@ -83,41 +83,41 @@ A red team engagement follows a structured, iterative process modeled on real ad
 +----------+----------+----------+----------+----------+----------+-----------+
 ```
 
-**Phase 1 â€” Planning:**
+**Phase 1 — Planning:**
 - Define Rules of Engagement (ROE): target scope, excluded hosts, time windows, data handling
 - Select adversary to emulate (e.g., APT29 for stealth operations)
 - Identify crown jewels and primary objectives
 - Set communication protocol (callout schedule, reporting cadence)
 
-**Phase 2 â€” Reconnaissance:**
+**Phase 2 — Reconnaissance:**
 - Passive: WHOIS, DNS enumeration, Shodan, Censys, Google dorking, social media OSINT
 - Active: Nmap scanning, directory brute-force, subdomain enumeration, technology fingerprinting
 - Target validation: verify scope, identify active systems, build network maps
 
-**Phase 3 â€” Initial Access:**
+**Phase 3 — Initial Access:**
 - Phishing: crafted emails with weaponized attachments or links
 - Exploit: web application CVEs, unpatched services, SQL injection
 - Credential theft: password spraying, credential stuffing, default credentials
 - Supply chain: compromised dependencies, CI/CD pipeline attacks
 
-**Phase 4 â€” Persistence:**
+**Phase 4 — Persistence:**
 - C2 beacon deployment: scheduled tasks, WMI event subscriptions, service installations
 - Backdoor accounts: create local/domain users, modify ACLs, SID history injection
 - Boot persistence: registry run keys, startup folder, DLL search-order hijacking
 - Credential dumping: LSASS, SAM, NTDS.dit, DPAPI, browser cookies
 
-**Phase 5 â€” Lateral Movement:**
+**Phase 5 — Lateral Movement:**
 - Pass-the-Hash (PtH), Overpass-the-Hash (OPtH), Pass-the-Ticket (PtT)
 - Remote execution: WMI, PsExec, WinRM, DCOM, SMB exec, Scheduled Tasks
 - Remote desktop: RDP session hijacking, credential relay
 - Network pivoting: SSH tunneling, SOCKS proxy, port forwarding
 
-**Phase 6 â€” Exfiltration:**
+**Phase 6 — Exfiltration:**
 - Data staging: collect, compress, encrypt target data
 - Exfiltration channels: DNS tunneling, HTTPS, SMTP, ICMP, SMB over QUIC
 - Cover tracks: clear event logs, modify timestamps, remove artifacts
 
-**Phase 7 â€” Reporting:**
+**Phase 7 — Reporting:**
 - Executive summary: business impact, risk ratings, strategic recommendations
 - Technical findings: detailed TTPs, evidence, timelines, detection gaps
 - Remediation roadmap: prioritized fixes with MITRE ATT&CK mappings
@@ -126,7 +126,7 @@ A red team engagement follows a structured, iterative process modeled on real ad
 
 
 ```typescript
-// roe-contract.ts â€” Rules of Engagement Definition and Validation
+// roe-contract.ts — Rules of Engagement Definition and Validation
 
 interface RulesOfEngagement {
   engagementId: string;
@@ -201,7 +201,7 @@ function validateROE(roe: RulesOfEngagement): { valid: boolean; issues: string[]
 }
 ```
 
-### 1.3 Engagement Lifecycle â€” Time Allocation
+### 1.3 Engagement Lifecycle — Time Allocation
 
 
 | Phase | Typical Duration | Deliverables |
@@ -215,7 +215,7 @@ function validateROE(roe: RulesOfEngagement): { valid: boolean; issues: string[]
 
 ---
 
-## 2. C2 Frameworks â€” Cobalt Strike
+## 2. C2 Frameworks — Cobalt Strike
 
 ### 2.1 Architecture Overview
 
@@ -251,13 +251,13 @@ Cobalt Strike is the industry-standard red team C2 framework. Its architecture r
 - Listener: Server-side component accepting beacon callbacks (HTTP, HTTPS, DNS, SMB, TCP).
 - Aggressor Script: Scripting language extending Cobalt Strike with custom UI and automation.
 
-### 2.2 Malleable C2 Profiles â€” Deep Dive
+### 2.2 Malleable C2 Profiles — Deep Dive
 
 
 A Malleable C2 profile defines every observable aspect of beacon-to-teamserver communication. Modern EDR and network detection fingerprint C2 by JA3/S, JARM, HTTP header ordering, URI patterns, and timing.
 
 ```typescript
-// malleable-parser.ts â€” Malleable C2 Profile Parser (Profile to JSON)
+// malleable-parser.ts — Malleable C2 Profile Parser (Profile to JSON)
 
 interface HttpProfile {
   block: 'client' | 'server';
@@ -414,7 +414,7 @@ class MalleableProfileParser {
 | post-ex.amsi_disable | Number of AMSI bypasses to apply | 1 |
 | process-inject.startrwx | Start with RWX permissions (bad OPSEC) | false |
 
-### 2.3 Beacon Types â€” Staged vs Stageless
+### 2.3 Beacon Types — Staged vs Stageless
 
 
 | Property | Staged | Stageless |
@@ -454,7 +454,7 @@ sequenceDiagram
 
 
 ```typescript
-// c2-beacon-simulator.ts â€” Beacon with Jitter, Sleep, Tasking
+// c2-beacon-simulator.ts — Beacon with Jitter, Sleep, Tasking
 
 interface BeaconConfig {
   callbackInterval: number; jitterPercent: number; maxRetries: number;
@@ -565,7 +565,7 @@ class C2Beacon {
 
 ---
 
-## 3. C2 Frameworks â€” Sliver
+## 3. C2 Frameworks — Sliver
 
 ### 3.1 Sliver Architecture
 
@@ -581,7 +581,7 @@ Sliver is an open-source, Go-based C2 framework developed by BishopFox. It suppo
 - Operator/player role-based access control
 - Full gRPC API for automation
 
-### 3.2 Sliver C2 Setup Guide â€” Full Deployment
+### 3.2 Sliver C2 Setup Guide — Full Deployment
 
 
 ```bash
@@ -621,7 +621,7 @@ execute-assembly /path/to/SharpHound.exe
 
 
 ```typescript
-// sliver-operator.ts â€” Sliver Operator Configuration and Management
+// sliver-operator.ts — Sliver Operator Configuration and Management
 
 interface SliverConfig { serverHost: string; serverPort: number; tlsConfig: TLSConfig; }
 interface TLSConfig { caCert: string; cert: string; key: string; mutualTLS: boolean; }
@@ -667,7 +667,7 @@ class SliverManager {
 }
 ```
 
-### 3.4 Sliver Armory â€” Popular Packages
+### 3.4 Sliver Armory — Popular Packages
 
 
 | Package | Type | Description |
@@ -681,7 +681,7 @@ class SliverManager {
 
 ---
 
-## 4. C2 Frameworks â€” Covenant
+## 4. C2 Frameworks — Covenant
 
 ### 4.1 Covenant Architecture
 
@@ -719,7 +719,7 @@ dotnet run --urls "https://0.0.0.0:7443"
 
 
 ```typescript
-// covenant-task-compiler.ts â€” Dynamic C# Compilation
+// covenant-task-compiler.ts — Dynamic C# Compilation
 
 interface CovenantTask { id: string; name: string; sourceCode: string; references: string[]; outputType: string; }
 interface CompiledTask { taskId: string; assemblyBytes: Buffer; entryPoint: string; compileTimeMs: number; }
@@ -798,7 +798,7 @@ curl -k -X POST https://localhost:3333/api/smtp/ \
 
 
 ```typescript
-// phishing-campaign-manager.ts â€” Campaign Orchestration with Tracking
+// phishing-campaign-manager.ts — Campaign Orchestration with Tracking
 
 interface EmailTemplate {
   id: string; name: string; subject: string; htmlBody: string;
@@ -925,7 +925,7 @@ When the email client loads the tracking pixel (a 1x1 transparent GIF), the GoPh
 Adversary emulation executes specific threat actor TTPs to test detection coverage. The MITRE ATT&CK framework provides a structured taxonomy.
 
 ```typescript
-// adversary-emulation.ts â€” MITRE ATT&CK Mapper and Atomic Tests
+// adversary-emulation.ts — MITRE ATT&CK Mapper and Atomic Tests
 
 interface MITRETechnique {
   id: string; name: string; tactic: string; platform: string[];
@@ -1046,13 +1046,13 @@ class MITREMapper {
 ### 6.2 APT Emulation Procedures
 
 
-**APT29 (Cozy Bear / Nobelium) â€” SolarWinds Campaign:**
+**APT29 (Cozy Bear / Nobelium) — SolarWinds Campaign:**
 
-Phase 1 â€” Initial Access: Compromise SolarWinds Orion build system, insert SUNBURST backdoor into Orion DLLs, digitally sign malicious update. Phase 2 â€” C2 Communication: Obfuscated HTTP C2 with fake blog infrastructure, domain avsvmcloud[.]com, beacon interval 12-24 hours with jitter. Phase 3 â€” Lateral Movement: TEARDROP and RAINDROP loaders, Mimikatz for credential extraction, SMB and WMI propagation. Phase 4 â€” Exfiltration: Stage data in compromised on-prem servers, exfiltrate over encrypted HTTPS channels, target email data (OWA/EWS) and cloud provider tokens.
+Phase 1 — Initial Access: Compromise SolarWinds Orion build system, insert SUNBURST backdoor into Orion DLLs, digitally sign malicious update. Phase 2 — C2 Communication: Obfuscated HTTP C2 with fake blog infrastructure, domain avsvmcloud[.]com, beacon interval 12-24 hours with jitter. Phase 3 — Lateral Movement: TEARDROP and RAINDROP loaders, Mimikatz for credential extraction, SMB and WMI propagation. Phase 4 — Exfiltration: Stage data in compromised on-prem servers, exfiltrate over encrypted HTTPS channels, target email data (OWA/EWS) and cloud provider tokens.
 
 **APT41 (WinNTI / Barium):**
 
-Phase 1 â€” Initial Access: Spearphishing with ISO/LNK files, exploit VPN appliances (CVE-2019-19781, CVE-2020-5902). Phase 2 â€” C2 Communication: Custom C2 protocol over HTTPS, multi-stage payload delivery. Phase 3 â€” Lateral Movement: WMI and PsExec with stolen credentials, GPO modification, service persistence. Phase 4 â€” Exfiltration: Data staged to internal server, exfil over HTTPS and DNS tunneling, target game source code, IP, user databases.
+Phase 1 — Initial Access: Spearphishing with ISO/LNK files, exploit VPN appliances (CVE-2019-19781, CVE-2020-5902). Phase 2 — C2 Communication: Custom C2 protocol over HTTPS, multi-stage payload delivery. Phase 3 — Lateral Movement: WMI and PsExec with stolen credentials, GPO modification, service persistence. Phase 4 — Exfiltration: Data staged to internal server, exfil over HTTPS and DNS tunneling, target game source code, IP, user databases.
 
 ---
 
@@ -1064,7 +1064,7 @@ Phase 1 â€” Initial Access: Spearphishing with ISO/LNK files, exploit VPN a
 The Anti-Malware Scan Interface (AMSI) allows Windows apps to request malware scans of content. PowerShell, VBA, and .NET all integrate with AMSI. Bypasses modify AmsiScanBuffer in amsi.dll to always return AMSI_RESULT_CLEAN.
 
 ```typescript
-// amsi-bypass-generator.ts â€” AMSI/ETW Bypass String Generator
+// amsi-bypass-generator.ts — AMSI/ETW Bypass String Generator
 
 interface BypassTechnique {
   name: string; method: 'patching' | 'reflection' | 'registry';
@@ -1116,7 +1116,7 @@ class AmsiBypassGenerator {
 }
 ```
 
-### 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate
+### 7.2 Syscall Direct — Hell's Gate and Halo's Gate
 
 
 Modern EDR hooks ntdll.dll functions to monitor syscalls. Direct syscall techniques bypass these hooks by invoking syscalls directly without going through ntdll.
@@ -1125,7 +1125,7 @@ Modern EDR hooks ntdll.dll functions to monitor syscalls. Direct syscall techniq
 - **Halo's Gate:** Extension that handles inlined hooks. Scans backward from the hooked address to find the original syscall.
 
 ```typescript
-// syscall-direct.ts â€” Hell's Gate and Halo's Gate Simulation
+// syscall-direct.ts — Hell's Gate and Halo's Gate Simulation
 
 interface SyscallEntry {
   syscallNumber: number;
@@ -1201,7 +1201,7 @@ class SandboxDetector {
 
   report(): string {
     return 'Sandboxed: ' + this.isSandboxed() + '\n' +
-      this.checks.map(c => (c.suspicious ? '[!]' : '[âœ“]') + ' ' + c.name).join('\n');
+      this.checks.map(c => (c.suspicious ? '[!]' : '[✓]') + ' ' + c.name).join('\n');
   }
 }
 ```
@@ -1257,7 +1257,7 @@ sequenceDiagram
 
 
 ```typescript
-// lateral-movement.ts â€” WMI, SMB, WinRM Abstractions
+// lateral-movement.ts — WMI, SMB, WinRM Abstractions
 
 interface Target {
   hostname: string;
@@ -1397,13 +1397,13 @@ Kerberos is the primary authentication protocol in Active Directory. Understandi
 
 
 ```typescript
-// kerberos-attacks.ts â€” Kerberos Ticket Manipulation and Attack Library
+// kerberos-attacks.ts — Kerberos Ticket Manipulation and Attack Library
 
 interface KerberosTicket {
   ticketType: 'TGT' | 'TGS';
   domain: string;
   username: string;
-  service?: string;        // For TGS â€” SPN
+  service?: string;        // For TGS — SPN
   encryption: 'RC4' | 'AES128' | 'AES256' | 'DES';
   hash: string;            // Encrypted ticket hash
   validFrom: Date;
@@ -1485,7 +1485,7 @@ class ASREPRoastingEngine {
 
 // Silver and Golden Ticket Forging
 class TicketForgeryEngine {
-  // Silver Ticket â€” requires service account hash
+  // Silver Ticket — requires service account hash
   forgeSilverTicket(config: {
     domain: string;
     username: string;
@@ -1508,7 +1508,7 @@ class TicketForgeryEngine {
     };
   }
 
-  // Golden Ticket â€” requires KRBTGT hash
+  // Golden Ticket — requires KRBTGT hash
   forgeGoldenTicket(config: {
     domain: string;
     username: string;
@@ -1529,18 +1529,18 @@ class TicketForgeryEngine {
     };
   }
 
-  // DCSync â€” request domain replication
+  // DCSync — request domain replication
   async DCsync(targetDomain: string, targetUser: string = ''): Promise<string> {
     console.log('[DCSync] Requesting replication from ' + targetDomain);
     // In real: mimikatz "lsadump::dcsync /domain:domain /user:krbtgt"
-    return 'NTDS.dit extracted â€” ' + (targetUser || 'all') + ' hashes retrieved';
+    return 'NTDS.dit extracted — ' + (targetUser || 'all') + ' hashes retrieved';
   }
 
-  // Skeleton Key â€” patch LSASS on DC
+  // Skeleton Key — patch LSASS on DC
   skeletonKey(dcHostname: string, password: string): string {
     console.log('[Skeleton Key] Patching LSASS on ' + dcHostname);
     // In real: mimikatz "privilege::debug" "misc::skeleton"
-    return 'Skeleton key installed â€” any account accepts password: ' + password;
+    return 'Skeleton key installed — any account accepts password: ' + password;
   }
 
   private forgeTicketHash(config: any): string {
@@ -1580,7 +1580,7 @@ class TicketForgeryEngine {
 
 ## 10. Real Operation Case Studies
 
-### 10.1 SolarWinds (APT29 / Nobelium) â€” 2020
+### 10.1 SolarWinds (APT29 / Nobelium) — 2020
 
 
 The SolarWinds supply chain attack is one of the most sophisticated red-team-evadable operations ever conducted.
@@ -1589,9 +1589,9 @@ The SolarWinds supply chain attack is one of the most sophisticated red-team-eva
 
 | Attribute | Detail |
 |-----------|--------|
-| Attribution | APT29 (Cozy Bear, Nobelium) â€” Russian SVR |
+| Attribution | APT29 (Cozy Bear, Nobelium) — Russian SVR |
 | Initial Access | Supply chain: compromised SolarWinds Orion build system |
-| Duration | ~9 months undetected (March 2020 â€” December 2020) |
+| Duration | ~9 months undetected (March 2020 — December 2020) |
 | Victims | 18,000+ organizations, ~100 fully compromised |
 | Key Targets | US federal agencies (Treasury, Commerce, DHS, DoD), tech companies (Microsoft, FireEye), security firms |
 | C2 Used | SUNBURST backdoor, TEARDROP, RAINDROP, BEACON |
@@ -1633,7 +1633,7 @@ The SolarWinds supply chain attack is one of the most sophisticated red-team-eva
 | C2 | Web Protocols | T1071.001 |
 | Exfiltration | Exfiltration Over C2 Channel | T1041 |
 
-### 10.2 Colonial Pipeline (DarkSide) â€” 2021
+### 10.2 Colonial Pipeline (DarkSide) — 2021
 
 
 The DarkSide ransomware attack on Colonial Pipeline demonstrated the real-world impact of initial access via phishing and fast lateral movement.
@@ -1651,13 +1651,13 @@ The DarkSide ransomware attack on Colonial Pipeline demonstrated the real-world 
 **Attack Timeline:**
 
 ```
-T+0:00 â€” Phishing email with reused VPN password
-T+0:15 â€” DarkSide accesses Colonial Pipeline VPN
-T+0:30 â€” C2 beacon established via HTTPS
-T+1:00 â€” LSASS dump -> domain admin credentials
-T+1:30 â€” PsExec to all domain-joined servers
-T+2:00 â€” 100GB data exfiltrated via C2
-T+2:30 â€” Ransomware deployed via GPO push
+T+0:00 — Phishing email with reused VPN password
+T+0:15 — DarkSide accesses Colonial Pipeline VPN
+T+0:30 — C2 beacon established via HTTPS
+T+1:00 — LSASS dump -> domain admin credentials
+T+1:30 — PsExec to all domain-joined servers
+T+2:00 — 100GB data exfiltrated via C2
+T+2:30 — Ransomware deployed via GPO push
 ```
 
 **Key Red Team Lessons:**

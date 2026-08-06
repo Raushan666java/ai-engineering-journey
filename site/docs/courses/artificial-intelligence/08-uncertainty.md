@@ -110,7 +110,7 @@ In real-world environments, agents rarely have access to the complete state of t
 
 ### Real-World Analogy → Rolling Dice
 
-When you roll a fair six-sided die, you know the possible outcomes {1,2,3,4,5,6} but not which will occur. Probability quantifies this uncertainty: P(Roll=3) = 1/6 â‰ˆ 0.167. Over many rolls, the relative frequency of each face approaches 1/6. This is the **frequentist interpretation**. In AI, we also use the **Bayesian interpretation**: probability as degree of belief.
+When you roll a fair six-sided die, you know the possible outcomes {1,2,3,4,5,6} but not which will occur. Probability quantifies this uncertainty: P(Roll=3) = 1/6 ≈ 0.167. Over many rolls, the relative frequency of each face approaches 1/6. This is the **frequentist interpretation**. In AI, we also use the **Bayesian interpretation**: probability as degree of belief.
 
 ### Why It Matters in AI
 
@@ -120,7 +120,7 @@ Every AI system makes decisions under uncertainty. Probability gives us the lang
 
 - **Random Variable**: A variable whose value is subject to variations due to chance. Example: $Weather \in \{Sunny, Rainy\}$.
 - **Probability Distribution**: Maps each outcome to its probability. Sum of all probabilities = 1.
-- **Joint Probability Distribution**: Specifies the probability of every possible combination of values for a set of random variables. For 3 boolean variables, the full joint has 2Â³ = 8 entries.
+- **Joint Probability Distribution**: Specifies the probability of every possible combination of values for a set of random variables. For 3 boolean variables, the full joint has 2³ = 8 entries.
 - **Marginal Probability**: $P(A)$ → the probability of A regardless of other variables.
 
 ### Algorithm → Computing Marginal from Joint
@@ -148,7 +148,7 @@ function MARGINALIZE(Joint P(X,Y), variable X):
 
 **Dry Run → Marginal from Joint Table:**
 
-We have two variables: Weather (W) âˆˆ {Sunny, Rainy} and Mood (M) âˆˆ {Happy, Sad}. Joint distribution P(W, M):
+We have two variables: Weather (W) ∈ {Sunny, Rainy} and Mood (M) ∈ {Happy, Sad}. Joint distribution P(W, M):
 
 | W | M | P(W,M) |
 |---|---|--------|
@@ -195,11 +195,11 @@ print("P(Weather):", p_weather)
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Space (full joint)** | O(dâ¿) for n variables each with d values | Every combination must be stored → exponential explosion |
-| **Time (marginalize)** | O(dâ¿) | Must sum over all other dimensions |
-| **CPT representation (BN)** | O(n Ã— dáµ) where k = max parents | Only local parents; k &lt;< n in sparse graphs |
+| **Space (full joint)** | O(dⁿ) for n variables each with d values | Every combination must be stored → exponential explosion |
+| **Time (marginalize)** | O(dⁿ) | Must sum over all other dimensions |
+| **CPT representation (BN)** | O(n × dᵏ) where k = max parents | Only local parents; k &lt;< n in sparse graphs |
 
-The full joint distribution is **impractical** beyond ~20 boolean variables (2Â²â° â‰ˆ 1 million entries). This is the **curse of dimensionality** and the primary motivation for Bayesian Networks.
+The full joint distribution is **impractical** beyond ~20 boolean variables (2²⁰ ≈ 1 million entries). This is the **curse of dimensionality** and the primary motivation for Bayesian Networks.
 
 ### Advantages & Disadvantages of Probability Basics
 
@@ -324,9 +324,9 @@ print(f"P(Rainy | Sad) = {p_rainy_given_sad:.3f}")
 
 Your email provider flags a message containing "FREE MONEY!!!". What is the probability it's spam? Historically, 60% of all emails are spam, and "FREE MONEY!!!" appears in 80% of spam but only 5% of legitimate emails. Bayes' Rule tells us:
 
-P(spam | "FREE MONEY!!!") = P("FREE MONEY!!!" | spam) Ã— P(spam) / P("FREE MONEY!!!")
+P(spam | "FREE MONEY!!!") = P("FREE MONEY!!!" | spam) × P(spam) / P("FREE MONEY!!!")
 
-= (0.80 Ã— 0.60) / (0.80 Ã— 0.60 + 0.05 Ã— 0.40) = 0.48 / 0.50 = 0.96
+= (0.80 × 0.60) / (0.80 × 0.60 + 0.05 × 0.40) = 0.48 / 0.50 = 0.96
 
 96% chance it's spam → move to spam folder!
 
@@ -354,7 +354,7 @@ Where:
 4. Determine the likelihood P(B|A)
 5. Determine P(B|not A) → false positive rate
 6. Compute marginal P(B) = P(B|A)P(A) + P(B|not A)P(not A)
-7. Compute posterior: P(A|B) = P(B|A) Ã— P(A) / P(B)
+7. Compute posterior: P(A|B) = P(B|A) × P(A) / P(B)
 8. Return posterior
 
 **Pseudocode:**
@@ -381,8 +381,8 @@ function BAYES_RULE(prior, likelihood_given_true, likelihood_given_false):
 1. P(Disease) = 0.01
 2. P(Healthy) = 1 - 0.01 = 0.99
 3. P(Positive | Disease) = 0.95, P(Positive | Healthy) = 0.05
-4. P(Positive) = (0.95 Ã— 0.01) + (0.05 Ã— 0.99) = 0.0095 + 0.0495 = 0.059
-5. P(Disease | Positive) = 0.0095 / 0.059 â‰ˆ 0.161
+4. P(Positive) = (0.95 × 0.01) + (0.05 × 0.99) = 0.0095 + 0.0495 = 0.059
+5. P(Disease | Positive) = 0.0095 / 0.059 ≈ 0.161
 
 **Trace Table → Each step:**
 
@@ -390,8 +390,8 @@ function BAYES_RULE(prior, likelihood_given_true, likelihood_given_false):
 |------|-------------|--------|
 | 1 | prior = P(D) | 0.01 |
 | 2 | P(not D) = 1 - 0.01 | 0.99 |
-| 3 | numerator = 0.95 Ã— 0.01 | 0.0095 |
-| 4 | denominator = 0.95Ã—0.01 + 0.05Ã—0.99 | 0.059 |
+| 3 | numerator = 0.95 × 0.01 | 0.0095 |
+| 4 | denominator = 0.95×0.01 + 0.05×0.99 | 0.059 |
 | 5 | posterior = 0.0095 / 0.059 | **0.161** |
 
 Even with 95% accurate test, probability of having the disease after a positive result is only 16.1%! This is because the disease is rare (1%) and the false positive rate (5%) generates many false alarms.
@@ -454,7 +454,7 @@ Bayes' Rule is constant-time for a single binary hypothesis. Its power is not co
 
 ### Real-World Analogy → Car Won't Start
 
-Your car won't start. Possible causes: dead battery, empty fuel tank, or faulty starter. These causes interact: a dead battery also makes headlights dim; an empty tank doesn't. We can model this as a network: Battery → Starts, Fuel → Starts, Battery → Headlights. Each node's probability depends on its direct causes (parents). This structure makes reasoning efficient: we don't need to consider all 2âµ = 32 combinations independently.
+Your car won't start. Possible causes: dead battery, empty fuel tank, or faulty starter. These causes interact: a dead battery also makes headlights dim; an empty tank doesn't. We can model this as a network: Battery → Starts, Fuel → Starts, Battery → Headlights. Each node's probability depends on its direct causes (parents). This structure makes reasoning efficient: we don't need to consider all 2⁵ = 32 combinations independently.
 
 ### Definition
 
@@ -468,7 +468,7 @@ A **Bayesian Network** (BN) is a Directed Acyclic Graph (DAG) where:
 | Property | Description | Why It Matters |
 |----------|-------------|----------------|
 | **DAG Structure** | Directed acyclic graph | Prevents circular dependencies; ensures consistent joint distribution |
-| **Factorization** | P(X) = âˆ P(Xáµ¢ | Parents(Xáµ¢)) | Reduces parameters from O(2â¿) to O(n Ã— 2áµ) |
+| **Factorization** | P(X) = ∏ P(Xᵢ | Parents(Xᵢ)) | Reduces parameters from O(2ⁿ) to O(n × 2ᵏ) |
 | **CPT Representation** | Each node stores P(node | parents) | Compact conditional distributions |
 | **Conditional Independence** | Node independent of non-descendants given parents | Enables efficient inference |
 | **D-Separation** | Graph-theoretic criterion for independence | Determines which variables are independent given evidence |
@@ -482,11 +482,11 @@ A **Bayesian Network** (BN) is a Directed Acyclic Graph (DAG) where:
 **Output:** BN structure (DAG) + CPTs
 
 **Steps:**
-1. Choose an ordering of variables: Xâ‚, Xâ‚‚, ..., Xâ‚™ (causes before effects)
-2. For each variable Xáµ¢:
-   a. Identify a minimal set of parents from Xâ‚...Xáµ¢â‚‹â‚ that directly influence Xáµ¢
-   b. Add directed edges from each parent to Xáµ¢
-   c. Define the CPT P(Xáµ¢ | Parents(Xáµ¢))
+1. Choose an ordering of variables: X₁, X₂, ..., Xₙ (causes before effects)
+2. For each variable Xᵢ:
+   a. Identify a minimal set of parents from X₁...Xᵢ₋₁ that directly influence Xᵢ
+   b. Add directed edges from each parent to Xᵢ
+   c. Define the CPT P(Xᵢ | Parents(Xᵢ))
 3. Verify the graph is acyclic
 4. Return the network
 
@@ -542,7 +542,7 @@ Variables: Burglary (B), Earthquake (E), Alarm (A), JohnCalls (J), MaryCalls (M)
 
 | Representation | Parameters |
 |----------------|-----------|
-| Full Joint | 2âµ - 1 = 31 |
+| Full Joint | 2⁵ - 1 = 31 |
 | BN (this network) | 1 + 1 + 4 + 2 + 2 = 10 |
 
 The BN uses **68% fewer parameters** → and the gap widens as the network grows.
@@ -603,11 +603,11 @@ print(f"P(all false) = {prob:.10f}")
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Full joint parameters** | O(2â¿) | Exponential in number of variables |
-| **BN parameters** | O(n Ã— 2áµ) where k = max parents | Exponential in max parents, not total variables |
+| **Full joint parameters** | O(2ⁿ) | Exponential in number of variables |
+| **BN parameters** | O(n × 2ᵏ) where k = max parents | Exponential in max parents, not total variables |
 | **Inference (exact)** | O(exp(treewidth)) | NP-hard in worst case; tractable for low treewidth |
-| **Structure learning** | O(nÂ²) heuristic / NP-hard optimal | Each edge direction needs evaluation |
-| **Memory (CPT storage)** | O(âˆ‘ 2^{|parents(Xáµ¢)|}) | Sum of per-node CPT sizes |
+| **Structure learning** | O(n²) heuristic / NP-hard optimal | Each edge direction needs evaluation |
+| **Memory (CPT storage)** | O(∑ 2^{|parents(Xᵢ)|}) | Sum of per-node CPT sizes |
 
 The key insight: if the graph is sparse (each node has few parents), the BN is exponentially more compact than the full joint.
 
@@ -623,7 +623,7 @@ The key insight: if the graph is sparse (each node has few parents), the BN is e
 
 ### Edge Cases
 
-1. **Network with Many Parents**: CPT size explodes. Solution: use canonical models like noisy-OR (each parent independently causes child; probabilities combine via P(child=True) = 1 - âˆ(1 - páµ¢)).
+1. **Network with Many Parents**: CPT size explodes. Solution: use canonical models like noisy-OR (each parent independently causes child; probabilities combine via P(child=True) = 1 - ∏(1 - pᵢ)).
 2. **Continuous Variables**: Use Gaussian BNs (linear Gaussian dependencies) or discretize.
 3. **Sparse Data for CPT**: Use Dirichlet priors for smoothing; Bayesian estimation instead of ML.
 4. **Cyclic Dependencies**: Temporal modeling via Dynamic Bayesian Networks (DBNs) → unroll over time slices.
@@ -672,43 +672,43 @@ function VARIABLE_ELIMINATION(BN, query, evidence, order):
 **Variables:** B, E, A, J, M → **Evidence:** M=true → **Query:** B → **Elimination order:** J, A, E
 
 **Factors (CPTs):**
-- fâ‚(B): P(B)
-- fâ‚‚(E): P(E)
-- fâ‚ƒ(A, B, E): P(A | B, E)
-- fâ‚„(J, A): P(J | A)
-- fâ‚…(M, A): P(M | A)
+- f₁(B): P(B)
+- f₂(E): P(E)
+- f₃(A, B, E): P(A | B, E)
+- f₄(J, A): P(J | A)
+- f₅(M, A): P(M | A)
 
 **Step 1 → Restrict evidence M=true:**
-- fâ‚…(M=true, A): A=F → 0.01, A=T → 0.70
+- f₅(M=true, A): A=F → 0.01, A=T → 0.70
 
 **Step 2 → Eliminate J:**
 - Sum out J: P(J|A) summed over J = 1.0. Factor disappears.
 
-**Step 3 → Multiply fâ‚ƒ Ã— fâ‚…:**
-- fâ‚†(B, E, A) = fâ‚ƒ(A, B, E) Ã— fâ‚…(M=true, A)
+**Step 3 → Multiply f₃ × f₅:**
+- f₆(B, E, A) = f₃(A, B, E) × f₅(M=true, A)
 
 | B | E | A=F | A=T |
 |---|---|-----|-----|
-| F | F | 0.999Ã—0.01=0.00999 | 0.001Ã—0.70=0.00070 |
-| F | T | 0.710Ã—0.01=0.00710 | 0.290Ã—0.70=0.20300 |
-| T | F | 0.060Ã—0.01=0.00060 | 0.940Ã—0.70=0.65800 |
-| T | T | 0.050Ã—0.01=0.00050 | 0.950Ã—0.70=0.66500 |
+| F | F | 0.999×0.01=0.00999 | 0.001×0.70=0.00070 |
+| F | T | 0.710×0.01=0.00710 | 0.290×0.70=0.20300 |
+| T | F | 0.060×0.01=0.00060 | 0.940×0.70=0.65800 |
+| T | T | 0.050×0.01=0.00050 | 0.950×0.70=0.66500 |
 
 **Step 4 → Eliminate A (sum over A):**
-- fâ‚‡(B=F, E=F) = 0.00999 + 0.00070 = 0.01069
-- fâ‚‡(B=F, E=T) = 0.00710 + 0.20300 = 0.21010
-- fâ‚‡(B=T, E=F) = 0.00060 + 0.65800 = 0.65860
-- fâ‚‡(B=T, E=T) = 0.00050 + 0.66500 = 0.66550
+- f₇(B=F, E=F) = 0.00999 + 0.00070 = 0.01069
+- f₇(B=F, E=T) = 0.00710 + 0.20300 = 0.21010
+- f₇(B=T, E=F) = 0.00060 + 0.65800 = 0.65860
+- f₇(B=T, E=T) = 0.00050 + 0.66500 = 0.66550
 
-**Step 5 → Multiply fâ‚ Ã— fâ‚‚ Ã— fâ‚‡:**
-- fâ‚ˆ(B=F, E=F) = 0.999 Ã— 0.998 Ã— 0.01069 = 0.010654
-- fâ‚ˆ(B=F, E=T) = 0.999 Ã— 0.002 Ã— 0.21010 = 0.000420
-- fâ‚ˆ(B=T, E=F) = 0.001 Ã— 0.998 Ã— 0.65860 = 0.000657
-- fâ‚ˆ(B=T, E=T) = 0.001 Ã— 0.002 Ã— 0.66550 = 0.000001
+**Step 5 → Multiply f₁ × f₂ × f₇:**
+- f₈(B=F, E=F) = 0.999 × 0.998 × 0.01069 = 0.010654
+- f₈(B=F, E=T) = 0.999 × 0.002 × 0.21010 = 0.000420
+- f₈(B=T, E=F) = 0.001 × 0.998 × 0.65860 = 0.000657
+- f₈(B=T, E=T) = 0.001 × 0.002 × 0.66550 = 0.000001
 
 **Step 6 → Eliminate E:**
-- fâ‚‰(B=F) = 0.010654 + 0.000420 = 0.011074
-- fâ‚‰(B=T) = 0.000657 + 0.000001 = 0.000658
+- f₉(B=F) = 0.010654 + 0.000420 = 0.011074
+- f₉(B=T) = 0.000657 + 0.000001 = 0.000658
 
 **Step 7 → Normalize:**
 - P(B=T | M=true) = 0.000658 / (0.011074 + 0.000658) = **0.0561**
@@ -802,10 +802,10 @@ for assignment, prob in result.items():
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Variable Elimination** | O(n Ã— exp(treewidth)) | Treewidth = size of largest intermediate factor |
-| **Naive enumeration** | O(2â¿) | Sum over all assignments of hidden variables |
-| **Likelihood Weighting** | O(N Ã— n) for N samples | No exponential blowup, but approximate |
-| **Gibbs Sampling** | O(N Ã— n) per iteration | Mixing time can be exponential for pathological BNs |
+| **Variable Elimination** | O(n × exp(treewidth)) | Treewidth = size of largest intermediate factor |
+| **Naive enumeration** | O(2ⁿ) | Sum over all assignments of hidden variables |
+| **Likelihood Weighting** | O(N × n) for N samples | No exponential blowup, but approximate |
+| **Gibbs Sampling** | O(N × n) per iteration | Mixing time can be exponential for pathological BNs |
 
 Treewidth is the critical metric. A **polytree** (each node has at most one undirected path to any other) has treewidth equal to its maximum node degree → inference is polynomial. A fully connected BN has treewidth = n → inference is exponential.
 
@@ -832,10 +832,10 @@ Treewidth is the critical metric. A **polytree** (each node has at most one undi
 
 | Inference Method | Type | Exact? | Complexity | Best For | Trade-off |
 |-----------------|:---:|:---:|:---:|---------|-----------|
-| Variable Elimination | Exact | âœ… | O(exp treewidth) | Low treewidth BNs | Sensitive to elimination order |
-| Likelihood Weighting | Approx | âŒ | O(N) | Rare evidence | Many samples needed |
-| Rejection Sampling | Approx | âŒ | O(N / P(e)) | Easy-to-satisfy evidence | Wastes samples on rejections |
-| Gibbs Sampling (MCMC) | Approx | âŒ | O(N Ã— nodes) | High-dimensional posteriors | Burn-in and mixing issues |
+| Variable Elimination | Exact | ✅ | O(exp treewidth) | Low treewidth BNs | Sensitive to elimination order |
+| Likelihood Weighting | Approx | ❌ | O(N) | Rare evidence | Many samples needed |
+| Rejection Sampling | Approx | ❌ | O(N / P(e)) | Easy-to-satisfy evidence | Wastes samples on rejections |
+| Gibbs Sampling (MCMC) | Approx | ❌ | O(N × nodes) | High-dimensional posteriors | Burn-in and mixing issues |
 
 ---
 
@@ -873,7 +873,7 @@ d-separation determines whether two variables are conditionally independent give
 - **Fork** A ← B → C with B observed
 - **Collider** A → B ← C with B or descendant NOT observed
 
-If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
+If all paths between X and Y are blocked by Z, then X ⟂ Y | Z.
 
 ### Q5: What are the trade-offs between exact and approximate inference?
 
@@ -892,7 +892,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 ### 1. Spam Filtering (Naive Bayes)
 
 **System:** Email spam filters (Gmail, Outlook)
-**How:** P(Spam | Words) âˆ P(Spam) âˆ P(Word | Spam). Words are assumed conditionally independent given class.
+**How:** P(Spam | Words) ∝ P(Spam) ∏ P(Word | Spam). Words are assumed conditionally independent given class.
 **Why Bayes:** Spam words change rapidly; Naive Bayes adapts by updating word probabilities from user feedback.
 **Impact:** ~99.9% of spam blocked, &lt;0.1% false positives.
 
@@ -930,10 +930,10 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 
 | Rule | Formula | Use Case |
 |------|---------|----------|
-| Joint Probability | P(A âˆ§ B) = P(A|B)P(B) | Computing combined events |
+| Joint Probability | P(A ∧ B) = P(A|B)P(B) | Computing combined events |
 | Bayes' Rule | P(A|B) = P(B|A)P(A) / P(B) | Diagnostic reasoning |
-| Chain Rule | P(Xâ‚â€¦Xâ‚™) = âˆ P(Xáµ¢ | Xâ‚â€¦Xáµ¢â‚‹â‚) | Decomposing joint distributions |
-| Law of Total Probability | P(B) = Î£ P(B|Aáµ¢)P(Aáµ¢) | Computing marginal likelihood |
+| Chain Rule | P(X₁…Xₙ) = ∏ P(Xᵢ | X₁…Xᵢ₋₁) | Decomposing joint distributions |
+| Law of Total Probability | P(B) = Σ P(B|Aᵢ)P(Aᵢ) | Computing marginal likelihood |
 | Conditional Independence | P(A,B|C) = P(A|C)P(B|C) | Simplifying models |
 | Product Rule | P(A,B) = P(A)P(B) for independent A,B | Factoring independent events |
 
@@ -941,12 +941,12 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 
 | Technique | ML | CV | NLP | Robotics | Research |
 |-----------|:---:|:---:|:---:|:---:|:---:|
-| Bayes' Rule | âœ… | âœ… | âœ… | âœ… | âœ… |
-| Bayesian Networks | âœ… | âœ… | âœ… | âœ… | âœ… |
-| Naive Bayes | âœ… | âŒ | âœ… | âŒ | âœ… |
-| Variable Elimination | âŒ | âŒ | âŒ | âŒ | âœ… |
-| MCMC Sampling | âœ… | âœ… | âœ… | âœ… | âœ… |
-| Kalman / Particle Filters | âŒ | âœ… | âŒ | âœ… | âœ… |
+| Bayes' Rule | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Bayesian Networks | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Naive Bayes | ✅ | ❌ | ✅ | ❌ | ✅ |
+| Variable Elimination | ❌ | ❌ | ❌ | ❌ | ✅ |
+| MCMC Sampling | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kalman / Particle Filters | ❌ | ✅ | ❌ | ✅ | ✅ |
 
 ---
 
@@ -961,10 +961,10 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 <details><summary>Answer&lt;/summary&gt;B) Bayes' Rule computes P(cause|effect) from P(effect|cause) → diagnostic reasoning from evidence back to cause.</details>
 
 **Q2:** What does the chain rule for Bayesian Networks state?
-- A) P(Xâ‚â€¦Xâ‚™) = âˆ P(Xáµ¢ | Parents(Xáµ¢))
-- B) P(Xâ‚â€¦Xâ‚™) = âˆ P(Xáµ¢)
+- A) P(X₁…Xₙ) = ∏ P(Xᵢ | Parents(Xᵢ))
+- B) P(X₁…Xₙ) = ∏ P(Xᵢ)
 - C) P(A|B) = P(B|A)P(A)
-- D) P(A âˆ§ B) = P(A)P(B)
+- D) P(A ∧ B) = P(A)P(B)
 
 <details><summary>Answer&lt;/summary&gt;A) The BN chain rule factorizes the joint as the product of each node's probability conditioned on its parents.</details>
 
@@ -990,11 +990,11 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) They don't need probability values
 - D) They never need inference
 
-<details><summary>Answer&lt;/summary&gt;B) BNs factorize the joint distribution into local CPTs, requiring O(n Ã— 2áµ) parameters instead of O(2â¿) → a massive saving when each node has few parents.</details>
+<details><summary>Answer&lt;/summary&gt;B) BNs factorize the joint distribution into local CPTs, requiring O(n × 2ᵏ) parameters instead of O(2ⁿ) → a massive saving when each node has few parents.</details>
 
 ---
 
-> **ðŸ’¡ Pro Tip:** When modeling real-world problems with Bayesian networks, focus on getting the qualitative structure (DAG) right → conditional independence assumptions matter far more than precise probability numbers. Use noisy-OR/MAX for efficient parameterization of causal relationships.
+> **💡 Pro Tip:** When modeling real-world problems with Bayesian networks, focus on getting the qualitative structure (DAG) right → conditional independence assumptions matter far more than precise probability numbers. Use noisy-OR/MAX for efficient parameterization of causal relationships.
 
 ---
 

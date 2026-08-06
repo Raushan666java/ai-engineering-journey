@@ -150,7 +150,7 @@ flowchart LR
 ### 1 Relational Database Fundamentals
 
 
-A relational database organizes data into **tables** (relations) composed of **rows** (records/tuples) and **columns** (fields/attributes). Each table represents an entity type Ã¢â‚¬â€ `users`, `orders`, `products` Ã¢â‚¬â€ and each row represents a single instance of that entity.
+A relational database organizes data into **tables** (relations) composed of **rows** (records/tuples) and **columns** (fields/attributes). Each table represents an entity type — `users`, `orders`, `products` — and each row represents a single instance of that entity.
 
 #### 1.1 Tables, Rows, and Columns
 
@@ -187,7 +187,7 @@ SELECT id, name, email, age FROM users WHERE age > 18;
 
 #### 1.2 Primary Keys
 
-Every table should have a **primary key** Ã¢â‚¬â€ a column (or set of columns) that uniquely identifies each row. Primary keys enforce entity integrity and are indexed automatically.
+Every table should have a **primary key** — a column (or set of columns) that uniquely identifies each row. Primary keys enforce entity integrity and are indexed automatically.
 
 ```sql
 CREATE TABLE countries (
@@ -509,7 +509,7 @@ RIGHT JOIN departments d ON e.department_id = d.id
 WHERE e.id IS NULL;
 ```
 
-**CROSS JOIN:** Cartesian product Ã¢â‚¬â€ every row from table A paired with every row from table B.
+**CROSS JOIN:** Cartesian product — every row from table A paired with every row from table B.
 
 ```sql
 SELECT e.first_name, e.last_name, d.name AS department
@@ -1248,7 +1248,7 @@ DELIMITER ;
 
 | Factor               | With Index                    | Without Index               |
 |----------------------|-------------------------------|-----------------------------|
-| SELECT by indexed col| O(log n) Ã¢â‚¬â€ fast               | O(n) Ã¢â‚¬â€ full table scan      |
+| SELECT by indexed col| O(log n) — fast               | O(n) — full table scan      |
 | INSERT               | Slower (must update index)    | Faster                      |
 | UPDATE indexed col   | Slower (must update index)    | Faster                      |
 | DELETE               | Slower (must update index)    | Faster                      |
@@ -1421,7 +1421,7 @@ CREATE TABLE sales_orders_raw (
 );
 ```
 
-**1NF Ã¢â‚¬â€ Atomic columns, unique rows:**
+**1NF — Atomic columns, unique rows:**
 
 ```sql
 CREATE TABLE order_items_1nf (
@@ -1436,7 +1436,7 @@ CREATE TABLE order_items_1nf (
 );
 ```
 
-**2NF Ã¢â‚¬â€ Separate customer and product data:**
+**2NF — Separate customer and product data:**
 
 ```sql
 CREATE TABLE customers_2nf (
@@ -1462,7 +1462,7 @@ CREATE TABLE order_items_2nf (
 );
 ```
 
-**3NF Ã¢â‚¬â€ Products in their own table:**
+**3NF — Products in their own table:**
 
 ```sql
 CREATE TABLE customers (
@@ -1680,7 +1680,7 @@ UPDATE accounts SET balance = balance + 100 WHERE id = 1;
 -- DEADLOCK! InnoDB detects and rolls back one transaction
 ```
 
-**Preventing deadlocks Ã¢â‚¬â€ always lock resources in the same order:**
+**Preventing deadlocks — always lock resources in the same order:**
 
 ```sql
 -- Both transactions lock accounts in ascending order
@@ -2719,7 +2719,7 @@ The chapter's deep dive into SQL queries covered every major clause: SELECT with
 
 Indexing was presented as the highest-leverage performance tool: B-tree indexes accelerate lookups, composite indexes obey the leftmost prefix rule, and EXPLAIN is the definitive query analysis tool. Normalization through 1NF, 2NF, and 3NF eliminates redundancy, while denormalization remains a legitimate strategy for read-heavy workloads.
 
-Transactions and locking explained InnoDB's ACID guarantees, the trade-offs between pessimistic and optimistic locking, and deadlock prevention. Laravel-specific design patterns Ã¢â‚¬â€ polymorphic tables, pivot tables, JSON columns, and lookup tables Ã¢â‚¬â€ connect theory to framework conventions.
+Transactions and locking explained InnoDB's ACID guarantees, the trade-offs between pessimistic and optimistic locking, and deadlock prevention. Laravel-specific design patterns — polymorphic tables, pivot tables, JSON columns, and lookup tables — connect theory to framework conventions.
 
 Performance optimization encompasses query design, connection pooling, read replicas, caching, partitioning, and monitoring through the performance_schema and slow query log. Understanding the SQL that Laravel's Schema Builder generates underneath helps you make informed migration and optimization decisions.
 
@@ -2896,7 +2896,7 @@ CREATE INDEX idx_dept_salary_name ON employees (department_id, salary, last_name
 
 How this helps:
 - MySQL finds rows where `department_id = 3` and `salary > 70000` via index range scan
-- The index is sorted by `last_name` within each salary group Ã¢â‚¬â€ no filesort needed
+- The index is sorted by `last_name` within each salary group — no filesort needed
 - If only `id`, `department_id`, `salary`, and `last_name` are needed, an index-only scan satisfies the query
 
 Before: type=ref on `(department_id)`, 10000+ rows examined, `Using where; Using filesort`
@@ -3145,7 +3145,7 @@ UPDATE inventory SET reserved_qty = reserved_qty + 8 WHERE product_id = 1;
 COMMIT;
 
 -- Second session blocks until first commits, then sees reserved_qty=8
--- and (10 - 8) = 2 < 8 Ã¢â€ â€™ fails
+-- and (10 - 8) = 2 < 8 → fails
 
 -- Optimistic locking (version column)
 START TRANSACTION;
@@ -3153,7 +3153,7 @@ SELECT stock_qty, reserved_qty, version FROM inventory WHERE product_id = 1;
 UPDATE inventory
 SET reserved_qty = reserved_qty + 8, version = version + 1
 WHERE product_id = 1 AND version = 1;
--- If affected_rows == 0 Ã¢â€ â€™ conflict, retry
+-- If affected_rows == 0 → conflict, retry
 COMMIT;
 
 -- Atomic UPDATE with inline check

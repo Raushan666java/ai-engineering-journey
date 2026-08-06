@@ -151,12 +151,12 @@ The Ethernet frame is the fundamental unit of data transfer on Ethernet networks
 
 | Field | Size | Description |
 |-------|------|-------------|
-| **Preamble** | 7 bytes | Alternating 1 and 0 bits (10101010 Ã— 7). Enables receiver NIC to synchronize clock recovery before the frame arrives. |
+| **Preamble** | 7 bytes | Alternating 1 and 0 bits (10101010 × 7). Enables receiver NIC to synchronize clock recovery before the frame arrives. |
 | **SFD** | 1 byte | Start Frame Delimiter (10101011). The last two bits (11) signal that the next byte is the destination MAC. |
 | **Destination MAC** | 6 bytes | Recipient's 48-bit MAC address. If the first bit (I/G) = 0, it is unicast; = 1, multicast/broadcast (FF:FF:FF:FF:FF:FF). |
 | **Source MAC** | 6 bytes | Sender's 48-bit MAC address. First bit always 0 (source cannot be multicast). |
-| **Length/Type** | 2 bytes | If value â‰¤ 1500 (0x05DC): indicates payload length in bytes (IEEE 802.3). If value â‰¥ 1536 (0x0600): indicates EtherType (DIX Ethernet). Common EtherTypes: 0x0800 (IPv4), 0x0806 (ARP), 0x86DD (IPv6), 0x8100 (802.1Q VLAN tag). |
-| **Payload + Pad** | 46â€“1500 bytes | Network-layer PDU (e.g., IP packet). If payload &lt; 46 bytes, padding zeros are added to meet the 64-byte minimum frame size. |
+| **Length/Type** | 2 bytes | If value ≤ 1500 (0x05DC): indicates payload length in bytes (IEEE 802.3). If value ≥ 1536 (0x0600): indicates EtherType (DIX Ethernet). Common EtherTypes: 0x0800 (IPv4), 0x0806 (ARP), 0x86DD (IPv6), 0x8100 (802.1Q VLAN tag). |
+| **Payload + Pad** | 46–1500 bytes | Network-layer PDU (e.g., IP packet). If payload &lt; 46 bytes, padding zeros are added to meet the 64-byte minimum frame size. |
 | **FCS** | 4 bytes | Frame Check Sequence → CRC-32 computed over dest MAC, source MAC, length/type, payload, and pad. The receiver recomputes CRC; mismatch indicates corruption. |
 
 ### 5.1.3 Real-World Analogy
@@ -173,8 +173,8 @@ When a NIC receives a frame from the wire:
 2. **Frame start detection** → The SFD (10101011) marks the boundary; the two consecutive 1 bits at the end signal "next byte is the destination MAC."
 3. **Address reception** → The NIC reads the 6-byte destination MAC. If the NIC's MAC filter is enabled, it checks whether this address matches its own MAC, a configured multicast group, or the broadcast address. If no match, the frame is discarded at the hardware level.
 4. **Source address capture** → The source MAC is extracted for potential MAC table learning (by switches, not end hosts).
-5. **Type/Length interpretation** → The 2-byte field is read. If â‰¤ 1500, it is a length field (802.3); the receiver expects exactly that many payload bytes. If â‰¥ 1536, it is an EtherType; the payload length is inferred from the frame size minus headers.
-6. **Payload extraction** → The data portion (46â€“1500 bytes) is passed to the upper-layer protocol indicated by EtherType.
+5. **Type/Length interpretation** → The 2-byte field is read. If ≤ 1500, it is a length field (802.3); the receiver expects exactly that many payload bytes. If ≥ 1536, it is an EtherType; the payload length is inferred from the frame size minus headers.
+6. **Payload extraction** → The data portion (46–1500 bytes) is passed to the upper-layer protocol indicated by EtherType.
 7. **CRC validation** → The receiver computes CRC-32 over the received fields (excluding preamble, SFD, and FCS). If the computed CRC matches the FCS field, the frame is accepted; otherwise, it is silently dropped.
 
 ### 5.1.5 Pseudocode: Ethernet Frame Parser
@@ -229,7 +229,7 @@ Consider a switch receiving a 64-byte frame from Host A (MAC: AA:AA:AA:AA:AA:AA)
 | 7 | Payload | Read 46 bytes | All zeros (padding) |
 | 8 | FCS | Read CRC | 4 bytes, e.g., 0x12345678 |
 | 9 | CRC check | Recompute CRC | CRC matches → frame valid |
-| 10 | Protocol | Dispatch payload | Length â‰¤ 1500 → 802.3 frame |
+| 10 | Protocol | Dispatch payload | Length ≤ 1500 → 802.3 frame |
 
 ### 5.1.7 C++ Implementation: Ethernet Frame Analyzer
 
@@ -511,7 +511,7 @@ if __name__ == "__main__":
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
 | Fixed header size | 14-byte header enables fast hardware parsing | No room for extensions without tagging |
-| CRC-32 protection | Detects all single-bit, double-bit, and burst errors â‰¤ 32 bits | No error correction → corrupted frames are silently dropped |
+| CRC-32 protection | Detects all single-bit, double-bit, and burst errors ≤ 32 bits | No error correction → corrupted frames are silently dropped |
 | Minimum frame size | Ensures collision detection in half-duplex modes | Wastes bandwidth for small packets (e.g., TCP ACKs padded with zeros) |
 | Maximum frame size | 1500 bytes is TCP/IP-friendly (fits in typical socket buffers) | Jumbo frames (9000B) are non-standard; requires all devices to agree |
 | Backward compatibility | Same format since 1982 → 10Mbps and 400Gbps NICs speak the same language | No native encryption or authentication at L2 |
@@ -527,7 +527,7 @@ if __name__ == "__main__":
 | Jabber | Transmitter sends abnormally long frame (> 1518) | Switch detects jabber and disables port (errdisable) |
 | Alignment error | Frame does not end on byte boundary | CRC check fails; frame discarded |
 | Late collision | Collision detected after first 64 bytes transmitted | Frame treated as collision fragment; station retransmits (half-duplex only) |
-| EtherType ambiguity | Some NICs misclassify length vs type when value is 1500â€“1535 | Modern switches treat values > 1500 as EtherType per IEEE 802.3x |
+| EtherType ambiguity | Some NICs misclassify length vs type when value is 1500–1535 | Modern switches treat values > 1500 as EtherType per IEEE 802.3x |
 | Dribble bit error | Extra bits after FCS due to clock drift | Receiver may accept frame if FCS is valid and discard extra bits |
 
 ---
@@ -574,10 +574,10 @@ IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes o
 | Fast Ethernet | 802.3u | 1995 | 100 Mbps | Cat5 UTP (100BaseTX), MMF (100BaseFX) | 100 m (TP), 2 km (fiber) | Auto-negotiation, 10x speed |
 | Gigabit Ethernet | 802.3z/ab | 1998/99 | 1 Gbps | Cat5e UTP, MMF (SX), SMF (LX) | 100 m (TP), 550 m (MMF), 5 km (SMF) | Carrier extension, frame bursting |
 | 10 Gigabit | 802.3ae | 2002 | 10 Gbps | Cat6a UTP, MMF, SMF | 100 m (TP), 300 m (MMF), 40 km (SMF) | Full-duplex only, FEC, 8B/10B encoding |
-| 40 Gigabit | 802.3ba | 2010 | 40 Gbps | SMF/MMF, Cat6a (CX) | 100 m (CX), 10 km (SMF) | 4Ã—10G lanes, QSFP form factor |
-| 100 Gigabit | 802.3ba | 2010 | 100 Gbps | SMF/MMF | 40 km (SMF) | 10Ã—10G or 4Ã—25G lanes, CFP/QSFP28 |
-| 200 Gigabit | 802.3bs | 2017 | 200 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | PAM4, 4Ã—50G lanes |
-| 400 Gigabit | 802.3bs | 2017 | 400 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | 16Ã—25G or 8Ã—50G PAM4, QSFP-DD/OSFP |
+| 40 Gigabit | 802.3ba | 2010 | 40 Gbps | SMF/MMF, Cat6a (CX) | 100 m (CX), 10 km (SMF) | 4×10G lanes, QSFP form factor |
+| 100 Gigabit | 802.3ba | 2010 | 100 Gbps | SMF/MMF | 40 km (SMF) | 10×10G or 4×25G lanes, CFP/QSFP28 |
+| 200 Gigabit | 802.3bs | 2017 | 200 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | PAM4, 4×50G lanes |
+| 400 Gigabit | 802.3bs | 2017 | 400 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | 16×25G or 8×50G PAM4, QSFP-DD/OSFP |
 
 ### 5.2.7 Key Physical Layer Innovations by Generation
 
@@ -591,7 +591,7 @@ IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes o
 | Full-duplex only | 10 Gbps | Eliminated CSMA/CD entirely; simplified PHY, doubled throughput |
 | FEC (RS-FEC) | 10 Gbps (later) | Reed-Solomon FEC corrected bit errors at high speeds over longer reaches |
 | PAM4 modulation | 50 Gbps+ | 2 bits per symbol doubled data rate without doubling bandwidth |
-| NRZ → PAM4 transition | 400 Gbps | 8Ã—50G PAM4 lanes replaced 16Ã—25G NRZ lanes for better density |
+| NRZ → PAM4 transition | 400 Gbps | 8×50G PAM4 lanes replaced 16×25G NRZ lanes for better density |
 | Multi-lane distribution | 40 Gbps+ | Data striped across multiple physical lanes; reassembled at receiver |
 
 ---
@@ -603,9 +603,9 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 ### 5.3.1 Switching Methods
 
 
-**Store-and-forward switching.** The switch receives the entire frame, checks the FCS for errors, and then forwards. This ensures no corrupted frames propagate but adds latency proportional to frame size. Latency = frame_size / link_speed. For a 1500-byte frame on 1 Gbps: 1500Ã—8/1e9 = 12 Âµs.
+**Store-and-forward switching.** The switch receives the entire frame, checks the FCS for errors, and then forwards. This ensures no corrupted frames propagate but adds latency proportional to frame size. Latency = frame_size / link_speed. For a 1500-byte frame on 1 Gbps: 1500×8/1e9 = 12 µs.
 
-**Cut-through switching.** The switch begins forwarding before the complete frame arrives → typically after reading only the destination MAC address (first 6 bytes of the frame, 14 bytes from preamble start). Latency is typically &lt; 10 Âµs regardless of frame size, but damaged frames are forwarded. Two variants: fast-forward (forwards after dst MAC) and fragment-free (forwards after first 64 bytes).
+**Cut-through switching.** The switch begins forwarding before the complete frame arrives → typically after reading only the destination MAC address (first 6 bytes of the frame, 14 bytes from preamble start). Latency is typically &lt; 10 µs regardless of frame size, but damaged frames are forwarded. Two variants: fast-forward (forwards after dst MAC) and fragment-free (forwards after first 64 bytes).
 
 **Fragment-free switching.** The switch reads the first 64 bytes before forwarding (the collision window). This rejects runt frames (collision fragments) while keeping latency low. It is a compromise between store-and-forward and cut-through.
 
@@ -627,7 +627,7 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 | Broadcast domain | Single (all ports) | Per-VLAN (configurable) | Per-interface (does not forward broadcasts by default) |
 | Bandwidth sharing | Shared (total bandwidth divided) | Dedicated (each port gets full speed) | Dedicated (each port gets full speed) |
 | Loop handling | No loop protection | STP/RSTP (blocking redundant paths) | TTL, routing protocols prevent loops |
-| Latency | Lowest (repeats bits immediately) | Low (Âµs) | Higher (ms, due to IP lookup) |
+| Latency | Lowest (repeats bits immediately) | Low (µs) | Higher (ms, due to IP lookup) |
 | Intelligence | None | MAC learning, STP, VLAN, QoS | Routing protocols, NAT, ACL, firewall |
 | Port density | Low (typically 4-24) | High (24-48 ports common) | Low-moderate (4-48 ports) |
 | Cost per port | Lowest | Moderate | Highest |
@@ -701,7 +701,7 @@ FUNCTION ProcessFrame(frame, ingress_port, current_time):
 ### 5.3.6 Dry Run Trace Table: MAC Table Learning
 
 
-Consider a 4-port switch (ports 1â€“4). Initially the MAC table is empty. Hosts A, B, C connected on ports 1, 2, 3 respectively. Host D connected on port 4. The switch processes frames in sequence:
+Consider a 4-port switch (ports 1–4). Initially the MAC table is empty. Hosts A, B, C connected on ports 1, 2, 3 respectively. Host D connected on port 4. The switch processes frames in sequence:
 
 | Time | Event | Ingress Port | Src MAC | Dst MAC | MAC Table After | Action |
 |------|-------|-------------|---------|---------|-----------------|--------|
@@ -712,11 +712,11 @@ Consider a 4-port switch (ports 1â€“4). Initially the MAC table is empty. H
 | T=4 | C→A reply | 3 | C | A | {A→1, B→2, C→3} | Learn C on port 3; A known → forward only port 1 |
 | T=5 | B→D frame | 2 | B | D | {A→1, B→2, C→3} | Refresh B; D unknown → flood ports 1,3,4 |
 | T=6 | D→B reply | 4 | D | B | {A→1, B→2, C→3, D→4} | Learn D on port 4; B known → forward only port 2 |
-| T=7 | A→B frame | 1 | A | B | {A→1, B→2, C→3, D→4} | Refresh A; B known on port 2 â‰  1 → forward only port 2 |
-| T=8 | B→A frame | 2 | B | A | {A→1, B→2, C→3, D→4} | Refresh B; A known on port 1 â‰  2 → forward only port 1 |
+| T=7 | A→B frame | 1 | A | B | {A→1, B→2, C→3, D→4} | Refresh A; B known on port 2 ≠ 1 → forward only port 2 |
+| T=8 | B→A frame | 2 | B | A | {A→1, B→2, C→3, D→4} | Refresh B; A known on port 1 ≠ 2 → forward only port 1 |
 | T=9 | A→A frame (self) | 1 | A | A | {A→1, B→2, C→3, D→4} | Refresh A; A known on port 1 == 1 → filter (drop) |
 
-After T=6, all four hosts are learned. After T=7â€“8, frames between known hosts are forwarded precisely to the correct port → no flooding. After T=9, a self-addressed frame is filtered because the source and destination port match (the destination is on the same segment as the source).
+After T=6, all four hosts are learned. After T=7–8, frames between known hosts are forwarded precisely to the correct port → no flooding. After T=9, a self-addressed frame is filtered because the source and destination port match (the destination is on the same segment as the source).
 
 ### 5.3.7 C++ Implementation: Switch MAC Table
 
@@ -1053,7 +1053,7 @@ if __name__ == "__main__":
 | MAC table insertion | O(1) amortized | O(m)* | Hash insertion amortized O(1). If table full, eviction adds O(m) to find oldest. |
 | MAC table aging | O(m) | O(1) | Must scan all m entries to check timestamps. In production, coarsened to run every N seconds. |
 | Frame forwarding | O(1) + O(f) | O(f)** | Lookup O(1); transmit cost O(f) where f = frame size in bytes (serialization delay). |
-| Frame flooding | O(p) + O(f) | O(pÂ·f) | Must replicate frame to up to p-1 ports. Each copy costs O(f) bandwidth. |
+| Frame flooding | O(p) + O(f) | O(p·f) | Must replicate frame to up to p-1 ports. Each copy costs O(f) bandwidth. |
 
 *\* m = number of MAC entries in the table*
 *\*\* f = frame size in bytes*
@@ -1065,7 +1065,7 @@ if __name__ == "__main__":
 |--------|-----------|-------------|
 | Learning | Automatic, transparent → no configuration needed | Table overflow can cause excessive flooding |
 | Filtering | Precise forwarding conserves bandwidth | Stale entries cause mis-forwarding until aged out |
-| Cut-through | Minimal latency (< 10 Âµs) | Forwards corrupted frames and runt frames |
+| Cut-through | Minimal latency (< 10 µs) | Forwards corrupted frames and runt frames |
 | Store-and-forward | Never forwards bad frames | Higher latency (entire frame must be received) |
 | Fragment-free | Compromise: fast + no runts | Still forwards frames with payload errors |
 | Scalability | Stackable switches support hundreds of ports | MAC table grows linearly with active hosts |
@@ -1180,7 +1180,7 @@ A learning bridge → the intelligence behind every modern switch → automatica
 2. **Frame arrival** → A frame enters on port P with source MAC S and destination MAC D.
 3. **Source registration** → The bridge records or refreshes entry (S, P) in the MAC table. If the table is full, the oldest entry is evicted.
 4. **Destination resolution** → The bridge looks up D in the MAC table.
-   - If D is found on port Q (Q â‰  P): forward frame to port Q only.
+   - If D is found on port Q (Q ≠ P): forward frame to port Q only.
    - If D is found on port Q where Q == P: discard frame (destination on same segment).
    - If D is not found: flood frame to all ports except P.
 5. **Aging** → Every aging interval, entries older than the threshold are removed. This handles station mobility and stale entries.
@@ -1250,7 +1250,7 @@ FUNCTION OnTopologyChange():
 ### 5.4.4 Dry Run Trace Table: Learning Bridge with Six Hosts
 
 
-Four-port bridge, hosts Aâ€“F on ports 1â€“4 (A and B on port 1 via hub, C and D on port 2, E on port 3, F on port 4).
+Four-port bridge, hosts A–F on ports 1–4 (A and B on port 1 via hub, C and D on port 2, E on port 3, F on port 4).
 
 | Time | Frame | Ingress | Learn | Dst Lookup | Action | Table After |
 |------|-------|---------|-------|-----------|--------|-------------|
@@ -1553,7 +1553,7 @@ if __name__ == "__main__":
 | Aging sweep | O(m) | O(1) | Must visit all m entries to check timestamps |
 | MAC move (same MAC, new port) | O(1) | O(1) | Hash update → no structural change |
 | Table eviction (when full) | O(m) | O(1) | Linear scan to find oldest entry |
-| Flood to p ports | O(p Â· f) | O(p Â· f) | Each of p egress ports gets a frame copy of size f |
+| Flood to p ports | O(p · f) | O(p · f) | Each of p egress ports gets a frame copy of size f |
 
 ### 5.4.8 Advantages and Disadvantages
 
@@ -1589,7 +1589,7 @@ The Spanning Tree Protocol (IEEE 802.1D) prevents loops in networks with redunda
 ### 5.5.1 The Problem: Broadcast Storms
 
 
-In a triangle topology of three switches (Aâ€“B, Bâ€“C, Câ€“A connected), a broadcast frame from any host would circulate forever:
+In a triangle topology of three switches (A–B, B–C, C–A connected), a broadcast frame from any host would circulate forever:
 
 1. Host X sends broadcast → Switch A floods to B and C.
 2. Switch B receives from A → floods to C (and its other ports).
@@ -2430,7 +2430,7 @@ if __name__ == "__main__":
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
-| Root bridge election | O(bÂ²) | O(1) | Every bridge sends BPDUs; worst case b bridges exchange b BPDUs each |
+| Root bridge election | O(b²) | O(1) | Every bridge sends BPDUs; worst case b bridges exchange b BPDUs each |
 | Root port selection | O(p) | O(1) | Scan p ports to find minimum cost path |
 | Designated port selection | O(p) per LAN | O(1) per port | Compare path costs on each segment |
 | Port role computation | O(p) | O(1) | Single pass over all ports after root/designated decisions |
@@ -2446,7 +2446,7 @@ if __name__ == "__main__":
 | Loop prevention | Guarantees a single active path between any two hosts | All other paths are wasted bandwidth until failover |
 | Automatic failover | Redundant links activate when primary fails | 30-50s convergence is too slow for modern apps |
 | Standardized | IEEE 802.1D works across all vendors | Multiple incompatible variants (CST, PVST, PVST+, MST) |
-| Self-configuring | Requires no manual path planning | Non-optimal path selection; best path â‰  shortest latency path |
+| Self-configuring | Requires no manual path planning | Non-optimal path selection; best path ≠ shortest latency path |
 | Per-VLAN (PVST+) | Load balances traffic across VLANs | Cisco proprietary; management overhead with many VLANs |
 | RSTP | 1-3s convergence (20x faster) | Requires RSTP-capable bridges on all switches |
 | MSTP | Maps multiple VLANs to fewer STP instances | Complex configuration; requires region alignment |
@@ -2610,9 +2610,9 @@ Standard Ethernet Frame:
 ```
 
 - **TPID** (2 bytes): Tag Protocol Identifier = 0x8100. Marks the frame as 802.1Q-tagged.
-- **PCP** (3 bits): Priority Code Point → 802.1p class of service (0â€“7). Used for QoS.
+- **PCP** (3 bits): Priority Code Point → 802.1p class of service (0–7). Used for QoS.
 - **DEI** (1 bit): Drop Eligible Indicator. When set, frame may be dropped during congestion.
-- **VID** (12 bits): VLAN Identifier (1â€“4094; 0 = priority only, 4095 = reserved).
+- **VID** (12 bits): VLAN Identifier (1–4094; 0 = priority only, 4095 = reserved).
 
 ### 5.6.3 Port-Based vs Tag-Based VLAN Comparison
 
@@ -2996,10 +2996,10 @@ if __name__ == "__main__":
 |-----------|---------------|-----------------|-----|
 | VLAN classification (access) | O(1) | O(p) | Simple port→VLAN mapping table of p ports |
 | VLAN classification (trunk) | O(1) | O(v) | Read 12-bit VID from frame; check in set of v allowed VLANs |
-| VLAN-scoped MAC lookup | O(1) avg | O(mÂ·v)* | Hash key is (VLAN, MAC) pair; m MACs Ã— v VLANs |
+| VLAN-scoped MAC lookup | O(1) avg | O(m·v)* | Hash key is (VLAN, MAC) pair; m MACs × v VLANs |
 | Tag insertion | O(f) | O(1) | Shift frame payload by 4 bytes; update FCS |
 | Tag removal | O(f) | O(1) | Remove 4 bytes; update FCS |
-| Flood within VLAN | O(pÂ·f) | O(f) | Replicate to up to p ports in same VLAN |
+| Flood within VLAN | O(p·f) | O(f) | Replicate to up to p ports in same VLAN |
 | Native VLAN mismatch detection | O(1) | O(1) | Compare expected vs received native VLAN ID |
 
 *\* m = MACs per VLAN, v = VLAN count*
@@ -3284,7 +3284,7 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 ### Q5: How Does a Switch's MAC Address Table Size Impact Performance?
 
 
-**Answer:** The MAC address table (typically stored in TCAM) directly impacts switching performance. A table that is too small causes premature eviction of legitimate entries, leading to excessive unknown-unicast flooding. Enterprise switches support 8Kâ€“128K MAC entries. Data center switches support 288K+. When the table overflows in hardware, entries are moved to software (CPU-processed switching), reducing throughput from wire speed to CPU-bound rates (typically 1-10% of line rate).
+**Answer:** The MAC address table (typically stored in TCAM) directly impacts switching performance. A table that is too small causes premature eviction of legitimate entries, leading to excessive unknown-unicast flooding. Enterprise switches support 8K–128K MAC entries. Data center switches support 288K+. When the table overflows in hardware, entries are moved to software (CPU-processed switching), reducing throughput from wire speed to CPU-bound rates (typically 1-10% of line rate).
 
 ### Q6: What Is the Difference Between a Managed and Unmanaged Switch?
 
@@ -3420,7 +3420,7 @@ ovs-appctl fdb/show ovs-br0
 | Method | Forward Starts | Error Check | Corrupted Frames | Runt Frames | Latency | Use Case |
 |--------|---------------|-------------|-----------------|-------------|---------|----------|
 | Store-and-Forward | After full frame received | Yes (FCS) | Never forwarded | Discarded | Highest | All environments (default for most switches) |
-| Cut-Through | After dst MAC (14B) | No | Forwarded | Forwarded | Lowest (< 10Âµs) | HPC, low-latency trading |
+| Cut-Through | After dst MAC (14B) | No | Forwarded | Forwarded | Lowest (< 10µs) | HPC, low-latency trading |
 | Fragment-Free | After 64 bytes | Partial (no FCS) | Forwarded | Discarded | Medium | General purpose (safe compromise) |
 
 ### Hub vs Switch vs Router (Detailed)
@@ -3436,7 +3436,7 @@ ovs-appctl fdb/show ovs-br0
 | Broadcast Domains | 1 (shared by all) | Per VLAN | Per interface |
 | Bandwidth per Port | Shared (1/N) | Full wire speed | Full wire speed |
 | Loop Handling | None | STP/RSTP | TTL + routing protocols |
-| Latency | ~1 Âµs | 5-50 Âµs | 100 Âµs - 5 ms |
+| Latency | ~1 µs | 5-50 µs | 100 µs - 5 ms |
 | Port Density | 4-24 | 24-48 (up to 512 stack) | 2-48 |
 | VLAN Support | No | Yes (802.1Q) | Inter-VLAN routing |
 | QoS Support | No | Yes (802.1p) | Yes (DSCP) |
@@ -3485,8 +3485,8 @@ ovs-appctl fdb/show ovs-br0
 | 100BaseTX | 100 Mbps | Cat 5 UTP (100m) | Same frame, 10x speed |
 | 1000BaseT | 1 Gbps | Cat 5e UTP (100m) | 4-pair signaling |
 | 10GBaseT | 10 Gbps | Cat 6a (100m) | Full-duplex only |
-| 100GbE | 100 Gbps | SMF/MMF | 4Ã—25G lanes |
-| 400GbE | 400 Gbps | SMF/MMF | 8 lanes Ã— 50 Gbps PAM4 |
+| 100GbE | 100 Gbps | SMF/MMF | 4×25G lanes |
+| 400GbE | 400 Gbps | SMF/MMF | 8 lanes × 50 Gbps PAM4 |
 
 ### Quick Reference
 

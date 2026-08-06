@@ -497,7 +497,7 @@ Two employees write cell phone numbers on the same form. Employee A writes "555-
 
 1. T1 writes A ? 100 (uncommitted)
 
-2. T2 writes A ? 200 (uncommitted) â†’ overwrites T1's uncommitted write
+2. T2 writes A ? 200 (uncommitted) → overwrites T1's uncommitted write
 
 3. T1 commits ? A = 100? 
 
@@ -2962,27 +2962,27 @@ Txn C (ts=35): sees X_v3 (value=300)
 
 +-------------------------------------+
 
-Â¦ Row: id=1, name='Alice', amount=500 Â¦
+¦ Row: id=1, name='Alice', amount=500 ¦
 
-Â¦ xmin=100 (created by txn 100)        Â¦
+¦ xmin=100 (created by txn 100)        ¦
 
-Â¦ xmax=150 (deleted by txn 150)        Â¦
+¦ xmax=150 (deleted by txn 150)        ¦
 
-Â¦ ctid=(0,2) (next version pointer)    Â¦
-
-+-------------------------------------+
-
-
+¦ ctid=(0,2) (next version pointer)    ¦
 
 +-------------------------------------+
 
-Â¦ Row: id=1, name='Alice', amount=600 Â¦
 
-Â¦ xmin=150 (created by txn 150)        Â¦
 
-Â¦ xmax=0 (current version)             Â¦
++-------------------------------------+
 
-Â¦ ctid=(0,0) (end of chain)            Â¦
+¦ Row: id=1, name='Alice', amount=600 ¦
+
+¦ xmin=150 (created by txn 150)        ¦
+
+¦ xmax=0 (current version)             ¦
+
+¦ ctid=(0,0) (end of chain)            ¦
 
 +-------------------------------------+
 
@@ -3000,9 +3000,9 @@ Clustered Index:                    UNDO Log:
 
 +---------------------+           +----------------------+
 
-Â¦ id=1, amount=600    Â¦ ? - - -  Â¦ amount=500 (txn 100) Â¦
+¦ id=1, amount=600    ¦ ? - - -  ¦ amount=500 (txn 100) ¦
 
-Â¦ roll_ptr=0xABCD1234 Â¦    roll  Â¦ amount=400 (txn 50)  Â¦
+¦ roll_ptr=0xABCD1234 ¦    roll  ¦ amount=400 (txn 50)  ¦
 
 +---------------------+   back   +----------------------+
 
@@ -4559,7 +4559,7 @@ The TypeScript code below simulates a lock manager with shared/exclusive locks, 
 
 ```typescript
 // ============================================================
-// Lock Manager & Deadlock Detector â€” TypeScript
+// Lock Manager & Deadlock Detector — TypeScript
 // ============================================================
 
 enum LockMode { SHARED, EXCLUSIVE }
@@ -4631,7 +4631,7 @@ class LockManager {
         if (!visited.has(next)) {
           if (dfs(next, graph, path)) return true;
         } else if (recStack.has(next)) {
-          // Found cycle â€” extract it from path
+          // Found cycle — extract it from path
           const cycleStart = path.indexOf(next);
           path.splice(0, cycleStart);
           path.push(next);
@@ -4680,9 +4680,9 @@ console.log('T1 acquires X(A)');
 lm.acquire(1, 'A', LockMode.EXCLUSIVE);
 console.log('T2 acquires X(B)');
 lm.acquire(2, 'B', LockMode.EXCLUSIVE);
-console.log('T1 requests X(B) â€” WAIT');
+console.log('T1 requests X(B) — WAIT');
 lm.acquire(1, 'B', LockMode.EXCLUSIVE);
-console.log('T2 requests X(A) â€” WAIT (DEADLOCK!)');
+console.log('T2 requests X(A) — WAIT (DEADLOCK!)');
 lm.acquire(2, 'A', LockMode.EXCLUSIVE);
 lm.printState();
 ```
@@ -4734,7 +4734,7 @@ flowchart LR
     c) Read-only workloads
     d) Write-heavy workloads
 
-**Answers:** 11-b, 12-b, 13-a (older timestamp wins â€” Thomas Write Rule), 14-b
+**Answers:** 11-b, 12-b, 13-a (older timestamp wins — Thomas Write Rule), 14-b
 
 ---
 

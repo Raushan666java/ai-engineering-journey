@@ -13,7 +13,7 @@ sidebar_position: 26
 
 ## Learning Objectives
 
-- Design and implement the automation pipeline pattern (trigger Ã¢â€ â€™ agent Ã¢â€ â€™ decision Ã¢â€ â€™ action Ã¢â€ â€™ log) using Laravel and the AI SDK
+- Design and implement the automation pipeline pattern (trigger → agent → decision → action → log) using Laravel and the AI SDK
 - Build a reusable `AutomationAgent` base class with database-driven configuration for triggers, actions, and branching workflows
 - Deploy scheduled, event-triggered, and webhook-driven automation agents with Laravel's scheduler, event system, and webhook controllers
 - Implement human-in-the-loop approval workflows where agents propose actions and humans approve via notification buttons
@@ -84,14 +84,14 @@ flowchart LR
 
 > **One-Sentence Takeaway:** Business automation uses AI agents triggered by schedules, events, or webhooks to execute business processes autonomously.
 
-Business automation replaces manual, repetitive processes with software that executes without human intervention. Traditional automation handles deterministic rules Ã¢â‚¬â€ "if invoice total > $10,000, send for approval." AI agents transform automation by handling non-deterministic decisions: classifying an invoice category, deciding whether an email is spam or legitimate, extracting structured data from an unstructured PDF, or determining which team should handle a support ticket.
+Business automation replaces manual, repetitive processes with software that executes without human intervention. Traditional automation handles deterministic rules — "if invoice total > $10,000, send for approval." AI agents transform automation by handling non-deterministic decisions: classifying an invoice category, deciding whether an email is spam or legitimate, extracting structured data from an unstructured PDF, or determining which team should handle a support ticket.
 
 #### The Automation Pipeline
 
 Every automation follows the same fundamental pipeline:
 
 ```
-Trigger Ã¢â€ â€™ Agent Ã¢â€ â€™ Decision Ã¢â€ â€™ Action Ã¢â€ â€™ Log
+Trigger → Agent → Decision → Action → Log
 ```
 
 | Stage | Purpose | Example |
@@ -107,9 +107,9 @@ Trigger Ã¢â€ â€™ Agent Ã¢â€ â€™ Decision Ã¢â€ â€�
 | Type | Trigger | Latency | Use Case |
 |---|---|---|---|
 | **Scheduled** | Laravel scheduler (cron) | Minutes to hours | Daily reports, hourly monitoring |
-| **Event-triggered** | Laravel events (ModelSaved, etc.) | Near-real-time | Invoice paid Ã¢â€ â€™ reconcile, user registered Ã¢â€ â€™ onboard |
-| **Webhook-driven** | External HTTP POST | Real-time | GitHub push Ã¢â€ â€™ review, Stripe charge Ã¢â€ â€™ record |
-| **Human-in-the-loop** | Agent Ã¢â€ â€™ Notification Ã¢â€ â€™ Approval | Minutes to days | Purchase order approval, content publishing |
+| **Event-triggered** | Laravel events (ModelSaved, etc.) | Near-real-time | Invoice paid → reconcile, user registered → onboard |
+| **Webhook-driven** | External HTTP POST | Real-time | GitHub push → review, Stripe charge → record |
+| **Human-in-the-loop** | Agent → Notification → Approval | Minutes to days | Purchase order approval, content publishing |
 
 ---
 
@@ -626,7 +626,7 @@ class Kernel extends ConsoleKernel
 
 > **One-Sentence Takeaway:** Event agents fire in response to model events or domain events, enabling reactive automation.
 
-Event-triggered agents react to Laravel events. When something happens in the application Ã¢â‚¬â€ a model is saved, a user registers, an invoice is paid Ã¢â‚¬â€ the event system dispatches an agent to process it.
+Event-triggered agents react to Laravel events. When something happens in the application — a model is saved, a user registers, an invoice is paid — the event system dispatches an agent to process it.
 
 #### The Event-to-Agent Bridge
 
@@ -908,7 +908,7 @@ class AutomationWorkflowSeeder extends Seeder
 
 > **One-Sentence Takeaway:** Webhook agents process incoming webhooks with HMAC verification before dispatching agent jobs.
 
-Webhook-driven agents accept incoming HTTP requests from external services Ã¢â‚¬â€ GitHub, Stripe, Slack, or any service that sends webhooks Ã¢â‚¬â€ and dispatch agents to process the payload.
+Webhook-driven agents accept incoming HTTP requests from external services — GitHub, Stripe, Slack, or any service that sends webhooks — and dispatch agents to process the payload.
 
 #### WebhookController with Signature Verification
 
@@ -1187,7 +1187,7 @@ human approval before execution. For each request, you must:
 4. Identify the appropriate approver based on the request type and amount
 5. Provide a clear rationale for your recommendation
 
-You do NOT execute actions directly Ã¢â‚¬â€ you submit recommendations for human review.
+You do NOT execute actions directly — you submit recommendations for human review.
 PROMPT;
     }
 
@@ -1509,7 +1509,7 @@ class ApprovalController extends Controller
 
 > **One-Sentence Takeaway:** ETL pipelines chain extraction, transformation, and loading agents for automated data processing.
 
-Agents can orchestrate ETL (Extract, Transform, Load) pipelines Ã¢â‚¬â€ ingesting data from files or APIs, using AI to transform and enrich it, and loading the result into the database.
+Agents can orchestrate ETL (Extract, Transform, Load) pipelines — ingesting data from files or APIs, using AI to transform and enrich it, and loading the result into the database.
 
 #### DataIngestionAgent
 
@@ -2336,11 +2336,11 @@ For each incoming support ticket, you must:
 
 1. **CATEGORIZE** the issue into: billing, technical, account, feature_request, bug_report, general
 2. **ASSESS PRIORITY**: urgent (system down, data loss), high (blocked workflow), normal (question), low (request)
-3. **SENTIMENT ANALYSIS**: frustrated, neutral, satisfied Ã¢â‚¬â€ flag frustrated tickets for priority handling
+3. **SENTIMENT ANALYSIS**: frustrated, neutral, satisfied — flag frustrated tickets for priority handling
 4. **DRAFT RESPONSE**: a helpful first reply addressing the customer's core concern
 5. **DETERMINE ROUTING**: which team or agent should handle this (tier-1, billing, engineering, escalation)
 6. **IDENTIFY ATTACHMENTS**: if files are referenced, note what they contain
-7. **RECOMMEND NEXT STEPS**: auto-reply vs. human review Ã¢â‚¬â€ if confidence is above 85%, auto-reply; otherwise flag for review
+7. **RECOMMEND NEXT STEPS**: auto-reply vs. human review — if confidence is above 85%, auto-reply; otherwise flag for review
 
 Output a structured triage result with category, priority, sentiment, draft reply, and routing decision.
 PROMPT;
@@ -2583,15 +2583,15 @@ class SupportWeeklySummary extends Command
 Business automation agents bring AI decision-making into the operational backbone of a Laravel application. This chapter covered:
 
 - **Automation framework**: A reusable base `AutomationAgent` with configurable workflows, conditions, and actions stored in the database
-- **Scheduled agents**: Cron-driven agents that run reports, send digests, reconcile data Ã¢â‚¬â€ managed via the Task scheduler and a dedicated `AutomationTask` model
+- **Scheduled agents**: Cron-driven agents that run reports, send digests, reconcile data — managed via the Task scheduler and a dedicated `AutomationTask` model
 - **Event-triggered agents**: Agents that subscribe to Laravel events and react in real-time to user registrations, payments, errors, and domain events
-- **Webhook-driven agents**: Externally triggered agents via signed HTTP requests from GitHub, Stripe, and custom sources Ã¢â‚¬â€ with signature verification
-- **Approval workflows**: Human-in-the-loop agents that propose actions, notify approvers, and execute only on explicit approval Ã¢â‚¬â€ with expiry and escalation
+- **Webhook-driven agents**: Externally triggered agents via signed HTTP requests from GitHub, Stripe, and custom sources — with signature verification
+- **Approval workflows**: Human-in-the-loop agents that propose actions, notify approvers, and execute only on explicit approval — with expiry and escalation
 - **Data pipeline agents**: ETL agents that ingest CSV or API data, transform it with AI-driven mapping, and load structured records into the database
 - **Notification & escalation agents**: Severity-aware alert agents with multi-level escalation paths that route to the right person through the right channel
 - **Audit logging**: A structured `AutomationLog` model that records every agent decision, action, response time, and token usage for compliance and debugging
 
-The architectural pattern is consistent across all agent types: a configurable workflow definition in the database, a dedicated agent class, and a logging layer that records every decision. This makes the system observable, testable, and safe to deploy in production Ã¢â‚¬â€ agents act with full traceability.
+The architectural pattern is consistent across all agent types: a configurable workflow definition in the database, a dedicated agent class, and a logging layer that records every decision. This makes the system observable, testable, and safe to deploy in production — agents act with full traceability.
 
 ---
 
@@ -2611,11 +2611,11 @@ The architectural pattern is consistent across all agent types: a configurable w
 
 #### Application Problems
 
-1. **Multi-Channel Alert Router**. Build an `AlertRouter` workflow that accepts alerts from email, Slack webhook, and internal API, classifies severity using an agent, and routes to the appropriate channel Ã¢â‚¬â€ PagerDuty for critical, Slack for high, email digest for medium/low.
+1. **Multi-Channel Alert Router**. Build an `AlertRouter` workflow that accepts alerts from email, Slack webhook, and internal API, classifies severity using an agent, and routes to the appropriate channel — PagerDuty for critical, Slack for high, email digest for medium/low.
 
 2. **Invoice Reconciliation Pipeline**. Create a scheduled agent that runs nightly: ingests invoices from a CSV export, transforms them into the `App\Models\Invoice` model, cross-references payments against the Stripe webhook log, and flags discrepancies for manual approval.
 
-3. **User Lifecycle Automation**. Design a set of event-driven agents that listen for `UserCreated`, `SubscriptionStarted`, `SubscriptionExpired`, and `UserDeleted` events Ã¢â‚¬â€ each agent sends the appropriate communication, updates CRM fields, and logs the action with full audit trail.
+3. **User Lifecycle Automation**. Design a set of event-driven agents that listen for `UserCreated`, `SubscriptionStarted`, `SubscriptionExpired`, and `UserDeleted` events — each agent sends the appropriate communication, updates CRM fields, and logs the action with full audit trail.
 
 #### Challenge Problem
 

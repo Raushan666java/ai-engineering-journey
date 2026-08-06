@@ -112,35 +112,35 @@ flowchart TD
 
 ![Testcontainers Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/32-testcontainers.png)
 
-Testcontainers is a Java library that wraps Docker containers inside your test lifecycle. Instead of mocking a database or running a heavy local install, you spin up a disposable container per test suite Ã¢â‚¬â€ identical to production, every time.
+Testcontainers is a Java library that wraps Docker containers inside your test lifecycle. Instead of mocking a database or running a heavy local install, you spin up a disposable container per test suite — identical to production, every time.
 
 ### 1.1 How It Works
 
 
 ```
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š               Test Suite                      Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  @Testcontainers  (JUnit 5 Extension) Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  @Container                           Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  PostgreSQLContainer postgres = ...    Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ    Ã¢â€â€š
-Ã¢â€â€š             Ã¢â€â€š start()                         Ã¢â€â€š
-Ã¢â€â€š             Ã¢â€“Â¼                                 Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š       Docker Daemon (local/remote)    Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Pulls image Ã¢â€ â€™ Creates container     Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Exposes port Ã¢â€ â€™ Waits for readiness  Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ    Ã¢â€â€š
-Ã¢â€â€š             Ã¢â€â€š                                 Ã¢â€â€š
-Ã¢â€â€š             Ã¢â€â€š jdbc:postgresql://localhost:54321Ã¢â€â€š
-Ã¢â€â€š             Ã¢â€“Â¼                                 Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š      Spring Boot ApplicationContext    Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  DataSource Ã¢â€ â€™ HikariCP Ã¢â€ â€™ JPA/HibernateÃ¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€š  Queries hit the real PostgreSQL      Ã¢â€â€š    Ã¢â€â€š
-Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ    Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+┌──────────────────────────────────────────────┐
+│               Test Suite                      │
+│  ┌──────────────────────────────────────┐    │
+│  │  @Testcontainers  (JUnit 5 Extension) │    │
+│  │  @Container                           │    │
+│  │  PostgreSQLContainer postgres = ...    │    │
+│  └──────────┬───────────────────────────┘    │
+│             │ start()                         │
+│             ▼                                 │
+│  ┌──────────────────────────────────────┐    │
+│  │       Docker Daemon (local/remote)    │    │
+│  │  Pulls image → Creates container     │    │
+│  │  Exposes port → Waits for readiness  │    │
+│  └──────────────────────────────────────┘    │
+│             │                                 │
+│             │ jdbc:postgresql://localhost:54321│
+│             ▼                                 │
+│  ┌──────────────────────────────────────┐    │
+│  │      Spring Boot ApplicationContext    │    │
+│  │  DataSource → HikariCP → JPA/Hibernate│    │
+│  │  Queries hit the real PostgreSQL      │    │
+│  └──────────────────────────────────────┘    │
+└──────────────────────────────────────────────┘
 ```
 
 ```java
@@ -196,7 +196,7 @@ System.out.println("Docker available: " + dockerAvailable);
 
 ---
 
-## 2. GenericContainer Ã¢â‚¬â€ The Universal Container
+## 2. GenericContainer — The Universal Container
 
 `GenericContainer` is the most flexible container type. Use it when there is no specialized container for your image.
 
@@ -236,19 +236,19 @@ class GenericContainerExampleTest {
 
 When `@Testcontainers` is active, the extension manages start/stop:
 
-- `@Container` static fields Ã¢â€ â€™ container starts once for the entire test class (shared)
-- `@Container` instance fields Ã¢â€ â€™ container starts before each test (isolated)
+- `@Container` static fields → container starts once for the entire test class (shared)
+- `@Container` instance fields → container starts before each test (isolated)
 
 ```java
 @Testcontainers
 class LifecycleTest {
 
-    // STATIC Ã¢â‚¬â€ shared across all tests in the class
+    // STATIC — shared across all tests in the class
     @Container
     static GenericContainer<?> shared = new GenericContainer<>("nginx:alpine")
         .withExposedPorts(80);
 
-    // INSTANCE Ã¢â‚¬â€ created fresh for each test method
+    // INSTANCE — created fresh for each test method
     @Container
     GenericContainer<?> isolated = new GenericContainer<>("nginx:alpine")
         .withExposedPorts(80);
@@ -270,7 +270,7 @@ class LifecycleTest {
 ### 2.3 Manual Start/Stop Without @Testcontainers
 
 
-You can control the lifecycle manually Ã¢â‚¬â€ useful when containers must start before the Spring context.
+You can control the lifecycle manually — useful when containers must start before the Spring context.
 
 ```java
 import org.testcontainers.containers.GenericContainer;
@@ -370,7 +370,7 @@ class MySQLTest {
 ```
 
 **MySQL notes:**
-- MySQL 8+ requires explicit image name tag Ã¢â‚¬â€ do not use `mysql:latest`
+- MySQL 8+ requires explicit image name tag — do not use `mysql:latest`
 - Use `withCommand("--default-authentication-plugin=mysql_native_password")` for legacy auth
 - On Apple Silicon, add `?permuteDNS=false` to the JDBC URL
 
@@ -397,7 +397,7 @@ class MSSQLTest {
 
 **MSSQL notes:**
 - You **must** call `acceptLicense()` to agree to the EULA
-- Image is ~1.5GB Ã¢â‚¬â€ pull once, cache forever
+- Image is ~1.5GB — pull once, cache forever
 - `getPassword()` returns the auto-generated SA password (32 chars)
 
 ### 3.4 OracleContainer
@@ -568,7 +568,7 @@ Containers take time to start. Wait strategies define when a container is "ready
 ### 4.1 Wait.forListeningPort
 
 
-The simplest strategy Ã¢â‚¬â€ waits for the container to open a TCP port.
+The simplest strategy — waits for the container to open a TCP port.
 
 ```java
 @Container
@@ -694,7 +694,7 @@ static KafkaContainer kafka = new KafkaContainer(
 ### 5.2 RedpandaContainer
 
 
-Redpanda is Kafka-compatible without Zookeeper Ã¢â‚¬â€ lighter and faster.
+Redpanda is Kafka-compatible without Zookeeper — lighter and faster.
 
 ```java
 import org.testcontainers.redpanda.RedpandaContainer;
@@ -712,7 +712,7 @@ class RedpandaTest {
         String bootstrapServers = redpanda.getBootstrapServers();
         System.out.println("Redpanda bootstrap: " + bootstrapServers);
 
-        // Identical Kafka API Ã¢â‚¬â€ just swap the bootstrap URL
+        // Identical Kafka API — just swap the bootstrap URL
     }
 }
 
@@ -743,7 +743,7 @@ class KafkaSpringTest {
         // Act
         kafkaTemplate.send(topic, payload).get(5, TimeUnit.SECONDS);
 
-        // Assert Ã¢â‚¬â€ use a test consumer or EmbeddedKafkaBroker
+        // Assert — use a test consumer or EmbeddedKafkaBroker
     }
 }
 ```
@@ -907,7 +907,7 @@ class ElasticsearchSpringTest {
 ### 5.6 LocalStackContainer (AWS)
 
 
-LocalStack emulates AWS services locally Ã¢â‚¬â€ S3, SQS, SNS, DynamoDB, and more.
+LocalStack emulates AWS services locally — S3, SQS, SNS, DynamoDB, and more.
 
 ```java
 import org.testcontainers.containers.localstack.LocalStackContainer;
@@ -1328,7 +1328,7 @@ static DockerComposeContainer<?> environment =
 ### 9.1 @ServiceConnection (Spring Boot 3.1+)
 
 
-Spring Boot 3.1 introduced `@ServiceConnection` Ã¢â‚¬â€ no more `@DynamicPropertySource` boilerplate for standard containers.
+Spring Boot 3.1 introduced `@ServiceConnection` — no more `@DynamicPropertySource` boilerplate for standard containers.
 
 ```java
 @SpringBootTest
@@ -1414,10 +1414,10 @@ class RedisServiceConnectionTest {
 **How @ServiceConnection works under the hood:**
 
 ```java
-// Simplified Ã¢â‚¬â€ each container type registers a ConnectionFactory bean
-// PostgreSQLContainer Ã¢â€ â€™ PostgresContainerConnectionDetails
-// KafkaContainer Ã¢â€ â€™ KafkaContainerConnectionDetails
-// GenericContainer Ã¢â€ â€™ GenericContainerConnectionDetails (via @DynamicPropertySource or manual)
+// Simplified — each container type registers a ConnectionFactory bean
+// PostgreSQLContainer → PostgresContainerConnectionDetails
+// KafkaContainer → KafkaContainerConnectionDetails
+// GenericContainer → GenericContainerConnectionDetails (via @DynamicPropertySource or manual)
 
 // PostgreSQLContainer registers:
 @Bean
@@ -1479,7 +1479,7 @@ class TcDriverSpringTest {
 ### 10.1 withReuse
 
 
-By default, Testcontainers destroys every container after the test JVM exits. `withReuse` keeps the container running across test runs Ã¢â‚¬â€ dramatically faster local development.
+By default, Testcontainers destroys every container after the test JVM exits. `withReuse` keeps the container running across test runs — dramatically faster local development.
 
 ```java
 @Container
@@ -1495,7 +1495,7 @@ static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16-
 Create this file at `~/.testcontainers.properties` or `~/.testcontainers/.testcontainers.properties`:
 
 ```properties
-# Global reuse enable Ã¢â‚¬â€ required for withReuse to work
+# Global reuse enable — required for withReuse to work
 testcontainers.reuse.enable=true
 
 # Docker host override (optional)
@@ -1518,7 +1518,7 @@ testcontainers.reuse.enable=true
 ### 10.3 Reusable Containers in CI (Ryuk)
 
 
-Ryuk is Testcontainers' resource reaper Ã¢â‚¬â€ it kills containers after the JVM exits. In CI, Ryuk is essential to prevent orphan containers.
+Ryuk is Testcontainers' resource reaper — it kills containers after the JVM exits. In CI, Ryuk is essential to prevent orphan containers.
 
 ```java
 // Ryuk runs automatically. To disable (e.g., when debugging in CI):
@@ -1530,7 +1530,7 @@ class CiTest {
 
 ```properties
 # CI .testcontainers.properties
-testcontainers.reuse.enable=false   # Don't reuse Ã¢â‚¬â€ fresh each CI run
+testcontainers.reuse.enable=false   # Don't reuse — fresh each CI run
 
 # If Ryuk causes issues (uncommon):
 # testcontainers.ryuk.disabled=true
@@ -1597,7 +1597,7 @@ static {
 
 ---
 
-## 11. Complete Example Ã¢â‚¬â€ Full Spring Boot Integration Test
+## 11. Complete Example — Full Spring Boot Integration Test
 
 A complete, real-world example tying everything together.
 
@@ -1849,7 +1849,7 @@ class OrderEventIntegrationTest {
 - **`@Testcontainers`** / **`@Container`** is the JUnit 5 extension. Static fields share one container per class; instance fields create one per test.
 - **Lifecycle** defaults to start-on-annotation, stop-after-class. Use manual `start()`/`stop()` for programmatic control and singleton patterns.
 - **Database containers** (`PostgreSQLContainer`, `MySQLContainer`, `MSSQLServerContainer`, `OracleContainer`) pre-set credentials, driver, and JDBC URL. Use `withInitScript` for schema setup.
-- **JDBC tc driver** (`jdbc:tc:postgresql://`) auto-starts containers from the JDBC URL Ã¢â‚¬â€ no `@Container` needed.
+- **JDBC tc driver** (`jdbc:tc:postgresql://`) auto-starts containers from the JDBC URL — no `@Container` needed.
 - **`@DynamicPropertySource`** injects container connection details into the Spring `Environment` before context creation.
 - **Wait strategies** (`Wait.forListeningPort`, `Wait.forLogMessage`, `Wait.forHttp`) ensure containers are ready before tests execute.
 - **Middleware containers** (`KafkaContainer`, `RedpandaContainer`, `RabbitMQContainer`, `GenericContainer` for Redis, `ElasticsearchContainer`, `LocalStackContainer`) handle complex service configuration automatically.
@@ -1865,7 +1865,7 @@ class OrderEventIntegrationTest {
 
 1. **GenericContainer:** Create a test that starts a `generic-container` from the `nginx:alpine` image. Use `@Testcontainers` and `@Container`. Verify the container is running by checking `getMappedPort(80)`. Implement wait strategies: first using `Wait.forListeningPort()`, then `Wait.forHttp("/")`. Compare startup times.
 
-2. **Database Container:** Write a test using `PostgreSQLContainer` with `@DynamicPropertySource`. Create a `users` table, insert a row, and query it back. Use `withInitScript` for the table creation. Then convert the test to use `@ServiceConnection` Ã¢â‚¬â€ remove the `@DynamicPropertySource` method.
+2. **Database Container:** Write a test using `PostgreSQLContainer` with `@DynamicPropertySource`. Create a `users` table, insert a row, and query it back. Use `withInitScript` for the table creation. Then convert the test to use `@ServiceConnection` — remove the `@DynamicPropertySource` method.
 
 3. **TC JDBC Driver:** Configure `spring.datasource.url=jdbc:tc:postgresql:16-alpine:///testdb` in test properties. Write a `@SpringBootTest` that injects `JdbcTemplate` and runs `SELECT 1`. Do NOT declare any `@Container` fields. Explain how the tc driver starts the container automatically.
 

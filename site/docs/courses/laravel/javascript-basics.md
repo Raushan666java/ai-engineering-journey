@@ -15,7 +15,7 @@ sidebar_position: 59
 - Identify JavaScript data types and understand type coercion behavior
 - Write function declarations, expressions, arrow functions, and IIFEs
 - Use rest parameters, spread syntax, and default parameters in function signatures
-- Apply higher-order functions Ã¢â‚¬â€ `map`, `filter`, `reduce` Ã¢â‚¬â€ to array transformations
+- Apply higher-order functions — `map`, `filter`, `reduce` — to array transformations
 - Manipulate the DOM using `querySelector`, `createElement`, `classList`, and `dataset`
 - Handle events through capturing, bubbling, delegation, and custom events
 - Perform HTTP requests with the Fetch API and handle responses, errors, and cancellation
@@ -158,19 +158,19 @@ JavaScript is a dynamic, loosely typed language. Variables hold values; the type
 #### Variable Declarations
 
 ```javascript
-// var Ã¢â‚¬â€ function-scoped, hoisted, avoid in modern code
+// var — function-scoped, hoisted, avoid in modern code
 var name = 'Alice';
 var count = 10;
 var isActive = true;
 
-// let Ã¢â‚¬â€ block-scoped, preferred for reassignable variables
+// let — block-scoped, preferred for reassignable variables
 let score = 0;
 score = 95;
 
 let items = ['pen', 'book'];
 items.push('ruler');
 
-// const Ã¢â‚¬â€ block-scoped, cannot be reassigned
+// const — block-scoped, cannot be reassigned
 const PI = 3.14159;
 const user = { id: 1, role: 'admin' };
 user.role = 'editor'; // mutation is allowed
@@ -297,7 +297,7 @@ console.log(userProfile?.billing?.card);  // undefined (no error)
 ### 2. Functions
 
 
-Functions are first-class objects Ã¢â‚¬â€ they can be assigned, passed, and returned.
+Functions are first-class objects — they can be assigned, passed, and returned.
 
 #### Function Declarations
 
@@ -309,7 +309,7 @@ function greet(name) {
 console.log(greet('Alice')); // "Hello, Alice!"
 ```
 
-Declarations are hoisted Ã¢â‚¬â€ callable before their definition.
+Declarations are hoisted — callable before their definition.
 
 ```javascript
 console.log(add(2, 3)); // 5
@@ -334,13 +334,13 @@ console.log(multiply(4, 5)); // 20
 Arrow functions have a concise syntax and lexically bind `this`.
 
 ```javascript
-// Single parameter, single expression Ã¢â‚¬â€ implicit return
+// Single parameter, single expression — implicit return
 const square = n => n * n;
 
 // Multiple parameters
 const sum = (a, b) => a + b;
 
-// Block body Ã¢â‚¬â€ explicit return
+// Block body — explicit return
 const getFullName = (first, last) => {
     const title = 'Ms.';
     return `${title} ${first} ${last}`;
@@ -416,7 +416,7 @@ console.log(config); // { theme: "light", lang: "fr" }
 console.log(Math.max(...nums)); // 3
 ```
 
-#### IIFE Ã¢â‚¬â€ Immediately Invoked Function Expression
+#### IIFE — Immediately Invoked Function Expression
 
 ```javascript
 (function () {
@@ -446,20 +446,20 @@ fetchData(data => {
 });
 ```
 
-#### Higher-Order Functions Ã¢â‚¬â€ map, filter, reduce
+#### Higher-Order Functions — map, filter, reduce
 
 ```javascript
 const numbers = [5, 10, 15, 20, 25];
 
-// map Ã¢â‚¬â€ transform every element
+// map — transform every element
 const doubled = numbers.map(n => n * 2);
 console.log(doubled); // [10, 20, 30, 40, 50]
 
-// filter Ã¢â‚¬â€ keep elements that pass a test
+// filter — keep elements that pass a test
 const big = numbers.filter(n => n > 12);
 console.log(big); // [15, 20, 25]
 
-// reduce Ã¢â‚¬â€ accumulate to a single value
+// reduce — accumulate to a single value
 const total = numbers.reduce((acc, n) => acc + n, 0);
 console.log(total); // 75
 
@@ -470,7 +470,7 @@ const result = numbers
     .reduce((acc, n) => acc + n, 0);
 console.log(result); // (10 + 20) / 10 = 3
 
-// reduce Ã¢â‚¬â€ grouping
+// reduce — grouping
 const people = [
     { name: 'Alice', role: 'admin' },
     { name: 'Bob', role: 'editor' },
@@ -505,7 +505,7 @@ const car = {
 // Dot notation
 console.log(car.make);     // "Tesla"
 
-// Bracket notation Ã¢â‚¬â€ dynamic keys
+// Bracket notation — dynamic keys
 const key = 'model';
 console.log(car[key]);     // "Model 3"
 
@@ -579,12 +579,12 @@ console.log(keys);    // ["a", "b", "c"]
 console.log(values);  // [1, 2, 3]
 console.log(entries); // [["a", 1], ["b", 2], ["c", 3]]
 
-// Object.freeze Ã¢â‚¬â€ makes object immutable (shallow)
+// Object.freeze — makes object immutable (shallow)
 const frozen = Object.freeze({ version: 1 });
 // frozen.version = 2; // TypeError in strict mode
 ```
 
-#### Array Methods Ã¢â‚¬â€ push, pop, find, some, every, includes, flat
+#### Array Methods — push, pop, find, some, every, includes, flat
 
 ```javascript
 const fruits = ['apple', 'banana'];
@@ -599,41 +599,41 @@ fruits.unshift('avocado');
 console.log(fruits);         // ["avocado", "apple", "banana"]
 console.log(fruits.shift()); // "avocado"
 
-// find Ã¢â‚¬â€ returns first match
+// find — returns first match
 const numbers = [10, 25, 30, 45];
 const found = numbers.find(n => n > 20);
 console.log(found); // 25
 
-// some Ã¢â‚¬â€ at least one passes
+// some — at least one passes
 console.log(numbers.some(n => n > 40)); // true
 
-// every Ã¢â‚¬â€ all pass
+// every — all pass
 console.log(numbers.every(n => n > 5)); // true
 
-// includes Ã¢â‚¬â€ strict equality check
+// includes — strict equality check
 console.log(fruits.includes('banana')); // true
 
-// flat Ã¢â‚¬â€ flatten nested arrays
+// flat — flatten nested arrays
 const nested = [1, [2, [3, [4]]]];
 console.log(nested.flat());       // [1, 2, [3, [4]]]
 console.log(nested.flat(2));      // [1, 2, 3, [4]]
 console.log(nested.flat(Infinity)); // [1, 2, 3, 4]
 
-// splice Ã¢â‚¬â€ insert/remove at index
+// splice — insert/remove at index
 const colors = ['red', 'green', 'blue'];
 colors.splice(1, 1, 'yellow');  // remove 1 at index 1, insert 'yellow'
 console.log(colors); // ["red", "yellow", "blue"]
 
-// slice Ã¢â‚¬â€ non-destructive copy
+// slice — non-destructive copy
 const sliced = colors.slice(0, 2);
 console.log(sliced); // ["red", "yellow"]
 
-// sort Ã¢â‚¬â€ mutates, accepts compare function
+// sort — mutates, accepts compare function
 const scores = [3, 30, 1, 100];
 scores.sort((a, b) => a - b);
 console.log(scores); // [1, 3, 30, 100]
 
-// forEach Ã¢â‚¬â€ iterate
+// forEach — iterate
 fruits.forEach((fruit, i) => {
     console.log(`${i}: ${fruit}`);
 });
@@ -690,14 +690,14 @@ The Document Object Model (DOM) is a tree representation of HTML. JavaScript can
 const title = document.getElementById('title');
 console.log(title.textContent); // "Hello World"
 
-// querySelector Ã¢â‚¬â€ returns first match (CSS selector)
+// querySelector — returns first match (CSS selector)
 const firstText = document.querySelector('.text');
 console.log(firstText.textContent); // "First paragraph"
 
 const list = document.querySelector('#list');
 console.log(list.children.length); // 3
 
-// querySelectorAll Ã¢â‚¬â€ returns NodeList (array-like)
+// querySelectorAll — returns NodeList (array-like)
 const allTexts = document.querySelectorAll('.text');
 allTexts.forEach(el => console.log(el.textContent));
 
@@ -747,7 +747,7 @@ const allLis = document.querySelectorAll('li');
 </html>
 ```
 
-#### innerHTML Ã¢â‚¬â€ caution with user data
+#### innerHTML — caution with user data
 
 ```javascript
 const container = document.querySelector('.container');
@@ -861,10 +861,10 @@ console.log(x, y); // 2 1
 
 // Function parameter destructuring
 function printUser({ name, email, role = 'viewer' }) {
-    console.log(`${name} (${email}) Ã¢â‚¬â€ ${role}`);
+    console.log(`${name} (${email}) — ${role}`);
 }
 printUser({ name: 'Alice', email: 'a@example.com' });
-// "Alice (a@example.com) Ã¢â‚¬â€ viewer"
+// "Alice (a@example.com) — viewer"
 
 // Nested array destructuring
 const [a, , b] = [10, 20, 30];
@@ -877,7 +877,7 @@ Detailed in Sections 2 and 3. Key distinction:
 - **Spread** *expands* an iterable (used in array/object literals, function calls)
 - **Rest** *collects* remaining elements (used in destructuring, function parameters)
 
-#### Modules Ã¢â‚¬â€ import / export
+#### Modules — import / export
 
 ```javascript
 // math.js
@@ -985,7 +985,7 @@ const obj = {
 };
 
 console.log(obj[sym1]);     // "secret-value"
-console.log(Object.keys(obj)); // ["visible"] Ã¢â‚¬â€ Symbols are hidden from enumeration
+console.log(Object.keys(obj)); // ["visible"] — Symbols are hidden from enumeration
 
 // Well-known Symbols
 const iterable = {
@@ -1023,7 +1023,7 @@ cache.forEach((value, key) => {
     console.log(key, value);
 });
 
-// Map vs object Ã¢â‚¬â€ Map preserves insertion order, has size, better performance for frequent add/delete
+// Map vs object — Map preserves insertion order, has size, better performance for frequent add/delete
 ```
 
 #### Sets
@@ -1035,7 +1035,7 @@ const tags = new Set();
 
 tags.add('javascript');
 tags.add('laravel');
-tags.add('javascript'); // ignored Ã¢â‚¬â€ already exists
+tags.add('javascript'); // ignored — already exists
 
 console.log(tags.size); // 2
 console.log(tags.has('laravel')); // true
@@ -1117,7 +1117,7 @@ form.addEventListener('submit', async event => {
     fetch('/api/upload', {
         method: 'POST',
         body: formData
-        // Do NOT set Content-Type Ã¢â‚¬â€ browser sets multipart/form-data with boundary
+        // Do NOT set Content-Type — browser sets multipart/form-data with boundary
     })
         .then(res => res.json())
         .then(data => console.log('Uploaded:', data))
@@ -1158,7 +1158,7 @@ async function safeFetch(url, options = {}) {
 const data = await safeFetch('/api/users');
 ```
 
-#### AbortController Ã¢â‚¬â€ cancelling requests
+#### AbortController — cancelling requests
 
 ```javascript
 function searchWithCancel(query) {
@@ -1261,19 +1261,19 @@ api.get('/users')
 </html>
 ```
 
-#### Event Phases Ã¢â‚¬â€ Capture, Target, Bubble
+#### Event Phases — Capture, Target, Bubble
 
 Events travel in three phases:
-1. **Capture** Ã¢â‚¬â€ document Ã¢â€ â€™ target (rarely used directly)
-2. **Target** Ã¢â‚¬â€ the element that received the event
-3. **Bubble** Ã¢â‚¬â€ target Ã¢â€ â€™ document (default listener phase)
+1. **Capture** — document → target (rarely used directly)
+2. **Target** — the element that received the event
+3. **Bubble** — target → document (default listener phase)
 
 ```javascript
 const parent = document.getElementById('parent');
 const child = document.getElementById('child');
 const grandchild = document.getElementById('grandchild');
 
-// Bubbling phase (default) Ã¢â‚¬â€ third parameter false or omitted
+// Bubbling phase (default) — third parameter false or omitted
 parent.addEventListener('click', () => console.log('Parent bubble'), false);
 child.addEventListener('click', () => console.log('Child bubble'));
 grandchild.addEventListener('click', () => console.log('Grandchild bubble'));
@@ -1283,7 +1283,7 @@ grandchild.addEventListener('click', () => console.log('Grandchild bubble'));
 // "Child bubble"
 // "Parent bubble"
 
-// Capture phase Ã¢â‚¬â€ third parameter true
+// Capture phase — third parameter true
 parent.addEventListener('click', () => console.log('Parent capture'), true);
 child.addEventListener('click', () => console.log('Child capture'), true);
 grandchild.addEventListener('click', () => console.log('Grandchild capture'), true);
@@ -1302,7 +1302,7 @@ grandchild.addEventListener('click', () => console.log('Grandchild capture'), tr
 ```javascript
 grandchild.addEventListener('click', event => {
     event.stopPropagation(); // Stops further propagation
-    console.log('Grandchild Ã¢â‚¬â€ no more events');
+    console.log('Grandchild — no more events');
 });
 ```
 
@@ -1409,10 +1409,10 @@ toasts.show('User saved successfully', 'success');
 ```javascript
 const handler = () => console.log('Clicked');
 
-// once Ã¢â‚¬â€ automatically removes after first invocation
+// once — automatically removes after first invocation
 btn.addEventListener('click', handler, { once: true });
 
-// passive Ã¢â‚¬â€ hint that preventDefault will not be called (improves scroll perf)
+// passive — hint that preventDefault will not be called (improves scroll perf)
 document.addEventListener('touchstart', handler, { passive: true });
 
 // Remove listener
@@ -1478,7 +1478,7 @@ window.Alpine = Alpine;
 Alpine.start();
 ```
 
-#### x-data Ã¢â‚¬â€ Component State
+#### x-data — Component State
 
 ```blade
 <div x-data="{ count: 0, name: 'Alice' }">
@@ -1487,7 +1487,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-init Ã¢â‚¬â€ Initialization
+#### x-init — Initialization
 
 ```blade
 <div x-data="{ message: '' }" x-init="message = 'Page loaded at ' + new Date().toLocaleTimeString()">
@@ -1495,7 +1495,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-show Ã¢â‚¬â€ Toggle Visibility
+#### x-show — Toggle Visibility
 
 ```blade
 <div x-data="{ open: false }">
@@ -1506,7 +1506,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-if Ã¢â‚¬â€ Conditional Rendering
+#### x-if — Conditional Rendering
 
 ```blade
 <div x-data="{ showExtra: false }">
@@ -1517,7 +1517,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-for Ã¢â‚¬â€ Loops
+#### x-for — Loops
 
 ```blade
 <div x-data="{ users: [
@@ -1534,7 +1534,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-model Ã¢â‚¬â€ Two-way Data Binding
+#### x-model — Two-way Data Binding
 
 ```blade
 <div x-data="{ search: '' }">
@@ -1546,7 +1546,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-on / @ Ã¢â‚¬â€ Event Listeners
+#### x-on / @ — Event Listeners
 
 ```blade
 <div x-data="{ count: 0 }">
@@ -1573,7 +1573,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-bind / : Ã¢â‚¬â€ Dynamic Attributes
+#### x-bind / : — Dynamic Attributes
 
 ```blade
 <div x-data="{ isActive: false, bgColor: 'blue' }">
@@ -1603,7 +1603,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-ref Ã¢â‚¬â€ Reference Elements
+#### x-ref — Reference Elements
 
 ```blade
 <div x-data="{ focusInput() { $refs.input.focus() } }">
@@ -1612,7 +1612,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-teleport Ã¢â‚¬â€ Move Elements in DOM
+#### x-teleport — Move Elements in DOM
 
 ```blade
 <div x-data="{ open: false }">
@@ -1629,7 +1629,7 @@ Alpine.start();
 </div>
 ```
 
-#### x-effect Ã¢â‚¬â€ Reactive Side Effects
+#### x-effect — Reactive Side Effects
 
 ```blade
 <div x-data="{ count: 0, doubled: 0 }" x-effect="doubled = count * 2">
@@ -1667,7 +1667,7 @@ Alpine.start();
 </div>
 ```
 
-#### Alpine.data Ã¢â‚¬â€ Reusable Components
+#### Alpine.data — Reusable Components
 
 ```javascript
 // resources/js/alpine-components.js
@@ -1714,7 +1714,7 @@ document.addEventListener('alpine:init', () => {
 </div>
 ```
 
-#### Alpine.store Ã¢â‚¬â€ Global State
+#### Alpine.store — Global State
 
 ```javascript
 // resources/js/alpine-store.js
@@ -1896,11 +1896,11 @@ Import maps allow browsers to resolve bare import specifiers without a bundler.
 
 #### Bundling Concepts
 
-- **Entry point** Ã¢â‚¬â€ the file Vite starts from (usually `resources/js/app.js`)
-- **Code splitting** Ã¢â‚¬â€ dynamic `import()` automatically creates separate chunks
-- **Tree shaking** Ã¢â‚¬â€ unused exports are removed in production builds
-- **Minification** Ã¢â‚¬â€ Vite uses esbuild for production to compress output
-- **Source maps** Ã¢â‚¬â€ map compiled code back to original source for debugging
+- **Entry point** — the file Vite starts from (usually `resources/js/app.js`)
+- **Code splitting** — dynamic `import()` automatically creates separate chunks
+- **Tree shaking** — unused exports are removed in production builds
+- **Minification** — Vite uses esbuild for production to compress output
+- **Source maps** — map compiled code back to original source for debugging
 
 ```javascript
 // This will be tree-shaken if never imported
@@ -2571,25 +2571,25 @@ Echo.join(`room.${roomId}`)
 
 JavaScript fundamentals form the backbone of modern Laravel frontend development. This chapter covered:
 
-**Core language** Ã¢â‚¬â€ Variables (`var`, `let`, `const`), data types, operators, type coercion, and strict mode form JavaScript's foundational syntax. Understanding scope and the temporal dead zone prevents subtle bugs.
+**Core language** — Variables (`var`, `let`, `const`), data types, operators, type coercion, and strict mode form JavaScript's foundational syntax. Understanding scope and the temporal dead zone prevents subtle bugs.
 
-**Functions** Ã¢â‚¬â€ First-class citizens in JavaScript. Arrow functions provide concise syntax and lexical `this` binding. Rest parameters, spread syntax, and default parameters make function signatures flexible. Higher-order functions (`map`, `filter`, `reduce`) enable declarative data transformations without explicit loops.
+**Functions** — First-class citizens in JavaScript. Arrow functions provide concise syntax and lexical `this` binding. Rest parameters, spread syntax, and default parameters make function signatures flexible. Higher-order functions (`map`, `filter`, `reduce`) enable declarative data transformations without explicit loops.
 
-**Objects and arrays** Ã¢â‚¬â€ The primary data structures. Destructuring, spread, and modern methods (`find`, `some`, `every`, `includes`, `flat`) provide concise, readable data access and manipulation patterns.
+**Objects and arrays** — The primary data structures. Destructuring, spread, and modern methods (`find`, `some`, `every`, `includes`, `flat`) provide concise, readable data access and manipulation patterns.
 
-**DOM manipulation** Ã¢â‚¬â€ `querySelector`, `createElement`, `classList`, and `dataset` give precise control over the document tree. Event delegation reduces memory by attaching a single listener to a parent for many children.
+**DOM manipulation** — `querySelector`, `createElement`, `classList`, and `dataset` give precise control over the document tree. Event delegation reduces memory by attaching a single listener to a parent for many children.
 
-**ES6+ features** Ã¢â‚¬â€ Template literals, destructuring, modules, Promises, and `async`/`await` modernize the language. Maps and Sets add purpose-built collection types. Symbols provide truly private object keys.
+**ES6+ features** — Template literals, destructuring, modules, Promises, and `async`/`await` modernize the language. Maps and Sets add purpose-built collection types. Symbols provide truly private object keys.
 
-**Fetch API** Ã¢â‚¬â€ Native HTTP requests with promise-based handling. `AbortController` cancels in-flight requests. FormData handles multipart submissions. Axios offers a richer API with interceptors and defaults.
+**Fetch API** — Native HTTP requests with promise-based handling. `AbortController` cancels in-flight requests. FormData handles multipart submissions. Axios offers a richer API with interceptors and defaults.
 
-**Event handling** Ã¢â‚¬â€ `addEventListener` with capture, bubble, and target phases. `stopPropagation` halts event flow; `preventDefault` cancels browser defaults. Custom events decouple components through a pub/sub pattern.
+**Event handling** — `addEventListener` with capture, bubble, and target phases. `stopPropagation` halts event flow; `preventDefault` cancels browser defaults. Custom events decouple components through a pub/sub pattern.
 
-**Alpine.js** Ã¢â‚¬â€ Lightweight reactive framework that lives in HTML. `x-data`, `x-model`, `x-on`, `x-bind`, and `x-for` mirror core reactive patterns without a build step. `Alpine.data` and `Alpine.store` provide reusable components and global state.
+**Alpine.js** — Lightweight reactive framework that lives in HTML. `x-data`, `x-model`, `x-on`, `x-bind`, and `x-for` mirror core reactive patterns without a build step. `Alpine.data` and `Alpine.store` provide reusable components and global state.
 
-**Modern tooling** Ã¢â‚¬â€ Vite drives fast development with HMR and optimized production builds. ES modules, import maps, and bundling concepts (tree shaking, code splitting) enable scalable application architecture.
+**Modern tooling** — Vite drives fast development with HMR and optimized production builds. ES modules, import maps, and bundling concepts (tree shaking, code splitting) enable scalable application architecture.
 
-**Laravel integration** Ã¢â‚¬â€ `vite.config.js` connects Blade to the Vite pipeline. `import.meta.env` exposes environment variables. Laravel Echo with Pusher/WebSockets adds real-time capabilities. Alpine.js integrates naturally with Blade templates and Livewire components for reactive UIs.
+**Laravel integration** — `vite.config.js` connects Blade to the Vite pipeline. `import.meta.env` exposes environment variables. Laravel Echo with Pusher/WebSockets adds real-time capabilities. Alpine.js integrates naturally with Blade templates and Livewire components for reactive UIs.
 
 ---
 
@@ -2619,24 +2619,24 @@ JavaScript fundamentals form the backbone of modern Laravel frontend development
 
 ### Application Problems
 
-1. **Task Manager** Ã¢â‚¬â€ Create an HTML page with a text input and an "Add" button. Use JavaScript to add items to a list. Each list item must have a "Delete" button. Use event delegation so dynamically added items are deletable. Store the task array and re-render on every change using a render function.
+1. **Task Manager** — Create an HTML page with a text input and an "Add" button. Use JavaScript to add items to a list. Each list item must have a "Delete" button. Use event delegation so dynamically added items are deletable. Store the task array and re-render on every change using a render function.
 
-2. **Search Filter** Ã¢â‚¬â€ Create an array of 20 product objects (id, name, category, price). Render them in a grid using `map` and `join`. Add a search input that filters the array with `filter` and `includes`. Debounce the input using a 300ms `setTimeout` Ã¢â‚¬â€ clear the previous timeout on each keystroke.
+2. **Search Filter** — Create an array of 20 product objects (id, name, category, price). Render them in a grid using `map` and `join`. Add a search input that filters the array with `filter` and `includes`. Debounce the input using a 300ms `setTimeout` — clear the previous timeout on each keystroke.
 
-3. **API Dashboard** Ã¢â‚¬â€ Use the Fetch API to load data from `https://jsonplaceholder.typicode.com/posts`. Display the posts in a table. Add a "Delete" button that sends a DELETE request and removes the post from the DOM. Show a loading spinner while fetching. Handle network errors with a user-facing error message.
+3. **API Dashboard** — Use the Fetch API to load data from `https://jsonplaceholder.typicode.com/posts`. Display the posts in a table. Add a "Delete" button that sends a DELETE request and removes the post from the DOM. Show a loading spinner while fetching. Handle network errors with a user-facing error message.
 
-4. **Alpine Shopping Cart** Ã¢â‚¬â€ Build a simple cart component using Alpine.js with `x-data`. Include:
+4. **Alpine Shopping Cart** — Build a simple cart component using Alpine.js with `x-data`. Include:
    - An array of cart items (name, price, quantity)
    - Buttons to increment and decrement quantity
    - An `x-effect` that logs the total whenever items change
    - Computed total displayed with `x-text`
    - A "Clear cart" button
 
-5. **Real-time Notification** Ã¢â‚¬â€ Set up a Laravel Echo listener for a `NotificationReceived` event. Display a toast notification at the top of the page for 5 seconds using Alpine.js `x-show` with `x-transition`. Include a "Dismiss" button that removes the notification immediately.
+5. **Real-time Notification** — Set up a Laravel Echo listener for a `NotificationReceived` event. Display a toast notification at the top of the page for 5 seconds using Alpine.js `x-show` with `x-transition`. Include a "Dismiss" button that removes the notification immediately.
 
 ### Challenge Problems
 
-1. **Custom Reactive Store** Ã¢â‚¬â€ Implement a minimal reactive store without a framework:
+1. **Custom Reactive Store** — Implement a minimal reactive store without a framework:
    ```javascript
    function createStore(initialState) {
        // Return { state, subscribe, dispatch }
@@ -2645,7 +2645,7 @@ JavaScript fundamentals form the backbone of modern Laravel frontend development
    ```
    Then use it to power a counter with increment/decrement/reset buttons and three independent displays that all update when state changes.
 
-2. **Async Autocomplete** Ã¢â‚¬â€ Build an autocomplete component with Alpine.js that:
+2. **Async Autocomplete** — Build an autocomplete component with Alpine.js that:
    - Sends a debounced fetch to an API endpoint on keystroke
    - Shows a dropdown of results below the input
    - Navigates results with arrow keys (keydown handler)
@@ -2654,21 +2654,21 @@ JavaScript fundamentals form the backbone of modern Laravel frontend development
    - Shows "No results" when the API returns empty
    - Handle race conditions where a slow response arrives after a fast one
 
-3. **JavaScript Module Bundler** Ã¢â‚¬â€ Write a minimal module bundler that:
+3. **JavaScript Module Bundler** — Write a minimal module bundler that:
    - Parses a dependency graph from an entry file using regex (not full AST)
    - Resolves `import` statements to their file contents
    - Bundles all modules into a single IIFE
    - Handles circular dependencies gracefully
    - Outputs the bundled code as a string
 
-4. **Alpine Component Library** Ã¢â‚¬â€ Create a reusable component library with `Alpine.data` and `Alpine.store`:
-   - `Alpine.data('modal', ...)` Ã¢â‚¬â€ configurable modal with open/close, backdrop click, Esc key
-   - `Alpine.data('tooltip', ...)` Ã¢â‚¬â€ hover-activated tooltip positioned relative to trigger
-   - `Alpine.data('tabs', ...)` Ã¢â‚¬â€ tabbed interface with keyboard navigation
-   - `Alpine.store('toasts', ...)` Ã¢â‚¬â€ global toast notification queue with auto-dismiss
+4. **Alpine Component Library** — Create a reusable component library with `Alpine.data` and `Alpine.store`:
+   - `Alpine.data('modal', ...)` — configurable modal with open/close, backdrop click, Esc key
+   - `Alpine.data('tooltip', ...)` — hover-activated tooltip positioned relative to trigger
+   - `Alpine.data('tabs', ...)` — tabbed interface with keyboard navigation
+   - `Alpine.store('toasts', ...)` — global toast notification queue with auto-dismiss
    - Demonstrate all components in a single Blade view with Tailwind styling
 
-5. **Full-stack Real-time Board** Ã¢â‚¬â€ Combine Laravel, Alpine.js, Vite, and Echo to build a collaborative task board:
+5. **Full-stack Real-time Board** — Combine Laravel, Alpine.js, Vite, and Echo to build a collaborative task board:
    - Drag-and-drop columns using Alpine.js drag events
    - Real-time updates via Laravel broadcasting when any user moves a task
    - Optimistic UI updates with rollback on failure

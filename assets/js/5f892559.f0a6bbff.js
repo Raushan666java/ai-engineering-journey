@@ -262,6 +262,17 @@ function _createMdxContent(props) {
           children: "Modern AI Engineering"
         }), " — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum."]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Companion text — Agentic AI: The Complete Book:"
+        }), " A complete 17-chapter reference from first principles to production multi-agent systems (tool calling, hand-built ReAct loop, LangGraph, agentic RAG, MCP, guardrails, evaluation, deployment, and an end-to-end capstone). Read it chapter-by-chapter alongside this curriculum: ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-engineering-journey/ai-agent-engineer/agentic-ai-book",
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "agentic-ai-book/00-index.md"
+          })
+        })]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "lesson-visuals",
       "aria-label": "Visual learning resources",

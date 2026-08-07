@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/31-mobile-ai
 title: "31 — Mobile AI & Edge Deployment"
 sidebar_label: "31 — Mobile AI & Edge Deployment"
 sidebar_position: 323

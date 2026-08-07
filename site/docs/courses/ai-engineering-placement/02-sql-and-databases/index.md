@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/02-sql-and-databases
 title: "02 — SQL & Databases"
 sidebar_label: "02 — SQL & Databases"
 sidebar_position: 33

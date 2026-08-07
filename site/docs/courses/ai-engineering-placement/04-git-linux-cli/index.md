@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/04-git-linux-cli
 title: "04 — Git, Linux & CLI"
 sidebar_label: "04 — Git, Linux & CLI"
 sidebar_position: 62

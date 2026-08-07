@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/07-system-design
 title: "07 — System Design"
 sidebar_label: "07 — System Design"
 sidebar_position: 102

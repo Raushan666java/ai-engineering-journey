@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/01-python-programming
 title: "01 — Python for AI"
 sidebar_label: "01 — Python for AI"
 sidebar_position: 22

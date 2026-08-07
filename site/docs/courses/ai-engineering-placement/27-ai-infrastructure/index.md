@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/27-ai-infrastructure
 title: "27 — AI Infrastructure & Optimization"
 sidebar_label: "27 — AI Infrastructure & Optimization"
 sidebar_position: 304

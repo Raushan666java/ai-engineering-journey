@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/23-trending-aiml-platforms
 title: "23 — Trending AI/ML Platforms & Tools (2026)"
 sidebar_label: "23 — Trending AI/ML Platforms & Tools (2026)"
 sidebar_position: 273

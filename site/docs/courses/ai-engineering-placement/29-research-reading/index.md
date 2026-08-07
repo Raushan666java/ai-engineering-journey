@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/29-research-reading
 title: "29 — Research Reading & AI Literature"
 sidebar_label: "29 — Research Reading & AI Literature"
 sidebar_position: 313

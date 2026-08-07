@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/24-statistics-mathematics
 title: "Statistics & Mathematics for AI Engineers"
 sidebar_label: "Statistics & Mathematics for AI Engineers"
 sidebar_position: 282

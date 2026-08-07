@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/17-ai-security-guardrails
 title: "17 — AI Security & Guardrails"
 sidebar_label: "17 — AI Security & Guardrails"
 sidebar_position: 208

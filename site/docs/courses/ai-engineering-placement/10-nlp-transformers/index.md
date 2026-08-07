@@ -1,6 +1,6 @@
 ---
 id: index
-slug: /ai-engineering-placement
+slug: /ai-engineering-placement/10-nlp-transformers
 title: "10 — NLP & Transformers"
 sidebar_label: "10 — NLP & Transformers"
 sidebar_position: 135

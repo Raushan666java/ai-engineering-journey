@@ -9,6 +9,8 @@ sidebar_position: 1
 
 > **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.
 
+> **Companion text — Agentic AI: The Complete Book:** A complete 17-chapter reference from first principles to production multi-agent systems (tool calling, hand-built ReAct loop, LangGraph, agentic RAG, MCP, guardrails, evaluation, deployment, and an end-to-end capstone). Read it chapter-by-chapter alongside this curriculum: [`agentic-ai-book/00-index.md`](agentic-ai-book/00-index.md)
+
 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">

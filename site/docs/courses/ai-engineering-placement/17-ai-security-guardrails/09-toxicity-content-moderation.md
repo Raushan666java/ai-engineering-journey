@@ -1,4 +1,4 @@
----
+﻿---
 id: 09-toxicity-content-moderation
 slug: /ai-engineering-placement/17-ai-security-guardrails/09-toxicity-content-moderation
 title: "Toxicity & Content Moderation"
@@ -27,7 +27,7 @@ AI applications serve millions of users daily. Without robust content moderation
 - Basic Python programming
 - Understanding of classification metrics (precision, recall, F1)
 - Familiarity with API clients (requests, HTTP)
-- Completion of [Content Filtering](../03-content-filtering.md) recommended
+- Completion of [Content Filtering](./03-content-filtering.md) recommended
 - Basic understanding of LLM prompting and fine-tuning concepts
 
 ## Key Terminology

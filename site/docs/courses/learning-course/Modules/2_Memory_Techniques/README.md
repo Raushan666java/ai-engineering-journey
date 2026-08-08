@@ -1,5 +1,5 @@
----
-slug: /learning-course/Modules/2_Memory_Techniques/README
+﻿---
+slug: /learning-course/Modules/2_Memory_Techniques/README.mdREADME
 title: "🧠 Module 2: Memory Techniques"
 sidebar_label: "🧠 Module 2: Memory Techniques"
 sidebar_position: 2

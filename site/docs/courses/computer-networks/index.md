@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /computer-networks/index
+slug: /computer-networks
 title: "Computer Networks — Complete Course Textbook"
 sidebar_label: "Computer Networks — Complete Course Textbook"
 sidebar_position: 19

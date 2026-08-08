@@ -88,7 +88,7 @@ export default function Home(): React.JSX.Element {
             {featuredCourses.map((course) => (
               <Link
                 key={course.slug}
-                to={`/courses/${course.slug}`}
+                to={`/${course.slug}`}
                 style={{
                   display: 'block',
                   padding: '1rem',

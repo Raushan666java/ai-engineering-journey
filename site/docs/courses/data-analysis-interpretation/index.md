@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /data-analysis-interpretation/index
+slug: /data-analysis-interpretation
 title: "Data Analysis & Interpretation"
 sidebar_label: "Data Analysis & Interpretation"
 sidebar_position: 6

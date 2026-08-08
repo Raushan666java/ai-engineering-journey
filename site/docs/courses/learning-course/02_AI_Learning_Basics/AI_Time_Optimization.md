@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/02_AI_Learning_Basics/AI_Time_Optimization
 title: "⏰ AI-Optimized Time Management"
 sidebar_label: "⏰ AI-Optimized Time Management"
@@ -296,7 +296,7 @@ Next week's optimization:
 ## 🔄 Next Steps
 1. **Apply:** [AI Mindset Coaching](AI_Mindset_Coaching.md)
 2. **Practice:** [Daily AI Exercises](../05_AI_Practice/Daily_AI_Exercises.md)
-3. **Track:** [AI Analytics](../04_AI_System_Mastery/AI_Learning_Analytics.md)
+3. **Track:** [AI Analytics](../04_AI_System_Mastery/Learning_Analytics.md)
 
 ---
 **Key Insight:** AI transforms time management from reactive scheduling to proactive optimization.

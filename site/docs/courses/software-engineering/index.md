@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /software-engineering/index
+slug: /software-engineering
 title: "Software Engineering — A Comprehensive Textbook"
 sidebar_label: "Software Engineering — A Comprehensive Textbook"
 sidebar_position: 17

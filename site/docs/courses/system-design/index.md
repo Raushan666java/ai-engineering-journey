@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /system-design/index
+slug: /system-design
 title: "System Design — Complete University Textbook"
 sidebar_label: "System Design — Complete University Textbook"
 sidebar_position: 25

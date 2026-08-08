@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/Learning_How_to_Learn_CS
 title: "Learning How to Learn — Computer Science (Single Page) 🔧"
 sidebar_label: "Learning How to Learn — Computer Science (Single Page) 🔧"
@@ -10,7 +10,7 @@ sidebar_position: 6
 
 ---
 
-## 🌟 Outcome Goals
+## Outcome Goals
 
 - **Understand** core CS concepts (algorithms, systems, data structures, OS, networks, databases).
 - **Apply** knowledge to projects, labs, and interviews.
@@ -19,7 +19,7 @@ sidebar_position: 6
 
 ---
 
-## 🧭 Core Principles
+## Core Principles
 
 - **Active Recall** — Test yourself before re-reading.
 - **Spaced Repetition** — Schedule reviews to move knowledge to long-term memory.
@@ -31,7 +31,7 @@ sidebar_position: 6
 
 ---
 
-## 🧭 Learning Framework — 4 Stages
+## Learning Framework — 4 Stages
 
 A compact, repeatable cycle you can apply to every topic or project. Use these stages intentionally and measure progress at each step.
 
@@ -79,7 +79,7 @@ A compact, repeatable cycle you can apply to every topic or project. Use these s
 
 ---
 
-## 🎯 Weekly Structure
+## Weekly Structure
 
 - 3× Deep Coding Sessions (90–120 min) — implement, debug, test
 - 2× Concept Sessions (60 min) — read + Feynman explain
@@ -89,7 +89,7 @@ A compact, repeatable cycle you can apply to every topic or project. Use these s
 
 ---
 
-## ⏱️ Daily Study Session Template (Pomodoro-friendly)
+## Daily Study Session Template (Pomodoro-friendly)
 
 1. 5 min — Set specific goal (e.g., "implement merge sort and test edge cases")
 2. 25–50 min — Focused work (no-phone)
@@ -99,7 +99,7 @@ A compact, repeatable cycle you can apply to every topic or project. Use these s
 
 ---
 
-## 🛠️ CS-Specific Strategies
+## CS-Specific Strategies
 
 - Algorithms: implement, benchmark, analyze complexity, compare variants.
 - Systems/OS/Networking: build small simulations; inspect traces.
@@ -110,7 +110,7 @@ A compact, repeatable cycle you can apply to every topic or project. Use these s
 
 ---
 
-## 🔁 Coding → Concept & Learning Styles
+## Coding → Concept & Learning Styles
 
 Connect code to concept efficiently and adapt study methods to your learning style.
 
@@ -139,7 +139,7 @@ Connect code to concept efficiently and adapt study methods to your learning sty
 
 ---
 
-## ✅ Practical Checklist
+## Practical Checklist
 
 - Daily: 1 focused session + 1 active recall review + 1 commit or small project change.
 - Weekly: 3 problems solved with written solutions, 1 project milestone, 1 concept explained in writing.
@@ -147,14 +147,14 @@ Connect code to concept efficiently and adapt study methods to your learning sty
 
 ---
 
-## 📈 Metrics to Track
+## Metrics to Track
 
 - Problems solved/week, project progress, flashcards reviewed, PRs/commits, mock interviews completed.
 - Aim: small consistent wins (e.g., 10 problems/week, +2 project features/month).
 
 ---
 
-## 🧰 Tools & Resources
+## Tools & Resources
 
 - Practice: LeetCode, Codeforces, HackerRank
 - Learning: MIT OCW, CS50, Coursera (Algorithms, OS)
@@ -163,7 +163,7 @@ Connect code to concept efficiently and adapt study methods to your learning sty
 
 ---
 
-## 📅 30/60/90 Day Roadmap
+## 30/60/90 Day Roadmap
 
 | Period |                    Focus | Success measures                                                     |
 | ------ | -----------------------: | -------------------------------------------------------------------- |
@@ -173,7 +173,7 @@ Connect code to concept efficiently and adapt study methods to your learning sty
 
 ---
 
-## 💡 Quick Tips
+## Quick Tips
 
 - Start small: 50 minutes focused beats 6 hours distracted. ✅
 - Explain solutions in writing — helps interviews and memory. ✍️
@@ -182,7 +182,7 @@ Connect code to concept efficiently and adapt study methods to your learning sty
 
 ---
 
-## 🔁 Weekly Retrospective (5 min)
+## Weekly Retrospective (5 min)
 
 - What worked? What blocked me? One improvement for next week.
 

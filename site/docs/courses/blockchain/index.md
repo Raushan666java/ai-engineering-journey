@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /blockchain/index
+slug: /blockchain
 title: "Blockchain Technology — Complete University Textbook"
 sidebar_label: "Blockchain Technology — Complete University Textbook"
 sidebar_position: 11

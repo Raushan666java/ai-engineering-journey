@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /machine-learning/index
+slug: /machine-learning
 title: "Machine Learning — Complete University Textbook"
 sidebar_label: "Machine Learning — Complete University Textbook"
 sidebar_position: 11

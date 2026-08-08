@@ -1,5 +1,5 @@
----
-slug: /learning-course/06_Resources/BEST_RESOURCES
+﻿---
+slug: /learning-course/06_06_Resources/BEST_RESOURCES
 title: "📚 Best Learning Resources"
 sidebar_label: "📚 Best Learning Resources"
 sidebar_position: 1
@@ -310,7 +310,7 @@ sidebar_position: 1
 ### Organization Strategy
 **Digital Folder Structure:**
 ```
-Learning Resources/
+Learning 06_Resources/
 ├── Books/
 │   ├── PDFs/
 │   ├── Audiobooks/

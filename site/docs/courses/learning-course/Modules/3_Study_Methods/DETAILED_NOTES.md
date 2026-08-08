@@ -1,5 +1,5 @@
----
-slug: /learning-course/Modules/3_Study_Methods/DETAILED_NOTES
+﻿---
+slug: /learning-course/Modules/3_Study_Methods/README.mdDETAILED_NOTES
 title: "📚 Study Methods - Detailed Notes"
 sidebar_label: "📚 Study Methods - Detailed Notes"
 sidebar_position: 1

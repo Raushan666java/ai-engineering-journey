@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /gate-cs-preparation/index
+slug: /gate-cs-preparation
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 30

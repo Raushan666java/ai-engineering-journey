@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /general-aptitude/index
+slug: /general-aptitude
 title: "General Aptitude"
 sidebar_label: "General Aptitude"
 sidebar_position: 7

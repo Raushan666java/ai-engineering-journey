@@ -75,9 +75,9 @@ const config: Config = {
           title: 'Courses',
           items: [
             {label: 'Placement Course', to: '/ai-engineering-placement'},
-            {label: 'Python', to: '/courses/python-programming'},
-            {label: 'Machine Learning', to: '/courses/machine-learning'},
-            {label: 'System Design', to: '/courses/system-design'},
+            {label: 'Python', to: '/python-programming'},
+            {label: 'Machine Learning', to: '/machine-learning'},
+            {label: 'System Design', to: '/system-design'},
           ],
         },
         {

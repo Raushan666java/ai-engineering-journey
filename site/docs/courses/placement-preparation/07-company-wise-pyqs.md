@@ -1,4 +1,4 @@
----
+﻿---
 id: 07-company-wise-pyqs
 slug: /placement-preparation/07-company-wise-pyqs
 title: "07 → Company-Wise Previous Year Questions"
@@ -81,7 +81,7 @@ flowchart LR
 
 ---
 
-# 1. FAANG Companies
+## 1. FAANG Companies
 
 ---
 
@@ -2365,7 +2365,7 @@ public class VerticalOrderTraversal {
 
 ---
 
-# 2. Product-Based India Companies
+## 2. Product-Based India Companies
 
 ---
 
@@ -3548,7 +3548,7 @@ public class SplitwiseDemo {
 
 ---
 
-# 3. Service-Based Companies
+## 3. Service-Based Companies
 
 ---
 
@@ -4481,7 +4481,7 @@ public class CharFrequency {
 
 ---
 
-# 4. New-Age Tech / Fintech / Product Companies
+## 4. New-Age Tech / Fintech / Product Companies
 
 ---
 

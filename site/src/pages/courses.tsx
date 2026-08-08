@@ -5,14 +5,9 @@ import Layout from '@theme/Layout';
 const courses = [
   { name: 'AI Engineering Placement', slug: 'ai-engineering-placement', category: 'Core' },
   { name: 'Machine Learning', slug: 'machine-learning', category: 'AI/ML' },
-  { name: 'Deep Learning / Neural Networks', slug: 'neural-networks', category: 'AI/ML' },
-  { name: 'Natural Language Processing', slug: 'natural-language-processing', category: 'AI/ML' },
-  { name: 'Computer Vision', slug: 'computer-vision', category: 'AI/ML' },
-  { name: 'Generative AI', slug: 'generative-ai', category: 'AI/ML' },
   { name: 'Modern AI Engineering', slug: 'modern-ai-engineering', category: 'AI/ML' },
   { name: 'Applied AI', slug: 'applied-ai', category: 'AI/ML' },
   { name: 'Artificial Intelligence', slug: 'artificial-intelligence', category: 'AI/ML' },
-  { name: 'Data Science', slug: 'data-science', category: 'AI/ML' },
   { name: 'Big Data', slug: 'big-data', category: 'AI/ML' },
   { name: 'Data Analysis & Interpretation', slug: 'data-analysis-interpretation', category: 'AI/ML' },
   { name: 'Data Structures', slug: 'data-structures', category: 'CS Core' },
@@ -104,7 +99,7 @@ export default function Courses(): React.JSX.Element {
               {courses.filter(c => c.category === cat).map(course => (
                 <Link
                   key={course.slug}
-                  to={`/docs/courses/${course.slug}`}
+                  to={`/${course.slug}`}
                   style={{
                     display: 'block',
                     padding: '0.75rem 1rem',

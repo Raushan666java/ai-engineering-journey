@@ -1,4 +1,4 @@
----
+﻿---
 id: ch-16-self-assessment-strategy
 slug: /learning-how-to-learn/ch-16-self-assessment-strategy
 title: "Chapter 16: Self-Assessment & Structured Preparation Strategy"
@@ -7,13 +7,13 @@ sidebar_position: 17
 ---
 # Chapter 16: Self-Assessment & Structured Preparation Strategy
 
-> **Prerequisites:** [Chapter 15: Exam Cracking Mastery](./ch-15-exam-cracking-mastery.md) — Universal exam strategy framework.
-> **Also see:** [Chapter 13: Learning Analytics](./ch-13-learning-analytics.md) — Measuring your learning progress.
+> **Prerequisites:** [Chapter 15: Exam Cracking Mastery](./ch-15-exam-cracking-mastery.md) â€” Universal exam strategy framework.
+> **Also see:** [Chapter 13: Learning Analytics](./ch-13-learning-analytics.md) â€” Measuring your learning progress.
 
-> **A complete system for self-assessment, gap analysis, strategy creation, progress tracking, and structured preparation — so you always know where you stand, what to study next, and how to improve.**
-> Covers Q261–Q290 — 30 Q&As
+> **A complete system for self-assessment, gap analysis, strategy creation, progress tracking, and structured preparation â€” so you always know where you stand, what to study next, and how to improve.**
+> Covers Q261â€“Q290 â€” 30 Q&As
 
-Most learners fail not because they lack ability, but because they lack clarity. They don't know what they know, what they don't know, or how to bridge the gap. This chapter gives you a repeatable system for self-assessment, strategy creation, and structured preparation — applicable to any exam, skill, or career goal.
+Most learners fail not because they lack ability, but because they lack clarity. They don't know what they know, what they don't know, or how to bridge the gap. This chapter gives you a repeatable system for self-assessment, strategy creation, and structured preparation â€” applicable to any exam, skill, or career goal.
 
 ---
 
@@ -56,7 +56,7 @@ After completing this chapter, you will be able to:
 |-------|-------------|-------------------|
 | Self-Assessment | You can't improve what you can't measure | Score yourself on a 1-5 scale per topic using objective criteria |
 | Gap Analysis | Unknown unknowns are the biggest risk | Use PYQs and mock tests to surface hidden gaps |
-| Strategy Creation | Your strategy must match your current level | Beginner → Intermediate → Advanced → Expert requires different approaches |
+| Strategy Creation | Your strategy must match your current level | Beginner â†’ Intermediate â†’ Advanced â†’ Expert requires different approaches |
 | Structured Preparation | Consistency beats intensity | Build daily/weekly/monthly cycles that compound over time |
 | Progress Tracking | Measure inputs (hours) AND outputs (scores) | Track both effort metrics and performance metrics |
 | Dreyfus Model of Skill | There are 5 stages from Novice to Expert | Identify your stage per subject and use stage-appropriate techniques |
@@ -122,11 +122,11 @@ Multiply your score by the topic weightage to get a **weighted readiness score**
 ```
 Example: DBMS (weightage 9/10)
   Your score: 3 (Intermediate)
-  Weighted readiness: 3 × 9 = 27/45 possible
+  Weighted readiness: 3 Ã— 9 = 27/45 possible
 
 Example: Digital Logic (weightage 5/10)
   Your score: 4 (Advanced)
-  Weighted readiness: 4 × 5 = 20/45 possible
+  Weighted readiness: 4 Ã— 5 = 20/45 possible
 ```
 
 **Step 4: Identify Priority Gaps**
@@ -153,9 +153,9 @@ interface TopicAssessment {
 
 interface AssessmentResult {
   topic: string;
-  weightedScore: number; // weightage × selfScore
-  maxScore: number; // weightage × 5
-  percentReady: number; // (weightedScore / maxScore) × 100
+  weightedScore: number; // weightage Ã— selfScore
+  maxScore: number; // weightage Ã— 5
+  percentReady: number; // (weightedScore / maxScore) Ã— 100
   priority: 'Critical' | 'High' | 'Medium' | 'Low';
 }
 
@@ -207,7 +207,7 @@ Gap analysis finds the difference between where you are and where you need to be
 | **Known Knowns** | You know you know | Easy questions, quick recall | Maintain with spaced repetition |
 | **Known Unknowns** | You know you don't know | You can identify topics you haven't studied | Study systematically |
 | **Unknown Knowns** | You don't know you know | Surprise yourself by solving unfamiliar problems | Build confidence, take more mocks |
-| **Unknown Unknowns** | You don't know you don't know | The most dangerous — gaps revealed only by PYQs/mocks | Take diagnostic tests first |
+| **Unknown Unknowns** | You don't know you don't know | The most dangerous â€” gaps revealed only by PYQs/mocks | Take diagnostic tests first |
 
 ### Gap Discovery Methods
 
@@ -231,7 +231,7 @@ Create a spreadsheet with these columns:
 | DBMS  | Transactions | 2 | 1 | -1 | Critical | Study ACID, schedules, serializability |
 ```
 
-**TypeScript — Gap Analyzer:**
+**TypeScript â€” Gap Analyzer:**
 
 ```typescript
 interface Gap {
@@ -251,16 +251,16 @@ function analyzeGaps(topics: Omit<Gap, 'gap' | 'priority' | 'actionPlan'>[]): Ga
     let actionPlan: string;
     
     if (gap < -1 && t.selfScore >= 3) {
-      priority = '🔴 Critical Overestimate';
-      actionPlan = 'Complete re-study from basics — your confidence is misleading';
+      priority = 'ðŸ”´ Critical Overestimate';
+      actionPlan = 'Complete re-study from basics â€” your confidence is misleading';
     } else if (gap < 0) {
-      priority = '🟡 Needs Work';
+      priority = 'ðŸŸ¡ Needs Work';
       actionPlan = 'Targeted practice on weak sub-topics';
     } else if (gap === 0 && t.selfScore <= 2) {
-      priority = '🟠 Needs Improvement';
+      priority = 'ðŸŸ  Needs Improvement';
       actionPlan = 'Continue current study plan';
     } else {
-      priority = '🟢 On Track';
+      priority = 'ðŸŸ¢ On Track';
       actionPlan = 'Maintain with spaced repetition';
     }
     
@@ -274,10 +274,10 @@ const gaps = analyzeGaps([
   { topic: 'OS', subTopic: 'Scheduling', selfScore: 2, testScore: 1 },
 ]);
 
-gaps.forEach(g => console.log(`${g.priority}: ${g.topic} — ${g.subTopic}`));
-// 🔴 Critical Overestimate: DBMS — Normalization
-// 🟢 On Track: DBMS — SQL Joins
-// 🟠 Needs Improvement: OS — Scheduling
+gaps.forEach(g => console.log(`${g.priority}: ${g.topic} â€” ${g.subTopic}`));
+// ðŸ”´ Critical Overestimate: DBMS â€” Normalization
+// ðŸŸ¢ On Track: DBMS â€” SQL Joins
+// ðŸŸ  Needs Improvement: OS â€” Scheduling
 ```
 
 ---
@@ -290,44 +290,44 @@ Your strategy must match your current level. The same plan won't work for a begi
 
 | Level | Goal | Strategy | Weekly Hours | Resources |
 |-------|------|----------|--------------|-----------|
-| **1 — Novice** | Build foundational understanding | Read/watch tutorials, solve easy problems, build mental models | 15-20 | Textbook + video + simple exercises |
-| **2 — Advanced Beginner** | Apply concepts independently | Solve medium problems, take topic tests, identify weak areas | 20-25 | Practice sets + PYQs by topic |
-| **3 — Competent** | Develop speed and accuracy | Timed practice, mock tests, mistake analysis | 25-30 | Full mocks + time-bound drills |
-| **4 — Proficient** | Achieve mastery and consistency | Advanced problems, peer teaching, edge cases | 20-25 | Hard problems + explain to others |
-| **5 — Expert** | Maintain and innovate | Stay current, teach, contribute, solve novel problems | 10-15 | Research papers + mentoring |
+| **1 â€” Novice** | Build foundational understanding | Read/watch tutorials, solve easy problems, build mental models | 15-20 | Textbook + video + simple exercises |
+| **2 â€” Advanced Beginner** | Apply concepts independently | Solve medium problems, take topic tests, identify weak areas | 20-25 | Practice sets + PYQs by topic |
+| **3 â€” Competent** | Develop speed and accuracy | Timed practice, mock tests, mistake analysis | 25-30 | Full mocks + time-bound drills |
+| **4 â€” Proficient** | Achieve mastery and consistency | Advanced problems, peer teaching, edge cases | 20-25 | Hard problems + explain to others |
+| **5 â€” Expert** | Maintain and innovate | Stay current, teach, contribute, solve novel problems | 10-15 | Research papers + mentoring |
 
 ### The Strategy Creation Framework (SCF)
 
 ```
 STEP 1: SELF-ASSESS
   Score each subject 1-5 using the assessment protocol
-  → Creates a baseline of where you are
+  â†’ Creates a baseline of where you are
   
 STEP 2: DEFINE TARGET
   What score/rank/cutoff do you need?
-  → Creates a clear target
+  â†’ Creates a clear target
   
 STEP 3: CALCULATE GAP
-  Target — Baseline = Gap
-  → Quantifies the work needed
+  Target â€” Baseline = Gap
+  â†’ Quantifies the work needed
   
 STEP 4: ALLOCATE RESOURCES
-  More time to bigger gaps × higher weightage topics
-  → Creates a time budget per subject
+  More time to bigger gaps Ã— higher weightage topics
+  â†’ Creates a time budget per subject
   
 STEP 5: CHOOSE METHODS
-  Novice → video + textbook
-  Intermediate → practice + mocks
-  Advanced → peer teaching + advanced problems
-  → Selects the right approach per subject
+  Novice â†’ video + textbook
+  Intermediate â†’ practice + mocks
+  Advanced â†’ peer teaching + advanced problems
+  â†’ Selects the right approach per subject
   
 STEP 6: BUILD SCHEDULE
   Daily + weekly + monthly cycles
-  → Creates an executable plan
+  â†’ Creates an executable plan
   
 STEP 7: ADD FEEDBACK LOOPS
   Weekly review, monthly re-assessment
-  → Creates a system that self-corrects
+  â†’ Creates a system that self-corrects
 ```
 
 ```mermaid
@@ -394,7 +394,7 @@ const myStrategy = createStrategy([
 ], 35);
 
 myStrategy.forEach(s => {
-  console.log(`${s.subject}: ${s.hoursPerWeek}h/week — ${s.primaryMethod}`);
+  console.log(`${s.subject}: ${s.hoursPerWeek}h/week â€” ${s.primaryMethod}`);
 });
 ```
 
@@ -435,11 +435,11 @@ flowchart LR
 
 | Time | Duration | Activity | Resource |
 |------|----------|----------|----------|
-| 0-15 min | 15 min | Warm-up drill | [Speed Drills](courses/speed-drills/) or 5 easy MCQs |
+| 0-15 min | 15 min | Warm-up drill | [Speed Drills](/speed-drills/) or 5 easy MCQs |
 | 15-105 min | 90 min | Deep study (1 subject) | Textbook/video + notes + Anki |
 | 105-135 min | 30 min | Practice (same subject) | Topic-wise questions |
 | 135-150 min | 15 min | Review + Anki cards | Mistake log, spaced repetition |
-| Bonus | 30 min | Current affairs / GA | [General Awareness](courses/general-awareness/) |
+| Bonus | 30 min | Current affairs / GA | [General Awareness](/general-awareness/) |
 
 ### Weekly Preparation Template
 
@@ -515,18 +515,18 @@ function analyzeTrend(data: ProgressData[]): string {
     (first.mistakesC + first.mistakesM + first.mistakesE);
   
   const result: string[] = [];
-  result.push(`📊 Progress Report: Week ${first.week} → Week ${last.week}`);
+  result.push(`ðŸ“Š Progress Report: Week ${first.week} â†’ Week ${last.week}`);
   
-  if (accuracyTrend > 5) result.push('✅ Accuracy: Improving significantly');
-  else if (accuracyTrend > 0) result.push('🟡 Accuracy: Slight improvement');
-  else result.push('🔴 Accuracy: Declining — review fundamentals');
+  if (accuracyTrend > 5) result.push('âœ… Accuracy: Improving significantly');
+  else if (accuracyTrend > 0) result.push('ðŸŸ¡ Accuracy: Slight improvement');
+  else result.push('ðŸ”´ Accuracy: Declining â€” review fundamentals');
   
-  if (mockTrend > 10) result.push('✅ Mock Score: Strong improvement');
-  else if (mockTrend > 0) result.push('🟡 Mock Score: Marginal gain');
-  else result.push('🔴 Mock Score: Dropping — change strategy');
+  if (mockTrend > 10) result.push('âœ… Mock Score: Strong improvement');
+  else if (mockTrend > 0) result.push('ðŸŸ¡ Mock Score: Marginal gain');
+  else result.push('ðŸ”´ Mock Score: Dropping â€” change strategy');
   
-  if (mistakeTrend < 0) result.push('✅ Mistakes: Decreasing (good)');
-  else result.push('🔴 Mistakes: Increasing — need more analysis');
+  if (mistakeTrend < 0) result.push('âœ… Mistakes: Decreasing (good)');
+  else result.push('ðŸ”´ Mistakes: Increasing â€” need more analysis');
   
   return result.join('\n');
 }
@@ -558,10 +558,10 @@ flowchart TD
     end
     
     E --> J{Healthy?}
-    J -->|Input ↑ Output ↑| K[✅ On Track]
-    J -->|Input ↑ Output ↓| L[🔴 Change Methods]
-    J -->|Input ↓ Output ↓| M[🔴 Increase Effort]
-    J -->|Input ↓ Output ↑| N[🟡 Efficiency Gain]
+    J -->|Input â†‘ Output â†‘| K[âœ… On Track]
+    J -->|Input â†‘ Output â†“| L[ðŸ”´ Change Methods]
+    J -->|Input â†“ Output â†“| M[ðŸ”´ Increase Effort]
+    J -->|Input â†“ Output â†‘| N[ðŸŸ¡ Efficiency Gain]
 ```
 
 ---
@@ -574,11 +574,11 @@ Plateaus are normal in any learning journey. The key is recognizing them and kno
 
 | Stage | Description | Time at Stage | How to Progress |
 |-------|-------------|---------------|-----------------|
-| **1 — Novice** | Follows rules, needs context-free instructions | 1-4 weeks | Study examples, practice with guidance |
-| **2 — Advanced Beginner** | Can apply rules to familiar situations | 1-3 months | Practice varied problems, build pattern recognition |
-| **3 — Competent** | Can plan and prioritize, troubleshoot | 3-12 months | Deliberate practice, identify weak spots |
-| **4 — Proficient** | Sees the big picture, learns from experience | 1-5 years | Teach others, review holistically |
-| **5 — Expert** | Intuitive, doesn't rely on rules | 5+ years | Contribute new knowledge, mentor |
+| **1 â€” Novice** | Follows rules, needs context-free instructions | 1-4 weeks | Study examples, practice with guidance |
+| **2 â€” Advanced Beginner** | Can apply rules to familiar situations | 1-3 months | Practice varied problems, build pattern recognition |
+| **3 â€” Competent** | Can plan and prioritize, troubleshoot | 3-12 months | Deliberate practice, identify weak spots |
+| **4 â€” Proficient** | Sees the big picture, learns from experience | 1-5 years | Teach others, review holistically |
+| **5 â€” Expert** | Intuitive, doesn't rely on rules | 5+ years | Contribute new knowledge, mentor |
 
 ### Breaking Through Plateaus
 
@@ -643,33 +643,33 @@ flowchart TD
 Every Sunday, spend 30 minutes running the OODA loop:
 
 ```
-📋 SUNDAY OODA REVIEW
-─────────────────────
+ðŸ“‹ SUNDAY OODA REVIEW
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 OBSERVE (10 min):
-  □ Hours studied this week: ___
-  □ Questions solved: ___
-  □ Mock score: ___/___
-  □ Mistake counts: C=___ M=___ E=___ R=___
-  □ Anki reviews done: ___
+  â–¡ Hours studied this week: ___
+  â–¡ Questions solved: ___
+  â–¡ Mock score: ___/___
+  â–¡ Mistake counts: C=___ M=___ E=___ R=___
+  â–¡ Anki reviews done: ___
 
 ORIENT (10 min):
-  □ Top 3 things that went well: 1.___ 2.___ 3.___
-  □ Top 3 things that went wrong: 1.___ 2.___ 3.___
-  □ Is my accuracy improving? Y/N
-  □ Are my C-type mistakes decreasing? Y/N
-  □ Am I spending time on the right subjects? Y/N
+  â–¡ Top 3 things that went well: 1.___ 2.___ 3.___
+  â–¡ Top 3 things that went wrong: 1.___ 2.___ 3.___
+  â–¡ Is my accuracy improving? Y/N
+  â–¡ Are my C-type mistakes decreasing? Y/N
+  â–¡ Am I spending time on the right subjects? Y/N
 
 DECIDE (5 min):
-  □ Next week's focus subject: ___
-  □ One thing to STOP doing: ___
-  □ One thing to START doing: ___
-  □ One thing to CONTINUE: ___
+  â–¡ Next week's focus subject: ___
+  â–¡ One thing to STOP doing: ___
+  â–¡ One thing to START doing: ___
+  â–¡ One thing to CONTINUE: ___
 
 ACT (5 min):
-  □ Update weekly schedule
-  □ Adjust Anki deck priorities
-  □ Plan next week's mock test
+  â–¡ Update weekly schedule
+  â–¡ Adjust Anki deck priorities
+  â–¡ Plan next week's mock test
 ```
 
 ---
@@ -703,23 +703,23 @@ Feedback loops are the engine of improvement. The faster and more accurate your 
 ### The Feedback Quality Formula
 
 ```
-Feedback Quality = Speed × Accuracy × Actionability
+Feedback Quality = Speed Ã— Accuracy Ã— Actionability
 
 Speed: How quickly after the action?
 Accuracy: How precise is the feedback?
 Actionability: Can you directly use it to improve?
 
 Example - Solving a coding problem:
-  Speed: Immediate (9/10) ✓
-  Accuracy: Exact test case output (10/10) ✓
-  Actionability: Fix specific bug (8/10) ✓
-  → Quality Score: 9 × 10 × 8 = 720/1000
+  Speed: Immediate (9/10) âœ“
+  Accuracy: Exact test case output (10/10) âœ“
+  Actionability: Fix specific bug (8/10) âœ“
+  â†’ Quality Score: 9 Ã— 10 Ã— 8 = 720/1000
 
 Example - Reading a textbook chapter:
-  Speed: Delayed (3/10) ✗
-  Accuracy: General understanding (5/10) ✗
-  Actionability: Unclear (3/10) ✗
-  → Quality Score: 3 × 5 × 3 = 45/1000
+  Speed: Delayed (3/10) âœ—
+  Accuracy: General understanding (5/10) âœ—
+  Actionability: Unclear (3/10) âœ—
+  â†’ Quality Score: 3 Ã— 5 Ã— 3 = 45/1000
 ```
 
 ---
@@ -735,9 +735,9 @@ Combining everything in this chapter into one actionable plan.
 Be specific, measurable, and time-bound.
 
 ```
-❌ Bad: "I want to clear IBPS SO"
-✅ Good: "I want to score 75+ in IBPS SO IT Officer 2027 exam (October 2027)"
-✅ Better: "I want to score 75+/175 with sectional: PK 35+, Reasoning 20+, Quant 12+, English 10+"
+âŒ Bad: "I want to clear IBPS SO"
+âœ… Good: "I want to score 75+ in IBPS SO IT Officer 2027 exam (October 2027)"
+âœ… Better: "I want to score 75+/175 with sectional: PK 35+, Reasoning 20+, Quant 12+, English 10+"
 ```
 
 **Step 2: Assess Your Current State**
@@ -759,8 +759,8 @@ Use the self-assessment protocol from Q261. Score every subject on the 1-5 scale
 Exam date: October 2027
 Today: July 2026
 Available months: 15 months = 60 weeks = ~420 days
-Available hours: 3 hrs/day × 6 days/week × 60 weeks = 1,080 hours
-Study hours per subject = (weighted gap / total weighted gap) × 1,080
+Available hours: 3 hrs/day Ã— 6 days/week Ã— 60 weeks = 1,080 hours
+Study hours per subject = (weighted gap / total weighted gap) Ã— 1,080
 ```
 
 **Step 5: Build the Schedule**
@@ -796,23 +796,23 @@ This repository is designed to support every stage of your preparation journey.
 | Stage | What to Use | How to Use |
 |-------|-------------|------------|
 | **Self-Assessment** | [Learning How to Learn ch 16](ch-16-self-assessment-strategy.md) | Score yourself 1-5 per subject, identify gaps |
-| **Concept Learning** | Subject courses (DBMS, OS, CN, DS, etc.) | Read chapters → solve MCQs → create Anki cards |
+| **Concept Learning** | Subject courses (DBMS, OS, CN, DS, etc.) | Read chapters â†’ solve MCQs â†’ create Anki cards |
 | **Topic Practice** | Chapter exercises + MCQs | Solve all exercises per chapter |
-| **Applied Practice** | [Coding Problems](courses/coding-problems/) | Solve problems by topic with company tags |
-| **Speed Building** | [Speed Drills](courses/speed-drills/) | Timed sets with accuracy tracking |
-| **Mock Tests** | [Mock Tests](courses/mock-tests/) | Full-length timed mocks |
-| **PYQs** | [Government PYQs](courses/government-pyqs/) + [GATE PYQs](courses/gate-cs-preparation/) | Year-wise solved papers |
-| **Company Prep** | [Company QBs](courses/interview-preparation/) | Target-specific problems |
+| **Applied Practice** | [Coding Problems](/coding-problems/) | Solve problems by topic with company tags |
+| **Speed Building** | [Speed Drills](/speed-drills/) | Timed sets with accuracy tracking |
+| **Mock Tests** | [Mock Tests](/mock-tests/) | Full-length timed mocks |
+| **PYQs** | [Government PYQs](/government-pyqs/) + [GATE PYQs](/gate-cs-preparation/) | Year-wise solved papers |
+| **Company Prep** | [Company QBs](/interview-preparation/) | Target-specific problems |
 | **Revision** | Formula sheets + Anki + mistake log | Daily review |
 | **Re-assessment** | Self-assessment protocol (this chapter) | Monthly re-score |
 
 ### Recommended Path Through This Repository
 
 ```
-1. Start here: [Learning How to Learn](index.md) — all 16 chapters in order
+1. Start here: [Learning How to Learn](index.md) â€” all 16 chapters in order
 2. Self-assess using this chapter's protocol
-3. Choose your path from the [Complete Roadmap](../../roadmap.md)
-4. Study subject courses → practice → mock tests → analyze → repeat
+3. Choose your path from the [Complete Roadmap](../../index.md)
+4. Study subject courses â†’ practice â†’ mock tests â†’ analyze â†’ repeat
 5. Use the OODA loop weekly to refine your approach
 6. Re-assess monthly to track progress
 ```
@@ -892,8 +892,8 @@ The monthly review is your most important feedback loop.
 Run this on the last weekend of every month.
 
 ```
-📅 MONTHLY STRATEGY REVIEW
-──────────────────────────
+ðŸ“… MONTHLY STRATEGY REVIEW
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Date: __________
 
 INPUT METRICS:
@@ -904,10 +904,10 @@ INPUT METRICS:
 
 OUTPUT METRICS:
   Subject scores (1-5):
-    DBMS: __ → __ (change: __)
-    OS: __ → __ (change: __)
-    CN: __ → __ (change: __)
-    DS: __ → __ (change: __)
+    DBMS: __ â†’ __ (change: __)
+    OS: __ â†’ __ (change: __)
+    CN: __ â†’ __ (change: __)
+    DS: __ â†’ __ (change: __)
     [continue for all subjects]
   
   Best mock score: ___/___
@@ -948,7 +948,7 @@ NEXT MONTH'S PLAN:
 
 Many successful candidates needed multiple attempts. Here's how to make each attempt count.
 
-### After a Failed Attempt — First 48 Hours
+### After a Failed Attempt â€” First 48 Hours
 
 ```
 HOURS 0-24: PROCESS
@@ -970,8 +970,8 @@ HOURS 24-48: ANALYZE
 |---------|------------|--------|-----|------------|
 | Professional Knowledge | 28/60 | 30/60 | -2 | Misc: C-type mistakes on OS |
 | Reasoning | 22/45 | 15/45 | +7 | Strength area |
-| Quant | 10/35 | 10/35 | 0 | Barely passed — needs work |
-| English | 8/35 | 8/35 | 0 | Barely passed — needs work |
+| Quant | 10/35 | 10/35 | 0 | Barely passed â€” needs work |
+| English | 8/35 | 8/35 | 0 | Barely passed â€” needs work |
 | **Total** | **68/175** | **55-60** | **+8** | Passed overall but weak sections |
 
 ### Retake Strategy
@@ -1051,35 +1051,35 @@ A visual calendar helps you see the big picture and stay motivated.
 ### 6-Month Preparation Calendar Template
 
 ```
-MONTH 1 — FOUNDATION
+MONTH 1 â€” FOUNDATION
   Week 1: Self-assessment + strategy creation
   Week 2-3: Subject A + Subject B (deep study)
   Week 4: Subject C + Subject D (deep study)
   First mock: End of Month 1
 
-MONTH 2 — BUILDING
+MONTH 2 â€” BUILDING
   Week 1-2: Subject E + Subject F (deep study)
-  Week 3: All subjects — topic-wise practice
+  Week 3: All subjects â€” topic-wise practice
   Week 4: Full revision of all subjects
   Second mock: End of Month 2
 
-MONTH 3 — PRACTICE
+MONTH 3 â€” PRACTICE
   Week 1-2: 2 mocks per week + detailed analysis
   Week 3-4: Weak area focus + speed building
   Third + Fourth mock
 
-MONTH 4 — INTENSIFICATION
+MONTH 4 â€” INTENSIFICATION
   Week 1-2: 3 mocks per week
   Week 3: Advanced topic coverage
   Week 4: Full analysis + trend review
   Fifth, Sixth, Seventh mock
 
-MONTH 5 — PEAK
+MONTH 5 â€” PEAK
   Week 1-2: 3 mocks per week + mistake elimination
   Week 3: Formula revision + mental prep
   Week 4: Reduced intensity, confidence building
 
-MONTH 6 — EXAM READY
+MONTH 6 â€” EXAM READY
   Week 1: 2 mocks + final gap fixing
   Week 2: Light revision + exam simulation
   Week 3: Last week prep (per ch 15 protocol)
@@ -1106,7 +1106,7 @@ flowchart LR
 
 | Technique | How It Works | When to Use |
 |-----------|-------------|-------------|
-| **Streak Tracking** | Don't break the chain — visual progress | Daily |
+| **Streak Tracking** | Don't break the chain â€” visual progress | Daily |
 | **Study Group** | Social accountability | Weekly |
 | **Reward System** | Treat yourself after milestones | After each mock/test |
 | **Visual Progress** | Progress bar, graph of scores | Weekly review |
@@ -1150,17 +1150,17 @@ flowchart TD
 
 | Need | Go To |
 |------|-------|
-| Assess my current level | [Self-Assessment Protocol](ch-16-self-assessment-strategy.md#q261) |
+| Assess my current level | [Self-Assessment Protocol](ch-16-self-assessment-strategy.md#q261-how-do-i-conduct-a-comprehensive-self-assessment) |
 | Learn a CS subject | Subject courses (DBMS, OS, CN, etc.) |
-| Practice coding | [Coding Problems](courses/coding-problems/) |
-| Build speed | [Speed Drills](courses/speed-drills/) |
-| Take a mock test | [Mock Tests](courses/mock-tests/) |
-| Solve PYQs | [Government PYQs](courses/government-pyqs/) or [GATE PYQs](courses/gate-cs-preparation/) |
+| Practice coding | [Coding Problems](/coding-problems/) |
+| Build speed | [Speed Drills](/speed-drills/) |
+| Take a mock test | [Mock Tests](/mock-tests/) |
+| Solve PYQs | [Government PYQs](/government-pyqs/) or [GATE PYQs](/gate-cs-preparation/) |
 | Analyze mistakes | [C/M/E/R Taxonomy](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/learning-how-to-learn/ch-15-exam-cracking-mastery.md#q232) |
-| Review strategy | [OODA Loop](ch-16-self-assessment-strategy.md#q267) |
-| Stay motivated | [Motivation Techniques](ch-16-self-assessment-strategy.md#q278) |
-| Plan my month | [Monthly Review](ch-16-self-assessment-strategy.md#q273) |
-| Get the big picture | [Complete Roadmap](../../roadmap.md) |
+| Review strategy | [OODA Loop](ch-16-self-assessment-strategy.md#q267-what-is-the-ooda-loop-and-how-do-i-apply-it-to-learning) |
+| Stay motivated | [Motivation Techniques](ch-16-self-assessment-strategy.md#q278-how-do-i-maintain-motivation-over-long-preparation-periods) |
+| Plan my month | [Monthly Review](ch-16-self-assessment-strategy.md#q273-how-do-i-conduct-a-monthly-strategy-review) |
+| Get the big picture | [Complete Roadmap](../../index.md) |
 
 ---
 
@@ -1168,16 +1168,16 @@ flowchart TD
 
 Self-assessment and structured preparation are the meta-skills that amplify every other skill you learn. The key principles are:
 
-1. **You can't improve what you don't measure** — Use the 1-5 scoring system to objectively assess every subject
-2. **Gap analysis reveals unknown unknowns** — PYQs and mock tests surface gaps you didn't know existed
-3. **Strategy must match your level** — Novice, Competent, and Expert learners need different approaches
-4. **Structured preparation uses three cycles** — Daily execution, weekly review, monthly strategy adjustment
-5. **Track both inputs and outputs** — Hours studied (input) and scores achieved (output) tell different stories
-6. **Plateaus are normal and breakable** — Use the Dreyfus model to identify your stage and the right fix
-7. **The OODA loop keeps you on track** — Weekly Observe-Orient-Decide-Act review prevents drift
-8. **Fast feedback accelerates improvement** — Immediate, accurate, actionable feedback is the engine of growth
-9. **Adaptability is essential** — Have contingency plans for when life changes
-10. **This repository is a complete system** — All resources are designed to work together for any exam
+1. **You can't improve what you don't measure** â€” Use the 1-5 scoring system to objectively assess every subject
+2. **Gap analysis reveals unknown unknowns** â€” PYQs and mock tests surface gaps you didn't know existed
+3. **Strategy must match your level** â€” Novice, Competent, and Expert learners need different approaches
+4. **Structured preparation uses three cycles** â€” Daily execution, weekly review, monthly strategy adjustment
+5. **Track both inputs and outputs** â€” Hours studied (input) and scores achieved (output) tell different stories
+6. **Plateaus are normal and breakable** â€” Use the Dreyfus model to identify your stage and the right fix
+7. **The OODA loop keeps you on track** â€” Weekly Observe-Orient-Decide-Act review prevents drift
+8. **Fast feedback accelerates improvement** â€” Immediate, accurate, actionable feedback is the engine of growth
+9. **Adaptability is essential** â€” Have contingency plans for when life changes
+10. **This repository is a complete system** â€” All resources are designed to work together for any exam
 
 ---
 
@@ -1202,7 +1202,7 @@ Self-assessment and structured preparation are the meta-skills that amplify ever
 
 <details>
 <summary>Show Answer</summary>
-**Answer:** D) Unknown Unknowns — gaps you don't know exist, revealed only by diagnostic tests and PYQs.
+**Answer:** D) Unknown Unknowns â€” gaps you don't know exist, revealed only by diagnostic tests and PYQs.
 </details>
 
 3. Which OODA loop phase involves analyzing what your metrics mean?
@@ -1213,7 +1213,7 @@ Self-assessment and structured preparation are the meta-skills that amplify ever
 
 <details>
 <summary>Show Answer</summary>
-**Answer:** B) Orient — where you analyze the data you've observed to understand what it means.
+**Answer:** B) Orient â€” where you analyze the data you've observed to understand what it means.
 </details>
 
 4. What is the recommended frequency for running the OODA loop on your preparation?
@@ -1224,7 +1224,7 @@ Self-assessment and structured preparation are the meta-skills that amplify ever
 
 <details>
 <summary>Show Answer</summary>
-**Answer:** B) Weekly — the Sunday OODA review keeps you on track without being too frequent.
+**Answer:** B) Weekly â€” the Sunday OODA review keeps you on track without being too frequent.
 </details>
 
 5. According to the Dreyfus model, how long does it typically take to reach the "Competent" stage in a subject?
@@ -1263,7 +1263,7 @@ Self-assessment and structured preparation are the meta-skills that amplify ever
 
 2. **Gap Analysis Spreadsheet:** Create a spreadsheet with columns: Subject, Sub-topic, Self Score, Test Score, Gap, Priority, Action Plan. Fill in at least 20 rows from your latest mock test.
 
-3. **Strategy Creation:** Use the 7-step framework (Goal → Assess → Gap → Resources → Methods → Schedule → Feedback) to create your complete preparation strategy. Write it down as a one-page document.
+3. **Strategy Creation:** Use the 7-step framework (Goal â†’ Assess â†’ Gap â†’ Resources â†’ Methods â†’ Schedule â†’ Feedback) to create your complete preparation strategy. Write it down as a one-page document.
 
 4. **OODA Review Journal:** Start a weekly OODA review journal. Every Sunday for the next 4 weeks, run through Observe-Orient-Decide-Act and write down your reflections.
 
@@ -1283,9 +1283,10 @@ Self-assessment and structured preparation are the meta-skills that amplify ever
 
 ## Further Reading
 
-- **Chapter 13:** [Learning Analytics](./ch-13-learning-analytics.md) — Measuring your learning with objective metrics
-- **Chapter 14:** [Social Learning & Communities](./ch-14-social-learning-communities.md) — Learning with others for accountability
-- **Chapter 15:** [Exam Cracking Mastery](./ch-15-exam-cracking-mastery.md) — Universal exam strategy, mock analysis, C/M/E/R taxonomy
-- **Roadmap:** [Complete Course Roadmap](../../roadmap.md) — All preparation paths in one place
-- **Coding Problems:** [Coding Problems Bank](../../courses/coding-problems/index.md) — 220 problems with company tags
-- **Mock Tests:** [Full-Length Mocks](../../courses/mock-tests/index.md) — IBPS SO, NIC, SBI, RBI, SSC, GATE
+- **Chapter 13:** [Learning Analytics](./ch-13-learning-analytics.md) â€” Measuring your learning with objective metrics
+- **Chapter 14:** [Social Learning & Communities](./ch-14-social-learning-communities.md) â€” Learning with others for accountability
+- **Chapter 15:** [Exam Cracking Mastery](./ch-15-exam-cracking-mastery.md) â€” Universal exam strategy, mock analysis, C/M/E/R taxonomy
+- **Roadmap:** [Complete Course Roadmap](../../index.md) â€” All preparation paths in one place
+- **Coding Problems:** [Coding Problems Bank](../../courses/coding-problems/index.md) â€” 220 problems with company tags
+- **Mock Tests:** [Full-Length Mocks](../../courses/mock-tests/index.md) â€” IBPS SO, NIC, SBI, RBI, SSC, GATE
+

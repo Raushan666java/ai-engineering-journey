@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /cloud-computing/index
+slug: /cloud-computing
 title: "Cloud Computing — Comprehensive Course Textbook"
 sidebar_label: "Cloud Computing — Comprehensive Course Textbook"
 sidebar_position: 11

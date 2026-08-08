@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /cyber-security/index
+slug: /cyber-security
 title: "CS 410: Comprehensive Cyber Security (Expanded Edition)"
 sidebar_label: "CS 410: Comprehensive Cyber Security (Expanded Edition)"
 sidebar_position: 21

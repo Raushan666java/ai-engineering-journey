@@ -1,4 +1,4 @@
-# Chapter 10: The Application Layer → Complete Reference
+﻿# Chapter 10: The Application Layer → Complete Reference
 
 > **GFG/Javatpoint Depth → Comprehensive Coverage of Application Layer Protocols, Architectures, Implementations, and Interview Corner**
 
@@ -37,13 +37,13 @@
 ## Table of Contents
 
 1. [Application Layer Architecture](#101-application-layer-architecture)
-2. [HTTP → Hypertext Transfer Protocol](#102-http)
-3. [DNS → Domain Name System](#103-dns)
+2. [HTTP → Hypertext Transfer Protocol](#102-http--hypertext-transfer-protocol)
+3. [DNS → Domain Name System](#103-dns--domain-name-system)
 4. [Email Protocols](#104-email-protocols)
-5. [FTP → File Transfer Protocol](#105-ftp)
-6. [SSH → Secure Shell](#106-ssh)
-7. [DHCP → Dynamic Host Configuration Protocol](#107-dhcp)
-8. [SNMP → Simple Network Management Protocol](#108-snmp)
+5. [FTP → File Transfer Protocol](#105-ftp--file-transfer-protocol)
+6. [SSH → Secure Shell](#106-ssh--secure-shell)
+7. [DHCP → Dynamic Host Configuration Protocol](#107-dhcp--dynamic-host-configuration-protocol)
+8. [SNMP → Simple Network Management Protocol](#108-snmp--simple-network-management-protocol)
 9. [WebSocket](#109-websocket)
 10. [gRPC](#1010-grpc)
 11. [HTTP Versions Comparison](#1011-http-versions-comparison)

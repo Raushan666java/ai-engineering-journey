@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /laravel/index
+slug: /laravel
 title: "Laravel 13 with AI & Automation → Complete University Textbook"
 sidebar_label: "Laravel 13 with AI & Automation → Complete University Textbook"
 sidebar_position: 58

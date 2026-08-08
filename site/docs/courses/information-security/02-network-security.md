@@ -1,4 +1,4 @@
----
+﻿---
 id: 02-network-security
 slug: /information-security/02-network-security
 title: "Chapter 2: Network Security"
@@ -1525,4 +1525,4 @@ D) Computed independently by both parties
 
 ---
 
-> **Next Chapter:** [Chapter 3 — Cyber Threats & Attacks](/courses/information-security/03-cyber-threats-attacks/)
+> **Next Chapter:** [Chapter 3 — Cyber Threats & Attacks](/information-security/03-cyber-threats-attacks/)

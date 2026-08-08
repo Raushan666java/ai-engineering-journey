@@ -1,4 +1,4 @@
-# Chapter 18: Modern Networking → Complete Reference
+﻿# Chapter 18: Modern Networking → Complete Reference
 
 > **GFG/Javatpoint Depth → IPv6, IoT, 4G→5G→6G, Satellite Internet, Network Automation, Zero Trust, AI/ML in Networking, Quantum Networking, Edge Computing, Network Observability**
 
@@ -45,16 +45,16 @@
 
 1. [IPv6 Adoption & Transition](#181-ipv6-adoption--transition)
 2. [IoT Networking → 6LoWPAN, CoAP, MQTT, LoRaWAN](#182-iot-networking)
-3. [Cellular Evolution → 4G LTE → 5G → 6G](#183-cellular-evolution)
+3. [Cellular Evolution → 4G LTE → 5G → 6G](#183-cellular-evolution--4g-lte--5g--6g)
 4. [QUIC](#184-quic)
 5. [HTTP/3](#185-http3)
-6. [Satellite Internet → Starlink, LEO Constellations](#186-satellite-internet)
+6. [Satellite Internet → Starlink, LEO Constellations](#186-satellite-internet--starlink-leo-constellations)
 7. [Network Automation → Ansible, NETCONF/YANG, RESTCONF](#187-network-automation)
-8. [Zero Trust Networking → ZTNA/SASE](#188-zero-trust-networking)
+8. [Zero Trust Networking → ZTNA/SASE](#188-zero-trust-networking--ztnasase)
 9. [AI/ML in Networking](#189-aiml-in-networking)
 10. [Quantum Networking](#1810-quantum-networking)
 11. [Edge Computing](#1811-edge-computing)
-12. [Network Observability → eBPF, OpenTelemetry](#1812-network-observability)
+12. [Network Observability → eBPF, OpenTelemetry](#1812-network-observability--ebpf-opentelemetry)
 13. [Comparison Tables](#1813-comparison-tables)
 14. [Interview Corner](#1814-interview-corner)
 15. [Applications in Real Systems](#1815-applications-in-real-systems)

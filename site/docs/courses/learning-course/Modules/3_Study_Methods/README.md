@@ -1,5 +1,5 @@
----
-slug: /learning-course/Modules/3_Study_Methods/README
+﻿---
+slug: /learning-course/Modules/3_Study_Methods/README.mdREADME
 title: "📚 Module 3: Study Methods"
 sidebar_label: "📚 Module 3: Study Methods"
 sidebar_position: 2

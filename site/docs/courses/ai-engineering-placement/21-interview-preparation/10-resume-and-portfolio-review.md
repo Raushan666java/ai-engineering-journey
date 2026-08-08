@@ -1,4 +1,4 @@
----
+﻿---
 id: 10-resume-and-portfolio-review
 slug: /ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review
 title: "Resume & Portfolio Review"
@@ -437,8 +437,8 @@ Deployed on AWS ECS with Terraform. CI/CD via GitHub Actions.
 
 ## Related
 
-- [Blog post about this project](link-to-blog)
-- [Related project 1](link)
+- Blog post about this project
+- Related project 1
 """
 
 ## Project quality checklist

@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /interview-preparation/index
+slug: /interview-preparation
 title: "Interview Preparation Module"
 sidebar_label: "Interview Preparation Module"
 sidebar_position: 18

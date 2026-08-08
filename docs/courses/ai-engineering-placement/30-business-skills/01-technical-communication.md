@@ -1,4 +1,4 @@
-<!-- Clear Language: Keep sentences under 50 words -->
+﻿<!-- Clear Language: Keep sentences under 50 words -->
 # 01 — Technical Communication
 
 ## Learning Objectives
@@ -345,7 +345,7 @@ print(result)
 
 ## API Reference
 
-See the [full API documentation](docs/api.md) for detailed endpoint descriptions, request schemas, and examples.
+See the full API documentation for detailed endpoint descriptions, request schemas, and examples.
 
 ## Dependencies
 
@@ -376,7 +376,7 @@ Please ensure all tests pass and linting is clean before submitting.
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see LICENSE for details.
 """
 
 # Example usage

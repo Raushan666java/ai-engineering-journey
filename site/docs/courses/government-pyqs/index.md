@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /government-pyqs/index
+slug: /government-pyqs
 title: "IBPS SO IT Officer Scale 1 — Complete Preparation Guide"
 sidebar_label: "IBPS SO IT Officer Scale 1 — Complete Preparation Guide"
 sidebar_position: 15

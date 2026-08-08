@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /big-data/index
+slug: /big-data
 title: "Big Data Engineering"
 sidebar_label: "Big Data Engineering"
 sidebar_position: 6

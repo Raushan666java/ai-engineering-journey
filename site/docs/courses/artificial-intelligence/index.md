@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /artificial-intelligence/index
+slug: /artificial-intelligence
 title: "Artificial Intelligence — Complete University Textbook"
 sidebar_label: "Artificial Intelligence — Complete University Textbook"
 sidebar_position: 27

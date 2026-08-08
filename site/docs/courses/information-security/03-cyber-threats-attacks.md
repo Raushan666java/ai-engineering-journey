@@ -1,4 +1,4 @@
----
+﻿---
 id: 03-cyber-threats-attacks
 slug: /information-security/03-cyber-threats-attacks
 title: "Chapter 3: Cyber Threats & Attacks"
@@ -1642,4 +1642,4 @@ D) A random non-existent IP address
 
 ---
 
-> **Next Chapter:** [Chapter 4 — Digital Signatures & PKI](/courses/information-security/04-digital-signatures-pki/)
+> **Next Chapter:** [Chapter 4 — Digital Signatures & PKI](/information-security/04-digital-signatures-pki/)

@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/01_AI_Setup/First_AI_Learning_Session
 title: "🚀 First AI Learning Session - 10 Minutes"
 sidebar_label: "🚀 First AI Learning Session - 10 Minutes"
@@ -161,8 +161,8 @@ Overall Satisfaction: ___/10
 
 ### Continue Learning
 1. **Daily Practice:** [Daily AI Exercises](../05_AI_Practice/Daily_AI_Exercises.md)
-2. **AI Fundamentals:** [AI Learning Basics](../02_AI_Learning_Basics/)
-3. **Advanced Techniques:** [Advanced AI Learning](../03_Advanced_AI_Learning/)
+2. **AI Fundamentals:** [AI Learning Basics](../02_AI_Learning_Basics/Learning_Science.md)
+3. **Advanced Techniques:** [Advanced AI Learning](../03_Advanced_AI_Learning/Prompt_Engineering.md)
 
 ---
 **Key Insight:** AI learns about you as you learn with AI. The more you use it, the better it gets at helping you learn.

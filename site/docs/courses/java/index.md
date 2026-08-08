@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /java/index
+slug: /java
 title: "Java & Spring Boot — Complete University Textbook"
 sidebar_label: "Java & Spring Boot — Complete University Textbook"
 sidebar_position: 75

@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /computer-architecture/index
+slug: /computer-architecture
 title: "Computer Organisation & Architecture — IBPS SO & Govt Exam Prep"
 sidebar_label: "Computer Organisation & Architecture — IBPS SO & Govt Exam Prep"
 sidebar_position: 6

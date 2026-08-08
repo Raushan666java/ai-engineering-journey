@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/05_AI_Practice/Daily_Exercises
 title: "🏃 Daily Exercises - 21-Day Program"
 sidebar_label: "🏃 Daily Exercises - 21-Day Program"
@@ -10,8 +10,8 @@ sidebar_position: 3
 
 ### Day 1: Learning Science + AI Setup
 **Morning (30 min):**
-- [ ] Complete [AI Tools Setup](../01_Quick_Setup/AI_Tools_Setup.md)
-- [ ] Read [Learning Science](../02_Foundation/Learning_Science.md)
+- [ ] Complete [AI Tools Setup](../01_AI_Setup/AI_Tools_Setup.md)
+- [ ] Read [Learning Science](../02_AI_Learning_Basics/Learning_Science.md)
 - [ ] Practice 4 Pomodoro cycles
 
 **Evening (15 min):**
@@ -156,9 +156,9 @@ Optimize: Based on results
 - [ ] Sustainable habits formed
 
 ## 🔄 Next Steps
-1. **Continue:** [Advanced Exercises](Advanced_Exercises.md)
-2. **Track:** [Progress Tracking](Progress_Tracking.md)
-3. **Optimize:** [Templates](../Templates/)
+1. **Continue:** [Advanced Exercises](ADVANCED_EXERCISES.md)
+2. **Track:** [Progress Tracking](../04_AI_System_Mastery/Learning_Analytics.md)
+3. **Optimize:** [Templates](../06_AI_Templates/AI_Prompts_Library.md)
 
 ---
 **Remember:** Consistency beats intensity. 1 hour daily > 7 hours once weekly

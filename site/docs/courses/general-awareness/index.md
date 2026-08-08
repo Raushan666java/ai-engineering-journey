@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /general-awareness/index
+slug: /general-awareness
 title: "General Awareness & Current Affairs"
 sidebar_label: "General Awareness & Current Affairs"
 sidebar_position: 9

@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /discrete-mathematics/index
+slug: /discrete-mathematics
 title: "Discrete Mathematics for Computer Science"
 sidebar_label: "Discrete Mathematics for Computer Science"
 sidebar_position: 16

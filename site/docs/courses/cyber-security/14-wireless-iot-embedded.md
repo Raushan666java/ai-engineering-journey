@@ -58,9 +58,9 @@ By the end of this chapter, you should be able to:
 11. [Evil Twin Attack How-To](#11-evil-twin-attack-how-to)
 12. [Firmware Analysis Lab with Binwalk](#12-firmware-analysis-lab-with-binwalk)
 13. [Wireshark Wi-Fi Filter Cheat Sheet](#13-wireshark-wi-fi-filter-cheat-sheet)
-14. [Summary](#14-summary)
-15. [Chapter Quiz](#15-chapter-quiz)
-16. [Exercises](#16-exercises)
+14. [Summary](#summary)
+15. [Chapter Quiz](#chapter-quiz)
+16. [Exercises](#exercises)
 
 ---
 

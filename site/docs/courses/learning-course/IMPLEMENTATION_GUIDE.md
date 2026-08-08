@@ -1,10 +1,10 @@
----
+﻿---
 slug: /learning-course/IMPLEMENTATION_GUIDE
 title: "🚀 Implementation Guide - AI-Enhanced Learning System"
 sidebar_label: "🚀 Implementation Guide - AI-Enhanced Learning System"
 sidebar_position: 5
 ---
-# 🚀 Implementation Guide - AI-Enhanced Learning System
+# Implementation Guide - AI-Enhanced Learning System
 
 ## Quick Start (30 Minutes Setup)
 
@@ -37,12 +37,12 @@ Optional Premium:
 ### Step 3: Initial Configuration (10 minutes)
 ```
 AI Prompts Setup:
-□ Save key prompts from AI_PROMPTS_LIBRARY.md
+□ Save key prompts from 06_AI_Templates/AI_Prompts_Library.md
 □ Test basic learning prompts
 □ Configure AI study companion
 
 Progress Tracking:
-□ Copy LEARNING_METRICS_DASHBOARD.md template
+□ Copy 04_AI_System_Mastery/Learning_Analytics.md template
 □ Set up daily tracking sheet
 □ Configure weekly review schedule
 ```

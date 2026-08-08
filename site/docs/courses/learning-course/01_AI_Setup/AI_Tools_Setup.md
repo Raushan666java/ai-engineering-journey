@@ -66,8 +66,8 @@ Begin now.
 
 ## 🔄 Next Steps
 1. **Complete Setup:** [Learning Apps Install](Learning_Apps_Install.md)
-2. **Start Learning:** [Foundation Week 1](../02_Foundation/)
-3. **Daily Practice:** [Daily Exercises](../05_Practice/Daily_Exercises.md)
+2. **Start Learning:** [Foundation Week 1](../02_AI_Learning_Basics/Learning_Science.md)
+3. **Daily Practice:** [Daily Exercises](../05_AI_Practice/Daily_Exercises.md)
 
 ---
 **Time Invested:** 30 minutes | **ROI:** 500% learning improvement

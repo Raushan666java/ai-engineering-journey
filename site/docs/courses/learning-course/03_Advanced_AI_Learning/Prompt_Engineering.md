@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/03_Advanced_AI_Learning/Prompt_Engineering
 title: "🎯 Prompt Engineering - Master AI Interactions"
 sidebar_label: "🎯 Prompt Engineering - Master AI Interactions"
@@ -153,7 +153,7 @@ Target: 8+ average across all metrics
 ## 🔄 Next Steps
 1. **Apply:** [AI Learning Techniques](AI_Learning_Techniques.md)
 2. **Optimize:** [Accurate AI Outputs](Accurate_AI_Outputs.md)
-3. **Practice:** [Advanced Exercises](../05_Practice/Advanced_Exercises.md)
+3. **Practice:** [Advanced Exercises](../05_AI_Practice/ADVANCED_EXERCISES.md)
 
 ---
 **Key Insight:** Great prompts = Great AI responses = Accelerated learning

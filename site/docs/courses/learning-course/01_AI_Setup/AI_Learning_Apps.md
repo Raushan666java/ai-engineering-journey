@@ -114,7 +114,7 @@ Total: 55 minutes of AI-accelerated learning
 
 ## 🔄 Next Steps
 1. **Test Setup:** [First AI Learning Session](First_AI_Learning_Session.md)
-2. **Start Learning:** [AI Learning Basics](../02_AI_Learning_Basics/)
+2. **Start Learning:** [AI Learning Basics](../02_AI_Learning_Basics/Learning_Science.md)
 3. **Daily Practice:** [Daily AI Exercises](../05_AI_Practice/Daily_AI_Exercises.md)
 
 ---

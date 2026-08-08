@@ -1,4 +1,4 @@
-<!-- Clear Language: Keep sentences under 50 words -->
+﻿<!-- Clear Language: Keep sentences under 50 words -->
 # Resume & Portfolio Review
 
 ## Learning Objectives
@@ -430,8 +430,8 @@ Deployed on AWS ECS with Terraform. CI/CD via GitHub Actions.
 
 ## Related
 
-- [Blog post about this project](link-to-blog)
-- [Related project 1](link)
+- Blog post about this project
+- Related project 1
 """
 
 ## Project quality checklist

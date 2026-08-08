@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /compiler-design/index
+slug: /compiler-design
 title: "Compiler Design — Complete Course Textbook"
 sidebar_label: "Compiler Design — Complete Course Textbook"
 sidebar_position: 16

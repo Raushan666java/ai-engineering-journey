@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/02_AI_Learning_Basics/AI_Powered_Memory
 title: "🧠 AI-Powered Memory - 5x Better Retention"
 sidebar_label: "🧠 AI-Powered Memory - 5x Better Retention"
@@ -232,7 +232,7 @@ Ensure 90%+ retention after 1 month."
 ## 🔄 Next Steps
 1. **Apply:** [AI Study Methods](AI_Study_Methods.md)
 2. **Practice:** [Daily AI Exercises](../05_AI_Practice/Daily_AI_Exercises.md)
-3. **Track:** [AI Progress Tracking](../04_AI_System_Mastery/AI_Learning_Analytics.md)
+3. **Track:** [AI Progress Tracking](../04_AI_System_Mastery/Learning_Analytics.md)
 
 ---
 **Key Insight:** AI doesn't just help you remember - it helps you remember how to remember better.

@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /placement-preparation/index
+slug: /placement-preparation
 title: "Placement Preparation"
 sidebar_label: "Placement Preparation"
 sidebar_position: 8

@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/01_AI_Setup/Learning_Apps_Install
 title: "📱 Learning Apps Installation - 15 Minutes"
 sidebar_label: "📱 Learning Apps Installation - 15 Minutes"
@@ -97,9 +97,9 @@ Daily Routine:
 - [ ] Time tracking runs automatically
 
 ## 🔄 Next Steps
-1. **Start Foundation:** [Learning Science](../02_Foundation/Learning_Science.md)
-2. **Begin Practice:** [Daily Exercises](../05_Practice/Daily_Exercises.md)
-3. **Track Progress:** [Progress Tracking](../05_Practice/Progress_Tracking.md)
+1. **Start Foundation:** [Learning Science](../02_AI_Learning_Basics/Learning_Science.md)
+2. **Begin Practice:** [Daily Exercises](../05_AI_Practice/Daily_Exercises.md)
+3. **Track Progress:** [Progress Tracking](../04_AI_System_Mastery/Learning_Analytics.md)
 
 ---
 **Time Invested:** 15 minutes | **Daily Time Saved:** 30+ minutes

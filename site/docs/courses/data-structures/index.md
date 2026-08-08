@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /data-structures/index
+slug: /data-structures
 title: "Data Structures — Complete Course"
 sidebar_label: "Data Structures — Complete Course"
 sidebar_position: 19

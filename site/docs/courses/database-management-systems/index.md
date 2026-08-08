@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /database-management-systems/index
+slug: /database-management-systems
 title: "Database Management Systems — Complete Textbook"
 sidebar_label: "Database Management Systems — Complete Textbook"
 sidebar_position: 20

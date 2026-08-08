@@ -1,4 +1,4 @@
----
+﻿---
 id: 01-technical-communication
 slug: /ai-engineering-placement/30-business-skills/01-technical-communication
 title: "01 — Technical Communication"
@@ -352,7 +352,7 @@ print(result)
 
 ## API Reference
 
-See the [full API documentation](docs/api.md) for detailed endpoint descriptions, request schemas, and examples.
+See the full API documentation for detailed endpoint descriptions, request schemas, and examples.
 
 ## Dependencies
 
@@ -383,7 +383,7 @@ Please ensure all tests pass and linting is clean before submitting.
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see LICENSE for details.
 """
 
 # Example usage

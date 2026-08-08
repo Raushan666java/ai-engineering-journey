@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /coding-problems/index
+slug: /coding-problems
 title: "Coding Problems Bank"
 sidebar_label: "Coding Problems Bank"
 sidebar_position: 10

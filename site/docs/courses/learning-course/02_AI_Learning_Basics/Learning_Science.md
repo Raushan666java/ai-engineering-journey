@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/02_AI_Learning_Basics/Learning_Science
 title: "🧠 Learning Science - Day 1"
 sidebar_label: "🧠 Learning Science - Day 1"
@@ -121,9 +121,9 @@ based on my performance data."
 - [ ] Set up spaced repetition system
 
 ## 🔄 Next Steps
-1. **Tomorrow:** [Memory Techniques](Memory_Techniques.md)
-2. **Practice:** [Daily Exercises](../05_Practice/Daily_Exercises.md)
-3. **Track:** [Progress Tracking](../05_Practice/Progress_Tracking.md)
+1. **Tomorrow:** [Memory Techniques](AI_Powered_Memory.md)
+2. **Practice:** [Daily Exercises](../05_AI_Practice/Daily_Exercises.md)
+3. **Track:** [Progress Tracking](../04_AI_System_Mastery/Learning_Analytics.md)
 
 ---
 **Key Insight:** Your brain learns best with focused work + diffuse breaks + active testing

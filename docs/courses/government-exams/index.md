@@ -1,4 +1,4 @@
-# Government Exams — Complete Preparation Hub
+﻿# Government Exams — Complete Preparation Hub
 
 > **Mission:** Crack Indian government IT/CS officer exams with a structured, subject-wise preparation system.
 >
@@ -40,27 +40,27 @@ mindmap
 
 | # | Subject | Status | Course Link |
 |---|---------|--------|-------------|
-| 1 | **English Language** | ✅ New | [Start](../english-language/) |
-| 2 | **Reasoning Ability** | ✅ New | [Start](../reasoning-ability/) |
-| 3 | **Quantitative Aptitude** | ✅ New | [Start](../quantitative-aptitude/) |
-| 4 | **Database Management Systems** | ✅ Existing | [Start](../database-management-systems/) |
-| 5 | **Computer Networks** | ✅ Existing | [Start](../computer-networks/) |
-| 6 | **Operating Systems** | ✅ Existing | [Start](../operating-systems/) |
-| 7 | **Data Structures & Algorithms** | ✅ Existing | [Start](../data-structures/) |
-| 8 | **OOPs (C++ / Java)** | ✅ Existing | [Start](../oop-cpp/) |
-| 9 | **Software Engineering** | ✅ Existing | [Start](../software-engineering/) |
-| 10 | **Web Technologies** | ✅ Existing | [Start](../web-development/) |
-| 11 | **Information Security & Cryptography** | ✅ New | [Start](../information-security/) |
-| 12 | **Cloud Computing** | ✅ Existing | [Start](../cloud-computing/) |
-| 13 | **Computer Organisation & Architecture** | ✅ New | [Start](../computer-architecture/) |
-| 14 | **Digital Logic** | ✅ Existing | [Start](../digital-logic/) |
-| 15 | **Banking Technology & Digital Banking** | ✅ New | [Start](../banking-technology/) |
-| 16 | **Professional Knowledge (PK) Recap** | ✅ New | [Start](../professional-knowledge/) |
-| 17 | **General Awareness & Current Affairs** | ✅ New | [Start](../general-awareness/) |
-| 18 | **Banking & Financial Awareness** | ✅ New | [Start](../banking-financial-awareness/) |
-| 19 | **Hindi Language** | ✅ New | [Start](../hindi-language/) |
-| 20 | **Marketing Aptitude** | ✅ New | [Start](../marketing-aptitude/) |
-| 21 | **Data Analysis & Interpretation** | ✅ New | [Start](../data-analysis-interpretation/) |
+| 1 | **English Language** | ✅ New | [Start](../english-language/01-reading-comprehension.md) |
+| 2 | **Reasoning Ability** | ✅ New | [Start](../reasoning-ability/01-puzzles.md) |
+| 3 | **Quantitative Aptitude** | ✅ New | [Start](../quantitative-aptitude/01-arithmetic-foundation.md) |
+| 4 | **Database Management Systems** | ✅ Existing | [Start](../database-management-systems/01-introduction.md) |
+| 5 | **Computer Networks** | ✅ Existing | [Start](../computer-networks/01-introduction.md) |
+| 6 | **Operating Systems** | ✅ Existing | [Start](../operating-systems/01-introduction.md) |
+| 7 | **Data Structures & Algorithms** | ✅ Existing | [Start](../data-structures/01-complexity.md) |
+| 8 | **OOPs (C++ / Java)** | ✅ Existing | [Start](../oop-cpp/01-introduction.md) |
+| 9 | **Software Engineering** | ✅ Existing | [Start](../software-engineering/01-process-models.md) |
+| 10 | **Web Technologies** | ✅ Existing | [Start](../web-development/01-html.md) |
+| 11 | **Information Security & Cryptography** | ✅ New | [Start](../information-security/01-cryptography-fundamentals.md) |
+| 12 | **Cloud Computing** | ✅ Existing | [Start](../cloud-computing/01-introduction.md) |
+| 13 | **Computer Organisation & Architecture** | ✅ New | [Start](../computer-architecture/01-number-systems.md) |
+| 14 | **Digital Logic** | ✅ Existing | [Start](../digital-logic/01-introduction.md) |
+| 15 | **Banking Technology & Digital Banking** | ✅ New | [Start](../banking-technology/01-core-banking-solutions.md) |
+| 16 | **Professional Knowledge (PK) Recap** | ✅ New | [Start](../professional-knowledge/01-dbms.md) |
+| 17 | **General Awareness & Current Affairs** | ✅ New | [Start](../general-awareness/01-indian-polity.md) |
+| 18 | **Banking & Financial Awareness** | ✅ New | [Start](../banking-financial-awareness/01-rbi-monetary-policy.md) |
+| 19 | **Hindi Language** | ✅ New | [Start](../hindi-language/01-hindi-grammar.md) |
+| 20 | **Marketing Aptitude** | ✅ New | [Start](../marketing-aptitude/01-marketing-concepts.md) |
+| 21 | **Data Analysis & Interpretation** | ✅ New | [Start](../data-analysis-interpretation/01-advanced-data-interpretation.md) |
 
 ---
 
@@ -116,7 +116,7 @@ gantt
 
 ### Route A: Scientist-B via GATE CS
 
-The existing [GATE CS Preparation](../gate-cs-preparation/) course covers the full syllabus:
+The existing [GATE CS Preparation](../gate-cs-preparation/01-general-aptitude.md) course covers the full syllabus:
 
 | Subject | GATE Weightage | Link |
 |---------|----------------|------|
@@ -174,7 +174,7 @@ The existing [GATE CS Preparation](../gate-cs-preparation/) course covers the fu
 
 If you're short on time (IBPS SO deadline approaching):
 
-1. Start with **[Professional Knowledge Recap](../professional-knowledge/)** — covers all 10 PK modules
+1. Start with **[Professional Knowledge Recap](../professional-knowledge/01-dbms.md)** — covers all 10 PK modules
 2. Solve **English / Reasoning / Quant** basics daily
 3. Take **1 full-length mock every 3 days** in the final month
 4. Revise **Banking Technology** separately — unique to bank exams

@@ -1,4 +1,4 @@
----
+﻿---
 id: 01-cryptography-fundamentals
 slug: /information-security/01-cryptography-fundamentals
 title: "Chapter 1: Cryptography Fundamentals"
@@ -1598,4 +1598,4 @@ D) 2^(2n)
 
 ---
 
-> **Next Chapter:** [Chapter 2 — Network Security](/courses/information-security/02-network-security/)
+> **Next Chapter:** [Chapter 2 — Network Security](/information-security/02-network-security/)

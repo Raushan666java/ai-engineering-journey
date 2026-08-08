@@ -1,4 +1,4 @@
-<!-- Clear Language: Keep sentences under 50 words -->
+﻿<!-- Clear Language: Keep sentences under 50 words -->
 # Toxicity & Content Moderation
 
 ## Learning Objectives
@@ -20,7 +20,7 @@ AI applications serve millions of users daily. Without robust content moderation
 - Basic Python programming
 - Understanding of classification metrics (precision, recall, F1)
 - Familiarity with API clients (requests, HTTP)
-- Completion of [Content Filtering](../03-content-filtering.md) recommended
+- Completion of [Content Filtering](./03-content-filtering.md) recommended
 - Basic understanding of LLM prompting and fine-tuning concepts
 
 ## Key Terminology

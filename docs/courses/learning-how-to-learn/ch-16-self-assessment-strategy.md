@@ -1,4 +1,4 @@
-# Chapter 16: Self-Assessment & Structured Preparation Strategy
+﻿# Chapter 16: Self-Assessment & Structured Preparation Strategy
 
 > **Prerequisites:** [Chapter 15: Exam Cracking Mastery](./ch-15-exam-cracking-mastery.md) — Universal exam strategy framework.
 > **Also see:** [Chapter 13: Learning Analytics](./ch-13-learning-analytics.md) — Measuring your learning progress.
@@ -428,11 +428,11 @@ flowchart LR
 
 | Time | Duration | Activity | Resource |
 |------|----------|----------|----------|
-| 0-15 min | 15 min | Warm-up drill | [Speed Drills](courses/speed-drills/) or 5 easy MCQs |
+| 0-15 min | 15 min | Warm-up drill | [Speed Drills](/speed-drills/) or 5 easy MCQs |
 | 15-105 min | 90 min | Deep study (1 subject) | Textbook/video + notes + Anki |
 | 105-135 min | 30 min | Practice (same subject) | Topic-wise questions |
 | 135-150 min | 15 min | Review + Anki cards | Mistake log, spaced repetition |
-| Bonus | 30 min | Current affairs / GA | [General Awareness](courses/general-awareness/) |
+| Bonus | 30 min | Current affairs / GA | [General Awareness](/general-awareness/) |
 
 ### Weekly Preparation Template
 
@@ -791,11 +791,11 @@ This repository is designed to support every stage of your preparation journey.
 | **Self-Assessment** | [Learning How to Learn ch 16](ch-16-self-assessment-strategy.md) | Score yourself 1-5 per subject, identify gaps |
 | **Concept Learning** | Subject courses (DBMS, OS, CN, DS, etc.) | Read chapters → solve MCQs → create Anki cards |
 | **Topic Practice** | Chapter exercises + MCQs | Solve all exercises per chapter |
-| **Applied Practice** | [Coding Problems](courses/coding-problems/) | Solve problems by topic with company tags |
-| **Speed Building** | [Speed Drills](courses/speed-drills/) | Timed sets with accuracy tracking |
-| **Mock Tests** | [Mock Tests](courses/mock-tests/) | Full-length timed mocks |
-| **PYQs** | [Government PYQs](courses/government-pyqs/) + [GATE PYQs](courses/gate-cs-preparation/) | Year-wise solved papers |
-| **Company Prep** | [Company QBs](courses/interview-preparation/) | Target-specific problems |
+| **Applied Practice** | [Coding Problems](/coding-problems/) | Solve problems by topic with company tags |
+| **Speed Building** | [Speed Drills](/speed-drills/) | Timed sets with accuracy tracking |
+| **Mock Tests** | [Mock Tests](/mock-tests/) | Full-length timed mocks |
+| **PYQs** | [Government PYQs](/government-pyqs/) + [GATE PYQs](/gate-cs-preparation/) | Year-wise solved papers |
+| **Company Prep** | [Company QBs](/interview-preparation/) | Target-specific problems |
 | **Revision** | Formula sheets + Anki + mistake log | Daily review |
 | **Re-assessment** | Self-assessment protocol (this chapter) | Monthly re-score |
 
@@ -804,7 +804,7 @@ This repository is designed to support every stage of your preparation journey.
 ```
 1. Start here: [Learning How to Learn](index.md) — all 16 chapters in order
 2. Self-assess using this chapter's protocol
-3. Choose your path from the [Complete Roadmap](../../roadmap.md)
+3. Choose your path from the [Complete Roadmap](../../index.md)
 4. Study subject courses → practice → mock tests → analyze → repeat
 5. Use the OODA loop weekly to refine your approach
 6. Re-assess monthly to track progress
@@ -1145,15 +1145,15 @@ flowchart TD
 |------|-------|
 | Assess my current level | [Self-Assessment Protocol](ch-16-self-assessment-strategy.md#q261) |
 | Learn a CS subject | Subject courses (DBMS, OS, CN, etc.) |
-| Practice coding | [Coding Problems](courses/coding-problems/) |
-| Build speed | [Speed Drills](courses/speed-drills/) |
-| Take a mock test | [Mock Tests](courses/mock-tests/) |
-| Solve PYQs | [Government PYQs](courses/government-pyqs/) or [GATE PYQs](courses/gate-cs-preparation/) |
+| Practice coding | [Coding Problems](/coding-problems/) |
+| Build speed | [Speed Drills](/speed-drills/) |
+| Take a mock test | [Mock Tests](/mock-tests/) |
+| Solve PYQs | [Government PYQs](/government-pyqs/) or [GATE PYQs](/gate-cs-preparation/) |
 | Analyze mistakes | [C/M/E/R Taxonomy](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/learning-how-to-learn/ch-15-exam-cracking-mastery.md#q232) |
 | Review strategy | [OODA Loop](ch-16-self-assessment-strategy.md#q267) |
 | Stay motivated | [Motivation Techniques](ch-16-self-assessment-strategy.md#q278) |
 | Plan my month | [Monthly Review](ch-16-self-assessment-strategy.md#q273) |
-| Get the big picture | [Complete Roadmap](../../roadmap.md) |
+| Get the big picture | [Complete Roadmap](../../index.md) |
 
 ---
 
@@ -1279,6 +1279,7 @@ Self-assessment and structured preparation are the meta-skills that amplify ever
 - **Chapter 13:** [Learning Analytics](./ch-13-learning-analytics.md) — Measuring your learning with objective metrics
 - **Chapter 14:** [Social Learning & Communities](./ch-14-social-learning-communities.md) — Learning with others for accountability
 - **Chapter 15:** [Exam Cracking Mastery](./ch-15-exam-cracking-mastery.md) — Universal exam strategy, mock analysis, C/M/E/R taxonomy
-- **Roadmap:** [Complete Course Roadmap](../../roadmap.md) — All preparation paths in one place
+- **Roadmap:** [Complete Course Roadmap](../../index.md) — All preparation paths in one place
 - **Coding Problems:** [Coding Problems Bank](../../courses/coding-problems/index.md) — 220 problems with company tags
 - **Mock Tests:** [Full-Length Mocks](../../courses/mock-tests/index.md) — IBPS SO, NIC, SBI, RBI, SSC, GATE
+

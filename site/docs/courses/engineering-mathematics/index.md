@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /engineering-mathematics/index
+slug: /engineering-mathematics
 title: "Engineering Mathematics"
 sidebar_label: "Engineering Mathematics"
 sidebar_position: 11

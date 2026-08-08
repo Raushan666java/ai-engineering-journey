@@ -296,9 +296,9 @@ Optimize:
 - **Month 1:** 5x resilience and persistence
 
 ## 🔄 Next Steps
-1. **Integrate:** [Advanced AI Learning](../03_Advanced_AI_Learning/)
+1. **Integrate:** [Advanced AI Learning](../03_Advanced_AI_Learning/Prompt_Engineering.md)
 2. **Practice:** [Daily AI Exercises](../05_AI_Practice/Daily_AI_Exercises.md)
-3. **Track:** [AI Analytics](../04_AI_System_Mastery/AI_Learning_Analytics.md)
+3. **Track:** [AI Analytics](../04_AI_System_Mastery/Learning_Analytics.md)
 
 ---
 **Key Insight:** AI provides personalized mindset coaching that adapts to your specific challenges and growth patterns.

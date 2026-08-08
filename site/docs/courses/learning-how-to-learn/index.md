@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /learning-how-to-learn/index
+slug: /learning-how-to-learn
 title: "Learning How to Learn"
 sidebar_label: "Learning How to Learn"
 sidebar_position: 18

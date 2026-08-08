@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /operating-systems/index
+slug: /operating-systems
 title: "Operating Systems — A Comprehensive Textbook"
 sidebar_label: "Operating Systems — A Comprehensive Textbook"
 sidebar_position: 19

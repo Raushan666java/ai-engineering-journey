@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /english-language/index
+slug: /english-language
 title: "English Language — IBPS SO & Govt Exam Prep"
 sidebar_label: "English Language — IBPS SO & Govt Exam Prep"
 sidebar_position: 6

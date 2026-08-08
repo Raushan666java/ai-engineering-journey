@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /speed-drills/index
+slug: /speed-drills
 title: "Speed & Accuracy Drills"
 sidebar_label: "Speed & Accuracy Drills"
 sidebar_position: 6

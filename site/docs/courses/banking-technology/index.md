@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /banking-technology/index
+slug: /banking-technology
 title: "Banking Technology & Digital Banking"
 sidebar_label: "Banking Technology & Digital Banking"
 sidebar_position: 5

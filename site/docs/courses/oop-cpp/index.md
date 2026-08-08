@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /oop-cpp/index
+slug: /oop-cpp
 title: "Object-Oriented Programming with C++"
 sidebar_label: "Object-Oriented Programming with C++"
 sidebar_position: 17

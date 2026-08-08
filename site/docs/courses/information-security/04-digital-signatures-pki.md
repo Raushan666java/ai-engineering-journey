@@ -1,4 +1,4 @@
----
+﻿---
 id: 04-digital-signatures-pki
 slug: /information-security/04-digital-signatures-pki
 title: "Chapter 4: Digital Signatures & PKI"
@@ -1670,4 +1670,4 @@ D) Plain text with certificate serial number and status
 
 ---
 
-> **Next Chapter:** [Chapter 5 — Banking & Payment Security](/courses/information-security/05-banking-payment-security/)
+> **Next Chapter:** [Chapter 5 — Banking & Payment Security](/information-security/05-banking-payment-security/)

@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/05_AI_Practice/Daily_AI_Exercises
 title: "🤖 Daily AI Exercises - 21-Day AI Learning Program"
 sidebar_label: "🤖 Daily AI Exercises - 21-Day AI Learning Program"
@@ -267,9 +267,9 @@ Start by creating my personalized curriculum."
 - [ ] Sustainable AI learning habits
 
 ## 🔄 Next Steps
-1. **Continue:** [Advanced AI Exercises](Advanced_AI_Exercises.md)
-2. **Optimize:** [AI System Mastery](../04_AI_System_Mastery/)
-3. **Templates:** [AI Templates](../06_AI_Templates/)
+1. **Continue:** [Advanced AI Exercises](ADVANCED_EXERCISES.md)
+2. **Optimize:** [AI System Mastery](../04_AI_System_Mastery/Learning_Analytics.md)
+3. **Templates:** [AI Templates](../06_AI_Templates/AI_Prompts_Library.md)
 
 ---
 **Remember:** AI learns about you as you learn with AI. The partnership gets stronger every day.

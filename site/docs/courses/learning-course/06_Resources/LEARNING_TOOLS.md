@@ -1,5 +1,5 @@
----
-slug: /learning-course/06_Resources/LEARNING_TOOLS
+﻿---
+slug: /learning-course/06_06_Resources/LEARNING_TOOLS
 title: "🛠️ Complete Learning Tools Arsenal"
 sidebar_label: "🛠️ Complete Learning Tools Arsenal"
 sidebar_position: 2

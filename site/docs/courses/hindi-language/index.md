@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /hindi-language/index
+slug: /hindi-language
 title: "हिंदी भाषा पाठ्यक्रम (Hindi Language Course)"
 sidebar_label: "हिंदी भाषा पाठ्यक्रम (Hindi Language Course)"
 sidebar_position: 6

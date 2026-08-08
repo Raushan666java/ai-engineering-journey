@@ -1,5 +1,5 @@
----
-slug: /learning-course/Modules/2_Memory_Techniques/DETAILED_NOTES
+﻿---
+slug: /learning-course/Modules/2_Memory_Techniques/README.mdDETAILED_NOTES
 title: "🧠 Memory Techniques - Detailed Notes"
 sidebar_label: "🧠 Memory Techniques - Detailed Notes"
 sidebar_position: 1

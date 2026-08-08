@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /job-preparation/index
+slug: /job-preparation
 title: "Job Preparation — Complete Guide for Indian IT Freshers & Experienced Professionals"
 sidebar_label: "Job Preparation — Complete Guide for Indian IT Freshers & Experienced Professionals"
 sidebar_position: 7

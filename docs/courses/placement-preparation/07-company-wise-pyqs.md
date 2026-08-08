@@ -1,4 +1,4 @@
-# 07 → Company-Wise Previous Year Questions
+﻿# 07 → Company-Wise Previous Year Questions
 
 > **Previous:** [06 → HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  
 > **Next:** None (Last Chapter)
@@ -74,7 +74,7 @@ flowchart LR
 
 ---
 
-# 1. FAANG Companies
+## 1. FAANG Companies
 
 ---
 
@@ -2358,7 +2358,7 @@ public class VerticalOrderTraversal {
 
 ---
 
-# 2. Product-Based India Companies
+## 2. Product-Based India Companies
 
 ---
 
@@ -3541,7 +3541,7 @@ public class SplitwiseDemo {
 
 ---
 
-# 3. Service-Based Companies
+## 3. Service-Based Companies
 
 ---
 
@@ -4474,7 +4474,7 @@ public class CharFrequency {
 
 ---
 
-# 4. New-Age Tech / Fintech / Product Companies
+## 4. New-Age Tech / Fintech / Product Companies
 
 ---
 

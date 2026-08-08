@@ -1,4 +1,4 @@
----
+﻿---
 slug: /learning-course/02_AI_Learning_Basics/AI_Study_Methods
 title: "📚 AI-Enhanced Study Methods"
 sidebar_label: "📚 AI-Enhanced Study Methods"
@@ -278,7 +278,7 @@ Make it interview-ready in [TIMEFRAME]."
 ## 🔄 Next Steps
 1. **Apply:** [AI Time Optimization](AI_Time_Optimization.md)
 2. **Practice:** [Daily AI Exercises](../05_AI_Practice/Daily_AI_Exercises.md)
-3. **Track:** [AI Analytics](../04_AI_System_Mastery/AI_Learning_Analytics.md)
+3. **Track:** [AI Analytics](../04_AI_System_Mastery/Learning_Analytics.md)
 
 ---
 **Key Insight:** AI transforms passive study methods into active, personalized learning experiences.

@@ -1,4 +1,4 @@
-# Chapter 3: Cyber Threats & Attacks
+﻿# Chapter 3: Cyber Threats & Attacks
 
 > **Exam Weightage:** 4–6 Qs in IBPS SO IT Officer Mains (Common in PK and GK sections)
 >
@@ -1635,4 +1635,4 @@ D) A random non-existent IP address
 
 ---
 
-> **Next Chapter:** [Chapter 4 — Digital Signatures & PKI](/courses/information-security/04-digital-signatures-pki/)
+> **Next Chapter:** [Chapter 4 — Digital Signatures & PKI](/information-security/04-digital-signatures-pki/)

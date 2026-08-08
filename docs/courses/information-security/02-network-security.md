@@ -1,4 +1,4 @@
-# Chapter 2: Network Security
+﻿# Chapter 2: Network Security
 
 > **Exam Weightage:** 4–5 Qs in IBPS SO IT Officer Mains (Firewalls, IDS/IPS, VPN, SSL/TLS, Secure Protocols)
 >
@@ -1518,4 +1518,4 @@ D) Computed independently by both parties
 
 ---
 
-> **Next Chapter:** [Chapter 3 — Cyber Threats & Attacks](/courses/information-security/03-cyber-threats-attacks/)
+> **Next Chapter:** [Chapter 3 — Cyber Threats & Attacks](/information-security/03-cyber-threats-attacks/)

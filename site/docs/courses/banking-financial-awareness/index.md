@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /banking-financial-awareness/index
+slug: /banking-financial-awareness
 title: "Banking & Financial Awareness"
 sidebar_label: "Banking & Financial Awareness"
 sidebar_position: 6

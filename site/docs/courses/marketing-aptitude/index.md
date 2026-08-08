@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /marketing-aptitude/index
+slug: /marketing-aptitude
 title: "Marketing Aptitude — Complete Course"
 sidebar_label: "Marketing Aptitude — Complete Course"
 sidebar_position: 5

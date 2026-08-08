@@ -832,7 +832,7 @@ export { Logger, Tracer, MetricsCollector, LogEntry, Span, Metric }
 
 ---
 
-[Back to Index](00-index.md)
+[Back to Index](index.md)
 
 ---
 

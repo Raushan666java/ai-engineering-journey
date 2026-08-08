@@ -1,4 +1,4 @@
-# Chapter 1: Cryptography Fundamentals
+﻿# Chapter 1: Cryptography Fundamentals
 
 > **Exam Weightage:** 4–6 Qs in IBPS SO IT Officer Mains (Professional Knowledge — Cryptography section)
 >
@@ -1591,4 +1591,4 @@ D) 2^(2n)
 
 ---
 
-> **Next Chapter:** [Chapter 2 — Network Security](/courses/information-security/02-network-security/)
+> **Next Chapter:** [Chapter 2 — Network Security](/information-security/02-network-security/)

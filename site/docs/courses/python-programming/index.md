@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /python-programming/index
+slug: /python-programming
 title: "Python Programming — A Comprehensive University Textbook"
 sidebar_label: "Python Programming — A Comprehensive University Textbook"
 sidebar_position: 22

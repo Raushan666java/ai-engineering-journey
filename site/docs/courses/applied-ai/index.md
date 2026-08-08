@@ -1,6 +1,6 @@
----
+﻿---
 id: index
-slug: /applied-ai/index
+slug: /applied-ai
 title: "Applied AI Engineering"
 sidebar_label: "Applied AI Engineering"
 sidebar_position: 5

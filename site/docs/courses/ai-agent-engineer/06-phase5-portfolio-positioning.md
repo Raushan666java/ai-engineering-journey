@@ -821,4 +821,4 @@ That's what converts. Not another course. Not another certification. A live, doc
 
 Go build it.
 
-[Back to Index](00-index.md) | [Day-by-Day Schedule](07-day-by-day-plan.md)
+[Back to Index](index.md) | [Day-by-Day Schedule](07-day-by-day-plan.md)

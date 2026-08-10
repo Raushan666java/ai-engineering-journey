@@ -1,7 +1,7 @@
 # Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
-> 16 chapters · 290 Q&As · 16 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
+> 17 chapters · 318 Q&As · 17 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
 >
 > *Deployed: commit `23502cfa3`*
 
@@ -88,6 +88,12 @@ You'll learn:
 | 15 | Exam Cracking Mastery | EXAM framework, 3-phase strategy, ROI prioritization, spiral schedule, C/M/E/R mistake taxonomy, mock analysis, speed-accuracy curve, exam-specific strategies for GATE/IBPS/NIC/SBI/RBI/SSC, exam day protocol, multi-attempt strategy | Q226–Q260 |
 | 16 | Self-Assessment & Strategy | 5-step self-assessment, gap analysis, strategy creation framework, structured prep system, OODA loop, Dreyfus model, feedback loops, adaptive strategies, retake planning | Q261–Q290 |
 
+### Module 7: Study Protocols & Brain Hacks (Chapter 17)
+
+| # | Chapter | Topics | Q&As |
+|---|---------|--------|------|
+| 17 | Study Protocols & Brain Hacks | PQRST method, Paper Theory, Dopamine Loading, 45-Minute Focus Rule, 30-Day Fluency Challenge, brain exercises, Japanese techniques (Kaizen, Shoshin, Seijaku, Nemawashi, Kaikaku), Vedic habits, 3 study mistakes, Diamond Mindset, problem reframing, topper habits, Start-Here checklist, 50:10 & 147 & 3-2-1 rules, Tiger Strategy, Mirror Technique, short notes, Vivekananda method, mindset mechanisms (Kintsugi, Kobra, Butterfly), night study, study music, confidence hacks, Warrior Protocol | Q291–Q318 |
+
 ---
 
 ## Diagnostic Pre-Test
@@ -130,6 +136,7 @@ Before you begin, rate yourself on these six statements (1 = strongly disagree, 
 5. **If you want to leverage AI for learning:** Start with Chapters 1–4, then Chapter 11 for AI-assisted techniques
 6. **If you want to teach or mentor others:** Start with Chapters 1–2, then Chapter 12 for knowledge transfer
 7. **If you want to build a complete learning system:** Read all chapters in order
+8. **If you want ready-to-run study protocols:** Start with Chapters 1–4, then Chapter 17 for PQRST, Paper Theory, Dopamine Loading, and the 45-Minute Focus Rule
 
 ---
 

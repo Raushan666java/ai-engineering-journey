@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-learning-how-to-learn-index-md-e59.json
-const site_docs_courses_learning_how_to_learn_index_md_e59_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/learning-how-to-learn/index","title":"Learning How to Learn","description":"Master the universal meta-skill: accelerate learning across every course in this repository.","source":"@site/docs/courses/learning-how-to-learn/index.md","sourceDirName":"courses/learning-how-to-learn","slug":"/learning-how-to-learn","permalink":"/ai-engineering-journey/learning-how-to-learn","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":18,"frontMatter":{"id":"index","slug":"/learning-how-to-learn","title":"Learning How to Learn","sidebar_label":"Learning How to Learn","sidebar_position":18},"sidebar":"coursesSidebar","previous":{"title":"Chapter 17: PSUs & Government — Company-Specific Question Bank","permalink":"/ai-engineering-journey/interview-preparation/17-company-psus-govt"},"next":{"title":"Learning How to Learn","permalink":"/ai-engineering-journey/learning-how-to-learn/archive-complete-reference"}}');
+const site_docs_courses_learning_how_to_learn_index_md_e59_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/learning-how-to-learn/index","title":"Learning How to Learn","description":"Master the universal meta-skill: accelerate learning across every course in this repository.","source":"@site/docs/courses/learning-how-to-learn/index.md","sourceDirName":"courses/learning-how-to-learn","slug":"/learning-how-to-learn","permalink":"/ai-engineering-journey/learning-how-to-learn","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":19,"frontMatter":{"id":"index","slug":"/learning-how-to-learn","title":"Learning How to Learn","sidebar_label":"Learning How to Learn","sidebar_position":19},"sidebar":"coursesSidebar","previous":{"title":"Chapter 17: PSUs & Government — Company-Specific Question Bank","permalink":"/ai-engineering-journey/interview-preparation/17-company-psus-govt"},"next":{"title":"Learning How to Learn","permalink":"/ai-engineering-journey/learning-how-to-learn/archive-complete-reference"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	slug: '/learning-how-to-learn',
 	title: 'Learning How to Learn',
 	sidebar_label: 'Learning How to Learn',
-	sidebar_position: 18
+	sidebar_position: 19
 };
 const contentTitle = 'Learning How to Learn';
 
@@ -80,6 +80,10 @@ const toc = [{
 }, {
   "value": "Module 6: AI-Assisted &amp; Advanced Learning (Chapters 11–14)",
   "id": "module-6-ai-assisted--advanced-learning-chapters-1114",
+  "level": 3
+}, {
+  "value": "Module 7: Study Protocols &amp; Brain Hacks (Chapter 17)",
+  "id": "module-7-study-protocols--brain-hacks-chapter-17",
   "level": 3
 }, {
   "value": "Diagnostic Pre-Test",
@@ -134,7 +138,7 @@ function _createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Master the universal meta-skill: accelerate learning across every course in this repository."
-        }), "\n16 chapters · 290 Q&As · 16 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science."]
+        }), "\n17 chapters · 318 Q&As · 17 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science."]
       }), "\n", (0,jsx_runtime.jsx)(_components.p, {
         children: (0,jsx_runtime.jsxs)(_components.em, {
           children: ["Deployed: commit ", (0,jsx_runtime.jsx)(_components.code, {
@@ -504,6 +508,35 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "module-7-study-protocols--brain-hacks-chapter-17",
+      children: "Module 7: Study Protocols & Brain Hacks (Chapter 17)"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "#"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Chapter"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topics"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Q&As"
+          })]
+        })
+      }), (0,jsx_runtime.jsx)(_components.tbody, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "17"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Study Protocols & Brain Hacks"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PQRST method, Paper Theory, Dopamine Loading, 45-Minute Focus Rule, 30-Day Fluency Challenge, brain exercises, Japanese techniques (Kaizen, Shoshin, Seijaku, Nemawashi, Kaikaku), Vedic habits, 3 study mistakes, Diamond Mindset, problem reframing, topper habits, Start-Here checklist, 50:10 & 147 & 3-2-1 rules, Tiger Strategy, Mirror Technique, short notes, Vivekananda method, mindset mechanisms (Kintsugi, Kobra, Butterfly), night study, study music, confidence hacks, Warrior Protocol"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Q291–Q318"
+          })]
+        })
+      })]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "diagnostic-pre-test",
       children: "Diagnostic Pre-Test"
@@ -701,6 +734,10 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "If you want to build a complete learning system:"
         }), " Read all chapters in order"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "If you want ready-to-run study protocols:"
+        }), " Start with Chapters 1–4, then Chapter 17 for PQRST, Paper Theory, Dopamine Loading, and the 45-Minute Focus Rule"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "how-to-read-each-chapter",

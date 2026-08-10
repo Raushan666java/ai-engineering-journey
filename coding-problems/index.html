@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-courses/coding-problems/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Coding Problems Bank | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/coding-problems"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Coding Problems Bank | AI Engineering Journey"><meta data-rh="true" name="description" content="A comprehensive collection of 220 hand-picked coding problems organized by topic, difficulty, and company — designed to prepare you for technical interviews at top tech companies."><meta data-rh="true" property="og:description" content="A comprehensive collection of 220 hand-picked coding problems organized by topic, difficulty, and company — designed to prepare you for technical interviews at top tech companies."><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/coding-problems" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Coding Problems","item":"https://raushan666java.github.io/ai-engineering-journey/coding-problems"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.c8464654.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.ef05ac7b.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.32a26df6.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ai-engineering-journey/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ai-engineering-journey/"><div class="navbar__logo"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI Engineering</b></a><a class="navbar__item navbar__link" href="/ai-engineering-journey/ai-engineering-placement/00-core-computer-science">Placement Course</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ai-engineering-journey/government-exams">All Courses</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ai-engineering-journey/government-exams"><span class="linkLabel_WmDU">Government Exams — Complete Preparation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/applied-ai"><span class="categoryLinkLabel_W154">Applied Ai</span></a><button aria-label="Expand sidebar category &#x27;Applied Ai&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-technology"><span class="categoryLinkLabel_W154">Banking Technology</span></a><button aria-label="Expand sidebar category &#x27;Banking Technology&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/marketing-aptitude"><span class="categoryLinkLabel_W154">Marketing Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Marketing Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-financial-awareness"><span class="categoryLinkLabel_W154">Banking Financial Awareness</span></a><button aria-label="Expand sidebar category &#x27;Banking Financial Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/big-data"><span class="categoryLinkLabel_W154">Big Data</span></a><button aria-label="Expand sidebar category &#x27;Big Data&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-architecture"><span class="categoryLinkLabel_W154">Computer Architecture</span></a><button aria-label="Expand sidebar category &#x27;Computer Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-analysis-interpretation"><span class="categoryLinkLabel_W154">Data Analysis Interpretation</span></a><button aria-label="Expand sidebar category &#x27;Data Analysis Interpretation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/english-language"><span class="categoryLinkLabel_W154">English Language</span></a><button aria-label="Expand sidebar category &#x27;English Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/hindi-language"><span class="categoryLinkLabel_W154">Hindi Language</span></a><button aria-label="Expand sidebar category &#x27;Hindi Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/information-security"><span class="categoryLinkLabel_W154">Information Security</span></a><button aria-label="Expand sidebar category &#x27;Information Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/speed-drills"><span class="categoryLinkLabel_W154">Speed Drills</span></a><button aria-label="Expand sidebar category &#x27;Speed Drills&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-aptitude"><span class="categoryLinkLabel_W154">General Aptitude</span></a><button aria-label="Expand sidebar category &#x27;General Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/job-preparation"><span class="categoryLinkLabel_W154">Job Preparation</span></a><button aria-label="Expand sidebar category &#x27;Job Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/mock-tests"><span class="categoryLinkLabel_W154">Mock Tests</span></a><button aria-label="Expand sidebar category &#x27;Mock Tests&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/quantitative-aptitude"><span class="categoryLinkLabel_W154">Quantitative Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Quantitative Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/reasoning-ability"><span class="categoryLinkLabel_W154">Reasoning Ability</span></a><button aria-label="Expand sidebar category &#x27;Reasoning Ability&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/placement-preparation"><span class="categoryLinkLabel_W154">Placement Preparation</span></a><button aria-label="Expand sidebar category &#x27;Placement Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-awareness"><span class="categoryLinkLabel_W154">General Awareness</span></a><button aria-label="Expand sidebar category &#x27;General Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible menu__list-item-collapsible--active"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" aria-current="page" href="/ai-engineering-journey/coding-problems"><span class="categoryLinkLabel_W154">Coding Problems</span></a><button aria-label="Collapse sidebar category &#x27;Coding Problems&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/01-arrays"><span class="linkLabel_WmDU">Chapter 01: Arrays</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/02-strings"><span class="linkLabel_WmDU">Chapter 02: Strings</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/03-linked-lists"><span class="linkLabel_WmDU">Chapter 03: Linked Lists</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/04-stacks-queues"><span class="linkLabel_WmDU">Chapter 04: Stacks &amp; Queues</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/05-trees"><span class="linkLabel_WmDU">Chapter 05: Trees</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/06-graphs"><span class="linkLabel_WmDU">Chapter 06: Graphs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/07-dynamic-programming"><span class="linkLabel_WmDU">Chapter 07: Dynamic Programming</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/08-greedy"><span class="linkLabel_WmDU">Chapter 08: Greedy Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/coding-problems/09-backtracking"><span class="linkLabel_WmDU">Chapter 09: Backtracking</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/blockchain"><span class="categoryLinkLabel_W154">Blockchain</span></a><button aria-label="Expand sidebar category &#x27;Blockchain&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cloud-computing"><span class="categoryLinkLabel_W154">Cloud Computing</span></a><button aria-label="Expand sidebar category &#x27;Cloud Computing&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/engineering-mathematics"><span class="categoryLinkLabel_W154">Engineering Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Engineering Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/loop-engineering"><span class="categoryLinkLabel_W154">Loop Engineering</span></a><button aria-label="Expand sidebar category &#x27;Loop Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/machine-learning"><span class="categoryLinkLabel_W154">Machine Learning</span></a><button aria-label="Expand sidebar category &#x27;Machine Learning&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/professional-knowledge"><span class="categoryLinkLabel_W154">Professional Knowledge</span></a><button aria-label="Expand sidebar category &#x27;Professional Knowledge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/modern-ai-engineering"><span class="categoryLinkLabel_W154">Modern Ai Engineering</span></a><button aria-label="Expand sidebar category &#x27;Modern Ai Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/ai-engineering-journey/ai-agent-engineer"><span class="categoryLinkLabel_W154">Ai Agent Engineer</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/government-pyqs"><span class="categoryLinkLabel_W154">Government Pyqs</span></a><button aria-label="Expand sidebar category &#x27;Government Pyqs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/compiler-design"><span class="categoryLinkLabel_W154">Compiler Design</span></a><button aria-label="Expand sidebar category &#x27;Compiler Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/digital-logic"><span class="categoryLinkLabel_W154">Digital Logic</span></a><button aria-label="Expand sidebar category &#x27;Digital Logic&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/discrete-mathematics"><span class="categoryLinkLabel_W154">Discrete Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Discrete Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn-practical"><span class="categoryLinkLabel_W154">Learning How To Learn Practical</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn Practical&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/oop-cpp"><span class="categoryLinkLabel_W154">Oop Cpp</span></a><button aria-label="Expand sidebar category &#x27;Oop Cpp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/software-engineering"><span class="categoryLinkLabel_W154">Software Engineering</span></a><button aria-label="Expand sidebar category &#x27;Software Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/theory-of-computation"><span class="categoryLinkLabel_W154">Theory Of Computation</span></a><button aria-label="Expand sidebar category &#x27;Theory Of Computation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/interview-preparation"><span class="categoryLinkLabel_W154">Interview Preparation</span></a><button aria-label="Expand sidebar category &#x27;Interview Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn"><span class="categoryLinkLabel_W154">Learning How To Learn</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/algorithms"><span class="categoryLinkLabel_W154">Algorithms</span></a><button aria-label="Expand sidebar category &#x27;Algorithms&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/c-programming"><span class="categoryLinkLabel_W154">C Programming</span></a><button aria-label="Expand sidebar category &#x27;C Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-networks"><span class="categoryLinkLabel_W154">Computer Networks</span></a><button aria-label="Expand sidebar category &#x27;Computer Networks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-structures"><span class="categoryLinkLabel_W154">Data Structures</span></a><button aria-label="Expand sidebar category &#x27;Data Structures&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/operating-systems"><span class="categoryLinkLabel_W154">Operating Systems</span></a><button aria-label="Expand sidebar category &#x27;Operating Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/web-development"><span class="categoryLinkLabel_W154">Web Development</span></a><button aria-label="Expand sidebar category &#x27;Web Development&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/database-management-systems"><span class="categoryLinkLabel_W154">Database Management Systems</span></a><button aria-label="Expand sidebar category &#x27;Database Management Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cyber-security"><span class="categoryLinkLabel_W154">Cyber Security</span></a><button aria-label="Expand sidebar category &#x27;Cyber Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/python-programming"><span class="categoryLinkLabel_W154">Python Programming</span></a><button aria-label="Expand sidebar category &#x27;Python Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/system-design"><span class="categoryLinkLabel_W154">System Design</span></a><button aria-label="Expand sidebar category &#x27;System Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/artificial-intelligence"><span class="categoryLinkLabel_W154">Artificial Intelligence</span></a><button aria-label="Expand sidebar category &#x27;Artificial Intelligence&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/vigyan-bhairav-tantra"><span class="categoryLinkLabel_W154">Vigyan Bhairav Tantra</span></a><button aria-label="Expand sidebar category &#x27;Vigyan Bhairav Tantra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/devops"><span class="categoryLinkLabel_W154">Devops</span></a><button aria-label="Expand sidebar category &#x27;Devops&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/gate-cs-preparation"><span class="categoryLinkLabel_W154">Gate Cs Preparation</span></a><button aria-label="Expand sidebar category &#x27;Gate Cs Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-course/README"><span class="categoryLinkLabel_W154">Learning Course</span></a><button aria-label="Expand sidebar category &#x27;Learning Course&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/laravel"><span class="categoryLinkLabel_W154">Laravel</span></a><button aria-label="Expand sidebar category &#x27;Laravel&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/java"><span class="categoryLinkLabel_W154">Java</span></a><button aria-label="Expand sidebar category &#x27;Java&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/ai-engineering-placement"><span class="categoryLinkLabel_W154">Ai Engineering Placement</span></a><button aria-label="Expand sidebar category &#x27;Ai Engineering Placement&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ai-engineering-journey/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Coding Problems</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Coding Problems Bank</h1></header>
+<blockquote>
+<p>A comprehensive collection of 220 hand-picked coding problems organized by topic, difficulty, and company — designed to prepare you for technical interviews at top tech companies.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<p>By working through this problem bank systematically, you will:</p>
+<ul>
+<li class=""><strong>Master core data structures</strong>: Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Graphs, and advanced structures</li>
+<li class=""><strong>Develop algorithmic intuition</strong>: Recognize problem patterns and apply optimal algorithms (DP, Greedy, Backtracking, Divide &amp; Conquer)</li>
+<li class=""><strong>Achieve interview readiness</strong>: Solve 220 curated problems spanning Easy (65), Medium (108), and Hard (47) difficulty levels</li>
+<li class=""><strong>Build TypeScript proficiency</strong>: All solutions are implemented in TypeScript with tested, production-quality code</li>
+<li class=""><strong>Understand trade-offs</strong>: Every problem includes brute force and optimal approaches with complexity analysis</li>
+<li class=""><strong>Gain company-specific exposure</strong>: Problems tagged with frequent appearance at Amazon, Google, Microsoft, Meta, Apple, Netflix, and more</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-use-this-problem-bank">How to Use This Problem Bank<a href="#how-to-use-this-problem-bank" class="hash-link" aria-label="Direct link to How to Use This Problem Bank" title="Direct link to How to Use This Problem Bank" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-workflow">Recommended Workflow<a href="#recommended-workflow" class="hash-link" aria-label="Direct link to Recommended Workflow" title="Direct link to Recommended Workflow" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">┌─────────────────────────────────────────────────────────────────┐</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│                   MASTER STUDY WORKFLOW                         │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">├─────────────────────────────────────────────────────────────────┤</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│                                                                 │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│  1. Pick a Topic → Read Theory → Attempt E→M→H Progression     │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│                                                                 │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│  2. For Each Problem:                                           │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│     ├─ Try for 20-30 min without hints                          │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│     ├─ If stuck: read brute force approach                      │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│     ├─ Try to optimize independently                            │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│     └─ Review optimal solution &amp; implement in TypeScript        │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│                                                                 │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│  3. Track: Problem → Approach → Time → Complexity → Revisit?    │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│                                                                 │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│  4. Spaced Repetition: Revisit 20% of problems weekly           │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">│                                                                 │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">└─────────────────────────────────────────────────────────────────┘</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-distribution">Problem Distribution<a href="#problem-distribution" class="hash-link" aria-label="Direct link to Problem Distribution" title="Direct link to Problem Distribution" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Topic</th><th>Easy</th><th>Medium</th><th>Hard</th><th>Total</th><th>Key Companies</th></tr></thead><tbody><tr><td>01 Arrays</td><td>10</td><td>14</td><td>6</td><td>30</td><td>Amazon, Google, Meta, Microsoft</td></tr><tr><td>02 Strings</td><td>8</td><td>12</td><td>5</td><td>25</td><td>Amazon, Google, Microsoft, Apple</td></tr><tr><td>03 Linked Lists</td><td>7</td><td>10</td><td>3</td><td>20</td><td>Amazon, Microsoft, Meta</td></tr><tr><td>04 Stacks &amp; Queues</td><td>7</td><td>10</td><td>3</td><td>20</td><td>Google, Amazon, Microsoft</td></tr><tr><td>05 Trees</td><td>10</td><td>14</td><td>6</td><td>30</td><td>Amazon, Google, Meta</td></tr><tr><td>06 Graphs</td><td>5</td><td>14</td><td>6</td><td>25</td><td>Google, Amazon, Meta</td></tr><tr><td>07 Dynamic Programming</td><td>10</td><td>18</td><td>7</td><td>35</td><td>Amazon, Google, Microsoft</td></tr><tr><td>08 Greedy</td><td>5</td><td>8</td><td>2</td><td>15</td><td>Amazon, Microsoft, Google</td></tr><tr><td>09 Backtracking</td><td>3</td><td>8</td><td>4</td><td>15</td><td>Amazon, Google, Microsoft</td></tr><tr><td><strong>Total</strong></td><td><strong>65</strong></td><td><strong>108</strong></td><td><strong>47</strong></td><td><strong>220</strong></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="difficulty-progression-path">Difficulty Progression Path<a href="#difficulty-progression-path" class="hash-link" aria-label="Direct link to Difficulty Progression Path" title="Direct link to Difficulty Progression Path" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Easy (65 problems) ──────► Medium (108 problems) ──────► Hard (47 problems)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">   │                              │                              │</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">   ├─ Build confidence            ├─ Core interview bar          ├─ Stretch goals</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">   ├─ Learn patterns              ├─ Most common difficulty      ├─ FAANG+ final rounds</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">   └─ Master syntax              └─ Deepen intuition            └─ System design adjacent</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-solving-patterns">Problem-Solving Patterns<a href="#problem-solving-patterns" class="hash-link" aria-label="Direct link to Problem-Solving Patterns" title="Direct link to Problem-Solving Patterns" translate="no">​</a></h2>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">mindmap</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  root((Problem Patterns))</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Array &amp; String</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Two Pointers</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Sliding Window</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Prefix Sum</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Kadane&#x27;s Algorithm</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Cyclic Sort</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Partitioning</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Linked List</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Fast &amp; Slow Pointer</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Reverse Linked List</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Merge Lists</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Dummy Head</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      In-place Reversal</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Tree &amp; Graph</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      DFS / BFS</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Topological Sort</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Union Find</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Trie</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Lowest Common Ancestor</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Tree Serialization</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Dynamic Programming</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Memoization</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Tabulation</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      State Machine</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Knapsack Pattern</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      LCS / LIS</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Matrix DP</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Stack &amp; Queue</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Monotonic Stack</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Two Stacks</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Deque (Sliding Window)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Min/Max Stack</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Backtracking</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Permutations</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Subsets</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Combinatorial Search</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Pruning</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Constraint Satisfaction</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Greedy</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Interval Scheduling</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Huffman Coding</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Activity Selection</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      Minimum Spanning Tree</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="algorithm-decision-tree">Algorithm Decision Tree<a href="#algorithm-decision-tree" class="hash-link" aria-label="Direct link to Algorithm Decision Tree" title="Direct link to Algorithm Decision Tree" translate="no">​</a></h2>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A[Problem] --&gt; B{Input structure?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Array/String| C{Sorted?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|Yes| D[Binary Search / Two Pointers]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|No| E{Need subarray?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    E --&gt;|Yes| F[Sliding Window / Prefix Sum]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    E --&gt;|No| G{Unique elements?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    G --&gt;|Yes| H[Hash Map / Set]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    G --&gt;|No| I[Sorting + Pointers]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Linked List| J{Need cycle?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    J --&gt;|Yes| K[Fast &amp; Slow Pointer]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    J --&gt;|No| L{Reverse?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    L --&gt;|Yes| M[Iterative / Recursive Reverse]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    L --&gt;|No| N[Merge / Split / Reorder]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Tree| O{Type?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    O --&gt;|BST| P[Inorder traversal / Recursion]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    O --&gt;|Generic| Q[DFS / BFS]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    O --&gt;|Level order| R[Queue-based BFS]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Graph| S{Small?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    S --&gt;|Yes| T[Adjacency Matrix]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    S --&gt;|No| U[Adjacency List]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|None specific| V{Optimal substructure?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    V --&gt;|Yes| W[Dynamic Programming]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    V --&gt;|No| X{Exhaustive?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    X --&gt;|Yes| Y[Backtracking / BFS / DFS]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    X --&gt;|No| Z[Greedy / Heuristic]</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="complexity-comparison-framework">Complexity Comparison Framework<a href="#complexity-comparison-framework" class="hash-link" aria-label="Direct link to Complexity Comparison Framework" title="Direct link to Complexity Comparison Framework" translate="no">​</a></h2>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">quadrantChart</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    title Algorithm Efficiency Quadrants</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    x-axis Fast Execution --&gt; Slow Execution</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    y-axis Low Memory --&gt; High Memory</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    quadrant-1 Ideal: O(n) time, O(1) space</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    quadrant-2 Time-Efficient: O(n log n) time, O(n) space</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    quadrant-3 Balanced: O(n²) time, O(1) space</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    quadrant-4 Resource-Heavy: O(n²) time, O(n) space</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Two Pointers: [0.15, 0.15]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Sliding Window: [0.2, 0.2]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Hash Map: [0.15, 0.45]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    DP Tabulation: [0.55, 0.6]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Backtracking: [0.7, 0.4]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Sorting: [0.35, 0.3]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    DFS/BFS: [0.4, 0.5]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    Brute Force: [0.85, 0.2]</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="12-week-study-plan">12-Week Study Plan<a href="#12-week-study-plan" class="hash-link" aria-label="Direct link to 12-Week Study Plan" title="Direct link to 12-Week Study Plan" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="phase-1-foundations-weeks-1-4">Phase 1: Foundations (Weeks 1-4)<a href="#phase-1-foundations-weeks-1-4" class="hash-link" aria-label="Direct link to Phase 1: Foundations (Weeks 1-4)" title="Direct link to Phase 1: Foundations (Weeks 1-4)" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Week</th><th>Focus</th><th>Problems</th><th>Target</th></tr></thead><tbody><tr><td>1</td><td>Arrays &amp; Hashing</td><td>01-arrays (E: 1-10)</td><td>10 Easy</td></tr><tr><td>2</td><td>Strings</td><td>02-strings (E: 1-8)</td><td>8 Easy</td></tr><tr><td>3</td><td>Linked Lists + Stacks/Queues</td><td>03-linked-lists (E: 1-7), 04-stacks-queues (E: 1-7)</td><td>14 Easy</td></tr><tr><td>4</td><td>Trees (Basic)</td><td>05-trees (E: 1-10)</td><td>10 Easy</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="phase-2-core-algorithms-weeks-5-8">Phase 2: Core Algorithms (Weeks 5-8)<a href="#phase-2-core-algorithms-weeks-5-8" class="hash-link" aria-label="Direct link to Phase 2: Core Algorithms (Weeks 5-8)" title="Direct link to Phase 2: Core Algorithms (Weeks 5-8)" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Week</th><th>Focus</th><th>Problems</th><th>Target</th></tr></thead><tbody><tr><td>5</td><td>Arrays &amp; Strings (Medium)</td><td>01-arrays (M: 1-7), 02-strings (M: 1-6)</td><td>13 Medium</td></tr><tr><td>6</td><td>Linked Lists + Stacks (Medium)</td><td>03-linked-lists (M: 1-5), 04-stacks-queues (M: 1-5)</td><td>10 Medium</td></tr><tr><td>7</td><td>Trees + Graphs (Medium)</td><td>05-trees (M: 1-7), 06-graphs (M: 1-5)</td><td>12 Medium</td></tr><tr><td>8</td><td>Dynamic Programming (Intro)</td><td>07-dp (E: 1-5, M: 1-4)</td><td>9 problems</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="phase-3-advanced-weeks-9-12">Phase 3: Advanced (Weeks 9-12)<a href="#phase-3-advanced-weeks-9-12" class="hash-link" aria-label="Direct link to Phase 3: Advanced (Weeks 9-12)" title="Direct link to Phase 3: Advanced (Weeks 9-12)" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Week</th><th>Focus</th><th>Problems</th><th>Target</th></tr></thead><tbody><tr><td>9</td><td>DP + Greedy</td><td>07-dp (M: 5-12), 08-greedy (all)</td><td>20 problems</td></tr><tr><td>10</td><td>Backtracking + Hard Arrays</td><td>09-backtracking (all), 01-arrays (H: 1-6)</td><td>21 problems</td></tr><tr><td>11</td><td>Hard Trees, Graphs, Strings</td><td>05-trees (H: 1-6), 06-graphs (H: 1-6), 02-strings (H: 1-5)</td><td>17 problems</td></tr><tr><td>12</td><td>Mixed Review + Mock Interviews</td><td>Revisit flagged problems + random selection</td><td>~15 problems</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="weekly-schedule-template">Weekly Schedule Template<a href="#weekly-schedule-template" class="hash-link" aria-label="Direct link to Weekly Schedule Template" title="Direct link to Weekly Schedule Template" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Monday:   3 new problems (attempt 20-30 min each)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Tuesday:  Review + 2 new problems</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Wednesday: 3 new problems</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Thursday: Review + 2 new problems</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Friday:   3 new problems + week review</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Saturday: Spaced repetition (previous weeks)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Sunday:   Rest / Light review of patterns</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tips-for-interview-preparation">Tips for Interview Preparation<a href="#tips-for-interview-preparation" class="hash-link" aria-label="Direct link to Tips for Interview Preparation" title="Direct link to Tips for Interview Preparation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="before-the-interview">Before the Interview<a href="#before-the-interview" class="hash-link" aria-label="Direct link to Before the Interview" title="Direct link to Before the Interview" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Master the fundamentals first</strong>: Don&#x27;t jump to hard problems before you can solve Easy ones in under 15 minutes with optimal solutions.</p>
+</li>
+<li class="">
+<p><strong>Focus on patterns, not memorization</strong>: Understanding that &quot;Longest Substring Without Repeating Characters&quot; and &quot;Minimum Window Substring&quot; both use sliding window is more valuable than memorizing any single solution.</p>
+</li>
+<li class="">
+<p><strong>Practice on paper or a whiteboard</strong>: Real interviews don&#x27;t have an IDE with autocomplete. Practice writing code by hand or in a plain text editor.</p>
+</li>
+<li class="">
+<p><strong>Verbalize your thinking</strong>: As you solve problems, practice speaking your thought process aloud. Explain trade-offs, mention edge cases, and discuss complexity.</p>
+</li>
+<li class="">
+<p><strong>Use the STAR approach for each problem</strong>:</p>
+<ul>
+<li class=""><strong>S</strong>ituation: Restate the problem in your own words</li>
+<li class=""><strong>T</strong>ask: Clarify inputs, outputs, and constraints</li>
+<li class=""><strong>A</strong>pproach: Discuss brute force → identify bottlenecks → optimize</li>
+<li class=""><strong>R</strong>esult: Implement, test with examples, analyze complexity</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="during-the-interview">During the Interview<a href="#during-the-interview" class="hash-link" aria-label="Direct link to During the Interview" title="Direct link to During the Interview" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Clarify before coding</strong>: Ask about input size, edge cases, negative numbers, empty inputs, duplicate values.</p>
+</li>
+<li class="">
+<p><strong>Start with brute force</strong>: It shows you can solve problems, then optimize. Never jump straight to the optimal solution without acknowledging the naive approach.</p>
+</li>
+<li class="">
+<p><strong>Write clean code</strong>:</p>
+<ul>
+<li class="">Use meaningful variable names (not <code>i</code>, <code>j</code>, <code>k</code> for everything)</li>
+<li class="">Break down complex logic into helper functions</li>
+<li class="">Handle edge cases at the start</li>
+<li class="">Add comments for non-obvious logic</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Test your solution</strong>: Walk through your code with the example input. Check edge cases (empty, single element, duplicates).</p>
+</li>
+<li class="">
+<p><strong>Analyze complexity</strong>: Always state time and space complexity. Be prepared to discuss trade-offs.</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-mistakes-to-avoid">Common Mistakes to Avoid<a href="#common-mistakes-to-avoid" class="hash-link" aria-label="Direct link to Common Mistakes to Avoid" title="Direct link to Common Mistakes to Avoid" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Mistake</th><th>Why It Hurts</th><th>Better Approach</th></tr></thead><tbody><tr><td>Jumping to code</td><td>No understanding of problem</td><td>Clarify first, then solve</td></tr><tr><td>Silently solving</td><td>Interviewer can&#x27;t help</td><td>Talk through your thinking</td></tr><tr><td>Ignoring constraints</td><td>Wrong algorithm choice</td><td>Ask about input size limits</td></tr><tr><td>Messy code</td><td>Hard to debug</td><td>Write clean, modular code</td></tr><tr><td>No testing</td><td>Hidden bugs</td><td>Walk through example cases</td></tr><tr><td>Giving up too fast</td><td>Missed opportunity</td><td>Try brute force, then optimize</td></tr><tr><td>Not discussing trade-offs</td><td>Seems inexperienced</td><td>Compare time vs. space</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="company-specific-preparation">Company-Specific Preparation<a href="#company-specific-preparation" class="hash-link" aria-label="Direct link to Company-Specific Preparation" title="Direct link to Company-Specific Preparation" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Company</th><th>Focus Areas</th><th>Typical Difficulty</th><th>Preparation Strategy</th></tr></thead><tbody><tr><td><strong>Amazon</strong></td><td>Arrays, Strings, Trees, OOD</td><td>Medium-Hard</td><td>2-3 coding rounds + LP questions</td></tr><tr><td><strong>Google</strong></td><td>Graphs, DP, Math</td><td>Medium-Hard (Harder avg)</td><td>4-5 rounds, focus on optimization</td></tr><tr><td><strong>Meta</strong></td><td>Arrays, Strings, DP</td><td>Medium</td><td>2 coding + 1 system design</td></tr><tr><td><strong>Microsoft</strong></td><td>Trees, Linked Lists, Strings</td><td>Easy-Medium</td><td>3-4 rounds, focus on fundamentals</td></tr><tr><td><strong>Apple</strong></td><td>Arrays, Strings, embedded topics</td><td>Medium</td><td>4-5 rounds, domain-specific</td></tr><tr><td><strong>Netflix</strong></td><td>System design + algorithms</td><td>Hard</td><td>Focus on scale and distributed systems</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resources-to-complement-this-bank">Resources to Complement This Bank<a href="#resources-to-complement-this-bank" class="hash-link" aria-label="Direct link to Resources to Complement This Bank" title="Direct link to Resources to Complement This Bank" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>NeetCode 150</strong>: Pattern-based problem set for concept reinforcement</li>
+<li class=""><strong>LeetCode Discuss</strong>: Company-specific interview experiences</li>
+<li class=""><strong>Cracking the Coding Interview</strong>: System design and behavioral prep</li>
+<li class=""><strong>Grokking the Coding Interview</strong>: Pattern recognition for common problem types</li>
+<li class=""><strong>Pramp / interviewing.io</strong>: Mock interviews with peers and professionals</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-solving-framework-umpire">Problem Solving Framework: UMPIRE<a href="#problem-solving-framework-umpire" class="hash-link" aria-label="Direct link to Problem Solving Framework: UMPIRE" title="Direct link to Problem Solving Framework: UMPIRE" translate="no">​</a></h2>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">U - Understand: Restate problem, ask clarifying questions, identify constraints</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">M - Match: Map problem to known patterns (sliding window, DP, BFS, etc.)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">P - Plan: Outline approach, pseudocode, consider edge cases</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">I - Implement: Write clean TypeScript code with helper functions</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">R - Review: Walk through examples, check for bugs, analyze complexity</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">E - Evaluate: Discuss trade-offs, alternative approaches, potential improvements</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tracking-your-progress">Tracking Your Progress<a href="#tracking-your-progress" class="hash-link" aria-label="Direct link to Tracking Your Progress" title="Direct link to Tracking Your Progress" translate="no">​</a></h2>
+<p>Use this template to track each problem:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">| # | Problem | Difficulty | Approach | Time | Space | Date | Revisit? |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">|---|---------|-----------|----------|------|-------|------|----------|</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| 1 | Two Sum | Easy | Hash Map | O(n) | O(n) | 2026-07-07 | No |</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="progress-milestones">Progress Milestones<a href="#progress-milestones" class="hash-link" aria-label="Direct link to Progress Milestones" title="Direct link to Progress Milestones" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Milestone</th><th>Problems Solved</th><th>Status</th></tr></thead><tbody><tr><td>Beginner</td><td>30+</td><td>Start here</td></tr><tr><td>Intermediate</td><td>80+</td><td>Ready for most company screens</td></tr><tr><td>Advanced</td><td>150+</td><td>Competitive for FAANG+</td></tr><tr><td>Expert</td><td>200+</td><td>Ready for senior-level interviews</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="contribution-guide">Contribution Guide<a href="#contribution-guide" class="hash-link" aria-label="Direct link to Contribution Guide" title="Direct link to Contribution Guide" translate="no">​</a></h2>
+<p>This problem bank is maintained as part of the AI Engineering Journey curriculum. To contribute:</p>
+<ol>
+<li class="">Fork the repository</li>
+<li class="">Add your problem following the established format</li>
+<li class="">Include TypeScript solution with test cases</li>
+<li class="">Submit a PR with the problem tagged appropriately</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-format-checklist">Problem Format Checklist<a href="#problem-format-checklist" class="hash-link" aria-label="Direct link to Problem Format Checklist" title="Direct link to Problem Format Checklist" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> Title, difficulty, company tags</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Clear problem description with examples</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Constraints section</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Brute force approach explanation</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Optimal approach explanation</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> TypeScript solution code (tested)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Test cases with expected outputs</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Time and space complexity analysis</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Remember</strong>: Consistency beats intensity. Solving 2-3 problems daily for 3 months will prepare you far better than cramming 50 problems in a weekend. Use this bank as your daily workout — each problem builds muscle memory for pattern recognition.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="index-of-chapters">Index of Chapters<a href="#index-of-chapters" class="hash-link" aria-label="Direct link to Index of Chapters" title="Direct link to Index of Chapters" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>#</th><th>Chapter</th><th>Problems</th><th>Range</th></tr></thead><tbody><tr><td>01</td><td><a class="" href="/ai-engineering-journey/coding-problems/01-arrays">Arrays</a></td><td>30</td><td>E10 · M14 · H6</td></tr><tr><td>02</td><td><a class="" href="/ai-engineering-journey/coding-problems/02-strings">Strings</a></td><td>25</td><td>E8 · M12 · H5</td></tr><tr><td>03</td><td><a class="" href="/ai-engineering-journey/coding-problems/03-linked-lists">Linked Lists</a></td><td>20</td><td>E7 · M10 · H3</td></tr><tr><td>04</td><td><a class="" href="/ai-engineering-journey/coding-problems/04-stacks-queues">Stacks &amp; Queues</a></td><td>20</td><td>E7 · M10 · H3</td></tr><tr><td>05</td><td><a class="" href="/ai-engineering-journey/coding-problems/05-trees">Trees</a></td><td>30</td><td>E10 · M14 · H6</td></tr><tr><td>06</td><td><a class="" href="/ai-engineering-journey/coding-problems/06-graphs">Graphs</a></td><td>25</td><td>E5 · M14 · H6</td></tr><tr><td>07</td><td><a class="" href="/ai-engineering-journey/coding-problems/07-dynamic-programming">Dynamic Programming</a></td><td>35</td><td>E10 · M18 · H7</td></tr><tr><td>08</td><td><a class="" href="/ai-engineering-journey/coding-problems/08-greedy">Greedy</a></td><td>15</td><td>E5 · M8 · H2</td></tr><tr><td>09</td><td><a class="" href="/ai-engineering-journey/coding-problems/09-backtracking">Backtracking</a></td><td>15</td><td>E3 · M8 · H4</td></tr><tr><td></td><td><strong>Total</strong></td><td><strong>220</strong></td><td><strong>E65 · M108 · H47</strong></td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="detailed-problem-solving-guide-for-each-topic">Detailed Problem-Solving Guide for Each Topic<a href="#detailed-problem-solving-guide-for-each-topic" class="hash-link" aria-label="Direct link to Detailed Problem-Solving Guide for Each Topic" title="Direct link to Detailed Problem-Solving Guide for Each Topic" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="arrays--hashing">Arrays &amp; Hashing<a href="#arrays--hashing" class="hash-link" aria-label="Direct link to Arrays &amp; Hashing" title="Direct link to Arrays &amp; Hashing" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Two pointers, sliding window, prefix sum, hash map</li>
+<li class=""><strong>Key insight</strong>: When you need O(1) lookup, use a hash map. When you need sorted order, consider sorting first.</li>
+<li class=""><strong>Typical pitfalls</strong>: Off-by-one errors, integer overflow, negative numbers in prefix sums</li>
+<li class=""><strong>Start with</strong>: Two Sum → Three Sum → Container With Most Water</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="strings">Strings<a href="#strings" class="hash-link" aria-label="Direct link to Strings" title="Direct link to Strings" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Sliding window, character frequency arrays, two pointers</li>
+<li class=""><strong>Key insight</strong>: For palindrome problems, expand from center. For substring problems, use sliding window.</li>
+<li class=""><strong>Typical pitfalls</strong>: Unicode characters, empty strings, case sensitivity</li>
+<li class=""><strong>Start with</strong>: Valid Palindrome → Longest Substring Without Repeating Characters → Group Anagrams</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="linked-lists">Linked Lists<a href="#linked-lists" class="hash-link" aria-label="Direct link to Linked Lists" title="Direct link to Linked Lists" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Fast &amp; slow pointer, dummy node, recursion reversal</li>
+<li class=""><strong>Key insight</strong>: Draw the pointers! Visualizing pointer movement prevents bugs.</li>
+<li class=""><strong>Typical pitfalls</strong>: Null pointer exceptions, not handling single-element lists, circular references</li>
+<li class=""><strong>Start with</strong>: Reverse Linked List → Merge Two Sorted Lists → Linked List Cycle</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stacks--queues">Stacks &amp; Queues<a href="#stacks--queues" class="hash-link" aria-label="Direct link to Stacks &amp; Queues" title="Direct link to Stacks &amp; Queues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Monotonic stack, two-stack queue, deque for sliding window</li>
+<li class=""><strong>Key insight</strong>: Stack = LIFO for matching/nesting problems. Queue = FIFO for level-order.</li>
+<li class=""><strong>Typical pitfalls</strong>: Empty stack pops, confusing monotonic increasing vs decreasing</li>
+<li class=""><strong>Start with</strong>: Valid Parentheses → Min Stack → Daily Temperatures</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="trees">Trees<a href="#trees" class="hash-link" aria-label="Direct link to Trees" title="Direct link to Trees" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Recursive DFS, iterative stack, BFS queue, Morris traversal</li>
+<li class=""><strong>Key insight</strong>: Inorder of BST gives sorted order. Level order uses BFS.</li>
+<li class=""><strong>Typical pitfalls</strong>: Null children, deep recursion causing stack overflow</li>
+<li class=""><strong>Start with</strong>: Max Depth → Validate BST → Level Order Traversal</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="graphs">Graphs<a href="#graphs" class="hash-link" aria-label="Direct link to Graphs" title="Direct link to Graphs" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: BFS for shortest path, DFS for connectivity, topological sort for dependencies</li>
+<li class=""><strong>Key insight</strong>: BFS finds shortest path in unweighted graphs. Adjacency list is most common representation.</li>
+<li class=""><strong>Typical pitfalls</strong>: Infinite loops from missing visited set, disconnected components</li>
+<li class=""><strong>Start with</strong>: Number of Islands → Clone Graph → Course Schedule</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dynamic-programming">Dynamic Programming<a href="#dynamic-programming" class="hash-link" aria-label="Direct link to Dynamic Programming" title="Direct link to Dynamic Programming" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Memoization (top-down), tabulation (bottom-up), state machine</li>
+<li class=""><strong>Key insight</strong>: Find the recurrence relation first. dp[i] = something with dp[i-1] or dp[i-2].</li>
+<li class=""><strong>Typical pitfalls</strong>: Wrong base cases, off-by-one in DP array indexing, missing memoization</li>
+<li class=""><strong>Start with</strong>: Climbing Stairs → House Robber → Coin Change</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="greedy">Greedy<a href="#greedy" class="hash-link" aria-label="Direct link to Greedy" title="Direct link to Greedy" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Sorting + selection, two-pass optimization, interval scheduling</li>
+<li class=""><strong>Key insight</strong>: Not all problems can be solved greedily. Always verify the greedy choice property.</li>
+<li class=""><strong>Typical pitfalls</strong>: Assuming greedy works when DP is needed, wrong sort order</li>
+<li class=""><strong>Start with</strong>: Assign Cookies → Jump Game → Non-overlapping Intervals</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="backtracking">Backtracking<a href="#backtracking" class="hash-link" aria-label="Direct link to Backtracking" title="Direct link to Backtracking" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Core techniques</strong>: Choose-explore-unchoose, pruning, constraint satisfaction</li>
+<li class=""><strong>Key insight</strong>: The branch and bound approach can dramatically reduce search space.</li>
+<li class=""><strong>Typical pitfalls</strong>: Forgetting to restore state, not pruning dead branches</li>
+<li class=""><strong>Start with</strong>: Subsets → Permutations → Generate Parentheses</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interview-preparation-timeline">Interview Preparation Timeline<a href="#interview-preparation-timeline" class="hash-link" aria-label="Direct link to Interview Preparation Timeline" title="Direct link to Interview Preparation Timeline" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-months-before-interview">3 Months Before Interview<a href="#3-months-before-interview" class="hash-link" aria-label="Direct link to 3 Months Before Interview" title="Direct link to 3 Months Before Interview" translate="no">​</a></h3>
+<ul>
+<li class="">Month 1: Arrays, Strings, Linked Lists (Easy + Medium)</li>
+<li class="">Month 2: Trees, Graphs, Hash Tables (Medium)</li>
+<li class="">Month 3: DP, Greedy, Backtracking + Mixed Review</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-month-before-interview">1 Month Before Interview<a href="#1-month-before-interview" class="hash-link" aria-label="Direct link to 1 Month Before Interview" title="Direct link to 1 Month Before Interview" translate="no">​</a></h3>
+<ul>
+<li class="">Week 1: Company-tagged problems (filter by target company)</li>
+<li class="">Week 2: Mock interviews (2-3 per week)</li>
+<li class="">Week 3: Hard problems + System design prep</li>
+<li class="">Week 4: Final review of weak areas</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-week-before-interview">1 Week Before Interview<a href="#1-week-before-interview" class="hash-link" aria-label="Direct link to 1 Week Before Interview" title="Direct link to 1 Week Before Interview" translate="no">​</a></h3>
+<ul>
+<li class="">Review your notes on patterns and approaches</li>
+<li class="">Practice 1-2 problems per day to stay sharp</li>
+<li class="">Get plenty of rest — avoid cramming</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mock-interview-protocol">Mock Interview Protocol<a href="#mock-interview-protocol" class="hash-link" aria-label="Direct link to Mock Interview Protocol" title="Direct link to Mock Interview Protocol" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="45-minute-session-structure">45-Minute Session Structure<a href="#45-minute-session-structure" class="hash-link" aria-label="Direct link to 45-Minute Session Structure" title="Direct link to 45-Minute Session Structure" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Minutes 0-5:  Problem understanding and clarification</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Minutes 5-10: Approach discussion (brute force, then optimize)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Minutes 10-30: Implementation in clean code</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Minutes 30-35: Testing with examples and edge cases</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Minutes 35-40: Complexity analysis</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Minutes 40-45: Follow-up questions and discussion</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="self-assessment-rubric">Self-Assessment Rubric<a href="#self-assessment-rubric" class="hash-link" aria-label="Direct link to Self-Assessment Rubric" title="Direct link to Self-Assessment Rubric" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Criteria</th><th>Poor</th><th>Fair</th><th>Good</th><th>Excellent</th></tr></thead><tbody><tr><td>Problem understanding</td><td>Needs hints</td><td>Basic understanding</td><td>Clear restatement</td><td>Identifies edge cases</td></tr><tr><td>Solution approach</td><td>No approach</td><td>Brute force only</td><td>Optimal with guidance</td><td>Optimal independently</td></tr><tr><td>Code quality</td><td>Buggy</td><td>Works for examples</td><td>Clean + handles edge cases</td><td>Production-quality</td></tr><tr><td>Complexity analysis</td><td>Cannot explain</td><td>Approximate</td><td>Precise</td><td>Trade-off discussion</td></tr><tr><td>Communication</td><td>Silent</td><td>Minimal</td><td>Verbalizes thinking</td><td>Interactive discussion</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="daily-practice-schedule">Daily Practice Schedule<a href="#daily-practice-schedule" class="hash-link" aria-label="Direct link to Daily Practice Schedule" title="Direct link to Daily Practice Schedule" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-hour-session-breakdown">2-Hour Session Breakdown<a href="#2-hour-session-breakdown" class="hash-link" aria-label="Direct link to 2-Hour Session Breakdown" title="Direct link to 2-Hour Session Breakdown" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Time</th><th>Activity</th><th>Purpose</th></tr></thead><tbody><tr><td>0:00 - 0:10</td><td>Warm-up (1 Easy problem)</td><td>Get into coding mode</td></tr><tr><td>0:10 - 0:40</td><td>New Medium problem (attempt)</td><td>Practice problem-solving</td></tr><tr><td>0:40 - 0:50</td><td>Review solution</td><td>Learn optimal approaches</td></tr><tr><td>0:50 - 1:10</td><td>Implement optimal solution</td><td>Code quality practice</td></tr><tr><td>1:10 - 1:30</td><td>Revise 2 previously solved problems</td><td>Spaced repetition</td></tr><tr><td>1:30 - 1:45</td><td>Study one topic theory</td><td>Deepen understanding</td></tr><tr><td>1:45 - 2:00</td><td>Review mistakes log</td><td>Track progress</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-hour-quick-session-busy-days">1-Hour Quick Session (Busy Days)<a href="#1-hour-quick-session-busy-days" class="hash-link" aria-label="Direct link to 1-Hour Quick Session (Busy Days)" title="Direct link to 1-Hour Quick Session (Busy Days)" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Time</th><th>Activity</th></tr></thead><tbody><tr><td>0:00 - 0:10</td><td>Quick warm-up (Easy problem)</td></tr><tr><td>0:10 - 0:35</td><td>Attempt one Medium/Hard problem</td></tr><tr><td>0:35 - 0:50</td><td>Analyze optimal solution</td></tr><tr><td>0:50 - 1:00</td><td>Review one past mistake</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-resources-by-topic">Recommended Resources by Topic<a href="#recommended-resources-by-topic" class="hash-link" aria-label="Direct link to Recommended Resources by Topic" title="Direct link to Recommended Resources by Topic" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Topic</th><th>Video Resource</th><th>Book Chapter</th><th>Practice</th></tr></thead><tbody><tr><td>Arrays</td><td>NeetCode Array Playlist</td><td>CTCI Chapter 1</td><td>This bank (30 problems)</td></tr><tr><td>Strings</td><td>Back to Back SWE</td><td>CTCI Chapter 1</td><td>This bank (25 problems)</td></tr><tr><td>Linked Lists</td><td>CS Dojo Linked Lists</td><td>CTCI Chapter 2</td><td>This bank (20 problems)</td></tr><tr><td>Stacks/Queues</td><td>HackerRank Stacks</td><td>CTCI Chapter 3</td><td>This bank (20 problems)</td></tr><tr><td>Trees</td><td>AlgoExpert BST</td><td>CTCI Chapter 4</td><td>This bank (30 problems)</td></tr><tr><td>Graphs</td><td>MIT 6.006 Graph Algorithms</td><td>CTCI Chapter 4</td><td>This bank (25 problems)</td></tr><tr><td>DP</td><td>Tushar Roy DP Playlist</td><td>CTCI Chapter 8</td><td>This bank (35 problems)</td></tr><tr><td>Greedy</td><td>Algorithms Live!</td><td>CLRS Chapter 16</td><td>This bank (18 problems)</td></tr><tr><td>Backtracking</td><td>Back to Back SWE</td><td>CLRS Chapter 5</td><td>This bank (15 problems)</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-solving-templates">Problem Solving Templates<a href="#problem-solving-templates" class="hash-link" aria-label="Direct link to Problem Solving Templates" title="Direct link to Problem Solving Templates" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-pointers-template">Two Pointers Template<a href="#two-pointers-template" class="hash-link" aria-label="Direct link to Two Pointers Template" title="Direct link to Two Pointers Template" translate="no">​</a></h3>
+<div class="language-typescript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-typescript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">twoPointerTemplate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> returnType </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">let</span><span class="token plain"> left </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">let</span><span class="token plain"> right </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">length </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">left </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> right</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// Process arr[left] and arr[right]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">condition</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      left</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// or right--</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">else</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      right</span><span class="token operator" style="color:#393A34">--</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// or left++</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> result</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sliding-window-template">Sliding Window Template<a href="#sliding-window-template" class="hash-link" aria-label="Direct link to Sliding Window Template" title="Direct link to Sliding Window Template" translate="no">​</a></h3>
+<div class="language-typescript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-typescript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">slidingWindowTemplate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">s</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> map </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">Map</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// or array for chars</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">let</span><span class="token plain"> left </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">let</span><span class="token plain"> result </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">let</span><span class="token plain"> right </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> right </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> s</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">length</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> right</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// Add s[right] to window</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">window </span><span class="token keyword" style="color:#00009f">is</span><span class="token plain"> invalid</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">// Remove s[left] from window</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      left</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// Update result with valid window</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    result </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> Math</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">max</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">result</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> right </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> left </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> result</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dfsbfs-template">DFS/BFS Template<a href="#dfsbfs-template" class="hash-link" aria-label="Direct link to DFS/BFS Template" title="Direct link to DFS/BFS Template" translate="no">​</a></h3>
+<div class="language-typescript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-typescript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">dfsTemplate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">root</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> TreeNode </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">null</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">!</span><span class="token plain">root</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// Process root</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">dfsTemplate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">root</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">left</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">dfsTemplate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">root</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">right</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">bfsTemplate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">root</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> TreeNode </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">null</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> queue </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> root </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">root</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">queue</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">length </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> node </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> queue</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">shift</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">!</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// Process node</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">node</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">left</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> queue</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">push</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">node</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">left</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">node</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">right</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> queue</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">push</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">node</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">right</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<hr>
+<p><em>Happy coding! 🚀</em></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ai-engineering-journey/general-awareness/08-sports-awards-international"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Chapter 8: Sports, Awards &amp; International Organizations</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ai-engineering-journey/coding-problems/01-arrays"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Chapter 01: Arrays</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#how-to-use-this-problem-bank" class="table-of-contents__link toc-highlight">How to Use This Problem Bank</a><ul><li><a href="#recommended-workflow" class="table-of-contents__link toc-highlight">Recommended Workflow</a></li><li><a href="#problem-distribution" class="table-of-contents__link toc-highlight">Problem Distribution</a></li><li><a href="#difficulty-progression-path" class="table-of-contents__link toc-highlight">Difficulty Progression Path</a></li></ul></li><li><a href="#problem-solving-patterns" class="table-of-contents__link toc-highlight">Problem-Solving Patterns</a></li><li><a href="#algorithm-decision-tree" class="table-of-contents__link toc-highlight">Algorithm Decision Tree</a></li><li><a href="#complexity-comparison-framework" class="table-of-contents__link toc-highlight">Complexity Comparison Framework</a></li><li><a href="#12-week-study-plan" class="table-of-contents__link toc-highlight">12-Week Study Plan</a><ul><li><a href="#phase-1-foundations-weeks-1-4" class="table-of-contents__link toc-highlight">Phase 1: Foundations (Weeks 1-4)</a></li><li><a href="#phase-2-core-algorithms-weeks-5-8" class="table-of-contents__link toc-highlight">Phase 2: Core Algorithms (Weeks 5-8)</a></li><li><a href="#phase-3-advanced-weeks-9-12" class="table-of-contents__link toc-highlight">Phase 3: Advanced (Weeks 9-12)</a></li><li><a href="#weekly-schedule-template" class="table-of-contents__link toc-highlight">Weekly Schedule Template</a></li></ul></li><li><a href="#tips-for-interview-preparation" class="table-of-contents__link toc-highlight">Tips for Interview Preparation</a><ul><li><a href="#before-the-interview" class="table-of-contents__link toc-highlight">Before the Interview</a></li><li><a href="#during-the-interview" class="table-of-contents__link toc-highlight">During the Interview</a></li><li><a href="#common-mistakes-to-avoid" class="table-of-contents__link toc-highlight">Common Mistakes to Avoid</a></li><li><a href="#company-specific-preparation" class="table-of-contents__link toc-highlight">Company-Specific Preparation</a></li><li><a href="#resources-to-complement-this-bank" class="table-of-contents__link toc-highlight">Resources to Complement This Bank</a></li></ul></li><li><a href="#problem-solving-framework-umpire" class="table-of-contents__link toc-highlight">Problem Solving Framework: UMPIRE</a></li><li><a href="#tracking-your-progress" class="table-of-contents__link toc-highlight">Tracking Your Progress</a><ul><li><a href="#progress-milestones" class="table-of-contents__link toc-highlight">Progress Milestones</a></li></ul></li><li><a href="#contribution-guide" class="table-of-contents__link toc-highlight">Contribution Guide</a><ul><li><a href="#problem-format-checklist" class="table-of-contents__link toc-highlight">Problem Format Checklist</a></li></ul></li><li><a href="#index-of-chapters" class="table-of-contents__link toc-highlight">Index of Chapters</a></li><li><a href="#detailed-problem-solving-guide-for-each-topic" class="table-of-contents__link toc-highlight">Detailed Problem-Solving Guide for Each Topic</a><ul><li><a href="#arrays--hashing" class="table-of-contents__link toc-highlight">Arrays &amp; Hashing</a></li><li><a href="#strings" class="table-of-contents__link toc-highlight">Strings</a></li><li><a href="#linked-lists" class="table-of-contents__link toc-highlight">Linked Lists</a></li><li><a href="#stacks--queues" class="table-of-contents__link toc-highlight">Stacks &amp; Queues</a></li><li><a href="#trees" class="table-of-contents__link toc-highlight">Trees</a></li><li><a href="#graphs" class="table-of-contents__link toc-highlight">Graphs</a></li><li><a href="#dynamic-programming" class="table-of-contents__link toc-highlight">Dynamic Programming</a></li><li><a href="#greedy" class="table-of-contents__link toc-highlight">Greedy</a></li><li><a href="#backtracking" class="table-of-contents__link toc-highlight">Backtracking</a></li></ul></li><li><a href="#interview-preparation-timeline" class="table-of-contents__link toc-highlight">Interview Preparation Timeline</a><ul><li><a href="#3-months-before-interview" class="table-of-contents__link toc-highlight">3 Months Before Interview</a></li><li><a href="#1-month-before-interview" class="table-of-contents__link toc-highlight">1 Month Before Interview</a></li><li><a href="#1-week-before-interview" class="table-of-contents__link toc-highlight">1 Week Before Interview</a></li></ul></li><li><a href="#mock-interview-protocol" class="table-of-contents__link toc-highlight">Mock Interview Protocol</a><ul><li><a href="#45-minute-session-structure" class="table-of-contents__link toc-highlight">45-Minute Session Structure</a></li><li><a href="#self-assessment-rubric" class="table-of-contents__link toc-highlight">Self-Assessment Rubric</a></li></ul></li><li><a href="#daily-practice-schedule" class="table-of-contents__link toc-highlight">Daily Practice Schedule</a><ul><li><a href="#2-hour-session-breakdown" class="table-of-contents__link toc-highlight">2-Hour Session Breakdown</a></li><li><a href="#1-hour-quick-session-busy-days" class="table-of-contents__link toc-highlight">1-Hour Quick Session (Busy Days)</a></li></ul></li><li><a href="#recommended-resources-by-topic" class="table-of-contents__link toc-highlight">Recommended Resources by Topic</a></li><li><a href="#problem-solving-templates" class="table-of-contents__link toc-highlight">Problem Solving Templates</a><ul><li><a href="#two-pointers-template" class="table-of-contents__link toc-highlight">Two Pointers Template</a></li><li><a href="#sliding-window-template" class="table-of-contents__link toc-highlight">Sliding Window Template</a></li><li><a href="#dfsbfs-template" class="table-of-contents__link toc-highlight">DFS/BFS Template</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Courses</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/ai-engineering-placement">Placement Course</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/python-programming">Python</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/machine-learning">Machine Learning</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/system-design">System Design</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Raushan666java/learning-playground" target="_blank" rel="noopener noreferrer" class="footer__link-item">Learning Playground<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2026 AI Engineering Journey. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

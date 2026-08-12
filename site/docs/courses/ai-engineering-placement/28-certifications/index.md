@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/28-certifications
 title: "28 — AI Certifications Guide"
 sidebar_label: "28 — AI Certifications Guide"
-sidebar_position: 308
+sidebar_position: 309
 ---
 # 28 — AI Certifications Guide
 

@@ -3,7 +3,7 @@ id: 14-data-visualization
 slug: /ai-engineering-placement/01-python-programming/14-data-visualization
 title: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards"
 sidebar_label: "Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards"
-sidebar_position: 21
+sidebar_position: 22
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Data Visualization — Matplotlib, Seaborn, Plotly, Dashboards

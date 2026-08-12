@@ -3,7 +3,7 @@ id: 02-ux-for-ai
 slug: /ai-engineering-placement/26-ai-product-thinking/02-ux-for-ai
 title: "User Experience for AI"
 sidebar_label: "User Experience for AI"
-sidebar_position: 290
+sidebar_position: 291
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # User Experience for AI

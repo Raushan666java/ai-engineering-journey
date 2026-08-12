@@ -3,7 +3,7 @@ id: 03-model-compilation
 slug: /ai-engineering-placement/27-ai-infrastructure/03-model-compilation
 title: "03 — Model Compilation & Optimization"
 sidebar_label: "03 — Model Compilation & Optimization"
-sidebar_position: 297
+sidebar_position: 298
 ---
 # 03 — Model Compilation & Optimization
 

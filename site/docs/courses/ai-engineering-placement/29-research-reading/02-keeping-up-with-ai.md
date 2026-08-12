@@ -3,7 +3,7 @@ id: 02-keeping-up-with-ai
 slug: /ai-engineering-placement/29-research-reading/02-keeping-up-with-ai
 title: "Keeping Up with AI Research"
 sidebar_label: "Keeping Up with AI Research"
-sidebar_position: 310
+sidebar_position: 311
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Keeping Up with AI Research

@@ -1,6 +1,6 @@
 # Backend + AI Engineer — Complete Placement Course
 
-> **Zero to job-ready in 12 months. 33 subjects, 290+ sub-chapters, 3,148+ interview Q&A. All in browser localStorage — zero backend.**
+> **Zero to job-ready in 12 months. 33 subjects, 299+ sub-chapters, 3,253+ interview Q&A. All in browser localStorage — zero backend.**
 
 ![Build Status](https://img.shields.io/badge/status-in--progress-yellow)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -13,10 +13,10 @@ This is a **single, unified placement course** for software developers targeting
 | Feature | Detail |
 |---------|--------|
 | **Subjects** | 33 broad subject areas (Core CS → Competitive Programming) |
-| **Sub-chapters** | 290+ focused topic files, each 400+ lines |
-| **Interview Q&A** | 3,148+ questions with expandable answers — click to reveal |
-| **Chapter Quizzes** | 5 MCQ per sub-chapter = 1,450+ total questions |
-| **Exercises** | 5 hands-on per sub-chapter = 1,235+ exercises |
+| **Sub-chapters** | 299+ focused topic files, each 400+ lines |
+| **Interview Q&A** | 3,253+ questions with expandable answers — click to reveal |
+| **Chapter Quizzes** | 5 MCQ per sub-chapter = 1,495+ total questions |
+| **Exercises** | 5 hands-on per sub-chapter = 1,290+ exercises |
 | **Capstone Projects** | 5 production-grade projects, from beginner to SaaS |
 | **Progress Tracking** | All in browser localStorage — theory, Q&A, exercises, streak |
 | **Study Mode** | Review Mode, spaced repetition, bookmarks, daily goals |
@@ -217,7 +217,7 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 
 | # | Subject | Sub-chapters | Q&A | Hours | Weight |
 |---|---------|-------------|-----|-------|--------|
-| 00 | Core Computer Science | 5 | 50 | 20 | ⭐⭐⭐ |
+| 00 | Core Computer Science | 6 | 60 | 20 | ⭐⭐⭐ |
 | 01 | Python for AI | 14 | 140 | 40 | ⭐⭐⭐ |
 | 02 | SQL & Databases | 10 | 100 | 25 | ⭐⭐⭐⭐ |
 | 03 | DSA | 18 | 216 | 60 | ⭐⭐⭐⭐⭐ |
@@ -250,7 +250,8 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 30 | Business Skills for AI Engineers | 4 | 40 | 15 | ⭐⭐ |
 | 31 | Mobile AI & Edge Deployment | 4 | 40 | 15 | ⭐⭐ |
 | 32 | Competitive Programming | 3 | 30 | 10 | ⭐⭐ |
-| **Total** | **33** | **~290** | **~3,148** | **~950** | — |
+| 33 | Campus Placement & Aptitude | 9 | 105 | 35 | ⭐⭐⭐⭐ |
+| **Total** | **33** | **~299** | **~3,253** | **~985** | — |
 
 ## How to Use This Course
 

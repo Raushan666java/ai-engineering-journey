@@ -3,7 +3,7 @@ id: 01-text-preprocessing
 slug: /ai-engineering-placement/10-nlp-transformers/01-text-preprocessing
 title: "Text Preprocessing — Tokenization, Stemming, Lemmatization, TF-IDF"
 sidebar_label: "Text Preprocessing — Tokenization, Stemming, Lemmatization, TF-IDF"
-sidebar_position: 127
+sidebar_position: 128
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Text Preprocessing — Tokenization, Stemming, Lemmatization, TF-IDF

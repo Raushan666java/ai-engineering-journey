@@ -3,7 +3,7 @@ id: 04-linux-commands
 slug: /ai-engineering-placement/04-git-linux-cli/04-linux-commands
 title: "Linux Commands"
 sidebar_label: "Linux Commands"
-sidebar_position: 56
+sidebar_position: 57
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Linux Commands

@@ -3,7 +3,7 @@ id: 01-docker-basics
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/01-docker-basics
 title: "Docker Basics — Containers, Images, and Docker Engine"
 sidebar_label: "Docker Basics — Containers, Images, and Docker Engine"
-sidebar_position: 74
+sidebar_position: 75
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Docker Basics — Containers, Images, and Docker Engine

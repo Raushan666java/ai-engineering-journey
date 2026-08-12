@@ -3,7 +3,7 @@ id: 06-ensemble-methods
 slug: /ai-engineering-placement/08-machine-learning/06-ensemble-methods
 title: "Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost"
 sidebar_label: "Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost"
-sidebar_position: 108
+sidebar_position: 109
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Ensemble Methods — Boosting, AdaBoost, Gradient Boosting, XGBoost

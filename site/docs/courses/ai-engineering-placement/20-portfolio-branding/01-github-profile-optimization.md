@@ -3,7 +3,7 @@ id: 01-github-profile-optimization
 slug: /ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization
 title: "GitHub Profile Optimization"
 sidebar_label: "GitHub Profile Optimization"
-sidebar_position: 222
+sidebar_position: 223
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # GitHub Profile Optimization

@@ -3,7 +3,7 @@ id: 03-strings-and-formatting
 slug: /ai-engineering-placement/01-python-programming/03-strings-and-formatting
 title: "Strings & Formatting — Methods, Slicing, F-Strings, and Regex"
 sidebar_label: "Strings & Formatting — Methods, Slicing, F-Strings, and Regex"
-sidebar_position: 10
+sidebar_position: 11
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Strings & Formatting — Methods, Slicing, F-Strings, and Regex

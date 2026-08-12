@@ -3,7 +3,7 @@ id: 02-arrays
 slug: /ai-engineering-placement/03-data-structures-algorithms/02-arrays
 title: "Arrays"
 sidebar_label: "Arrays"
-sidebar_position: 35
+sidebar_position: 36
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Arrays

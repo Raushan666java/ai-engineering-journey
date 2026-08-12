@@ -3,7 +3,7 @@ id: 04-dependency-injection
 slug: /ai-engineering-placement/05-fastapi-backend/04-dependency-injection
 title: "Dependency Injection — Reusable Components and FastAPI DI System"
 sidebar_label: "Dependency Injection — Reusable Components and FastAPI DI System"
-sidebar_position: 66
+sidebar_position: 67
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Dependency Injection — Reusable Components and FastAPI DI System

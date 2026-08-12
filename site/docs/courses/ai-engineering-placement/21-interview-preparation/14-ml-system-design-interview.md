@@ -3,7 +3,7 @@ id: 14-ml-system-design-interview
 slug: /ai-engineering-placement/21-interview-preparation/14-ml-system-design-interview
 title: "ML System Design: Recommendation Systems and Model Serving"
 sidebar_label: "ML System Design: Recommendation Systems and Model Serving"
-sidebar_position: 242
+sidebar_position: 243
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # ML System Design: Recommendation Systems and Model Serving

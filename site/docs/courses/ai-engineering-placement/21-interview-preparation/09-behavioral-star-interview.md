@@ -3,7 +3,7 @@ id: 09-behavioral-star-interview
 slug: /ai-engineering-placement/21-interview-preparation/09-behavioral-star-interview
 title: "Behavioral STAR Interview"
 sidebar_label: "Behavioral STAR Interview"
-sidebar_position: 237
+sidebar_position: 238
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Behavioral STAR Interview

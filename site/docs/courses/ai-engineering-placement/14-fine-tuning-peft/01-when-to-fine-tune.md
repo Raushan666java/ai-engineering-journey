@@ -3,7 +3,7 @@ id: 01-when-to-fine-tune
 slug: /ai-engineering-placement/14-fine-tuning-peft/01-when-to-fine-tune
 title: "When to Fine-Tune"
 sidebar_label: "When to Fine-Tune"
-sidebar_position: 173
+sidebar_position: 174
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # When to Fine-Tune

@@ -3,7 +3,7 @@ id: 05-document-retrieval
 slug: /ai-engineering-placement/12-rag-vector-databases/05-document-retrieval
 title: "Document Retrieval"
 sidebar_label: "Document Retrieval"
-sidebar_position: 149
+sidebar_position: 150
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Document Retrieval

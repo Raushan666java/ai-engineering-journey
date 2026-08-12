@@ -3,7 +3,7 @@ id: 01-ai-product-strategy
 slug: /ai-engineering-placement/26-ai-product-thinking/01-ai-product-strategy
 title: "01 — AI Product Strategy"
 sidebar_label: "01 — AI Product Strategy"
-sidebar_position: 289
+sidebar_position: 290
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # 01 — AI Product Strategy

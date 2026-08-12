@@ -3,7 +3,7 @@ id: 02-docker-compose
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/02-docker-compose
 title: "Docker Compose — Multi-Container Orchestration"
 sidebar_label: "Docker Compose — Multi-Container Orchestration"
-sidebar_position: 75
+sidebar_position: 76
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Docker Compose — Multi-Container Orchestration

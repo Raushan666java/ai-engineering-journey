@@ -3,7 +3,7 @@ id: 02-pytorch-tensors
 slug: /ai-engineering-placement/09-deep-learning-pytorch/02-pytorch-tensors
 title: "PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting"
 sidebar_label: "PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting"
-sidebar_position: 117
+sidebar_position: 118
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # PyTorch Tensors — Tensors, Autograd, Device Management, Broadcasting

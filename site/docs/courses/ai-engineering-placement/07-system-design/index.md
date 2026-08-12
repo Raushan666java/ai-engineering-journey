@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/07-system-design
 title: "07 — System Design"
 sidebar_label: "07 — System Design"
-sidebar_position: 102
+sidebar_position: 103
 ---
 # 07 — System Design
 

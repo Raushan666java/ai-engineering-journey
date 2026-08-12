@@ -3,7 +3,7 @@ id: 08-process-management
 slug: /ai-engineering-placement/04-git-linux-cli/08-process-management
 title: "Process Management — Monitoring, Signals, Resource Control"
 sidebar_label: "Process Management — Monitoring, Signals, Resource Control"
-sidebar_position: 60
+sidebar_position: 61
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Process Management — Monitoring, Signals, Resource Control

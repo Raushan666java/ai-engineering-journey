@@ -3,7 +3,7 @@ id: 06-calculus-for-ml
 slug: /ai-engineering-placement/24-statistics-mathematics/06-calculus-for-ml
 title: "Chapter 06: Calculus for ML"
 sidebar_label: "Chapter 06: Calculus for ML"
-sidebar_position: 279
+sidebar_position: 280
 ---
 # Chapter 06: Calculus for ML
 

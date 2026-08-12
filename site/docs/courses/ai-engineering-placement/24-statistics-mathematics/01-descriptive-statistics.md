@@ -3,7 +3,7 @@ id: 01-descriptive-statistics
 slug: /ai-engineering-placement/24-statistics-mathematics/01-descriptive-statistics
 title: "Chapter 01: Descriptive Statistics"
 sidebar_label: "Chapter 01: Descriptive Statistics"
-sidebar_position: 274
+sidebar_position: 275
 ---
 # Chapter 01: Descriptive Statistics
 

@@ -3,7 +3,7 @@ id: 16-hybrid-search-architecture
 slug: /ai-engineering-placement/12-rag-vector-databases/16-hybrid-search-architecture
 title: "Hybrid Search Architecture"
 sidebar_label: "Hybrid Search Architecture"
-sidebar_position: 160
+sidebar_position: 161
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Hybrid Search Architecture

@@ -3,7 +3,7 @@ id: 11-serverless-lambda
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/11-serverless-lambda
 title: "Serverless & AWS Lambda — Event-Driven ML Inference"
 sidebar_label: "Serverless & AWS Lambda — Event-Driven ML Inference"
-sidebar_position: 84
+sidebar_position: 85
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Serverless & AWS Lambda — Event-Driven ML Inference

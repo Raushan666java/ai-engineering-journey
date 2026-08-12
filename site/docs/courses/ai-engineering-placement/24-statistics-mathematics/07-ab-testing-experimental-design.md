@@ -3,7 +3,7 @@ id: 07-ab-testing-experimental-design
 slug: /ai-engineering-placement/24-statistics-mathematics/07-ab-testing-experimental-design
 title: "Chapter 07: A/B Testing & Experimental Design"
 sidebar_label: "Chapter 07: A/B Testing & Experimental Design"
-sidebar_position: 280
+sidebar_position: 281
 ---
 # Chapter 07: A/B Testing & Experimental Design
 

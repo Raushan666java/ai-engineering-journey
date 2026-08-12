@@ -3,7 +3,7 @@ id: 03-experiment-design-metrics
 slug: /ai-engineering-placement/26-ai-product-thinking/03-experiment-design-metrics
 title: "03 — Experiment Design & Metrics for AI"
 sidebar_label: "03 — Experiment Design & Metrics for AI"
-sidebar_position: 291
+sidebar_position: 292
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # 03 — Experiment Design & Metrics for AI

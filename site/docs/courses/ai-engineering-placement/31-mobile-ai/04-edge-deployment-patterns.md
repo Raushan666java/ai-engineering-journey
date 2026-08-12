@@ -3,7 +3,7 @@ id: 04-edge-deployment-patterns
 slug: /ai-engineering-placement/31-mobile-ai/04-edge-deployment-patterns
 title: "Edge Deployment Patterns"
 sidebar_label: "Edge Deployment Patterns"
-sidebar_position: 322
+sidebar_position: 323
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Edge Deployment Patterns

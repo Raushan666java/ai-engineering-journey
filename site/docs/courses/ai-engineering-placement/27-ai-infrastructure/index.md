@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/27-ai-infrastructure
 title: "27 — AI Infrastructure & Optimization"
 sidebar_label: "27 — AI Infrastructure & Optimization"
-sidebar_position: 304
+sidebar_position: 305
 ---
 # 27 — AI Infrastructure & Optimization
 

@@ -3,7 +3,7 @@ id: 06-model-pruning
 slug: /ai-engineering-placement/27-ai-infrastructure/06-model-pruning
 title: "Model Pruning"
 sidebar_label: "Model Pruning"
-sidebar_position: 300
+sidebar_position: 301
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Pruning

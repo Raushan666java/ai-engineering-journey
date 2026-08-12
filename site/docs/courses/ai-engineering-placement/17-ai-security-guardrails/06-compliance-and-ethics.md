@@ -3,7 +3,7 @@ id: 06-compliance-and-ethics
 slug: /ai-engineering-placement/17-ai-security-guardrails/06-compliance-and-ethics
 title: "Compliance and Ethics"
 sidebar_label: "Compliance and Ethics"
-sidebar_position: 203
+sidebar_position: 204
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Compliance and Ethics

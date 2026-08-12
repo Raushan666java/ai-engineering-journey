@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/05-fastapi-backend
 title: "05 — FastAPI & Backend Engineering"
 sidebar_label: "05 — FastAPI & Backend Engineering"
-sidebar_position: 73
+sidebar_position: 74
 ---
 # 05 — FastAPI & Backend Engineering
 

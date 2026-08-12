@@ -3,7 +3,7 @@ id: 06-cap-and-consistency
 slug: /ai-engineering-placement/07-system-design/06-cap-and-consistency
 title: "CAP Theorem and Consistency Models"
 sidebar_label: "CAP Theorem and Consistency Models"
-sidebar_position: 93
+sidebar_position: 94
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # CAP Theorem and Consistency Models

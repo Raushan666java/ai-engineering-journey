@@ -3,7 +3,7 @@ id: 06-llm-and-rag-interview
 slug: /ai-engineering-placement/21-interview-preparation/06-llm-and-rag-interview
 title: "LLM & RAG Interview"
 sidebar_label: "LLM & RAG Interview"
-sidebar_position: 234
+sidebar_position: 235
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # LLM & RAG Interview

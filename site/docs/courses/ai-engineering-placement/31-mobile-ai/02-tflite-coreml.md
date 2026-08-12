@@ -3,7 +3,7 @@ id: 02-tflite-coreml
 slug: /ai-engineering-placement/31-mobile-ai/02-tflite-coreml
 title: "02 — TensorFlow Lite & CoreML"
 sidebar_label: "02 — TensorFlow Lite & CoreML"
-sidebar_position: 320
+sidebar_position: 321
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # 02 — TensorFlow Lite & CoreML

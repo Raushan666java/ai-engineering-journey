@@ -3,7 +3,7 @@ id: 07-knowledge-distillation
 slug: /ai-engineering-placement/27-ai-infrastructure/07-knowledge-distillation
 title: "Knowledge Distillation"
 sidebar_label: "Knowledge Distillation"
-sidebar_position: 301
+sidebar_position: 302
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Knowledge Distillation

@@ -3,7 +3,7 @@ id: 02-microservices-architecture
 slug: /ai-engineering-placement/07-system-design/02-microservices-architecture
 title: "Microservices Architecture — Design, Communication, and Patterns"
 sidebar_label: "Microservices Architecture — Design, Communication, and Patterns"
-sidebar_position: 89
+sidebar_position: 90
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Microservices Architecture — Design, Communication, and Patterns

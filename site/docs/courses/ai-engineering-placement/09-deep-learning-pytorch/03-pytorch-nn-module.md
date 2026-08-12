@@ -3,7 +3,7 @@ id: 03-pytorch-nn-module
 slug: /ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module
 title: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init"
 sidebar_label: "PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init"
-sidebar_position: 118
+sidebar_position: 119
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init

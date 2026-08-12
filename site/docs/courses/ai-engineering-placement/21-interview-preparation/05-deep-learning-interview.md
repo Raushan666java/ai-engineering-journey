@@ -3,7 +3,7 @@ id: 05-deep-learning-interview
 slug: /ai-engineering-placement/21-interview-preparation/05-deep-learning-interview
 title: "Deep Learning Interview"
 sidebar_label: "Deep Learning Interview"
-sidebar_position: 233
+sidebar_position: 234
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Deep Learning Interview

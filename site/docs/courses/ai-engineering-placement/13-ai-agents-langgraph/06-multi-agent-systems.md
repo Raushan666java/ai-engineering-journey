@@ -3,7 +3,7 @@ id: 06-multi-agent-systems
 slug: /ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems
 title: "Multi-Agent Systems"
 sidebar_label: "Multi-Agent Systems"
-sidebar_position: 167
+sidebar_position: 168
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Multi-Agent Systems

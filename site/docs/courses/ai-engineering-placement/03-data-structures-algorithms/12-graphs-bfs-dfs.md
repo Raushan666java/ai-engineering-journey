@@ -3,7 +3,7 @@ id: 12-graphs-bfs-dfs
 slug: /ai-engineering-placement/03-data-structures-algorithms/12-graphs-bfs-dfs
 title: "Graphs BFS DFS"
 sidebar_label: "Graphs BFS DFS"
-sidebar_position: 45
+sidebar_position: 46
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Graphs BFS DFS

@@ -3,7 +3,7 @@ id: 06-bert-and-fine-tuning
 slug: /ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning
 title: "BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants"
 sidebar_label: "BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants"
-sidebar_position: 132
+sidebar_position: 133
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # BERT & Fine-Tuning — Masked LM, NSP, GLUE, Model Variants

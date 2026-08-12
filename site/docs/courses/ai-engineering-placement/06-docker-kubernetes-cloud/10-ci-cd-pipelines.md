@@ -3,7 +3,7 @@ id: 10-ci-cd-pipelines
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines
 title: "CI/CD Pipelines — Continuous Integration and Delivery"
 sidebar_label: "CI/CD Pipelines — Continuous Integration and Delivery"
-sidebar_position: 83
+sidebar_position: 84
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # CI/CD Pipelines — Continuous Integration and Delivery

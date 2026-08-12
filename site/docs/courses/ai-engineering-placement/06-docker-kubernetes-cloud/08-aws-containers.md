@@ -3,7 +3,7 @@ id: 08-aws-containers
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/08-aws-containers
 title: "AWS Containers — ECS, ECR, and EKS"
 sidebar_label: "AWS Containers — ECS, ECR, and EKS"
-sidebar_position: 81
+sidebar_position: 82
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # AWS Containers — ECS, ECR, and EKS

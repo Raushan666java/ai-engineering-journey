@@ -3,7 +3,7 @@ id: 07-dpo-and-preference-tuning
 slug: /ai-engineering-placement/14-fine-tuning-peft/07-dpo-and-preference-tuning
 title: "DPO & Preference Tuning"
 sidebar_label: "DPO & Preference Tuning"
-sidebar_position: 179
+sidebar_position: 180
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # DPO & Preference Tuning

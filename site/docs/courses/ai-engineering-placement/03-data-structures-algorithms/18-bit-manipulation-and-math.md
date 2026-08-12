@@ -3,7 +3,7 @@ id: 18-bit-manipulation-and-math
 slug: /ai-engineering-placement/03-data-structures-algorithms/18-bit-manipulation-and-math
 title: "Bit Manipulation and Math"
 sidebar_label: "Bit Manipulation and Math"
-sidebar_position: 51
+sidebar_position: 52
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Bit Manipulation and Math

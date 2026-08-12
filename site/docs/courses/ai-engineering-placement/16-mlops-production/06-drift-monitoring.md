@@ -3,7 +3,7 @@ id: 06-drift-monitoring
 slug: /ai-engineering-placement/16-mlops-production/06-drift-monitoring
 title: "Drift Monitoring"
 sidebar_label: "Drift Monitoring"
-sidebar_position: 194
+sidebar_position: 195
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Drift Monitoring

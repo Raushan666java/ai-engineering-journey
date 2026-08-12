@@ -3,7 +3,7 @@ id: 06-database-with-sqlalchemy
 slug: /ai-engineering-placement/05-fastapi-backend/06-database-with-sqlalchemy
 title: "Database with SQLAlchemy — ORM, Migrations, and Repository Pattern"
 sidebar_label: "Database with SQLAlchemy — ORM, Migrations, and Repository Pattern"
-sidebar_position: 68
+sidebar_position: 69
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Database with SQLAlchemy — ORM, Migrations, and Repository Pattern

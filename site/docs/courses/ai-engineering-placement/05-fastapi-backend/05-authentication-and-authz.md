@@ -3,7 +3,7 @@ id: 05-authentication-and-authz
 slug: /ai-engineering-placement/05-fastapi-backend/05-authentication-and-authz
 title: "Authentication and Authorization — JWT, OAuth2, and RBAC"
 sidebar_label: "Authentication and Authorization — JWT, OAuth2, and RBAC"
-sidebar_position: 67
+sidebar_position: 68
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Authentication and Authorization — JWT, OAuth2, and RBAC

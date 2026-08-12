@@ -3,7 +3,7 @@ id: 02-word-embeddings
 slug: /ai-engineering-placement/10-nlp-transformers/02-word-embeddings
 title: "Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization"
 sidebar_label: "Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization"
-sidebar_position: 128
+sidebar_position: 129
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization

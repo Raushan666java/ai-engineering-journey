@@ -3,7 +3,7 @@ id: 05-functions
 slug: /ai-engineering-placement/01-python-programming/05-functions
 title: "Functions — Parameters, Scope, Lambdas, and Advanced Patterns"
 sidebar_label: "Functions — Parameters, Scope, Lambdas, and Advanced Patterns"
-sidebar_position: 12
+sidebar_position: 13
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Functions — Parameters, Scope, Lambdas, and Advanced Patterns

@@ -3,7 +3,7 @@ id: 01-git-basics
 slug: /ai-engineering-placement/04-git-linux-cli/01-git-basics
 title: "Git Basics"
 sidebar_label: "Git Basics"
-sidebar_position: 53
+sidebar_position: 54
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Git Basics

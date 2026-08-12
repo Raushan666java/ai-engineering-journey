@@ -3,7 +3,7 @@ id: 08-deployment-stack-comparison
 slug: /ai-engineering-placement/23-trending-aiml-platforms/08-deployment-stack-comparison
 title: "08 — Deployment Stack Comparison: vLLM vs SGLang vs Ollama vs TGI"
 sidebar_label: "08 — Deployment Stack Comparison: vLLM vs SGLang vs Ollama vs TGI"
-sidebar_position: 272
+sidebar_position: 273
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # 08 — Deployment Stack Comparison: vLLM vs SGLang vs Ollama vs TGI

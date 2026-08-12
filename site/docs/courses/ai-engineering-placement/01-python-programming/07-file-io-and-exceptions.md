@@ -3,7 +3,7 @@ id: 07-file-io-and-exceptions
 slug: /ai-engineering-placement/01-python-programming/07-file-io-and-exceptions
 title: "File I/O & Exceptions — Reading, Writing, Error Handling"
 sidebar_label: "File I/O & Exceptions — Reading, Writing, Error Handling"
-sidebar_position: 14
+sidebar_position: 15
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # File I/O & Exceptions — Reading, Writing, Error Handling

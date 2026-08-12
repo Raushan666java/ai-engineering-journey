@@ -3,7 +3,7 @@ id: 09-transactions-and-acid
 slug: /ai-engineering-placement/02-sql-and-databases/09-transactions-and-acid
 title: "Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks"
 sidebar_label: "Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks"
-sidebar_position: 31
+sidebar_position: 32
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Transactions & ACID — BEGIN, COMMIT, ROLLBACK, Isolation Levels, Locks

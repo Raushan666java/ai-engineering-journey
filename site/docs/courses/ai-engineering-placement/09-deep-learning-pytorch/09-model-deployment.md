@@ -3,7 +3,7 @@ id: 09-model-deployment
 slug: /ai-engineering-placement/09-deep-learning-pytorch/09-model-deployment
 title: "Model Deployment — TorchScript, ONNX, TorchServe, Quantization, Pruning"
 sidebar_label: "Model Deployment — TorchScript, ONNX, TorchServe, Quantization, Pruning"
-sidebar_position: 124
+sidebar_position: 125
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Deployment — TorchScript, ONNX, TorchServe, Quantization, Pruning

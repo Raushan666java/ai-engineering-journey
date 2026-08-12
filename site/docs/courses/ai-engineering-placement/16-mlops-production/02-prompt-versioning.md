@@ -3,7 +3,7 @@ id: 02-prompt-versioning
 slug: /ai-engineering-placement/16-mlops-production/02-prompt-versioning
 title: "Prompt Versioning"
 sidebar_label: "Prompt Versioning"
-sidebar_position: 190
+sidebar_position: 191
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Prompt Versioning

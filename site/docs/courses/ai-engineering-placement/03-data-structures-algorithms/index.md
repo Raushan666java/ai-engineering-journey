@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/03-data-structures-algorithms
 title: "03 — Data Structures & Algorithms"
 sidebar_label: "03 — Data Structures & Algorithms"
-sidebar_position: 52
+sidebar_position: 53
 ---
 # 03 — Data Structures & Algorithms
 

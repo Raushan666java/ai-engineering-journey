@@ -3,7 +3,7 @@ id: 09-multimodal-real-time-agents
 slug: /ai-engineering-placement/22-advanced-ai-agents/09-multimodal-real-time-agents
 title: "Multimodal & Real-Time Agents"
 sidebar_label: "Multimodal & Real-Time Agents"
-sidebar_position: 257
+sidebar_position: 258
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Multimodal & Real-Time Agents

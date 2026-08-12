@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/25-data-engineering
 title: "25 — Data Engineering for AI Engineers"
 sidebar_label: "25 — Data Engineering for AI Engineers"
-sidebar_position: 288
+sidebar_position: 289
 ---
 # 25 — Data Engineering for AI Engineers
 

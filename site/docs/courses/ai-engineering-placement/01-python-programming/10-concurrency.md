@@ -3,7 +3,7 @@ id: 10-concurrency
 slug: /ai-engineering-placement/01-python-programming/10-concurrency
 title: "Concurrency — Threading, Multiprocessing, and Async"
 sidebar_label: "Concurrency — Threading, Multiprocessing, and Async"
-sidebar_position: 17
+sidebar_position: 18
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Concurrency — Threading, Multiprocessing, and Async

@@ -3,7 +3,7 @@ id: 07-linked-lists
 slug: /ai-engineering-placement/03-data-structures-algorithms/07-linked-lists
 title: "Linked Lists"
 sidebar_label: "Linked Lists"
-sidebar_position: 40
+sidebar_position: 41
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Linked Lists

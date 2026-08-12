@@ -3,7 +3,7 @@ id: 11-numpy-fundamentals
 slug: /ai-engineering-placement/01-python-programming/11-numpy-fundamentals
 title: "NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra"
 sidebar_label: "NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra"
-sidebar_position: 18
+sidebar_position: 19
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # NumPy Fundamentals — Arrays, Broadcasting, Linear Algebra

@@ -3,7 +3,7 @@ id: 01-reading-research-papers
 slug: /ai-engineering-placement/29-research-reading/01-reading-research-papers
 title: "Reading Research Papers"
 sidebar_label: "Reading Research Papers"
-sidebar_position: 309
+sidebar_position: 310
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Reading Research Papers

@@ -3,7 +3,7 @@ id: 03-backend-coding-interview
 slug: /ai-engineering-placement/21-interview-preparation/03-backend-coding-interview
 title: "Backend Coding Interview"
 sidebar_label: "Backend Coding Interview"
-sidebar_position: 231
+sidebar_position: 232
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Backend Coding Interview

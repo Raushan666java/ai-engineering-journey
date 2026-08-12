@@ -189,6 +189,67 @@ Three scenarios where network knowledge directly impacts AI engineering:
 
 3. **Edge inference**: Deploy models to edge devices with limited bandwidth. Use quantization, model distillation, and incremental updates. CDN edge functions can run lightweight models.
 
+### Mobile Carrier Networks & Billing Security
+
+Mobile data (4G/5G) is not a direct path from your phone to the internet — it is metered, authenticated, and billed by the carrier core network. Understanding this flow explains why every "free internet trick" you see on YouTube or Telegram is either a scam, a crime, or both.
+
+#### How carrier data is actually metered
+
+When your phone connects to Jio, Airtel, Vi, or BSNL, it establishes a data session through this chain:
+
+1. **APN (Access Point Name)**: The device tells the network *which gateway* to use (e.g., `jionet`, `airtelgprs.com`). The APN is just a routing label — it does not control billing.
+2. **SGSN/PGW (Serving Gateway / Packet Gateway)**: The carrier's core router that terminates your session. Every packet you send or receive crosses this device.
+3. **PCRF/Policy Controller**: The component that decides what your plan allows — data caps, speeds, zero-rated apps — and reports usage to the billing system.
+4. **Billing/Charging system**: Meters megabytes and applies plan rules. This runs on carrier servers, never on your phone.
+
+```mermaid
+flowchart LR
+    Phone[Your Phone] -->|APN + PDP Context| RAN[Radio Network 4G/5G]
+    RAN --> SGW[SGSN / Serving Gateway]
+    SGW --> PGW[PGW / GGSN Core Router]
+    PGW --> PCRF[PCRF Policy & Charging]
+    PCRF --> BILL[Billing System]
+    PGW --> INET[Public Internet]
+    INET --> API[AI APIs, Cloud, Edge]
+```
+
+Billing happens at steps 3-4 — inside the carrier's own core. The phone only sees the tunnel; it can never see, change, or lie to the meter.
+
+#### Why "free internet tricks" cannot work
+
+- **Changing APN**: You only select which gateway you connect to. Carriers only provision gateways they control; a random APN gets a session *rejected* or silently routed to a dead-end, not to free data.
+- **VPN / HTTP Injector / HA Tunnel**: These encrypt or tunnel your traffic *after* it leaves the carrier network. The carrier still counts every byte that crosses the PGW. Tunnels hide content, not volume.
+- **Custom DNS**: DNS only resolves names to IPs. The billing system counts packets at the gateway, long before DNS matters. Zero-rated content is enforced by the carrier's DPI (deep packet inspection), not by the DNS server you point to.
+- **Fake USSD codes**: USSD (`*123#`) is only a menu interface to carrier services. It cannot activate plans that do not exist in the billing system.
+- **Leaked credentials / SIM exploits**: Attempting to authenticate as another subscriber is fraud. Carriers detect abnormal sessions (IMEI, SIM serial, auth vectors) and deactivate lines.
+
+#### Red flags — "₹0 balance + unlimited 4G/5G, just change this config"
+
+Any offer that promises free internet by changing settings is fraudulent. Common variants to recognize and avoid:
+
+| Trick | Why it is a scam | Real risk |
+|-------|------------------|-----------|
+| Random APN claiming free internet | APN only selects a gateway; billing is core-side | Line deactivated |
+| "Unlimited Jio/Airtel/Vi" VPN configs | Carrier meters at PGW regardless of encryption | Malware / credential theft |
+| Custom DNS bypassing data charges | DNS does not participate in billing | DNS hijacking, phishing |
+| HTTP Injector / HA Tunnel "0 balance" configs | Tunnel does not hide byte volume | Malware, data theft |
+| Leaked SIM/operator credentials | Using someone else's auth is fraud | Legal action, account ban |
+| SIM/network exploits bypassing billing | Exploiting carrier systems is unauthorized access | Legal action |
+| Fake USSD codes for free data | USSD cannot create plans that don't exist | Premium SMS charges |
+| Modified telecom apps / "unlimited internet" APKs | Repackaged apps steal data, not data plans | Malware, SMS fraud |
+| Proxy tricks bypassing carrier accounting | Carrier meters at the gateway, not the client | Account termination |
+| Using someone else's Wi-Fi/data | Unauthorized access | Legal action |
+| Fraudulent recharge/refund tricks | Exploiting payment bugs is fraud | Account ban, legal action |
+
+**Safe rule**: If a message says "₹0 balance + no Wi-Fi + unlimited 4G/5G — just change this APN/VPN/config", assume it is not legitimate unless the offer is published on the operator's official app, website, or store. Legitimate ₹0/low-cost data exists only as official operator promotions (e.g., coupon data, official cashback campaigns, zero-rated app offers from the carrier's own plans).
+
+#### Why an AI engineer should care
+
+1. **Mobile AI apps**: Apps that run inference in the cloud consume customer data. Misjudging carrier policies (zero-rating, fair-usage caps) breaks user experience — and building "bypass" features into a product is a legal liability.
+2. **Edge deployment**: Cellular bandwidth is the scarce resource in edge AI. Engineers plan quantization and sync strategies around *metered* links — never assume free or unmetered connectivity.
+3. **Security mindset**: Recognizing scam traffic patterns (random APNs, injected configs, repacked apps) is the same instinct used to spot malicious traffic in production systems.
+4. **Interview angle**: When asked about mobile/edge systems, mentioning carrier billing paths and zero-rating shows you understand real-world constraints, not just textbooks.
+
 ## Examples
 
 ### DNS Resolver with Caching
@@ -652,6 +713,27 @@ Client -&gt; Server: ACK</code></pre>
    - C) Exactly 1 request every 10 seconds
    - D) Unlimited requests with variable latency
    // correct: B
+
+6. What is an IMSI catcher (fake base station)?
+   - A) A device that boosts your mobile signal at home
+   - B) A spoofed cell tower that tricks phones into connecting and intercepts their traffic
+   - C) A router that counts your data usage
+   - D) An app that reports network speed
+   // correct: B
+
+7. What is the best protection against SIM swap fraud?
+   - A) Sharing your OTP with the bank for verification
+   - B) Registering a SIM lock/PIN with your carrier and never sharing OTPs
+   - C) Recharging with a larger plan
+   - D) Keeping your phone on airplane mode
+   // correct: B
+
+8. Which is a legitimate way to use the internet without a data subscription?
+   - A) Changing your APN to a random provider's APN
+   - B) Installing an "unlimited internet" APK from a website
+   - C) Connecting to an official public Wi-Fi network (e.g., a PM-WANI hotspot)
+   - D) Using an HTTP injector config from a Telegram channel
+   // correct: C
 
 ## Exercises
 

@@ -3,7 +3,7 @@ id: 02-agent-architectures
 slug: /ai-engineering-placement/13-ai-agents-langgraph/02-agent-architectures
 title: "Agent Architectures"
 sidebar_label: "Agent Architectures"
-sidebar_position: 163
+sidebar_position: 164
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agent Architectures

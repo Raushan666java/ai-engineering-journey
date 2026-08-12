@@ -3,7 +3,7 @@ id: 03-content-filtering
 slug: /ai-engineering-placement/17-ai-security-guardrails/03-content-filtering
 title: "Content Filtering"
 sidebar_label: "Content Filtering"
-sidebar_position: 200
+sidebar_position: 201
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Content Filtering

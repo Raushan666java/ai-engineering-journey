@@ -3,7 +3,7 @@ id: 12-parent-child-multi-vector
 slug: /ai-engineering-placement/12-rag-vector-databases/12-parent-child-multi-vector
 title: "Parent-Child & Multi-Vector Retrieval"
 sidebar_label: "Parent-Child & Multi-Vector Retrieval"
-sidebar_position: 156
+sidebar_position: 157
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Parent-Child & Multi-Vector Retrieval

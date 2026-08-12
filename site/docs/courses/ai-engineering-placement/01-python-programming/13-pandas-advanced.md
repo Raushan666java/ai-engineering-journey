@@ -3,7 +3,7 @@ id: 13-pandas-advanced
 slug: /ai-engineering-placement/01-python-programming/13-pandas-advanced
 title: "Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance"
 sidebar_label: "Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance"
-sidebar_position: 20
+sidebar_position: 21
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Pandas Advanced — Pivot Tables, Multi-Index, Window Functions, Performance

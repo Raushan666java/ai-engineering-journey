@@ -3,7 +3,7 @@ id: 09-monitoring-and-observability
 slug: /ai-engineering-placement/07-system-design/09-monitoring-and-observability
 title: "Monitoring & Observability — Metrics, Logging, Tracing, SLIs"
 sidebar_label: "Monitoring & Observability — Metrics, Logging, Tracing, SLIs"
-sidebar_position: 96
+sidebar_position: 97
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Monitoring & Observability — Metrics, Logging, Tracing, SLIs

@@ -3,7 +3,7 @@ id: 01-computer-vision-basics
 slug: /ai-engineering-placement/18-multimodal-ai-voice/01-computer-vision-basics
 title: "Computer Vision Basics"
 sidebar_label: "Computer Vision Basics"
-sidebar_position: 209
+sidebar_position: 210
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Computer Vision Basics

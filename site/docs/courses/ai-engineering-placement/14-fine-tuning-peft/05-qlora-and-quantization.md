@@ -3,7 +3,7 @@ id: 05-qlora-and-quantization
 slug: /ai-engineering-placement/14-fine-tuning-peft/05-qlora-and-quantization
 title: "QLoRA & Quantization"
 sidebar_label: "QLoRA & Quantization"
-sidebar_position: 177
+sidebar_position: 178
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # QLoRA & Quantization

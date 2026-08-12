@@ -3,7 +3,7 @@ id: 04-lora-implementation
 slug: /ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation
 title: "LoRA Implementation"
 sidebar_label: "LoRA Implementation"
-sidebar_position: 176
+sidebar_position: 177
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # LoRA Implementation

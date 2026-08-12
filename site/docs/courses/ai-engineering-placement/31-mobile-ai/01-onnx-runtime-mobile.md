@@ -3,7 +3,7 @@ id: 01-onnx-runtime-mobile
 slug: /ai-engineering-placement/31-mobile-ai/01-onnx-runtime-mobile
 title: "ONNX Runtime for Mobile"
 sidebar_label: "ONNX Runtime for Mobile"
-sidebar_position: 319
+sidebar_position: 320
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # ONNX Runtime for Mobile

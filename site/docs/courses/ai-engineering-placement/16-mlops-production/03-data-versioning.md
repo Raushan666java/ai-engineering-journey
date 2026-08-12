@@ -3,7 +3,7 @@ id: 03-data-versioning
 slug: /ai-engineering-placement/16-mlops-production/03-data-versioning
 title: "Data Versioning"
 sidebar_label: "Data Versioning"
-sidebar_position: 191
+sidebar_position: 192
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Data Versioning

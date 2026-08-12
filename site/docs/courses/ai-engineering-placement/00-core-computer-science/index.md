@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/00-core-computer-science
 title: "Core Computer Science for AI Engineers"
 sidebar_label: "Core Computer Science for AI Engineers"
-sidebar_position: 7
+sidebar_position: 8
 ---
 # Core Computer Science for AI Engineers
 
@@ -20,6 +20,7 @@ performance intuition, and practical knowledge that separates senior engineers f
 | 03 | [Database Internals](03-database-internals.md) | B-tree vs LSM, indexing, query planning, transactions, MVCC, replication, sharding, Raft | Data pipelines, feature stores, vector DBs, transaction design |
 | 04 | [Computer Architecture](04-computer-architecture.md) | CPU pipeline, caching, NUMA, SIMD, GPU architecture, memory bandwidth, roofline model | Model optimization, inference latency, GPU utilization, quantization |
 | 05 | [OOP & Design Patterns](05-oop-design-patterns.md) | SOLID, composition vs inheritance, GoF patterns, clean architecture, functional vs OOP | Framework design, codebases at scale, API design, maintainable AI systems |
+| 06 | [Ethical Hacking & Security Case Studies](06-ethical-hacking.md) | threat actors, Salt Typhoon, UPI fraud, Wi-Fi/mobile attacks, legal framework, defenses | Securing AI infrastructure, fraud detection, compliance, incident response |
 
 ## Learning Path
 

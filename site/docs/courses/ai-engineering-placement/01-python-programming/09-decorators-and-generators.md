@@ -3,7 +3,7 @@ id: 09-decorators-and-generators
 slug: /ai-engineering-placement/01-python-programming/09-decorators-and-generators
 title: "Decorators & Generators — Higher-Order Functions, yield, itertools"
 sidebar_label: "Decorators & Generators — Higher-Order Functions, yield, itertools"
-sidebar_position: 16
+sidebar_position: 17
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Decorators & Generators — Higher-Order Functions, yield, itertools

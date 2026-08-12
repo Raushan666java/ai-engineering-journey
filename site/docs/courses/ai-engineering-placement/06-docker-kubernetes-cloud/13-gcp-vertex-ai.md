@@ -3,7 +3,7 @@ id: 13-gcp-vertex-ai
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/13-gcp-vertex-ai
 title: "GCP Vertex AI — Unified ML Platform, AutoML, MLOps"
 sidebar_label: "GCP Vertex AI — Unified ML Platform, AutoML, MLOps"
-sidebar_position: 86
+sidebar_position: 87
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # GCP Vertex AI — Unified ML Platform, AutoML, MLOps

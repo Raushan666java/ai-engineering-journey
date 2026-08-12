@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/14-fine-tuning-peft
 title: "14 — Fine-Tuning & PEFT"
 sidebar_label: "14 — Fine-Tuning & PEFT"
-sidebar_position: 181
+sidebar_position: 182
 ---
 # 14 — Fine-Tuning & PEFT
 

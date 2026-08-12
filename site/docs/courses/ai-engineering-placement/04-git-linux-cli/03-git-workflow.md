@@ -3,7 +3,7 @@ id: 03-git-workflow
 slug: /ai-engineering-placement/04-git-linux-cli/03-git-workflow
 title: "Advanced Git"
 sidebar_label: "Advanced Git"
-sidebar_position: 55
+sidebar_position: 56
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced Git

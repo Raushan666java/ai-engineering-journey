@@ -3,7 +3,7 @@ id: 07-jailbreaks-red-teaming
 slug: /ai-engineering-placement/17-ai-security-guardrails/07-jailbreaks-red-teaming
 title: "Jailbreaks & Red Teaming"
 sidebar_label: "Jailbreaks & Red Teaming"
-sidebar_position: 204
+sidebar_position: 205
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Jailbreaks & Red Teaming

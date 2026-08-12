@@ -3,7 +3,7 @@ id: 05-transformer-architecture
 slug: /ai-engineering-placement/10-nlp-transformers/05-transformer-architecture
 title: "Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm"
 sidebar_label: "Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm"
-sidebar_position: 131
+sidebar_position: 132
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm

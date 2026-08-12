@@ -3,7 +3,7 @@ id: 10-hybrid-search-and-reranking
 slug: /ai-engineering-placement/12-rag-vector-databases/10-hybrid-search-and-reranking
 title: "Hybrid Search and Reranking"
 sidebar_label: "Hybrid Search and Reranking"
-sidebar_position: 154
+sidebar_position: 155
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Hybrid Search and Reranking

@@ -3,7 +3,7 @@ id: 02-resume-ats-analyzer
 slug: /ai-engineering-placement/19-capstone-projects/02-resume-ats-analyzer
 title: "Resume ATS Analyzer"
 sidebar_label: "Resume ATS Analyzer"
-sidebar_position: 217
+sidebar_position: 218
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Resume ATS Analyzer

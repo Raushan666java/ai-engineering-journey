@@ -3,7 +3,7 @@ id: 15-dynamic-programming-1d
 slug: /ai-engineering-placement/03-data-structures-algorithms/15-dynamic-programming-1d
 title: "Dynamic Programming 1D"
 sidebar_label: "Dynamic Programming 1D"
-sidebar_position: 48
+sidebar_position: 49
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Dynamic Programming 1D

@@ -3,7 +3,7 @@ id: 01-rest-api-fundamentals
 slug: /ai-engineering-placement/05-fastapi-backend/01-rest-api-fundamentals
 title: "REST API Fundamentals — HTTP, Resources, and Design Principles"
 sidebar_label: "REST API Fundamentals — HTTP, Resources, and Design Principles"
-sidebar_position: 63
+sidebar_position: 64
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # REST API Fundamentals — HTTP, Resources, and Design Principles

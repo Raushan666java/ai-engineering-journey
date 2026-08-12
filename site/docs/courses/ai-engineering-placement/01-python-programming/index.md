@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/01-python-programming
 title: "01 — Python for AI"
 sidebar_label: "01 — Python for AI"
-sidebar_position: 22
+sidebar_position: 23
 ---
 # 01 — Python for AI
 

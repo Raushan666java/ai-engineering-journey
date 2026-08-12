@@ -3,7 +3,7 @@ id: 02-aws-ai-certifications
 slug: /ai-engineering-placement/28-certifications/02-aws-ai-certifications
 title: "AWS AI Certifications — Complete Guide"
 sidebar_label: "AWS AI Certifications — Complete Guide"
-sidebar_position: 306
+sidebar_position: 307
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # AWS AI Certifications — Complete Guide

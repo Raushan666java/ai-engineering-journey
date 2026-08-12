@@ -3,7 +3,7 @@ id: 05-coding-agents
 slug: /ai-engineering-placement/22-advanced-ai-agents/05-coding-agents
 title: "Coding Agents"
 sidebar_label: "Coding Agents"
-sidebar_position: 253
+sidebar_position: 254
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Coding Agents

@@ -3,7 +3,7 @@ id: 06-modules-and-packages
 slug: /ai-engineering-placement/01-python-programming/06-modules-and-packages
 title: "Modules & Packages — Import System, Namespaces, and Packaging"
 sidebar_label: "Modules & Packages — Import System, Namespaces, and Packaging"
-sidebar_position: 13
+sidebar_position: 14
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Modules & Packages — Import System, Namespaces, and Packaging

@@ -3,7 +3,7 @@ id: 02-fastapi-basics
 slug: /ai-engineering-placement/05-fastapi-backend/02-fastapi-basics
 title: "FastAPI Basics — Routes, Path Operations, and Request Handling"
 sidebar_label: "FastAPI Basics — Routes, Path Operations, and Request Handling"
-sidebar_position: 64
+sidebar_position: 65
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # FastAPI Basics — Routes, Path Operations, and Request Handling

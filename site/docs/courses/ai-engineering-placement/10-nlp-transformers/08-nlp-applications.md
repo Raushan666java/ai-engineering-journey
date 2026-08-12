@@ -3,7 +3,7 @@ id: 08-nlp-applications
 slug: /ai-engineering-placement/10-nlp-transformers/08-nlp-applications
 title: "NLP Applications — Text Classification, NER, QA, Summarization, Translation"
 sidebar_label: "NLP Applications — Text Classification, NER, QA, Summarization, Translation"
-sidebar_position: 134
+sidebar_position: 135
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # NLP Applications — Text Classification, NER, QA, Summarization, Translation

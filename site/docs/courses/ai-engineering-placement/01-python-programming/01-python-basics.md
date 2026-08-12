@@ -3,7 +3,7 @@ id: 01-python-basics
 slug: /ai-engineering-placement/01-python-programming/01-python-basics
 title: "Python Basics — Variables, Data Types, Operators"
 sidebar_label: "Python Basics — Variables, Data Types, Operators"
-sidebar_position: 8
+sidebar_position: 9
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Python Basics — Variables, Data Types, Operators

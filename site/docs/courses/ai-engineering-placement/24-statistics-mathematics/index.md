@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/24-statistics-mathematics
 title: "Statistics & Mathematics for AI Engineers"
 sidebar_label: "Statistics & Mathematics for AI Engineers"
-sidebar_position: 282
+sidebar_position: 283
 ---
 # Statistics & Mathematics for AI Engineers
 

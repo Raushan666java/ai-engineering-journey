@@ -1,0 +1,2590 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[90858],{
+
+/***/ 23668
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_21_interview_preparation_03_backend_coding_interview_md_ebf_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-21-interview-preparation-03-backend-coding-interview-md-ebf.json
+const site_docs_courses_ai_engineering_placement_21_interview_preparation_03_backend_coding_interview_md_ebf_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/interview-preparation/03-backend-coding-interview","title":"Backend Coding Interview","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview.md","sourceDirName":"courses/ai-engineering-placement/21-interview-preparation","slug":"/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":232,"frontMatter":{"id":"03-backend-coding-interview","slug":"/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview","title":"Backend Coding Interview","sidebar_label":"Backend Coding Interview","sidebar_position":232},"sidebar":"coursesSidebar","previous":{"title":"SQL Problem Bank","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/02-sql-problem-bank"},"next":{"title":"ML Foundations Interview","permalink":"/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview.md
+
+
+const frontMatter = {
+	id: '03-backend-coding-interview',
+	slug: '/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview',
+	title: 'Backend Coding Interview',
+	sidebar_label: 'Backend Coding Interview',
+	sidebar_position: 232
+};
+const contentTitle = 'Backend Coding Interview';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "3.1 API Design",
+  "id": "31-api-design",
+  "level": 2
+}, {
+  "value": "3.2 Middleware",
+  "id": "32-middleware",
+  "level": 2
+}, {
+  "value": "3.3 Concurrency",
+  "id": "33-concurrency",
+  "level": 2
+}, {
+  "value": "3.4 Caching",
+  "id": "34-caching",
+  "level": 2
+}, {
+  "value": "3.5 Testing",
+  "id": "35-testing",
+  "level": 2
+}, {
+  "value": "3.6 Message Queues",
+  "id": "36-message-queues",
+  "level": 2
+}, {
+  "value": "3.7 Microservices",
+  "id": "37-microservices",
+  "level": 2
+}, {
+  "value": "3.8 Security",
+  "id": "38-security",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Query side (uses separate read-optimized store)",
+  "id": "query-side-uses-separate-read-optimized-store",
+  "level": 2
+}, {
+  "value": "Step 2: Background process publishes from outbox",
+  "id": "step-2-background-process-publishes-from-outbox",
+  "level": 2
+}, {
+  "value": "Event bus (in-memory for illustration)",
+  "id": "event-bus-in-memory-for-illustration",
+  "level": 2
+}, {
+  "value": "Order service",
+  "id": "order-service",
+  "level": 2
+}, {
+  "value": "Saga coordinator subscribes to events and triggers next steps",
+  "id": "saga-coordinator-subscribes-to-events-and-triggers-next-steps",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    hr: "hr",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "backend-coding-interview",
+        children: "Backend Coding Interview"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design and implement RESTful API endpoints with proper status codes and error handling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build middleware chains for authentication, logging, rate limiting, and error handling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle concurrency patterns: threading, asyncio, multiprocessing, and synchronization primitives"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement caching strategies with Redis and in-memory caches"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write unit, integration, and end-to-end tests for backend code"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design scalable backend architectures including microservices, message queues, and event-driven patterns"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic programming knowledge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding of data structures"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Terms"
+      }), ": Core vocabulary and concepts for this topic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition"
+      }), ": Essential terms you must know for interviews and production work."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding backend coding interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how backend coding interview works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "API Design"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RESTful principles, status codes, versioning, HATEOAS"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Middleware"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Authentication, logging, rate limiting, error handling"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Concurrency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Threading, asyncio, multiprocessing, GIL, synchronization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Caching"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Redis, in-memory cache, cache invalidation strategies"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Testing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Unit, integration, E2E, mocking, test doubles"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Message Queues"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RabbitMQ, Kafka, Celery, event-driven patterns"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Microservices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Service decomposition, API gateway, service discovery"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Security"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Authentication, authorization, input validation, rate limiting"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart LR\n    A[API Design] --> B[Middleware]\n    B --> C[Concurrency]\n    C --> D[Caching]\n    D --> E[Testing]\n    E --> F[Message Queues]\n    F --> G[Microservices]\n    G --> H[Security]\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "31-api-design",
+      children: "3.1 API Design"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A well-designed REST API follows consistent conventions and uses HTTP semantics correctly."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "URL conventions"
+      }), ": Use nouns for resources (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/users"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/orders"
+      }), "), plural names, lowercase with hyphens. Nest resources hierarchically (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/users/{id}/orders"
+      }), "). Query parameters for filtering, sorting, and pagination."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "HTTP methods"
+      }), ": GET for retrieval (safe, idempotent), POST for creation (not idempotent), PUT for full replacement (idempotent), PATCH for partial update, DELETE for removal (idempotent)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Status codes"
+      }), ": 200 OK, 201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 422 Unprocessable Entity, 429 Too Many Requests, 500 Internal Server Error."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from fastapi import FastAPI, HTTPException, Query, status\nfrom pydantic import BaseModel, Field\nfrom typing import Optional\nfrom enum import Enum\n\napp = FastAPI()\n\nclass OrderStatus(str, Enum):\n    PENDING = \"pending\"\n    CONFIRMED = \"confirmed\"\n    SHIPPED = \"shipped\"\n    DELIVERED = \"delivered\"\n    CANCELLED = \"cancelled\"\n\nclass OrderCreate(BaseModel):\n    user_id: int = Field(..., gt=0)\n    items: list[int] = Field(..., min_length=1)\n    shipping_address: str = Field(..., min_length=10, max_length=500)\n\nclass OrderResponse(BaseModel):\n    id: int\n    user_id: int\n    status: OrderStatus\n    total: float\n    created_at: str\n\norders_db: dict[int, dict] = {}\n\n@app.post(\"/orders\", status_code=status.HTTP_201_CREATED, response_model=OrderResponse)\ndef create_order(order: OrderCreate):\n    new_id = len(orders_db) + 1\n    orders_db[new_id] = {\n        \"id\": new_id,\n        \"user_id\": order.user_id,\n        \"status\": OrderStatus.PENDING,\n        \"total\": 0.0,\n        \"created_at\": \"2024-01-15T10:30:00Z\"\n    }\n    return orders_db[new_id]\n\n@app.get(\"/orders\", response_model=list[OrderResponse])\ndef list_orders(\n    status: Optional[OrderStatus] = Query(None),\n    page: int = Query(1, ge=1),\n    size: int = Query(20, ge=1, le=100)\n):\n    result = list(orders_db.values())\n    if status:\n        result = [o for o in result if o[\"status\"] == status]\n    start = (page - 1) * size\n    return result[start:start + size]\n\n@app.get(\"/orders/{order_id}\", response_model=OrderResponse)\ndef get_order(order_id: int):\n    if order_id not in orders_db:\n        raise HTTPException(status_code=404, detail=\"Order not found\")\n    return orders_db[order_id]\n\n@app.patch(\"/orders/{order_id}/cancel\", response_model=OrderResponse)\ndef cancel_order(order_id: int):\n    if order_id not in orders_db:\n        raise HTTPException(status_code=404, detail=\"Order not found\")\n    order = orders_db[order_id]\n    if order[\"status\"] not in (OrderStatus.PENDING, OrderStatus.CONFIRMED):\n        raise HTTPException(status_code=409, detail=\"Order cannot be cancelled\")\n    order[\"status\"] = OrderStatus.CANCELLED\n    return order\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "API versioning"
+      }), ": Use URL-based versioning (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "/v1/orders"
+      }), ") or header-based versioning (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Accept: application/vnd.api.v1+json"
+      }), "). URL-based is simpler for initial versions."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "32-middleware",
+      children: "3.2 Middleware"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Middleware sits between the request and the handler, processing every request/response. Common middleware includes authentication, logging, rate limiting, request validation, and CORS."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import time\nimport logging\nfrom fastapi import FastAPI, Request, Response\nfrom fastapi.middleware.cors import CORSMiddleware\nfrom starlette.middleware.base import BaseHTTPMiddleware\nfrom collections import defaultdict\n\nlogger = logging.getLogger(__name__)\n\n## Request timing middleware\nclass TimingMiddleware(BaseHTTPMiddleware):\n    async def dispatch(self, request: Request, call_next):\n        start = time.perf_counter()\n        response = await call_next(request)\n        elapsed = time.perf_counter() - start\n        response.headers[\"X-Processing-Time\"] = str(elapsed)\n        logger.info(f\"{request.method} {request.url.path} - {elapsed:.3f}s\")\n        return response\n\n## Rate limiting middleware (in-memory, per IP)\nclass RateLimitMiddleware(BaseHTTPMiddleware):\n    def __init__(self, app, max_requests: int = 100, window_seconds: int = 60):\n        super().__init__(app)\n        self.max_requests = max_requests\n        self.window = window_seconds\n        self.requests: dict[str, list[float]] = defaultdict(list)\n\n    async def dispatch(self, request: Request, call_next):\n        client_ip = request.client.host if request.client else \"unknown\"\n        now = time.time()\n        self.requests[client_ip] = [\n            t for t in self.requests[client_ip] if now - t < self.window\n        ]\n        if len(self.requests[client_ip]) >= self.max_requests:\n            return Response(status_code=429, content=\"Too many requests\")\n        self.requests[client_ip].append(now)\n        return await call_next(request)\n\n## JWT authentication middleware\nclass JWTAuthMiddleware(BaseHTTPMiddleware):\n    def __init__(self, app, excluded_paths: set[str] = None):\n        super().__init__(app)\n        self.excluded_paths = excluded_paths or {\"/health\", \"/docs\", \"/openapi.json\"}\n\n    async def dispatch(self, request: Request, call_next):\n        if request.url.path in self.excluded_paths:\n            return await call_next(request)\n        auth_header = request.headers.get(\"Authorization\", \"\")\n        if not auth_header.startswith(\"Bearer \"):\n            return Response(status_code=401, content=\"Missing or invalid token\")\n        token = auth_header[7:]\n        try:\n            # Decode JWT and attach user info to request\n            payload = self.decode_jwt(token)\n            request.state.user = payload\n        except Exception:\n            return Response(status_code=401, content=\"Invalid token\")\n        return await call_next(request)\n\n    def decode_jwt(self, token: str) -> dict:\n        import jwt\n        return jwt.decode(token, \"secret-key\", algorithms=[\"HS256\"])\n\n## Register middleware\napp.add_middleware(CORSMiddleware, allow_origins=[\"*\"], allow_methods=[\"*\"], allow_headers=[\"*\"])\napp.add_middleware(TimingMiddleware)\napp.add_middleware(RateLimitMiddleware, max_requests=60, window_seconds=60)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Middleware order matters"
+      }), ": Middleware is executed in the order it's added. Put broad middleware (CORS, timing) first, then authentication, then rate limiting."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "33-concurrency",
+      children: "3.3 Concurrency"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Python offers three concurrency models. Understanding when to use each is critical for backend interviews."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Threading"
+      }), ": Best for I/O-bound tasks (network requests, file I/O). Limited by the GIL (Global Interpreter Lock) for CPU-bound work."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Asyncio"
+      }), ": Single-threaded cooperative multitasking. Best for high-concurrency I/O bound workloads (web servers, API gateways). Uses async/await syntax."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Multiprocessing"
+      }), ": Bypasses the GIL with separate processes. Best for CPU-bound tasks (image processing, ML inference)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import asyncio\nimport threading\nimport concurrent.futures\nimport time\nfrom typing import Any\n\n## Threading example — downloading multiple URLs\ndef fetch_url(url: str) -> str:\n    import requests\n    response = requests.get(url, timeout=10)\n    return f\"{url}: {len(response.content)} bytes\"\n\ndef threaded_fetch(urls: list[str]) -> list[str]:\n    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:\n        results = list(executor.map(fetch_url, urls))\n    return results\n\n## Asyncio example — non-blocking I/O\nasync def async_fetch(session, url: str) -> str:\n    async with session.get(url) as response:\n        data = await response.read()\n        return f\"{url}: {len(data)} bytes\"\n\nasync def async_fetch_all(urls: list[str]) -> list[str]:\n    import aiohttp\n    async with aiohttp.ClientSession() as session:\n        tasks = [async_fetch(session, url) for url in urls]\n        return await asyncio.gather(*tasks)\n\n## Multiprocessing example — CPU-bound computation\ndef compute_heavy(n: int) -> int:\n    return sum(i * i for i in range(n))\n\ndef parallel_compute(values: list[int]) -> list[int]:\n    with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:\n        results = list(executor.map(compute_heavy, values))\n    return results\n\n## Synchronization primitives — thread-safe counter\nclass ThreadSafeCounter:\n    def __init__(self):\n        self._value = 0\n        self._lock = threading.Lock()\n\n    def increment(self) -> int:\n        with self._lock:\n            self._value += 1\n            return self._value\n\n    @property\n    def value(self) -> int:\n        with self._lock:\n            return self._value\n\n## Async producer-consumer pattern\nasync def producer(queue: asyncio.Queue, n: int):\n    for i in range(n):\n        await queue.put(f\"item-{i}\")\n        await asyncio.sleep(0.01)\n    await queue.put(None)  # sentinel\n\nasync def consumer(queue: asyncio.Queue, name: str):\n    while True:\n        item = await queue.get()\n        if item is None:\n            queue.task_done()\n            break\n        print(f\"{name} processed {item}\")\n        queue.task_done()\n\nasync def run_pipeline():\n    queue = asyncio.Queue(maxsize=10)\n    producers = [asyncio.create_task(producer(queue, 20))]\n    consumers = [asyncio.create_task(consumer(queue, f\"worker-{i}\")) for i in range(3)]\n    await asyncio.gather(*producers)\n    await queue.join()\n    for c in consumers:\n        c.cancel()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "GIL implications"
+      }), ": For CPU-bound Python code, threading doesn't provide parallelism. Use multiprocessing, C extensions (NumPy), or alternative runtimes (Jython, IronPython). For I/O-bound code, asyncio is the most efficient model."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "34-caching",
+      children: "3.4 Caching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Caching reduces latency and database load. Master these patterns for backend interviews."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "In-memory cache"
+      }), ": Fastest but limited by available RAM. Use ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "functools.lru_cache"
+      }), " for function results or a custom TTL-based cache."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Redis"
+      }), ": Distributed cache with built-in eviction policies (LRU, LFU, TTL). Supports data structures (strings, hashes, lists, sets, sorted sets)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Cache invalidation"
+      }), ": The hardest problem in computer science. Strategies include TTL-based expiration, write-through (update cache on write), write-behind (async update), and cache-aside (application manages cache)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import time\nimport json\nfrom functools import lru_cache\nfrom typing import Any, Optional\nimport redis\n\n## In-memory cache with TTL\nclass TTLCache:\n    def __init__(self, ttl_seconds: int = 300):\n        self._cache: dict[str, tuple[float, Any]] = {}\n        self.ttl = ttl_seconds\n\n    def get(self, key: str) -> Optional[Any]:\n        if key not in self._cache:\n            return None\n        expires_at, value = self._cache[key]\n        if time.time() > expires_at:\n            del self._cache[key]\n            return None\n        return value\n\n    def set(self, key: str, value: Any) -> None:\n        self._cache[key] = (time.time() + self.ttl, value)\n\n    def invalidate(self, key: str) -> None:\n        self._cache.pop(key, None)\n\n## Cache-aside pattern with Redis\nclass RedisCache:\n    def __init__(self, host: str = \"localhost\", port: int = 6379, db: int = 0, default_ttl: int = 300):\n        self.client = redis.Redis(host=host, port=port, db=db, decode_responses=True)\n        self.default_ttl = default_ttl\n\n    def get(self, key: str) -> Optional[str]:\n        return self.client.get(key)\n\n    def set(self, key: str, value: str, ttl: Optional[int] = None) -> None:\n        self.client.setex(key, ttl or self.default_ttl, value)\n\n    def delete(self, *keys: str) -> None:\n        self.client.delete(*keys)\n\n    def remember(self, key: str, fetch_func, ttl: Optional[int] = None) -> str:\n        cached = self.get(key)\n        if cached is not None:\n            return cached\n        value = fetch_func()\n        self.set(key, str(value), ttl)\n        return str(value)\n\n## Using lru_cache for expensive function calls\n@lru_cache(maxsize=128)\ndef get_user_permissions(user_id: int) -> list[str]:\n    # Expensive database query\n    return [\"read\", \"write\", \"admin\"]\n\n## Cache invalidation example\nclass UserService:\n    def __init__(self, cache: RedisCache):\n        self.cache = cache\n\n    def get_user(self, user_id: int) -> dict:\n        cache_key = f\"user:{user_id}\"\n        result = self.cache.get(cache_key)\n        if result:\n            return json.loads(result)\n        user = self._fetch_from_db(user_id)\n        self.cache.set(cache_key, json.dumps(user), ttl=3600)\n        return user\n\n    def update_user(self, user_id: int, data: dict) -> dict:\n        user = self._update_in_db(user_id, data)\n        # Invalidate cache on write (write-invalidate pattern)\n        self.cache.delete(f\"user:{user_id}\")\n        return user\n\n    def _fetch_from_db(self, user_id: int) -> dict:\n        return {\"id\": user_id, \"name\": \"Alice\"}\n\n    def _update_in_db(self, user_id: int, data: dict) -> dict:\n        return {\"id\": user_id, **data}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Common cache strategies"
+      }), ": Cache-aside is the most common — application checks cache first, loads from DB on miss, stores in cache. Read-through cache sits between app and DB transparently. Write-through updates cache synchronously on writes."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "35-testing",
+      children: "3.5 Testing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Backend testing spans multiple levels. Be prepared to discuss and write tests in interviews."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Unit tests"
+      }), ": Test individual functions/classes in isolation. Mock external dependencies. Fast execution."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Integration tests"
+      }), ": Test components together with real or test databases. Verify API contracts."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "End-to-end tests"
+      }), ": Test the full system from external API to database. Slow but catch systemic issues."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import pytest\nfrom fastapi.testclient import TestClient\nfrom unittest.mock import Mock, patch\nfrom datetime import datetime\n\n## Unit test — testing business logic in isolation\ndef calculate_discount(order_total: float, loyalty_years: int) -> float:\n    if loyalty_years >= 5:\n        return order_total * 0.15\n    if loyalty_years >= 2:\n        return order_total * 0.10\n    if order_total > 1000:\n        return order_total * 0.05\n    return 0.0\n\nclass TestCalculateDiscount:\n    def test_loyalty_discount_5_years(self):\n        assert calculate_discount(1000, 5) == 150.0\n\n    def test_loyalty_discount_2_years(self):\n        assert calculate_discount(1000, 2) == 100.0\n\n    def test_high_value_discount(self):\n        assert calculate_discount(1500, 0) == 75.0\n\n    def test_no_discount(self):\n        assert calculate_discount(500, 0) == 0.0\n\n## API integration test with FastAPI TestClient\nfrom main import app\n\nclient = TestClient(app)\n\nclass TestOrderAPI:\n    def test_create_order(self):\n        response = client.post(\"/orders\", json={\n            \"user_id\": 1,\n            \"items\": [101, 102],\n            \"shipping_address\": \"123 Main St, City, Country\"\n        })\n        assert response.status_code == 201\n        data = response.json()\n        assert data[\"user_id\"] == 1\n        assert data[\"status\"] == \"pending\"\n\n    def test_get_order_not_found(self):\n        response = client.get(\"/orders/999\")\n        assert response.status_code == 404\n        assert \"not found\" in response.json()[\"detail\"].lower()\n\n    def test_list_orders_with_filter(self):\n        response = client.get(\"/orders?status=pending&page=1&size=10\")\n        assert response.status_code == 200\n        assert isinstance(response.json(), list)\n\n## Mocking external dependencies\nclass EmailService:\n    def send_welcome_email(self, user_email: str) -> bool:\n        # Calls external SMTP server\n        raise NotImplementedError\n\nclass UserRegistration:\n    def __init__(self, email_service: EmailService, db):\n        self.email_service = email_service\n        self.db = db\n\n    def register(self, email: str, name: str) -> dict:\n        if self.db.find_user_by_email(email):\n            raise ValueError(\"User already exists\")\n        user = self.db.create_user(email, name)\n        self.email_service.send_welcome_email(email)\n        return user\n\nclass TestUserRegistration:\n    def test_registration_sends_email(self):\n        mock_email = Mock(spec=EmailService)\n        mock_db = Mock()\n        mock_db.find_user_by_email.return_value = None\n        mock_db.create_user.return_value = {\"id\": 1, \"email\": \"test@test.com\", \"name\": \"Test\"}\n\n        service = UserRegistration(mock_email, mock_db)\n        result = service.register(\"test@test.com\", \"Test\")\n\n        assert result[\"id\"] == 1\n        mock_email.send_welcome_email.assert_called_once_with(\"test@test.com\")\n\n    def test_duplicate_email_raises_error(self):\n        mock_email = Mock(spec=EmailService)\n        mock_db = Mock()\n        mock_db.find_user_by_email.return_value = {\"id\": 1}\n\n        service = UserRegistration(mock_email, mock_db)\n        with pytest.raises(ValueError, match=\"User already exists\"):\n            service.register(\"existing@test.com\", \"Test\")\n        mock_email.send_welcome_email.assert_not_called()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Testing best practices"
+      }), ": Write tests first (TDD) for bug fixes. Use fixture factories for test data. Aim for 80%+ code coverage but focus on critical paths. Use dependency injection to make code testable."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "36-message-queues",
+      children: "3.6 Message Queues"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Message queues decouple services and enable asynchronous processing. Common patterns include task queues, event broadcasting, and stream processing."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "RabbitMQ"
+      }), ": AMQP-based message broker. Supports exchanges (direct, topic, fanout, headers) and queues with bindings. Good for task distribution and RPC."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Apache Kafka"
+      }), ": Distributed event streaming platform. Log-based, persists messages. Good for event sourcing, stream processing, and data pipelines."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Celery"
+      }), ": Python task queue that uses RabbitMQ or Redis as a broker. Handles periodic tasks, retries, and result storage."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Celery task queue example\nfrom celery import Celery\n\napp_celery = Celery(\n    \"tasks\",\n    broker=\"redis://localhost:6379/0\",\n    backend=\"redis://localhost:6379/0\"\n)\n\n@app_celery.task(bind=True, max_retries=3, default_retry_delay=30)\ndef process_order(self, order_id: int) -> dict:\n    try:\n        # Simulate order processing\n        result = {\"order_id\": order_id, \"status\": \"processed\"}\n        return result\n    except Exception as exc:\n        raise self.retry(exc=exc)\n\n## Sending tasks asynchronously\ndef create_and_process_order(user_id: int, items: list[int]):\n    order_id = save_order_to_db(user_id, items)\n    process_order.delay(order_id)  # Non-blocking\n    return {\"order_id\": order_id, \"status\": \"pending\"}\n\n## In-memory queue implementation (for interview coding)\nfrom dataclasses import dataclass\nfrom collections import deque\nimport threading\n\n@dataclass\nclass Message:\n    topic: str\n    payload: dict\n    key: Optional[str] = None\n\nclass SimpleMessageQueue:\n    def __init__(self):\n        self.queues: dict[str, deque] = {}\n        self.subscribers: dict[str, list] = {}\n        self.lock = threading.Lock()\n\n    def create_topic(self, topic: str) -> None:\n        with self.lock:\n            if topic not in self.queues:\n                self.queues[topic] = deque()\n\n    def publish(self, topic: str, message: Message) -> None:\n        with self.lock:\n            if topic not in self.queues:\n                raise ValueError(f\"Topic {topic} does not exist\")\n            self.queues[topic].append(message)\n\n    def subscribe(self, topic: str, callback) -> str:\n        subscriber_id = f\"sub-{id(callback)}\"\n        with self.lock:\n            if topic not in self.subscribers:\n                self.subscribers[topic] = []\n            self.subscribers[topic].append((subscriber_id, callback))\n        return subscriber_id\n\n    def consume(self, topic: str) -> Optional[Message]:\n        with self.lock:\n            if self.queues.get(topic):\n                return self.queues[topic].popleft()\n            return None\n\n    def start_consumer(self, topic: str, poll_interval: float = 0.1):\n        def poll():\n            while True:\n                msg = self.consume(topic)\n                if msg and topic in self.subscribers:\n                    for _, callback in self.subscribers[topic]:\n                        callback(msg)\n                time.sleep(poll_interval)\n        thread = threading.Thread(target=poll, daemon=True)\n        thread.start()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "37-microservices",
+      children: "3.7 Microservices"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Microservices decompose a backend into independently deployable services. Be ready to discuss tradeoffs and patterns."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Service decomposition"
+      }), ": Split by business capability (orders service, payments service, inventory service). Each service owns its data store."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "API Gateway"
+      }), ": Single entry point that handles authentication, rate limiting, routing, and aggregation. Implement with Nginx, Kong, or Envoy."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Service discovery"
+      }), ": Services find each other via DNS (Kubernetes), a registry (Consul, Eureka), or client-side discovery."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Inter-service communication"
+      }), ": Synchronous (HTTP/REST, gRPC) or asynchronous (message queues, events). Choose async for loose coupling."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "\n## Service example — inventory service\nfrom fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel\n\ninventory_app = FastAPI(title=\"Inventory Service\")\n\nclass InventoryItem(BaseModel):\n    product_id: int\n    quantity: int\n    warehouse: str\n\ninventory_db: dict[int, dict] = {\n    101: {\"product_id\": 101, \"quantity\": 50, \"warehouse\": \"WH-1\"},\n    102: {\"product_id\": 102, \"quantity\": 0, \"warehouse\": \"WH-1\"},\n}\n\n@inventory_app.get(\"/inventory/{product_id}\")\ndef check_inventory(product_id: int):\n    item = inventory_db.get(product_id)\n    if not item:\n        raise HTTPException(status_code=404, detail=\"Product not found\")\n    return {\"product_id\": product_id, \"in_stock\": item[\"quantity\"] > 0, \"quantity\": item[\"quantity\"]}\n\n@inventory_app.post(\"/inventory/reserve\")\ndef reserve_inventory(product_id: int, quantity: int):\n    item = inventory_db.get(product_id)\n    if not item or item[\"quantity\"] < quantity:\n        raise HTTPException(status_code=409, detail=\"Insufficient inventory\")\n    item[\"quantity\"] -= quantity\n    return {\"product_id\": product_id, \"remaining\": item[\"quantity\"]}\n\n## API Gateway pattern (simplified)\nfrom fastapi import FastAPI, Request\nimport httpx\n\ngateway = FastAPI(title=\"API Gateway\")\n\nSERVICE_MAP = {\n    \"/users\": \"http://user-service:8001\",\n    \"/orders\": \"http://order-service:8002\",\n    \"/inventory\": \"http://inventory-service:8003\",\n    \"/payments\": \"http://payment-service:8004\",\n}\n\n@gateway.api_route(\"/{path:path}\", methods=[\"GET\", \"POST\", \"PUT\", \"DELETE\", \"PATCH\"])\nasync def proxy(request: Request, path: str):\n    prefix = \"/\" + path.split(\"/\")[0]\n    if prefix not in SERVICE_MAP:\n        raise HTTPException(status_code=404, detail=\"Service not found\")\n\n    target = SERVICE_MAP[prefix]\n    body = await request.body()\n    headers = dict(request.headers)\n    headers.pop(\"host\", None)\n\n    async with httpx.AsyncClient() as client:\n        response = await client.request(\n            method=request.method,\n            url=f\"{target}/{path}\",\n            headers=headers,\n            content=body,\n            params=dict(request.query_params),\n        )\n    return response.json()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Microservices challenges"
+      }), ": Distributed transactions (use saga pattern), data consistency (eventual consistency), observability (distributed tracing), network latency, and operational complexity."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "38-security",
+      children: "3.8 Security"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Backend security covers authentication, authorization, input validation, and protection against common attacks."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Authentication"
+      }), ": Verify identity. Methods include JWT (stateless, no server-side session), session-based (stateful, server stores session), OAuth2 (delegated auth), and API keys (simple, for machine-to-machine)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Authorization"
+      }), ": Control access to resources. Use RBAC (role-based), ABAC (attribute-based), or ACL (access control lists). Always enforce at the API layer, not just the UI."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Input validation"
+      }), ": Validate and sanitize all user input. Use Pydantic schemas, parameterized queries (no SQL injection), and content-type verification."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import hashlib\nimport hmac\nimport bcrypt\nfrom datetime import datetime, timedelta\nfrom typing import Optional\nimport jwt\n\n## Password hashing with bcrypt\ndef hash_password(password: str) -> str:\n    return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()\n\ndef verify_password(password: str, hashed: str) -> bool:\n    return bcrypt.checkpw(password.encode(), hashed.encode())\n\n## JWT token creation and verification\nclass JWTHandler:\n    def __init__(self, secret: str, algorithm: str = \"HS256\"):\n        self.secret = secret\n        self.algorithm = algorithm\n\n    def create_access_token(self, user_id: int, role: str, expires_delta: timedelta = timedelta(hours=1)):\n        payload = {\n            \"sub\": str(user_id),\n            \"role\": role,\n            \"iat\": datetime.utcnow(),\n            \"exp\": datetime.utcnow() + expires_delta,\n        }\n        return jwt.encode(payload, self.secret, algorithm=self.algorithm)\n\n    def verify_token(self, token: str) -> dict:\n        try:\n            payload = jwt.decode(token, self.secret, algorithms=[self.algorithm])\n            return payload\n        except jwt.ExpiredSignatureError:\n            raise ValueError(\"Token expired\")\n        except jwt.InvalidTokenError:\n            raise ValueError(\"Invalid token\")\n\n## Role-based access control decorator\nfrom functools import wraps\n\ndef require_role(required_role: str):\n    def decorator(func):\n        @wraps(func)\n        def wrapper(*args, **kwargs):\n            request = kwargs.get(\"request\")\n            user = getattr(request.state, \"user\", None)\n            if not user or user.get(\"role\") != required_role:\n                raise HTTPException(status_code=403, detail=\"Insufficient permissions\")\n            return func(*args, **kwargs)\n        return wrapper\n    return decorator\n\n## Input validation with Pydantic\nfrom pydantic import BaseModel, EmailStr, constr\n\nclass UserRegistration(BaseModel):\n    email: EmailStr\n    password: constr(min_length=8, max_length=128)\n    name: constr(min_length=2, max_length=100)\n\n    # Additional validation\n    def check_password_strength(self):\n        if not any(c.isupper() for c in self.password):\n            raise ValueError(\"Password must contain uppercase letter\")\n        if not any(c.isdigit() for c in self.password):\n            raise ValueError(\"Password must contain digit\")\n\n## Rate limiting with token bucket algorithm\nclass TokenBucket:\n    def __init__(self, rate: float, capacity: int):\n        self.rate = rate  # tokens per second\n        self.capacity = capacity\n        self.tokens = capacity\n        self.last_refill = time.time()\n\n    def consume(self, tokens: int = 1) -> bool:\n        now = time.time()\n        elapsed = now - self.last_refill\n        self.tokens = min(self.capacity, self.tokens + elapsed * self.rate)\n        self.last_refill = now\n        if self.tokens >= tokens:\n            self.tokens -= tokens\n            return True\n        return False\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Common vulnerabilities"
+      }), ": SQL injection (use parameterized queries), XSS (sanitize HTML output), CSRF (use anti-CSRF tokens), SSRF (restrict outbound requests), insecure deserialization (validate input), and dependency vulnerabilities (keep dependencies updated)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "REST APIs use nouns for resources, HTTP methods for actions, and consistent status codes"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Middleware enables cross-cutting concerns (auth, logging, rate limiting) without code duplication"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Choose threading for I/O-bound, asyncio for high-concurrency I/O, multiprocessing for CPU-bound work"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Cache-aside with Redis is the standard caching pattern; invalidate on writes, not just reads"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test at multiple levels: unit (fast, isolated), integration (real dependencies), E2E (full system)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Message queues decouple services; choose RabbitMQ for task distribution, Kafka for event streaming"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Microservices decompose by business capability but introduce distributed systems challenges"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Security: authenticate (who), authorize (what they can do), validate (all input), rate-limit (prevent abuse)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Scenario"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Do This"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Avoid This"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "API endpoint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Proper HTTP method + status code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "POST for everything, 200 for all responses"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow database queries"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Add caching layer"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "N+1 queries in loops"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "High I/O concurrency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "asyncio with connection pooling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Thread per request (memory overhead)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "CPU-bound task"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multiprocessing or task queue"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Threading (blocked by GIL)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Password storage"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "bcrypt with salt"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MD5, SHA-256 (unsalted), plain text"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Cache consistency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write-invalidate or write-through"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Long TTL with no invalidation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Microservices"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Event-driven with sagas"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Synchronous chains of HTTP calls"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s03-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: Explain the difference between REST and GraphQL.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "REST"
+          }), ": Resources are accessed via URL paths with fixed response structures. Uses HTTP methods and status codes. Caching is built-in via HTTP semantics. Best for simple CRUD applications and when response shapes don't vary much."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "GraphQL"
+          }), ": Single endpoint where clients specify exactly which fields they need. Client-driven queries can cause performance issues (N+1). Requires a resolver layer and careful deprecation management."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "When to choose each"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "REST: Public APIs, simple CRUD, when HTTP caching matters, high maturity"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "GraphQL: Complex nested data, multiple client types (web, mobile), rapidly evolving frontends"
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Many teams use both — REST for simple endpoints and GraphQL for complex data needs"
+          }), "\n    "]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s03-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: How does the Python GIL work and how do you work around it?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "The Global Interpreter Lock (GIL) is a mutex in CPython that prevents multiple native threads from executing Python bytecode simultaneously. It exists because Python's memory management is not thread-safe."
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Impact"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["CPU-bound tasks: Threading provides ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "no parallelism"
+            }), " — threads take turns"]
+          }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+            children: "I/O-bound tasks: Threading works fine because threads release the GIL during I/O waits"
+          }), "\n    "]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Workarounds"
+          }), ":"]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Multiprocessing"
+            }), ": Spawn separate processes, each with its own GIL"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "asyncio"
+            }), ": Single-threaded cooperative concurrency for I/O"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "C extensions"
+            }), ": NumPy, Cython release the GIL in computation-heavy sections"]
+          }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Jython/IronPython"
+            }), ": Don't have a GIL (but lag behind CPython features)"]
+          }), "\n    "]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ip-s03-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: Design a rate limiter that handles 1M requests per minute.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Sliding window counter (Redis sorted sets)"
+          }), " — efficient and accurate:"]
+        }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsxs)(_components.code, {
+            children: ["import time\nimport redis\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["class SlidingWindowRateLimiter:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "init"
+              }), "(self, redis_client, window_ms: int = 60000, max_requests: int = 1000):\nself.redis = redis_client\nself.window = window_ms\nself.max_reqs = max_requests"]
+            }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "def is_allowed(self, key: str) -&gt; bool:\n    now = int(time.time() * 1000)\n    window_start = now - self.window\n\n    pipe = self.redis.pipeline()\n    pipe.zremrangebyscore(key, 0, window_start)  # remove old entries\n    pipe.zcard(key)                                # count remaining\n    pipe.zadd(key, {str(now): now})                # add current request\n    pipe.expire(key, self.window // 1000 + 1)      # auto-cleanup\n    _, count, _, _ = pipe.execute()\n\n    return count &lt; self.max_reqs</code></pre>\n<p><strong>Alternative — Token Bucket</strong>: Simple, memory-efficient, allows bursts up to capacity.</p>\n<p><strong>For 1M req/min across 1000 users</strong>: Each user gets ~1000 req/min. Use Redis Cluster for horizontal scaling. Shard by user ID. Use local counters (in-memory + periodic sync) to reduce Redis load.</p>\n"
+              })
+            }), "\n  "]
+          })
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.code, {
+        children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-mark-btn",
+          children: "✅ Mark Reviewed"
+        }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+          className: "tp-qa-bookmark-btn",
+          children: "🔖 Bookmark"
+        }), "\n"]
+      })]
+    }), (0,jsx_runtime.jsxs)(_components.code, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.details, {
+        className: "tp-qa-card",
+        "data-qid": "ip-s03-q4",
+        children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+          className: "tp-qa-question",
+          children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+            className: "tp-qa-status"
+          }), "\n    Q4: How do you handle database transactions across multiple services?\n  "]
+        }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+          className: "tp-qa-answer",
+          children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Saga pattern"
+            }), " manages distributed transactions across microservices:"]
+          }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Choreography"
+              }), ": Each service publishes events after completing its local transaction. Other services listen and react. Simple but hard to track overall flow."]
+            }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Orchestration"
+              }), ": A central coordinator (saga orchestrator) tells services what to do and handles rollbacks by invoking compensating transactions."]
+            }), "\n    "]
+          }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+            children: (0,jsx_runtime.jsxs)(_components.code, {
+              children: ["class OrderSagaOrchestrator:\n    def __init__(self, order_svc, payment_svc, inventory_svc, shipping_svc):\n        self.services = {\n            \"order\": order_svc,\n            \"payment\": payment_svc,\n            \"inventory\": inventory_svc,\n            \"shipping\": shipping_svc,\n        }\n        self.compensations = []\n", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "async def place_order(self, order_data: dict) -&gt; bool:\n    try:\n        order = await self.services[\"order\"].create(order_data)\n        self.compensations.append(lambda: self.services[\"order\"].cancel(order[\"id\"]))\n\n        payment = await self.services[\"payment\"].charge(order[\"id\"], order[\"total\"])\n        self.compensations.append(lambda: self.services[\"payment\"].refund(payment[\"id\"]))\n\n        inventory = await self.services[\"inventory\"].reserve(order[\"items\"])\n        self.compensations.append(lambda: self.services[\"inventory\"].release(order[\"items\"]))\n\n        shipping = await self.services[\"shipping\"].schedule(order[\"id\"])\n        return True\n    except Exception:\n        for compensate in reversed(self.compensations):\n            try:\n                await compensate()\n            except Exception:\n                pass  # Log compensation failure for manual recovery\n        return False</code></pre>\n<p>Use <strong>outbox pattern</strong> for reliable event publishing: write events to the same DB as the transaction, then a separate process publishes them.</p>\n"
+                })
+              }), "\n  "]
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.code, {
+          children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+            className: "tp-qa-mark-btn",
+            children: "✅ Mark Reviewed"
+          }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+            className: "tp-qa-bookmark-btn",
+            children: "🔖 Bookmark"
+          }), "\n"]
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.code, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.details, {
+          className: "tp-qa-card",
+          "data-qid": "ip-s03-q5",
+          children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+            className: "tp-qa-question",
+            children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+              className: "tp-qa-status"
+            }), "\n    Q5: Implement a thread-safe singleton in Python.\n  "]
+          }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+            className: "tp-qa-answer",
+            children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Approach 1 — Metaclass (most common)"
+              }), ":"]
+            }), "\n    ", (0,jsx_runtime.jsxs)(_components.pre, {
+              children: [(0,jsx_runtime.jsxs)(_components.code, {
+                children: ["import threading\n", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "class SingletonMeta(type):\n_instances = {}\n_lock = threading.Lock()"
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "def __call__(cls, *args, **kwargs):\n    if cls not in cls._instances:\n        with cls._lock:\n            if cls not in cls._instances:\n                cls._instances[cls] = super().__call__(*args, **kwargs)\n    return cls._instances[cls]\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: ["class DatabaseConnection(metaclass=SingletonMeta):\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                    children: "init"
+                  }), "(self):\nself.connected = False"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "def connect(self):\n    self.connected = True\n    return self</code></pre>\n<p><strong>Approach 2 — Module-level variable</strong>:</p>\n<pre><code># db.py\n"
+                  })
+                }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: ["class _DatabaseConnection:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                    children: "init"
+                  }), "(self):\nself.connected = False"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "def connect(self):\n    self.connected = True\n"
+                  })
+                }), "\n"]
+              }), (0,jsx_runtime.jsx)(_components.p, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "db_connection = _DatabaseConnection()  # imported once, shared globally"
+                })
+              })]
+            }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+              children: "Python modules are singletons (imported once and cached). For most use cases, module-level instantiation is sufficient and simpler than metaclasses."
+            }), (0,jsx_runtime.jsx)(_components.p, {}), "\n  "]
+          }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+            className: "tp-qa-mark-btn",
+            children: "✅ Mark Reviewed"
+          }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+            className: "tp-qa-bookmark-btn",
+            children: "🔖 Bookmark"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+          className: "tp-qa-card",
+          "data-qid": "ip-s03-q6",
+          children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+            className: "tp-qa-question",
+            children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+              className: "tp-qa-status"
+            }), "\n    Q6: What is idempotency and how do you implement it in an API?\n  "]
+          }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+            className: "tp-qa-answer",
+            children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Idempotency"
+              }), " means making the same request multiple times produces the same result as making it once. GET, PUT, DELETE are idempotent by HTTP spec. POST is not."]
+            }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Why it matters"
+              }), ": Network failures can cause clients to retry. Without idempotency, a payment might be charged twice."]
+            }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Implementation — Idempotency key pattern"
+              }), ":"]
+            }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+              children: (0,jsx_runtime.jsxs)(_components.code, {
+                children: ["import uuid\nfrom datetime import datetime, timedelta\n", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: ["class IdempotencyMiddleware:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                    children: "init"
+                  }), "(self, cache, ttl_hours: int = 24):\nself.cache = cache\nself.ttl = timedelta(hours=ttl_hours)"]
+                }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "async def process(self, request, call_next):\n    idempotency_key = request.headers.get(\"Idempotency-Key\")\n    if not idempotency_key:\n        return await call_next(request)\n\n    # Check if we've already processed this key\n    existing = self.cache.get(f\"idempotent:{idempotency_key}\")\n    if existing:\n        return existing\n\n    response = await call_next(request)\n\n    # Store the response for this key\n    if response.status_code &lt; 500:  # Don't cache server errors\n        self.cache.set(f\"idempotent:{idempotency_key}\", response, ttl=self.ttl)\n\n    return response</code></pre>\n<p>The client generates a unique key (UUID) and sends it with the request. The server stores the response keyed by this UUID, returning the cached response for retries.</p>\n"
+                  })
+                }), "\n  "]
+              })
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.code, {
+            children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+              className: "tp-qa-mark-btn",
+              children: "✅ Mark Reviewed"
+            }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+              className: "tp-qa-bookmark-btn",
+              children: "🔖 Bookmark"
+            }), "\n"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.code, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.details, {
+            className: "tp-qa-card",
+            "data-qid": "ip-s03-q7",
+            children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+              className: "tp-qa-question",
+              children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                className: "tp-qa-status"
+              }), "\n    Q7: Design a URL shortener service.\n  "]
+            }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+              className: "tp-qa-answer",
+              children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                children: [(0,jsx_runtime.jsx)(_components.strong, {
+                  children: "Core components"
+                }), ":"]
+              }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+                children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "API"
+                  }), ": POST /shorten (takes URL, returns short code), GET /{short_code} (redirects)"]
+                }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Short code generation"
+                  }), ": Base62 encode auto-increment ID (deterministic, no collision) or random string (6-7 chars, check uniqueness)"]
+                }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Storage"
+                  }), ": PostgreSQL for metadata, Redis cache for hot URLs"]
+                }), "\n    "]
+              }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+                children: (0,jsx_runtime.jsxs)(_components.code, {
+                  children: ["import string\nimport random\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "class URLShortener:\nALPHABET = string.ascii_letters + string.digits  # 62 chars"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                    children: (0,jsx_runtime.jsx)(_components.code, {
+                      children: "def __init__(self, db, cache):\n    self.db = db\n    self.cache = cache\n\ndef encode(self, num: int) -&gt; str:\n    if num == 0:\n        return self.ALPHABET[0]\n    result = []\n    while num &gt; 0:\n        num, rem = divmod(num, 62)\n        result.append(self.ALPHABET[rem])\n    return \"\".join(reversed(result))\n\ndef decode(self, code: str) -&gt; int:\n    num = 0\n    for c in code:\n        num = num * 62 + self.ALPHABET.index(c)\n    return num\n\ndef shorten(self, original_url: str) -&gt; str:\n    url_id = self.db.insert_url(original_url)\n    short_code = self.encode(url_id)\n    self.db.update_short_code(url_id, short_code)\n    self.cache.set(f\"url:{short_code}\", original_url, ttl=86400)\n    return short_code\n\ndef resolve(self, short_code: str) -&gt; str:\n    cached = self.cache.get(f\"url:{short_code}\")\n    if cached:\n        return cached\n    url_id = self.decode(short_code)\n    original = self.db.get_url(url_id)\n    self.cache.set(f\"url:{short_code}\", original, ttl=3600)\n    return original</code></pre>\n<p><strong>Scale considerations</strong>: 100M URLs → use distributed ID generation (Snowflake). Cache hit ratio > 95% with Redis. Use CDN for geographic distribution.</p>\n"
+                    })
+                  }), "\n  "]
+                })
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.code, {
+              children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                className: "tp-qa-mark-btn",
+                children: "✅ Mark Reviewed"
+              }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                className: "tp-qa-bookmark-btn",
+                children: "🔖 Bookmark"
+              }), "\n"]
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.code, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.details, {
+              className: "tp-qa-card",
+              "data-qid": "ip-s03-q8",
+              children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                className: "tp-qa-question",
+                children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                  className: "tp-qa-status"
+                }), "\n    Q8: Explain the CAP theorem and how it affects database choices.\n  "]
+              }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                className: "tp-qa-answer",
+                children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                  children: "The CAP theorem states that a distributed data store can only provide two of three guarantees:"
+                }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Consistency"
+                    }), ": Every read receives the most recent write or an error"]
+                  }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Availability"
+                    }), ": Every request receives a response (not necessarily the latest data)"]
+                  }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Partition tolerance"
+                    }), ": The system continues operating despite network partitions"]
+                  }), "\n    "]
+                }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Practical tradeoffs"
+                  }), ":"]
+                }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+                  children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "CP systems"
+                    }), " (Consistency + Partition tolerance): Traditional databases (PostgreSQL, MySQL with sync replication). During a partition, they may refuse writes to maintain consistency."]
+                  }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "AP systems"
+                    }), " (Availability + Partition tolerance): DynamoDB, Cassandra, CouchDB. They accept writes even during partitions, leading to eventual consistency."]
+                  }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "CA systems"
+                    }), " (Consistency + Availability): Single-node databases. They don't handle partitions because they're not distributed."]
+                  }), "\n    "]
+                }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Real-world choices"
+                  }), ": Use CP for financial transactions (consistency critical). Use AP for user sessions, logs, and social feeds (availability critical)."]
+                }), "\n  "]
+              }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                className: "tp-qa-mark-btn",
+                children: "✅ Mark Reviewed"
+              }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                className: "tp-qa-bookmark-btn",
+                children: "🔖 Bookmark"
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+              className: "tp-qa-card",
+              "data-qid": "ip-s03-q9",
+              children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                className: "tp-qa-question",
+                children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                  className: "tp-qa-status"
+                }), "\n    Q9: How would you design a webhook system?\n  "]
+              }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                className: "tp-qa-answer",
+                children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                  children: [(0,jsx_runtime.jsx)(_components.strong, {
+                    children: "Webhook flow"
+                  }), ": External service registers a callback URL → when an event occurs, we POST event data to that URL."]
+                }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+                  children: (0,jsx_runtime.jsxs)(_components.code, {
+                    children: ["import httpx\nimport asyncio\nfrom dataclasses import dataclass, field\n", (0,jsx_runtime.jsx)(_components.p, {
+                      children: "@dataclass\nclass WebhookSubscription:\nurl: str\nevents: set[str]\nsecret: str\nretry_count: int = 3"
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: ["class WebhookDispatcher:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "init"
+                      }), "(self, db, cache):\nself.db = db\nself.cache = cache"]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                      children: (0,jsx_runtime.jsx)(_components.code, {
+                        children: "def register_hook(self, url: str, events: list[str], secret: str) -&gt; int:\n    hook_id = self.db.save_subscription(WebhookSubscription(url, set(events), secret))\n    return hook_id\n\nasync def dispatch(self, event_type: str, payload: dict) -&gt; None:\n    subscribers = self.db.get_subscribers_for_event(event_type)\n    tasks = [self._send_with_retry(sub, event_type, payload) for sub in subscribers]\n    await asyncio.gather(*tasks, return_exceptions=True)\n\nasync def _send_with_retry(self, sub: WebhookSubscription, event_type: str, payload: dict) -&gt; None:\n    headers = {\n        \"Content-Type\": \"application/json\",\n        \"X-Webhook-Event\": event_type,\n        \"X-Webhook-Signature\": self._sign(payload, sub.secret),\n    }\n    for attempt in range(sub.retry_count):\n        try:\n            async with httpx.AsyncClient() as client:\n                response = await client.post(sub.url, json=payload, headers=headers, timeout=10)\n                if response.status_code in (200, 201):\n                    return\n        except httpx.RequestError:\n            pass\n        await asyncio.sleep(2 ** attempt)  # exponential backoff\n    await self._send_to_dead_letter(sub, event_type, payload)\n\ndef _sign(self, payload: dict, secret: str) -&gt; str:\n    import hmac, hashlib, json\n    return hmac.new(secret.encode(), json.dumps(payload, sort_keys=True).encode(), hashlib.sha256).hexdigest()\n\nasync def _send_to_dead_letter(self, sub, event_type, payload):\n    self.db.save_failed_event(sub.url, event_type, payload)</code></pre>\n<p><strong>Key considerations</strong>: Retry with exponential backoff, dead letter queue for persistent failures, HMAC signature verification by the receiver to ensure authenticity.</p>\n"
+                      })
+                    }), "\n  "]
+                  })
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.code, {
+                children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                  className: "tp-qa-mark-btn",
+                  children: "✅ Mark Reviewed"
+                }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                  className: "tp-qa-bookmark-btn",
+                  children: "🔖 Bookmark"
+                }), "\n"]
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.code, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.details, {
+                className: "tp-qa-card",
+                "data-qid": "ip-s03-q10",
+                children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                  className: "tp-qa-question",
+                  children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                    className: "tp-qa-status"
+                  }), "\n    Q10: What is the CQRS pattern and when should you use it?\n  "]
+                }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                  className: "tp-qa-answer",
+                  children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "CQRS"
+                    }), " (Command Query Responsibility Segregation) separates read and write operations into different models. Commands (writes) use one model and data store, while queries (reads) use a potentially different model and store."]
+                  }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Benefits"
+                    }), ":"]
+                  }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Independent scaling of read and write workloads"
+                    }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Optimized read models (denormalized, cached) vs write models (normalized, validated)"
+                    }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Security can be applied differently to reads vs writes"
+                    }), "\n    "]
+                  }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "When to use"
+                    }), ": Complex domains where reads and writes have different shapes, high read-to-write ratio, event sourcing systems."]
+                  }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "When NOT to use"
+                    }), ": Simple CRUD applications, teams new to the pattern (adds complexity)."]
+                  }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+                    children: (0,jsx_runtime.jsxs)(_components.code, {
+                      children: ["# Command side\nclass CreateOrderCommand:\n    def __init__(self, user_id: int, items: list[dict], shipping_address: str):\n        self.user_id = user_id\n        self.items = items\n        self.shipping_address = shipping_address\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: ["class OrderCommandHandler:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "init"
+                        }), "(self, write_db, event_bus):\nself.db = write_db\nself.bus = event_bus"]
+                      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                        children: (0,jsx_runtime.jsx)(_components.code, {
+                          children: "def handle(self, command: CreateOrderCommand) -&gt; int:\n    order_id = self.db.insert({\"user_id\": command.user_id, \"status\": \"pending\"})\n    for item in command.items:\n        self.db.insert_item(order_id, item)\n    self.bus.publish(\"order.created\", {\"order_id\": order_id})\n    return order_id\n"
+                        })
+                      }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                        id: "query-side-uses-separate-read-optimized-store",
+                        children: "Query side (uses separate read-optimized store)"
+                      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: ["class OrderQueryService:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "init"
+                        }), "(self, read_db, cache):\nself.read_db = read_db\nself.cache = cache"]
+                      }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                        children: (0,jsx_runtime.jsx)(_components.code, {
+                          children: "def get_order_summary(self, user_id: int) -&gt; list[dict]:\n    cache_key = f\"orders:summary:{user_id}\"\n    cached = self.cache.get(cache_key)\n    if cached:\n        return cached\n    orders = self.read_db.get_orders_with_items(user_id)\n    self.cache.set(cache_key, orders, ttl=60)\n    return orders</code></pre>\n"
+                        })
+                      }), "\n  "]
+                    })
+                  })]
+                }), (0,jsx_runtime.jsxs)(_components.code, {
+                  children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-mark-btn",
+                    children: "✅ Mark Reviewed"
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-bookmark-btn",
+                    children: "🔖 Bookmark"
+                  }), "\n"]
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.code, {
+                children: ["\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  className: "tp-qa-card",
+                  "data-qid": "ip-s03-q11",
+                  children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                    className: "tp-qa-question",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                      className: "tp-qa-status"
+                    }), "\n    Q11: How do you handle graceful shutdown in a Python web service?\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                    className: "tp-qa-answer",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                      children: "Graceful shutdown ensures in-flight requests complete, resources are cleaned up, and no data is lost."
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.pre, {
+                      children: [(0,jsx_runtime.jsxs)(_components.code, {
+                        children: ["import asyncio\nimport signal\nfrom contextlib import asynccontextmanager\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: ["class GracefulShutdown:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                            children: "init"
+                          }), "(self, app, timeout_seconds: int = 30):\nself.app = app\nself.timeout = timeout_seconds\nself._shutdown_event = asyncio.Event()"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                          children: (0,jsx_runtime.jsx)(_components.code, {
+                            children: "async def wait_for_shutdown(self):\n    loop = asyncio.get_running_loop()\n    for sig in (signal.SIGTERM, signal.SIGINT):\n        loop.add_signal_handler(sig, self._trigger_shutdown)\n    await self._shutdown_event.wait()\n\ndef _trigger_shutdown(self):\n    self._shutdown_event.set()\n\nasync def shutdown(self):\n    self._trigger_shutdown()\n    tasks = [t for t in asyncio.all_tasks() if t is not asyncio.current_task()]\n    for task in tasks:\n        task.cancel()\n    await asyncio.wait(tasks, timeout=self.timeout)\n"
+                          })
+                        }), "\n"]
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.code, {
+                          children: "@asynccontextmanager\nasync def lifespan(app):\nshutdown = GracefulShutdown(app)\n# Startup\ndb_pool = await create_db_pool()\napp.state.db = db_pool\nyield\n# Shutdown\nprint(\"Shutting down...\")\nawait db_pool.close()\nprint(\"Connections closed\")"
+                        })
+                      })]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Key elements"
+                      }), ": Register signal handlers (SIGTERM, SIGINT), stop accepting new requests, wait for active requests to complete (within timeout), close database connections, cancel background tasks. Kubernetes sends SIGTERM and waits for terminationGracePeriodSeconds before SIGKILL."]
+                    }), (0,jsx_runtime.jsx)(_components.p, {}), "\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-mark-btn",
+                    children: "✅ Mark Reviewed"
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-bookmark-btn",
+                    children: "🔖 Bookmark"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  className: "tp-qa-card",
+                  "data-qid": "ip-s03-q12",
+                  children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                    className: "tp-qa-question",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                      className: "tp-qa-status"
+                    }), "\n    Q12: Explain the Outbox Pattern for reliable message publishing.\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                    className: "tp-qa-answer",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                      children: "The Outbox Pattern ensures that database changes and message publishing happen atomically. Instead of publishing a message directly, you write it to an \"outbox\" table in the same database transaction. A separate process reads the outbox and publishes messages."
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.pre, {
+                      children: [(0,jsx_runtime.jsxs)(_components.code, {
+                        children: ["# Step 1: Write to outbox in the same transaction\nasync def create_order(order_data: dict):\n    async with db.transaction():\n        order_id = await db.execute(\"INSERT INTO orders ...\", order_data)\n        await db.execute(\n            \"INSERT INTO outbox (event_type, payload, created_at) VALUES ($1, $2, $3)\",\n            \"order.created\",\n            json.dumps({\"order_id\": order_id}),\n            datetime.utcnow()\n        )\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "step-2-background-process-publishes-from-outbox",
+                          children: "Step 2: Background process publishes from outbox"
+                        }), "\n"]
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.code, {
+                          children: "async def outbox_publisher():\nwhile True:\nmessages = await db.fetch(\n\"SELECT * FROM outbox WHERE published = FALSE ORDER BY id LIMIT 100 FOR UPDATE SKIP LOCKED\"\n)\nfor msg in messages:\ntry:\nawait message_bus.publish(msg.event_type, json.loads(msg.payload))\nawait db.execute(\"UPDATE outbox SET published = TRUE WHERE id = $1\", msg.id)\nexcept Exception:\nlog.error(f\"Failed to publish message {msg.id}\")\nawait asyncio.sleep(1)"
+                        })
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                      children: "This pattern prevents the dual-write problem (DB transaction succeeds but message publish fails). It also enables exactly-once processing: the publisher is idempotent, and consumers handle duplicates."
+                    }), (0,jsx_runtime.jsx)(_components.p, {}), "\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-mark-btn",
+                    children: "✅ Mark Reviewed"
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-bookmark-btn",
+                    children: "🔖 Bookmark"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  className: "tp-qa-card",
+                  "data-qid": "ip-s03-q13",
+                  children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                    className: "tp-qa-question",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                      className: "tp-qa-status"
+                    }), "\n    Q13: How do you handle database migrations in production?\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                    className: "tp-qa-answer",
+                    children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Migration principles"
+                      }), ": Backward-compatible changes only. Add before remove. Every migration must be reversible (up/down)."]
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Safe migration strategies"
+                      }), ":"]
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.ol, {
+                      children: ["\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Add column without NOT NULL"
+                        }), ": Add the column as nullable first, backfill data, then add NOT NULL."]
+                      }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Rename column"
+                        }), ": Don't rename directly. Add new column, dual-write to both, backfill, switch reads, remove old column."]
+                      }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Split a table"
+                        }), ": Create new table, dual-write, backfill, redirect reads, drop old table."]
+                      }), "\n      ", (0,jsx_runtime.jsxs)(_components.li, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Add index"
+                        }), ": Use CONCURRENTLY (PostgreSQL) to avoid locking."]
+                      }), "\n    "]
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.pre, {
+                      children: [(0,jsx_runtime.jsxs)(_components.code, {
+                        children: ["-- Safe migration: add a column\nBEGIN;\nALTER TABLE users ADD COLUMN full_name VARCHAR(200);\nCOMMIT;\n", (0,jsx_runtime.jsx)(_components.p, {
+                          children: "-- Backfill in batches\n-- (application code, not SQL)\ndef backfill_full_name(db, batch_size: int = 1000):\nlast_id = 0\nwhile True:\nusers = db.fetch(\n\"SELECT id, first_name, last_name FROM users WHERE id > $1 ORDER BY id LIMIT $2\",\nlast_id, batch_size\n)\nif not users:\nbreak\nfor user in users:\ndb.execute(\n\"UPDATE users SET full_name = $1 WHERE id = $2\",\nf\"{user['first_name']} {user['last_name']}\",\nuser['id']\n)\nlast_id = users[-1]['id']"
+                        }), "\n"]
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.code, {
+                          children: "-- Finally add NOT NULL\nALTER TABLE users ALTER COLUMN full_name SET NOT NULL;"
+                        })
+                      })]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                      children: "Use tools like Alembic (Python) or Flyway (JVM) for versioned, repeatable migrations. Always test migrations on a staging copy of production data."
+                    }), (0,jsx_runtime.jsx)(_components.p, {}), "\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-mark-btn",
+                    children: "✅ Mark Reviewed"
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-bookmark-btn",
+                    children: "🔖 Bookmark"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  className: "tp-qa-card",
+                  "data-qid": "ip-s03-q14",
+                  children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                    className: "tp-qa-question",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                      className: "tp-qa-status"
+                    }), "\n    Q14: What is the Service Mesh pattern and when would you use it?\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                    className: "tp-qa-answer",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                      children: "A service mesh is a dedicated infrastructure layer for service-to-service communication. It offloads networking concerns from application code to a proxy sidecar (Envoy, Linkerd) attached to each service."
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Capabilities"
+                      }), ":"]
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.ul, {
+                      children: ["\n      ", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "Traffic management: canary releases, blue-green, circuit breaking, retries"
+                      }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "Observability: metrics, distributed tracing, access logs"
+                      }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "Security: mTLS between all services, policy enforcement"
+                      }), "\n      ", (0,jsx_runtime.jsx)(_components.li, {
+                        children: "Resilience: timeouts, retries, circuit breakers, rate limiting"
+                      }), "\n    "]
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "When to use"
+                      }), ": Large microservice deployments (20+ services), when security/mTLS is required between all services, when you need sophisticated traffic management, when you want to decouple networking from application code."]
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "When NOT to use"
+                      }), ": Small deployments (the overhead isn't worth it), when simplicity is more important than advanced routing, for performance-critical paths (proxy adds ~5ms latency)."]
+                    }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Popular implementations"
+                      }), ": Istio (most features, complex), Linkerd (simpler, lower resource usage), Consul Connect (tight HashiCorp integration)."]
+                    }), "\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-mark-btn",
+                    children: "✅ Mark Reviewed"
+                  }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                    className: "tp-qa-bookmark-btn",
+                    children: "🔖 Bookmark"
+                  }), "\n"]
+                }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                  className: "tp-qa-card",
+                  "data-qid": "ip-s03-q15",
+                  children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                    className: "tp-qa-question",
+                    children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                      className: "tp-qa-status"
+                    }), "\n    Q15: Design an event-driven order processing system.\n  "]
+                  }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                    className: "tp-qa-answer",
+                    children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "System architecture"
+                      }), ":"]
+                    }), "\n    ", (0,jsx_runtime.jsx)(_components.pre, {
+                      children: (0,jsx_runtime.jsxs)(_components.code, {
+                        children: ["# Events\n@dataclass\nclass OrderCreated:\n    order_id: str\n    user_id: str\n    items: list[dict]\n    total: float\n", (0,jsx_runtime.jsx)(_components.p, {
+                          children: "@dataclass\nclass PaymentProcessed:\norder_id: str\ntransaction_id: str\nstatus: str"
+                        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                          children: "@dataclass\nclass InventoryReserved:\norder_id: str\nitems: list[dict]"
+                        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                          children: "@dataclass\nclass OrderShipped:\norder_id: str\ntracking_number: str"
+                        }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "event-bus-in-memory-for-illustration",
+                          children: "Event bus (in-memory for illustration)"
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: ["class EventBus:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                            children: "init"
+                          }), "(self):\nself.handlers: dict[str, list] = {}"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                          children: (0,jsx_runtime.jsx)(_components.code, {
+                            children: "def subscribe(self, event_type: str, handler):\n    self.handlers.setdefault(event_type, []).append(handler)\n\ndef publish(self, event_type: str, event):\n    for handler in self.handlers.get(event_type, []):\n        handler(event)\n"
+                          })
+                        }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "order-service",
+                          children: "Order service"
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: ["class OrderService:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                            children: "init"
+                          }), "(self, event_bus: EventBus):\nself.bus = event_bus"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                          children: (0,jsx_runtime.jsx)(_components.code, {
+                            children: "def create_order(self, user_id: str, items: list[dict]) -&gt; str:\n    order_id = str(uuid.uuid4())\n    total = sum(item[\"price\"] * item[\"quantity\"] for item in items)\n    self.bus.publish(\"order.created\", OrderCreated(order_id, user_id, items, total))\n    return order_id\n"
+                          })
+                        }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                          id: "saga-coordinator-subscribes-to-events-and-triggers-next-steps",
+                          children: "Saga coordinator subscribes to events and triggers next steps"
+                        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                          children: ["class OrderSaga:\ndef ", (0,jsx_runtime.jsx)(_components.strong, {
+                            children: "init"
+                          }), "(self, bus, payment_svc, inventory_svc, shipping_svc):\nbus.subscribe(\"order.created\", self.on_order_created)\nbus.subscribe(\"payment.processed\", self.on_payment_processed)\nbus.subscribe(\"inventory.reserved\", self.on_inventory_reserved)"]
+                        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                          children: (0,jsx_runtime.jsx)(_components.code, {
+                            children: "def on_order_created(self, event: OrderCreated):\n    payment_svc.process_payment(event.order_id, event.total)\n\ndef on_payment_processed(self, event: PaymentProcessed):\n    if event.status == \"success\":\n        inventory_svc.reserve_items(event.order_id)\n    else:\n        order_svc.mark_failed(event.order_id)\n\ndef on_inventory_reserved(self, event: InventoryReserved):\n    shipping_svc.schedule_shipment(event.order_id)</code></pre>\n<p>This event-driven design provides loose coupling, independence, and resilience. Each service operates asynchronously and can fail independently.</p>\n"
+                          })
+                        }), "\n  "]
+                      })
+                    })]
+                  }), (0,jsx_runtime.jsxs)(_components.code, {
+                    children: ["\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                      className: "tp-qa-mark-btn",
+                      children: "✅ Mark Reviewed"
+                    }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+                      className: "tp-qa-bookmark-btn",
+                      children: "🔖 Bookmark"
+                    }), "\n"]
+                  })]
+                }), (0,jsx_runtime.jsxs)(_components.code, {
+                  children: ["\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "chapter-quiz",
+                    children: "Chapter Quiz"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Q1"
+                    }), ": Which HTTP method is NOT idempotent?"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "a) GET\nb) PUT\nc) DELETE\nd) POST"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "ip-s03-quiz1",
+                    children: [(0,jsx_runtime.jsx)(_components.summary, {
+                      children: "Show Answer"
+                    }), (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: [(0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Answer: d) POST"
+                        })
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: "POST is not idempotent — multiple identical POST requests will create multiple resources. GET, PUT, and DELETE are idempotent per HTTP spec."
+                      })]
+                    })]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Q2"
+                    }), ": What does the Python GIL prevent?"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "a) Multiple threads from running simultaneously\nb) Multiple processes from running simultaneously\nc) Garbage collection\nd) I/O operations in threads"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "ip-s03-quiz2",
+                    children: [(0,jsx_runtime.jsx)(_components.summary, {
+                      children: "Show Answer"
+                    }), (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: [(0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Answer: a) Multiple threads from running simultaneously"
+                        })
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: "The GIL prevents multiple native threads from executing Python bytecode simultaneously, limiting CPU-bound threading but not I/O-bound threading."
+                      })]
+                    })]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Q3"
+                    }), ": Which pattern solves distributed transactions across microservices?"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "a) Singleton\nb) Saga\nc) Proxy\nd) Factory"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "ip-s03-quiz3",
+                    children: [(0,jsx_runtime.jsx)(_components.summary, {
+                      children: "Show Answer"
+                    }), (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: [(0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Answer: b) Saga"
+                        })
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: "The Saga pattern manages distributed transactions by executing local transactions in each service and invoking compensating transactions on failure."
+                      })]
+                    })]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Q4"
+                    }), ": What does CAP theorem's \"P\" stand for?"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "a) Performance\nb) Partition tolerance\nc) Persistence\nd) Parallelism"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "ip-s03-quiz4",
+                    children: [(0,jsx_runtime.jsx)(_components.summary, {
+                      children: "Show Answer"
+                    }), (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: [(0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Answer: b) Partition tolerance"
+                        })
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: "Partition tolerance means the system continues operating despite network partitions. The CAP theorem states you can only guarantee two of Consistency, Availability, and Partition tolerance."
+                      })]
+                    })]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Q5"
+                    }), ": Which HTTP status code indicates rate limiting?"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "a) 400\nb) 403\nc) 429\nd) 503"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "ip-s03-quiz5",
+                    children: [(0,jsx_runtime.jsx)(_components.summary, {
+                      children: "Show Answer"
+                    }), (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: [(0,jsx_runtime.jsx)(_components.p, {
+                        children: (0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Answer: c) 429"
+                        })
+                      }), (0,jsx_runtime.jsx)(_components.p, {
+                        children: "429 Too Many Requests specifically indicates the client has exceeded a rate limit. Include a Retry-After header to indicate when to retry."
+                      })]
+                    })]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "exercises",
+                    children: "Exercises"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Easy"
+                    }), " — Implement a simple rate limiter using the token bucket algorithm. Support configurable rate (tokens/second) and burst capacity. Write unit tests."]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Easy"
+                    }), " — Create a FastAPI health check endpoint that reports the status of a database connection and a Redis cache. Return 200 if all healthy, 503 otherwise."]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Medium"
+                    }), " — Implement a circuit breaker pattern in Python. Track failure count, open the circuit after N failures, test after a cooldown period (half-open), and close on success."]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Medium"
+                    }), " — Build a simple task queue with Redis (or in-memory) that supports: enqueue, dequeue, retry with backoff, and dead-letter queue. Write a consumer that processes tasks."]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Hard"
+                    }), " — Design and implement a minimal e-commerce backend with user service, order service, and inventory service. Use event-driven communication between services. Implement the Saga pattern for order placement with compensating transactions for failures."]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "common-mistakes",
+                    children: "Common Mistakes"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Not understanding the fundamental concepts before applying them"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Skipping edge cases in implementation"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Not analyzing time/space complexity"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Forgetting to handle null/empty inputs"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Not practicing enough problems to build pattern recognition"
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "revision-notes",
+                    children: "Revision Notes"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                          children: "Core principle: Understand the fundamental concepts thoroughly"
+                        }), "\n"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                          children: "Implementation pattern: Practice with real code examples"
+                        }), "\n"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                          children: "Complexity: Know the time and space complexity"
+                        }), "\n"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                          children: "Application: Know when to use this in production systems"
+                        }), "\n"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                          children: "Interview: Frequently asked in technical interviews"
+                        }), "\n"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                          children: "Edge cases: Consider common failure scenarios"
+                        }), "\n"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                          children: "Related concepts: Connect to broader system design"
+                        }), "\n"]
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "placement-section",
+                    children: "Placement Section"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                    id: "top-10-interview-questions",
+                    children: "Top 10 Interview Questions"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+                    id: "google-style",
+                    children: "Google Style"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Explain the core idea of Backend Coding Interview in under 60 seconds, then give a real-world analogy."
+                        }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Design a minimal, well-typed function that demonstrates Backend Coding Interview."
+                        }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+                        children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+                    id: "amazon-style",
+                    children: "Amazon Style"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    start: "4",
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Describe a production bug caused by misunderstanding Backend Coding Interview. How did you diagnose and fix it?"
+                        }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "How would you scale a system that relies on Backend Coding Interview from 10 users to 10 million?"
+                        }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+                    id: "microsoft-style",
+                    children: "Microsoft Style"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    start: "6",
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Compare Backend Coding Interview with the closest alternative approach. When would you choose each?"
+                        }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Walk through how you would test a component that depends on Backend Coding Interview."
+                        }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+                    id: "nvidia-style",
+                    children: "NVIDIA Style"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    start: "8",
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "How does Backend Coding Interview behave differently at scale — memory, throughput, or precision-wise?"
+                        }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "How would you make an implementation of Backend Coding Interview run faster on GPU hardware?"
+                        }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+                    id: "ai-startup-style",
+                    children: "AI Startup Style"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    start: "10",
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Write the smallest possible implementation of Backend Coding Interview that is production-quality."
+                      }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                    id: "resume-tips",
+                    children: "Resume Tips"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Name Backend Coding Interview explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Backend Coding Interview\")."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Add a bullet describing a project that applies Backend Coding Interview to real data, with numbers."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Mention the tools and libraries you used alongside Backend Coding Interview (linters, test frameworks, profiling tools)."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Keep resume bullets under 15 words and start each with an action verb."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+                    id: "interview-day-checklist",
+                    children: "Interview Day Checklist"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Rehearse a 60-second explanation of Backend Coding Interview and one real-world analogy."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Prepare one STAR story about debugging a Backend Coding Interview-related production issue."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Review complexity and edge cases for the classic Backend Coding Interview interview problem."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Have questions ready: how does the team apply Backend Coding Interview in production today?"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "truefalse",
+                    children: "True/False"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True or False:"
+                      }), " Backend Coding Interview builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True."
+                      }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True or False:"
+                      }), " You should write at least one code example for Backend Coding Interview before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True."
+                      }), " Active recall with hands-on code beats passive reading for retention."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True or False:"
+                      }), " The complexity analysis for Backend Coding Interview is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "False."
+                      }), " Complexity grows with input size; always state best, average, and worst case."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True or False:"
+                      }), " Edge cases (empty input, invalid input, boundary values) matter for Backend Coding Interview in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True."
+                      }), " Most production bugs come from unhandled edge cases."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "True or False:"
+                      }), " You should memorize the Backend Coding Interview chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+                        children: "False."
+                      }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "fill-in-the-blank",
+                    children: "Fill in the Blank"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The chapter that covers Backend Coding Interview is Chapter ___ of this module. — Answer: check the module's table of contents."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The time complexity of the standard approach to Backend Coding Interview is ___. — Answer: review the theory section and state big-O notation."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The main edge case to handle when implementing Backend Coding Interview is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The tools commonly used to debug Backend Coding Interview issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The related topic that connects to Backend Coding Interview in the next chapter is ___. — Answer: see the Next Topic section."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "scenario-questions",
+                    children: "Scenario Questions"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Scenario:"
+                        }), " A teammate ships a change involving Backend Coding Interview that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Scenario:"
+                        }), " Your implementation of Backend Coding Interview is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Scenario:"
+                        }), " A new hire asks you to explain Backend Coding Interview in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+                      }), "\n"]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                        children: [(0,jsx_runtime.jsx)(_components.strong, {
+                          children: "Scenario:"
+                        }), " Your team's codebase has three different patterns for Backend Coding Interview and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+                      }), "\n"]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "output-questions",
+                    children: "Output Questions"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "What is the output of the simplest correct implementation of Backend Coding Interview on an empty input?"
+                      }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "What is the output when the input is at the boundary value?"
+                      }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "What does the implementation return when given invalid input types?"
+                      }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "What is the output for the sample input given in the chapter's Examples section?"
+                      }), " — Re-run the chapter's example code and compare against the documented output."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "What is the time complexity output when you profile the implementation at 10x input size?"
+                      }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "difficulty-level",
+                    children: "Difficulty Level"
+                  }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                    children: [(0,jsx_runtime.jsx)(_components.thead, {
+                      children: (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.th, {
+                          children: "Level"
+                        }), (0,jsx_runtime.jsx)(_components.th, {
+                          children: "Time"
+                        }), (0,jsx_runtime.jsx)(_components.th, {
+                          children: "What It Takes"
+                        })]
+                      })
+                    }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                      children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Beginner"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "1-2 sessions"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Read theory, run the chapter examples, solve the Easy exercises"
+                        })]
+                      }), (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Intermediate"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "3-5 sessions"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Complete Medium exercises, explain Backend Coding Interview to someone else"
+                        })]
+                      }), (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Advanced"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "1+ week"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+                        })]
+                      })]
+                    })]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "tips--tricks",
+                    children: "Tips & Tricks"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Always write a one-line example of Backend Coding Interview from memory before opening the chapter — active recall first."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Use the chapter's Revision Notes as a checklist: you have mastered Backend Coding Interview when you can explain each bullet."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "For interviews, practice explaining Backend Coding Interview twice: once with a technical audience, once with a non-technical audience."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Keep a personal examples file where you collect your own Backend Coding Interview snippets; interviewers love original examples."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "memory-tricks",
+                    children: "Memory Tricks"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Acronym"
+                      }), ": build a mnemonic from the 5 key concepts of Backend Coding Interview listed in the Chapter at a Glance table."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Story"
+                      }), ": link Backend Coding Interview to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Number anchor"
+                      }), ": remember the complexity of Backend Coding Interview by connecting it to a known algorithm of the same class."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Color code"
+                      }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Teach-back"
+                      }), ": explain Backend Coding Interview to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "further-reading",
+                    children: "Further Reading"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Official documentation for the primary tool or library used in this chapter"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The chapter referenced in Related Topics for the next-level treatment of Backend Coding Interview"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The classic textbook chapter on Backend Coding Interview (check the Research References below)"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Two blog posts from engineers who debugged real Backend Coding Interview problems in production"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The repository of the open-source project that implements Backend Coding Interview"
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "related-topics",
+                    children: "Related Topics"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The previous chapter in this module (see table of contents) — foundational for Backend Coding Interview"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The next chapter (see Next Topic below) — builds on Backend Coding Interview"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The system design chapters in Module 07 — how Backend Coding Interview fits into production architectures"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The interview preparation module — how Backend Coding Interview is asked in screening rounds"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The capstone project — where Backend Coding Interview is applied end-to-end"
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "faqs",
+                    children: "FAQs"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Do I need to memorize all of Backend Coding Interview, or understand the big picture?"
+                      }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "What if I get stuck on an exercise?"
+                      }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Is Backend Coding Interview asked in interviews?"
+                      }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "important-notes",
+                    children: "Important Notes"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Backend Coding Interview is a core requirement for the rest of this module — do not skip the examples."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Always analyze complexity (time and space) when working with Backend Coding Interview."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Production correctness means handling edge cases, not just the happy path."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Interview answers should start with the definition, then the example, then the trade-offs."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "historical-context",
+                    children: "Historical Context"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Backend Coding Interview emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The tools used for Backend Coding Interview today evolved from simpler versions; the chapter covers the modern, recommended approach."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Interviewers value knowing one historical fact about Backend Coding Interview — it shows genuine interest, not just cramming."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The library/tooling ecosystem around Backend Coding Interview changes quickly; focus on fundamentals that remain stable."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "security-considerations",
+                    children: "Security Considerations"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Never trust external input: validate and sanitize data before processing Backend Coding Interview."
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+                        children: "eval()"
+                      }), " and dynamic code execution on untrusted strings."]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "For API contexts, add rate limiting and input size limits."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "ml-intuition",
+                    children: "ML Intuition"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Backend Coding Interview appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Understanding Backend Coding Interview helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "In production ML, the Backend Coding Interview concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "When optimizing ML systems, Backend Coding Interview skills let you profile and fix the data path, not just the training loop."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Interview follow-up: how would you apply Backend Coding Interview to a dataset of 10 million records? — Batching and vectorization."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "analogies",
+                    children: "Analogies"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Backend Coding Interview is like a recipe"
+                      }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Complexity is like a delivery route"
+                      }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Edge cases are like weather"
+                      }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "The chapter roadmap is a journey map"
+                      }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "capstone-project-link",
+                    children: "Capstone Project Link"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.a, {
+                        href: "https://github.com/Raushan666java/ai-engineering-journey",
+                        children: "Module Capstone: End-to-End Project"
+                      }), " — this chapter contributes the Backend Coding Interview skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "flashcards",
+                    children: "Flashcards"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "21interviewpreparation-03backendcodinginterview-flash1",
+                    children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                      className: "tp-qa-question",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                        className: "tp-qa-status"
+                      }), "\n    Which HTTP method is NOT idempotent?\n  "]
+                    }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                        children: "d) POST"
+                      }), "\n  "]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "21interviewpreparation-03backendcodinginterview-flash2",
+                    children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                      className: "tp-qa-question",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                        className: "tp-qa-status"
+                      }), "\n    What does the Python GIL prevent?\n  "]
+                    }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                        children: "a) Multiple threads from running simultaneously"
+                      }), "\n  "]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "21interviewpreparation-03backendcodinginterview-flash3",
+                    children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                      className: "tp-qa-question",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                        className: "tp-qa-status"
+                      }), "\n    Which pattern solves distributed transactions across microservices?\n  "]
+                    }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                        children: "b) Saga"
+                      }), "\n  "]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "21interviewpreparation-03backendcodinginterview-flash4",
+                    children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                      className: "tp-qa-question",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                        className: "tp-qa-status"
+                      }), "\n    What does CAP theorem's \"P\" stand for?\n  "]
+                    }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                        children: "b) Partition tolerance"
+                      }), "\n  "]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+                    className: "tp-qa-card",
+                    "data-qid": "21interviewpreparation-03backendcodinginterview-flash5",
+                    children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+                      className: "tp-qa-question",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+                        className: "tp-qa-status"
+                      }), "\n    Which HTTP status code indicates rate limiting?\n  "]
+                    }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+                      className: "tp-qa-answer",
+                      children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+                        children: "c) 429"
+                      }), "\n  "]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "research-references",
+                    children: "Research References"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Official documentation of the primary library for Backend Coding Interview (linked in Further Reading)"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The classic paper or textbook chapter introducing Backend Coding Interview (see References below)"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The standard library reference for Backend Coding Interview-related functions"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Engineering blog posts from companies running Backend Coding Interview in production at scale"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "PEPs and RFCs where applicable (Python and networking standards)"
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "open-source-tools",
+                    children: "Open-Source Tools"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The primary library used in this chapter (see the code examples)"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Python standard library modules used in the examples (check the imports)"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Testing: pytest for unit tests of Backend Coding Interview code"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Linting and formatting: ruff + black"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Profiling: cProfile or py-spy for performance work on Backend Coding Interview"
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "debugging-guide",
+                    children: "Debugging Guide"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+                        children: "print()"
+                      }), " or a debugger to inspect intermediate values in Backend Coding Interview code."]
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Reproduce the failure with the smallest possible input before changing code."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "For performance problems, profile before optimizing: measure, then fix."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+                        children: "pdb"
+                      }), " or your IDE's debugger to step through the Backend Coding Interview example code."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "mock-interview-section",
+                    children: "Mock Interview Section"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: (0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Round 1 — Screening (15 min)"
+                    })
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Explain Backend Coding Interview in 60 seconds."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Write a minimal working example of Backend Coding Interview."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "What is the complexity of your example?"
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: (0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Round 2 — Coding (45 min)"
+                    })
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Solve the Medium exercise from this chapter under time pressure."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "State your assumptions, then implement with type hints."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Test with edge cases: empty input, boundary values, invalid input."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: (0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Round 3 — Behavioral + System (30 min)"
+                    })
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Tell me about a time you debugged a Backend Coding Interview problem in a project."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "How would you design a system where Backend Coding Interview is used at scale?"
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "What metrics would you monitor?"
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+                    children: [(0,jsx_runtime.jsx)(_components.strong, {
+                      children: "Evaluation rubric"
+                    }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "optimized-implementation",
+                    children: "Optimized Implementation"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "`python\nfrom typing import Any, Optional"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for Backend Coding Interview."
+                  }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+                    children: (0,jsx_runtime.jsx)(_components.code, {
+                      children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core Backend Coding Interview logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+                    })
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: "`"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Keeps the function signature stable so tests written against it stay valid."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Handles the empty-input contract explicitly."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "evaluation-metrics",
+                    children: "Evaluation Metrics"
+                  }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+                    children: [(0,jsx_runtime.jsx)(_components.thead, {
+                      children: (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.th, {
+                          children: "Skill"
+                        }), (0,jsx_runtime.jsx)(_components.th, {
+                          children: "Test"
+                        }), (0,jsx_runtime.jsx)(_components.th, {
+                          children: "Target"
+                        })]
+                      })
+                    }), (0,jsx_runtime.jsxs)(_components.tbody, {
+                      children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Concept recall"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Explain Backend Coding Interview without notes"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "60-second explanation"
+                        })]
+                      }), (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Code fluency"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Write the chapter example from memory"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "No syntax errors"
+                        })]
+                      }), (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Edge cases"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Handle empty/invalid input in exercises"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "All cases pass"
+                        })]
+                      }), (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Complexity"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "State time/space for the standard approach"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Correct big-O"
+                        })]
+                      }), (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Interview readiness"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Answer 5 Interview Q&A questions out loud"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Fluent, structured answers"
+                        })]
+                      }), (0,jsx_runtime.jsxs)(_components.tr, {
+                        children: [(0,jsx_runtime.jsx)(_components.td, {
+                          children: "Retention"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "Chapter quiz score after 3 days"
+                        }), (0,jsx_runtime.jsx)(_components.td, {
+                          children: "80%+"
+                        })]
+                      })]
+                    })]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "real-world-examples",
+                    children: "Real-World Examples"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Startup"
+                      }), ": a small team uses Backend Coding Interview daily in their data pipeline — the chapter's examples mirror their code."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "E-commerce"
+                      }), ": Backend Coding Interview patterns appear in order processing, inventory checks, and recommendation feeds."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Fintech"
+                      }), ": Backend Coding Interview principles apply to transaction validation and fraud detection flows."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "ML platform"
+                      }), ": Backend Coding Interview shows up in feature engineering and model-serving infrastructure."]
+                    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+                      children: [(0,jsx_runtime.jsx)(_components.strong, {
+                        children: "Interview insight"
+                      }), ": recruiters look for engineers who can connect Backend Coding Interview to the business outcome, not just the code."]
+                    }), "\n"]
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "next-topic",
+                    children: "Next Topic"
+                  }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+                    children: (0,jsx_runtime.jsx)(_components.a, {
+                      href: "/ai-engineering-journey/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview",
+                      children: "ML Foundations Interview"
+                    })
+                  }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+                    id: "limitations",
+                    children: "Limitations"
+                  }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+                    children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Backend Coding Interview, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "Performance of Backend Coding Interview depends on input size and distribution — always benchmark for your own data."
+                    }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+                      children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+                    }), "\n"]
+                  }), "\n"]
+                })]
+              })]
+            })]
+          })]
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

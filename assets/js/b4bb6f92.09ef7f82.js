@@ -1,0 +1,1891 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[43188],{
+
+/***/ 93970
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_14_fine_tuning_peft_04_lora_implementation_md_b4b_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-14-fine-tuning-peft-04-lora-implementation-md-b4b.json
+const site_docs_courses_ai_engineering_placement_14_fine_tuning_peft_04_lora_implementation_md_b4b_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/fine-tuning-peft/04-lora-implementation","title":"LoRA Implementation","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation.md","sourceDirName":"courses/ai-engineering-placement/14-fine-tuning-peft","slug":"/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation","permalink":"/ai-engineering-journey/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":177,"frontMatter":{"id":"04-lora-implementation","slug":"/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation","title":"LoRA Implementation","sidebar_label":"LoRA Implementation","sidebar_position":177},"sidebar":"coursesSidebar","previous":{"title":"LoRA Theory","permalink":"/ai-engineering-journey/ai-engineering-placement/14-fine-tuning-peft/03-lora-theory"},"next":{"title":"QLoRA & Quantization","permalink":"/ai-engineering-journey/ai-engineering-placement/14-fine-tuning-peft/05-qlora-and-quantization"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation.md
+
+
+const frontMatter = {
+	id: '04-lora-implementation',
+	slug: '/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation',
+	title: 'LoRA Implementation',
+	sidebar_label: 'LoRA Implementation',
+	sidebar_position: 177
+};
+const contentTitle = 'LoRA Implementation';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "4.1 PEFT Library",
+  "id": "41-peft-library",
+  "level": 2
+}, {
+  "value": "4.1.1 LoraConfig",
+  "id": "411-loraconfig",
+  "level": 3
+}, {
+  "value": "4.1.2 PEFT Model Simulator",
+  "id": "412-peft-model-simulator",
+  "level": 3
+}, {
+  "value": "4.2 Target Modules",
+  "id": "42-target-modules",
+  "level": 2
+}, {
+  "value": "4.2.1 Module Selection Analysis",
+  "id": "421-module-selection-analysis",
+  "level": 3
+}, {
+  "value": "4.2.2 Custom Module Matching",
+  "id": "422-custom-module-matching",
+  "level": 3
+}, {
+  "value": "4.3 Training",
+  "id": "43-training",
+  "level": 2
+}, {
+  "value": "4.3.1 LoRA Training Loop",
+  "id": "431-lora-training-loop",
+  "level": 3
+}, {
+  "value": "4.3.2 Optimizer Configuration",
+  "id": "432-optimizer-configuration",
+  "level": 3
+}, {
+  "value": "4.4 Adapter Management",
+  "id": "44-adapter-management",
+  "level": 2
+}, {
+  "value": "4.4.1 Adapter Save/Load",
+  "id": "441-adapter-saveload",
+  "level": 3
+}, {
+  "value": "4.4.2 Multi-Adapter Switching",
+  "id": "442-multi-adapter-switching",
+  "level": 3
+}, {
+  "value": "4.5 Merging",
+  "id": "45-merging",
+  "level": 2
+}, {
+  "value": "4.5.1 Weight Merging",
+  "id": "451-weight-merging",
+  "level": 3
+}, {
+  "value": "4.5.2 Inference Optimization",
+  "id": "452-inference-optimization",
+  "level": 3
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz",
+  "id": "chapter-quiz",
+  "level": 2
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "lora-implementation",
+        children: "LoRA Implementation"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Objective"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement LoRA using the PEFT library"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Select and configure target modules"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Apply LoRA to transformers and custom models"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Merge LoRA weights and deploy for inference"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to fine-tune, how to do it, and how to evaluate the results."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic programming knowledge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding of data structures"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Terms"
+      }), ": Core vocabulary and concepts for this topic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition"
+      }), ": Essential terms you must know for interviews and production work."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding lora implementation is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how lora implementation works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PEFT Library"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LoraConfig, get_peft_model"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Target Modules"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Which layers to apply LoRA to"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Training"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LoRA training loop considerations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Adapter Management"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Saving, loading, switching adapters"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "4.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Merging"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Weight merging for deployment"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    subgraph PEFT\n        C[LoraConfig]\n        M[Base Model]\n        PM[get_peft_model]\n    end\n    subgraph Training\n        T[Train with LoRA]\n        S[Save Adapters]\n    end\n    subgraph Deployment\n        L[Load Adapters]\n        MG[Merge Weights]\n        I[Inference]\n    end\n    C --> PM\n    M --> PM\n    PM --> T --> S --> L --> MG --> I\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "41-peft-library",
+      children: "4.1 PEFT Library"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "411-loraconfig",
+      children: "4.1.1 LoraConfig"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from dataclasses import dataclass, field\nfrom typing import List, Optional\n\n@dataclass\nclass LoraConfig:\n    r: int = 8\n    lora_alpha: int = 16\n    target_modules: Optional[List[str]] = None\n    lora_dropout: float = 0.05\n    bias: str = \"none\"\n    task_type: str = \"CAUSAL_LM\"\n    fan_in_fan_out: bool = False\n    modules_to_save: Optional[List[str]] = None\n    init_lora_weights: bool = True\n\n    def validate(self) -> List[str]:\n        warnings = []\n        if self.r <= 0:\n            warnings.append(\"Rank must be positive\")\n        if self.lora_alpha <= 0:\n            warnings.append(\"Alpha must be positive\")\n        if self.lora_dropout < 0 or self.lora_dropout > 1:\n            warnings.append(\"Dropout must be in [0, 1]\")\n        if self.bias not in (\"none\", \"all\", \"lora_only\"):\n            warnings.append(\"Bias must be 'none', 'all', or 'lora_only'\")\n        return warnings\n\n    def to_dict(self) -> dict:\n        return {\n            \"r\": self.r,\n            \"lora_alpha\": self.lora_alpha,\n            \"target_modules\": self.target_modules,\n            \"lora_dropout\": self.lora_dropout,\n            \"bias\": self.bias,\n            \"task_type\": self.task_type,\n        }\n\nconfig = LoraConfig(\n    r=8,\n    lora_alpha=16,\n    target_modules=[\"q_proj\", \"v_proj\"],\n    lora_dropout=0.1,\n)\nprint(f\"LoRA config: {config.to_dict()}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "412-peft-model-simulator",
+      children: "4.1.2 PEFT Model Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class PEFTModel:\n    def __init__(self, base_model: Any, config: LoraConfig):\n        self.base = base_model\n        self.config = config\n        self.lora_layers: Dict[str, LoRALayer] = {}\n        self._inject_lora()\n\n    def _inject_lora(self):\n        modules = self.config.target_modules or [\"q_proj\", \"v_proj\"]\n        for name, module in self.base.named_modules():\n            if any(t in name for t in modules):\n                d = getattr(module, \"in_features\", 768)\n                k = getattr(module, \"out_features\", 768)\n                self.lora_layers[name] = LoRALayer(\n                    d=d,\n                    k=k,\n                    r=self.config.r,\n                    alpha=self.config.lora_alpha,\n                )\n\n    def trainable_params(self) -> int:\n        return sum(l.d * l.r + l.r * l.k for l in self.lora_layers.values())\n\n    def frozen_params(self) -> int:\n        total = 0\n        for name, module in self.base.named_modules():\n            for param in getattr(module, \"parameters\", lambda: [])():\n                total += param.numel() if hasattr(param, \"numel\") else 0\n        return total\n\n    def forward(self, x: Dict) -> Dict:\n        return self.base(x)\n\nclass MockModule:\n    def __init__(self, in_features: int, out_features: int, name: str = \"\"):\n        self.in_features = in_features\n        self.out_features = out_features\n        self.name = name\n\n    def named_modules(self):\n        return [(\"\", self)]\n\n    def parameters(self):\n        return []\n\nclass MockBaseModel:\n    def __init__(self):\n        self.modules = {\n            \"model.layers.0.self_attn.q_proj\": MockModule(4096, 4096),\n            \"model.layers.0.self_attn.v_proj\": MockModule(4096, 4096),\n            \"model.layers.1.self_attn.q_proj\": MockModule(4096, 4096),\n            \"model.layers.1.self_attn.v_proj\": MockModule(4096, 4096),\n        }\n\n    def named_modules(self):\n        return list(self.modules.items())\n\nbase = MockBaseModel()\npeft = PEFTModel(base, config)\nprint(f\"Trainable params: {peft.trainable_params():,}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "42-target-modules",
+      children: "4.2 Target Modules"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "421-module-selection-analysis",
+      children: "4.2.1 Module Selection Analysis"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ModuleSelector:\n    def __init__(self, model_config: Dict):\n        self.config = model_config\n\n    def get_attention_modules(self) -> List[str]:\n        return [\"q_proj\", \"k_proj\", \"v_proj\", \"o_proj\"]\n\n    def get_ffn_modules(self) -> List[str]:\n        return [\"gate_proj\", \"up_proj\", \"down_proj\"]\n\n    def recommend(self, task_type: str) -> Dict:\n        recommendations = {\n            \"general\": {\n                \"modules\": [\"q_proj\", \"v_proj\"],\n                \"reasoning\": \"Most common — balances quality and efficiency\",\n            },\n            \"knowledge\": {\n                \"modules\": [\"q_proj\", \"v_proj\", \"o_proj\"],\n                \"reasoning\": \"More modules for knowledge-intensive adaptation\",\n            },\n            \"reasoning\": {\n                \"modules\": [\"q_proj\", \"k_proj\", \"v_proj\", \"o_proj\"],\n                \"reasoning\": \"Full attention for reasoning tasks\",\n            },\n            \"full\": {\n                \"modules\": [\"q_proj\", \"k_proj\", \"v_proj\", \"o_proj\",\n                            \"gate_proj\", \"up_proj\", \"down_proj\"],\n                \"reasoning\": \"Maximum expressiveness — all linear layers\",\n            },\n        }\n        return recommendations.get(task_type, recommendations[\"general\"])\n\n    def parameter_impact(self, modules: List[str], d: int, num_layers: int, r: int) -> Dict:\n        params_per_module = d * r + r * d\n        total = params_per_module * len(modules) * num_layers\n        return {\n            \"modules\": modules,\n            \"total_params\": total,\n            \"params_per_module\": params_per_module,\n            \"model_pct\": total / (7_000_000_000) * 100,\n        }\n\nselector = ModuleSelector({\"hidden_size\": 4096, \"num_hidden_layers\": 32})\nrec = selector.recommend(\"general\")\nprint(f\"Recommended modules: {rec['modules']}\")\nimpact = selector.parameter_impact(rec[\"modules\"], 4096, 32, 8)\nprint(f\"Parameter impact: {impact['total_params']:,} ({impact['model_pct']:.3f}%)\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "422-custom-module-matching",
+      children: "4.2.2 Custom Module Matching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ModuleMatcher:\n    def __init__(self, include: List[str] = None, exclude: List[str] = None):\n        self.include = include or []\n        self.exclude = exclude or []\n\n    def match(self, module_name: str) -> bool:\n        if self.exclude:\n            if any(e in module_name for e in self.exclude):\n                return False\n\n        if not self.include:\n            return \"proj\" in module_name or \"linear\" in module_name\n\n        return any(i in module_name for i in self.include)\n\n    def filter_modules(self, all_modules: List[str]) -> List[str]:\n        return [m for m in all_modules if self.match(m)]\n\nmatcher = ModuleMatcher(include=[\"q_proj\", \"v_proj\"], exclude=[\"embed_tokens\", \"lm_head\"])\nall_mods = [\n    \"model.embed_tokens\", \"model.layers.0.self_attn.q_proj\",\n    \"model.layers.0.self_attn.k_proj\", \"model.layers.0.self_attn.v_proj\",\n    \"model.layers.0.self_attn.o_proj\", \"model.layers.0.mlp.gate_proj\",\n    \"model.layers.0.mlp.up_proj\", \"model.layers.0.mlp.down_proj\",\n    \"lm_head\",\n]\nmatched = matcher.filter_modules(all_mods)\nprint(f\"Matched modules: {matched}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "43-training",
+      children: "4.3 Training"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "431-lora-training-loop",
+      children: "4.3.1 LoRA Training Loop"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class LoRATrainer:\n    def __init__(self, model: PEFTModel, lr: float = 3e-4):\n        self.model = model\n        self.lr = lr\n        self.losses = []\n\n    def train_step(self, batch: Dict) -> float:\n        output = self.model.forward(batch)\n        loss = self._compute_loss(output, batch.get(\"labels\"))\n        self.losses.append(loss)\n        return loss\n\n    def _compute_loss(self, output: Dict, labels: Any) -> float:\n        return float(np.random.exponential(0.3))\n\n    def train(self, dataset: List[Dict], epochs: int, batch_size: int) -> List[float]:\n        for epoch in range(epochs):\n            epoch_loss = 0.0\n            for i in range(0, len(dataset), batch_size):\n                batch = {\"input\": dataset[i], \"labels\": dataset[i]}\n                loss = self.train_step(batch)\n                epoch_loss += loss\n            print(f\"Epoch {epoch+1}: avg_loss={epoch_loss / max(len(dataset)//batch_size, 1):.4f}\")\n        return self.losses\n\ntrainer = LoRATrainer(peft)\ndataset = [{\"text\": f\"sample-{i}\"} for i in range(50)]\ntrainer.train(dataset, epochs=3, batch_size=8)\nprint(f\"Training complete: {len(trainer.losses)} steps\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "432-optimizer-configuration",
+      children: "4.3.2 Optimizer Configuration"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class LoRAOptimizerConfig:\n    def __init__(self):\n        self.lora_lr: float = 3e-4\n        self.base_lr: float = 0.0  # frozen\n        self.weight_decay: float = 0.0\n        self.optimizer_type: str = \"adamw\"\n        self.betas: tuple = (0.9, 0.999)\n        self.eps: float = 1e-8\n\n    def parameter_groups(self, model: Any) -> List[Dict]:\n        groups = [\n            {\n                \"params\": [\"lora_A\", \"lora_B\"],  # lora parameters\n                \"lr\": self.lora_lr,\n                \"weight_decay\": self.weight_decay,\n            },\n            {\n                \"params\": [\"bias\", \"layernorm\"],  # trainable but no WD\n                \"lr\": self.lora_lr,\n                \"weight_decay\": 0.0,\n            },\n        ]\n        return groups\n\nopt_config = LoRAOptimizerConfig()\nprint(f\"LoRA LR: {opt_config.lora_lr}, WD: {opt_config.weight_decay}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "44-adapter-management",
+      children: "4.4 Adapter Management"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "441-adapter-saveload",
+      children: "4.4.1 Adapter Save/Load"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class AdapterManager:\n    def __init__(self, base_path: str = \"./adapters\"):\n        self.base_path = base_path\n        self.active_adapter: Optional[str] = None\n\n    def save(self, lora_weights: Dict[str, Tuple[np.ndarray, np.ndarray]],\n             adapter_name: str) -> str:\n        path = f\"{self.base_path}/{adapter_name}\"\n        import json\n        os.makedirs(path, exist_ok=True)\n\n        metadata = {\n            \"adapter_name\": adapter_name,\n            \"num_modules\": len(lora_weights),\n            \"weights\": {},\n        }\n\n        for module_name, (B, A) in lora_weights.items():\n            np.save(f\"{path}/{module_name}_B.npy\", B)\n            np.save(f\"{path}/{module_name}_A.npy\", A)\n            metadata[\"weights\"][module_name] = {\n                \"B_shape\": list(B.shape),\n                \"A_shape\": list(A.shape),\n            }\n\n        with open(f\"{path}/adapter_config.json\", \"w\") as f:\n            json.dump(metadata, f)\n\n        return path\n\n    def load(self, adapter_name: str) -> Dict[str, Tuple[np.ndarray, np.ndarray]]:\n        path = f\"{self.base_path}/{adapter_name}\"\n        with open(f\"{path}/adapter_config.json\") as f:\n            metadata = json.load(f)\n\n        weights = {}\n        for module_name in metadata[\"weights\"]:\n            B = np.load(f\"{path}/{module_name}_B.npy\")\n            A = np.load(f\"{path}/{module_name}_A.npy\")\n            weights[module_name] = (B, A)\n\n        self.active_adapter = adapter_name\n        return weights\n\n    def list_adapters(self) -> List[str]:\n        if not os.path.exists(self.base_path):\n            return []\n        return [d for d in os.listdir(self.base_path)\n                if os.path.isdir(f\"{self.base_path}/{d}\")]\n\nimport os\nimport json\nmanager = AdapterManager()\nprint(f\"Adapter manager ready (base: {manager.base_path})\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "442-multi-adapter-switching",
+      children: "4.4.2 Multi-Adapter Switching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class MultiAdapterModel:\n    def __init__(self, base_model: Any):\n        self.base = base_model\n        self.adapters: Dict[str, Dict] = {}\n        self.active: Optional[str] = None\n\n    def add_adapter(self, name: str, weights: Dict):\n        self.adapters[name] = weights\n        if self.active is None:\n            self.active = name\n\n    def switch_to(self, name: str) -> bool:\n        if name in self.adapters:\n            self.active = name\n            return True\n        return False\n\n    def forward(self, x: Any) -> Any:\n        base_out = self.base(x)\n        if self.active and self.active in self.adapters:\n            adapter = self.adapters[self.active]\n            for module_name, (B, A) in adapter.items():\n                lora_output = x @ (B @ A)\n                base_out += lora_output\n        return base_out\n\n    def list_adapters(self) -> List[str]:\n        return list(self.adapters.keys())\n\nmulti_adapter = MultiAdapterModel(MockBaseModel())\nmulti_adapter.add_adapter(\"code-v1\", {\"layer_0\": (np.zeros((4,2)), np.zeros((2,4)))})\nmulti_adapter.add_adapter(\"chat-v1\", {\"layer_0\": (np.zeros((4,2)), np.zeros((2,4)))})\nmulti_adapter.switch_to(\"chat-v1\")\nprint(f\"Active adapter: {multi_adapter.active}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "45-merging",
+      children: "4.5 Merging"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "451-weight-merging",
+      children: "4.5.1 Weight Merging"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class WeightMerger:\n    def merge(self, W0: np.ndarray, B: np.ndarray,\n              A: np.ndarray, scaling: float) -> np.ndarray:\n        return W0 + (B @ A) * scaling\n\n    def merge_all(self, model: Any, lora_weights: Dict,\n                  config: LoraConfig) -> Any:\n        scaling = config.lora_alpha / config.r\n        merged_model = deepcopy(model)\n\n        for module_name, (B, A) in lora_weights.items():\n            module = self._get_module(merged_model, module_name)\n            original_weight = module.weight.copy()\n            module.weight = self.merge(original_weight, B, A, scaling)\n\n        return merged_model\n\n    def _get_module(self, model: Any, name: str) -> Any:\n        parts = name.split(\".\")\n        current = model\n        for part in parts:\n            current = getattr(current, part, None)\n            if current is None:\n                raise ValueError(f\"Module {name} not found\")\n        return current\n\n    def verify_merge(self, W0: np.ndarray, B: np.ndarray,\n                     A: np.ndarray, scaling: float) -> Dict:\n        merged = self.merge(W0, B, A, scaling)\n        diff = np.linalg.norm(merged - W0, \"fro\")\n        return {\n            \"merged_shape\": list(merged.shape),\n            \"frobenius_diff\": round(diff, 4),\n            \"relative_change_pct\": round(diff / np.linalg.norm(W0, \"fro\") * 100, 2),\n        }\n\nfrom copy import deepcopy\nmerger = WeightMerger()\nW0 = np.random.randn(64, 64)\nB = np.random.randn(64, 8)\nA = np.random.randn(8, 64)\nmerged = merger.merge(W0, B, A, scaling=2.0)\nprint(f\"Merge verification: {merger.verify_merge(W0, B, A, 2.0)}\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "452-inference-optimization",
+      children: "4.5.2 Inference Optimization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class InferenceOptimizer:\n    def __init__(self):\n        self.merged = False\n\n    def merge_for_inference(self, model: Any, lora_weights: Dict,\n                            config: LoraConfig) -> Any:\n        merged_model = WeightMerger().merge_all(model, lora_weights, config)\n        self.merged = True\n        return merged_model\n\n    def benchmark(self, model: Any, input_data: Any, iterations: int = 100) -> Dict:\n        import time\n\n        latencies = []\n        for _ in range(iterations):\n            start = time.time()\n            model.forward(input_data)\n            latencies.append((time.time() - start) * 1000)\n\n        return {\n            \"mean_latency_ms\": round(np.mean(latencies), 2),\n            \"p50_ms\": round(np.percentile(latencies, 50), 2),\n            \"p95_ms\": round(np.percentile(latencies, 95), 2),\n            \"p99_ms\": round(np.percentile(latencies, 99), 2),\n        }\n\n    def memory_saved(self, lora_weights: Dict) -> int:\n        total = 0\n        for B, A in lora_weights.values():\n            total += B.nbytes + A.nbytes\n        return total\n\noptimizer = InferenceOptimizer()\nprint(f\"Inference optimizer ready\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Implementing LoRA with the PEFT library requires configuring LoraConfig with rank (r=8), alpha (lora_alpha=16), target modules (typically q_proj and v_proj), and.\ndropout (0.05-0.1). The ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "get_peft_model"
+      }), " function wraps the base model, freezing all original weights and injecting trainable LoRA layers. Target module selection impacts expressiveness: q_proj+v_proj (most common),.\nadding k_proj+o_proj (knowledge tasks), or including FFN modules (full adaptation). Adapter management supports saving/loading adapter weights independently — enabling a single base model to host multiple task-specific adapters. For.\ndeployment, merging LoRA weights into the base model (W = W₀ + BA·α/r) eliminates any inference overhead. A merged model has the same latency as the original model while incorporating task-specific adaptations."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Takeaway"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Use PEFT library"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Production-tested implementation with optimal defaults"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Target q_proj and v_proj"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Best quality-per-parameter ratio for most tasks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Save adapters separately"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "One base model, many task adapters — storage efficient"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Merge before deployment"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Zero inference overhead after weight merging"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Set lora_dropout=0.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Helps prevent overfitting on small datasets"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: How do you implement LoRA using the PEFT library?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Implementing LoRA with the PEFT library involves: (1) load the base model from HuggingFace — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.bfloat16, device_map=\"auto\")"
+          }), "; (2) create a LoRA configuration (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "LoraConfig"
+          }), ") specifying: r (rank,.\ne.g., 8), lora_alpha (scaling, e.g., 16), target_modules (which layers to apply LoRA to, e.g., [\"q_proj\", \"v_proj\"]), lora_dropout (dropout probability, e.g., 0.05),.\nbias=\"none\", task_type=\"CAUSAL_LM\"; (3) wrap the model: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model = get_peft_model(model, lora_config)"
+          }), " — this replaces the target modules with LoRA layers and freezes all base model parameters;.\n(4) verify trainable parameters: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.print_trainable_parameters()"
+          }), " shows the count and percentage of trainable parameters; (5) train using the standard HuggingFace Trainer or.\ncustom training loop — only LoRA parameters have gradients; (6) save: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.save_pretrained(\"lora-adapter\")"
+          }), " saves only the small adapter weights (usually 5-50MB). The PEFT library handles all the complexity of freezing base weights,.\ninserting LoRA layers, and ensuring gradients only flow through adapter parameters."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: How do you select and configure target modules for LoRA?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Target modules specify which layers in the model get LoRA adapters. To find available module names in a HuggingFace model: (1) ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.named_modules()"
+          }), " lists all modules — look for.\nattention projection layers (q_proj, k_proj, v_proj, o_proj), feed-forward layers (gate_proj, up_proj, down_proj), and linear layers; (2) common patterns — Llama models use \"q_proj\",.\n\"k_proj\", \"v_proj\", \"o_proj\", \"gate_proj\", \"up_proj\", \"down_proj\". Mistral uses the same names. GPT-2 uses \"c_attn\", \"c_proj\"; (3) module name patterns can be specified as regex via ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "target_modules"
+          }), " — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "r\".*\\.(q_proj|v_proj)$\""
+          }), " targets only query and.\nvalue projections. Selection guidelines: (1) always include v_proj (value projection) — it captures the most task-specific information; (2) include q_proj for.\ntasks requiring modified attention patterns; (3) include o_proj for output quality improvement; (4) include feed-forward layers for knowledge-intensive tasks. Most implementations default to [\"q_proj\",.\n\"v_proj\"] as the starting point and add more modules if the task requires more capacity."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: How do you apply LoRA to custom models?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Applying LoRA to custom models (non-HuggingFace) requires manual injection of LoRA layers. Steps: (1) identify all linear layers in the model where you want to apply LoRA;.\n(2) replace each target linear layer with a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "LinearWithLoRA"
+          }), " wrapper that adds the B and A matrices and computes h = W₀x + BAx;.\n(3) freeze the original linear layer weights (W₀) — only B and A should be trainable; (4) configure the forward pass to use the LoRA wrapper's computation;.\n(5) for optimization, only pass LoRA parameters to the optimizer. Implementation using ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "torch.nn.Module"
+          }), ": create a LoRALayer class with B (nn.Linear(in_features, r,.\nbias=False) initialized to zero) and A (nn.Linear(r, out_features, bias=False) initialized to random). The forward pass is: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "return self.base(x) + self.alpha * (self.B(self.A(x))) / self.r"
+          }), ". The PEFT library handles this automatically for.\nHuggingFace models but the same pattern can be applied to any PyTorch model by replacing target modules with LoRA-wrapped versions. For.\nTensorFlow/JAX models, similar layer wrapping is needed."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q4: How do you merge LoRA weights and deploy for inference?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Merging LoRA weights into the base model eliminates the separate LoRA computation during inference. Process: (1) load the base model — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AutoModelForCausalLM.from_pretrained(model_id)"
+          }), ";.\n(2) load the LoRA adapter — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "PeftModel.from_pretrained(base_model, \"lora-adapter-path\")"
+          }), "; (3) merge — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "merged_model = peft_model.merge_and_unload()"
+          }), " — this adds the LoRA weights into the base model's weight matrices and.\nremoves the LoRA layers, returning a standard model with updated weights; (4) save the merged model — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "merged_model.save_pretrained(\"merged-model\")"
+          }), " creates a standard model directory with the same architecture as the base but.\nwith fine-tuned weights. Benefits of merging: eliminates LoRA inference overhead (faster, uses less memory), the merged model uses standard inference pipeline (no PEFT dependency at inference time),.\nand the model size returns to the original size (no additional adapter storage). The merged model is identical in architecture to the original base model,.\nmaking it compatible with any standard inference framework (vLLM, TGI, ONNX). The unmerge operation restores the LoRA adapter state from the base model if you need to switch between different adapters."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q5: How do you use multiple LoRA adapters with a single base model?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Multiple LoRA adapters enable a single base model to serve multiple fine-tuned configurations. Implementation: (1) train multiple LoRA adapters from the same base model,.\neach for a different task or domain; (2) save each adapter separately (each is 5-50MB); (3) at inference time, load the base model once and.\ndynamically switch adapters via the PEFT library: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "PeftModel.from_pretrained(base_model, \"adapterA\")"
+          }), " for task A, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "peft_model.load_adapter(\"adapterB\", adapter_name=\"b\")"
+          }), " for task B, ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "peft_model.set_adapter(\"b\")"
+          }), " to switch; (4) for.\nmerged inference, unmerge the current adapter, load the new one, and merge. This is memory-efficient: a single 7B base model (~14GB in fp16) with 10 adapters uses ~14GB + 10—50MB ≈ 14.5GB total,.\nvs. 140GB for 10 fully fine-tuned models. Adapter routing — decide which adapter to use based on the input task. Routing can be: rule-based (keyword matching),.\nclassifier-based (a small model predicts the task), or embedding-based (similarity search in task embedding space). This pattern is widely used for.\nmulti-tenant SaaS applications where different customers need different model behaviors."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q6",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q6: How do you train a LoRA adapter step by step?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Training a LoRA adapter step by step: (1) Install dependencies — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "pip install peft transformers datasets accelerate bitsandbytes"
+          }), "; (2) Load base model with quantization if needed — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AutoModelForCausalLM.from_pretrained(\"model\",.\nload_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16)"
+          }), "; (3) Configure LoRA — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "LoraConfig(r=8, lora_alpha=16, target_modules=[\"q_proj\",\"v_proj\"], lora_dropout=0.05, bias=\"none\", task_type=\"CAUSAL_LM\")"
+          }), "; (4) Apply LoRA — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model = get_peft_model(model, config)"
+          }), "; (5) Prepare dataset — load JSONL with \"instruction\" and.\n\"output\" fields, tokenize with formatting function, create train/val split; (6) Configure training — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "TrainingArguments(output_dir=\"./lora-out\", per_device_train_batch_size=4, gradient_accumulation_steps=4, learning_rate=2e-4, num_train_epochs=3, logging_steps=10, save_strategy=\"epoch\", evaluation_strategy=\"epoch\",.\nfp16=True)"
+          }), "; (7) Initialize Trainer with model, args, datasets; (8) Train — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "trainer.train()"
+          }), "; (9) Save — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.save_pretrained(\"final-adapter\")"
+          }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "tokenizer.save_pretrained(\"final-adapter\")"
+          }), ". The entire script is typically 50-100 lines of Python. Monitor.\nloss curves in the console output or WandB/TensorBoard integration."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q7",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q7: How do you handle LoRA dropout and when should you use it?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["LoRA dropout randomly zeros out elements of the LoRA output during training, acting as a regularizer. Implementation: (1) dropout is applied to the output of the LoRA matrix A (before matrix B) — specifically,.\nafter computing A(x), dropout is applied; (2) the dropout probability is set in ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "LoraConfig(lora_dropout=0.05)"
+          }), " — common values are 0.0 (no dropout),.\n0.05 (light regularization), 0.1 (strong regularization); (3) during inference, dropout is automatically disabled (PyTorch eval mode). When to use: (1) use dropout when the dataset is small (<1000 examples) to prevent overfitting;.\n(2) use dropout with higher rank (r=32+) where there are more parameters to regularize; (3) no dropout needed for large datasets (>5000 examples) or.\nlow rank (r<8). The tradeoff: dropout adds regularization (reduces overfitting) but slows convergence (needs more training steps). The default lora_dropout=0.05 works well for.\nmost cases. Dropout is applied per training step, so the randomness encourages the adapter to learn robust features that work even when some activation paths are disabled."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q8",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q8: How do you verify that LoRA is correctly applied to the model?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Verifying LoRA application: (1) Check trainable parameters — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.print_trainable_parameters()"
+          }), " shows the number and percentage of trainable parameters. For a 7B model with r=8 on Q+V,.\nexpect ~4M trainable parameters (0.06% of total). If it shows billions of trainable parameters, the base model wasn't frozen correctly; (2) Inspect parameter names — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "for.\nname, param in model.named_parameters(): if param.requires_grad: print(name)"
+          }), " — LoRA parameters have names like \"base_model.model.model.layers.0.self_attn.q_proj.lora_A.weight\" and \"lora_B.weight\". Only these should have requires_grad=True;.\n(3) Verify base model frozen — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "for name, param in model.named_parameters(): if \"lora\" not in name and param.requires_grad: print(f\"UNEXPECTED: {name}\")"
+          }), " — should print nothing;.\n(4) Forward pass test — run the model on a test input before and after training; output should change (trained adapter should modify behavior);.\n(5) Check gradient flow — after a backward pass, only LoRA parameters should have non-zero gradients; (6) Size check — ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.save_pretrained(\"test\")"
+          }), " should produce small adapter files (5-50MB). If the saved files are gigabytes,.\nthe merge happened or the base model wasn't properly frozen."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q9",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q9: How do you convert between LoRA adapter formats?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["LoRA adapter formats vary across frameworks. Standard HuggingFace PEFT format saves adapter_config.json (configuration) and adapter_model.safetensors (weights). Conversion scenarios: (1) PEFT to Unsloth — Unsloth uses an optimized LoRA format for.\nfaster training. Convert by loading with Unsloth's ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "FastLanguageModel.from_pretrained"
+          }), " with the PEFT adapter; (2) PEFT to Axolotl — Axolotl uses its own YAML config format with adapter paths. Either point Axolotl to the PEFT adapter directory or.\nconvert using Axolotl's conversion script; (3) PEFT to Diffusers (for SD models) — LoRA for diffusion models uses a different PEFT format but.\nthe same underlying technique. Use ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "peft_to_diffusers"
+          }), " conversion; (4) Custom format — manually extract ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "state_dict"
+          }), " keys starting with \"lora_\" and save as a PyTorch checkpoint: ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "torch.save({k: v for.\nk, v in model.state_dict().items() if \"lora_\" in k}, \"custom_lora.pt\")"
+          }), ". Most frameworks support the standard HuggingFace PEFT format, making cross-framework adapter sharing straightforward. The key files are adapter_config.json (metadata) and.\nadapter_model.safetensors (weights). Validate converted adapters with a forward pass test."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "ft04-q10",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q10: How do you troubleshoot common LoRA training issues?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Common LoRA training issues and solutions: (1) Loss not decreasing — check learning rate (should be 1e-4 to 5e-4 for LoRA,.\nhigher than full fine-tuning because only 0.1% of parameters are trained), verify gradients flow to LoRA parameters (check requires_grad), ensure the loss mask only computes loss on output tokens;.\n(2) NaN loss — reduce learning rate, enable gradient clipping (max_grad_norm=1.0), check for corrupted data (non-UTF8 characters, extreme token lengths), use bf16 instead of fp16;.\n(3) Model output unchanged after training — verify the adapter was merged or loaded correctly (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.base_model.model"
+          }), " for PEFT wrapped model), check that training produced non-zero LoRA weights (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "torch.norm(adapter_weights)"
+          }), ");.\n(4) Out of memory — reduce batch size, enable gradient checkpointing (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "model.gradient_checkpointing_enable()"
+          }), "), use 4-bit quantization (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "load_in_4bit=True"
+          }), "), reduce LoRA rank or target fewer modules;.\n(5) Slow training — enable mixed precision (fp16/bf16), use Flash Attention 2 (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "attn_implementation=\"flash_attention_2\""
+          }), "), increase batch size to utilize GPU fully, optimize data loading (", (0,jsx_runtime.jsx)(_components.code, {
+            children: "num_workers>0"
+          }), "). Most issues are resolved by adjusting learning rate,.\nbatch size, or precision."]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "✅ Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz",
+      children: "Chapter Quiz"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      "data-qid": "ft-s4-quiz1",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.summary, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "1."
+        }), " What is the typical target module configuration for LoRA?"]
+      }), "\nA. All layers\nB. Only q_proj and v_proj\nC. Only activation functions\nD. Only embeddings\nAnswer: B\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      "data-qid": "ft-s4-quiz2",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.summary, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "2."
+        }), " Why merge LoRA weights before deployment?"]
+      }), "\nA. To reduce model size\nB. To eliminate inference overhead\nC. To improve accuracy\nD. To enable multi-task learning\nAnswer: B\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      "data-qid": "ft-s4-quiz3",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.summary, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "3."
+        }), " What is the benefit of saving adapters separately?"]
+      }), "\nA. Smaller storage\nB. One base model can host multiple task-specific adapters\nC. Faster training\nD. Better accuracy\nAnswer: B\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      "data-qid": "ft-s4-quiz4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.summary, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "4."
+        }), " What does get_peft_model do?"]
+      }), "\nA. Creates a new model\nB. Wraps a base model, freezing weights and injecting LoRA layers\nC. Downloads a pre-trained model\nD. Quantizes the model\nAnswer: B\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      "data-qid": "ft-s4-quiz5",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.summary, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "5."
+        }), " Why use lora_dropout?"]
+      }), "\nA. To speed up training\nB. To prevent overfitting\nC. To reduce memory\nD. To increase accuracy\nAnswer: B\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Not understanding the fundamental concepts before applying them"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Skipping edge cases in implementation"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Not analyzing time/space complexity"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Forgetting to handle null/empty inputs"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Not practicing enough problems to build pattern recognition1. Implement a LoraConfig builder with validation. Support configurations for r=[4,8,16], alpha=[8,16,32], target modules selection, and dropout. Validate all parameters."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Build an adapter save/load system. Create LoRA weights for 3 modules, save to disk with metadata, load back, and verify weights are identical."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Implement multi-adapter switching: load 2 different LoRA adapters (code-v1, chat-v1) on a single base model. Switch between them and verify outputs differ."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Write a weight merger that takes base weights, LoRA B/A matrices, and scaling factor, produces merged weights, and reports the Frobenius norm difference before/after merge."
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Benchmark inference latency: compare forward pass with separate LoRA computation vs merged weights. Measure mean, p50, p95, p99 over 100 it"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of LoRA Implementation in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function that demonstrates LoRA Implementation."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding LoRA Implementation. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system that relies on LoRA Implementation from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare LoRA Implementation with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component that depends on LoRA Implementation."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does LoRA Implementation behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of LoRA Implementation run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of LoRA Implementation that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name LoRA Implementation explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using LoRA Implementation\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies LoRA Implementation to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside LoRA Implementation (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of LoRA Implementation and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a LoRA Implementation-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic LoRA Implementation interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply LoRA Implementation in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " LoRA Implementation builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for LoRA Implementation before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for LoRA Implementation is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for LoRA Implementation in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the LoRA Implementation chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers LoRA Implementation is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to LoRA Implementation is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing LoRA Implementation is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug LoRA Implementation issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to LoRA Implementation in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving LoRA Implementation that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of LoRA Implementation is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain LoRA Implementation in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for LoRA Implementation and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of LoRA Implementation on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain LoRA Implementation to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of LoRA Implementation from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered LoRA Implementation when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining LoRA Implementation twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own LoRA Implementation snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of LoRA Implementation listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link LoRA Implementation to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of LoRA Implementation by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain LoRA Implementation to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary tool or library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter referenced in Related Topics for the next-level treatment of LoRA Implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic textbook chapter on LoRA Implementation (check the Research References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Two blog posts from engineers who debugged real LoRA Implementation problems in production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The repository of the open-source project that implements LoRA Implementation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for LoRA Implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on LoRA Implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how LoRA Implementation fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how LoRA Implementation is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where LoRA Implementation is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of LoRA Implementation, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is LoRA Implementation asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LoRA Implementation is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with LoRA Implementation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LoRA Implementation emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for LoRA Implementation today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about LoRA Implementation — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around LoRA Implementation changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing LoRA Implementation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LoRA Implementation appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding LoRA Implementation helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the LoRA Implementation concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, LoRA Implementation skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply LoRA Implementation to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "LoRA Implementation is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the LoRA Implementation skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "14finetuningpeft-04loraimplementation-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of LoRA Implementation in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Review the first paragraph of the Theory section and condense it to one sentence."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "14finetuningpeft-04loraimplementation-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with \n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Common Mistakes section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "14finetuningpeft-04loraimplementation-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard LoRA Implementation approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Refer to the theory and complexity analysis in this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "14finetuningpeft-04loraimplementation-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is LoRA Implementation NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Limitations section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "14finetuningpeft-04loraimplementation-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is LoRA Implementation applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Real-World Examples section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for LoRA Implementation (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing LoRA Implementation (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for LoRA Implementation-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running LoRA Implementation in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of LoRA Implementation code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on LoRA Implementation"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in LoRA Implementation code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the LoRA Implementation example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain LoRA Implementation in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of LoRA Implementation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a LoRA Implementation problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where LoRA Implementation is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for LoRA Implementation."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core LoRA Implementation logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain LoRA Implementation without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses LoRA Implementation daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": LoRA Implementation patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": LoRA Implementation principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": LoRA Implementation shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect LoRA Implementation to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/14-fine-tuning-peft/05-qlora-and-quantization",
+        children: "QLoRA & Quantization"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "LoRA Implementation, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of LoRA Implementation depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

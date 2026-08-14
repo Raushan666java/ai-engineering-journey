@@ -2,7 +2,7 @@
 id: visual-notes
 slug: /ai-engineering-placement/04-git-linux-cli/visual-notes
 title: "Visual Notes — Git & Linux CLI"
-sidebar_label: "Visual Notes — Git & Linux CLI"
+sidebar_label: "Visual Notes"
 sidebar_position: 68
 ---
 # Visual Notes — Git & Linux CLI

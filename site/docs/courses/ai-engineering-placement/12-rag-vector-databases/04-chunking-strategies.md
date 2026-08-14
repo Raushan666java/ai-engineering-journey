@@ -3,7 +3,7 @@ id: 04-chunking-strategies
 slug: /ai-engineering-placement/12-rag-vector-databases/04-chunking-strategies
 title: "Chunking Strategies"
 sidebar_label: "Chunking Strategies"
-sidebar_position: 155
+sidebar_position: 161
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Chunking Strategies

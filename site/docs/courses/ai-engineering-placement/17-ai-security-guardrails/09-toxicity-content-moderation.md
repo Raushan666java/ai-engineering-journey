@@ -3,7 +3,7 @@ id: 09-toxicity-content-moderation
 slug: /ai-engineering-placement/17-ai-security-guardrails/09-toxicity-content-moderation
 title: "Toxicity & Content Moderation"
 sidebar_label: "Toxicity & Content Moderation"
-sidebar_position: 213
+sidebar_position: 224
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Toxicity & Content Moderation

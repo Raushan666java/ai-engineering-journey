@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/19-capstone-projects
 title: "19 — Capstone Projects"
 sidebar_label: "19 — Capstone Projects"
-sidebar_position: 228
+sidebar_position: 241
 ---
 # 19 — Capstone Projects
 

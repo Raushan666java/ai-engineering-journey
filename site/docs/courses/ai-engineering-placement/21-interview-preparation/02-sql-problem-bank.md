@@ -3,7 +3,7 @@ id: 02-sql-problem-bank
 slug: /ai-engineering-placement/21-interview-preparation/02-sql-problem-bank
 title: "SQL Problem Bank"
 sidebar_label: "SQL Problem Bank"
-sidebar_position: 237
+sidebar_position: 252
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # SQL Problem Bank

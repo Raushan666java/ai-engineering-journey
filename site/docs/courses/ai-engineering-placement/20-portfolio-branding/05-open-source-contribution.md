@@ -3,7 +3,7 @@ id: 05-open-source-contribution
 slug: /ai-engineering-placement/20-portfolio-branding/05-open-source-contribution
 title: "Open Source Contribution"
 sidebar_label: "Open Source Contribution"
-sidebar_position: 233
+sidebar_position: 247
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Open Source Contribution

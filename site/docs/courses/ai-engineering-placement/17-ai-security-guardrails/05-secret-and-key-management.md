@@ -3,7 +3,7 @@ id: 05-secret-and-key-management
 slug: /ai-engineering-placement/17-ai-security-guardrails/05-secret-and-key-management
 title: "Secret and Key Management"
 sidebar_label: "Secret and Key Management"
-sidebar_position: 209
+sidebar_position: 220
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Secret and Key Management

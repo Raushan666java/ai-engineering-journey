@@ -3,7 +3,7 @@ id: 07-hugging-face-ecosystem
 slug: /ai-engineering-placement/10-nlp-transformers/07-hugging-face-ecosystem
 title: "Hugging Face Ecosystem — Transformers, Pipelines, Datasets, Tokenizers"
 sidebar_label: "Hugging Face Ecosystem — Transformers, Pipelines, Datasets, Tokenizers"
-sidebar_position: 140
+sidebar_position: 144
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Hugging Face Ecosystem — Transformers, Pipelines, Datasets, Tokenizers

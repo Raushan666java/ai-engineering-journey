@@ -3,7 +3,7 @@ id: 09-challenge-economics
 slug: /ai-engineering-placement/33-campus-placement/09-challenge-economics
 title: "Challenge Economics & Reward Systems"
 sidebar_label: "Challenge Economics & Reward Systems"
-sidebar_position: 343
+sidebar_position: 370
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Challenge Economics & Reward Systems

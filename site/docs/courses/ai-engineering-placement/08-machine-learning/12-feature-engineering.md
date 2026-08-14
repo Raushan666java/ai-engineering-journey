@@ -3,7 +3,7 @@ id: 12-feature-engineering
 slug: /ai-engineering-placement/08-machine-learning/12-feature-engineering
 title: "Feature Engineering — Imputation, Encoding, Scaling, Feature Construction, Feature Selection"
 sidebar_label: "Feature Engineering — Imputation, Encoding, Scaling, Feature Construction, Feature Selection"
-sidebar_position: 121
+sidebar_position: 123
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Feature Engineering — Imputation, Encoding, Scaling, Feature Construction, Feature Selection

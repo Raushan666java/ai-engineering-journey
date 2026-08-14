@@ -3,7 +3,7 @@ id: 05-svm-and-kernel-methods
 slug: /ai-engineering-placement/08-machine-learning/05-svm-and-kernel-methods
 title: "SVM & Kernel Methods — Margins, Kernel Trick, Soft Margin"
 sidebar_label: "SVM & Kernel Methods — Margins, Kernel Trick, Soft Margin"
-sidebar_position: 114
+sidebar_position: 116
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # SVM & Kernel Methods — Margins, Kernel Trick, Soft Margin

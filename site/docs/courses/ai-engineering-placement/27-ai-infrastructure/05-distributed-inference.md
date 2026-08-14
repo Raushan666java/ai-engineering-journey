@@ -3,7 +3,7 @@ id: 05-distributed-inference
 slug: /ai-engineering-placement/27-ai-infrastructure/05-distributed-inference
 title: "Distributed Inference"
 sidebar_label: "Distributed Inference"
-sidebar_position: 306
+sidebar_position: 327
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Distributed Inference

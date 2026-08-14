@@ -3,7 +3,7 @@ id: 04-attention-mechanism
 slug: /ai-engineering-placement/10-nlp-transformers/04-attention-mechanism
 title: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention"
 sidebar_label: "Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention"
-sidebar_position: 137
+sidebar_position: 141
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention

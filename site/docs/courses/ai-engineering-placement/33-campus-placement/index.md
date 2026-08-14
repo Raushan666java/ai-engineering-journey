@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/33-campus-placement
 title: "33 — Campus Placement & Aptitude"
 sidebar_label: "33 — Campus Placement & Aptitude"
-sidebar_position: 344
+sidebar_position: 371
 ---
 # 33 — Campus Placement & Aptitude
 

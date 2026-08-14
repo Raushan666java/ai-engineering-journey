@@ -3,7 +3,7 @@ id: 05-model-serving
 slug: /ai-engineering-placement/16-mlops-production/05-model-serving
 title: "Model Serving"
 sidebar_label: "Model Serving"
-sidebar_position: 200
+sidebar_position: 210
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Serving

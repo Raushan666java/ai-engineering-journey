@@ -3,7 +3,7 @@ id: 08-evaluating-fine-tuned-models
 slug: /ai-engineering-placement/14-fine-tuning-peft/08-evaluating-fine-tuned-models
 title: "Evaluating Fine-Tuned Models"
 sidebar_label: "Evaluating Fine-Tuned Models"
-sidebar_position: 187
+sidebar_position: 195
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Evaluating Fine-Tuned Models

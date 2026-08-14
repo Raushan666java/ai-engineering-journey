@@ -3,7 +3,7 @@ id: 03-technical-blogging
 slug: /ai-engineering-placement/20-portfolio-branding/03-technical-blogging
 title: "Technical Blogging"
 sidebar_label: "Technical Blogging"
-sidebar_position: 231
+sidebar_position: 245
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Technical Blogging

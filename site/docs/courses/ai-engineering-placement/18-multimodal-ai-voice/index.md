@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/18-multimodal-ai-voice
 title: "18 — Multimodal AI & Voice"
 sidebar_label: "18 — Multimodal AI & Voice"
-sidebar_position: 222
+sidebar_position: 234
 ---
 # 18 — Multimodal AI & Voice
 

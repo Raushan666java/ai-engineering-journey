@@ -3,7 +3,7 @@ id: 04-correlation-regression-analysis
 slug: /ai-engineering-placement/24-statistics-mathematics/04-correlation-regression-analysis
 title: "Chapter 04: Correlation & Regression Analysis"
 sidebar_label: "Chapter 04: Correlation & Regression Analysis"
-sidebar_position: 284
+sidebar_position: 302
 ---
 # Chapter 04: Correlation & Regression Analysis
 

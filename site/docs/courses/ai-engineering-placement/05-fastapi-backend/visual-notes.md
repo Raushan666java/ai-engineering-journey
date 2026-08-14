@@ -2,7 +2,7 @@
 id: visual-notes
 slug: /ai-engineering-placement/05-fastapi-backend/visual-notes
 title: "Visual Notes — FastAPI Backend"
-sidebar_label: "Visual Notes — FastAPI Backend"
+sidebar_label: "Visual Notes"
 sidebar_position: 80
 ---
 # Visual Notes — FastAPI Backend

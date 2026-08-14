@@ -3,7 +3,7 @@ id: 01-etl-pipelines
 slug: /ai-engineering-placement/25-data-engineering/01-etl-pipelines
 title: "01 — ETL & Data Pipelines"
 sidebar_label: "01 — ETL & Data Pipelines"
-sidebar_position: 290
+sidebar_position: 309
 ---
 # 01 — ETL & Data Pipelines
 

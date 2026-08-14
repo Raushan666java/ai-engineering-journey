@@ -3,7 +3,7 @@ id: 06-agent-evaluation
 slug: /ai-engineering-placement/22-advanced-ai-agents/06-agent-evaluation
 title: "Agent Evaluation"
 sidebar_label: "Agent Evaluation"
-sidebar_position: 261
+sidebar_position: 277
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agent Evaluation

@@ -3,7 +3,7 @@ id: 02-data-lakehouse-warehouse
 slug: /ai-engineering-placement/25-data-engineering/02-data-lakehouse-warehouse
 title: "02 — Data Lakehouse & Warehouse"
 sidebar_label: "02 — Data Lakehouse & Warehouse"
-sidebar_position: 291
+sidebar_position: 310
 ---
 # 02 — Data Lakehouse & Warehouse
 

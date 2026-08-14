@@ -2,7 +2,7 @@
 id: visual-notes
 slug: /ai-engineering-placement/00-core-computer-science/visual-notes
 title: "Visual Notes — Core Computer Science"
-sidebar_label: "Visual Notes — Core Computer Science"
+sidebar_label: "Visual Notes"
 sidebar_position: 9
 ---
 # Visual Notes — Core Computer Science

@@ -3,7 +3,7 @@ id: 11-query-rewriting-decomposition
 slug: /ai-engineering-placement/12-rag-vector-databases/11-query-rewriting-decomposition
 title: "Query Rewriting & Decomposition for RAG"
 sidebar_label: "Query Rewriting & Decomposition for RAG"
-sidebar_position: 162
+sidebar_position: 168
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Query Rewriting & Decomposition for RAG

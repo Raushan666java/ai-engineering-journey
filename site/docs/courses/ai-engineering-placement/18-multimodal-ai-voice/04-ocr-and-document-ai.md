@@ -3,7 +3,7 @@ id: 04-ocr-and-document-ai
 slug: /ai-engineering-placement/18-multimodal-ai-voice/04-ocr-and-document-ai
 title: "OCR & Document AI"
 sidebar_label: "OCR & Document AI"
-sidebar_position: 219
+sidebar_position: 231
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # OCR & Document AI

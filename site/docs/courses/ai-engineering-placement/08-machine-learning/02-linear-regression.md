@@ -3,7 +3,7 @@ id: 02-linear-regression
 slug: /ai-engineering-placement/08-machine-learning/02-linear-regression
 title: "Linear Regression  -  OLS, Gradient Descent, Regularization"
 sidebar_label: "Linear Regression  -  OLS, Gradient Descent, Regularization"
-sidebar_position: 111
+sidebar_position: 113
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Linear Regression  -  OLS, Gradient Descent, Regularization

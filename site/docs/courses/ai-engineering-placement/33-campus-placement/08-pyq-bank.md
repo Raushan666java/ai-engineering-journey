@@ -3,7 +3,7 @@ id: 08-pyq-bank
 slug: /ai-engineering-placement/33-campus-placement/08-pyq-bank
 title: "PYQ Bank (Service Companies)"
 sidebar_label: "PYQ Bank (Service Companies)"
-sidebar_position: 342
+sidebar_position: 369
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # PYQ Bank (Service Companies)

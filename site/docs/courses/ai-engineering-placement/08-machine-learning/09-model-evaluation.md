@@ -3,7 +3,7 @@ id: 09-model-evaluation
 slug: /ai-engineering-placement/08-machine-learning/09-model-evaluation
 title: "Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics"
 sidebar_label: "Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics"
-sidebar_position: 118
+sidebar_position: 120
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Model Evaluation — Cross-Validation, ROC-AUC, Confusion Matrix, Metrics

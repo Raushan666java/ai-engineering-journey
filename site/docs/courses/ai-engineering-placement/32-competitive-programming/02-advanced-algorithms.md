@@ -3,7 +3,7 @@ id: 02-advanced-algorithms
 slug: /ai-engineering-placement/32-competitive-programming/02-advanced-algorithms
 title: "Advanced Algorithm Patterns for CP"
 sidebar_label: "Advanced Algorithm Patterns for CP"
-sidebar_position: 332
+sidebar_position: 358
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced Algorithm Patterns for CP

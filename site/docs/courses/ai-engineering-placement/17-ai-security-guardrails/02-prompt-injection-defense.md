@@ -3,7 +3,7 @@ id: 02-prompt-injection-defense
 slug: /ai-engineering-placement/17-ai-security-guardrails/02-prompt-injection-defense
 title: "Prompt Injection Defense"
 sidebar_label: "Prompt Injection Defense"
-sidebar_position: 206
+sidebar_position: 217
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Prompt Injection Defense

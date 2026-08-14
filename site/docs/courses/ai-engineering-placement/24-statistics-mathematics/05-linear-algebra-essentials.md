@@ -3,7 +3,7 @@ id: 05-linear-algebra-essentials
 slug: /ai-engineering-placement/24-statistics-mathematics/05-linear-algebra-essentials
 title: "Chapter 05: Linear Algebra Essentials"
 sidebar_label: "Chapter 05: Linear Algebra Essentials"
-sidebar_position: 285
+sidebar_position: 303
 ---
 # Chapter 05: Linear Algebra Essentials
 

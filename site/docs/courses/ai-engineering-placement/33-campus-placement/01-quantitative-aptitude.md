@@ -3,7 +3,7 @@ id: 01-quantitative-aptitude
 slug: /ai-engineering-placement/33-campus-placement/01-quantitative-aptitude
 title: "Quantitative Aptitude for Campus Placements"
 sidebar_label: "Quantitative Aptitude for Campus Placements"
-sidebar_position: 335
+sidebar_position: 362
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Quantitative Aptitude for Campus Placements

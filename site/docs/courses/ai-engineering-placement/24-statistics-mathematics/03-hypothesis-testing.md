@@ -3,7 +3,7 @@ id: 03-hypothesis-testing
 slug: /ai-engineering-placement/24-statistics-mathematics/03-hypothesis-testing
 title: "Chapter 03: Hypothesis Testing"
 sidebar_label: "Chapter 03: Hypothesis Testing"
-sidebar_position: 283
+sidebar_position: 301
 ---
 # Chapter 03: Hypothesis Testing
 

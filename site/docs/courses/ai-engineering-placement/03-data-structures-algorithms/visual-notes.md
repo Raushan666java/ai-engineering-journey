@@ -2,7 +2,7 @@
 id: visual-notes
 slug: /ai-engineering-placement/03-data-structures-algorithms/visual-notes
 title: "Visual Notes — Data Structures & Algorithms"
-sidebar_label: "Visual Notes — Data Structures & Algorithms"
+sidebar_label: "Visual Notes"
 sidebar_position: 57
 ---
 # Visual Notes — Data Structures & Algorithms

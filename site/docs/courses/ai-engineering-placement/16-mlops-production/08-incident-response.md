@@ -3,7 +3,7 @@ id: 08-incident-response
 slug: /ai-engineering-placement/16-mlops-production/08-incident-response
 title: "Incident Response"
 sidebar_label: "Incident Response"
-sidebar_position: 203
+sidebar_position: 213
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Incident Response

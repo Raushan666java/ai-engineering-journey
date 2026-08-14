@@ -3,7 +3,7 @@ id: 04-mcp-protocol-tools
 slug: /ai-engineering-placement/22-advanced-ai-agents/04-mcp-protocol-tools
 title: "MCP Protocol & Tools"
 sidebar_label: "MCP Protocol & Tools"
-sidebar_position: 259
+sidebar_position: 275
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # MCP Protocol & Tools

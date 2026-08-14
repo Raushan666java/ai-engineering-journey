@@ -3,7 +3,7 @@ id: 05-memory-and-state
 slug: /ai-engineering-placement/13-ai-agents-langgraph/05-memory-and-state
 title: "Memory and State"
 sidebar_label: "Memory and State"
-sidebar_position: 173
+sidebar_position: 180
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Memory and State

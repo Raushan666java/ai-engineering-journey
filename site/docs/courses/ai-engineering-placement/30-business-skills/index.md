@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/30-business-skills
 title: "30 — Business Skills for AI Engineers"
 sidebar_label: "30 — Business Skills for AI Engineers"
-sidebar_position: 325
+sidebar_position: 349
 ---
 # 30 — Business Skills for AI Engineers
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15-ai-evaluation-observability · Visual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #ffffff;
+      --color-paper-2: #f5f6f8;
+      --color-ink:     #1a1b23;
+      --color-muted:   #4f5d75;
+      --color-accent:  #2e8555;
+      --font-sans:     system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1200px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    svg { width: 100%; min-width: 900px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Module 15 · visual notes</p>
+    <h1>Evaluation & observability — the AI scoreboard</h1>
+    <svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="15_ai_evv-title 15_ai_evv-desc">
+<title id="15_ai_evv-title">Evaluation &amp; observability — the AI scoreboard</title>
+<desc id="15_ai_evv-desc">Offline metrics, online metrics, tracing and cost tracking in one dashboard view.</desc>
+<rect width="1000" height="560" fill="#ffffff"/>
+<rect x="120" y="108" width="480" height="56" rx="6" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/>
+<text x="140" y="132" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Quality metrics</text>
+<text x="140" y="148" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace">accuracy · rouge · bleu</text>
+<rect x="640" y="108" width="240" height="56" rx="6" fill="#f5f6f8" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+<text x="760" y="138" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">what to measure</text>
+<rect x="120" y="164" width="480" height="56" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="140" y="188" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Latency &amp; cost</text>
+<text x="140" y="204" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace">p50 · p95 · $ per request</text>
+<rect x="640" y="164" width="240" height="56" rx="6" fill="#f5f6f8" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+<text x="760" y="194" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">the budget</text>
+<rect x="120" y="220" width="480" height="56" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="140" y="244" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Drift &amp; tracing</text>
+<text x="140" y="260" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace">input drift · traces</text>
+<rect x="640" y="220" width="240" height="56" rx="6" fill="#f5f6f8" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+<text x="760" y="250" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">catch degradation</text>
+<rect x="120" y="276" width="480" height="56" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="140" y="300" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Guardrail checks</text>
+<text x="140" y="316" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace">toxicity · PII · policy</text>
+<rect x="640" y="276" width="240" height="56" rx="6" fill="#f5f6f8" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+<text x="760" y="306" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">safety layer</text>
+<text x="120" y="444" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">INTERVIEW ANGLE</text><text x="212" y="444" fill="#4f5d75" font-size="8" font-family="system-ui, sans-serif" font-style="italic">"How do you know your model is good?" — this is the dashboard you point at.</text>
+<line x1="120" y1="500" x2="880" y2="500" stroke="rgba(26,27,35,0.10)" stroke-width="1"/><text x="120" y="516" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text><rect x="200" y="506" width="16" height="12" rx="2" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/><text x="224" y="516" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">ACCENT = FOCAL</text><rect x="360" y="506" width="16" height="12" rx="2" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/><text x="384" y="516" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">PAPER = STEP</text>
+</svg>
+  </div>
+</body>
+</html>

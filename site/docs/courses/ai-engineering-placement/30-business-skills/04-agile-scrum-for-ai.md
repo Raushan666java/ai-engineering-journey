@@ -3,7 +3,7 @@ id: 04-agile-scrum-for-ai
 slug: /ai-engineering-placement/30-business-skills/04-agile-scrum-for-ai
 title: "Agile & Scrum for AI Teams"
 sidebar_label: "Agile & Scrum for AI Teams"
-sidebar_position: 324
+sidebar_position: 348
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agile & Scrum for AI Teams

@@ -3,7 +3,7 @@ id: 06-rag-pipeline-design
 slug: /ai-engineering-placement/12-rag-vector-databases/06-rag-pipeline-design
 title: "RAG Pipeline Design"
 sidebar_label: "RAG Pipeline Design"
-sidebar_position: 157
+sidebar_position: 163
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # RAG Pipeline Design

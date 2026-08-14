@@ -3,7 +3,7 @@ id: 05-full-ai-saas-platform
 slug: /ai-engineering-placement/19-capstone-projects/05-full-ai-saas-platform
 title: "Full AI SaaS Platform"
 sidebar_label: "Full AI SaaS Platform"
-sidebar_position: 227
+sidebar_position: 240
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Full AI SaaS Platform

@@ -3,7 +3,7 @@ id: 03-message-queues
 slug: /ai-engineering-placement/07-system-design/03-message-queues
 title: "Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture"
 sidebar_label: "Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture"
-sidebar_position: 97
+sidebar_position: 98
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Message Queues — RabbitMQ, Kafka, and Event-Driven Architecture

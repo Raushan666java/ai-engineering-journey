@@ -3,7 +3,7 @@ id: 03-verbal-ability
 slug: /ai-engineering-placement/33-campus-placement/03-verbal-ability
 title: "Verbal Ability & English for Campus Placements"
 sidebar_label: "Verbal Ability & English for Campus Placements"
-sidebar_position: 337
+sidebar_position: 364
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Verbal Ability & English for Campus Placements

@@ -3,7 +3,7 @@ id: 08-dimensionality-reduction
 slug: /ai-engineering-placement/08-machine-learning/08-dimensionality-reduction
 title: "Dimensionality Reduction — PCA, t-SNE, UMAP, LDA"
 sidebar_label: "Dimensionality Reduction — PCA, t-SNE, UMAP, LDA"
-sidebar_position: 117
+sidebar_position: 119
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Dimensionality Reduction — PCA, t-SNE, UMAP, LDA

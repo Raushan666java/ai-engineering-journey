@@ -3,7 +3,7 @@ id: 06-model-selection-evaluation
 slug: /ai-engineering-placement/23-trending-aiml-platforms/06-model-selection-evaluation
 title: "Model Selection & Evaluation"
 sidebar_label: "Model Selection & Evaluation"
-sidebar_position: 277
+sidebar_position: 294
 ---
 # Model Selection & Evaluation
 

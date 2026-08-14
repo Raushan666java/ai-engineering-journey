@@ -3,7 +3,7 @@ id: 02-object-detection
 slug: /ai-engineering-placement/18-multimodal-ai-voice/02-object-detection
 title: "Object Detection"
 sidebar_label: "Object Detection"
-sidebar_position: 217
+sidebar_position: 229
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Object Detection

@@ -3,7 +3,7 @@ id: 10-deployment-best-practices
 slug: /ai-engineering-placement/09-deep-learning-pytorch/10-deployment-best-practices
 title: "Deployment Best Practices — A/B Testing, Monitoring, Model Versioning, Rollback"
 sidebar_label: "Deployment Best Practices — A/B Testing, Monitoring, Model Versioning, Rollback"
-sidebar_position: 132
+sidebar_position: 135
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Deployment Best Practices — A/B Testing, Monitoring, Model Versioning, Rollback

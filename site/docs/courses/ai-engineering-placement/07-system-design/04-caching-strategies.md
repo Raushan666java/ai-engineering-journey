@@ -3,7 +3,7 @@ id: 04-caching-strategies
 slug: /ai-engineering-placement/07-system-design/04-caching-strategies
 title: "Caching Strategies — Redis, CDN, and Application Cache"
 sidebar_label: "Caching Strategies — Redis, CDN, and Application Cache"
-sidebar_position: 98
+sidebar_position: 99
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Caching Strategies — Redis, CDN, and Application Cache

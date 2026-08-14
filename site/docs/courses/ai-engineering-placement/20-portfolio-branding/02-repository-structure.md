@@ -3,7 +3,7 @@ id: 02-repository-structure
 slug: /ai-engineering-placement/20-portfolio-branding/02-repository-structure
 title: "Repository Structure"
 sidebar_label: "Repository Structure"
-sidebar_position: 230
+sidebar_position: 244
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Repository Structure

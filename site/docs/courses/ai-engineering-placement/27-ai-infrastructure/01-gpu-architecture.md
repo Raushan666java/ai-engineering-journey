@@ -3,7 +3,7 @@ id: 01-gpu-architecture
 slug: /ai-engineering-placement/27-ai-infrastructure/01-gpu-architecture
 title: "GPU Architecture for AI"
 sidebar_label: "GPU Architecture for AI"
-sidebar_position: 302
+sidebar_position: 323
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # GPU Architecture for AI

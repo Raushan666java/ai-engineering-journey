@@ -2,7 +2,7 @@
 id: visual-notes
 slug: /ai-engineering-placement/02-sql-and-databases/visual-notes
 title: "Visual Notes — SQL & Databases"
-sidebar_label: "Visual Notes — SQL & Databases"
+sidebar_label: "Visual Notes"
 sidebar_position: 37
 ---
 # Visual Notes — SQL & Databases

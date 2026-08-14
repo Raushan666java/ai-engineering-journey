@@ -3,7 +3,7 @@ id: 10-advanced-multi-agent-collaboration
 slug: /ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-collaboration
 title: "Advanced Multi-Agent Collaboration"
 sidebar_label: "Advanced Multi-Agent Collaboration"
-sidebar_position: 265
+sidebar_position: 281
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced Multi-Agent Collaboration

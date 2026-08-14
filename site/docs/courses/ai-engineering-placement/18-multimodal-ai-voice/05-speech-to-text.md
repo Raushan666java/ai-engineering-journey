@@ -3,7 +3,7 @@ id: 05-speech-to-text
 slug: /ai-engineering-placement/18-multimodal-ai-voice/05-speech-to-text
 title: "Speech-to-Text"
 sidebar_label: "Speech-to-Text"
-sidebar_position: 220
+sidebar_position: 232
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Speech-to-Text

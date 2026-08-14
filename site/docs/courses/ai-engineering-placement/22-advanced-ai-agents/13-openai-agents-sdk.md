@@ -3,7 +3,7 @@ id: 13-openai-agents-sdk
 slug: /ai-engineering-placement/22-advanced-ai-agents/13-openai-agents-sdk
 title: "OpenAI Agents SDK"
 sidebar_label: "OpenAI Agents SDK"
-sidebar_position: 268
+sidebar_position: 284
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # OpenAI Agents SDK

@@ -3,7 +3,7 @@ id: 06-voice-agents
 slug: /ai-engineering-placement/18-multimodal-ai-voice/06-voice-agents
 title: "Voice Agents"
 sidebar_label: "Voice Agents"
-sidebar_position: 221
+sidebar_position: 233
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Voice Agents

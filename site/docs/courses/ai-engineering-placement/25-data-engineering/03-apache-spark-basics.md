@@ -3,7 +3,7 @@ id: 03-apache-spark-basics
 slug: /ai-engineering-placement/25-data-engineering/03-apache-spark-basics
 title: "03 — Apache Spark Basics"
 sidebar_label: "03 — Apache Spark Basics"
-sidebar_position: 292
+sidebar_position: 311
 ---
 # 03 — Apache Spark Basics
 

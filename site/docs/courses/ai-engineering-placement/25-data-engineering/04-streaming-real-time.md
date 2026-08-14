@@ -3,7 +3,7 @@ id: 04-streaming-real-time
 slug: /ai-engineering-placement/25-data-engineering/04-streaming-real-time
 title: "04 — Streaming & Real-Time Data"
 sidebar_label: "04 — Streaming & Real-Time Data"
-sidebar_position: 293
+sidebar_position: 312
 ---
 # 04 — Streaming & Real-Time Data
 

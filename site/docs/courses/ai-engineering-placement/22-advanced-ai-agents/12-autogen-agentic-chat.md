@@ -3,7 +3,7 @@ id: 12-autogen-agentic-chat
 slug: /ai-engineering-placement/22-advanced-ai-agents/12-autogen-agentic-chat
 title: "AutoGen: Multi-Agent Conversations"
 sidebar_label: "AutoGen: Multi-Agent Conversations"
-sidebar_position: 267
+sidebar_position: 283
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # AutoGen: Multi-Agent Conversations

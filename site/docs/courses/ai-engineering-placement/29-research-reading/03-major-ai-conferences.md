@@ -3,7 +3,7 @@ id: 03-major-ai-conferences
 slug: /ai-engineering-placement/29-research-reading/03-major-ai-conferences
 title: "Major AI Conferences"
 sidebar_label: "Major AI Conferences"
-sidebar_position: 318
+sidebar_position: 341
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Major AI Conferences

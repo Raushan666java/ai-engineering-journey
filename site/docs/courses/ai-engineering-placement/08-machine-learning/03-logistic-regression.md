@@ -3,7 +3,7 @@ id: 03-logistic-regression
 slug: /ai-engineering-placement/08-machine-learning/03-logistic-regression
 title: "Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass"
 sidebar_label: "Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass"
-sidebar_position: 112
+sidebar_position: 114
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass

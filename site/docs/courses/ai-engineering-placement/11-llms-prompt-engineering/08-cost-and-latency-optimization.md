@@ -3,7 +3,7 @@ id: 08-cost-and-latency-optimization
 slug: /ai-engineering-placement/11-llms-prompt-engineering/08-cost-and-latency-optimization
 title: "Cost & Latency Optimization"
 sidebar_label: "Cost & Latency Optimization"
-sidebar_position: 150
+sidebar_position: 155
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Cost & Latency Optimization

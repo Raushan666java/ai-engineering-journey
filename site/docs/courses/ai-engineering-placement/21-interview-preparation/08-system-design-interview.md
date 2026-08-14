@@ -3,7 +3,7 @@ id: 08-system-design-interview
 slug: /ai-engineering-placement/21-interview-preparation/08-system-design-interview
 title: "System Design Interview"
 sidebar_label: "System Design Interview"
-sidebar_position: 243
+sidebar_position: 258
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # System Design Interview

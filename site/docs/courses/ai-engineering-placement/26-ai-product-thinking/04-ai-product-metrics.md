@@ -3,7 +3,7 @@ id: 04-ai-product-metrics
 slug: /ai-engineering-placement/26-ai-product-thinking/04-ai-product-metrics
 title: "04 — AI Product Metrics & KPIs"
 sidebar_label: "04 — AI Product Metrics & KPIs"
-sidebar_position: 299
+sidebar_position: 319
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # 04 — AI Product Metrics & KPIs

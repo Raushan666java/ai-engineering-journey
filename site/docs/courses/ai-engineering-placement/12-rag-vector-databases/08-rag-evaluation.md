@@ -3,7 +3,7 @@ id: 08-rag-evaluation
 slug: /ai-engineering-placement/12-rag-vector-databases/08-rag-evaluation
 title: "RAG Evaluation"
 sidebar_label: "RAG Evaluation"
-sidebar_position: 159
+sidebar_position: 165
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # RAG Evaluation

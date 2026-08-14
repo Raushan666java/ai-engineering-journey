@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09-deep-learning-pytorch · Visual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #ffffff;
+      --color-paper-2: #f5f6f8;
+      --color-ink:     #1a1b23;
+      --color-muted:   #4f5d75;
+      --color-accent:  #2e8555;
+      --font-sans:     system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1200px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    svg { width: 100%; min-width: 900px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Module 09 · visual notes</p>
+    <h1>PyTorch training loop — tensors to gradients</h1>
+    <svg viewBox="0 0 1000 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="09_deep_v-title 09_deep_v-desc">
+<title id="09_deep_v-title">PyTorch training loop — tensors to gradients</title>
+<desc id="09_deep_v-desc">Data to tensor, model forward pass, loss computation, backward pass and optimizer step repeated for every epoch.</desc>
+<rect width="1000" height="760" fill="#ffffff"/>
+<path d="M 440 144 L 440 168" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M 440 216 L 440 240" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M 440 288 L 440 312" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M 440 360 L 440 384" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M 440 432 L 440 456" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+<rect x="320" y="92" width="240" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="440" y="119" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Data &amp; tensors</text>
+<text x="440" y="133" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">dataset · dataloader</text>
+<rect x="320" y="164" width="240" height="52" rx="6" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/>
+<text x="440" y="191" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Model forward</text>
+<text x="440" y="205" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">nn.Module · layers</text>
+<rect x="320" y="236" width="240" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="440" y="263" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Loss function</text>
+<text x="440" y="277" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">cross-entropy · mse</text>
+<rect x="320" y="308" width="240" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="440" y="335" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Backward pass</text>
+<text x="440" y="349" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">autograd · gradients</text>
+<rect x="320" y="380" width="240" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="440" y="407" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Optimizer step</text>
+<text x="440" y="421" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Adam · lr schedule</text>
+<rect x="320" y="452" width="240" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+<text x="440" y="479" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Evaluate &amp; repeat</text>
+<text x="440" y="493" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">epochs · checkpoints</text>
+<rect x="720" y="140" width="216" height="64" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="828" y="173" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">GPU</text>
+<text x="828" y="187" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">cuda · batching</text>
+<path d="M 560 172 H 716" fill="none" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+<text x="120" y="644" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">INTERVIEW ANGLE</text><text x="212" y="644" fill="#4f5d75" font-size="8" font-family="system-ui, sans-serif" font-style="italic">The five lines of the training loop are the skeleton of every deep learning project.</text>
+<line x1="120" y1="700" x2="880" y2="700" stroke="rgba(26,27,35,0.10)" stroke-width="1"/><text x="120" y="716" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text><rect x="200" y="706" width="16" height="12" rx="2" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/><text x="224" y="716" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">ACCENT = FOCAL</text><rect x="360" y="706" width="16" height="12" rx="2" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/><text x="384" y="716" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">PAPER = STEP</text>
+</svg>
+  </div>
+</body>
+</html>

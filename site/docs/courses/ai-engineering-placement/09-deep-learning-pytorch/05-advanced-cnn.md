@@ -3,7 +3,7 @@ id: 05-advanced-cnn
 slug: /ai-engineering-placement/09-deep-learning-pytorch/05-advanced-cnn
 title: "Advanced CNN Architectures"
 sidebar_label: "Advanced CNN Architectures"
-sidebar_position: 127
+sidebar_position: 130
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced CNN Architectures

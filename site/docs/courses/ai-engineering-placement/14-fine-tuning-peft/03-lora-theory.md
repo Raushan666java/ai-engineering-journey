@@ -3,7 +3,7 @@ id: 03-lora-theory
 slug: /ai-engineering-placement/14-fine-tuning-peft/03-lora-theory
 title: "LoRA Theory"
 sidebar_label: "LoRA Theory"
-sidebar_position: 182
+sidebar_position: 190
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # LoRA Theory

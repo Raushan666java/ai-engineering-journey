@@ -3,7 +3,7 @@ id: 05-structured-output
 slug: /ai-engineering-placement/11-llms-prompt-engineering/05-structured-output
 title: "Structured Output"
 sidebar_label: "Structured Output"
-sidebar_position: 147
+sidebar_position: 152
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Structured Output

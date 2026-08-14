@@ -29,6 +29,11 @@ Turn the learning-playground repo into a complete, self-contained placement prep
 | Languages | `languages/python/basic.py` | Python starter |
 | Docs | `ROADMAP.md`, `STRUCTURE.md` | 18-week plan, full module cross-reference |
 
+### Visual gallery (diagram-design skill) — COMPLETE
+- Every module 00–33 has `visual/` (one HTML + one SVG diagram each) + a `visual/visual-notes.md` revision page, synced to `site/`.
+- Generated with `C:\Users\hiii\AppData\Local\Temp\opencode\gen_diagrams.py` (brand tokens: ink `#1a1b23`, ink-soft `#4a4b52`, accent `#4446e8`, tint `#eef0ff`, line `#d0d2e6`, muted `#6a6b78`, faint `#9a9ba6`; fonts Inter + JetBrains Mono). Re-run to regenerate all 34; all pass `diagram-design/scripts/self_check.py`.
+- Site sync: `prep-visual-site-all.ps1` (copies visual/ + creates site visual-notes.md) then `sync-site.ps1` (writes frontmatter), verify with `verify-visual-site.ps1`.
+
 ### Completed
 - Module 23: 4 lessons covering frontier LLM providers, agent platforms, dev toolkits, model ecosystem
 - `placement/` hub: 24 module folders, each with README.md + practice/ + interview/

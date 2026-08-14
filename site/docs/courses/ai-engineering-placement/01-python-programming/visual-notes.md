@@ -2,7 +2,7 @@
 id: visual-notes
 slug: /ai-engineering-placement/01-python-programming/visual-notes
 title: "Visual Notes — Python Programming"
-sidebar_label: "Visual Notes — Python Programming"
+sidebar_label: "Visual Notes"
 sidebar_position: 25
 ---
 # Visual Notes — Python Programming

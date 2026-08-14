@@ -3,7 +3,7 @@ id: 04-decision-trees-and-rf
 slug: /ai-engineering-placement/08-machine-learning/04-decision-trees-and-rf
 title: "Decision Trees & Random Forest — Entropy, Gini, Bagging"
 sidebar_label: "Decision Trees & Random Forest — Entropy, Gini, Bagging"
-sidebar_position: 113
+sidebar_position: 115
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Decision Trees & Random Forest — Entropy, Gini, Bagging

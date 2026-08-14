@@ -3,7 +3,7 @@ id: 08-rate-limiting-and-idempotency
 slug: /ai-engineering-placement/07-system-design/08-rate-limiting-and-idempotency
 title: "Rate Limiting & Idempotency — Algorithms, Distributed Strategies"
 sidebar_label: "Rate Limiting & Idempotency — Algorithms, Distributed Strategies"
-sidebar_position: 102
+sidebar_position: 103
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Rate Limiting & Idempotency — Algorithms, Distributed Strategies

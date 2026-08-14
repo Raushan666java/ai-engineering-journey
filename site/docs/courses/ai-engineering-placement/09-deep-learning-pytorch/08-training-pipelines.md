@@ -3,7 +3,7 @@ id: 08-training-pipelines
 slug: /ai-engineering-placement/09-deep-learning-pytorch/08-training-pipelines
 title: "Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing"
 sidebar_label: "Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing"
-sidebar_position: 130
+sidebar_position: 133
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Training Pipelines — DataLoader, Transforms, Optimizers, Schedulers, Checkpointing

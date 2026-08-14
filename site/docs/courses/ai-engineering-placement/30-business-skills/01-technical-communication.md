@@ -3,7 +3,7 @@ id: 01-technical-communication
 slug: /ai-engineering-placement/30-business-skills/01-technical-communication
 title: "01 — Technical Communication"
 sidebar_label: "01 — Technical Communication"
-sidebar_position: 321
+sidebar_position: 345
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # 01 — Technical Communication

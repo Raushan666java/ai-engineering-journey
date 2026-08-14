@@ -3,7 +3,7 @@ id: 04-reproducing-papers
 slug: /ai-engineering-placement/29-research-reading/04-reproducing-papers
 title: "Reproducing & Implementing Papers"
 sidebar_label: "Reproducing & Implementing Papers"
-sidebar_position: 319
+sidebar_position: 342
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Reproducing & Implementing Papers

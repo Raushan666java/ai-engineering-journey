@@ -3,7 +3,7 @@ id: 01-introduction-to-rag
 slug: /ai-engineering-placement/12-rag-vector-databases/01-introduction-to-rag
 title: "Introduction to RAG"
 sidebar_label: "Introduction to RAG"
-sidebar_position: 152
+sidebar_position: 158
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Introduction to RAG

@@ -3227,6 +3227,54 @@ html[data-theme='dark'] {
   border-color: var(--ifm-color-warning);
 }
 
+.course-section {
+  margin-bottom: 1.75rem;
+}
+
+.course-category-title {
+  color: var(--ifm-heading-color);
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.6rem;
+}
+
+.course-card {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-size: 0.92em;
+}
+
+.course-card:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .course-card {
+  border-color: var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.course-page-subtitle {
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 2rem;
+}
+
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *

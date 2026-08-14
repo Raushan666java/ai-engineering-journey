@@ -1,0 +1,1691 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[27611],{
+
+/***/ 55989
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_22_advanced_ai_agents_10_advanced_multi_agent_collaboration_md_320_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-22-advanced-ai-agents-10-advanced-multi-agent-collaboration-md-320.json
+const site_docs_courses_ai_engineering_placement_22_advanced_ai_agents_10_advanced_multi_agent_collaboration_md_320_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/advanced-ai-agents/10-advanced-multi-agent-collaboration","title":"Advanced Multi-Agent Collaboration","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-collaboration.md","sourceDirName":"courses/ai-engineering-placement/22-advanced-ai-agents","slug":"/ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-collaboration","permalink":"/ai-engineering-journey/ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-collaboration","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":281,"frontMatter":{"id":"10-advanced-multi-agent-collaboration","slug":"/ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-collaboration","title":"Advanced Multi-Agent Collaboration","sidebar_label":"Advanced Multi-Agent Collaboration","sidebar_position":281},"sidebar":"placementSidebar","previous":{"title":"Multimodal & Real-Time Agents","permalink":"/ai-engineering-journey/ai-engineering-placement/22-advanced-ai-agents/09-multimodal-real-time-agents"},"next":{"title":"CrewAI: Multi-Agent Orchestration","permalink":"/ai-engineering-journey/ai-engineering-placement/22-advanced-ai-agents/11-crewai-multi-agent"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-collaboration.md
+
+
+const frontMatter = {
+	id: '10-advanced-multi-agent-collaboration',
+	slug: '/ai-engineering-placement/22-advanced-ai-agents/10-advanced-multi-agent-collaboration',
+	title: 'Advanced Multi-Agent Collaboration',
+	sidebar_label: 'Advanced Multi-Agent Collaboration',
+	sidebar_position: 281
+};
+const contentTitle = 'Advanced Multi-Agent Collaboration';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Theory",
+  "id": "theory",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "10.1 Multi-Agent Topologies",
+  "id": "101-multi-agent-topologies",
+  "level": 2
+}, {
+  "value": "10.2 Shared vs No-Shared Context",
+  "id": "102-shared-vs-no-shared-context",
+  "level": 2
+}, {
+  "value": "10.3 Failure Modes",
+  "id": "103-failure-modes",
+  "level": 2
+}, {
+  "value": "10.4 Agent Society",
+  "id": "104-agent-society",
+  "level": 2
+}, {
+  "value": "10.5 When Multi-Agent Wins",
+  "id": "105-when-multi-agent-wins",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Chapter Quiz (5 MCQ)",
+  "id": "chapter-quiz-5-mcq",
+  "level": 2
+}, {
+  "value": "Questions",
+  "id": "questions",
+  "level": 3
+}, {
+  "value": "Answers",
+  "id": "answers",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Exercise 2: Shared vs No-Shared Context",
+  "id": "exercise-2-shared-vs-no-shared-context",
+  "level": 3
+}, {
+  "value": "Exercise 3: Deadlock Detection",
+  "id": "exercise-3-deadlock-detection",
+  "level": 3
+}, {
+  "value": "Exercise 4: Agent Society Simulator",
+  "id": "exercise-4-agent-society-simulator",
+  "level": 3
+}, {
+  "value": "Exercise 5: Single vs Multi Benchmark",
+  "id": "exercise-5-single-vs-multi-benchmark",
+  "level": 3
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Top 10 Interview Questions",
+  "id": "top-10-interview-questions",
+  "level": 3
+}, {
+  "value": "Google Style",
+  "id": "google-style",
+  "level": 4
+}, {
+  "value": "Amazon Style",
+  "id": "amazon-style",
+  "level": 4
+}, {
+  "value": "Microsoft Style",
+  "id": "microsoft-style",
+  "level": 4
+}, {
+  "value": "NVIDIA Style",
+  "id": "nvidia-style",
+  "level": 4
+}, {
+  "value": "AI Startup Style",
+  "id": "ai-startup-style",
+  "level": 4
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Interview Day Checklist",
+  "id": "interview-day-checklist",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    button: "button",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    header: "header",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "advanced-multi-agent-collaboration",
+        children: "Advanced Multi-Agent Collaboration"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "LO"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Design multi-agent topologies: star, mesh, hierarchical, swarm"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Implement shared and no-shared context patterns for multi-agent systems"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle multi-agent failure modes including cascading failures and deadlocks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Build emergent agent society behaviors through structured interaction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "LO5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Measure when multi-agent outperforms single-agent and when it doesn't"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers cutting-edge agent patterns used at leading AI labs."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic programming knowledge"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding of data structures"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Key Terms"
+      }), ": Core vocabulary and concepts for this topic."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Definition"
+      }), ": Essential terms you must know for interviews and production work."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "theory",
+      children: "Theory"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding advanced multi agent collaboration is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how advanced multi agent collaboration works in practice."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Multi-Agent Topologies"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Star, mesh, hierarchical, swarm — when to use each"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Shared vs No-Shared Context"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Communication patterns and tradeoffs"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Failure Modes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Cascading failures, deadlocks, hallucinations"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Agent Society"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Emergent behaviors from structured interaction"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "10.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "When Multi-Agent Wins"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Measuring collective vs individual intelligence"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    subgraph Star[Star Topology]\n        O[Orchestrator] --> W1[Worker 1]\n        O --> W2[Worker 2]\n        O --> W3[Worker 3]\n        W1 --> O\n        W2 --> O\n        W3 --> O\n    end\n    subgraph Mesh[Mesh Topology]\n        A1[Agent 1] <--> A2[Agent 2]\n        A2 <--> A3[Agent 3]\n        A1 <--> A3\n    end\n    subgraph Hierarchical[Hierarchy]\n        L1[Leader] --> M1[Manager 1]\n        L1 --> M2[Manager 2]\n        M1 --> T1[Team 1]\n        M1 --> T2[Team 2]\n    end\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "101-multi-agent-topologies",
+      children: "10.1 Multi-Agent Topologies"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Different coordination patterns suit different task types."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "type Topology = 'star' | 'mesh' | 'hierarchical' | 'swarm'\n\ninterface TopologyCharacteristics {\n    name: Topology\n    coordinationOverhead: 'low' | 'medium' | 'high'\n    faultTolerance: 'low' | 'medium' | 'high'\n    scalability: 'low' | 'medium' | 'high'\n    bestFor: string\n}\n\nclass TopologySelector {\n    private characteristics: Record<Topology, TopologyCharacteristics> = {\n        star: {\n            name: 'star',\n            coordinationOverhead: 'low',\n            faultTolerance: 'low',\n            scalability: 'medium',\n            bestFor: 'Tasks with clear decomposition into independent subtasks'\n        },\n        mesh: {\n            name: 'mesh',\n            coordinationOverhead: 'high',\n            faultTolerance: 'high',\n            scalability: 'low',\n            bestFor: 'Tasks requiring consensus and cross-validation'\n        },\n        hierarchical: {\n            name: 'hierarchical',\n            coordinationOverhead: 'medium',\n            faultTolerance: 'medium',\n            scalability: 'high',\n            bestFor: 'Complex tasks with multiple levels of abstraction'\n        },\n        swarm: {\n            name: 'swarm',\n            coordinationOverhead: 'low',\n            faultTolerance: 'high',\n            scalability: 'high',\n            bestFor: 'Homogeneous tasks with emergent solutions'\n        }\n    }\n\n    recommend(task: {\n        complexity: 'low' | 'medium' | 'high'\n        subtasksIndependent: boolean\n        requiresConsensus: boolean\n        numWorkers: number\n    }): Topology {\n        if (task.subtasksIndependent && !task.requiresConsensus) {\n            return 'star'\n        }\n        if (task.requiresConsensus && task.numWorkers <= 5) {\n            return 'mesh'\n        }\n        if (task.complexity === 'high' && task.numWorkers > 5) {\n            return 'hierarchical'\n        }\n        if (task.numWorkers > 10 && !task.requiresConsensus) {\n            return 'swarm'\n        }\n        return 'star'\n    }\n}\n\nclass OrchestratorAgent {\n    private workers: Map<string, Agent> = new Map()\n    private taskResults: Map<string, any> = new Map()\n\n    constructor(private topology: Topology) {}\n\n    registerWorker(name: string, agent: Agent): void {\n        this.workers.set(name, agent)\n    }\n\n    async executeStar(plan: MultiAgentPlan): Promise<Record<string, any>> {\n        const results: Record<string, any> = {}\n\n        // Decompose task and assign to workers\n        for (const [workerName, subtask] of Object.entries(plan.assignments)) {\n            const worker = this.workers.get(workerName)\n            if (!worker) continue\n\n            results[workerName] = await worker.execute(subtask)\n            this.taskResults.set(workerName, results[workerName])\n\n            console.log(`[Orchestrator] ${workerName} completed: ${subtask.slice(0, 50)}`)\n        }\n\n        return results\n    }\n\n    async executeMesh(goal: string): Promise<any> {\n        // All agents share information and work toward consensus\n        const sharedContext: string[] = [`Goal: ${goal}`]\n        let consensus = false\n        let iterations = 0\n        const maxIterations = 5\n\n        while (!consensus && iterations < maxIterations) {\n            iterations++\n\n            for (const [name, worker] of this.workers) {\n                const result = await worker.execute(goal, sharedContext)\n                sharedContext.push(`[${name}]: ${result}`)\n            }\n\n            // Check for consensus\n            const latestResults = sharedContext.slice(-this.workers.size)\n            const uniqueResults = new Set(latestResults)\n            consensus = uniqueResults.size === 1\n\n            console.log(`[Mesh] Iteration ${iterations}: consensus=${consensus}`)\n        }\n\n        return {\n            consensus,\n            sharedContext,\n            iterations\n        }\n    }\n\n    async executeHierarchical(plan: MultiAgentPlan): Promise<any> {\n        // Managers coordinate teams, leaders coordinate managers\n        const topLevel: Record<string, any> = {}\n\n        for (const [managerName, teamPlan] of Object.entries(plan.hierarchy ?? {})) {\n            const manager = this.workers.get(managerName)\n            if (!manager) continue\n\n            const teamResults: Record<string, any> = {}\n            for (const [workerName, subtask] of Object.entries(teamPlan)) {\n                const worker = this.workers.get(workerName)\n                if (!worker) continue\n                teamResults[workerName] = await worker.execute(subtask)\n            }\n\n            topLevel[managerName] = teamResults\n        }\n\n        return topLevel\n    }\n\n    async executeSwarm(goal: string, numAgents: number): Promise<any> {\n        // All agents execute independently, results are aggregated\n        const allResults: any[] = []\n\n        const agentNames = [...this.workers.keys()].slice(0, numAgents)\n        const results = await Promise.all(\n            agentNames.map(name =>\n                this.workers.get(name)!.execute(goal)\n            )\n        )\n\n        return {\n            numParticipants: agentNames.length,\n            results,\n            aggregated: this.aggregateSwarmResults(results)\n        }\n    }\n\n    private aggregateSwarmResults(results: any[]): any {\n        // Simple majority voting\n        const frequency = new Map<any, number>()\n        for (const r of results) {\n            const key = JSON.stringify(r)\n            frequency.set(key, (frequency.get(key) ?? 0) + 1)\n        }\n\n        let bestResult = results[0]\n        let bestCount = 0\n        for (const [key, count] of frequency) {\n            if (count > bestCount) {\n                bestCount = count\n                bestResult = JSON.parse(key)\n            }\n        }\n\n        return {\n            winner: bestResult,\n            voteCount: bestCount,\n            totalVotes: results.length\n        }\n    }\n}\n\ninterface MultiAgentPlan {\n    goal: string\n    assignments: Record<string, string>\n    hierarchy?: Record<string, Record<string, string>>\n}\n\ninterface Agent {\n    name: string\n    execute(task: string, context?: string[]): Promise<any>\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "102-shared-vs-no-shared-context",
+      children: "10.2 Shared vs No-Shared Context"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The biggest design decision in multi-agent systems is how agents share information."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface CommunicationPattern {\n    name: string\n    description: string\n    bandwidth: 'low' | 'medium' | 'high'\n    privacy: 'public' | 'partial' | 'private'\n    latency: 'low' | 'medium' | 'high'\n}\n\nclass ContextArchitecture {\n    patterns: CommunicationPattern[] = [\n        {\n            name: 'Shared Blackboard',\n            description: 'All agents read/write to a common context. Full visibility.',\n            bandwidth: 'high',\n            privacy: 'public',\n            latency: 'low'\n        },\n        {\n            name: 'Direct Messaging',\n            description: 'Agents communicate point-to-point. Controlled information flow.',\n            bandwidth: 'medium',\n            privacy: 'partial',\n            latency: 'medium'\n        },\n        {\n            name: 'No Shared Context',\n            description: 'Each agent operates independently with only task description.',\n            bandwidth: 'low',\n            privacy: 'private',\n            latency: 'high'\n        }\n    ]\n\n    recommend(taskType: string): CommunicationPattern {\n        if (taskType.includes('consensus') || taskType.includes('review')) {\n            return this.patterns[0]  // Shared blackboard\n        }\n        if (taskType.includes('pipeline') || taskType.includes('workflow')) {\n            return this.patterns[1]  // Direct messaging\n        }\n        if (taskType.includes('parallel') || taskType.includes('independent')) {\n            return this.patterns[2]  // No shared context\n        }\n        return this.patterns[1]  // Default to direct messaging\n    }\n}\n\nclass SharedBlackboard {\n    private entries: Array<{\n        agentName: string\n        timestamp: number\n        content: string\n        type: 'observation' | 'decision' | 'question' | 'result'\n    }> = []\n\n    post(agentName: string, content: string, type: string): void {\n        this.entries.push({\n            agentName,\n            timestamp: Date.now(),\n            content,\n            type: type as any\n        })\n    }\n\n    read(agentName: string, filter?: { since?: number; types?: string[] }): string[] {\n        let filtered = this.entries\n\n        if (filter?.since) {\n            filtered = filtered.filter(e => e.timestamp > filter.since!)\n        }\n\n        if (filter?.types) {\n            filtered = filtered.filter(e => filter.types!.includes(e.type))\n        }\n\n        return filtered.map(e =>\n            `[${e.agentName}] ${e.type}: ${e.content}`\n        )\n    }\n\n    getLatest(type?: string): string | null {\n        const matching = type\n            ? this.entries.filter(e => e.type === type)\n            : this.entries\n\n        if (matching.length === 0) return null\n        return matching[matching.length - 1].content\n    }\n\n    clear(): void {\n        this.entries = []\n    }\n}\n\nclass DirectMessenger {\n    private channels: Map<string, Array<{ from: string; to: string; message: string; timestamp: number }>> = new Map()\n\n    constructor(private agentNames: string[]) {\n        for (const name of agentNames) {\n            this.channels.set(name, [])\n        }\n    }\n\n    send(from: string, to: string, message: string): void {\n        const channel = this.channels.get(to)\n        if (channel) {\n            channel.push({ from, to, message, timestamp: Date.now() })\n        }\n    }\n\n    broadcast(from: string, message: string): void {\n        for (const name of this.agentNames) {\n            if (name !== from) {\n                this.send(from, name, message)\n            }\n        }\n    }\n\n    receive(agentName: string): Array<{ from: string; message: string }> {\n        return (this.channels.get(agentName) ?? [])\n            .map(({ from, message }) => ({ from, message }))\n    }\n\n    getConversation(agentA: string, agentB: string): string[] {\n        const messages: string[] = []\n        const aChannel = this.channels.get(agentA) ?? []\n        const bChannel = this.channels.get(agentB) ?? []\n\n        for (const msg of [...aChannel, ...bChannel]) {\n            if ((msg.from === agentA && msg.to === agentB) ||\n                (msg.from === agentB && msg.to === agentA)) {\n                messages.push(`[${msg.from} → ${msg.to}]: ${msg.message}`)\n            }\n        }\n\n        return messages.sort((a, b) => a.localeCompare(b))\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import List, Optional\nfrom datetime import datetime\n\nclass SharedBlackboard:\n    \"\"\"Common context that all agents can read and write.\"\"\"\n\n    def __init__(self):\n        self.entries: List[dict] = []\n\n    def post(self, agent: str, content: str, entry_type: str = \"observation\"):\n        self.entries.append({\n            'agent': agent,\n            'time': datetime.now(),\n            'content': content,\n            'type': entry_type,\n        })\n\n    def read(self, agent: str, since: Optional[datetime] = None) -> List[str]:\n        entries = self.entries\n        if since:\n            entries = [e for e in entries if e['time'] > since]\n        return [\n            f\"[{e['agent']}] {e['type']}: {e['content'][:100]}\"\n            for e in entries\n        ]\n\n    def get_context_summary(self) -> str:\n        return '\\n'.join(self.read(None))\n\nclass NoSharedContext:\n    \"\"\"Agents operate independently with no communication.\"\"\"\n\n    def __init__(self):\n        self.results: List[dict] = []\n\n    def record_result(self, agent: str, task: str, result: str):\n        self.results.append({\n            'agent': agent,\n            'task': task,\n            'result': result,\n        })\n\n    def aggregate(self) -> dict:\n        from collections import Counter\n        result_counts = Counter(r['result'] for r in self.results)\n        return {\n            'num_agents': len(set(r['agent'] for r in self.results)),\n            'consensus': result_counts.most_common(1)[0][0] if result_counts else None,\n            'agreement_rate': max(result_counts.values()) / len(self.results) if self.results else 0,\n        }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "103-failure-modes",
+      children: "10.3 Failure Modes"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-agent systems introduce new failure modes beyond single-agent issues."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface MultiAgentFailure {\n    type: string\n    description: string\n    severity: 'critical' | 'major' | 'minor'\n    detectionMethod: string\n    recoveryStrategy: string\n}\n\nclass FailureModeCatalog {\n    modes: MultiAgentFailure[] = [\n        {\n            type: 'Cascading Failure',\n            description: 'One agent fails, causing dependent agents to fail sequentially',\n            severity: 'critical',\n            detectionMethod: 'Monitor dependency chain timestamps for sudden gaps',\n            recoveryStrategy: 'Circuit breaker: isolate failing agent, serve degraded results from cache'\n        },\n        {\n            type: 'Deadlock',\n            description: 'Two or more agents waiting for each other to complete',\n            severity: 'critical',\n            detectionMethod: 'Timeout monitoring — if all agents in a cycle are idle beyond threshold',\n            recoveryStrategy: 'Deadlock detection (wait-for graph cycle), abort lowest-priority agent'\n        },\n        {\n            type: 'Hallucination Amplification',\n            description: 'One agent hallucinates, passes to next agent which builds on it',\n            severity: 'major',\n            detectionMethod: 'Cross-validation between agents on critical facts',\n            recoveryStrategy: 'Independent verification agent or blackboard with fact-checking'\n        },\n        {\n            type: 'Context Drift',\n            description: 'Agents gradually lose alignment on shared goals and terminology',\n            severity: 'major',\n            detectionMethod: 'Periodic alignment checks — compare each agent\\'s understanding against canonical goal',\n            recoveryStrategy: 'Re-anchor: re-send canonical goal description to all agents'\n        },\n        {\n            type: 'Resource Exhaustion',\n            description: 'Agents competing for limited tools or API capacity',\n            severity: 'minor',\n            detectionMethod: 'Rate limit monitoring and queue depth tracking',\n            recoveryStrategy: 'Request queuing with priority, exponential backoff'\n        }\n    ]\n\n    detect(messages: Array<{ from: string; to: string; content: string; timestamp: number }>): MultiAgentFailure[] {\n        const detected: MultiAgentFailure[] = []\n\n        // Deadlock detection: wait-for graph cycle\n        const waitFor = new Map<string, string>()\n        for (const msg of messages) {\n            if (msg.content.includes('awaiting') || msg.content.includes('waiting for')) {\n                waitFor.set(msg.from, msg.to)\n            }\n        }\n\n        // Check for cycles\n        const visited = new Set<string>()\n        for (const [node] of waitFor) {\n            let current: string | undefined = node\n            const path = new Set<string>()\n\n            while (current && !path.has(current) && waitFor.has(current)) {\n                path.add(current)\n                current = waitFor.get(current)\n            }\n\n            if (current && path.has(current)) {\n                detected.push(this.modes[1])  // Deadlock\n                break\n            }\n        }\n\n        return detected\n    }\n\n    recover(failure: MultiAgentFailure, agents: Map<string, Agent>): string {\n        switch (failure.type) {\n            case 'Cascading Failure':\n                return 'Isolated failing agent. Operating with remaining agents in degraded mode.'\n\n            case 'Deadlock':\n                // Find lowest priority agent and abort\n                const agentEntries = [...agents.entries()]\n                if (agentEntries.length > 0) {\n                    return `Aborted agent \"${agentEntries[agentEntries.length - 1][0]}\" to break deadlock.`\n                }\n                return 'No agents to abort.'\n\n            case 'Hallucination Amplification':\n                return 'Added cross-validation step. All critical facts now checked by 2+ agents.'\n\n            default:\n                return `Applied generic recovery for ${failure.type}.`\n        }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "104-agent-society",
+      children: "10.4 Agent Society"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When agents interact at scale, emergent behaviors arise that no individual agent was programmed for."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface AgentSociety {\n    agents: Agent[]\n    norms: string[]  // Emergent behavioral norms\n    roles: Map<string, string>  // agent → role\n    communicationGraph: Map<string, string[]>  // agent → neighbors\n}\n\nclass AgentSocietySimulator {\n    private society: AgentSociety = {\n        agents: [],\n        norms: [],\n        roles: new Map(),\n        communicationGraph: new Map()\n    }\n\n    initialize(numAgents: number): void {\n        for (let i = 0; i < numAgents; i++) {\n            const agent: Agent = {\n                name: `Agent_${i}`,\n                execute: async (task, context) => {\n                    // Simulated agent behavior\n                    return `Agent_${i} completed: ${task}`\n                }\n            }\n            this.society.agents.push(agent)\n            this.society.communicationGraph.set(agent.name, [])\n        }\n\n        // Create small-world network\n        this.buildSmallWorldNetwork()\n    }\n\n    private buildSmallWorldNetwork(): void {\n        const names = this.society.agents.map(a => a.name)\n        const avgDegree = 3\n\n        for (const name of names) {\n            const neighbors = this.society.communicationGraph.get(name)!\n            while (neighbors.length < avgDegree) {\n                const candidate = names[Math.floor(Math.random() * names.length)]\n                if (candidate !== name && !neighbors.includes(candidate)) {\n                    neighbors.push(candidate)\n                    this.society.communicationGraph.get(candidate)?.push(name)\n                }\n            }\n        }\n    }\n\n    async simulate(rounds: number): Promise<{\n        emergentNorms: string[]\n        roleDistribution: Map<string, string>\n        interactionStats: any\n    }> {\n        for (let round = 0; round < rounds; round++) {\n            console.log(`[Society] Round ${round + 1}/${rounds}`)\n\n            for (const agent of this.society.agents) {\n                const neighbors = this.society.communicationGraph.get(agent.name) ?? []\n                for (const neighbor of neighbors) {\n                    const context = this.getSharedContext()\n                    await agent.execute(`round_${round}_interaction`, [context])\n                }\n            }\n\n            // After round 3, detect emergent norms\n            if (round === 3) {\n                this.detectEmergentNorms()\n            }\n\n            // After round 5, assign roles based on behavior\n            if (round === 5) {\n                this.assignRoles()\n            }\n        }\n\n        return {\n            emergentNorms: this.society.norms,\n            roleDistribution: this.society.roles,\n            interactionStats: this.calculateInteractionStats()\n        }\n    }\n\n    private detectEmergentNorms(): void {\n        // Mock norm detection based on simulated behavior patterns\n        this.society.norms = [\n            'Agents respond within 2 rounds or get escalated',\n            'Critical information is broadcast to all neighbors',\n            'Decisions are validated by at least 2 other agents',\n            'Agents specialize based on task type frequency'\n        ]\n    }\n\n    private assignRoles(): void {\n        for (const agent of this.society.agents) {\n            const roles = ['coordinator', 'researcher', 'validator', 'implementer', 'reviewer']\n            this.society.roles.set(agent.name, roles[Math.floor(Math.random() * roles.length)])\n        }\n    }\n\n    private getSharedContext(): string {\n        return `Global state: round ${Date.now()}, ${this.society.agents.length} agents active`\n    }\n\n    private calculateInteractionStats(): any {\n        return {\n            totalInteractions: this.society.agents.length * 3 * 6,\n            avgMessagesPerAgent: 18,\n            normCount: this.society.norms.length,\n            roleCount: this.society.roles.size\n        }\n    }\n\n    analyzeEmergence(): string {\n        return [\n            '=== Agent Society Analysis ===',\n            `Population: ${this.society.agents.length}`,\n            `Network type: Small-world (avg degree: 3)`,\n            `Emergent norms (${this.society.norms.length}):`,\n            ...this.society.norms.map(n => `  • ${n}`),\n            `\\nRole distribution:`,\n            ...[...this.society.roles.entries()]\n                .map(([agent, role]) => `  • ${agent} → ${role}`)\n        ].join('\\n')\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "105-when-multi-agent-wins",
+      children: "10.5 When Multi-Agent Wins"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-agent systems are not always better. Knowing when to use them is critical."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-typescript",
+        children: "interface DecisionFactor {\n    factor: string\n    singleAgentBetter: string\n    multiAgentBetter: string\n}\n\nclass MultiAgentDecider {\n    factors: DecisionFactor[] = [\n        {\n            factor: 'Task complexity',\n            singleAgentBetter: 'Simple, well-defined tasks with clear solution path',\n            multiAgentBetter: 'Complex tasks requiring multiple perspectives or skills'\n        },\n        {\n            factor: 'Error tolerance',\n            singleAgentBetter: 'Low tolerance — each agent added increases coordination risk',\n            multiAgentBetter: 'High tolerance — redundancy improves reliability'\n        },\n        {\n            factor: 'Speed requirement',\n            singleAgentBetter: 'Low latency needed — no coordination overhead',\n            multiAgentBetter: 'Throughput matters more than latency'\n        },\n        {\n            factor: 'Knowledge diversity',\n            singleAgentBetter: 'Single domain expert is sufficient',\n            multiAgentBetter: 'Multiple domains of expertise required'\n        },\n        {\n            factor: 'Verification need',\n            singleAgentBetter: 'Answers can be verified automatically',\n            multiAgentBetter: 'Answers need human-level review and cross-check'\n        }\n    ]\n\n    decide(task: {\n        complexity: number  // 0-1\n        errorTolerance: number  // 0-1\n        speedCritical: number  // 0-1\n        domainDiversity: number  // 0-1\n        verificationDifficulty: number  // 0-1\n    }): { recommendation: string; score: number; reasoning: string[] } {\n        let multiAgentScore = 0\n        const reasoning: string[] = []\n\n        if (task.complexity > 0.6) {\n            multiAgentScore += 2\n            reasoning.push('High complexity favors multi-agent decomposition')\n        }\n\n        if (task.errorTolerance > 0.6) {\n            multiAgentScore += 1\n            reasoning.push('Redundancy from multiple agents improves reliability')\n        }\n\n        if (!task.speedCritical) {\n            multiAgentScore += 1\n            reasoning.push('Non-critical latency allows coordination overhead')\n        }\n\n        if (task.domainDiversity > 0.5) {\n            multiAgentScore += 2\n            reasoning.push('Multiple domains benefit from specialized agents')\n        }\n\n        if (task.verificationDifficulty > 0.6) {\n            multiAgentScore += 1\n            reasoning.push('Cross-validation between agents catches errors')\n        }\n\n        const recommendation = multiAgentScore >= 4 ? 'multi-agent' : 'single-agent'\n        return { recommendation, score: multiAgentScore, reasoning }\n    }\n}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "import random\nfrom typing import List\n\nclass MultiAgentEvaluator:\n    \"\"\"Measures when multi-agent outperforms single-agent.\"\"\"\n\n    def __init__(self):\n        self.results = []\n\n    def benchmark(\n        self,\n        single_agent_fn,\n        multi_agent_fn,\n        tasks: List[str],\n        trials: int = 5,\n    ) -> dict:\n        single_scores = []\n        multi_scores = []\n\n        for task in tasks:\n            for _ in range(trials):\n                single_result = single_agent_fn(task)\n                multi_result = multi_agent_fn(task)\n\n                single_scores.append(single_result.get('success', 0))\n                multi_scores.append(multi_result.get('success', 0))\n\n        avg_single = sum(single_scores) / len(single_scores)\n        avg_multi = sum(multi_scores) / len(multi_scores)\n        improvement = ((avg_multi - avg_single) / avg_single * 100) if avg_single > 0 else 0\n\n        return {\n            'single_agent_success_rate': avg_single,\n            'multi_agent_success_rate': avg_multi,\n            'improvement_percent': round(improvement, 1),\n            'multi_agent_recommended': improvement > 10,\n        }\n\n    def compute_overhead(self, multi_agent_fn, task: str) -> dict:\n        \"\"\"Compute coordination overhead of multi-agent systems.\"\"\"\n        import time\n        start = time.time()\n        result = multi_agent_fn(task)\n        elapsed = time.time() - start\n\n        return {\n            'task': task[:50],\n            'total_time_ms': round(elapsed * 1000, 2),\n            'num_agents': result.get('num_agents', 1),\n            'coordination_time_ms': round(elapsed * 1000 * 0.3, 2),  # estimated\n            'productive_time_ms': round(elapsed * 1000 * 0.7, 2),\n        }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Multi-agent collaboration amplifies intelligence when designed correctly. Star topology works for independent subtasks, mesh for consensus, hierarchical for complex workflows, and.\nswarm for homogeneous parallel tasks. Shared context enables coordination but introduces privacy and bandwidth tradeoffs. Failure modes (cascading, deadlock, hallucination amplification) require specific detection and.\nrecovery strategies. Agent society simulations reveal emergent norms and specialization. The key skill is knowing when multi-agent wins — and having the metrics to prove it."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Start with star topology — it's simplest. Only add complexity when metrics prove it helps"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Shared blackboard is the safest communication pattern for most systems"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Implement deadlock detection (wait-for graph) and circuit breakers from day one"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Run agent society simulations before production deployment to discover emergent issues"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always benchmark single-agent vs multi-agent — if the improvement isn't >10%, keep it simple"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "m22-s10-q1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q1: Compare star, mesh, hierarchical, and swarm topologies for multi-agent systems.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.code, {
+            children: "Star"
+          }), " has a central orchestrator routing all messages to workers — simple, single point of failure, good for predictable pipelines. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Mesh"
+          }), " lets every agent message every other agent directly — flexible and resilient but O(n²) connections that are hard to debug. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Hierarchical"
+          }), " (manager → sub-teams) organizes via delegation, like a company org chart — scales well but adds latency and manager bottlenecks. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Swarm"
+          }), " uses decentralized peer-to-peer messaging with no leader — highly resilient and emergent, but chaotic and hard to reason about. The chapter's comparison table rates each on scalability, resilience, and simplicity, recommending hierarchy for structured tasks and swarm only where self-organization is a requirement."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Interview follow-up"
+          }), ": What topology would you choose for a 5-agent research team and a 100-agent simulation?"]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "📝 Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "m22-s10-q2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q2: What are the failure modes specific to multi-agent systems?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Three classic failure modes. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Cascading failures"
+          }), ": one agent's bad output propagates — a wrong database query from agent A becomes trusted context for B, compounding into a wrong final answer. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Deadlocks"
+          }), ": two agents wait on each other's output forever (A needs B's result, B needs A's), freezing the system without a timeout. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Hallucination contamination"
+          }), ": one agent fabricates a fact, another treats it as ground truth, and the error is amplified across the network. The chapter's ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AgentNet"
+          }), " addresses these with message timeouts, max-hop limits, and reference checks on messages."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Interview follow-up"
+          }), ": How do you detect a cascading failure before it reaches the final answer?"]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "📝 Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "m22-s10-q3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q3: Compare shared-context vs no-shared-context collaboration.\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Shared context gives all agents access to one shared workspace — every agent sees the same conversation or repository, so information flows naturally and nothing is lost between agents. Its cost: privacy (all agents see everything), concurrency conflicts (two agents editing the same file), and prompt bloat as the shared context grows. No-shared-context isolates each agent to its own state, passing only explicit messages — privacy-preserving and token-efficient, but agents can silently miss information another agent had, and it's the default in systems where agents shouldn't trust each other fully. The chapter's comparison shows shared-context wins on coherence, explicit-message wins on cost and isolation."
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Interview follow-up"
+          }), ": When would you use a hybrid — shared workspace for some agents, isolated for others?"]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "📝 Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "m22-s10-q4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q4: What is an agent society and what emergent behaviors does it produce?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "An agent society is a collection of agents with distinct roles and rules interacting over time — like a workforce with specialization, communication channels, and norms. Emergent behaviors are outcomes no single agent was programmed for: role specialization (agents naturally take on niches), division of labor, status hierarchies, and even cooperation or competition. These arise from interaction rather than design. The chapter notes the trade-off: emergence can produce genuinely novel solutions, but it also produces unpredictable, hard-to-control behavior, so you can't fully steer a swarm's output."
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Interview follow-up"
+          }), ": What safety risks do emergent behaviors introduce that a single-agent system doesn't have?"]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "📝 Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "m22-s10-q5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q5: When does multi-agent beat single-agent — and when does it make things worse?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Multi-agent wins on tasks with natural decomposition: independent sub-tasks that can run in parallel, or tasks requiring different expertise (planner + coder + reviewer). It loses on simple sequential tasks — one agent completes them faster and cheaper, and every extra agent adds latency, token cost, and failure surfaces. The chapter's rule of thumb: decompose only when parallelism or specialization clearly pays for the overhead; otherwise a single well-prompted agent is better. The comparison tables show single-agent leading on cost and simplicity for small tasks, multi-agent winning on complex, modular tasks."
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Interview follow-up"
+          }), ": How would you measure whether adding an agent actually improved your pipeline?"]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "📝 Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "m22-s10-q6",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    Q6: How does an AgentNet-style message-passing system work and how do timeouts prevent deadlocks?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Each agent has an inbox, and agents communicate by sending messages with ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "from"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "to"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "content"
+          }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "hopCount"
+          }), ", and a ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "deadline"
+          }), ". The network enforces limits: max hops (a message can't bounce forever) and per-message deadlines (an agent that hasn't replied by its deadline times out). Deadlocks happen when two agents wait forever on each other — the deadline mechanism converts an infinite wait into a bounded one, after which the requester can re-route or fail gracefully. Message routing and hop counting in ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "AgentNet.send()"
+          }), " is the concrete mechanism that keeps multi-agent loops from hanging."]
+        }), "\n    ", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Interview follow-up"
+          }), ": What retry strategy would you use when a deadline fires?"]
+        }), "\n  "]
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-mark-btn",
+        children: "📝 Mark Reviewed"
+      }), "\n  ", (0,jsx_runtime.jsx)(_components.button, {
+        className: "tp-qa-bookmark-btn",
+        children: "🔖 Bookmark"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz-5-mcq",
+      children: "Chapter Quiz (5 MCQ)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "questions",
+      children: "Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "1. Which topology is best for tasks requiring consensus among a small number of agents?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "2. What is the main tradeoff of shared blackboard context?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "3. How do you detect a deadlock in a multi-agent system?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "4. What is hallucination amplification?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "5. When should you NOT use multi-agent systems?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "answers",
+      children: "Answers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "Mesh topology. It enables full connectivity between agents, allowing them to share information and converge on consensus through iteration. However, it doesn't scale beyond ~5 agents due to O(n²) coordination overhead."
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "High bandwidth and low latency vs low privacy. All agents can see everything, which enables rich coordination but means no sensitive information can be kept from any agent. It also creates a single bottleneck if the blackboard becomes too large."
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "Build a wait-for graph where nodes are agents and edges represent \"waiting for\" relationships. A cycle in this graph indicates a deadlock. Detection should run on a timer — if all agents in a cycle are idle beyond a timeout threshold, declare deadlock."
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "When one agent produces an incorrect output (hallucination) and passes it to the next agent, which builds on it as if it were true. Each successive agent amplifies the error. It's especially dangerous because later results look coherent but are built on false premises."
+    }), "\n", (0,jsx_runtime.jsx)(_components.summary, {
+      children: "When: (1) the task is simple and well-defined, (2) latency is critical, (3) coordination overhead exceeds the benefit, (4) the domain doesn't require diverse expertise, (5) the single-agent baseline already achieves >90% success rate."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not understanding the fundamental concepts before applying them"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Skipping edge cases in implementation"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not analyzing time/space complexity"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Forgetting to handle null/empty inputs"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Not practicing enough problems to build pattern recognition### Exercise 1: Topology Simulator"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement a simulation of star, mesh, and hierarchical topologies. Run 10 tasks on each and compare completion time and success rate."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-shared-vs-no-shared-context",
+      children: "Exercise 2: Shared vs No-Shared Context"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build two versions of a 3-agent system — one with shared blackboard, one without. Compare information accuracy and task completion."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-deadlock-detection",
+      children: "Exercise 3: Deadlock Detection"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create a wait-for graph analyzer that detects cycles. Test with scenarios that cause deadlocks and verify detection."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-agent-society-simulator",
+      children: "Exercise 4: Agent Society Simulator"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Build a small-world network of 10 agents. Run 10 rounds and report emergent norms and role specialization."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-single-vs-multi-benchmark",
+      children: "Exercise 5: Single vs Multi Benchmark"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pick 5 tasks. Implement single-agent and multi-agent versions. Benchmark success rate and latency. Report when multi-ag"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Core principle: Understand the fundamental concepts thoroughly"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Implementation pattern: Practice with real code examples"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Complexity: Know the time and space complexity"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Application: Know when to use this in production systems"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Interview: Frequently asked in technical interviews"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Edge cases: Consider common failure scenarios"
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Related concepts: Connect to broader system design"
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-10-interview-questions",
+      children: "Top 10 Interview Questions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "google-style",
+      children: "Google Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Explain the core idea of Advanced Multi-Agent Collaboration in under 60 seconds, then give a real-world analogy."
+          }), " — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Design a minimal, well-typed function that demonstrates Advanced Multi-Agent Collaboration."
+          }), " — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "**What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review."
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "amazon-style",
+      children: "Amazon Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Describe a production bug caused by misunderstanding Advanced Multi-Agent Collaboration. How did you diagnose and fix it?"
+          }), " — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you scale a system that relies on Advanced Multi-Agent Collaboration from 10 users to 10 million?"
+          }), " — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "microsoft-style",
+      children: "Microsoft Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Compare Advanced Multi-Agent Collaboration with the closest alternative approach. When would you choose each?"
+          }), " — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Walk through how you would test a component that depends on Advanced Multi-Agent Collaboration."
+          }), " — Unit, integration, property-based tests; mocking boundaries; golden files for outputs."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "nvidia-style",
+      children: "NVIDIA Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "8",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How does Advanced Multi-Agent Collaboration behave differently at scale — memory, throughput, or precision-wise?"
+          }), " — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "How would you make an implementation of Advanced Multi-Agent Collaboration run faster on GPU hardware?"
+          }), " — Batch operations, vectorization, avoiding Python loops, reducing data movement."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "ai-startup-style",
+      children: "AI Startup Style"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "10",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write the smallest possible implementation of Advanced Multi-Agent Collaboration that is production-quality."
+        }), " — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Name Advanced Multi-Agent Collaboration explicitly in your skills section, paired with a measurable achievement (\"Reduced X by 40% using Advanced Multi-Agent Collaboration\")."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add a bullet describing a project that applies Advanced Multi-Agent Collaboration to real data, with numbers."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Mention the tools and libraries you used alongside Advanced Multi-Agent Collaboration (linters, test frameworks, profiling tools)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep resume bullets under 15 words and start each with an action verb."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "interview-day-checklist",
+      children: "Interview Day Checklist"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Rehearse a 60-second explanation of Advanced Multi-Agent Collaboration and one real-world analogy."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prepare one STAR story about debugging a Advanced Multi-Agent Collaboration-related production issue."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review complexity and edge cases for the classic Advanced Multi-Agent Collaboration interview problem."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Have questions ready: how does the team apply Advanced Multi-Agent Collaboration in production today?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test your environment (Python, editor, internet) 15 minutes before the interview."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Advanced Multi-Agent Collaboration builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for Advanced Multi-Agent Collaboration before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for Advanced Multi-Agent Collaboration is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for Advanced Multi-Agent Collaboration in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the Advanced Multi-Agent Collaboration chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers Advanced Multi-Agent Collaboration is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to Advanced Multi-Agent Collaboration is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing Advanced Multi-Agent Collaboration is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug Advanced Multi-Agent Collaboration issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to Advanced Multi-Agent Collaboration in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving Advanced Multi-Agent Collaboration that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of Advanced Multi-Agent Collaboration is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain Advanced Multi-Agent Collaboration in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for Advanced Multi-Agent Collaboration and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of Advanced Multi-Agent Collaboration on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Level"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Time"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What It Takes"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Beginner"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1-2 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Read theory, run the chapter examples, solve the Easy exercises"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Intermediate"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "3-5 sessions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Complete Medium exercises, explain Advanced Multi-Agent Collaboration to someone else"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Advanced"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "1+ week"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solve Hard exercises, optimize for real datasets, answer interview follow-ups"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of Advanced Multi-Agent Collaboration from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered Advanced Multi-Agent Collaboration when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining Advanced Multi-Agent Collaboration twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own Advanced Multi-Agent Collaboration snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of Advanced Multi-Agent Collaboration listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link Advanced Multi-Agent Collaboration to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of Advanced Multi-Agent Collaboration by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain Advanced Multi-Agent Collaboration to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation for the primary tool or library used in this chapter"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter referenced in Related Topics for the next-level treatment of Advanced Multi-Agent Collaboration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic textbook chapter on Advanced Multi-Agent Collaboration (check the Research References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Two blog posts from engineers who debugged real Advanced Multi-Agent Collaboration problems in production"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The repository of the open-source project that implements Advanced Multi-Agent Collaboration"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for Advanced Multi-Agent Collaboration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on Advanced Multi-Agent Collaboration"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how Advanced Multi-Agent Collaboration fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how Advanced Multi-Agent Collaboration is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where Advanced Multi-Agent Collaboration is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of Advanced Multi-Agent Collaboration, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is Advanced Multi-Agent Collaboration asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advanced Multi-Agent Collaboration is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with Advanced Multi-Agent Collaboration."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advanced Multi-Agent Collaboration emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for Advanced Multi-Agent Collaboration today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about Advanced Multi-Agent Collaboration — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around Advanced Multi-Agent Collaboration changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing Advanced Multi-Agent Collaboration."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advanced Multi-Agent Collaboration appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding Advanced Multi-Agent Collaboration helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the Advanced Multi-Agent Collaboration concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, Advanced Multi-Agent Collaboration skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply Advanced Multi-Agent Collaboration to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Advanced Multi-Agent Collaboration is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the Advanced Multi-Agent Collaboration skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-10advancedmultiagentcollaboration-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of Advanced Multi-Agent Collaboration in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Review the first paragraph of the Theory section and condense it to one sentence."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-10advancedmultiagentcollaboration-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with \n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Common Mistakes section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-10advancedmultiagentcollaboration-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard Advanced Multi-Agent Collaboration approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Refer to the theory and complexity analysis in this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-10advancedmultiagentcollaboration-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is Advanced Multi-Agent Collaboration NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Limitations section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "22advancedaiagents-10advancedmultiagentcollaboration-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is Advanced Multi-Agent Collaboration applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Real-World Examples section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for Advanced Multi-Agent Collaboration (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing Advanced Multi-Agent Collaboration (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for Advanced Multi-Agent Collaboration-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running Advanced Multi-Agent Collaboration in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of Advanced Multi-Agent Collaboration code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on Advanced Multi-Agent Collaboration"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in Advanced Multi-Agent Collaboration code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the Advanced Multi-Agent Collaboration example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain Advanced Multi-Agent Collaboration in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of Advanced Multi-Agent Collaboration."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a Advanced Multi-Agent Collaboration problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where Advanced Multi-Agent Collaboration is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for Advanced Multi-Agent Collaboration."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core Advanced Multi-Agent Collaboration logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain Advanced Multi-Agent Collaboration without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses Advanced Multi-Agent Collaboration daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": Advanced Multi-Agent Collaboration patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": Advanced Multi-Agent Collaboration principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": Advanced Multi-Agent Collaboration shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect Advanced Multi-Agent Collaboration to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/22-advanced-ai-agents/11-crewai-multi-agent",
+        children: "CrewAI: Multi-Agent Orchestration"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Advanced Multi-Agent Collaboration, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of Advanced Multi-Agent Collaboration depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

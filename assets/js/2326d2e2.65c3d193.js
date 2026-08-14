@@ -1,0 +1,1845 @@
+"use strict";
+(globalThis["webpackChunksite"] = globalThis["webpackChunksite"] || []).push([[17733],{
+
+/***/ 22044
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ contentTitle),
+  "default": () => (/* binding */ MDXContent),
+  frontMatter: () => (/* binding */ frontMatter),
+  metadata: () => (/* reexport */ site_docs_courses_ai_engineering_placement_25_data_engineering_03_apache_spark_basics_md_232_namespaceObject),
+  toc: () => (/* binding */ toc)
+});
+
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-courses-ai-engineering-placement-25-data-engineering-03-apache-spark-basics-md-232.json
+const site_docs_courses_ai_engineering_placement_25_data_engineering_03_apache_spark_basics_md_232_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"courses/ai-engineering-placement/data-engineering/03-apache-spark-basics","title":"03 — Apache Spark Basics","description":"Learning Objectives","source":"@site/docs/courses/ai-engineering-placement/25-data-engineering/03-apache-spark-basics.md","sourceDirName":"courses/ai-engineering-placement/25-data-engineering","slug":"/ai-engineering-placement/25-data-engineering/03-apache-spark-basics","permalink":"/ai-engineering-journey/ai-engineering-placement/25-data-engineering/03-apache-spark-basics","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":311,"frontMatter":{"id":"03-apache-spark-basics","slug":"/ai-engineering-placement/25-data-engineering/03-apache-spark-basics","title":"03 — Apache Spark Basics","sidebar_label":"03 — Apache Spark Basics","sidebar_position":311},"sidebar":"placementSidebar","previous":{"title":"02 — Data Lakehouse & Warehouse","permalink":"/ai-engineering-journey/ai-engineering-placement/25-data-engineering/02-data-lakehouse-warehouse"},"next":{"title":"04 — Streaming & Real-Time Data","permalink":"/ai-engineering-journey/ai-engineering-placement/25-data-engineering/04-streaming-real-time"}}');
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// ./docs/courses/ai-engineering-placement/25-data-engineering/03-apache-spark-basics.md
+
+
+const frontMatter = {
+	id: '03-apache-spark-basics',
+	slug: '/ai-engineering-placement/25-data-engineering/03-apache-spark-basics',
+	title: '03 — Apache Spark Basics',
+	sidebar_label: '03 — Apache Spark Basics',
+	sidebar_position: 311
+};
+const contentTitle = '03 — Apache Spark Basics';
+
+const assets = {
+
+};
+
+
+
+const toc = [{
+  "value": "Learning Objectives",
+  "id": "learning-objectives",
+  "level": 2
+}, {
+  "value": "Introduction",
+  "id": "introduction",
+  "level": 2
+}, {
+  "value": "Prerequisites",
+  "id": "prerequisites",
+  "level": 2
+}, {
+  "value": "Key Terminology",
+  "id": "key-terminology",
+  "level": 2
+}, {
+  "value": "Chapter at a Glance",
+  "id": "chapter-at-a-glance",
+  "level": 2
+}, {
+  "value": "Chapter Roadmap",
+  "id": "chapter-roadmap",
+  "level": 2
+}, {
+  "value": "1.1 Spark vs Hadoop MapReduce",
+  "id": "11-spark-vs-hadoop-mapreduce",
+  "level": 2
+}, {
+  "value": "Comparison",
+  "id": "comparison",
+  "level": 3
+}, {
+  "value": "1.2 Spark Architecture",
+  "id": "12-spark-architecture",
+  "level": 2
+}, {
+  "value": "1.3 RDD Fundamentals",
+  "id": "13-rdd-fundamentals",
+  "level": 2
+}, {
+  "value": "1.4 DataFrames &amp; Datasets",
+  "id": "14-dataframes--datasets",
+  "level": 2
+}, {
+  "value": "1.5 Transformations vs Actions",
+  "id": "15-transformations-vs-actions",
+  "level": 2
+}, {
+  "value": "1.6 Spark SQL",
+  "id": "16-spark-sql",
+  "level": 2
+}, {
+  "value": "1.7 Partitioning &amp; Shuffling",
+  "id": "17-partitioning--shuffling",
+  "level": 2
+}, {
+  "value": "1.8 Optimization Techniques",
+  "id": "18-optimization-techniques",
+  "level": 2
+}, {
+  "value": "Broadcast Join",
+  "id": "broadcast-join",
+  "level": 3
+}, {
+  "value": "Bucketing",
+  "id": "bucketing",
+  "level": 3
+}, {
+  "value": "Caching",
+  "id": "caching",
+  "level": 3
+}, {
+  "value": "Real Example",
+  "id": "real-example",
+  "level": 2
+}, {
+  "value": "Summary",
+  "id": "summary",
+  "level": 2
+}, {
+  "value": "Practical Takeaways",
+  "id": "practical-takeaways",
+  "level": 2
+}, {
+  "value": "Chapter Quiz (5 MCQ)",
+  "id": "chapter-quiz-5-mcq",
+  "level": 2
+}, {
+  "value": "Questions",
+  "id": "questions",
+  "level": 3
+}, {
+  "value": "Answers",
+  "id": "answers",
+  "level": 3
+}, {
+  "value": "Exercises",
+  "id": "exercises",
+  "level": 2
+}, {
+  "value": "Exercise 1: PySpark ETL Pipeline",
+  "id": "exercise-1-pyspark-etl-pipeline",
+  "level": 3
+}, {
+  "value": "Exercise 2: Broadcast Join Optimization",
+  "id": "exercise-2-broadcast-join-optimization",
+  "level": 3
+}, {
+  "value": "Exercise 3: Data Skew Handling",
+  "id": "exercise-3-data-skew-handling",
+  "level": 3
+}, {
+  "value": "Exercise 4: Spark SQL vs DataFrame API",
+  "id": "exercise-4-spark-sql-vs-dataframe-api",
+  "level": 3
+}, {
+  "value": "Exercise 5: Window Functions with PySpark",
+  "id": "exercise-5-window-functions-with-pyspark",
+  "level": 3
+}, {
+  "value": "Common Mistakes",
+  "id": "common-mistakes",
+  "level": 2
+}, {
+  "value": "Revision Notes",
+  "id": "revision-notes",
+  "level": 2
+}, {
+  "value": "PYQs (Previous Year Questions)",
+  "id": "pyqs-previous-year-questions",
+  "level": 2
+}, {
+  "value": "Google (2024)",
+  "id": "google-2024",
+  "level": 3
+}, {
+  "value": "Amazon (2023)",
+  "id": "amazon-2023",
+  "level": 3
+}, {
+  "value": "Meta (2024)",
+  "id": "meta-2024",
+  "level": 3
+}, {
+  "value": "NVIDIA (2024)",
+  "id": "nvidia-2024",
+  "level": 3
+}, {
+  "value": "Interview Q&amp;A",
+  "id": "interview-qa",
+  "level": 2
+}, {
+  "value": "Q1: Explain the difference between RDD, DataFrame, and Dataset in Spark.",
+  "id": "q1-explain-the-difference-between-rdd-dataframe-and-dataset-in-spark",
+  "level": 3
+}, {
+  "value": "Q2: How does Spark handle fault tolerance?",
+  "id": "q2-how-does-spark-handle-fault-tolerance",
+  "level": 3
+}, {
+  "value": "Q3: What is the Spark shuffle and why is it expensive?",
+  "id": "q3-what-is-the-spark-shuffle-and-why-is-it-expensive",
+  "level": 3
+}, {
+  "value": "Q4: How would you optimize a Spark join that is spilling to disk?",
+  "id": "q4-how-would-you-optimize-a-spark-join-that-is-spilling-to-disk",
+  "level": 3
+}, {
+  "value": "Q5: What is the Catalyst optimizer and what optimizations does it perform?",
+  "id": "q5-what-is-the-catalyst-optimizer-and-what-optimizations-does-it-perform",
+  "level": 3
+}, {
+  "value": "Q6: Explain the difference between narrow and wide transformations.",
+  "id": "q6-explain-the-difference-between-narrow-and-wide-transformations",
+  "level": 3
+}, {
+  "value": "Q7: How would you handle a Spark job that processes 10TB of data daily within a 2-hour SLA?",
+  "id": "q7-how-would-you-handle-a-spark-job-that-processes-10tb-of-data-daily-within-a-2-hour-sla",
+  "level": 3
+}, {
+  "value": "Q8: What is the difference between cache() and persist() in Spark?",
+  "id": "q8-what-is-the-difference-between-cache-and-persist-in-spark",
+  "level": 3
+}, {
+  "value": "Q9: How does Spark Structured Streaming achieve exactly-once semantics?",
+  "id": "q9-how-does-spark-structured-streaming-achieve-exactly-once-semantics",
+  "level": 3
+}, {
+  "value": "Q10: When would you choose Spark over Hadoop MapReduce?",
+  "id": "q10-when-would-you-choose-spark-over-hadoop-mapreduce",
+  "level": 3
+}, {
+  "value": "Placement Section",
+  "id": "placement-section",
+  "level": 2
+}, {
+  "value": "Resume Tips",
+  "id": "resume-tips",
+  "level": 3
+}, {
+  "value": "Top Companies Using Spark",
+  "id": "top-companies-using-spark",
+  "level": 3
+}, {
+  "value": "True/False",
+  "id": "truefalse",
+  "level": 2
+}, {
+  "value": "Fill in the Blank",
+  "id": "fill-in-the-blank",
+  "level": 2
+}, {
+  "value": "Scenario Questions",
+  "id": "scenario-questions",
+  "level": 2
+}, {
+  "value": "Output Questions",
+  "id": "output-questions",
+  "level": 2
+}, {
+  "value": "Difficulty Level",
+  "id": "difficulty-level",
+  "level": 2
+}, {
+  "value": "Tips &amp; Tricks",
+  "id": "tips--tricks",
+  "level": 2
+}, {
+  "value": "Memory Tricks",
+  "id": "memory-tricks",
+  "level": 2
+}, {
+  "value": "Further Reading",
+  "id": "further-reading",
+  "level": 2
+}, {
+  "value": "Related Topics",
+  "id": "related-topics",
+  "level": 2
+}, {
+  "value": "FAQs",
+  "id": "faqs",
+  "level": 2
+}, {
+  "value": "Important Notes",
+  "id": "important-notes",
+  "level": 2
+}, {
+  "value": "Historical Context",
+  "id": "historical-context",
+  "level": 2
+}, {
+  "value": "Security Considerations",
+  "id": "security-considerations",
+  "level": 2
+}, {
+  "value": "ML Intuition",
+  "id": "ml-intuition",
+  "level": 2
+}, {
+  "value": "Analogies",
+  "id": "analogies",
+  "level": 2
+}, {
+  "value": "Capstone Project Link",
+  "id": "capstone-project-link",
+  "level": 2
+}, {
+  "value": "Flashcards",
+  "id": "flashcards",
+  "level": 2
+}, {
+  "value": "Research References",
+  "id": "research-references",
+  "level": 2
+}, {
+  "value": "Open-Source Tools",
+  "id": "open-source-tools",
+  "level": 2
+}, {
+  "value": "Debugging Guide",
+  "id": "debugging-guide",
+  "level": 2
+}, {
+  "value": "Mock Interview Section",
+  "id": "mock-interview-section",
+  "level": 2
+}, {
+  "value": "Optimized Implementation",
+  "id": "optimized-implementation",
+  "level": 2
+}, {
+  "value": "References",
+  "id": "references",
+  "level": 2
+}, {
+  "value": "Evaluation Metrics",
+  "id": "evaluation-metrics",
+  "level": 2
+}, {
+  "value": "Real-World Examples",
+  "id": "real-world-examples",
+  "level": 2
+}, {
+  "value": "Next Topic",
+  "id": "next-topic",
+  "level": 2
+}, {
+  "value": "Limitations",
+  "id": "limitations",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    code: "code",
+    details: "details",
+    div: "div",
+    h1: "h1",
+    h2: "h2",
+    h3: "h3",
+    header: "header",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    pre: "pre",
+    span: "span",
+    strong: "strong",
+    summary: "summary",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
+      children: (0,jsx_runtime.jsx)(_components.h1, {
+        id: "03--apache-spark-basics",
+        children: "03 — Apache Spark Basics"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "learning-objectives",
+      children: "Learning Objectives"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain the difference between transformations and actions in Spark and why it matters for performance"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describe how RDD/DataFrame lazy evaluation works"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Diagram the Spark architecture: driver, executors, cluster manager, and DAG scheduling"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Compare RDD, DataFrame, and Spark SQL APIs and their optimization paths"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Optimize Spark jobs by minimizing shuffles with broadcast joins, bucketing, and caching"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Apache Spark is the de facto standard for distributed data processing in the AI industry. When ML training datasets exceed the memory of a single machine — which happens at terabyte scales common in production AI — Spark provides the distributed computing framework to process them efficiently. This chapter covers Spark architecture, RDDs, DataFrames, optimizations, and how to use PySpark for building ML data pipelines."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "prerequisites",
+      children: "Prerequisites"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python programming with pandas DataFrames"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding of distributed systems concepts (cluster, node, network)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic knowledge of JVM (Spark runs on JVM)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Familiarity with functional programming concepts (map, filter, reduce)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "key-terminology",
+      children: "Key Terminology"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Term"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Definition"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "RDD"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Resilient Distributed Dataset — fundamental Spark data structure"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DataFrame"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Distributed collection of rows with named columns (similar to pandas)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Dataset"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Type-safe version of DataFrame (Java/Scala only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Transformation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lazy operation returning a new RDD/DataFrame (map, filter)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Action"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Eager operation triggering computation (count, collect, save)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Lazy Evaluation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Computation deferred until an action is called"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DAG"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Directed Acyclic Graph — Spark's execution plan"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Master node running the main program"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Executor"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Worker node running tasks"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Partition"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Division of data across cluster nodes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Shuffle"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data redistribution across partitions (expensive)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadcast Join"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Join optimization where small table is broadcast to all executors"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-at-a-glance",
+      children: "Chapter at a Glance"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Topic"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Key Concept"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.1"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spark vs Hadoop"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-memory vs disk-based processing"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.2"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spark Architecture"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Driver, executors, cluster manager"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.3"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RDD Fundamentals"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Immutable, partitioned, fault-tolerant"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.4"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "DataFrames & Datasets"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured API with optimization"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.5"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Transformations vs Actions"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Lazy evaluation and DAG"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.6"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spark SQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL queries on DataFrames"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.7"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Partitioning & Shuffling"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Data distribution and its cost"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1.8"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Broadcast join, bucketing, caching"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-roadmap",
+      children: "Chapter Roadmap"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-mermaid",
+        children: "flowchart TD\n    subgraph Driver[Spark Driver]\n        MAIN[Main Program]\n        DAG[DAG Scheduler]\n        TASK[Task Scheduler]\n        BACKEND[Backend Scheduler]\n    end\n    subgraph ClusterManager[Cluster Manager]\n        YARN[YARN / Mesos / Kubernetes]\n    end\n    subgraph Executors[Spark Executors]\n        subgraph Exec1[Executor 1]\n            CACHE1[Cache]\n            T1[Task 1]\n            T2[Task 2]\n        end\n        subgraph Exec2[Executor 2]\n            CACHE2[Cache]\n            T3[Task 3]\n            T4[Task 4]\n        end\n        subgraph ExecN[Executor N]\n            CACHE3[Cache]\n            T5[Task 5]\n            T6[Task 6]\n        end\n    end\n    subgraph Storage[Storage Layer]\n        S3[(S3 / HDFS / GCS)]\n    end\n    MAIN --> DAG\n    DAG --> TASK\n    TASK --> BACKEND\n    BACKEND --> YARN\n    YARN --> Exec1\n    YARN --> Exec2\n    YARN --> ExecN\n    Exec1 --> S3\n    Exec2 --> S3\n    ExecN --> S3\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "11-spark-vs-hadoop-mapreduce",
+      children: "1.1 Spark vs Hadoop MapReduce"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Before Spark, Hadoop MapReduce was the standard for distributed processing. MapReduce writes intermediate results to disk between map and reduce phases, making it slow for iterative algorithms (like ML training). Spark keeps data in memory across operations, achieving 10-100x speedups for iterative workloads."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "comparison",
+      children: "Comparison"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Feature"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Hadoop MapReduce"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Apache Spark"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Processing model"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Disk-based"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "In-memory + disk"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Iterative performance"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Slow (disk I/O per iteration)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fast (memory across iterations)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Latency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "High (minutes)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Low (seconds)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "API"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Java only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Python, Scala, Java, R, SQL"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Real-time support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Structured Streaming"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "ML support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Separate (Mahout)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Built-in (MLlib)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "SQL support"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hive (separate)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spark SQL (native)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "DAG optimization"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Manual"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Automatic (Catalyst + Tungsten)"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "12-spark-architecture",
+      children: "1.2 Spark Architecture"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Spark follows a master-slave architecture. The driver runs on the master node, executors run on worker nodes, and the cluster manager allocates resources."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "from typing import List, Dict, Any, Optional\nimport time\nimport random\n\nclass SparkSimulator:\n    \"\"\"Simulate Spark architecture concepts.\"\"\"\n\n    def __init__(self, num_executors: int = 4, cores_per_executor: int = 4):\n        self.driver = SparkDriver()\n        self.executors = [\n            SparkExecutor(f\"executor-{i}\", cores_per_executor)\n            for i in range(num_executors)\n        ]\n        print(f\"Spark cluster initialized: 1 driver, {num_executors} executors\")\n\n    def run_job(self, data_size_gb: float) -> Dict:\n        \"\"\"Simulate running a Spark job across executors.\"\"\"\n        partitions = max(len(self.executors) * 2, 8)\n        data_per_partition_gb = data_size_gb / partitions\n        print(f\"Job: {data_size_gb}GB data, {partitions} partitions\")\n\n        # Driver plans the DAG\n        dag = self.driver.plan_dag(data_size_gb)\n        print(f\"DAG planned: {len(dag['stages'])} stages\")\n\n        # Tasks are distributed to executors\n        total_time = 0\n        total_tasks = 0\n        for stage in dag[\"stages\"]:\n            tasks = []\n            for i in range(partitions):\n                executor = self.executors[i % len(self.executors)]\n                task_time = executor.execute_task(stage, data_per_partition_gb)\n                tasks.append(task_time)\n            stage_time = max(tasks)  # Stages are bound by slowest task\n            total_time += stage_time\n            total_tasks += len(tasks)\n            print(f\"  Stage '{stage}': {len(tasks)} tasks, {stage_time:.2f}s\")\n\n        return {\n            \"total_tasks\": total_tasks,\n            \"total_time_s\": round(total_time, 2),\n            \"throughput_gbps\": round(data_size_gb / total_time, 2),\n        }\n\nclass SparkDriver:\n    \"\"\"Simulate Spark driver responsibilities.\"\"\"\n\n    def plan_dag(self, data_size: float) -> Dict:\n        stages = [\"read\", \"filter\", \"map\", \"reduce\", \"write\"]\n        return {\"stages\": stages, \"data_size\": data_size}\n\n    def optimize_plan(self):\n        \"\"\"Catalyst/Tungsten optimization (simulated).\"\"\"\n        pass\n\nclass SparkExecutor:\n    \"\"\"Simulate Spark executor processing.\"\"\"\n\n    def __init__(self, name: str, cores: int):\n        self.name = name\n        self.cores = cores\n        self.cache: Dict[str, Any] = {}\n\n    def execute_task(self, stage: str, data_size: float) -> float:\n        \"\"\"Execute a task and return time in seconds.\"\"\"\n        base_time = data_size * 10  # 10s per GB baseline\n        if self.cache.get(stage):\n            base_time *= 0.1  # 10x speedup if cached\n        jitter = random.uniform(0.8, 1.2)\n        return round(base_time * jitter, 2)\n\n    def cache_data(self, key: str, data: Any):\n        self.cache[key] = data\n        print(f\"  {self.name}: cached {key}\")\n\n# Example\nsim = SparkSimulator(num_executors=4)\nresult = sim.run_job(100)  # 100GB data\nprint(f\"Job result: {result}\")\n# Expected output:\n# Spark cluster initialized: 1 driver, 4 executors\n# Job: 100GB data, 8 partitions\n# DAG planned: 5 stages\n#   ...\n# Job result: { ... throughput: ~X GB/s ... }\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "13-rdd-fundamentals",
+      children: "1.3 RDD Fundamentals"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "RDD (Resilient Distributed Dataset) is Spark's core abstraction. It is an immutable, partitioned collection of records that can be processed in parallel. RDDs track lineage for fault tolerance — if a partition is lost, Spark recomputes it from the original data using the recorded transformations."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class RDD:\n    \"\"\"Simulate RDD operations and fault tolerance.\"\"\"\n\n    def __init__(self, data: List[Any], partitions: int = 2):\n        self.lineage = []\n        self._partitions = self._partition(data, partitions)\n        self._num_partitions = partitions\n        self._compute_func = lambda: self._partitions\n\n    def _partition(self, data: List, n: int) -> List[List]:\n        k, m = divmod(len(data), n)\n        return [data[i * k + min(i, m):(i + 1) * k + min(i + 1, m)] for i in range(n)]\n\n    @staticmethod\n    def from_list(data: List, partitions: int = 2) -> 'RDD':\n        rdd = RDD(data, partitions)\n        rdd._add_lineage(\"from_list\", {\"data_len\": len(data), \"partitions\": partitions})\n        return rdd\n\n    @staticmethod\n    def from_text_file(path: str, partitions: int = 2) -> 'RDD':\n        data = [f\"line_{i}\" for i in range(100)]  # simulated file read\n        rdd = RDD(data, partitions)\n        rdd._add_lineage(\"from_text_file\", {\"path\": path})\n        return rdd\n\n    def _add_lineage(self, operation: str, params: Dict = None):\n        self.lineage.append({\"op\": operation, \"params\": params or {}})\n\n    def map(self, func) -> 'RDD':\n        new_rdd = RDD([], self._num_partitions)\n        new_rdd._partitions = [[func(x) for x in p] for p in self._partitions]\n        new_rdd.lineage = self.lineage.copy()\n        new_rdd._add_lineage(\"map\", {\"func\": func.__name__ if hasattr(func, '__name__') else 'lambda'})\n        return new_rdd\n\n    def filter(self, func) -> 'RDD':\n        new_rdd = RDD([], self._num_partitions)\n        new_rdd._partitions = [[x for x in p if func(x)] for p in self._partitions]\n        new_rdd.lineage = self.lineage.copy()\n        new_rdd._add_lineage(\"filter\")\n        return new_rdd\n\n    def flatMap(self, func) -> 'RDD':\n        new_rdd = RDD([], self._num_partitions)\n        new_rdd._partitions = [[y for x in p for y in func(x)] for p in self._partitions]\n        new_rdd.lineage = self.lineage.copy()\n        new_rdd._add_lineage(\"flatMap\")\n        return new_rdd\n\n    def reduce(self, func) -> Any:\n        self._add_lineage(\"reduce\")\n        # Simulate evaluation\n        partitioned_results = []\n        for p in self._partitions:\n            if p:\n                result = p[0]\n                for x in p[1:]:\n                    result = func(result, x)\n                partitioned_results.append(result)\n        if not partitioned_results:\n            return None\n        result = partitioned_results[0]\n        for x in partitioned_results[1:]:\n            result = func(result, x)\n        print(f\"RDD reduce result: {result}\")\n        return result\n\n    def count(self) -> int:\n        total = sum(len(p) for p in self._partitions)\n        print(f\"RDD count: {total}\")\n        return total\n\n    def collect(self) -> List:\n        result = [x for p in self._partitions for x in p]\n        print(f\"RDD collect: {len(result)} elements\")\n        return result\n\n    def getNumPartitions(self) -> int:\n        return self._num_partitions\n\n    def toDebugString(self) -> str:\n        lineage_str = \" -> \".join(\n            f\"{step['op']}({step['params']})\" for step in self.lineage\n        )\n        return lineage_str\n\n    def repartition(self, n: int) -> 'RDD':\n        all_data = [x for p in self._partitions for x in p]\n        new_rdd = RDD(all_data, n)\n        new_rdd.lineage = self.lineage.copy()\n        new_rdd._add_lineage(\"repartition\", {\"num_partitions\": n})\n        return new_rdd\n\n# Example\nrdd = RDD.from_list([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], partitions=3)\nprint(f\"Partitions: {rdd.getNumPartitions()}\")\nmapped = rdd.map(lambda x: x * 2)\nfiltered = mapped.filter(lambda x: x > 10)\nresult = filtered.collect()\nprint(f\"Filtered result: {result}\")\nprint(f\"Lineage: {rdd.toDebugString()}\")\n# Expected output:\n# Partitions: 3\n# RDD collect: 2 elements\n# Filtered result: [12, 14, 16, 18, 20]\n# Lineage: from_list({'data_len': 10, 'partitions': 3}) -> ...\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "14-dataframes--datasets",
+      children: "1.4 DataFrames & Datasets"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "DataFrames are the recommended API for most Spark workloads. Built on top of RDDs, they provide schema information, SQL querying, and Catalyst optimizer optimizations. Datasets (Java/Scala only) add compile-time type safety."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class SparkDataFrame:\n    \"\"\"Simulate Spark DataFrame operations.\"\"\"\n\n    def __init__(self, data: List[Dict], schema: Optional[List[str]] = None):\n        self.data = data\n        self.schema = schema or (list(data[0].keys()) if data else [])\n        self._optimized = False\n\n    @staticmethod\n    def from_pandas(df: pd.DataFrame) -> 'SparkDataFrame':\n        return SparkDataFrame(df.to_dict(\"records\"), list(df.columns))\n\n    def to_pandas(self) -> pd.DataFrame:\n        return pd.DataFrame(self.data)\n\n    def select(self, *columns: str) -> 'SparkDataFrame':\n        new_data = [{k: row[k] for k in columns if k in row} for row in self.data]\n        print(f\"select({columns}): {len(new_data)} rows\")\n        return SparkDataFrame(new_data, list(columns))\n\n    def filter(self, condition_func) -> 'SparkDataFrame':\n        new_data = [row for row in self.data if condition_func(row)]\n        print(f\"filter: {len(new_data)} rows remaining\")\n        return SparkDataFrame(new_data, self.schema)\n\n    def groupBy(self, column: str) -> 'GroupedData':\n        return GroupedData(self.data, column, self.schema)\n\n    def join(self, other: 'SparkDataFrame', on: str, how: str = \"inner\") -> 'SparkDataFrame':\n        joined = []\n        left_keyed = {row[on]: row for row in self.data}\n        right_keyed = {row[on]: row for row in other.data}\n        for key in left_keyed:\n            if key in right_keyed:\n                joined_row = {**left_keyed[key], **{f\"{k}_right\": v for k, v in right_keyed[key].items() if k != on}}\n                joined.append(joined_row)\n        print(f\"join({on}, {how}): {len(joined)} rows\")\n        return SparkDataFrame(joined, self.schema + [c for c in other.schema if c != on])\n\n    def withColumn(self, name: str, func) -> 'SparkDataFrame':\n        new_data = [{**row, name: func(row)} for row in self.data]\n        print(f\"withColumn('{name}'): added to {len(new_data)} rows\")\n        return SparkDataFrame(new_data, self.schema + [name])\n\n    def agg(self, aggregations: Dict) -> 'SparkDataFrame':\n        return self.groupBy(None).agg(aggregations)\n\n    def show(self, n: int = 5):\n        print(f\"DataFrame ({len(self.data)} rows):\")\n        print(f\"  Schema: {self.schema}\")\n        for row in self.data[:n]:\n            print(f\"  {row}\")\n        if len(self.data) > n:\n            print(f\"  ... and {len(self.data) - n} more rows\")\n\n    def explain(self):\n        print(f\"Physical Plan (simulated):\")\n        print(f\"  Scan parquet [{', '.join(self.schema)}]\")\n        print(f\"  Optimized: {self._optimized}\")\n\nclass GroupedData:\n    \"\"\"Simulate grouped DataFrame operations.\"\"\"\n\n    def __init__(self, data: List[Dict], group_col: Optional[str], schema: List[str]):\n        self.data = data\n        self.group_col = group_col\n        self.schema = schema\n\n    def agg(self, aggregations: Dict) -> SparkDataFrame:\n        from collections import defaultdict\n        if self.group_col is None:\n            groups = {\"(all)\": self.data}\n        else:\n            groups = defaultdict(list)\n            for row in self.data:\n                groups[row[self.group_col]].append(row)\n\n        result = []\n        for key, group in groups.items():\n            agg_row = {self.group_col: key} if self.group_col else {}\n            for col, func in aggregations.items():\n                values = [row[col] for row in group if col in row]\n                if values:\n                    if func == \"sum\":\n                        agg_row[f\"{func}({col})\"] = sum(values)\n                    elif func == \"mean\" or func == \"avg\":\n                        agg_row[f\"{func}({col})\"] = sum(values) / len(values)\n                    elif func == \"count\":\n                        agg_row[f\"{func}({col})\"] = len(values)\n                    elif func == \"max\":\n                        agg_row[f\"{func}({col})\"] = max(values)\n                    elif func == \"min\":\n                        agg_row[f\"{func}({col})\"] = min(values)\n            result.append(agg_row)\n        print(f\"GroupBy agg: {len(result)} groups\")\n        return SparkDataFrame(result)\n\n# Example\ndf = SparkDataFrame([\n    {\"name\": \"Alice\", \"dept\": \"Eng\", \"salary\": 100000},\n    {\"name\": \"Bob\", \"dept\": \"Eng\", \"salary\": 90000},\n    {\"name\": \"Charlie\", \"dept\": \"Sales\", \"salary\": 80000},\n    {\"name\": \"Diana\", \"dept\": \"Sales\", \"salary\": 85000},\n    {\"name\": \"Eve\", \"dept\": \"Eng\", \"salary\": 95000},\n])\ndf.show()\nresult = df.select(\"name\", \"dept\").filter(lambda r: r[\"dept\"] == \"Eng\")\nresult.show()\ngrouped = df.groupBy(\"dept\").agg({\"salary\": \"mean\"})\ngrouped.show()\n# Expected output shows DataFrame operations\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "15-transformations-vs-actions",
+      children: "1.5 Transformations vs Actions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Understanding which operations are transformations (lazy) vs actions (eager) is critical for Spark performance. Transformations build the DAG; actions trigger execution."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class SparkJobAnalyzer:\n    \"\"\"Analyze transformation/action behavior.\"\"\"\n\n    def __init__(self):\n        self.transformations_applied = []\n        self.actions_triggered = []\n        self.execution_plan = None\n\n    def transformation(self, name: str, params: Dict = None):\n        \"\"\"Lazy operation — records but does not execute.\"\"\"\n        self.transformations_applied.append({\"name\": name, \"params\": params})\n        print(f\"[LAZY] Transformation: {name} recorded\")\n\n    def action(self, name: str) -> Any:\n        \"\"\"Eager operation — triggers execution of all recorded transformations.\"\"\"\n        self.actions_triggered.append(name)\n        self.execution_plan = {\n            \"transformations\": self.transformations_applied.copy(),\n            \"action\": name,\n            \"status\": \"executing\",\n        }\n        print(f\"[EAGER] Action: {name} triggered!\")\n        print(f\"  Executing DAG with {len(self.transformations_applied)} transformations\")\n        # Simulate optimization (Catalyst optimizer)\n        optimized = self._optimize(self.transformations_applied)\n        print(f\"  Optimized plan: {optimized}\")\n        self.transformations_applied = []  # Clear after execution\n        return f\"Result of {name}\"\n\n    def _optimize(self, transforms: List[Dict]) -> List[str]:\n        \"\"\"Simulate Catalyst optimizer — predicate pushdown, projection pruning.\"\"\"\n        steps = []\n        for t in transforms:\n            if t[\"name\"] == \"filter\" and \"filter\" not in steps:\n                steps.insert(0, f\"pushdown_{t['name']}\")  # Predicate pushdown\n            else:\n                steps.append(f\"optimized_{t['name']}\")\n        return \" -> \".join(steps)\n\n# Example\nanalyzer = SparkJobAnalyzer()\n\n# Build DAG with transformations only\nanalyzer.transformation(\"read\", {\"source\": \"parquet\", \"path\": \"s3://data/events\"})\nanalyzer.transformation(\"filter\", {\"condition\": \"date > 2025-01-01\"})\nanalyzer.transformation(\"select\", {\"columns\": [\"user_id\", \"event_type\"]})\nanalyzer.transformation(\"groupBy\", {\"column\": \"event_type\"})\nanalyzer.transformation(\"agg\", {\"function\": \"count\"})\nprint(\"(No execution yet — all lazy)\")\n\n# Action triggers execution\nresult = analyzer.action(\"collect\")\nprint(f\"Result: {result}\")\n# Expected output:\n# [LAZY] Transformation: read recorded\n# [LAZY] Transformation: filter recorded\n# [LAZY] Transformation: select recorded\n# (No execution yet — all lazy)\n# [EAGER] Action: collect triggered!\n#   Executing DAG with 5 transformations\n#   Optimized plan: pushdown_filter -> optimized_read -> optimized_select -> optimized_groupBy -> optimized_agg\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "16-spark-sql",
+      children: "1.6 Spark SQL"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Spark SQL allows querying DataFrames using SQL statements. It integrates seamlessly with the DataFrame API and is optimized by the Catalyst optimizer."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class SparkSQL:\n    \"\"\"Simulate Spark SQL queries on DataFrames.\"\"\"\n\n    def __init__(self):\n        self.tables: Dict[str, SparkDataFrame] = {}\n\n    def registerTempTable(self, name: str, df: SparkDataFrame):\n        self.tables[name] = df\n        print(f\"Registered temp table: {name}\")\n\n    def sql(self, query: str) -> SparkDataFrame:\n        \"\"\"Simple SQL parser supporting SELECT, WHERE, GROUP BY, JOIN.\"\"\"\n        print(f\"Executing SQL: {query}\")\n        q = query.upper()\n        tables_referenced = [t for t in self.tables if t.upper() in q]\n\n        if \"JOIN\" in q:\n            return self._handle_join(query, tables_referenced)\n        if \"GROUP BY\" in q:\n            return self._handle_groupby(query, tables_referenced)\n        if \"WHERE\" in q:\n            return self._handle_select(query, tables_referenced)\n        return self._handle_select(query, tables_referenced)\n\n    def _parse_select_cols(self, query: str) -> List[str]:\n        select_part = query.split(\"FROM\")[0].replace(\"SELECT\", \"\").strip()\n        if select_part == \"*\":\n            return None\n        return [c.strip() for c in select_part.split(\",\")]\n\n    def _parse_table(self, query: str, tables: List[str]) -> SparkDataFrame:\n        for t in tables:\n            if t in query.upper():\n                return self.tables[t]\n        raise ValueError(f\"No matching table for query\")\n\n    def _handle_select(self, query: str, tables: List[str]) -> SparkDataFrame:\n        df = self._parse_table(query, tables)\n        cols = self._parse_select_cols(query)\n        result = df if cols is None else df.select(*cols)\n        if \"WHERE\" in query:\n            where_clause = query.split(\"WHERE\")[1].split(\"GROUP\")[0].split(\"ORDER\")[0].strip()\n            # Simple equality filter simulation\n            for part in where_clause.split(\"AND\"):\n                part = part.strip()\n                if \"=\" in part:\n                    col, val = part.split(\"=\")\n                    col, val = col.strip(), val.strip().strip(\"'\\\"\")\n                    result = result.filter(lambda r: str(r[col]) == val)\n                elif \">\" in part:\n                    col, val = part.split(\">\")\n                    col, val = col.strip(), float(val.strip())\n                    result = result.filter(lambda r: r[col] > val)\n        return result\n\n    def _handle_groupby(self, query: str, tables: List[str]) -> SparkDataFrame:\n        df = self._handle_select(query, tables)\n        group_part = query.split(\"GROUP BY\")[1].strip()\n        group_col = group_part.split()[0].strip()\n        return df.groupBy(group_col).agg({\"*\": \"count\"})\n\n    def _handle_join(self, query: str, tables: List[str]) -> SparkDataFrame:\n        join_part = query.split(\"JOIN\")\n        left_tbl = join_part[0].split(\"FROM\")[1].strip()\n        right_tbl = join_part[1].split(\"ON\")[0].strip()\n        on_part = join_part[1].split(\"ON\")[1].strip()\n        left = self.tables[left_tbl]\n        right = self.tables[right_tbl]\n        return left.join(right, on_part.split(\"=\")[0].strip())\n\n# Example\nsql_engine = SparkSQL()\nsales = SparkDataFrame([\n    {\"product\": \"A\", \"amount\": 100, \"region\": \"US\"},\n    {\"product\": \"B\", \"amount\": 200, \"region\": \"US\"},\n    {\"product\": \"A\", \"amount\": 150, \"region\": \"EU\"},\n    {\"product\": \"C\", \"amount\": 300, \"region\": \"EU\"},\n])\nsql_engine.registerTempTable(\"sales\", sales)\nresult = sql_engine.sql(\"SELECT product, SUM(amount) FROM sales GROUP BY product\")\nresult.show()\n# Executing SQL: SELECT product, SUM(amount) FROM sales GROUP BY product\n# DataFrame (3 rows):\n#   Schema: ['product', 'count(*)']\n#   {'product': 'A', 'count(*)': 2}\n#   {'product': 'B', 'count(*)': 1}\n#   {'product': 'C', 'count(*)': 1}\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "17-partitioning--shuffling",
+      children: "1.7 Partitioning & Shuffling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Partitioning determines how data is distributed across cluster nodes. Shuffling occurs when data needs to be redistributed — it is the most expensive operation in Spark."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class ShuffleSimulator:\n    \"\"\"Simulate Spark partitioning and shuffle costs.\"\"\"\n\n    def __init__(self):\n        self.partitions: Dict[int, List] = {}\n\n    def hash_partition(self, data: List, key_func, num_partitions: int) -> Dict[int, List]:\n        \"\"\"Hash-based partitioning (default for groupBy, join).\"\"\"\n        partitions = {i: [] for i in range(num_partitions)}\n        for item in data:\n            key = key_func(item)\n            partition = hash(key) % num_partitions\n            partitions[partition].append(item)\n\n        total = sum(len(p) for p in partitions.values())\n        max_size = max(len(p) for p in partitions.values())\n        min_size = min(len(p) for p in partitions.values())\n\n        print(f\"Hash partition: {num_partitions} partitions\")\n        print(f\"  Total items: {total}\")\n        print(f\"  Skew: max={max_size}, min={min_size}, ratio={max_size/max(min_size,1):.2f}\")\n\n        skew_warning = \"\"\n        if max_size > 2 * min_size:\n            skew_warning = \"WARNING: Data skew detected! Consider salting or range partitioning.\"\n        print(f\"  {skew_warning}\")\n        return partitions\n\n    def range_partition(self, data: List, key_func, num_partitions: int) -> Dict[int, List]:\n        \"\"\"Range-based partitioning (more balanced for sorted data).\"\"\"\n        sorted_data = sorted(data, key=key_func)\n        partitions = {}\n        for i in range(num_partitions):\n            start = i * len(sorted_data) // num_partitions\n            end = (i + 1) * len(sorted_data) // num_partitions\n            partitions[i] = sorted_data[start:end]\n        total = sum(len(p) for p in partitions.values())\n        max_size = max(len(p) for p in partitions.values())\n        min_size = min(len(p) for p in partitions.values())\n        print(f\"Range partition: {num_partitions} partitions, balanced ratio={max_size/max(min_size,1):.2f}\")\n        return partitions\n\n    def simulate_shuffle(self, data_size_gb: float, num_nodes: int) -> Dict:\n        \"\"\"Simulate shuffle cost (network I/O, serialization, disk spill).\"\"\"\n        network_cost = data_size_gb * 0.8  # 80% of data shuffled over network\n        serialization_cost = data_size_gb * 0.1\n        disk_spill_cost = 0\n        if data_size_gb / num_nodes > 4:  # Spill to disk if >4GB per node\n            disk_spill_cost = (data_size_gb / num_nodes - 4) * 2\n\n        total_cost = network_cost + serialization_cost + disk_spill_cost\n        print(f\"Shuffle simulation ({data_size_gb}GB across {num_nodes} nodes):\")\n        print(f\"  Network: {network_cost:.2f}s\")\n        print(f\"  Serialization: {serialization_cost:.2f}s\")\n        print(f\"  Disk spill: {disk_spill_cost:.2f}s\")\n        print(f\"  Total shuffle time: {total_cost:.2f}s\")\n        return {\n            \"network_s\": round(network_cost, 2),\n            \"serialization_s\": round(serialization_cost, 2),\n            \"disk_spill_s\": round(disk_spill_cost, 2),\n            \"total_s\": round(total_cost, 2),\n        }\n\n# Example\nsim = ShuffleSimulator()\nusers = [(f\"user_{i}\", random.randint(1, 100)) for i in range(1000)]\nsim.hash_partition(users, lambda x: x[1], 4)\n\n# Simulating a 100GB shuffle across 8 nodes\nsim.simulate_shuffle(100, 8)\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "18-optimization-techniques",
+      children: "1.8 Optimization Techniques"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "broadcast-join",
+      children: "Broadcast Join"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When one table is small enough to fit in memory (default threshold: 10MB), broadcast join sends it to all executors, avoiding the expensive shuffle."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class BroadcastJoinSimulator:\n    \"\"\"Compare broadcast join vs sort-merge join.\"\"\"\n\n    def sort_merge_join(self, left_size_gb: float, right_size_gb: float) -> Dict:\n        \"\"\"Standard join requiring shuffle of both sides.\"\"\"\n        shuffle_left = left_size_gb * 0.8\n        shuffle_right = right_size_gb * 0.8\n        merge_cost = (left_size_gb + right_size_gb) * 0.2\n        total = shuffle_left + shuffle_right + merge_cost\n        print(f\"Sort-Merge Join:\")\n        print(f\"  Shuffle left ({left_size_gb}GB): {shuffle_left:.1f}s\")\n        print(f\"  Shuffle right ({right_size_gb}GB): {shuffle_right:.1f}s\")\n        print(f\"  Merge: {merge_cost:.1f}s\")\n        print(f\"  Total: {total:.1f}s\")\n        return {\"total_s\": round(total, 1), \"shuffle_gb\": round(left_size_gb + right_size_gb, 1)}\n\n    def broadcast_join(self, left_size_gb: float, right_size_gb: float) -> Dict:\n        \"\"\"Broadcast small table to all executors.\"\"\"\n        broadcast_cost = right_size_gb * 2  # Serialize + send to all executors\n        local_join_cost = left_size_gb * 0.1  # No shuffle\n        total = broadcast_cost + local_join_cost\n        print(f\"Broadcast Join:\")\n        print(f\"  Broadcast ({right_size_gb}GB): {broadcast_cost:.1f}s\")\n        print(f\"  Local join: {local_join_cost:.1f}s\")\n        print(f\"  Total: {total:.1f}s\")\n        print(f\"  Saved {left_size_gb * 0.7:.1f}GB of shuffle!\")\n        return {\"total_s\": round(total, 1), \"shuffle_gb\": 0}\n\n# Example\nsim = BroadcastJoinSimulator()\n# Large fact table (500GB) joined with small dimension (2GB)\nsm = sim.sort_merge_join(500, 2)\nbj = sim.broadcast_join(500, 2)\nprint(f\"\\nSpeedup: {sm['total_s'] / bj['total_s']:.1f}x\")\n# Broadcast join is significantly faster for small dimension tables\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "bucketing",
+      children: "Bucketing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Bucketing pre-partitions data by a key, eliminating shuffle for subsequent joins and aggregations on that key."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class BucketingOptimizer:\n    \"\"\"Simulate bucketing optimization.\"\"\"\n\n    def __init__(self, num_buckets: int = 16):\n        self.num_buckets = num_buckets\n        self.is_bucketed = False\n\n    def bucket_table(self, df: SparkDataFrame, key: str) -> SparkDataFrame:\n        \"\"\"Simulate writing bucketed data.\"\"\"\n        self.is_bucketed = True\n        print(f\"Bucketed table on '{key}' with {self.num_buckets} buckets\")\n        return df\n\n    def join_cost(self, left_size: float, right_size: float, same_bucket_key: bool = False) -> str:\n        if same_bucket_key and self.is_bucketed:\n            cost = (left_size + right_size) * 0.05  # No shuffle, co-located join\n            return f\"Co-located join: ${cost:.1f}s (best case, no shuffle!)\"\n        else:\n            cost = (left_size + right_size) * 0.7  # Full shuffle\n            return f\"Shuffled join: ${cost:.1f}s (full shuffle)\"\n\n# Example\nopt = BucketingOptimizer(32)\nprint(opt.join_cost(100, 2, same_bucket_key=True))\nprint(opt.join_cost(100, 2, same_bucket_key=False))\n# Expected output shows order-of-magnitude difference\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "caching",
+      children: "Caching"
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-python",
+        children: "class CacheManager:\n    \"\"\"Manage Spark cache levels.\"\"\"\n\n    CACHE_LEVELS = {\n        \"MEMORY_ONLY\": {\"memory\": 1.0, \"disk\": 0, \"deserialized\": True, \"replication\": 1},\n        \"MEMORY_AND_DISK\": {\"memory\": 1.0, \"disk\": 0.2, \"deserialized\": True, \"replication\": 1},\n        \"DISK_ONLY\": {\"memory\": 0, \"disk\": 1.0, \"deserialized\": False, \"replication\": 1},\n        \"MEMORY_ONLY_SER\": {\"memory\": 0.7, \"disk\": 0, \"deserialized\": False, \"replication\": 1},\n    }\n\n    def cache(self, level: str = \"MEMORY_ONLY\") -> Dict:\n        config = self.CACHE_LEVELS.get(level)\n        if not config:\n            raise ValueError(f\"Unknown cache level: {level}\")\n        print(f\"Caching with level: {level}\")\n        print(f\"  Memory factor: {config['memory']}\")\n        print(f\"  Disk fallback: {config['disk']}\")\n        return config\n\n    def uncache(self):\n        print(\"Data uncached — memory freed\")\n\n# Example\ncache = CacheManager()\ncache.cache(\"MEMORY_AND_DISK\")\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-example",
+      children: "Real Example"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Consider Airbnb's pricing ML model. Training data combines:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "500M booking records (fact table)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "5M listing profiles (dimension table)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "200K user profiles (small dimension)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Without Spark: A data scientist would sample 1% of data (losing rare patterns) or wait 12+ hours for pandas to process on a single machine."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "With Spark (PySpark on EMR with 20 nodes):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Read"
+        }), ": Scan 500M Parquet records from S3 (partitioned by date)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Join"
+        }), ": Broadcast listing and user dimensions (2M + 200K rows — fits in memory per executor)"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Transform"
+        }), ": Compute 200+ features using window functions, aggregations, and UDFs"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Write"
+        }), ": Save feature DataFrame as Parquet to S3 for ML training"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Elapsed: 45 minutes for the full 500M records. Same job in pandas: would crash on memory for the full dataset; sampled 5M rows takes 2 hours."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "summary",
+      children: "Summary"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Apache Spark provides distributed data processing through a clean API of RDDs, DataFrames, and Spark SQL. The key to Spark performance is understanding lazy evaluation (transformations build a DAG, actions trigger execution), partitioning data to avoid expensive shuffles, and using optimizations like broadcast joins and bucketing. PySpark brings these capabilities to Python, enabling AI engineers to process terabytes of training data across clusters. Spark is not just an alternative to pandas — it is the standard for production ML data processing at scale."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "practical-takeaways",
+      children: "Practical Takeaways"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use DataFrames over RDDs for most tasks — Catalyst optimizer provides automatic query optimization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Minimize shuffles by using broadcast joins for small tables (default threshold 10MB, increase with spark.sql.autoBroadcastJoinThreshold)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Cache intermediate DataFrames that are reused multiple times (ML feature computations, iterative algorithms)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Partition by high-cardinality filter columns (date, region) for query pruning; use bucketing for join keys"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Monitor Spark UI for skewed partitions, spill, and stage duration — these are the primary performance levers"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "chapter-quiz-5-mcq",
+      children: "Chapter Quiz (5 MCQ)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "questions",
+      children: "Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What is the key difference between transformations and actions in Spark?\na) Transformations are faster than actions\nb) Transformations are lazy (build DAG), actions are eager (trigger execution)\nc) Actions are lazy, transformations are eager\nd) Both are lazy until explicitly materialized"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Which of the following best describes a Spark shuffle?\na) Reading data from disk into memory\nb) Redistributing data across partitions by a key\nc) Writing output to the driver node\nd) Compressing intermediate data"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "When is a broadcast join beneficial?\na) When both tables are very large (> 100 GB)\nb) When one table is small enough to fit in each executor's memory\nc) When joining on multiple columns\nd) When the join key has high cardinality"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "What does the Catalyst optimizer do?\na) Manages cluster resources and executor allocation\nb) Optimizes the logical and physical execution plan of DataFrame operations\nc) Compresses data before shuffling\nd) Monitors executor health and restarts failed tasks"
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+          children: "In Spark's architecture, what is the role of the driver?\na) Execute individual tasks on worker nodes\nb) Run the main program, plan the DAG, and schedule tasks across executors\nc) Store cached data partitions\nd) Communicate with the cluster manager for resource allocation only"
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "answers",
+      children: "Answers"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "b"
+        }), " — Transformations are lazy and build the DAG; actions are eager and trigger execution."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "b"
+        }), " — Shuffle redistributes data across partitions by a key (required for groupBy, join, repartition)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "b"
+        }), " — Broadcast join sends a small table (< 10MB default) to all executors, avoiding shuffle."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "b"
+        }), " — Catalyst optimizes query plans through predicate pushdown, projection pruning, and join strategy selection."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "b"
+        }), " — The driver runs the main program, creates the DAG, splits it into stages/tasks, and schedules them on executors."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "exercises",
+      children: "Exercises"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-1-pyspark-etl-pipeline",
+      children: "Exercise 1: PySpark ETL Pipeline"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Write a PySpark script that reads 100K CSV records, filters rows where value > threshold, computes grouped aggregations, and writes to Parquet. Run locally with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "spark.sql.adaptive.enabled=true"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-2-broadcast-join-optimization",
+      children: "Exercise 2: Broadcast Join Optimization"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Compare performance of sort-merge join vs broadcast join for a 100M-row fact table joined with a 10K-row dimension table. Measure execution time using Spark UI."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-3-data-skew-handling",
+      children: "Exercise 3: Data Skew Handling"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Create a synthetic dataset with a skewed join key (one key has 90% of data). Implement salting to balance partitions during join. Compare partition sizes before and after."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-4-spark-sql-vs-dataframe-api",
+      children: "Exercise 4: Spark SQL vs DataFrame API"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Implement the same aggregation (total sales by region by month) using both Spark SQL and the DataFrame API. Compare readability, performance, and execution plans."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "exercise-5-window-functions-with-pyspark",
+      children: "Exercise 5: Window Functions with PySpark"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Use Spark window functions to compute running total, moving average, and row_number for a time-series dataset of stock prices. Compare with pandas equivalent."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "common-mistakes",
+      children: "Common Mistakes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Not understanding lazy evaluation"
+        }), ": Calling ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "df.show()"
+        }), " in the middle of transformations triggers partial execution and wastes resources. Build the full DAG before calling one action."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Excessive shuffling"
+        }), ": Every groupBy, join, or repartition triggers a shuffle. Minimize by using broadcast joins, bucketing, and aggregating before joining."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Data skew ignoring"
+        }), ": Without handling skew, one executor processes 10x more data than others. Use salting or AQE (spark.sql.adaptive.enabled=true)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Too many or too few partitions"
+        }), ": Less than 2x the number of cores underutilizes the cluster; more than 200MB per partition causes scheduling overhead. Target 100-200MB per partition."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Collecting large results"
+        }), ": ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "df.collect()"
+        }), " brings all data to the driver, causing OOM. Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "df.take(N)"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "df.show()"
+        }), ", or write to storage for large results."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "revision-notes",
+      children: "Revision Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Spark: distributed computing framework, 10-100x faster than MapReduce via in-memory processing"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Architecture: Driver (master) + Executors (workers) + Cluster Manager (YARN/K8s/Mesos)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "RDD: immutable, partitioned, fault-tolerant (lineage-based recomputation)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "DataFrame: structured API with schema, optimized by Catalyst + Tungsten"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Transformations: lazy (map, filter, select, groupBy, join) — build DAG"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Actions: eager (collect, count, save, show, take) — trigger execution"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Shuffle: data redistribution across partitions — expensive, minimize using broadcast joins"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Broadcast join: small table (<10MB) sent to all executors, no shuffle"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Bucketing: pre-partition by key, enables co-located joins"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Caching: MEMORY_ONLY, MEMORY_AND_DISK, DISK_ONLY — for reused DataFrames"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Catalyst optimizations: predicate pushdown, projection pruning, join reordering"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Adaptive Query Execution (AQE): automatic coalescing, skew join, sort merge optimization"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Partition sizing: 100-200MB per partition for optimal parallelism"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "pyqs-previous-year-questions",
+      children: "PYQs (Previous Year Questions)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "google-2024",
+      children: "Google (2024)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "You have 5 PB of user interaction data in Avro format on GCS. Design a Spark pipeline that computes 500+ user engagement features daily within a 4-hour SLA window. Address partitioning, shuffle optimization, and fault tolerance."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Partition data by (year, month, day) for predicate pushdown on date filters. Use Parquet format with Z-order on user_id for feature computation locality. Broadcast join user dimension (100M users, ~50GB — increase broadcast threshold to 200MB). Use Spark Structured Streaming for partial aggregations every hour, then batch for full accuracy. Set spark.shuffle.partitions to 2000 for 5PB data. Use checkpointing for fault tolerance."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "amazon-2023",
+      children: "Amazon (2023)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Your recommendation pipeline uses Spark to join click events (10B/day) with product catalog (50M products). The current shuffle is spilling to disk due to executor memory limits. Optimize the job."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Increase executor memory (spark.executor.memory=16g) and memory fraction (spark.memory.fraction=0.8). Bucket product catalog on product_id with 500 buckets so the join is co-located. Use Kryo serialization for smaller shuffle data. Enable shuffle compression (spark.shuffle.compress=true). If the catalog fits in 200GB total, broadcast it instead."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "meta-2024",
+      children: "Meta (2024)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Facebook's Spark jobs for News Feed ranking features are experiencing data skew — 10% of partitions process 90% of the data. Diagnose and fix."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Data skew detected through Spark UI (uneven partition sizes). Fixes: (1) Salting — add random salt to the skewed join key, join with salted copy of small table, then remove salt. (2) Use adaptive query execution (AQE) — spark.sql.adaptive.enabled=true, which coalesces partitions and handles skew joins automatically. (3) Increase shuffle partitions for finer granularity. (4) Use range partitioning instead of hash for more balanced distribution."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "nvidia-2024",
+      children: "NVIDIA (2024)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Design a Spark pipeline that preprocesses 500 TB of video metadata for foundation model training. The pipeline runs on GPU-enabled Spark executors. Optimize for GPU utilization."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Answer"
+      }), ": Use RAPIDS Accelerator for Apache Spark (GPU acceleration for ETL). Store video metadata in Parquet with column pruning to minimize I/O. Use Spark's GPU resource scheduling (spark.task.resource.gpu.amount=1). Offload compute-intensive operations (feature extraction, embedding computation) to GPU via UDFs using cuDF. Partition data into GPU-memory-sized chunks (~40GB per executor with 4xA100 GPUs)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "interview-qa",
+      children: "Interview Q&A"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q1-explain-the-difference-between-rdd-dataframe-and-dataset-in-spark",
+      children: "Q1: Explain the difference between RDD, DataFrame, and Dataset in Spark."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": RDD is the low-level API with no schema (type-safe but no optimization). DataFrame adds schema and uses Catalyst for optimization (Python-friendly). Dataset (JVM only) adds compile-time type safety with the Catalyst optimizer. Prefer DataFrames for most workloads."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q2-how-does-spark-handle-fault-tolerance",
+      children: "Q2: How does Spark handle fault tolerance?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Spark tracks RDD lineage (DAG of transformations). If a partition is lost (executor failure), Spark recomputes it from the original source using the recorded lineage. Checkpointing to storage can break long lineages for efficiency."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q3-what-is-the-spark-shuffle-and-why-is-it-expensive",
+      children: "Q3: What is the Spark shuffle and why is it expensive?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Shuffle redistributes data across partitions by a key (needed for groupBy, join). It requires serialization, network transfer, deserialization, and potentially disk I/O. It is the most expensive operation because it breaks data locality and involves all-to-all communication."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q4-how-would-you-optimize-a-spark-join-that-is-spilling-to-disk",
+      children: "Q4: How would you optimize a Spark join that is spilling to disk?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Check for data skew (Spark UI). Increase executor memory. Use broadcast join if one table is small. Bucket both tables on the join key. Enable AQE for automatic skew handling. Use salting for skewed keys."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q5-what-is-the-catalyst-optimizer-and-what-optimizations-does-it-perform",
+      children: "Q5: What is the Catalyst optimizer and what optimizations does it perform?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Catalyst is Spark SQL's query optimizer. Optimizations: predicate pushdown (filter early), projection pruning (select needed columns only), constant folding, join reordering, and converting to efficient physical plans (broadcast vs sort-merge join)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q6-explain-the-difference-between-narrow-and-wide-transformations",
+      children: "Q6: Explain the difference between narrow and wide transformations."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Narrow transformations (map, filter, select) operate within a single partition — no shuffle. Wide transformations (groupBy, join, repartition) require data from multiple partitions — trigger shuffle."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q7-how-would-you-handle-a-spark-job-that-processes-10tb-of-data-daily-within-a-2-hour-sla",
+      children: "Q7: How would you handle a Spark job that processes 10TB of data daily within a 2-hour SLA?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Partition source data by date. Use appropriate cluster size (20 nodes x 64GB RAM = 1.2TB memory, need disk for processing). Broadcast small dimension tables. Cache intermediate results reused across stages. Monitor Spark UI for bottlenecks."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q8-what-is-the-difference-between-cache-and-persist-in-spark",
+      children: "Q8: What is the difference between cache() and persist() in Spark?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": cache() is shorthand for persist(StorageLevel.MEMORY_ONLY). persist() accepts different storage levels (MEMORY_ONLY, MEMORY_AND_DISK, DISK_ONLY, OFF_HEAP, with optional replication and serialization)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q9-how-does-spark-structured-streaming-achieve-exactly-once-semantics",
+      children: "Q9: How does Spark Structured Streaming achieve exactly-once semantics?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Through a combination of idempotent sinks and checkpointing. Spark tracks offset ranges processed per batch. On failure, it reads checkpointed offsets and reprocesses only uncommitted batches. Exactly-once requires the sink to support idempotent writes (e.g., Kafka, Delta Lake)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "q10-when-would-you-choose-spark-over-hadoop-mapreduce",
+      children: "Q10: When would you choose Spark over Hadoop MapReduce?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A"
+      }), ": Spark for iterative algorithms (ML training, graph processing), interactive queries (SQL, ad-hoc analysis), streaming, and any workload that benefits from in-memory caching. MapReduce is simpler for one-pass batch jobs and runs in environments without Spark support."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "placement-section",
+      children: "Placement Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "resume-tips",
+      children: "Resume Tips"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Keywords"
+        }), ": Apache Spark, PySpark, RDD, DataFrame, Spark SQL, Catalyst, partitioning, shuffle, broadcast join, bucketing, Spark Structured Streaming, MLlib"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Project Description"
+        }), ": \"Built PySpark pipeline processing 10TB of event data daily for real-time ML feature computation, reducing latency from 6 hours to 45 minutes\""]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Certifications"
+        }), ": Databricks Certified Spark Developer, AWS Data Analytics, GCP Data Engineer"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "top-companies-using-spark",
+      children: "Top Companies Using Spark"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Google, Amazon, Microsoft, Meta, Netflix, Uber, Airbnb, Databricks, Confluent, Snowflake"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "truefalse",
+      children: "True/False"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " 03 — Apache Spark Basics builds directly on the fundamentals covered in the earlier chapters of this module. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Every advanced topic in this module assumes the core concepts from the previous chapters."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should write at least one code example for 03 — Apache Spark Basics before moving to the next chapter. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Active recall with hands-on code beats passive reading for retention."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " The complexity analysis for 03 — Apache Spark Basics is the same regardless of input size. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Complexity grows with input size; always state best, average, and worst case."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " Edge cases (empty input, invalid input, boundary values) matter for 03 — Apache Spark Basics in production. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "True."
+        }), " Most production bugs come from unhandled edge cases."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "True or False:"
+        }), " You should memorize the 03 — Apache Spark Basics chapter content once and never review it again. — ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "False."
+        }), " Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "fill-in-the-blank",
+      children: "Fill in the Blank"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The chapter that covers 03 — Apache Spark Basics is Chapter ___ of this module. — Answer: check the module's table of contents."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The time complexity of the standard approach to 03 — Apache Spark Basics is ___. — Answer: review the theory section and state big-O notation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The main edge case to handle when implementing 03 — Apache Spark Basics is ___. — Answer: empty or invalid input handling, as discussed in the chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools commonly used to debug 03 — Apache Spark Basics issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The related topic that connects to 03 — Apache Spark Basics in the next chapter is ___. — Answer: see the Next Topic section."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "scenario-questions",
+      children: "Scenario Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A teammate ships a change involving 03 — Apache Spark Basics that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your implementation of 03 — Apache Spark Basics is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " A new hire asks you to explain 03 — Apache Spark Basics in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo."]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Scenario:"
+          }), " Your team's codebase has three different patterns for 03 — Apache Spark Basics and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "output-questions",
+      children: "Output Questions"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output of the simplest correct implementation of 03 — Apache Spark Basics on an empty input?"
+        }), " — Trace through the code: it should return the documented default (None, 0, empty collection) without raising."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output when the input is at the boundary value?"
+        }), " — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What does the implementation return when given invalid input types?"
+        }), " — With type hints and validation, it raises a clear error; without, it may fail silently."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the output for the sample input given in the chapter's Examples section?"
+        }), " — Re-run the chapter's example code and compare against the documented output."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What is the time complexity output when you profile the implementation at 10x input size?"
+        }), " — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "difficulty-level",
+      children: "Difficulty Level"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Level"
+      }), ": Advanced\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Estimated Study Time"
+      }), ": 80 minutes\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prerequisites"
+      }), ": Python, distributed systems basics"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "tips--tricks",
+      children: "Tips & Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always write a one-line example of 03 — Apache Spark Basics from memory before opening the chapter — active recall first."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Use the chapter's Revision Notes as a checklist: you have mastered 03 — Apache Spark Basics when you can explain each bullet."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For interviews, practice explaining 03 — Apache Spark Basics twice: once with a technical audience, once with a non-technical audience."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keep a personal examples file where you collect your own 03 — Apache Spark Basics snippets; interviewers love original examples."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "memory-tricks",
+      children: "Memory Tricks"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Acronym"
+        }), ": build a mnemonic from the 5 key concepts of 03 — Apache Spark Basics listed in the Chapter at a Glance table."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Story"
+        }), ": link 03 — Apache Spark Basics to a familiar story — the analogy in the Visual Analogy section is designed to stick."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Number anchor"
+        }), ": remember the complexity of 03 — Apache Spark Basics by connecting it to a known algorithm of the same class."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Color code"
+        }), ": highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Teach-back"
+        }), ": explain 03 — Apache Spark Basics to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "further-reading",
+      children: "Further Reading"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "\"Learning Spark\" by Jules Damji et al."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "\"High Performance Spark\" by Holden Karau"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Spark documentation: ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://spark.apache.org/docs/latest/",
+          children: "https://spark.apache.org/docs/latest/"
+        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Databricks Spark Knowledge Base"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "related-topics",
+      children: "Related Topics"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The previous chapter in this module (see table of contents) — foundational for 03 — Apache Spark Basics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The next chapter (see Next Topic below) — builds on 03 — Apache Spark Basics"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The system design chapters in Module 07 — how 03 — Apache Spark Basics fits into production architectures"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The interview preparation module — how 03 — Apache Spark Basics is asked in screening rounds"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The capstone project — where 03 — Apache Spark Basics is applied end-to-end"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "faqs",
+      children: "FAQs"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Do I need to memorize all of 03 — Apache Spark Basics, or understand the big picture?"
+        }), " — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "What if I get stuck on an exercise?"
+        }), " — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Is 03 — Apache Spark Basics asked in interviews?"
+        }), " — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "**What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "important-notes",
+      children: "Important Notes"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "03 — Apache Spark Basics is a core requirement for the rest of this module — do not skip the examples."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Always analyze complexity (time and space) when working with 03 — Apache Spark Basics."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Production correctness means handling edge cases, not just the happy path."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview answers should start with the definition, then the example, then the trade-offs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Revisit this chapter after finishing the module; the context from later chapters deepens understanding."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "historical-context",
+      children: "Historical Context"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "03 — Apache Spark Basics emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The tools used for 03 — Apache Spark Basics today evolved from simpler versions; the chapter covers the modern, recommended approach."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interviewers value knowing one historical fact about 03 — Apache Spark Basics — it shows genuine interest, not just cramming."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The library/tooling ecosystem around 03 — Apache Spark Basics changes quickly; focus on fundamentals that remain stable."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "security-considerations",
+      children: "Security Considerations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Never trust external input: validate and sanitize data before processing 03 — Apache Spark Basics."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Avoid ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "eval()"
+        }), " and dynamic code execution on untrusted strings."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Log errors without leaking sensitive data (keys, PII, internal paths)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For API contexts, add rate limiting and input size limits."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Review the chapter's code examples for injection or overflow risks before using them verbatim."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "ml-intuition",
+      children: "ML Intuition"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "03 — Apache Spark Basics appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Understanding 03 — Apache Spark Basics helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "In production ML, the 03 — Apache Spark Basics concepts from this chapter map directly to NumPy/PyTorch operations on tensors."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When optimizing ML systems, 03 — Apache Spark Basics skills let you profile and fix the data path, not just the training loop."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Interview follow-up: how would you apply 03 — Apache Spark Basics to a dataset of 10 million records? — Batching and vectorization."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "analogies",
+      children: "Analogies"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "03 — Apache Spark Basics is like a recipe"
+        }), ": the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Complexity is like a delivery route"
+        }), ": a linear route visits each stop once; a nested route revisits stops, and you feel it at scale."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Edge cases are like weather"
+        }), ": the happy path is a sunny day; production is the storm — build for the storm."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "The chapter roadmap is a journey map"
+        }), ": each section is a checkpoint; skipping one means getting lost later in the module."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "capstone-project-link",
+      children: "Capstone Project Link"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/Raushan666java/ai-engineering-journey",
+          children: "Module Capstone: End-to-End Project"
+        }), " — this chapter contributes the 03 — Apache Spark Basics skills used in the module's capstone project. Complete the exercises here before starting the capstone."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "flashcards",
+      children: "Flashcards"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "25dataengineering-03apachesparkbasics-flash1",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the core concept of 03 — Apache Spark Basics in one sentence?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Review the first paragraph of the Theory section and condense it to one sentence."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "25dataengineering-03apachesparkbasics-flash2",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the most common mistake engineers make with \n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Common Mistakes section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "25dataengineering-03apachesparkbasics-flash3",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    What is the time and space complexity of the standard 03 — Apache Spark Basics approach?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Refer to the theory and complexity analysis in this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "25dataengineering-03apachesparkbasics-flash4",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    When is 03 — Apache Spark Basics NOT the right choice?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Limitations section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.details, {
+      className: "tp-qa-card",
+      "data-qid": "25dataengineering-03apachesparkbasics-flash5",
+      children: ["\n  ", (0,jsx_runtime.jsxs)(_components.summary, {
+        className: "tp-qa-question",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.span, {
+          className: "tp-qa-status"
+        }), "\n    How is 03 — Apache Spark Basics applied in a real production system?\n  "]
+      }), "\n  ", (0,jsx_runtime.jsxs)(_components.div, {
+        className: "tp-qa-answer",
+        children: ["\n    ", (0,jsx_runtime.jsx)(_components.p, {
+          children: "Check the Real-World Examples section of this chapter."
+        }), "\n  "]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "research-references",
+      children: "Research References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Official documentation of the primary library for 03 — Apache Spark Basics (linked in Further Reading)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The classic paper or textbook chapter introducing 03 — Apache Spark Basics (see References below)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The standard library reference for 03 — Apache Spark Basics-related functions"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Engineering blog posts from companies running 03 — Apache Spark Basics in production at scale"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "PEPs and RFCs where applicable (Python and networking standards)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "open-source-tools",
+      children: "Open-Source Tools"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The primary library used in this chapter (see the code examples)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Python standard library modules used in the examples (check the imports)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Testing: pytest for unit tests of 03 — Apache Spark Basics code"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Linting and formatting: ruff + black"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Profiling: cProfile or py-spy for performance work on 03 — Apache Spark Basics"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "debugging-guide",
+      children: "Debugging Guide"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Start with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "print()"
+        }), " or a debugger to inspect intermediate values in 03 — Apache Spark Basics code."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Reproduce the failure with the smallest possible input before changing code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Check the common failure modes listed in Common Mistakes — most bugs are listed there."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "For performance problems, profile before optimizing: measure, then fix."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "When stuck, re-read the chapter's Examples and compare line by line with your code."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Use ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pdb"
+        }), " or your IDE's debugger to step through the 03 — Apache Spark Basics example code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "mock-interview-section",
+      children: "Mock Interview Section"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 1 — Screening (15 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Explain 03 — Apache Spark Basics in 60 seconds."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Write a minimal working example of 03 — Apache Spark Basics."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What is the complexity of your example?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 2 — Coding (45 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Solve the Medium exercise from this chapter under time pressure."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "State your assumptions, then implement with type hints."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Test with edge cases: empty input, boundary values, invalid input."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Round 3 — Behavioral + System (30 min)"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Tell me about a time you debugged a 03 — Apache Spark Basics problem in a project."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "How would you design a system where 03 — Apache Spark Basics is used at scale?"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "What metrics would you monitor?"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Evaluation rubric"
+      }), ": correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "optimized-implementation",
+      children: "Optimized Implementation"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`python\nfrom typing import Any, Optional"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "def demonstrate_topic(input_data: list[Any]) -> Optional[float]:\n\"\"\"Runnable scaffold for 03 — Apache Spark Basics."
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Replace the body with the optimized implementation from the chapter,\nkeeping type hints, docstring, and edge-case handling.\n\"\"\"\nif not input_data:\n    return None\n# Step 1: validate input types\n# Step 2: apply the core 03 — Apache Spark Basics logic from the Examples section\n# Step 3: return the result with the documented default\nreturn 0.0\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "`"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Keeps the function signature stable so tests written against it stay valid."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Handles the empty-input contract explicitly."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Add unit tests for the edge cases before implementing the logic (test-first)."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "references",
+      children: "References"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Zaharia, M. et al. (2012). Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing. NSDI."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Armbrust, M. et al. (2015). Spark SQL: Relational Data Processing in Spark. SIGMOD."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Apache Spark Documentation. ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://spark.apache.org/docs/latest/",
+          children: "https://spark.apache.org/docs/latest/"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "evaluation-metrics",
+      children: "Evaluation Metrics"
+    }), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Skill"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Test"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Target"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Concept recall"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Explain 03 — Apache Spark Basics without notes"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "60-second explanation"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Code fluency"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Write the chapter example from memory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "No syntax errors"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Edge cases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Handle empty/invalid input in exercises"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "All cases pass"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Complexity"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "State time/space for the standard approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Correct big-O"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Interview readiness"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Answer 5 Interview Q&A questions out loud"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Fluent, structured answers"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Retention"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Chapter quiz score after 3 days"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "80%+"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "real-world-examples",
+      children: "Real-World Examples"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Startup"
+        }), ": a small team uses 03 — Apache Spark Basics daily in their data pipeline — the chapter's examples mirror their code."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "E-commerce"
+        }), ": 03 — Apache Spark Basics patterns appear in order processing, inventory checks, and recommendation feeds."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fintech"
+        }), ": 03 — Apache Spark Basics principles apply to transaction validation and fraud detection flows."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "ML platform"
+        }), ": 03 — Apache Spark Basics shows up in feature engineering and model-serving infrastructure."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Interview insight"
+        }), ": recruiters look for engineers who can connect 03 — Apache Spark Basics to the business outcome, not just the code."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "next-topic",
+      children: "Next Topic"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-engineering-journey/ai-engineering-placement/25-data-engineering/04-streaming-real-time",
+        children: "04 — Streaming & Real-Time Data"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "03 — Apache Spark Basics, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory)."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Performance of 03 — Apache Spark Basics depends on input size and distribution — always benchmark for your own data."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone."
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ },
+
+/***/ 28453
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }
+
+}]);

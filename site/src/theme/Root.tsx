@@ -12,6 +12,29 @@ function QAWidget() {
   return null;
 }
 
+function SidebarAccordion() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const timer = setTimeout(() => enforceSingleOpen('route'), 150);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const toggle = (e.target as HTMLElement).closest<HTMLElement>(
+        '.menu__list-item-collapsible > .menu__link'
+      );
+      if (!toggle) return;
+      setTimeout(() => enforceSingleOpen('click', toggle), 0);
+    };
+    document.addEventListener('click', onClick, true);
+    return () => document.removeEventListener('click', onClick, true);
+  }, []);
+
+  return null;
+}
+
 function initQAWidget() {
   document.querySelectorAll<HTMLDetailsElement>('.tp-qa-card').forEach((card) => {
     const qid = card.dataset.qid;
@@ -41,6 +64,38 @@ function initQAWidget() {
   });
 }
 
+function topLevelItem(elm: HTMLElement): HTMLLIElement | null {
+  const li = elm.closest<HTMLLIElement>('nav.menu > ul.menu__list > li');
+  return li;
+}
+
+function collapseItem(li: HTMLLIElement): void {
+  const toggle = li.querySelector<HTMLElement>(':scope > .menu__list-item-collapsible > .menu__link');
+  if (toggle && toggle.getAttribute('aria-expanded') === 'true') {
+    (toggle as HTMLButtonElement).click();
+  }
+}
+
+function enforceSingleOpen(mode: 'route' | 'click', source?: HTMLElement): void {
+  if (mode === 'click' && source) {
+    const keep = topLevelItem(source);
+    if (!keep) return;
+    document.querySelectorAll('nav.menu > ul.menu__list').forEach((rootList) => {
+      Array.from(rootList.children as HTMLCollectionOf<HTMLLIElement>)
+        .filter((li) => li !== keep)
+        .forEach(collapseItem);
+    });
+    return;
+  }
+
+  document.querySelectorAll('nav.menu > ul.menu__list').forEach((rootList) => {
+    Array.from(rootList.children as HTMLCollectionOf<HTMLLIElement>).forEach((li) => {
+      const hasActive = !!li.querySelector(':scope .menu__link--active');
+      if (!hasActive) collapseItem(li);
+    });
+  });
+}
+
 interface QASaveState {
   reviewed?: boolean;
   bookmarked?: boolean;
@@ -63,10 +118,11 @@ function saveState(qid: string, state: QASaveState) {
   }
 }
 
-export default function Root({ children }: { children: React.ReactNode }): JSX.Element {
+export default function Root({ children }: { children: React.ReactNode }): React.JSX.Element {
   return (
     <>
       <QAWidget />
+      <SidebarAccordion />
       {children}
     </>
   );

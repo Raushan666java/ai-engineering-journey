@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/12-rag-vector-databases
 title: "12 — RAG & Vector Databases"
 sidebar_label: "12 — RAG & Vector Databases"
-sidebar_position: 162
+sidebar_position: 168
 ---
 # 12 — RAG & Vector Databases
 

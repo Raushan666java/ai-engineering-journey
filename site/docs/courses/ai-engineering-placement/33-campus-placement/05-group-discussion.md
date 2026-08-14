@@ -3,7 +3,7 @@ id: 05-group-discussion
 slug: /ai-engineering-placement/33-campus-placement/05-group-discussion
 title: "Group Discussion & Extempore for Campus Placements"
 sidebar_label: "Group Discussion & Extempore for Campus Placements"
-sidebar_position: 333
+sidebar_position: 339
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Group Discussion & Extempore for Campus Placements

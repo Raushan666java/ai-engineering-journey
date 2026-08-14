@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Computer Science · Foundation stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #ffffff;
+      --color-paper-2: #f5f6f8;
+      --color-ink:     #1a1b23;
+      --color-muted:   #4f5d75;
+      --color-accent:  #2e8555;
+      --font-sans:     system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-serif:    'Instrument Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1200px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      margin-bottom: 1.5rem;
+    }
+    svg { width: 100%; min-width: 900px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Module 00 · Core Computer Science</p>
+    <h1>The foundation stack · From silicon to security</h1>
+
+    <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="m00-layers-title m00-layers-desc">
+      <title id="m00-layers-title">Core Computer Science foundation stack</title>
+      <desc id="m00-layers-desc">Layer stack of six CS fundamentals. Computer architecture at the base, then operating systems, computer networks, database internals, OOP and design patterns, and ethical hacking at the top. The operating systems layer is the focal layer.</desc>
+
+      <rect width="1000" height="600" fill="#ffffff"/>
+
+      <!-- Direction column (left margin) -->
+      <text x="60" y="68" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">ABSTRACTION</text>
+      <line x1="80" y1="80" x2="80" y2="400" stroke="rgba(26,27,35,0.30)" stroke-width="1"/>
+      <polygon points="76,80 84,80 80,72" fill="#4f5d75"/>
+      <text x="60" y="416" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">SILICON</text>
+
+      <!-- Stack container hairlines -->
+      <line x1="120" y1="80" x2="960" y2="80" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+      <line x1="120" y1="400" x2="960" y2="400" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+
+      <!-- L6 — Ethical Hacking (top) -->
+      <rect x="120" y="80" width="840" height="64" fill="#f5f6f8"/>
+      <line x1="120" y1="144" x2="960" y2="144" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+      <text x="140" y="116" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">L6</text>
+      <text x="260" y="118" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Ethical hacking</text>
+      <text x="940" y="118" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">pentest · OWASP · hardening</text>
+
+      <!-- L5 — OOP & design patterns -->
+      <rect x="120" y="144" width="840" height="64" fill="#ffffff"/>
+      <line x1="120" y1="208" x2="960" y2="208" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+      <text x="140" y="180" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">L5</text>
+      <text x="260" y="182" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">OOP &amp; design patterns</text>
+      <text x="940" y="182" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">SOLID · GoF · creational · structural</text>
+
+      <!-- L4 — Database internals -->
+      <rect x="120" y="208" width="840" height="64" fill="#f5f6f8"/>
+      <line x1="120" y1="272" x2="960" y2="272" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+      <text x="140" y="244" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">L4</text>
+      <text x="260" y="246" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Database internals</text>
+      <text x="940" y="246" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">ACID · B-trees · indexes</text>
+
+      <!-- L3 — Computer networks -->
+      <rect x="120" y="272" width="840" height="64" fill="#ffffff"/>
+      <line x1="120" y1="336" x2="960" y2="336" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+      <text x="140" y="308" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">L3</text>
+      <text x="260" y="310" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Computer networks</text>
+      <text x="940" y="310" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">TCP/IP · HTTP · DNS</text>
+
+      <!-- L2 — Operating systems (FOCAL) -->
+      <rect x="120" y="336" width="840" height="64" fill="rgba(46,133,85,0.08)"/>
+      <rect x="120" y="336" width="840" height="64" fill="none" stroke="#2e8555" stroke-width="1"/>
+      <text x="140" y="372" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em" font-weight="600">L2</text>
+      <text x="260" y="374" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Operating systems</text>
+      <text x="940" y="374" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">processes · threads · memory</text>
+
+      <!-- L1 — Computer architecture (base) -->
+      <rect x="120" y="400" width="840" height="64" fill="#f5f6f8"/>
+      <text x="140" y="436" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">L1</text>
+      <text x="260" y="438" fill="#1a1b23" font-size="16" font-weight="600" font-family="system-ui, sans-serif">Computer architecture</text>
+      <text x="940" y="438" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="end" letter-spacing="0.08em">CPU · cache · memory hierarchy</text>
+
+      <!-- Caption -->
+      <text x="120" y="492" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">FOCAL LAYER</text>
+      <text x="212" y="492" fill="#4f5d75" font-size="8" font-family="system-ui, sans-serif" font-style="italic">Operating systems is the layer interviewers probe first — processes, threads, and memory are the vocabulary every AI engineer needs.</text>
+
+      <!-- Legend strip -->
+      <line x1="120" y1="532" x2="960" y2="532" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+      <text x="120" y="556" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text>
+      <rect x="196" y="548" width="16" height="12" rx="2" fill="none" stroke="#2e8555" stroke-width="1"/>
+      <text x="220" y="558" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">ACCENT = FOCAL LAYER</text>
+      <rect x="384" y="548" width="16" height="12" rx="2" fill="#f5f6f8"/>
+      <text x="408" y="558" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">SHADE = ADJACENT TIER</text>
+      <rect x="568" y="548" width="16" height="12" rx="2" fill="#ffffff" stroke="rgba(26,27,35,0.12)" stroke-width="1"/>
+      <text x="592" y="558" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">PAPER = STANDARD LAYER</text>
+    </svg>
+  </div>
+</body>
+</html>

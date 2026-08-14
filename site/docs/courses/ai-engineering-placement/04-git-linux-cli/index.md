@@ -3,9 +3,11 @@ id: index
 slug: /ai-engineering-placement/04-git-linux-cli
 title: "04 — Git, Linux & CLI"
 sidebar_label: "04 — Git, Linux & CLI"
-sidebar_position: 63
+sidebar_position: 67
 ---
 # 04 — Git, Linux & CLI
+
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
 
 ## Overview
 

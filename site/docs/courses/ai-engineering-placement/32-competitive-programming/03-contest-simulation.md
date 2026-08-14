@@ -3,7 +3,7 @@ id: 03-contest-simulation
 slug: /ai-engineering-placement/32-competitive-programming/03-contest-simulation
 title: "Contest Simulation & Optimization"
 sidebar_label: "Contest Simulation & Optimization"
-sidebar_position: 327
+sidebar_position: 333
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Contest Simulation & Optimization

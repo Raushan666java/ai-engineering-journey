@@ -3,7 +3,7 @@ id: 14-google-adk
 slug: /ai-engineering-placement/22-advanced-ai-agents/14-google-adk
 title: "Google Agent Development Kit (ADK)"
 sidebar_label: "Google Agent Development Kit (ADK)"
-sidebar_position: 263
+sidebar_position: 269
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Google Agent Development Kit (ADK)

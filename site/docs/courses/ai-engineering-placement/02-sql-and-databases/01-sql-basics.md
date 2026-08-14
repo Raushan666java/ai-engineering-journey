@@ -3,7 +3,7 @@ id: 01-sql-basics
 slug: /ai-engineering-placement/02-sql-and-databases/01-sql-basics
 title: "SQL Basics — SELECT, WHERE, ORDER BY, DML"
 sidebar_label: "SQL Basics — SELECT, WHERE, ORDER BY, DML"
-sidebar_position: 24
+sidebar_position: 26
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # SQL Basics — SELECT, WHERE, ORDER BY, DML

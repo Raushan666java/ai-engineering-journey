@@ -3,7 +3,7 @@ id: 10-postgresql-advanced
 slug: /ai-engineering-placement/02-sql-and-databases/10-postgresql-advanced
 title: "PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL"
 sidebar_label: "PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL"
-sidebar_position: 33
+sidebar_position: 35
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # PostgreSQL Advanced — JSONB, Full-Text Search, Partitioning, Extensions, PL/pgSQL

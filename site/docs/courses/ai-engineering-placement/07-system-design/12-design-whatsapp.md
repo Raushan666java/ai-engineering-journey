@@ -3,7 +3,7 @@ id: 12-design-whatsapp
 slug: /ai-engineering-placement/07-system-design/12-design-whatsapp
 title: "Design WhatsApp — Real-Time Messaging, Presence, Encryption"
 sidebar_label: "Design WhatsApp — Real-Time Messaging, Presence, Encryption"
-sidebar_position: 100
+sidebar_position: 106
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design WhatsApp — Real-Time Messaging, Presence, Encryption

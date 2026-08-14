@@ -3,7 +3,7 @@ id: 01-foundation-models-overview
 slug: /ai-engineering-placement/11-llms-prompt-engineering/01-foundation-models-overview
 title: "Foundation Models Overview"
 sidebar_label: "Foundation Models Overview"
-sidebar_position: 137
+sidebar_position: 143
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Foundation Models Overview

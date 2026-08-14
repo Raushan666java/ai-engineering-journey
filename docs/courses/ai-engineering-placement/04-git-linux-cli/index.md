@@ -1,5 +1,7 @@
 # 04 — Git, Linux & CLI
 
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
+
 ## Overview
 
 Learn version control with Git, essential Linux commands, and Bash scripting — the day-to-day toolkit every software engineer uses. Covers branching strategies, workflow automation, networking, and security basics.

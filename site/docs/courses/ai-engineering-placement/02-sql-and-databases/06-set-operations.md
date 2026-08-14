@@ -3,7 +3,7 @@ id: 06-set-operations
 slug: /ai-engineering-placement/02-sql-and-databases/06-set-operations
 title: "Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL"
 sidebar_label: "Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL"
-sidebar_position: 29
+sidebar_position: 31
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Set Operations — UNION, INTERSECT, EXCEPT, UNION ALL

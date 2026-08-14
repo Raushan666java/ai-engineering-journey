@@ -1,5 +1,7 @@
 # 05 — FastAPI & Backend Engineering
 
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
+
 ## Overview
 
 Build production-ready REST APIs with FastAPI, Pydantic, SQLAlchemy, and async patterns. Covers authentication, testing, error handling, and deployment — the backend skills needed to serve AI models.

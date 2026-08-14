@@ -3,7 +3,7 @@ id: 07-advanced-rag-techniques
 slug: /ai-engineering-placement/12-rag-vector-databases/07-advanced-rag-techniques
 title: "Advanced RAG Techniques"
 sidebar_label: "Advanced RAG Techniques"
-sidebar_position: 152
+sidebar_position: 158
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced RAG Techniques

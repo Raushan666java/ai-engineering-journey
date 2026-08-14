@@ -3,7 +3,7 @@ id: 03-estimation-planning
 slug: /ai-engineering-placement/30-business-skills/03-estimation-planning
 title: "03 — Estimation & Planning for AI Engineers"
 sidebar_label: "03 — Estimation & Planning for AI Engineers"
-sidebar_position: 317
+sidebar_position: 323
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # 03 — Estimation & Planning for AI Engineers

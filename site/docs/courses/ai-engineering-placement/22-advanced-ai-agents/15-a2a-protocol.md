@@ -3,7 +3,7 @@ id: 15-a2a-protocol
 slug: /ai-engineering-placement/22-advanced-ai-agents/15-a2a-protocol
 title: "Agent-to-Agent (A2A) Protocol"
 sidebar_label: "Agent-to-Agent (A2A) Protocol"
-sidebar_position: 264
+sidebar_position: 270
 ---
 # Agent-to-Agent (A2A) Protocol
 

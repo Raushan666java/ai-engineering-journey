@@ -3,7 +3,7 @@ id: 03-user-memory-knowledge-bases
 slug: /ai-engineering-placement/22-advanced-ai-agents/03-user-memory-knowledge-bases
 title: "User Memory & Knowledge Bases"
 sidebar_label: "User Memory & Knowledge Bases"
-sidebar_position: 252
+sidebar_position: 258
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # User Memory & Knowledge Bases

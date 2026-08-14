@@ -3,7 +3,7 @@ id: 03-google-cloud-ai
 slug: /ai-engineering-placement/28-certifications/03-google-cloud-ai
 title: "Google Cloud AI Certifications"
 sidebar_label: "Google Cloud AI Certifications"
-sidebar_position: 308
+sidebar_position: 314
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Google Cloud AI Certifications

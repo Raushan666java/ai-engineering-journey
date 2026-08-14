@@ -3,7 +3,7 @@ id: 02-cuda-programming
 slug: /ai-engineering-placement/27-ai-infrastructure/02-cuda-programming
 title: "CUDA Programming for AI"
 sidebar_label: "CUDA Programming for AI"
-sidebar_position: 297
+sidebar_position: 303
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # CUDA Programming for AI

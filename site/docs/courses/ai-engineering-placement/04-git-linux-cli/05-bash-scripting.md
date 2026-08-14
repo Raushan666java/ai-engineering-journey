@@ -3,7 +3,7 @@ id: 05-bash-scripting
 slug: /ai-engineering-placement/04-git-linux-cli/05-bash-scripting
 title: "CLI Productivity"
 sidebar_label: "CLI Productivity"
-sidebar_position: 58
+sidebar_position: 62
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # CLI Productivity

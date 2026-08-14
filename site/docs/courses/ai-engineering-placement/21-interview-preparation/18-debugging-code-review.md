@@ -3,7 +3,7 @@ id: 18-debugging-code-review
 slug: /ai-engineering-placement/21-interview-preparation/18-debugging-code-review
 title: "Debugging and Code Review"
 sidebar_label: "Debugging and Code Review"
-sidebar_position: 247
+sidebar_position: 253
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Debugging and Code Review

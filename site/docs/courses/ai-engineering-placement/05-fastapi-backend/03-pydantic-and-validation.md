@@ -3,7 +3,7 @@ id: 03-pydantic-and-validation
 slug: /ai-engineering-placement/05-fastapi-backend/03-pydantic-and-validation
 title: "Pydantic and Validation — Data Modeling and Schema Management"
 sidebar_label: "Pydantic and Validation — Data Modeling and Schema Management"
-sidebar_position: 66
+sidebar_position: 71
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Pydantic and Validation — Data Modeling and Schema Management

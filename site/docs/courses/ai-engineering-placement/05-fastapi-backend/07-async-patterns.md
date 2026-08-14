@@ -3,7 +3,7 @@ id: 07-async-patterns
 slug: /ai-engineering-placement/05-fastapi-backend/07-async-patterns
 title: "Async Patterns — Concurrency, Background Tasks, and Event-Driven Design"
 sidebar_label: "Async Patterns — Concurrency, Background Tasks, and Event-Driven Design"
-sidebar_position: 70
+sidebar_position: 75
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Async Patterns — Concurrency, Background Tasks, and Event-Driven Design

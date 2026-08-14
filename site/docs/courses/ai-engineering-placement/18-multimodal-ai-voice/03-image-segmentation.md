@@ -3,7 +3,7 @@ id: 03-image-segmentation
 slug: /ai-engineering-placement/18-multimodal-ai-voice/03-image-segmentation
 title: "Image Segmentation"
 sidebar_label: "Image Segmentation"
-sidebar_position: 212
+sidebar_position: 218
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Image Segmentation

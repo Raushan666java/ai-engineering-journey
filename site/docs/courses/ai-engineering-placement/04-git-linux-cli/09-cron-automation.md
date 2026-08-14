@@ -3,7 +3,7 @@ id: 09-cron-automation
 slug: /ai-engineering-placement/04-git-linux-cli/09-cron-automation
 title: "Cron Automation — Scheduling, Systemd Timers, Backups, Ansible"
 sidebar_label: "Cron Automation — Scheduling, Systemd Timers, Backups, Ansible"
-sidebar_position: 62
+sidebar_position: 66
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Cron Automation — Scheduling, Systemd Timers, Backups, Ansible

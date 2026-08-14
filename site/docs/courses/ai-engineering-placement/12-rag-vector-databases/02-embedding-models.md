@@ -3,7 +3,7 @@ id: 02-embedding-models
 slug: /ai-engineering-placement/12-rag-vector-databases/02-embedding-models
 title: "Embedding Models"
 sidebar_label: "Embedding Models"
-sidebar_position: 147
+sidebar_position: 153
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Embedding Models

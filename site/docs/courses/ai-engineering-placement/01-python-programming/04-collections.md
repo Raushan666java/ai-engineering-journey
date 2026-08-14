@@ -3,7 +3,7 @@ id: 04-collections
 slug: /ai-engineering-placement/01-python-programming/04-collections
 title: "Collections — Lists, Tuples, Sets, and Dictionaries"
 sidebar_label: "Collections — Lists, Tuples, Sets, and Dictionaries"
-sidebar_position: 12
+sidebar_position: 13
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Collections — Lists, Tuples, Sets, and Dictionaries

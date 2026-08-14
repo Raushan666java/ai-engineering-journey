@@ -3,7 +3,7 @@ id: 08-database-design
 slug: /ai-engineering-placement/02-sql-and-databases/08-database-design
 title: "Database Design — Normalization, ERD, Keys, Constraints, Schema Design"
 sidebar_label: "Database Design — Normalization, ERD, Keys, Constraints, Schema Design"
-sidebar_position: 31
+sidebar_position: 33
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Database Design — Normalization, ERD, Keys, Constraints, Schema Design

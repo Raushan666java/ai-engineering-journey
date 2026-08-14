@@ -3,7 +3,7 @@ id: 11-crewai-multi-agent
 slug: /ai-engineering-placement/22-advanced-ai-agents/11-crewai-multi-agent
 title: "CrewAI: Multi-Agent Orchestration"
 sidebar_label: "CrewAI: Multi-Agent Orchestration"
-sidebar_position: 260
+sidebar_position: 266
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # CrewAI: Multi-Agent Orchestration

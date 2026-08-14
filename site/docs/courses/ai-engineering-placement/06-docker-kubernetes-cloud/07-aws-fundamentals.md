@@ -3,7 +3,7 @@ id: 07-aws-fundamentals
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/07-aws-fundamentals
 title: "AWS Fundamentals — EC2, S3, IAM, and Networking"
 sidebar_label: "AWS Fundamentals — EC2, S3, IAM, and Networking"
-sidebar_position: 81
+sidebar_position: 87
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # AWS Fundamentals — EC2, S3, IAM, and Networking

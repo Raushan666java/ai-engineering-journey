@@ -3,7 +3,7 @@ id: 04-linkedin-optimization
 slug: /ai-engineering-placement/20-portfolio-branding/04-linkedin-optimization
 title: "LinkedIn Optimization"
 sidebar_label: "LinkedIn Optimization"
-sidebar_position: 226
+sidebar_position: 232
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # LinkedIn Optimization

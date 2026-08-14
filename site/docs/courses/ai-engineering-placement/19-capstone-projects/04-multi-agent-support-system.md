@@ -3,7 +3,7 @@ id: 04-multi-agent-support-system
 slug: /ai-engineering-placement/19-capstone-projects/04-multi-agent-support-system
 title: "Multi-Agent Support System"
 sidebar_label: "Multi-Agent Support System"
-sidebar_position: 220
+sidebar_position: 226
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Multi-Agent Support System

@@ -56,8 +56,7 @@ const config: Config = {
           label: 'Placement Course',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'coursesSidebar',
+          to: '/courses',
           position: 'left',
           label: 'All Courses',
         },

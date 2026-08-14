@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/16-mlops-production
 title: "16 — MLOps & Production AI"
 sidebar_label: "16 — MLOps & Production AI"
-sidebar_position: 198
+sidebar_position: 204
 ---
 # 16 — MLOps & Production AI
 

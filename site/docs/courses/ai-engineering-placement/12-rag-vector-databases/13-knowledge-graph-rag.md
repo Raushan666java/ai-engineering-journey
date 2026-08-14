@@ -3,7 +3,7 @@ id: 13-knowledge-graph-rag
 slug: /ai-engineering-placement/12-rag-vector-databases/13-knowledge-graph-rag
 title: "Knowledge Graph RAG"
 sidebar_label: "Knowledge Graph RAG"
-sidebar_position: 158
+sidebar_position: 164
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Knowledge Graph RAG

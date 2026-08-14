@@ -3,7 +3,7 @@ id: 02-llm-as-judge
 slug: /ai-engineering-placement/15-ai-evaluation-observability/02-llm-as-judge
 title: "LLM-as-Judge"
 sidebar_label: "LLM-as-Judge"
-sidebar_position: 184
+sidebar_position: 190
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # LLM-as-Judge

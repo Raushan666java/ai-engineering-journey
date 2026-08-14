@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="m01-tree-title m01-tree-desc">
+      <title id="m01-tree-title">Python programming skill tree</title>
+      <desc id="m01-tree-desc">Tree with Python at the root branching into four skill areas: core syntax, object orientation and modules, advanced Python, and the data science stack.</desc>
+
+      <rect width="1000" height="540" fill="#ffffff"/>
+
+      <!-- Connectors drawn before nodes -->
+      <!-- Root bus: from root bottom to the four children tops -->
+      <line x1="500" y1="140" x2="500" y2="180" stroke="#4f5d75" stroke-width="1"/>
+      <line x1="180" y1="180" x2="820" y2="180" stroke="#4f5d75" stroke-width="1"/>
+      <line x1="180" y1="180" x2="180" y2="224" stroke="#4f5d75" stroke-width="1"/>
+      <line x1="392" y1="180" x2="392" y2="224" stroke="#4f5d75" stroke-width="1"/>
+      <line x1="608" y1="180" x2="608" y2="224" stroke="#4f5d75" stroke-width="1"/>
+      <line x1="820" y1="180" x2="820" y2="224" stroke="#4f5d75" stroke-width="1"/>
+
+      <!-- Root node (FOCAL) -->
+      <rect x="380" y="88" width="240" height="52" rx="6" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/>
+      <text x="500" y="118" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Python</text>
+
+      <!-- Child 1 — Core syntax -->
+      <rect x="108" y="224" width="144" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="180" y="246" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Core syntax</text>
+      <text x="180" y="262" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">types · control · strings</text>
+
+      <!-- Child 2 — Functions & modules -->
+      <rect x="320" y="224" width="144" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="392" y="246" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Functions &amp; modules</text>
+      <text x="392" y="262" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">def · imports · packaging</text>
+
+      <!-- Child 3 — Advanced Python -->
+      <rect x="536" y="224" width="144" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="608" y="246" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Advanced Python</text>
+      <text x="608" y="262" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">OOP · decorators · async</text>
+
+      <!-- Child 4 — Data science stack -->
+      <rect x="748" y="224" width="144" height="52" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="820" y="246" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Data science</text>
+      <text x="820" y="262" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">NumPy · Pandas · viz</text>
+
+      <!-- Caption -->
+      <text x="120" y="368" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">INTERVIEW ANGLE</text>
+      <text x="212" y="368" fill="#4f5d75" font-size="8" font-family="system-ui, sans-serif" font-style="italic">Core syntax and functions are asked daily; decorators, generators, and the data stack are the differentiators.</text>
+
+      <!-- Legend strip -->
+      <line x1="120" y1="412" x2="880" y2="412" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+      <text x="120" y="436" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text>
+      <rect x="196" y="428" width="16" height="12" rx="2" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/>
+      <text x="220" y="438" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">ACCENT = START HERE</text>
+      <rect x="376" y="428" width="16" height="12" rx="2" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="400" y="438" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">PAPER = SKILL AREA</text>
+    </svg>

@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud
 title: "06 — Docker, Kubernetes & Cloud"
 sidebar_label: "06 — Docker, Kubernetes & Cloud"
-sidebar_position: 88
+sidebar_position: 94
 ---
 # 06 — Docker, Kubernetes & Cloud
 

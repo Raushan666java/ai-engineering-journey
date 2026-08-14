@@ -3,7 +3,7 @@ id: 09-production-rag-systems
 slug: /ai-engineering-placement/12-rag-vector-databases/09-production-rag-systems
 title: "Production RAG Systems"
 sidebar_label: "Production RAG Systems"
-sidebar_position: 154
+sidebar_position: 160
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Production RAG Systems

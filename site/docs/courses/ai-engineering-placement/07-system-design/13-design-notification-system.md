@@ -3,7 +3,7 @@ id: 13-design-notification-system
 slug: /ai-engineering-placement/07-system-design/13-design-notification-system
 title: "Design Notification System — Push, Real-Time, Delivery Guarantees"
 sidebar_label: "Design Notification System — Push, Real-Time, Delivery Guarantees"
-sidebar_position: 101
+sidebar_position: 107
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design Notification System — Push, Real-Time, Delivery Guarantees

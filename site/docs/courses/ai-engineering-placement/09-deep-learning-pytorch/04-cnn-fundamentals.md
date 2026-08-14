@@ -3,7 +3,7 @@ id: 04-cnn-fundamentals
 slug: /ai-engineering-placement/09-deep-learning-pytorch/04-cnn-fundamentals
 title: "CNN Fundamentals"
 sidebar_label: "CNN Fundamentals"
-sidebar_position: 120
+sidebar_position: 126
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 ---

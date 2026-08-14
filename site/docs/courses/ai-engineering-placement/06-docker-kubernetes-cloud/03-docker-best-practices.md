@@ -3,7 +3,7 @@ id: 03-docker-best-practices
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/03-docker-best-practices
 title: "Docker Best Practices — Security, Optimization, and Production Readiness"
 sidebar_label: "Docker Best Practices — Security, Optimization, and Production Readiness"
-sidebar_position: 77
+sidebar_position: 83
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Docker Best Practices — Security, Optimization, and Production Readiness

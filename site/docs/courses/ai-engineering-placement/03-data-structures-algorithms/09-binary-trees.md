@@ -3,7 +3,7 @@ id: 09-binary-trees
 slug: /ai-engineering-placement/03-data-structures-algorithms/09-binary-trees
 title: "Binary Trees"
 sidebar_label: "Binary Trees"
-sidebar_position: 43
+sidebar_position: 46
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Binary Trees

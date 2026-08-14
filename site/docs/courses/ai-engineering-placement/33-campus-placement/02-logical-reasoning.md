@@ -3,7 +3,7 @@ id: 02-logical-reasoning
 slug: /ai-engineering-placement/33-campus-placement/02-logical-reasoning
 title: "Logical Reasoning for Campus Placements"
 sidebar_label: "Logical Reasoning for Campus Placements"
-sidebar_position: 330
+sidebar_position: 336
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Logical Reasoning for Campus Placements

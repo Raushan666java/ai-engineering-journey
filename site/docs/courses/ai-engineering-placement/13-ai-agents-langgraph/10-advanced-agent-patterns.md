@@ -3,7 +3,7 @@ id: 10-advanced-agent-patterns
 slug: /ai-engineering-placement/13-ai-agents-langgraph/10-advanced-agent-patterns
 title: "Advanced Agent Patterns"
 sidebar_label: "Advanced Agent Patterns"
-sidebar_position: 172
+sidebar_position: 178
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Advanced Agent Patterns

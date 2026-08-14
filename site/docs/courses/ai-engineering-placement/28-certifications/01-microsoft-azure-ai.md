@@ -3,7 +3,7 @@ id: 01-microsoft-azure-ai
 slug: /ai-engineering-placement/28-certifications/01-microsoft-azure-ai
 title: "Microsoft Azure AI Certifications"
 sidebar_label: "Microsoft Azure AI Certifications"
-sidebar_position: 306
+sidebar_position: 312
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Microsoft Azure AI Certifications

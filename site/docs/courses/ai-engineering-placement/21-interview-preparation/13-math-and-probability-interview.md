@@ -3,7 +3,7 @@ id: 13-math-and-probability-interview
 slug: /ai-engineering-placement/21-interview-preparation/13-math-and-probability-interview
 title: "Math and Probability for ML Interviews"
 sidebar_label: "Math and Probability for ML Interviews"
-sidebar_position: 242
+sidebar_position: 248
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Math and Probability for ML Interviews

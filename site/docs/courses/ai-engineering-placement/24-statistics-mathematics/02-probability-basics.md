@@ -3,7 +3,7 @@ id: 02-probability-basics
 slug: /ai-engineering-placement/24-statistics-mathematics/02-probability-basics
 title: "Chapter 02: Probability Basics"
 sidebar_label: "Chapter 02: Probability Basics"
-sidebar_position: 276
+sidebar_position: 282
 ---
 # Chapter 02: Probability Basics
 

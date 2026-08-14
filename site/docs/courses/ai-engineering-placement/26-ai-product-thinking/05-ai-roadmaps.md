@@ -3,7 +3,7 @@ id: 05-ai-roadmaps
 slug: /ai-engineering-placement/26-ai-product-thinking/05-ai-roadmaps
 title: "Building AI Roadmaps"
 sidebar_label: "Building AI Roadmaps"
-sidebar_position: 294
+sidebar_position: 300
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Building AI Roadmaps

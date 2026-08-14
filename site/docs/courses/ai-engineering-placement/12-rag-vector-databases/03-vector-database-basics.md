@@ -3,7 +3,7 @@ id: 03-vector-database-basics
 slug: /ai-engineering-placement/12-rag-vector-databases/03-vector-database-basics
 title: "Vector Database Basics"
 sidebar_label: "Vector Database Basics"
-sidebar_position: 148
+sidebar_position: 154
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Vector Database Basics

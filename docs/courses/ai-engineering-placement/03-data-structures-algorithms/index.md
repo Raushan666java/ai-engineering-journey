@@ -1,5 +1,7 @@
 # 03 — Data Structures & Algorithms
 
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
+
 ## Overview
 
 Develop strong problem-solving skills with data structures and algorithms essential for technical interviews. Covers arrays, trees, graphs, dynamic programming, and pattern-based approaches used in top-tier company assessments.

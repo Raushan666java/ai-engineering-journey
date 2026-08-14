@@ -3,7 +3,7 @@ id: 01-dsa-patterns-mastery
 slug: /ai-engineering-placement/21-interview-preparation/01-dsa-patterns-mastery
 title: "DSA Patterns Mastery"
 sidebar_label: "DSA Patterns Mastery"
-sidebar_position: 230
+sidebar_position: 236
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # DSA Patterns Mastery

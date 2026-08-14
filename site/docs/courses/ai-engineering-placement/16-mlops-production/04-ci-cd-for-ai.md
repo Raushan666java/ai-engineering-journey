@@ -3,7 +3,7 @@ id: 04-ci-cd-for-ai
 slug: /ai-engineering-placement/16-mlops-production/04-ci-cd-for-ai
 title: "CI/CD for AI"
 sidebar_label: "CI/CD for AI"
-sidebar_position: 193
+sidebar_position: 199
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # CI/CD for AI

@@ -3,9 +3,11 @@ id: index
 slug: /ai-engineering-placement/05-fastapi-backend
 title: "05 — FastAPI & Backend Engineering"
 sidebar_label: "05 — FastAPI & Backend Engineering"
-sidebar_position: 74
+sidebar_position: 79
 ---
 # 05 — FastAPI & Backend Engineering
+
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
 
 ## Overview
 

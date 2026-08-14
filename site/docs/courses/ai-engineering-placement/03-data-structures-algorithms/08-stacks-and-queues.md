@@ -3,7 +3,7 @@ id: 08-stacks-and-queues
 slug: /ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues
 title: "Stacks and Queues"
 sidebar_label: "Stacks and Queues"
-sidebar_position: 42
+sidebar_position: 45
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Stacks and Queues

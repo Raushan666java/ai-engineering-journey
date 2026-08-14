@@ -3,7 +3,7 @@ id: 04-subqueries-and-ctes
 slug: /ai-engineering-placement/02-sql-and-databases/04-subqueries-and-ctes
 title: "Subqueries & CTEs — Correlated, WITH, Recursive"
 sidebar_label: "Subqueries & CTEs — Correlated, WITH, Recursive"
-sidebar_position: 27
+sidebar_position: 29
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Subqueries & CTEs — Correlated, WITH, Recursive

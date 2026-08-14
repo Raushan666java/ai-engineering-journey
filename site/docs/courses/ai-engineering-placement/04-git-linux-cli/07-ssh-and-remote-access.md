@@ -3,7 +3,7 @@ id: 07-ssh-and-remote-access
 slug: /ai-engineering-placement/04-git-linux-cli/07-ssh-and-remote-access
 title: "SSH & Remote Access — Secure Shell, Key Management, Tunneling"
 sidebar_label: "SSH & Remote Access — Secure Shell, Key Management, Tunneling"
-sidebar_position: 60
+sidebar_position: 64
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # SSH & Remote Access — Secure Shell, Key Management, Tunneling

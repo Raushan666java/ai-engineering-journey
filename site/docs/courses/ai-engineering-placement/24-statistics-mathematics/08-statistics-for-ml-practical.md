@@ -3,7 +3,7 @@ id: 08-statistics-for-ml-practical
 slug: /ai-engineering-placement/24-statistics-mathematics/08-statistics-for-ml-practical
 title: "Chapter 08: Statistics for ML — Practical"
 sidebar_label: "Chapter 08: Statistics for ML — Practical"
-sidebar_position: 282
+sidebar_position: 288
 ---
 # Chapter 08: Statistics for ML — Practical
 

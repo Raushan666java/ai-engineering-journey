@@ -3,7 +3,7 @@ id: 08-agent-self-evolution
 slug: /ai-engineering-placement/22-advanced-ai-agents/08-agent-self-evolution
 title: "Agent Self-Evolution"
 sidebar_label: "Agent Self-Evolution"
-sidebar_position: 257
+sidebar_position: 263
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agent Self-Evolution

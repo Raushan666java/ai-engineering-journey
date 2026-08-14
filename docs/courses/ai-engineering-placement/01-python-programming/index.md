@@ -1,5 +1,7 @@
 # 01 — Python for AI
 
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
+
 ## Overview
 
 Master Python programming from fundamentals to advanced data science libraries. Covers syntax, OOP, concurrency, NumPy, Pandas, and visualization — the essential toolkit for any AI/ML engineering role.

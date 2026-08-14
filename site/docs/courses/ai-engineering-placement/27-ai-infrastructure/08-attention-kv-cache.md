@@ -3,7 +3,7 @@ id: 08-attention-kv-cache
 slug: /ai-engineering-placement/27-ai-infrastructure/08-attention-kv-cache
 title: "Attention & KV Cache Optimization"
 sidebar_label: "Attention & KV Cache Optimization"
-sidebar_position: 303
+sidebar_position: 309
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Attention & KV Cache Optimization

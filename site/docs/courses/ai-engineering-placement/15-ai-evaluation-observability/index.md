@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/15-ai-evaluation-observability
 title: "15 — AI Evaluation & Observability"
 sidebar_label: "15 — AI Evaluation & Observability"
-sidebar_position: 189
+sidebar_position: 195
 ---
 # 15 — AI Evaluation & Observability
 

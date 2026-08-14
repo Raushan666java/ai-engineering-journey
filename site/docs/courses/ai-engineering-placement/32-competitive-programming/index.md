@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/32-competitive-programming
 title: "32 — Competitive Programming"
 sidebar_label: "32 — Competitive Programming"
-sidebar_position: 328
+sidebar_position: 334
 ---
 # 32 — Competitive Programming
 

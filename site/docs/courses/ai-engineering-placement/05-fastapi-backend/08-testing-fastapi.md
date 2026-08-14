@@ -3,7 +3,7 @@ id: 08-testing-fastapi
 slug: /ai-engineering-placement/05-fastapi-backend/08-testing-fastapi
 title: "Testing FastAPI — Unit Tests, Integration Tests, and TDD"
 sidebar_label: "Testing FastAPI — Unit Tests, Integration Tests, and TDD"
-sidebar_position: 71
+sidebar_position: 76
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Testing FastAPI — Unit Tests, Integration Tests, and TDD

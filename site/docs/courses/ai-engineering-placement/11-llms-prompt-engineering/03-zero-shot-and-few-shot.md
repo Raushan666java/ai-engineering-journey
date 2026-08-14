@@ -3,7 +3,7 @@ id: 03-zero-shot-and-few-shot
 slug: /ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot
 title: "Zero-Shot & Few-Shot Prompting"
 sidebar_label: "Zero-Shot & Few-Shot Prompting"
-sidebar_position: 139
+sidebar_position: 145
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Zero-Shot & Few-Shot Prompting

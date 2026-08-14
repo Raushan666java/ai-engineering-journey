@@ -3,7 +3,7 @@ id: 04-inference-serving
 slug: /ai-engineering-placement/27-ai-infrastructure/04-inference-serving
 title: "AI Inference Serving"
 sidebar_label: "AI Inference Serving"
-sidebar_position: 299
+sidebar_position: 305
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # AI Inference Serving

@@ -3,7 +3,7 @@ id: 19-ai-assisted-coding
 slug: /ai-engineering-placement/21-interview-preparation/19-ai-assisted-coding
 title: "AI-Assisted Coding Interviews"
 sidebar_label: "AI-Assisted Coding Interviews"
-sidebar_position: 248
+sidebar_position: 254
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # AI-Assisted Coding Interviews

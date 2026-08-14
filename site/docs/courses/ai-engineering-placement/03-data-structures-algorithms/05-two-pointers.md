@@ -3,7 +3,7 @@ id: 05-two-pointers
 slug: /ai-engineering-placement/03-data-structures-algorithms/05-two-pointers
 title: "Two Pointers"
 sidebar_label: "Two Pointers"
-sidebar_position: 39
+sidebar_position: 42
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Two Pointers

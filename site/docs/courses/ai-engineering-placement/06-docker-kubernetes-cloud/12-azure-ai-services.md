@@ -3,7 +3,7 @@ id: 12-azure-ai-services
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/12-azure-ai-services
 title: "Azure AI Services — Cognitive Services, Azure ML, OpenAI Service"
 sidebar_label: "Azure AI Services — Cognitive Services, Azure ML, OpenAI Service"
-sidebar_position: 86
+sidebar_position: 92
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Azure AI Services — Cognitive Services, Azure ML, OpenAI Service

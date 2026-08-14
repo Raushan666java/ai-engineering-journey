@@ -3,7 +3,7 @@ id: 04-chain-of-thought
 slug: /ai-engineering-placement/11-llms-prompt-engineering/04-chain-of-thought
 title: "Chain-of-Thought Prompting"
 sidebar_label: "Chain-of-Thought Prompting"
-sidebar_position: 140
+sidebar_position: 146
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Chain-of-Thought Prompting

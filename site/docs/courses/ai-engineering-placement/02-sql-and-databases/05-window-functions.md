@@ -3,7 +3,7 @@ id: 05-window-functions
 slug: /ai-engineering-placement/02-sql-and-databases/05-window-functions
 title: "Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames"
 sidebar_label: "Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames"
-sidebar_position: 28
+sidebar_position: 30
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Window Functions — ROW_NUMBER, RANK, LAG, LEAD, NTILE, Frames

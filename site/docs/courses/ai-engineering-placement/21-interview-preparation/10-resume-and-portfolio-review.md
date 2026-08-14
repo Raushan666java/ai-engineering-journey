@@ -3,7 +3,7 @@ id: 10-resume-and-portfolio-review
 slug: /ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review
 title: "Resume & Portfolio Review"
 sidebar_label: "Resume & Portfolio Review"
-sidebar_position: 239
+sidebar_position: 245
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Resume & Portfolio Review

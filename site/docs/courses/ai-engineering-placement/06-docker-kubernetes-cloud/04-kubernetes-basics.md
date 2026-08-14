@@ -3,7 +3,7 @@ id: 04-kubernetes-basics
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics
 title: "Kubernetes Basics — Pods, Services, and Deployments"
 sidebar_label: "Kubernetes Basics — Pods, Services, and Deployments"
-sidebar_position: 78
+sidebar_position: 84
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Kubernetes Basics — Pods, Services, and Deployments

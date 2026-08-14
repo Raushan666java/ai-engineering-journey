@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="m02-flow-title m02-flow-desc">
+      <title id="m02-flow-title">SQL query execution order</title>
+      <desc id="m02-flow-desc">Flowchart of SQL logical processing order: FROM and JOIN, WHERE, GROUP BY, HAVING, SELECT, ORDER BY, then LIMIT and OFFSET, ending with the result set.</desc>
+
+      <rect width="1000" height="640" fill="#ffffff"/>
+
+      <!-- Arrows first (behind nodes) -->
+      <!-- Start -> FROM -->
+      <path d="M 520 132 V 164" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+      <!-- FROM -> WHERE -->
+      <path d="M 520 204 V 236" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+      <!-- WHERE -> GROUP BY -->
+      <path d="M 520 276 V 308" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+      <!-- GROUP BY -> HAVING -->
+      <path d="M 520 348 V 380" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+      <!-- HAVING -> SELECT -->
+      <path d="M 520 420 V 452" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+      <!-- SELECT -> ORDER BY -->
+      <path d="M 520 492 V 524" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+      <!-- ORDER BY -> LIMIT -->
+      <path d="M 520 564 V 596" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/>
+        </marker>
+      </defs>
+
+      <!-- Start (oval) -->
+      <rect x="440" y="88" width="160" height="44" rx="20" fill="#f5f6f8" stroke="#4f5d75" stroke-width="1"/>
+      <text x="520" y="114" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Write query</text>
+
+      <!-- Step: FROM / JOIN -->
+      <rect x="404" y="164" width="232" height="40" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="520" y="189" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">FROM / JOIN</text>
+      <text x="816" y="189" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">1 · gather tables</text>
+
+      <!-- Step: WHERE -->
+      <rect x="404" y="236" width="232" height="40" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="520" y="261" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">WHERE</text>
+      <text x="816" y="261" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">2 · filter rows</text>
+
+      <!-- Step: GROUP BY (FOCAL) -->
+      <rect x="404" y="308" width="232" height="40" rx="6" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/>
+      <text x="520" y="333" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">GROUP BY</text>
+      <text x="816" y="333" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">3 · group rows</text>
+
+      <!-- Step: HAVING -->
+      <rect x="404" y="380" width="232" height="40" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="520" y="405" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">HAVING</text>
+      <text x="816" y="405" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">4 · filter groups</text>
+
+      <!-- Step: SELECT -->
+      <rect x="404" y="452" width="232" height="40" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="520" y="477" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">SELECT</text>
+      <text x="816" y="477" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">5 · pick columns</text>
+
+      <!-- Step: ORDER BY -->
+      <rect x="404" y="524" width="232" height="40" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="520" y="549" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">ORDER BY</text>
+      <text x="816" y="549" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">6 · sort rows</text>
+
+      <!-- Step: LIMIT / OFFSET -->
+      <rect x="404" y="596" width="232" height="40" rx="6" fill="#ffffff" stroke="#1a1b23" stroke-width="1"/>
+      <text x="520" y="621" fill="#1a1b23" font-size="12" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">LIMIT / OFFSET</text>
+      <text x="816" y="621" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">7 · page rows</text>
+
+      <!-- Written-order reminder -->
+      <text x="140" y="112" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">WRITTEN</text>
+      <line x1="140" y1="124" x2="140" y2="236" stroke="rgba(26,27,35,0.25)" stroke-width="1"/>
+      <text x="140" y="160" fill="#7a8399" font-size="8" font-family="'Geist Mono', monospace">SELECT</text>
+      <text x="140" y="176" fill="#7a8399" font-size="8" font-family="'Geist Mono', monospace">FROM</text>
+      <text x="140" y="192" fill="#7a8399" font-size="8" font-family="'Geist Mono', monospace">WHERE</text>
+      <text x="140" y="208" fill="#7a8399" font-size="8" font-family="'Geist Mono', monospace">GROUP BY</text>
+      <text x="140" y="224" fill="#7a8399" font-size="8" font-family="'Geist Mono', monospace">ORDER BY</text>
+      <text x="156" y="268" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">EXECUTED</text>
+      <line x1="140" y1="280" x2="140" y2="620" stroke="rgba(46,133,85,0.35)" stroke-width="1"/>
+      <text x="156" y="330" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace">FROM → JOIN</text>
+      <text x="156" y="402" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace">WHERE</text>
+      <text x="156" y="474" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace">GROUP BY</text>
+      <text x="156" y="546" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace">HAVING</text>
+      <text x="156" y="618" fill="#2e8555" font-size="8" font-family="'Geist Mono', monospace">SELECT</text>
+
+      <!-- Legend strip -->
+      <line x1="120" y1="76" x2="880" y2="76" stroke="rgba(26,27,35,0.10)" stroke-width="1"/>
+      <text x="120" y="64" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text>
+      <rect x="196" y="56" width="16" height="12" rx="2" fill="rgba(46,133,85,0.08)" stroke="#2e8555" stroke-width="1"/>
+      <text x="220" y="66" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">GREEN = EXECUTION ORDER</text>
+      <rect x="400" y="56" width="16" height="12" rx="2" fill="#f5f6f8"/>
+      <text x="424" y="66" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">GREY = WRITTEN ORDER</text>
+    </svg>

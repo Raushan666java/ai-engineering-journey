@@ -3,7 +3,7 @@ id: 01-neural-networks-basics
 slug: /ai-engineering-placement/09-deep-learning-pytorch/01-neural-networks-basics
 title: "Neural Networks Basics — Perceptron, Activation Functions, Backpropagation"
 sidebar_label: "Neural Networks Basics — Perceptron, Activation Functions, Backpropagation"
-sidebar_position: 117
+sidebar_position: 123
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Neural Networks Basics — Perceptron, Activation Functions, Backpropagation

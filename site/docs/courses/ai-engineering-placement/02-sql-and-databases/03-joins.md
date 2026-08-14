@@ -3,7 +3,7 @@ id: 03-joins
 slug: /ai-engineering-placement/02-sql-and-databases/03-joins
 title: "Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins"
 sidebar_label: "Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins"
-sidebar_position: 26
+sidebar_position: 28
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Joins — INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins

@@ -7,6 +7,8 @@ sidebar_position: 8
 ---
 # Core Computer Science for AI Engineers
 
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
+
 ## Overview
 
 This section bridges the gap between traditional computer science fundamentals and modern AI engineering. Each chapter is written from a practitioner's perspective — the way engineers at Google,.

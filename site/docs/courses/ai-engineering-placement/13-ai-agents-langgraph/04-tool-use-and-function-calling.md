@@ -3,7 +3,7 @@ id: 04-tool-use-and-function-calling
 slug: /ai-engineering-placement/13-ai-agents-langgraph/04-tool-use-and-function-calling
 title: "Tool Use and Function Calling"
 sidebar_label: "Tool Use and Function Calling"
-sidebar_position: 166
+sidebar_position: 172
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Tool Use and Function Calling

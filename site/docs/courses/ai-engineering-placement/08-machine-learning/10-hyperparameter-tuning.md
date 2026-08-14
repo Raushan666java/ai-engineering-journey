@@ -3,7 +3,7 @@ id: 10-hyperparameter-tuning
 slug: /ai-engineering-placement/08-machine-learning/10-hyperparameter-tuning
 title: "Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna"
 sidebar_label: "Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna"
-sidebar_position: 113
+sidebar_position: 119
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna

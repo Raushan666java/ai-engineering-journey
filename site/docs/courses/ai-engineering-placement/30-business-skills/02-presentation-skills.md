@@ -3,7 +3,7 @@ id: 02-presentation-skills
 slug: /ai-engineering-placement/30-business-skills/02-presentation-skills
 title: "Presentation Skills for AI Engineers"
 sidebar_label: "Presentation Skills for AI Engineers"
-sidebar_position: 316
+sidebar_position: 322
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Presentation Skills for AI Engineers

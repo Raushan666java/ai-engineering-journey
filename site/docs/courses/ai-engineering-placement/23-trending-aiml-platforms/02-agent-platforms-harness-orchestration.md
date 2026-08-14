@@ -3,7 +3,7 @@ id: 02-agent-platforms-harness-orchestration
 slug: /ai-engineering-placement/23-trending-aiml-platforms/02-agent-platforms-harness-orchestration
 title: "Agent Platforms — Harness & Orchestration"
 sidebar_label: "Agent Platforms — Harness & Orchestration"
-sidebar_position: 267
+sidebar_position: 273
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agent Platforms — Harness & Orchestration

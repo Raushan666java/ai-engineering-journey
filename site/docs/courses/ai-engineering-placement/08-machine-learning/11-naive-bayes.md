@@ -3,7 +3,7 @@ id: 11-naive-bayes
 slug: /ai-engineering-placement/08-machine-learning/11-naive-bayes
 title: "Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications"
 sidebar_label: "Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications"
-sidebar_position: 114
+sidebar_position: 120
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications

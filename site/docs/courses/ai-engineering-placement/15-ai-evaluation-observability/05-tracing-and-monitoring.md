@@ -3,7 +3,7 @@ id: 05-tracing-and-monitoring
 slug: /ai-engineering-placement/15-ai-evaluation-observability/05-tracing-and-monitoring
 title: "Tracing & Monitoring"
 sidebar_label: "Tracing & Monitoring"
-sidebar_position: 187
+sidebar_position: 193
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Tracing & Monitoring

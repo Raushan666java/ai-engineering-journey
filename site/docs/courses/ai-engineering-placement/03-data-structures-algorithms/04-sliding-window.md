@@ -3,7 +3,7 @@ id: 04-sliding-window
 slug: /ai-engineering-placement/03-data-structures-algorithms/04-sliding-window
 title: "Sliding Window"
 sidebar_label: "Sliding Window"
-sidebar_position: 38
+sidebar_position: 41
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Sliding Window

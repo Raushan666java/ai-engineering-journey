@@ -3,7 +3,7 @@ id: 08-data-leakage-pii
 slug: /ai-engineering-placement/17-ai-security-guardrails/08-data-leakage-pii
 title: "Data Leakage & PII Detection"
 sidebar_label: "Data Leakage & PII Detection"
-sidebar_position: 206
+sidebar_position: 212
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Data Leakage & PII Detection

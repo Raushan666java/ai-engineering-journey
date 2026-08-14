@@ -3,7 +3,7 @@ id: 12-pandas-basics
 slug: /ai-engineering-placement/01-python-programming/12-pandas-basics
 title: "Pandas Basics — Series, DataFrame, Indexing, GroupBy, Merge"
 sidebar_label: "Pandas Basics — Series, DataFrame, Indexing, GroupBy, Merge"
-sidebar_position: 20
+sidebar_position: 21
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Pandas Basics — Series, DataFrame, Indexing, GroupBy, Merge

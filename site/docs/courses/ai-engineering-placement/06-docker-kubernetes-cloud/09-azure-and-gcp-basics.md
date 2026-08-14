@@ -3,7 +3,7 @@ id: 09-azure-and-gcp-basics
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/09-azure-and-gcp-basics
 title: "Azure and GCP Basics — Cloud Providers Comparison"
 sidebar_label: "Azure and GCP Basics — Cloud Providers Comparison"
-sidebar_position: 83
+sidebar_position: 89
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Azure and GCP Basics — Cloud Providers Comparison

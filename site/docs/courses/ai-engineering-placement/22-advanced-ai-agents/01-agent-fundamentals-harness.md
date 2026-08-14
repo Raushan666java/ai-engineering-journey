@@ -3,7 +3,7 @@ id: 01-agent-fundamentals-harness
 slug: /ai-engineering-placement/22-advanced-ai-agents/01-agent-fundamentals-harness
 title: "Agent Fundamentals & Harness Engineering"
 sidebar_label: "Agent Fundamentals & Harness Engineering"
-sidebar_position: 250
+sidebar_position: 256
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Agent Fundamentals & Harness Engineering

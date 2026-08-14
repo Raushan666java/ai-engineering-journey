@@ -3,9 +3,11 @@ id: index
 slug: /ai-engineering-placement/01-python-programming
 title: "01 — Python for AI"
 sidebar_label: "01 — Python for AI"
-sidebar_position: 23
+sidebar_position: 24
 ---
 # 01 — Python for AI
+
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
 
 ## Overview
 

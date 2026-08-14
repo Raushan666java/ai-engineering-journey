@@ -3,7 +3,7 @@ id: 09-error-handling-and-logging
 slug: /ai-engineering-placement/05-fastapi-backend/09-error-handling-and-logging
 title: "Error Handling and Logging — Robust API Design"
 sidebar_label: "Error Handling and Logging — Robust API Design"
-sidebar_position: 72
+sidebar_position: 77
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Error Handling and Logging — Robust API Design

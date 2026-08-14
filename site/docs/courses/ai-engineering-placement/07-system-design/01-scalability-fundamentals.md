@@ -3,7 +3,7 @@ id: 01-scalability-fundamentals
 slug: /ai-engineering-placement/07-system-design/01-scalability-fundamentals
 title: "Scalability Fundamentals — Vertical, Horizontal, and Beyond"
 sidebar_label: "Scalability Fundamentals — Vertical, Horizontal, and Beyond"
-sidebar_position: 89
+sidebar_position: 95
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Scalability Fundamentals — Vertical, Horizontal, and Beyond

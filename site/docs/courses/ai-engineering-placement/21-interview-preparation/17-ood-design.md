@@ -3,7 +3,7 @@ id: 17-ood-design
 slug: /ai-engineering-placement/21-interview-preparation/17-ood-design
 title: "Low-Level and OOD Design"
 sidebar_label: "Low-Level and OOD Design"
-sidebar_position: 246
+sidebar_position: 252
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Low-Level and OOD Design

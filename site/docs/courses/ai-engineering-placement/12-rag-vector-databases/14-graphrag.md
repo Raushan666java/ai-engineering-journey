@@ -3,7 +3,7 @@ id: 14-graphrag
 slug: /ai-engineering-placement/12-rag-vector-databases/14-graphrag
 title: "Microsoft GraphRAG"
 sidebar_label: "Microsoft GraphRAG"
-sidebar_position: 159
+sidebar_position: 165
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Microsoft GraphRAG

@@ -3,7 +3,7 @@ id: 02-llm-apis
 slug: /ai-engineering-placement/11-llms-prompt-engineering/02-llm-apis
 title: "LLM APIs"
 sidebar_label: "LLM APIs"
-sidebar_position: 138
+sidebar_position: 144
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # LLM APIs

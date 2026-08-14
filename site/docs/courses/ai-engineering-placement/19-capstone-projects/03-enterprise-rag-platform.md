@@ -3,7 +3,7 @@ id: 03-enterprise-rag-platform
 slug: /ai-engineering-placement/19-capstone-projects/03-enterprise-rag-platform
 title: "Enterprise RAG Platform"
 sidebar_label: "Enterprise RAG Platform"
-sidebar_position: 219
+sidebar_position: 225
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Enterprise RAG Platform

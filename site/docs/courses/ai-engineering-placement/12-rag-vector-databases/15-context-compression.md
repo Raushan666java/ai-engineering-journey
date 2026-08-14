@@ -3,7 +3,7 @@ id: 15-context-compression
 slug: /ai-engineering-placement/12-rag-vector-databases/15-context-compression
 title: "Context Compression for RAG"
 sidebar_label: "Context Compression for RAG"
-sidebar_position: 160
+sidebar_position: 166
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Context Compression for RAG

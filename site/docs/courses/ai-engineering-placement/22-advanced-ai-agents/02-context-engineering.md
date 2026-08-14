@@ -3,7 +3,7 @@ id: 02-context-engineering
 slug: /ai-engineering-placement/22-advanced-ai-agents/02-context-engineering
 title: "Context Engineering"
 sidebar_label: "Context Engineering"
-sidebar_position: 251
+sidebar_position: 257
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Context Engineering

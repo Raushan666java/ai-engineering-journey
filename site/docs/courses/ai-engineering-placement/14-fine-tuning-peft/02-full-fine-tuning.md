@@ -3,7 +3,7 @@ id: 02-full-fine-tuning
 slug: /ai-engineering-placement/14-fine-tuning-peft/02-full-fine-tuning
 title: "Full Fine-Tuning"
 sidebar_label: "Full Fine-Tuning"
-sidebar_position: 175
+sidebar_position: 181
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Full Fine-Tuning

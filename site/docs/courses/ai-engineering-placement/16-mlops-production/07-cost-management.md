@@ -3,7 +3,7 @@ id: 07-cost-management
 slug: /ai-engineering-placement/16-mlops-production/07-cost-management
 title: "Cost Management"
 sidebar_label: "Cost Management"
-sidebar_position: 196
+sidebar_position: 202
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Cost Management

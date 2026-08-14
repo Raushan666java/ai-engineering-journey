@@ -3,7 +3,7 @@ id: 02-git-branching
 slug: /ai-engineering-placement/04-git-linux-cli/02-git-branching
 title: "Git Branching"
 sidebar_label: "Git Branching"
-sidebar_position: 55
+sidebar_position: 59
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Git Branching

@@ -3,7 +3,7 @@ id: 10-design-url-shortener
 slug: /ai-engineering-placement/07-system-design/10-design-url-shortener
 title: "Design URL Shortener — Hashing, Redirects, Analytics"
 sidebar_label: "Design URL Shortener — Hashing, Redirects, Analytics"
-sidebar_position: 98
+sidebar_position: 104
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design URL Shortener — Hashing, Redirects, Analytics

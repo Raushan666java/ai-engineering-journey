@@ -3,7 +3,7 @@ id: 06-portfolio-website
 slug: /ai-engineering-placement/20-portfolio-branding/06-portfolio-website
 title: "Portfolio Website"
 sidebar_label: "Portfolio Website"
-sidebar_position: 228
+sidebar_position: 234
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Portfolio Website

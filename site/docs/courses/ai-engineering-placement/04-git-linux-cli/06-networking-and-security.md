@@ -3,7 +3,7 @@ id: 06-networking-and-security
 slug: /ai-engineering-placement/04-git-linux-cli/06-networking-and-security
 title: "DevOps Automation"
 sidebar_label: "DevOps Automation"
-sidebar_position: 59
+sidebar_position: 63
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # DevOps Automation

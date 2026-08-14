@@ -3,7 +3,7 @@ id: 01-house-price-prediction-api
 slug: /ai-engineering-placement/19-capstone-projects/01-house-price-prediction-api
 title: "House Price Prediction API"
 sidebar_label: "House Price Prediction API"
-sidebar_position: 217
+sidebar_position: 223
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # House Price Prediction API

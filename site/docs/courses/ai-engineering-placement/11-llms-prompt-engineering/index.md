@@ -3,7 +3,7 @@ id: index
 slug: /ai-engineering-placement/11-llms-prompt-engineering
 title: "11 — LLMs & Prompt Engineering"
 sidebar_label: "11 — LLMs & Prompt Engineering"
-sidebar_position: 145
+sidebar_position: 151
 ---
 # 11 — LLMs & Prompt Engineering
 

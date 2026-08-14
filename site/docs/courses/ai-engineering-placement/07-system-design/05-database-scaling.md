@@ -3,7 +3,7 @@ id: 05-database-scaling
 slug: /ai-engineering-placement/07-system-design/05-database-scaling
 title: "Database Scaling — Replication, Sharding, and Indexing"
 sidebar_label: "Database Scaling — Replication, Sharding, and Indexing"
-sidebar_position: 93
+sidebar_position: 99
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Database Scaling — Replication, Sharding, and Indexing

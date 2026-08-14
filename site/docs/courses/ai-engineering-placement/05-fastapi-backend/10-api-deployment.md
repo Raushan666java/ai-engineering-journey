@@ -3,7 +3,7 @@ id: 10-api-deployment
 slug: /ai-engineering-placement/05-fastapi-backend/10-api-deployment
 title: "API Deployment — Docker, CI/CD, and Production Readiness"
 sidebar_label: "API Deployment — Docker, CI/CD, and Production Readiness"
-sidebar_position: 73
+sidebar_position: 78
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # API Deployment — Docker, CI/CD, and Production Readiness

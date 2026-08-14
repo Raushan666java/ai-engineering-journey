@@ -3,7 +3,7 @@ id: 14-design-file-upload-system
 slug: /ai-engineering-placement/07-system-design/14-design-file-upload-system
 title: "Design File Upload System — Direct Upload, Presigned URLs, CDN"
 sidebar_label: "Design File Upload System — Direct Upload, Presigned URLs, CDN"
-sidebar_position: 102
+sidebar_position: 108
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Design File Upload System — Direct Upload, Presigned URLs, CDN

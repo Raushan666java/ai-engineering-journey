@@ -1,5 +1,7 @@
 # 02 — SQL & Databases
 
+> **Visual Notes**: one-diagram revision cheat-sheet — [Visual Notes →](visual-notes.md)
+
 ## Overview
 
 Build a strong foundation in relational databases and SQL. Covers queries, joins, window functions, indexing, transactions, and PostgreSQL-specific features critical for data-intensive AI applications.

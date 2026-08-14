@@ -3,7 +3,7 @@ id: 06-kubernetes-scaling
 slug: /ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling
 title: "Kubernetes Scaling — HPA, Autoscaling, and Cluster Management"
 sidebar_label: "Kubernetes Scaling — HPA, Autoscaling, and Cluster Management"
-sidebar_position: 80
+sidebar_position: 86
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Kubernetes Scaling — HPA, Autoscaling, and Cluster Management

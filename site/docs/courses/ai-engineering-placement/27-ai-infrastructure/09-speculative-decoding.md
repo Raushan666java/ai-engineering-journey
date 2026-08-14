@@ -3,7 +3,7 @@ id: 09-speculative-decoding
 slug: /ai-engineering-placement/27-ai-infrastructure/09-speculative-decoding
 title: "Speculative Decoding"
 sidebar_label: "Speculative Decoding"
-sidebar_position: 304
+sidebar_position: 310
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Speculative Decoding

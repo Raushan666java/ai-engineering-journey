@@ -3,7 +3,7 @@ id: 03-sequence-models
 slug: /ai-engineering-placement/10-nlp-transformers/03-sequence-models
 title: "Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder"
 sidebar_label: "Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder"
-sidebar_position: 130
+sidebar_position: 136
 ---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Sequence Models — RNN, LSTM, GRU, Bidirectional, Encoder-Decoder
